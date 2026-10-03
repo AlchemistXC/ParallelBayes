@@ -1,0 +1,8 @@
+{
+  "files": 2295,
+  "bytes": 36828119,
+  "large": [],
+  "potential_secret_files": [],
+  "private_skills_excluded": true,
+  "note": "Size and named-pattern scan of initial Git candidate; does not certify absence of every possible secret."
+}

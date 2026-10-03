@@ -1,0 +1,32 @@
+{
+  "project": "parallel-r-package",
+  "date": "2026-10-03",
+  "mode": "review-and-bounded-revision",
+  "status": "audit_complete_feasibility_experiments_not_started",
+  "skills": [
+    "nature-academic-search",
+    "researchwrite"
+  ],
+  "hardware_user_confirmed": [
+    "Mac/CPU",
+    "AMD CPU + RTX 5080 + Windows 11 desktop"
+  ],
+  "runtime_verified": false,
+  "manuscript_modified": false,
+  "implementation_started": false,
+  "decision": "Proceed to bounded feasibility validation before package expansion or manuscript pivot",
+  "main_output": "exports/方案审核与修订建议.md",
+  "evidence_table": "02_evidence_table.md",
+  "qa": [
+    "qa_logs/feasibility-review.md",
+    "qa_logs/inference-review.md",
+    "qa_logs/synthesis-and-qa.md"
+  ],
+  "unresolved": [
+    "WSL2/driver/JAX compatibility on the actual desktop",
+    "CPU and available memory details",
+    "parallel solver convergence, branch agreement and verification costs",
+    "reference posterior quality and final benchmark protocol",
+    "empirical novelty and net performance benefit"
+  ]
+}

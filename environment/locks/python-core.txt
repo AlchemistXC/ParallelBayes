@@ -1,0 +1,15 @@
+# CPU wheels; GPU bootstrap replaces jax/jaxlib with jax[cuda12]==0.6.2 only.
+# CUDA plugin/dependency versions are captured in the returned pip-freeze.
+jax==0.6.2
+jaxlib==0.6.2
+numpy==2.2.6
+scipy==1.15.3
+blackjax==1.2.5
+optax==0.2.5
+chex==0.1.89
+fastprogress==1.0.3
+jaxopt==0.8.5
+bridgestan==2.7.0
+psutil==7.1.0
+pytest==8.4.2
+matplotlib==3.10.6

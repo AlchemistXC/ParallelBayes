@@ -1,0 +1,8 @@
+{
+  "comparison": "Within-machine paired methods. No pure cross-version hardware speedup attribution.",
+  "cpu_formal": "Historical frozen 0.1.0 / protocol-v1; no silent replacement",
+  "gpu_formal": "0.1.1 / protocol-v3, not yet executed",
+  "patch_sha256": "6e64ac78658964e65d3abfec5901bcc545430c71410a9f61723c97d85629f890",
+  "previous_source_sha256": "6f5a4f13fbaa9a59d8508074147836961051719b0a89814464bccb2c7da977de",
+  "source_sha256": "d8cb2fc2bf950fbe6b47841f3feb449d553e5f2a7c78d140811c6b2f2ba51ec7"
+}

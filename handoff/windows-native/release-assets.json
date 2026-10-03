@@ -1,0 +1,74 @@
+{
+  "release_tag": "cpu-review-v1",
+  "repository": "AlchemistXC/ParallelBayes",
+  "scope": "Immutable historical CPU evidence; native Windows GPU not yet implemented",
+  "archives": [
+    {
+      "name": "software-0.1.1-cpu-review-v1.tar.gz",
+      "bytes": 212140,
+      "sha256": "256c5fc43178e35af60fa9a5ffd753b3ed3d38507974284a0ebeb89ced88878f"
+    },
+    {
+      "name": "experiments-cpu-review-v1.tar.gz",
+      "bytes": 3656818,
+      "sha256": "997ee4ff46cbc3c8a7a6d7dfd288bdfd9bd97455f8a43ed6e732d81b467ec3c3"
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar",
+      "bytes": 4967352320,
+      "sha256": "2e3cff9d06310cb123c778ba9cdbdf9dacae413f4207c13c4887b2460430d679",
+      "parts": [
+        {
+          "name": "evidence-paper-cpu-review-v1.tar.part000",
+          "bytes": 536870912,
+          "sha256": "7c5c604113677ffb488b6dd105ebb3da78ce8d674a76b93ecd32f38ae5ef55cb"
+        },
+        {
+          "name": "evidence-paper-cpu-review-v1.tar.part001",
+          "bytes": 536870912,
+          "sha256": "fbb187f82089fea458534f6d1f1ac9fecefa424705bfabe64395e4e2ea3007f9"
+        },
+        {
+          "name": "evidence-paper-cpu-review-v1.tar.part002",
+          "bytes": 536870912,
+          "sha256": "ac5aed13c80475830d078ce3aa9ba2c300c4fb8e296f8301b851460ef7d411db"
+        },
+        {
+          "name": "evidence-paper-cpu-review-v1.tar.part003",
+          "bytes": 536870912,
+          "sha256": "1d4573b40ae90cc49bdf9e8ac96d763ea464d2384605dd35ae3142fe28a5af3b"
+        },
+        {
+          "name": "evidence-paper-cpu-review-v1.tar.part004",
+          "bytes": 536870912,
+          "sha256": "e9f2813fc0f03274d0a8714eecf1c9edb0299e41641dee38f83fad740321f089"
+        },
+        {
+          "name": "evidence-paper-cpu-review-v1.tar.part005",
+          "bytes": 536870912,
+          "sha256": "a1cca6a1c22de718cd84bb029037c3370d813e19454014313913bf80147ddf8a"
+        },
+        {
+          "name": "evidence-paper-cpu-review-v1.tar.part006",
+          "bytes": 536870912,
+          "sha256": "f792f2cf8f578bcd705d2fdeb0638fbd3a9768613a49ccce2b91fe3f5eeb9f01"
+        },
+        {
+          "name": "evidence-paper-cpu-review-v1.tar.part007",
+          "bytes": 536870912,
+          "sha256": "db7f7b86c169cef03d058dce00eb5c87f39ed362b5ff876801d0e7a7fea238b7"
+        },
+        {
+          "name": "evidence-paper-cpu-review-v1.tar.part008",
+          "bytes": 536870912,
+          "sha256": "2f23ec69c43e18e468e2e58ba9ad212f18a4a91e07579cc2e920d21c9a9ea288"
+        },
+        {
+          "name": "evidence-paper-cpu-review-v1.tar.part009",
+          "bytes": 135514112,
+          "sha256": "fa5e942276a2bf75fc2b551e919d62bd11e57bb89b0cf5a6a7df7f3d2d3c3101"
+        }
+      ]
+    }
+  ]
+}

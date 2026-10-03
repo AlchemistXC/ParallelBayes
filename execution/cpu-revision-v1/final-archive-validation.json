@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "bundle": "parallelbayes-cpu-review-v1",
+  "archives": [
+    {
+      "component": "software",
+      "path": "software-0.1.1-cpu-review-v1.tar.gz",
+      "files": 55,
+      "bytes": 212140,
+      "sha256": "256c5fc43178e35af60fa9a5ffd753b3ed3d38507974284a0ebeb89ced88878f"
+    },
+    {
+      "component": "experiments",
+      "path": "experiments-cpu-review-v1.tar.gz",
+      "files": 49,
+      "bytes": 3656818,
+      "sha256": "997ee4ff46cbc3c8a7a6d7dfd288bdfd9bd97455f8a43ed6e732d81b467ec3c3"
+    },
+    {
+      "component": "evidence-paper",
+      "path": "evidence-paper-cpu-review-v1.tar",
+      "files": 10947,
+      "bytes": 4967352320,
+      "sha256": "2e3cff9d06310cb123c778ba9cdbdf9dacae413f4207c13c4887b2460430d679"
+    }
+  ],
+  "files_verified": 11051,
+  "protected_scientific_files_unchanged": 10737,
+  "changes_since_numerical_rebuild": [
+    "README.md",
+    "docs/CPU-REVIEW-REVISION.md",
+    "docs/PORTABLE-REPRODUCTION.md",
+    "docs/RELEASE-NOTES.md",
+    "execution/cpu-revision-v1/archive-build.log",
+    "execution/cpu-revision-v1/paper-compile-final.json",
+    "manuscript/software/claim-map.md",
+    "manuscript/software/revision.generated.tex",
+    "manuscript/software/writing-contract.md",
+    "output/software-paper/软件与基准研究.pdf",
+    "scripts/revision/build-reproduction.py",
+    "scripts/revision/write-revision-tex.py"
+  ],
+  "full_rebuild": [
+    {
+      "stage": "verify",
+      "exit_code": 0,
+      "elapsed": 5.226678133010864
+    },
+    {
+      "stage": "analysis",
+      "exit_code": 0,
+      "elapsed": 23.40389609336853
+    },
+    {
+      "stage": "diagnostics",
+      "exit_code": 0,
+      "elapsed": 172.92535781860352
+    },
+    {
+      "stage": "figures",
+      "exit_code": 0,
+      "elapsed": 16.554726362228394
+    },
+    {
+      "stage": "paper",
+      "exit_code": 0,
+      "elapsed": 1.1894259452819824
+    }
+  ],
+  "final_archive_verification": true,
+  "final_paper_pages": 17,
+  "final_paper_extracted_text_identical": true,
+  "scope": "Fresh temporary extraction and independent locked Python environment; same Mac/R/compiler. Full analysis and 1928 modern diagnostics already rebuilt; only prose, packaging or validation metadata subsequently changed."
+}

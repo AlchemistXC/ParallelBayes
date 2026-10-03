@@ -1,0 +1,168 @@
+{
+  "checked_on": "2026-10-03",
+  "pages": 15,
+  "native_compiler": "success",
+  "export_compiler": "Tectonic 0.17.0",
+  "final_pass_warnings": [],
+  "source_sections": 8,
+  "source_subsections": 23,
+  "source_tables": 4,
+  "source_equations": 12,
+  "pdf_equation_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "pdf_reference_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "prose_conversion_check": {
+    "paragraphs": 75,
+    "missing": []
+  },
+  "fonts": [
+    {
+      "name": "IHAIZV+FandolSong-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "BZIVMZ+LMRoman10-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "IXFAWU+FandolHei-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "TQTHRL+LMRoman17-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "YEUUOC+FandolSong-Bold-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "AKHCZK+LMRoman12-Bold-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "VDVGTR+LMRoman12-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "PVTTLK+CMMI12",
+      "embedded": true
+    },
+    {
+      "name": "JAGKKY+CMR12",
+      "embedded": true
+    },
+    {
+      "name": "NOMARO+CMSY10",
+      "embedded": true
+    },
+    {
+      "name": "KPXLOM+CMMI8",
+      "embedded": true
+    },
+    {
+      "name": "UTACNV+CMEX10",
+      "embedded": true
+    },
+    {
+      "name": "FZDNHS+CMSY8",
+      "embedded": true
+    },
+    {
+      "name": "DZGKAF+CMR8",
+      "embedded": true
+    },
+    {
+      "name": "CAFSZL+LMRoman10-Bold-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "GJMHKB+MSBM10",
+      "embedded": true
+    },
+    {
+      "name": "DDIEWW+LMRomanDemi10-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "FKPJSN+LMRoman8-Regular-Identity-H",
+      "embedded": true
+    }
+  ],
+  "links": {
+    "internal": 82,
+    "external_annotations": 42,
+    "unique_external_urls": 27,
+    "invalid_internal_destinations": [],
+    "external_urls_match_references": true,
+    "named_citation_destinations": 27
+  },
+  "text_outside_safe_page_boundary": [],
+  "visual_review": {
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "status": "passed",
+    "detail": "All pages inspected in rendered contact sheets, with table 3 reviewed at full page scale. Table headings stay with complete tables; formulas and Chinese glyphs are legible."
+  },
+  "renderer": "PyMuPDF; bundled Poppler lacked Adobe-GB1 language mappings and was not used for final visual QA.",
+  "sha256": {
+    "tex": "284ac7da7c83d82bc95729a26f44baaf20a6c2c84136553ad127eb4352ccfefe",
+    "pdf": "29f3e77715c601f6bf6a8ffa39928007a7445a4a60bc5c297d0b75afa3ef6acc"
+  },
+  "pass": true
+}

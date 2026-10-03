@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-03",
+  "local_links_checked": 38,
+  "missing_local_links": [],
+  "sections": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "sections_sequential": true,
+  "plan_work_packages_complete": true,
+  "task_work_packages_complete": true,
+  "unchecked_tasks": 34,
+  "checked_tasks": 0,
+  "state_json_valid": true,
+  "state_references_exist": true,
+  "unresolved_placeholder_tokens": [],
+  "scientific_or_runtime_validation": false,
+  "file_sha256": {
+    "outputs/researchwrite/parallel-r-package/exports/研究与开发计划.md": "108657575f0d0485066997a97490b8eebf44551984e66e95eb2501b5b62b9a06",
+    "outputs/researchwrite/parallel-r-package/exports/开发任务清单.md": "f4b59884108f2d35a45e6359063a3df9373297eeca32f1a6c82751076577561b",
+    "outputs/researchwrite/parallel-r-package/qa_logs/plan-v1-final-qa.md": "4d1b9b144aae18bf9cc83863b9f0870e31cab593ce15a09740359bba45ed9e42",
+    "outputs/researchwrite/parallel-r-package/revision_briefs/plan-v1-changes.md": "7e50724c543b4679a67e6e2069e90fb76e7b18ef8829b2cca6762155cdb9cb0b",
+    "README.md": "b34649ae82132a7139f54509d97e34600d95e8fb526f126ffc239e8d8adde8c5"
+  }
+}

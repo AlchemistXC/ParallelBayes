@@ -1,0 +1,1005 @@
+{
+  "fits": [
+    {
+      "diagnostic_seconds": 0.744,
+      "identity": {
+        "discard": 0,
+        "id": "reference-1017381d6bb4add6e173",
+        "method": "nuts/sequential",
+        "model": "L1",
+        "path": "benchmark/runs/cpu-reference-v1/tasks/1017381d6bb4add6e173/attempt-001/raw.npz",
+        "protocol": "benchmark/protocols/reference-v1.json",
+        "raw_sha256": "5257338817bf5cf024ed2248dcba997da881648da8bf44b431afbc6913869ce0",
+        "replicate": 3,
+        "retained_draws": 16384,
+        "source": "reference"
+      },
+      "variables": [
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 81131.8661547962,
+          "ess_tail": 49622.7640984169,
+          "kind": "parameter",
+          "name": "parameter_1",
+          "rhat": 1.00022244723637,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 59668.1940640257,
+          "ess_tail": 49595.4261548478,
+          "kind": "parameter",
+          "name": "parameter_2",
+          "rhat": 1.00002888759311,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 66448.9074125414,
+          "ess_tail": 48930.7089028529,
+          "kind": "parameter",
+          "name": "parameter_3",
+          "rhat": 1.00008776502091,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 43906.640080111,
+          "ess_tail": 42817.1950778825,
+          "kind": "parameter",
+          "name": "parameter_4",
+          "rhat": 1.00001633842908,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 33281.484089886,
+          "ess_tail": 38873.9435509145,
+          "kind": "parameter",
+          "name": "parameter_5",
+          "rhat": 1.00000474732298,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 87190.847597593,
+          "ess_tail": 50313.6701029453,
+          "kind": "parameter",
+          "name": "parameter_6",
+          "rhat": 1.00009020616684,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 36678.9116517934,
+          "ess_tail": 40512.3483061758,
+          "kind": "parameter",
+          "name": "parameter_7",
+          "rhat": 0.9999930958439,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 36926.2683298909,
+          "ess_tail": 41587.3642961078,
+          "kind": "parameter",
+          "name": "parameter_8",
+          "rhat": 1.00001600416777,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 81131.8661547962,
+          "ess_tail": 49622.7640984169,
+          "kind": "function",
+          "name": "function_1",
+          "rhat": 1.00022244723637,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 59668.1940640257,
+          "ess_tail": 49595.4261548478,
+          "kind": "function",
+          "name": "function_2",
+          "rhat": 1.00002888759311,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 81131.8661547962,
+          "ess_tail": 49622.7640984169,
+          "kind": "function",
+          "name": "function_3",
+          "rhat": 1.00021853291598,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 54415.2735030457,
+          "ess_tail": null,
+          "kind": "function",
+          "name": "function_4",
+          "rhat": 0.999950838722227,
+          "rhat_state": "finite"
+        }
+      ]
+    },
+    {
+      "diagnostic_seconds": 0.824000000000012,
+      "identity": {
+        "discard": 0,
+        "id": "reference-29911e8bdd4560192aaf",
+        "method": "nuts/sequential",
+        "model": "L1",
+        "path": "benchmark/runs/cpu-reference-v1/tasks/29911e8bdd4560192aaf/attempt-001/raw.npz",
+        "protocol": "benchmark/protocols/reference-v1.json",
+        "raw_sha256": "eca176c6f473065eed2b58fb3be7d79d4e328b8b1ad9ceb24d5b711da85d6337",
+        "replicate": 1,
+        "retained_draws": 16384,
+        "source": "reference"
+      },
+      "variables": [
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 82055.7590239147,
+          "ess_tail": 51531.2726370716,
+          "kind": "parameter",
+          "name": "parameter_1",
+          "rhat": 1.00013931142873,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 59924.684052879,
+          "ess_tail": 47882.5263324562,
+          "kind": "parameter",
+          "name": "parameter_2",
+          "rhat": 1.00009932432223,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 66196.8625221921,
+          "ess_tail": 50063.2583937743,
+          "kind": "parameter",
+          "name": "parameter_3",
+          "rhat": 1.0000255583724,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 46572.0030561858,
+          "ess_tail": 44119.4416626541,
+          "kind": "parameter",
+          "name": "parameter_4",
+          "rhat": 1.00008531024882,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 32680.5943238537,
+          "ess_tail": 37712.5613331359,
+          "kind": "parameter",
+          "name": "parameter_5",
+          "rhat": 1.00013552874393,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 83534.0568725378,
+          "ess_tail": 48301.389253214,
+          "kind": "parameter",
+          "name": "parameter_6",
+          "rhat": 1.0000783299907,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 36614.8164895064,
+          "ess_tail": 42728.1507803165,
+          "kind": "parameter",
+          "name": "parameter_7",
+          "rhat": 1.00012788848722,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 37053.226079155,
+          "ess_tail": 41234.1533658377,
+          "kind": "parameter",
+          "name": "parameter_8",
+          "rhat": 1.00013177947663,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 82055.7590239147,
+          "ess_tail": 51531.2726370716,
+          "kind": "function",
+          "name": "function_1",
+          "rhat": 1.00013931142873,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 59924.684052879,
+          "ess_tail": 47882.5263324562,
+          "kind": "function",
+          "name": "function_2",
+          "rhat": 1.00009932432223,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 82055.7590239147,
+          "ess_tail": 51531.2726370716,
+          "kind": "function",
+          "name": "function_3",
+          "rhat": 1.00014079024613,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 53279.0071869931,
+          "ess_tail": null,
+          "kind": "function",
+          "name": "function_4",
+          "rhat": 1.00004009831397,
+          "rhat_state": "finite"
+        }
+      ]
+    },
+    {
+      "diagnostic_seconds": 0.734000000000009,
+      "identity": {
+        "discard": 0,
+        "id": "reference-430c1e826bb1468ec922",
+        "method": "nuts/sequential",
+        "model": "L1",
+        "path": "benchmark/runs/cpu-reference-v1/tasks/430c1e826bb1468ec922/attempt-001/raw.npz",
+        "protocol": "benchmark/protocols/reference-v1.json",
+        "raw_sha256": "f23dea7df8943f97dfd71c884a1021892b5a0fda281e573a81a88ca508bf0e58",
+        "replicate": 0,
+        "retained_draws": 16384,
+        "source": "reference"
+      },
+      "variables": [
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 83486.6369805965,
+          "ess_tail": 50336.6716693203,
+          "kind": "parameter",
+          "name": "parameter_1",
+          "rhat": 1.00001634402855,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 57108.0246228202,
+          "ess_tail": 47032.1951114342,
+          "kind": "parameter",
+          "name": "parameter_2",
+          "rhat": 1.00006588630424,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 61340.7101672305,
+          "ess_tail": 47699.4500745211,
+          "kind": "parameter",
+          "name": "parameter_3",
+          "rhat": 1.00005943286044,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 43176.248880293,
+          "ess_tail": 42561.3480175746,
+          "kind": "parameter",
+          "name": "parameter_4",
+          "rhat": 1.00003026283916,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 31210.8446118973,
+          "ess_tail": 38462.508076551,
+          "kind": "parameter",
+          "name": "parameter_5",
+          "rhat": 1.00013917391568,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 81769.00770488,
+          "ess_tail": 52592.2153573977,
+          "kind": "parameter",
+          "name": "parameter_6",
+          "rhat": 0.999977920011522,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 34755.0825976978,
+          "ess_tail": 41256.2791183257,
+          "kind": "parameter",
+          "name": "parameter_7",
+          "rhat": 1.00010623358723,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 34097.531683496,
+          "ess_tail": 40622.7179377327,
+          "kind": "parameter",
+          "name": "parameter_8",
+          "rhat": 1.00007262808217,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 83486.6369805965,
+          "ess_tail": 50336.6716693203,
+          "kind": "function",
+          "name": "function_1",
+          "rhat": 1.00001634402855,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 57108.0246228202,
+          "ess_tail": 47032.1951114342,
+          "kind": "function",
+          "name": "function_2",
+          "rhat": 1.00006588630424,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 83486.6369805965,
+          "ess_tail": 50336.6716693203,
+          "kind": "function",
+          "name": "function_3",
+          "rhat": 1.00001571739173,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 56164.2041414031,
+          "ess_tail": null,
+          "kind": "function",
+          "name": "function_4",
+          "rhat": 0.999973929565835,
+          "rhat_state": "finite"
+        }
+      ]
+    },
+    {
+      "diagnostic_seconds": 0.842999999999989,
+      "identity": {
+        "discard": 0,
+        "id": "reference-4c666c5a664d534de1d7",
+        "method": "nuts/sequential",
+        "model": "L1",
+        "path": "benchmark/runs/cpu-reference-v1/tasks/4c666c5a664d534de1d7/attempt-001/raw.npz",
+        "protocol": "benchmark/protocols/reference-v1.json",
+        "raw_sha256": "238ff2155f699df6cd5bfc2f08198a89cab2700be7c9e977438bc13426a65f39",
+        "replicate": 2,
+        "retained_draws": 16384,
+        "source": "reference"
+      },
+      "variables": [
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 83158.428315244,
+          "ess_tail": 52456.2565025582,
+          "kind": "parameter",
+          "name": "parameter_1",
+          "rhat": 1.00003267461954,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 56773.2627273097,
+          "ess_tail": 48289.1323807058,
+          "kind": "parameter",
+          "name": "parameter_2",
+          "rhat": 1.00005789750389,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 67873.5527740172,
+          "ess_tail": 51285.978246431,
+          "kind": "parameter",
+          "name": "parameter_3",
+          "rhat": 1.00005671615485,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 47184.3237828727,
+          "ess_tail": 46168.5328748336,
+          "kind": "parameter",
+          "name": "parameter_4",
+          "rhat": 1.00024060190269,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 33074.1235024331,
+          "ess_tail": 41223.3621735582,
+          "kind": "parameter",
+          "name": "parameter_5",
+          "rhat": 1.00020344357083,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 87941.18866915,
+          "ess_tail": 48858.883350713,
+          "kind": "parameter",
+          "name": "parameter_6",
+          "rhat": 1.00009995512598,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 37403.5614880747,
+          "ess_tail": 43642.5479029324,
+          "kind": "parameter",
+          "name": "parameter_7",
+          "rhat": 1.00022714297682,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 37171.3861103614,
+          "ess_tail": 46377.2570626123,
+          "kind": "parameter",
+          "name": "parameter_8",
+          "rhat": 1.00018065435289,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 83158.428315244,
+          "ess_tail": 52456.2565025582,
+          "kind": "function",
+          "name": "function_1",
+          "rhat": 1.00003267461954,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 56773.2627273097,
+          "ess_tail": 48289.1323807058,
+          "kind": "function",
+          "name": "function_2",
+          "rhat": 1.00005789750389,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 83158.428315244,
+          "ess_tail": 52456.2565025582,
+          "kind": "function",
+          "name": "function_3",
+          "rhat": 1.00003213220279,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 54069.6522122727,
+          "ess_tail": null,
+          "kind": "function",
+          "name": "function_4",
+          "rhat": 0.999967932824199,
+          "rhat_state": "finite"
+        }
+      ]
+    },
+    {
+      "diagnostic_seconds": 0.782999999999987,
+      "identity": {
+        "discard": 0,
+        "id": "reference-77fc1469ecbc6e32f0c9",
+        "method": "nuts/sequential",
+        "model": "L2",
+        "path": "benchmark/runs/cpu-reference-v1/tasks/77fc1469ecbc6e32f0c9/attempt-001/raw.npz",
+        "protocol": "benchmark/protocols/reference-v1.json",
+        "raw_sha256": "20354d12d0a7727f60c30673459f5113efb1df02e32b0fc70431dd09ea29c017",
+        "replicate": 2,
+        "retained_draws": 16384,
+        "source": "reference"
+      },
+      "variables": [
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 91577.4896028313,
+          "ess_tail": 52008.511437683,
+          "kind": "parameter",
+          "name": "parameter_1",
+          "rhat": 1.00000497598704,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 74566.4999167309,
+          "ess_tail": 50446.7857301098,
+          "kind": "parameter",
+          "name": "parameter_2",
+          "rhat": 1.00002205549865,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 94516.7487058648,
+          "ess_tail": 46325.5166647767,
+          "kind": "parameter",
+          "name": "parameter_3",
+          "rhat": 0.999990652869583,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 51783.9307617669,
+          "ess_tail": 52533.1708048677,
+          "kind": "parameter",
+          "name": "parameter_4",
+          "rhat": 1.0001257151379,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 42641.0406403561,
+          "ess_tail": 50849.6361412101,
+          "kind": "parameter",
+          "name": "parameter_5",
+          "rhat": 1.00013659527612,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 90788.347165959,
+          "ess_tail": 49177.7412820192,
+          "kind": "parameter",
+          "name": "parameter_6",
+          "rhat": 1.00020600770471,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 41808.3685170107,
+          "ess_tail": 49475.2546914447,
+          "kind": "parameter",
+          "name": "parameter_7",
+          "rhat": 1.0001376494322,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 42773.1551444121,
+          "ess_tail": 50853.1666862752,
+          "kind": "parameter",
+          "name": "parameter_8",
+          "rhat": 1.00008776297865,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 91577.4896028313,
+          "ess_tail": 52008.511437683,
+          "kind": "function",
+          "name": "function_1",
+          "rhat": 1.00000497598704,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 74566.4999167309,
+          "ess_tail": 50446.7857301098,
+          "kind": "function",
+          "name": "function_2",
+          "rhat": 1.00002205549865,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 91577.4896028313,
+          "ess_tail": 52008.511437683,
+          "kind": "function",
+          "name": "function_3",
+          "rhat": 1.00000496652862,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": true,
+          "ess_bulk": null,
+          "ess_tail": null,
+          "kind": "function",
+          "name": "function_4",
+          "rhat": null,
+          "rhat_state": "undefined_or_nonfinite"
+        }
+      ]
+    },
+    {
+      "diagnostic_seconds": 0.809999999999974,
+      "identity": {
+        "discard": 0,
+        "id": "reference-7e636e7ade76027c57cf",
+        "method": "nuts/sequential",
+        "model": "L2",
+        "path": "benchmark/runs/cpu-reference-v1/tasks/7e636e7ade76027c57cf/attempt-001/raw.npz",
+        "protocol": "benchmark/protocols/reference-v1.json",
+        "raw_sha256": "426f9d190d357b00d938c3436194f3f960e72ae8f3212f61d3c5a08a95ce71dc",
+        "replicate": 0,
+        "retained_draws": 16384,
+        "source": "reference"
+      },
+      "variables": [
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 90908.9725147828,
+          "ess_tail": 48905.9136700687,
+          "kind": "parameter",
+          "name": "parameter_1",
+          "rhat": 1.00009008946331,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 72838.5836797529,
+          "ess_tail": 51004.6931393077,
+          "kind": "parameter",
+          "name": "parameter_2",
+          "rhat": 1.00004269946236,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 97326.3661572587,
+          "ess_tail": 48440.3265218865,
+          "kind": "parameter",
+          "name": "parameter_3",
+          "rhat": 1.00002135034483,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 53913.4357446921,
+          "ess_tail": 52925.3863917777,
+          "kind": "parameter",
+          "name": "parameter_4",
+          "rhat": 0.999997914374152,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 44713.4548894872,
+          "ess_tail": 49500.6872648739,
+          "kind": "parameter",
+          "name": "parameter_5",
+          "rhat": 1.00005638386594,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 98781.5095537955,
+          "ess_tail": 49954.039699454,
+          "kind": "parameter",
+          "name": "parameter_6",
+          "rhat": 1.00004585508862,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 43372.1517035488,
+          "ess_tail": 49133.9327197355,
+          "kind": "parameter",
+          "name": "parameter_7",
+          "rhat": 1.0000773913503,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 45677.0245492328,
+          "ess_tail": 52366.7369077687,
+          "kind": "parameter",
+          "name": "parameter_8",
+          "rhat": 1.00000345944521,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 90908.9725147828,
+          "ess_tail": 48905.9136700687,
+          "kind": "function",
+          "name": "function_1",
+          "rhat": 1.00009008946331,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 72838.5836797529,
+          "ess_tail": 51004.6931393077,
+          "kind": "function",
+          "name": "function_2",
+          "rhat": 1.00004269946236,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 90908.9725147828,
+          "ess_tail": 48905.9136700687,
+          "kind": "function",
+          "name": "function_3",
+          "rhat": 1.00009015045419,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": true,
+          "ess_bulk": null,
+          "ess_tail": null,
+          "kind": "function",
+          "name": "function_4",
+          "rhat": null,
+          "rhat_state": "undefined_or_nonfinite"
+        }
+      ]
+    },
+    {
+      "diagnostic_seconds": 0.668000000000006,
+      "identity": {
+        "discard": 0,
+        "id": "reference-8a25f32d84019d937a5b",
+        "method": "nuts/sequential",
+        "model": "L2",
+        "path": "benchmark/runs/cpu-reference-v1/tasks/8a25f32d84019d937a5b/attempt-001/raw.npz",
+        "protocol": "benchmark/protocols/reference-v1.json",
+        "raw_sha256": "ad41dbe81e4a10d2ceda3094c07c7f553303055dfa0ce1e6c03116e7f68ef9a2",
+        "replicate": 3,
+        "retained_draws": 16384,
+        "source": "reference"
+      },
+      "variables": [
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 87001.6817150267,
+          "ess_tail": 49299.3017601154,
+          "kind": "parameter",
+          "name": "parameter_1",
+          "rhat": 1.00015557459399,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 77904.4130366513,
+          "ess_tail": 51009.8595572901,
+          "kind": "parameter",
+          "name": "parameter_2",
+          "rhat": 1.00006773035865,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 96218.5934995053,
+          "ess_tail": 48143.425629673,
+          "kind": "parameter",
+          "name": "parameter_3",
+          "rhat": 1.00003632045741,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 51706.0560640838,
+          "ess_tail": 52058.2313612057,
+          "kind": "parameter",
+          "name": "parameter_4",
+          "rhat": 1.00023760835848,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 44414.6677380182,
+          "ess_tail": 50581.1022916226,
+          "kind": "parameter",
+          "name": "parameter_5",
+          "rhat": 1.00007607481565,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 92890.1005804031,
+          "ess_tail": 48333.0816904831,
+          "kind": "parameter",
+          "name": "parameter_6",
+          "rhat": 1.00006264538392,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 42806.1357342428,
+          "ess_tail": 50180.5794192382,
+          "kind": "parameter",
+          "name": "parameter_7",
+          "rhat": 1.00004694875295,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 45184.7512387753,
+          "ess_tail": 49407.2988498767,
+          "kind": "parameter",
+          "name": "parameter_8",
+          "rhat": 1.00009214674793,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 87001.6817150267,
+          "ess_tail": 49299.3017601154,
+          "kind": "function",
+          "name": "function_1",
+          "rhat": 1.00015557459399,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 77904.4130366513,
+          "ess_tail": 51009.8595572901,
+          "kind": "function",
+          "name": "function_2",
+          "rhat": 1.00006773035865,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 87001.6817150267,
+          "ess_tail": 49299.3017601154,
+          "kind": "function",
+          "name": "function_3",
+          "rhat": 1.00015579524054,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": true,
+          "ess_bulk": null,
+          "ess_tail": null,
+          "kind": "function",
+          "name": "function_4",
+          "rhat": null,
+          "rhat_state": "undefined_or_nonfinite"
+        }
+      ]
+    },
+    {
+      "diagnostic_seconds": 0.715000000000003,
+      "identity": {
+        "discard": 0,
+        "id": "reference-fe5feb2ae45d2d0a73d6",
+        "method": "nuts/sequential",
+        "model": "L2",
+        "path": "benchmark/runs/cpu-reference-v1/tasks/fe5feb2ae45d2d0a73d6/attempt-001/raw.npz",
+        "protocol": "benchmark/protocols/reference-v1.json",
+        "raw_sha256": "e7e524d9dff404f9d921762c4791c795f375b68491d23ba62ddcdb57739a1a7b",
+        "replicate": 1,
+        "retained_draws": 16384,
+        "source": "reference"
+      },
+      "variables": [
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 89499.9519595082,
+          "ess_tail": 49036.4669082679,
+          "kind": "parameter",
+          "name": "parameter_1",
+          "rhat": 1.00015190028973,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 74513.2837692328,
+          "ess_tail": 48269.2398553662,
+          "kind": "parameter",
+          "name": "parameter_2",
+          "rhat": 1.00017448936029,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 103642.536752619,
+          "ess_tail": 48819.6885165356,
+          "kind": "parameter",
+          "name": "parameter_3",
+          "rhat": 1.00000647377827,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 50529.6966285778,
+          "ess_tail": 51025.4948236113,
+          "kind": "parameter",
+          "name": "parameter_4",
+          "rhat": 1.00004591980026,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 41501.4932572835,
+          "ess_tail": 47126.5670730421,
+          "kind": "parameter",
+          "name": "parameter_5",
+          "rhat": 1.00005071675324,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 90296.8280689369,
+          "ess_tail": 49845.0487999594,
+          "kind": "parameter",
+          "name": "parameter_6",
+          "rhat": 1.00013687920611,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 40853.9551995354,
+          "ess_tail": 48625.2895471773,
+          "kind": "parameter",
+          "name": "parameter_7",
+          "rhat": 1.00007097324102,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 42157.3844946855,
+          "ess_tail": 49395.0102417024,
+          "kind": "parameter",
+          "name": "parameter_8",
+          "rhat": 1.00009622136721,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 89499.9519595082,
+          "ess_tail": 49036.4669082679,
+          "kind": "function",
+          "name": "function_1",
+          "rhat": 1.00015190028973,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 74513.2837692328,
+          "ess_tail": 48269.2398553662,
+          "kind": "function",
+          "name": "function_2",
+          "rhat": 1.00017448936029,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": false,
+          "ess_bulk": 89499.9519595082,
+          "ess_tail": 49036.4669082679,
+          "kind": "function",
+          "name": "function_3",
+          "rhat": 1.00015231290232,
+          "rhat_state": "finite"
+        },
+        {
+          "constant_any_chain": true,
+          "ess_bulk": null,
+          "ess_tail": null,
+          "kind": "function",
+          "name": "function_4",
+          "rhat": null,
+          "rhat_state": "undefined_or_nonfinite"
+        }
+      ]
+    }
+  ],
+  "scope": "Per-reference-fit modern diagnostics. Constant sign event remains undefined; no upgrade of L2 reference usability."
+}

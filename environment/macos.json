@@ -1,0 +1,25 @@
+{
+  "devices": [
+    {
+      "id": 0,
+      "kind": "cpu",
+      "platform": "cpu"
+    }
+  ],
+  "logical_cpus": 10,
+  "machine": "arm64",
+  "memory_bytes": 17179869184,
+  "packages": {
+    "blackjax": "1.2.5",
+    "bridgestan": "2.7.0",
+    "jax": "0.6.2",
+    "jaxlib": "0.6.2",
+    "numpy": "2.2.6",
+    "parallelbayes": "0.1.0",
+    "scipy": "1.15.3"
+  },
+  "processor": "arm",
+  "python": "3.12.14",
+  "system": "Darwin",
+  "x64": true
+}

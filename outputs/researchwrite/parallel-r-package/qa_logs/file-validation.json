@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-03",
+  "markdown_files": 10,
+  "local_links_checked": 12,
+  "missing_local_links": [],
+  "state_json_valid": true,
+  "checks_are_not_scientific_validation": true,
+  "files": {
+    "03_argument_map.md": "5808905b8aac32b79178729c7858c21b62c44b1748c4f17e2bb42563050dae48",
+    "02_evidence_table.md": "9eb11afc1182469baf64eadc150a75680fb7890e63ff3404e60f8697c9a1a7a9",
+    "04_section_contracts.md": "11097e250d6838fa6c625593bc4efccff17c9eb51aa91205a5b8c84c69a6d043",
+    "05_style_guide.md": "b8fa2ce3390430e08939e3243029b362c61c36f5838ffa323572faa3e2a76f9d",
+    "00_scope.md": "ac2a36c0250e77739c894df05eb12ec111f0cb52588e9dfae2e62b2a5c0cf6db",
+    "01_research_canon.md": "5a108d61cc06580454f4b6246562b69f7f444955b124ceecd7b03aa8805d744d",
+    "qa_logs/feasibility-review.md": "c141a837f62ef74b7455d30b6b07aa406c1c6b8fea2465c80b820e7168f639ab",
+    "qa_logs/synthesis-and-qa.md": "ceae4e4ef291552e07b8f5dd39cbcf265332c81cb89e70bcbac06e931f323c53",
+    "qa_logs/inference-review.md": "55c82ab3eb7f3cea734a9cb0c084e4f9bdcf5b910df105aae9ffede004e4d45d",
+    "exports/方案审核与修订建议.md": "9824526e46ddba11c517cefd0b49fe83a34d30989ef348edc0c2c2892c5e9659"
+  }
+}

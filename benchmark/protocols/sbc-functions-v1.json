@@ -1,0 +1,26 @@
+{
+  "analysis_sha256": "e32205fc50cb1f1253463762ff4cd8fc2b546edd237eb423c08e9b37de90bcd9",
+  "bins": [
+    0,
+    13,
+    26,
+    39,
+    52,
+    65
+  ],
+  "frozen_at": "2026-10-03T20:00:26.016193+09:00",
+  "gpu": "Analyze returned statistical-v4 raw draws with this Mac-side companion; shipped GPU sampling bundle unchanged",
+  "name": "sbc-functions-v1",
+  "parent_protocol_sha256": "c88aaab4dd91f4107fd8b0ce4d29256b104a3fc91c1f3007e34a64f7543e10f3",
+  "protocol_sha256": "89339973c792162ea24bdd6a0fdb2e5a6b247382738ef35c065a5d7795a41c00",
+  "rank_draws": 64,
+  "replicates": 64,
+  "sampling_seed": 173000,
+  "scope": "Data-dependent SBC companion, declared before any statistical-v4 fits; main formal estimands and software unchanged",
+  "seed": 551103,
+  "source_sha256": "d8cb2fc2bf950fbe6b47841f3feb449d553e5f2a7c78d140811c6b2f2ba51ec7",
+  "statistic": "Gaussian observation log likelihood, excluding parameter-independent constant",
+  "thinning": 32,
+  "tie_seed": 518077,
+  "uncertainty": "No uniformity hypothesis test; thinning does not guarantee independent rank draws"
+}

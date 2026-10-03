@@ -1,0 +1,12 @@
+# Preserve canonical UTF-8/LF source bytes across macOS and Windows.
+* text=auto eol=lf
+*.ps1 text eol=lf
+*.R text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.stan text eol=lf
+*.pdf binary
+*.png binary
+*.npz binary
+*.tar binary
+*.gz binary

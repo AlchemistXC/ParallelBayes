@@ -1,0 +1,7 @@
+{
+  "posterior": "1.7.0",
+  "R": "4.6.0",
+  "scope": "post-review; all constrained parameters and declared functions; unchanged retained samples",
+  "rhat": "posterior::rhat = max rank-normalized split and folded split; undefined retained as null",
+  "ess": "posterior::ess_bulk and ess_tail; not substituted for empirical error"
+}

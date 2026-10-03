@@ -1,0 +1,10 @@
+Nature Figure Rendered Collision Audit
+pdf: figures/software/error-cost.pdf
+pages: 1
+visible text boxes: 49
+stroke paths: 823
+
+
+summary: 0 fail, 0 warn, 1 contained fill overlays, 0 contained image overlays
+verdict: PASS
+note: contained overlays can be intentional; WARN findings need final-size visual review

@@ -1,0 +1,4929 @@
+{
+  "failed": 0,
+  "groups": [
+    {
+      "all_attempt_cost_seconds": 27.56095857778564,
+      "all_attempt_median_seconds": 1.1988561458420008,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.03136593117577638,
+        0.07934113984320126
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.03136593117577638,
+        0.07934113984320126
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.008358954129234668,
+        0.014296128812600964,
+        0.0005275428346326898
+      ],
+      "function_mean_squared_error": [
+        0.037794429145136525,
+        0.049912144624320226,
+        0.0027144999494255503
+      ],
+      "max_function_split_rhat": 1.5034281295435774,
+      "max_mean_squared_error": 0.049912144624320226,
+      "median_cached_seconds": 0.39837288530543447,
+      "median_execution_seconds": 0.4006063749548048,
+      "median_total_seconds": 1.1988561458420008,
+      "method": "mala/quasi_deer",
+      "model": "A1",
+      "peak_host_rss_bytes": 460914688,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "undetermined",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 61.8678263281472,
+      "all_attempt_median_seconds": 2.6794199999421835,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.005462338168575491,
+        0.012831929182497707
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.005462338168575491,
+        0.012831929182497707
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.001970477894213056,
+        0.0022730590758195017,
+        0.0001492424745788643
+      ],
+      "function_mean_squared_error": [
+        0.006204843849505526,
+        0.008025042260639763,
+        0.0005468680297084582
+      ],
+      "max_function_split_rhat": 1.0810168044178872,
+      "max_mean_squared_error": 0.008025042260639763,
+      "median_cached_seconds": 1.3403663438512012,
+      "median_execution_seconds": 1.3538753748871386,
+      "median_total_seconds": 2.6794199999421835,
+      "method": "mala/quasi_deer",
+      "model": "A1",
+      "peak_host_rss_bytes": 488570880,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "undetermined",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 8.211597667308524,
+      "all_attempt_median_seconds": 0.339074645889923,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.03208489421335008,
+        0.08072473158750255
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.03208489421335008,
+        0.08072473158750255
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.008358954129316051,
+        0.014296128812967279,
+        0.0005275428346326899
+      ],
+      "function_mean_squared_error": [
+        0.037794429145617765,
+        0.04991214462549936,
+        0.0027144999494255503
+      ],
+      "max_function_split_rhat": 1.5034281295408354,
+      "max_mean_squared_error": 0.04991214462549936,
+      "median_cached_seconds": 0.010320489527657628,
+      "median_execution_seconds": 0.008096604607999325,
+      "median_total_seconds": 0.339074645889923,
+      "method": "mala/sequential",
+      "model": "A1",
+      "peak_host_rss_bytes": 516849664,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "undetermined",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 22.68281833222136,
+      "all_attempt_median_seconds": 0.9138152920641005,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.005340575781311312,
+        0.01298810911312671
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.005340575781311312,
+        0.01298810911312671
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.001970477894246532,
+        0.0022730590758193742,
+        0.00014924247457886428
+      ],
+      "function_mean_squared_error": [
+        0.006204843849458862,
+        0.008025042260567394,
+        0.0005468680297084582
+      ],
+      "max_function_split_rhat": 1.0810168044184532,
+      "max_mean_squared_error": 0.008025042260567394,
+      "median_cached_seconds": 0.031280687428079545,
+      "median_execution_seconds": 0.02969400049187243,
+      "median_total_seconds": 0.9138152920641005,
+      "method": "mala/sequential",
+      "model": "A1",
+      "peak_host_rss_bytes": 497041408,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "undetermined",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 42.544773874338716,
+      "all_attempt_median_seconds": 1.7261318743694574,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.001376283626397816,
+        0.003614870975815809
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.001376283626397816,
+        0.003614870975815809
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        9.261117005758349e-05,
+        0.0005969070276763906,
+        5.404140353949826e-05
+      ],
+      "function_mean_squared_error": [
+        0.0004122230009149667,
+        0.002434930976967634,
+        0.0002063598508783201
+      ],
+      "max_function_split_rhat": 1.0055791544568586,
+      "max_mean_squared_error": 0.002434930976967634,
+      "median_cached_seconds": 0.09617116663139313,
+      "median_execution_seconds": 0.09617116663139313,
+      "median_total_seconds": 1.7261318743694574,
+      "method": "nuts/sequential",
+      "model": "A1",
+      "peak_host_rss_bytes": 496549888,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 64.52855921187438,
+      "all_attempt_median_seconds": 2.598783437279053,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0003174909306783081,
+        0.001089379476218993
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0003174909306783081,
+        0.001089379476218993
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        3.2654029000807516e-05,
+        0.00019688843352822728,
+        7.912590532126727e-06
+      ],
+      "function_mean_squared_error": [
+        0.00012697489959003278,
+        0.0006653350927939831,
+        2.727452960219031e-05
+      ],
+      "max_function_split_rhat": 1.0017721066441658,
+      "max_mean_squared_error": 0.0006653350927939831,
+      "median_cached_seconds": 0.7664838960627094,
+      "median_execution_seconds": 0.7664838960627094,
+      "median_total_seconds": 2.598783437279053,
+      "method": "nuts/sequential",
+      "model": "A1",
+      "peak_host_rss_bytes": 487522304,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 9.126420583808795,
+      "all_attempt_median_seconds": 0.38007235433906317,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.8564690392231701,
+        0.8564690392231701
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.8564690392231701,
+        0.8564690392231701
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        5.787437586309696e-18,
+        2.3149750345238784e-17,
+        1.446859396577424e-18
+      ],
+      "function_mean_squared_error": [
+        0.07454387504151633,
+        0.8564690392231701,
+        0.02517148960005512
+      ],
+      "max_function_split_rhat": 0.9960860906568267,
+      "max_mean_squared_error": 0.8564690392231701,
+      "median_cached_seconds": 0.007067125232424587,
+      "median_execution_seconds": 0.007735437364317477,
+      "median_total_seconds": 0.38007235433906317,
+      "method": "rwm/online_picard",
+      "model": "A1",
+      "peak_host_rss_bytes": 494632960,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 17.74781728675589,
+      "all_attempt_median_seconds": 0.7319182915380225,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.8564690392231772,
+        0.8564690392231772
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.8564690392231772,
+        0.8564690392231772
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        2.893718793154848e-18,
+        0.0,
+        1.446859396577424e-18
+      ],
+      "function_mean_squared_error": [
+        0.07454387504152725,
+        0.8564690392231772,
+        0.02517148960005512
+      ],
+      "max_function_split_rhat": 0.9995115994824673,
+      "max_mean_squared_error": 0.8564690392231772,
+      "median_cached_seconds": 0.028746520751155913,
+      "median_execution_seconds": 0.030228707939386368,
+      "median_total_seconds": 0.7319182915380225,
+      "method": "rwm/online_picard",
+      "model": "A1",
+      "peak_host_rss_bytes": 493273088,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 5.80625654454343,
+      "all_attempt_median_seconds": 0.233380937599577,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.8564690392231701,
+        0.8564690392231701
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.8564690392231701,
+        0.8564690392231701
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        5.787437586309696e-18,
+        2.3149750345238784e-17,
+        1.446859396577424e-18
+      ],
+      "function_mean_squared_error": [
+        0.07454387504151633,
+        0.8564690392231701,
+        0.02517148960005512
+      ],
+      "max_function_split_rhat": 0.9960860906568267,
+      "max_mean_squared_error": 0.8564690392231701,
+      "median_cached_seconds": 0.00498845853144303,
+      "median_execution_seconds": 0.0077888749074190855,
+      "median_total_seconds": 0.233380937599577,
+      "method": "rwm/sequential",
+      "model": "A1",
+      "peak_host_rss_bytes": 498352128,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 13.720277173211798,
+      "all_attempt_median_seconds": 0.5705372919328511,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.8564690392231772,
+        0.8564690392231772
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.8564690392231772,
+        0.8564690392231772
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        2.893718793154848e-18,
+        0.0,
+        1.446859396577424e-18
+      ],
+      "function_mean_squared_error": [
+        0.07454387504152725,
+        0.8564690392231772,
+        0.02517148960005512
+      ],
+      "max_function_split_rhat": 0.9995115994824673,
+      "max_mean_squared_error": 0.8564690392231772,
+      "median_cached_seconds": 0.013806364557240158,
+      "median_execution_seconds": 0.017128520412370563,
+      "median_total_seconds": 0.5705372919328511,
+      "method": "rwm/sequential",
+      "model": "A1",
+      "peak_host_rss_bytes": 498384896,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 13.065782124642283,
+      "all_attempt_median_seconds": 0.520004750113003,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.018942184285380356,
+        0.045127244313589304
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.018942184285380356,
+        0.045127244313589304
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.004864871423461794,
+        0.007340669529156079,
+        0.0006875284400403658
+      ],
+      "function_mean_squared_error": [
+        0.02080516209566027,
+        0.030054149704130246,
+        0.0020559843792831898
+      ],
+      "max_function_split_rhat": 1.2085343764196192,
+      "max_mean_squared_error": 0.030054149704130246,
+      "median_cached_seconds": 0.012675895995926112,
+      "median_execution_seconds": 0.01360558345913887,
+      "median_total_seconds": 0.520004750113003,
+      "method": "mala/quasi_deer",
+      "model": "G1",
+      "peak_host_rss_bytes": 499695616,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "undetermined",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 18.4005487090908,
+      "all_attempt_median_seconds": 0.7280368328792974,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0012086831531237805,
+        0.003280759943231193
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0012086831531237805,
+        0.003280759943231193
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.0005721010723432491,
+        0.0005880551960242897,
+        5.2451786624912136e-05
+      ],
+      "function_mean_squared_error": [
+        0.0014391321212560045,
+        0.001988710204698817,
+        0.00012768699464543517
+      ],
+      "max_function_split_rhat": 1.0187381546945586,
+      "max_mean_squared_error": 0.001988710204698817,
+      "median_cached_seconds": 0.03296597918961197,
+      "median_execution_seconds": 0.036706499522551894,
+      "median_total_seconds": 0.7280368328792974,
+      "method": "mala/quasi_deer",
+      "model": "G1",
+      "peak_host_rss_bytes": 516882432,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 3.7491544189397246,
+      "all_attempt_median_seconds": 0.1437282710103318,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.01911166672469792,
+        0.04592268265425523
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.01911166672469792,
+        0.04592268265425523
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.004864871423472426,
+        0.007340669529132522,
+        0.0006875284400403658
+      ],
+      "function_mean_squared_error": [
+        0.020805162095734426,
+        0.030054149704141945,
+        0.0020559843792831898
+      ],
+      "max_function_split_rhat": 1.2085343764215402,
+      "max_mean_squared_error": 0.030054149704141945,
+      "median_cached_seconds": 0.0013351562665775418,
+      "median_execution_seconds": 0.0013739790301769972,
+      "median_total_seconds": 0.1437282710103318,
+      "method": "mala/sequential",
+      "model": "G1",
+      "peak_host_rss_bytes": 491257856,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "undetermined",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 7.472693623974919,
+      "all_attempt_median_seconds": 0.3098533325828612,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.001226512912456698,
+        0.003367045639879502
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.001226512912456698,
+        0.003367045639879502
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.0005721010723442221,
+        0.0005880551960282802,
+        5.2451786624912136e-05
+      ],
+      "function_mean_squared_error": [
+        0.0014391321212689214,
+        0.001988710204697552,
+        0.00012768699464543512
+      ],
+      "max_function_split_rhat": 1.0187381546944159,
+      "max_mean_squared_error": 0.001988710204697552,
+      "median_cached_seconds": 0.005462875298690051,
+      "median_execution_seconds": 0.004710833425633609,
+      "median_total_seconds": 0.3098533325828612,
+      "method": "mala/sequential",
+      "model": "G1",
+      "peak_host_rss_bytes": 498368512,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 39.61691436986439,
+      "all_attempt_median_seconds": 1.5493878114502877,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0013044564513165322,
+        0.0043997891016539295
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0013044564513165322,
+        0.0043997891016539295
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.00015057951144067762,
+        0.0008271990272472583,
+        3.9270399891485934e-05
+      ],
+      "function_mean_squared_error": [
+        0.000526146041836177,
+        0.0027127268966000277,
+        0.0001378927858014797
+      ],
+      "max_function_split_rhat": 1.0111886459266672,
+      "max_mean_squared_error": 0.0027127268966000277,
+      "median_cached_seconds": 0.013988312566652894,
+      "median_execution_seconds": 0.013988312566652894,
+      "median_total_seconds": 1.5493878114502877,
+      "method": "nuts/sequential",
+      "model": "G1",
+      "peak_host_rss_bytes": 501514240,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 38.992050835397094,
+      "all_attempt_median_seconds": 1.6395455416059121,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0003133902461653758,
+        0.0007823676877147332
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0003133902461653758,
+        0.0007823676877147332
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        1.6182493105148702e-05,
+        0.00012449256880786236,
+        6.9459365941757655e-06
+      ],
+      "function_mean_squared_error": [
+        6.403700915398524e-05,
+        0.0005306207099350577,
+        2.4309255364120173e-05
+      ],
+      "max_function_split_rhat": 1.0019013553662919,
+      "max_mean_squared_error": 0.0005306207099350577,
+      "median_cached_seconds": 0.07420587562955916,
+      "median_execution_seconds": 0.07420587562955916,
+      "median_total_seconds": 1.6395455416059121,
+      "method": "nuts/sequential",
+      "model": "G1",
+      "peak_host_rss_bytes": 496828416,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 5.4451005009468645,
+      "all_attempt_median_seconds": 0.225782499066554,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0287243703074572,
+        0.06713394069129781
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0287243703074572,
+        0.06713394069129781
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.007743131166072609,
+        0.011217997854936624,
+        0.0004654151036625635
+      ],
+      "function_mean_squared_error": [
+        0.032836997329758866,
+        0.04438369590710154,
+        0.0023524889390277967
+      ],
+      "max_function_split_rhat": 1.2996826318814998,
+      "max_mean_squared_error": 0.04438369590710154,
+      "median_cached_seconds": 0.006157937692478299,
+      "median_execution_seconds": 0.006802916410379112,
+      "median_total_seconds": 0.225782499066554,
+      "method": "rwm/online_picard",
+      "model": "G1",
+      "peak_host_rss_bytes": 475906048,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "undetermined",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 8.229996876092628,
+      "all_attempt_median_seconds": 0.34216477011796087,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.003865612558988466,
+        0.00881417058353491
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.003865612558988466,
+        0.00881417058353491
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.0012133972709841001,
+        0.0016057265041123576,
+        6.107327095850347e-05
+      ],
+      "function_mean_squared_error": [
+        0.004644676876003802,
+        0.005416005772628828,
+        0.00031581926630294915
+      ],
+      "max_function_split_rhat": 1.0435239178647424,
+      "max_mean_squared_error": 0.005416005772628828,
+      "median_cached_seconds": 0.03681670792866498,
+      "median_execution_seconds": 0.03908864606637508,
+      "median_total_seconds": 0.34216477011796087,
+      "method": "rwm/online_picard",
+      "model": "G1",
+      "peak_host_rss_bytes": 474365952,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 2.4324454094748944,
+      "all_attempt_median_seconds": 0.10181333252694458,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.028446609399867796,
+        0.06670778497209819
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.028446609399867796,
+        0.06670778497209819
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.007743131166072607,
+        0.011217997854936634,
+        0.0004654151036625635
+      ],
+      "function_mean_squared_error": [
+        0.03283699732975884,
+        0.04438369590710164,
+        0.002352488939027797
+      ],
+      "max_function_split_rhat": 1.2996826318814998,
+      "max_mean_squared_error": 0.04438369590710164,
+      "median_cached_seconds": 0.0010067186667583883,
+      "median_execution_seconds": 0.001084458432160318,
+      "median_total_seconds": 0.10181333252694458,
+      "method": "rwm/sequential",
+      "model": "G1",
+      "peak_host_rss_bytes": 486146048,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "undetermined",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 4.726023159921169,
+      "all_attempt_median_seconds": 0.19145814527291805,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0038146150805313584,
+        0.008855958426854873
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0038146150805313584,
+        0.008855958426854873
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.001213397270984096,
+        0.0016057265041123673,
+        6.107327095850347e-05
+      ],
+      "function_mean_squared_error": [
+        0.004644676876003784,
+        0.005416005772628868,
+        0.00031581926630294905
+      ],
+      "max_function_split_rhat": 1.0435239178647426,
+      "max_mean_squared_error": 0.005416005772628868,
+      "median_cached_seconds": 0.0040513124549761415,
+      "median_execution_seconds": 0.004374833079054952,
+      "median_total_seconds": 0.19145814527291805,
+      "method": "rwm/sequential",
+      "model": "G1",
+      "peak_host_rss_bytes": 466894848,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 23.79517270065844,
+      "all_attempt_median_seconds": 1.049941978417337,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.12878652163036153,
+        0.3289567769131804
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.12878652163036153,
+        0.3289567769131804
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.05432176179722676,
+        0.05532685115778543,
+        0.0038294996840241083
+      ],
+      "function_mean_squared_error": [
+        0.17972110482325024,
+        0.20168766415185,
+        0.013034068726940684
+      ],
+      "max_function_split_rhat": 5.282010107247916,
+      "max_mean_squared_error": 0.20168766415185,
+      "median_cached_seconds": 0.27333591668866575,
+      "median_execution_seconds": 0.27059685403946787,
+      "median_total_seconds": 1.049941978417337,
+      "method": "mala/quasi_deer",
+      "model": "G2",
+      "peak_host_rss_bytes": 495124480,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 1,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 54.042472410947084,
+      "all_attempt_median_seconds": 2.289965895935893,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.044718912211042766,
+        0.283355022031858
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.044718912211042766,
+        0.283355022031858
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.015133474029236062,
+        0.0717493976522494,
+        0.0017148983939865672
+      ],
+      "function_mean_squared_error": [
+        0.05056602416418294,
+        0.12480864655271112,
+        0.0051639458376149805
+      ],
+      "max_function_split_rhat": 2.347990806891004,
+      "max_mean_squared_error": 0.12480864655271112,
+      "median_cached_seconds": 0.9306161877466366,
+      "median_execution_seconds": 0.9243152289418504,
+      "median_total_seconds": 2.289965895935893,
+      "method": "mala/quasi_deer",
+      "model": "G2",
+      "peak_host_rss_bytes": 493174784,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 8.33174695703201,
+      "all_attempt_median_seconds": 0.35535170906223357,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.13010085665519447,
+        0.3297066686722858
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.13010085665519447,
+        0.3297066686722858
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.05432176179710462,
+        0.055326851157918994,
+        0.0038294996840241083
+      ],
+      "function_mean_squared_error": [
+        0.1797211048231011,
+        0.20168766415187292,
+        0.013034068726940684
+      ],
+      "max_function_split_rhat": 5.28201010724783,
+      "max_mean_squared_error": 0.20168766415187292,
+      "median_cached_seconds": 0.012628135445993394,
+      "median_execution_seconds": 0.013137271045707166,
+      "median_total_seconds": 0.35535170906223357,
+      "method": "mala/sequential",
+      "model": "G2",
+      "peak_host_rss_bytes": 516440064,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 1,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 22.611854624934494,
+      "all_attempt_median_seconds": 0.9392899584490806,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0454355858963431,
+        0.2803763038264194
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0454355858963431,
+        0.2803763038264194
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.015133474029269112,
+        0.07174939765214684,
+        0.0017148983939865672
+      ],
+      "function_mean_squared_error": [
+        0.050566024164329516,
+        0.12480864655264455,
+        0.0051639458376149805
+      ],
+      "max_function_split_rhat": 2.347990806890244,
+      "max_mean_squared_error": 0.12480864655264455,
+      "median_cached_seconds": 0.029254833178129047,
+      "median_execution_seconds": 0.02825000009033829,
+      "median_total_seconds": 0.9392899584490806,
+      "method": "mala/sequential",
+      "model": "G2",
+      "peak_host_rss_bytes": 483475456,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 44.05262520862743,
+      "all_attempt_median_seconds": 1.810615333612077,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.002230054571282333,
+        0.005546894128807414
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.002230054571282333,
+        0.005546894128807414
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.00021628431454464203,
+        0.0008750051327477983,
+        5.182577627843617e-05
+      ],
+      "function_mean_squared_error": [
+        0.0006642248570601969,
+        0.003825609304692302,
+        0.0001835925123737876
+      ],
+      "max_function_split_rhat": 1.0108983344137321,
+      "max_mean_squared_error": 0.003825609304692302,
+      "median_cached_seconds": 0.10559262556489557,
+      "median_execution_seconds": 0.10559262556489557,
+      "median_total_seconds": 1.810615333612077,
+      "method": "nuts/sequential",
+      "model": "G2",
+      "peak_host_rss_bytes": 497614848,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 66.59865837264806,
+      "all_attempt_median_seconds": 2.7669987078988925,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0001727013323087992,
+        0.0005219937332074588
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0001727013323087992,
+        0.0005219937332074588
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        3.407012676853115e-05,
+        9.272965040312234e-05,
+        2.9415551376031083e-06
+      ],
+      "function_mean_squared_error": [
+        9.903086540644124e-05,
+        0.0003220732527339374,
+        1.2075770744449278e-05
+      ],
+      "max_function_split_rhat": 1.0010657743934954,
+      "max_mean_squared_error": 0.0003220732527339374,
+      "median_cached_seconds": 0.8365381045732647,
+      "median_execution_seconds": 0.8365381045732647,
+      "median_total_seconds": 2.7669987078988925,
+      "method": "nuts/sequential",
+      "model": "G2",
+      "peak_host_rss_bytes": 520683520,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 9.100829248782247,
+      "all_attempt_median_seconds": 0.3850090214982629,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.40289564730201266,
+        0.6350892004907739
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.40289564730201266,
+        0.6350892004907739
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.012857211146824218,
+        0.0605642145430634,
+        0.002122629589468265
+      ],
+      "function_mean_squared_error": [
+        0.059311913450702074,
+        0.5236440516480158,
+        0.01734898595742061
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.5236440516480158,
+      "median_cached_seconds": 0.030295832955744117,
+      "median_execution_seconds": 0.029874457977712154,
+      "median_total_seconds": 0.3850090214982629,
+      "method": "rwm/online_picard",
+      "model": "G2",
+      "peak_host_rss_bytes": 476381184,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 13,
+      "runs_with_infinite_rhat": 1
+    },
+    {
+      "all_attempt_cost_seconds": 20.82858075015247,
+      "all_attempt_median_seconds": 0.8763041463680565,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.10637588613390797,
+        0.2290720604100925
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.10637588613390797,
+        0.2290720604100925
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.015927753893973214,
+        0.03252384225281553,
+        0.0015608337118027294
+      ],
+      "function_mean_squared_error": [
+        0.06470163042903322,
+        0.16358272137892857,
+        0.008961565123775337
+      ],
+      "max_function_split_rhat": 2.2820712746456526,
+      "max_mean_squared_error": 0.16358272137892857,
+      "median_cached_seconds": 0.1791782599175349,
+      "median_execution_seconds": 0.17711175000295043,
+      "median_total_seconds": 0.8763041463680565,
+      "method": "rwm/online_picard",
+      "model": "G2",
+      "peak_host_rss_bytes": 493076480,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 5.452490585390478,
+      "all_attempt_median_seconds": 0.22468674997799098,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.4099529007407583,
+        0.6369260575087325
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.4099529007407583,
+        0.6369260575087325
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.012857211146824218,
+        0.0605642145430634,
+        0.002122629589468265
+      ],
+      "function_mean_squared_error": [
+        0.05931191345070208,
+        0.5236440516480156,
+        0.01734898595742061
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.5236440516480156,
+      "median_cached_seconds": 0.005927625286858529,
+      "median_execution_seconds": 0.005348666454665363,
+      "median_total_seconds": 0.22468674997799098,
+      "method": "rwm/sequential",
+      "model": "G2",
+      "peak_host_rss_bytes": 498286592,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 13,
+      "runs_with_infinite_rhat": 1
+    },
+    {
+      "all_attempt_cost_seconds": 13.995038288645446,
+      "all_attempt_median_seconds": 0.5688316045561805,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.107246338304122,
+        0.23126166458126635
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.107246338304122,
+        0.23126166458126635
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.01592775389397322,
+        0.032523842252815516,
+        0.0015608337118027294
+      ],
+      "function_mean_squared_error": [
+        0.06470163042903321,
+        0.16358272137892857,
+        0.008961565123775338
+      ],
+      "max_function_split_rhat": 2.282071274645653,
+      "max_mean_squared_error": 0.16358272137892857,
+      "median_cached_seconds": 0.013848906266503036,
+      "median_execution_seconds": 0.013386937556788325,
+      "median_total_seconds": 0.5688316045561805,
+      "method": "rwm/sequential",
+      "model": "G2",
+      "peak_host_rss_bytes": 471826432,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 19.09420541441068,
+      "all_attempt_median_seconds": 0.730618792003952,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.17270085287984505,
+        0.4302512934220959
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.17270085287984505,
+        0.4302512934220959
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.06649103621927333,
+        0.032178116209630785,
+        0.003954286706633134,
+        0.00241036627935072
+      ],
+      "function_mean_squared_error": [
+        0.2887570990742312,
+        0.15127242697912036,
+        0.015288869539896647,
+        0.008610251701684843
+      ],
+      "max_function_split_rhat": 9.069850156181195,
+      "max_mean_squared_error": 0.2887570990742312,
+      "median_cached_seconds": 0.050251302018295974,
+      "median_execution_seconds": 0.05189341655932367,
+      "median_total_seconds": 0.730618792003952,
+      "method": "mala/quasi_deer",
+      "model": "H1",
+      "peak_host_rss_bytes": 517210112,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 23.772301367018372,
+      "all_attempt_median_seconds": 1.0066161669092253,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.08983288973506388,
+        0.19066976109374562
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.08983288973506388,
+        0.19066976109374562
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.02717674299037133,
+        0.013979556605580463,
+        0.000637019379350494,
+        0.0013633447439919644
+      ],
+      "function_mean_squared_error": [
+        0.13831601601014812,
+        0.07167097503220242,
+        0.002580525974432627,
+        0.0036608429826326867
+      ],
+      "max_function_split_rhat": 3.266623452099104,
+      "max_mean_squared_error": 0.13831601601014812,
+      "median_cached_seconds": 0.11902947875205427,
+      "median_execution_seconds": 0.12213706190232188,
+      "median_total_seconds": 1.0066161669092253,
+      "method": "mala/quasi_deer",
+      "model": "H1",
+      "peak_host_rss_bytes": 485933056,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 4.775207292288542,
+      "all_attempt_median_seconds": 0.19690420804545283,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.17349861909427122,
+        0.42302028466093405
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.17349861909427122,
+        0.42302028466093405
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.06649103621240744,
+        0.03217811620593408,
+        0.003954286706633135,
+        0.00241036627913277
+      ],
+      "function_mean_squared_error": [
+        0.2887570990364661,
+        0.15127242695947898,
+        0.015288869539896647,
+        0.008610251701798759
+      ],
+      "max_function_split_rhat": 9.069850156374534,
+      "max_mean_squared_error": 0.2887570990364661,
+      "median_cached_seconds": 0.0010922500514425337,
+      "median_execution_seconds": 0.0014274580171331763,
+      "median_total_seconds": 0.19690420804545283,
+      "method": "mala/sequential",
+      "model": "H1",
+      "peak_host_rss_bytes": 465846272,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 9.551112331682816,
+      "all_attempt_median_seconds": 0.3891813955269754,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.08642954141726542,
+        0.19165148798708168
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.08642954141726542,
+        0.19165148798708168
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.027176742983308445,
+        0.013979556601080191,
+        0.000637019379350494,
+        0.00136334474435736
+      ],
+      "function_mean_squared_error": [
+        0.13831601596302337,
+        0.07167097500724512,
+        0.002580525974432627,
+        0.0036608429835805843
+      ],
+      "max_function_split_rhat": 3.266623452659006,
+      "max_mean_squared_error": 0.13831601596302337,
+      "median_cached_seconds": 0.003525823005475104,
+      "median_execution_seconds": 0.0038639999693259597,
+      "median_total_seconds": 0.3891813955269754,
+      "method": "mala/sequential",
+      "model": "H1",
+      "peak_host_rss_bytes": 492797952,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 41.91961371176876,
+      "all_attempt_median_seconds": 1.6634878339245915,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 174,
+      "divergent_runs": 22,
+      "error_bootstrap_95": [
+        0.09136581716228816,
+        0.22267828600287337
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.09136581716228816,
+        0.22267828600287337
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.033855336000780674,
+        0.015525261211778035,
+        0.00044366513279916564,
+        0.00020980663132901897
+      ],
+      "function_mean_squared_error": [
+        0.15404793927116286,
+        0.06584507832070355,
+        0.0011891921361287434,
+        0.0006422667821326448
+      ],
+      "max_function_split_rhat": 1.9473995413031289,
+      "max_mean_squared_error": 0.15404793927116286,
+      "median_cached_seconds": 0.049820270971395075,
+      "median_execution_seconds": 0.049820270971395075,
+      "median_total_seconds": 1.6634878339245915,
+      "method": "nuts/sequential",
+      "model": "H1",
+      "peak_host_rss_bytes": 477216768,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 50.02248366549611,
+      "all_attempt_median_seconds": 1.9862330624600872,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 2184,
+      "divergent_runs": 24,
+      "error_bootstrap_95": [
+        0.08328392826288843,
+        0.14395191796459636
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.08328392826288843,
+        0.14395191796459636
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.015685453620167912,
+        0.007128565579754454,
+        0.0002096078806339615,
+        0.0001504297456787311
+      ],
+      "function_mean_squared_error": [
+        0.11230209878874263,
+        0.045569985006872406,
+        0.0005933704475561777,
+        0.0004136897180004175
+      ],
+      "max_function_split_rhat": 1.3144709343181002,
+      "max_mean_squared_error": 0.11230209878874263,
+      "median_cached_seconds": 0.35737237497232854,
+      "median_execution_seconds": 0.35737237497232854,
+      "median_total_seconds": 1.9862330624600872,
+      "method": "nuts/sequential",
+      "model": "H1",
+      "peak_host_rss_bytes": 503382016,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 5.984655831940472,
+      "all_attempt_median_seconds": 0.2493403118569404,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.06752823014804533,
+        0.16467594052702997
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.06752823014804533,
+        0.16467594052702997
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.025785419979638298,
+        0.015690417675740878,
+        0.0039949938435144,
+        0.0021288361853615285
+      ],
+      "function_mean_squared_error": [
+        0.11159490650736893,
+        0.0712595430529676,
+        0.015929420789082844,
+        0.0072468642208186745
+      ],
+      "max_function_split_rhat": 5.664062677991561,
+      "max_mean_squared_error": 0.11159490650736893,
+      "median_cached_seconds": 0.006032812467310578,
+      "median_execution_seconds": 0.007606562576256692,
+      "median_total_seconds": 0.2493403118569404,
+      "method": "rwm/online_picard",
+      "model": "H1",
+      "peak_host_rss_bytes": 491388928,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 9.0582569190301,
+      "all_attempt_median_seconds": 0.37273187504615635,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.07745424697944328,
+        0.18882314816461854
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.07745424697944328,
+        0.18882314816461854
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.02953923483913239,
+        0.01465183397521937,
+        0.0013576439203151177,
+        0.000838795865004792
+      ],
+      "function_mean_squared_error": [
+        0.130805032959459,
+        0.0672087502763058,
+        0.0035595279186964035,
+        0.0023037794539686835
+      ],
+      "max_function_split_rhat": 3.726729531708746,
+      "max_mean_squared_error": 0.130805032959459,
+      "median_cached_seconds": 0.03586686443304643,
+      "median_execution_seconds": 0.03744914603885263,
+      "median_total_seconds": 0.37273187504615635,
+      "method": "rwm/online_picard",
+      "model": "H1",
+      "peak_host_rss_bytes": 493371392,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 2.711084747221321,
+      "all_attempt_median_seconds": 0.10900466644670814,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.06479143221874631,
+        0.16454019486501237
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.06479143221874631,
+        0.16454019486501237
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.025785419979638298,
+        0.015690417675740885,
+        0.0039949938435144,
+        0.0021288361853615354
+      ],
+      "function_mean_squared_error": [
+        0.11159490650736888,
+        0.07125954305296764,
+        0.015929420789082844,
+        0.007246864220818681
+      ],
+      "max_function_split_rhat": 5.664062677991562,
+      "max_mean_squared_error": 0.11159490650736888,
+      "median_cached_seconds": 0.0005119894631206989,
+      "median_execution_seconds": 0.000696103903464973,
+      "median_total_seconds": 0.10900466644670814,
+      "method": "rwm/sequential",
+      "model": "H1",
+      "peak_host_rss_bytes": 472875008,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 5.393498670309782,
+      "all_attempt_median_seconds": 0.21383164590224624,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.07672046434967687,
+        0.1920142162006183
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.07672046434967687,
+        0.1920142162006183
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.02953923483913239,
+        0.014651833975219367,
+        0.0013576439203151177,
+        0.0008387958650048035
+      ],
+      "function_mean_squared_error": [
+        0.13080503295945894,
+        0.06720875027630578,
+        0.0035595279186964035,
+        0.002303779453968697
+      ],
+      "max_function_split_rhat": 3.7267295317087457,
+      "max_mean_squared_error": 0.13080503295945894,
+      "median_cached_seconds": 0.0019574585021473467,
+      "median_execution_seconds": 0.002093832939863205,
+      "median_total_seconds": 0.21383164590224624,
+      "method": "rwm/sequential",
+      "model": "H1",
+      "peak_host_rss_bytes": 486146048,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 14.295750085031614,
+      "all_attempt_median_seconds": 0.554637354100123,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.06399717690320084,
+        0.1707174427397778
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.06399717690320084,
+        0.1707174427397778
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.028072792646240054,
+        0.00900329178909351,
+        0.0008408919348073962,
+        0.0005989749074815705
+      ],
+      "function_mean_squared_error": [
+        0.11435646728408926,
+        0.03784729434491022,
+        0.0034182866414388022,
+        0.0024184021097471893
+      ],
+      "max_function_split_rhat": 2.459918749700745,
+      "max_mean_squared_error": 0.11435646728408926,
+      "median_cached_seconds": 0.01119954144814983,
+      "median_execution_seconds": 0.013096478418447077,
+      "median_total_seconds": 0.554637354100123,
+      "method": "mala/quasi_deer",
+      "model": "H2",
+      "peak_host_rss_bytes": 491601920,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 17.97331941779703,
+      "all_attempt_median_seconds": 0.7438405834836885,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.011441792831334207,
+        0.03351689374914225
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.011441792831334207,
+        0.03351689374914225
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.005855626510782775,
+        0.0019592689195586355,
+        0.00011786569280630606,
+        8.663181562023271e-05
+      ],
+      "function_mean_squared_error": [
+        0.02147421596797677,
+        0.006932418744571754,
+        0.00046321315069993335,
+        0.0002664261367267129
+      ],
+      "max_function_split_rhat": 1.2413332502653902,
+      "max_mean_squared_error": 0.02147421596797677,
+      "median_cached_seconds": 0.037363833165727556,
+      "median_execution_seconds": 0.03710945858620107,
+      "median_total_seconds": 0.7438405834836885,
+      "method": "mala/quasi_deer",
+      "model": "H2",
+      "peak_host_rss_bytes": 494452736,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 3.821602378739044,
+      "all_attempt_median_seconds": 0.16056368802674115,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0655232064108864,
+        0.17063392261646493
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0655232064108864,
+        0.17063392261646493
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.028072792646235085,
+        0.009003291789088546,
+        0.0008408919348073962,
+        0.0005989749074831267
+      ],
+      "function_mean_squared_error": [
+        0.11435646728479794,
+        0.037847294344962326,
+        0.0034182866414388022,
+        0.0024184021097489023
+      ],
+      "max_function_split_rhat": 2.4599187497109907,
+      "max_mean_squared_error": 0.11435646728479794,
+      "median_cached_seconds": 0.001044771051965654,
+      "median_execution_seconds": 0.0013608335284516215,
+      "median_total_seconds": 0.16056368802674115,
+      "method": "mala/sequential",
+      "model": "H2",
+      "peak_host_rss_bytes": 483147776,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 7.646859833039343,
+      "all_attempt_median_seconds": 0.31152358232066035,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0113054386425593,
+        0.03366133386995499
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0113054386425593,
+        0.03366133386995499
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.00585562651081502,
+        0.001959268919566517,
+        0.00011786569280630608,
+        8.663181562163664e-05
+      ],
+      "function_mean_squared_error": [
+        0.0214742159681126,
+        0.00693241874462281,
+        0.00046321315069993335,
+        0.00026642613672680615
+      ],
+      "max_function_split_rhat": 1.2413332502648302,
+      "max_mean_squared_error": 0.0214742159681126,
+      "median_cached_seconds": 0.003392948128748685,
+      "median_execution_seconds": 0.003690562560223043,
+      "median_total_seconds": 0.31152358232066035,
+      "method": "mala/sequential",
+      "model": "H2",
+      "peak_host_rss_bytes": 481722368,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 35.00593957887031,
+      "all_attempt_median_seconds": 1.5173332083504647,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0003465458414447606,
+        0.0010402190849037093
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0003465458414447606,
+        0.0010402190849037093
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.00020953992446808418,
+        6.028102011125467e-05,
+        6.672535141664305e-05,
+        9.611325870414652e-05
+      ],
+      "function_mean_squared_error": [
+        0.0005951046259337692,
+        0.00019980014771512952,
+        0.0002168416976928711,
+        0.0003778612300575054
+      ],
+      "max_function_split_rhat": 1.0110071747380738,
+      "max_mean_squared_error": 0.0005951046259337692,
+      "median_cached_seconds": 0.013228187570348382,
+      "median_execution_seconds": 0.013228187570348382,
+      "median_total_seconds": 1.5173332083504647,
+      "method": "nuts/sequential",
+      "model": "H2",
+      "peak_host_rss_bytes": 469843968,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 38.77336470526643,
+      "all_attempt_median_seconds": 1.5624048744793981,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        3.9535345929644264e-05,
+        9.389670106046425e-05
+      ],
+      "error_with_reference_sensitivity_95": [
+        3.9535345929644264e-05,
+        9.389670106046425e-05
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        1.6552911971795678e-05,
+        6.675025341088394e-06,
+        5.6352591796631916e-06,
+        1.0644224795818695e-05
+      ],
+      "function_mean_squared_error": [
+        6.111340844795457e-05,
+        2.7160022959035868e-05,
+        1.7680227756500244e-05,
+        4.295627216342097e-05
+      ],
+      "max_function_split_rhat": 1.0019625561284946,
+      "max_mean_squared_error": 6.111340844795457e-05,
+      "median_cached_seconds": 0.06448966648895293,
+      "median_execution_seconds": 0.06448966648895293,
+      "median_total_seconds": 1.5624048744793981,
+      "method": "nuts/sequential",
+      "model": "H2",
+      "peak_host_rss_bytes": 495878144,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 5.066871831659228,
+      "all_attempt_median_seconds": 0.22064147889614105,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.1042400934260013,
+        0.26439488629249536
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.1042400934260013,
+        0.26439488629249536
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.04267082401119799,
+        0.014009831115314246,
+        0.002573754841496332,
+        0.0013633570112891141
+      ],
+      "function_mean_squared_error": [
+        0.18104778745586578,
+        0.06250242764185798,
+        0.007900635401407877,
+        0.0042601155331282925
+      ],
+      "max_function_split_rhat": 4.174444348503303,
+      "max_mean_squared_error": 0.18104778745586578,
+      "median_cached_seconds": 0.0054184376494959,
+      "median_execution_seconds": 0.006510541425086558,
+      "median_total_seconds": 0.22064147889614105,
+      "method": "rwm/online_picard",
+      "model": "H2",
+      "peak_host_rss_bytes": 487358464,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 7.914958996931091,
+      "all_attempt_median_seconds": 0.3373527703806758,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.024036846484763334,
+        0.05307057834430534
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.024036846484763334,
+        0.05307057834430534
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.007626566862057311,
+        0.002788434118179645,
+        0.00037334371799450727,
+        0.00012603649942498105
+      ],
+      "function_mean_squared_error": [
+        0.03760009813634649,
+        0.01323439657908528,
+        0.0008994384358326594,
+        0.00044817044493532633
+      ],
+      "max_function_split_rhat": 1.4284859448044505,
+      "max_mean_squared_error": 0.03760009813634649,
+      "median_cached_seconds": 0.0332886457326822,
+      "median_execution_seconds": 0.0342746670357883,
+      "median_total_seconds": 0.3373527703806758,
+      "method": "rwm/online_picard",
+      "model": "H2",
+      "peak_host_rss_bytes": 499105792,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "undetermined",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 2.421038202708587,
+      "all_attempt_median_seconds": 0.09999270807020366,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.10455345959582743,
+        0.2680283509497057
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.10455345959582743,
+        0.2680283509497057
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.042670824011198004,
+        0.014009831115314227,
+        0.002573754841496332,
+        0.0013633570112891122
+      ],
+      "function_mean_squared_error": [
+        0.18104778745586572,
+        0.06250242764185794,
+        0.007900635401407877,
+        0.004260115533128284
+      ],
+      "max_function_split_rhat": 4.174444348503304,
+      "max_mean_squared_error": 0.18104778745586572,
+      "median_cached_seconds": 0.0005426565185189247,
+      "median_execution_seconds": 0.0007958540227264166,
+      "median_total_seconds": 0.09999270807020366,
+      "method": "rwm/sequential",
+      "model": "H2",
+      "peak_host_rss_bytes": 497942528,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 4.479087952058762,
+      "all_attempt_median_seconds": 0.18564568762667477,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.024323318480153035,
+        0.05277741261476061
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.024323318480153035,
+        0.05277741261476061
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.007626566862057279,
+        0.0027884341181796416,
+        0.0003733437179945072,
+        0.00012603649942498013
+      ],
+      "function_mean_squared_error": [
+        0.037600098136346384,
+        0.013234396579085263,
+        0.0008994384358326594,
+        0.00044817044493532287
+      ],
+      "max_function_split_rhat": 1.4284859448044507,
+      "max_mean_squared_error": 0.037600098136346384,
+      "median_cached_seconds": 0.0014963442808948457,
+      "median_execution_seconds": 0.001184103894047439,
+      "median_total_seconds": 0.18564568762667477,
+      "method": "rwm/sequential",
+      "model": "H2",
+      "peak_host_rss_bytes": 491159552,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "undetermined",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 36.548528079874814,
+      "all_attempt_median_seconds": 1.600784040405415,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0017114859875540646,
+        0.003784318764298485
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0017094103597525784,
+        0.0037857805910849187
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.00025997982940865403,
+        0.0005515240010740374,
+        1.491550254245878e-05,
+        0.0004381196403642634
+      ],
+      "function_mean_squared_error": [
+        0.0011864113872244774,
+        0.002659715285317722,
+        6.896385429499244e-05,
+        0.0012688425680001576
+      ],
+      "max_function_split_rhat": 1.2776109733531926,
+      "max_mean_squared_error": 0.002659715285317722,
+      "median_cached_seconds": 0.8247183539788239,
+      "median_execution_seconds": 0.8276399789610878,
+      "median_total_seconds": 1.600784040405415,
+      "method": "mala/quasi_deer",
+      "model": "L1",
+      "peak_host_rss_bytes": 497876992,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 89.51580845820718,
+      "all_attempt_median_seconds": 3.896135479095392,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0001404250219081367,
+        0.00039084926613977295
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.00014029922390634917,
+        0.00039176633125034697
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        2.6984215352600835e-05,
+        7.012748734046913e-05,
+        1.6014758035446604e-06,
+        2.9182566263902935e-05
+      ],
+      "function_mean_squared_error": [
+        8.242144694661973e-05,
+        0.00025466981138093543,
+        4.89968375272246e-06,
+        0.00010706856846809387
+      ],
+      "max_function_split_rhat": 1.044332733076656,
+      "max_mean_squared_error": 0.00025466981138093543,
+      "median_cached_seconds": 2.7448566875536926,
+      "median_execution_seconds": 2.742645457969047,
+      "median_total_seconds": 3.896135479095392,
+      "method": "mala/quasi_deer",
+      "model": "L1",
+      "peak_host_rss_bytes": 500072448,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 7.506820709910244,
+      "all_attempt_median_seconds": 0.30824529146775603,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0016936530032928964,
+        0.003791755343424551
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0016884428777486638,
+        0.003795017388681554
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.0002599798295584731,
+        0.0005515240014788214,
+        1.4915502550403949e-05,
+        0.0004381196403642634
+      ],
+      "function_mean_squared_error": [
+        0.001186411387653875,
+        0.0026597152861216355,
+        6.896385431898662e-05,
+        0.0012688425680001576
+      ],
+      "max_function_split_rhat": 1.2776109734236123,
+      "max_mean_squared_error": 0.0026597152861216355,
+      "median_cached_seconds": 0.02914931223494932,
+      "median_execution_seconds": 0.029522208496928215,
+      "median_total_seconds": 0.30824529146775603,
+      "method": "mala/sequential",
+      "model": "L1",
+      "peak_host_rss_bytes": 498647040,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 17.167370958486572,
+      "all_attempt_median_seconds": 0.7136081043863669,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.00014137554526876217,
+        0.0004025379571411656
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.00014111071952491736,
+        0.00040177596928071325
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        2.6984215368078505e-05,
+        7.012748735150606e-05,
+        1.6014758044183321e-06,
+        2.9182566263902935e-05
+      ],
+      "function_mean_squared_error": [
+        8.242144700270293e-05,
+        0.00025466981141015896,
+        4.899683755921287e-06,
+        0.00010706856846809387
+      ],
+      "max_function_split_rhat": 1.0443327330742642,
+      "max_mean_squared_error": 0.00025466981141015896,
+      "median_cached_seconds": 0.0889841562602669,
+      "median_execution_seconds": 0.0879868749761954,
+      "median_total_seconds": 0.7136081043863669,
+      "method": "mala/sequential",
+      "model": "L1",
+      "peak_host_rss_bytes": 491388928,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 43.66990866791457,
+      "all_attempt_median_seconds": 1.802723562461324,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        7.673874497413636e-05,
+        0.00026328563690185546
+      ],
+      "error_with_reference_sensitivity_95": [
+        7.698743243055092e-05,
+        0.00026460999350331007
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        1.590380534172085e-05,
+        1.0191792034445392e-05,
+        9.160006335373769e-07,
+        5.082863130755942e-05
+      ],
+      "function_mean_squared_error": [
+        7.229612205350394e-05,
+        4.488707923268107e-05,
+        4.247712537835673e-06,
+        0.00015351548790931702
+      ],
+      "max_function_split_rhat": 1.0066720092487622,
+      "max_mean_squared_error": 0.00015351548790931702,
+      "median_cached_seconds": 0.05618097900878638,
+      "median_execution_seconds": 0.05618097900878638,
+      "median_total_seconds": 1.802723562461324,
+      "method": "nuts/sequential",
+      "model": "L1",
+      "peak_host_rss_bytes": 470679552,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 52.201782420044765,
+      "all_attempt_median_seconds": 2.225040583522059,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        1.0527079267144939e-05,
+        2.12442750732104e-05
+      ],
+      "error_with_reference_sensitivity_95": [
+        1.064622568629008e-05,
+        2.3081484542919424e-05
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        1.4395073248155636e-06,
+        3.1097429698267935e-06,
+        8.416712538144914e-08,
+        3.0875994410603586e-06
+      ],
+      "function_mean_squared_error": [
+        5.5118399823321825e-06,
+        1.2633751402767595e-05,
+        3.2143131311978924e-07,
+        1.4629215002059937e-05
+      ],
+      "max_function_split_rhat": 1.000718650807304,
+      "max_mean_squared_error": 1.4629215002059937e-05,
+      "median_cached_seconds": 0.42838814586866647,
+      "median_execution_seconds": 0.42838814586866647,
+      "median_total_seconds": 2.225040583522059,
+      "method": "nuts/sequential",
+      "model": "L1",
+      "peak_host_rss_bytes": 497745920,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 12.315980046056211,
+      "all_attempt_median_seconds": 0.5351080416003242,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0027139891938445385,
+        0.008119382734028702
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0027182078248456612,
+        0.008110165765539608
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.0006038605961534287,
+        0.0014072745417185006,
+        3.508615900955903e-05,
+        0.00041222793274706956
+      ],
+      "function_mean_squared_error": [
+        0.0024684167284322353,
+        0.0050707423481961495,
+        0.00014236927336304023,
+        0.002003678431113561
+      ],
+      "max_function_split_rhat": 1.4154364843453893,
+      "max_mean_squared_error": 0.0050707423481961495,
+      "median_cached_seconds": 0.21541794820223004,
+      "median_execution_seconds": 0.21557854092679918,
+      "median_total_seconds": 0.5351080416003242,
+      "method": "rwm/online_picard",
+      "model": "L1",
+      "peak_host_rss_bytes": 485834752,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 27.399471453623846,
+      "all_attempt_median_seconds": 1.2229406875558197,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.0003344517802352314,
+        0.0011166706995936453
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.00033465621784219834,
+        0.001115187116634372
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        7.738266270465947e-05,
+        0.00021188034070232324,
+        4.48706917981112e-06,
+        5.3312659871599806e-05
+      ],
+      "function_mean_squared_error": [
+        0.0002342468154339866,
+        0.0006732719373830431,
+        1.3754016404198775e-05,
+        0.00019779925545056662
+      ],
+      "max_function_split_rhat": 1.0622140440158228,
+      "max_mean_squared_error": 0.0006732719373830431,
+      "median_cached_seconds": 0.690428395930212,
+      "median_execution_seconds": 0.6953533124178648,
+      "median_total_seconds": 1.2229406875558197,
+      "method": "rwm/online_picard",
+      "model": "L1",
+      "peak_host_rss_bytes": 494157824,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 4.537031787447631,
+      "all_attempt_median_seconds": 0.19116441591177136,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.00260426261634291,
+        0.00797674881851416
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0026028050195303857,
+        0.00798109566523578
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.0006038605961534287,
+        0.0014072745417185086,
+        3.508615900955886e-05,
+        0.00041222793274706956
+      ],
+      "function_mean_squared_error": [
+        0.0024684167284322336,
+        0.0050707423481961686,
+        0.00014236927336304064,
+        0.002003678431113561
+      ],
+      "max_function_split_rhat": 1.4154364843453888,
+      "max_mean_squared_error": 0.0050707423481961686,
+      "median_cached_seconds": 0.02509765629656613,
+      "median_execution_seconds": 0.025158854434266686,
+      "median_total_seconds": 0.19116441591177136,
+      "method": "rwm/sequential",
+      "model": "L1",
+      "peak_host_rss_bytes": 515440640,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 10.666524125263095,
+      "all_attempt_median_seconds": 0.4580913329264149,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.00033839000328296254,
+        0.0011356200548014624
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.0003384516558265998,
+        0.0011343340721950855
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        7.738266270465889e-05,
+        0.00021188034070232316,
+        4.487069179811045e-06,
+        5.3312659871599806e-05
+      ],
+      "function_mean_squared_error": [
+        0.000234246815433988,
+        0.0006732719373830375,
+        1.3754016404198643e-05,
+        0.00019779925545056662
+      ],
+      "max_function_split_rhat": 1.0622140440158223,
+      "max_mean_squared_error": 0.0006732719373830375,
+      "median_cached_seconds": 0.07230852067004889,
+      "median_execution_seconds": 0.07297414564527571,
+      "median_total_seconds": 0.4580913329264149,
+      "method": "rwm/sequential",
+      "model": "L1",
+      "peak_host_rss_bytes": 498335744,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "below_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 0,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 594.2685746236239,
+      "all_attempt_median_seconds": 24.828063312568702,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        3.4344024867922434e-05,
+        7.887357537059613e-05
+      ],
+      "error_with_reference_sensitivity_95": [
+        3.4344024867922434e-05,
+        7.887357537059613e-05
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        7.416609289859312e-06,
+        1.1960180956846222e-05,
+        4.427193313150203e-07,
+        0.0
+      ],
+      "function_mean_squared_error": [
+        2.676062176793889e-05,
+        5.4572871255612305e-05,
+        1.5932728340368338e-06,
+        0.0
+      ],
+      "max_function_split_rhat": 1.1530379681449363,
+      "max_mean_squared_error": 5.4572871255612305e-05,
+      "median_cached_seconds": 23.33620357280597,
+      "median_execution_seconds": 23.25743916654028,
+      "median_total_seconds": 24.828063312568702,
+      "method": "mala/quasi_deer",
+      "model": "L2",
+      "peak_host_rss_bytes": 524206080,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "not_assessable",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "not_assessable",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "reference_usable": false,
+      "retained_draws": 256,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 1763.1884298680816,
+      "all_attempt_median_seconds": 79.18633395805955,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        3.4539614488575766e-06,
+        9.650450196235022e-06
+      ],
+      "error_with_reference_sensitivity_95": [
+        3.4539614488575766e-06,
+        9.650450196235022e-06
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        8.767927987061113e-07,
+        1.6667832815417636e-06,
+        5.235839947805691e-08,
+        0.0
+      ],
+      "function_mean_squared_error": [
+        2.654263882822405e-06,
+        6.219445314214748e-06,
+        1.5792445191799472e-07,
+        0.0
+      ],
+      "max_function_split_rhat": 1.0154320930078866,
+      "max_mean_squared_error": 6.219445314214748e-06,
+      "median_cached_seconds": 76.08516155200778,
+      "median_execution_seconds": 75.65272495849058,
+      "median_total_seconds": 79.18633395805955,
+      "method": "mala/quasi_deer",
+      "model": "L2",
+      "peak_host_rss_bytes": 575619072,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "not_assessable",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "not_assessable",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "reference_usable": false,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 40.38921196386218,
+      "all_attempt_median_seconds": 1.8054837069939822,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        3.3779435975362565e-05,
+        7.858253561050589e-05
+      ],
+      "error_with_reference_sensitivity_95": [
+        3.3779435975362565e-05,
+        7.858253561050589e-05
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        7.416609279703739e-06,
+        1.1960180943165062e-05,
+        4.4271933070854183e-07,
+        0.0
+      ],
+      "function_mean_squared_error": [
+        2.6760621736603426e-05,
+        5.457287124327944e-05,
+        1.5932728321693638e-06,
+        0.0
+      ],
+      "max_function_split_rhat": 1.1530379680162215,
+      "max_mean_squared_error": 5.457287124327944e-05,
+      "median_cached_seconds": 0.8116967184469104,
+      "median_execution_seconds": 0.820783396018669,
+      "median_total_seconds": 1.8054837069939822,
+      "method": "mala/sequential",
+      "model": "L2",
+      "peak_host_rss_bytes": 498679808,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "not_assessable",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "not_assessable",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "reference_usable": false,
+      "retained_draws": 256,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 132.32748053851537,
+      "all_attempt_median_seconds": 5.699686583247967,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        3.4769199358098835e-06,
+        9.711349467859145e-06
+      ],
+      "error_with_reference_sensitivity_95": [
+        3.4769199358098835e-06,
+        9.711349467859145e-06
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        8.767927989789962e-07,
+        1.6667832831329997e-06,
+        5.235839949418126e-08,
+        0.0
+      ],
+      "function_mean_squared_error": [
+        2.654263885146467e-06,
+        6.219445314935151e-06,
+        1.5792445205542868e-07,
+        0.0
+      ],
+      "max_function_split_rhat": 1.0154320929883853,
+      "max_mean_squared_error": 6.219445314935151e-06,
+      "median_cached_seconds": 2.74368562491145,
+      "median_execution_seconds": 2.757104582968168,
+      "median_total_seconds": 5.699686583247967,
+      "method": "mala/sequential",
+      "model": "L2",
+      "peak_host_rss_bytes": 516472832,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "not_assessable",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "not_assessable",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "reference_usable": false,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 147.7882221704349,
+      "all_attempt_median_seconds": 6.8664448539493605,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        2.192017770726039e-06,
+        5.396259418830377e-06
+      ],
+      "error_with_reference_sensitivity_95": [
+        2.192017770726039e-06,
+        5.396259418830377e-06
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        6.725063468258447e-07,
+        9.029717892883183e-07,
+        3.990028025115656e-08,
+        0.0
+      ],
+      "function_mean_squared_error": [
+        2.5167645920187475e-06,
+        3.523426747996058e-06,
+        1.4930237966700903e-07,
+        0.0
+      ],
+      "max_function_split_rhat": 1.002875480971342,
+      "max_mean_squared_error": 3.523426747996058e-06,
+      "median_cached_seconds": 1.314906332991086,
+      "median_execution_seconds": 1.314906332991086,
+      "median_total_seconds": 6.8664448539493605,
+      "method": "nuts/sequential",
+      "model": "L2",
+      "peak_host_rss_bytes": 495878144,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "not_assessable",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "not_assessable",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "reference_usable": false,
+      "retained_draws": 256,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 381.1468454198912,
+      "all_attempt_median_seconds": 16.189690979663283,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        1.384770003798563e-07,
+        4.58363189980001e-07
+      ],
+      "error_with_reference_sensitivity_95": [
+        1.384770003798563e-07,
+        4.58363189980001e-07
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        5.4379439985625396e-08,
+        1.0224029209244745e-07,
+        3.239335170689422e-09,
+        0.0
+      ],
+      "function_mean_squared_error": [
+        2.0795950469913297e-07,
+        2.2758470221332886e-07,
+        1.2383492433887835e-08,
+        0.0
+      ],
+      "max_function_split_rhat": 1.0006385932801984,
+      "max_mean_squared_error": 2.2758470221332886e-07,
+      "median_cached_seconds": 10.565609041950665,
+      "median_execution_seconds": 10.565609041950665,
+      "median_total_seconds": 16.189690979663283,
+      "method": "nuts/sequential",
+      "model": "L2",
+      "peak_host_rss_bytes": 480886784,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "not_assessable",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "not_assessable",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "reference_usable": false,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 79.27696929080412,
+      "all_attempt_median_seconds": 3.4513355834642425,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        9.672466585727705e-05,
+        0.00024101882330617767
+      ],
+      "error_with_reference_sensitivity_95": [
+        9.672466585727705e-05,
+        0.00024101882330617767
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        2.0093382470944763e-05,
+        3.933398746637914e-05,
+        1.1927343941054004e-06,
+        0.0
+      ],
+      "function_mean_squared_error": [
+        8.673375830763832e-05,
+        0.00016338638784781342,
+        5.164643797118173e-06,
+        0.0
+      ],
+      "max_function_split_rhat": 1.4816293266259815,
+      "max_mean_squared_error": 0.00016338638784781342,
+      "median_cached_seconds": 2.6152542497147806,
+      "median_execution_seconds": 2.6688760210527107,
+      "median_total_seconds": 3.4513355834642425,
+      "method": "rwm/online_picard",
+      "model": "L2",
+      "peak_host_rss_bytes": 517668864,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "not_assessable",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "not_assessable",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "reference_usable": false,
+      "retained_draws": 256,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 284.51919816737063,
+      "all_attempt_median_seconds": 12.678397687966935,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        9.586902869755426e-06,
+        3.42113292175948e-05
+      ],
+      "error_with_reference_sensitivity_95": [
+        9.586902869755426e-06,
+        3.42113292175948e-05
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        3.1853041148694134e-06,
+        6.9623201158708215e-06,
+        1.8859721104907492e-07,
+        0.0
+      ],
+      "function_mean_squared_error": [
+        1.0491222015723992e-05,
+        1.9134867261274995e-05,
+        6.229893279560228e-07,
+        0.0
+      ],
+      "max_function_split_rhat": 1.0500429558555788,
+      "max_mean_squared_error": 1.9134867261274995e-05,
+      "median_cached_seconds": 10.772838166507427,
+      "median_execution_seconds": 10.758987458539195,
+      "median_total_seconds": 12.678397687966935,
+      "method": "rwm/online_picard",
+      "model": "L2",
+      "peak_host_rss_bytes": 518979584,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "not_assessable",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "not_assessable",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "reference_usable": false,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 22.995760458521545,
+      "all_attempt_median_seconds": 0.9530743119539693,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        9.678536931883525e-05,
+        0.0002455231874943595
+      ],
+      "error_with_reference_sensitivity_95": [
+        9.678536931883525e-05,
+        0.0002455231874943595
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        2.009338247094468e-05,
+        3.9333987466379516e-05,
+        1.192734394105406e-06,
+        0.0
+      ],
+      "function_mean_squared_error": [
+        8.673375830763753e-05,
+        0.0001633863878478138,
+        5.16464379711817e-06,
+        0.0
+      ],
+      "max_function_split_rhat": 1.4816293266259777,
+      "max_mean_squared_error": 0.0001633863878478138,
+      "median_cached_seconds": 0.3511337602394633,
+      "median_execution_seconds": 0.35135445848573,
+      "median_total_seconds": 0.9530743119539693,
+      "method": "rwm/sequential",
+      "model": "L2",
+      "peak_host_rss_bytes": 490602496,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "not_assessable",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "not_assessable",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "reference_usable": false,
+      "retained_draws": 256,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 70.00127070909366,
+      "all_attempt_median_seconds": 2.920512291486375,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        9.57882735164248e-06,
+        3.367593457739996e-05
+      ],
+      "error_with_reference_sensitivity_95": [
+        9.57882735164248e-06,
+        3.367593457739996e-05
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        3.185304114869713e-06,
+        6.9623201158709155e-06,
+        1.88597211049067e-07,
+        0.0
+      ],
+      "function_mean_squared_error": [
+        1.0491222015724493e-05,
+        1.9134867261274968e-05,
+        6.229893279560178e-07,
+        0.0
+      ],
+      "max_function_split_rhat": 1.0500429558555802,
+      "max_mean_squared_error": 1.9134867261274968e-05,
+      "median_cached_seconds": 1.1181334375869483,
+      "median_execution_seconds": 1.120173375471495,
+      "median_total_seconds": 2.920512291486375,
+      "method": "rwm/sequential",
+      "model": "L2",
+      "peak_host_rss_bytes": 492617728,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "not_assessable",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "not_assessable",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "finite_NUTS",
+      "reference_mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "reference_usable": false,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 24,
+      "runs_with_infinite_rhat": 0
+    },
+    {
+      "all_attempt_cost_seconds": 26.362736207433045,
+      "all_attempt_median_seconds": 1.0377688539447263,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.1228057525182203,
+        0.3325057268457758
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.1228057525182203,
+        0.3325057268457758
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.05397699075838076,
+        0.013726356896179858,
+        0.004332981287305232,
+        0.0048593354985074335
+      ],
+      "function_mean_squared_error": [
+        0.2161180619903839,
+        0.0546875,
+        0.02080300096645775,
+        0.01701351025644082
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.2161180619903839,
+      "median_cached_seconds": 0.012000864488072693,
+      "median_execution_seconds": 0.013129666447639465,
+      "median_total_seconds": 1.0377688539447263,
+      "method": "mala/quasi_deer",
+      "model": "M1",
+      "peak_host_rss_bytes": 482295808,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 2,
+      "runs_with_infinite_rhat": 22
+    },
+    {
+      "all_attempt_cost_seconds": 49.548330748220906,
+      "all_attempt_median_seconds": 2.042797979200259,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.14194298007487113,
+        0.3736093879771998
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.14194298007487113,
+        0.3736093879771998
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.06105041416053407,
+        0.015728446811438233,
+        0.0005982729145248283,
+        0.0006172889208917021
+      ],
+      "function_mean_squared_error": [
+        0.252413554298408,
+        0.06510416666666667,
+        0.002560180580017526,
+        0.0024434976350457354
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.252413554298408,
+      "median_cached_seconds": 0.03440553118707612,
+      "median_execution_seconds": 0.03579604160040617,
+      "median_total_seconds": 2.042797979200259,
+      "method": "mala/quasi_deer",
+      "model": "M1",
+      "peak_host_rss_bytes": 468975616,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 3,
+      "runs_with_infinite_rhat": 21
+    },
+    {
+      "all_attempt_cost_seconds": 13.547831710195169,
+      "all_attempt_median_seconds": 0.5374664369737729,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.12140495456820044,
+        0.3283921760655618
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.12140495456820044,
+        0.3283921760655618
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.05397699075839099,
+        0.013726356896179858,
+        0.00433298128726069,
+        0.004859335498516347
+      ],
+      "function_mean_squared_error": [
+        0.21611806199039996,
+        0.0546875,
+        0.020803000966307043,
+        0.017013510256460286
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.21611806199039996,
+      "median_cached_seconds": 0.0011426564888097346,
+      "median_execution_seconds": 0.0015124579658731818,
+      "median_total_seconds": 0.5374664369737729,
+      "method": "mala/sequential",
+      "model": "M1",
+      "peak_host_rss_bytes": 492011520,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 2,
+      "runs_with_infinite_rhat": 22
+    },
+    {
+      "all_attempt_cost_seconds": 36.942740832455456,
+      "all_attempt_median_seconds": 1.530950561282225,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.1499625654086193,
+        0.38225179184439056
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.1499625654086193,
+        0.38225179184439056
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.06105041416051676,
+        0.015728446811438233,
+        0.0005982729145289628,
+        0.0006172889208847708
+      ],
+      "function_mean_squared_error": [
+        0.2524135542983022,
+        0.06510416666666667,
+        0.0025601805800203026,
+        0.0024434976350375423
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.2524135542983022,
+      "median_cached_seconds": 0.0036621562321670353,
+      "median_execution_seconds": 0.0026287506334483624,
+      "median_total_seconds": 1.530950561282225,
+      "method": "mala/sequential",
+      "model": "M1",
+      "peak_host_rss_bytes": 516882432,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 3,
+      "runs_with_infinite_rhat": 21
+    },
+    {
+      "all_attempt_cost_seconds": 41.784551246790215,
+      "all_attempt_median_seconds": 1.6119286661269143,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.16921706293642214,
+        0.4497460693491692
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.16921706293642214,
+        0.4497460693491692
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.07463460453997305,
+        0.01927481108574879,
+        0.00012825637548556475,
+        0.0011900881102965047
+      ],
+      "function_mean_squared_error": [
+        0.3006286665928121,
+        0.078125,
+        0.0006203097229277764,
+        0.00408490836485945
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.3006286665928121,
+      "median_cached_seconds": 0.013338729622773826,
+      "median_execution_seconds": 0.013338729622773826,
+      "median_total_seconds": 1.6119286661269143,
+      "method": "nuts/sequential",
+      "model": "M1",
+      "peak_host_rss_bytes": 483901440,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 5,
+      "runs_with_infinite_rhat": 19
+    },
+    {
+      "all_attempt_cost_seconds": 41.85507133137435,
+      "all_attempt_median_seconds": 1.66814272897318,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.16047295045230986,
+        0.45053785306747524
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.16047295045230986,
+        0.45053785306747524
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.07455065339982118,
+        0.019358636742176197,
+        2.79999326763508e-05,
+        0.0001088812515733172
+      ],
+      "function_mean_squared_error": [
+        0.2957959727571284,
+        0.0768808126449585,
+        9.047242421013991e-05,
+        0.0004745409042358731
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.2957959727571284,
+      "median_cached_seconds": 0.06717783340718597,
+      "median_execution_seconds": 0.06717783340718597,
+      "median_total_seconds": 1.66814272897318,
+      "method": "nuts/sequential",
+      "model": "M1",
+      "peak_host_rss_bytes": 497729536,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 5,
+      "runs_with_infinite_rhat": 18
+    },
+    {
+      "all_attempt_cost_seconds": 10.259305959800258,
+      "all_attempt_median_seconds": 0.41878733260091394,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.09602843868405932,
+        0.2523370070854404
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.09602843868405932,
+        0.2523370070854404
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.04223378866540279,
+        0.011075198605649894,
+        0.01040804559992474,
+        0.01410853171222295
+      ],
+      "function_mean_squared_error": [
+        0.16660334077592812,
+        0.041666666666666664,
+        0.046231496873375855,
+        0.03130205409067919
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.16660334077592812,
+      "median_cached_seconds": 0.0071446767542511225,
+      "median_execution_seconds": 0.00864195846952498,
+      "median_total_seconds": 0.41878733260091394,
+      "method": "rwm/online_picard",
+      "model": "M1",
+      "peak_host_rss_bytes": 491634688,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 1,
+      "runs_with_infinite_rhat": 23
+    },
+    {
+      "all_attempt_cost_seconds": 22.719539791345596,
+      "all_attempt_median_seconds": 0.9170303755672649,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.22969967644082057,
+        0.5089335094359114
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.22969967644082057,
+        0.5089335094359114
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.07483047692274042,
+        0.01954822631785076,
+        0.0011244392633014508,
+        0.000722359527120705
+      ],
+      "function_mean_squared_error": [
+        0.3591874212820833,
+        0.09375,
+        0.004150858604462382,
+        0.0028585973761102806
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.3591874212820833,
+      "median_cached_seconds": 0.03682983329053968,
+      "median_execution_seconds": 0.03680541645735502,
+      "median_total_seconds": 0.9170303755672649,
+      "method": "rwm/online_picard",
+      "model": "M1",
+      "peak_host_rss_bytes": 499204096,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 6,
+      "runs_with_infinite_rhat": 18
+    },
+    {
+      "all_attempt_cost_seconds": 6.830676078097895,
+      "all_attempt_median_seconds": 0.2722275198902935,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.09506709819468552,
+        0.2543701282284848
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.09506709819468552,
+        0.2543701282284848
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.04223378866540281,
+        0.011075198605649894,
+        0.010408045599924717,
+        0.014108531712222953
+      ],
+      "function_mean_squared_error": [
+        0.16660334077592823,
+        0.041666666666666664,
+        0.04623149687337583,
+        0.03130205409067911
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.16660334077592823,
+      "median_cached_seconds": 0.000376833020709455,
+      "median_execution_seconds": 0.0006074995035305619,
+      "median_total_seconds": 0.2722275198902935,
+      "method": "rwm/sequential",
+      "model": "M1",
+      "peak_host_rss_bytes": 491225088,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 256,
+      "runs_with_constant_function": 1,
+      "runs_with_infinite_rhat": 23
+    },
+    {
+      "all_attempt_cost_seconds": 19.190316839376464,
+      "all_attempt_median_seconds": 0.760766478953883,
+      "attempted": 24,
+      "complete_grid_group": true,
+      "divergences": 0,
+      "divergent_runs": 0,
+      "error_bootstrap_95": [
+        0.21939362023719322,
+        0.5092517807794438
+      ],
+      "error_with_reference_sensitivity_95": [
+        0.21939362023719322,
+        0.5092517807794438
+      ],
+      "failed": 0,
+      "failed_attempt_cost_seconds": 0,
+      "failed_fraction": 0.0,
+      "failure_95_interval": [
+        0,
+        0.14247359772252563
+      ],
+      "function_error_mcse": [
+        0.0748304769227405,
+        0.01954822631785076,
+        0.0011244392633014697,
+        0.0007223595271207055
+      ],
+      "function_mean_squared_error": [
+        0.35918742128208353,
+        0.09375,
+        0.004150858604462403,
+        0.0028585973761102936
+      ],
+      "max_function_split_rhat": null,
+      "max_mean_squared_error": 0.35918742128208353,
+      "median_cached_seconds": 0.001892770524136722,
+      "median_execution_seconds": 0.0023150419583544135,
+      "median_total_seconds": 0.760766478953883,
+      "method": "rwm/sequential",
+      "model": "M1",
+      "peak_host_rss_bytes": 491552768,
+      "precision_assessment": [
+        {
+          "epsilon": 0.1,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.010000000000000002
+        },
+        {
+          "epsilon": 0.2,
+          "status": "above_threshold_pointwise",
+          "threshold": 0.04000000000000001
+        }
+      ],
+      "reference_kind": "analytic",
+      "reference_mcse": null,
+      "reference_usable": true,
+      "retained_draws": 2048,
+      "runs_with_constant_function": 6,
+      "runs_with_infinite_rhat": 18
+    }
+  ],
+  "interval_scope": "Pointwise 95% percentile bootstrap over independent repetitions. Reference sensitivity separately propagated. No simultaneous guarantee. Conditional errors if any failure.",
+  "observed": 1920,
+  "pending": 0,
+  "planned": 1920
+}

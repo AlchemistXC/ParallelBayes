@@ -1,0 +1,263 @@
+{
+  "archive_name": "parallelbayes-user-skills-2026-10-04.zip",
+  "archive_bytes": 30680478,
+  "archive_sha256": "b52f70d1730475a1c0811924109646033810ee5bf345df701d9d6c0fffb8afb7",
+  "delivery": "Private transfer only; not in GitHub or public Release",
+  "skills": [
+    {
+      "folder": "codebase-design",
+      "declared_name": "codebase-design",
+      "file_count": 4,
+      "bytes": 11765,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "domain-modeling",
+      "declared_name": "domain-modeling",
+      "file_count": 4,
+      "bytes": 8455,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "find-skills",
+      "declared_name": "find-skills",
+      "file_count": 1,
+      "bytes": 5472,
+      "portability_review_markers": [
+        "bash"
+      ]
+    },
+    {
+      "folder": "frontend-design",
+      "declared_name": "frontend-design",
+      "file_count": 2,
+      "bytes": 19564,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "grill-me",
+      "declared_name": "grill-me",
+      "file_count": 2,
+      "bytes": 294,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "grill-with-docs",
+      "declared_name": "grill-with-docs",
+      "file_count": 2,
+      "bytes": 392,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "grilling",
+      "declared_name": "grilling",
+      "file_count": 2,
+      "bytes": 2100,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "improve-codebase-architecture",
+      "declared_name": "improve-codebase-architecture",
+      "file_count": 3,
+      "bytes": 12800,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "nature-academic-search",
+      "declared_name": "nature-academic-search",
+      "file_count": 48,
+      "bytes": 265588,
+      "portability_review_markers": [
+        "${HOME}",
+        "bash",
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-citation",
+      "declared_name": "nature-citation",
+      "file_count": 15,
+      "bytes": 127810,
+      "portability_review_markers": [
+        "/tmp/",
+        "bash",
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-data",
+      "declared_name": "nature-data",
+      "file_count": 15,
+      "bytes": 54781,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "nature-downloader",
+      "declared_name": "nature-downloader",
+      "file_count": 67,
+      "bytes": 443211,
+      "portability_review_markers": [
+        "bash",
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-experiment-log",
+      "declared_name": "nature-experiment-log",
+      "file_count": 11,
+      "bytes": 20493,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "nature-figure",
+      "declared_name": "nature-figure",
+      "file_count": 126,
+      "bytes": 35102130,
+      "portability_review_markers": [
+        "bash",
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-image2ppt",
+      "declared_name": "nature-image2ppt",
+      "file_count": 87,
+      "bytes": 784206,
+      "portability_review_markers": [
+        "/tmp/",
+        "bash",
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-literature-pipeline",
+      "declared_name": "nature-literature-pipeline",
+      "file_count": 12,
+      "bytes": 36879,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "nature-paper-card",
+      "declared_name": "nature-paper-card",
+      "file_count": 21,
+      "bytes": 84787,
+      "portability_review_markers": [
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-paper-to-patent",
+      "declared_name": "nature-paper-to-patent",
+      "file_count": 67,
+      "bytes": 391030,
+      "portability_review_markers": [
+        "bash",
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-paper2ppt",
+      "declared_name": "nature-paper2ppt",
+      "file_count": 19,
+      "bytes": 75475,
+      "portability_review_markers": [
+        "bash",
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-polishing",
+      "declared_name": "nature-polishing",
+      "file_count": 33,
+      "bytes": 86833,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "nature-proposal-writer",
+      "declared_name": "researchwrite",
+      "file_count": 34,
+      "bytes": 102750,
+      "portability_review_markers": [
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-reader",
+      "declared_name": "nature-reader",
+      "file_count": 20,
+      "bytes": 67515,
+      "portability_review_markers": [
+        "/Users/",
+        "bash",
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-ref-verifier",
+      "declared_name": "nature-ref-verifier",
+      "file_count": 6,
+      "bytes": 18449,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "nature-response",
+      "declared_name": "nature-response",
+      "file_count": 38,
+      "bytes": 156506,
+      "portability_review_markers": [
+        "bash",
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-reviewer",
+      "declared_name": "nature-reviewer",
+      "file_count": 21,
+      "bytes": 102509,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "nature-shared",
+      "declared_name": "nature-shared",
+      "file_count": 21,
+      "bytes": 134348,
+      "portability_review_markers": [
+        "bash",
+        "python3"
+      ]
+    },
+    {
+      "folder": "nature-statistics",
+      "declared_name": "nature-statistics",
+      "file_count": 11,
+      "bytes": 37797,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "nature-writing",
+      "declared_name": "nature-writing",
+      "file_count": 77,
+      "bytes": 211998,
+      "portability_review_markers": [
+        "bash"
+      ]
+    },
+    {
+      "folder": "tdd",
+      "declared_name": "tdd",
+      "file_count": 4,
+      "bytes": 7331,
+      "portability_review_markers": []
+    },
+    {
+      "folder": "triage",
+      "declared_name": "triage",
+      "file_count": 4,
+      "bytes": 19301,
+      "portability_review_markers": []
+    }
+  ],
+  "excluded_cache_file_count": 0,
+  "secret_pattern_scan": "No matches for tested token/private-key patterns; not a general guarantee",
+  "windows_runtime_verified": false
+}

@@ -1,0 +1,23 @@
+{
+  "archives": [
+    {
+      "name": "software-0.1.1-cpu-review-v1.tar.gz",
+      "bytes": 212140,
+      "sha256": "256c5fc43178e35af60fa9a5ffd753b3ed3d38507974284a0ebeb89ced88878f",
+      "verified": true
+    },
+    {
+      "name": "experiments-cpu-review-v1.tar.gz",
+      "bytes": 3656818,
+      "sha256": "997ee4ff46cbc3c8a7a6d7dfd288bdfd9bd97455f8a43ed6e732d81b467ec3c3",
+      "verified": true
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar",
+      "bytes": 4967352320,
+      "sha256": "2e3cff9d06310cb123c778ba9cdbdf9dacae413f4207c13c4887b2460430d679",
+      "verified": true
+    }
+  ],
+  "method": "Stream each uploaded chunk in manifest order; verify per-part and combined original archive SHA256 without changing the CPU evidence"
+}

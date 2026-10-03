@@ -1,0 +1,435 @@
+TY  - GEN
+ID  - angelino2016
+TI  - Patterns of Scalable Bayesian Inference
+AU  - Angelino, Elaine
+AU  - Johnson, Matthew James
+AU  - Adams, Ryan P.
+PY  - 2016
+T2  - arXiv
+UR  - https://arxiv.org/abs/1602.05221v2
+N1  - arXiv v2，2016-03-22
+ER  -
+
+TY  - GEN
+ID  - sountsov2024
+TI  - Running Markov Chain Monte Carlo on Modern Hardware and Software
+AU  - Sountsov, Pavel
+AU  - Carroll, Colin
+AU  - Hoffman, Matthew D.
+PY  - 2024
+T2  - arXiv（书章公开版本）
+UR  - https://arxiv.org/abs/2411.04260v1
+N1  - arXiv v1，2024-11-06；不是 2026 书章终稿
+ER  -
+
+TY  - CPAPER
+ID  - zoltowski2025
+TI  - Parallelizing MCMC Across the Sequence Length
+AU  - Zoltowski, David M.
+AU  - Wu, Skyler
+AU  - Gonzalez, Xavier
+AU  - Kozachkov, Leo
+AU  - Linderman, Scott W.
+PY  - 2025
+T2  - Advances in Neural Information Processing Systems
+UR  - https://proceedings.nips.cc/paper_files/paper/2025/hash/202886ee1c9ca735cb5bff3a00a69883-Abstract-Conference.html
+N1  - arXiv v2，2025-12-02；NeurIPS 2025 对应稿
+VL  - 38
+DO  - 10.52202/085713-0751
+ER  -
+
+TY  - JOUR
+ID  - grazzi2026
+TI  - Parallel computations for Metropolis Markov chains with Picard maps
+AU  - Grazzi, Sebastiano
+AU  - Zanella, Giacomo
+PY  - 2026
+T2  - Biometrika
+UR  - https://doi.org/10.1093/biomet/asag022
+N1  - 期刊正文，113(2), asag022
+VL  - 113
+IS  - 2
+DO  - 10.1093/biomet/asag022
+ER  -
+
+TY  - JOUR
+ID  - pozza2025
+TI  - On the fundamental limitations of multi-proposal Markov chain Monte Carlo algorithms
+AU  - Pozza, Francesco
+AU  - Zanella, Giacomo
+PY  - 2025
+T2  - Biometrika
+UR  - https://doi.org/10.1093/biomet/asaf019
+N1  - 期刊正文，112(2), asaf019
+VL  - 112
+IS  - 2
+DO  - 10.1093/biomet/asaf019
+ER  -
+
+TY  - JOUR
+ID  - glattholtz2024
+TI  - Parallel MCMC algorithms: theoretical foundations, algorithm design, case studies
+AU  - Glatt-Holtz, Nathan E.
+AU  - Holbrook, Andrew J.
+AU  - Krometis, Justin A.
+AU  - Mondaini, Cecilia F.
+PY  - 2024
+T2  - Transactions of Mathematics and Its Applications
+UR  - https://doi.org/10.1093/imatrm/tnae004
+N1  - 期刊版，8(2), tnae004
+VL  - 8
+IS  - 2
+DO  - 10.1093/imatrm/tnae004
+ER  -
+
+TY  - GEN
+ID  - angelino2014
+TI  - Accelerating MCMC via Parallel Predictive Prefetching
+AU  - Angelino, Elaine
+AU  - Kohler, Eddie
+AU  - Waterland, Amos
+AU  - Seltzer, Margo
+AU  - Adams, Ryan P.
+PY  - 2014
+T2  - arXiv（本地保存版本）
+UR  - https://arxiv.org/abs/1403.7265v1
+N1  - arXiv v1；本条按本地预印本著录
+ER  -
+
+TY  - CPAPER
+ID  - anari2024
+TI  - Fast parallel sampling under isoperimetry
+AU  - Anari, Nima
+AU  - Chewi, Sinho
+AU  - Vuong, Thuy-Duong
+PY  - 2024
+T2  - Proceedings of Thirty Seventh Conference on Learning Theory
+UR  - https://proceedings.mlr.press/v247/anari24a.html
+N1  - COLT 2024 / PMLR 247；PDF 内部页码 1-25
+VL  - 247
+PB  - PMLR
+SP  - 161
+EP  - 185
+ER  -
+
+TY  - CPAPER
+ID  - lim2024
+TI  - Parallelizing non-linear sequential models over the sequence length
+AU  - Lim, Yi Heng
+AU  - Zhu, Qi
+AU  - Selfridge, Joshua
+AU  - Kasim, Muhammad Firmansyah
+PY  - 2024
+T2  - International Conference on Learning Representations
+UR  - https://proceedings.iclr.cc/paper_files/paper/2024/hash/f3bfbd65743e60c685a3845bd61ce15f-Abstract-Conference.html
+N1  - arXiv v3；首页标注 ICLR 2024 accepted
+ER  -
+
+TY  - CPAPER
+ID  - hoffman2022
+TI  - Tuning-Free Generalized Hamiltonian Monte Carlo
+AU  - Hoffman, Matthew D.
+AU  - Sountsov, Pavel
+PY  - 2022
+T2  - Proceedings of The 25th International Conference on Artificial Intelligence and Statistics
+UR  - https://proceedings.mlr.press/v151/hoffman22a.html
+N1  - AISTATS 2022 / PMLR 151
+VL  - 151
+PB  - PMLR
+SP  - 7799
+EP  - 7813
+ER  -
+
+TY  - CHAP
+ID  - sountsov2026
+TI  - Running Markov Chain Monte Carlo on Modern Hardware and Software
+AU  - Sountsov, Pavel
+AU  - Carroll, Colin
+AU  - Hoffman, Matthew D.
+PY  - 2026
+T2  - Handbook of Markov Chain Monte Carlo, Second Edition
+UR  - https://doi.org/10.1201/9781003453420-21
+N1  - 用户提供的 2026 第二版书籍 PDF，第 21 章；提取副本
+DO  - 10.1201/9781003453420-21
+PB  - CRC Press
+SP  - 569
+EP  - 590
+A2  - Craiu, Radu V.
+A2  - Vats, Dootika
+A2  - Jones, Galin L.
+A2  - Brooks, Steve
+A2  - Gelman, Andrew
+A2  - Meng, Xiao-Li
+ER  -
+
+TY  - JOUR
+ID  - gonzalez2026
+TI  - A Unifying Framework for Parallelizing Sequential Models with Linear Dynamical Systems
+AU  - Gonzalez, Xavier
+AU  - Buchanan, E. Kelly
+AU  - Lee, Hyun Dong
+AU  - Liu, Jerry Weihong
+AU  - Wang, Ke Alexander
+AU  - Zoltowski, David M.
+AU  - Kozachkov, Leo
+AU  - Ré, Christopher
+AU  - Linderman, Scott W.
+PY  - 2026
+T2  - Transactions on Machine Learning Research
+UR  - https://openreview.net/forum?id=fw6GgAIGur
+N1  - v2，2026-04-03，TMLR 2026-04
+ER  -
+
+TY  - CPAPER
+ID  - robnik2026
+TI  - Faster Parallel MCMC: Metropolis Adjustment Is Best Served Warm
+AU  - Robnik, Jakob
+AU  - Seljak, Uroš
+PY  - 2026
+T2  - Proceedings of the 29th International Conference on Artificial Intelligence and Statistics
+UR  - https://proceedings.mlr.press/v300/robnik26a.html
+N1  - PMLR 正式版
+VL  - 300
+PB  - PMLR
+SP  - 2719
+EP  - 2727
+ER  -
+
+TY  - CPAPER
+ID  - zhou2025parallel
+TI  - Parallel Simulation for Log-concave Sampling and Score-based Diffusion Models
+AU  - Zhou, Huanjian
+AU  - Sugiyama, Masashi
+PY  - 2025
+T2  - Proceedings of the 42nd International Conference on Machine Learning
+UR  - https://proceedings.mlr.press/v267/zhou25x.html
+N1  - PMLR 正式版
+VL  - 267
+PB  - PMLR
+SP  - 79192
+EP  - 79225
+ER  -
+
+TY  - GEN
+ID  - glattholtz2026
+TI  - Mad Props: Parallelism in Markov Chain Monte Carlo Through the Lens of the Infinite Proposal Limit
+AU  - Glatt-Holtz, Nathan E.
+AU  - Holbrook, Andrew J.
+AU  - Krometis, Justin A.
+AU  - Mondaini, Cecilia F.
+PY  - 2026
+T2  - arXiv preprint
+UR  - https://arxiv.org/abs/2605.21899v1
+N1  - v1，2026-05-21；正文日期 2026-05-22
+ER  -
+
+TY  - GEN
+ID  - wei2026
+TI  - Picard Proximal Monte Carlo for Parallel Bayesian Imaging with Score-Based Generative Priors
+AU  - Wei, Deliang
+AU  - Bell, Evan
+AU  - Guo, Wenhan
+AU  - Chen, Yifan
+AU  - Sun, Yu
+PY  - 2026
+T2  - arXiv preprint
+UR  - https://arxiv.org/abs/2608.17666v1
+N1  - v1，2026-08-18
+ER  -
+
+TY  - JOUR
+ID  - margossian2025
+TI  - Nested R-hat: Assessing the Convergence of Markov Chain Monte Carlo When Running Many Short Chains
+AU  - Margossian, Charles C.
+AU  - Hoffman, Matthew D.
+AU  - Sountsov, Pavel
+AU  - Riou-Durand, Lionel
+AU  - Vehtari, Aki
+AU  - Gelman, Andrew
+PY  - 2025
+T2  - Bayesian Analysis
+UR  - https://doi.org/10.1214/24-BA1453
+N1  - 出版版，机构仓储封面另占 1 页；2024 DOI 不等于卷年
+VL  - 20
+IS  - 4
+DO  - 10.1214/24-BA1453
+SP  - 1587
+EP  - 1614
+ER  -
+
+TY  - CPAPER
+ID  - dance2025
+TI  - Efficiently Vectorized MCMC on Modern Accelerators
+AU  - Dance, Hugh
+AU  - Glaser, Pierre
+AU  - Orbanz, Peter
+AU  - Adams, Ryan P.
+PY  - 2025
+T2  - Proceedings of the 42nd International Conference on Machine Learning
+UR  - https://proceedings.mlr.press/v267/dance25a.html
+N1  - PMLR 正式版
+VL  - 267
+PB  - PMLR
+SP  - 12436
+EP  - 12458
+ER  -
+
+TY  - CPAPER
+ID  - gonzalez2025predict
+TI  - Predictability Enables Parallelization of Nonlinear State Space Models
+AU  - Gonzalez, Xavier
+AU  - Kozachkov, Leo
+AU  - Zoltowski, David M.
+AU  - Clarkson, Kenneth L.
+AU  - Linderman, Scott W.
+PY  - 2025
+T2  - Advances in Neural Information Processing Systems
+UR  - https://arxiv.org/abs/2508.16817v4
+N1  - NeurIPS 2025；本地 arXiv v4，2026-02-07
+ER  -
+
+TY  - CPAPER
+ID  - zhou2025lower
+TI  - The Adaptive Complexity of Parallelized Log-concave Sampling
+AU  - Zhou, Huanjian
+AU  - Wang, Baoxiang
+AU  - Sugiyama, Masashi
+PY  - 2025
+T2  - International Conference on Learning Representations
+UR  - https://arxiv.org/abs/2408.13045v2
+N1  - ICLR 2025；本地 arXiv v2，2025-05-19
+ER  -
+
+TY  - JOUR
+ID  - bardenet2017
+TI  - On Markov chain Monte Carlo methods for tall data
+AU  - Bardenet, Rémi
+AU  - Doucet, Arnaud
+AU  - Holmes, Chris
+PY  - 2017
+JO  - Journal of Machine Learning Research
+VL  - 18
+IS  - 47
+SP  - 1
+EP  - 43
+UR  - https://jmlr.org/papers/v18/15-205.html
+N1  - JMLR 正式版，43 页
+L1  - ../references/background/bardenet2017.pdf
+ER  -
+
+TY  - JOUR
+ID  - robert2018
+TI  - Accelerating MCMC algorithms
+AU  - Robert, Christian P.
+AU  - Elvira, Victor
+AU  - Tawn, Nick
+AU  - Wu, Changye
+PY  - 2018
+JO  - WIREs Computational Statistics
+VL  - 10
+IS  - 5
+SP  - e1435
+DO  - 10.1002/wics.1435
+UR  - https://wires.onlinelibrary.wiley.com/doi/10.1002/wics.1435
+N1  - arXiv:1804.02719v2，2018-04-11；不是正式排版版
+L1  - ../references/background/robert2018.pdf
+ER  -
+
+TY  - JOUR
+ID  - brockwell2006
+TI  - Parallel Markov chain Monte Carlo Simulation by Pre-Fetching
+AU  - Brockwell, A. E.
+PY  - 2006
+JO  - Journal of Computational and Graphical Statistics
+VL  - 15
+IS  - 1
+SP  - 246
+EP  - 261
+DO  - 10.1198/106186006X100579
+UR  - https://doi.org/10.1198/106186006X100579
+N1  - CMU 技术报告，2005-03-15；不是 2006 正式排版版
+L1  - ../references/background/brockwell2006.pdf
+ER  -
+
+TY  - JOUR
+ID  - calderhead2014
+TI  - A general construction for parallelizing Metropolis–Hastings algorithms
+AU  - Calderhead, Ben
+PY  - 2014
+JO  - Proceedings of the National Academy of Sciences
+VL  - 111
+IS  - 49
+SP  - 17408
+EP  - 17413
+DO  - 10.1073/pnas.1408184111
+UR  - https://doi.org/10.1073/pnas.1408184111
+N1  - source-limited：仅题录/摘要及可见图注，未完成全文研读。
+ER  -
+
+TY  - JOUR
+ID  - roberts2007
+TI  - Coupling and ergodicity of adaptive Markov chain Monte Carlo algorithms
+AU  - Roberts, Gareth O.
+AU  - Rosenthal, Jeffrey S.
+PY  - 2007
+JO  - Journal of Applied Probability
+VL  - 44
+IS  - 2
+SP  - 458
+EP  - 475
+DO  - 10.1239/jap/1183667414
+UR  - https://doi.org/10.1239/jap/1183667414
+N1  - JAP 正式版，18 页
+L1  - ../references/background/roberts2007.pdf
+ER  -
+
+TY  - JOUR
+ID  - hoffman2014
+TI  - The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo
+AU  - Hoffman, Matthew D.
+AU  - Gelman, Andrew
+PY  - 2014
+JO  - Journal of Machine Learning Research
+VL  - 15
+IS  - 47
+SP  - 1593
+EP  - 1623
+UR  - https://jmlr.org/papers/v15/hoffman14a.html
+N1  - JMLR 正式版，31 页
+L1  - ../references/background/hoffman2014.pdf
+ER  -
+
+TY  - JOUR
+ID  - mitrophanov2005
+TI  - Sensitivity and convergence of uniformly ergodic Markov chains
+AU  - Mitrophanov, A. Yu.
+PY  - 2005
+JO  - Journal of Applied Probability
+VL  - 42
+IS  - 4
+SP  - 1003
+EP  - 1014
+DO  - 10.1239/jap/1134587812
+UR  - https://www.cambridge.org/core/journals/journal-of-applied-probability/article/sensitivity-and-convergence-of-uniformly-ergodic-markov-chains/26A9854BCB8D103B3A63A9B272616EC0
+N1  - JAP 正式版，12 页
+L1  - ../references/background/mitrophanov2005.pdf
+ER  -
+
+TY  - JOUR
+ID  - alquier2016
+TI  - Noisy Monte Carlo: convergence of Markov chains with approximate transition kernels
+AU  - Alquier, P.
+AU  - Friel, N.
+AU  - Everitt, R.
+AU  - Boland, A.
+PY  - 2016
+JO  - Statistics and Computing
+VL  - 26
+IS  - 1-2
+SP  - 29
+EP  - 47
+DO  - 10.1007/s11222-014-9521-x
+UR  - https://link.springer.com/article/10.1007/s11222-014-9521-x
+N1  - arXiv:1403.5496v3，2014-04-15；早于 2016 正式版
+L1  - ../references/background/alquier2016.pdf
+ER  -

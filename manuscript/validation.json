@@ -1,0 +1,103 @@
+{
+  "checked_on": "2026-10-03",
+  "scope": "Structural consistency and local links; not proof validation or experimental replication.",
+  "pass": true,
+  "errors": [],
+  "checks": {
+    "reference_order": {
+      "pass": true,
+      "detail": "27 unique sources"
+    },
+    "reference_numbers": {
+      "pass": true,
+      "detail": "Reference numbering is contiguous."
+    },
+    "derived_body_matches_source": {
+      "pass": true,
+      "detail": "Reading draft equals the source with numbered citations."
+    },
+    "reference_anchors": {
+      "pass": true,
+      "detail": "Every reference has exactly one numbered anchor."
+    },
+    "resolved_citations": {
+      "pass": true,
+      "detail": "No unresolved citation keys."
+    },
+    "bibliography_keys": {
+      "pass": true,
+      "detail": "BibTeX entry keys match the manuscript."
+    },
+    "bibliography_braces": {
+      "pass": true,
+      "detail": "Structural brace check; not a full BibTeX parser."
+    },
+    "equation_numbers": {
+      "pass": true,
+      "detail": "12 numbered equations"
+    },
+    "math_delimiters": {
+      "pass": true,
+      "detail": "Display and inline math delimiters are paired."
+    },
+    "math_braces": {
+      "pass": true,
+      "detail": "Braces are balanced in all math expressions."
+    },
+    "section_sequence": {
+      "pass": true,
+      "detail": "8 main sections"
+    },
+    "table_sequence": {
+      "pass": true,
+      "detail": "4 numbered tables"
+    },
+    "table_columns": {
+      "pass": true,
+      "detail": [
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    "no_placeholders": {
+      "pass": true,
+      "detail": "No drafting placeholders in the manuscript."
+    },
+    "no_control_characters": {
+      "pass": true,
+      "detail": "No unexpected control characters in the reading draft."
+    },
+    "local_links": {
+      "pass": true,
+      "detail": {
+        "checked": 77,
+        "missing": []
+      }
+    },
+    "local_reference_pdfs": {
+      "pass": true,
+      "detail": []
+    },
+    "stats_consistent": {
+      "pass": true,
+      "detail": {
+        "written_on": "2026-10-03",
+        "literature_cutoff": "2026-10-02",
+        "body_chinese_characters": 11823,
+        "bibliography_entries": 27,
+        "background_entries": 8,
+        "numbered_equations": 12,
+        "tables": 4,
+        "sections": 8,
+        "subsections": 23
+      }
+    }
+  },
+  "sha256": {
+    "manuscript/source/中文综述.md": "cccf529afeada1d1e1aace05a7acb28201affc978c4330c2e8a4dbd7020cfc3d",
+    "manuscript/中文综述_初稿.md": "a509518e5e77e8252743d0c2a5f599bdc84612a045e65d91f7c2fc2886406275",
+    "manuscript/references.bib": "daab4d90db8bb80b5d026dbc6266672c118bd6f5c8027eba968ab51bd3693772"
+  }
+}

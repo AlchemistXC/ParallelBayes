@@ -1,0 +1,6 @@
+# Candidate Windows bootstrap, not a validated full lock. Torch installed separately.
+numpy==2.2.6
+scipy==1.15.3
+pytest==8.4.2
+psutil==7.1.0
+matplotlib==3.10.6

@@ -1,0 +1,405 @@
+{
+  "rows": [
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/quasi_deer",
+      "model": "A1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/online_picard",
+      "model": "G2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "nuts/sequential",
+      "model": "G2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/online_picard",
+      "model": "M1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/quasi_deer",
+      "model": "L1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/sequential",
+      "model": "L2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "nuts/sequential",
+      "model": "H1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/quasi_deer",
+      "model": "M1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/sequential",
+      "model": "G1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "nuts/sequential",
+      "model": "L2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/quasi_deer",
+      "model": "L2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/online_picard",
+      "model": "L2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/online_picard",
+      "model": "G1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/sequential",
+      "model": "M1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/sequential",
+      "model": "H2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/quasi_deer",
+      "model": "G2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "nuts/sequential",
+      "model": "M1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/online_picard",
+      "model": "L1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/sequential",
+      "model": "H1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/online_picard",
+      "model": "H2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/sequential",
+      "model": "A1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/sequential",
+      "model": "L2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/sequential",
+      "model": "G1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "nuts/sequential",
+      "model": "H2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/sequential",
+      "model": "H2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/sequential",
+      "model": "L1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "nuts/sequential",
+      "model": "G1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "nuts/sequential",
+      "model": "L1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/online_picard",
+      "model": "H1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/quasi_deer",
+      "model": "G1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/online_picard",
+      "model": "A1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/sequential",
+      "model": "H1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/sequential",
+      "model": "A1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/sequential",
+      "model": "L1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/sequential",
+      "model": "G2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/sequential",
+      "model": "G2",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "nuts/sequential",
+      "model": "A1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/quasi_deer",
+      "model": "H2",
+      "new_against_historical": 1.9895196601282805e-13,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 1.9895196601282805e-13
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "mala/quasi_deer",
+      "model": "H1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    },
+    {
+      "acceptance_mismatch": 0,
+      "method": "rwm/sequential",
+      "model": "M1",
+      "new_against_historical": 0.0,
+      "new_status": "completed",
+      "old_against_historical": 0.0,
+      "old_status": "completed",
+      "path_difference": 0.0
+    }
+  ],
+  "scope": "One original repeat, shorter retained budget, all 8 models x 5 workflows. MH actual tape; NUTS original seed/keys. No speed-equivalence claim; paired caches and timing are not controlled."
+}

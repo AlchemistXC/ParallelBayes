@@ -1,0 +1,71 @@
+{
+  "project": "parallel-r-package",
+  "date": "2026-10-03",
+  "mode": "implementation",
+  "status": "cpu_only_phase_complete_gpu_deferred_by_user",
+  "skills": [
+    "nature-academic-search",
+    "researchwrite",
+    "codebase-design",
+    "nature-statistics",
+    "nature-figure",
+    "nature-writing",
+    "latex:latex-compile",
+    "nature-reviewer",
+    "pdf:pdf"
+  ],
+  "hardware_user_confirmed": [
+    "Mac/CPU",
+    "AMD CPU + RTX 5080 + Windows 11 desktop"
+  ],
+  "runtime_verified": true,
+  "manuscript_modified": true,
+  "implementation_started": true,
+  "decision": "Keep Mac CPU phase complete; GPU stays deferred. Replace future WSL deployment with native Windows PyTorch/CUDA migration requiring new implementation, locks and protocol.",
+  "main_output": "exports/研究与开发计划.md",
+  "evidence_table": "02_evidence_table.md",
+  "qa": [
+    "qa_logs/feasibility-review.md",
+    "qa_logs/inference-review.md",
+    "qa_logs/synthesis-and-qa.md",
+    "qa_logs/plan-statistics-qa.md",
+    "qa_logs/plan-delivery-qa.md",
+    "qa_logs/plan-v1-final-qa.md"
+  ],
+  "unresolved": [],
+  "plan_version": "1.2-native-windows-scope",
+  "task_list": "exports/开发任务清单.md",
+  "audit_output": "exports/方案审核与修订建议.md",
+  "current_work_package": "local_phase_complete",
+  "research_plan_complete": true,
+  "development_plan_complete": true,
+  "work_packages": {
+    "WP00": "cpu_complete_gpu_deferred_by_user",
+    "WP01": "cpu_complete",
+    "WP02": "cpu_complete_gpu_deferred_by_user",
+    "WP03": "cpu_complete_gpu_deferred_by_user",
+    "WP04": "cpu_complete",
+    "WP05": "cpu_complete",
+    "WP06": "cpu_v1_gpu_v3_frozen",
+    "WP07": "cpu_complete_gpu_deferred_by_user",
+    "WP08": "optional_not_implemented",
+    "WP09": "local_release_and_manuscript_complete_gpu_deferred_by_user"
+  },
+  "runtime_verification_scope": "Mac CPU only; not desktop GPU",
+  "new_software_manuscript": "manuscript/software/软件与基准研究.tex",
+  "local_results": {
+    "formal_tasks": 1920,
+    "sbc_fits": 320,
+    "python_tests": 58,
+    "r_check": "OK",
+    "pdf_pages": 13,
+    "rebuild_audit": "passed",
+    "gpu_verified": false
+  },
+  "active_scope": "mac_cpu_only",
+  "deferred": [
+    "All GPU setup checks, correctness, pilot, formal experiments and return analysis; unverified until future actual evidence"
+  ],
+  "desktop_os_requirement": "native_windows_11_no_wsl2",
+  "future_gpu_backend": "pytorch_cuda_candidate_not_implemented"
+}

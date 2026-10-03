@@ -1,0 +1,473 @@
+--- r-package/R/interface.R
++++ r-package/R/interface.R
+@@ -1,16 +1,23 @@
+ .pb_module <- function() {
+   path <- system.file("python", package = "parallelbayes")
+-  reticulate::import_from_path("parallelbayes", path = path, convert = TRUE)
++  module <- reticulate::import_from_path("parallelbayes", path = path, convert = TRUE)
++  if (!identical(module$"__version__", as.character(utils::packageVersion("parallelbayes")))) {
++    stop("A different ParallelBayes Python version is already loaded; restart R with the pinned environment")
++  }
++  module
+ }
+ .pb_json <- function(x) jsonlite::toJSON(x, auto_unbox = TRUE, digits = NA, null = "null", matrix = "rowmajor")
+ .pb_spec <- function(model) {
+   if (!inherits(model, "pb_model")) stop("model must be a pb_model")
+-  reticulate::import("json")$loads(model$json)
++  reticulate::import("json", convert = FALSE)$loads(model$json)
+ }
+ .pb_native <- function(model) .pb_module()$make_model(.pb_spec(model))
+ 
+ pb_model <- function(kind = "gaussian", ..., stan_file = NULL, data = list()) {
+   spec <- c(list(kind = kind), list(...))
++  for (field in intersect(names(spec), c("mean", "y"))) {
++    if (is.atomic(spec[[field]]) && is.null(dim(spec[[field]]))) spec[[field]] <- I(spec[[field]])
++  }
+   if (!is.null(stan_file)) {
+     spec$kind <- "stan"
+     spec$stan_file <- normalizePath(stan_file, mustWork = TRUE)
+@@ -23,7 +30,9 @@
+ 
+ pb_sample <- function(model, kernel = "mala", executor = "sequential", ..., failure = c("record", "error")) {
+   failure <- match.arg(failure)
+-  config <- reticulate::import("json")$loads(.pb_json(c(list(kernel = kernel, executor = executor), list(...))))
++  settings <- c(list(kernel = kernel, executor = executor), list(...))
++  if (!is.null(settings$initial) && is.atomic(settings$initial) && is.null(dim(settings$initial))) settings$initial <- I(settings$initial)
++  config <- reticulate::import("json", convert = FALSE)$loads(.pb_json(settings))
+   raw <- .pb_module()$sample(.pb_native(model), config)
+   draws <- if (identical(raw$status, "completed")) {
+     a <- aperm(raw$draws, c(2L, 1L, 3L))
+@@ -39,6 +48,7 @@
+ pb_validate <- function(model, points = NULL, reference = NULL) {
+   if (!is.null(reference)) {
+     if (is.null(points)) stop("Explicit common-coordinate points are required for cross-provider validation")
++    .pb_module()
+     stan <- reticulate::import("parallelbayes.stan")
+     return(stan$cross_validate(.pb_native(model), .pb_native(reference), points))
+   }
+--- r-package/inst/python/parallelbayes/__init__.py
++++ r-package/inst/python/parallelbayes/__init__.py
+@@ -4,7 +4,7 @@
+ os.environ.setdefault("XLA_PYTHON_CLIENT_PREALLOCATE", "false")
+ import jax
+ jax.config.update("jax_enable_x64", True)
+-__version__ = "0.1.0"
++__version__ = "0.1.1"
+ 
+ from .models import make_model
+ from .sampling import sample, capabilities, validate_model
+--- r-package/inst/python/parallelbayes/executors.py
++++ r-package/inst/python/parallelbayes/executors.py
+@@ -36,16 +36,17 @@
+     zz = jnp.pad(noise, ((0, padded-n), (0, 0))).reshape(-1, window, d)
+     uu = jnp.pad(logu, ((0, padded-n),), constant_values=-1.).reshape(-1, window)
+     vv = jnp.pad(directions, ((0, padded-n), (0, 0)), constant_values=1.).reshape(-1, window, d)
++    real=(jnp.arange(padded)<n).reshape(-1,window)
+ 
+     def solve_block(base, xs):
+-        z, u, v = xs
++        z, u, v, mask = xs
+         f = lambda q, zi, ui: step(q, zi, ui, scale, surrogate=True)[0]
+         batch = jax.vmap(lambda q, zi, ui: step(q, zi, ui, scale))
+         def residual(path):
+             prev = jnp.concatenate((base[None], path[:-1]))
+             out, acc, finite = batch(prev, z, u)
+-            normalized = jnp.max(jnp.abs(path-out)/(atol+rtol*jnp.abs(out)))
+-            return normalized, acc, jnp.all(finite) & jnp.all(jnp.isfinite(path))
++            normalized = jnp.max(jnp.where(mask[:,None],jnp.abs(path-out)/(atol+rtol*jnp.abs(out)),0.))
++            return normalized, acc, jnp.all(finite | ~mask) & jnp.all(jnp.isfinite(path) | ~mask[:,None])
+         def body(carry):
+             path, it, _, _, clips = carry
+             prev = jnp.concatenate((base[None], path[:-1]))
+@@ -62,8 +63,8 @@
+             lambda s: (s[1]<max_iter) & (s[2]>1.) & s[3], body, initial)
+         _, acc, _ = residual(out)
+         status = jnp.where(~finite, 2, jnp.where(err<=1., 0, 1))
+-        return out[-1], (out, acc, status, it, err, clips)
+-    _, (paths, accepts, statuses, iters, errors, clips) = jax.lax.scan(solve_block, q0, (zz, uu, vv))
++        return out[jnp.sum(mask)-1], (out, acc, status, it, err, clips)
++    _, (paths, accepts, statuses, iters, errors, clips) = jax.lax.scan(solve_block, q0, (zz, uu, vv, real))
+     return paths.reshape(-1, d)[:n], dict(
+         accept=accepts.reshape(-1)[:n], status=jnp.max(statuses),
+         iterations=jnp.sum(iters), residual=jnp.max(errors), clips=jnp.sum(clips),
+--- r-package/inst/python/parallelbayes/experiment.py
++++ r-package/inst/python/parallelbayes/experiment.py
+@@ -8,6 +8,7 @@
+ import threading
+ import time
+ import traceback
++import uuid
+ import numpy as np
+ import psutil
+ from .models import fingerprint, make_model
+@@ -63,6 +64,9 @@
+     if path.exists(): raise FileExistsError('Frozen protocol already exists; create a new version')
+     result=dict(protocol,source_sha256=source_hash(root),frozen_at=time.strftime('%Y-%m-%dT%H:%M:%S%z'),
+                 runtime_lock_sha256=file_hash(Path(root)/'environment/locks/python-core.txt'))
++    for name,key in [('python-runtime-transitive.txt','transitive_lock_sha256'),('gpu-candidate.txt','gpu_lock_sha256')]:
++        lock=Path(root)/'environment/locks'/name
++        if lock.exists():result[key]=file_hash(lock)
+     result['protocol_sha256']=fingerprint(result)
+     write_json(path,result)
+     return result
+@@ -76,19 +80,31 @@
+         raise ValueError('Source differs from frozen protocol. Preserve diff and create a new protocol version')
+     if p["runtime_lock_sha256"]!=file_hash(Path(root)/"environment/locks/python-core.txt"):
+         raise ValueError("Runtime requirements differ from frozen lock")
++    check_installed_lock(Path(root)/'environment/locks/python-core.txt')
++    if 'transitive_lock_sha256' in p:
++        path=Path(root)/'environment/locks/python-runtime-transitive.txt'
++        if file_hash(path)!=p['transitive_lock_sha256']:raise ValueError('Transitive runtime lock changed')
++        check_installed_lock(path)
++    return p
++
++
++def check_installed_lock(path):
+     import importlib.metadata
+-    for line in (Path(root)/"environment/locks/python-core.txt").read_text().splitlines():
++    for line in Path(path).read_text().splitlines():
+         if "==" in line and not line.startswith("#"):
+             name,version=line.strip().split("==")
+             if importlib.metadata.version(name)!=version:
+                 raise ValueError(f"Installed {name} differs from frozen dependency {version}")
+-    return p
+ 
+ 
+ def run_protocol(path,output,root,platform_name='cpu',retry_failed=False,limit=None):
+     import jax
+     protocol=load_protocol(path,root)
+     if platform_name not in protocol['platforms']: raise ValueError('Platform not authorized by protocol')
++    if platform_name=='gpu' and 'gpu_lock_sha256' in protocol:
++        lock=Path(root)/'environment/locks/gpu-candidate.txt'
++        if file_hash(lock)!=protocol['gpu_lock_sha256']:raise ValueError('GPU dependency lock changed')
++        check_installed_lock(lock)
+     devices=jax.devices(platform_name)
+     if not devices: raise RuntimeError('Required device unavailable')
+     output=Path(output); output.mkdir(parents=True,exist_ok=True)
+@@ -105,14 +121,21 @@
+ def _run(protocol,output,root,platform_name,retry_failed,limit):
+     import jax
+     identity=dict(protocol_sha256=protocol['protocol_sha256'],source_sha256=protocol['source_sha256'],platform=platform_name)
++    current_environment=environment()
++    threads={k:os.environ.get(k) for k in ['OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','XLA_FLAGS','JAX_ENABLE_X64']}
+     manifest=output/'manifest.json'
+     if manifest.exists():
+         old=json.loads(manifest.read_text())
+         if old['identity']!=identity: raise ValueError('Output belongs to a different protocol/source/platform')
+-    else: write_json(manifest,dict(identity=identity,environment=environment(),
++        if old['environment']!=current_environment or old['thread_environment']!=threads:
++            raise ValueError('Execution environment changed during resume; use a distinct run and document the change')
++    else: write_json(manifest,dict(identity=identity,environment=current_environment,
+         nonfinite_json='null; raw .npz retains IEEE values',resource_scope='one device; one task at a time; host thread pools recorded',
+-        thread_environment={k:os.environ.get(k) for k in ['OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','XLA_FLAGS','JAX_ENABLE_X64']},
++        thread_environment=threads,
+         task_count=len(protocol['tasks'])))
++    session=uuid.uuid4().hex
++    write_json(output/'sessions'/f'{session}.json',dict(environment=current_environment,
++        thread_environment=threads,pid=os.getpid(),started=time.time(),identity=identity))
+     done=0
+     for index,task in enumerate(protocol['tasks']):
+         tid=fingerprint(task)[:20]; folder=output/'tasks'/tid; receipt=folder/'state.json'
+@@ -126,7 +149,7 @@
+         folder.mkdir(parents=True,exist_ok=True)
+         attempt=f'attempt-{len(list(folder.glob("attempt-*")))+1:03d}'
+         target=folder/attempt; target.mkdir()
+-        write_json(receipt,dict(status='running',task=task,attempt=attempt,pid=os.getpid()))
++        write_json(receipt,dict(status='running',task=task,attempt=attempt,pid=os.getpid(),execution_session=session))
+         write_json(target/'task.json',task)
+         start=time.perf_counter()
+         try:
+@@ -136,7 +159,7 @@
+                 result=sample(model,config)
+             result['host_process_peak_rss_bytes_sampled']=monitor.peak
+             result['device_memory_stats']=jax.devices(platform_name)[0].memory_stats()
+-            raw={k:result.pop(k) for k in ['draws','unconstrained','failed_trajectory'] if result.get(k) is not None}
++            raw={k:result.pop(k) for k in ['draws','unconstrained','failed_trajectory','primary_failed_trajectory'] if result.get(k) is not None}
+             if config['kernel']!='nuts':
+                 for name,values in random_tape(result['config'],model.dimension).items():
+                     raw['tape__'+name]=values
+@@ -154,7 +177,7 @@
+                        traceback=traceback.format_exc(),elapsed=time.perf_counter()-start))
+         checks={p.name:file_hash(p) for p in target.iterdir() if p.is_file()}
+         write_json(receipt,dict(status=status,task=task,attempt=attempt,checksums=checks,
+-                              elapsed_including_output=time.perf_counter()-start))
++                              elapsed_including_output=time.perf_counter()-start,execution_session=session))
+         done+=1
+         print(f'{index+1}/{len(protocol["tasks"])} {task["model"]} {task["config"]} -> {status}',flush=True)
+         jax.clear_caches()
+--- r-package/inst/python/parallelbayes/kernels.py
++++ r-package/inst/python/parallelbayes/kernels.py
+@@ -33,26 +33,38 @@
+     return step
+ 
+ 
++class ReferenceFailure(FloatingPointError):
++    """Available prefix and stopping location from an independent serial kernel."""
++    def __init__(self, message, draws, accepts, step, state):
++        super().__init__(message)
++        self.draws=np.asarray(draws).reshape(-1,len(state))
++        self.accepts=np.asarray(accepts,dtype=bool)
++        self.step=step
++        self.state=np.asarray(state).copy()
++
++
+ def numpy_reference(model, kernel, q0, noise, logu, step_size, strict=True):
+     q = np.array(q0, float, copy=True)
+     draws, accepts = [], []
+-    for z, u in zip(noise, logu):
+-        lp = model.reference(q)
+-        if kernel == "mala":
+-            g = model.gradient_reference(q)
+-            proposed = q+step_size*g+np.sqrt(2*step_size)*z
+-            g2 = model.gradient_reference(proposed)
+-            rev, fwd = q-proposed-step_size*g2, proposed-q-step_size*g
+-            ratio = model.reference(proposed)-lp-(np.sum(rev**2)-np.sum(fwd**2))/(4*step_size)
+-        else:
+-            proposed = q+step_size*z
+-            ratio = model.reference(proposed)-lp
+-        if strict and (not np.isfinite(lp) or not np.isfinite(ratio) or not np.isfinite(proposed).all()):
+-            raise FloatingPointError("nonfinite target, proposal or acceptance ratio")
+-        accepted = bool(u < ratio)
+-        if accepted:
+-            q = proposed
+-        draws.append(q.copy())
+-        accepts.append(accepted)
++    for index,(z,u) in enumerate(zip(noise,logu)):
++        try:
++            lp = model.reference(q)
++            if kernel == "mala":
++                g = model.gradient_reference(q)
++                proposed = q+step_size*g+np.sqrt(2*step_size)*z
++                g2 = model.gradient_reference(proposed)
++                rev, fwd = q-proposed-step_size*g2, proposed-q-step_size*g
++                ratio = model.reference(proposed)-lp-(np.sum(rev**2)-np.sum(fwd**2))/(4*step_size)
++            else:
++                proposed = q+step_size*z
++                ratio = model.reference(proposed)-lp
++            if strict and (not np.isfinite(lp) or not np.isfinite(ratio) or not np.isfinite(proposed).all()):
++                raise FloatingPointError("nonfinite target, proposal or acceptance ratio")
++            accepted = bool(u < ratio)
++            if accepted:
++                q = proposed
++            draws.append(q.copy())
++            accepts.append(accepted)
++        except (RuntimeError,ValueError,FloatingPointError,OverflowError) as exc:
++            raise ReferenceFailure(str(exc),draws,accepts,index,q) from exc
+     return np.asarray(draws), np.asarray(accepts)
+-
+--- r-package/inst/python/parallelbayes/nuts.py
++++ r-package/inst/python/parallelbayes/nuts.py
+@@ -4,6 +4,7 @@
+ import jax
+ import jax.numpy as jnp
+ import blackjax
++from .output import constrain_checked
+ 
+ 
+ def sample_nuts(model, c):
+@@ -52,11 +53,16 @@
+         draws, accept, divergent, leapfrogs = map(np.asarray, out)
+         transfer = time.perf_counter()-t
+     valid = bool(np.isfinite(draws).all())
+-    return dict(status="completed" if valid else "failed", draws=model.constrain(draws) if valid else None,
++    t=time.perf_counter()
++    constrained,transform_error=constrain_checked(model,draws) if valid else (None,None)
++    transform_seconds=time.perf_counter()-t
++    valid &= transform_error is None
++    return dict(status="completed" if valid else "failed", draws=constrained if valid else None,
+                 unconstrained=draws if valid else None, names=model.names, config=c,
++                failed_trajectory=draws if not valid else None, transform_error=transform_error,
+                 target_id=model.target_id, coordinate_id=model.spec["coordinate_id"],
+                 guarantee="adapt_then_fixed_nuts_kernel_not_equilibrium_certificate", fallback=False,
+                 diagnostics=dict(acceptance_rate=accept, divergent=divergent, leapfrogs=leapfrogs),
+                 adapted_parameters=jax.tree.map(np.asarray, parameters),
+                 timing=dict(compile=compile_warm+compile_sample, warmup=warm_seconds,
+-                            sample=execution, transfer=transfer, total=time.perf_counter()-started))
++                            sample=execution, transfer=transfer,transform=transform_seconds,total=time.perf_counter()-started))
+--- r-package/inst/python/parallelbayes/output.py
++++ r-package/inst/python/parallelbayes/output.py
+@@ -0,0 +1,24 @@
++"""Final representability gate shared by all sampling providers."""
++import numpy as np
++
++
++def constrain_checked(model, path):
++    try:
++        with np.errstate(over='raise', invalid='raise', under='ignore'):
++            theta=np.asarray(model.constrain(path), dtype=float)
++        if theta.shape != path.shape[:-1]+(len(model.names),):
++            raise ValueError('constrained output shape differs from parameter names')
++        if not np.isfinite(theta).all():
++            raise FloatingPointError('nonfinite constrained output')
++        if model.spec['kind']=='lognormal' and not np.all(theta>0):
++            raise FloatingPointError('positive output underflowed outside the open support')
++        if model.backend=='bridgestan':
++            # Stan owns its constraint semantics. An invalid or rounded-to-boundary
++            # transform must not silently become an ordinary posterior object.
++            for row in theta.reshape(-1,len(model.names)):
++                back=model.stan.param_unconstrain(np.ascontiguousarray(row))
++                if not np.isfinite(back).all():
++                    raise FloatingPointError('Stan constrained output is not representable in its open support')
++        return theta, None
++    except (ValueError, RuntimeError, FloatingPointError, OverflowError) as exc:
++        return None, f'{type(exc).__name__}: {exc}'
+--- r-package/inst/python/parallelbayes/sampling.py
++++ r-package/inst/python/parallelbayes/sampling.py
+@@ -11,6 +11,7 @@
+ from .models import make_model, Model
+ from .executors import program
+ from .kernels import numpy_reference
++from .output import constrain_checked
+ 
+ DEFAULTS = dict(kernel="mala", executor="sequential", draws=256, chains=1, seed=2026,
+                 solver_seed=7103, step_size=0.05, window=64, max_iter=256,
+@@ -55,7 +56,7 @@
+                 combinations=[["rwm", "sequential"], ["mala", "sequential"]] + ([] if stan else [
+                     ["rwm", "online_picard"], ["mala", "quasi_deer"], ["nuts", "sequential"]]),
+                 dtype="float64", available_devices=[str(d) for d in jax.devices()],
+-                gpu_runtime_verified=False, arbitrary_stan_to_jax=False)
++                gpu_runtime_verified=False, arbitrary_stan_to_jax=False, independent_trajectory_audit=not stan)
+ 
+ 
+ def random_tape(c, d):
+@@ -86,6 +87,7 @@
+         except md.PackageNotFoundError:
+             packages[p] = None
+     return dict(system=platform.system(), machine=platform.machine(), python=platform.python_version(),
++                host=platform.node(), os_release=platform.release(),
+                 processor=platform.processor(), logical_cpus=psutil.cpu_count(),
+                 memory_bytes=psutil.virtual_memory().total, packages=packages,
+                 devices=[dict(platform=d.platform, kind=d.device_kind, id=d.id) for d in jax.devices()],
+@@ -168,9 +170,11 @@
+         cached_times.append(seconds)
+     timing_replay_cost=time.perf_counter()-replay_started
+     primary = {k: v.copy() for k, v in diagnostics.items()}
++    primary_failed_trajectory = None
+     fallback = 0.
+     fell_back = bool(np.any(diagnostics["status"])) and c["on_failure"] == "sequential"
+     if fell_back:
++        primary_failed_trajectory=draws.copy()
+         t = time.perf_counter()
+         sequential = prepare(model, dict(c, executor="sequential", on_failure="error"), prepared.tape)
+         draws, diagnostics, _, _ = sequential.run()
+@@ -180,32 +184,42 @@
+     t = time.perf_counter()
+     if c["audit"] and valid:
+         errors, branches = [], []
+-        for i in range(c["chains"]):
+-            reference, accept = numpy_reference(model, c["kernel"], prepared.q0[i],
+-                prepared.tape["noise"][i], prepared.tape["log_uniform"][i], c["step_size"])
+-            errors.append(float(np.max(np.abs(reference-draws[i]))))
+-            branches.append(int(np.sum(accept != diagnostics["accept"][i])))
+-        audit = dict(max_abs_path_error=errors, acceptance_mismatches=branches,
+-                     comparison="independent_numpy_float64", exact_bitwise_claim=False)
+-        valid &= all(x==0 for x in branches) and all(
+-            errors[i] <= 100*(c["atol"]+c["rtol"]*max(1.,float(np.max(np.abs(draws[i])))))
+-            for i in range(c["chains"]))
++        try:
++            for i in range(c["chains"]):
++                reference, accept = numpy_reference(model, c["kernel"], prepared.q0[i],
++                    prepared.tape["noise"][i], prepared.tape["log_uniform"][i], c["step_size"])
++                errors.append(float(np.max(np.abs(reference-draws[i]))))
++                branches.append(int(np.sum(accept != diagnostics["accept"][i])))
++            audit = dict(max_abs_path_error=errors, acceptance_mismatches=branches,
++                         comparison="independent_numpy_float64", exact_bitwise_claim=False)
++            valid &= all(x==0 for x in branches) and all(
++                errors[i] <= 100*(c["atol"]+c["rtol"]*max(1.,float(np.max(np.abs(draws[i])))))
++                for i in range(c["chains"]))
++        except (RuntimeError, ValueError, FloatingPointError, OverflowError) as exc:
++            valid=False
++            audit=dict(error=f'{type(exc).__name__}: {exc}', failed_chain=i,
++                       max_abs_path_error=errors, acceptance_mismatches=branches)
+     audit_seconds = time.perf_counter()-t
+     guarantee = "sequential_kernel" if c["executor"] == "sequential" or fell_back else (
+         "increment_prefix_consistency_float64" if c["executor"] == "online_picard" else
+         "numerical_recurrence_residual_only")
+-    return dict(status="completed" if valid else "failed", draws=model.constrain(draws) if valid else None,
++    transform_started=time.perf_counter()
++    constrained, transform_error=constrain_checked(model,draws) if valid else (None,None)
++    transform_seconds=time.perf_counter()-transform_started
++    valid &= transform_error is None
++    return dict(status="completed" if valid else "failed", draws=constrained if valid else None,
+                 unconstrained=draws if valid else None, failed_trajectory=draws if not valid else None,
++                primary_failed_trajectory=primary_failed_trajectory, transform_error=transform_error,
+                 diagnostics=diagnostics, primary_diagnostics=primary, audit=audit,
+                 guarantee=guarantee, fallback=fell_back, target_id=model.target_id,
+-                stopping_reason=("output_standard_met" if valid else ("audit_mismatch" if audit is not None else "solver_status_failed")),
++                stopping_reason=("output_standard_met" if valid else ("transform_failed" if transform_error else ("audit_mismatch" if audit is not None else "solver_status_failed"))),
+                 state_repairs=0, cached_execution_seconds=cached_times,
+                 timing_replay_overhead=timing_replay_cost,
+                 coordinate_id=model.spec["coordinate_id"], names=model.names, config=c,
+                 tape_sha256=tape_hash(prepared.tape),
+                 timing=dict(input=prepared.input_seconds, compile=prepared.compile_seconds,
+                             sample=execution, transfer=transfer, audit=audit_seconds,
+-                            fallback=fallback, total=time.perf_counter()-started-timing_replay_cost))
++                            fallback=fallback, transform=transform_seconds,total=time.perf_counter()-started-timing_replay_cost))
+ 
+ 
+ def validate_model(spec, points=None):
+@@ -229,4 +243,3 @@
+                 max_gradient_error=max(gradients),
+                 passed=max(density)<1e-8 and max(gradients)<1e-7,
+                 reference="independent_numpy" if model.backend=="jax" else "same_Stan_provider_not_independent")
+-
+--- r-package/inst/python/parallelbayes/stan.py
++++ r-package/inst/python/parallelbayes/stan.py
+@@ -10,7 +10,8 @@
+ import time
+ import numpy as np
+ from .models import Model
+-from .kernels import numpy_reference
++from .kernels import numpy_reference, ReferenceFailure
++from .output import constrain_checked
+ 
+ 
+ def stan_model(spec):
+@@ -52,6 +53,7 @@
+     from .sampling import random_tape,tape_hash
+     if c['executor']!='sequential' or c['kernel']=='nuts' or c['platform']!='cpu':
+         raise ValueError('BridgeStan provider supports CPU sequential RWM/MALA only')
++    if c['audit']:raise ValueError('Independent trajectory audit is unavailable for arbitrary Stan models; use explicit cross-provider validation')
+     if c['chains']*c['draws']*model.dimension*8*40 > c['memory_limit_mb']*1024**2:
+         raise MemoryError('workspace estimate exceeds limit')
+     started=time.perf_counter()
+@@ -64,26 +66,33 @@
+     q0=np.zeros((c['chains'],model.dimension)) if c['initial'] is None else np.asarray(c['initial'],float)
+     if q0.shape==(model.dimension,): q0=np.broadcast_to(q0,(c['chains'],model.dimension))
+     if q0.shape!=(c['chains'],model.dimension) or not np.isfinite(q0).all(): raise ValueError('invalid initial state')
+-    paths=[]; accepted=[]; error=None
++    paths=np.full(expected,np.nan); accepted=np.zeros(expected[:2],dtype=bool); error=None
++    completed_steps=np.zeros(c["chains"],dtype=int); failed_chain=None
+     t=time.perf_counter()
+     try:
+         for i in range(c['chains']):
+             path,acc=numpy_reference(model,c['kernel'],q0[i],tape['noise'][i],tape['log_uniform'][i],c['step_size'],strict=True)
+-            paths.append(path); accepted.append(acc)
++            paths[i]=path; accepted[i]=acc; completed_steps[i]=len(path)
+     except (RuntimeError,ValueError,FloatingPointError) as exc:
+-        error=str(exc)
++        error=str(exc); failed_chain=i
++        if isinstance(exc,ReferenceFailure):
++            completed_steps[i]=len(exc.draws)
++            paths[i,:len(exc.draws)]=exc.draws; accepted[i,:len(exc.accepts)]=exc.accepts
+     execution=time.perf_counter()-t
+     paths=np.asarray(paths)
+     valid=error is None and np.isfinite(paths).all()
+-    t=time.perf_counter(); draws=model.constrain(paths) if valid else None
++    t=time.perf_counter()
++    draws,transform_error=constrain_checked(model,paths) if valid else (None,None)
++    valid &= transform_error is None
+     transform_seconds=time.perf_counter()-t
+     return dict(status='completed' if valid else 'failed',draws=draws,
+                 unconstrained=paths if valid else None,failed_trajectory=paths if not valid else None,
+                 config=c,names=model.names,target_id=model.target_id,coordinate_id=model.spec['coordinate_id'],
+                 guarantee='sequential_kernel',fallback=False,tape_sha256=tape_hash(tape),
+-                diagnostics=dict(accept=np.asarray(accepted),error=error),
++                diagnostics=dict(accept=accepted,error=error,completed_steps=completed_steps,failed_chain=failed_chain),
++                transform_error=transform_error,
+                 audit=dict(note='Use cross-provider validation for an independent check'),
+-                timing=dict(compile=model.compile_seconds,sample=execution,transfer=transform_seconds,
++                timing=dict(compile=model.compile_seconds,sample=execution,transfer=0.,transform=transform_seconds,
+                             total=time.perf_counter()-started+model.compile_seconds))
+ 
+ 

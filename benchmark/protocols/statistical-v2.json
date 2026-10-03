@@ -1,0 +1,18 @@
+{
+  "changes_from_v1": "Use fresh truth/data and posterior seeds, disjoint from 12 pilot datasets; v1 never executed",
+  "frozen_at": "2026-10-03T17:49:31+0900",
+  "name": "statistical-v2",
+  "platforms": [
+    "cpu",
+    "gpu"
+  ],
+  "protocol_sha256": "093e9cdbcb7014802ff2ec55bb39a69ff27204f3508183399529395085df4863",
+  "replicates": 64,
+  "runtime_lock_sha256": "10bd3b6b5901ba3f6e7533f220b3f6642285dec416006875514e5e6f2bd4b634",
+  "sampling_seed": 173000,
+  "scope": "Independent generative conjugate-normal SBC; all five workflows, 64 new datasets; thinned ranks and finite power",
+  "script": "scripts/statistical-validation.py",
+  "script_sha256": "c20c6056031f9afc990bfebcc0a8d9553155feb8a76cbabc2cbcaefa44c99d94",
+  "seed": 551103,
+  "source_sha256": "6f5a4f13fbaa9a59d8508074147836961051719b0a89814464bccb2c7da977de"
+}

@@ -1,0 +1,6 @@
+{
+  "filename": "stanc-mac-2.37.0",
+  "url": "https://github.com/stan-dev/stanc3/releases/download/v2.37.0/mac-stanc",
+  "sha256": "762fbcdc528be7d055b111ec6bf10eb5d2bb215f1cd39d702916dce4a26c80bf",
+  "provenance": "Hash of original validated mac universal stanc3 2.37.0 executable; upstream makefile fixes same version"
+}

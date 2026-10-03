@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parallelbayes"
+version = "0.1.1"
+description = "Auditable sequential and time-parallel MCMC research kernels"
+requires-python = ">=3.11"
+dependencies = ["jax==0.6.2", "numpy==2.2.6", "scipy==1.15.3", "blackjax==1.2.5", "bridgestan==2.7.0", "psutil>=7"]
+
+[project.scripts]
+pb = "parallelbayes.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["r-package/inst/python"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/python"]
+markers = ["stan: requires compiled BridgeStan model", "slow: statistical validation"]
+

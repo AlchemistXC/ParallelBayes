@@ -1,0 +1,10 @@
+{
+  "bridgestan-2.7.0.tar.gz": {
+    "sha256": "4062f528e1dbcce9a6a48a8e45a41468ac8af409fe328cba0a13befa32c67790",
+    "url": "https://github.com/roualdes/bridgestan/releases/download/v2.7.0/bridgestan-2.7.0.tar.gz"
+  },
+  "stanc-linux-2.37.0": {
+    "sha256": "87d4bb08c4b5b0dc95b938c5a4636efc0a523d98815bf85c080075fa9f3c986d",
+    "url": "https://github.com/stan-dev/stanc3/releases/download/v2.37.0/linux-stanc"
+  }
+}

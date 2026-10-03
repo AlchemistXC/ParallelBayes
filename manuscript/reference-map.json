@@ -1,0 +1,242 @@
+[
+  {
+    "number": 1,
+    "id": "angelino2016",
+    "title": "Patterns of Scalable Bayesian Inference",
+    "url": "https://arxiv.org/abs/1602.05221v2",
+    "local_pdf": "references/papers/angelino2016.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 2,
+    "id": "sountsov2026",
+    "title": "Running Markov Chain Monte Carlo on Modern Hardware and Software",
+    "url": "https://doi.org/10.1201/9781003453420-21",
+    "local_pdf": "references/papers/sountsov2026.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 3,
+    "id": "bardenet2017",
+    "title": "On Markov chain Monte Carlo methods for tall data",
+    "url": "https://jmlr.org/papers/v18/15-205.html",
+    "local_pdf": "references/background/bardenet2017.pdf",
+    "source_group": "background",
+    "paper_card": "review/cards/bardenet2017/paper-card.md",
+    "local_version": "JMLR 正式版，43 页",
+    "reading_status": "已按 nature-paper-card 补读所存版本正文、图表与附录证据链；未逐行重证或复现实验。"
+  },
+  {
+    "number": 4,
+    "id": "robert2018",
+    "title": "Accelerating MCMC algorithms",
+    "url": "https://wires.onlinelibrary.wiley.com/doi/10.1002/wics.1435",
+    "local_pdf": "references/background/robert2018.pdf",
+    "source_group": "background",
+    "paper_card": "review/cards/robert2018/paper-card.md",
+    "local_version": "arXiv:1804.02719v2，2018-04-11；不是正式排版版",
+    "reading_status": "已按 nature-paper-card 补读所存版本正文、图表与附录证据链；未逐行重证或复现实验。"
+  },
+  {
+    "number": 5,
+    "id": "brockwell2006",
+    "title": "Parallel Markov chain Monte Carlo Simulation by Pre-Fetching",
+    "url": "https://doi.org/10.1198/106186006X100579",
+    "local_pdf": "references/background/brockwell2006.pdf",
+    "source_group": "background",
+    "paper_card": "review/cards/brockwell2006/paper-card.md",
+    "local_version": "CMU 技术报告，2005-03-15；不是 2006 正式排版版",
+    "reading_status": "已按 nature-paper-card 补读所存版本正文、图表与附录证据链；未逐行重证或复现实验。"
+  },
+  {
+    "number": 6,
+    "id": "angelino2014",
+    "title": "Accelerating MCMC via Parallel Predictive Prefetching",
+    "url": "https://arxiv.org/abs/1403.7265v1",
+    "local_pdf": "references/papers/angelino2014.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 7,
+    "id": "calderhead2014",
+    "title": "A general construction for parallelizing Metropolis–Hastings algorithms",
+    "url": "https://doi.org/10.1073/pnas.1408184111",
+    "local_pdf": null,
+    "source_group": "background",
+    "paper_card": "review/cards/calderhead2014/paper-card.md",
+    "local_version": null,
+    "reading_status": "source-limited：仅题录/摘要及可见图注，未完成全文研读。"
+  },
+  {
+    "number": 8,
+    "id": "glattholtz2024",
+    "title": "Parallel MCMC algorithms: theoretical foundations, algorithm design, case studies",
+    "url": "https://doi.org/10.1093/imatrm/tnae004",
+    "local_pdf": "references/papers/glattholtz2024.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 9,
+    "id": "anari2024",
+    "title": "Fast parallel sampling under isoperimetry",
+    "url": "https://proceedings.mlr.press/v247/anari24a.html",
+    "local_pdf": "references/papers/anari2024.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 10,
+    "id": "zoltowski2025",
+    "title": "Parallelizing MCMC Across the Sequence Length",
+    "url": "https://proceedings.nips.cc/paper_files/paper/2025/hash/202886ee1c9ca735cb5bff3a00a69883-Abstract-Conference.html",
+    "local_pdf": "references/papers/zoltowski2025.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 11,
+    "id": "grazzi2026",
+    "title": "Parallel computations for Metropolis Markov chains with Picard maps",
+    "url": "https://doi.org/10.1093/biomet/asag022",
+    "local_pdf": "references/papers/grazzi2026.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 12,
+    "id": "gonzalez2026",
+    "title": "A Unifying Framework for Parallelizing Sequential Models with Linear Dynamical Systems",
+    "url": "https://openreview.net/forum?id=fw6GgAIGur",
+    "local_pdf": "references/updates/gonzalez2026.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 13,
+    "id": "gonzalez2025predict",
+    "title": "Predictability Enables Parallelization of Nonlinear State Space Models",
+    "url": "https://arxiv.org/abs/2508.16817v4",
+    "local_pdf": "references/updates/gonzalez2025predict.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 14,
+    "id": "zhou2025parallel",
+    "title": "Parallel Simulation for Log-concave Sampling and Score-based Diffusion Models",
+    "url": "https://proceedings.mlr.press/v267/zhou25x.html",
+    "local_pdf": "references/updates/zhou2025parallel.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 15,
+    "id": "pozza2025",
+    "title": "On the fundamental limitations of multi-proposal Markov chain Monte Carlo algorithms",
+    "url": "https://doi.org/10.1093/biomet/asaf019",
+    "local_pdf": "references/papers/pozza2025.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 16,
+    "id": "glattholtz2026",
+    "title": "Mad Props: Parallelism in Markov Chain Monte Carlo Through the Lens of the Infinite Proposal Limit",
+    "url": "https://arxiv.org/abs/2605.21899v1",
+    "local_pdf": "references/updates/glattholtz2026.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 17,
+    "id": "lim2024",
+    "title": "Parallelizing non-linear sequential models over the sequence length",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/f3bfbd65743e60c685a3845bd61ce15f-Abstract-Conference.html",
+    "local_pdf": "references/papers/lim2024.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 18,
+    "id": "wei2026",
+    "title": "Picard Proximal Monte Carlo for Parallel Bayesian Imaging with Score-Based Generative Priors",
+    "url": "https://arxiv.org/abs/2608.17666v1",
+    "local_pdf": "references/updates/wei2026.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 19,
+    "id": "zhou2025lower",
+    "title": "The Adaptive Complexity of Parallelized Log-concave Sampling",
+    "url": "https://arxiv.org/abs/2408.13045v2",
+    "local_pdf": "references/updates/zhou2025lower.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 20,
+    "id": "hoffman2022",
+    "title": "Tuning-Free Generalized Hamiltonian Monte Carlo",
+    "url": "https://proceedings.mlr.press/v151/hoffman22a.html",
+    "local_pdf": "references/papers/hoffman2022.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 21,
+    "id": "robnik2026",
+    "title": "Faster Parallel MCMC: Metropolis Adjustment Is Best Served Warm",
+    "url": "https://proceedings.mlr.press/v300/robnik26a.html",
+    "local_pdf": "references/updates/robnik2026.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 22,
+    "id": "roberts2007",
+    "title": "Coupling and ergodicity of adaptive Markov chain Monte Carlo algorithms",
+    "url": "https://doi.org/10.1239/jap/1183667414",
+    "local_pdf": "references/background/roberts2007.pdf",
+    "source_group": "background",
+    "paper_card": "review/cards/roberts2007/paper-card.md",
+    "local_version": "JAP 正式版，18 页",
+    "reading_status": "已按 nature-paper-card 补读所存版本正文、图表与附录证据链；未逐行重证或复现实验。"
+  },
+  {
+    "number": 23,
+    "id": "hoffman2014",
+    "title": "The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo",
+    "url": "https://jmlr.org/papers/v15/hoffman14a.html",
+    "local_pdf": "references/background/hoffman2014.pdf",
+    "source_group": "background",
+    "paper_card": "review/cards/hoffman2014/paper-card.md",
+    "local_version": "JMLR 正式版，31 页",
+    "reading_status": "已按 nature-paper-card 补读所存版本正文、图表与附录证据链；未逐行重证或复现实验。"
+  },
+  {
+    "number": 24,
+    "id": "dance2025",
+    "title": "Efficiently Vectorized MCMC on Modern Accelerators",
+    "url": "https://proceedings.mlr.press/v267/dance25a.html",
+    "local_pdf": "references/updates/dance2025.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 25,
+    "id": "margossian2025",
+    "title": "Nested R-hat: Assessing the Convergence of Markov Chain Monte Carlo When Running Many Short Chains",
+    "url": "https://doi.org/10.1214/24-BA1453",
+    "local_pdf": "references/updates/margossian2025.pdf",
+    "source_group": "existing_archive"
+  },
+  {
+    "number": 26,
+    "id": "mitrophanov2005",
+    "title": "Sensitivity and convergence of uniformly ergodic Markov chains",
+    "url": "https://www.cambridge.org/core/journals/journal-of-applied-probability/article/sensitivity-and-convergence-of-uniformly-ergodic-markov-chains/26A9854BCB8D103B3A63A9B272616EC0",
+    "local_pdf": "references/background/mitrophanov2005.pdf",
+    "source_group": "background",
+    "paper_card": "review/cards/mitrophanov2005/paper-card.md",
+    "local_version": "JAP 正式版，12 页",
+    "reading_status": "已按 nature-paper-card 补读所存版本正文、图表与附录证据链；未逐行重证或复现实验。"
+  },
+  {
+    "number": 27,
+    "id": "alquier2016",
+    "title": "Noisy Monte Carlo: convergence of Markov chains with approximate transition kernels",
+    "url": "https://link.springer.com/article/10.1007/s11222-014-9521-x",
+    "local_pdf": "references/background/alquier2016.pdf",
+    "source_group": "background",
+    "paper_card": "review/cards/alquier2016/paper-card.md",
+    "local_version": "arXiv:1403.5496v3，2014-04-15；早于 2016 正式版",
+    "reading_status": "已按 nature-paper-card 补读所存版本正文、图表与附录证据链；未逐行重证或复现实验。"
+  }
+]

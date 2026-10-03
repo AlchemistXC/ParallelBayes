@@ -1,0 +1,78 @@
+{
+  "checked_on": "2026-10-03",
+  "native_compiler": "unsupported_external_figure_files",
+  "native_diagnostics": "compile-failed: figures/fig01-mechanisms.pdf not found in single-file native compiler; source remains editable.",
+  "export_compiler": "Bundled Tectonic 0.17.0",
+  "exit_code": 0,
+  "pages": 20,
+  "final_pass_warnings": [
+    "Underfull hbox badness 1292, appendix A paragraph at source lines 519–520",
+    "Underfull hbox badness 1571, appendix A paragraph at source lines 521–522"
+  ],
+  "warning_disposition": "人工核对第17页：附录含长行内公式，局部词间留白稍大；无文字或公式裁切、溢出。",
+  "sha256": {
+    "tex": "72b155ca0f25ee17c8de26151a0c8abb08c999180217fa1e00e0b8b3cf5fbc56",
+    "pdf": "7b09ac42882a3a1c541e51276b47a8dd4a60542d44a6b01cfd8c8e4e841a0f43"
+  },
+  "scope": "论证审查及两张原创机制图加入后的完整项目编译；更新前记录另存。",
+  "visual_review": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "detail_pages": [
+      8,
+      14,
+      17
+    ],
+    "status": "passed",
+    "detail": "全20页联络表逐页检查；图1、图2及参数表所在第8、14、17页单页放大检查。图像原始预览另逐面板确认。"
+  },
+  "source_counts": {
+    "main_sections": 8,
+    "appendices": 2,
+    "tables": 5,
+    "figures": 2,
+    "numbered_equations": 12
+  },
+  "citations": {
+    "cited": 27,
+    "bibliography_entries": 27,
+    "missing": [],
+    "unused": []
+  },
+  "cross_references": {
+    "missing": [],
+    "duplicate_labels": []
+  },
+  "text_outside_safe_page_boundary": [],
+  "replacement_glyphs": [],
+  "figures": {
+    "format": "vector PDF",
+    "width_mm": 162,
+    "min_font_pt": 7.4,
+    "alignment": "PASS",
+    "collision": "0 FAIL / 0 WARN for both",
+    "source_preflight": "18 PASS / 3 WARN / 0 FAIL; see figure QA notes"
+  },
+  "pass": true,
+  "compile_log": "../tmp/pdfs/latex/audit-revision-compile-online.json"
+}

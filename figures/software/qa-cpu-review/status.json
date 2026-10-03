@@ -1,0 +1,14 @@
+{
+  "main-source": 0,
+  "mechanism-source": 0,
+  "architecture-glyph": 0,
+  "architecture-collision": 0,
+  "methods-glyph": 0,
+  "methods-collision": 0,
+  "paired-costs-glyph": 0,
+  "paired-costs-collision": 0,
+  "error-cost-glyph": 0,
+  "error-cost-collision": 0,
+  "cpu-mechanism-glyph": 0,
+  "cpu-mechanism-collision": 0
+}

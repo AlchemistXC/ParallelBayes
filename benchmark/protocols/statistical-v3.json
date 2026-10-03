@@ -1,0 +1,21 @@
+{
+  "frozen_at": "2026-10-03T19:10:45+0900",
+  "gpu_lock_sha256": "c927fe685a77e15bc1b67be12165021bc8397317d6f5d37d126543c9599e1dba",
+  "name": "statistical-v3",
+  "parent_protocol": "statistical-v2",
+  "platforms": [
+    "cpu",
+    "gpu"
+  ],
+  "protocol_sha256": "18eec49485e9a823066c063298e163ec95f4d504366418de37286683b026bd92",
+  "replicates": 64,
+  "revision_reason": "Review-driven diagnostic preservation and software boundary repairs; v2 was never executed",
+  "runtime_lock_sha256": "10bd3b6b5901ba3f6e7533f220b3f6642285dec416006875514e5e6f2bd4b634",
+  "sampling_seed": 173000,
+  "scope": "Same 64 planned fresh datasets as unexecuted v2; retain all diagnostics including finite NUTS divergences",
+  "script": "scripts/statistical-validation.py",
+  "script_sha256": "11326e61f22d8a335d7db733d7a8942880076481d28767c3a4e5beb22778269e",
+  "seed": 551103,
+  "source_sha256": "306e96a028da89200d4f08ea78717319221c8bb7b16fbee3e8cd657c02d44f67",
+  "transitive_lock_sha256": "cf96dfd66271a168e6d6f385f220c433856eab922dfc8282f6de658799a1932a"
+}

@@ -1,0 +1,13 @@
+{
+  "target_validation": {
+    "density_error": 1.5543e-15,
+    "gradient_error": 4.4409e-16,
+    "transform_error": 0,
+    "constant_offset": -0.9189,
+    "passed": true,
+    "reference": "Stan vs independent NumPy with common coordinates and Jacobian"
+  },
+  "max_sample_difference": 0,
+  "package_version": "0.1.1",
+  "status": "passed"
+}

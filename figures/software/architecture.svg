@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.740157pt" height="266.456693pt" viewBox="0 0 518.740157 266.456693" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T23:10:47.644644</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 266.456693 
+L 518.740157 266.456693 
+L 518.740157 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 22.824567 85.639181 
+L 200.233701 85.639181 
+Q 205.161732 85.639181 205.161732 83.134488 
+L 205.161732 23.021858 
+Q 205.161732 20.517165 200.233701 20.517165 
+L 22.824567 20.517165 
+Q 17.896535 20.517165 17.896535 23.021858 
+L 17.896535 83.134488 
+Q 17.896535 85.639181 22.824567 85.639181 
+z
+" clip-path="url(#p4412e45dd3)" style="fill: #eef2f5; stroke: #506373; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 293.866299 85.639181 
+L 495.915591 85.639181 
+Q 500.843622 85.639181 500.843622 83.134488 
+L 500.843622 23.021858 
+Q 500.843622 20.517165 495.915591 20.517165 
+L 293.866299 20.517165 
+Q 288.938268 20.517165 288.938268 23.021858 
+L 288.938268 83.134488 
+Q 288.938268 85.639181 293.866299 85.639181 
+z
+" clip-path="url(#p4412e45dd3)" style="fill: #eef2f5; stroke: #506373; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 150.953386 178.312819 
+L 367.786772 178.312819 
+Q 372.714803 178.312819 372.714803 175.808126 
+L 372.714803 118.200189 
+Q 372.714803 115.695496 367.786772 115.695496 
+L 150.953386 115.695496 
+Q 146.025354 115.695496 146.025354 118.200189 
+L 146.025354 175.808126 
+Q 146.025354 178.312819 150.953386 178.312819 
+z
+" clip-path="url(#p4412e45dd3)" style="fill: #eef2f5; stroke: #506373; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 22.824567 255.958299 
+L 200.233701 255.958299 
+Q 205.161732 255.958299 205.161732 253.453606 
+L 205.161732 205.864441 
+Q 205.161732 203.359748 200.233701 203.359748 
+L 22.824567 203.359748 
+Q 17.896535 203.359748 17.896535 205.864441 
+L 17.896535 253.453606 
+Q 17.896535 255.958299 22.824567 255.958299 
+z
+" clip-path="url(#p4412e45dd3)" style="fill: #eef2f5; stroke: #506373; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 318.506457 255.958299 
+L 495.915591 255.958299 
+Q 500.843622 255.958299 500.843622 253.453606 
+L 500.843622 205.864441 
+Q 500.843622 203.359748 495.915591 203.359748 
+L 318.506457 203.359748 
+Q 313.578425 203.359748 313.578425 205.864441 
+L 313.578425 253.453606 
+Q 313.578425 255.958299 318.506457 255.958299 
+z
+" clip-path="url(#p4412e45dd3)" style="fill: #eef2f5; stroke: #506373; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(67.007884 44.503798)">Stan / BridgeStan CPU</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(51.309759 55.285673)">Sequential RWM or MALA only</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(52.826634 66.067548)">No time-parallel / NUTS route</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(345.298445 44.503798)">Explicit native JAX target</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(333.627195 55.285673)">Sequential RWM / MALA; NUTS</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(331.914695 66.067548)">Picard RWM / quasi-DEER MALA</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(190.442579 138.429782)">Validation and experiment records</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(181.261954 149.211657)">Independent reference where provided</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(180.143204 159.993532)">Fixed inputs / branches / costs / failures</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(87.425384 226.475586)">Valid output</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(53.664134 237.257461)">posterior draws + run record</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(381.136649 226.475586)">Failed output</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans', sans-serif" transform="translate(353.561024 237.257461)">Trajectory + cause + costs</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 113.457154 88.682832 
+Q 160.810613 101.92001 207.302667 114.916392 
+" style="fill: none; stroke: #506373; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 204.651565 112.513965 
+L 207.302667 114.916392 
+L 203.790064 115.595817 
+" style="fill: none; stroke: #506373; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 395.446491 88.736644 
+Q 353.003337 101.91948 311.414357 114.83701 
+" style="fill: none; stroke: #506373; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 314.944936 115.415814 
+L 311.414357 114.83701 
+L 313.995747 112.359829 
+" style="fill: none; stroke: #506373; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 208.131665 181.215597 
+Q 160.810635 190.836042 114.366101 200.278295 
+" style="fill: none; stroke: #506373; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 117.820714 201.208697 
+L 114.366101 200.278295 
+L 117.18319 198.072845 
+" style="fill: none; stroke: #506373; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 310.608492 181.215597 
+Q 357.929523 190.836042 404.374056 200.278295 
+" style="fill: none; stroke: #506373; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 401.556967 198.072845 
+L 404.374056 200.278295 
+L 400.919443 201.208697 
+" style="fill: none; stroke: #506373; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4412e45dd3">
+   <rect x="12.968504" y="7.993701" width="492.80315" height="250.469291"/>
+  </clipPath>
+ </defs>
+</svg>

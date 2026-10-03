@@ -1,0 +1,17 @@
+model,method,retained_draws,repetitions,divergences,divergent_fits,transitions,divergence_fraction,step_cap_hits,step_cap_fraction,max_function_squared_error,reference_usable,precision
+A1,nuts/sequential,256,24,0,0,24576,0.0,0,0.0,0.002434930976967634,True,below_threshold_pointwise
+A1,nuts/sequential,2048,24,0,0,196608,0.0,0,0.0,0.0006653350927939831,True,below_threshold_pointwise
+G1,nuts/sequential,256,24,0,0,24576,0.0,0,0.0,0.0027127268966000277,True,below_threshold_pointwise
+G1,nuts/sequential,2048,24,0,0,196608,0.0,0,0.0,0.0005306207099350577,True,below_threshold_pointwise
+G2,nuts/sequential,256,24,0,0,24576,0.0,0,0.0,0.003825609304692302,True,below_threshold_pointwise
+G2,nuts/sequential,2048,24,0,0,196608,0.0,0,0.0,0.0003220732527339374,True,below_threshold_pointwise
+H1,nuts/sequential,256,24,174,22,24576,0.007080078125,657,0.0267333984375,0.15404793927116286,True,above_threshold_pointwise
+H1,nuts/sequential,2048,24,2184,24,196608,0.0111083984375,6204,0.03155517578125,0.11230209878874263,True,above_threshold_pointwise
+H2,nuts/sequential,256,24,0,0,24576,0.0,0,0.0,0.0005951046259337692,True,below_threshold_pointwise
+H2,nuts/sequential,2048,24,0,0,196608,0.0,0,0.0,6.111340844795457e-05,True,below_threshold_pointwise
+L1,nuts/sequential,256,24,0,0,24576,0.0,0,0.0,0.00015351548790931702,True,below_threshold_pointwise
+L1,nuts/sequential,2048,24,0,0,196608,0.0,0,0.0,1.4629215002059937e-05,True,below_threshold_pointwise
+L2,nuts/sequential,256,24,0,0,24576,0.0,0,0.0,3.523426747996058e-06,False,not_assessable
+L2,nuts/sequential,2048,24,0,0,196608,0.0,0,0.0,2.2758470221332886e-07,False,not_assessable
+M1,nuts/sequential,256,24,0,0,24576,0.0,0,0.0,0.3006286665928121,True,above_threshold_pointwise
+M1,nuts/sequential,2048,24,0,0,196608,0.0,0,0.0,0.2957959727571284,True,above_threshold_pointwise

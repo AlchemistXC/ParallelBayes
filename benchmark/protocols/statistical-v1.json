@@ -1,0 +1,17 @@
+{
+  "changes_from_pilot": "64 independent generated data sets; same methods and draw counts; all failures retained",
+  "frozen_at": "2026-10-03T17:48:51+0900",
+  "name": "statistical-v1",
+  "platforms": [
+    "cpu",
+    "gpu"
+  ],
+  "protocol_sha256": "6a6c2c59e57e7cc8f4c54f9117cb0d0b35082e11c30c58bb2922dbd764c5b5db",
+  "replicates": 64,
+  "runtime_lock_sha256": "10bd3b6b5901ba3f6e7533f220b3f6642285dec416006875514e5e6f2bd4b634",
+  "scope": "Generative conjugate-normal SBC, thinned ranks; diagnostics not proof",
+  "script": "scripts/statistical-validation.py",
+  "script_sha256": "2aa8b17522018044e56a79d3d7f39d2814a38324efbfb83dc40c3d6dc85930d1",
+  "seed": 551002,
+  "source_sha256": "6f5a4f13fbaa9a59d8508074147836961051719b0a89814464bccb2c7da977de"
+}
