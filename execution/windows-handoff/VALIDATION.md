@@ -10,3 +10,5 @@
 - 在Windows上尚待实际运行：PowerShell bootstrap、Python CUDA/FP64/grad/JVP/vmap探针、R入口、移植后的采样器、技能发现及其平台兼容性。
 
 使用的技能指导：codebase-design、OpenAI Docs、skill-installer。自定义离线迁移使用项目的校验复制工具；公开GitHub技能安装由目标机使用内置skill-installer及其脚本。插件通过目标机插件目录核对，不复制Mac缓存。
+
+公开交付已完成：`cpu-review-v1`为已发布研究候选Release，18个附件、4,971,229,616字节；每项服务器SHA256和大小均与本地一致，见`published-release-verification.json`。上传前的合成输入来源与归档排查见`evidence-content-audit.json`。历史CPU归档内的“no public publication”是创建当时的状态，原始归档未修改；本次发布依据2026-10-04用户创建仓库并要求上传项目的新授权。私下30技能ZIP不在公开附件中。

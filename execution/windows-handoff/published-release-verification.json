@@ -1,0 +1,158 @@
+{
+  "repository": "AlchemistXC/ParallelBayes",
+  "release": "cpu-review-v1",
+  "release_url": "https://github.com/AlchemistXC/ParallelBayes/releases/tag/cpu-review-v1",
+  "target_commitish": "90dd99b86fe1f41778a88ccd0d3af031a1618aa6",
+  "assets": [
+    {
+      "name": "ASSEMBLE.md",
+      "bytes": 329,
+      "expected_bytes": 329,
+      "server_sha256": "sha256:9b3bf7550ff1f6f9fd94796d7eb2d6b49474075b7c88dfa575c7062e1f176539",
+      "expected_sha256": "9b3bf7550ff1f6f9fd94796d7eb2d6b49474075b7c88dfa575c7062e1f176539",
+      "verified": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 300,
+      "expected_bytes": 300,
+      "server_sha256": "sha256:09967ee2a9e099450289f5c8ae8e33b34b13d7d95cfae5b27fd0ed9ce3c74a95",
+      "expected_sha256": "09967ee2a9e099450289f5c8ae8e33b34b13d7d95cfae5b27fd0ed9ce3c74a95",
+      "verified": true
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar.part000",
+      "bytes": 536870912,
+      "expected_bytes": 536870912,
+      "server_sha256": "sha256:7c5c604113677ffb488b6dd105ebb3da78ce8d674a76b93ecd32f38ae5ef55cb",
+      "expected_sha256": "7c5c604113677ffb488b6dd105ebb3da78ce8d674a76b93ecd32f38ae5ef55cb",
+      "verified": true
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar.part001",
+      "bytes": 536870912,
+      "expected_bytes": 536870912,
+      "server_sha256": "sha256:fbb187f82089fea458534f6d1f1ac9fecefa424705bfabe64395e4e2ea3007f9",
+      "expected_sha256": "fbb187f82089fea458534f6d1f1ac9fecefa424705bfabe64395e4e2ea3007f9",
+      "verified": true
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar.part002",
+      "bytes": 536870912,
+      "expected_bytes": 536870912,
+      "server_sha256": "sha256:ac5aed13c80475830d078ce3aa9ba2c300c4fb8e296f8301b851460ef7d411db",
+      "expected_sha256": "ac5aed13c80475830d078ce3aa9ba2c300c4fb8e296f8301b851460ef7d411db",
+      "verified": true
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar.part003",
+      "bytes": 536870912,
+      "expected_bytes": 536870912,
+      "server_sha256": "sha256:1d4573b40ae90cc49bdf9e8ac96d763ea464d2384605dd35ae3142fe28a5af3b",
+      "expected_sha256": "1d4573b40ae90cc49bdf9e8ac96d763ea464d2384605dd35ae3142fe28a5af3b",
+      "verified": true
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar.part004",
+      "bytes": 536870912,
+      "expected_bytes": 536870912,
+      "server_sha256": "sha256:e9f2813fc0f03274d0a8714eecf1c9edb0299e41641dee38f83fad740321f089",
+      "expected_sha256": "e9f2813fc0f03274d0a8714eecf1c9edb0299e41641dee38f83fad740321f089",
+      "verified": true
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar.part005",
+      "bytes": 536870912,
+      "expected_bytes": 536870912,
+      "server_sha256": "sha256:a1cca6a1c22de718cd84bb029037c3370d813e19454014313913bf80147ddf8a",
+      "expected_sha256": "a1cca6a1c22de718cd84bb029037c3370d813e19454014313913bf80147ddf8a",
+      "verified": true
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar.part006",
+      "bytes": 536870912,
+      "expected_bytes": 536870912,
+      "server_sha256": "sha256:f792f2cf8f578bcd705d2fdeb0638fbd3a9768613a49ccce2b91fe3f5eeb9f01",
+      "expected_sha256": "f792f2cf8f578bcd705d2fdeb0638fbd3a9768613a49ccce2b91fe3f5eeb9f01",
+      "verified": true
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar.part007",
+      "bytes": 536870912,
+      "expected_bytes": 536870912,
+      "server_sha256": "sha256:db7f7b86c169cef03d058dce00eb5c87f39ed362b5ff876801d0e7a7fea238b7",
+      "expected_sha256": "db7f7b86c169cef03d058dce00eb5c87f39ed362b5ff876801d0e7a7fea238b7",
+      "verified": true
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar.part008",
+      "bytes": 536870912,
+      "expected_bytes": 536870912,
+      "server_sha256": "sha256:2f23ec69c43e18e468e2e58ba9ad212f18a4a91e07579cc2e920d21c9a9ea288",
+      "expected_sha256": "2f23ec69c43e18e468e2e58ba9ad212f18a4a91e07579cc2e920d21c9a9ea288",
+      "verified": true
+    },
+    {
+      "name": "evidence-paper-cpu-review-v1.tar.part009",
+      "bytes": 135514112,
+      "expected_bytes": 135514112,
+      "server_sha256": "sha256:fa5e942276a2bf75fc2b551e919d62bd11e57bb89b0cf5a6a7df7f3d2d3c3101",
+      "expected_sha256": "fa5e942276a2bf75fc2b551e919d62bd11e57bb89b0cf5a6a7df7f3d2d3c3101",
+      "verified": true
+    },
+    {
+      "name": "experiments-cpu-review-v1.tar.gz",
+      "bytes": 3656818,
+      "expected_bytes": 3656818,
+      "server_sha256": "sha256:997ee4ff46cbc3c8a7a6d7dfd288bdfd9bd97455f8a43ed6e732d81b467ec3c3",
+      "expected_sha256": "997ee4ff46cbc3c8a7a6d7dfd288bdfd9bd97455f8a43ed6e732d81b467ec3c3",
+      "verified": true
+    },
+    {
+      "name": "index.json",
+      "bytes": 1060,
+      "expected_bytes": 1060,
+      "server_sha256": "sha256:20089f40c035517823c56ca656ef86bbc9256d451e6a51a675b40d40fba22dc2",
+      "expected_sha256": "20089f40c035517823c56ca656ef86bbc9256d451e6a51a675b40d40fba22dc2",
+      "verified": true
+    },
+    {
+      "name": "release-assets.json",
+      "bytes": 2730,
+      "expected_bytes": 2730,
+      "server_sha256": "sha256:bb4024d8ce99443f4e1b69d5678afaa9a8f20988ad62ccef3b1b0c4b241aa39f",
+      "expected_sha256": "bb4024d8ce99443f4e1b69d5678afaa9a8f20988ad62ccef3b1b0c4b241aa39f",
+      "verified": true
+    },
+    {
+      "name": "software-0.1.1-cpu-review-v1.tar.gz",
+      "bytes": 212140,
+      "expected_bytes": 212140,
+      "server_sha256": "sha256:256c5fc43178e35af60fa9a5ffd753b3ed3d38507974284a0ebeb89ced88878f",
+      "expected_sha256": "256c5fc43178e35af60fa9a5ffd753b3ed3d38507974284a0ebeb89ced88878f",
+      "verified": true
+    },
+    {
+      "name": "validation.json",
+      "bytes": 2248,
+      "expected_bytes": 2248,
+      "server_sha256": "sha256:b203e148b9a86402b9acc9ad739f52a8a081b6d6d6069de1b2b447f4a97455a3",
+      "expected_sha256": "b203e148b9a86402b9acc9ad739f52a8a081b6d6d6069de1b2b447f4a97455a3",
+      "verified": true
+    },
+    {
+      "name": "ASSET-SHA256SUMS",
+      "bytes": 1671,
+      "expected_bytes": 1671,
+      "server_sha256": "sha256:e23d8b4d948e5e9aa0afbf58497703d91aec252a15ebf6910876cd6381ea2c3f",
+      "expected_sha256": "e23d8b4d948e5e9aa0afbf58497703d91aec252a15ebf6910876cd6381ea2c3f",
+      "verified": true
+    }
+  ],
+  "all_verified": true,
+  "private_skills_uploaded": false,
+  "draft": false,
+  "prerelease": true,
+  "published_asset_count": 18,
+  "published_asset_bytes": 4971229616
+}
