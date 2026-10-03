@@ -20,6 +20,8 @@
 !/figures/
 !/output/
 !/outputs/
+!/materials/
+!/推荐主题和研究方向.md
 !/execution/
 !/software/
 !/references/
@@ -114,3 +116,6 @@ __pycache__/
 /downloads/
 /output/windows-return/
 /execution/windows-native/
+/materials/*
+!/materials/README.md
+!/materials/并行贝叶斯.md

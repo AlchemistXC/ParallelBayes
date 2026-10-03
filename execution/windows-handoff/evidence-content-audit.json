@@ -1,0 +1,117 @@
+{
+  "archives": [
+    {
+      "archive": "software-0.1.1-cpu-review-v1.tar.gz",
+      "files": 56,
+      "suffix_counts": {
+        "": 6,
+        ".json": 6,
+        ".txt": 7,
+        ".csv": 1,
+        ".lock": 1,
+        ".R": 7,
+        ".py": 18,
+        ".gz": 3,
+        ".patch": 1,
+        ".stan": 3,
+        ".toml": 1,
+        ".Rd": 1,
+        ".md": 1
+      },
+      "text_bytes_scanned": 577733,
+      "numeric_npy_headers_checked": 0,
+      "max_member_bytes": 187660
+    },
+    {
+      "archive": "experiments-cpu-review-v1.tar.gz",
+      "files": 50,
+      "suffix_counts": {
+        ".md": 11,
+        ".py": 19,
+        ".json": 18,
+        ".R": 2
+      },
+      "text_bytes_scanned": 15138067,
+      "numeric_npy_headers_checked": 0,
+      "max_member_bytes": 1975166
+    },
+    {
+      "archive": "evidence-paper-cpu-review-v1.tar",
+      "files": 10948,
+      "suffix_counts": {
+        ".json": 8311,
+        ".csv": 5,
+        ".npz": 2553,
+        ".log": 33,
+        ".py": 1,
+        ".xml": 3,
+        ".txt": 11,
+        ".svg": 9,
+        ".pdf": 8,
+        ".png": 5,
+        ".md": 6,
+        ".tex": 3
+      },
+      "text_bytes_scanned": 466862549,
+      "numeric_npy_headers_checked": 35766,
+      "max_member_bytes": 15314989
+    }
+  ],
+  "forbidden_names": [],
+  "secret_pattern_matches": [],
+  "array_header_issues": [],
+  "nested_archives": [
+    {
+      "archive": "parallelbayes-reproduction/execution/source-snapshots/formal-v1-source.tar.gz",
+      "files": 13,
+      "suffix_counts": {
+        ".py": 9,
+        ".R": 1,
+        ".stan": 3
+      },
+      "text_bytes_scanned": 50726,
+      "numeric_npy_headers_checked": 0,
+      "max_member_bytes": 11750
+    },
+    {
+      "archive": "parallelbayes-reproduction/execution/source-snapshots/release-0.1.1-source.tar.gz",
+      "files": 14,
+      "suffix_counts": {
+        ".py": 10,
+        ".R": 1,
+        ".stan": 3
+      },
+      "text_bytes_scanned": 56869,
+      "numeric_npy_headers_checked": 0,
+      "max_member_bytes": 12693
+    },
+    {
+      "archive": "parallelbayes-reproduction/output/release/parallelbayes_0.1.1.tar.gz",
+      "files": 17,
+      "suffix_counts": {
+        "": 3,
+        ".py": 10,
+        ".Rd": 1,
+        ".R": 3
+      },
+      "text_bytes_scanned": 63055,
+      "numeric_npy_headers_checked": 0,
+      "max_member_bytes": 12693
+    }
+  ],
+  "synthetic_model_spec_matches": {
+    "protocol-v1/A1": true,
+    "protocol-v1/G1": true,
+    "protocol-v1/G2": true,
+    "protocol-v1/H1": true,
+    "protocol-v1/H2": true,
+    "protocol-v1/L1": true,
+    "protocol-v1/L2": true,
+    "protocol-v1/M1": true,
+    "reference-v1/L1": true,
+    "reference-v1/L2": true
+  },
+  "sbc_generated_record_checks": 320,
+  "scope": "Payload inventory, numeric array headers, credential patterns and deterministic synthetic-input provenance; not an assertion that any scan is exhaustive.",
+  "passed": true
+}
