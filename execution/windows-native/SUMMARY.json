@@ -1,5 +1,5 @@
 {
-  "status": "computational_delivery_ready_export_pending",
+  "status": "computational_delivery_and_first_archive_verified",
   "date": "2026-10-04",
   "branch": "windows-native-dev",
   "python_version": "0.2.0.dev1",
@@ -96,5 +96,25 @@
     "execution/windows-native/distribution/verification.json": "48e21019dc6c749ee69dac8f5b9566b3863770d4a0917f36a423c13ae22c53cb",
     "benchmark/analysis/outputs/windows-native-v1/delivery-review.json": "b5b8e496c8b312141cfaea6315e56f2de009c0ffe5f4c9325fbc247d2f1302f8",
     "benchmark/analysis/outputs/windows-native-v1/speed-ratios.png": "b5c74d0014746478934264ace439f201a5681770253deaccbd33210942f117cd"
-  }
+  },
+  "work_packages": {
+    "W0": "completed_with_documented_scope",
+    "W1": "completed_with_documented_scope",
+    "W2": "completed_with_documented_scope",
+    "W3": "completed_with_documented_scope",
+    "W4": "completed_with_documented_scope",
+    "W5": "completed_with_documented_scope",
+    "W6": "completed_with_documented_scope",
+    "W7": "completed_with_documented_scope",
+    "S": "pending_private_zip"
+  },
+  "first_export": {
+    "status": "passed",
+    "archive": "D:\\workspace\\ParallelBayes\\output\\windows-return\\windows-native-20261003T233726Z.tar",
+    "archive_sha256": "87cae2da96035ab76a04880b04b56e59fbed29aae2fec1e6085c247ca5213b56",
+    "checked_files": 5862,
+    "source_commit": "2111a0fd6ee177d37130845aa594abf7616a07c6",
+    "branch": "windows-native-dev"
+  },
+  "final_archive_receipt": "output/windows-return/verification-final.json (external to avoid self-hash recursion)"
 }

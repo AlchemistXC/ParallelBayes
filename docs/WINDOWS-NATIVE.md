@@ -211,6 +211,23 @@ Export after committing source/protocol/results summaries:
 .\.venv-win-torch\Scripts\python.exe scripts/windows/export_results.py --run execution/windows-native --include benchmark/protocols/windows-native-v1.json --include environment/locks/windows-native-v1-pip-freeze.txt --include benchmark/analysis/outputs/windows-native-v1
 ```
 
+The delivered archive also includes a `windows-native-dev-*.bundle` containing
+the complete local branch history, the R/replay locks, this documentation and
+the archive verifier. `git bundle verify <bundle>` verifies the bundle; clone it
+into a **new** review directory with `git clone <bundle> <new-directory>`.
+The exact runtime bytes of the 39 frozen scientific files are separately saved
+under `execution/windows-native/frozen-source` with `SOURCE-MANIFEST.json`.
+Git checkout may normalize line endings; use the exact-byte snapshot when
+checking recorded source hashes, and preserve the archived dependency-lock bytes.
+Never overwrite the active checkout or claim that a different environment is a
+continuation of the original frozen run. Replays in a new environment require a
+new recorded identity. The archive's adjacent `.sha256` and verification receipt
+cover the archive bytes; the internal manifest covers every included file.
+
+```powershell
+.\.venv-win-torch\Scripts\python.exe scripts/verify-windows-return.py <windows-native-UTCSTAMP.tar> --output <verification.json>
+```
+
 ## Official support checked on 2026-10-04
 
 - [PyTorch Windows installation](https://pytorch.org/get-started/locally/) and

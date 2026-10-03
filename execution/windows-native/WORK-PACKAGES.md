@@ -14,7 +14,7 @@ Historical 1920 main tasks, 320 SBC tasks, 72 mechanism tasks, L2 uncertainty an
 | W4 | 96/96 pilot tasks completed | `pilot-01`, `pilot-analysis`: G1/G2/L1 × chains 1/4 × windows 8/16 × CPU/CUDA × four workflows. Actual arrays, timings, host scalar waits, maps/JVP, allocator peaks retained. Both speedups and slowdowns retained. |
 | W5 | Frozen before formal results | Source `0c9325e98f2bc7dcd75d344c01c2e50a62801c90`; protocol SHA256 `1d233dd09956c4575fc5775082310e5edca65407db5fcef40bc2ce329e6f5898`; 512 tasks, actual input files, Python/R locks, device/runtime and venv freeze marker saved. |
 | W6 | Completed; computational checks passed, inference limitations retained | 512/512 completed, 0 terminal failures/fallbacks; 256 CPU/CUDA array pairs checked, 0 event mismatches. Modern diagnostics for all 512 fits. Resume added no attempts. `windows-native-v1/final-identity-audit.json`; formal analysis in `benchmark/analysis/outputs/windows-native-v1`. |
-| W7 | Reviewable source/results ready; export verification in progress | Wheel built and imported directly with lazy NumPy and actual CUDA shortened-window audit; `distribution/verification.json`. Source/data/hash review passed; manuscript companion source updated, revised PDF not compiled. |
+| W7 | Completed within documented scope; first full export verified | First archive `windows-native-20261003T233726Z.tar`: 5862 files checked; SHA256 `87cae2da96035ab76a04880b04b56e59fbed29aae2fec1e6085c247ca5213b56`; `return-verification-initial.json`. Final archive adds this receipt and final status commit. Wheel lazy/NumPy import and actual CUDA shortened-window audit passed. Revised manuscript PDF remains uncompiled. |
 
 Actual commands are recorded in logs and will be consolidated in `docs/WINDOWS-NATIVE.md`.
 Python 3.12.10 installer signature passed but per-user MSI returned 0x80070003;
@@ -57,3 +57,10 @@ nature-shared remain uninstalled and have not been runtime-validated. Existing
 plugin discovery and account/platform limits are recorded separately. Native
 Stan compilation, GPU NUTS, fused device control and full historical CPU random
 array replay are not claimed. The frozen venv and all 39 source hashes are intact.
+
+Export includes a verified Git bundle with the complete local branch history,
+the exact-byte frozen source snapshot, raw arrays, all attempted tests/runs,
+protocol/data/locks, figures and independent archive verifier. No remote push,
+CRAN release, private skills, credentials or installed venv is included.
+The final archive's own verification receipt is adjacent to it under
+`output/windows-return`; an archive cannot contain its own final hash.

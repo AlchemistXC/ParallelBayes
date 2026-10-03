@@ -33,3 +33,8 @@
 # .\.venv-win-torch\Scripts\python.exe scripts/verify-windows-frozen.py
 # .\.venv-win-torch\Scripts\python.exe -m pip wheel . --no-deps --no-build-isolation --wheel-dir execution/windows-native/distribution
 # Direct wheel import (including a CUDA 9-transition shortened-window audit) recorded in distribution/verification.json.
+# git bundle create output/windows-return/windows-native-dev-2111a0f.bundle windows-native-dev
+# git bundle verify output/windows-return/windows-native-dev-2111a0f.bundle
+# .\.venv-win-torch\Scripts\python.exe scripts/windows/export_results.py --run execution/windows-native --include benchmark/protocols/windows-native-v1.json --include environment/locks/windows-native-v1-pip-freeze.txt --include environment/locks/windows-native-v1-r-packages.csv --include environment/locks/windows-native-v1-replay-requirements.txt --include benchmark/analysis/outputs/windows-native-v1 --include docs/WINDOWS-NATIVE.md --include docs/WINDOWS-RESULTS.md --include scripts/verify-windows-return.py --include scripts/verify-windows-frozen.py --include scripts/summarize-windows-delivery.py --include scripts/repair-windows-pilot-summary.py --include manuscript/software/windows-native.generated.tex --include output/windows-return/windows-native-dev-2111a0f.bundle
+# .\.venv-win-torch\Scripts\python.exe scripts/verify-windows-return.py output/windows-return/windows-native-20261003T233726Z.tar --output output/windows-return/verification-initial.json
+# Final status commit is bundled and exported again; exact commands in output/windows-return/final-commands.ps1.
