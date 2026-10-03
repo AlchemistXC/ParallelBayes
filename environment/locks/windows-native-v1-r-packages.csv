@@ -1,0 +1,102 @@
+"Package","LibPath","Version","Priority","Depends","Imports","LinkingTo","Suggests","Enhances","License","License_is_FOSS","License_restricts_use","OS_type","MD5sum","NeedsCompilation","Built","Published"
+"R6","D:/Tools/R-library-4.6","2.6.1",NA,"R (>= 3.6)",NA,NA,"lobstr, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 12:14:50 UTC; windows",NA
+"Rcpp","D:/Tools/R-library-4.6","1.1.2",NA,"R (>= 3.5.0)","methods, utils",NA,"tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:14:55 UTC; windows",NA
+"RcppTOML","D:/Tools/R-library-4.6","0.2.3",NA,"R (>= 3.3.0)","Rcpp (>= 1.0.8)","Rcpp","tinytest",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:17:52 UTC; windows",NA
+"abind","D:/Tools/R-library-4.6","1.4-8",NA,"R (>= 1.5.0)","methods, utils",NA,NA,NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-08-19 11:46:37 UTC; windows",NA
+"backports","D:/Tools/R-library-4.6","1.5.1",NA,"R (>= 3.0.0)",NA,NA,NA,NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-08-19 11:46:10 UTC; windows",NA
+"brio","D:/Tools/R-library-4.6","1.1.5",NA,"R (>= 3.6)",NA,NA,"covr, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:16:10 UTC; windows",NA
+"callr","D:/Tools/R-library-4.6","3.8.0",NA,"R (>= 3.4)","otel (>= 0.2.0), processx (>= 3.6.1), R6, utils",NA,"asciicast (>= 2.3.1), carrier, cli (>= 1.1.0), otelsdk (>=
+0.2.0), ps, rprojroot, spelling, testthat (>= 3.2.0), withr (>=
+2.3.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 13:33:53 UTC; windows",NA
+"checkmate","D:/Tools/R-library-4.6","2.3.4",NA,"R (>= 3.0.0)","backports (>= 1.1.0), utils",NA,"R6, fastmatch, data.table (>= 1.9.8), devtools, ggplot2,
+knitr, magrittr, microbenchmark, rmarkdown, testthat (>=
+3.0.4), tinytest (>= 1.1.0), tibble",NA,"BSD_3_clause + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:14:57 UTC; windows",NA
+"cli","D:/Tools/R-library-4.6","3.6.6",NA,"R (>= 3.4)","utils",NA,"callr, covr, crayon, digest, glue (>= 1.6.0), grDevices,
+htmltools, htmlwidgets, knitr, methods, processx, ps (>=
+1.3.4.9000), rlang (>= 1.0.2.9003), rmarkdown, rprojroot,
+rstudioapi, testthat (>= 3.2.0), tibble, whoami, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:14:46 UTC; windows",NA
+"crayon","D:/Tools/R-library-4.6","1.5.3",NA,NA,"grDevices, methods, utils",NA,"mockery, rstudioapi, testthat, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 12:15:04 UTC; windows",NA
+"desc","D:/Tools/R-library-4.6","1.4.3",NA,"R (>= 3.4)","cli, R6, utils",NA,"callr, covr, gh, spelling, testthat, whoami, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 12:16:10 UTC; windows",NA
+"diffobj","D:/Tools/R-library-4.6","0.3.9",NA,"R (>= 4.1.0)","crayon (>= 1.3.2), tools, methods, utils, stats",NA,"knitr, rmarkdown",NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:16:11 UTC; windows",NA
+"distributional","D:/Tools/R-library-4.6","0.9.0",NA,"R (>= 4.0.0)","vctrs (>= 0.3.0), rlang (>= 0.4.5), generics, stats, numDeriv,
+utils, lifecycle, pillar",NA,"testthat (>= 2.1.0), covr, mvtnorm, actuar (>= 2.0.0), evd,
+ggdist, ggplot2, gk, knitr, LaplacesDemon, pkgdown, rmarkdown,
+tweedieDistr",NA,"GPL-3",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 13:55:22 UTC; windows",NA
+"evaluate","D:/Tools/R-library-4.6","1.0.5",NA,"R (>= 3.6.0)",NA,NA,"callr, covr, ggplot2 (>= 3.3.6), lattice, methods, pkgload,
+ragg (>= 1.4.0), rlang (>= 1.1.5), knitr, testthat (>= 3.0.0),
+withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 12:14:50 UTC; windows",NA
+"fs","D:/Tools/R-library-4.6","2.1.0",NA,"R (>= 4.1)","methods",NA,"covr, crayon, knitr, pillar (>= 1.0.0), rmarkdown, spelling,
+testthat (>= 3.0.0), tibble (>= 1.1.0), vctrs (>= 0.3.0), withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:14:52 UTC; windows",NA
+"generics","D:/Tools/R-library-4.6","0.1.4",NA,"R (>= 3.6)","methods",NA,"covr, pkgload, testthat (>= 3.0.0), tibble, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 12:14:50 UTC; windows",NA
+"glue","D:/Tools/R-library-4.6","1.8.1",NA,"R (>= 4.1)","methods",NA,"crayon, DBI (>= 1.2.0), dplyr, knitr, rlang, rmarkdown,
+RSQLite, testthat (>= 3.2.0), vctrs (>= 0.3.0), waldo (>=
+0.5.3), withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:14:50 UTC; windows",NA
+"here","D:/Tools/R-library-4.6","1.0.2",NA,NA,"rprojroot (>= 2.1.0)",NA,"conflicted, covr, fs, knitr, palmerpenguins, plyr, readr,
+rlang, rmarkdown, testthat, uuid, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 13:13:38 UTC; windows",NA
+"jsonlite","D:/Tools/R-library-4.6","2.0.0",NA,"methods",NA,NA,"httr, vctrs, testthat, knitr, rmarkdown, R.rsp, sf",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:14:52 UTC; windows",NA
+"lifecycle","D:/Tools/R-library-4.6","1.0.5",NA,"R (>= 3.6)","cli (>= 3.4.0), rlang (>= 1.1.0)",NA,"covr, knitr, lintr (>= 3.1.0), rmarkdown, testthat (>=
+3.0.1), tibble, tidyverse, tools, vctrs, withr, xml2",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 13:13:15 UTC; windows",NA
+"magrittr","D:/Tools/R-library-4.6","2.0.5",NA,"R (>= 3.4.0)",NA,NA,"covr, knitr, rlang, rmarkdown, testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:14:50 UTC; windows",NA
+"matrixStats","D:/Tools/R-library-4.6","1.5.0",NA,"R (>= 3.4.0)",NA,NA,"utils, base64enc, ggplot2, knitr, markdown, microbenchmark,
+R.devices, R.rsp",NA,"Artistic-2.0",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:14:52 UTC; windows",NA
+"numDeriv","D:/Tools/R-library-4.6","2016.8-1.1",NA,"R (>= 2.11.1)",NA,NA,NA,NA,"GPL-2",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-08-19 11:46:08 UTC; windows",NA
+"otel","D:/Tools/R-library-4.6","0.2.0",NA,"R (>= 3.6.0)",NA,NA,"callr, cli, glue, jsonlite, otelsdk, processx, shiny,
+spelling, testthat (>= 3.0.0), utils, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 12:14:50 UTC; windows",NA
+"pillar","D:/Tools/R-library-4.6","1.11.1",NA,NA,"cli (>= 2.3.0), glue, lifecycle, rlang (>= 1.0.2), utf8 (>=
+1.1.0), utils, vctrs (>= 0.5.0)",NA,"bit64, DBI, debugme, DiagrammeR, dplyr, formattable, ggplot2,
+knitr, lubridate, nanotime, nycflights13, palmerpenguins,
+rmarkdown, scales, stringi, survival, testthat (>= 3.1.1),
+tibble, units (>= 0.7.2), vdiffr, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 13:54:46 UTC; windows",NA
+"pkgbuild","D:/Tools/R-library-4.6","1.4.8",NA,"R (>= 3.5)","callr (>= 3.2.0), cli (>= 3.4.0), desc, processx, R6",NA,"covr, cpp11, knitr, Rcpp, rmarkdown, testthat (>= 3.2.0),
+withr (>= 2.3.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 13:34:34 UTC; windows",NA
+"pkgconfig","D:/Tools/R-library-4.6","2.0.3",NA,NA,"utils",NA,"covr, testthat, disposables (>= 1.0.3)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 12:14:50 UTC; windows",NA
+"pkgload","D:/Tools/R-library-4.6","1.5.3",NA,"R (>= 3.4.0)","cli (>= 3.3.0), desc, fs, glue, lifecycle, methods, pkgbuild,
+processx, rlang (>= 1.1.1), rprojroot, utils",NA,"bitops, jsonlite, mathjaxr, pak, Rcpp, remotes, rstudioapi,
+testthat (>= 3.2.1.1), usethis, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 13:55:17 UTC; windows",NA
+"png","D:/Tools/R-library-4.6","0.1-9",NA,"R (>= 2.9.0)",NA,NA,NA,NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-08-19 11:46:52 UTC; windows",NA
+"posterior","D:/Tools/R-library-4.6","1.7.0",NA,"R (>= 3.2.0)","methods, abind, checkmate, rlang (>= 1.0.6), stats, tibble (>=
+3.1.0), vctrs (>= 0.5.0), tensorA, pillar, distributional,
+parallel, matrixStats",NA,"testthat (>= 2.1.0), caret (>= 6.0-84), gbm (>= 2.1.8),
+randomForest (>= 4.6.14), e1071 (>= 1.7-3), dplyr, tidyr,
+knitr, ggplot2, ggdist, rmarkdown",NA,"BSD_3_clause + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 14:20:22 UTC; windows",NA
+"praise","D:/Tools/R-library-4.6","1.0.0",NA,NA,NA,NA,"testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 12:16:10 UTC; windows",NA
+"processx","D:/Tools/R-library-4.6","3.9.0",NA,"R (>= 3.4.0)","ps (>= 1.9.3), R6, utils",NA,"callr (>= 3.7.3), cli (>= 3.3.0), codetools, covr, curl,
+debugme, parallel, rlang (>= 1.0.2), testthat (>= 3.0.0),
+webfakes, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 13:13:23 UTC; windows",NA
+"ps","D:/Tools/R-library-4.6","1.9.3",NA,"R (>= 3.4)","utils",NA,"callr, covr, curl, pillar, pingr, processx (>= 3.1.0), R6,
+rlang, testthat (>= 3.0.0), webfakes, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:15:18 UTC; windows",NA
+"rappdirs","D:/Tools/R-library-4.6","0.3.4",NA,"R (>= 4.1)",NA,NA,"covr, roxygen2, testthat (>= 3.2.0), withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:14:49 UTC; windows",NA
+"renv","D:/Tools/R-library-4.6","1.2.4",NA,NA,"utils",NA,"BiocManager, cli, compiler, covr, cpp11, curl, devtools,
+generics, gitcreds, jsonlite, jsonvalidate, knitr, miniUI,
+modules, packrat, pak, R6, remotes, reticulate, rmarkdown,
+rstudioapi, shiny, testthat, uuid, waldo, yaml, webfakes",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 12:17:52 UTC; windows",NA
+"reticulate","D:/Tools/R-library-4.6","1.47.0",NA,"R (>= 3.5)","Matrix, Rcpp (>= 1.0.7), RcppTOML, graphics, here, jsonlite,
+methods, png, rappdirs, utils, rlang, withr","Rcpp","callr, knitr, glue, cli, rmarkdown, pillar, testthat",NA,"Apache License 2.0",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 13:35:49 UTC; windows",NA
+"rlang","D:/Tools/R-library-4.6","1.3.0",NA,"R (>= 4.0.0)","utils",NA,"cli (>= 3.1.0), covr, crayon, desc, fs, glue, knitr,
+magrittr, methods, pillar, pkgload, rmarkdown, stats, testthat
+(>= 3.3.2), tibble, usethis, vctrs (>= 0.2.3), withr","winch","MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:14:48 UTC; windows",NA
+"rprojroot","D:/Tools/R-library-4.6","2.1.1",NA,"R (>= 3.0.0)",NA,NA,"covr, knitr, lifecycle, rlang, rmarkdown, testthat (>=
+3.2.0), withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 12:16:06 UTC; windows",NA
+"tensorA","D:/Tools/R-library-4.6","0.36.2.1",NA,"R (>= 2.2.0), stats",NA,NA,NA,NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-08-19 11:49:22 UTC; windows",NA
+"testthat","D:/Tools/R-library-4.6","3.3.2",NA,"R (>= 4.1.0)","brio (>= 1.1.5), callr (>= 3.7.6), cli (>= 3.6.5), desc (>=
+1.4.3), evaluate (>= 1.0.4), jsonlite (>= 2.0.0), lifecycle (>=
+1.0.4), magrittr (>= 2.0.3), methods, pkgload (>= 1.4.0),
+praise (>= 1.0.0), processx (>= 3.8.6), ps (>= 1.9.1), R6 (>=
+2.6.1), rlang (>= 1.1.6), utils, waldo (>= 0.6.2), withr (>=
+3.0.2)",NA,"covr, curl (>= 0.9.5), diffviewer (>= 0.1.0), digest (>=
+0.6.33), gh, knitr, otel, otelsdk, rmarkdown, rstudioapi, S7,
+shiny, usethis, vctrs (>= 0.1.0), xml2",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 14:20:13 UTC; windows",NA
+"tibble","D:/Tools/R-library-4.6","3.3.1",NA,"R (>= 3.4.0)","cli, lifecycle (>= 1.0.0), magrittr, methods, pillar (>=
+1.8.1), pkgconfig, rlang (>= 1.0.2), utils, vctrs (>= 0.5.0)",NA,"bench, bit64, blob, brio, callr, DiagrammeR, dplyr, evaluate,
+formattable, ggplot2, here, hms, htmltools, knitr, lubridate,
+nycflights13, pkgload, purrr, rmarkdown, stringi, testthat (>=
+3.0.2), tidyr, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 14:19:39 UTC; windows",NA
+"utf8","D:/Tools/R-library-4.6","1.2.6",NA,"R (>= 2.10)",NA,NA,"cli, covr, knitr, rlang, rmarkdown, testthat (>= 3.0.0),
+withr",NA,"Apache License (== 2.0) | file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 12:14:50 UTC; windows",NA
+"vctrs","D:/Tools/R-library-4.6","0.7.3",NA,"R (>= 4.0.0)","cli (>= 3.4.0), glue, lifecycle (>= 1.0.3), rlang (>= 1.1.7)",NA,"bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,
+pillar (>= 1.4.4), pkgdown (>= 2.0.1), rmarkdown, testthat (>=
+3.0.0), tibble (>= 3.1.3), waldo (>= 0.2.0), withr, xml2,
+zeallot",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","R 4.6.1; x86_64-w64-mingw32; 2026-09-29 13:33:37 UTC; windows",NA
+"waldo","D:/Tools/R-library-4.6","0.6.2",NA,"R (>= 4.0)","cli, diffobj (>= 0.3.4), glue, methods, rlang (>= 1.1.0)",NA,"bit64, R6, S7, testthat (>= 3.0.0), withr, xml2",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 13:13:42 UTC; windows",NA
+"withr","D:/Tools/R-library-4.6","3.0.3",NA,"R (>= 3.6.0)","graphics, grDevices",NA,"callr, DBI, knitr, methods, rlang, rmarkdown (>= 2.12),
+RSQLite, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","R 4.6.1; ; 2026-09-29 12:14:50 UTC; windows",NA

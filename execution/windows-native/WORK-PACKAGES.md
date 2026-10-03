@@ -12,8 +12,8 @@ Historical 1920 main tasks, 320 SBC tasks, 72 mechanism tasks, L2 uncertainty an
 | W2 | Eager executors correctness passed | Final CPU suite 65 passed; CUDA 63 passed, 0 skipped. 72 positive raw-array comparisons passed; failed/replayed/fallback negative arrays saved. Explicit clipping, shortened final windows and resume-tampering checks added. |
 | W3 | Completed within stated baseline scope | R 4.6.1 and libraries in D:\Tools; 8 R batch checks passed. Pyro 1.9.2 CPU NUTS verified on normal targets. SBC: 12 data sets, 60 fits completed, all modern diagnostics saved; analytic/MCMC coverage 9/12, endpoints and moments separately compared. GPU NUTS and native Stan compilation remain unverified. |
 | W4 | 96/96 pilot tasks completed | `pilot-01`, `pilot-analysis`: G1/G2/L1 × chains 1/4 × windows 8/16 × CPU/CUDA × four workflows. Actual arrays, timings, host scalar waits, maps/JVP, allocator peaks retained. Both speedups and slowdowns retained. |
-| W5 | Ready to freeze after source commit | New 512-task `windows-native-v1`; 8 models, budgets 128/512, 4 tapes, CPU/CUDA, four MH workflows. |
-| W6 | Not started | No formal performance claims. |
+| W5 | Frozen before formal results | Source `0c9325e98f2bc7dcd75d344c01c2e50a62801c90`; protocol SHA256 `1d233dd09956c4575fc5775082310e5edca65407db5fcef40bc2ce329e6f5898`; 512 tasks, actual input files, Python/R locks, device/runtime and venv freeze marker saved. |
+| W6 | Running frozen design | 8 models, budgets 128/512, 4 tapes, CPU/CUDA, four MH workflows; all terminal outcomes retained. |
 | W7 | In progress | Source, test receipts and all attempts retained; archive after reviewable commits. |
 
 Actual commands are recorded in logs and will be consolidated in `docs/WINDOWS-NATIVE.md`.
