@@ -591,7 +591,8 @@
       ],
       "tool_validation": "not_exercised",
       "manual_connection": null,
-      "platform_limitations": null
+      "platform_limitations": null,
+      "runtime_validation": "visualize-data instructions applied; native matplotlib PNG/PDF generated and PNG visually inspected; cloud MCP not exercised"
     },
     {
       "name": "pdf",
@@ -820,5 +821,9 @@
     }
   ],
   "next_turn": "After archive installation confirm discovery in a later turn; restart Codex only if missing.",
-  "privacy": "No skill text, credentials, Mac binaries or plugin caches are copied into this repository."
+  "privacy": "No skill text, credentials, Mac binaries or plugin caches are copied into this repository.",
+  "final_archive_check": {
+    "date": "2026-10-04",
+    "present": false
+  }
 }

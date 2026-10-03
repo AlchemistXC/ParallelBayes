@@ -1,0 +1,100 @@
+{
+  "status": "computational_delivery_ready_export_pending",
+  "date": "2026-10-04",
+  "branch": "windows-native-dev",
+  "python_version": "0.2.0.dev1",
+  "r_version": "0.2.0.9001",
+  "scientific_source_commit": "0c9325e98f2bc7dcd75d344c01c2e50a62801c90",
+  "protocol_sha256": "1d233dd09956c4575fc5775082310e5edca65407db5fcef40bc2ce329e6f5898",
+  "formal": {
+    "formal": 512,
+    "completed": 512,
+    "failed": 0,
+    "cuda": 256,
+    "cpu": 256,
+    "cross_device_pairs": 256,
+    "modern_diagnostic_fits": 512
+  },
+  "numerical": {
+    "oracle_max_path_error": 5.211515663461341e-10,
+    "acceptance_mismatches": 0,
+    "cross_device_max_path_error": 2.842170943040401e-14,
+    "cross_device_max_constrained_error": 5.684341886080801e-13,
+    "cross_device_nonfinite_values": 0,
+    "normal_replays_identical": 512,
+    "terminal_attempt_count": 512
+  },
+  "no_movement": {
+    "zero_acceptance_fits": 32,
+    "zero_acceptance_models_kernels": {
+      "A1/rwm": 32
+    },
+    "retained_all_parameters_constant": 32
+  },
+  "diagnostics": {
+    "max_finite_rhat": 4.66556408433765,
+    "min_finite_bulk_ess": 4.08510638297872,
+    "min_finite_tail_ess": 4.20530644741194,
+    "fits_with_finite_rhat_over_1_01": 480,
+    "constant_variable_count": 2220,
+    "constant_fits": 108,
+    "constant_models": {
+      "G2": 28,
+      "A1": 32,
+      "M1": 16,
+      "L2": 32
+    },
+    "elapsed_seconds": 28.469999999999988
+  },
+  "tests": {
+    "torch_cpu_passed": 65,
+    "torch_cuda_passed": 63,
+    "torch_cuda_skipped": 0,
+    "raw_validation_passed": 72,
+    "r_batch_passed": 8,
+    "jax_cpu_passed": 51,
+    "stan_deselected": 7,
+    "handoff_passed": 17,
+    "handoff_platform_skipped": 1
+  },
+  "pilot": {
+    "completed": 96,
+    "accuracy_interval_correction": "shared-tape configuration-pooled interval withdrawn; original retained"
+  },
+  "sbc": {
+    "independent_data_sets": 12,
+    "fits_completed": 60,
+    "fits_failed": 0,
+    "analytic_and_each_workflow_coverage": "9/12",
+    "independent_coverage_evidence": 12
+  },
+  "skills": {
+    "private_zip_present": false,
+    "expected": "downloads/parallelbayes-user-skills-2026-10-04.zip",
+    "private_skill_installation": "pending",
+    "details": "execution/windows-native/skills-status.json"
+  },
+  "limitations": [
+    "No GPU NUTS; Pyro CPU baseline checked on normal/Gaussian only",
+    "Native Stan compilation not verified",
+    "Eager Python control; no fused/compiled CUDA claim",
+    "Short-chain convergence not established; A1/RWM all rejects",
+    "L1/L2 finite reference unresolved",
+    "CPU formal peak RSS not measured; estimate only",
+    "Updated multi-file manuscript PDF not compiled",
+    "Full historical CPU release replay not performed"
+  ],
+  "result_review": "docs/WINDOWS-RESULTS.md",
+  "analysis": "benchmark/analysis/outputs/windows-native-v1",
+  "raw_evidence": "execution/windows-native",
+  "historical_identity": "Historical 1920/320/72 tasks, frozen protocols and source snapshots untouched",
+  "artifact_sha256": {
+    "environment/locks/windows-native-v1-pip-freeze.txt": "552019bd043c05f6be11c887db58b48ad19be3d39dfe8a001672e88b53ec2a1f",
+    "environment/locks/windows-native-v1-r-packages.csv": "8dbea33c83d48ed18d4a15f5ba570bdfbd435d22edc37e247db380ead20ad2c2",
+    "environment/locks/windows-native-v1-replay-requirements.txt": "9f4fdb490d5b7ff47f45825837c13349a21c818cf2f64536339321f594177e76",
+    "execution/windows-native/windows-native-v1/final-identity-audit.json": "0fb75d70b108a7dee2ad8cc3cbb2f1f9b5623aaea1eba1e8e70e0cca28c0f26c",
+    "execution/windows-native/distribution/verification.json": "48e21019dc6c749ee69dac8f5b9566b3863770d4a0917f36a423c13ae22c53cb",
+    "benchmark/analysis/outputs/windows-native-v1/delivery-review.json": "b5b8e496c8b312141cfaea6315e56f2de009c0ffe5f4c9325fbc247d2f1302f8",
+    "benchmark/analysis/outputs/windows-native-v1/speed-ratios.png": "b5c74d0014746478934264ace439f201a5681770253deaccbd33210942f117cd"
+  }
+}

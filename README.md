@@ -1,6 +1,6 @@
 # ParallelBayes
 
-时间并行MCMC的可核验实现、R控制接口与单机CPU基准。当前数值内核 **0.1.1**；CPU主实验使用独立归档的 **0.1.0**。软件与论文均为研究候选，尚非投稿终稿。
+时间并行MCMC的可核验实现、R控制接口与单机基准。本开发分支为 **0.2.0.dev1**；历史发布内核 **0.1.1**，Mac CPU主实验使用独立归档的 **0.1.0**。软件与论文均为研究候选，尚非投稿终稿。
 
 ## 从Windows电脑接手
 
@@ -10,7 +10,7 @@
 2. 阅读[环境与操作说明](handoff/windows-native/README.md)。
 3. 将[Windows Codex完整提示词](handoff/windows-native/CODEX-PROMPT.md)粘贴给目标机Codex，让它按[工作包](handoff/windows-native/WORK-PACKAGES.md)开发并执行。
 
-**当前没有PyTorch MCMC后端或已验证GPU能力。** 交接含PowerShell环境准备、实际CUDA/float64/导数探针和结果打包工具；目标机先完成移植及正确性核验，再冻结新协议开展实验。JAX无法直接提供原生Windows NVIDIA GPU路线；历史`handoff/gpu`仅是WSL/JAX归档。
+**本开发分支已完成原生PyTorch后端及RTX 5080实测。** 新协议512项CPU/CUDA任务通过数值输出核验，65项CPU和63项CUDA测试通过；详细结果、负例与限制见[Windows实测报告](docs/WINDOWS-RESULTS.md)和[安装/运行说明](docs/WINDOWS-NATIVE.md)。许多短链尚未混合，数值核验通过不等于推断收敛。`handoff/windows-native`保留移植前交接状态；历史`handoff/gpu`仅是WSL/JAX归档。
 
 ## 当前支持范围
 
@@ -18,9 +18,9 @@
 |---|---|---|---|
 | Stan/BridgeStan CPU | 支持 | 不支持 | 不支持 |
 | 明确实现和核验的原生JAX目标 | 支持 | 支持相应组合 | BlackJAX |
-| 原生Windows PyTorch/CUDA | 待开发和目标机验证 | 待开发和目标机验证 | 待评估接入 |
+| 原生Windows PyTorch CPU/CUDA | 内置目标已实测 | 相应组合已实测，eager Python控制 | GPU未接入；独立Pyro CPU正态基线已核验 |
 
-完整[能力矩阵](docs/CAPABILITIES.md)、[计算契约](docs/COMPUTATION-CONTRACT.md)、[Mac安装与使用](docs/INSTALL-AND-USE.md)、[新增Poisson目标示例](docs/EXTENDING-TARGETS.md)。当前包初始化及pyproject仍依赖JAX，不能将`pip install -e .`误认为完成torch后端安装。
+完整[能力矩阵](docs/CAPABILITIES.md)、[计算契约](docs/COMPUTATION-CONTRACT.md)、[Mac安装与使用](docs/INSTALL-AND-USE.md)、[新增Poisson目标示例](docs/EXTENDING-TARGETS.md)。本开发版本支持torch/NumPy独立导入，JAX依赖移至可选安装；CUDA torch构建须按[Windows说明](docs/WINDOWS-NATIVE.md)安装并验证。
 
 ## 已完成的CPU研究
 
@@ -30,7 +30,7 @@
 - 40组历史随机输入的版本对照接受事件零失配；不据此宣称0.1.0/0.1.1性能等价。
 - 独立Python环境、迁移目录及完整归档重建通过；仍共享同一Mac、R库和编译器，不声称外部团队或异构平台已复现。
 
-阅读[17页软件论文PDF](output/software-paper/软件与基准研究.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
+阅读[历史CPU软件论文PDF](output/software-paper/软件与基准研究.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。LaTeX已增加Windows实测伴随节，但未重新编译该PDF。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
 
 ## 原始证据与复现
 
@@ -44,6 +44,6 @@ Git包含源码、完整测试、冻结协议、分析摘要、论文/图件及�
 
 本项目源码采用[MIT](LICENSE)，上游quasi-DEER比较源码保留BSD许可，详见[第三方说明](docs/THIRD-PARTY.md)。本仓库不分发第三方论文/书籍PDF、全文提取、私有技能源码、虚拟环境或缓存。文献引用、研究摘要和本项目原创稿件另保留。
 
-R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU支持及论文结论只有实际Windows测试后才能更新；没有自动配置选择器、任意Stan转GPU或通用加速声明。
+R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU声明限于已保存并核对的Windows实测组合；没有自动配置选择器、任意Stan转GPU或通用加速声明。本轮结果包保存在本机`output/windows-return`，未自动推送或发布。
 
 自定义技能迁移见[Windows技能安装说明](handoff/windows-native/SKILLS-SETUP.md)。30个技能的正文以私下ZIP转交；公开仓库仅含清单、校验和及安装脚本。

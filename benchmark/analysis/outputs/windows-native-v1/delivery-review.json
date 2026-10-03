@@ -1,0 +1,163 @@
+{
+  "scope": "Windows native development evidence, not a convergence certificate",
+  "source_commit": "0c9325e98f2bc7dcd75d344c01c2e50a62801c90",
+  "protocol_sha256": "1d233dd09956c4575fc5775082310e5edca65407db5fcef40bc2ce329e6f5898",
+  "counts": {
+    "formal": 512,
+    "completed": 512,
+    "failed": 0,
+    "cuda": 256,
+    "cpu": 256,
+    "cross_device_pairs": 256,
+    "modern_diagnostic_fits": 512
+  },
+  "numerical": {
+    "oracle_max_path_error": 5.211515663461341e-10,
+    "acceptance_mismatches": 0,
+    "cross_device_max_path_error": 2.842170943040401e-14,
+    "cross_device_max_constrained_error": 5.684341886080801e-13,
+    "cross_device_nonfinite_values": 0,
+    "normal_replays_identical": 512,
+    "terminal_attempt_count": 512
+  },
+  "no_movement": {
+    "zero_acceptance_fits": 32,
+    "zero_acceptance_models_kernels": {
+      "A1/rwm": 32
+    },
+    "retained_all_parameters_constant": 32
+  },
+  "speed": [
+    {
+      "device": "cpu",
+      "kernel": "mala",
+      "groups": 16,
+      "warmed_speed_ratio": {
+        "group_median_min": 0.10115057293904095,
+        "group_median_max": 0.3590318880619123,
+        "group_medians_over_one": 0,
+        "groups_ci95_low_over_one": 0
+      },
+      "normal_speed_ratio": {
+        "group_median_min": 0.1019018170536809,
+        "group_median_max": 0.36884220842849347,
+        "group_medians_over_one": 0,
+        "groups_ci95_low_over_one": 0
+      },
+      "audit_api_speed_ratio": {
+        "group_median_min": 0.11776656151149187,
+        "group_median_max": 0.38650835126037586,
+        "group_medians_over_one": 0,
+        "groups_ci95_low_over_one": 0
+      }
+    },
+    {
+      "device": "cpu",
+      "kernel": "rwm",
+      "groups": 16,
+      "warmed_speed_ratio": {
+        "group_median_min": 0.7736711667391539,
+        "group_median_max": 3.5600146113179205,
+        "group_medians_over_one": 10,
+        "groups_ci95_low_over_one": 9
+      },
+      "normal_speed_ratio": {
+        "group_median_min": 0.8144501978460397,
+        "group_median_max": 3.12817809480425,
+        "group_medians_over_one": 10,
+        "groups_ci95_low_over_one": 8
+      },
+      "audit_api_speed_ratio": {
+        "group_median_min": 0.8273405154586956,
+        "group_median_max": 2.2943346060981193,
+        "group_medians_over_one": 10,
+        "groups_ci95_low_over_one": 9
+      }
+    },
+    {
+      "device": "cuda",
+      "kernel": "mala",
+      "groups": 16,
+      "warmed_speed_ratio": {
+        "group_median_min": 0.16418366499984444,
+        "group_median_max": 0.5047716766669328,
+        "group_medians_over_one": 0,
+        "groups_ci95_low_over_one": 0
+      },
+      "normal_speed_ratio": {
+        "group_median_min": 0.17662239348867914,
+        "group_median_max": 0.5170941586249593,
+        "group_medians_over_one": 0,
+        "groups_ci95_low_over_one": 0
+      },
+      "audit_api_speed_ratio": {
+        "group_median_min": 0.18000212670156826,
+        "group_median_max": 0.5443990051619039,
+        "group_medians_over_one": 0,
+        "groups_ci95_low_over_one": 0
+      }
+    },
+    {
+      "device": "cuda",
+      "kernel": "rwm",
+      "groups": 16,
+      "warmed_speed_ratio": {
+        "group_median_min": 1.096720048868826,
+        "group_median_max": 5.229683380245998,
+        "group_medians_over_one": 16,
+        "groups_ci95_low_over_one": 15
+      },
+      "normal_speed_ratio": {
+        "group_median_min": 1.316354543002689,
+        "group_median_max": 4.749175252402063,
+        "group_medians_over_one": 16,
+        "groups_ci95_low_over_one": 16
+      },
+      "audit_api_speed_ratio": {
+        "group_median_min": 1.2216031336101714,
+        "group_median_max": 3.5447636248574,
+        "group_medians_over_one": 16,
+        "groups_ci95_low_over_one": 15
+      }
+    }
+  ],
+  "diagnostics": {
+    "max_finite_rhat": 4.66556408433765,
+    "min_finite_bulk_ess": 4.08510638297872,
+    "min_finite_tail_ess": 4.20530644741194,
+    "fits_with_finite_rhat_over_1_01": 480,
+    "constant_variable_count": 2220,
+    "constant_fits": 108,
+    "constant_models": {
+      "G2": 28,
+      "A1": 32,
+      "M1": 16,
+      "L2": 32
+    },
+    "elapsed_seconds": 28.469999999999988
+  },
+  "resources": {
+    "cuda_peak_allocated_bytes": 97251328,
+    "cuda_peak_reserved_bytes": 115343360,
+    "host_scalar_reads": 88406,
+    "host_scalar_wait_seconds": 4.206279505160637,
+    "all_attempt_seconds": 1790.220257398556,
+    "cpu_peak_rss": "not measured per formal fit; array estimate only"
+  },
+  "notes": [
+    "Speed ratios compare sequential to time executor on the same device and kernel.",
+    "n=4 independent tapes per cell; bootstrap intervals are exploratory and pointwise.",
+    "Warmed repeats are technical repetitions, not new independent tapes.",
+    "Finite Rhat >1.01 count is a descriptive post-run diagnostic, not a frozen pass rule.",
+    "diagnostic-input q labels contain constrained model parameters, followed by f estimands.",
+    "Constant diagnostics and unresolved L1/L2 finite references are not accuracy passes.",
+    "Host scalar wait includes device waiting; it is not isolated Python interpreter cost."
+  ],
+  "input_sha256": {
+    "benchmark/analysis/outputs/windows-native-v1/summary.json": "8ac2dcbe62ce623f102863ed4e32e716f3df5b2503a46e8f8b84738aa233c0f2",
+    "benchmark/analysis/outputs/windows-native-v1/run-metrics.json": "83ad7c01ea8f7fed38a46f7ce7a5db514be7dac857aaf8ff625dcf7ddc0c00f8",
+    "execution/windows-native/windows-native-v1/modern-diagnostics.json": "c194551d497932db371668e268df2d98ef3619d03549dff1ce51cc48e3d251c5",
+    "execution/windows-native/windows-native-v1/protocol.json": "23ee7c4aadcae4e032230cf05ffbc9bb0ef18edd97201ac4bd057fdade974b98",
+    "scripts/summarize-windows-delivery.py": "8c5fc7e01809bf3e54b9eb0ae81348989ce49cdfd18533c69dcd9e7a8b8c79ed"
+  }
+}

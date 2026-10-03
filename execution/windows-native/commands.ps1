@@ -25,3 +25,11 @@
 # .\.venv-win-torch\Scripts\python.exe -m pytest tests/handoff -q --junitxml=execution/windows-native/handoff-final.xml
 # .\.venv-win-torch\Scripts\python.exe scripts/windows/archive_draft_sources.py
 # Source commit then: scripts/windows/run_study.py freeze; scripts/windows/run_study.py formal
+# .\.venv-win-torch\Scripts\python.exe scripts/windows/run_study.py formal *> execution/windows-native/formal-resume.log
+# .\.venv-win-torch\Scripts\python.exe scripts/windows/analyze_study.py --run execution/windows-native/windows-native-v1 --output benchmark/analysis/outputs/windows-native-v1
+# & D:\Tools\R-4.6.1\bin\Rscript.exe scripts/windows/modern_diagnostics.R execution/windows-native/windows-native-v1/diagnostic-inputs execution/windows-native/windows-native-v1/modern-diagnostics.json
+# .\.venv-win-torch\Scripts\python.exe scripts/repair-windows-pilot-summary.py
+# .\.venv-win-torch\Scripts\python.exe scripts/summarize-windows-delivery.py
+# .\.venv-win-torch\Scripts\python.exe scripts/verify-windows-frozen.py
+# .\.venv-win-torch\Scripts\python.exe -m pip wheel . --no-deps --no-build-isolation --wheel-dir execution/windows-native/distribution
+# Direct wheel import (including a CUDA 9-transition shortened-window audit) recorded in distribution/verification.json.

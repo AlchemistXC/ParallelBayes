@@ -13,8 +13,8 @@ Historical 1920 main tasks, 320 SBC tasks, 72 mechanism tasks, L2 uncertainty an
 | W3 | Completed within stated baseline scope | R 4.6.1 and libraries in D:\Tools; 8 R batch checks passed. Pyro 1.9.2 CPU NUTS verified on normal targets. SBC: 12 data sets, 60 fits completed, all modern diagnostics saved; analytic/MCMC coverage 9/12, endpoints and moments separately compared. GPU NUTS and native Stan compilation remain unverified. |
 | W4 | 96/96 pilot tasks completed | `pilot-01`, `pilot-analysis`: G1/G2/L1 × chains 1/4 × windows 8/16 × CPU/CUDA × four workflows. Actual arrays, timings, host scalar waits, maps/JVP, allocator peaks retained. Both speedups and slowdowns retained. |
 | W5 | Frozen before formal results | Source `0c9325e98f2bc7dcd75d344c01c2e50a62801c90`; protocol SHA256 `1d233dd09956c4575fc5775082310e5edca65407db5fcef40bc2ce329e6f5898`; 512 tasks, actual input files, Python/R locks, device/runtime and venv freeze marker saved. |
-| W6 | Running frozen design | 8 models, budgets 128/512, 4 tapes, CPU/CUDA, four MH workflows; all terminal outcomes retained. |
-| W7 | In progress | Source, test receipts and all attempts retained; archive after reviewable commits. |
+| W6 | Completed; computational checks passed, inference limitations retained | 512/512 completed, 0 terminal failures/fallbacks; 256 CPU/CUDA array pairs checked, 0 event mismatches. Modern diagnostics for all 512 fits. Resume added no attempts. `windows-native-v1/final-identity-audit.json`; formal analysis in `benchmark/analysis/outputs/windows-native-v1`. |
+| W7 | Reviewable source/results ready; export verification in progress | Wheel built and imported directly with lazy NumPy and actual CUDA shortened-window audit; `distribution/verification.json`. Source/data/hash review passed; manuscript companion source updated, revised PDF not compiled. |
 
 Actual commands are recorded in logs and will be consolidated in `docs/WINDOWS-NATIVE.md`.
 Python 3.12.10 installer signature passed but per-user MSI returned 0x80070003;
@@ -36,3 +36,24 @@ Development validation/pilot/SBC began in an uncommitted working tree based on
 already recorded at execution: `source-drafts/` (32/33/35 files respectively,
 zero missing). These are first-party source snapshots, not private skill code.
 Formal work uses a clean source commit and immutable protocol identity.
+
+Formal numerical evidence: maximum independent NumPy path error 5.2116e-10;
+CPU/CUDA maximum unconstrained/constrained differences 2.8422e-14/5.6844e-13.
+Warmed group-median sequential/time speed ratios: CPU quasi-DEER 0.101–0.359,
+CPU Picard 0.774–3.560, CUDA quasi-DEER 0.164–0.505, CUDA Picard 1.097–5.230.
+All 32 A1/RWM fits accepted zero proposals: their speed reflects self-transitions.
+480/512 fits had a finite Rhat >1.01; 108 had constant variables/estimands.
+Numerical completion is not convergence certification. L1/L2 reference remains unresolved.
+
+Post-freeze review explicitly withdrew the pilot's configuration-pooled accuracy
+interval; `pilot-analysis/summary.original.json` preserves the original hash
+referenced at freeze. The correction does not change formal source, tasks or data.
+The initial post-freeze reviewer used full task hashes for folder names; the
+FileNotFoundError is retained in `delivery-review.log`. It was corrected to the
+driver's 20-character directory convention; `delivery-review-final.log` passed.
+
+Private ZIP remains absent at final file check; 30 user skills including
+nature-shared remain uninstalled and have not been runtime-validated. Existing
+plugin discovery and account/platform limits are recorded separately. Native
+Stan compilation, GPU NUTS, fused device control and full historical CPU random
+array replay are not claimed. The frozen venv and all 39 source hashes are intact.

@@ -14,6 +14,9 @@
 实测组合、命令与边界见 [WINDOWS-NATIVE.md](WINDOWS-NATIVE.md)；原始数组及状态见
 `execution/windows-native/`。GPU 基础探针与采样器正确性分别保存。当前 CUDA NUTS 不在能力查询中。
 所有 GPU 声明限定于已经返回本项目的真实设备结果，不延伸到任意硬件、模型或数据。
+新协议 512 项（CPU/CUDA 各 256）已完成数值核验，256 对跨设备实际数组接受事件零失配。
+大量短链混合不足，A1/RWM 全部拒绝提议；“已核验”不代表推断收敛。
+完整解释及未完成范围见 [WINDOWS-RESULTS.md](WINDOWS-RESULTS.md)。
 
 ## 历史发布 0.1.1
 

@@ -1,0 +1,66 @@
+% Data source: benchmark/analysis/outputs/windows-native-v1/delivery-review.json
+% Scientific source: 0c9325e98f2bc7dcd75d344c01c2e50a62801c90
+% Protocol identity: 1d233dd09956c4575fc5775082310e5edca65407db5fcef40bc2ce329e6f5898
+% This companion fragment has not been compiled into a revised PDF on Windows.
+\section{原生Windows扩展：独立开发版本与新冻结实验}
+\label{sec:windows-native}
+
+开发分支\texttt{windows-native-dev}新增Python版本0.2.0.dev1及R版本0.2.0.9001。
+明确torch目标与独立NumPy参考可在不导入JAX的条件下运行，基础安装不再强制拉取JAX。
+本轮实际环境为Windows 11、AMD Ryzen 7 9800X3D、NVIDIA RTX 5080（sm\_120）、
+驱动616.56、Python 3.12.14、torch 2.13.0+cu130及float64。
+R 4.6.1通过reticulate整批调用并保持iteration$\times$chain$\times$variable次序。
+Stan仍为CPU提供方式，未自动翻译；本轮未编译核验原生Stan。
+Pyro 1.9.2的CPU NUTS仅作为单独正态目标统计基线，未接入GPU NUTS。
+
+实现保持相同MALA/RWM核约定、硬接受前向、独立参考与实际随机数组。
+quasi-DEER使用非重叠窗口和截断Rademacher对角JVP；Picard使用滑动窗口，
+多链按最小已确认前缀共同推进，末窗口只处理实际转移。
+控制采用torch eager与Python循环，记录主机标量等待，不宣称融合设备内控制。
+CPU 65项和CUDA 63项测试通过，另有72项原始路径比较与8个R批量核验。
+这些有限测试不构成一般正确性证明。
+
+试探网格96项完成后，在观察正式结果前冻结\texttt{windows-native-v1}。
+协议包含8个目标、128/512两个预算、每组4份独立随机数组、CPU/CUDA资源和4个MH工作流，共512项，
+每项4链、窗口16。新身份同时锁定源码、依赖、设备、数据、数组、坐标、函数与失败规则。
+所有512项通过数值输出检查，接受事件对独立NumPy参考零失配，最大路径差为$5.212\times10^{-10}$。
+256对CPU/CUDA实际数组比较亦无事件失配，最大无约束及约束差分别为
+$2.842\times10^{-14}$及$5.684\times10^{-13}$。未发生回退或终结失败。
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrr}\toprule
+资源 & quasi-DEER/MALA & Online Picard/RWM\\\midrule
+CPU & 0.101--0.359 & 0.774--3.560\\
+CUDA & 0.164--0.505 & 1.097--5.230\\\bottomrule
+\end{tabular}
+\caption{同设备、同torch、同核的warmed执行速度比（顺序秒数/时间执行器秒数）：
+各16个模型/预算组中位数的最小至最大值。两次技术重放不增加独立重复数。
+这不是GPU相对CPU的速度比，也不是精确达标时间。}
+\end{table}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{../../benchmark/analysis/outputs/windows-native-v1/speed-ratios.pdf}
+\caption{原生Windows配对执行结果；每组4份独立数组，误差线为重复层面2000次bootstrap的逐点95\%区间，
+不提供同时置信保证。CUDA Picard的16组中位数大于1，其中15组区间下限大于1。
+A1/RWM的全部32次拟合均拒绝所有提议，其速度仅反映自环执行，不能解释为后验探索加速。
+quasi-DEER的所有组中位速度比均小于1；全部负结果保留。}
+\end{figure}
+
+数值完成与推断可靠性有明显区别：480/512次拟合至少有一个有限rank/folded Rhat大于1.01，
+108次拟合包含常量变量或函数，其诊断保留为不可判定。
+最大有限Rhat为4.666，最小有限bulk/tail ESS为4.085/4.205。
+该Rhat计数仅为描述，没有新增事后验收标准。解析目标的逐函数重复MSE及区间另行保存；
+L1/L2的有限参考未解决，不宣称精度达标。全拒绝或混合不足轨迹没有被删除或重新调参替换。
+
+另以12个新生成数据集进行小型SBC，五个共享数据工作流共60次拟合全部完成。
+同数据解析90\%区间与五个工作流的覆盖均为9/12，解析覆盖的95\%区间为[0.428,0.945]；
+端点、矩和诊断分别保存。共享数据不能计作60个独立校准重复。
+Pyro CPU NUTS与MH不使用固定同轨迹比较，也未纳入本轮正式速度实验。
+
+正式任务记录成本共1790.220秒（含普通执行和技术重放），现代R诊断另计28.470秒；
+普通API、核验API、写盘和诊断分开计时，不能混称完整工作流。
+最大CUDA分配/保留峰值为97,251,328/115,343,360字节，包含已有驻留分配；
+CPU仅有数组空间估算，未测逐拟合RSS峰值。主机标量读取累计88,406次，
+标量等待计时4.206秒含设备等待，并不隔离全部控制开销。
+试探分析曾把共享数组的配置变化合并为误差区间；该区间已撤回，原输出及哈希保留，正式分析不受影响。
+本轮结果仅支持指定Windows实现和有限预算下的计算证据，不将Mac JAX与Windows torch的完整工作流差异全部归因于GPU。
