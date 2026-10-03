@@ -1,5 +1,22 @@
 # 模型—方法支持矩阵（0.1.1）
 
+## Windows 开发分支 0.2.0.dev1（2026-10-04 新证据）
+
+历史 0.1.1 表格保留在下方。开发分支提供独立 torch/NumPy 导入；安装基础包不再强制安装 JAX。
+
+| 提供方式及实测范围 | 顺序 RWM/MALA | Picard RWM / quasi-DEER MALA | NUTS |
+|---|---|---|---|
+| 原生 Windows torch CPU，明确内置目标 | 已核验 | 已核验，eager Python 控制 | 独立 Pyro CPU 基线，仅 normal/Gaussian 本轮统计核验 |
+| 原生 Windows torch CUDA，RTX 5080 float64 | 已核验 | 已核验，未宣称融合设备内控制 | 尚未接入/核验 |
+| 原生 Windows JAX CPU | 原入口回归通过 | 原入口回归通过 | 原入口冒烟测试通过 |
+| 原生 Windows Stan/BridgeStan | 本轮未编译核验；历史能力仅 CPU 顺序 | 不支持 | 不支持 |
+
+实测组合、命令与边界见 [WINDOWS-NATIVE.md](WINDOWS-NATIVE.md)；原始数组及状态见
+`execution/windows-native/`。GPU 基础探针与采样器正确性分别保存。当前 CUDA NUTS 不在能力查询中。
+所有 GPU 声明限定于已经返回本项目的真实设备结果，不延伸到任意硬件、模型或数据。
+
+## 历史发布 0.1.1
+
 本版是Stan顺序采样入口与经过核验的原生JAX时间并行实验接口。Stan提供方式尚未连接CPU时间并行执行器，也不自动翻译至JAX或GPU。
 
 | 模型提供方式 | 顺序RWM | 顺序MALA | RWM＋Online Picard | MALA＋quasi-DEER | BlackJAX NUTS |

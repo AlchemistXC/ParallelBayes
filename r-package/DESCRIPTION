@@ -1,11 +1,11 @@
 Package: parallelbayes
 Type: Package
 Title: Auditable Experiments with Time Parallel Markov Chain Monte Carlo
-Version: 0.1.1
+Version: 0.2.0.9001
 Authors@R: person("ParallelBayes", "Project", email = "parallelbayes@example.invalid", role = c("aut", "cre"))
 Description: A research interface to fixed-noise sequential and time parallel
     Markov chain Monte Carlo experiments. Separates targets, kernels, executors,
-    numerical validation and cost records. Uses native JAX models or a CPU
+    numerical validation and cost records. Uses optional native torch or JAX models or a CPU
     BridgeStan provider, with explicit capability and failure reporting.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -13,4 +13,4 @@ Depends: R (>= 4.2.0)
 Imports: reticulate, posterior, jsonlite
 Suggests: testthat (>= 3.0.0)
 Config/testthat/edition: 3
-SystemRequirements: Python (>= 3.11), JAX, BlackJAX; C++ compiler and BridgeStan source for Stan models
+SystemRequirements: Python (>= 3.11); optional PyTorch or JAX/BlackJAX; C++ compiler and BridgeStan source for Stan models

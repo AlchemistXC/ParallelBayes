@@ -1,0 +1,99 @@
+{
+  "test_receipts": [
+    {
+      "path": "execution\\windows-native\\torch-cpu-01.xml",
+      "sha256": "0f69f65f7de7e30f92881415a4979404877cd83b4434465afa2282295c50684a",
+      "counts": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "2",
+        "skipped": "0",
+        "tests": "61",
+        "time": "3.891",
+        "timestamp": "2026-10-04T07:20:54.186872+09:00",
+        "hostname": "KURO"
+      }
+    },
+    {
+      "path": "execution\\windows-native\\windows-cpu-final.xml",
+      "sha256": "9690a5d46e726642bf87998ef513acb53f0531e5d6eb2b801ff92dc270eeeeeb",
+      "counts": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "65",
+        "time": "3.600",
+        "timestamp": "2026-10-04T07:37:43.804079+09:00",
+        "hostname": "KURO"
+      }
+    },
+    {
+      "path": "execution\\windows-native\\torch-cuda-final.xml",
+      "sha256": "8ff2ec866b6c2240dde9025db8186d5830aef8a9a7407cc47fbc9d4d2f0e9560",
+      "counts": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "63",
+        "time": "6.459",
+        "timestamp": "2026-10-04T07:37:48.840640+09:00",
+        "hostname": "KURO"
+      }
+    },
+    {
+      "path": "execution\\windows-native\\jax-regression-01.xml",
+      "sha256": "8ecf14bc551958e2473879a481aa4efd8e12f3cd5ff175fbf8ef099995cbdd06",
+      "counts": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "51",
+        "time": "16.988",
+        "timestamp": "2026-10-04T07:35:37.585023+09:00",
+        "hostname": "KURO"
+      }
+    },
+    {
+      "path": "execution\\windows-native\\handoff-final.xml",
+      "sha256": "cae858506d88b5096dc6b21f5912c3f46f05c5d01727cee91966129432feadbc",
+      "counts": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "1",
+        "tests": "18",
+        "time": "0.122",
+        "timestamp": "2026-10-04T07:43:09.168468+09:00",
+        "hostname": "KURO"
+      }
+    },
+    {
+      "path": "execution\\windows-native\\pre-freeze-safety.xml",
+      "sha256": "0bcf740337b46624075162c28c588d8a2d01b0d48a92a5216ef83b9f9909eb23",
+      "counts": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "2",
+        "time": "1.011",
+        "timestamp": "2026-10-04T07:48:38.191260+09:00",
+        "hostname": "KURO"
+      }
+    }
+  ],
+  "raw_validation": "validation-01/summary.json",
+  "r_batches": 8,
+  "pilot_tasks": 96,
+  "sbc_data_sets": 12,
+  "sbc_fits": 60,
+  "legacy_stan_deselected": 7,
+  "notes": [
+    "Initial MALA boundary fixture fixed after 2 expected-accept assertions failed; initial XML retained.",
+    "Pre-freeze duplicate R lock keyword caused SyntaxError, repaired before source commit and freezing; pre-freeze-safety.xml records 2 passing recovery tests.",
+    "Native Stan compilation and GPU NUTS not verified."
+  ]
+}

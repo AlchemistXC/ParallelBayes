@@ -1,7 +1,8 @@
 param(
     [string]$TorchVersion = "2.7.1",
     [string]$CudaIndex = "https://download.pytorch.org/whl/cu128",
-    [string]$VenvName = ".venv-win-torch"
+    [string]$VenvName = ".venv-win-torch",
+    [string]$PythonExe = ""
 )
 $ErrorActionPreference = "Stop"
 Set-StrictMode -Version Latest
@@ -18,7 +19,8 @@ try {
     New-Item -ItemType Directory -Path $Attempt | Out-Null
     $Python = Join-Path $ProjectRoot "$VenvName/Scripts/python.exe"
     if (-not (Test-Path $Python)) {
-        & py -3.12 -m venv $VenvName
+        if ($PythonExe) { & $PythonExe -m venv $VenvName }
+        else { & py -3.12 -m venv $VenvName }
         if ($LASTEXITCODE -ne 0) { throw "Python 3.12 x64 venv creation failed." }
     }
     & $Python -c "import sys,struct; assert sys.platform=='win32' and struct.calcsize('P')==8; assert sys.version_info[:2]==(3,12)"
@@ -34,9 +36,10 @@ try {
     }
     & $Python -m pip install -r handoff/windows-native/requirements-bootstrap.txt --report "$Attempt/bootstrap-install.json"
     if ($LASTEXITCODE -ne 0) { throw "Bootstrap requirements failed." }
-    & $Python -m pip check
+    & $Python -m pip check | Tee-Object -FilePath "$Attempt/pip-check.txt"
     if ($LASTEXITCODE -ne 0) { throw "Dependency conflict." }
-    & $Python scripts/windows/probe_environment.py --require-windows --require-cuda --output execution/windows-native/environment.json
+    & $Python -m pip freeze | Set-Content -Encoding utf8 "$Attempt/python-observed.txt"
+    & $Python scripts/windows/probe_environment.py --require-windows --require-cuda --output "$Attempt/environment.json"
     if ($LASTEXITCODE -ne 0) { throw "Device probe failed. Inspect environment.json before any sampler work." }
     & $Python -m pip freeze | Set-Content -Encoding utf8 "$Attempt/python-observed.txt"
     Write-Host "Framework probe passed. The PyTorch MCMC backend still needs implementation and validation."

@@ -115,7 +115,13 @@ __pycache__/
 .venv*/
 /downloads/
 /output/windows-return/
-/execution/windows-native/
+!/execution/windows-native/
+/execution/windows-native/*
+!/execution/windows-native/WORK-PACKAGES.md
+!/execution/windows-native/skills-status.json
+!/execution/windows-native/SUMMARY.json
+!/execution/windows-native/validation-summary.json
+!/execution/windows-native/commands.ps1
 /materials/*
 !/materials/README.md
 !/materials/并行贝叶斯.md
