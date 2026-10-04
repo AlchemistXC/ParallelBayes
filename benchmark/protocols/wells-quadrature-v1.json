@@ -1,0 +1,19 @@
+{
+  "identity": "wells-quadrature-v1",
+  "scope": "Independent deterministic companion integration after the finite-reference audit found no beta>0 draws; no new MCMC or speed experiment",
+  "functions": ["alpha", "beta", "alpha_squared", "beta_squared", "p_switch_0m", "p_switch_100m", "beta_positive"],
+  "coordinate_rule": "Find a stationary point from [0,0] using the analytical NumPy gradient; use the inverse observed-information Cholesky factor for fixed integration coordinates.",
+  "mode_gradient_max": 1e-7,
+  "root_max_function_evaluations": 200,
+  "radii": [6, 8, 10, 12],
+  "orders": [32, 64, 96],
+  "chunk_nodes": 128,
+  "tail_sectors": 256,
+  "integration": "Tensor Gauss-Legendre in the whitened square [-R,R]^2; beta>0 integrated separately with a variable lower z2 boundary and z1 intervals split where that boundary crosses +/-R.",
+  "tail_control": "Global log-concavity supporting planes on radius-R directions bound omitted mass outside the square by a sector-wise integral outside the inscribed disk; also bound absolute polynomial moment tails.",
+  "error_interpretation": "Report every order/radius result, order and domain differences, and floating-point evaluations of analytic tail inequalities. No interval arithmetic is implemented; grid stability and evaluated tail bounds are not a certified total quadrature error or exact truth.",
+  "selected_summary": "Report the preselected largest radius and order (12,96), not the combination agreeing best with MCMC. Retain all smaller-grid values.",
+  "reference_comparison": "Compare the six continuous means to the finite reference with its MCSE. For beta>0, report numerical integration separately from the undetermined finite-MCMC reference uncertainty; no independent-Bernoulli approximation.",
+  "guards": "Fresh output only; immutable upstream hashes; finite root/gradient and positive definite information; each rule at most 100000 nodes, chunk at most 128; nonnegative finite integrals; no total runtime cutoff.",
+  "source_files": ["scripts/completion/audit_wells_quadrature.py", "examples/external_wells.py", "models/external/wells/source-manifest.json", "benchmark/protocols/wells-quadrature-v1.json"]
+}
