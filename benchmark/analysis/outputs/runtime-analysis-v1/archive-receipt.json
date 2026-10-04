@@ -1,0 +1,27 @@
+{
+  "archive": "runtime-analysis-v1.tar",
+  "bytes": 56135680,
+  "sha256": "4cef67dfd18189cdd3fec8521f49c9e0370f57dae61a2906466d5735ff75dfa7",
+  "checked_files": 186,
+  "source_snapshot_commit": "22a3b9ea63a728e0468fa94a37d1803d3d46570e",
+  "analysis_source_commit": "872d5d042efeb7c777f7a922e1ca977b2e90820c",
+  "all_member_hashes_verified": true,
+  "raw_dependency": {
+    "archive": "formal-coordinator-v1.tar",
+    "sha256": "aeff44694d3e24be451b55201a90dab745ee0a4017f637e1d34960f66339a867"
+  },
+  "new_MCMC_fits": 0,
+  "public_release": false,
+  "frozen_source_checks": [
+    {
+      "protocol": "inference-budget-pilot-mac-v1.json",
+      "source_files_checked": 58,
+      "mismatches": 0
+    },
+    {
+      "protocol": "formal-runtime-technical-mac-v1.json",
+      "source_files_checked": 65,
+      "mismatches": 0
+    }
+  ]
+}

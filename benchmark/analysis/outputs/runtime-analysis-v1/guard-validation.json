@@ -1,0 +1,29 @@
+{
+  "changed_sources": [
+    "scripts/completion/formal_runtime_analysis.py"
+  ],
+  "current_source_sha256": "8b431381b87cf0fc22f71828afb717be3497ae8f9441b38f1bee8f7ee94b3bd7",
+  "formal_inference_complete": false,
+  "new_MCMC_fits": 0,
+  "new_R_invocations": 0,
+  "original_analysis_source": "872d5d042efeb7c777f7a922e1ca977b2e90820c",
+  "reason": "Only eligibility consistency guards changed; identical function transport does not require rerunning unchanged R analysis",
+  "source_commit": "22a3b9ea63a728e0468fa94a37d1803d3d46570e",
+  "tasks": [
+    {
+      "function_bytes_identical": true,
+      "summary_identical": true,
+      "task": "8b91ab212abfc73e14d8"
+    },
+    {
+      "function_bytes_identical": true,
+      "summary_identical": true,
+      "task": "151c23e95214c429b2bc"
+    },
+    {
+      "function_bytes_identical": true,
+      "summary_identical": true,
+      "task": "173275cd12b6ca3834aa"
+    }
+  ]
+}

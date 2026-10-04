@@ -35,3 +35,5 @@
 | 显式恢复在已测试Mac场景保留原输入、失败记录与全部已知尝试成本 | FORMAL-RECOVERY.md；formal-recovery-v2；d9890b8／d589678 | 7行为检查；真实MALA四数组字节一致，20原文件不变；未知耗时不补零。非全局调度器、Windows或任意崩溃恢复证明 |
 
 | 共享登记在已测试Mac场景阻止遗留进程与其他输出目录重叠，并保留一次恢复的尝试成本 | FORMAL-COORDINATOR.md；formal-coordinator-v1；6d686de | 新增5行为检查/受影响7检查；实际3工作流、1配对/2MH审计/3R回写；恢复62文件不变。有限Mac配置，非全局OS排他、Windows或任意崩溃恢复保证 |
+
+| 登记尝试和原始数组可在搬迁后的只读证据中连接到函数及完整重复分析 | FORMAL-RUNTIME-ANALYSIS.md；runtime-analysis-v1；872d5d0/22a3b9e | 新增4/相关5检查；三份均值/成本/二进制和10行诊断一致，6个有限Rhat>1.01保留；新拟合0。有限格式验证，不是正式网格、Windows或区间覆盖率证明 |

@@ -1,0 +1,11 @@
+{
+  "analysis-identity.json": "dab9321f9e1fd5bf9c2a5bfe73fc105039e5a40153c935df2a6d612d17cecf64",
+  "archive-receipt.json": "5d45b1c94a07cdc31239fb45d802858ae072aa83a3131bc5d029a074008971cb",
+  "guard-validation.json": "20fbe62a48d22a41d691f391fcbf778c2eafc572feec177cd513ab61364b0c73",
+  "kernel-consistency-red.log": "bcdedd35e4bfc82c9b7206d1867105aca3cddba4a6cda20747421ba638a27268",
+  "reference-contract.json": "2f981aadc9f7a12b5adae3b42cca4c7543ab63999217d1dba175672f901358bb",
+  "summary.json": "05e7d4c66c0acc614091675bd77d49a9afca0cab15b95b13d41d37f88d01217f",
+  "technical-points.json": "bc7fc4d0c8f1e56c5007fcba3d48dbf60122dab2ccdf69c4c43f78f22d4ff999",
+  "tests.log": "ee8740d959f60a62ad7b360bf12c32cb3c820fcd9f9449c17a6c55f4f2c53ef4",
+  "tests.xml": "c8474ea87f59389b67df80fdbf7779b882c47de80a2104a7c2932727dcdbcc91"
+}

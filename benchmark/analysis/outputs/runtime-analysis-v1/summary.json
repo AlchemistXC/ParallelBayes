@@ -1,0 +1,23 @@
+{
+  "Python_peak_RSS_bytes": 102662144,
+  "R_transports_exact": 3,
+  "analysis_is_sampler_time": false,
+  "analysis_sha256": "59f8e727cc0c065842de8d41e67a974f7dfc5cced4d333fd126c8e32680f946c",
+  "analysis_wall_seconds": 0.8942767500411719,
+  "available_intervals": 0,
+  "dependency_assets_checked": 292,
+  "finite_function_rhat_above_1_01": 6,
+  "formal_inference_complete": false,
+  "histories_exact": 3,
+  "largest_child_peak_RSS_bytes": 96927744,
+  "means_exact": 3,
+  "memory_scope": "Separate Mac lifetime peaks, not simultaneous tree memory or maximum formal task validation",
+  "modern_diagnostic_rows_exact": 10,
+  "native_Windows_validated": false,
+  "new_MCMC_fits": 0,
+  "source_commit": "872d5d042efeb7c777f7a922e1ca977b2e90820c",
+  "tasks": 3,
+  "technical_pair_rows": 3,
+  "technical_point_rows": 10,
+  "undefined_function_rhat": 0
+}

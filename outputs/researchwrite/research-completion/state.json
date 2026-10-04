@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Connect the registered runtime task histories and immutable raw outputs to bounded formal-schema extraction and paired uncertainty; implement the formal batch driver and independently measured cached/ordinary/audit costs. Native Windows process-cohort recovery, readiness receipts and maximum-task resources remain required before formal freeze.",
+  "next_recommended_action": "Implement the formal batch/worker driver and independently measured cached/ordinary/audit costs, using the verified Mac coordinator and runtime-v1 raw-evidence adapter. Validate the frozen full schema and maximum task end-to-end; native Windows cohort recovery, resources and readiness/mechanism receipts remain required before formal inference freeze.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -227,8 +227,8 @@
     ],
     "remaining_gates": [
       "Windows_readiness_and_mechanism_receipts",
-      "formal_batch_driver_and_native_Windows_cohort_recovery",
-      "formal_schema_adapter_for_verified_raw_array_extraction_and_paired_uncertainty",
+      "formal_batch_worker_driver_and_native_Windows_cohort_recovery",
+      "frozen_formal_schema_and_maximum_task_end_to_end_analysis_validation",
       "independent_cached_ordinary_audit_cost_measurement",
       "Windows_host_lock_disk_memory_and_max_task_validation",
       "immutable_formal_protocol_and_inputs"
@@ -314,7 +314,8 @@
       "new_MCMC_fits": 0,
       "original_raw_dependency": "3ad2764ad139e1d08012a2b4399cf4fd588382a1b410abeb5bcfc92d1515fe0e",
       "public_release": false
-    }
+    },
+    "runtime_schema_companion_report": "docs/FORMAL-RUNTIME-ANALYSIS.md"
   },
   "f3_formal_recovery": {
     "status": "native_Mac_explicit_task_recovery_verified_coordinator_and_Windows_pending",
@@ -391,6 +392,62 @@
         }
       ],
       "public_release": false
+    }
+  },
+  "f3_runtime_analysis": {
+    "status": "finite_runtime_v1_archived_evidence_adapter_verified_full_formal_batch_and_Windows_pending",
+    "analysis_source_commit": "872d5d042efeb7c777f7a922e1ca977b2e90820c",
+    "guard_source_commit": "22a3b9ea63a728e0468fa94a37d1803d3d46570e",
+    "new_behavior_tests_passed": 4,
+    "affected_streaming_and_outcome_tests_passed": 5,
+    "dependency_assets_checked": 292,
+    "raw_tasks_rebuilt": 3,
+    "means_exact": 3,
+    "history_costs_exact": 3,
+    "R_binary_transports_exact": 3,
+    "modern_diagnostic_rows_exact": 10,
+    "finite_function_rhat_above_1_01": 6,
+    "technical_point_rows": 10,
+    "technical_pair_rows": 3,
+    "available_intervals": 0,
+    "new_MCMC_fits": 0,
+    "new_independent_statistical_repetitions": 0,
+    "guard_reextraction_summaries_and_bytes_exact": 3,
+    "guard_revalidation_R_invocations": 0,
+    "Python_peak_RSS_bytes": 102662144,
+    "largest_child_peak_RSS_bytes": 96927744,
+    "memory_scope": "Separate Mac lifetime peaks; not simultaneous total or maximum formal task",
+    "native_Windows_validated": false,
+    "formal_protocol_frozen": false,
+    "formal_inference_complete": false,
+    "ordinary_workflow_measured_separately": false,
+    "report": "docs/FORMAL-RUNTIME-ANALYSIS.md",
+    "raw_evidence_archive": {
+      "archive": "runtime-analysis-v1.tar",
+      "bytes": 56135680,
+      "sha256": "4cef67dfd18189cdd3fec8521f49c9e0370f57dae61a2906466d5735ff75dfa7",
+      "checked_files": 186,
+      "source_snapshot_commit": "22a3b9ea63a728e0468fa94a37d1803d3d46570e",
+      "analysis_source_commit": "872d5d042efeb7c777f7a922e1ca977b2e90820c",
+      "all_member_hashes_verified": true,
+      "raw_dependency": {
+        "archive": "formal-coordinator-v1.tar",
+        "sha256": "aeff44694d3e24be451b55201a90dab745ee0a4017f637e1d34960f66339a867"
+      },
+      "new_MCMC_fits": 0,
+      "public_release": false,
+      "frozen_source_checks": [
+        {
+          "protocol": "inference-budget-pilot-mac-v1.json",
+          "source_files_checked": 58,
+          "mismatches": 0
+        },
+        {
+          "protocol": "formal-runtime-technical-mac-v1.json",
+          "source_files_checked": 65,
+          "mismatches": 0
+        }
+      ]
     }
   }
 }

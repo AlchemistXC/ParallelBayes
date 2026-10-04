@@ -1,0 +1,155 @@
+{
+  "analysis_sha256": "59f8e727cc0c065842de8d41e67a974f7dfc5cced4d333fd126c8e32680f946c",
+  "contracts": [
+    {
+      "actual_input_sha256": "f9763b2c615a28d76b02bca15d986cfc50368a8937b3c311b6c9096c2e93616c",
+      "budget": 64,
+      "chains": 4,
+      "discard": 16,
+      "expected_config": {
+        "atol": 1e-10,
+        "chains": 4,
+        "device": "cpu",
+        "draws": 80,
+        "executor": "sequential",
+        "kernel": "rwm",
+        "max_iter": 2048,
+        "rtol": 1e-10,
+        "step_size": 0.8485281374238569,
+        "window": 32
+      },
+      "input_relative": "dependency-inputs/G1.npz",
+      "input_sha256": "8009fff69fc9b5243ff8d2981cfa395ac03bd0239812fde9db41aff148693ea3",
+      "model": "G1",
+      "nuts_warmup": 32,
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/mh/8b91ab212abfc73e14d8",
+      "replicate": "0",
+      "science_directory": "attempt-0001",
+      "scientific_protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+      "scientific_task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "8b91ab212abfc73e14d8",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0
+      },
+      "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+      "task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "8b91ab212abfc73e14d8",
+        "kernel": "rwm",
+        "model": "G1",
+        "protocol_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+        "replicate": 0
+      },
+      "workflow": "cpu-rwm-sequential"
+    },
+    {
+      "actual_input_sha256": "f9763b2c615a28d76b02bca15d986cfc50368a8937b3c311b6c9096c2e93616c",
+      "budget": 64,
+      "chains": 4,
+      "discard": 16,
+      "expected_config": {
+        "atol": 1e-10,
+        "chains": 4,
+        "device": "cpu",
+        "draws": 80,
+        "executor": "online_picard",
+        "kernel": "rwm",
+        "max_iter": 80,
+        "rtol": 1e-10,
+        "step_size": 0.8485281374238569,
+        "window": 32
+      },
+      "input_relative": "dependency-inputs/G1.npz",
+      "input_sha256": "8009fff69fc9b5243ff8d2981cfa395ac03bd0239812fde9db41aff148693ea3",
+      "model": "G1",
+      "nuts_warmup": 32,
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/mh/151c23e95214c429b2bc",
+      "replicate": "0",
+      "science_directory": "attempt-0001",
+      "scientific_protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+      "scientific_task": {
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "151c23e95214c429b2bc",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0
+      },
+      "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+      "task": {
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "151c23e95214c429b2bc",
+        "kernel": "rwm",
+        "model": "G1",
+        "protocol_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+        "replicate": 0
+      },
+      "workflow": "cpu-rwm-online_picard"
+    },
+    {
+      "actual_input_sha256": "f89e3337a1ab49e07741a14148166124414612e3d785b57e2a1d7adef9a916f8",
+      "budget": 64,
+      "chains": 4,
+      "discard": 0,
+      "expected_config": {},
+      "input_relative": "dependency-inputs/L1.npz",
+      "input_sha256": "3cf8b2e86344c2e852ba0261752adce800a1ec8f97a143a128908c3511fe69a8",
+      "model": "L1",
+      "nuts_warmup": 32,
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/nuts/173275cd12b6ca3834aa",
+      "replicate": "0",
+      "science_directory": "attempt-0001",
+      "scientific_protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+      "scientific_task": {
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "173275cd12b6ca3834aa",
+        "kernel": "nuts",
+        "model": "L1",
+        "replicate": 0
+      },
+      "target_id": "6da2e1aef19ff774bae006559760a6d7c98aec2bc01d332b3a4c4e24e3566855",
+      "task": {
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "173275cd12b6ca3834aa",
+        "kernel": "nuts",
+        "model": "L1",
+        "protocol_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+        "replicate": 0
+      },
+      "workflow": "cpu-nuts-spawn_chains"
+    }
+  ],
+  "dependency_companion_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+  "dependency_manifest_sha256": "a45e15f117a50c6974fd7ce897e3d9ad533ce743e89df66c4ed77ff109d84777",
+  "identity": "runtime-analysis-companion-mac-v1",
+  "locations": {
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/mh/151c23e95214c429b2bc": "realworker/mh/151c23e95214c429b2bc",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/mh/8b91ab212abfc73e14d8": "realworker/mh/8b91ab212abfc73e14d8",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/nuts/173275cd12b6ca3834aa": "realworker/nuts/173275cd12b6ca3834aa"
+  },
+  "new_MCMC_fits": 0,
+  "registry_sha256": "b8c00daeecb33f237d7f9cc134c82b377c01f61e9f641711fdffbdf29803cb27",
+  "scope": "Raw evidence adapter validation on three archived executions; one input per model, no repeated-run uncertainty",
+  "source_commit": "872d5d042efeb7c777f7a922e1ca977b2e90820c",
+  "source_files": {
+    "benchmark/analysis/outputs/completion-f3/reference-reuse.json": "e7b47af49f728f2186581002c1b7e444d0e99a99bc1d53b214ba8c954c39c960",
+    "benchmark/analysis/outputs/wells-quadrature-v1/R12-n96.json": "a37704dc0bdd6f76a810ecdb0f73e72c804cf837a3bb684fdc7c44d9a95b1111",
+    "benchmark/analysis/outputs/wells-quadrature-v1/result.json": "87e2a8c2e1a447df9fdc1f02b4de15f88b1f4337e41b732f5bfde55b6c8becdb",
+    "benchmark/protocols/windows-native-v1.json": "6a9f830d2b870ab693ee7db57942b11d35d22aef9fd31039c09a1a90e37ec12d",
+    "scripts/completion/audit_runtime_analysis.py": "e3f2f8bda5663b5e4c1bc9827ca13dc7ac24a49766a86a2d5f911c9ee1cf354e",
+    "scripts/completion/formal_error_summary.py": "d858ce9b2d96fc3150e7f172c79ba4f11d2e3b2df65e30c6f14bb1971b8fcadf",
+    "scripts/completion/formal_evidence.py": "d23128d837695a4e507c33e2a990556d7bb9f92e5b34138d1bece100a71df27f",
+    "scripts/completion/formal_outcomes.py": "e8c04dffddb82593089e4660d412249fb7fbd6e5e2655ab23ebea25f6dfec76a",
+    "scripts/completion/formal_runtime_analysis.py": "4480f833998ba3c0d0dec86a2e562167b06cd8b4103681528c523b0fbae2c1b1",
+    "scripts/completion/formal_streaming.py": "c9a09d7fe82f20debd6d91b637d40dc2673e30a0c390409cddd6a354611a409f",
+    "scripts/completion/formal_uncertainty.py": "0bbe7fae58a301c7472cdcdf6887f17bdcf327cc2bd196045400a6a760324263",
+    "scripts/completion/posterior_diagnostics.R": "bf5cb7fe7610c41db69e623a7e0e1c583d1f34616f5e9396c02e4a41a6b23786"
+  }
+}
