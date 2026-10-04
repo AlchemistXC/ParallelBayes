@@ -36,11 +36,11 @@ audit=dict(passed=True,acceptance_mismatches=[0,0,0,0],oracle='artificial_fixtur
 (out/'worker-result.json').write_text(json.dumps(dict(status=r['status'],samples_eligible=r['status']=='completed',target_id=r['target_id'],task=r['science_task'],protocol_sha256='science-fixture',full_MH_audit=audit)))
 ''')
     c=TaskCoordinator(tmp_path/'host.lock');locations={};contracts=[]
-    for status in ('completed','failed'):
-        science=dict(id=status,model='G',kernel='rwm',executor='sequential',device='cpu',replicate=0)
+    for status in ('completed','failed','contradictory'):
+        science=dict(id=status,model='G',kernel='mala' if status=='contradictory' else 'rwm',executor='sequential',device='cpu',replicate=0)
         task=dict(science,protocol_sha256='registry-fixture')
         config=dict(kernel='rwm',executor='sequential',device='cpu',chains=4,draws=5,initial=payload['initial'].tolist(),step_size=.1)
-        request=dict(task_id=status,status=status,science_task=science,target_id=model.target_id,
+        request=dict(task_id=status,status='completed' if status=='contradictory' else status,science_task=science,target_id=model.target_id,
                      artificial_draws=draws.tolist(),config=config,tape_sha256=actual_hash(tape))
         out=evidence_root/status;c.run(task,request,worker,out,0,2**30);locations[str(out)]=status
         contracts.append(dict(task=task,original=str(out),model='G',workflow=status,budget=4,replicate='0',
@@ -61,6 +61,8 @@ audit=dict(passed=True,acceptance_mismatches=[0,0,0,0],oracle='artificial_fixtur
         wrong=dict(contracts[0],target_id='different-model')
         with pytest.raises(ValueError,match='target'):
             extract_task(evidence,wrong,model,tmp_path/'wrong-model')
+        with pytest.raises(ValueError,match='Kernel/executor'):
+            extract_task(evidence,contracts[2],model,tmp_path/'contradictory-kernel')
 
 
 def test_planned_aggregation_keeps_resource_failure_unknown_retry_cost_and_not_run(tmp_path):

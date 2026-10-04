@@ -62,6 +62,8 @@ def extract_task(evidence,contract,model,output,maximum_member_bytes=128*1024**2
     if payload['initial'].shape!=(chains,model.dimension):raise ValueError('Actual initial shape differs')
     task=contract['scientific_task']
     if task['kernel']=='nuts':
+        if task['device']!='cpu' or task['executor']!='spawn_chains' or metadata.get('provider')!='pyro_cpu_spawn_chains':
+            raise ValueError('NUTS provider/executor differs from the supported native CPU workflow')
         if discard!=0:raise ValueError('NUTS archive contains retained states separately from warmup')
         initial=read_member(raw,'initial',maximum_member_bytes)
         if not np.array_equal(initial,payload['initial']) or metadata['chain_seeds']!=payload['nuts_seeds'].tolist():
@@ -80,6 +82,8 @@ def extract_task(evidence,contract,model,output,maximum_member_bytes=128*1024**2
     else:
         if task['kernel'] not in ('rwm','mala'):raise ValueError('Unsupported fixed-tape kernel')
         config=metadata['config']
+        if any(config.get(k)!=task[k] for k in ('kernel','executor','device')):
+            raise ValueError('Kernel/executor configuration conflicts with the scientific task')
         if any(config.get(k)!=v for k,v in contract['expected_config'].items()):raise ValueError('Kernel/executor configuration differs')
         if config['draws']!=total or config['chains']!=chains or not np.array_equal(config['initial'],payload['initial']):
             raise ValueError('MH planned length/chains/initial differs')
