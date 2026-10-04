@@ -1,0 +1,24 @@
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/audit_wells_quadrature.py:165: RuntimeWarning: divide by zero encountered in matmul
+  eta = x@q
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/audit_wells_quadrature.py:165: RuntimeWarning: overflow encountered in matmul
+  eta = x@q
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/audit_wells_quadrature.py:165: RuntimeWarning: invalid value encountered in matmul
+  eta = x@q
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/audit_wells_quadrature.py:167: RuntimeWarning: divide by zero encountered in matmul
+  return x.T@(w[:, None]*x)
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/audit_wells_quadrature.py:167: RuntimeWarning: overflow encountered in matmul
+  return x.T@(w[:, None]*x)
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/audit_wells_quadrature.py:167: RuntimeWarning: invalid value encountered in matmul
+  return x.T@(w[:, None]*x)
+{"radius": 6, "order": 32, "seconds": 0.07049566600471735}
+{"radius": 6, "order": 64, "seconds": 0.2797456660773605}
+{"radius": 6, "order": 96, "seconds": 0.6480595420580357}
+{"radius": 8, "order": 32, "seconds": 0.06466654199175537}
+{"radius": 8, "order": 64, "seconds": 0.27398012508638203}
+{"radius": 8, "order": 96, "seconds": 0.6715101660229266}
+{"radius": 10, "order": 32, "seconds": 0.07372837513685226}
+{"radius": 10, "order": 64, "seconds": 0.26448312494903803}
+{"radius": 10, "order": 96, "seconds": 0.6158609590493143}
+{"radius": 12, "order": 32, "seconds": 0.07004541717469692}
+{"radius": 12, "order": 64, "seconds": 0.2948725828900933}
+{"radius": 12, "order": 96, "seconds": 0.665837958920747}

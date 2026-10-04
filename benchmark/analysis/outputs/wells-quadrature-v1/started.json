@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "identity": "wells-quadrature-v1",
+  "source_commit": "bd2ab95b5066b86e80035c582a7bbef1e062d3fa",
+  "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "functions": [
+    "alpha",
+    "beta",
+    "alpha_squared",
+    "beta_squared",
+    "p_switch_0m",
+    "p_switch_100m",
+    "beta_positive"
+  ],
+  "rows": [],
+  "tails": []
+}

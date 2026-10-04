@@ -1,0 +1,115 @@
+{
+  "status": "completed",
+  "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+  "input_sha256": {
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/wells-quadrature-01/result.json": "87e2a8c2e1a447df9fdc1f02b4de15f88b1f4337e41b732f5bfde55b6c8becdb",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/wells-reference-01/receipt.json": "15d973cb5a1005d72432b85afea7a4f35e75099bbdac418784fb8d1ff88316eb",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/wells-reference-01/diagnostics.json": "3e4071b433c20f0d5b9ebfe7bc1986c13dc7a1629e08506ca4e85609e638090e"
+  },
+  "source_script_sha256": "6efc8a569519c00952b0046d5e745ea2a68244a3173b61180fd6da7cf59fadd8",
+  "selected_radius": 12,
+  "selected_order": 96,
+  "comparisons": [
+    {
+      "function": "alpha",
+      "quadrature_mean": 0.6065771117644989,
+      "MCMC_mean": 0.6067102479,
+      "MCMC_MCSE": 0.000632787986457314,
+      "difference_MCMC_minus_quadrature": 0.000133136135501144,
+      "difference_in_reported_MCSE": 0.21039611742079897,
+      "reference_uncertainty_status": "finite_MCSE_estimates_not_bias_bounds"
+    },
+    {
+      "function": "beta",
+      "quadrature_mean": -0.6229832495256747,
+      "MCMC_mean": -0.622143444,
+      "MCMC_MCSE": 0.00103530234680044,
+      "difference_MCMC_minus_quadrature": 0.0008398055256747528,
+      "difference_in_reported_MCSE": 0.8111693441728763,
+      "reference_uncertainty_status": "finite_MCSE_estimates_not_bias_bounds"
+    },
+    {
+      "function": "alpha_squared",
+      "quadrature_mean": 0.37157705510657857,
+      "MCMC_mean": 0.371713306194974,
+      "MCMC_MCSE": 0.000767510754839276,
+      "difference_MCMC_minus_quadrature": 0.00013625108839543376,
+      "difference_in_reported_MCSE": 0.17752336046934744,
+      "reference_uncertainty_status": "finite_MCSE_estimates_not_bias_bounds"
+    },
+    {
+      "function": "beta_squared",
+      "quadrature_mean": 0.39761870777386443,
+      "MCMC_mean": 0.396531180996391,
+      "MCMC_MCSE": 0.00135250913402019,
+      "difference_MCMC_minus_quadrature": -0.0010875267774734243,
+      "difference_in_reported_MCSE": -0.8040809116318988,
+      "reference_uncertainty_status": "finite_MCSE_estimates_not_bias_bounds"
+    },
+    {
+      "function": "p_switch_0m",
+      "quadrature_mean": 0.6470373970343255,
+      "MCMC_mean": 0.647068743991571,
+      "MCMC_MCSE": 0.000144466693184256,
+      "difference_MCMC_minus_quadrature": 3.1346957245492746e-05,
+      "difference_in_reported_MCSE": 0.21698397433041638,
+      "reference_uncertainty_status": "finite_MCSE_estimates_not_bias_bounds"
+    },
+    {
+      "function": "p_switch_100m",
+      "quadrature_mean": 0.49590258117089897,
+      "MCMC_mean": 0.496145549398793,
+      "MCMC_MCSE": 0.000157943539917072,
+      "difference_MCMC_minus_quadrature": 0.00024296822789404704,
+      "difference_in_reported_MCSE": 1.5383233022484941,
+      "reference_uncertainty_status": "finite_MCSE_estimates_not_bias_bounds"
+    },
+    {
+      "function": "beta_positive",
+      "quadrature_mean": 4.7672087565484905e-11,
+      "MCMC_mean": 0,
+      "MCMC_MCSE": null,
+      "difference_MCMC_minus_quadrature": -4.7672087565484905e-11,
+      "difference_in_reported_MCSE": null,
+      "reference_uncertainty_status": "undetermined"
+    }
+  ],
+  "convergence_changes": [
+    {
+      "radius": 6,
+      "max_continuous_change_64_to_96": 1.27675647831893e-15,
+      "event_change_64_to_96": 1.1826097820094068e-24,
+      "event_probability": 4.3466916945764026e-11,
+      "tail_mass_over_computed_normalizer": 1.9432136673784215e-08
+    },
+    {
+      "radius": 8,
+      "max_continuous_change_64_to_96": 1.2212453270876722e-15,
+      "event_change_64_to_96": 1.4217166778255163e-24,
+      "event_probability": 4.767195506092214e-11,
+      "tail_mass_over_computed_normalizer": 2.9593044686440694e-14
+    },
+    {
+      "radius": 10,
+      "max_continuous_change_64_to_96": 1.1657341758564144e-15,
+      "event_change_64_to_96": 1.9774786518845818e-24,
+      "event_probability": 4.767208756548015e-11,
+      "tail_mass_over_computed_normalizer": 1.9483612356012753e-21
+    },
+    {
+      "radius": 12,
+      "max_continuous_change_64_to_96": 6.661338147750939e-16,
+      "event_change_64_to_96": 1.770683498746325e-24,
+      "event_probability": 4.7672087565484905e-11,
+      "tail_mass_over_computed_normalizer": 7.467917223072414e-30
+    }
+  ],
+  "all_finite_MCMC_functions_determined": false,
+  "error_interpretation": "Report every order/radius result, order and domain differences, and floating-point evaluations of analytic tail inequalities. No interval arithmetic is implemented; grid stability and evaluated tail bounds are not a certified total quadrature error or exact truth.",
+  "limits": [
+    "Differences divided by estimated MCSE are descriptive, not z tests or coverage proofs.",
+    "MCMC constant-event uncertainty and diagnostics remain undetermined.",
+    "Tail control does not certify the interior quadrature or floating-point roundoff.",
+    "No inference-precision gate or speed conclusion is supplied by this companion analysis."
+  ]
+}

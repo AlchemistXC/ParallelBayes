@@ -47,3 +47,5 @@ Git包含源码、完整测试、冻结协议、分析摘要、论文/图件及�
 R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU声明限于已保存并核对的Windows实测组合；没有自动配置选择器、任意Stan转GPU或通用加速声明。Windows结果包已上传`windows-native-v1`草稿Release并通过接收端校验；未代用户将草稿公开。首次复核见[回传复核报告](docs/WINDOWS-RETURN-AUDIT.md)，后续见[中位数敏感性最小复现](docs/DIAGNOSTIC-MIDPOINT.md)、[工作量核算](docs/WINDOWS-MECHANISM-ACCOUNTING.md)和[伴随重建入口](docs/COMPANION-REPRODUCTION.md)。
 
 自定义技能迁移见[Windows技能安装说明](handoff/windows-native/SKILLS-SETUP.md)。30个技能的正文以私下ZIP转交；公开仓库仅含清单、校验和及安装脚本。
+
+外部水井案例的后续参考证据见[有限参考复核](docs/WELLS-REFERENCE-AUDIT.md)和[独立二维积分](docs/WELLS-QUADRATURE.md)。两者不代替Windows目标核验或正式推断实验。

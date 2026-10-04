@@ -1,0 +1,10 @@
+{
+  "identity": "wells-quadrature-v1",
+  "source_commit": "bd2ab95b5066b86e80035c582a7bbef1e062d3fa",
+  "sources": {
+    "scripts/completion/audit_wells_quadrature.py": "d78466d9f6e9a176b08558b5c14ec989b4922ab59b52021324b80a406ec0599b",
+    "examples/external_wells.py": "cf5e8a49dff8aaa0d6e6e0df1fd262235c44365333b43f17c0b356d013546bfe",
+    "models/external/wells/source-manifest.json": "b64415687a58d3e2c34444d9e32523154b6002d960e505e31e2510d8356420ab",
+    "benchmark/protocols/wells-quadrature-v1.json": "27af52c4c77e86d35190c3ed7bedb8570ce7bdf2c58dffc42a0ca56f281152b8"
+  }
+}
