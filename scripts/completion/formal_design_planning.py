@@ -59,7 +59,7 @@ def resources(n, dimensions, functions):
         bytes_by_component=parts, logical_bytes=sum(parts.values()),
         logical_gib=sum(parts.values())/2**30,
         master_input_gib=(parts['master_noise_uniform_directions']+parts['master_initial_and_nuts_seeds'])/2**30,
-        legacy_last_prefix_cache_gib=n*c*d*longest*9*8*2/2**30,
+        legacy_last_prefix_path_cache_gib=n*c*d*(8*longest+max(BUDGETS))*8/2**30,
         mh_chain_transitions=n*c*m*mh_steps*8,
         nuts_chain_updates=n*c*m*nuts_steps,
         retained_draws=n*c*m*sum(BUDGETS)*9,
