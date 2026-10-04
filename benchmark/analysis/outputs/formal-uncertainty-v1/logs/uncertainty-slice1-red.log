@@ -1,0 +1,12 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______ test_complete_paired_loss_intervals_match_independent_scipy_oracle ______
+
+    def test_complete_paired_loss_intervals_match_independent_scipy_oracle():
+>       from formal_uncertainty import create_plan, analyze_function
+E       ModuleNotFoundError: No module named 'formal_uncertainty'
+
+tests/external/test_formal_uncertainty.py:13: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_formal_uncertainty.py::test_complete_paired_loss_intervals_match_independent_scipy_oracle
+1 failed in 0.28s

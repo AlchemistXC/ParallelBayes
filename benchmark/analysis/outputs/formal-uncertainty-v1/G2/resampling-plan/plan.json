@@ -1,0 +1,23 @@
+{
+  "receipt": {
+    "schema": 1,
+    "namespace": "formal-uncertainty-pilot-companion-v1",
+    "model": "G2",
+    "replicate_ids": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "rng_seed_hex": "0x256f08e50296d0e70f09cbf04aa89e04",
+    "rng": "numpy.Generator(PCG64)",
+    "n_resamples": 9999,
+    "planned_repetitions": 4,
+    "sha256": "9e3b4d35cab29758b308d30b8e1d40874d768a25d8b80369db82f5498604c00d",
+    "independent_unit": "complete_four_chain_repetition",
+    "reference_resampled": false,
+    "simultaneous_coverage": false
+  },
+  "indices_file": "indices.npz",
+  "indices_file_sha256": "316cad341636d3492b67dcce917da0226f3b6da7d1fce533e1e2a7c3ed7b13b2"
+}

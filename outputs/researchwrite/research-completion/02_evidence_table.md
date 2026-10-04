@@ -26,3 +26,4 @@
 | 新输入保持前缀、避免旧目标×100地址重叠，并兼容uint32 NUTS | formal_inputs.py；新增2项行为检查；46,080地址/键及9,216种子检查 | 有限集合核验，不是随机独立性证明或正式输入包 |
 | 未定L2事件不能报告零误差 | formal_error_summary.py；3项契约检查；unresolved-reference-companion.json | 九行保存估计伴随纠正；历史文件保持不变，新增拟合0 |
 | 原全缓存分析器不适合正式全网格 | formal_design_planning.py；analyze_budget_pilot.py保存路径逻辑 | 输入23.78GiB、最新前缀路径104.06GiB；新流式分析未实现 |
+| 共享完整重复索引的损失/成本区间可重建，并保留缺失和失败条件 | FORMAL-UNCERTAINTY.md；formal-uncertainty-v1；SciPy公开bootstrap对照 | 4项新接口检查；315个旧合格点误差差0；四重复全部无BCa区间。非正式推断或覆盖率证明 |

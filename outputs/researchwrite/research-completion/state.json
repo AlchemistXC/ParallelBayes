@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Implement and test bounded formal runner/analysis, phase accounting, host-wide lock and disk guards; receive Windows F1/F2/F4, NUTS and selected-MH receipts; only then freeze the formal protocol and actual input manifest. Draft v0.1 proposes 128 repetitions; no formal run has begun.",
+  "next_recommended_action": "Implement the formal task runner and bounded raw-array/diagnostic extraction, phase timing, host-wide lock and disk checks; receive actual Windows readiness/mechanism receipts. The paired scalar-summary uncertainty layer is implemented and checked; it is not the formal end-to-end analysis or a frozen protocol.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -229,10 +229,27 @@
       "Windows_receipts",
       "formal_runner",
       "streaming_analysis",
-      "paired_uncertainty",
+      "integrate_paired_uncertainty_with_raw_array_extraction",
       "host_lock_disk_memory_and_timing_validation",
       "Windows_max_task_technical_check",
       "immutable_formal_protocol_and_inputs"
     ]
+  },
+  "f3_formal_uncertainty": {
+    "source_commit": "fca9605bafac345a09621bf8d1e52c8eaf40106b",
+    "status": "scalar_layer_implemented_and_checked",
+    "new_tests_passed": 4,
+    "affected_old_tests_passed": 3,
+    "workflow_function_rows": 324,
+    "paired_function_rows": 216,
+    "cost_workflow_rows": 81,
+    "cost_pair_rows": 54,
+    "eligible_legacy_point_values_identical": 315,
+    "unresolved_reference_rows": 9,
+    "available_pilot_bca_intervals": 0,
+    "new_mcmc_fits": 0,
+    "scope": "Public-interface numeric oracle and saved scalar pilot companion, not formal inference or full raw trajectory reconstruction",
+    "report": "docs/FORMAL-UNCERTAINTY.md",
+    "formal_protocol_frozen": false
   }
 }

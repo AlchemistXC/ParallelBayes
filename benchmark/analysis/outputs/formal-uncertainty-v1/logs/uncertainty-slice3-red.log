@@ -1,0 +1,53 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_unavailable_intervals_preserve_degeneracy_reference_and_overflow_reasons _
+
+    def test_unavailable_intervals_preserve_degeneracy_reference_and_overflow_reasons():
+        from formal_uncertainty import create_plan, analyze_function
+        ids=tuple(str(i) for i in range(32)); plan=create_plan('unavailable','W1',ids)
+        const=dict.fromkeys(ids,0.)
+        unresolved=analyze_function(plan,{'zero':const},dict(kind='unresolved',value=0.,mcse=None))
+        row=unresolved['workflows']['zero']
+        assert row['observed_estimate_mean']==0 and row['confidence_interval'] is None
+        assert row['conditional_squared_discrepancy'] is None and row['interval_status']=='unresolved_reference'
+        constant=analyze_function(plan,{'zero':const},dict(kind='analytic',value=1.,mcse=0.))
+        row=constant['workflows']['zero']
+        assert row['conditional_squared_discrepancy']==1 and row['confidence_interval'] is None
+        assert row['interval_status'].startswith('degenerate_empirical')
+        sparse={key:float(i) if i<4 else None for i,key in enumerate(ids)}
+        small=analyze_function(plan,{'pilot':sparse},dict(kind='analytic',value=0.,mcse=0.))
+        assert small['workflows']['pilot']['interval_status']=='fewer_than_20_valid_repetitions'
+        assert small['workflows']['pilot']['valid']==4
+>       extreme=analyze_function(plan,{'huge':dict.fromkeys(ids,1e300),'zero':const},
+                                 dict(kind='analytic',value=0.,mcse=0.),pairs=[('huge','zero')])
+
+tests/external/test_formal_uncertainty.py:82: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/completion/formal_uncertainty.py:193: in analyze_function
+    row=summarize(values,reference)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+estimates = [1e+300, 1e+300, 1e+300, 1e+300, 1e+300, 1e+300, ...]
+reference = {'kind': 'analytic', 'mcse': 0.0, 'value': 0.0}
+
+    def summarize(estimates,reference):
+        xs=_values(estimates);kind,mu,mcse=_reference(reference)
+        valid=[x for x in xs if x is not None];n=len(valid)
+        row=dict(planned=len(xs),valid=n,failed_or_unavailable=len(xs)-n,
+            observed_estimate_mean=statistics.mean(valid) if n else None,
+            supplied_reference_value=mu,reference_kind=kind,reference_mcse=mcse,
+            reference_eligible=kind!='unresolved',claim_type=KINDS[kind],
+            conditional_squared_discrepancy=None,unconditional_squared_discrepancy=None,
+            squared_discrepancy_standard_error=None,reference_shift_min=None,reference_shift_max=None,
+            reference_shift_is_confidence_interval=False,confidence_interval=None,
+            interval_status='unresolved_reference' if kind=='unresolved' else 'no_valid_estimates')
+        if kind=='unresolved' or not n:return row
+>       errors=[(x-mu)**2 for x in valid];mean=statistics.mean(errors)
+                ^^^^^^^^^
+E       OverflowError: (34, 'Result too large')
+
+scripts/completion/formal_error_summary.py:44: OverflowError
+=========================== short test summary info ============================
+FAILED tests/external/test_formal_uncertainty.py::test_unavailable_intervals_preserve_degeneracy_reference_and_overflow_reasons
+1 failed in 0.31s

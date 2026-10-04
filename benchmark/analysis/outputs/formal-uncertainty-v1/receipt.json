@@ -1,0 +1,21 @@
+{
+  "source_commit": "fca9605bafac345a09621bf8d1e52c8eaf40106b",
+  "new_tests_passed": 4,
+  "affected_preexisting_tests_passed": 3,
+  "failures_in_final_targeted_checks": 0,
+  "failed_development_attempts_preserved": 4,
+  "skipped_final_checks": 0,
+  "new_mcmc_fits": 0,
+  "frozen_source_files_verified_unchanged": 58,
+  "verified_companion_files": 64,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pytest": "8.4.2"
+  },
+  "tests_scope": "Four new public-interface checks; three old loss-contract checks rerun because their implementation changed. Repeated invocations are not additional tests.",
+  "oracle": "scipy.stats.bootstrap public API; deterministic complete/missing paired samples; not an empirical coverage study",
+  "formal_protocol_frozen": false,
+  "formal_experiments_started": false
+}
