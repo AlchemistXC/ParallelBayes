@@ -47,7 +47,14 @@ def test_actual_inputs_pair_time_executors_and_failed_target_stays_quarantined(t
     assert resumed['newly_executed_targets'] == 0
     after = {f.relative_to(out).as_posix(): sha(f) for name in ['G1','G2'] for f in (out/name).rglob('*') if f.is_file()}
     assert before == after
+    from audit_selected_mh import audit
+    receipt = audit(protocol, inputs, out, tmp_path/'unused', tmp_path/'audit')
+    assert receipt['checked_completed_workflows'] == 6
+    assert receipt['retained_failed_workflows'] == 6
+    assert receipt['acceptance_mismatches'] == 0 and receipt['saved_array_replay_passed']
     raw = out/'G1'/good['attempt']/'rwm-sequential.npz'
     raw.write_bytes(raw.read_bytes()+b'corrupt')
     with pytest.raises(ValueError, match='checksum'):
         study.run(protocol, inputs, tmp_path/'unused', out, resume=True)
+    with pytest.raises(ValueError, match='checksum'):
+        audit(protocol, inputs, out, tmp_path/'unused', tmp_path/'bad-audit')
