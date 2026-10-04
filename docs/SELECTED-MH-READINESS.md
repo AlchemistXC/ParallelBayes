@@ -38,3 +38,9 @@ python scripts/completion/audit_selected_mh.py --protocol PROTOCOL --inputs INPU
 运行恢复使用相同命令追加`--resume`，先确认真实进程已经结束；只允许匹配源码、输入、环境和终态哈希时复用。独立分析支持在CPU上复核保存的CUDA数组，不会替代CUDA性能测量。完整数组在独立本地证据目录，紧凑回执见`benchmark/analysis/outputs/selected-mh-readiness-v1/`。
 
 Windows入口为`handoff/windows-completion/CODEX-PROMPT-F3-MH.md`。下一步仍须接收Windows结果并冻结正式预算/重复与误差处理。256步通过不能保证长路径通过；每条正式路径仍需执行原完整核验。此项不开发GPU NUTS或自动配置选择器。
+
+## 完整归档与重建回执
+
+本地`selected-mh-readiness-v1.tar`为78510080字节，源码快照87ed4c5；187个文件从归档内逐项校验及Git bundle验证通过。SHA256：`86ce1dd970264f3c084bdf3f4c17da52f323f31abcc8dcf222a180d2340ce4a1`。包含完整Mac数组、协议/输入、源码历史、来源许可、环境、警告和恢复记录，未发布公共Release。
+
+在全新提取目录使用归档源码重建54工作流的独立参考核验，逐目标结果与原伴随分析相同，接受事件零失配，无新增MCMC拟合。原分析引用恢复前summary，重建分析引用归档中的恢复后summary；两者分别保存并核对，未覆盖旧身份。本次使用同一Mac现有Python依赖，不等于干净安装、外部团队或全论文复现。回执及原始命令日志在紧凑证据目录的archive-receipt.json与rebuild/。

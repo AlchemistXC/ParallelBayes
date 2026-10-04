@@ -167,7 +167,38 @@
     "independent_technical_inputs_per_target": 1,
     "windows_actual_run": false,
     "formal_inference_complete": false,
-    "raw_evidence_archive_pending": true,
-    "report": "docs/SELECTED-MH-READINESS.md"
+    "raw_evidence_archive_pending": false,
+    "report": "docs/SELECTED-MH-READINESS.md",
+    "raw_evidence_archive": {
+      "source_snapshot_commit": "87ed4c5a0a1f29870cf085f4702786f56f8a7b21",
+      "sampling_source_commit": "779b8e4c56ba62939f365f6d723d71319dead221",
+      "analysis_source_commit": "fc48d76",
+      "mac_completed_workflows": 54,
+      "mac_passed_pairs": 36,
+      "independent_saved_array_replays": 54,
+      "task_asset_hashes_verified": 126,
+      "resume_files_unchanged": 135,
+      "windows_actual_validation": false,
+      "formal_inference_complete": false,
+      "public_release": false,
+      "archive": "selected-mh-readiness-v1.tar",
+      "bytes": 78510080,
+      "sha256": "86ce1dd970264f3c084bdf3f4c17da52f323f31abcc8dcf222a180d2340ce4a1",
+      "checked_files": 187,
+      "source_bundle_verified": true,
+      "all_member_hashes_verified": true
+    },
+    "relocated_rebuild": {
+      "archive_sha256": "86ce1dd970264f3c084bdf3f4c17da52f323f31abcc8dcf222a180d2340ce4a1",
+      "archive_member_hashes_verified": 187,
+      "exit_code": 0,
+      "source_executed_from_separate_archive_extraction": true,
+      "per_target_replay_results_exact": true,
+      "checked_workflows": 54,
+      "acceptance_mismatches": 0,
+      "new_MCMC_fits": 0,
+      "summary_identity": "Original analysis refers to saved pre-resume summary; rebuilt analysis refers to archived resumed summary. Both checked, not overwritten.",
+      "limitation": "Same Mac and existing Python dependencies; this companion rebuild is not clean installation, external team or full manuscript reproduction."
+    }
   }
 }
