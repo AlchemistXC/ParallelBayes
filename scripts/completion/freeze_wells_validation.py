@@ -26,7 +26,7 @@ def freeze(protocol,inputs):
               "scripts/completion/validate_wells.py","scripts/completion/freeze_wells_validation.py",
               "models/external/wells/source-manifest.json"]
     source={name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in sorted(set(names))}
-    p=dict(identity="external-wells-validation-v1",stage="model and fixed-tape correctness only",
+    p=dict(identity=protocol.stem,stage="model and fixed-tape correctness only",
         source_commit=subprocess.check_output(["git","rev-parse","HEAD"],cwd=ROOT,text=True).strip(),
         source_files=source,created_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime()),
         base_config=config,torch_cpu_threads=1,tape_sha256=tape_hash(tape),

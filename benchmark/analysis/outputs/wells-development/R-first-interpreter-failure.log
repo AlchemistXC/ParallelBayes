@@ -1,0 +1,5 @@
+Error in py_module_import(module, convert = convert) : 
+  ModuleNotFoundError: No module named 'scipy'
+Run `reticulate::py_last_error()` for details.
+Calls: <Anonymous> ... import_from_path_immediate -> import -> py_module_import
+Execution halted

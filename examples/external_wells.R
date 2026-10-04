@@ -1,17 +1,22 @@
 # Native R batch example. Uses the existing public Python Model extension route.
-# Arguments: REPO SOURCE NEW_OUTPUT PYTHON ACTUAL_TAPE
+# Arguments: REPO SOURCE NEW_OUTPUT PYTHON ACTUAL_TAPE [PROTOCOL]
 args <- commandArgs(trailingOnly=TRUE)
-if (length(args) != 5L) stop('Usage: Rscript external_wells.R REPO SOURCE NEW_OUTPUT PYTHON ACTUAL_TAPE')
+if (!length(args) %in% c(5L,6L)) stop('Usage: Rscript external_wells.R REPO SOURCE NEW_OUTPUT PYTHON ACTUAL_TAPE [PROTOCOL]')
 repo <- normalizePath(args[[1]], mustWork=TRUE)
 source <- normalizePath(args[[2]], mustWork=TRUE)
 output <- args[[3]]
 if (file.exists(output)) stop('Use a new R integration output directory')
-Sys.setenv(RETICULATE_PYTHON=normalizePath(args[[4]], mustWork=TRUE))
+# Resolve the directory, not the Python symlink: resolving the latter can leave
+# the selected virtual environment and silently select the base interpreter.
+python <- file.path(normalizePath(dirname(args[[4]]),mustWork=TRUE),basename(args[[4]]))
+if (!file.exists(python)) stop('Selected Python executable is missing')
+Sys.setenv(RETICULATE_PYTHON=python)
 actual_tape <- normalizePath(args[[5]], mustWork=TRUE)
+protocol <- if (length(args)==6L) normalizePath(args[[6]],mustWork=TRUE) else NULL
 stopifnot(as.character(packageVersion('posterior')) == '1.7.0')
 dir.create(output,recursive=TRUE)
 helper <- reticulate::import_from_path('validate_wells',path=file.path(repo,'scripts/completion'),convert=TRUE)
-r <- helper$run_validation(source,file.path(output,'python'),stage='torch',tape_from=actual_tape)
+r <- helper$run_validation(source,file.path(output,'python'),stage='torch',protocol_path=protocol,tape_from=actual_tape)
 if (!identical(r$record$status,'passed') || is.null(r$draws)) stop('Validation failed; raw failure retained')
 draws <- posterior::as_draws_array(r$draws)
 dimnames(draws) <- list(iteration=seq_len(dim(draws)[1L]),chain=seq_len(dim(draws)[2L]),variable=c('alpha','beta[1]'))
