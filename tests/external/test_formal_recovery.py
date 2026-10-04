@@ -121,3 +121,22 @@ time.sleep(.15)
         with pytest.raises(RecoveryConflict,match='failed'):
             recover_task(tmp_path/name,host_lock=lock,reason='Forbidden attempt to replace failed output')
         assert not (tmp_path/(name+'.recovery')).exists()
+
+
+@pytest.mark.skipif(sys.platform!='darwin',reason='Native Mac process-group recovery profile')
+def test_unsealed_failed_worker_output_cannot_be_retried(tmp_path):
+    from formal_runtime import execute_task
+    from formal_recovery import recover_task, RecoveryConflict
+    worker=tmp_path/'worker.py'
+    worker.write_text('''import json,sys
+from pathlib import Path
+(Path(sys.argv[2])/'worker-result.json').write_text(json.dumps(dict(status='failed',samples_eligible=False)))
+''')
+    original=tmp_path/'unsealed-failure';lock=tmp_path/'host.lock'
+    execute_task({'id':'missing-finalization'},{},worker,original,lock,1024,2**30)
+    # Artificial fixture: retain the worker's explicit failed result while
+    # removing only this fixture's supervisor finalization files.
+    (original/'state.json').unlink();(original/'completion.json').unlink()
+    with pytest.raises(RecoveryConflict,match='worker.*failed'):
+        recover_task(original,host_lock=lock,reason='Supervisor finalization is absent')
+    assert not original.with_name(original.name+'.recovery').exists()

@@ -49,7 +49,7 @@ def audit(protocol,inputs,output,rscript,r_library,host_lock):
                  inject_after_science_directory=str(initial))
     sources=[Path(__file__),ROOT/'scripts/completion/formal_recovery.py',ROOT/'scripts/completion/formal_outcomes.py',
              ROOT/'scripts/completion/formal_runtime.py',wrapper]
-    identity=dict(identity='formal-recovery-companion-mac-v1',source_commit=subprocess.check_output(
+    identity=dict(identity='formal-recovery-companion-mac-v2',source_commit=subprocess.check_output(
         ['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),sources={str(x):file_hash(x) for x in sources},
         dependency_protocol_sha256=digest,dependency_task=task,actual_input=p['inputs']['G1.npz'],
         injection='Exit outer worker after frozen scientific worker completes; same request in explicit retry',

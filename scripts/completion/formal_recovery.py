@@ -60,6 +60,16 @@ def _assert_group_absent(pid):
     raise LiveAttempt('Original process group is still live; no recovery or retry is permitted')
 
 
+def _reject_reported_worker_failure(original):
+    path=original/'attempt-0001/worker-result.json'
+    if path.exists():
+        result=json.loads(path.read_text())
+        if result.get('status')=='failed':
+            raise RecoveryConflict('The worker already reported failed output; missing supervisor finalization does not authorize a retry')
+        if result.get('status')!='completed' or result.get('samples_eligible') is not True:
+            raise RecoveryConflict('Worker output classification is ambiguous; no automatic retry')
+
+
 def _read_recovery(original,host_lock):
     directory=original.with_name(original.name+'.recovery')
     record=json.loads((directory/'recovery.json').read_text())
@@ -71,6 +81,7 @@ def _read_recovery(original,host_lock):
     if fingerprint(binding)!=record['binding_sha256'] or _snapshot(original)!=record['original_assets']:
         raise RecoveryConflict('Original attempt evidence changed after recovery')
     _assert_group_absent(process['pid'])
+    _reject_reported_worker_failure(original)
     return record,binding,process
 
 
@@ -87,6 +98,7 @@ def recover_task(original, *, host_lock, reason):
         if directory.exists():return _read_recovery(original,host_lock)[0]
         binding,process=_binding(original,host_lock)
         observed=_assert_group_absent(process['pid'])
+        _reject_reported_worker_failure(original)
         cost=None;status='unsealed';statefile=original/'state.json';completion=original/'completion.json'
         if statefile.exists():
             state=json.loads(statefile.read_text());status=state['status']
