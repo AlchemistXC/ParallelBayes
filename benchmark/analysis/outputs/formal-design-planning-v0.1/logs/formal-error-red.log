@@ -1,0 +1,28 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_ test_unresolved_reference_preserves_observation_but_never_reports_zero_error _
+
+    def test_unresolved_reference_preserves_observation_but_never_reports_zero_error():
+>       from formal_error_summary import summarize
+E       ModuleNotFoundError: No module named 'formal_error_summary'
+
+tests/external/test_formal_error_summary.py:10: ModuleNotFoundError
+_ test_missing_runs_and_common_success_comparison_have_different_denominators __
+
+    def test_missing_runs_and_common_success_comparison_have_different_denominators():
+>       from formal_error_summary import summarize,paired_difference
+E       ModuleNotFoundError: No module named 'formal_error_summary'
+
+tests/external/test_formal_error_summary.py:21: ModuleNotFoundError
+________ test_finite_reference_sensitivity_is_not_a_confidence_interval ________
+
+    def test_finite_reference_sensitivity_is_not_a_confidence_interval():
+>       from formal_error_summary import summarize
+E       ModuleNotFoundError: No module named 'formal_error_summary'
+
+tests/external/test_formal_error_summary.py:39: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_formal_error_summary.py::test_unresolved_reference_preserves_observation_but_never_reports_zero_error
+FAILED tests/external/test_formal_error_summary.py::test_missing_runs_and_common_success_comparison_have_different_denominators
+FAILED tests/external/test_formal_error_summary.py::test_finite_reference_sensitivity_is_not_a_confidence_interval
+3 failed in 0.02s

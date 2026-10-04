@@ -1,5 +1,7 @@
 # Windows收尾第一步：诊断最小复现
 
+本文件是F1专用提示词；现已准备的F2/F4、NUTS及已选MH入口见[收尾导航](README.md)。正式41,472项设计仍为草案，不可直接启动。
+
 请在我的原生Windows电脑继续ParallelBayes研究，先完成这个已准备好的F1核查。不使用WSL2，不重新运行512项采样，不修改已冻结的torch/Python/R环境或原始结果。
 
 1. 拉取仓库最新远程引用，阅读`docs/RESEARCH-COMPLETION-PLAN.md`、`execution/COMPLETION-WORK-PACKAGES.md`和`docs/DIAGNOSTIC-MIDPOINT.md`。当前代码在`origin/codex/windows-return-audit`。工作区有修改时保留；可从该远程分支新建`codex/windows-completion-f1`及独立worktree。不要重新执行历史首次移植提示词。

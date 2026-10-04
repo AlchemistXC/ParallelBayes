@@ -1,0 +1,359 @@
+{
+  "source_commit": "986556666ca6ac32f780ca6350d332f5ae2bfaa4",
+  "historical_files_unchanged": true,
+  "new_mcmc_fits": 0,
+  "corrections": [
+    {
+      "model": "L2",
+      "workflow": "rwm",
+      "budget": 256,
+      "function": "q1_positive",
+      "task_ids": [
+        "bea0d143c071e37cef60",
+        "4e54388c6968716869a1",
+        "512f9893a0ca7e3bdd12",
+        "9dbda1de60a86eae442c"
+      ],
+      "observed_estimates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "historical_conditional_squared_discrepancy": 0.0,
+      "historical_standard_error": 0.0,
+      "corrected_companion": {
+        "planned": 4,
+        "valid": 4,
+        "failed_or_unavailable": 0,
+        "observed_estimate_mean": 0.0,
+        "supplied_reference_value": 0.0,
+        "reference_kind": "unresolved",
+        "reference_mcse": null,
+        "reference_eligible": false,
+        "claim_type": "unresolved_reference",
+        "conditional_squared_discrepancy": null,
+        "unconditional_squared_discrepancy": null,
+        "squared_discrepancy_standard_error": null,
+        "reference_shift_min": null,
+        "reference_shift_max": null,
+        "reference_shift_is_confidence_interval": false,
+        "confidence_interval": null,
+        "interval_status": "unresolved_reference"
+      }
+    },
+    {
+      "model": "L2",
+      "workflow": "rwm",
+      "budget": 1024,
+      "function": "q1_positive",
+      "task_ids": [
+        "3631ac3569d6a28bd8f1",
+        "5459876fddc9ba5cfb6a",
+        "bc342c12fa4e5248e4e9",
+        "548af882d2b5e83a02b0"
+      ],
+      "observed_estimates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "historical_conditional_squared_discrepancy": 0.0,
+      "historical_standard_error": 0.0,
+      "corrected_companion": {
+        "planned": 4,
+        "valid": 4,
+        "failed_or_unavailable": 0,
+        "observed_estimate_mean": 0.0,
+        "supplied_reference_value": 0.0,
+        "reference_kind": "unresolved",
+        "reference_mcse": null,
+        "reference_eligible": false,
+        "claim_type": "unresolved_reference",
+        "conditional_squared_discrepancy": null,
+        "unconditional_squared_discrepancy": null,
+        "squared_discrepancy_standard_error": null,
+        "reference_shift_min": null,
+        "reference_shift_max": null,
+        "reference_shift_is_confidence_interval": false,
+        "confidence_interval": null,
+        "interval_status": "unresolved_reference"
+      }
+    },
+    {
+      "model": "L2",
+      "workflow": "rwm",
+      "budget": 4096,
+      "function": "q1_positive",
+      "task_ids": [
+        "76f86c5f1eaaabf507b7",
+        "16c937d93be3e5e50217",
+        "1fa5101f11ffe0e80d25",
+        "b1f8a799d1b2815dffa1"
+      ],
+      "observed_estimates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "historical_conditional_squared_discrepancy": 0.0,
+      "historical_standard_error": 0.0,
+      "corrected_companion": {
+        "planned": 4,
+        "valid": 4,
+        "failed_or_unavailable": 0,
+        "observed_estimate_mean": 0.0,
+        "supplied_reference_value": 0.0,
+        "reference_kind": "unresolved",
+        "reference_mcse": null,
+        "reference_eligible": false,
+        "claim_type": "unresolved_reference",
+        "conditional_squared_discrepancy": null,
+        "unconditional_squared_discrepancy": null,
+        "squared_discrepancy_standard_error": null,
+        "reference_shift_min": null,
+        "reference_shift_max": null,
+        "reference_shift_is_confidence_interval": false,
+        "confidence_interval": null,
+        "interval_status": "unresolved_reference"
+      }
+    },
+    {
+      "model": "L2",
+      "workflow": "mala",
+      "budget": 256,
+      "function": "q1_positive",
+      "task_ids": [
+        "90efef1566a51731b2cb",
+        "df2c979d1b87afbbcbd2",
+        "ddaa80192d9419b927d9",
+        "d94592de7b352b9530f6"
+      ],
+      "observed_estimates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "historical_conditional_squared_discrepancy": 0.0,
+      "historical_standard_error": 0.0,
+      "corrected_companion": {
+        "planned": 4,
+        "valid": 4,
+        "failed_or_unavailable": 0,
+        "observed_estimate_mean": 0.0,
+        "supplied_reference_value": 0.0,
+        "reference_kind": "unresolved",
+        "reference_mcse": null,
+        "reference_eligible": false,
+        "claim_type": "unresolved_reference",
+        "conditional_squared_discrepancy": null,
+        "unconditional_squared_discrepancy": null,
+        "squared_discrepancy_standard_error": null,
+        "reference_shift_min": null,
+        "reference_shift_max": null,
+        "reference_shift_is_confidence_interval": false,
+        "confidence_interval": null,
+        "interval_status": "unresolved_reference"
+      }
+    },
+    {
+      "model": "L2",
+      "workflow": "mala",
+      "budget": 1024,
+      "function": "q1_positive",
+      "task_ids": [
+        "264b989ccebad53292c7",
+        "7cddf3a6bfa880592557",
+        "8805f79820467a1c8f84",
+        "e78389f9cacfebfa6065"
+      ],
+      "observed_estimates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "historical_conditional_squared_discrepancy": 0.0,
+      "historical_standard_error": 0.0,
+      "corrected_companion": {
+        "planned": 4,
+        "valid": 4,
+        "failed_or_unavailable": 0,
+        "observed_estimate_mean": 0.0,
+        "supplied_reference_value": 0.0,
+        "reference_kind": "unresolved",
+        "reference_mcse": null,
+        "reference_eligible": false,
+        "claim_type": "unresolved_reference",
+        "conditional_squared_discrepancy": null,
+        "unconditional_squared_discrepancy": null,
+        "squared_discrepancy_standard_error": null,
+        "reference_shift_min": null,
+        "reference_shift_max": null,
+        "reference_shift_is_confidence_interval": false,
+        "confidence_interval": null,
+        "interval_status": "unresolved_reference"
+      }
+    },
+    {
+      "model": "L2",
+      "workflow": "mala",
+      "budget": 4096,
+      "function": "q1_positive",
+      "task_ids": [
+        "691355459d3a581ee864",
+        "2a129805aa85dc233bbd",
+        "d60c96a14320e18618da",
+        "2bedb4b27bfbdb21cc65"
+      ],
+      "observed_estimates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "historical_conditional_squared_discrepancy": 0.0,
+      "historical_standard_error": 0.0,
+      "corrected_companion": {
+        "planned": 4,
+        "valid": 4,
+        "failed_or_unavailable": 0,
+        "observed_estimate_mean": 0.0,
+        "supplied_reference_value": 0.0,
+        "reference_kind": "unresolved",
+        "reference_mcse": null,
+        "reference_eligible": false,
+        "claim_type": "unresolved_reference",
+        "conditional_squared_discrepancy": null,
+        "unconditional_squared_discrepancy": null,
+        "squared_discrepancy_standard_error": null,
+        "reference_shift_min": null,
+        "reference_shift_max": null,
+        "reference_shift_is_confidence_interval": false,
+        "confidence_interval": null,
+        "interval_status": "unresolved_reference"
+      }
+    },
+    {
+      "model": "L2",
+      "workflow": "nuts",
+      "budget": 256,
+      "function": "q1_positive",
+      "task_ids": [
+        "c031bfb878a9e43d0c31",
+        "eb9438bf440eadcdd18d",
+        "19ca4847a451d3f9f4ea",
+        "1b0ce0543404ed32fcd8"
+      ],
+      "observed_estimates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "historical_conditional_squared_discrepancy": 0.0,
+      "historical_standard_error": 0.0,
+      "corrected_companion": {
+        "planned": 4,
+        "valid": 4,
+        "failed_or_unavailable": 0,
+        "observed_estimate_mean": 0.0,
+        "supplied_reference_value": 0.0,
+        "reference_kind": "unresolved",
+        "reference_mcse": null,
+        "reference_eligible": false,
+        "claim_type": "unresolved_reference",
+        "conditional_squared_discrepancy": null,
+        "unconditional_squared_discrepancy": null,
+        "squared_discrepancy_standard_error": null,
+        "reference_shift_min": null,
+        "reference_shift_max": null,
+        "reference_shift_is_confidence_interval": false,
+        "confidence_interval": null,
+        "interval_status": "unresolved_reference"
+      }
+    },
+    {
+      "model": "L2",
+      "workflow": "nuts",
+      "budget": 1024,
+      "function": "q1_positive",
+      "task_ids": [
+        "3cf5aa283ab8e16ec66a",
+        "7a9c248855b12236f87c",
+        "e84666b9a63c3128fa5b",
+        "730636b3ba64ee732ca5"
+      ],
+      "observed_estimates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "historical_conditional_squared_discrepancy": 0.0,
+      "historical_standard_error": 0.0,
+      "corrected_companion": {
+        "planned": 4,
+        "valid": 4,
+        "failed_or_unavailable": 0,
+        "observed_estimate_mean": 0.0,
+        "supplied_reference_value": 0.0,
+        "reference_kind": "unresolved",
+        "reference_mcse": null,
+        "reference_eligible": false,
+        "claim_type": "unresolved_reference",
+        "conditional_squared_discrepancy": null,
+        "unconditional_squared_discrepancy": null,
+        "squared_discrepancy_standard_error": null,
+        "reference_shift_min": null,
+        "reference_shift_max": null,
+        "reference_shift_is_confidence_interval": false,
+        "confidence_interval": null,
+        "interval_status": "unresolved_reference"
+      }
+    },
+    {
+      "model": "L2",
+      "workflow": "nuts",
+      "budget": 4096,
+      "function": "q1_positive",
+      "task_ids": [
+        "4a8ee644dbac328443aa",
+        "f6cb3beda27c4293d087",
+        "ef93a480632425ac283f",
+        "522203c71ed72acd4c80"
+      ],
+      "observed_estimates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "historical_conditional_squared_discrepancy": 0.0,
+      "historical_standard_error": 0.0,
+      "corrected_companion": {
+        "planned": 4,
+        "valid": 4,
+        "failed_or_unavailable": 0,
+        "observed_estimate_mean": 0.0,
+        "supplied_reference_value": 0.0,
+        "reference_kind": "unresolved",
+        "reference_mcse": null,
+        "reference_eligible": false,
+        "claim_type": "unresolved_reference",
+        "conditional_squared_discrepancy": null,
+        "unconditional_squared_discrepancy": null,
+        "squared_discrepancy_standard_error": null,
+        "reference_shift_min": null,
+        "reference_shift_max": null,
+        "reference_shift_is_confidence_interval": false,
+        "confidence_interval": null,
+        "interval_status": "unresolved_reference"
+      }
+    }
+  ],
+  "rule": "Observed zero events retained; unresolved references never yield numerical loss, error standard error, or all-functions accuracy. This accompanies, never replaces, frozen pilot reports."
+}

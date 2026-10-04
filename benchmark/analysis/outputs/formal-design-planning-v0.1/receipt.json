@@ -1,0 +1,41 @@
+{
+  "source_commit": "986556666ca6ac32f780ca6350d332f5ae2bfaa4",
+  "new_mcmc_fits": 0,
+  "formal_protocol_frozen": false,
+  "formal_experiments_started": false,
+  "draft_repetitions": 128,
+  "draft_planned_fits": 41472,
+  "final_test_suites": {
+    "formal-inputs-v2-tests.xml": {
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "formal-error-tests.xml": {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "unique_current_tests_passed": 5,
+  "preserved_prior_attempts": [
+    "planning-01: corrected prefix-cache double counting",
+    "planning-02: replaced 63-bit NUTS seeds with provider-compatible uint32"
+  ],
+  "commands": [
+    "python -m pytest tests/external/test_formal_inputs.py -q -p no:cacheprovider --junitxml=NEW_XML",
+    "python -m pytest tests/external/test_formal_error_summary.py -q --junitxml=NEW_XML",
+    "python scripts/completion/formal_design_planning.py --output NEW_OUTPUT"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pytest": "8.4.2"
+  },
+  "scope": "Saved-pilot planning and new helper contract verification. No Windows timing, formal sampling or manuscript rebuild.",
+  "frozen_pilot_source_files_verified_unchanged": 58,
+  "compact_delivery_files_before_final_checksum": 19
+}

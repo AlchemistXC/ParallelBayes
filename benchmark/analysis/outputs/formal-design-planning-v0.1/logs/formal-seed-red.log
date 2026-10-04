@@ -1,0 +1,26 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+________ test_formal_nuts_seeds_respect_frozen_uint32_provider_contract ________
+
+    def test_formal_nuts_seeds_respect_frozen_uint32_provider_contract():
+        from formal_inputs import build_payload
+        payload=build_payload('formal-seed-contract','G1',0,8,4,chains=4)
+        # inference_nuts.sample_nuts and Pyro/NumPy accept uint32 seeds.
+>       assert all(0 <= int(seed) < 2**32 for seed in payload['nuts_seeds'])
+E       assert False
+E        +  where False = all(<generator object test_formal_nuts_seeds_respect_frozen_uint32_provider_contract.<locals>.<genexpr> at 0x10b47f840>)
+
+tests/external/test_formal_inputs.py:38: AssertionError
+=============================== warnings summary ===============================
+../../../../Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:475
+  /Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:475: PytestCacheWarning: could not create cache path /Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/.pytest_cache/v/cache/nodeids: [Errno 1] Operation not permitted: '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/pytest-cache-files-uo_sdrem'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../../../Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:429
+  /Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:429: PytestCacheWarning: could not create cache path /Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/.pytest_cache/v/cache/lastfailed: [Errno 1] Operation not permitted: '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/pytest-cache-files-ukbo0_ob'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/external/test_formal_inputs.py::test_formal_nuts_seeds_respect_frozen_uint32_provider_contract
+1 failed, 2 warnings in 0.05s

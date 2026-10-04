@@ -21,3 +21,8 @@
 | 九目标CPU NUTS顺序/spawn可核验，Windows不能由Mac代替 | docs/NATIVE-NUTS-READINESS.md、nuts-native-readiness-v1 | Mac54项数组字节和18份R回写；Windows仅冻结协议，正式推断仍未完成 |
 | F3伴随归档可异目录重建，不代表全论文复现 | nuts-native-readiness-v1/archive-receipt.json、rebuild/receipt.json | 240文件哈希；18份R诊断与8份后续递推数组一致；同Mac现有环境，新增拟合0 |
 | 已选MH及仿射目标的Mac短路径时间执行组合已核验，Windows待实测 | docs/SELECTED-MH-READINESS.md、selected-mh-readiness-v1 | 54工作流/36配对、独立重放及恢复；H1全拒绝与slogdet警告保留，不是正式推断 |
+
+| 正式重复草案128不依赖“pilot上限246所以充分”的错误推论 | formal-design-planning-v0.1/planning.json；F3-FORMAL-DESIGN-DRAFT.md | 非负数CV解析上界、六规模资源/区间计算；设计决定，不是正式证据 |
+| 新输入保持前缀、避免旧目标×100地址重叠，并兼容uint32 NUTS | formal_inputs.py；新增2项行为检查；46,080地址/键及9,216种子检查 | 有限集合核验，不是随机独立性证明或正式输入包 |
+| 未定L2事件不能报告零误差 | formal_error_summary.py；3项契约检查；unresolved-reference-companion.json | 九行保存估计伴随纠正；历史文件保持不变，新增拟合0 |
+| 原全缓存分析器不适合正式全网格 | formal_design_planning.py；analyze_budget_pilot.py保存路径逻辑 | 输入23.78GiB、最新前缀路径104.06GiB；新流式分析未实现 |

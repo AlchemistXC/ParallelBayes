@@ -1,0 +1,12 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___ test_formal_inputs_separate_target_repetition_and_keep_each_chain_prefix ___
+
+    def test_formal_inputs_separate_target_repetition_and_keep_each_chain_prefix():
+>       from formal_inputs import build_payload, stream_address, validate_addresses
+E       ModuleNotFoundError: No module named 'formal_inputs'
+
+tests/external/test_formal_inputs.py:11: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_formal_inputs.py::test_formal_inputs_separate_target_repetition_and_keep_each_chain_prefix
+1 failed in 0.05s

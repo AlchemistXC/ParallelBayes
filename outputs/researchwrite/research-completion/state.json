@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Develop and freeze the finite formal inference design with budget/repetition/reference decisions; receive Windows F1/F2/F4, native CPU NUTS and selected-MH CPU/CUDA readiness receipts. Mac selected-MH short-path validation is complete; formal longer paths still require individual full audits.",
+  "next_recommended_action": "Implement and test bounded formal runner/analysis, phase accounting, host-wide lock and disk guards; receive Windows F1/F2/F4, NUTS and selected-MH receipts; only then freeze the formal protocol and actual input manifest. Draft v0.1 proposes 128 repetitions; no formal run has begun.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -200,5 +200,39 @@
       "summary_identity": "Original analysis refers to saved pre-resume summary; rebuilt analysis refers to archived resumed summary. Both checked, not overwritten.",
       "limitation": "Same Mac and existing Python dependencies; this companion rebuild is not clean installation, external team or full manuscript reproduction."
     }
+  },
+  "f3_formal_design": {
+    "status": "draft_v0.1_not_executable",
+    "document": "docs/F3-FORMAL-DESIGN-DRAFT.md",
+    "planning_source_commit": "986556666ca6ac32f780ca6350d332f5ae2bfaa4",
+    "draft_repetitions": 128,
+    "draft_fits": 41472,
+    "logical_array_gib": 374.3532600402832,
+    "new_input_tests_passed": 2,
+    "new_error_contract_tests_passed": 3,
+    "independent_AI_reviews": [
+      "statistical",
+      "implementation_feasibility"
+    ],
+    "historical_frozen_files_unchanged": true,
+    "new_mcmc_fits": 0,
+    "formal_protocol_frozen": false,
+    "formal_sampling_started": false,
+    "corrections": [
+      "domain_separated_target_repetition_role_chain_inputs",
+      "provider_compatible_uint32_nuts_seeds",
+      "unresolved_reference_loss_unavailable",
+      "pilot_n246_structural_bound_not_precision_evidence",
+      "streaming_analysis_and_executor_specific_iteration_guards_required"
+    ],
+    "remaining_gates": [
+      "Windows_receipts",
+      "formal_runner",
+      "streaming_analysis",
+      "paired_uncertainty",
+      "host_lock_disk_memory_and_timing_validation",
+      "Windows_max_task_technical_check",
+      "immutable_formal_protocol_and_inputs"
+    ]
   }
 }
