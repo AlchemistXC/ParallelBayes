@@ -1,7 +1,7 @@
 % Data source: benchmark/analysis/outputs/windows-native-v1/delivery-review.json
 % Scientific source: 0c9325e98f2bc7dcd75d344c01c2e50a62801c90
 % Protocol identity: 1d233dd09956c4575fc5775082310e5edca65407db5fcef40bc2ce329e6f5898
-% This companion fragment has not been compiled into a revised PDF on Windows.
+% The received Windows evidence was independently reviewed on Mac; see docs/WINDOWS-RETURN-AUDIT.md.
 \section{原生Windows扩展：独立开发版本与新冻结实验}
 \label{sec:windows-native}
 
@@ -58,9 +58,23 @@ L1/L2的有限参考未解决，不宣称精度达标。全拒绝或混合不足
 Pyro CPU NUTS与MH不使用固定同轨迹比较，也未纳入本轮正式速度实验。
 
 正式任务记录成本共1790.220秒（含普通执行和技术重放），现代R诊断另计28.470秒；
-普通API、核验API、写盘和诊断分开计时，不能混称完整工作流。
+普通API包括建模和基本矩；核验API使用已构建模型，包含独立参考但不含建模和基本矩。
+建模、写盘与现代诊断分别记录，这些计时不能混称完整工作流。
 最大CUDA分配/保留峰值为97,251,328/115,343,360字节，包含已有驻留分配；
 CPU仅有数组空间估算，未测逐拟合RSS峰值。主机标量读取累计88,406次，
 标量等待计时4.206秒含设备等待，并不隔离全部控制开销。
 试探分析曾把共享数组的配置变化合并为误差区间；该区间已撤回，原输出及哈希保留，正式分析不受影响。
 本轮结果仅支持指定Windows实现和有限预算下的计算证据，不将Mac JAX与Windows torch的完整工作流差异全部归因于GPU。
+
+
+\paragraph{回传后的独立复核。}
+Mac端校验归档内5866个文件，使用冻结NumPy参考重放128条四链配置并核对全部512项实际数组；
+接受事件仍为零失配，同设备速度比和逐函数误差可由原始记录重建。
+复算512项正式及60项SBC的现代诊断时发现十进制读取敏感性：
+NumPy读取的参数列与保存数组逐值相同，但Mac R直接读取CSV会改变部分接近重复值的末位精度。
+以小端float64二进制传入R后，在绝对及相对$10^{-11}$比较容差下，
+正式诊断的数值分歧由4158个指标值降至2个，SBC由31个降至0个。
+剩余2个Rhat差异约为$3.46\times10^{-4}$，跨平台成因尚未完全定位；
+480项Rhat偏高和108项常量输出的计数保持不变。
+这是新增的伴随敏感性分析，保留Windows原诊断，不将数值接近的路径等同于秩诊断逐值可复现。
+该复核没有重新测量GPU性能，也没有扩大已验证后端范围。

@@ -1,0 +1,90 @@
+{
+  "attempts": [
+    {
+      "command": [
+        "/Library/TeX/texbin/latexmk",
+        "-norc",
+        "-xelatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-synctex=1",
+        "-outdir=/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf",
+        "/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/manuscript/software/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.tex"
+      ],
+      "compiler": "texlive",
+      "exitCode": 12,
+      "log": "Rc files read (in order):\n  NONE\nLatexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.\nNo existing .aux file, so I'll make a simple one, and require run of *latex.\nLatexmk: applying rule 'xelatex'...\nRule 'xelatex':  Reasons for rerun\nCategory 'other':\n  Rerun of 'xelatex' forced or previously required:\n    Reason or flag: 'Initial setup'\n\n------------\nRun number 1 of rule 'xelatex'\n------------\n------------\nRunning 'xelatex -no-pdf -interaction=nonstopmode -halt-on-error -synctex=1 -recorder -output-directory=\"/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf\"  \"/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/manuscript/software/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.tex\"'\n------------\nThis is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)\n restricted \\write18 enabled.\nentering extended mode\n\n(/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/manuscript/\nsoftware/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.tex\nLaTeX2e <2026-06-01>\nL3 programming layer <2026-05-26>\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/ctexart.cls\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg)\n (/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3kernel/expl3.sty\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3backend/l3backend-xetex.de\nf))\nDocument Class: ctexart 2022/07/14 v2.5.10 Chinese adapter for class article (C\nTEX)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/ctexhook.sty)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/ctexpatch.sty)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/fix-cm.sty\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/ts1enc.def))\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/config/ctexopts.cfg)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/article.cls\nDocument Class: article 2025/01/22 v1.4n Standard LaTeX document class\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/size12.clo))\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/engine/ctex-engine-xete\nx.def (/usr/local/texlive/2026basic/texmf-dist/tex/xelatex/xecjk/xeCJK.sty\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3packages/xtemplate/xtempla\nte.sty)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec.sty\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3packages/xparse/xparse.sty\n)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/fontenc.sty)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec.cfg)))\n(/usr/local/texlive/2026basic/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg)))\n\n! LaTeX Error: File `zhnumber.sty' not found.\n\nType X to quit or <RETURN> to proceed,\nor enter new name. (Default extension: sty)\n\nEnter file name: \n! Emergency stop.\n<read *> \n         \nl.528 \\cs_new:Npn\n                  \\chinese { \\zhnum_counter:n } \nNo pages of output.\nTranscript written on /Users/haku/Workspace/ParallelBayes/output/windows-return\n-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.log.\nLatexmk: Getting log file '/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.log'\nLatexmk: Examining '/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.fls'\nLatexmk: Examining '/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.log'\nLatexmk: Missing input file 'zhnumber.sty' message in .log file:\n  ! LaTeX Error: File `zhnumber.sty' not found.\nLatexmk: Log file says no output from latex\nLatexmk: For rule 'xelatex', no output was made\nLatexmk: Errors, so I did not complete making targets\nCollected error summary (may duplicate other messages):\n  xelatex: Command for 'xelatex' gave return code 1\n      Refer to '/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.log' and/or above output for details\n\nLatexmk: Sometimes, the -f option can be used to get latexmk\n  to try to force complete processing.\n  But normally, you will need to correct the file(s) that caused the\n  error, and then rerun latexmk.\n  In some cases, it is best to clean out generated files before rerunning\n  latexmk after you've corrected the files.\n",
+      "pdfExists": false,
+      "pdfPath": "/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.pdf"
+    }
+  ],
+  "command": null,
+  "compiler": null,
+  "exitCode": 1,
+  "log": "Rc files read (in order):\n  NONE\nLatexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.\nNo existing .aux file, so I'll make a simple one, and require run of *latex.\nLatexmk: applying rule 'xelatex'...\nRule 'xelatex':  Reasons for rerun\nCategory 'other':\n  Rerun of 'xelatex' forced or previously required:\n    Reason or flag: 'Initial setup'\n\n------------\nRun number 1 of rule 'xelatex'\n------------\n------------\nRunning 'xelatex -no-pdf -interaction=nonstopmode -halt-on-error -synctex=1 -recorder -output-directory=\"/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf\"  \"/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/manuscript/software/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.tex\"'\n------------\nThis is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)\n restricted \\write18 enabled.\nentering extended mode\n\n(/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/manuscript/\nsoftware/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.tex\nLaTeX2e <2026-06-01>\nL3 programming layer <2026-05-26>\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/ctexart.cls\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg)\n (/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3kernel/expl3.sty\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3backend/l3backend-xetex.de\nf))\nDocument Class: ctexart 2022/07/14 v2.5.10 Chinese adapter for class article (C\nTEX)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/ctexhook.sty)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/ctexpatch.sty)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/fix-cm.sty\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/ts1enc.def))\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/config/ctexopts.cfg)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/article.cls\nDocument Class: article 2025/01/22 v1.4n Standard LaTeX document class\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/size12.clo))\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/ctex/engine/ctex-engine-xete\nx.def (/usr/local/texlive/2026basic/texmf-dist/tex/xelatex/xecjk/xeCJK.sty\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3packages/xtemplate/xtempla\nte.sty)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec.sty\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3packages/xparse/xparse.sty\n)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/fontenc.sty)\n(/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec.cfg)))\n(/usr/local/texlive/2026basic/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg)))\n\n! LaTeX Error: File `zhnumber.sty' not found.\n\nType X to quit or <RETURN> to proceed,\nor enter new name. (Default extension: sty)\n\nEnter file name: \n! Emergency stop.\n<read *> \n         \nl.528 \\cs_new:Npn\n                  \\chinese { \\zhnum_counter:n } \nNo pages of output.\nTranscript written on /Users/haku/Workspace/ParallelBayes/output/windows-return\n-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.log.\nLatexmk: Getting log file '/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.log'\nLatexmk: Examining '/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.fls'\nLatexmk: Examining '/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.log'\nLatexmk: Missing input file 'zhnumber.sty' message in .log file:\n  ! LaTeX Error: File `zhnumber.sty' not found.\nLatexmk: Log file says no output from latex\nLatexmk: For rule 'xelatex', no output was made\nLatexmk: Errors, so I did not complete making targets\nCollected error summary (may duplicate other messages):\n  xelatex: Command for 'xelatex' gave return code 1\n      Refer to '/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.log' and/or above output for details\n\nLatexmk: Sometimes, the -f option can be used to get latexmk\n  to try to force complete processing.\n  But normally, you will need to correct the file(s) that caused the\n  error, and then rerun latexmk.\n  In some cases, it is best to clean out generated files before rerunning\n  latexmk after you've corrected the files.\n",
+  "pdfExists": false,
+  "pdfPath": "/Users/haku/Workspace/ParallelBayes/output/windows-return-intake/pdf/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.pdf",
+  "rootFile": "/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/manuscript/software/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.tex",
+  "tectonic": {
+    "checked": [
+      {
+        "path": "/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic",
+        "source": "app"
+      }
+    ],
+    "path": "/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic",
+    "reason": "Tectonic executable is available.",
+    "source": "app",
+    "status": "available",
+    "version": "Tectonic 0.17.0"
+  },
+  "tectonicSuitability": {
+    "reasons": [],
+    "scannedFiles": [
+      "/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/manuscript/software/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.tex",
+      "/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/manuscript/software/windows-native.generated.tex",
+      "/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/manuscript/software/revision.generated.tex",
+      "/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/manuscript/software/results.generated.tex"
+    ],
+    "suitable": true
+  },
+  "texliveDetection": {
+    "activeBinDir": "/Library/TeX/texbin",
+    "commands": {
+      "biber": {
+        "path": "/Library/TeX/texbin/biber",
+        "version": "present"
+      },
+      "kpsewhich": {
+        "path": "/Library/TeX/texbin/kpsewhich",
+        "version": "kpathsea version 6.4.2"
+      },
+      "latexmk": {
+        "path": "/Library/TeX/texbin/latexmk",
+        "version": "Latexmk, John Collins, 9 March 2026. Version 4.88"
+      },
+      "lualatex": {
+        "path": "/Library/TeX/texbin/lualatex",
+        "version": "This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)"
+      },
+      "pdflatex": {
+        "path": "/Library/TeX/texbin/pdflatex",
+        "version": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)"
+      },
+      "xelatex": {
+        "path": "/Library/TeX/texbin/xelatex",
+        "version": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026)"
+      }
+    },
+    "knownTexBinDirs": [
+      "/Library/TeX/texbin",
+      "/usr/local/texlive/2026basic/bin/universal-darwin"
+    ],
+    "missingRecommended": [],
+    "missingRequired": [],
+    "reason": "Required TeX tools are available.",
+    "searchPath": "/Library/TeX/texbin:/usr/local/texlive/2026basic/bin/universal-darwin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Users/haku/.codex/tmp/arg0/codex-arg0RwmlMK:/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/Users/haku/.local/bin:/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+    "status": "existing-usable",
+    "texmfroot": "/usr/local/texlive/2026basic"
+  }
+}

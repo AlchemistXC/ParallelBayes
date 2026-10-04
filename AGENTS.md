@@ -2,7 +2,7 @@
 
 ## Current work
 
-As of 2026-10-04, the user has authorized the native Windows 11 / AMD CPU / RTX 5080 phase. Read `handoff/windows-native/README.md`, `CODEX-PROMPT.md` and `SKILLS-SETUP.md`. The user also authorized skill migration; use the separately transferred private ZIP, never publish it. Use native PowerShell and native Windows Python; do not substitute WSL2, a Linux VM or a Linux container. The current 0.1.1 core is JAX-based; a PyTorch MCMC backend has not been implemented or validated at this handoff. Older CPU documents that say GPU work is deferred describe the historical CPU milestone, not the current authorization.
+As of 2026-10-04, the user has authorized the native Windows 11 / AMD CPU / RTX 5080 phase. Read `handoff/windows-native/README.md`, `CODEX-PROMPT.md` and `SKILLS-SETUP.md`. The user also authorized skill migration; use the separately transferred private ZIP, never publish it. Use native PowerShell and native Windows Python; do not substitute WSL2, a Linux VM or a Linux container. The historical handoff describes the 0.1.1 JAX core. The received `windows-native-dev` branch at `3a51f98` implements the optional 0.2.0.dev1 PyTorch backend and includes native Windows CPU/CUDA evidence. Consult `docs/WINDOWS-RESULTS.md` and `docs/WINDOWS-RETURN-AUDIT.md` for verified scope; do not restart completed experiments from the old handoff prompt. Older CPU documents that say GPU work is deferred describe the historical CPU milestone, not the current authorization.
 
 ## Scientific invariants
 
@@ -18,7 +18,7 @@ As of 2026-10-04, the user has authorized the native Windows 11 / AMD CPU / RTX 
 
 Use `execution/windows-native/WORK-PACKAGES.md` for actual progress. Record commands, source commit, dependency/device versions, counts of passed/failed/skipped tests and artifact hashes. Continue independent work when one step is blocked. Do not silently overwrite a frozen run; resume only with matching identities and checksums. Numerical iteration/memory guards are required; do not impose a total experiment time cutoff.
 
-Project numerical source lives at `r-package/inst/python/parallelbayes/`; importing it currently imports JAX. Do not pretend that installing torch changes this. Add backend separation and optional imports as part of the new development version. Preserve Mac tests and the package's truthful capability matrix. Tests added under `tests/handoff/` certify only portable handoff utilities.
+Project numerical source lives at `r-package/inst/python/parallelbayes/`; version 0.2.0.dev1 separates optional torch/JAX imports and an independent NumPy reference. Maintain that separation. Audit tools may run on Mac without CUDA; this does not count as rerunning Windows or GPU timing. Preserve Mac tests and the package's truthful capability matrix. Tests added under `tests/handoff/` certify only portable handoff utilities.
 
 ## Repository and releases
 

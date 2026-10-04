@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "scope": "Mac read-only NumPy replay and arithmetic reanalysis, not a new GPU timing experiment",
+  "protocol_sha256": "1d233dd09956c4575fc5775082310e5edca65407db5fcef40bc2ce329e6f5898",
+  "source_files_exact_in_frozen_snapshot": 39,
+  "git_checkout_newline_differences": [
+    {
+      "path": "r-package/inst/python/parallelbayes/reference.py",
+      "difference": "CRLF/LF only",
+      "frozen_sha256": "964d3a1b3084e18eac7748e3e6d9c9ae93ab5e3563e2f0a54fd5f32271900544",
+      "checkout_sha256": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1"
+    }
+  ],
+  "formal_tasks": 512,
+  "independent_oracle_replays": 128,
+  "actual_tapes_verified": 64,
+  "acceptance_mismatches": 0,
+  "max_path_error_vs_mac_numpy": 5.211515663461341e-10,
+  "max_constrained_error_vs_mac_numpy": 2.2787007836200246e-09,
+  "cpu_cuda_pairs": 256,
+  "terminal_attempts": 512,
+  "normal_replays_verified_from_arrays": 512,
+  "zero_acceptance_fits": 32,
+  "zero_acceptance_models_kernels": {
+    "A1/rwm": 32
+  },
+  "paired_speed_groups_recomputed": 64,
+  "accuracy_groups_recomputed": 128,
+  "sbc_fits_recomputed": 60,
+  "sbc_independent_data_sets": 12,
+  "analytic_and_each_workflow_coverage": "9/12",
+  "elapsed_mac_audit_seconds": 12.551190207945183,
+  "numpy": "2.2.6",
+  "cpu_mala_warmed_range": [
+    0.10115057293904095,
+    0.3590318880619123
+  ],
+  "cpu_rwm_warmed_range": [
+    0.7736711667391539,
+    3.5600146113179205
+  ],
+  "cuda_mala_warmed_range": [
+    0.16418366499984444,
+    0.5047716766669328
+  ],
+  "cuda_rwm_warmed_range": [
+    1.096720048868826,
+    5.229683380245998
+  ]
+}

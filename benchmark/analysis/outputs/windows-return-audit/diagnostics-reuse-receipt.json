@@ -1,0 +1,5 @@
+{
+  "binary_and_csv_inputs_verified_identical": 572,
+  "R_script_sha256": "b8253b3bcd8b53cbbdbb54aa6cdf6ea77807f05c26121aebd9b6876df794dab7",
+  "reuse_reason": "Identical inputs and unchanged R script; preserve completed R evaluations without rerunning"
+}

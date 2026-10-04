@@ -1,0 +1,22 @@
+[
+  {
+    "case": "optimization_refused",
+    "passed": true,
+    "exit_code": 1
+  },
+  {
+    "case": "altered_protocol_refused",
+    "passed": true,
+    "exit_code": 1
+  },
+  {
+    "case": "existing_output_refused",
+    "passed": true,
+    "exit_code": 1
+  },
+  {
+    "case": "output_inside_original_evidence_refused",
+    "passed": true,
+    "exit_code": 1
+  }
+]

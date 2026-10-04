@@ -64,3 +64,21 @@ protocol/data/locks, figures and independent archive verifier. No remote push,
 CRAN release, private skills, credentials or installed venv is included.
 The final archive's own verification receipt is adjacent to it under
 `output/windows-return`; an archive cannot contain its own final hash.
+
+
+## Receiving-machine review, 2026-10-04
+
+The remote branch and final archive are now received at `3a51f98`; 5866 archived
+files and the complete Git bundle verified on Mac. See
+[`docs/WINDOWS-RETURN-AUDIT.md`](../../docs/WINDOWS-RETURN-AUDIT.md).
+Read-only NumPy replay covered all 512 formal tasks with zero event mismatches;
+64 paired speed groups, 128 error groups and 60 SBC fits were reanalyzed.
+R CSV parsing sensitivity was found: a binary input companion analysis leaves
+only two Rhat discrepancies, with major diagnostic classifications unchanged.
+Original Windows diagnostic outputs remain authoritative for the original run;
+the remaining cross-platform discrepancies are disclosed, not silently replaced.
+Mac JAX regression: 51 passed, 7 Stan tests deselected. R CMD check --no-manual:
+OK with PB_RUN_INTEGRATION=1 (15 assertions passed, 0 failed/skipped/warnings).
+The updated 20-page Chinese PDF now compiles with the existing Tectonic runtime.
+Scientific source, protocol and all Windows/Mac raw data are unchanged. Review
+changes stay on `codex/windows-return-audit`; no main merge or Release publication.

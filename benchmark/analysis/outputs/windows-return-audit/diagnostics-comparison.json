@@ -1,0 +1,232 @@
+{
+  "scope": "companion CSV/binary sensitivity analysis; original diagnostics retained",
+  "comparison_tolerance": {
+    "atol": 1e-11,
+    "rtol": 1e-11
+  },
+  "formal": {
+    "counts": {
+      "csv": {
+        "fits": 512,
+        "constant_fits": 108,
+        "fits_with_finite_rhat_gt_1_01": 480
+      },
+      "binary": {
+        "fits": 512,
+        "constant_fits": 108,
+        "fits_with_finite_rhat_gt_1_01": 480
+      }
+    },
+    "numeric_disagreements": {
+      "csv": 4158,
+      "binary": 2
+    },
+    "binary_disagreements": [
+      {
+        "fit": "a31fe6e8c9f4cc42ae23650e204a784de458ea2651c3bbd5646a9bfda0389f91",
+        "variable": "q2",
+        "metric": "rhat",
+        "windows": 1.40822237244096,
+        "replay": 1.40856883690538,
+        "abs_difference": 0.00034646446441999323
+      },
+      {
+        "fit": "e134691aa461969b1fda891a8279f2cfd5a09a7bea354fb796c7b64e050d48e8",
+        "variable": "q2",
+        "metric": "rhat",
+        "windows": 1.40822237244096,
+        "replay": 1.40856883690538,
+        "abs_difference": 0.00034646446441999323
+      }
+    ],
+    "csv_largest_disagreements": [
+      {
+        "fit": "037e5762715a2712778f22747e12fdc3a25b7eb15b43445f63232d2436442f73",
+        "variable": "q21",
+        "metric": "ess_tail",
+        "windows": 91.0941670968218,
+        "replay": 85.5255975326032,
+        "abs_difference": 5.568569564218606
+      },
+      {
+        "fit": "885eae34e569bbf6349cd38d4601cecc48883b8f574d8456b910e551b658792c",
+        "variable": "q2",
+        "metric": "ess_tail",
+        "windows": 70.1486774062077,
+        "replay": 74.4680453647904,
+        "abs_difference": 4.319367958582703
+      },
+      {
+        "fit": "037e5762715a2712778f22747e12fdc3a25b7eb15b43445f63232d2436442f73",
+        "variable": "q13",
+        "metric": "ess_tail",
+        "windows": 50.2891423350421,
+        "replay": 54.1709839790724,
+        "abs_difference": 3.8818416440303025
+      },
+      {
+        "fit": "f272f787dae6b59dadb73ad1565f77fd097d778a6ad563f5bb1b2bcdf38f98ac",
+        "variable": "q57",
+        "metric": "ess_tail",
+        "windows": 103.145322881534,
+        "replay": 105.123803934369,
+        "abs_difference": 1.9784810528349936
+      },
+      {
+        "fit": "037e5762715a2712778f22747e12fdc3a25b7eb15b43445f63232d2436442f73",
+        "variable": "q56",
+        "metric": "ess_tail",
+        "windows": 34.9368663387517,
+        "replay": 36.0440143398885,
+        "abs_difference": 1.1071480011367996
+      },
+      {
+        "fit": "3f67642f4159961d9abf62ad18e8645a6be15e6a1ca35da7bd63d425fa69fa02",
+        "variable": "q34",
+        "metric": "ess_tail",
+        "windows": 19.8211491620578,
+        "replay": 20.8340454286298,
+        "abs_difference": 1.0128962665719996
+      },
+      {
+        "fit": "3f67642f4159961d9abf62ad18e8645a6be15e6a1ca35da7bd63d425fa69fa02",
+        "variable": "q36",
+        "metric": "ess_tail",
+        "windows": 20.4258049747508,
+        "replay": 19.4302311733316,
+        "abs_difference": 0.9955738014192015
+      },
+      {
+        "fit": "4d3f51efc49e232f9fdc275882c6c413bcf69a375850a9e88a5dc24ed5d714ad",
+        "variable": "q9",
+        "metric": "ess_tail",
+        "windows": 16.4713070129962,
+        "replay": 17.4572420788188,
+        "abs_difference": 0.985935065822602
+      },
+      {
+        "fit": "458b413d76daa4270b3b32dcba2066a9cea87338c62671e0ccc7397f73ebdc69",
+        "variable": "f1",
+        "metric": "ess_tail",
+        "windows": 11.7738161448461,
+        "replay": 11.0172540990143,
+        "abs_difference": 0.7565620458317994
+      },
+      {
+        "fit": "1d911dc051436fe43efb8af74391d00262cf254cc6af40b29760880f230d2b8d",
+        "variable": "q58",
+        "metric": "ess_tail",
+        "windows": 16.1248374144438,
+        "replay": 16.7485477791595,
+        "abs_difference": 0.6237103647157021
+      }
+    ],
+    "csv_cells_different_from_numpy": 1540011,
+    "max_csv_cell_difference": 2.8421709430404e-14,
+    "categories_identical": true
+  },
+  "sbc": {
+    "counts": {
+      "csv": {
+        "fits": 60,
+        "constant_fits": 0,
+        "fits_with_finite_rhat_gt_1_01": 2
+      },
+      "binary": {
+        "fits": 60,
+        "constant_fits": 0,
+        "fits_with_finite_rhat_gt_1_01": 2
+      }
+    },
+    "numeric_disagreements": {
+      "csv": 31,
+      "binary": 0
+    },
+    "binary_disagreements": [],
+    "csv_largest_disagreements": [
+      {
+        "fit": "11-mala-quasi_deer",
+        "variable": "q",
+        "metric": "ess_bulk",
+        "windows": 911.998764173137,
+        "replay": 911.975324995233,
+        "abs_difference": 0.023439177904037933
+      },
+      {
+        "fit": "04-mala-quasi_deer",
+        "variable": "q",
+        "metric": "ess_bulk",
+        "windows": 1053.15652781154,
+        "replay": 1053.15476824915,
+        "abs_difference": 0.0017595623899069324
+      },
+      {
+        "fit": "02-mala-quasi_deer",
+        "variable": "q",
+        "metric": "ess_bulk",
+        "windows": 1071.40020931828,
+        "replay": 1071.40135141336,
+        "abs_difference": 0.0011420950800129503
+      },
+      {
+        "fit": "08-mala-quasi_deer",
+        "variable": "q",
+        "metric": "ess_bulk",
+        "windows": 983.068500024857,
+        "replay": 983.069555303616,
+        "abs_difference": 0.0010552787589404033
+      },
+      {
+        "fit": "09-mala-quasi_deer",
+        "variable": "q",
+        "metric": "ess_bulk",
+        "windows": 1166.78398595854,
+        "replay": 1166.78476509761,
+        "abs_difference": 0.0007791390701186174
+      },
+      {
+        "fit": "10-mala-quasi_deer",
+        "variable": "q",
+        "metric": "ess_bulk",
+        "windows": 1043.90725741755,
+        "replay": 1043.90796391037,
+        "abs_difference": 0.0007064928199724818
+      },
+      {
+        "fit": "06-mala-quasi_deer",
+        "variable": "q",
+        "metric": "ess_bulk",
+        "windows": 1008.65912145152,
+        "replay": 1008.65853886099,
+        "abs_difference": 0.0005825905300298473
+      },
+      {
+        "fit": "07-mala-quasi_deer",
+        "variable": "q",
+        "metric": "ess_bulk",
+        "windows": 866.927447215599,
+        "replay": 866.927745587787,
+        "abs_difference": 0.0002983721878990764
+      },
+      {
+        "fit": "01-mala-quasi_deer",
+        "variable": "q",
+        "metric": "ess_bulk",
+        "windows": 1023.13092794145,
+        "replay": 1023.13063127864,
+        "abs_difference": 0.00029666281000118033
+      },
+      {
+        "fit": "05-mala-quasi_deer",
+        "variable": "q",
+        "metric": "ess_bulk",
+        "windows": 975.559720130665,
+        "replay": 975.55944512899,
+        "abs_difference": 0.00027500167504967976
+      }
+    ],
+    "csv_cells_different_from_numpy": 70009,
+    "max_csv_cell_difference": 8.88178419700125e-16,
+    "categories_identical": true
+  }
+}

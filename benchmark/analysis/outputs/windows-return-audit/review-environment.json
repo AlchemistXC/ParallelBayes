@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-04",
+  "received_commit": "3a51f98fc8d10187b8f71e477aaff56d86ea50cd",
+  "review_branch": "codex/windows-return-audit",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "R": "4.6.0",
+  "scope": "Mac read-only evidence replay, diagnostic sensitivity analysis, JAX regression, R integration and paper compilation; not new CUDA measurements",
+  "frozen_scientific_sources_modified": false,
+  "original_experiments_modified": false,
+  "R_integration": {
+    "pass_assertions": 15,
+    "fail": 0,
+    "skip": 0,
+    "warn": 0
+  },
+  "jax_regression": {
+    "passed": 51,
+    "deselected_stan": 7
+  },
+  "diagnostics_status": "classification replicated; two binary-input Rhat values unresolved",
+  "pdf_pages": 20,
+  "pdf_sha256": "13f886ae5051b4cf756df2831282d70e401abc4ad9fed47104b470eb3538282a"
+}

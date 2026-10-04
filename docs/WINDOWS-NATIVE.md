@@ -125,8 +125,10 @@ Modern R diagnostics are a separately measured additional cost. Full process
 startup and installation are not per-fit inference costs.
 `normal_seconds` includes construction, sampling, transformation and basic
 moments but excludes serialization and modern R diagnostics. `audit_api_seconds`
-adds the independent oracle inside the API, but also excludes serialization and
-R diagnostics. `all_attempt_seconds` retains the whole recorded attempt including
+uses an already constructed model and includes the independent oracle, but
+excludes model construction, basic moments, serialization and R diagnostics.
+Model construction is separately recorded as `model_seconds`; this bucket is
+not simply `normal_seconds` plus oracle cost. `all_attempt_seconds` retains the whole recorded attempt including
 ordinary and technical replay measurements; it is research expenditure, not the
 cost of one ordinary fit. These quantities must not be given the same label.
 

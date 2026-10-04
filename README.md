@@ -30,7 +30,7 @@
 - 40组历史随机输入的版本对照接受事件零失配；不据此宣称0.1.0/0.1.1性能等价。
 - 独立Python环境、迁移目录及完整归档重建通过；仍共享同一Mac、R库和编译器，不声称外部团队或异构平台已复现。
 
-阅读[历史CPU软件论文PDF](output/software-paper/软件与基准研究.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。LaTeX已增加Windows实测伴随节，但未重新编译该PDF。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
+阅读[CPU与Windows扩展论文PDF](output/software-paper/软件与基准研究.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。该20页PDF已编译，包含Windows实测及回传复核；历史CPU稿保留于Git历史和CPU复现Release。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
 
 ## 原始证据与复现
 
@@ -44,6 +44,6 @@ Git包含源码、完整测试、冻结协议、分析摘要、论文/图件及�
 
 本项目源码采用[MIT](LICENSE)，上游quasi-DEER比较源码保留BSD许可，详见[第三方说明](docs/THIRD-PARTY.md)。本仓库不分发第三方论文/书籍PDF、全文提取、私有技能源码、虚拟环境或缓存。文献引用、研究摘要和本项目原创稿件另保留。
 
-R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU声明限于已保存并核对的Windows实测组合；没有自动配置选择器、任意Stan转GPU或通用加速声明。本轮结果包保存在本机`output/windows-return`，未自动推送或发布。
+R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU声明限于已保存并核对的Windows实测组合；没有自动配置选择器、任意Stan转GPU或通用加速声明。Windows结果包已上传`windows-native-v1`草稿Release并通过接收端校验；未代用户将草稿公开。复核与剩余诊断差异见[回传复核报告](docs/WINDOWS-RETURN-AUDIT.md)。
 
 自定义技能迁移见[Windows技能安装说明](handoff/windows-native/SKILLS-SETUP.md)。30个技能的正文以私下ZIP转交；公开仓库仅含清单、校验和及安装脚本。

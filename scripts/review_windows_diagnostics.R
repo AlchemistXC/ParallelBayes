@@ -1,0 +1,23 @@
+args <- commandArgs(trailingOnly=TRUE)
+library(posterior)
+items <- jsonlite::read_json(args[[1]], simplifyVector=FALSE)
+records <- list(); inputs <- list()
+for (item in items) {
+  vals <- readBin(item$binary, what='double', n=item$rows*item$cols, size=8L, endian='little')
+  stopifnot(length(vals)==item$rows*item$cols)
+  x <- as.data.frame(matrix(vals,ncol=item$cols,byrow=TRUE)); names(x) <- unlist(item$names)
+  csv <- read.csv(item$csv, check.names=FALSE)
+  stopifnot(identical(dim(x),dim(csv)))
+  input <- list(changed_values=sum(as.matrix(x)!=as.matrix(csv)),max_absolute_change=max(abs(as.matrix(x)-as.matrix(csv))))
+  chains <- sort(unique(x$chain)); it <- sort(unique(x$iteration)); vars <- setdiff(colnames(x),c('chain','iteration'))
+  arr <- array(NA_real_,c(length(it),length(chains),length(vars)),dimnames=list(iteration=it,chain=chains,variable=vars))
+  for (j in seq_along(chains)) arr[,j,] <- as.matrix(x[x$chain==chains[j],vars,drop=FALSE])
+  s <- summarise_draws(as_draws_array(arr),rhat=rhat,ess_bulk=ess_bulk,ess_tail=ess_tail)
+  constants <- vapply(seq_along(vars),function(k) length(unique(c(arr[,,k])))==1L,logical(1))
+  s$state <- ifelse(constants,'undefined_no_variation',ifelse(is.finite(s$rhat),'finite','not_finite'))
+  key <- paste(item$kind,item$key,sep='/')
+  records[[key]] <- list(summary=s,posterior_version=as.character(packageVersion('posterior')))
+  inputs[[key]] <- input
+}
+jsonlite::write_json(list(diagnostics=records,input_comparison=inputs),args[[2]],auto_unbox=TRUE,pretty=TRUE,digits=NA,na='null')
+cat(length(records),'binary diagnostic fits completed\n')

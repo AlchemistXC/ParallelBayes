@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "archive": "/Users/haku/Workspace/ParallelBayes/downloads/windows-return/windows-native-20261003T234021Z.tar",
+  "archive_sha256": "86ad93de87bae4ad11cf5b4b8c4cc7de2f61cc184bc37514d76da0cd1f5e3812",
+  "checked_files": 5866,
+  "source_commit": "3a51f98fc8d10187b8f71e477aaff56d86ea50cd",
+  "branch": "windows-native-dev"
+}

@@ -1,0 +1,9 @@
+...................................................                      [100%]
+=============================== warnings summary ===============================
+tests/python/test_kernels.py::test_nuts_smoke_and_adaptation_cost
+  /Users/haku/Workspace/ParallelBayes/.venv/lib/python3.12/site-packages/jaxopt/__init__.py:59: DeprecationWarning: JAXopt is no longer maintained. See https://docs.jax.dev/en/latest/ for alternatives.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/haku/Workspace/ParallelBayes/output/windows-return-intake/recomputed/jax-mac.xml -
+51 passed, 7 deselected, 1 warning in 16.18s
