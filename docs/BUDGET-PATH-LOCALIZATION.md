@@ -36,3 +36,5 @@ python scripts/completion/audit_budget_suffix.py --run RUN --inputs INPUTS --pro
 ```
 
 这些是只读原实验、写入新伴随目录的技术调查，不是重新启动正式实验或增加独立n。
+
+本次完整伴随归档已封存于`f3-readiness-localization-v1.tar`（74178560字节，240文件，SHA256 `cb5206d2a7c419563b8ee84e5f297be5f1b58272b4665a4984cbe46552d50621`）。使用其中源码和最小原失败用例，在异目录重建受控后续递推：8份数组逐字节一致、逐链摘要相同。完整首次定位仍依赖前述预算pilot归档。该验证使用同一Mac和现有环境，没有新增独立重复；详见[NUTS伴随归档说明](NATIVE-NUTS-READINESS.md#伴随归档与异目录重建)。

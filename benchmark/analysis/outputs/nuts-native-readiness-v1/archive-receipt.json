@@ -1,0 +1,23 @@
+{
+  "source_snapshot_commit": "076fabd90276efdfa99d891690ab1f140ab2acb5",
+  "failure_common_state_source_commit": "a378d25",
+  "failure_suffix_source_commit": "eaa6284",
+  "nuts_sampling_source_commit": "b7791e08e03449bd34ee764dc560bd3934044aeb",
+  "failed_budget_task_remains_failed": true,
+  "new_independent_failure_replicates": 0,
+  "mac_nuts_targets_completed": 9,
+  "mac_nuts_targets_failed": 0,
+  "mac_array_byte_comparisons": 54,
+  "R_binary_roundtrips": 18,
+  "windows_protocol_prepared": true,
+  "windows_actual_nuts_validation": false,
+  "formal_inference_complete": false,
+  "public_release": false,
+  "original_budget_archive_sha256": "3ad2764ad139e1d08012a2b4399cf4fd588382a1b410abeb5bcfc92d1515fe0e",
+  "archive": "f3-readiness-localization-v1.tar",
+  "bytes": 74178560,
+  "sha256": "cb5206d2a7c419563b8ee84e5f297be5f1b58272b4665a4984cbe46552d50621",
+  "checked_files": 240,
+  "source_bundle_verified": true,
+  "all_member_hashes_verified": true
+}

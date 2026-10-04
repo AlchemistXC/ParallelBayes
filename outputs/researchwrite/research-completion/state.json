@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Freeze the finite formal inference design after explicit budget/repetition/reference decisions; receive Windows F1/F2/F4 and new native CPU NUTS readiness evidence. Budget-pilot failure localization is documented; original failure remains quarantined.",
+  "next_recommended_action": "Validate selected affine targets and tuned MH time-executor combinations on explicit devices; freeze the finite formal inference design after budget/repetition/reference decisions. Receive Windows F1/F2/F4 and native CPU NUTS readiness evidence. Budget-pilot failure localization and companion archive/rebuild are complete; the original failure remains quarantined.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -26,7 +26,8 @@
     "F3_tuning_216_terminal_cases_212_score_and_R_diagnostic_reconstructions_four_preserved_sensitivity_failures",
     "F3_independent_budget_pilot_324_terminal_323_valid_saved_array_error_diagnostics_and_zero_new_task_resume",
     "budget_single_failure_same_state_and_actual_discrepancy_suffix_localization",
-    "Mac_nine_target_serial_spawn_NUTS_54_bitwise_array_pairs_18_R_roundtrips_and_verified_resume"
+    "Mac_nine_target_serial_spawn_NUTS_54_bitwise_array_pairs_18_R_roundtrips_and_verified_resume",
+    "F3_followup_240_file_archive_and_relocated_saved_array_rebuild"
   ],
   "external_case": "Mac target/trajectory/R validation, finite reference audit and 12-rule independent quadrature completed; numerical integration is not certified exact truth; Windows target validation and formal inference remain",
   "new_experiment_scope": "Wells model/reference companions, Mac mechanism smoke, inference readiness v1/v2 and independent MH tuning v1; no new formal inference/performance benchmark; independent CPU budget pilot v1 (development only)",
@@ -115,6 +116,40 @@
     "verified_resume_terminal_files": 126,
     "windows_actual_run": false,
     "formal_inference_complete": false,
-    "companion_archive_pending": true
+    "companion_archive_pending": false,
+    "companion_archive": {
+      "source_snapshot_commit": "076fabd90276efdfa99d891690ab1f140ab2acb5",
+      "failure_common_state_source_commit": "a378d25",
+      "failure_suffix_source_commit": "eaa6284",
+      "nuts_sampling_source_commit": "b7791e08e03449bd34ee764dc560bd3934044aeb",
+      "failed_budget_task_remains_failed": true,
+      "new_independent_failure_replicates": 0,
+      "mac_nuts_targets_completed": 9,
+      "mac_nuts_targets_failed": 0,
+      "mac_array_byte_comparisons": 54,
+      "R_binary_roundtrips": 18,
+      "windows_protocol_prepared": true,
+      "windows_actual_nuts_validation": false,
+      "formal_inference_complete": false,
+      "public_release": false,
+      "original_budget_archive_sha256": "3ad2764ad139e1d08012a2b4399cf4fd588382a1b410abeb5bcfc92d1515fe0e",
+      "archive": "f3-readiness-localization-v1.tar",
+      "bytes": 74178560,
+      "sha256": "cb5206d2a7c419563b8ee84e5f297be5f1b58272b4665a4984cbe46552d50621",
+      "checked_files": 240,
+      "source_bundle_verified": true,
+      "all_member_hashes_verified": true
+    },
+    "relocated_rebuild": {
+      "archive_sha256": "cb5206d2a7c419563b8ee84e5f297be5f1b58272b4665a4984cbe46552d50621",
+      "executed_from_relocated_archived_source": true,
+      "archive_member_hashes_verified": 240,
+      "diagnostic_binary_files_exact": 18,
+      "posterior_function_results_exact": true,
+      "suffix_arrays_exact": 8,
+      "suffix_summary_chains_exact": true,
+      "new_MCMC_fits": 0,
+      "limitation": "Same Mac, existing Python/R libraries; separate extraction/source paths. This validates this companion reconstruction, not a clean environment, external team or full manuscript rebuild."
+    }
   }
 }

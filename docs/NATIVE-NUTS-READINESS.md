@@ -27,3 +27,11 @@ G1/G2/A1/L1/L2/H1/H2/M1/W1，各一份四链初值/种子；同目标顺序四�
 运行器有run/--resume、collect、verify-diagnostics入口；R使用现有posterior_diagnostics.R。完整诊断包括rank/folded Rhat、bulk/tail ESS、常量不可判定；Pyro未提供的完整树深命中数不填零。原始数组、R回写、所有状态/日志、依赖及校验和随新回传包保存。
 
 Windows通过这一门槛后，才把该平台的九目标CPU基线写为就绪。正式推断预算/重复数/窗口/误差和时间口径还需单独冻结；这里的短链不是正式数据。Mac伴随摘要见`benchmark/analysis/outputs/nuts-native-readiness-v1/`。
+
+## 伴随归档与异目录重建
+
+完整本地归档`f3-readiness-localization-v1.tar`为74178560字节，240个文件从TAR内逐项校验通过，Git bundle验证通过；源码快照076fabd90276efdfa99d891690ab1f140ab2acb5。SHA256为`cb5206d2a7c419563b8ee84e5f297be5f1b58272b4665a4984cbe46552d50621`。它包含本次NUTS完整数组、诊断、恢复证据，以及H1失败定位数组、最小原始失败用例和源码历史；没有公开Release。
+
+在新的提取目录使用归档中的源码，从保存数组重建18份诊断输入并运行R；18份输入字节和全部posterior函数结果与归档相同。随后重建受控NumPy后续递推，8份数组的dtype、shape和字节及逐链摘要完全一致。新增MCMC拟合数为0。此项使用同一Mac和现有Python/R环境，仅验证本伴随归档的异目录重建，不是干净安装、外部团队复现或全部论文重建。
+
+回执、四条命令的原始日志及归档校验日志在`benchmark/analysis/outputs/nuts-native-readiness-v1/`。完整首次失败定位仍依赖先前`inference-budget-pilot-v1.tar`；本包保留的最小原用例足以重建后续递推探针。不得将其称为原324项实验的独立完整副本。

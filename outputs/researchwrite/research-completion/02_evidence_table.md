@@ -19,3 +19,4 @@
 | 独立预算pilot提供正式预算/重复设计资料，不能直接作正式推断结论 | docs/F3-BUDGET-PILOT-RESULTS.md、inference-budget-pilot-v1摘要与原始数组 | 323/324有效；单项路径容差失败、H1发散和未判定函数保留；Windows正式比较仍未完成 |
 | 预算单项长路径失败有有限数值敏感性证据，原失败仍隔离 | docs/BUDGET-PATH-LOCALIZATION.md、budget-failure-localization-v1 | 18432同前态、实际首差受控后续重放；初值ULP阴性探针保留，非一般正确性证明 |
 | 九目标CPU NUTS顺序/spawn可核验，Windows不能由Mac代替 | docs/NATIVE-NUTS-READINESS.md、nuts-native-readiness-v1 | Mac54项数组字节和18份R回写；Windows仅冻结协议，正式推断仍未完成 |
+| F3伴随归档可异目录重建，不代表全论文复现 | nuts-native-readiness-v1/archive-receipt.json、rebuild/receipt.json | 240文件哈希；18份R诊断与8份后续递推数组一致；同Mac现有环境，新增拟合0 |

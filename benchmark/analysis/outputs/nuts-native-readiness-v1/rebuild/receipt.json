@@ -1,0 +1,51 @@
+{
+  "archive_sha256": "cb5206d2a7c419563b8ee84e5f297be5f1b58272b4665a4984cbe46552d50621",
+  "commands": [
+    [
+      "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+      "scripts/completion/nuts_readiness_run.py",
+      "collect",
+      "--protocol",
+      "benchmark/protocols/nuts-native-readiness-mac-companion-v1.json",
+      "--run",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/f3-followup-rebuild-01/extracted/f3-readiness-localization-v1/nuts-run",
+      "--output",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/f3-followup-rebuild-01/rebuilt-diagnostics"
+    ],
+    [
+      "/usr/local/bin/Rscript",
+      "--vanilla",
+      "scripts/completion/posterior_diagnostics.R",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/f3-followup-rebuild-01/rebuilt-diagnostics"
+    ],
+    [
+      "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+      "scripts/completion/nuts_readiness_run.py",
+      "verify-diagnostics",
+      "--output",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/f3-followup-rebuild-01/rebuilt-diagnostics"
+    ],
+    [
+      "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+      "scripts/completion/audit_budget_suffix.py",
+      "--run",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/f3-followup-rebuild-01/extracted/f3-readiness-localization-v1/original-budget-case",
+      "--inputs",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/f3-followup-rebuild-01/extracted/f3-readiness-localization-v1/original-budget-input",
+      "--protocol",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/f3-followup-rebuild-01/extracted/f3-readiness-localization-v1/original-budget-protocol.json",
+      "--companion",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/f3-followup-rebuild-01/extracted/f3-readiness-localization-v1/failure-common-state",
+      "--output",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/f3-followup-rebuild-01/rebuilt-suffix"
+    ]
+  ],
+  "executed_from_relocated_archived_source": true,
+  "archive_member_hashes_verified": 240,
+  "diagnostic_binary_files_exact": 18,
+  "posterior_function_results_exact": true,
+  "suffix_arrays_exact": 8,
+  "suffix_summary_chains_exact": true,
+  "new_MCMC_fits": 0,
+  "limitation": "Same Mac, existing Python/R libraries; separate extraction/source paths. This validates this companion reconstruction, not a clean environment, external team or full manuscript rebuild."
+}

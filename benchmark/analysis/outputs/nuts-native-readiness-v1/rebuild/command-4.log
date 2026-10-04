@@ -1,0 +1,81 @@
+{
+  "original_task": {
+    "model": "H1",
+    "workflow": "mala",
+    "replicate": 2,
+    "budget": 4096,
+    "input": "H1-rep2.npz",
+    "id": "4dc55fe41afd7ee147b2"
+  },
+  "protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
+  "analysis_source_sha256": "0f0388f191ca829b0dd356c980234fa7aea995fb1c0f9d683470ab090edc963c",
+  "companion_summary_sha256": "ad696bb2fc999687c1bc9c1f55affaadaa708952f3a25594f13b2fb76af47522",
+  "numpy": "2.2.6",
+  "chains": [
+    {
+      "chain": 0,
+      "probe_performed": true,
+      "first_original_difference_zero_based": 9,
+      "initial_delta": [
+        -4.440892098500626e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_max_abs_delta": 4.440892098500626e-16,
+      "unchanged_start_reproduces_original_oracle_exactly": true,
+      "max_suffix_effect": 3.638132990424481e-07,
+      "observed_amplification": 819234719.0,
+      "original_path_limit": 1.1405008404688654e-07,
+      "first_effect_above_original_limit_zero_based": 3366,
+      "acceptance_mismatches": 0,
+      "first_acceptance_mismatch_zero_based": null,
+      "max_distance_from_original_torch_suffix": 1.0083594492726888e-07
+    },
+    {
+      "chain": 1,
+      "probe_performed": false,
+      "reason": "No original path difference"
+    },
+    {
+      "chain": 2,
+      "probe_performed": false,
+      "reason": "No original path difference"
+    },
+    {
+      "chain": 3,
+      "probe_performed": true,
+      "first_original_difference_zero_based": 3,
+      "initial_delta": [
+        4.440892098500626e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_max_abs_delta": 4.440892098500626e-16,
+      "unchanged_start_reproduces_original_oracle_exactly": true,
+      "max_suffix_effect": 2.1649348980190553e-13,
+      "observed_amplification": 487.5,
+      "original_path_limit": 1.1431738555088319e-07,
+      "first_effect_above_original_limit_zero_based": null,
+      "acceptance_mismatches": 0,
+      "first_acceptance_mismatch_zero_based": null,
+      "max_distance_from_original_torch_suffix": 3.1725733151688473e-12
+    }
+  ],
+  "design": "Post hoc controlled propagation of actual first observed state discrepancy; unchanged and changed starts use exactly the same independent NumPy suffix and random arrays.",
+  "original_failure_remains_failed": true,
+  "independent_repetitions_added": 0,
+  "arrays_sha256": "cea65075e27505e14f254b8eb3c4ad9a55c9ee8d9d2497312a38d8c89d5136b7",
+  "limitation": "This is an observed amplification under a selected tape, not a general stability bound, full decomposition of all later roundoff, or proof of chaos or invariant-distribution error."
+}
