@@ -1,0 +1,61 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__ test_actual_inputs_pair_time_executors_and_failed_target_stays_quarantined __
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-49/test_actual_inputs_pair_time_e0')
+
+    def test_actual_inputs_pair_time_executors_and_failed_target_stays_quarantined(tmp_path):
+        import selected_mh_readiness as study
+        from parallelbayes.reference import benchmark_model
+        from parallelbayes.torch_backend.sampling import settings, random_tape
+        from mechanism_runner import identity, sha, actual_hash
+        item = dict(name='G1', dimension=8, base_target_id=benchmark_model('G1').target_id,
+            geometry=dict(center=[0.]*8, factor=np.eye(8).tolist()), step_rwm=.1, step_mala=.1, input='G1.npz')
+        broken = copy.deepcopy(item)
+        broken.update(name='G2', base_target_id='wrong posterior identity', input='G2.npz')
+        p = dict(identity='unit-selected-mh', required_platform=sys.platform, device='cpu',
+            required_versions={}, torch_threads=1, source_files=study.source_files(),
+            targets=[item, broken], chains=2, draws=16, windows=[4,8], max_iter=128,
+            atol=1e-10, rtol=1e-10, memory_limit_mb=128, inputs={},
+            scope='Interface test, not formal inference')
+        inputs = tmp_path/'inputs'; inputs.mkdir()
+        payload = random_tape(settings(dict(chains=2, draws=16, seed=7391011, solver_seed=7391013)), 8)
+        payload['initial'] = np.array([[-.1]*8, [.1]*8])
+        for name in ['G1.npz', 'G2.npz']:
+            np.savez_compressed(inputs/name, **payload)
+            p['inputs'][name] = dict(sha256=sha(inputs/name), actual_sha256=actual_hash(payload))
+        p['protocol_sha256'] = identity(p)
+        protocol = tmp_path/'plan.json'; protocol.write_text(json.dumps(p))
+        out = tmp_path/'run'
+        summary = study.run(protocol, inputs, tmp_path/'unused', out)
+        assert summary['planned_workflows'] == 12 and summary['completed_workflows'] == 6
+        assert summary['failed_workflows'] == 6 and summary['completed_targets'] == 1
+        good = json.loads((out/'G1/state.json').read_text())
+        assert len(good['pairs']) == 4 and all(v['passed'] for v in good['pairs'].values())
+        assert all(v['acceptance_mismatches'] == [0,0] for v in good['pairs'].values())
+        bad = json.loads((out/'G2/state.json').read_text())
+        assert bad['status'] == 'failed' and not bad['samples_eligible_for_inference']
+        assert 'target identity' in bad['setup_error']
+        before = {f.relative_to(out).as_posix(): sha(f) for name in ['G1','G2'] for f in (out/name).rglob('*') if f.is_file()}
+        resumed = study.run(protocol, inputs, tmp_path/'unused', out, resume=True)
+        assert resumed['newly_executed_targets'] == 0
+        after = {f.relative_to(out).as_posix(): sha(f) for name in ['G1','G2'] for f in (out/name).rglob('*') if f.is_file()}
+        assert before == after
+>       from audit_selected_mh import audit
+E       ModuleNotFoundError: No module named 'audit_selected_mh'
+
+tests/external/test_selected_mh_readiness.py:50: ModuleNotFoundError
+----------------------------- Captured stdout call -----------------------------
+{"starting": "G1", "device": "cpu"}
+{"done": "G1", "status": "completed"}
+{"starting": "G2", "device": "cpu"}
+{"done": "G2", "status": "failed"}
+=============================== warnings summary ===============================
+tests/external/test_selected_mh_readiness.py: 18 warnings
+  /Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/external/test_selected_mh_readiness.py::test_actual_inputs_pair_time_executors_and_failed_target_stays_quarantined
+1 failed, 18 warnings in 1.34s

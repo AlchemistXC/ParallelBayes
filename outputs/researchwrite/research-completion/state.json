@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Validate selected affine targets and tuned MH time-executor combinations on explicit devices; freeze the finite formal inference design after budget/repetition/reference decisions. Receive Windows F1/F2/F4 and native CPU NUTS readiness evidence. Budget-pilot failure localization and companion archive/rebuild are complete; the original failure remains quarantined.",
+  "next_recommended_action": "Develop and freeze the finite formal inference design with budget/repetition/reference decisions; receive Windows F1/F2/F4, native CPU NUTS and selected-MH CPU/CUDA readiness receipts. Mac selected-MH short-path validation is complete; formal longer paths still require individual full audits.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -27,7 +27,8 @@
     "F3_independent_budget_pilot_324_terminal_323_valid_saved_array_error_diagnostics_and_zero_new_task_resume",
     "budget_single_failure_same_state_and_actual_discrepancy_suffix_localization",
     "Mac_nine_target_serial_spawn_NUTS_54_bitwise_array_pairs_18_R_roundtrips_and_verified_resume",
-    "F3_followup_240_file_archive_and_relocated_saved_array_rebuild"
+    "F3_followup_240_file_archive_and_relocated_saved_array_rebuild",
+    "Mac_selected_MH_affine_device_readiness_54_workflows_36_pairs_saved_array_replay_and_resume"
   ],
   "external_case": "Mac target/trajectory/R validation, finite reference audit and 12-rule independent quadrature completed; numerical integration is not certified exact truth; Windows target validation and formal inference remain",
   "new_experiment_scope": "Wells model/reference companions, Mac mechanism smoke, inference readiness v1/v2 and independent MH tuning v1; no new formal inference/performance benchmark; independent CPU budget pilot v1 (development only)",
@@ -35,7 +36,9 @@
     "external-wells-windows-cpu-v1",
     "external-wells-windows-cuda-v1",
     "mechanism-windows-pilot-v1",
-    "nuts-native-readiness-windows-v1"
+    "nuts-native-readiness-windows-v1",
+    "selected-mh-readiness-windows-cpu-v1",
+    "selected-mh-readiness-windows-cuda-v1"
   ],
   "f3_readiness": "Not formal inference: v2 45/45 numerical/workflow checks; 7/9 NUTS fits and 36/36 short MH fits have some finite Rhat>1.01; 23/45 contain undefined Rhat functions",
   "f3_raw_evidence": {
@@ -151,5 +154,20 @@
       "new_MCMC_fits": 0,
       "limitation": "Same Mac, existing Python/R libraries; separate extraction/source paths. This validates this companion reconstruction, not a clean environment, external team or full manuscript rebuild."
     }
+  },
+  "f3_selected_mh_readiness": {
+    "sampling_source_commit": "779b8e4c56ba62939f365f6d723d71319dead221",
+    "analysis_source_commit": "fc48d76",
+    "mac_completed_workflows": 54,
+    "mac_passed_pairs": 36,
+    "mac_replayed_workflows": 54,
+    "acceptance_mismatches": 0,
+    "task_assets_verified": 126,
+    "resume_terminal_files_unchanged": 135,
+    "independent_technical_inputs_per_target": 1,
+    "windows_actual_run": false,
+    "formal_inference_complete": false,
+    "raw_evidence_archive_pending": true,
+    "report": "docs/SELECTED-MH-READINESS.md"
   }
 }

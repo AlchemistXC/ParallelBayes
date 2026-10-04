@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+    "scripts/completion/selected_mh_readiness.py",
+    "run",
+    "--protocol",
+    "benchmark/protocols/selected-mh-readiness-mac-v1.json",
+    "--inputs",
+    "benchmark/fixtures/selected-mh-readiness-v1",
+    "--source",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/external-source-inspection",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/selected-mh-mac-run-01",
+    "--resume"
+  ],
+  "exit_code": 0,
+  "terminal_files_unchanged": 135,
+  "newly_executed_targets": 0,
+  "before_summary_sha256": "a6bc7f4f22b7e5cf131eebca5fa09db39c726e1d735f2c2f71ea7a345a655abd",
+  "scope": "Actual completed-run resume, not additional statistical replicates"
+}

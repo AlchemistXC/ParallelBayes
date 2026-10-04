@@ -1,0 +1,16 @@
+{
+  "protocol_sha256": "12f3cdcc1c68ffbd48ba8bb1209271f359572979bfc60992cad88ed34424c34b",
+  "device": "cpu",
+  "planned_targets": 9,
+  "completed_targets": 9,
+  "failed_targets": 0,
+  "planned_workflows": 54,
+  "completed_workflows": 54,
+  "failed_workflows": 0,
+  "passed_pairs": 36,
+  "planned_pairs": 36,
+  "newly_executed_targets": 9,
+  "invocation_seconds": 60.40586833283305,
+  "scope": "Device/target and selected-kernel time-executor readiness. Not formal inference, convergence or performance evidence.",
+  "formal_inference_complete": false
+}

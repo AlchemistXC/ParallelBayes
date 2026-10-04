@@ -53,3 +53,5 @@ R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU�
 第二轮Windows交接：[可直接转交的提示词](handoff/windows-completion/CODEX-PROMPT-F2-F4.md)，包含F1回执、水井CPU/CUDA/R核验和已冻结机制pilot；[试验设计及Mac运行器证据](docs/MECHANISM-PILOT.md)。Windows实际结果仍待回传。
 
 F3成熟基线的新增[Windows CPU NUTS核验提示词](handoff/windows-completion/CODEX-PROMPT-F3-NUTS.md)已就绪。[Mac九目标配对验证](docs/NATIVE-NUTS-READINESS.md)通过样本/预热/RNG字节检查，短链不利诊断保留；Windows同项尚未实测。这是独立研究CLI，不扩充R包核心的NUTS或GPU支持声明。
+
+已选步长与仿射目标的时间执行组合核验见[SELECTED-MH-READINESS](docs/SELECTED-MH-READINESS.md)：Mac 54工作流/36配对及独立保存数组重放通过，仍有全拒绝链及保留的库警告；Windows CPU/CUDA实测待回传。Windows可接续[已选MH组合提示词](handoff/windows-completion/CODEX-PROMPT-F3-MH.md)，它与CPU NUTS及机制任务分别留证，不是正式推断实验。

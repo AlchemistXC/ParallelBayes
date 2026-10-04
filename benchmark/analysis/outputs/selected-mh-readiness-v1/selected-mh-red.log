@@ -1,0 +1,14 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__ test_actual_inputs_pair_time_executors_and_failed_target_stays_quarantined __
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-47/test_actual_inputs_pair_time_e0')
+
+    def test_actual_inputs_pair_time_executors_and_failed_target_stays_quarantined(tmp_path):
+>       import selected_mh_readiness as study
+E       ModuleNotFoundError: No module named 'selected_mh_readiness'
+
+tests/external/test_selected_mh_readiness.py:14: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_selected_mh_readiness.py::test_actual_inputs_pair_time_executors_and_failed_target_stays_quarantined
+1 failed in 0.04s

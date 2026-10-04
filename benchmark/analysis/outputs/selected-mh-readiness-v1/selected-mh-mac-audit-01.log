@@ -1,0 +1,12 @@
+{
+  "protocol_sha256": "12f3cdcc1c68ffbd48ba8bb1209271f359572979bfc60992cad88ed34424c34b",
+  "source_run_summary_sha256": "a6bc7f4f22b7e5cf131eebca5fa09db39c726e1d735f2c2f71ea7a345a655abd",
+  "task_asset_hashes_verified": 126,
+  "checked_completed_workflows": 54,
+  "retained_failed_workflows": 0,
+  "acceptance_mismatches": 0,
+  "saved_array_replay_passed": true,
+  "new_independent_replicates": 0,
+  "new_MCMC_fits": 0,
+  "scope": "Saved-array NumPy replay and triangular log-determinant companion. No posterior convergence, general numerical proof or fresh performance measurement."
+}

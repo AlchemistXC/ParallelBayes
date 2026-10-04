@@ -1,0 +1,28 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+_ test_frozen_target_preserves_hand_density_jacobian_and_requested_device[cpu] _
+
+device = 'cpu'
+
+    @pytest.mark.parametrize('device', ['cpu', 'cuda:0'])
+    def test_frozen_target_preserves_hand_density_jacobian_and_requested_device(device):
+        import torch
+>       from inference_targets import build_target
+E       ModuleNotFoundError: No module named 'inference_targets'
+
+tests/external/test_inference_targets.py:16: ModuleNotFoundError
+_ test_frozen_target_preserves_hand_density_jacobian_and_requested_device[cuda:0] _
+
+device = 'cuda:0'
+
+    @pytest.mark.parametrize('device', ['cpu', 'cuda:0'])
+    def test_frozen_target_preserves_hand_density_jacobian_and_requested_device(device):
+        import torch
+>       from inference_targets import build_target
+E       ModuleNotFoundError: No module named 'inference_targets'
+
+tests/external/test_inference_targets.py:16: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_inference_targets.py::test_frozen_target_preserves_hand_density_jacobian_and_requested_device[cpu]
+FAILED tests/external/test_inference_targets.py::test_frozen_target_preserves_hand_density_jacobian_and_requested_device[cuda:0]
+2 failed in 0.47s

@@ -20,3 +20,4 @@
 | 预算单项长路径失败有有限数值敏感性证据，原失败仍隔离 | docs/BUDGET-PATH-LOCALIZATION.md、budget-failure-localization-v1 | 18432同前态、实际首差受控后续重放；初值ULP阴性探针保留，非一般正确性证明 |
 | 九目标CPU NUTS顺序/spawn可核验，Windows不能由Mac代替 | docs/NATIVE-NUTS-READINESS.md、nuts-native-readiness-v1 | Mac54项数组字节和18份R回写；Windows仅冻结协议，正式推断仍未完成 |
 | F3伴随归档可异目录重建，不代表全论文复现 | nuts-native-readiness-v1/archive-receipt.json、rebuild/receipt.json | 240文件哈希；18份R诊断与8份后续递推数组一致；同Mac现有环境，新增拟合0 |
+| 已选MH及仿射目标的Mac短路径时间执行组合已核验，Windows待实测 | docs/SELECTED-MH-READINESS.md、selected-mh-readiness-v1 | 54工作流/36配对、独立重放及恢复；H1全拒绝与slogdet警告保留，不是正式推断 |

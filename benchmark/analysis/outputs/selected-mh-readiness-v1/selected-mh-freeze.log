@@ -1,0 +1,32 @@
+{
+  "protocols": {
+    "mac-v1": {
+      "protocol_sha256": "12f3cdcc1c68ffbd48ba8bb1209271f359572979bfc60992cad88ed34424c34b",
+      "source_commit": "779b8e4c56ba62939f365f6d723d71319dead221",
+      "targets": 9,
+      "workflows": 54,
+      "device": "cpu"
+    },
+    "windows-cpu-v1": {
+      "protocol_sha256": "de1a3bdb35fef84c98fe502cc925574f9092f16da5959f691490b5f1ee55d2e5",
+      "source_commit": "779b8e4c56ba62939f365f6d723d71319dead221",
+      "targets": 9,
+      "workflows": 54,
+      "device": "cpu"
+    },
+    "windows-cuda-v1": {
+      "protocol_sha256": "e29d26f2d5836c91001be9bfd5a7c6f156b54c96daf2cbaeaa30fb04d32acf93",
+      "source_commit": "779b8e4c56ba62939f365f6d723d71319dead221",
+      "targets": 9,
+      "workflows": 54,
+      "device": "cuda:0"
+    }
+  },
+  "input_files": 9,
+  "input_bytes": 1550889,
+  "old_sources_unchanged": {
+    "inference-budget-pilot-mac-v1": 58,
+    "nuts-native-readiness-windows-v1": 61,
+    "mechanism-windows-pilot-v1": 41
+  }
+}
