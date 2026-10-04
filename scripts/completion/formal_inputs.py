@@ -25,7 +25,9 @@ def stream_address(experiment,model,replicate,role,chain):
 
 def nuts_seed(experiment,model,replicate,chain):
     seq=np.random.SeedSequence(stream_address(experiment,model,replicate,'nuts',chain))
-    return int(seq.generate_state(1,dtype=np.uint64)[0]) & ((1<<63)-1)
+    # Frozen CPU NUTS and Pyro's NumPy seeding require a uint32 value.
+    # validate_addresses checks the complete declared finite set for collisions.
+    return int(seq.generate_state(1,dtype=np.uint32)[0])
 
 
 def build_payload(experiment,model,replicate,dimension,draws,chains=4):

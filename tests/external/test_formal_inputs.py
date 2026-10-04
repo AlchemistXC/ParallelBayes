@@ -29,3 +29,11 @@ def test_formal_inputs_separate_target_repetition_and_keep_each_chain_prefix():
     assert stream_address('formal-unit','L1',100,'noise',0)!=stream_address('formal-unit','L2',0,'noise',0)
     mixture=build_payload('formal-unit','M1',0,8,3,chains=4)
     np.testing.assert_array_equal(mixture['initial'][:,0],[-5,5,-5,5])
+
+
+def test_formal_nuts_seeds_respect_frozen_uint32_provider_contract():
+    from formal_inputs import build_payload
+    payload=build_payload('formal-seed-contract','G1',0,8,4,chains=4)
+    # inference_nuts.sample_nuts and Pyro/NumPy accept uint32 seeds.
+    assert all(0 <= int(seed) < 2**32 for seed in payload['nuts_seeds'])
+    assert len(set(payload['nuts_seeds'].tolist())) == 4
