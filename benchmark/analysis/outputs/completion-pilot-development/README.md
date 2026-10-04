@@ -1,0 +1,1 @@
+本目录记录交接/机制工具的实际开发检查，非Windows/CUDA运行证据。沿已授权的协议、实际数组和恢复入口进行逐项失败→实现→通过检查。Windows协议2项通过；机制入口4项通过，包括实际NumPy轨迹、损坏证据拒绝和POSIX互斥。原生Windows msvcrt锁仍待Windows测试。18条torch.jit.script弃用警告保留，未为消除警告切换到未经核验的torch.compile。源码冻结后另运行Mac smoke，不将工具测试加到历史采样器计数。

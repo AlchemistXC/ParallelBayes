@@ -1,0 +1,22 @@
+...F                                                                     [100%]
+=================================== FAILURES ===================================
+__________ test_active_operating_system_lease_rejects_a_second_runner __________
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-33/test_active_operating_system_l0')
+
+    def test_active_operating_system_lease_rejects_a_second_runner(tmp_path):
+        m=module()
+>       with m.experiment_lease(tmp_path):
+             ^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'mechanism_runner' has no attribute 'experiment_lease'
+
+tests/handoff/test_mechanism_runner.py:69: AttributeError
+=============================== warnings summary ===============================
+tests/handoff/test_mechanism_runner.py: 18 warnings
+  /Users/haku/Workspace/ParallelBayes/.venv-completion/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/handoff/test_mechanism_runner.py::test_active_operating_system_lease_rejects_a_second_runner
+1 failed, 3 passed, 18 warnings in 1.28s

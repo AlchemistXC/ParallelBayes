@@ -1,0 +1,19 @@
+.F                                                                       [100%]
+=================================== FAILURES ===================================
+___________ test_non_windows_cannot_create_a_windows_runtime_receipt ___________
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-26/test_non_windows_cannot_create0')
+
+    @pytest.mark.skipif(sys.platform=='win32',reason='This checks rejection by a non-Windows host')
+    def test_non_windows_cannot_create_a_windows_runtime_receipt(tmp_path):
+        result=subprocess.run([sys.executable,str(ROOT/'scripts/completion/windows_wells.py'),'run',
+            '--device','cuda','--source',str(tmp_path/'source'),'--output',str(tmp_path/'output')],
+            capture_output=True,text=True)
+>       assert result.returncode!=0
+E       AssertionError: assert 0 != 0
+E        +  where 0 = CompletedProcess(args=['/Users/haku/Workspace/ParallelBayes/.venv-completion/bin/python', '/Users/haku/.codex/worktree...52rq33br0000gn/T/pytest-of-haku/pytest-26/test_non_windows_cannot_create0/output'], returncode=0, stdout='', stderr='').returncode
+
+tests/handoff/test_windows_wells_plan.py:39: AssertionError
+=========================== short test summary info ============================
+FAILED tests/handoff/test_windows_wells_plan.py::test_non_windows_cannot_create_a_windows_runtime_receipt
+1 failed, 1 passed in 0.03s

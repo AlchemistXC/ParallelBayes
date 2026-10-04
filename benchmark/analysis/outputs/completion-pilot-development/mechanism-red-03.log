@@ -1,0 +1,38 @@
+..F                                                                      [100%]
+=================================== FAILURES ===================================
+_ test_cost_probe_preserves_known_gaussian_transitions_and_reports_separate_costs _
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-30/test_cost_probe_preserves_know0')
+
+    def test_cost_probe_preserves_known_gaussian_transitions_and_reports_separate_costs(tmp_path):
+        module() # Configure the project Python import path.
+        import torch
+        from parallelbayes.torch_backend.models import make_model
+        s=importlib.util.spec_from_file_location('mechanism_probes',ROOT/'scripts/completion/mechanism_probes.py')
+>       m=importlib.util.module_from_spec(s);s.loader.exec_module(m)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/handoff/test_mechanism_runner.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen importlib._bootstrap_external>:995: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1132: in get_code
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <_frozen_importlib_external.SourceFileLoader object at 0x114912510>
+path = '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/mechanism_probes.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/mechanism_probes.py'
+
+<frozen importlib._bootstrap_external>:1190: FileNotFoundError
+=============================== warnings summary ===============================
+tests/handoff/test_mechanism_runner.py: 18 warnings
+  /Users/haku/Workspace/ParallelBayes/.venv-completion/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/handoff/test_mechanism_runner.py::test_cost_probe_preserves_known_gaussian_transitions_and_reports_separate_costs
+1 failed, 2 passed, 18 warnings in 1.12s

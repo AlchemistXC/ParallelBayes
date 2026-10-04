@@ -1,0 +1,9 @@
+....                                                                     [100%]
+=============================== warnings summary ===============================
+tests/handoff/test_mechanism_runner.py: 18 warnings
+  /Users/haku/Workspace/ParallelBayes/.venv-completion/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/haku/Workspace/ParallelBayes/output/research-completion/mechanism-tests.xml -
+4 passed, 18 warnings in 1.18s

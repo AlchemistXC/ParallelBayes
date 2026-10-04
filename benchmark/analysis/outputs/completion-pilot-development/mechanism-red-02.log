@@ -1,0 +1,21 @@
+.F                                                                       [100%]
+=================================== FAILURES ===================================
+_ test_actual_workflows_are_audited_and_resume_never_replaces_terminal_evidence _
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-28/test_actual_workflows_are_audi0')
+
+    def test_actual_workflows_are_audited_and_resume_never_replaces_terminal_evidence(tmp_path):
+        m=module()
+        spec=dict(kind='gaussian',dimension=1,mean=[0.],covariance=[[1.]],coordinate_id='identity')
+        group=dict(id='tiny',model='known_normal',kernel='mala',replicate=0,chains=1,draws=4,
+                   windows=[2],step_size=.1,role='runner_validation')
+        tape=dict(noise=np.array([[[.25],[-.5],[1.],[.1]]]),log_uniform=np.full((1,4),-1.),directions=np.ones((1,4,1)))
+        folder=tmp_path/'group'
+>       state=m.run_group(spec,group,tape,folder,'cpu',technical_replays=1)
+              ^^^^^^^^^^^
+E       AttributeError: module 'mechanism_runner' has no attribute 'run_group'
+
+tests/handoff/test_mechanism_runner.py:37: AttributeError
+=========================== short test summary info ============================
+FAILED tests/handoff/test_mechanism_runner.py::test_actual_workflows_are_audited_and_resume_never_replaces_terminal_evidence
+1 failed, 1 passed in 0.08s

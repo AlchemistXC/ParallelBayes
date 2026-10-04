@@ -1,0 +1,17 @@
+{
+  "status": "plan_checks_passed",
+  "runtime_verified": false,
+  "scope": "Source, protocol and input identity only; not a Windows/CUDA execution",
+  "protocols": [
+    {
+      "identity": "external-wells-windows-cpu-v1",
+      "protocol_sha256": "4c5eef4f7f1858e901d30e1e2f699c2b6c39e03cd53e82f4944056401488e06d",
+      "device": "cpu"
+    },
+    {
+      "identity": "external-wells-windows-cuda-v1",
+      "protocol_sha256": "bde0b76104fbe233105848a113d4b67b6ac1dca86231ee904a680ecc23741c5e",
+      "device": "cuda"
+    }
+  ]
+}

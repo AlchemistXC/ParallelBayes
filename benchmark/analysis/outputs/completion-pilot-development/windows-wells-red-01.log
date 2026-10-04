@@ -1,0 +1,30 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______ test_platform_protocol_preserves_scientific_fields_and_actual_tape ______
+
+    def test_platform_protocol_preserves_scientific_fields_and_actual_tape():
+        original=json.loads((ROOT/'benchmark/protocols/external-wells-validation-v2.json').read_text())
+>       cpu=module().platform_protocol(original,'cpu','a'*40,{})
+            ^^^^^^^^
+
+tests/handoff/test_windows_wells_plan.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_windows_wells_plan.py:12: in module
+    m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap_external>:995: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1132: in get_code
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <_frozen_importlib_external.SourceFileLoader object at 0x10ae3bf80>
+path = '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/windows_wells.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/windows_wells.py'
+
+<frozen importlib._bootstrap_external>:1190: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/handoff/test_windows_wells_plan.py::test_platform_protocol_preserves_scientific_fields_and_actual_tape
+1 failed in 0.01s

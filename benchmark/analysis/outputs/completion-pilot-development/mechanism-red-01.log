@@ -1,0 +1,29 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_____ test_design_includes_fixed_output_chain_allocation_and_step_contrast _____
+
+    def test_design_includes_fixed_output_chain_allocation_and_step_contrast():
+>       plan=module().design('windows')
+             ^^^^^^^^
+
+tests/handoff/test_mechanism_runner.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_mechanism_runner.py:10: in module
+    m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap_external>:995: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1132: in get_code
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <_frozen_importlib_external.SourceFileLoader object at 0x10b16fef0>
+path = '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/mechanism_runner.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/mechanism_runner.py'
+
+<frozen importlib._bootstrap_external>:1190: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/handoff/test_mechanism_runner.py::test_design_includes_fixed_output_chain_allocation_and_step_contrast
+1 failed in 0.01s
