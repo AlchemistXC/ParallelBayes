@@ -27,6 +27,13 @@ def read_attempt(directory):
         if assets!=record['original_assets']:raise ValueError('Recovery original asset checksum differs')
         binding=json.loads((directory/'binding.json').read_text())
         if fingerprint(binding)!=record['binding_sha256']:raise ValueError('Recovery binding checksum differs')
+        worker_result=directory/'attempt-0001/worker-result.json'
+        if worker_result.exists() and json.loads(worker_result.read_text()).get('status')=='failed':
+            raise ValueError('Recovery classification conflicts with known failed output')
+        if statefile.exists() and json.loads(statefile.read_text())['status']!='interrupted':
+            raise ValueError('Recovery conflicts with an existing final output classification')
+        if record.get('outcome')!='infrastructure_interruption' or record.get('samples_eligible') is not False:
+            raise ValueError('Recovery outcome classification is inconsistent')
         outcome='infrastructure_interruption';cost=record['cost_seconds'];digest=file_hash(recovery)
     else:
         state=json.loads(statefile.read_text());receipt=json.loads(completion.read_text())

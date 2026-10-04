@@ -54,3 +54,25 @@ time.sleep(.1)
     state=tmp_path/'output/state.json'
     content=json.loads(state.read_text());content['status']='completed';state.write_text(json.dumps(content))
     with pytest.raises(ValueError,match='checksum'):read_attempt(tmp_path/'output')
+
+
+def test_recovery_accounting_rejects_known_failed_output_even_with_consistent_hashes(tmp_path):
+    import json
+    from formal_runtime import execute_task, file_hash, fingerprint
+    from formal_outcomes import read_attempt
+    worker=tmp_path/'worker.py'
+    worker.write_text('''import json,sys
+from pathlib import Path
+(Path(sys.argv[2])/'worker-result.json').write_text(json.dumps(dict(status='failed',samples_eligible=False)))
+''')
+    directory=tmp_path/'failed'
+    execute_task({'id':'bad-recovery-classification'},{},worker,directory,tmp_path/'host.lock',1024,2**30)
+    (directory/'state.json').unlink();(directory/'completion.json').unlink()
+    # Artificial internally checksummed receipt representing the earlier
+    # missing-finalization classification bug, not an authentic experiment.
+    binding=json.loads((directory/'binding.json').read_text())
+    record=dict(original_assets={p.relative_to(directory).as_posix():file_hash(p) for p in directory.rglob('*') if p.is_file()},
+        binding_sha256=fingerprint(binding),outcome='infrastructure_interruption',samples_eligible=False,cost_seconds=None)
+    record['recovery_sha256']=fingerprint(record)
+    recovery=tmp_path/'failed.recovery';recovery.mkdir();(recovery/'recovery.json').write_text(json.dumps(record))
+    with pytest.raises(ValueError,match='failed output'):read_attempt(directory)
