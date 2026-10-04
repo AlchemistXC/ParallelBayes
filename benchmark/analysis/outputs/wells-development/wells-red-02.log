@@ -1,0 +1,41 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______ test_torch_target_derivatives_match_hand_worked_bernoulli_example _______
+
+    def test_torch_target_derivatives_match_hand_worked_bernoulli_example():
+        import torch
+>       model=factory().make_wells(dict(N=2,dist=[0.,100.],switched=[0,1]),backend="torch")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/external/test_wells.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+data = {'N': 2, 'dist': [0.0, 100.0], 'switched': [0, 1]}, backend = 'torch'
+device = 'cpu'
+
+    def make_wells(data, backend="numpy", device="cpu"):
+        n=data["N"]
+        distance=np.asarray(data["dist"],dtype=float)
+        switched=np.asarray(data["switched"],dtype=float)
+        if isinstance(n,bool) or int(n)!=n or n<1 or distance.shape!=(n,) or switched.shape!=(n,):
+            raise ValueError("Invalid wells data dimensions")
+        if not np.isfinite(distance).all() or (distance<0).any() or not np.isin(switched,[0,1]).all():
+            raise ValueError("Finite nonnegative distances and binary outcomes required")
+        x=np.column_stack((np.ones(n),distance/100.))
+        signed=2*switched-1
+        def reference(q):
+            return float(log_expit(signed*np.einsum("ij,j->i",x,q)).sum())
+        def gradient(q):
+            residual=switched-expit(np.einsum("ij,j->i",x,q))
+            return np.einsum("ij,i->j",x,residual)
+        spec=dict(kind="external_wells_distance",dimension=2,coordinate_id="alpha-beta-dist100-flat",
+            N=int(n),dist=distance.tolist(),switched=switched.astype(int).tolist(),
+            distance_divisor=100.,prior="flat in alpha and beta",parameter_order=["alpha","beta[1]"])
+        if backend!="numpy":
+>           raise ValueError("Unsupported external target backend")
+E           ValueError: Unsupported external target backend
+
+examples/external_wells.py:30: ValueError
+=========================== short test summary info ============================
+FAILED tests/external/test_wells.py::test_torch_target_derivatives_match_hand_worked_bernoulli_example
+1 failed, 1 deselected in 6.29s

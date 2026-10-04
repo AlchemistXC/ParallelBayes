@@ -1,0 +1,29 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_____ test_flat_target_preserves_distance_units_and_hand_worked_likelihood _____
+
+    def test_flat_target_preserves_distance_units_and_hand_worked_likelihood():
+        # p(y=0 at 0m)=1/4, p(y=1 at 100m)=6/7: product 3/14.
+>       model=factory().make_wells(dict(N=2,dist=[0.,100.],switched=[0,1]))
+              ^^^^^^^^^
+
+tests/external/test_wells.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/external/test_wells.py:14: in factory
+    spec.loader.exec_module(module)
+<frozen importlib._bootstrap_external>:995: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1132: in get_code
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <_frozen_importlib_external.SourceFileLoader object at 0x1073e5820>
+path = '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/examples/external_wells.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/examples/external_wells.py'
+
+<frozen importlib._bootstrap_external>:1190: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_wells.py::test_flat_target_preserves_distance_units_and_hand_worked_likelihood
+1 failed in 0.06s

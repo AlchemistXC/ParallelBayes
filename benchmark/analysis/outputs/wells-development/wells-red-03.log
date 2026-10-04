@@ -1,0 +1,17 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+____ test_repeated_opposite_outcomes_provide_a_valid_propriety_certificate _____
+
+    def test_repeated_opposite_outcomes_provide_a_valid_propriety_certificate():
+        f=factory()
+        # Two paired logits are alpha and alpha+2*beta. Their linear change of
+        # variables has determinant 2, so integral exp(-|u|-|v|) is 4/2=2.
+        data=dict(N=6,dist=[0.,0.,100.,100.,200.,200.],switched=[0,1,0,1,0,1])
+>       proof=f.propriety_certificate(data)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'external_wells' has no attribute 'propriety_certificate'
+
+tests/external/test_wells.py:45: AttributeError
+=========================== short test summary info ============================
+FAILED tests/external/test_wells.py::test_repeated_opposite_outcomes_provide_a_valid_propriety_certificate
+1 failed, 2 deselected in 0.13s
