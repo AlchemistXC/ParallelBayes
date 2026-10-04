@@ -1,0 +1,12 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_____ test_rejections_count_in_jump_score_and_failed_replicates_cannot_win _____
+
+    def test_rejections_count_in_jump_score_and_failed_replicates_cannot_win():
+>       from inference_tuning_stats import score_path,select_candidate
+E       ModuleNotFoundError: No module named 'inference_tuning_stats'
+
+tests/external/test_inference_tuning.py:12: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_inference_tuning.py::test_rejections_count_in_jump_score_and_failed_replicates_cannot_win
+1 failed in 0.04s

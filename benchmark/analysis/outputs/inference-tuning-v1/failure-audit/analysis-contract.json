@@ -1,0 +1,12 @@
+{
+  "scope": "post hoc failure localization, not new independent MCMC replicates or revised output acceptance",
+  "original_protocol_sha256": "6cc71de8a5a5949943f59b2972eb32814782b4ccdd149c6e1bc1961b3e8d4a92",
+  "original_source_commit": "2c052d22f00ef18cafd26cf78ffbff51e1ae514f",
+  "analysis_source_sha256": "2652ff1e8e6c5ce5ee14023e5d2fadd107eaf4911296648c901af81749d3e0eb",
+  "numpy": "2.2.6",
+  "torch": "2.13.0",
+  "torch_threads": 1,
+  "perturbation": "numpy.nextafter(initial[0], +inf), exactly one float64 ULP; other coordinates and all random arrays unchanged",
+  "same_state_check": "Both transitions evaluated at every original saved previous torch state",
+  "original_failures_remain_failed": true
+}

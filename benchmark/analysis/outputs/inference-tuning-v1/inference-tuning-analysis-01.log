@@ -1,0 +1,43 @@
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+{
+  "planned": 216,
+  "completed": 212,
+  "failed": 4,
+  "task_asset_hashes_verified": 860,
+  "scores_reconstructed": 212,
+  "max_abs_score_reconstruction_difference": 2.220446049250313e-16,
+  "binary_roundtrips_verified": 212,
+  "selected_target_kernel_groups": 18,
+  "grid_boundary_groups": [
+    {
+      "model": "H1",
+      "kernel": "rwm"
+    }
+  ],
+  "valid_fits_some_finite_rhat_gt_1_01": 170,
+  "valid_fits_some_undefined_rhat": 73,
+  "selected_groups_some_finite_rhat_gt_1_01": 14,
+  "selected_groups_some_undefined_rhat": 6,
+  "setup_seconds": 0.1282700856681913,
+  "all_case_seconds": 226.91706807981245,
+  "failed_case_seconds": 4.056107875192538,
+  "companion_R_process_seconds": 3.503299416974187,
+  "R": "R version 4.6.0 (2026-04-24)",
+  "posterior": "1.7.0",
+  "original_protocol_sha256": "6cc71de8a5a5949943f59b2972eb32814782b4ccdd149c6e1bc1961b3e8d4a92",
+  "original_source_commit": "2c052d22f00ef18cafd26cf78ffbff51e1ae514f",
+  "source_run_summary_sha256": "8af7ac0067cc7ed4c83d98a8d0609fe5245ba307c12d02ba20b1b353db20a7bd",
+  "analysis_sources": {
+    "scripts/completion/analyze_inference_tuning.py": "8d91dd41ca2d905201759e5052a614da1ff39fb07b099fb5a7c5b2894e75e7ba",
+    "scripts/completion/posterior_diagnostics.R": "bf5cb7fe7610c41db69e623a7e0e1c583d1f34616f5e9396c02e4a41a6b23786",
+    "scripts/completion/inference_estimands.py": "7f8bc24d9daa19cb855273828c421962f17e12a9b9e7c8a5e17f33f8143c7db8"
+  },
+  "scope": "Post hoc diagnostics for every valid tuning candidate, using historical estimands. No change to frozen selection; no formal accuracy or convergence claim.",
+  "independent_unit": "Two independent four-chain development runs per candidate. Within each repetition, candidates and kernels share actual inputs. Chains, draws, and candidate settings do not add independent repetitions.",
+  "formal_inference_complete": false
+}

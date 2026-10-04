@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-05",
+  "scope": "read-only progress audit; no resampling, score reconstruction or causal diagnosis",
+  "source_commit": "2c052d22f00ef18cafd26cf78ffbff51e1ae514f",
+  "protocol_sha256": "6cc71de8a5a5949943f59b2972eb32814782b4ccdd149c6e1bc1961b3e8d4a92",
+  "protocol_file_sha256": "c1edcbb72ed0569dae28e4250a9fb77e3634695953071e7a6b5b0596fafdcbab",
+  "summary_sha256": "8af7ac0067cc7ed4c83d98a8d0609fe5245ba307c12d02ba20b1b353db20a7bd",
+  "task_states": {
+    "completed": 212,
+    "failed": 4
+  },
+  "task_asset_hashes_checked": 860,
+  "task_asset_hash_mismatches": 0,
+  "failed_cases": [
+    {
+      "case": {
+        "model": "H1",
+        "kernel": "mala",
+        "step": 0.7691997708306179,
+        "multiplier": 1.6,
+        "replicate": 1,
+        "input": "H1-rep1.npz",
+        "id": "1bffac231cc6b7be05b2"
+      },
+      "state_relative": "H1/1bffac231cc6b7be05b2/state.json",
+      "audit": {
+        "passed": false,
+        "max_abs_path_error": [
+          0.0,
+          0.0,
+          10.608852932856847,
+          12.876632681491538
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          363,
+          395
+        ],
+        "max_abs_constrained_error": [
+          0.0,
+          0.0,
+          10.608852932856847,
+          12.876632681491538
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "stopping_reason": "solver_or_audit_failed",
+      "ordinary_draws_returned": false
+    },
+    {
+      "case": {
+        "model": "H1",
+        "kernel": "mala",
+        "step": 0.7691997708306179,
+        "multiplier": 1.6,
+        "replicate": 0,
+        "input": "H1-rep0.npz",
+        "id": "307399e12e0ba8bf88c3"
+      },
+      "state_relative": "H1/307399e12e0ba8bf88c3/state.json",
+      "audit": {
+        "passed": false,
+        "max_abs_path_error": [
+          8.871374275845906,
+          12.676050203513999,
+          0.0,
+          0.0
+        ],
+        "acceptance_mismatches": [
+          278,
+          309,
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          8.871374275845906,
+          12.676050203513999,
+          0.0,
+          0.0
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "stopping_reason": "solver_or_audit_failed",
+      "ordinary_draws_returned": false
+    },
+    {
+      "case": {
+        "model": "H1",
+        "kernel": "mala",
+        "step": 1.1537996562459267,
+        "multiplier": 2.4,
+        "replicate": 1,
+        "input": "H1-rep1.npz",
+        "id": "b12891261cc6d364574e"
+      },
+      "state_relative": "H1/b12891261cc6d364574e/state.json",
+      "audit": {
+        "passed": false,
+        "max_abs_path_error": [
+          0.0,
+          0.0,
+          11.608346198392102,
+          26.555966194656115
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          244,
+          242
+        ],
+        "max_abs_constrained_error": [
+          0.0,
+          0.0,
+          11.608346198392102,
+          26.555966194656115
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "stopping_reason": "solver_or_audit_failed",
+      "ordinary_draws_returned": false
+    },
+    {
+      "case": {
+        "model": "H1",
+        "kernel": "mala",
+        "step": 1.1537996562459267,
+        "multiplier": 2.4,
+        "replicate": 0,
+        "input": "H1-rep0.npz",
+        "id": "e39a12a7444cbe09c8ed"
+      },
+      "state_relative": "H1/e39a12a7444cbe09c8ed/state.json",
+      "audit": {
+        "passed": false,
+        "max_abs_path_error": [
+          14.646921480945904,
+          12.737814128175897,
+          0.0,
+          0.0
+        ],
+        "acceptance_mismatches": [
+          273,
+          261,
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          14.646921480945904,
+          12.737814128175897,
+          0.0,
+          0.0
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "stopping_reason": "solver_or_audit_failed",
+      "ordinary_draws_returned": false
+    }
+  ],
+  "formal_inference_complete": false,
+  "causes_resolved": false,
+  "raw_score_and_diagnostic_analysis_complete": false,
+  "remote_refs_read_at_progress_check": {
+    "windows-native-dev": "3a51f98fc8d10187b8f71e477aaff56d86ea50cd",
+    "codex/windows-return-audit": "0b46c75b7a8ef3ffce581b62a0be5f33731ed426",
+    "main": "a774d834497f2c134b2c4ab9129f221de39004ab"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "terminal_files": 1085,
+  "terminal_files_unchanged": true,
+  "newly_executed_cases": 0,
+  "invocation_file": "1791140843890722000.json",
+  "before_summary_sha256": "8af7ac0067cc7ed4c83d98a8d0609fe5245ba307c12d02ba20b1b353db20a7bd",
+  "after_summary_sha256": "1d911f8ec5595f869a4f9e748447e97d18503cbea6fb30701e1fd42a593b58dc",
+  "note": "Only root summary and a new invocation record can change; original invocation and all terminal target files remain."
+}

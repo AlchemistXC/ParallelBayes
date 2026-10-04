@@ -1,0 +1,16 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_spawned_cpu_chains_replay_serial_nuts_with_fixed_starts_and_rng_states __
+
+    def test_spawned_cpu_chains_replay_serial_nuts_with_fixed_starts_and_rng_states():
+        import torch
+        from parallelbayes import make_model
+        from affine_target import affine_model
+        from inference_nuts import sample_nuts
+>       from inference_parallel_nuts import sample_parallel_nuts
+E       ModuleNotFoundError: No module named 'inference_parallel_nuts'
+
+tests/external/test_inference_parallel.py:18: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_inference_parallel.py::test_spawned_cpu_chains_replay_serial_nuts_with_fixed_starts_and_rng_states
+1 failed in 0.96s

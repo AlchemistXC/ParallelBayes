@@ -1,0 +1,15 @@
+{
+  "cases": 4,
+  "chains": 16,
+  "inspected_transitions": 24576,
+  "identical_full_replays": 4,
+  "original_full_path_mismatching_chains": 8,
+  "perturbed_numpy_mismatching_chains": 8,
+  "same_state_torch_event_mismatches": 0,
+  "same_state_numpy_event_mismatches": 0,
+  "same_state_numpy_max_abs_residual": 3.552713678800501e-15,
+  "same_state_torch_max_abs_residual": 2.6645352591003757e-15,
+  "interpretation": "Observed long-recurrence sensitivity to float64 rounding is supported by common-state checks and one-ULP perturbations. Not a general proof of mathematical correctness or chaos, and not permission to relax the fixed-path gate.",
+  "original_failures_remain_failed": true,
+  "independent_statistical_replicates_added": 0
+}

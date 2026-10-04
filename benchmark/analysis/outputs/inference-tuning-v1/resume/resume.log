@@ -1,0 +1,16 @@
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+{
+  "protocol_sha256": "6cc71de8a5a5949943f59b2972eb32814782b4ccdd149c6e1bc1961b3e8d4a92",
+  "cases": 216,
+  "completed": 212,
+  "failed": 4,
+  "all_case_wall_seconds": 226.91706807981245,
+  "invocation_wall_seconds": 0.5249008750542998,
+  "scope": "MH step development, not formal posterior accuracy, convergence, acceleration or optimal tuning evidence",
+  "formal_inference_complete": false
+}

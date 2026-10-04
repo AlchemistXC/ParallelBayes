@@ -1,0 +1,1596 @@
+{
+  "protocol_sha256": "6cc71de8a5a5949943f59b2972eb32814782b4ccdd149c6e1bc1961b3e8d4a92",
+  "cases": 216,
+  "completed": 212,
+  "failed": 4,
+  "selections": [
+    {
+      "selected_step": 0.8485281374238569,
+      "candidates": [
+        {
+          "step": 0.17677669529663687,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.02478152235149817,
+            0.024572647071809058
+          ],
+          "mean_score": 0.024677084711653613
+        },
+        {
+          "step": 0.35355339059327373,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.07420288477967918,
+            0.07344807687352356
+          ],
+          "mean_score": 0.07382548082660137
+        },
+        {
+          "step": 0.5303300858899106,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.12056039702472054,
+            0.11972292659056524
+          ],
+          "mean_score": 0.1201416618076429
+        },
+        {
+          "step": 0.8485281374238569,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.15152126960928158,
+            0.14883761252318034
+          ],
+          "mean_score": 0.15017944106623096
+        },
+        {
+          "step": 1.2374368670764582,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.11543124146167673,
+            0.12458600386872459
+          ],
+          "mean_score": 0.12000862266520065
+        },
+        {
+          "step": 1.7677669529663687,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.054946959880976545,
+            0.059057738003064006
+          ],
+          "mean_score": 0.057002348942020276
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "G1",
+      "kernel": "rwm"
+    },
+    {
+      "selected_step": 0.8,
+      "candidates": [
+        {
+          "step": 0.05,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.10117047303510626,
+            0.10106397408962473
+          ],
+          "mean_score": 0.1011172235623655
+        },
+        {
+          "step": 0.15,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.3065338237222305,
+            0.3053952727406362
+          ],
+          "mean_score": 0.3059645482314334
+        },
+        {
+          "step": 0.3,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.5973757725971746,
+            0.5926334074651378
+          ],
+          "mean_score": 0.5950045900311562
+        },
+        {
+          "step": 0.5,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.8568258287060608,
+            0.890712455972424
+          ],
+          "mean_score": 0.8737691423392424
+        },
+        {
+          "step": 0.8,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.9347669587822895,
+            1.0150632539335054
+          ],
+          "mean_score": 0.9749151063578975
+        },
+        {
+          "step": 1.2,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.5872127767972295,
+            0.7811684712389216
+          ],
+          "mean_score": 0.6841906240180755
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "G1",
+      "kernel": "mala"
+    },
+    {
+      "selected_step": 0.3,
+      "candidates": [
+        {
+          "step": 0.0625,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.003073542961090253,
+            0.00307134874213001
+          ],
+          "mean_score": 0.0030724458516101314
+        },
+        {
+          "step": 0.125,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.009656273222096619,
+            0.009739570287067465
+          ],
+          "mean_score": 0.009697921754582041
+        },
+        {
+          "step": 0.1875,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.015753189329322934,
+            0.01596783497650882
+          ],
+          "mean_score": 0.015860512152915875
+        },
+        {
+          "step": 0.3,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.020320591619318828,
+            0.02161061746084751
+          ],
+          "mean_score": 0.02096560454008317
+        },
+        {
+          "step": 0.4375,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.016692683333745472,
+            0.016754272693377627
+          ],
+          "mean_score": 0.016723478013561548
+        },
+        {
+          "step": 0.625,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.009117255176378907,
+            0.011578003571738592
+          ],
+          "mean_score": 0.01034762937405875
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "G2",
+      "kernel": "rwm"
+    },
+    {
+      "selected_step": 0.4000000000000001,
+      "candidates": [
+        {
+          "step": 0.025000000000000005,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.05007356258416574,
+            0.0501687426376075
+          ],
+          "mean_score": 0.05012115261088662
+        },
+        {
+          "step": 0.07500000000000001,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.1479405557816856,
+            0.1476403694017905
+          ],
+          "mean_score": 0.14779046259173806
+        },
+        {
+          "step": 0.15000000000000002,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.2802864949566515,
+            0.2787754435613176
+          ],
+          "mean_score": 0.2795309692589846
+        },
+        {
+          "step": 0.25000000000000006,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.40872696665115194,
+            0.4048596450306031
+          ],
+          "mean_score": 0.40679330584087753
+        },
+        {
+          "step": 0.4000000000000001,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.44889783290045526,
+            0.4401455377175362
+          ],
+          "mean_score": 0.4445216853089957
+        },
+        {
+          "step": 0.6000000000000001,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.2808445352976252,
+            0.3207310202611162
+          ],
+          "mean_score": 0.3007877777793707
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "G2",
+      "kernel": "mala"
+    },
+    {
+      "selected_step": 0.3,
+      "candidates": [
+        {
+          "step": 0.0625,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.0030764351165777403,
+            0.0030223891901974102
+          ],
+          "mean_score": 0.0030494121533875753
+        },
+        {
+          "step": 0.125,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.00956576293229989,
+            0.009532026785241461
+          ],
+          "mean_score": 0.009548894858770675
+        },
+        {
+          "step": 0.1875,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.015518809019094413,
+            0.01567655117554618
+          ],
+          "mean_score": 0.015597680097320297
+        },
+        {
+          "step": 0.3,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.020475551767390097,
+            0.020239725549264734
+          ],
+          "mean_score": 0.020357638658327418
+        },
+        {
+          "step": 0.4375,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.014041928419435823,
+            0.019193132436467628
+          ],
+          "mean_score": 0.016617530427951725
+        },
+        {
+          "step": 0.625,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.009720924904556423,
+            0.009459450774771713
+          ],
+          "mean_score": 0.009590187839664067
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "A1",
+      "kernel": "rwm"
+    },
+    {
+      "selected_step": 0.4000000000000001,
+      "candidates": [
+        {
+          "step": 0.025000000000000005,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.05028182173925326,
+            0.05013458578221193
+          ],
+          "mean_score": 0.050208203760732595
+        },
+        {
+          "step": 0.07500000000000001,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.14907629630977307,
+            0.14851483984476083
+          ],
+          "mean_score": 0.14879556807726696
+        },
+        {
+          "step": 0.15000000000000002,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.2812773177401713,
+            0.2820995056661523
+          ],
+          "mean_score": 0.2816884117031618
+        },
+        {
+          "step": 0.25000000000000006,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.4057698285875646,
+            0.41042178078252184
+          ],
+          "mean_score": 0.40809580468504325
+        },
+        {
+          "step": 0.4000000000000001,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.4613836187512914,
+            0.480193311848226
+          ],
+          "mean_score": 0.4707884652997587
+        },
+        {
+          "step": 0.6000000000000001,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.2606205053683376,
+            0.34429485959538353
+          ],
+          "mean_score": 0.30245768248186056
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "A1",
+      "kernel": "mala"
+    },
+    {
+      "selected_step": 0.8485281374238569,
+      "candidates": [
+        {
+          "step": 0.17677669529663687,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.024674690500446003,
+            0.024318491754275078
+          ],
+          "mean_score": 0.02449659112736054
+        },
+        {
+          "step": 0.35355339059327373,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.0739365055868037,
+            0.07408891459761845
+          ],
+          "mean_score": 0.07401271009221108
+        },
+        {
+          "step": 0.5303300858899106,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.11958835207813917,
+            0.12197165632177216
+          ],
+          "mean_score": 0.12078000419995566
+        },
+        {
+          "step": 0.8485281374238569,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.15624681392206735,
+            0.1684085010779493
+          ],
+          "mean_score": 0.16232765750000833
+        },
+        {
+          "step": 1.2374368670764582,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.14014852143894307,
+            0.15286696545919964
+          ],
+          "mean_score": 0.14650774344907136
+        },
+        {
+          "step": 1.7677669529663687,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.06814132906549017,
+            0.06494714428975519
+          ],
+          "mean_score": 0.06654423667762269
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "L1",
+      "kernel": "rwm"
+    },
+    {
+      "selected_step": 0.8,
+      "candidates": [
+        {
+          "step": 0.05,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.10055956969458713,
+            0.1005762730734373
+          ],
+          "mean_score": 0.10056792138401222
+        },
+        {
+          "step": 0.15,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.30399921253657025,
+            0.3020305128982287
+          ],
+          "mean_score": 0.30301486271739947
+        },
+        {
+          "step": 0.3,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.5899686420760637,
+            0.5832085664420785
+          ],
+          "mean_score": 0.5865886042590711
+        },
+        {
+          "step": 0.5,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.8782942651759116,
+            0.8732669358898777
+          ],
+          "mean_score": 0.8757806005328946
+        },
+        {
+          "step": 0.8,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            1.0182431304002453,
+            0.9937171381048309
+          ],
+          "mean_score": 1.005980134252538
+        },
+        {
+          "step": 1.2,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.6835464224252177,
+            0.7618810911415828
+          ],
+          "mean_score": 0.7227137567834002
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "L1",
+      "kernel": "mala"
+    },
+    {
+      "selected_step": 0.8485281374238569,
+      "candidates": [
+        {
+          "step": 0.17677669529663687,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.02364713387575078,
+            0.02431535401563197
+          ],
+          "mean_score": 0.023981243945691375
+        },
+        {
+          "step": 0.35355339059327373,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.07203186402516086,
+            0.07410619130175031
+          ],
+          "mean_score": 0.07306902766345558
+        },
+        {
+          "step": 0.5303300858899106,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.12070332942019463,
+            0.1183229761634011
+          ],
+          "mean_score": 0.11951315279179786
+        },
+        {
+          "step": 0.8485281374238569,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.15415929090636407,
+            0.1532815034530934
+          ],
+          "mean_score": 0.15372039717972874
+        },
+        {
+          "step": 1.2374368670764582,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.13671910685873317,
+            0.13548566295529485
+          ],
+          "mean_score": 0.136102384907014
+        },
+        {
+          "step": 1.7677669529663687,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.06059674010545689,
+            0.08506326187218559
+          ],
+          "mean_score": 0.07283000098882124
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "L2",
+      "kernel": "rwm"
+    },
+    {
+      "selected_step": 0.8,
+      "candidates": [
+        {
+          "step": 0.05,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.10071095775922767,
+            0.10008234288782217
+          ],
+          "mean_score": 0.10039665032352492
+        },
+        {
+          "step": 0.15,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.3023315516768943,
+            0.3035731864895742
+          ],
+          "mean_score": 0.30295236908323425
+        },
+        {
+          "step": 0.3,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.5814983636996666,
+            0.5829664805039736
+          ],
+          "mean_score": 0.58223242210182
+        },
+        {
+          "step": 0.5,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.8652607683610678,
+            0.8671069821548113
+          ],
+          "mean_score": 0.8661838752579396
+        },
+        {
+          "step": 0.8,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            1.0273586055656467,
+            1.016929243285163
+          ],
+          "mean_score": 1.022143924425405
+        },
+        {
+          "step": 1.2,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.6818246072218912,
+            0.6900929490170296
+          ],
+          "mean_score": 0.6859587781194604
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "L2",
+      "kernel": "mala"
+    },
+    {
+      "selected_step": 1.6666666666666667,
+      "candidates": [
+        {
+          "step": 0.16666666666666666,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.018606702329080106,
+            0.0201345431102099
+          ],
+          "mean_score": 0.019370622719645004
+        },
+        {
+          "step": 0.3333333333333333,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.04024601486815528,
+            0.05186948525256133
+          ],
+          "mean_score": 0.04605775006035831
+        },
+        {
+          "step": 0.5,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.05568480968793081,
+            0.10218984817695066
+          ],
+          "mean_score": 0.07893732893244074
+        },
+        {
+          "step": 0.7999999999999999,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.1489838922003035,
+            0.25011223365216906
+          ],
+          "mean_score": 0.19954806292623628
+        },
+        {
+          "step": 1.1666666666666667,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.2005165722005049,
+            0.19661285142426954
+          ],
+          "mean_score": 0.19856471181238722
+        },
+        {
+          "step": 1.6666666666666667,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.2670708881292031,
+            0.182057936794077
+          ],
+          "mean_score": 0.22456441246164005
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "H1",
+      "kernel": "rwm"
+    },
+    {
+      "selected_step": 0.4807498567691361,
+      "candidates": [
+        {
+          "step": 0.048074985676913616,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.040169649495119364,
+            0.07936423849432306
+          ],
+          "mean_score": 0.05976694399472121
+        },
+        {
+          "step": 0.14422495703074084,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.11405787492404426,
+            0.11032803116106063
+          ],
+          "mean_score": 0.11219295304255245
+        },
+        {
+          "step": 0.2884499140614817,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.11971677189161382,
+            0.16196003443301382
+          ],
+          "mean_score": 0.14083840316231383
+        },
+        {
+          "step": 0.4807498567691361,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.16570828880307456,
+            0.19407870577292183
+          ],
+          "mean_score": 0.1798934972879982
+        },
+        {
+          "step": 0.7691997708306179,
+          "eligible": false,
+          "statuses": [
+            "failed",
+            "failed"
+          ],
+          "scores": [
+            null,
+            null
+          ],
+          "mean_score": null
+        },
+        {
+          "step": 1.1537996562459267,
+          "eligible": false,
+          "statuses": [
+            "failed",
+            "failed"
+          ],
+          "scores": [
+            null,
+            null
+          ],
+          "mean_score": null
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "H1",
+      "kernel": "mala"
+    },
+    {
+      "selected_step": 0.7999999999999999,
+      "candidates": [
+        {
+          "step": 0.16666666666666666,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.0225700485802648,
+            0.022237664965581248
+          ],
+          "mean_score": 0.022403856772923024
+        },
+        {
+          "step": 0.3333333333333333,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.06875817150400777,
+            0.06671566332965498
+          ],
+          "mean_score": 0.06773691741683138
+        },
+        {
+          "step": 0.5,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.11434450339728035,
+            0.11083844389244336
+          ],
+          "mean_score": 0.11259147364486186
+        },
+        {
+          "step": 0.7999999999999999,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.1510873870096358,
+            0.14986250393732897
+          ],
+          "mean_score": 0.1504749454734824
+        },
+        {
+          "step": 1.1666666666666667,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.139327693180604,
+            0.14150469434237317
+          ],
+          "mean_score": 0.1404161937614886
+        },
+        {
+          "step": 1.6666666666666667,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.08287170815150656,
+            0.07162462745862437
+          ],
+          "mean_score": 0.07724816780506547
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "H2",
+      "kernel": "rwm"
+    },
+    {
+      "selected_step": 0.7691997708306179,
+      "candidates": [
+        {
+          "step": 0.048074985676913616,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.09770728479557346,
+            0.09693380053439411
+          ],
+          "mean_score": 0.09732054266498379
+        },
+        {
+          "step": 0.14422495703074084,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.29474508910151237,
+            0.2913994769654603
+          ],
+          "mean_score": 0.2930722830334863
+        },
+        {
+          "step": 0.2884499140614817,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.5651595989206968,
+            0.5603277109573733
+          ],
+          "mean_score": 0.562743654939035
+        },
+        {
+          "step": 0.4807498567691361,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.8349526503445184,
+            0.8415164641872596
+          ],
+          "mean_score": 0.8382345572658889
+        },
+        {
+          "step": 0.7691997708306179,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.9977884208938159,
+            0.9855434316265187
+          ],
+          "mean_score": 0.9916659262601673
+        },
+        {
+          "step": 1.1537996562459267,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.664575028689453,
+            0.7378841115316277
+          ],
+          "mean_score": 0.7012295701105403
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "H2",
+      "kernel": "mala"
+    },
+    {
+      "selected_step": 0.8485281374238569,
+      "candidates": [
+        {
+          "step": 0.17677669529663687,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.024379165478296605,
+            0.024678631286837092
+          ],
+          "mean_score": 0.024528898382566847
+        },
+        {
+          "step": 0.35355339059327373,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.07364126667806596,
+            0.07188391697518048
+          ],
+          "mean_score": 0.07276259182662323
+        },
+        {
+          "step": 0.5303300858899106,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.11619551927913285,
+            0.11771034717247816
+          ],
+          "mean_score": 0.11695293322580551
+        },
+        {
+          "step": 0.8485281374238569,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.1435433758378033,
+            0.15291961895045372
+          ],
+          "mean_score": 0.1482314973941285
+        },
+        {
+          "step": 1.2374368670764582,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.1193208166127214,
+            0.11724857784323747
+          ],
+          "mean_score": 0.11828469722797944
+        },
+        {
+          "step": 1.7677669529663687,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.050474362020171526,
+            0.059353769403359374
+          ],
+          "mean_score": 0.05491406571176545
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "M1",
+      "kernel": "rwm"
+    },
+    {
+      "selected_step": 0.8,
+      "candidates": [
+        {
+          "step": 0.05,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.10171725263975981,
+            0.10166644496191823
+          ],
+          "mean_score": 0.10169184880083902
+        },
+        {
+          "step": 0.15,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.30639090450349393,
+            0.3049868300030919
+          ],
+          "mean_score": 0.3056888672532929
+        },
+        {
+          "step": 0.3,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.590053300172583,
+            0.5816905824223031
+          ],
+          "mean_score": 0.585871941297443
+        },
+        {
+          "step": 0.5,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.8600173166957283,
+            0.8429383333907179
+          ],
+          "mean_score": 0.8514778250432231
+        },
+        {
+          "step": 0.8,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.9999280674915876,
+            0.9093751582916682
+          ],
+          "mean_score": 0.9546516128916278
+        },
+        {
+          "step": 1.2,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.5926685919816945,
+            0.5949866583532133
+          ],
+          "mean_score": 0.5938276251674539
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "M1",
+      "kernel": "mala"
+    },
+    {
+      "selected_step": 1.6970562748477138,
+      "candidates": [
+        {
+          "step": 0.35355339059327373,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.09533612761251045,
+            0.09369729191273918
+          ],
+          "mean_score": 0.09451670976262481
+        },
+        {
+          "step": 0.7071067811865475,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.2684005255788948,
+            0.25497189249767915
+          ],
+          "mean_score": 0.261686209038287
+        },
+        {
+          "step": 1.0606601717798212,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.403710725124786,
+            0.40829658624510107
+          ],
+          "mean_score": 0.40600365568494357
+        },
+        {
+          "step": 1.6970562748477138,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.5295604555853834,
+            0.47648348646410865
+          ],
+          "mean_score": 0.5030219710247461
+        },
+        {
+          "step": 2.4748737341529163,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.4240807417230423,
+            0.40569795599280356
+          ],
+          "mean_score": 0.41488934885792295
+        },
+        {
+          "step": 3.5355339059327373,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.34325671567326466,
+            0.3193288772365348
+          ],
+          "mean_score": 0.33129279645489973
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "W1",
+      "kernel": "rwm"
+    },
+    {
+      "selected_step": 1.2699208415745595,
+      "candidates": [
+        {
+          "step": 0.07937005259840997,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.16514894889708176,
+            0.16629472709514115
+          ],
+          "mean_score": 0.16572183799611145
+        },
+        {
+          "step": 0.2381101577952299,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.5026741652001959,
+            0.5078758702262982
+          ],
+          "mean_score": 0.505275017713247
+        },
+        {
+          "step": 0.4762203155904598,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.9895914234714129,
+            1.0069097632719832
+          ],
+          "mean_score": 0.9982505933716981
+        },
+        {
+          "step": 0.7937005259840997,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            1.4814772352131522,
+            1.4359255200906043
+          ],
+          "mean_score": 1.4587013776518782
+        },
+        {
+          "step": 1.2699208415745595,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            1.6134761509841506,
+            1.5439692885666076
+          ],
+          "mean_score": 1.5787227197753793
+        },
+        {
+          "step": 1.9048812623618392,
+          "eligible": true,
+          "statuses": [
+            "completed",
+            "completed"
+          ],
+          "scores": [
+            0.9828701164930006,
+            1.0931519352989483
+          ],
+          "mean_score": 1.0380110258959745
+        }
+      ],
+      "reason": "maximum mean ESJD/d across all planned valid development replicates; exact ties choose smaller step",
+      "failures_deleted": false,
+      "statistical_convergence_claim": false,
+      "model": "W1",
+      "kernel": "mala"
+    }
+  ],
+  "all_case_wall_seconds": 226.91706807981245,
+  "invocation_wall_seconds": 227.28777016699314,
+  "scope": "MH step development, not formal posterior accuracy, convergence, acceleration or optimal tuning evidence",
+  "formal_inference_complete": false
+}

@@ -1,0 +1,19 @@
+{"case": "307399e12e0ba8bf88c3", "replay_identical": true, "same_state_numpy_mismatches": 0, "same_state_numpy_max_error": 1.7763568394002505e-15}
+{"case": "1bffac231cc6b7be05b2", "replay_identical": true, "same_state_numpy_mismatches": 0, "same_state_numpy_max_error": 2.220446049250313e-15}
+{"case": "e39a12a7444cbe09c8ed", "replay_identical": true, "same_state_numpy_mismatches": 0, "same_state_numpy_max_error": 3.1086244689504383e-15}
+{"case": "b12891261cc6d364574e", "replay_identical": true, "same_state_numpy_mismatches": 0, "same_state_numpy_max_error": 3.552713678800501e-15}
+{
+  "cases": 4,
+  "chains": 16,
+  "inspected_transitions": 24576,
+  "identical_full_replays": 4,
+  "original_full_path_mismatching_chains": 8,
+  "perturbed_numpy_mismatching_chains": 8,
+  "same_state_torch_event_mismatches": 0,
+  "same_state_numpy_event_mismatches": 0,
+  "same_state_numpy_max_abs_residual": 3.552713678800501e-15,
+  "same_state_torch_max_abs_residual": 2.6645352591003757e-15,
+  "interpretation": "Observed long-recurrence sensitivity to float64 rounding is supported by common-state checks and one-ULP perturbations. Not a general proof of mathematical correctness or chaos, and not permission to relax the fixed-path gate.",
+  "original_failures_remain_failed": true,
+  "independent_statistical_replicates_added": 0
+}

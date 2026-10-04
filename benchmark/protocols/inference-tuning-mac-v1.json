@@ -1,0 +1,2167 @@
+{
+  "identity": "inference-tuning-mac-v1",
+  "required_platform": "darwin",
+  "device": "cpu",
+  "torch_threads": 1,
+  "source_commit": "2c052d22f00ef18cafd26cf78ffbff51e1ae514f",
+  "source_files": {
+    "benchmark/protocols/windows-native-v1.json": "6a9f830d2b870ab693ee7db57942b11d35d22aef9fd31039c09a1a90e37ec12d",
+    "examples/affine_target.py": "d8e9acf8b048ee53a39c4b7479132fc378307ee4a899d7aa3732c4b39d4a63b3",
+    "examples/external_wells.py": "cf5e8a49dff8aaa0d6e6e0df1fd262235c44365333b43f17c0b356d013546bfe",
+    "models/external/wells/source-manifest.json": "b64415687a58d3e2c34444d9e32523154b6002d960e505e31e2510d8356420ab",
+    "pyproject.toml": "ce585b7f3307e42252c7eb92d441940e3eb44c6d664a4397fa1bebc06c1676cc",
+    "r-package/DESCRIPTION": "f43612d521a0f4f785a2498e1db8339cc3450b8ee45a6f2e830a48218e45505f",
+    "r-package/R/interface.R": "c65b5f756b8a0311533b7c70fc84ca6a87167e4914db5ce7a03f561c09b8b0ee",
+    "r-package/inst/python/parallelbayes/__init__.py": "fe5f3d261b2ec64708896f927cac896a6d9a2f2f394865a729325d4e5cb289ac",
+    "r-package/inst/python/parallelbayes/cli.py": "04747ea8498daa0a4febd59b21117ed252b349de8f90b380af3d3662aa68504e",
+    "r-package/inst/python/parallelbayes/executors.py": "aaa7f2cd8f42fd3a854a0251e37f420c5b69f42192feef03f21f5c563f8b0d40",
+    "r-package/inst/python/parallelbayes/experiment.py": "575be4a6ff786c69533e084c53c1838026784a51a514758fb0fc1237cef02003",
+    "r-package/inst/python/parallelbayes/kernels.py": "69461150e93d261079a1a28dcb0d9b3a7e499553bd86d09642c7b2a7988beae2",
+    "r-package/inst/python/parallelbayes/models.py": "dd3fa67d962c8e3ffcb2ff38585eae6b69d887a3439e4db39a76195674615613",
+    "r-package/inst/python/parallelbayes/nuts.py": "425258c803b74381220e04d4acb58011a7480f61d082f080ead5ce47ac3524f3",
+    "r-package/inst/python/parallelbayes/output.py": "201b016e957137f40d1a350f4b4344be2090327b60d8fa5727ccc4370c7dc645",
+    "r-package/inst/python/parallelbayes/reference.py": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1",
+    "r-package/inst/python/parallelbayes/sampling.py": "db7d7e751dc53f98a5e4c43ee50a23f83ede763ce54909ceeb71bfd6a932b5ad",
+    "r-package/inst/python/parallelbayes/stan.py": "297c3e6d572a2eea86222b39c3572dc7efecc84d669624940c005ae1578c7e3b",
+    "r-package/inst/python/parallelbayes/torch_backend/__init__.py": "45d1a5e10721e3b7b4d0136dcba8a9c7718de5031aec9a012bafc25c2d1d5b8a",
+    "r-package/inst/python/parallelbayes/torch_backend/executors.py": "90fbe42ab3f878dfbd4575fac9db9f3103ac1817b907224a47fa2d0650bf3e4f",
+    "r-package/inst/python/parallelbayes/torch_backend/kernels.py": "c457d39ff2e8def2005c1a4c594664b6d4b826688e9008422eebcefc457e59e6",
+    "r-package/inst/python/parallelbayes/torch_backend/models.py": "895677cf1c3f6577b3594637821712cda949f21ebe83233e9feb1fff1913c41b",
+    "r-package/inst/python/parallelbayes/torch_backend/nuts_baseline.py": "984c1f7a94745c5b85be01d8deee89277d8d2337ee5375693802877feed9ef89",
+    "r-package/inst/python/parallelbayes/torch_backend/sampling.py": "907ac8bcfebe9136db33f8b0fe8fa6e6c39d1481c8c2c2225163ccddd7e2fdba",
+    "scripts/completion/inference_nuts.py": "52c0999d77bcfb4b1dc8909e254dbe81a807dadcbf452f340a503b01851caa68",
+    "scripts/completion/inference_readiness.py": "6703ea514d36c511731d51a580252ecf1f36e86e9ae82616e85ebf3df2dd5898",
+    "scripts/completion/inference_setup.py": "8d81acdd2404eec357da8540ca44617acff3795bd912f8d0ca9b5a347bcea4d5",
+    "scripts/completion/inference_tuning.py": "d374216db62c37a078e13c9e6fde5bec3ca526c80e55ff86d75f3c1f929e000a",
+    "scripts/completion/inference_tuning_stats.py": "c2dee08cc91c69ae0ecfedd4ebc94347553fec6c26f598a83da420320227593c",
+    "scripts/completion/mechanism_runner.py": "e4724ca77e6d901f3900bca9a302cb00e2e6699a1f40acda5126088ecda89c25",
+    "scripts/windows/analyze_study.py": "ff8711b1a4e6f046521c4d1caf241308a8e6d35db80d3585d42d2d30a88c3198",
+    "scripts/windows/archive_draft_sources.py": "b2616c87ba492295a08c768c295fb1cf0e8cb1f523804424d11b4f7649e6561f",
+    "scripts/windows/assemble_evidence.py": "f93fdb5135730b916e44ad43db26ecad2ace6fa47afe7f9aa72fad572b977e6b",
+    "scripts/windows/audit_skills.py": "bc673efd59da64008484a4f0fb8e6af04021ec409a2f13891c858bb5a24ab16f",
+    "scripts/windows/bootstrap.ps1": "29f816eeab10607398486f16c2ab8431809cc12a1d3dca76da000bbb3d5058cc",
+    "scripts/windows/evidence.py": "3ac12063b1a352b46d42f7404bb489c32f769471867d8734f31d056458447396",
+    "scripts/windows/export_results.py": "88d074c41250d7e58328cd0142471c4e1535272f758219b7092f52e01b442786",
+    "scripts/windows/install_local_skills.py": "3bbdcfce7116796e764c0a193d98a512da9824af7789c294345abb8de83b6df8",
+    "scripts/windows/install_r_packages.R": "378f0b34266e2022f1b0dd893f9c22db0f1e490196eb478abf406dc5e457bd9b",
+    "scripts/windows/modern_diagnostics.R": "869b0317cbf1397ae41903b722f600db7566cd7ed9fd55e68d41c2104ff79739",
+    "scripts/windows/prepare_release_assets.py": "5fbd1aa1f78ad6604c315bea57c0ce72c301e85320e94b662cb28c75fa960bff",
+    "scripts/windows/probe_environment.py": "d1c4903ad7260a18568c6b7f5e4b62ab8945cbe13b71c3ee7781050bcf20ce99",
+    "scripts/windows/run_study.py": "4eb09164a3b3cc38478f6c34c439404bee8fc2fc0b436f65bf11ad22a1475613",
+    "scripts/windows/statistical_check.py": "836b15d8c8809d872625857f3eed46e2cbf0b063e9ab5ad496764186eb442ac9",
+    "scripts/windows/summarize_sbc.py": "8643b017a4939547ff951312154ae6a3a522033f56f45d85d7789cd9b6d100ef",
+    "scripts/windows/validate_backend.py": "69f56b661eb815989c60b5101c291389c69c1499ff975477a29c99f426f4777e",
+    "scripts/windows/validate_r.R": "d97f35d8d510799d2db587325ab157e1019de54e973b11a9d3a6590591bcb419",
+    "tests/windows/test_evidence.py": "9365848719c9345c9bd9f1ecb8cb1f0abec2ec560be403536b07745043fae92e",
+    "tests/windows/test_torch_backend.py": "eb0fd59ea2bc4c575c36866af1b66cb76b52ac5c551ae768918dc12aba9afe68"
+  },
+  "targets": [
+    {
+      "name": "G1",
+      "dimension": 8,
+      "geometry": "identity"
+    },
+    {
+      "name": "G2",
+      "dimension": 64,
+      "geometry": "laplace"
+    },
+    {
+      "name": "A1",
+      "dimension": 64,
+      "geometry": "laplace"
+    },
+    {
+      "name": "L1",
+      "dimension": 8,
+      "geometry": "laplace"
+    },
+    {
+      "name": "L2",
+      "dimension": 8,
+      "geometry": "laplace"
+    },
+    {
+      "name": "H1",
+      "dimension": 9,
+      "geometry": "identity"
+    },
+    {
+      "name": "H2",
+      "dimension": 9,
+      "geometry": "identity"
+    },
+    {
+      "name": "M1",
+      "dimension": 8,
+      "geometry": "identity"
+    },
+    {
+      "name": "W1",
+      "dimension": 2,
+      "geometry": "laplace"
+    }
+  ],
+  "chains": 4,
+  "warmup": 512,
+  "retained": 1024,
+  "replicates": [
+    0,
+    1
+  ],
+  "multiplier_grid": {
+    "rwm": [
+      0.5,
+      1.0,
+      1.5,
+      2.4,
+      3.5,
+      5.0
+    ],
+    "mala": [
+      0.1,
+      0.3,
+      0.6,
+      1.0,
+      1.6,
+      2.4
+    ]
+  },
+  "step_rule": {
+    "rwm": "multiplier / sqrt(d)",
+    "mala": "multiplier / d**(1/3)"
+  },
+  "initial_seed_base": 6251000,
+  "tape_seed_base": 6252000,
+  "solver_seed_base": 6253000,
+  "max_iter": 2048,
+  "memory_limit_mb": 2048,
+  "window": 8,
+  "statistical_unit": "One independent four-chain developmental run; two per candidate. Candidates share actual input arrays within replicate; chains/time steps are not independent experiments.",
+  "selection": "Within each target/kernel, maximize mean ESJD/d over both valid development replicates after 512 discarded steps; all rejection self-transitions count. Exact ties choose smaller step. Any failed/missing replicate makes candidate ineligible; all retained. No positive score yields no selection.",
+  "scope": "MH step development, not formal posterior accuracy, convergence, acceleration or optimal tuning evidence",
+  "timing": "Every candidate, setup, independent audit and selection cost retained; score is not divided by measured time. Hardware contention cannot choose a faster-scoring candidate.",
+  "failure": "Retain all failures/partial outputs; no fallback, no resampling, no grid expansion under this identity",
+  "future": "Budget pilot and formal evaluation must use independent seed namespaces; selected steps require diagnostics and error evaluation. This is not an automatic method selector.",
+  "master_inputs": {
+    "G1-rep0.npz": {
+      "sha256": "3b875f58f56a5a8c5e81c77693f464ffd7a51e732ff3f8e7497d2633e9395081",
+      "actual_sha256": "9d4f945423240e89a687ee71d9f58df68e2a51f307b1f05b85eaf03f9ef91a70"
+    },
+    "G1-rep1.npz": {
+      "sha256": "c070f51578024781176f9956683cc0797fc3459bba5199a1d3c70ab6245cb5eb",
+      "actual_sha256": "8d4a99d4bc145221f9846e1bbe911036a7aef04923a6ba43150a78cb7700c644"
+    },
+    "G2-rep0.npz": {
+      "sha256": "f0547ad27c19a52720806a01d85b9868868cc80dcb3419db238aca5ba29c2358",
+      "actual_sha256": "882918df0689362cfbbb6ee080535f6a98c60eff07d8198cd58095323b31c64e"
+    },
+    "G2-rep1.npz": {
+      "sha256": "4d0d69c3582bcc01edf5a4b5e0add2569229d900ba2a47ad41034149f7f2ae15",
+      "actual_sha256": "994b677b4aa9dc5fbf7d735085509f984cf4c02f4c117d9e21189d66a50d5aff"
+    },
+    "A1-rep0.npz": {
+      "sha256": "5efd6ae12048e2d5f4c3fb24396ff9024f0a5c4074f75a276d0184e26a2b85c4",
+      "actual_sha256": "edc4b78089656e18381eacd8e2128675288d73d6324333413dc9a9956c755b6e"
+    },
+    "A1-rep1.npz": {
+      "sha256": "e0683d6074b02e53780c83c9944cf07d7e51d00f5080b1ba7a8b8f02eb931570",
+      "actual_sha256": "0cb4ae82e8b137b2d60fce2de18eea76b885568d44d90f54efc95bcae206a646"
+    },
+    "L1-rep0.npz": {
+      "sha256": "24cb0481c44ba12c0f8d8e9fe18a9897a875a274227d6f283c1bb99162a6b16d",
+      "actual_sha256": "a642bc38b43c1f585973a314cc5f944a7f5ffb2705a6f7e7927f35b6263739b3"
+    },
+    "L1-rep1.npz": {
+      "sha256": "e014ec1cf325718a27a92af222ac8099855da728c0bdaae823b90c60c4bbd31b",
+      "actual_sha256": "d84a1ebd59acec8df025d00c34db549b23a3819e3f9794be7404a8c4561cd730"
+    },
+    "L2-rep0.npz": {
+      "sha256": "812f66e73f35ddab2fd4675b7f29193b143c6143a735bf2be5bde8adc2518e19",
+      "actual_sha256": "57fccc8616b388611bf11639bc9d9ac30433d21e736fc229cacff03119354600"
+    },
+    "L2-rep1.npz": {
+      "sha256": "0196839845a15637e1a96454551106d0f1f2670ff74608dded7515519273f0a0",
+      "actual_sha256": "8185f67d7ec29aade12f5e235427fe16d9462ebc562dfac350c5514e6f2d8a5f"
+    },
+    "H1-rep0.npz": {
+      "sha256": "663a2134c9693993dfb44afb6c67d09a9e8faa4f240635ccf3b3f5cc309aae8a",
+      "actual_sha256": "75f8ba02b691c758306c134e1f13c814040979bc245f5963375cfcd0539716ba"
+    },
+    "H1-rep1.npz": {
+      "sha256": "7186c4173402a7bb877915fc6990ac10ac19aaca60097ba270154c8498e7f389",
+      "actual_sha256": "682e46d62daf16a02caaa499ecce15a78a6e141e935c9e7ddd6e7e7e5da6daae"
+    },
+    "H2-rep0.npz": {
+      "sha256": "8b608a53f99b97e85dde64130af3615ff8989f2ad57fcdb921517bffd504e8b8",
+      "actual_sha256": "775527a5a19f4271a98945094917480df5bbe519ad40e23193b63a680fa8d915"
+    },
+    "H2-rep1.npz": {
+      "sha256": "c58ca12eb41a96a552d25ffa9043e4f3620f2080fb96cc654b09a2e068ea57cb",
+      "actual_sha256": "4ed30d67f37ff6d3643390b4d02971218bb2bb1908c021bfbea13a542f22ce58"
+    },
+    "M1-rep0.npz": {
+      "sha256": "49d8679b6e5fbf0e9b7b61ce4f6acf718c60507a9cdb5638d23fa03c43a624bd",
+      "actual_sha256": "0704dda7321c29026dd501007bab2dbb0a17bccc97acb33f6a85acfe4e8f1ed0"
+    },
+    "M1-rep1.npz": {
+      "sha256": "9612ff7f49a0ac19c1702f1e2714c4d72edac2b40d3c626e2a1634e91dfd7d56",
+      "actual_sha256": "0a068d8d920e0003b0432054bb0713f169b4b6848dc3095006232f41f442fd1a"
+    },
+    "W1-rep0.npz": {
+      "sha256": "293b913c39e4bbf45f0b24cdc869761b9d11ca0be1b02cfed5f822abbc0d5e54",
+      "actual_sha256": "c182a1d4bc74ce919c11a57dcefa6e10c4d9f0b305af554bbc010d56ecb21b16"
+    },
+    "W1-rep1.npz": {
+      "sha256": "c98050045b4416317e3a87d05c93bab7d178ff7512eaab95b51f79cc2a0fe153",
+      "actual_sha256": "f3d5aae4acee000b6bd631a820a73989e8f19c5be24c1c509d7fdb2715ca1609"
+    }
+  },
+  "cases": [
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 0.17677669529663687,
+      "multiplier": 0.5,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "ef49ec62fee2fc174751"
+    },
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 0.17677669529663687,
+      "multiplier": 0.5,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "6df734efe80c4850ff61"
+    },
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 0.35355339059327373,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "8851b3d0030de6d96487"
+    },
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 0.35355339059327373,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "4ee51cc8f9fe1040af1b"
+    },
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 0.5303300858899106,
+      "multiplier": 1.5,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "b31a12525de91d014a18"
+    },
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 0.5303300858899106,
+      "multiplier": 1.5,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "d4729b55c8a323891f71"
+    },
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 0.8485281374238569,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "604c002ac60fb8e36887"
+    },
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 0.8485281374238569,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "e52e8953a27f833d31c8"
+    },
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 1.2374368670764582,
+      "multiplier": 3.5,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "cc307b692ea848863e2d"
+    },
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 1.2374368670764582,
+      "multiplier": 3.5,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "d723d231fc5ef180ed1a"
+    },
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 1.7677669529663687,
+      "multiplier": 5.0,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "b7cdb6533112e5747fab"
+    },
+    {
+      "model": "G1",
+      "kernel": "rwm",
+      "step": 1.7677669529663687,
+      "multiplier": 5.0,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "c4f0af79b99f6303c0b7"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 0.05,
+      "multiplier": 0.1,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "b595ffd31c46ee50f8cb"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 0.05,
+      "multiplier": 0.1,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "1741479f6e5b0171c8ef"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 0.15,
+      "multiplier": 0.3,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "55a1d9f3f00c0f25a9c8"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 0.15,
+      "multiplier": 0.3,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "a6b84f8b9deae3ffbcb2"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 0.3,
+      "multiplier": 0.6,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "b8347a91123acca501e3"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 0.3,
+      "multiplier": 0.6,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "c1b8b69bcb8cd49b8ee1"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 0.5,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "66a93b1a8b5a65603ae3"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 0.5,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "e434ebc59a7e73c84f2d"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 0.8,
+      "multiplier": 1.6,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "2e7f6c275fbb06cbb441"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 0.8,
+      "multiplier": 1.6,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "bbd26070103c73415988"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 1.2,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "G1-rep0.npz",
+      "id": "9a514dfca41c858d0847"
+    },
+    {
+      "model": "G1",
+      "kernel": "mala",
+      "step": 1.2,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "G1-rep1.npz",
+      "id": "33a1b097dc0953b7be38"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.0625,
+      "multiplier": 0.5,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "2176908116ea04eac5b6"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.0625,
+      "multiplier": 0.5,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "d4f2ccdc4b2cd9ad6fa0"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.125,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "0e92bad9bc33dd5e1cae"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.125,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "c69dabd2b2825ff5ccf3"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.1875,
+      "multiplier": 1.5,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "32d3c3322d647b10ae46"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.1875,
+      "multiplier": 1.5,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "f141030a92ac5b1877e1"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.3,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "163d7177fcd1f30dbcea"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.3,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "59a876859178623cc46c"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.4375,
+      "multiplier": 3.5,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "e0d1bdc8cd3428ecacff"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.4375,
+      "multiplier": 3.5,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "8a99bed9988deacc07c9"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.625,
+      "multiplier": 5.0,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "5fc7f300b3186d82fd04"
+    },
+    {
+      "model": "G2",
+      "kernel": "rwm",
+      "step": 0.625,
+      "multiplier": 5.0,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "c217bc61ac418ee0e71b"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.025000000000000005,
+      "multiplier": 0.1,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "e65ab82a551d70b9247d"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.025000000000000005,
+      "multiplier": 0.1,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "aa3b5d72e178a460ba68"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.07500000000000001,
+      "multiplier": 0.3,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "706db2dc017a9aea2e3a"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.07500000000000001,
+      "multiplier": 0.3,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "3081fb8552b67cdce25d"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.15000000000000002,
+      "multiplier": 0.6,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "5002609d2893de4df62e"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.15000000000000002,
+      "multiplier": 0.6,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "241d71a967dced3c8934"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.25000000000000006,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "789f1a6cb5099c7c7271"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.25000000000000006,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "a35492370c35a937cbb4"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.4000000000000001,
+      "multiplier": 1.6,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "767397271980092095d6"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.4000000000000001,
+      "multiplier": 1.6,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "5a03b7020cc0bb31713c"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.6000000000000001,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "G2-rep0.npz",
+      "id": "75260429763f0d046be8"
+    },
+    {
+      "model": "G2",
+      "kernel": "mala",
+      "step": 0.6000000000000001,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "G2-rep1.npz",
+      "id": "12dc480ed928498238fb"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.0625,
+      "multiplier": 0.5,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "d2ddee3eb0ed0e514f62"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.0625,
+      "multiplier": 0.5,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "99f9bcf7df13050f4782"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.125,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "c46344d21565a91c1c02"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.125,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "93afbb33572217ab2c79"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.1875,
+      "multiplier": 1.5,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "5b639b8579db00484406"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.1875,
+      "multiplier": 1.5,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "0ffd0a6edea297356c39"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.3,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "6fa25fbf58e104d3b266"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.3,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "c957049f566b83105539"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.4375,
+      "multiplier": 3.5,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "69670db4b4c50cdbb520"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.4375,
+      "multiplier": 3.5,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "da60294da532e32f318b"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.625,
+      "multiplier": 5.0,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "7cf39177d0e8d92e363d"
+    },
+    {
+      "model": "A1",
+      "kernel": "rwm",
+      "step": 0.625,
+      "multiplier": 5.0,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "cbaab69fb7364ad27d45"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.025000000000000005,
+      "multiplier": 0.1,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "ec2dc1ac1ea15039ad68"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.025000000000000005,
+      "multiplier": 0.1,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "1a77543f980a6f15dab0"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.07500000000000001,
+      "multiplier": 0.3,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "60e45286c646f2c8829a"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.07500000000000001,
+      "multiplier": 0.3,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "324cfd5f07414b463ca3"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.15000000000000002,
+      "multiplier": 0.6,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "e93c0f9e3f51af0e742b"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.15000000000000002,
+      "multiplier": 0.6,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "fbfadd5afe53ae44495a"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.25000000000000006,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "14318f9af2d9da1a5507"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.25000000000000006,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "9460f31469dc14c9ab94"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.4000000000000001,
+      "multiplier": 1.6,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "66d7a81efe879822842e"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.4000000000000001,
+      "multiplier": 1.6,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "8610e6c1442138c6aeaa"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.6000000000000001,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "A1-rep0.npz",
+      "id": "e992418b7c1efb463324"
+    },
+    {
+      "model": "A1",
+      "kernel": "mala",
+      "step": 0.6000000000000001,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "A1-rep1.npz",
+      "id": "131a07325bc1730bbf9d"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 0.17677669529663687,
+      "multiplier": 0.5,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "aedbb7a3f81e91d90bb7"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 0.17677669529663687,
+      "multiplier": 0.5,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "910a81ed6e84933bfbf4"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 0.35355339059327373,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "20716eeffe0deda52ad6"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 0.35355339059327373,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "74d02da873e713c39e26"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 0.5303300858899106,
+      "multiplier": 1.5,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "9122a985c9f63587d092"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 0.5303300858899106,
+      "multiplier": 1.5,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "8cade131938d55f15538"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 0.8485281374238569,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "4eac2ffa9e9da8c53dda"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 0.8485281374238569,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "77f3b85e114dad609162"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 1.2374368670764582,
+      "multiplier": 3.5,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "d0de1312f03eac8a649b"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 1.2374368670764582,
+      "multiplier": 3.5,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "35ff2554bb03f21c2dae"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 1.7677669529663687,
+      "multiplier": 5.0,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "9d9629ea5e7d242e1748"
+    },
+    {
+      "model": "L1",
+      "kernel": "rwm",
+      "step": 1.7677669529663687,
+      "multiplier": 5.0,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "cca82cfe95bd80434a1a"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 0.05,
+      "multiplier": 0.1,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "f8ca9acc6b54b6d799e7"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 0.05,
+      "multiplier": 0.1,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "dc471453acae0d4fd673"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 0.15,
+      "multiplier": 0.3,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "81b509affe05c11ed092"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 0.15,
+      "multiplier": 0.3,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "a3c11b38ff92a00ccb50"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 0.3,
+      "multiplier": 0.6,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "da75582380fc62bd837b"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 0.3,
+      "multiplier": 0.6,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "d6484b73eb8924641c41"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 0.5,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "2b815e528f928df56007"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 0.5,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "5d74c4ee640b581e5441"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 0.8,
+      "multiplier": 1.6,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "36b39e65869262a42f44"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 0.8,
+      "multiplier": 1.6,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "5f71fe22415678dc4d85"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 1.2,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "L1-rep0.npz",
+      "id": "d64907afc22f78c935f3"
+    },
+    {
+      "model": "L1",
+      "kernel": "mala",
+      "step": 1.2,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "L1-rep1.npz",
+      "id": "349d428daaf5ed0047c8"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 0.17677669529663687,
+      "multiplier": 0.5,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "78cd070714d952abda56"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 0.17677669529663687,
+      "multiplier": 0.5,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "c472a971ec994bbe87c3"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 0.35355339059327373,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "cfab771602314f3efbe5"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 0.35355339059327373,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "31249bd473c9595147f2"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 0.5303300858899106,
+      "multiplier": 1.5,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "41d0a8de55ef1ac82c7d"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 0.5303300858899106,
+      "multiplier": 1.5,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "b40aead37421a64992c4"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 0.8485281374238569,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "bfa551a8774b1089f182"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 0.8485281374238569,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "2bd43cc7b81918da3861"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 1.2374368670764582,
+      "multiplier": 3.5,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "385bd34665b6e5a394f2"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 1.2374368670764582,
+      "multiplier": 3.5,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "995db32c325ca773886a"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 1.7677669529663687,
+      "multiplier": 5.0,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "74e2a8105fb600b78d5d"
+    },
+    {
+      "model": "L2",
+      "kernel": "rwm",
+      "step": 1.7677669529663687,
+      "multiplier": 5.0,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "6fd57d667d94519aa8af"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 0.05,
+      "multiplier": 0.1,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "79128bc3a0fee684bbd5"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 0.05,
+      "multiplier": 0.1,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "18198a0e7d45d0576b26"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 0.15,
+      "multiplier": 0.3,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "bace47c4baccf9a3bfdf"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 0.15,
+      "multiplier": 0.3,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "ab8a8ceed264eaa574ae"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 0.3,
+      "multiplier": 0.6,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "9038ded1e85a3a555097"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 0.3,
+      "multiplier": 0.6,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "6b7f4c3398000d659b07"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 0.5,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "68ab365798007bfccbcb"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 0.5,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "dd56924fa93e42f2afe7"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 0.8,
+      "multiplier": 1.6,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "5b5ba22b1dd31aef2255"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 0.8,
+      "multiplier": 1.6,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "71fb17dd304dc15eaf7f"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 1.2,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "L2-rep0.npz",
+      "id": "34edfcd383dda2716c15"
+    },
+    {
+      "model": "L2",
+      "kernel": "mala",
+      "step": 1.2,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "L2-rep1.npz",
+      "id": "ee6879f41884a1bdba44"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 0.16666666666666666,
+      "multiplier": 0.5,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "2ed0211a77910f3e509d"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 0.16666666666666666,
+      "multiplier": 0.5,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "54d09cb7477da9f4bc96"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 0.3333333333333333,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "a5ea16732cd5145151ac"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 0.3333333333333333,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "0d2c320463198f2c82c3"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 0.5,
+      "multiplier": 1.5,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "32872cf2f6a50ccbdded"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 0.5,
+      "multiplier": 1.5,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "b0380d5da5e17a65d0b2"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 0.7999999999999999,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "799c42351a48479f0dd9"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 0.7999999999999999,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "495e9e53ca13197933a5"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 1.1666666666666667,
+      "multiplier": 3.5,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "44de87e1b18c49276d83"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 1.1666666666666667,
+      "multiplier": 3.5,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "115179f769f55e2ae130"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 1.6666666666666667,
+      "multiplier": 5.0,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "bdd60a76f8a6febe3b54"
+    },
+    {
+      "model": "H1",
+      "kernel": "rwm",
+      "step": 1.6666666666666667,
+      "multiplier": 5.0,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "ee7b4f237b03ce0d88c1"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 0.048074985676913616,
+      "multiplier": 0.1,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "16735ef5fb639dbede9e"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 0.048074985676913616,
+      "multiplier": 0.1,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "74d0cd4edb967c511647"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 0.14422495703074084,
+      "multiplier": 0.3,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "75389088643119c5fd4c"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 0.14422495703074084,
+      "multiplier": 0.3,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "af1be5c32a4919dc65ac"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 0.2884499140614817,
+      "multiplier": 0.6,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "6d2b00a128ec6881b5a8"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 0.2884499140614817,
+      "multiplier": 0.6,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "bcbe4e0e40fff284062e"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 0.4807498567691361,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "5f1200d5ee79b1ab283e"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 0.4807498567691361,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "1cb8e8e1b8db16339eea"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 0.7691997708306179,
+      "multiplier": 1.6,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "307399e12e0ba8bf88c3"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 0.7691997708306179,
+      "multiplier": 1.6,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "1bffac231cc6b7be05b2"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 1.1537996562459267,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "H1-rep0.npz",
+      "id": "e39a12a7444cbe09c8ed"
+    },
+    {
+      "model": "H1",
+      "kernel": "mala",
+      "step": 1.1537996562459267,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "H1-rep1.npz",
+      "id": "b12891261cc6d364574e"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 0.16666666666666666,
+      "multiplier": 0.5,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "7e7d1c677d3cb8b53662"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 0.16666666666666666,
+      "multiplier": 0.5,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "778710003a8be7eccb50"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 0.3333333333333333,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "f610c68196bff17ae950"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 0.3333333333333333,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "9aa66751ff32f5388ff9"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 0.5,
+      "multiplier": 1.5,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "9426d0a90d3f96353986"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 0.5,
+      "multiplier": 1.5,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "75535015a65b227e4e49"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 0.7999999999999999,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "ea18f4739c26e221f85a"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 0.7999999999999999,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "186652b0ff85662e7f9b"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 1.1666666666666667,
+      "multiplier": 3.5,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "47368902051e2ebc3f97"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 1.1666666666666667,
+      "multiplier": 3.5,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "11edf1b2a0bdfe954971"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 1.6666666666666667,
+      "multiplier": 5.0,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "49226c1b924884826707"
+    },
+    {
+      "model": "H2",
+      "kernel": "rwm",
+      "step": 1.6666666666666667,
+      "multiplier": 5.0,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "27fce78a7e538b120b45"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 0.048074985676913616,
+      "multiplier": 0.1,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "d25c031a87d0660ac6bf"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 0.048074985676913616,
+      "multiplier": 0.1,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "f2ac04dbf944152789bc"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 0.14422495703074084,
+      "multiplier": 0.3,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "8904d6a2763222ee4e8a"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 0.14422495703074084,
+      "multiplier": 0.3,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "81b79532b7e76c4332af"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 0.2884499140614817,
+      "multiplier": 0.6,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "86a33d696e0dc4487ac0"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 0.2884499140614817,
+      "multiplier": 0.6,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "37875ca245cc17ed6e8c"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 0.4807498567691361,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "e9f912f678d8d5872da0"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 0.4807498567691361,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "40fe08ccede9526fcfca"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 0.7691997708306179,
+      "multiplier": 1.6,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "b5150b72bd17c140a3a0"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 0.7691997708306179,
+      "multiplier": 1.6,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "cd76288cb2e94960ba55"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 1.1537996562459267,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "H2-rep0.npz",
+      "id": "7ec2168530e8129da4da"
+    },
+    {
+      "model": "H2",
+      "kernel": "mala",
+      "step": 1.1537996562459267,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "H2-rep1.npz",
+      "id": "798fe8a30c21e97ad151"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 0.17677669529663687,
+      "multiplier": 0.5,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "24a7bac38d4effebd099"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 0.17677669529663687,
+      "multiplier": 0.5,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "dd62c357a6aab1b82087"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 0.35355339059327373,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "8b76aa714986fd77c61e"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 0.35355339059327373,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "e4bcbc4a3c9b650b767e"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 0.5303300858899106,
+      "multiplier": 1.5,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "70f345bf974dcdf3a4d8"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 0.5303300858899106,
+      "multiplier": 1.5,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "e44fa8723e7c4f25006b"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 0.8485281374238569,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "925693b9e9d88200f308"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 0.8485281374238569,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "d459c15d47fd6a04fd3d"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 1.2374368670764582,
+      "multiplier": 3.5,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "4aca852a76ce7b803c2e"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 1.2374368670764582,
+      "multiplier": 3.5,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "1978882bdaab703753e1"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 1.7677669529663687,
+      "multiplier": 5.0,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "8f3cea1334c18ef51350"
+    },
+    {
+      "model": "M1",
+      "kernel": "rwm",
+      "step": 1.7677669529663687,
+      "multiplier": 5.0,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "20423e5d3c7c37829b95"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 0.05,
+      "multiplier": 0.1,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "c30fdb17fc12f46dd24a"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 0.05,
+      "multiplier": 0.1,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "6657cd550cebd2f753be"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 0.15,
+      "multiplier": 0.3,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "5df3267ebace33c0b812"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 0.15,
+      "multiplier": 0.3,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "6414a2412ebf96aa02a4"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 0.3,
+      "multiplier": 0.6,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "7ebf8ab869bfb4d08926"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 0.3,
+      "multiplier": 0.6,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "0eb212804dd8fddc7ed8"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 0.5,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "ec87067c11fcc40192b7"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 0.5,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "f15a06f9c06de6a1bbc0"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 0.8,
+      "multiplier": 1.6,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "90268507ec2cdad6eda3"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 0.8,
+      "multiplier": 1.6,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "60126d87eb180c4ab8b0"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 1.2,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "M1-rep0.npz",
+      "id": "81456fcad076f80a4de5"
+    },
+    {
+      "model": "M1",
+      "kernel": "mala",
+      "step": 1.2,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "M1-rep1.npz",
+      "id": "2fa46218f1b9094cf6c3"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 0.35355339059327373,
+      "multiplier": 0.5,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "f9d71fe6be1c164f3ebf"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 0.35355339059327373,
+      "multiplier": 0.5,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "376324b7b55e40f07bc1"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 0.7071067811865475,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "c0c20412559364c963ec"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 0.7071067811865475,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "32f1b22ac73775d99039"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 1.0606601717798212,
+      "multiplier": 1.5,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "84fe3907afdc565d01f7"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 1.0606601717798212,
+      "multiplier": 1.5,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "733579e5ef0f3ddf1368"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 1.6970562748477138,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "dd0cbe31e8c0d14f2f3e"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 1.6970562748477138,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "e877999df2337632c95a"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 2.4748737341529163,
+      "multiplier": 3.5,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "268f01d7a51a6146ddf7"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 2.4748737341529163,
+      "multiplier": 3.5,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "94b557b8293d33358930"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 3.5355339059327373,
+      "multiplier": 5.0,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "a6b7326399da66cc9802"
+    },
+    {
+      "model": "W1",
+      "kernel": "rwm",
+      "step": 3.5355339059327373,
+      "multiplier": 5.0,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "a024f95e59392567b037"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 0.07937005259840997,
+      "multiplier": 0.1,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "7cfe12db27aa688c473c"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 0.07937005259840997,
+      "multiplier": 0.1,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "472cc573bad4957b2576"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 0.2381101577952299,
+      "multiplier": 0.3,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "0e918e40b66438ef5bc7"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 0.2381101577952299,
+      "multiplier": 0.3,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "b4513de5ff3bc5073ea3"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 0.4762203155904598,
+      "multiplier": 0.6,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "910a2f8749efdd03dfc4"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 0.4762203155904598,
+      "multiplier": 0.6,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "e6e2a50ea6d7d8a69038"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 0.7937005259840997,
+      "multiplier": 1.0,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "b34de908c21d1e5cfcf9"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 0.7937005259840997,
+      "multiplier": 1.0,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "8440744116e58e100cd0"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 1.2699208415745595,
+      "multiplier": 1.6,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "053e7a3b446253b8f093"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 1.2699208415745595,
+      "multiplier": 1.6,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "df996570fd938f4b24ef"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 1.9048812623618392,
+      "multiplier": 2.4,
+      "replicate": 0,
+      "input": "W1-rep0.npz",
+      "id": "ed74ff1384906342ee4f"
+    },
+    {
+      "model": "W1",
+      "kernel": "mala",
+      "step": 1.9048812623618392,
+      "multiplier": 2.4,
+      "replicate": 1,
+      "input": "W1-rep1.npz",
+      "id": "8279adfa605da80e88ae"
+    }
+  ],
+  "protocol_sha256": "6cc71de8a5a5949943f59b2972eb32814782b4ccdd149c6e1bc1961b3e8d4a92"
+}
