@@ -1,0 +1,46 @@
+"""Whole-batch native baseline readiness: real serial/spawn and immutable resume."""
+from pathlib import Path
+import json,sys
+import numpy as np
+import pytest
+
+ROOT=Path(__file__).resolve().parents[2]
+sys.path[:0]=[str(ROOT/'r-package/inst/python'),str(ROOT/'scripts/completion')]
+
+
+def test_serial_spawn_receipt_replays_arrays_and_resume_never_refits(tmp_path):
+    import nuts_readiness_run as study
+    from parallelbayes.reference import benchmark_model
+    from mechanism_runner import identity,sha,actual_hash
+    item=dict(name='G1',dimension=8,base_target_id=benchmark_model('G1').target_id,
+        geometry=dict(center=[0.]*8,factor=np.eye(8).tolist()))
+    p=dict(identity='unit-nuts-readiness',required_platform=sys.platform,torch_threads=1,
+        required_versions={},source_files=study.source_files(),targets=[item],chains=2,
+        draws=16,warmup=32,max_tree_depth=4,target_accept_prob=.8,full_mass=False,
+        memory_limit_mb=128,workers=2,threads_per_worker=1,inputs={},scope='interface test, not inference evidence')
+    inputs=tmp_path/'inputs';inputs.mkdir();name='G1.npz'
+    payload=dict(initial=np.asarray([[-1.]*8,[1.]*8]),chain_seeds=np.asarray([7384011,7384013],dtype=np.int64))
+    np.savez_compressed(inputs/name,**payload);item['input']=name
+    p['inputs'][name]=dict(sha256=sha(inputs/name),actual_sha256=actual_hash(payload))
+    p['protocol_sha256']=identity(p);protocol=tmp_path/'plan.json';protocol.write_text(json.dumps(p))
+    out=tmp_path/'run';summary=study.run(protocol,inputs,tmp_path/'unused',out)
+    assert summary['completed']==1 and summary['failed']==0
+    state=json.loads((out/'G1/state.json').read_text())
+    assert state['comparison']['passed']
+    assert all(x['equal'] for x in state['comparison']['arrays'].values())
+    assert state['comparison']['scope']=='Within-host serial/spawn CPU NUTS replay, not MH path equivalence or statistical accuracy'
+    before={f.relative_to(out).as_posix():sha(f) for f in (out/'G1').rglob('*') if f.is_file()}
+    resumed=study.run(protocol,inputs,tmp_path/'unused',out,resume=True)
+    assert resumed['newly_executed_targets']==0
+    assert before=={f.relative_to(out).as_posix():sha(f) for f in (out/'G1').rglob('*') if f.is_file()}
+    diagnostics=tmp_path/'diagnostics'
+    collected=study.collect(protocol,out,diagnostics)
+    assert collected['diagnostic_fits']==2 and collected['failed_targets']==0
+    transport=json.loads((diagnostics/'transport.json').read_text())
+    assert all(f['shape']==[16,2,3] for f in transport['fits'])
+    assert (diagnostics/'G1-serial.bin').read_bytes()==(diagnostics/'G1-parallel.bin').read_bytes()
+    raw=out/'G1'/state['attempt']/'parallel/fit.npz';raw.write_bytes(raw.read_bytes()+b'corrupt')
+    with pytest.raises(ValueError,match='checksum'):
+        study.run(protocol,inputs,tmp_path/'unused',out,resume=True)
+    with pytest.raises(ValueError,match='checksum'):
+        study.collect(protocol,out,tmp_path/'corrupt-diagnostics')
