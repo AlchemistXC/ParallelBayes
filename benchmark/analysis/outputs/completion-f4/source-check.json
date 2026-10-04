@@ -1,0 +1,45 @@
+{
+  "upstream_commit": "91027f9cdd13b7e76283fec3f2898f59d4b83ec4",
+  "files": [
+    {
+      "path": "LICENCE.md",
+      "origin": "verified_cache",
+      "sha256": "4cb546a2529533c4d3d73fb02cf3d9d7109232a91bcb6c6bf2cc0bf00fcc7f83"
+    },
+    {
+      "path": "posterior_database/data/data/wells_data.json.zip",
+      "origin": "verified_cache",
+      "sha256": "0ecd7efe3e64c63d849c562e61658fe322509942a882bc515176e016cc57c969"
+    },
+    {
+      "path": "posterior_database/data/info/wells_data.info.json",
+      "origin": "verified_cache",
+      "sha256": "7730093d8a3252646e5ac7c001d3165d4ff0c30da585e689b4da8ae6b8532738"
+    },
+    {
+      "path": "posterior_database/models/info/wells_dist100_model.info.json",
+      "origin": "verified_cache",
+      "sha256": "9066955d29eb178f3d90fae70aa0c220666455193e4cb1b16fbf1a4f93af5877"
+    },
+    {
+      "path": "posterior_database/models/stan/wells_dist100_model.stan",
+      "origin": "verified_cache",
+      "sha256": "e32bd4a05563e46dd0d678659eb167be2abcc377b080183ae7087a0c7cb518c5"
+    },
+    {
+      "path": "posterior_database/posteriors/wells_data-wells_dist100_model.json",
+      "origin": "verified_cache",
+      "sha256": "eeb1cf5179444478278a791a51642740c5de89c9b31d54afd7ed836e5b68141f"
+    },
+    {
+      "path": "posterior_database/reference_posteriors/draws/draws/wells_data-wells_dist100_model.json.zip",
+      "origin": "verified_cache",
+      "sha256": "cf50da1fea711dbc5210cce8277d7989f9584ceadd776ad6be6414a1ce328342"
+    },
+    {
+      "path": "posterior_database/reference_posteriors/draws/info/wells_data-wells_dist100_model.info.json",
+      "origin": "verified_cache",
+      "sha256": "65de5c826eae10c7920b7bbab4383537d4605c50940f733fa884041d3eb610a5"
+    }
+  ]
+}

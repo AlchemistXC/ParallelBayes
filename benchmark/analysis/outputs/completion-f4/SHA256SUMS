@@ -1,0 +1,4 @@
+cc659ad1a608d8e3b3cf8f6f4c7111ab4bf97a8f23689978e022aee110f248dc  benchmark/analysis/outputs/completion-f4/source-check.json
+b64415687a58d3e2c34444d9e32523154b6002d960e505e31e2510d8356420ab  models/external/wells/source-manifest.json
+7555cae665b0ae6812bf2ea495708c1a4a380357ed47085fb7b12c0af0e2fea1  models/external/wells/README.md
+6f433b4d47799df55ee0eb8810be5acff145ea4fbef943ff9dff7f555b4726a9  scripts/completion/fetch_wells.py

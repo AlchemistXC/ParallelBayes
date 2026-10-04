@@ -1,0 +1,166 @@
+{
+  "scope": "reference-identity and finite-summary reuse audit; no new accuracy pass claim",
+  "reference_protocol_sha256": "13f1baa4a13fd25f3fe58d3303948c6ece8186ebcf6eb540eb8feb623206edc0",
+  "windows_protocol_sha256": "1d233dd09956c4575fc5775082310e5edca65407db5fcef40bc2ce329e6f5898",
+  "functions": [
+    "q1",
+    "q2",
+    "sigmoid(q1)",
+    "q1>0"
+  ],
+  "checked_reference_fits": 8,
+  "models": {
+    "L1": {
+      "specification_exactly_equal": true,
+      "target_id": "e9f9a77f5d98bd9cfcda542cc84d4c9415666bbb42f6588f292128c8792dd17d",
+      "fits": [
+        {
+          "task_id": "1017381d6bb4add6e173",
+          "seed": 900103,
+          "raw_sha256": "5257338817bf5cf024ed2248dcba997da881648da8bf44b431afbc6913869ce0",
+          "divergences": 0
+        },
+        {
+          "task_id": "29911e8bdd4560192aaf",
+          "seed": 900101,
+          "raw_sha256": "eca176c6f473065eed2b58fb3be7d79d4e328b8b1ad9ceb24d5b711da85d6337",
+          "divergences": 0
+        },
+        {
+          "task_id": "430c1e826bb1468ec922",
+          "seed": 900100,
+          "raw_sha256": "f23dea7df8943f97dfd71c884a1021892b5a0fda281e573a81a88ca508bf0e58",
+          "divergences": 0
+        },
+        {
+          "task_id": "4c666c5a664d534de1d7",
+          "seed": 900102,
+          "raw_sha256": "238ff2155f699df6cd5bfc2f08198a89cab2700be7c9e977438bc13426a65f39",
+          "divergences": 0
+        }
+      ],
+      "independent_fits": 4,
+      "chains_per_fit": 4,
+      "draws_per_chain": 16384,
+      "total_correlated_draws": 262144,
+      "mean": [
+        -0.2780655741279529,
+        -0.6788954260209844,
+        0.4317947518790173,
+        0.10919189453125
+      ],
+      "conservative_mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "raw_function_variance": [
+        0.051771649696820826,
+        0.06291674599693173,
+        0.0030358803233607548,
+        0.09726939575322438
+      ],
+      "reference_mcse_over_function_sd": [
+        0.0017096184690474515,
+        0.001994253413410788,
+        0.0017070589658100335,
+        0.0024495972782602737
+      ],
+      "usable_function_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "unresolved_function_indices": [],
+      "sign_event_positive_count": 28624,
+      "sign_event_negative_count": 233520,
+      "all_function_mcse_available": true,
+      "limitations": [
+        "Same target identity permits reuse, but finite reference may have shared sampler bias.",
+        "Four fits are the independent reference units, not 262144 independent draws.",
+        "Undefined event uncertainty remains undefined; zero observations do not prove zero probability.",
+        "Seeds verify distinct recorded namespaces, not a general proof of independent PRNG substreams."
+      ]
+    },
+    "L2": {
+      "specification_exactly_equal": true,
+      "target_id": "7d3e601010f3c362f0cb37a7eca3e13efdd60a9622b718831200ecc0d65cee4f",
+      "fits": [
+        {
+          "task_id": "77fc1469ecbc6e32f0c9",
+          "seed": 900102,
+          "raw_sha256": "20354d12d0a7727f60c30673459f5113efb1df02e32b0fc70431dd09ea29c017",
+          "divergences": 0
+        },
+        {
+          "task_id": "7e636e7ade76027c57cf",
+          "seed": 900100,
+          "raw_sha256": "426f9d190d357b00d938c3436194f3f960e72ae8f3212f61d3c5a08a95ce71dc",
+          "divergences": 0
+        },
+        {
+          "task_id": "8a25f32d84019d937a5b",
+          "seed": 900103,
+          "raw_sha256": "ad41dbe81e4a10d2ceda3094c07c7f553303055dfa0ce1e6c03116e7f68ef9a2",
+          "divergences": 0
+        },
+        {
+          "task_id": "fe5feb2ae45d2d0a73d6",
+          "seed": 900101,
+          "raw_sha256": "e7e524d9dff404f9d921762c4791c795f375b68491d23ba62ddcdb57739a1a7b",
+          "divergences": 0
+        }
+      ],
+      "independent_fits": 4,
+      "chains_per_fit": 4,
+      "draws_per_chain": 16384,
+      "total_correlated_draws": 262144,
+      "mean": [
+        -0.3111767722693598,
+        -0.6005257632922614,
+        0.42288078897091724,
+        0.0
+      ],
+      "conservative_mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "raw_function_variance": [
+        0.0028298809285460112,
+        0.003193677274650536,
+        0.0001683065519657357,
+        0.0
+      ],
+      "reference_mcse_over_function_sd": [
+        0.001671690493252882,
+        0.001803357417949222,
+        0.001672216198736121,
+        null
+      ],
+      "usable_function_indices": [
+        0,
+        1,
+        2
+      ],
+      "unresolved_function_indices": [
+        3
+      ],
+      "sign_event_positive_count": 0,
+      "sign_event_negative_count": 262144,
+      "all_function_mcse_available": false,
+      "limitations": [
+        "Same target identity permits reuse, but finite reference may have shared sampler bias.",
+        "Four fits are the independent reference units, not 262144 independent draws.",
+        "Undefined event uncertainty remains undefined; zero observations do not prove zero probability.",
+        "Seeds verify distinct recorded namespaces, not a general proof of independent PRNG substreams."
+      ]
+    }
+  },
+  "reference_summary_sha256": "fa981be0ed61482438163197190d3b0e1a9e6f7f189ca9dfa52fa7644846887f",
+  "reference_manifest_sha256": "d3d4c93e254f697585aff15b5effa0b42001bfe155404fbc98bbf1b11b6d52f1",
+  "source_script_sha256": "4e080ef0ceddb3e85fe48c49e6a3471ce73a2c0443b582c6830f94a671572fca"
+}
