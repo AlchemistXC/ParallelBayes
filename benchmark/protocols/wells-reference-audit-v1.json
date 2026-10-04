@@ -1,0 +1,21 @@
+{
+  "identity": "wells-reference-audit-v1",
+  "scope": "Companion reanalysis of a finite upstream reference; no new MCMC, performance or convergence proof",
+  "upstream_commit": "91027f9cdd13b7e76283fec3f2898f59d4b83ec4",
+  "parameter_names": ["alpha", "beta[1]"],
+  "chains": 10,
+  "stored_draws_per_chain": 1000,
+  "additional_discard": 0,
+  "functions": ["alpha", "beta", "alpha_squared", "beta_squared", "p_switch_0m", "p_switch_100m", "beta_positive"],
+  "function_definitions": ["alpha", "beta[1]", "alpha^2", "beta[1]^2", "inv_logit(alpha)", "inv_logit(alpha+beta[1])", "I(beta[1]>0)"],
+  "batch_length_stored_draws": 50,
+  "posterior_version": "1.7.0",
+  "diagnostics": ["rank_and_folded_Rhat", "bulk_ESS", "tail_ESS", "MCSE_mean"],
+  "reference_uncertainty": "Report posterior MCSE, SD of ten chain means divided by sqrt(10), and SD of 200 nonoverlapping length-50 batch means divided by sqrt(200). Maximum is a sensitivity summary, not a rigorous bound on Monte Carlo error or bias.",
+  "replication": "One upstream Stan generation with ten chains, each storing 1000 thinned correlated draws; neither 10000 independent experiments nor ten independent generation studies.",
+  "constant_functions": "Retain them with undetermined reference uncertainty; no independent-binomial upper bound and no zero-error claim.",
+  "upstream_diagnostics": "Compare reanalysis of raw alpha/beta with metadata from posterior 1.6.1; retain differences. No raw energy/divergence trajectories are supplied, so zero divergence is upstream-reported only.",
+  "future_inference": "No function may be silently removed from future all-function assessment. This audit does not set final error thresholds or fit budgets.",
+  "memory_guard": "At most 2000000 doubles in the R transport input; exact expected reference shape and all source hashes required.",
+  "source_files": ["scripts/completion/audit_wells_reference.py", "scripts/completion/wells_reference_audit.R", "examples/external_wells.py", "models/external/wells/source-manifest.json", "benchmark/protocols/wells-reference-audit-v1.json"]
+}
