@@ -1,0 +1,46 @@
+..F                                                                      [100%]
+=================================== FAILURES ===================================
+_____ test_prelaunch_resource_wait_does_not_become_a_phantom_live_attempt ______
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-80/test_prelaunch_resource_wait_d0')
+
+    def test_prelaunch_resource_wait_does_not_become_a_phantom_live_attempt(tmp_path):
+        from formal_coordinator import TaskCoordinator, CoordinatorConflict
+        from formal_runtime import ResourceWait
+        worker=tmp_path/'worker.py'
+        worker.write_text('''import json,sys
+    from pathlib import Path
+    (Path(sys.argv[2])/'worker-result.json').write_text(json.dumps(dict(status='completed',samples_eligible=True)))
+    ''')
+        c=TaskCoordinator(tmp_path/'host.lock');out=tmp_path/'waiting'
+        task={'id':'waiting','protocol_sha256':'fixture'}
+        with pytest.raises(ResourceWait):c.run(task,{},worker,out,2**62,2**30)
+        assert not out.exists()
+>       history=c.history(out)
+                ^^^^^^^^^^^^^^
+
+tests/external/test_formal_coordinator.py:137: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/completion/formal_coordinator.py:185: in history
+    self._reconcile(db)
+scripts/completion/formal_coordinator.py:150: in _reconcile
+    self._settle(db,key,self._load(db,key))
+scripts/completion/formal_coordinator.py:136: in _settle
+    observed=self._observe(record,attempt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <formal_coordinator.TaskCoordinator object at 0x10c0caf30>
+record = {'attempts': [{'lifecycle': 'registered', 'output': '/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-o...te/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-80/test_prelaunch_resource_wait_d0/worker.py'}
+attempt = {'lifecycle': 'registered', 'output': '/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-80/test_prelaunch_resource_wait_d0/waiting'}
+
+    def _observe(self,record,attempt):
+        out=Path(attempt['output']);receipt=out/'attempt-0001/process.json'
+>       if not receipt.is_file():raise CoordinatorConflict('No process receipt for registered task; group absence is unknown')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       formal_coordinator.CoordinatorConflict: No process receipt for registered task; group absence is unknown
+
+scripts/completion/formal_coordinator.py:114: CoordinatorConflict
+=========================== short test summary info ============================
+FAILED tests/external/test_formal_coordinator.py::test_prelaunch_resource_wait_does_not_become_a_phantom_live_attempt
+1 failed, 2 passed in 0.91s

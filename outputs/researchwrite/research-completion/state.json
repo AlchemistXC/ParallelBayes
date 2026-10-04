@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Integrate verified per-task recovery and all-attempt outcomes into a formal coordinator with a global live/orphan attempt registry, then connect the runtime schema to bounded raw extraction and paired uncertainty. Validate independent cached/ordinary/audit costs and native Windows recovery/resources before formal freeze.",
+  "next_recommended_action": "Connect the registered runtime task histories and immutable raw outputs to bounded formal-schema extraction and paired uncertainty; implement the formal batch driver and independently measured cached/ordinary/audit costs. Native Windows process-cohort recovery, readiness receipts and maximum-task resources remain required before formal freeze.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -226,8 +226,8 @@
       "streaming_analysis_and_executor_specific_iteration_guards_required"
     ],
     "remaining_gates": [
-      "Windows_receipts",
-      "formal_coordinator_attempt_history_global_orphan_registry_and_native_Windows_recovery",
+      "Windows_readiness_and_mechanism_receipts",
+      "formal_batch_driver_and_native_Windows_cohort_recovery",
       "formal_schema_adapter_for_verified_raw_array_extraction_and_paired_uncertainty",
       "independent_cached_ordinary_audit_cost_measurement",
       "Windows_host_lock_disk_memory_and_max_task_validation",
@@ -281,7 +281,8 @@
       "public_release": false
     },
     "mac_explicit_sidecar_recovery_checked": true,
-    "formal_coordinator_recovery_integrated": false
+    "formal_coordinator_recovery_integrated": false,
+    "mac_coordinator_recovery_integrated": true
   },
   "f3_streaming_analysis": {
     "status": "historical_pilot_raw_rebuild_validated_formal_adapter_pending",
@@ -328,7 +329,7 @@
     "new_independent_statistical_repetitions": 0,
     "unsealed_failed_worker_retry_bug_fixed": true,
     "native_Windows_recovery_validated": false,
-    "global_orphan_registry_integrated": false,
+    "global_orphan_registry_integrated": true,
     "formal_inference_complete": false,
     "report": "docs/FORMAL-RECOVERY.md",
     "raw_evidence_archive": {
@@ -340,6 +341,55 @@
       "all_member_hashes_verified": true,
       "new_independent_statistical_repetitions": 0,
       "actual_technical_MALA_executions_in_both_versions": 4,
+      "public_release": false
+    },
+    "mac_coordinator_recovery_integrated": true,
+    "global_registry_validation_scope": "Finite native Mac profile only; see f3_formal_coordinator"
+  },
+  "f3_formal_coordinator": {
+    "status": "finite_native_Mac_profile_validated_formal_batch_driver_and_Windows_pending",
+    "source_commit": "6d686de6e066234f962139cdd3a02c8a749a4137",
+    "new_behavior_tests_passed": 5,
+    "affected_recovery_and_outcome_tests_passed": 7,
+    "actual_technical_MCMC_executions": 3,
+    "new_independent_statistical_repetitions": 0,
+    "realworker_completed": 3,
+    "independent_MH_audits": 2,
+    "paired_checks_passed": 1,
+    "acceptance_mismatches": 0,
+    "R_binary_roundtrips": 3,
+    "resume_new_tasks": 0,
+    "terminal_files_unchanged": 62,
+    "finite_function_rhat_above_1_01": 6,
+    "global_registry_scope": "Cooperating native Mac callers using the same absolute lock and fresh process groups; no arbitrary crash recovery",
+    "native_Windows_validated": false,
+    "formal_protocol_frozen": false,
+    "formal_inference_complete": false,
+    "ordinary_workflow_measured_separately": false,
+    "report": "docs/FORMAL-COORDINATOR.md",
+    "raw_evidence_archive": {
+      "archive": "formal-coordinator-v1.tar",
+      "bytes": 59494400,
+      "sha256": "aeff44694d3e24be451b55201a90dab745ee0a4017f637e1d34960f66339a867",
+      "checked_files": 292,
+      "source_snapshot_commit": "6d686de6e066234f962139cdd3a02c8a749a4137",
+      "registry_tasks": 3,
+      "registry_events": 6,
+      "all_member_hashes_verified": true,
+      "actual_technical_MCMC_executions": 3,
+      "new_independent_statistical_repetitions": 0,
+      "frozen_source_checks": [
+        {
+          "protocol": "inference-budget-pilot-mac-v1.json",
+          "source_files_checked": 58,
+          "mismatches": 0
+        },
+        {
+          "protocol": "formal-runtime-technical-mac-v1.json",
+          "source_files_checked": 65,
+          "mismatches": 0
+        }
+      ],
       "public_release": false
     }
   }

@@ -1,0 +1,53 @@
+{
+  "actual_inputs": {
+    "G1.npz": {
+      "actual_sha256": "f9763b2c615a28d76b02bca15d986cfc50368a8937b3c311b6c9096c2e93616c",
+      "sha256": "8009fff69fc9b5243ff8d2981cfa395ac03bd0239812fde9db41aff148693ea3"
+    },
+    "L1.npz": {
+      "actual_sha256": "f89e3337a1ab49e07741a14148166124414612e3d785b57e2a1d7adef9a916f8",
+      "sha256": "3cf8b2e86344c2e852ba0261752adce800a1ec8f97a143a128908c3511fe69a8"
+    }
+  },
+  "companion_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+  "dependency_protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+  "dependency_tasks": [
+    {
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "8b91ab212abfc73e14d8",
+      "kernel": "rwm",
+      "model": "G1",
+      "replicate": 0
+    },
+    {
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "151c23e95214c429b2bc",
+      "kernel": "rwm",
+      "model": "G1",
+      "replicate": 0
+    },
+    {
+      "device": "cpu",
+      "executor": "spawn_chains",
+      "id": "173275cd12b6ca3834aa",
+      "kernel": "nuts",
+      "model": "L1",
+      "replicate": 0
+    }
+  ],
+  "formal_inference_complete": false,
+  "host_lock": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-validation-host-v1.lock",
+  "identity": "formal-coordinator-companion-mac-v1",
+  "required_platform": "darwin",
+  "scope": "Three technical executions of existing two-model four-chain inputs; zero new independent statistical repetitions",
+  "source_commit": "6d686de6e066234f962139cdd3a02c8a749a4137",
+  "source_files": {
+    "scripts/completion/audit_formal_coordinator.py": "f9eb9e849e39da4f67c14e0d758bf9b163412d9c41e366a0d4e10b365111693c",
+    "scripts/completion/formal_coordinator.py": "c8852045f6b425519dbc7e4353682fda5fe293d913f88dd6d688d4b6b97d110d",
+    "scripts/completion/formal_outcomes.py": "e8c04dffddb82593089e4660d412249fb7fbd6e5e2655ab23ebea25f6dfec76a",
+    "scripts/completion/formal_recovery.py": "faf3650db1b066ec6c62c765696bc0942ee75c2a4e334df214ce5c966623bec2",
+    "scripts/completion/formal_runtime.py": "d5592611316cb665f442a39117709908e52f7d30e0efa1d9aba56dd60b7e6e87"
+  }
+}

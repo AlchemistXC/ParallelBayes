@@ -1,0 +1,45 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_explicit_retry_preserves_both_attempts_costs_and_cannot_change_identity _
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-83/test_explicit_retry_preserves_0')
+
+    def test_explicit_retry_preserves_both_attempts_costs_and_cannot_change_identity(tmp_path):
+        from formal_coordinator import TaskCoordinator, CoordinatorConflict
+        from formal_recovery import RecoveryConflict
+        from formal_runtime import file_hash
+        worker=tmp_path/'worker.py'
+        worker.write_text('''import json,sys
+    from pathlib import Path
+    out=Path(sys.argv[2]);data=Path(sys.argv[1]).read_bytes()
+    (out/'request-copy.bin').write_bytes(data)
+    if out.parent.name=='original':sys.exit(7)
+    (out/'worker-result.json').write_text(json.dumps(dict(status='completed',samples_eligible=True)))
+    ''')
+        c=TaskCoordinator(tmp_path/'host.lock');original=tmp_path/'original'
+        task={'id':'retry','protocol_sha256':'fixture'};request={'noise':[1.,-2.,.25]}
+        first=c.run(task,request,worker,original,1024,2**30)
+        assert first['status']=='interrupted'
+        before={str(p.relative_to(original)):file_hash(p) for p in original.rglob('*') if p.is_file()}
+        second=c.retry(original,reason='Injected nonzero worker exit')
+        assert second['status']=='completed' and second['newly_executed']
+        assert second['history']['summary']['attempt_count']==2
+        assert second['history']['summary']['total_seconds']>second['completion']['inclusive_preflight_through_terminal_seconds']
+        assert second['history']['summary']['prior_interruption_known_seconds']==first['completion']['inclusive_preflight_through_terminal_seconds']
+        assert before=={str(p.relative_to(original)):file_hash(p) for p in original.rglob('*') if p.is_file()}
+        retry=original.with_name('original.retry')
+        assert (retry/'attempt-0001/request-copy.bin').read_bytes()==(original/'attempt-0001/request-copy.bin').read_bytes()
+        assert not c.retry(original,reason='Read existing retry')['newly_executed']
+        assert not c.run(task,request,worker,original,1024,2**30,resume=True)['newly_executed']
+        with pytest.raises(CoordinatorConflict,match='identity'):
+            c.run(task,request,worker,tmp_path/'new-directory',1024,2**30)
+        with pytest.raises(CoordinatorConflict,match='identity'):
+            c.run(task,{'noise':[0.]},worker,original,1024,2**30,resume=True)
+>       with pytest.raises(CoordinatorConflict,match='identity'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'formal_coordinator.CoordinatorConflict'>
+
+tests/external/test_formal_coordinator.py:111: Failed
+=========================== short test summary info ============================
+FAILED tests/external/test_formal_coordinator.py::test_explicit_retry_preserves_both_attempts_costs_and_cannot_change_identity
+1 failed in 0.52s

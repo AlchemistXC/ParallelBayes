@@ -1,0 +1,177 @@
+{
+  "R_binary_roundtrips": 3,
+  "actual_technical_MCMC_executions": 3,
+  "companion_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+  "completed": 3,
+  "finite_function_rhat_above_1_01": 6,
+  "formal_inference_complete": false,
+  "histories": [
+    {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/mh/8b91ab212abfc73e14d8",
+          "binding_sha256": "4414571e3cc69297ef7ec549c768220b97188081a66bf50cde94c397bc5aa361",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "b487e527324d4166658acf357c05d2aaaa63520bff79b5303697235835114265",
+          "fixed_task": {
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "8b91ab212abfc73e14d8",
+            "kernel": "rwm",
+            "model": "G1",
+            "protocol_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+            "replicate": 0
+          },
+          "outcome": "valid",
+          "seconds": 1.315876374952495,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempts only; coordinator, recovery and between-call time are not included",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/mh/8b91ab212abfc73e14d8",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 1.315876374952495,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 1.315876374952495,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "8b91ab212abfc73e14d8",
+        "kernel": "rwm",
+        "model": "G1",
+        "protocol_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+        "replicate": 0
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/mh/151c23e95214c429b2bc",
+          "binding_sha256": "febc84f407742af0f93d8da6957fed0605526f8fb147e101de81e4c98fa37b8d",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "07b3293885c84c1f313ab9da200ad4e5c50aba9f35d1c51a3e6b703ca0bf24e4",
+          "fixed_task": {
+            "device": "cpu",
+            "executor": "online_picard",
+            "id": "151c23e95214c429b2bc",
+            "kernel": "rwm",
+            "model": "G1",
+            "protocol_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+            "replicate": 0
+          },
+          "outcome": "valid",
+          "seconds": 1.3689083748031408,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempts only; coordinator, recovery and between-call time are not included",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/mh/151c23e95214c429b2bc",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 1.3689083748031408,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 1.3689083748031408,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "151c23e95214c429b2bc",
+        "kernel": "rwm",
+        "model": "G1",
+        "protocol_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+        "replicate": 0
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/nuts/173275cd12b6ca3834aa",
+          "binding_sha256": "d35f05a38295de305beacc2cbadccf1d16d6fe903a84d4f317eb656cebb5ce53",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "529f9c36be8e7b600065152d0c6e6139c2b7e5f4077b86e33ee8270050e78bfa",
+          "fixed_task": {
+            "device": "cpu",
+            "executor": "spawn_chains",
+            "id": "173275cd12b6ca3834aa",
+            "kernel": "nuts",
+            "model": "L1",
+            "protocol_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+            "replicate": 0
+          },
+          "outcome": "valid",
+          "seconds": 2.5981422499753535,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempts only; coordinator, recovery and between-call time are not included",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-realworker-mac-01/nuts/173275cd12b6ca3834aa",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 2.5981422499753535,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 2.5981422499753535,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "173275cd12b6ca3834aa",
+        "kernel": "nuts",
+        "model": "L1",
+        "protocol_sha256": "9923309f4cdbf1e0e222289e8d8241f0fda3fdfcc8ce5165986a95593b0814ad",
+        "replicate": 0
+      }
+    }
+  ],
+  "independent_MH_audits": 2,
+  "native_Windows_validated": false,
+  "new_independent_statistical_repetitions": 0,
+  "ordinary_workflow_measured_separately": false,
+  "paired_check": {
+    "acceptance_mismatches": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "allowed_path_error": [
+      3.418105352884411e-08,
+      4.40776056874799e-08,
+      4.0664175413229926e-08,
+      4.6450889435122835e-08
+    ],
+    "max_abs_output_error": [
+      5.551115123125783e-16,
+      2.220446049250313e-16,
+      2.220446049250313e-16,
+      8.881784197001252e-16
+    ],
+    "max_abs_path_error": [
+      5.551115123125783e-16,
+      2.220446049250313e-16,
+      2.220446049250313e-16,
+      8.881784197001252e-16
+    ],
+    "passed": true,
+    "scope": "Within-device same actual tape; each path also passes independent NumPy audit. Not a general guarantee."
+  },
+  "registry": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-validation-host-v1.lock.coordinator",
+  "resume_new_tasks": 0,
+  "scope": "Three technical executions of existing two-model four-chain inputs; zero new independent statistical repetitions",
+  "source_commit": "6d686de6e066234f962139cdd3a02c8a749a4137",
+  "terminal_files_unchanged": 62,
+  "undefined_function_rhat": 0
+}

@@ -1,0 +1,25 @@
+{
+  "archive": "formal-coordinator-v1.tar",
+  "bytes": 59494400,
+  "sha256": "aeff44694d3e24be451b55201a90dab745ee0a4017f637e1d34960f66339a867",
+  "checked_files": 292,
+  "source_snapshot_commit": "6d686de6e066234f962139cdd3a02c8a749a4137",
+  "registry_tasks": 3,
+  "registry_events": 6,
+  "all_member_hashes_verified": true,
+  "actual_technical_MCMC_executions": 3,
+  "new_independent_statistical_repetitions": 0,
+  "frozen_source_checks": [
+    {
+      "protocol": "inference-budget-pilot-mac-v1.json",
+      "source_files_checked": 58,
+      "mismatches": 0
+    },
+    {
+      "protocol": "formal-runtime-technical-mac-v1.json",
+      "source_files_checked": 65,
+      "mismatches": 0
+    }
+  ],
+  "public_release": false
+}
