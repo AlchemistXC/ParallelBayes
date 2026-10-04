@@ -1,0 +1,16 @@
+{
+  "status": "terminal",
+  "protocol_sha256": "534651bf3b0ae2984624e10bc668edc5837c78cf3b472fa4c3a1ade85254cf76",
+  "device": "cpu",
+  "planned_groups": 3,
+  "completed_groups": 3,
+  "failed_groups": 0,
+  "audited_workflows": 9,
+  "all_group_identities": {
+    "77be5a3c758c222ca253": "625338428b5682b3775cdb76f8d88d7f3c4feb2ef699d308e9052a86141d51c1",
+    "5940aa0b72e34c2cc237": "6af91acd2cfc43a12bf07c0a0dedb17876c46b05192a7db9bf4a21649a509264",
+    "f16bc3ac0091492964ed": "f59c582ffb93e76b2d7a67cfa93255c5ab568eca788b8eb6810d46fd2b329952"
+  },
+  "independent_tapes_per_model": 1,
+  "inference_claim": false
+}

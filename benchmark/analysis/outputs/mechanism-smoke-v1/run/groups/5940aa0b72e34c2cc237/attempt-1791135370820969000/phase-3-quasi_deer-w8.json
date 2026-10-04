@@ -1,0 +1,313 @@
+{
+  "status": "completed",
+  "diagnostics": {
+    "status": 0,
+    "iterations": 16,
+    "residual": 0.21216067347814205,
+    "clips": 15,
+    "confirmed": 48,
+    "forward_evals": 512,
+    "jvp_evals": 256,
+    "rounds": [
+      {
+        "offset": 0,
+        "iteration": 1,
+        "residual": 50710892.757477306,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 2,
+        "residual": 523335.9864754392,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 3,
+        "residual": 7944.235963735238,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 4,
+        "residual": 14.689569975232368,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 5,
+        "residual": 0.025630050914281277,
+        "confirmed": 0
+      },
+      {
+        "offset": 8,
+        "iteration": 1,
+        "residual": 340552248.50304395,
+        "confirmed": 16
+      },
+      {
+        "offset": 8,
+        "iteration": 2,
+        "residual": 2104528.2040158105,
+        "confirmed": 16
+      },
+      {
+        "offset": 8,
+        "iteration": 3,
+        "residual": 11777.717578459245,
+        "confirmed": 16
+      },
+      {
+        "offset": 8,
+        "iteration": 4,
+        "residual": 54.7110729535597,
+        "confirmed": 16
+      },
+      {
+        "offset": 8,
+        "iteration": 5,
+        "residual": 0.21216067347814205,
+        "confirmed": 16
+      },
+      {
+        "offset": 16,
+        "iteration": 1,
+        "residual": 253517234.27402395,
+        "confirmed": 32
+      },
+      {
+        "offset": 16,
+        "iteration": 2,
+        "residual": 2998306.3699178454,
+        "confirmed": 32
+      },
+      {
+        "offset": 16,
+        "iteration": 3,
+        "residual": 61820.425451626965,
+        "confirmed": 32
+      },
+      {
+        "offset": 16,
+        "iteration": 4,
+        "residual": 484.98522006172124,
+        "confirmed": 32
+      },
+      {
+        "offset": 16,
+        "iteration": 5,
+        "residual": 2.3449390364928346,
+        "confirmed": 32
+      },
+      {
+        "offset": 16,
+        "iteration": 6,
+        "residual": 0.003770064991927178,
+        "confirmed": 32
+      }
+    ],
+    "host_scalar_reads": 48,
+    "host_scalar_wait_seconds": 3.999960608780384e-05,
+    "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+    "tensor_device": "cpu",
+    "tensor_dtype": "torch.float64"
+  },
+  "primary_diagnostics": {
+    "status": 0,
+    "iterations": 16,
+    "residual": 0.21216067347814205,
+    "clips": 15,
+    "confirmed": 48,
+    "forward_evals": 512,
+    "jvp_evals": 256,
+    "rounds": [
+      {
+        "offset": 0,
+        "iteration": 1,
+        "residual": 50710892.757477306,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 2,
+        "residual": 523335.9864754392,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 3,
+        "residual": 7944.235963735238,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 4,
+        "residual": 14.689569975232368,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 5,
+        "residual": 0.025630050914281277,
+        "confirmed": 0
+      },
+      {
+        "offset": 8,
+        "iteration": 1,
+        "residual": 340552248.50304395,
+        "confirmed": 16
+      },
+      {
+        "offset": 8,
+        "iteration": 2,
+        "residual": 2104528.2040158105,
+        "confirmed": 16
+      },
+      {
+        "offset": 8,
+        "iteration": 3,
+        "residual": 11777.717578459245,
+        "confirmed": 16
+      },
+      {
+        "offset": 8,
+        "iteration": 4,
+        "residual": 54.7110729535597,
+        "confirmed": 16
+      },
+      {
+        "offset": 8,
+        "iteration": 5,
+        "residual": 0.21216067347814205,
+        "confirmed": 16
+      },
+      {
+        "offset": 16,
+        "iteration": 1,
+        "residual": 253517234.27402395,
+        "confirmed": 32
+      },
+      {
+        "offset": 16,
+        "iteration": 2,
+        "residual": 2998306.3699178454,
+        "confirmed": 32
+      },
+      {
+        "offset": 16,
+        "iteration": 3,
+        "residual": 61820.425451626965,
+        "confirmed": 32
+      },
+      {
+        "offset": 16,
+        "iteration": 4,
+        "residual": 484.98522006172124,
+        "confirmed": 32
+      },
+      {
+        "offset": 16,
+        "iteration": 5,
+        "residual": 2.3449390364928346,
+        "confirmed": 32
+      },
+      {
+        "offset": 16,
+        "iteration": 6,
+        "residual": 0.003770064991927178,
+        "confirmed": 32
+      }
+    ],
+    "host_scalar_reads": 48,
+    "host_scalar_wait_seconds": 3.999960608780384e-05,
+    "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+    "tensor_device": "cpu",
+    "tensor_dtype": "torch.float64"
+  },
+  "audit": null,
+  "primary_audit": null,
+  "transform_error": null,
+  "fallback": false,
+  "config": {
+    "kernel": "mala",
+    "executor": "quasi_deer",
+    "device": "cpu",
+    "draws": 24,
+    "chains": 2,
+    "seed": 2026,
+    "solver_seed": 7103,
+    "step_size": 0.1,
+    "window": 8,
+    "max_iter": 2048,
+    "atol": 1e-10,
+    "rtol": 1e-10,
+    "jacobian_clip": 1.0,
+    "memory_limit_mb": 2048,
+    "initial": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "on_failure": "error",
+    "audit": false
+  },
+  "names": [
+    "q[1]",
+    "q[2]",
+    "q[3]",
+    "q[4]",
+    "q[5]",
+    "q[6]",
+    "q[7]",
+    "q[8]"
+  ],
+  "target_id": "514971389da57c81e05933e03c3158901a37a2a3edbddbee6c3ce2ce0c02b515",
+  "coordinate_id": "identity",
+  "tape_sha256": "c951c81961d73e91bb7199f9e2eda4e698b96ddf7de27ec3f7ac1d4ce8728198",
+  "timing": {
+    "input": 2.8499867767095566e-05,
+    "compile": 0.0,
+    "warmup": 0.0,
+    "sample": 0.06122345803305507,
+    "transfer": 3.3329706639051437e-06,
+    "audit": 0.0,
+    "fallback": 0.0,
+    "transform": 2.7207890525460243e-05,
+    "total": 0.06130983401089907
+  },
+  "memory": {
+    "estimated_array_workspace_bytes": 163840
+  },
+  "guarantee": "executor_output_standard_only",
+  "stopping_reason": "output_standard_met",
+  "state_repairs": 0,
+  "implementation": "torch eager; Python round control; no compiled device-loop claim",
+  "measurement": {
+    "phase": "warmed_replay",
+    "replay_index": 3,
+    "wall_seconds": 0.06134533300064504,
+    "process_cpu_seconds": 0.06132300000000024,
+    "process_cpu_percent": 99.96359462154265,
+    "rss_before": 331939840,
+    "rss_after": 331939840,
+    "process_threads": 3,
+    "scope": "Process CPU utilization can exceed 100%; RSS endpoints are not peak CPU memory; CUDA work synchronized by sampler"
+  }
+}

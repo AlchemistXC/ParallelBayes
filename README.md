@@ -49,3 +49,5 @@ R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU�
 自定义技能迁移见[Windows技能安装说明](handoff/windows-native/SKILLS-SETUP.md)。30个技能的正文以私下ZIP转交；公开仓库仅含清单、校验和及安装脚本。
 
 外部水井案例的后续参考证据见[有限参考复核](docs/WELLS-REFERENCE-AUDIT.md)和[独立二维积分](docs/WELLS-QUADRATURE.md)。两者不代替Windows目标核验或正式推断实验。
+
+第二轮Windows交接：[可直接转交的提示词](handoff/windows-completion/CODEX-PROMPT-F2-F4.md)，包含F1回执、水井CPU/CUDA/R核验和已冻结机制pilot；[试验设计及Mac运行器证据](docs/MECHANISM-PILOT.md)。Windows实际结果仍待回传。

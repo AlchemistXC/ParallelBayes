@@ -1,0 +1,119 @@
+{
+  "status": "completed",
+  "diagnostics": {
+    "status": 0,
+    "iterations": 24,
+    "residual": 0.0,
+    "clips": 0,
+    "confirmed": 48,
+    "forward_evals": 48,
+    "jvp_evals": 0,
+    "rounds": [],
+    "host_scalar_reads": 1,
+    "host_scalar_wait_seconds": 7.499475032091141e-07,
+    "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+    "tensor_device": "cpu",
+    "tensor_dtype": "torch.float64"
+  },
+  "primary_diagnostics": {
+    "status": 0,
+    "iterations": 24,
+    "residual": 0.0,
+    "clips": 0,
+    "confirmed": 48,
+    "forward_evals": 48,
+    "jvp_evals": 0,
+    "rounds": [],
+    "host_scalar_reads": 1,
+    "host_scalar_wait_seconds": 7.499475032091141e-07,
+    "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+    "tensor_device": "cpu",
+    "tensor_dtype": "torch.float64"
+  },
+  "audit": null,
+  "primary_audit": null,
+  "transform_error": null,
+  "fallback": false,
+  "config": {
+    "kernel": "rwm",
+    "executor": "sequential",
+    "device": "cpu",
+    "draws": 24,
+    "chains": 2,
+    "seed": 2026,
+    "solver_seed": 7103,
+    "step_size": 0.5,
+    "window": 1,
+    "max_iter": 2048,
+    "atol": 1e-10,
+    "rtol": 1e-10,
+    "jacobian_clip": 1.0,
+    "memory_limit_mb": 2048,
+    "initial": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "on_failure": "error",
+    "audit": false
+  },
+  "names": [
+    "q[1]",
+    "q[2]",
+    "q[3]",
+    "q[4]",
+    "q[5]",
+    "q[6]",
+    "q[7]",
+    "q[8]"
+  ],
+  "target_id": "514971389da57c81e05933e03c3158901a37a2a3edbddbee6c3ce2ce0c02b515",
+  "coordinate_id": "identity",
+  "tape_sha256": "c951c81961d73e91bb7199f9e2eda4e698b96ddf7de27ec3f7ac1d4ce8728198",
+  "timing": {
+    "input": 0.00011762487702071667,
+    "compile": 0.0,
+    "warmup": 0.0,
+    "sample": 0.00216420809738338,
+    "transfer": 2.0421575754880905e-06,
+    "audit": 0.0,
+    "fallback": 0.0,
+    "transform": 1.7459038645029068e-05,
+    "total": 0.0023574999067932367
+  },
+  "memory": {
+    "estimated_array_workspace_bytes": 128000
+  },
+  "guarantee": "executor_output_standard_only",
+  "stopping_reason": "output_standard_met",
+  "state_repairs": 0,
+  "implementation": "torch eager; Python round control; no compiled device-loop claim",
+  "measurement": {
+    "phase": "warmed_replay",
+    "replay_index": 2,
+    "wall_seconds": 0.0023809170816093683,
+    "process_cpu_seconds": 0.0023779999999999912,
+    "process_cpu_percent": 99.87748075596966,
+    "rss_before": 240484352,
+    "rss_after": 240484352,
+    "process_threads": 1,
+    "scope": "Process CPU utilization can exceed 100%; RSS endpoints are not peak CPU memory; CUDA work synchronized by sampler"
+  }
+}

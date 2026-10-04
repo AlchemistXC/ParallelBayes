@@ -1,0 +1,160 @@
+{
+  "pairs": [
+    {
+      "label": "quasi_deer-w4",
+      "max_path_error": 1.7763568394002505e-15,
+      "acceptance_mismatches": 0,
+      "passed": true
+    },
+    {
+      "label": "quasi_deer-w8",
+      "max_path_error": 1.887379141862766e-15,
+      "acceptance_mismatches": 0,
+      "passed": true
+    }
+  ],
+  "model_setup_seconds": 0.00597904110327363,
+  "order": [
+    "quasi_deer-w4",
+    "quasi_deer-w8",
+    "sequential"
+  ],
+  "records": [
+    {
+      "label": "quasi_deer-w4",
+      "phase": 0,
+      "status": "completed",
+      "raw": "phase-0-quasi_deer-w4.npz",
+      "record": "phase-0-quasi_deer-w4.json",
+      "replay_identical": null,
+      "archive_seconds": 0.0008409579750150442
+    },
+    {
+      "label": "quasi_deer-w8",
+      "phase": 0,
+      "status": "completed",
+      "raw": "phase-0-quasi_deer-w8.npz",
+      "record": "phase-0-quasi_deer-w8.json",
+      "replay_identical": null,
+      "archive_seconds": 0.0008466669823974371
+    },
+    {
+      "label": "sequential",
+      "phase": 0,
+      "status": "completed",
+      "raw": "phase-0-sequential.npz",
+      "record": "phase-0-sequential.json",
+      "replay_identical": null,
+      "archive_seconds": 0.0005837499629706144
+    },
+    {
+      "label": "quasi_deer-w8",
+      "phase": 1,
+      "status": "completed",
+      "raw": "phase-1-quasi_deer-w8.npz",
+      "record": "phase-1-quasi_deer-w8.json",
+      "replay_identical": true,
+      "archive_seconds": 0.0012944161426275969
+    },
+    {
+      "label": "sequential",
+      "phase": 1,
+      "status": "completed",
+      "raw": "phase-1-sequential.npz",
+      "record": "phase-1-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.0006441248115152121
+    },
+    {
+      "label": "quasi_deer-w4",
+      "phase": 1,
+      "status": "completed",
+      "raw": "phase-1-quasi_deer-w4.npz",
+      "record": "phase-1-quasi_deer-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.000838833162561059
+    },
+    {
+      "label": "sequential",
+      "phase": 2,
+      "status": "completed",
+      "raw": "phase-2-sequential.npz",
+      "record": "phase-2-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.0005967500619590282
+    },
+    {
+      "label": "quasi_deer-w4",
+      "phase": 2,
+      "status": "completed",
+      "raw": "phase-2-quasi_deer-w4.npz",
+      "record": "phase-2-quasi_deer-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.0012577499728649855
+    },
+    {
+      "label": "quasi_deer-w8",
+      "phase": 2,
+      "status": "completed",
+      "raw": "phase-2-quasi_deer-w8.npz",
+      "record": "phase-2-quasi_deer-w8.json",
+      "replay_identical": true,
+      "archive_seconds": 0.0008326249662786722
+    },
+    {
+      "label": "quasi_deer-w4",
+      "phase": 3,
+      "status": "completed",
+      "raw": "phase-3-quasi_deer-w4.npz",
+      "record": "phase-3-quasi_deer-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.0006956669967621565
+    },
+    {
+      "label": "quasi_deer-w8",
+      "phase": 3,
+      "status": "completed",
+      "raw": "phase-3-quasi_deer-w8.npz",
+      "record": "phase-3-quasi_deer-w8.json",
+      "replay_identical": true,
+      "archive_seconds": 0.000762915937229991
+    },
+    {
+      "label": "sequential",
+      "phase": 3,
+      "status": "completed",
+      "raw": "phase-3-sequential.npz",
+      "record": "phase-3-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.0005642080213874578
+    },
+    {
+      "label": "quasi_deer-w8",
+      "phase": 4,
+      "status": "completed",
+      "raw": "phase-4-quasi_deer-w8.npz",
+      "record": "phase-4-quasi_deer-w8.json",
+      "replay_identical": true,
+      "archive_seconds": 0.0007505000103265047
+    },
+    {
+      "label": "sequential",
+      "phase": 4,
+      "status": "completed",
+      "raw": "phase-4-sequential.npz",
+      "record": "phase-4-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.0005517920944839716
+    },
+    {
+      "label": "quasi_deer-w4",
+      "phase": 4,
+      "status": "completed",
+      "raw": "phase-4-quasi_deer-w4.npz",
+      "record": "phase-4-quasi_deer-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.000784499803557992
+    }
+  ],
+  "scope": "One actual tape; replay phases do not increase independent replication"
+}

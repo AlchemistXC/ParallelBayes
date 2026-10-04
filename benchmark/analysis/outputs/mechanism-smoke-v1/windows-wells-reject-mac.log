@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "scope": "Native Windows external-target and R transport checks, not convergence/performance",
+  "source_script_sha256": "458d45e97c6921fcef38d4271dd2149788949652cdaacd2790e18dbc673e5b75",
+  "error": "ValueError: Actual native Windows passed receipt is required: CPU"
+}

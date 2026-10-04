@@ -1,0 +1,230 @@
+{
+  "status": "passed",
+  "shape": [
+    2,
+    8,
+    8
+  ],
+  "kernel": "rwm",
+  "step_size": 0.5,
+  "components_are_additive": false,
+  "scope": "Separate synchronized fixed-state probes; not actual solver-state occupation or an exclusive wall-time decomposition",
+  "repetition": "Block calls and timing rounds reuse these exact states; they are technical repetitions",
+  "measurements": {
+    "density_loop": [
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.0008103328291326761,
+        "seconds_per_call": 0.00016206656582653522,
+        "process_cpu_seconds": 0.0008150000000000102,
+        "process_cpu_percent": 100.57595727330083
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.0002717499155551195,
+        "seconds_per_call": 5.43499831110239e-05,
+        "process_cpu_seconds": 0.00027199999999982793,
+        "process_cpu_percent": 100.09202742315395
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.0002679580356925726,
+        "seconds_per_call": 5.359160713851452e-05,
+        "process_cpu_seconds": 0.00026900000000007473,
+        "process_cpu_percent": 100.38885353999892
+      }
+    ],
+    "density_batch": [
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.00029024994000792503,
+        "seconds_per_call": 5.8049988001585004e-05,
+        "process_cpu_seconds": 0.0002910000000000412,
+        "process_cpu_percent": 100.25841865534777
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.00011674989946186543,
+        "seconds_per_call": 2.3349979892373084e-05,
+        "process_cpu_seconds": 0.00011699999999992272,
+        "process_cpu_percent": 100.21421906075301
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.00011545885354280472,
+        "seconds_per_call": 2.3091770708560942e-05,
+        "process_cpu_seconds": 0.00011500000000008725,
+        "process_cpu_percent": 99.60258262693787
+      }
+    ],
+    "transition_loop": [
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.004581084009259939,
+        "seconds_per_call": 0.0009162168018519879,
+        "process_cpu_seconds": 0.00445400000000018,
+        "process_cpu_percent": 97.22589655629805
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.0018059159629046917,
+        "seconds_per_call": 0.00036118319258093834,
+        "process_cpu_seconds": 0.001806999999999892,
+        "process_cpu_percent": 100.06002699557828
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.0018340831156820059,
+        "seconds_per_call": 0.00036681662313640115,
+        "process_cpu_seconds": 0.0018340000000001133,
+        "process_cpu_percent": 99.99546827070257
+      }
+    ],
+    "transition_batch": [
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.000505165895447135,
+        "seconds_per_call": 0.000101033179089427,
+        "process_cpu_seconds": 0.00045600000000001195,
+        "process_cpu_percent": 90.26737634305161
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.0003790420014411211,
+        "seconds_per_call": 7.580840028822421e-05,
+        "process_cpu_seconds": 0.00038000000000004697,
+        "process_cpu_percent": 100.25274205900232
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.00039104209281504154,
+        "seconds_per_call": 7.82084185630083e-05,
+        "process_cpu_seconds": 0.00039199999999994795,
+        "process_cpu_percent": 100.24496267857268
+      }
+    ],
+    "surrogate_jvp_loop": [
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.049439124995842576,
+        "seconds_per_call": 0.009887824999168515,
+        "process_cpu_seconds": 0.047625999999999946,
+        "process_cpu_percent": 96.33261107271802
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.05680720810778439,
+        "seconds_per_call": 0.011361441621556879,
+        "process_cpu_seconds": 0.056789999999999896,
+        "process_cpu_percent": 99.96970787976089
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.05101308296434581,
+        "seconds_per_call": 0.010202616592869163,
+        "process_cpu_seconds": 0.05100400000000005,
+        "process_cpu_percent": 99.98219483352513
+      }
+    ],
+    "surrogate_jvp_batch": [
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.003997541964054108,
+        "seconds_per_call": 0.0007995083928108215,
+        "process_cpu_seconds": 0.003997999999999946,
+        "process_cpu_percent": 100.01145793965284
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.004046417074277997,
+        "seconds_per_call": 0.0008092834148555994,
+        "process_cpu_seconds": 0.004047000000000134,
+        "process_cpu_percent": 100.01440597228205
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.004013333003968,
+        "seconds_per_call": 0.0008026666007936,
+        "process_cpu_seconds": 0.004013999999999962,
+        "process_cpu_percent": 100.01661950382145
+      }
+    ],
+    "affine_scan": [
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.00018262513913214207,
+        "seconds_per_call": 3.652502782642841e-05,
+        "process_cpu_seconds": 0.00018399999999996197,
+        "process_cpu_percent": 100.75283220828929
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.00018166587688028812,
+        "seconds_per_call": 3.633317537605762e-05,
+        "process_cpu_seconds": 0.0001820000000001265,
+        "process_cpu_percent": 100.18392178298765
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.00017779087647795677,
+        "seconds_per_call": 3.555817529559136e-05,
+        "process_cpu_seconds": 0.00017899999999992922,
+        "process_cpu_percent": 100.68008187254893
+      }
+    ],
+    "affine_serial": [
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.00010762503370642662,
+        "seconds_per_call": 2.1525006741285323e-05,
+        "process_cpu_seconds": 0.00010799999999999699,
+        "process_cpu_percent": 100.34840062823412
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.00010833283886313438,
+        "seconds_per_call": 2.1666567772626876e-05,
+        "process_cpu_seconds": 0.0001100000000000545,
+        "process_cpu_percent": 101.53892499671902
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 0.00010683294385671616,
+        "seconds_per_call": 2.1366588771343232e-05,
+        "process_cpu_seconds": 0.00010799999999999699,
+        "process_cpu_percent": 101.09241222899004
+      }
+    ],
+    "prefix_scalar_read": [
+      {
+        "block_calls": 5,
+        "wall_seconds": 2.787495031952858e-05,
+        "seconds_per_call": 5.574990063905716e-06,
+        "process_cpu_seconds": 2.8000000000139025e-05,
+        "process_cpu_percent": 100.44860951921711
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 2.3582950234413147e-05,
+        "seconds_per_call": 4.716590046882629e-06,
+        "process_cpu_seconds": 2.4000000000024002e-05,
+        "process_cpu_percent": 101.76843762746138
+      },
+      {
+        "block_calls": 5,
+        "wall_seconds": 2.333405427634716e-05,
+        "seconds_per_call": 4.666810855269432e-06,
+        "process_cpu_seconds": 2.3999999999801958e-05,
+        "process_cpu_percent": 102.85396491997467
+      }
+    ]
+  },
+  "numerical_checks": {
+    "accepted": 11,
+    "acceptance_mismatches": 0,
+    "transition_max_abs_error": 0.0,
+    "density_max_abs_error": 2.220446049250313e-16,
+    "serial_batch_and_scan_agree": true
+  },
+  "prefix_scope": "Synthetic agreement flags from shifted fixed-batch acceptance; cost probe only, not observed solver prefix statistics"
+}

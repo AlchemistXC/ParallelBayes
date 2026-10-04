@@ -1,0 +1,18 @@
+{
+  "identity": "f59c582ffb93e76b2d7a67cfa93255c5ab568eca788b8eb6810d46fd2b329952",
+  "group": {
+    "model": "G2",
+    "kernel": "mala",
+    "replicate": 0,
+    "chains": 1,
+    "draws": 16,
+    "windows": [
+      4,
+      8
+    ],
+    "step_size": 0.1,
+    "role": "Mac_runner_validation",
+    "id": "f16bc3ac0091492964ed"
+  },
+  "tape_sha256": "4ebc278002ff9ea3e1b94a33a9e99db883c22b519eb6b7b3992f5de19514e0a4"
+}

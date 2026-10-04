@@ -1,0 +1,201 @@
+{
+  "status": "completed",
+  "diagnostics": {
+    "status": 0,
+    "iterations": 8,
+    "residual": 0.0,
+    "clips": 0,
+    "confirmed": 48,
+    "forward_evals": 208,
+    "jvp_evals": 0,
+    "rounds": [
+      {
+        "offset": 0,
+        "iteration": 1,
+        "confirmed_prefix": 2
+      },
+      {
+        "offset": 2,
+        "iteration": 2,
+        "confirmed_prefix": 1
+      },
+      {
+        "offset": 3,
+        "iteration": 3,
+        "confirmed_prefix": 2
+      },
+      {
+        "offset": 5,
+        "iteration": 4,
+        "confirmed_prefix": 8
+      },
+      {
+        "offset": 13,
+        "iteration": 5,
+        "confirmed_prefix": 3
+      },
+      {
+        "offset": 16,
+        "iteration": 6,
+        "confirmed_prefix": 5
+      },
+      {
+        "offset": 21,
+        "iteration": 7,
+        "confirmed_prefix": 2
+      },
+      {
+        "offset": 23,
+        "iteration": 8,
+        "confirmed_prefix": 1
+      }
+    ],
+    "host_scalar_reads": 16,
+    "host_scalar_wait_seconds": 2.1540792658925056e-05,
+    "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+    "tensor_device": "cpu",
+    "tensor_dtype": "torch.float64"
+  },
+  "primary_diagnostics": {
+    "status": 0,
+    "iterations": 8,
+    "residual": 0.0,
+    "clips": 0,
+    "confirmed": 48,
+    "forward_evals": 208,
+    "jvp_evals": 0,
+    "rounds": [
+      {
+        "offset": 0,
+        "iteration": 1,
+        "confirmed_prefix": 2
+      },
+      {
+        "offset": 2,
+        "iteration": 2,
+        "confirmed_prefix": 1
+      },
+      {
+        "offset": 3,
+        "iteration": 3,
+        "confirmed_prefix": 2
+      },
+      {
+        "offset": 5,
+        "iteration": 4,
+        "confirmed_prefix": 8
+      },
+      {
+        "offset": 13,
+        "iteration": 5,
+        "confirmed_prefix": 3
+      },
+      {
+        "offset": 16,
+        "iteration": 6,
+        "confirmed_prefix": 5
+      },
+      {
+        "offset": 21,
+        "iteration": 7,
+        "confirmed_prefix": 2
+      },
+      {
+        "offset": 23,
+        "iteration": 8,
+        "confirmed_prefix": 1
+      }
+    ],
+    "host_scalar_reads": 16,
+    "host_scalar_wait_seconds": 2.1540792658925056e-05,
+    "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+    "tensor_device": "cpu",
+    "tensor_dtype": "torch.float64"
+  },
+  "audit": null,
+  "primary_audit": null,
+  "transform_error": null,
+  "fallback": false,
+  "config": {
+    "kernel": "rwm",
+    "executor": "online_picard",
+    "device": "cpu",
+    "draws": 24,
+    "chains": 2,
+    "seed": 2026,
+    "solver_seed": 7103,
+    "step_size": 0.5,
+    "window": 8,
+    "max_iter": 2048,
+    "atol": 1e-10,
+    "rtol": 1e-10,
+    "jacobian_clip": 1.0,
+    "memory_limit_mb": 2048,
+    "initial": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "on_failure": "error",
+    "audit": false
+  },
+  "names": [
+    "q[1]",
+    "q[2]",
+    "q[3]",
+    "q[4]",
+    "q[5]",
+    "q[6]",
+    "q[7]",
+    "q[8]"
+  ],
+  "target_id": "514971389da57c81e05933e03c3158901a37a2a3edbddbee6c3ce2ce0c02b515",
+  "coordinate_id": "identity",
+  "tape_sha256": "c951c81961d73e91bb7199f9e2eda4e698b96ddf7de27ec3f7ac1d4ce8728198",
+  "timing": {
+    "input": 0.0001222500577569008,
+    "compile": 0.0,
+    "warmup": 0.0,
+    "sample": 0.004896624945104122,
+    "transfer": 2.250075340270996e-06,
+    "audit": 0.0,
+    "fallback": 0.0,
+    "transform": 1.6625039279460907e-05,
+    "total": 0.005103416973724961
+  },
+  "memory": {
+    "estimated_array_workspace_bytes": 163840
+  },
+  "guarantee": "executor_output_standard_only",
+  "stopping_reason": "output_standard_met",
+  "state_repairs": 0,
+  "implementation": "torch eager; Python round control; no compiled device-loop claim",
+  "measurement": {
+    "phase": "warmed_replay",
+    "replay_index": 3,
+    "wall_seconds": 0.005126832984387875,
+    "process_cpu_seconds": 0.00512199999999996,
+    "process_cpu_percent": 99.9057315812192,
+    "rss_before": 240484352,
+    "rss_after": 240484352,
+    "process_threads": 1,
+    "scope": "Process CPU utilization can exceed 100%; RSS endpoints are not peak CPU memory; CUDA work synchronized by sampler"
+  }
+}

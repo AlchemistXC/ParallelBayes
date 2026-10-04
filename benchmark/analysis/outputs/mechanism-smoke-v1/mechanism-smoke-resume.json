@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "terminal_files_unchanged": 126,
+  "no_new_attempt": true,
+  "exit_code": 0,
+  "scope": "Actual Mac CLI resume; all terminal group files byte-identical"
+}

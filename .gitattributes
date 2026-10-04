@@ -13,3 +13,6 @@
 
 # Preserve the exact bytes of small diagnostic fixtures.
 *.bin binary
+
+# Archived scientific output is byte evidence, including native newline conventions.
+benchmark/analysis/outputs/** -text

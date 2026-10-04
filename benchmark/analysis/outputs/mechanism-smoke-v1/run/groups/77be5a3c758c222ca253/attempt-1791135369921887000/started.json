@@ -1,0 +1,18 @@
+{
+  "identity": "625338428b5682b3775cdb76f8d88d7f3c4feb2ef699d308e9052a86141d51c1",
+  "group": {
+    "model": "G1",
+    "kernel": "rwm",
+    "replicate": 0,
+    "chains": 2,
+    "draws": 24,
+    "windows": [
+      4,
+      8
+    ],
+    "step_size": 0.5,
+    "role": "Mac_runner_validation",
+    "id": "77be5a3c758c222ca253"
+  },
+  "tape_sha256": "c951c81961d73e91bb7199f9e2eda4e698b96ddf7de27ec3f7ac1d4ce8728198"
+}

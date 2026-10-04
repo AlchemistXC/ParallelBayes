@@ -1,0 +1,25 @@
+{
+  "protocol_sha256": "534651bf3b0ae2984624e10bc668edc5837c78cf3b472fa4c3a1ade85254cf76",
+  "source_commit": "97e6835476bf71f48c1236e7cc77f235e5191d6c",
+  "run_manifest_sha256": "8b54debf330b8d56781cbbbc36f720924a18b071369d3685671ead79a6413818",
+  "state_sha256": {
+    "5940aa0b72e34c2cc237": "8f87956da3fe24793c6e85638eebae8b7ea56adbcc3fb6bf998411456e6accab",
+    "77be5a3c758c222ca253": "c1a79d50f512350515103220832cbe6cccbd6ef56358c2fee718edb84df3a1c4",
+    "f16bc3ac0091492964ed": "103b4d1e0abaf8ac44b9c7a228277b6d3f9ee9ff0c355a77956ca0901a561259"
+  },
+  "analyzer_sha256": "645ec3515ee2c9d779edc0792cf1bc8fb9fdd6d5bda93818d6e72e33156ca733",
+  "device": "cpu",
+  "groups_planned": 3,
+  "groups_completed": 3,
+  "groups_failed": 0,
+  "groups_pending": 0,
+  "workflows_planned": 9,
+  "workflows_completed": 9,
+  "workflow_status_counts": {
+    "completed": 9
+  },
+  "independent_tapes_per_model": 1,
+  "technical_replays": 3,
+  "scope": "Descriptive pilot tables; no confidence intervals, inference convergence or general speedup claim",
+  "cost_note": "Fixed-state probe operations overlap in real execution and must not be added. Post-probe timing is a sensitivity check, not causal overhead subtraction."
+}
