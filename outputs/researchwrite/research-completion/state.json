@@ -53,7 +53,16 @@
     "selected_groups_finite_rhat_gt_1_01": 14,
     "selected_groups_some_undefined_rhat": 6,
     "resume_terminal_files_unchanged": 1085,
-    "raw_evidence_archive_pending": true
+    "raw_evidence_archive_pending": false,
+    "raw_evidence_archive": {
+      "archive": "inference-tuning-v1.tar",
+      "bytes": 362383360,
+      "sha256": "2944c94ddd5e8b043c0b48d7dfc2aaf329f8c5ca0f0e402faddbeb3f23846fac",
+      "checked_files": 1613,
+      "analysis_source_commit": "5bf42a9972bb4b75b461123ca9e559f29fb765e8",
+      "sampling_source_commit": "2c052d22f00ef18cafd26cf78ffbff51e1ae514f",
+      "public_release": false
+    }
   },
   "f3_parallel_nuts": "Mac CPU spawn two-chain replay and failure quarantine tested; full-target and Windows resource baseline still pending"
 }

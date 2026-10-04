@@ -53,3 +53,5 @@ python scripts/completion/analyze_inference_tuning.py --run RUN --inputs INPUTS 
 使用相应冻结源码和依赖，配置R库路径；新分析目录不得覆盖原结果。脚本和函数契约可供后续分析复用，当前结果不证明原生Windows或CUDA的新路径通过。
 
 下一步用独立输入开展多预算pilot，核验九目标CPU多进程NUTS并评估参考误差，确定正式预算、独立重复和失败处理；同时等待第二轮Windows机制/外部案例回执。自动选择器继续暂缓。
+
+完整本地归档`inference-tuning-v1.tar`：362383360字节，SHA256 `2944c94ddd5e8b043c0b48d7dfc2aaf329f8c5ca0f0e402faddbeb3f23846fac`，1613个文件逐项校验通过。分析源码快照及历史bundle为5bf42a9，冻结采样源码2c052d2也在历史中；小型回执为`benchmark/analysis/outputs/inference-tuning-v1/archive-receipt.json`。未公开发布Release。归档前两次仅在依赖清单导出阶段失败，错误日志保留；第三次使用uv只读导出与依赖检查完成，未安装pip或更改冻结环境。

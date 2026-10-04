@@ -1,0 +1,16 @@
+{
+  "analysis_source_commit": "5bf42a9972bb4b75b461123ca9e559f29fb765e8",
+  "sampling_source_commit": "2c052d22f00ef18cafd26cf78ffbff51e1ae514f",
+  "original_protocol_sha256": "6cc71de8a5a5949943f59b2972eb32814782b4ccdd149c6e1bc1961b3e8d4a92",
+  "cases": 216,
+  "completed": 212,
+  "failed": 4,
+  "scope": "development tuning and companions; no formal inference completion",
+  "public_release": false,
+  "archive": "inference-tuning-v1.tar",
+  "bytes": 362383360,
+  "sha256": "2944c94ddd5e8b043c0b48d7dfc2aaf329f8c5ca0f0e402faddbeb3f23846fac",
+  "checked_files": 1613,
+  "source_bundle_verified": true,
+  "all_member_hashes_verified": true
+}
