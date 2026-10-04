@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Implement explicit interrupted-attempt classification/recovery and resource-versus-numerical failure accounting; integrate the verified raw extraction/uncertainty path with the formal runtime schema, validate maximum-task resources and independently measured cached/ordinary/audit costs. Receive Windows receipts before freezing formal inference.",
+  "next_recommended_action": "Integrate verified per-task recovery and all-attempt outcomes into a formal coordinator with a global live/orphan attempt registry, then connect the runtime schema to bounded raw extraction and paired uncertainty. Validate independent cached/ordinary/audit costs and native Windows recovery/resources before formal freeze.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -227,7 +227,7 @@
     ],
     "remaining_gates": [
       "Windows_receipts",
-      "formal_runner_interruption_recovery_and_failure_classification",
+      "formal_coordinator_attempt_history_global_orphan_registry_and_native_Windows_recovery",
       "formal_schema_adapter_for_verified_raw_array_extraction_and_paired_uncertainty",
       "independent_cached_ordinary_audit_cost_measurement",
       "Windows_host_lock_disk_memory_and_max_task_validation",
@@ -279,7 +279,9 @@
       "sampling_source_commit": "67547a32e0c4adb85520061e6e67e7aebdb9e813",
       "all_member_hashes_verified": true,
       "public_release": false
-    }
+    },
+    "mac_explicit_sidecar_recovery_checked": true,
+    "formal_coordinator_recovery_integrated": false
   },
   "f3_streaming_analysis": {
     "status": "historical_pilot_raw_rebuild_validated_formal_adapter_pending",
@@ -310,6 +312,34 @@
       "all_member_hashes_verified": true,
       "new_MCMC_fits": 0,
       "original_raw_dependency": "3ad2764ad139e1d08012a2b4399cf4fd588382a1b410abeb5bcfc92d1515fe0e",
+      "public_release": false
+    }
+  },
+  "f3_formal_recovery": {
+    "status": "native_Mac_explicit_task_recovery_verified_coordinator_and_Windows_pending",
+    "recovery_and_realworker_source": "d9890b84d918402aedbad9754c93504f9dfc5e09",
+    "final_reader_source": "d589678418500a1b1ed2b8a1e46c4d356d51d775",
+    "new_behavior_tests_passed": 7,
+    "realworker_saved_arrays_byte_identical": 4,
+    "original_files_unchanged": 20,
+    "retry_files_unchanged": 20,
+    "second_retry_new_tasks": 0,
+    "actual_technical_scientific_executions_all_versions": 4,
+    "new_independent_statistical_repetitions": 0,
+    "unsealed_failed_worker_retry_bug_fixed": true,
+    "native_Windows_recovery_validated": false,
+    "global_orphan_registry_integrated": false,
+    "formal_inference_complete": false,
+    "report": "docs/FORMAL-RECOVERY.md",
+    "raw_evidence_archive": {
+      "archive": "formal-recovery-v2.tar",
+      "bytes": 56924160,
+      "sha256": "08dd8deacbe87202e46e4852e6e8cf0e821e16bfcee0421eca409ee22febb616",
+      "checked_files": 213,
+      "source_snapshot_commit": "d589678418500a1b1ed2b8a1e46c4d356d51d775",
+      "all_member_hashes_verified": true,
+      "new_independent_statistical_repetitions": 0,
+      "actual_technical_MALA_executions_in_both_versions": 4,
       "public_release": false
     }
   }

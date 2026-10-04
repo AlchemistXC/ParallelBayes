@@ -31,3 +31,5 @@
 | Mac运行器有限实测支持任务封存与恢复，不支持正式实验已就绪声明 | FORMAL-RUNTIME-TECHNICAL.md；formal-runtime-technical-v1；采样67547a3／核验8e502a1 | 10任务、4配对、10R回写；196文件恢复不变；人工内存保护和3行为测试；29个有限Rhat>1.01保留。Windows及中断恢复未验证 |
 
 | 原始预算证据可以逐任务重建，结果与旧分析保持一致 | STREAMING-ANALYSIS.md；streaming-budget-v1；分析8f3c47c／核验ceb2635 | 323估计／R二进制、1,292诊断行、215前缀、45报告一致；新增拟合0。已有pilot格式通过，不是正式最大规模、Windows或干净安装验收 |
+
+| 显式恢复在已测试Mac场景保留原输入、失败记录与全部已知尝试成本 | FORMAL-RECOVERY.md；formal-recovery-v2；d9890b8／d589678 | 7行为检查；真实MALA四数组字节一致，20原文件不变；未知耗时不补零。非全局调度器、Windows或任意崩溃恢复证明 |

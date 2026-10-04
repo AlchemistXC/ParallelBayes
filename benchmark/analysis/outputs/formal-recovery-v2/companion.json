@@ -1,0 +1,28 @@
+{
+  "actual_input": {
+    "actual_sha256": "f9763b2c615a28d76b02bca15d986cfc50368a8937b3c311b6c9096c2e93616c",
+    "sha256": "8009fff69fc9b5243ff8d2981cfa395ac03bd0239812fde9db41aff148693ea3"
+  },
+  "companion_sha256": "4600ec15eeb35179914d85998db8233ac8835b431e1869df0fa948ea90cbdc89",
+  "dependency_protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+  "dependency_task": {
+    "device": "cpu",
+    "executor": "sequential",
+    "id": "2153a3c310f4b9b8b280",
+    "kernel": "mala",
+    "model": "G1",
+    "replicate": 0
+  },
+  "formal_inference_complete": false,
+  "identity": "formal-recovery-companion-mac-v2",
+  "injection": "Exit outer worker after frozen scientific worker completes; same request in explicit retry",
+  "new_independent_statistical_repetitions": 0,
+  "source_commit": "d9890b84d918402aedbad9754c93504f9dfc5e09",
+  "sources": {
+    "/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/audit_formal_recovery.py": "6ebeb525295bd7a05530f4f3a181c8bcbabbe24b4d4c9bf7eb1ef09675893267",
+    "/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/formal_outcomes.py": "f62b404b90b79896896369b618c5a23ef830ffe006bd5c4bed0cb53ef71e94ba",
+    "/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/formal_recovery.py": "faf3650db1b066ec6c62c765696bc0942ee75c2a4e334df214ce5c966623bec2",
+    "/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/formal_runtime.py": "d5592611316cb665f442a39117709908e52f7d30e0efa1d9aba56dd60b7e6e87",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-recovery-realworker-mac-02/injection-wrapper.py": "63697d610c5e0475707d3d5482f9b25d3eaa4891301cebfaa0f910063f8c2ef4"
+  }
+}

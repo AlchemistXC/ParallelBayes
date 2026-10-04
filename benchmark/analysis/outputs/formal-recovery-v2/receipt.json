@@ -1,0 +1,58 @@
+{
+  "R_diagnostics_identical": true,
+  "actual_scientific_executions": 2,
+  "attempts": [
+    {
+      "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-recovery-realworker-mac-02/initial",
+      "binding_sha256": "3c539774ef46fc50952aae05e7e8b25e8ed6c7e1199eea74f7059f82f998f285",
+      "cost_scope": "runtime_v1_preflight_through_terminal",
+      "evidence_sha256": "ba007bcca251a0a3f7fe2a3e74e9f5ac06126b202237ff7986fed01e60a16ba3",
+      "fixed_task": {
+        "companion_sha256": "4600ec15eeb35179914d85998db8233ac8835b431e1869df0fa948ea90cbdc89",
+        "id": "G1-MALA-recovery"
+      },
+      "outcome": "infrastructure_interruption",
+      "seconds": 2.0420506249647588,
+      "unknown_time_imputed": false
+    },
+    {
+      "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-recovery-realworker-mac-02/initial.retry",
+      "binding_sha256": "3c539774ef46fc50952aae05e7e8b25e8ed6c7e1199eea74f7059f82f998f285",
+      "cost_scope": "runtime_v1_preflight_through_terminal",
+      "evidence_sha256": "948174f1b8ae028031b0761a96240ed30766503aceeb608980901688fdcbb708",
+      "fixed_task": {
+        "companion_sha256": "4600ec15eeb35179914d85998db8233ac8835b431e1869df0fa948ea90cbdc89",
+        "id": "G1-MALA-recovery"
+      },
+      "outcome": "valid",
+      "seconds": 1.9842245420441031,
+      "unknown_time_imputed": false
+    }
+  ],
+  "companion_sha256": "4600ec15eeb35179914d85998db8233ac8835b431e1869df0fa948ea90cbdc89",
+  "cost": {
+    "attempt_count": 2,
+    "known_seconds": 4.026275167008862,
+    "outcome": "valid",
+    "prior_interruption_known_seconds": 2.0420506249647588,
+    "total_seconds": 4.026275167008862,
+    "unknown_cost_attempts": 0
+  },
+  "formal_inference_complete": false,
+  "independent_MH_audits_passed": 2,
+  "native_windows_recovery_validated": false,
+  "new_independent_statistical_repetitions": 0,
+  "original_files_unchanged": 20,
+  "original_status": "interrupted",
+  "retry_files_unchanged": 20,
+  "retry_status": "completed",
+  "saved_arrays_byte_identical": [
+    "draws",
+    "unconstrained",
+    "accept",
+    "primary_accept"
+  ],
+  "scope": "Mac technical recovery/replay of one existing frozen four-chain G1 MALA input; not inference accuracy, speed or general crash recovery",
+  "second_retry_new_tasks": 0,
+  "source_commit": "d9890b84d918402aedbad9754c93504f9dfc5e09"
+}

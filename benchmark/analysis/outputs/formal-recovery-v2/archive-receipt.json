@@ -1,0 +1,11 @@
+{
+  "archive": "formal-recovery-v2.tar",
+  "bytes": 56924160,
+  "sha256": "08dd8deacbe87202e46e4852e6e8cf0e821e16bfcee0421eca409ee22febb616",
+  "checked_files": 213,
+  "source_snapshot_commit": "d589678418500a1b1ed2b8a1e46c4d356d51d775",
+  "all_member_hashes_verified": true,
+  "new_independent_statistical_repetitions": 0,
+  "actual_technical_MALA_executions_in_both_versions": 4,
+  "public_release": false
+}

@@ -1,0 +1,13 @@
+{
+  "cost": {
+    "attempt_count": 2,
+    "known_seconds": 4.026275167008862,
+    "outcome": "valid",
+    "prior_interruption_known_seconds": 2.0420506249647588,
+    "total_seconds": 4.026275167008862,
+    "unknown_cost_attempts": 0
+  },
+  "latest_reader_same_realworker_cost": true,
+  "new_scientific_executions": 0,
+  "source_sha256": "e8c04dffddb82593089e4660d412249fb7fbd6e5e2655ab23ebea25f6dfec76a"
+}
