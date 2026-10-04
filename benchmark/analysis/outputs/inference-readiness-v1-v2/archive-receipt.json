@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "archive": "inference-readiness-v1-v2.tar",
+  "bytes": 26327040,
+  "sha256": "10cd4218708c6d38d236c9e9db8cdcbbabb956e8d9b236c3bd3d0f1cf328c087",
+  "checked_files": 457,
+  "source_commit": "b837e169e70cb05e5f317e607e5d929b529f9e2e",
+  "source_bundle_verified": true,
+  "scope": "Mac CPU development readiness only; v1 failures and v2 limitations included; not formal inference or GPU evidence"
+}

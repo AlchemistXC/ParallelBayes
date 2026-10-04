@@ -9,6 +9,7 @@ abca8cb29331b3270eddf0aee1d9c315073d95311ed3000caea576734316bd04  benchmark/anal
 4a82ba1ffe5f962fd18c49b92c654ef68687b0dc5d3fdf646dde66dacd8b034f  benchmark/analysis/outputs/inference-readiness-v1-v2/analysis-v2/summary.json
 45d4b27f0323c5bbb237b7249ca082db5f503a125df0ff7aaa73983008f3c533  benchmark/analysis/outputs/inference-readiness-v1-v2/analysis-v2/transport.json
 fb0b2c15263090c2d5b778235101cc86e10d5bb88598b55fcd826377608a6578  benchmark/analysis/outputs/inference-readiness-v1-v2/analysis-v2/workflows.csv
+6375dbdedfce795a34c74cd4af341f57627d71c866414cd09e122b8689de9cee  benchmark/analysis/outputs/inference-readiness-v1-v2/archive-receipt.json
 302eb7ffc038018905954ad923b1a7a66440d662c59b58a7aa8d4451570ea146  benchmark/analysis/outputs/inference-readiness-v1-v2/geometry-green-01.log
 db4c3a04964057143fce5812b9ddb55785e217d9207884176d356685778061a1  benchmark/analysis/outputs/inference-readiness-v1-v2/geometry-red-01.log
 48da71c44cd4a0ab476925fcfb0c675e9eecf6d585f70664852326750c9626c0  benchmark/analysis/outputs/inference-readiness-v1-v2/inference-components-v2.log

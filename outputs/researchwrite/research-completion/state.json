@@ -25,11 +25,17 @@
     "F3_nine_target_CPU_readiness_v2_45_workflows_and_binary_posterior_diagnostics; v1_failures_preserved"
   ],
   "external_case": "Mac target/trajectory/R validation, finite reference audit and 12-rule independent quadrature completed; numerical integration is not certified exact truth; Windows target validation and formal inference remain",
-  "new_experiment_scope": "external-wells-validation-v1/v2: finite Mac model/trajectory/R correctness only; no new formal inference/performance experiment",
+  "new_experiment_scope": "Wells model/reference companions, Mac mechanism smoke, and inference-readiness-mac-v1/v2 only; no new formal inference/performance benchmark",
   "prepared_windows_protocols": [
     "external-wells-windows-cpu-v1",
     "external-wells-windows-cuda-v1",
     "mechanism-windows-pilot-v1"
   ],
-  "f3_readiness": "Not formal inference: v2 45/45 numerical/workflow checks; 7/9 NUTS fits and 36/36 short MH fits have some finite Rhat>1.01; 23/45 contain undefined Rhat functions"
+  "f3_readiness": "Not formal inference: v2 45/45 numerical/workflow checks; 7/9 NUTS fits and 36/36 short MH fits have some finite Rhat>1.01; 23/45 contain undefined Rhat functions",
+  "f3_raw_evidence": {
+    "archive": "inference-readiness-v1-v2.tar",
+    "sha256": "10cd4218708c6d38d236c9e9db8cdcbbabb956e8d9b236c3bd3d0f1cf328c087",
+    "checked_files": 457,
+    "public_release": false
+  }
 }
