@@ -4,6 +4,8 @@
 
 As of 2026-10-04, the user has authorized the native Windows 11 / AMD CPU / RTX 5080 phase. Read `handoff/windows-native/README.md`, `CODEX-PROMPT.md` and `SKILLS-SETUP.md`. The user also authorized skill migration; use the separately transferred private ZIP, never publish it. Use native PowerShell and native Windows Python; do not substitute WSL2, a Linux VM or a Linux container. The historical handoff describes the 0.1.1 JAX core. The received `windows-native-dev` branch at `3a51f98` implements the optional 0.2.0.dev1 PyTorch backend and includes native Windows CPU/CUDA evidence. Consult `docs/WINDOWS-RESULTS.md` and `docs/WINDOWS-RETURN-AUDIT.md` for verified scope; do not restart completed experiments from the old handoff prompt. Older CPU documents that say GPU work is deferred describe the historical CPU milestone, not the current authorization.
 
+Current execution entry: `docs/RESEARCH-COMPLETION-PLAN.md` and `execution/COMPLETION-WORK-PACKAGES.md` (F0–F6). Windows follow-up uses `handoff/windows-completion/CODEX-PROMPT.md`; the original migration prompt is historical. Continue independent Mac work while awaiting actual Windows receipts.
+
 ## Scientific invariants
 
 - Preserve archived 0.1.0/0.1.1 sources, all frozen protocols and historical results. Develop Windows support on a separate branch/version with a new experiment identity.

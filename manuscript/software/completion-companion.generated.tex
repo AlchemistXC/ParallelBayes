@@ -1,0 +1,42 @@
+% Input SHA256 1ef33c7ec7c5f2bbf127a31ac4400ce515eaef3f5692a7963f3edd91848f7378 benchmark/fixtures/rhat-midpoint-v1/case.json
+% Input SHA256 c83cef505f240b3ee513645f7f7161a774f93a13ff9e3536be2ca263ed93d0ca benchmark/analysis/outputs/completion-f1/mac-02/result.json
+% Input SHA256 245c6683393a09f4f1c57b5eecd90b37b780f9e049a8162347c5cbf645f85d8d benchmark/analysis/outputs/completion-f1/mac-02/receipt.json
+% Input SHA256 35d44485cb70199d0cc6a434cc8809e12a8c9c2c6dea3573ac90c07856fce102 benchmark/analysis/outputs/completion-f2/summary.json
+\subsection{收尾阶段新增的诊断与工作量伴随分析}
+\label{sec:completion-companion}
+以下分析于2026年10月5日从原始Windows记录追加，没有重新采样或更改原冻结协议。
+二进制输入后剩余的两个$\hat R$差异，来自H2/RWM顺序、512步、重复3的CPU与CUDA任务；
+丢弃128步后的q2数组逐值相同，故不是两份独立的差异证据。
+在Mac R 4.6.0、posterior 1.7.0中，未折叠分量为1.1777201954，
+折叠中位数比精确中点正确舍入值低一个ULP，约$2.1684\times10^{-19}$。
+固定输入和其余计算，仅替换这个折叠中心，就使5个观测的秩改变，
+折叠$\hat R$由1.4085688369变为1.4082223724，后者重现原Windows记录。
+这定位了足以解释差异的数值机制；Windows原生R中位数和构建信息的实际回执仍待核对。
+两种$\hat R$都远高于1.01，不改变混合不足判断，也没有用较小值替换原诊断。
+12KiB二进制样例、精确有理数中点、两中心对照和Mac回执随分析源码保存。
+
+对512项原记录逐轮核算映射、JVP和确认前缀，全部计数检查通过。
+在16个模型/预算组的中位数中，quasi-DEER每输出转移有11.906--29.500次前向映射和5.953--14.750次JVP；
+Picard有2.000--6.820次前向映射，每轮沿每链平均确认4.493--16.000步。
+对应CPU/CUDA工作量一致，拒绝自环计入输出转移。映射次数不是密度调用数或FLOPs，
+JVP不能当作一次普通映射定价；这些记录尚不能把总减速因果分解到各个组件。
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrrrr}\toprule
+目标 & warmed速度比 & 接受率 & 映射/转移 & 确认前缀/轮\\\midrule
+A1 & 4.088 & 0.00000 & 2.000 & 16.000\\
+G2 & 4.380 & 0.02051 & 2.293 & 13.838\\
+G1 & 1.355 & 0.49121 & 6.635 & 4.763\\
+L1 & 1.442 & 0.51611 & 6.236 & 5.045\\
+\bottomrule\end{tabular}
+\caption{CUDA Picard、512步的四个说明性配置；每格4份独立数组的中位数。
+接受率包含丢弃段，分母包括拒绝自环。完整八目标记录另存，未据此筛除任何配置。
+该表跨目标的几何和求值成本也不同，不能解释为接受率对速度的单独因果效应。}
+\end{table}
+
+A1全拒绝时每轮确认整个窗口；G2的执行加速也伴随很低的接受率。
+因此执行收益仍须与合理调参后的函数误差共同考察。
+CUDA首次执行的标量等待/采样时间比例，quasi-DEER组中位数范围为0.970--4.911\%，
+Picard为4.476--6.909\%；等待含未完成设备工作且没有覆盖全部控制活动，不是独立的主机开销估计。
+本伴随分析没有混加首次审计与warmed重放，也不将两次技术重放算作独立统计重复。
+有限窗口/链数干预、探针扰动核验和共同推断任务的补充实验仍待新协议实施。

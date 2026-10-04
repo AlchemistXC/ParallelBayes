@@ -1,0 +1,119 @@
+{
+  "status": "checks_passed",
+  "scope": "fixed input, alternative folding centers; no sampler rerun or replacement of original diagnostics",
+  "checks": {
+    "bulk_matches_mac": true,
+    "explicit_lower_reproduces_mac": true,
+    "explicit_midpoint_reproduces_archived_windows": true,
+    "native_matches_one_recorded_result": true,
+    "five_ranks_change": true
+  },
+  "R_version": {
+    "platform": "aarch64-apple-darwin23",
+    "arch": "aarch64",
+    "os": "darwin23",
+    "system": "aarch64, darwin23",
+    "status": "",
+    "major": "4",
+    "minor": "6.0",
+    "year": "2026",
+    "month": "04",
+    "day": "24",
+    "svn rev": "89956",
+    "language": "R",
+    "version.string": "R version 4.6.0 (2026-04-24)",
+    "nickname": "Because it was There"
+  },
+  "posterior_version": "1.7.0",
+  "matrixStats_version": "1.5.0",
+  "machine": {
+    "double.eps": 2.22044604925031e-16,
+    "double.neg.eps": 1.11022302462516e-16,
+    "double.xmin": 2.2250738585072e-308,
+    "double.xmax": 1.79769313486232e+308,
+    "double.base": 2,
+    "double.digits": 53,
+    "double.rounding": 5,
+    "double.guard": 0,
+    "double.ulp.digits": -52,
+    "double.neg.ulp.digits": -53,
+    "double.exponent": 11,
+    "double.min.exp": -1022,
+    "double.max.exp": 1024,
+    "integer.max": 2147483647,
+    "sizeof.long": 8,
+    "sizeof.longlong": 8,
+    "sizeof.longdouble": 8,
+    "sizeof.pointer": 8,
+    "sizeof.time_t": 8
+  },
+  "session_info": ["R version 4.6.0 (2026-04-24)", "Platform: aarch64-apple-darwin23", "Running under: macOS Tahoe 26.6.2", "", "Matrix products: default", "BLAS:   /Library/Frameworks/R.framework/Versions/4.6/Resources/lib/libRblas.0.dylib ", "LAPACK: /Library/Frameworks/R.framework/Versions/4.6/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1", "", "locale:", "[1] C.UTF-8/C.UTF-8/C.UTF-8/C/C.UTF-8/C.UTF-8", "", "time zone: Asia/Tokyo", "tzcode source: internal", "", "attached base packages:", "[1] stats     graphics  grDevices utils     datasets  methods   base     ", "", "other attached packages:", "[1] posterior_1.7.0", "", "loaded via a namespace (and not attached):", " [1] tensorA_0.36.2.1     backports_1.5.1      magrittr_2.0.5      ", " [4] matrixStats_1.5.0    glue_1.8.1           abind_1.4-8         ", " [7] tibble_3.3.1         pkgconfig_2.0.3      generics_0.1.4      ", "[10] lifecycle_1.0.5      cli_3.6.6            vctrs_0.7.3         ", "[13] compiler_4.6.0       distributional_0.7.0 checkmate_2.3.4     ", "[16] pillar_1.11.1        rlang_1.2.0          jsonlite_2.0.0      "],
+  "input": {
+    "fixture_sha256": "5fc66d60bb22dbc98e75feb213fe936a912ce0cdd7ff3b21adda0515b324460d",
+    "chains": 4,
+    "iterations": 384
+  },
+  "centers_hex": {
+    "native_median": "0x1.7701bac434f1p-10",
+    "mean_middle": "0x1.7701bac434f1p-10",
+    "direct_midpoint": "0x1.7701bac434f11p-10",
+    "supplied_correct_midpoint": "0x1.7701bac434f11p-10",
+    "supplied_one_ulp_lower": "0x1.7701bac434f1p-10"
+  },
+  "rhat": {
+    "native": 1.40856883690538,
+    "bulk": 1.17772019537237,
+    "folded_native": 1.40856883690538,
+    "folded_lower": 1.40856883690538,
+    "folded_correct_midpoint": 1.40822237244096
+  },
+  "changed_rank_count": 5,
+  "changed": [
+    {
+      "flat_index": 672,
+      "input_hex": "0x1.8d31bd8d5dbb9p-9",
+      "folded_lower_hex": "0x1.a361c05686862p-10",
+      "folded_midpoint_hex": "0x1.a361c05686861p-10",
+      "lower_rank": 3.5,
+      "midpoint_rank": 2.5
+    },
+    {
+      "flat_index": 673,
+      "input_hex": "0x1.8d31bd8d5dbb9p-9",
+      "folded_lower_hex": "0x1.a361c05686862p-10",
+      "folded_midpoint_hex": "0x1.a361c05686861p-10",
+      "lower_rank": 3.5,
+      "midpoint_rank": 2.5
+    },
+    {
+      "flat_index": 674,
+      "input_hex": "0x1.8d31bd8d5dbb9p-9",
+      "folded_lower_hex": "0x1.a361c05686862p-10",
+      "folded_midpoint_hex": "0x1.a361c05686861p-10",
+      "lower_rank": 3.5,
+      "midpoint_rank": 2.5
+    },
+    {
+      "flat_index": 675,
+      "input_hex": "0x1.8d31bd8d5dbb9p-9",
+      "folded_lower_hex": "0x1.a361c05686862p-10",
+      "folded_midpoint_hex": "0x1.a361c05686861p-10",
+      "lower_rank": 3.5,
+      "midpoint_rank": 2.5
+    },
+    {
+      "flat_index": 1330,
+      "input_hex": "-0x1.63002c928ca86p-13",
+      "folded_lower_hex": "0x1.a361c05686861p-10",
+      "folded_midpoint_hex": "0x1.a361c05686862p-10",
+      "lower_rank": 1,
+      "midpoint_rank": 5
+    }
+  ],
+  "diagnostic_function_sources": [
+    "function (x, ...) \n{\n    rhat_bulk <- .rhat(z_scale(.split_chains(x)))\n    rhat_tail <- .rhat(z_scale(.split_chains(fold_draws(x))))\n    max(rhat_bulk, rhat_tail)\n}",
+    "function (x) \n{\n    abs(x - median(x))\n}",
+    "function (x, c = 3/8) \n{\n    r <- rank(as.array(x), ties.method = \"average\")\n    z <- qnorm(backtransform_ranks(r, c = c))\n    z[is.na(x)] <- NA\n    if (!is.null(dim(x))) {\n        z <- array(z, dim = dim(x), dimnames = dimnames(x))\n    }\n    z\n}",
+    "function (x) \n{\n    x <- as.matrix(x)\n    if (should_return_NA(x)) {\n        return(NA_real_)\n    }\n    nchains <- NCOL(x)\n    niterations <- NROW(x)\n    chain_mean <- matrixStats::colMeans2(x)\n    chain_var <- matrixStats::colVars(x, center = chain_mean)\n    var_between <- niterations * var(chain_mean)\n    var_within <- mean(chain_var)\n    sqrt((var_between/var_within + niterations - 1)/niterations)\n}"
+  ]
+}

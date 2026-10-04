@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "purpose": "post hoc diagnostic sensitivity fixture; not new MCMC data",
+  "protocol_sha256": "1d233dd09956c4575fc5775082310e5edca65407db5fcef40bc2ce329e6f5898",
+  "fixture_file": "q2-f64le.bin",
+  "fixture_sha256": "5fc66d60bb22dbc98e75feb213fe936a912ce0cdd7ff3b21adda0515b324460d",
+  "chains": 4,
+  "iterations": 384,
+  "dtype": "little-endian float64",
+  "order": "chain-major",
+  "cpu_cuda_values_identical": true,
+  "source_tasks": [
+    {
+      "task_id": "a31fe6e8c9f4cc42ae23650e204a784de458ea2651c3bbd5646a9bfda0389f91",
+      "model": "H2",
+      "config": {
+        "kernel": "rwm",
+        "executor": "sequential",
+        "device": "cuda",
+        "draws": 512,
+        "chains": 4,
+        "seed": 841403,
+        "solver_seed": 951003,
+        "step_size": 0.5,
+        "window": 16,
+        "max_iter": 1024,
+        "atol": 1e-10,
+        "rtol": 1e-10,
+        "jacobian_clip": 1.0,
+        "memory_limit_mb": 2048,
+        "initial": null,
+        "on_failure": "error",
+        "audit": true
+      },
+      "discard": 128,
+      "raw_sha256": "edbd53ee7066e1dad94a8654e7b89aada1d14a2b394cfcbaa64c27f8a3b035e3",
+      "original_windows_diagnostic": {
+        "variable": "q2",
+        "rhat": 1.40822237244096,
+        "ess_bulk": 16.729222510954,
+        "ess_tail": 32.4414465401075,
+        "state": "finite"
+      }
+    },
+    {
+      "task_id": "e134691aa461969b1fda891a8279f2cfd5a09a7bea354fb796c7b64e050d48e8",
+      "model": "H2",
+      "config": {
+        "kernel": "rwm",
+        "executor": "sequential",
+        "device": "cpu",
+        "draws": 512,
+        "chains": 4,
+        "seed": 841403,
+        "solver_seed": 951003,
+        "step_size": 0.5,
+        "window": 16,
+        "max_iter": 1024,
+        "atol": 1e-10,
+        "rtol": 1e-10,
+        "jacobian_clip": 1.0,
+        "memory_limit_mb": 2048,
+        "initial": null,
+        "on_failure": "error",
+        "audit": true
+      },
+      "discard": 128,
+      "raw_sha256": "edbd53ee7066e1dad94a8654e7b89aada1d14a2b394cfcbaa64c27f8a3b035e3",
+      "original_windows_diagnostic": {
+        "variable": "q2",
+        "rhat": 1.40822237244096,
+        "ess_bulk": 16.729222510954,
+        "ess_tail": 32.4414465401075,
+        "state": "finite"
+      }
+    }
+  ],
+  "middle_values_hex": [
+    "-0x1.63002c928ca86p-13",
+    "0x1.8d31bd8d5dbb9p-9"
+  ],
+  "exact_midpoint_fraction": "52777508966922373/36893488147419103232",
+  "correctly_rounded_midpoint_hex": "0x1.7701bac434f11p-10",
+  "one_ulp_lower_hex": "0x1.7701bac434f10p-10",
+  "midpoint_ulp": 2.168404344971009e-19,
+  "midpoint_rounding_error_fraction": "-3/36893488147419103232",
+  "lower_rounding_error_fraction": "5/36893488147419103232",
+  "observed_mac_rhat": 1.4085688369053788,
+  "archived_windows_rhat": 1.40822237244096,
+  "expected_bulk_rhat": 1.1777201953723706,
+  "comparison_atol": 1e-11,
+  "comparison_rtol": 1e-11,
+  "software_scope": "posterior 1.7.0; Mac R 4.6.0 observed; Windows runtime confirmation pending"
+}

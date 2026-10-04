@@ -1,18 +1,27 @@
 {
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "requested_by": "user",
-  "active_scope": "native_windows_handoff_and_gpu_development",
-  "local_phase": "cpu_review_revision_complete",
-  "gpu_tasks": "authorized_on_windows_pending_actual_execution",
-  "gpu_verified": false,
+  "active_scope": "research_completion_F0_F6",
+  "local_phase": "completion_analysis_and_release_integration",
+  "gpu_tasks": "windows_v1_received_and_audited; additional native Windows experiments require new protocols",
+  "gpu_verified": true,
+  "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
   "requires_user_resume": false,
   "rerun_completed_cpu_tasks": false,
   "active_outstanding_tasks": [
-    "Windows W0-W7; see handoff/windows-native/WORK-PACKAGES.md"
+    "F0 current-state and evidence alignment",
+    "F1 diagnostic midpoint mechanism and Windows receipt",
+    "F2 Windows cost mechanisms",
+    "F3 reliable inference comparison",
+    "F4 external model example",
+    "F5 integrated release reproduction",
+    "F6 integrated manuscript"
   ],
-  "note": "User resumed native Windows phase. Mac prepares GitHub handoff; target machine must implement and verify PyTorch backend. Historical CPU milestone remains complete.",
+  "note": "Current entry points are docs/RESEARCH-COMPLETION-PLAN.md and execution/COMPLETION-WORK-PACKAGES.md. Historical Mac and windows-native-v1 protocols and raw data remain immutable.",
   "desktop_os_requirement": "native_windows_11_no_wsl2",
-  "future_gpu_backend": "pytorch_cuda_candidate_not_implemented",
-  "legacy_handoff": "WSL/JAX archive retained; not applicable to native Windows",
-  "revision": "cpu-review-v1"
+  "gpu_backend": "torch_eager_0.2.0.dev1_implemented_and_scoped_validation",
+  "legacy_handoff": "handoff/windows-native describes the completed initial migration; handoff/gpu is a historical WSL archive",
+  "revision": "research-completion-v1",
+  "received_windows_commit": "3a51f98fc8d10187b8f71e477aaff56d86ea50cd",
+  "reception_review_commit": "38894409004dd9ebceb978755dc246fcb3418d01"
 }

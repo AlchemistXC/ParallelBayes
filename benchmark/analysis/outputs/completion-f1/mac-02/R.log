@@ -1,0 +1,13 @@
+checks_passed native Rhat: 1.4085688369053788 changed ranks: 5 
+This is posterior version 1.7.0
+
+Attaching package: ‘posterior’
+
+The following objects are masked from ‘package:stats’:
+
+    mad, sd, var
+
+The following objects are masked from ‘package:base’:
+
+    %in%, match
+

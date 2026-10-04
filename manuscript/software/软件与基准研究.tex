@@ -150,6 +150,7 @@ CPU 内存为采样API期间每20 ms记录的进程绝对RSS峰值，包含先�
 \input{revision.generated.tex}
 
 \input{windows-native.generated.tex}
+\input{completion-companion.generated.tex}
 
 \section{解释、限制与复现}
 目前证据支持的是一个能够区分目标一致性、轨迹求解与统计精度的研究实现。历史Mac CPU正式比较中，两种时间执行器均未取得组中位工作流加速；前向映射调用增加与这一结果一致，说明额外求值和导数计算可能抵消可利用的并行位置。新增机制测量进一步将批处理吞吐、重复求值与分段调度区分；由于分段执行插入同步，不能把其阶段比例直接当作生产程序的精确剖面。编译策略和底层运算仍限制因果归因。Picard原文在Apple M3 CPU上对昂贵延迟微分方程似然报告约2.52倍墙钟加速\cite{grazzi}；这与本研究的低成本合成目标不同。上游算法的窗口策略、停止规则和计时排除项亦不同，因此当前负例不能解释为CPU普遍不适合时间并行，也不识别正加速的分界。
@@ -161,7 +162,7 @@ quasi-DEER 的局部残差加独立轨迹核验是一种计算上可审查的约
 历史主实验仅评价指定Mac CPU环境；本轮独立Windows协议增加同机torch CPU/CUDA证据，历史WSL2交接资料仍仅归档保留。两个平台的完整工作流差异不能全部归因于显卡。自动配置模块未进入本版贡献，当前没有足够证据支持稳定收益区间。昂贵似然、真实数据应用和分散初始化属于后续研究；本轮不以挑选有利案例扩展结论。
 
 \section*{代码、数据与辅助工具}
-数据均由公开的项目生成规则产生，原始运行输出与协议存于本地研究项目，尚未上传公共仓库。软件安装源、实验/分析源、原始证据及论文构建材料分成三个互有关联的本地归档，提供根目录入口与逐文件校验和。独立依赖环境和迁移目录验证已在同一Mac完成，不等同另一研究团队或操作系统的复现。R包检查与显式开启集成测试的日志分开保存。R 包发布候选及 Python 内核随项目交付；上游 BSD 许可源码保留来源，Online Picard 按论文独立实现。本文使用生成式工具辅助代码、实验组织、图表与中文草稿，并用实际运行、独立实现和可重建原始输出核验相关陈述。稿件尚需研究者最终审阅、确认署名与投稿范围，不将工具列为作者。
+数据由项目公开生成规则产生。源码、测试、协议、分析摘要及论文构建材料已上传至\url{https://github.com/AlchemistXC/ParallelBayes}；历史CPU原始证据见仓库的\texttt{cpu-review-v1} Release。Windows原始结果归档已上传\texttt{windows-native-v1}，截至2026年10月5日仍为草稿，尚不能视为公开可下载材料。接收端已核对归档及内部5866个文件。原始证据、分析源与论文输入以版本和校验和关联；投稿前仍须完成最终公开归档及统一候选包的独立重建。独立依赖环境和迁移目录验证已在同一Mac完成，不等同另一研究团队或操作系统的复现。R包检查与显式开启集成测试的日志分开保存。R 包发布候选及 Python 内核随项目交付；上游 BSD 许可源码保留来源，Online Picard 按论文独立实现。本文使用生成式工具辅助代码、实验组织、图表与中文草稿，并用实际运行、独立实现和可重建原始输出核验相关陈述。稿件尚需研究者最终审阅、确认署名与投稿范围，不将工具列为作者。
 
 \begin{thebibliography}{99}\small\setlength{\itemsep}{2pt}
 \bibitem{zoltowski} Zoltowski D.M., Wu S., Gonzalez X., et al. \href{https://proceedings.nips.cc/paper_files/paper/2025/hash/202886ee1c9ca735cb5bff3a00a69883-Abstract-Conference.html}{Parallelizing MCMC Across the Sequence Length}. Advances in Neural Information Processing Systems, 2025, 38.

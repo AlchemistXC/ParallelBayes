@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "script_sha256": "4456e0fa6bf5b45ca37c9f94121a4359209bc0eddc2ff252b65c006d72318734",
+  "wrapper_sha256": "42b0fb426c73f4d9b0ff5703806993d2cbf42c19f25bda066388382f4081fb65",
+  "fixture_sha256": "5fc66d60bb22dbc98e75feb213fe936a912ce0cdd7ff3b21adda0515b324460d",
+  "R_exit_code": 1,
+  "binary_roundtrip_identical": true,
+  "passed": false,
+  "outputs": {
+    "roundtrip-f64le.bin": "5fc66d60bb22dbc98e75feb213fe936a912ce0cdd7ff3b21adda0515b324460d",
+    "R.log": "a79fe58b604683fb0903770ccfc89c8bb67e207b7be872f556119057ee2fd57a"
+  }
+}

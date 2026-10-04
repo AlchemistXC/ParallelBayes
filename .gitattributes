@@ -10,3 +10,6 @@
 *.npz binary
 *.tar binary
 *.gz binary
+
+# Preserve the exact bytes of small diagnostic fixtures.
+*.bin binary

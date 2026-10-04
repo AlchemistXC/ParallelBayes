@@ -1,0 +1,14 @@
+{
+  "pages": 21,
+  "rendered_and_visually_reviewed_pages": [
+    18,
+    19,
+    20
+  ],
+  "compiler": "Tectonic 0.17.0",
+  "exit_code": 0,
+  "final_pass_undefined_references": false,
+  "overflow_or_clipping_seen": false,
+  "pdf_sha256": "611dceedf8ffa8919548b625746ae060d59fd203ae32f003aa954a13756631da",
+  "scope": "Companion findings and availability corrections; not a submission-final manuscript"
+}

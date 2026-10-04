@@ -1,0 +1,6 @@
+{
+  "base_commit": "38894409004dd9ebceb978755dc246fcb3418d01",
+  "files_compared": 39,
+  "changed_files": [],
+  "policy": "Byte comparison to intake audit Git commit; does not overwrite archive or frozen protocol"
+}

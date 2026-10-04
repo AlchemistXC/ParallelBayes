@@ -2,13 +2,11 @@
 
 时间并行MCMC的可核验实现、R控制接口与单机基准。本开发分支为 **0.2.0.dev1**；历史发布内核 **0.1.1**，Mac CPU主实验使用独立归档的 **0.1.0**。软件与论文均为研究候选，尚非投稿终稿。
 
-## 从Windows电脑接手
+## 当前研究阶段
 
-2026-10-04：开始原生 **Windows 11＋AMD CPU＋RTX 5080** 阶段，不采用WSL2。
+2026-10-05：进入[研究收尾F0–F6](docs/RESEARCH-COMPLETION-PLAN.md)，实际状态见[当前工作包](execution/COMPLETION-WORK-PACKAGES.md)。Windows首轮开发、512项数值实验和回传审查已完成，不能再按初次移植提示词从头开发。
 
-1. 克隆仓库，在原生Windows Codex中打开项目。
-2. 阅读[环境与操作说明](handoff/windows-native/README.md)。
-3. 将[Windows Codex完整提示词](handoff/windows-native/CODEX-PROMPT.md)粘贴给目标机Codex，让它按[工作包](handoff/windows-native/WORK-PACKAGES.md)开发并执行。
+当前Windows只需先执行[诊断差异复核提示词](handoff/windows-completion/CODEX-PROMPT.md)；它使用原生Python/R读取小型固定样例，不重新采样、不修改冻结环境。后续CPU/CUDA补充实验另有新协议。历史环境安装说明保留在`handoff/windows-native/`。
 
 **本开发分支已完成原生PyTorch后端及RTX 5080实测。** 新协议512项CPU/CUDA任务通过数值输出核验，65项CPU和63项CUDA测试通过；详细结果、负例与限制见[Windows实测报告](docs/WINDOWS-RESULTS.md)和[安装/运行说明](docs/WINDOWS-NATIVE.md)。许多短链尚未混合，数值核验通过不等于推断收敛。`handoff/windows-native`保留移植前交接状态；历史`handoff/gpu`仅是WSL/JAX归档。
 
@@ -30,7 +28,7 @@
 - 40组历史随机输入的版本对照接受事件零失配；不据此宣称0.1.0/0.1.1性能等价。
 - 独立Python环境、迁移目录及完整归档重建通过；仍共享同一Mac、R库和编译器，不声称外部团队或异构平台已复现。
 
-阅读[CPU与Windows扩展论文PDF](output/software-paper/软件与基准研究.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。该20页PDF已编译，包含Windows实测及回传复核；历史CPU稿保留于Git历史和CPU复现Release。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
+阅读[CPU与Windows扩展论文PDF](output/software-paper/软件与基准研究-收尾修订.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。当前21页PDF已编译，包含Windows实测、回传复核及新诊断/工作量伴随分析；[原20页回传稿](output/software-paper/软件与基准研究.pdf)保留。历史CPU稿保留于Git历史和CPU复现Release。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
 
 ## 原始证据与复现
 
@@ -44,6 +42,6 @@ Git包含源码、完整测试、冻结协议、分析摘要、论文/图件及�
 
 本项目源码采用[MIT](LICENSE)，上游quasi-DEER比较源码保留BSD许可，详见[第三方说明](docs/THIRD-PARTY.md)。本仓库不分发第三方论文/书籍PDF、全文提取、私有技能源码、虚拟环境或缓存。文献引用、研究摘要和本项目原创稿件另保留。
 
-R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU声明限于已保存并核对的Windows实测组合；没有自动配置选择器、任意Stan转GPU或通用加速声明。Windows结果包已上传`windows-native-v1`草稿Release并通过接收端校验；未代用户将草稿公开。复核与剩余诊断差异见[回传复核报告](docs/WINDOWS-RETURN-AUDIT.md)。
+R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU声明限于已保存并核对的Windows实测组合；没有自动配置选择器、任意Stan转GPU或通用加速声明。Windows结果包已上传`windows-native-v1`草稿Release并通过接收端校验；未代用户将草稿公开。首次复核见[回传复核报告](docs/WINDOWS-RETURN-AUDIT.md)，后续见[中位数敏感性最小复现](docs/DIAGNOSTIC-MIDPOINT.md)、[工作量核算](docs/WINDOWS-MECHANISM-ACCOUNTING.md)和[伴随重建入口](docs/COMPANION-REPRODUCTION.md)。
 
 自定义技能迁移见[Windows技能安装说明](handoff/windows-native/SKILLS-SETUP.md)。30个技能的正文以私下ZIP转交；公开仓库仅含清单、校验和及安装脚本。

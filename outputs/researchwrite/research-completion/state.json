@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-05",
+  "mode": "research_completion_execution",
+  "status": "active_execution",
+  "source_evidence_commit": "38894409004dd9ebceb978755dc246fcb3418d01",
+  "new_experiments_started": false,
+  "new_protocol_frozen": false,
+  "pending_research_issues": [
+    "native_Windows_Rhat_runtime_receipt",
+    "Windows_mechanism_explanation",
+    "reliable_inference_comparison",
+    "external_model_example",
+    "release_reproduction",
+    "integrated_manuscript"
+  ],
+  "next_recommended_action": "Native Windows F1 receipt; freeze finite F2 mechanism pilot; prepare F3 reference and tuning designs",
+  "completed_companion_analyses": [
+    "Mac_fixed_binary_midpoint_sensitivity",
+    "512_task_map_JVP_prefix_accounting"
+  ]
+}

@@ -81,6 +81,7 @@ __pycache__/
 !/output/reproduction/
 /output/software-paper/*
 !/output/software-paper/软件与基准研究.pdf
+!/output/software-paper/软件与基准研究-收尾修订.pdf
 /output/pdf/*
 !/output/pdf/parallel-bayes-review-zh.pdf
 /output/release/*
@@ -125,3 +126,7 @@ __pycache__/
 /materials/*
 !/materials/README.md
 !/materials/并行贝叶斯.md
+
+# Current research-completion state and small, first-party diagnostic handoff.
+!/execution/COMPLETION-WORK-PACKAGES.md
+!/handoff/windows-completion/
