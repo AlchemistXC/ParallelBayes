@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Independent multi-budget pilot with explicit failure accounting, reference uncertainty and nine-target spawned CPU NUTS; native Windows F1/F2/F4 receipts remain pending.",
+  "next_recommended_action": "Localize the single H1/MALA long-path tolerance failure; choose explicit formal budget/repetition/uncertainty design using the independent pilot; receive Windows F1/F2/F4 evidence and validate native CPU NUTS before freezing formal same-machine inference.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -23,10 +23,11 @@
     "wells_12_rule_quadrature_and_log_concave_tail_control",
     "Mac_mechanism_smoke_9_workflows_6_probe_batches_and_byte_identical_resume",
     "F3_nine_target_CPU_readiness_v2_45_workflows_and_binary_posterior_diagnostics; v1_failures_preserved",
-    "F3_tuning_216_terminal_cases_212_score_and_R_diagnostic_reconstructions_four_preserved_sensitivity_failures"
+    "F3_tuning_216_terminal_cases_212_score_and_R_diagnostic_reconstructions_four_preserved_sensitivity_failures",
+    "F3_independent_budget_pilot_324_terminal_323_valid_saved_array_error_diagnostics_and_zero_new_task_resume"
   ],
   "external_case": "Mac target/trajectory/R validation, finite reference audit and 12-rule independent quadrature completed; numerical integration is not certified exact truth; Windows target validation and formal inference remain",
-  "new_experiment_scope": "Wells model/reference companions, Mac mechanism smoke, inference readiness v1/v2 and independent MH tuning v1; no new formal inference/performance benchmark",
+  "new_experiment_scope": "Wells model/reference companions, Mac mechanism smoke, inference readiness v1/v2 and independent MH tuning v1; no new formal inference/performance benchmark; independent CPU budget pilot v1 (development only)",
   "prepared_windows_protocols": [
     "external-wells-windows-cpu-v1",
     "external-wells-windows-cuda-v1",
@@ -64,5 +65,23 @@
       "public_release": false
     }
   },
-  "f3_parallel_nuts": "Mac CPU spawn two-chain replay and failure quarantine tested; full-target and Windows resource baseline still pending"
+  "f3_parallel_nuts": "Mac CPU: 108 nine-target pilot fits completed with four observed workers each, retained diagnostics include H1 divergences; native Windows baseline remains unverified.",
+  "f3_budget_pilot": {
+    "protocol": "inference-budget-pilot-mac-v1",
+    "protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
+    "sampling_source_commit": "0eda1cbf354aa4e3164dc365f5294c6cc52b37b3",
+    "analysis_source_commit": "09d8494",
+    "completed": 323,
+    "failed": 1,
+    "task_asset_hashes_verified": 1836,
+    "R_binary_roundtrips": 323,
+    "terminal_files_unchanged_after_resume": 2160,
+    "finite_rhat_gt_1_01_fits": 174,
+    "undefined_rhat_fits": 109,
+    "NUTS_divergences": 1799,
+    "NUTS_divergence_scope": "H1 only, 11 fits; output completion is not convergence",
+    "failure_scope": "H1 MALA budget4096 replicate2; zero acceptance mismatches but path difference exceeds original tolerance; localization pending",
+    "formal_inference_complete": false,
+    "raw_evidence_archive_pending": true
+  }
 }

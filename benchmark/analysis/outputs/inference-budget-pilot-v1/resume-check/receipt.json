@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+    "scripts/completion/inference_budget_pilot.py",
+    "run",
+    "--protocol",
+    "benchmark/protocols/inference-budget-pilot-mac-v1.json",
+    "--inputs",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/inference-budget-pilot-mac-inputs-v1",
+    "--source",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/external-source-inspection",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/inference-budget-pilot-mac-run-01",
+    "--resume"
+  ],
+  "terminal_files": 2160,
+  "unchanged": true,
+  "newly_executed_tasks": 0,
+  "completed": 323,
+  "failed": 1,
+  "protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
+  "original_summary_sha256": "8c742c4e58fa492c99cb82fef6ad2c04b6af60f8a5278aff2bc90e323423bceb"
+}

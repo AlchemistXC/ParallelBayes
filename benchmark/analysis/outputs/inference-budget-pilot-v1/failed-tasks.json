@@ -1,0 +1,63 @@
+[
+  {
+    "task": {
+      "model": "H1",
+      "workflow": "mala",
+      "replicate": 2,
+      "budget": 4096,
+      "input": "H1-rep2.npz",
+      "id": "4dc55fe41afd7ee147b2"
+    },
+    "protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
+    "status": "failed",
+    "attempt": "attempt-1791142937306403000",
+    "master_input": {
+      "sha256": "a8baf0ba550ba0869453bb62c8076daf9666994dba69e68ae6aa7a3c446f505b",
+      "actual_sha256": "dcc3c28af78453d9512dab162b76058a24929e5d880a15f9165d08e8116b052b"
+    },
+    "discarded_draws_per_chain": 512,
+    "nuts_warmup_per_chain": 0,
+    "target_setup_seconds": 7.920898497104645e-07,
+    "target_id": "1214769a4ff8fcb7a258e12247ee6ee39ce51a09dd92f6f6d09bb40c15117424",
+    "actual_tape_sha256": "4cdeaf9f24be5adb2c800e361cdcb3cfb15e4fbe1916396373b71626b5e6c48f",
+    "audit": {
+      "passed": false,
+      "max_abs_path_error": [
+        2.629773541151792e-07,
+        0.0,
+        0.0,
+        3.1725733151688473e-12
+      ],
+      "acceptance_mismatches": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_abs_constrained_error": [
+        2.629773541151792e-07,
+        0.0,
+        0.0,
+        3.1725733151688473e-12
+      ],
+      "oracle": "independent_numpy_float64"
+    },
+    "result_timing": {
+      "input": 0.00037875003181397915,
+      "compile": 0.0,
+      "warmup": 0.0,
+      "sample": 2.4372652501333505,
+      "transfer": 6.916932761669159e-06,
+      "audit": 0.5197968340944499,
+      "fallback": 0.0,
+      "transform": 2.919696271419525e-07,
+      "total": 2.9575555420015007
+    },
+    "whole_task_seconds_including_archive": 2.9719242909923196,
+    "assets": {
+      "attempt-1791142937306403000/fit.json": "916f18a2f3660fbf74c8d3b7ddebf263f083b7e3cc7a0ceef8176c4c98615825",
+      "attempt-1791142937306403000/fit.npz": "68821b9b9795e4b40a0a990a2bdaeecbb1ad2af896b6390d94e1bdfc1f5f9234",
+      "attempt-1791142937306403000/started.json": "18bd06df9b63cb663befd5d1b83857b6927578e559d6d2219a4ef68904602c71"
+    }
+  }
+]

@@ -6,9 +6,9 @@
 
 2026-10-05：进入[研究收尾F0–F6](docs/RESEARCH-COMPLETION-PLAN.md)，实际状态见[当前工作包](execution/COMPLETION-WORK-PACKAGES.md)。Windows首轮开发、512项数值实验和回传审查已完成，不能再按初次移植提示词从头开发。
 
-当前Windows只需先执行[诊断差异复核提示词](handoff/windows-completion/CODEX-PROMPT.md)；它使用原生Python/R读取小型固定样例，不重新采样、不修改冻结环境。后续CPU/CUDA补充实验另有新协议。历史环境安装说明保留在`handoff/windows-native/`。
+当前Windows执行[第二轮交接提示词](handoff/windows-completion/CODEX-PROMPT-F2-F4.md)：诊断固定样例、水井CPU/CUDA/R核验及新协议192工作流机制pilot；真实回执尚未到。历史环境安装说明保留在`handoff/windows-native/`，不要重跑首轮512项。
 
-本轮已完成[有限参考复用审计](docs/REFERENCE-REUSE.md)，并完成[外部水井模型](docs/WELLS-TARGET-VALIDATION.md)的Mac目标、两对轨迹及R接口核验。独立调参、补充性能/推断实验及外部案例的参考分析尚未完成。
+本轮已完成[有限参考复用审计](docs/REFERENCE-REUSE.md)、[水井Mac模型/R核验](docs/WELLS-TARGET-VALIDATION.md)和参考伴随分析。[独立调参](docs/F3-TUNING-RESULTS.md)212/216有效、失败保留；[九目标多预算pilot](docs/F3-BUDGET-PILOT-RESULTS.md)323/324满足各自输出标准，1项长路径容差失败待定位。诊断仍显示H1发散、M1探索不足及稀有事件未判定。正式推断协议、Windows同机比较和统一发布/论文尚未完成。
 
 **本开发分支已完成原生PyTorch后端及RTX 5080实测。** 新协议512项CPU/CUDA任务通过数值输出核验，65项CPU和63项CUDA测试通过；详细结果、负例与限制见[Windows实测报告](docs/WINDOWS-RESULTS.md)和[安装/运行说明](docs/WINDOWS-NATIVE.md)。许多短链尚未混合，数值核验通过不等于推断收敛。`handoff/windows-native`保留移植前交接状态；历史`handoff/gpu`仅是WSL/JAX归档。
 

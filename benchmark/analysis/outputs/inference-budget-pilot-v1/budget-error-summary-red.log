@@ -1,0 +1,20 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+_ test_failed_repetition_stays_in_denominator_and_reference_shift_is_not_truth _
+
+    def test_failed_repetition_stays_in_denominator_and_reference_shift_is_not_truth():
+>       from inference_error_summary import summarize_function
+E       ModuleNotFoundError: No module named 'inference_error_summary'
+
+tests/external/test_inference_error_summary.py:10: ModuleNotFoundError
+_ test_unresolved_zero_event_never_becomes_zero_uncertainty_or_complete_error __
+
+    def test_unresolved_zero_event_never_becomes_zero_uncertainty_or_complete_error():
+>       from inference_error_summary import summarize_function
+E       ModuleNotFoundError: No module named 'inference_error_summary'
+
+tests/external/test_inference_error_summary.py:22: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_inference_error_summary.py::test_failed_repetition_stays_in_denominator_and_reference_shift_is_not_truth
+FAILED tests/external/test_inference_error_summary.py::test_unresolved_zero_event_never_becomes_zero_uncertainty_or_complete_error
+2 failed in 0.02s

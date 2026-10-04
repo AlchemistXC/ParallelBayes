@@ -1,0 +1,6 @@
+{
+  "protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
+  "tasks": 324,
+  "master_inputs": 36,
+  "source_commit": "0eda1cbf354aa4e3164dc365f5294c6cc52b37b3"
+}

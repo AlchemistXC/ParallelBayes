@@ -16,3 +16,4 @@
 | 独立调参216项均有终态，212完成、4项H1/MALA参考失配隔离 | docs/F3-TUNING.md、qa_logs/progress-check-2026-10-05.json、原始state/fit文件 | 860个任务资产哈希核对；未完成评分重建/原因分析，不是正式推断通过 |
 | 最新优先级为失配审计→调参再分析→独立预算pilot→正式推断→复现和论文 | docs/RESEARCH-COMPLETION-PLAN.md最新进度段 | 更新执行顺序，不改冻结协议或历史结果 |
 | F3调参评分、诊断及失败机制伴随分析已完成，正式推断仍未完成 | docs/F3-TUNING-RESULTS.md、benchmark/analysis/outputs/inference-tuning-v1 | 212份评分/R回写；24576同前态转移零接受失配；一ULP敏感性；失败不改标 |
+| 独立预算pilot提供正式预算/重复设计资料，不能直接作正式推断结论 | docs/F3-BUDGET-PILOT-RESULTS.md、inference-budget-pilot-v1摘要与原始数组 | 323/324有效；单项路径容差失败、H1发散和未判定函数保留；Windows正式比较仍未完成 |

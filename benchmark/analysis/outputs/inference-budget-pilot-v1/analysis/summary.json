@@ -1,0 +1,29 @@
+{
+  "planned": 324,
+  "completed": 323,
+  "failed": 1,
+  "task_asset_hashes_verified": 1836,
+  "binary_roundtrips_verified": 323,
+  "groups": 81,
+  "runs_some_finite_rhat_gt_1_01": 174,
+  "runs_some_undefined_rhat": 109,
+  "nuts_divergences": 1799,
+  "NUTS_runs_with_divergences": 11,
+  "prefix_comparisons": 215,
+  "bitwise_equal_prefix_comparisons": 215,
+  "R": "R version 4.6.0 (2026-04-24)",
+  "posterior": "1.7.0",
+  "R_process_seconds": 9.472069292096421,
+  "original_protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
+  "original_source_commit": "0eda1cbf354aa4e3164dc365f5294c6cc52b37b3",
+  "source_run_summary_sha256": "8c742c4e58fa492c99cb82fef6ad2c04b6af60f8a5278aff2bc90e323423bceb",
+  "analysis_sources": {
+    "scripts/completion/analyze_budget_pilot.py": "b154d1b6582bdf1470e20bf70483ec52396cc6f9aa66af1fdbd1b383359b85bd",
+    "scripts/completion/inference_error_summary.py": "e3be0bf86cf412a308e8bb71dc567032597b0025dc5904c0eb7c2a5cadc57226",
+    "scripts/completion/posterior_diagnostics.R": "bf5cb7fe7610c41db69e623a7e0e1c583d1f34616f5e9396c02e4a41a6b23786",
+    "scripts/completion/analyze_inference_tuning.py": "8d91dd41ca2d905201759e5052a614da1ff39fb07b099fb5a7c5b2894e75e7ba"
+  },
+  "independent_unit": "One complete four-chain experiment per model and repetition; four independent repetitions. Budgets and workflows are paired within repetition and do not increase n.",
+  "formal_inference_complete": false,
+  "limitations": "Four independent pilot repetitions. Squared discrepancy to finite/numerical references includes their uncertainty; two-MCSE shifts are sensitivity only. Failed fits remain in the planned denominator. No speed ranking, certified convergence or precise time-to-accuracy."
+}

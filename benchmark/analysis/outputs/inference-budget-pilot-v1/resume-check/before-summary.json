@@ -1,0 +1,12 @@
+{
+  "protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
+  "planned": 324,
+  "terminal": 324,
+  "completed": 323,
+  "failed": 1,
+  "newly_executed_tasks": 324,
+  "all_task_seconds": 1127.7880517935846,
+  "invocation_seconds": 1128.3439424999524,
+  "scope": "Independent budget development, baseline coverage and reference-error planning. Not formal inference or performance comparison.",
+  "formal_inference_complete": false
+}
