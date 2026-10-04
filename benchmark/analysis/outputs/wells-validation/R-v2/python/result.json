@@ -1,0 +1,198 @@
+{
+  "protocol_sha256": "7a500b6be26e033d002db32b4375d8685ef380033a6ff7728d80e1dd60ea28de",
+  "scientific_source_commit": "9a7b596c5fd241d9db789026be843e8f1a727e66",
+  "stage": "torch",
+  "status": "passed",
+  "source_manifest_sha256": "b64415687a58d3e2c34444d9e32523154b6002d960e505e31e2510d8356420ab",
+  "propriety": {
+    "certified": true,
+    "witnesses": [
+      {
+        "distance_metres": 3.25200009346008,
+        "scaled_distance": 0.0325200009346008,
+        "zero_index": 532,
+        "one_index": 530
+      },
+      {
+        "distance_metres": 151.065994262695,
+        "scaled_distance": 1.51065994262695,
+        "zero_index": 2883,
+        "one_index": 189
+      }
+    ],
+    "determinant": 1.4781399416923493,
+    "integral_upper_bound": 2.7061037234541727,
+    "duplicate_outcome_distances": 31,
+    "bound": "L(alpha,beta) <= exp(-abs(alpha+x1*beta)-abs(alpha+x2*beta))",
+    "scope": "Sufficient integrability certificate for the exact likelihood and flat alpha/beta prior"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "scope": "Model and fixed-tape integration validation only; not performance, convergence or posterior accuracy evidence",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "torch": "2.13.0"
+  },
+  "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+  "environment": {
+    "provider": "native_torch",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "python_executable": "/Users/haku/Workspace/ParallelBayes/.venv-completion/bin/python",
+    "os": "macOS-26.6.2-arm64-arm-64bit",
+    "torch": "2.13.0",
+    "cuda_build": null,
+    "cuda_available": false,
+    "gpu_name": null,
+    "ram_bytes": 17179869184,
+    "cpu_threads": 1,
+    "dtype": "float64"
+  },
+  "jax_imported": false,
+  "validation": {
+    "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+    "device": "cpu",
+    "errors": {
+      "relative_density": 1.8189894035458565e-12,
+      "gradient": 7.105427357601002e-15,
+      "hvp": 1.2787745617970359e-07,
+      "constrain": 0.0
+    },
+    "passed": true,
+    "hvp_reference": "central difference of independent analytic NumPy gradient; epsilon=1e-5"
+  },
+  "tape_sha256": "90d0a90190fd2d4376d94d038f72ebb32d4920ba4dae7aaab3cb11bf6d34bddc",
+  "tape_file_sha256": "ceca3f6336fb5f6255c6e5f6f1b2b2ba6498d6ffcc117e18b14e072d6530ae87",
+  "runs": {
+    "mala-sequential": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          1.1102230246251565e-16,
+          2.220446049250313e-16,
+          1.1102230246251565e-16,
+          2.220446049250313e-16
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          1.1102230246251565e-16,
+          2.220446049250313e-16,
+          1.1102230246251565e-16,
+          2.220446049250313e-16
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "accepted": 360,
+      "sample_seconds": 0.14315779111348093,
+      "raw_sha256": "4e03b0ca8296bc8f14431f1f22edc904d38680440e934febe0782f730738ca62",
+      "record_sha256": "a01c33df2aed0ac55e64a6b4417871ad8de858dc7245f112fb81f5fda4653f7f"
+    },
+    "mala-quasi_deer": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          9.050982185954126e-11,
+          1.774302926804694e-11,
+          2.0025814340129955e-11,
+          1.6266543667597944e-11
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          9.050982185954126e-11,
+          1.774302926804694e-11,
+          2.0025814340129955e-11,
+          1.6266543667597944e-11
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "accepted": 360,
+      "sample_seconds": 2.4669338748790324,
+      "raw_sha256": "5132bd72bb37b2e1d2eb1fe534fa30284c4e0d3a47d2f6f95b193aaa56f728a7",
+      "record_sha256": "c60d3b98db32a76aaa59d7de7c77081d3380105369bea0587e2a7a1cffc78fc6"
+    },
+    "rwm-sequential": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "accepted": 195,
+      "sample_seconds": 0.03705587494187057,
+      "raw_sha256": "e57b3a4a64773ee3bbd59c6ff83178c20a2f54d026d78324818694149b62ad7c",
+      "record_sha256": "47c0e4272b67b66c53ddf2242219d62099cbd61387df29699effa7d88bf0731a"
+    },
+    "rwm-online_picard": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          2.220446049250313e-16,
+          2.220446049250313e-16,
+          1.1102230246251565e-16,
+          6.661338147750939e-16
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          2.220446049250313e-16,
+          2.220446049250313e-16,
+          1.1102230246251565e-16,
+          6.661338147750939e-16
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "accepted": 195,
+      "sample_seconds": 0.17559516592882574,
+      "raw_sha256": "a82ad4b6cfeb432a4c1ef5a41407a5afab40d35d2dcf3876481fc46476666116",
+      "record_sha256": "d6215874fd71ddbe4d76a9b7997885e9ab5cde228110078b46652506bbd41eaa"
+    }
+  },
+  "pairs": [
+    {
+      "kernel": "mala",
+      "max_path_difference": 9.050982185954126e-11,
+      "acceptance_mismatches": 0,
+      "passed": true
+    },
+    {
+      "kernel": "rwm",
+      "max_path_difference": 6.661338147750939e-16,
+      "acceptance_mismatches": 0,
+      "passed": true
+    }
+  ]
+}

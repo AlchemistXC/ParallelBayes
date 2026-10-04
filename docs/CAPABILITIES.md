@@ -45,3 +45,7 @@ pb_capabilities(stan) # combinations仅顺序RWM与MALA
 `pb_benchmark()`批量运行配置列表并可保存R对象；它不承担正式协议冻结、检查点和完整证据归档。正式研究通过Python CLI和项目协议文件管理。
 
 新增模型的完整案例见 `examples/custom-poisson-target.py` 和 `.R`：构造公开Python `Model`，给出JAX密度与独立NumPy密度/解析梯度，核对典型及尾部点，再对两组MH工作流使用同一实际随机输入比较。它不是新增`pb_model()`注册机制；R示例通过reticulate调用此公开Python扩展入口，将输出转换为posterior对象。源数据、模型和验证说明见 `docs/EXTENDING-TARGETS.md`。
+
+## 外部目标扩展的实测例
+
+`examples/external_wells.py`通过公开Python Model接口提供posteriordb水井距离模型，保留其平坦先验；R经`examples/external_wells.R`整批调用。Mac CPU的Stan/NumPy/torch目标、顺序/时间轨迹与R数组字节核验通过，见[报告](WELLS-TARGET-VALIDATION.md)。它没有注册为pb_model内置kind，不能用带正态先验的内置logistic替换，也尚未取得该外部目标的Windows CUDA实测证据。

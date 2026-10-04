@@ -1,0 +1,1114 @@
+{
+  "status": "completed",
+  "diagnostics": {
+    "status": 0,
+    "iterations": 81,
+    "residual": 0.4521045367140712,
+    "clips": 3071,
+    "confirmed": 384,
+    "forward_evals": 10368,
+    "jvp_evals": 5184,
+    "rounds": [
+      {
+        "offset": 0,
+        "iteration": 1,
+        "residual": 1755613099.4859548,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 2,
+        "residual": 2945821479.494383,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 3,
+        "residual": 1773815507.0668309,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 4,
+        "residual": 714693889.6280609,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 5,
+        "residual": 703124057.3777148,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 6,
+        "residual": 90001909.0855092,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 7,
+        "residual": 46707133.558319576,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 8,
+        "residual": 44710316.32074306,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 9,
+        "residual": 19924038.06778452,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 10,
+        "residual": 4138448.1690278132,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 11,
+        "residual": 325402.92875530734,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 12,
+        "residual": 100.89594056686232,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 13,
+        "residual": 5.729280104611821,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 14,
+        "residual": 0.16636564325250736,
+        "confirmed": 0
+      },
+      {
+        "offset": 16,
+        "iteration": 1,
+        "residual": 742653791.090597,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 2,
+        "residual": 456528644.16069406,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 3,
+        "residual": 189173015.6306296,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 4,
+        "residual": 77904957.94705796,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 5,
+        "residual": 35488627.533563465,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 6,
+        "residual": 11866298.379282562,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 7,
+        "residual": 2679978.428817008,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 8,
+        "residual": 353612.9417302028,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 9,
+        "residual": 30366.336862570904,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 10,
+        "residual": 2257.1037020046347,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 11,
+        "residual": 121.02228192488768,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 12,
+        "residual": 4.552313307679579,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 13,
+        "residual": 0.20675887931393622,
+        "confirmed": 64
+      },
+      {
+        "offset": 32,
+        "iteration": 1,
+        "residual": 485357157.4120462,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 2,
+        "residual": 456025225.49539703,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 3,
+        "residual": 523563053.0337027,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 4,
+        "residual": 438875063.81385577,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 5,
+        "residual": 246666494.55558613,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 6,
+        "residual": 90008981.09146595,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 7,
+        "residual": 19253361.639949843,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 8,
+        "residual": 3070635.302696618,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 9,
+        "residual": 493950.3767633864,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 10,
+        "residual": 52286.25996519948,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 11,
+        "residual": 2265.83739898359,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 12,
+        "residual": 102.61700228920496,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 13,
+        "residual": 6.98301359192353,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 14,
+        "residual": 0.08301719941366972,
+        "confirmed": 128
+      },
+      {
+        "offset": 48,
+        "iteration": 1,
+        "residual": 489433617.3924867,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 2,
+        "residual": 429828985.626549,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 3,
+        "residual": 495669317.13461673,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 4,
+        "residual": 236363032.03937244,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 5,
+        "residual": 51196864.2647437,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 6,
+        "residual": 1873132.831966562,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 7,
+        "residual": 296231.78682530613,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 8,
+        "residual": 37165.92848946757,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 9,
+        "residual": 6044.854350904434,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 10,
+        "residual": 521.6967351880451,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 11,
+        "residual": 38.10487982878577,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 12,
+        "residual": 9.085929542381969,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 13,
+        "residual": 0.4521045367140712,
+        "confirmed": 192
+      },
+      {
+        "offset": 64,
+        "iteration": 1,
+        "residual": 781067394.5552729,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 2,
+        "residual": 461513116.348252,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 3,
+        "residual": 176516616.4896854,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 4,
+        "residual": 145324840.08261487,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 5,
+        "residual": 23701387.517245088,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 6,
+        "residual": 13213072.076155365,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 7,
+        "residual": 3479846.983086774,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 8,
+        "residual": 610833.625710027,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 9,
+        "residual": 104005.88624220781,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 10,
+        "residual": 5650.948016528974,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 11,
+        "residual": 251.15414385504363,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 12,
+        "residual": 43.18270257870947,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 13,
+        "residual": 1.917440202021253,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 14,
+        "residual": 0.04425507446733341,
+        "confirmed": 256
+      },
+      {
+        "offset": 80,
+        "iteration": 1,
+        "residual": 483162582.56981075,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 2,
+        "residual": 190146907.59051102,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 3,
+        "residual": 71197031.62474786,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 4,
+        "residual": 39038796.92100672,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 5,
+        "residual": 14930752.765888894,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 6,
+        "residual": 4241096.018080779,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 7,
+        "residual": 714710.392723319,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 8,
+        "residual": 113231.87128830023,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 9,
+        "residual": 10966.924821022427,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 10,
+        "residual": 836.1800468712081,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 11,
+        "residual": 58.45214584337562,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 12,
+        "residual": 2.920713170162716,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 13,
+        "residual": 0.07679505988837147,
+        "confirmed": 320
+      }
+    ],
+    "host_scalar_reads": 243,
+    "host_scalar_wait_seconds": 0.0006604872178286314,
+    "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+    "tensor_device": "cpu",
+    "tensor_dtype": "torch.float64"
+  },
+  "primary_diagnostics": {
+    "status": 0,
+    "iterations": 81,
+    "residual": 0.4521045367140712,
+    "clips": 3071,
+    "confirmed": 384,
+    "forward_evals": 10368,
+    "jvp_evals": 5184,
+    "rounds": [
+      {
+        "offset": 0,
+        "iteration": 1,
+        "residual": 1755613099.4859548,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 2,
+        "residual": 2945821479.494383,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 3,
+        "residual": 1773815507.0668309,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 4,
+        "residual": 714693889.6280609,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 5,
+        "residual": 703124057.3777148,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 6,
+        "residual": 90001909.0855092,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 7,
+        "residual": 46707133.558319576,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 8,
+        "residual": 44710316.32074306,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 9,
+        "residual": 19924038.06778452,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 10,
+        "residual": 4138448.1690278132,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 11,
+        "residual": 325402.92875530734,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 12,
+        "residual": 100.89594056686232,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 13,
+        "residual": 5.729280104611821,
+        "confirmed": 0
+      },
+      {
+        "offset": 0,
+        "iteration": 14,
+        "residual": 0.16636564325250736,
+        "confirmed": 0
+      },
+      {
+        "offset": 16,
+        "iteration": 1,
+        "residual": 742653791.090597,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 2,
+        "residual": 456528644.16069406,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 3,
+        "residual": 189173015.6306296,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 4,
+        "residual": 77904957.94705796,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 5,
+        "residual": 35488627.533563465,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 6,
+        "residual": 11866298.379282562,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 7,
+        "residual": 2679978.428817008,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 8,
+        "residual": 353612.9417302028,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 9,
+        "residual": 30366.336862570904,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 10,
+        "residual": 2257.1037020046347,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 11,
+        "residual": 121.02228192488768,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 12,
+        "residual": 4.552313307679579,
+        "confirmed": 64
+      },
+      {
+        "offset": 16,
+        "iteration": 13,
+        "residual": 0.20675887931393622,
+        "confirmed": 64
+      },
+      {
+        "offset": 32,
+        "iteration": 1,
+        "residual": 485357157.4120462,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 2,
+        "residual": 456025225.49539703,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 3,
+        "residual": 523563053.0337027,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 4,
+        "residual": 438875063.81385577,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 5,
+        "residual": 246666494.55558613,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 6,
+        "residual": 90008981.09146595,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 7,
+        "residual": 19253361.639949843,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 8,
+        "residual": 3070635.302696618,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 9,
+        "residual": 493950.3767633864,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 10,
+        "residual": 52286.25996519948,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 11,
+        "residual": 2265.83739898359,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 12,
+        "residual": 102.61700228920496,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 13,
+        "residual": 6.98301359192353,
+        "confirmed": 128
+      },
+      {
+        "offset": 32,
+        "iteration": 14,
+        "residual": 0.08301719941366972,
+        "confirmed": 128
+      },
+      {
+        "offset": 48,
+        "iteration": 1,
+        "residual": 489433617.3924867,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 2,
+        "residual": 429828985.626549,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 3,
+        "residual": 495669317.13461673,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 4,
+        "residual": 236363032.03937244,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 5,
+        "residual": 51196864.2647437,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 6,
+        "residual": 1873132.831966562,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 7,
+        "residual": 296231.78682530613,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 8,
+        "residual": 37165.92848946757,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 9,
+        "residual": 6044.854350904434,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 10,
+        "residual": 521.6967351880451,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 11,
+        "residual": 38.10487982878577,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 12,
+        "residual": 9.085929542381969,
+        "confirmed": 192
+      },
+      {
+        "offset": 48,
+        "iteration": 13,
+        "residual": 0.4521045367140712,
+        "confirmed": 192
+      },
+      {
+        "offset": 64,
+        "iteration": 1,
+        "residual": 781067394.5552729,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 2,
+        "residual": 461513116.348252,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 3,
+        "residual": 176516616.4896854,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 4,
+        "residual": 145324840.08261487,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 5,
+        "residual": 23701387.517245088,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 6,
+        "residual": 13213072.076155365,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 7,
+        "residual": 3479846.983086774,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 8,
+        "residual": 610833.625710027,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 9,
+        "residual": 104005.88624220781,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 10,
+        "residual": 5650.948016528974,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 11,
+        "residual": 251.15414385504363,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 12,
+        "residual": 43.18270257870947,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 13,
+        "residual": 1.917440202021253,
+        "confirmed": 256
+      },
+      {
+        "offset": 64,
+        "iteration": 14,
+        "residual": 0.04425507446733341,
+        "confirmed": 256
+      },
+      {
+        "offset": 80,
+        "iteration": 1,
+        "residual": 483162582.56981075,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 2,
+        "residual": 190146907.59051102,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 3,
+        "residual": 71197031.62474786,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 4,
+        "residual": 39038796.92100672,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 5,
+        "residual": 14930752.765888894,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 6,
+        "residual": 4241096.018080779,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 7,
+        "residual": 714710.392723319,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 8,
+        "residual": 113231.87128830023,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 9,
+        "residual": 10966.924821022427,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 10,
+        "residual": 836.1800468712081,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 11,
+        "residual": 58.45214584337562,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 12,
+        "residual": 2.920713170162716,
+        "confirmed": 320
+      },
+      {
+        "offset": 80,
+        "iteration": 13,
+        "residual": 0.07679505988837147,
+        "confirmed": 320
+      }
+    ],
+    "host_scalar_reads": 243,
+    "host_scalar_wait_seconds": 0.0006604872178286314,
+    "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+    "tensor_device": "cpu",
+    "tensor_dtype": "torch.float64"
+  },
+  "audit": {
+    "passed": true,
+    "max_abs_path_error": [
+      9.050982185954126e-11,
+      1.774302926804694e-11,
+      2.0025814340129955e-11,
+      1.6266543667597944e-11
+    ],
+    "acceptance_mismatches": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "max_abs_constrained_error": [
+      9.050982185954126e-11,
+      1.774302926804694e-11,
+      2.0025814340129955e-11,
+      1.6266543667597944e-11
+    ],
+    "oracle": "independent_numpy_float64"
+  },
+  "primary_audit": {
+    "passed": true,
+    "max_abs_path_error": [
+      9.050982185954126e-11,
+      1.774302926804694e-11,
+      2.0025814340129955e-11,
+      1.6266543667597944e-11
+    ],
+    "acceptance_mismatches": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "max_abs_constrained_error": [
+      9.050982185954126e-11,
+      1.774302926804694e-11,
+      2.0025814340129955e-11,
+      1.6266543667597944e-11
+    ],
+    "oracle": "independent_numpy_float64"
+  },
+  "transform_error": null,
+  "fallback": false,
+  "config": {
+    "kernel": "mala",
+    "executor": "quasi_deer",
+    "device": "cpu",
+    "draws": 96,
+    "chains": 4,
+    "seed": 983105,
+    "solver_seed": 983106,
+    "step_size": 0.0005,
+    "window": 16,
+    "max_iter": 1024,
+    "atol": 1e-10,
+    "rtol": 1e-10,
+    "jacobian_clip": 1.0,
+    "memory_limit_mb": 2048,
+    "initial": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.8,
+        -1.2
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        1.0,
+        -2.0
+      ]
+    ],
+    "on_failure": "error",
+    "audit": true
+  },
+  "names": [
+    "alpha",
+    "beta[1]"
+  ],
+  "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+  "coordinate_id": "alpha-beta-dist100-flat",
+  "tape_sha256": "90d0a90190fd2d4376d94d038f72ebb32d4920ba4dae7aaab3cb11bf6d34bddc",
+  "timing": {
+    "input": 6.341701373457909e-05,
+    "compile": 0.0,
+    "warmup": 0.0,
+    "sample": 2.4669338748790324,
+    "transfer": 8.708098903298378e-06,
+    "audit": 0.05170512502081692,
+    "fallback": 0.0,
+    "transform": 5.183299072086811e-05,
+    "total": 2.5188348330557346
+  },
+  "memory": {
+    "estimated_array_workspace_bytes": 286720
+  },
+  "guarantee": "independently_audited_fixed_tape",
+  "stopping_reason": "output_standard_met",
+  "state_repairs": 0,
+  "implementation": "torch eager; Python round control; no compiled device-loop claim"
+}

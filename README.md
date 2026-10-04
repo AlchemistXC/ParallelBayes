@@ -8,7 +8,7 @@
 
 当前Windows只需先执行[诊断差异复核提示词](handoff/windows-completion/CODEX-PROMPT.md)；它使用原生Python/R读取小型固定样例，不重新采样、不修改冻结环境。后续CPU/CUDA补充实验另有新协议。历史环境安装说明保留在`handoff/windows-native/`。
 
-本轮已完成[有限参考复用审计](docs/REFERENCE-REUSE.md)，并锁定[外部水井模型案例](models/external/wells/README.md)的公开输入。独立调参、补充性能/推断实验及外部目标实现尚未完成。
+本轮已完成[有限参考复用审计](docs/REFERENCE-REUSE.md)，并完成[外部水井模型](docs/WELLS-TARGET-VALIDATION.md)的Mac目标、两对轨迹及R接口核验。独立调参、补充性能/推断实验及外部案例的参考分析尚未完成。
 
 **本开发分支已完成原生PyTorch后端及RTX 5080实测。** 新协议512项CPU/CUDA任务通过数值输出核验，65项CPU和63项CUDA测试通过；详细结果、负例与限制见[Windows实测报告](docs/WINDOWS-RESULTS.md)和[安装/运行说明](docs/WINDOWS-NATIVE.md)。许多短链尚未混合，数值核验通过不等于推断收敛。`handoff/windows-native`保留移植前交接状态；历史`handoff/gpu`仅是WSL/JAX归档。
 

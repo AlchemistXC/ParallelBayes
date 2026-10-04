@@ -1,0 +1,36 @@
+{
+  "protocol_sha256": "164ef169669c2dce645227e6b36babf333d03fd2671f66d1afbb95ba3d44007a",
+  "scientific_source_commit": "e1717564d4bc3fa78eb47e202dfb4474ba6fc265",
+  "stage": "torch",
+  "status": "started",
+  "source_manifest_sha256": "b64415687a58d3e2c34444d9e32523154b6002d960e505e31e2510d8356420ab",
+  "propriety": {
+    "certified": true,
+    "witnesses": [
+      {
+        "distance_metres": 3.25200009346008,
+        "scaled_distance": 0.0325200009346008,
+        "zero_index": 532,
+        "one_index": 530
+      },
+      {
+        "distance_metres": 151.065994262695,
+        "scaled_distance": 1.51065994262695,
+        "zero_index": 2883,
+        "one_index": 189
+      }
+    ],
+    "determinant": 1.4781399416923493,
+    "integral_upper_bound": 2.7061037234541727,
+    "duplicate_outcome_distances": 31,
+    "bound": "L(alpha,beta) <= exp(-abs(alpha+x1*beta)-abs(alpha+x2*beta))",
+    "scope": "Sufficient integrability certificate for the exact likelihood and flat alpha/beta prior"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "scope": "Model and fixed-tape integration validation only; not performance, convergence or posterior accuracy evidence",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  }
+}

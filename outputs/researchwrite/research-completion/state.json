@@ -3,8 +3,8 @@
   "mode": "research_completion_execution",
   "status": "active_execution",
   "source_evidence_commit": "38894409004dd9ebceb978755dc246fcb3418d01",
-  "new_experiments_started": false,
-  "new_protocol_frozen": false,
+  "new_experiments_started": true,
+  "new_protocol_frozen": true,
   "pending_research_issues": [
     "native_Windows_Rhat_runtime_receipt",
     "Windows_mechanism_explanation",
@@ -17,7 +17,9 @@
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
-    "8_fit_logistic_reference_identity_and_MCSE_reuse_audit"
+    "8_fit_logistic_reference_identity_and_MCSE_reuse_audit",
+    "wells_independent_numpy_replay_and_R_binary_transport"
   ],
-  "external_case": "posteriordb wells_data-wells_dist100_model; source inspection only"
+  "external_case": "wells target and Mac NumPy/Stan/torch/R validation passed; finite reference and formal case pending",
+  "new_experiment_scope": "external-wells-validation-v1/v2: finite Mac model/trajectory/R correctness only; no new formal inference/performance experiment"
 }

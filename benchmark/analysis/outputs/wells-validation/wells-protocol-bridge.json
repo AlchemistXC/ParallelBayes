@@ -1,0 +1,10 @@
+{
+  "scientific_fields_changed": [],
+  "source_changes": [
+    "examples/external_wells.R",
+    "scripts/completion/freeze_wells_validation.py"
+  ],
+  "actual_input_bytes_identical": true,
+  "old_protocol_sha256": "164ef169669c2dce645227e6b36babf333d03fd2671f66d1afbb95ba3d44007a",
+  "new_protocol_sha256": "7a500b6be26e033d002db32b4375d8685ef380033a6ff7728d80e1dd60ea28de"
+}

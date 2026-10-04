@@ -1,0 +1,140 @@
+{
+  "status": "completed",
+  "diagnostics": {
+    "status": 0,
+    "iterations": 96,
+    "residual": 0.0,
+    "clips": 0,
+    "confirmed": 384,
+    "forward_evals": 384,
+    "jvp_evals": 0,
+    "rounds": [],
+    "host_scalar_reads": 1,
+    "host_scalar_wait_seconds": 6.2498729676008224e-06,
+    "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+    "tensor_device": "cpu",
+    "tensor_dtype": "torch.float64"
+  },
+  "primary_diagnostics": {
+    "status": 0,
+    "iterations": 96,
+    "residual": 0.0,
+    "clips": 0,
+    "confirmed": 384,
+    "forward_evals": 384,
+    "jvp_evals": 0,
+    "rounds": [],
+    "host_scalar_reads": 1,
+    "host_scalar_wait_seconds": 6.2498729676008224e-06,
+    "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+    "tensor_device": "cpu",
+    "tensor_dtype": "torch.float64"
+  },
+  "audit": {
+    "passed": true,
+    "max_abs_path_error": [
+      1.1102230246251565e-16,
+      2.220446049250313e-16,
+      1.1102230246251565e-16,
+      2.220446049250313e-16
+    ],
+    "acceptance_mismatches": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "max_abs_constrained_error": [
+      1.1102230246251565e-16,
+      2.220446049250313e-16,
+      1.1102230246251565e-16,
+      2.220446049250313e-16
+    ],
+    "oracle": "independent_numpy_float64"
+  },
+  "primary_audit": {
+    "passed": true,
+    "max_abs_path_error": [
+      1.1102230246251565e-16,
+      2.220446049250313e-16,
+      1.1102230246251565e-16,
+      2.220446049250313e-16
+    ],
+    "acceptance_mismatches": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "max_abs_constrained_error": [
+      1.1102230246251565e-16,
+      2.220446049250313e-16,
+      1.1102230246251565e-16,
+      2.220446049250313e-16
+    ],
+    "oracle": "independent_numpy_float64"
+  },
+  "transform_error": null,
+  "fallback": false,
+  "config": {
+    "kernel": "mala",
+    "executor": "sequential",
+    "device": "cpu",
+    "draws": 96,
+    "chains": 4,
+    "seed": 983105,
+    "solver_seed": 983106,
+    "step_size": 0.0005,
+    "window": 16,
+    "max_iter": 1024,
+    "atol": 1e-10,
+    "rtol": 1e-10,
+    "jacobian_clip": 1.0,
+    "memory_limit_mb": 2048,
+    "initial": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.8,
+        -1.2
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        1.0,
+        -2.0
+      ]
+    ],
+    "on_failure": "error",
+    "audit": true
+  },
+  "names": [
+    "alpha",
+    "beta[1]"
+  ],
+  "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+  "coordinate_id": "alpha-beta-dist100-flat",
+  "tape_sha256": "90d0a90190fd2d4376d94d038f72ebb32d4920ba4dae7aaab3cb11bf6d34bddc",
+  "timing": {
+    "input": 6.0499878600239754e-05,
+    "compile": 0.0,
+    "warmup": 0.0,
+    "sample": 0.14315779111348093,
+    "transfer": 7.95791856944561e-06,
+    "audit": 0.0523328750859946,
+    "fallback": 0.0,
+    "transform": 6.975000724196434e-05,
+    "total": 0.19569362490437925
+  },
+  "memory": {
+    "estimated_array_workspace_bytes": 286720
+  },
+  "guarantee": "independently_audited_fixed_tape",
+  "stopping_reason": "output_standard_met",
+  "state_repairs": 0,
+  "implementation": "torch eager; Python round control; no compiled device-loop claim"
+}

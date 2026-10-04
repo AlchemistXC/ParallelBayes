@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "source_script_sha256": "8350cef78adc814a70b1d8c8728eaac6f2fb0eaf94842cf59b7cda6448ef421a",
+  "independent_oracle_chains": 8,
+  "verified_workflows": 8,
+  "independent_random_tapes": 1,
+  "torch_imported": false,
+  "jax_imported": false,
+  "R_replay_samples_and_events_identical": true,
+  "R_serialized_array_byte_identical": true,
+  "scope": "Independent NumPy trajectory and R transport audit; no inference or speed claim",
+  "rows": [
+    {
+      "run": "torch-v1",
+      "workflow": "mala-sequential",
+      "max_path_error": 2.220446049250313e-16,
+      "acceptance_mismatches": 0,
+      "raw_sha256": "4e03b0ca8296bc8f14431f1f22edc904d38680440e934febe0782f730738ca62"
+    },
+    {
+      "run": "torch-v1",
+      "workflow": "mala-quasi_deer",
+      "max_path_error": 9.050982185954126e-11,
+      "acceptance_mismatches": 0,
+      "raw_sha256": "5132bd72bb37b2e1d2eb1fe534fa30284c4e0d3a47d2f6f95b193aaa56f728a7"
+    },
+    {
+      "run": "torch-v1",
+      "workflow": "rwm-sequential",
+      "max_path_error": 0.0,
+      "acceptance_mismatches": 0,
+      "raw_sha256": "e57b3a4a64773ee3bbd59c6ff83178c20a2f54d026d78324818694149b62ad7c"
+    },
+    {
+      "run": "torch-v1",
+      "workflow": "rwm-online_picard",
+      "max_path_error": 6.661338147750939e-16,
+      "acceptance_mismatches": 0,
+      "raw_sha256": "a82ad4b6cfeb432a4c1ef5a41407a5afab40d35d2dcf3876481fc46476666116"
+    },
+    {
+      "run": "R-v2",
+      "workflow": "mala-sequential",
+      "max_path_error": 2.220446049250313e-16,
+      "acceptance_mismatches": 0,
+      "raw_sha256": "4e03b0ca8296bc8f14431f1f22edc904d38680440e934febe0782f730738ca62"
+    },
+    {
+      "run": "R-v2",
+      "workflow": "mala-quasi_deer",
+      "max_path_error": 9.050982185954126e-11,
+      "acceptance_mismatches": 0,
+      "raw_sha256": "5132bd72bb37b2e1d2eb1fe534fa30284c4e0d3a47d2f6f95b193aaa56f728a7"
+    },
+    {
+      "run": "R-v2",
+      "workflow": "rwm-sequential",
+      "max_path_error": 0.0,
+      "acceptance_mismatches": 0,
+      "raw_sha256": "e57b3a4a64773ee3bbd59c6ff83178c20a2f54d026d78324818694149b62ad7c"
+    },
+    {
+      "run": "R-v2",
+      "workflow": "rwm-online_picard",
+      "max_path_error": 6.661338147750939e-16,
+      "acceptance_mismatches": 0,
+      "raw_sha256": "a82ad4b6cfeb432a4c1ef5a41407a5afab40d35d2dcf3876481fc46476666116"
+    }
+  ]
+}

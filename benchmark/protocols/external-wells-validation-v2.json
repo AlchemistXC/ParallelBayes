@@ -1,0 +1,159 @@
+{
+  "identity": "external-wells-validation-v2",
+  "stage": "model and fixed-tape correctness only",
+  "source_commit": "9a7b596c5fd241d9db789026be843e8f1a727e66",
+  "source_files": {
+    "examples/external_wells.R": "4fdae014dcdd37275ea93359d3db768bfa6d27b8536aa78f5d0fd904bb1776da",
+    "examples/external_wells.py": "cf5e8a49dff8aaa0d6e6e0df1fd262235c44365333b43f17c0b356d013546bfe",
+    "models/external/wells/source-manifest.json": "b64415687a58d3e2c34444d9e32523154b6002d960e505e31e2510d8356420ab",
+    "pyproject.toml": "ce585b7f3307e42252c7eb92d441940e3eb44c6d664a4397fa1bebc06c1676cc",
+    "r-package/DESCRIPTION": "f43612d521a0f4f785a2498e1db8339cc3450b8ee45a6f2e830a48218e45505f",
+    "r-package/R/interface.R": "c65b5f756b8a0311533b7c70fc84ca6a87167e4914db5ce7a03f561c09b8b0ee",
+    "r-package/inst/python/parallelbayes/__init__.py": "fe5f3d261b2ec64708896f927cac896a6d9a2f2f394865a729325d4e5cb289ac",
+    "r-package/inst/python/parallelbayes/cli.py": "04747ea8498daa0a4febd59b21117ed252b349de8f90b380af3d3662aa68504e",
+    "r-package/inst/python/parallelbayes/executors.py": "aaa7f2cd8f42fd3a854a0251e37f420c5b69f42192feef03f21f5c563f8b0d40",
+    "r-package/inst/python/parallelbayes/experiment.py": "575be4a6ff786c69533e084c53c1838026784a51a514758fb0fc1237cef02003",
+    "r-package/inst/python/parallelbayes/kernels.py": "69461150e93d261079a1a28dcb0d9b3a7e499553bd86d09642c7b2a7988beae2",
+    "r-package/inst/python/parallelbayes/models.py": "dd3fa67d962c8e3ffcb2ff38585eae6b69d887a3439e4db39a76195674615613",
+    "r-package/inst/python/parallelbayes/nuts.py": "425258c803b74381220e04d4acb58011a7480f61d082f080ead5ce47ac3524f3",
+    "r-package/inst/python/parallelbayes/output.py": "201b016e957137f40d1a350f4b4344be2090327b60d8fa5727ccc4370c7dc645",
+    "r-package/inst/python/parallelbayes/reference.py": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1",
+    "r-package/inst/python/parallelbayes/sampling.py": "db7d7e751dc53f98a5e4c43ee50a23f83ede763ce54909ceeb71bfd6a932b5ad",
+    "r-package/inst/python/parallelbayes/stan.py": "297c3e6d572a2eea86222b39c3572dc7efecc84d669624940c005ae1578c7e3b",
+    "r-package/inst/python/parallelbayes/torch_backend/__init__.py": "45d1a5e10721e3b7b4d0136dcba8a9c7718de5031aec9a012bafc25c2d1d5b8a",
+    "r-package/inst/python/parallelbayes/torch_backend/executors.py": "90fbe42ab3f878dfbd4575fac9db9f3103ac1817b907224a47fa2d0650bf3e4f",
+    "r-package/inst/python/parallelbayes/torch_backend/kernels.py": "c457d39ff2e8def2005c1a4c594664b6d4b826688e9008422eebcefc457e59e6",
+    "r-package/inst/python/parallelbayes/torch_backend/models.py": "895677cf1c3f6577b3594637821712cda949f21ebe83233e9feb1fff1913c41b",
+    "r-package/inst/python/parallelbayes/torch_backend/nuts_baseline.py": "984c1f7a94745c5b85be01d8deee89277d8d2337ee5375693802877feed9ef89",
+    "r-package/inst/python/parallelbayes/torch_backend/sampling.py": "907ac8bcfebe9136db33f8b0fe8fa6e6c39d1481c8c2c2225163ccddd7e2fdba",
+    "scripts/completion/freeze_wells_validation.py": "81f2e0afc5900fb000c9ceeb3b8cec15e6eb652d490da09adae215ae7b4f4d30",
+    "scripts/completion/validate_wells.py": "b4fe29298b3e71d3db8e0029cb13877e2a90bbb3bc45d938de037a58792d6aee",
+    "scripts/windows/analyze_study.py": "ff8711b1a4e6f046521c4d1caf241308a8e6d35db80d3585d42d2d30a88c3198",
+    "scripts/windows/archive_draft_sources.py": "b2616c87ba492295a08c768c295fb1cf0e8cb1f523804424d11b4f7649e6561f",
+    "scripts/windows/assemble_evidence.py": "f93fdb5135730b916e44ad43db26ecad2ace6fa47afe7f9aa72fad572b977e6b",
+    "scripts/windows/audit_skills.py": "bc673efd59da64008484a4f0fb8e6af04021ec409a2f13891c858bb5a24ab16f",
+    "scripts/windows/bootstrap.ps1": "29f816eeab10607398486f16c2ab8431809cc12a1d3dca76da000bbb3d5058cc",
+    "scripts/windows/evidence.py": "3ac12063b1a352b46d42f7404bb489c32f769471867d8734f31d056458447396",
+    "scripts/windows/export_results.py": "88d074c41250d7e58328cd0142471c4e1535272f758219b7092f52e01b442786",
+    "scripts/windows/install_local_skills.py": "3bbdcfce7116796e764c0a193d98a512da9824af7789c294345abb8de83b6df8",
+    "scripts/windows/install_r_packages.R": "378f0b34266e2022f1b0dd893f9c22db0f1e490196eb478abf406dc5e457bd9b",
+    "scripts/windows/modern_diagnostics.R": "869b0317cbf1397ae41903b722f600db7566cd7ed9fd55e68d41c2104ff79739",
+    "scripts/windows/prepare_release_assets.py": "5fbd1aa1f78ad6604c315bea57c0ce72c301e85320e94b662cb28c75fa960bff",
+    "scripts/windows/probe_environment.py": "d1c4903ad7260a18568c6b7f5e4b62ab8945cbe13b71c3ee7781050bcf20ce99",
+    "scripts/windows/run_study.py": "4eb09164a3b3cc38478f6c34c439404bee8fc2fc0b436f65bf11ad22a1475613",
+    "scripts/windows/statistical_check.py": "836b15d8c8809d872625857f3eed46e2cbf0b063e9ab5ad496764186eb442ac9",
+    "scripts/windows/summarize_sbc.py": "8643b017a4939547ff951312154ae6a3a522033f56f45d85d7789cd9b6d100ef",
+    "scripts/windows/validate_backend.py": "69f56b661eb815989c60b5101c291389c69c1499ff975477a29c99f426f4777e",
+    "scripts/windows/validate_r.R": "d97f35d8d510799d2db587325ab157e1019de54e973b11a9d3a6590591bcb419",
+    "tests/windows/test_evidence.py": "9365848719c9345c9bd9f1ecb8cb1f0abec2ec560be403536b07745043fae92e",
+    "tests/windows/test_torch_backend.py": "eb0fd59ea2bc4c575c36866af1b66cb76b52ac5c551ae768918dc12aba9afe68"
+  },
+  "created_utc": "2026-10-04T16:29:53Z",
+  "base_config": {
+    "kernel": "mala",
+    "executor": "sequential",
+    "device": "cpu",
+    "draws": 96,
+    "chains": 4,
+    "seed": 983105,
+    "solver_seed": 983106,
+    "step_size": 0.0005,
+    "window": 16,
+    "max_iter": 1024,
+    "atol": 1e-10,
+    "rtol": 1e-10,
+    "jacobian_clip": 1.0,
+    "memory_limit_mb": 2048,
+    "initial": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.8,
+        -1.2
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        1.0,
+        -2.0
+      ]
+    ],
+    "on_failure": "error",
+    "audit": true
+  },
+  "torch_cpu_threads": 1,
+  "tape_sha256": "90d0a90190fd2d4376d94d038f72ebb32d4920ba4dae7aaab3cb11bf6d34bddc",
+  "points": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.5,
+      -0.5
+    ],
+    [
+      1.0,
+      -1.0
+    ],
+    [
+      -2.0,
+      2.0
+    ],
+    [
+      8.0,
+      -8.0
+    ],
+    [
+      -8.0,
+      8.0
+    ],
+    [
+      0.2,
+      -0.6
+    ]
+  ],
+  "stan_parameter_names": [
+    "alpha",
+    "beta.1"
+  ],
+  "output_names": [
+    "alpha",
+    "beta[1]"
+  ],
+  "target_check": "same coordinates; density up to constant; gradient and identity transform; NumPy finite-difference HVP",
+  "paired_atol": 1e-07,
+  "acceptance_mismatches_allowed": 0,
+  "workflows": [
+    {
+      "kernel": "mala",
+      "executor": "sequential",
+      "step_size": 0.0005
+    },
+    {
+      "kernel": "mala",
+      "executor": "quasi_deer",
+      "step_size": 0.0005
+    },
+    {
+      "kernel": "rwm",
+      "executor": "sequential",
+      "step_size": 0.05
+    },
+    {
+      "kernel": "rwm",
+      "executor": "online_picard",
+      "step_size": 0.05
+    }
+  ],
+  "replication": "one actual tape with four chains; R integration reuses it, not an independent statistical replicate",
+  "inference_claim": "none; no warmup, accuracy or speed conclusion from this validation",
+  "runtime": "record actual Mac CPU dependencies per stage; Windows/CUDA requires separate actual validation",
+  "failure": "save invalid arrays and errors; never return failed trajectories as ordinary draws; no fallback",
+  "memory": "2048 MiB estimated workspace guard; no global experiment timeout",
+  "protocol_sha256": "7a500b6be26e033d002db32b4375d8685ef380033a6ff7728d80e1dd60ea28de"
+}

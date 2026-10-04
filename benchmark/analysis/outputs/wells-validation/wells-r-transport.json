@@ -1,0 +1,36 @@
+{
+  "R_array_dimensions": [
+    96,
+    4,
+    2
+  ],
+  "R_serialized_array_byte_identical": true,
+  "R_binary_sha256": "26f485b66016da033827ac106aa9a9d3fd6795eaa9b99a5c51fa8521ac4f063e",
+  "same_frozen_tape_reused": true,
+  "python_R_replays": [
+    {
+      "workflow": "mala-sequential",
+      "draws_identical": true,
+      "acceptance_identical": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "workflow": "mala-quasi_deer",
+      "draws_identical": true,
+      "acceptance_identical": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "workflow": "rwm-sequential",
+      "draws_identical": true,
+      "acceptance_identical": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "workflow": "rwm-online_picard",
+      "draws_identical": true,
+      "acceptance_identical": true,
+      "max_abs_difference": 0.0
+    }
+  ]
+}

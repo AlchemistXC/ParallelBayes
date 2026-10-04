@@ -1,0 +1,1 @@
+Original checksums.json also lists the upstream .stan source and compiled .so. These build files are intentionally not Git artifacts. The pinned source is fetched through models/external/wells/source-manifest.json; compile it afresh with BridgeStan 2.7.0. The original local build is retained. Scientific results and full command log are included here.
