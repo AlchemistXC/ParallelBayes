@@ -64,3 +64,15 @@ def test_affine_composes_with_positive_transform_and_both_audited_executors():
         assert result['status']=='completed' and result['audit']['passed']
     with pytest.raises(ValueError,match='Singular'):
         affine_model(base,[1.],[[0.]])
+
+
+def test_bounded_identity_batch_from_failed_readiness_transforms_without_fp_error():
+    from parallelbayes.reference import make_reference
+    from affine_target import affine_model
+    values=np.load(ROOT/'benchmark/fixtures/affine-coordinate-v1/bounded-array.npy',allow_pickle=False)
+    assert values.shape==(64,8) and np.max(np.abs(values))<4
+    model=affine_model(make_reference(dict(kind='gaussian',dimension=8)),np.zeros(8),np.eye(8))
+    # Identity map has no division or overflowing intermediate at these values.
+    with np.errstate(over='raise',invalid='raise',divide='raise'):
+        actual=model.constrain(values)
+    np.testing.assert_array_equal(actual,values)

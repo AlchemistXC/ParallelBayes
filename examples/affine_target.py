@@ -19,7 +19,9 @@ def affine_model(base, center, factor):
     sign,logdet=np.linalg.slogdet(factor)
     if sign==0 or not np.isfinite(logdet):raise ValueError('Singular affine factor')
     def to_base(z):
-        return np.asarray(z,dtype=float)@factor.T+center
+        # Explicit contraction keeps the independent path off the platform
+        # matmul implementation; strict floating-point guards remain enabled.
+        return np.einsum('...j,ij->...i',np.asarray(z,dtype=float),factor,optimize=False)+center
     def from_base(q):
         a=np.asarray(q,dtype=float)
         if a.shape[-1:]!=(d,):raise ValueError('Invalid coordinate shape')
@@ -27,7 +29,7 @@ def affine_model(base, center, factor):
     def reference(z):
         return base.reference(to_base(z))+logdet
     def gradient(z):
-        return factor.T@base.gradient_reference(to_base(z))
+        return np.einsum('ij,i->j',factor,base.gradient_reference(to_base(z)),optimize=False)
     spec=dict(kind='fixed_affine',dimension=d,coordinate_id='fixed-affine-'+base.spec['coordinate_id'],
         base_target_id=base.target_id,base_spec=base.spec,center=center.tolist(),factor=factor.tolist(),
         log_abs_determinant=float(logdet),coordinate_equation='q = center + factor @ z')

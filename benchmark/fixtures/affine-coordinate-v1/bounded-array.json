@@ -1,0 +1,10 @@
+{
+  "source_protocol": "inference-readiness-mac-v1",
+  "source_commit": "d1b5a7c",
+  "source_target": "G1",
+  "workflow": "rwm-sequential",
+  "chain_index": 0,
+  "source_sha256": "81f063ee7c1f3aac8eb7128ce20d19eb91e38ca0f3f43c9f0050cdc6ae59518b",
+  "fixture_sha256": "7cc7033dcb030dcb7515e90928cb0b393f2d66daffa43196e12261b3b5959f30",
+  "role": "bounded identity-map regression; failed source remains quarantined"
+}

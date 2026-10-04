@@ -43,7 +43,9 @@ def freeze(output):
             initial_rule='two chains from independent N(0, 2^2 I) in chosen coordinates; M1 first coordinate fixed -5,+5',
             step_rwm=float(1./np.sqrt(d)),step_mala=float(.1/d**(1/3)),
             role='Numerical and workflow readiness with deliberately untuned generic scales; no final kernel choice'))
-    p=dict(identity='inference-readiness-mac-v1',required_platform='darwin',device='cpu',
+    p=dict(identity='inference-readiness-mac-v2',required_platform='darwin',device='cpu',
+        predecessor=dict(identity='inference-readiness-mac-v1',protocol_sha256='27eca16723aab5e837f39016aee5f1d6d5658d395e74d6382584b0a38e05f999',
+            reason='Replace NumPy affine matmul with explicit einsum after bounded identity-map exception; no suppressed errors or weakened output criteria. Same design and RNG seed namespaces, new source identity.'),
         scope='Development-only custom target, fixed geometry and mature baseline readiness. No accuracy, convergence, tuning-optimality or speed claims.',
         source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),source_files=files,
         targets=targets,chains=2,mh_draws=64,window=8,max_iter=2048,memory_limit_mb=2048,

@@ -29,8 +29,8 @@ def prepare_geometry(model,method='identity'):
                 x=np.asarray(s['X'],float) if kind=='logistic' else np.column_stack((np.ones(s['N']),np.asarray(s['dist'])/100.))
                 prior=1./s['prior_scale']**2 if kind=='logistic' else 0.
                 def information(q):
-                    eta=x@q;weights=expit(eta)*expit(-eta)
-                    return x.T@(weights[:,None]*x)+prior*np.eye(d)
+                    eta=np.einsum('ij,j->i',x,q,optimize=False);weights=expit(eta)*expit(-eta)
+                    return np.einsum('ni,nj,n->ij',x,x,weights,optimize=False)+prior*np.eye(d)
             history=[]
             def callback(q):history.append(np.asarray(q).tolist())
             result=minimize(lambda q:-model.reference(q),np.zeros(d),
