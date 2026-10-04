@@ -1,0 +1,157 @@
+{
+  "target": "H2",
+  "status": "failed",
+  "attempt": "attempt-1791137769264559000",
+  "target_setup_seconds": 0.007348499959334731,
+  "base_target_id": "a49d3652caace916ae39612a0331a8d9974345e5e552d09a71a19fda44542a0b",
+  "coordinate_target_id": "55d5087c135224c53cab01c524aa301d88ed72f08e69ae20ef98286c7a6df242",
+  "tape_sha256": "52bff8641324ed40a7075a234e38e9c5a56e0d7ff422dbc0e4502895638c13c8",
+  "workflows": {
+    "rwm-sequential": {
+      "status": "failed",
+      "audit": {
+        "passed": false,
+        "error": "FloatingPointError: overflow encountered in matmul",
+        "failed_chain": 0,
+        "max_abs_path_error": [
+          0.0
+        ],
+        "acceptance_mismatches": [
+          0
+        ]
+      },
+      "acceptance_rate": 0.59375
+    },
+    "rwm-online_picard": {
+      "status": "failed",
+      "audit": {
+        "passed": false,
+        "error": "FloatingPointError: overflow encountered in matmul",
+        "failed_chain": 0,
+        "max_abs_path_error": [
+          1.3322676295501878e-15
+        ],
+        "acceptance_mismatches": [
+          0
+        ]
+      },
+      "acceptance_rate": 0.59375
+    },
+    "mala-sequential": {
+      "status": "failed",
+      "audit": {
+        "passed": false,
+        "error": "FloatingPointError: overflow encountered in matmul",
+        "failed_chain": 0,
+        "max_abs_path_error": [
+          0.0
+        ],
+        "acceptance_mismatches": [
+          0
+        ]
+      },
+      "acceptance_rate": 0.984375
+    },
+    "mala-quasi_deer": {
+      "status": "failed",
+      "audit": {
+        "passed": false,
+        "error": "FloatingPointError: overflow encountered in matmul",
+        "failed_chain": 0,
+        "max_abs_path_error": [
+          5.806644054473509e-11
+        ],
+        "acceptance_mismatches": [
+          0
+        ]
+      },
+      "acceptance_rate": 0.984375
+    },
+    "nuts-cpu": {
+      "status": "failed",
+      "diagnostics": [
+        {
+          "q": {
+            "n_eff": [
+              450.56216114036266,
+              517.2787916559666,
+              482.92023156504615,
+              331.5031487905451,
+              286.8348148674401,
+              472.1418453262504,
+              393.8300329991216,
+              751.7601693432479,
+              368.8533467548729
+            ],
+            "r_hat": [
+              0.9961509907021399,
+              0.9961153533013721,
+              1.0065130310338124,
+              0.9960861896730059,
+              0.9996307101073434,
+              0.9969208483004806,
+              0.9976164231210902,
+              1.0023565394516396,
+              1.0000560049558656
+            ]
+          },
+          "divergences": {
+            "chain 0": []
+          },
+          "acceptance rate": {
+            "chain 0": 1.0
+          }
+        },
+        {
+          "q": {
+            "n_eff": [
+              365.434262116207,
+              554.5962119776797,
+              294.6424500449514,
+              459.4234979060775,
+              577.2229711126836,
+              328.1424973872627,
+              553.3428582232965,
+              371.3808797436069,
+              543.6114363921206
+            ],
+            "r_hat": [
+              0.9961381203500431,
+              0.9961708714739659,
+              0.9986525537794274,
+              0.9962545304183491,
+              0.9979399505996263,
+              0.9987390203322903,
+              1.0010295720349185,
+              0.9981504873363916,
+              0.9984736930675221
+            ]
+          },
+          "divergences": {
+            "chain 0": []
+          },
+          "acceptance rate": {
+            "chain 0": 1.0
+          }
+        }
+      ]
+    }
+  },
+  "assets": {
+    "attempt-1791137769264559000/coordinates.npz": "bd7e072d157a74eed8e52cf621e785025984071571e7d1fe3b22b7de82f6b97b",
+    "attempt-1791137769264559000/geometry.json": "b14f59633ea051575a0ed97bf3a0fdf5fab54f36d2669aae9608a505d1890720",
+    "attempt-1791137769264559000/mala-quasi_deer.json": "5e2d9392bdee404ed8a02fb9c1bda91e664a1fb19babfb52afa4f3c8157eff16",
+    "attempt-1791137769264559000/mala-quasi_deer.npz": "ff31d83339cd82ec4419fe64e5e2eb6cb08b697e408e8fa29202e6f59b70fba6",
+    "attempt-1791137769264559000/mala-sequential.json": "7bc966d8f56b37a1b4c612898b01b92e02389c07e0f98be4ebb8153cd02867a7",
+    "attempt-1791137769264559000/mala-sequential.npz": "11a5f0566d871c0dec66c5b050b51e037e6e6f16e3b3c6b396d28d83565ef7fa",
+    "attempt-1791137769264559000/mh-inputs.npz": "c1fa17e1bbf3e285eb5b7d595c4f1ef47a1152d69d482be69db75ce3a254d658",
+    "attempt-1791137769264559000/nuts-cpu.json": "e81f536138441155985ed87359df2e9079991b958c754cdfbe0d9126330aa94e",
+    "attempt-1791137769264559000/nuts-cpu.npz": "6e58cdc86f885e2c81a37a03413b1672d041f8132b4c12958729faa0c775248e",
+    "attempt-1791137769264559000/rwm-online_picard.json": "5cbb6ce84d4422b4a6f40b7ff0a278f9907810073cb1327fbf296ff6a21e17f3",
+    "attempt-1791137769264559000/rwm-online_picard.npz": "01dcb1b1b137cc6b8b58b71dd90acfdeac2b8cd01f7bbe8597505a8714bea1c1",
+    "attempt-1791137769264559000/rwm-sequential.json": "e51aa1373326dce3f22d6baa88b6fdb8b83d030a55a3665067042fe509817148",
+    "attempt-1791137769264559000/rwm-sequential.npz": "f530daf0897fcc6ad228d38fb2ef7bc039aa25e341ed6df50018e241157a5254",
+    "attempt-1791137769264559000/started.json": "0dbb8357470399d03782e81932d492ac8f05c7f35108940c4453508b63662926",
+    "attempt-1791137769264559000/target-check.json": "0fd81c795746a469f46e00545b71f4f3534e27873c2750c7a51dc92724627730"
+  }
+}

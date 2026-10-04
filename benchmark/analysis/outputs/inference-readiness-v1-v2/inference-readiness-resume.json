@@ -1,0 +1,7 @@
+{
+  "returncode": 0,
+  "terminal_files": 144,
+  "unchanged": true,
+  "stdout": "{\n  \"protocol_sha256\": \"ce94aec65c6a0101fe59d5240621db2dd3c89f894aed665e043103241938204b\",\n  \"targets\": 9,\n  \"completed\": 9,\n  \"failed\": 0,\n  \"workflows_completed\": 45,\n  \"workflows_planned\": 45,\n  \"scope\": \"Development-only custom target, fixed geometry and mature baseline readiness. No accuracy, convergence, tuning-optimality or speed claims.\",\n  \"formal_inference_complete\": false\n}\n",
+  "stderr": ""
+}

@@ -1,0 +1,39 @@
+{
+  "shape": [
+    64,
+    8
+  ],
+  "max_abs": 3.2356093514367505,
+  "input_finite": true,
+  "identity_factor": true,
+  "cases": {
+    "matmul": [
+      {
+        "status": "exception",
+        "error": "divide by zero encountered in matmul"
+      },
+      {
+        "status": "exception",
+        "error": "divide by zero encountered in matmul"
+      },
+      {
+        "status": "exception",
+        "error": "divide by zero encountered in matmul"
+      }
+    ],
+    "einsum": [
+      {
+        "status": "finite",
+        "max_difference": 0.0
+      },
+      {
+        "status": "finite",
+        "max_difference": 0.0
+      },
+      {
+        "status": "finite",
+        "max_difference": 0.0
+      }
+    ]
+  }
+}

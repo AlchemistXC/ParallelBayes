@@ -1,0 +1,14 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__ test_affine_coordinates_preserve_hand_worked_gaussian_and_original_outputs __
+
+    def test_affine_coordinates_preserve_hand_worked_gaussian_and_original_outputs():
+        import torch
+        from parallelbayes import make_model, validate_model
+>       from affine_target import affine_model
+E       ModuleNotFoundError: No module named 'affine_target'
+
+tests/external/test_inference_coordinates.py:16: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_inference_coordinates.py::test_affine_coordinates_preserve_hand_worked_gaussian_and_original_outputs
+1 failed in 0.53s

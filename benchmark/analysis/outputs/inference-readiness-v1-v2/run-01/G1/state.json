@@ -1,0 +1,153 @@
+{
+  "target": "G1",
+  "status": "failed",
+  "attempt": "attempt-1791137754807413000",
+  "target_setup_seconds": 0.007862542057409883,
+  "base_target_id": "514971389da57c81e05933e03c3158901a37a2a3edbddbee6c3ce2ce0c02b515",
+  "coordinate_target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+  "tape_sha256": "a277607620461d640b50eeb56b54f481430ac52ed580b356b2156214606cdf09",
+  "workflows": {
+    "rwm-sequential": {
+      "status": "failed",
+      "audit": {
+        "passed": false,
+        "error": "FloatingPointError: overflow encountered in matmul",
+        "failed_chain": 0,
+        "max_abs_path_error": [
+          0.0
+        ],
+        "acceptance_mismatches": [
+          0
+        ]
+      },
+      "acceptance_rate": 0.5703125
+    },
+    "rwm-online_picard": {
+      "status": "failed",
+      "audit": {
+        "passed": false,
+        "error": "FloatingPointError: overflow encountered in matmul",
+        "failed_chain": 0,
+        "max_abs_path_error": [
+          6.661338147750939e-16
+        ],
+        "acceptance_mismatches": [
+          0
+        ]
+      },
+      "acceptance_rate": 0.5703125
+    },
+    "mala-sequential": {
+      "status": "failed",
+      "audit": {
+        "passed": false,
+        "error": "FloatingPointError: overflow encountered in matmul",
+        "failed_chain": 0,
+        "max_abs_path_error": [
+          0.0
+        ],
+        "acceptance_mismatches": [
+          0
+        ]
+      },
+      "acceptance_rate": 0.9765625
+    },
+    "mala-quasi_deer": {
+      "status": "failed",
+      "audit": {
+        "passed": false,
+        "error": "FloatingPointError: overflow encountered in matmul",
+        "failed_chain": 0,
+        "max_abs_path_error": [
+          2.619793271207982e-11
+        ],
+        "acceptance_mismatches": [
+          0
+        ]
+      },
+      "acceptance_rate": 0.9765625
+    },
+    "nuts-cpu": {
+      "status": "failed",
+      "diagnostics": [
+        {
+          "q": {
+            "n_eff": [
+              394.7907365207814,
+              413.79967627733566,
+              678.5183441653797,
+              671.4114419644617,
+              722.9734309040491,
+              344.36025086726636,
+              599.5607206195788,
+              424.39927419263313
+            ],
+            "r_hat": [
+              0.9979394978766681,
+              0.9966969941387812,
+              0.9960865708704383,
+              0.9961906953642735,
+              0.9971132651287938,
+              0.9969006575975332,
+              0.9978937989164879,
+              0.9995772487157909
+            ]
+          },
+          "divergences": {
+            "chain 0": []
+          },
+          "acceptance rate": {
+            "chain 0": 1.0
+          }
+        },
+        {
+          "q": {
+            "n_eff": [
+              273.86096824032063,
+              357.14289577968515,
+              516.4768082275476,
+              440.5052344747187,
+              330.55360690515016,
+              433.65427788164857,
+              289.4988631666389,
+              368.9163178892163
+            ],
+            "r_hat": [
+              0.9981000831432582,
+              0.9977574420256268,
+              0.9971551734830109,
+              1.003236696526964,
+              0.9961383093447925,
+              0.997909752604515,
+              0.9991409930364573,
+              0.9961721172045783
+            ]
+          },
+          "divergences": {
+            "chain 0": []
+          },
+          "acceptance rate": {
+            "chain 0": 0.99609375
+          }
+        }
+      ]
+    }
+  },
+  "assets": {
+    "attempt-1791137754807413000/coordinates.npz": "de6f573f93910886305cf42c059f989f2fe91468591a6d934a1b8d670a3e55d9",
+    "attempt-1791137754807413000/geometry.json": "c7a04b4bb8edbd6fbbd4da394efe85562d927da904f7822a2256ee087e083ee3",
+    "attempt-1791137754807413000/mala-quasi_deer.json": "9898be2fca83e8dc08d44a5509d6dda73d658a048119f87ad273b9f87a4409de",
+    "attempt-1791137754807413000/mala-quasi_deer.npz": "56a23c70db15437dcbf4a3da7e514fbdc481dad068f749244a80589c85a7f3d3",
+    "attempt-1791137754807413000/mala-sequential.json": "22f63f68c813597b6889fe0578b656ad1ffb4f10a590aa2361f0ab870d963f7a",
+    "attempt-1791137754807413000/mala-sequential.npz": "a489f864a6038b9119d8a22dccdd264264d14157e653d4448ed58717c9aa7249",
+    "attempt-1791137754807413000/mh-inputs.npz": "2f5d0e5fe387fdb754564ba2f005cbc5713b2213048d7ccdc436e975c688696b",
+    "attempt-1791137754807413000/nuts-cpu.json": "70935c80adb91c774b95e58f25f3d31cc1695c93dd080f74ae843d72fd286d46",
+    "attempt-1791137754807413000/nuts-cpu.npz": "5ec79caaa864bfb9baa06497fe48de3b49706c0da8c68e2f1d55b71f94287848",
+    "attempt-1791137754807413000/rwm-online_picard.json": "408b6c604d039b2c56cbb1436dfed39357828399a9871f27f4b9bb4d72d463c2",
+    "attempt-1791137754807413000/rwm-online_picard.npz": "576678d491804d8b34feb691a3f724a04a1123f4acbf92bf4481a63c50aa38fa",
+    "attempt-1791137754807413000/rwm-sequential.json": "ff2b75ea5c4a66327110ea76b51b0b85269882a5f0540b5ed6443dfc715323de",
+    "attempt-1791137754807413000/rwm-sequential.npz": "81f063ee7c1f3aac8eb7128ce20d19eb91e38ca0f3f43c9f0050cdc6ae59518b",
+    "attempt-1791137754807413000/started.json": "9cb4087e905ea73aa70f37437f9e011a2e518a572fa41f44d53e10593350dd7f",
+    "attempt-1791137754807413000/target-check.json": "150464be18d25e91f5a92de898464524a5b7a91bba5b18209b589d99fc5ca691"
+  }
+}

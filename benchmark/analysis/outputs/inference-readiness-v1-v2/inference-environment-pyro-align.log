@@ -1,0 +1,7 @@
+Using Python 3.12.14 environment at: .venv-inference
+Resolved 15 packages in 104ms
+Prepared 1 package in 101ms
+Uninstalled 1 package in 14ms
+Installed 1 package in 5ms
+ - pyro-ppl==1.9.1
+ + pyro-ppl==1.9.2

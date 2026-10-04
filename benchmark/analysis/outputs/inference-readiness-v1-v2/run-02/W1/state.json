@@ -1,0 +1,149 @@
+{
+  "target": "W1",
+  "status": "completed",
+  "attempt": "attempt-1791138015037132000",
+  "target_setup_seconds": 0.0029943750705569983,
+  "base_target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+  "coordinate_target_id": "e9d9d93a904cc97f1c89befa300a6e7375be21b1ad10519a37cfafb2734c39b8",
+  "tape_sha256": "8c05544b9619058a618ad53e842a655df05663d0f8ffdd657b1fa0e39025049c",
+  "workflows": {
+    "rwm-sequential": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          0.0,
+          0.0
+        ],
+        "acceptance_mismatches": [
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          0.0,
+          0.0
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "acceptance_rate": 0.6484375
+    },
+    "rwm-online_picard": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          2.220446049250313e-16,
+          4.440892098500626e-16
+        ],
+        "acceptance_mismatches": [
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          1.1102230246251565e-16,
+          1.1102230246251565e-16
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "acceptance_rate": 0.6484375
+    },
+    "mala-sequential": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          1.1102230246251565e-15,
+          8.881784197001252e-16
+        ],
+        "acceptance_mismatches": [
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          1.1102230246251565e-16,
+          1.1102230246251565e-16
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "acceptance_rate": 0.984375
+    },
+    "mala-quasi_deer": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          1.9232537784574788e-10,
+          1.2820811079450323e-10
+        ],
+        "acceptance_mismatches": [
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          2.096034457110818e-11,
+          8.164469100790939e-12
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "acceptance_rate": 0.984375
+    },
+    "nuts-cpu": {
+      "status": "completed",
+      "diagnostics": [
+        {
+          "q": {
+            "n_eff": [
+              298.9732507068268,
+              189.60508989599185
+            ],
+            "r_hat": [
+              0.9960951093400184,
+              0.996113392353584
+            ]
+          },
+          "divergences": {
+            "chain 0": []
+          },
+          "acceptance rate": {
+            "chain 0": 0.99609375
+          }
+        },
+        {
+          "q": {
+            "n_eff": [
+              296.3275595366595,
+              318.5308932587418
+            ],
+            "r_hat": [
+              0.9961234920811021,
+              1.0079603812314846
+            ]
+          },
+          "divergences": {
+            "chain 0": []
+          },
+          "acceptance rate": {
+            "chain 0": 0.9765625
+          }
+        }
+      ]
+    }
+  },
+  "assets": {
+    "attempt-1791138015037132000/coordinates.npz": "516c6b3f1a504ed6ea28ae695e6e83543e32825d29d5d0664e1e1f69e565dc3c",
+    "attempt-1791138015037132000/geometry.json": "fa0868ac33f8946f2c659e10f1cf4b411fe9045aa17b28cb38dee8ebc2980829",
+    "attempt-1791138015037132000/mala-quasi_deer.json": "e5e856cc1d51ef48699d8db543303cbd1577018b4a99db60fc7b2e5f5285c863",
+    "attempt-1791138015037132000/mala-quasi_deer.npz": "74007fb6135f3d5e637312d8bcc916a867ca333d8938419cfd8c5bf00a1bd579",
+    "attempt-1791138015037132000/mala-sequential.json": "cd1a0b65f1a4fcebcbe3d052641ee5d119d5a461887311003d3938b899624338",
+    "attempt-1791138015037132000/mala-sequential.npz": "ef800a11eefaa21ef69de02c613ec101b358148010e4b6bccaba3b559d15211e",
+    "attempt-1791138015037132000/mh-inputs.npz": "1854814c8568df79974313ded0dbf467aa3eac7868dd99b4fc70941af6547d7a",
+    "attempt-1791138015037132000/nuts-cpu.json": "8f9e71f32e6165aced765b8ecaadb98ad4e233623d8aadcf9232aaafe4019d21",
+    "attempt-1791138015037132000/nuts-cpu.npz": "adbabc7f1cdff5871eec30befb04cca1a426bec5af4aa461c29f3bf618b8a347",
+    "attempt-1791138015037132000/rwm-online_picard.json": "aa588c930d78ee6c7baa8ebe01a2c755d34b124c5e12b0da8d3c5472348064f2",
+    "attempt-1791138015037132000/rwm-online_picard.npz": "bb7fe5d7468b2375988463de19db7cd4e02b04622afb02fd00d7e1a2b62b49e3",
+    "attempt-1791138015037132000/rwm-sequential.json": "ff7040d6ab206c158233e75e4145725acb09afaf14e8bdf2d9d70ade1b5d6f25",
+    "attempt-1791138015037132000/rwm-sequential.npz": "eace4c4a8b0d71d29f4bb2904755644b0c9eaee8611651d44d13e3fb5b67e124",
+    "attempt-1791138015037132000/started.json": "e6312bf6b3ba64ef03cbf8938c3f5f15beb3f2a281354ab21a43f76f420062cb",
+    "attempt-1791138015037132000/target-check.json": "0fa22281b8ead3202041ba9f9f12188daa82cffed482f86c2c50375903d2deb2"
+  }
+}

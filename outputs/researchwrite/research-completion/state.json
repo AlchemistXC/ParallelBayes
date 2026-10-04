@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Run delivered native Windows F1/F4 checks and mechanism-windows-pilot-v1; continue independent F3 tuning/budget/baseline design on Mac",
+  "next_recommended_action": "Develop independent F3 tuning and budget pilot with a defensible CPU multichain baseline; native Windows F1/F2/F4 receipts remain pending",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -21,7 +21,8 @@
     "wells_independent_numpy_replay_and_R_binary_transport",
     "wells_finite_reference_7_function_audit",
     "wells_12_rule_quadrature_and_log_concave_tail_control",
-    "Mac_mechanism_smoke_9_workflows_6_probe_batches_and_byte_identical_resume"
+    "Mac_mechanism_smoke_9_workflows_6_probe_batches_and_byte_identical_resume",
+    "F3_nine_target_CPU_readiness_v2_45_workflows_and_binary_posterior_diagnostics; v1_failures_preserved"
   ],
   "external_case": "Mac target/trajectory/R validation, finite reference audit and 12-rule independent quadrature completed; numerical integration is not certified exact truth; Windows target validation and formal inference remain",
   "new_experiment_scope": "external-wells-validation-v1/v2: finite Mac model/trajectory/R correctness only; no new formal inference/performance experiment",
@@ -29,5 +30,6 @@
     "external-wells-windows-cpu-v1",
     "external-wells-windows-cuda-v1",
     "mechanism-windows-pilot-v1"
-  ]
+  ],
+  "f3_readiness": "Not formal inference: v2 45/45 numerical/workflow checks; 7/9 NUTS fits and 36/36 short MH fits have some finite Rhat>1.01; 23/45 contain undefined Rhat functions"
 }

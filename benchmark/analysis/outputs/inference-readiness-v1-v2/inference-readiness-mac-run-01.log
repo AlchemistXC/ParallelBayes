@@ -1,0 +1,49 @@
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/examples/affine_target.py:22: RuntimeWarning: divide by zero encountered in matmul
+  return np.asarray(z,dtype=float)@factor.T+center
+{"target": "G1", "status": "failed"}
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/examples/affine_target.py:22: RuntimeWarning: overflow encountered in matmul
+  return np.asarray(z,dtype=float)@factor.T+center
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/examples/affine_target.py:22: RuntimeWarning: invalid value encountered in matmul
+  return np.asarray(z,dtype=float)@factor.T+center
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/examples/affine_target.py:30: RuntimeWarning: divide by zero encountered in matmul
+  return factor.T@base.gradient_reference(to_base(z))
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/examples/affine_target.py:30: RuntimeWarning: overflow encountered in matmul
+  return factor.T@base.gradient_reference(to_base(z))
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/examples/affine_target.py:30: RuntimeWarning: invalid value encountered in matmul
+  return factor.T@base.gradient_reference(to_base(z))
+{"target": "G2", "status": "failed"}
+{"target": "A1", "status": "failed"}
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/inference_setup.py:32: RuntimeWarning: divide by zero encountered in matmul
+  eta=x@q;weights=expit(eta)*expit(-eta)
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/inference_setup.py:32: RuntimeWarning: overflow encountered in matmul
+  eta=x@q;weights=expit(eta)*expit(-eta)
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/inference_setup.py:32: RuntimeWarning: invalid value encountered in matmul
+  eta=x@q;weights=expit(eta)*expit(-eta)
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/inference_setup.py:33: RuntimeWarning: divide by zero encountered in matmul
+  return x.T@(weights[:,None]*x)+prior*np.eye(d)
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/inference_setup.py:33: RuntimeWarning: overflow encountered in matmul
+  return x.T@(weights[:,None]*x)+prior*np.eye(d)
+/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/scripts/completion/inference_setup.py:33: RuntimeWarning: invalid value encountered in matmul
+  return x.T@(weights[:,None]*x)+prior*np.eye(d)
+{"target": "L1", "status": "failed"}
+{"target": "L2", "status": "failed"}
+{"target": "H1", "status": "failed"}
+{"target": "H2", "status": "failed"}
+{"target": "M1", "status": "failed"}
+{"target": "W1", "status": "completed"}
+{
+  "protocol_sha256": "27eca16723aab5e837f39016aee5f1d6d5658d395e74d6382584b0a38e05f999",
+  "targets": 9,
+  "completed": 1,
+  "failed": 8,
+  "workflows_completed": 5,
+  "workflows_planned": 45,
+  "scope": "Development-only custom target, fixed geometry and mature baseline readiness. No accuracy, convergence, tuning-optimality or speed claims.",
+  "formal_inference_complete": false
+}

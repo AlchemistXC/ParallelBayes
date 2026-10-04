@@ -1,0 +1,20 @@
+.F                                                                       [100%]
+=================================== FAILURES ===================================
+__ test_fixed_geometry_can_be_estimated_from_a_target_without_reference_draws __
+
+    def test_fixed_geometry_can_be_estimated_from_a_target_without_reference_draws():
+        from parallelbayes.reference import make_reference
+        sys.path.insert(0,str(ROOT/'scripts/completion'))
+>       from inference_setup import prepare_geometry
+E       ModuleNotFoundError: No module named 'inference_setup'
+
+tests/external/test_inference_coordinates.py:34: ModuleNotFoundError
+=============================== warnings summary ===============================
+tests/external/test_inference_coordinates.py: 18 warnings
+  /Users/haku/Workspace/ParallelBayes/.venv-completion/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/external/test_inference_coordinates.py::test_fixed_geometry_can_be_estimated_from_a_target_without_reference_draws
+1 failed, 1 passed, 18 warnings in 1.02s

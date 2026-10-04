@@ -1,0 +1,16 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_______ test_custom_target_nuts_preserves_explicit_starts_rng_and_replay _______
+
+    def test_custom_target_nuts_preserves_explicit_starts_rng_and_replay():
+        import torch
+        import random
+        from parallelbayes import make_model
+        from affine_target import affine_model
+>       from inference_nuts import sample_nuts
+E       ModuleNotFoundError: No module named 'inference_nuts'
+
+tests/external/test_inference_nuts.py:17: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_inference_nuts.py::test_custom_target_nuts_preserves_explicit_starts_rng_and_replay
+1 failed in 7.30s

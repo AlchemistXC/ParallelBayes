@@ -1,0 +1,25 @@
+{"target": "G1", "status": "completed"}
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+{"target": "G2", "status": "completed"}
+{"target": "A1", "status": "completed"}
+{"target": "L1", "status": "completed"}
+{"target": "L2", "status": "completed"}
+{"target": "H1", "status": "completed"}
+{"target": "H2", "status": "completed"}
+{"target": "M1", "status": "completed"}
+{"target": "W1", "status": "completed"}
+{
+  "protocol_sha256": "ce94aec65c6a0101fe59d5240621db2dd3c89f894aed665e043103241938204b",
+  "targets": 9,
+  "completed": 9,
+  "failed": 0,
+  "workflows_completed": 45,
+  "workflows_planned": 45,
+  "scope": "Development-only custom target, fixed geometry and mature baseline readiness. No accuracy, convergence, tuning-optimality or speed claims.",
+  "formal_inference_complete": false
+}

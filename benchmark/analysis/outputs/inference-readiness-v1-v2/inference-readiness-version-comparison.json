@@ -1,0 +1,302 @@
+{
+  "scope": "Compatibility sensitivity, not independent repetitions; v1 failed outputs remain quarantined",
+  "rows": [
+    {
+      "target": "A1",
+      "lower_triangular": true,
+      "positive_diagonal": true,
+      "slogdet_sign": 1.0,
+      "logdet": -64.13964798078413,
+      "triangular_logdet": -64.13964798078415,
+      "error": 1.4210854715202004e-14,
+      "same_initial_bytes": true,
+      "same_tape_bytes": true,
+      "workflows": [
+        {
+          "name": "rwm-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "rwm-online_picard",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-quasi_deer",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        }
+      ]
+    },
+    {
+      "target": "G1",
+      "lower_triangular": true,
+      "positive_diagonal": true,
+      "slogdet_sign": 1.0,
+      "logdet": 0.0,
+      "triangular_logdet": 0.0,
+      "error": 0.0,
+      "same_initial_bytes": true,
+      "same_tape_bytes": true,
+      "workflows": [
+        {
+          "name": "rwm-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "rwm-online_picard",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-quasi_deer",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        }
+      ]
+    },
+    {
+      "target": "G2",
+      "lower_triangular": true,
+      "positive_diagonal": true,
+      "slogdet_sign": 1.0,
+      "logdet": 73.68272297580948,
+      "triangular_logdet": 73.68272297580945,
+      "error": 2.842170943040401e-14,
+      "same_initial_bytes": true,
+      "same_tape_bytes": true,
+      "workflows": [
+        {
+          "name": "rwm-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "rwm-online_picard",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-quasi_deer",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        }
+      ]
+    },
+    {
+      "target": "H1",
+      "lower_triangular": true,
+      "positive_diagonal": true,
+      "slogdet_sign": 1.0,
+      "logdet": 0.0,
+      "triangular_logdet": 0.0,
+      "error": 0.0,
+      "same_initial_bytes": true,
+      "same_tape_bytes": true,
+      "workflows": [
+        {
+          "name": "rwm-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "rwm-online_picard",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-quasi_deer",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        }
+      ]
+    },
+    {
+      "target": "H2",
+      "lower_triangular": true,
+      "positive_diagonal": true,
+      "slogdet_sign": 1.0,
+      "logdet": 0.0,
+      "triangular_logdet": 0.0,
+      "error": 0.0,
+      "same_initial_bytes": true,
+      "same_tape_bytes": true,
+      "workflows": [
+        {
+          "name": "rwm-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "rwm-online_picard",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-quasi_deer",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        }
+      ]
+    },
+    {
+      "target": "L1",
+      "lower_triangular": true,
+      "positive_diagonal": true,
+      "slogdet_sign": 1.0,
+      "logdet": -11.249345125154159,
+      "triangular_logdet": -11.249345125154159,
+      "error": 0.0,
+      "same_initial_bytes": true,
+      "same_tape_bytes": true,
+      "workflows": [
+        {
+          "name": "rwm-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "rwm-online_picard",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 2.42861286636753e-15
+        },
+        {
+          "name": "mala-quasi_deer",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 2.275957200481571e-15
+        }
+      ]
+    },
+    {
+      "target": "L2",
+      "lower_triangular": true,
+      "positive_diagonal": true,
+      "slogdet_sign": 1.0,
+      "logdet": -22.66168507504257,
+      "triangular_logdet": -22.661685075042566,
+      "error": 3.552713678800501e-15,
+      "same_initial_bytes": true,
+      "same_tape_bytes": true,
+      "workflows": [
+        {
+          "name": "rwm-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "rwm-online_picard",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 2.6645352591003757e-15
+        },
+        {
+          "name": "mala-quasi_deer",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 1.9984014443252818e-15
+        }
+      ]
+    },
+    {
+      "target": "M1",
+      "lower_triangular": true,
+      "positive_diagonal": true,
+      "slogdet_sign": 1.0,
+      "logdet": 0.0,
+      "triangular_logdet": 0.0,
+      "error": 0.0,
+      "same_initial_bytes": true,
+      "same_tape_bytes": true,
+      "workflows": [
+        {
+          "name": "rwm-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "rwm-online_picard",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-quasi_deer",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        }
+      ]
+    },
+    {
+      "target": "W1",
+      "lower_triangular": true,
+      "positive_diagonal": true,
+      "slogdet_sign": 1.0,
+      "logdet": -5.623584978198714,
+      "triangular_logdet": -5.623584978198715,
+      "error": 8.881784197001252e-16,
+      "same_initial_bytes": true,
+      "same_tape_bytes": true,
+      "workflows": [
+        {
+          "name": "rwm-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "rwm-online_picard",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-sequential",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        },
+        {
+          "name": "mala-quasi_deer",
+          "acceptance_mismatches": 0,
+          "max_path_difference": 0.0
+        }
+      ]
+    }
+  ]
+}

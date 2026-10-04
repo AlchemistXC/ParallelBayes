@@ -1,0 +1,10 @@
+{
+  "protocol_sha256": "27eca16723aab5e837f39016aee5f1d6d5658d395e74d6382584b0a38e05f999",
+  "targets": 9,
+  "completed": 1,
+  "failed": 8,
+  "workflows_completed": 5,
+  "workflows_planned": 45,
+  "scope": "Development-only custom target, fixed geometry and mature baseline readiness. No accuracy, convergence, tuning-optimality or speed claims.",
+  "formal_inference_complete": false
+}
