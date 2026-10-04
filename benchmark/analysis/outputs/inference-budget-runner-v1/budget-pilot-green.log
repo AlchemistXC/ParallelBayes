@@ -1,0 +1,48 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__ test_budget_pilot_preserves_prefix_inputs_real_workers_and_completed_files __
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-39/test_budget_pilot_preserves_pr0')
+
+    def test_budget_pilot_preserves_prefix_inputs_real_workers_and_completed_files(tmp_path):
+        import inference_budget_pilot as study
+        from parallelbayes.reference import benchmark_model
+        from mechanism_runner import identity,sha,actual_hash
+        item=dict(name='G1',dimension=8,geometry=dict(center=[0.]*8,factor=np.eye(8).tolist()),
+                  base_target_id=benchmark_model('G1').target_id,step_rwm=.3,step_mala=.2)
+        p=dict(identity='unit-budget',required_platform=sys.platform,device='cpu',torch_threads=1,
+            targets=[item],chains=2,mh_warmup=4,budgets=[8,16],replicates=[0],
+            initial_seed_base=7361000,tape_seed_base=7362000,solver_seed_base=7363000,nuts_seed_base=7364000,
+            nuts_warmup=8,nuts_tree_depth=3,nuts_target_accept=.8,nuts_full_mass=False,nuts_workers=2,nuts_threads=1,
+            max_iter=64,memory_limit_mb=128,window=4,source_files=study.source_files(),
+            master_inputs={},tasks=[],scope='unit test; no formal inference')
+        inputs=tmp_path/'inputs';inputs.mkdir();name='G1-rep0.npz'
+        payload=study.input_payload(p,item,0);np.savez_compressed(inputs/name,**payload)
+        p['master_inputs'][name]=dict(sha256=sha(inputs/name),actual_sha256=actual_hash(payload))
+        for budget in p['budgets']:
+            for workflow in ['rwm','mala','nuts']:
+                task=dict(model='G1',workflow=workflow,replicate=0,budget=budget,input=name)
+                task['id']=identity(task)[:20];p['tasks'].append(task)
+        p['protocol_sha256']=identity(p);protocol=tmp_path/'protocol.json';protocol.write_text(json.dumps(p))
+        out=tmp_path/'run';result=study.run(protocol,inputs,tmp_path/'unused-source',out)
+>       assert result['completed']==6 and result['failed']==0
+E       assert (4 == 6)
+
+tests/external/test_inference_budget.py:32: AssertionError
+----------------------------- Captured stdout call -----------------------------
+{"starting": 1, "total": 6, "task": {"model": "G1", "workflow": "rwm", "replicate": 0, "budget": 8, "input": "G1-rep0.npz", "id": "4b9cc8a7ba2a1cd19afa"}}
+{"done": 1, "total": 6, "model": "G1", "workflow": "rwm", "budget": 8, "replicate": 0, "status": "completed", "seconds": 0.03162058303132653}
+{"starting": 2, "total": 6, "task": {"model": "G1", "workflow": "mala", "replicate": 0, "budget": 8, "input": "G1-rep0.npz", "id": "e57b20fb6cebc55ce451"}}
+{"done": 2, "total": 6, "model": "G1", "workflow": "mala", "budget": 8, "replicate": 0, "status": "completed", "seconds": 1.743760917102918}
+{"starting": 3, "total": 6, "task": {"model": "G1", "workflow": "nuts", "replicate": 0, "budget": 8, "input": "G1-rep0.npz", "id": "c25a67b73f3375d819d5"}}
+{"done": 3, "total": 6, "model": "G1", "workflow": "nuts", "budget": 8, "replicate": 0, "status": "failed", "seconds": 1.0357057910878211}
+{"starting": 4, "total": 6, "task": {"model": "G1", "workflow": "rwm", "replicate": 0, "budget": 16, "input": "G1-rep0.npz", "id": "1472e5b3b88c456c73fd"}}
+{"done": 4, "total": 6, "model": "G1", "workflow": "rwm", "budget": 16, "replicate": 0, "status": "completed", "seconds": 0.044162125093862414}
+{"starting": 5, "total": 6, "task": {"model": "G1", "workflow": "mala", "replicate": 0, "budget": 16, "input": "G1-rep0.npz", "id": "5d242e65b6bf3f6b4100"}}
+{"done": 5, "total": 6, "model": "G1", "workflow": "mala", "budget": 16, "replicate": 0, "status": "completed", "seconds": 0.008817207999527454}
+{"starting": 6, "total": 6, "task": {"model": "G1", "workflow": "nuts", "replicate": 0, "budget": 16, "input": "G1-rep0.npz", "id": "2ae389c4e5b51c2a99b5"}}
+{"done": 6, "total": 6, "model": "G1", "workflow": "nuts", "budget": 16, "replicate": 0, "status": "failed", "seconds": 0.9747695410624146}
+- generated xml file: /Users/haku/Workspace/ParallelBayes/output/research-completion/budget-pilot-tests.xml -
+=========================== short test summary info ============================
+FAILED tests/external/test_inference_budget.py::test_budget_pilot_preserves_prefix_inputs_real_workers_and_completed_files
+1 failed in 4.87s

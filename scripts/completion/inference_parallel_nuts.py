@@ -45,9 +45,19 @@ def run_chain(payload):
     if model.target_id!=payload['target_id']:raise ValueError('Reconstructed target identity changed')
     setup=time.perf_counter()-begin
     result=sample_nuts(model,[payload['initial']],[payload['seed']],**payload['config'])
+    # Diagnostics can contain torch tensors even though sampled states are
+    # NumPy. Send owned host values through standard process IPC: no tensor
+    # storage handles or torch shared-memory manager are part of this API.
+    def transport(value):
+        if isinstance(value,torch.Tensor):return value.detach().cpu().numpy().copy()
+        if isinstance(value,dict):return {k:transport(v) for k,v in value.items()}
+        if isinstance(value,list):return [transport(v) for v in value]
+        if isinstance(value,tuple):return tuple(transport(v) for v in value)
+        return value
+    result=transport(result)
     return dict(chain=payload['chain'],worker_pid=os.getpid(),threads=torch.get_num_threads(),
         interop_threads=torch.get_num_interop_threads(),target_setup_seconds=setup,
-        worker_wall=time.perf_counter()-begin,result=result)
+        worker_wall=time.perf_counter()-begin,transport='owned NumPy and plain values; no torch storage handles',result=result)
 
 
 def sample_parallel_nuts(spec,target_id,initial,chain_seeds,workers=4,threads_per_worker=1,**config):
