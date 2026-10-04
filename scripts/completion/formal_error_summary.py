@@ -29,6 +29,14 @@ def _reference(ref):
     return kind,mu,mcse
 
 
+def _loss(x,center):
+    try:
+        value=(x-center)**2
+        return value if math.isfinite(value) else None
+    except OverflowError:
+        return None
+
+
 def summarize(estimates,reference):
     xs=_values(estimates);kind,mu,mcse=_reference(reference)
     valid=[x for x in xs if x is not None];n=len(valid)
@@ -41,7 +49,11 @@ def summarize(estimates,reference):
         reference_shift_is_confidence_interval=False,confidence_interval=None,
         interval_status='unresolved_reference' if kind=='unresolved' else 'no_valid_estimates')
     if kind=='unresolved' or not n:return row
-    errors=[(x-mu)**2 for x in valid];mean=statistics.mean(errors)
+    errors=[_loss(x,mu) for x in valid]
+    if any(x is None for x in errors):
+        row['interval_status']='nonfinite_loss'
+        return row
+    mean=statistics.mean(errors)
     row['conditional_squared_discrepancy']=mean
     if n==len(xs):row['unconditional_squared_discrepancy']=mean
     if n<2:row['interval_status']='fewer_than_two_valid_estimates'
@@ -56,9 +68,11 @@ def summarize(estimates,reference):
     elif kind=='finite_mcmc' and mcse is not None:
         lower,upper=mu-2*mcse,mu+2*mcse
         optimum=min(upper,max(lower,statistics.mean(valid)))
-        discrepancy=lambda center:statistics.mean([(x-center)**2 for x in valid])
-        row['reference_shift_min']=discrepancy(optimum)
-        row['reference_shift_max']=max(discrepancy(lower),discrepancy(upper))
+        shifts=[[_loss(x,center) for x in valid] for center in [lower,optimum,upper]]
+        if all(x is not None for loss in shifts for x in loss):
+            row['reference_shift_min']=statistics.mean(shifts[1])
+            row['reference_shift_max']=max(statistics.mean(shifts[0]),statistics.mean(shifts[2]))
+        else:row['reference_shift_status']='nonfinite_reference_sensitivity'
     return row
 
 
@@ -76,8 +90,16 @@ def paired_difference(a,b,reference):
         reference_shift_is_confidence_interval=False,confidence_interval=None,
         interval_status='unresolved_reference' if kind=='unresolved' else 'no_jointly_valid_estimates')
     if kind=='unresolved' or not pairs:return row
-    difference=lambda center:statistics.mean([(x-center)**2-(y-center)**2 for x,y in pairs])
-    losses=[(x-mu)**2-(y-mu)**2 for x,y in pairs];value=statistics.mean(losses)
+    def differences(center):
+        values=[(_loss(x,center),_loss(y,center)) for x,y in pairs]
+        if any(x is None or y is None for x,y in values):return None
+        result=[x-y for x,y in values]
+        return result if all(math.isfinite(x) for x in result) else None
+    losses=differences(mu)
+    if losses is None:
+        row['interval_status']='nonfinite_loss'
+        return row
+    value=statistics.mean(losses)
     row['conditional_mean_loss_difference']=value
     if len(pairs)==len(a):row['unconditional_mean_loss_difference']=value
     if len(pairs)<2:row['interval_status']='fewer_than_two_jointly_valid_estimates'
@@ -87,6 +109,9 @@ def paired_difference(a,b,reference):
         row['paired_difference_standard_error']=statistics.stdev(losses)/math.sqrt(len(pairs))
     if kind=='analytic':row['reference_shift_min']=row['reference_shift_max']=value
     elif kind=='finite_mcmc' and mcse is not None:
-        ends=[difference(mu-2*mcse),difference(mu+2*mcse)]
-        row['reference_shift_min']=min(ends);row['reference_shift_max']=max(ends)
+        ends=[differences(mu-2*mcse),differences(mu+2*mcse)]
+        if all(x is not None for x in ends):
+            means=[statistics.mean(x) for x in ends]
+            row['reference_shift_min']=min(means);row['reference_shift_max']=max(means)
+        else:row['reference_shift_status']='nonfinite_reference_sensitivity'
     return row
