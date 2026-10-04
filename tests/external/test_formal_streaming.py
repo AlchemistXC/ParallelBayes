@@ -16,17 +16,18 @@ def test_original_parameter_functions_discard_prefix_and_preserve_chain_order(tm
     from parallelbayes.reference import make_reference
     model=make_reference(dict(kind='gaussian',dimension=2,mean=[0.,0.],covariance=[[1.,0.],[0.,1.]]))
     draws=np.zeros((4,5,2));draws[:,0,0]=99.
-    draws[:,1:,0]=[0.,1.,2.,-1.]
+    draws[:,1:,0]=[[0.,1.,2.,-1.],[-2.,-1.,0.,1.],[2.,3.,4.,1.],[0.,0.,0.,0.]]
     path=tmp_path/'raw.npz'
     np.savez_compressed(path,draws=draws,unconstrained=draws,accept=np.ones((4,5),bool))
     digest=hashlib.sha256(path.read_bytes()).hexdigest()
     report=extract_functions(path,digest,model,(4,5,2),1,tmp_path/'functions',
                              maximum_member_bytes=4096,prefix_lengths=(3,5))
     assert report['names']==['standard_q1','standard_q1_squared','standard_q1_gt1']
-    assert report['means']==[.5,1.5,.25]
+    assert report['means']==[.625,2.625,.25]
     assert report['shape']==[4,4,3]
     transported=np.fromfile(tmp_path/'functions/functions.bin',dtype='<f8').reshape((4,4,3),order='F')
     np.testing.assert_array_equal(transported[:,0,0],[0.,1.,2.,-1.])
+    np.testing.assert_array_equal(transported[:,1,0],[-2.,-1.,0.,1.])
     assert report['retained_acceptance_rate']==1.
     assert set(report['path_prefix_sha256'])=={'3','5'}
     with pytest.raises(ValueError,match='checksum'):
