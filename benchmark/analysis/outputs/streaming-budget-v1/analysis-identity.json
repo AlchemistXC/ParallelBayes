@@ -1,0 +1,15 @@
+{
+  "maximum_member_bytes": 134217728,
+  "memory": "At most one input/fit and one model of scalars; prefix comparisons retain hashes only",
+  "protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
+  "scope": "Saved pilot raw-array reanalysis, not formal inference or new MCMC",
+  "source_commit": "8f3c47c3edb4c52a991a1787e5cc3e58b519bb19",
+  "source_state_manifest_sha256": "ebeb7fac88bdc6d376253665f04002a6fd048594b8ca7d9e6c617b8aba807600",
+  "sources": {
+    "scripts/completion/analyze_budget_streaming.py": "e82ae39b7b25268879f2f5ae741eac7d509094f324342c37b484901dab7b2ed8",
+    "scripts/completion/formal_error_summary.py": "d858ce9b2d96fc3150e7f172c79ba4f11d2e3b2df65e30c6f14bb1971b8fcadf",
+    "scripts/completion/formal_streaming.py": "c9a09d7fe82f20debd6d91b637d40dc2673e30a0c390409cddd6a354611a409f",
+    "scripts/completion/formal_uncertainty.py": "0bbe7fae58a301c7472cdcdf6887f17bdcf327cc2bd196045400a6a760324263",
+    "scripts/completion/posterior_diagnostics.R": "bf5cb7fe7610c41db69e623a7e0e1c583d1f34616f5e9396c02e4a41a6b23786"
+  }
+}

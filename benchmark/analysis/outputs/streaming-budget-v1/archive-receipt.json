@@ -1,0 +1,12 @@
+{
+  "archive": "streaming-budget-analysis-v1.tar",
+  "bytes": 209141760,
+  "sha256": "773f84e5c5efe365829f0d4101229df5e35a9050e5a97a562e006fe441daf903",
+  "checked_files": 2352,
+  "source_snapshot_commit": "ceb2635c0fb855725bd081a958dd18df472f8714",
+  "analysis_source_commit": "8f3c47c3edb4c52a991a1787e5cc3e58b519bb19",
+  "all_member_hashes_verified": true,
+  "new_MCMC_fits": 0,
+  "original_raw_dependency": "3ad2764ad139e1d08012a2b4399cf4fd588382a1b410abeb5bcfc92d1515fe0e",
+  "public_release": false
+}

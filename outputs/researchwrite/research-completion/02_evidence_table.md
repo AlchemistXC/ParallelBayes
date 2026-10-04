@@ -29,3 +29,5 @@
 | 共享完整重复索引的损失/成本区间可重建，并保留缺失和失败条件 | FORMAL-UNCERTAINTY.md；formal-uncertainty-v1；SciPy公开bootstrap对照 | 4项新接口检查；315个旧合格点误差差0；四重复全部无BCa区间。非正式推断或覆盖率证明 |
 
 | Mac运行器有限实测支持任务封存与恢复，不支持正式实验已就绪声明 | FORMAL-RUNTIME-TECHNICAL.md；formal-runtime-technical-v1；采样67547a3／核验8e502a1 | 10任务、4配对、10R回写；196文件恢复不变；人工内存保护和3行为测试；29个有限Rhat>1.01保留。Windows及中断恢复未验证 |
+
+| 原始预算证据可以逐任务重建，结果与旧分析保持一致 | STREAMING-ANALYSIS.md；streaming-budget-v1；分析8f3c47c／核验ceb2635 | 323估计／R二进制、1,292诊断行、215前缀、45报告一致；新增拟合0。已有pilot格式通过，不是正式最大规模、Windows或干净安装验收 |

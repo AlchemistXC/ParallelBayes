@@ -1,0 +1,11 @@
+{
+  "analysis-identity.json": "bb560d5c24f45148821253a65f9eb63618ed7a82dc3c63d30921b816b160e629",
+  "archive-receipt.json": "1f9b1de3ab787c405281ca2bebae0da24810254b7e906d9deb051564ad747bcd",
+  "full-analysis-manifest.json": "c58c7421b2c263a3d16e88b2667b033f983cdb043def60f3aaecb5ce54c57de2",
+  "prefix-checks.jsonl": "73da122135eb31c2812b0d9496f1bb03044128032dd2958df4ec922d45746fa7",
+  "summary.json": "d6216dd92ea1bcd16b79112714b47a82db7dc0fecaec4e9f3b518a0152bc7b39",
+  "tasks.jsonl": "d0db532723481cad9adbd834c9bf4d2c28dc9c9359bb86569d2d1154746ff276",
+  "tests.log": "cd9eae441b3610a559c8058e20942c027f161e3d59693ac7f8129ff05af63573",
+  "tests.xml": "f65b40fd39b61a5b2dba7552691a01bc76da086da4687469cb8978e657f49a4c",
+  "verification.json": "08a587c16e360f95670edd23a96ce7546d53cacdaf2f73a7e8d0dd3e93f93795"
+}

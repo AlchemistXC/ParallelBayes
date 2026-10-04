@@ -1,0 +1,20 @@
+{
+  "R_function_rows_different": [],
+  "R_function_rows_exact": 1292,
+  "auditor_sha256": "704c2eb059ba8ec31208dbe14347e84b19e403dcb5612b5021f5359ec0912f50",
+  "binary_transports_exact": 323,
+  "failed_cost_seconds": 2.9719242909923196,
+  "failed_records": 1,
+  "formal_inference_complete": false,
+  "limitation": "Same Mac and existing Python/R dependencies. Companion reconstruction only; not a clean installation, Windows validation, formal-size memory proof or full paper reproduction.",
+  "manifest_files_checked": 2339,
+  "new_MCMC_fits": 0,
+  "passed": true,
+  "prefix_differences": [],
+  "prefix_rows_checked": 215,
+  "raw_rebuilt_means_exact": 323,
+  "source_analysis_commit": "8f3c47c3edb4c52a991a1787e5cc3e58b519bb19",
+  "tasks": 324,
+  "uncertainty_report_differences": [],
+  "uncertainty_reports_exact": 45
+}

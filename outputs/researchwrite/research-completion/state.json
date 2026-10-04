@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Complete interrupted-attempt classification/recovery, streaming raw-array diagnostics/loss extraction, and independently measured cached/ordinary/audit workflows. Receive Windows readiness/mechanism/application receipts and validate maximum-task resources before freezing formal inference.",
+  "next_recommended_action": "Implement explicit interrupted-attempt classification/recovery and resource-versus-numerical failure accounting; integrate the verified raw extraction/uncertainty path with the formal runtime schema, validate maximum-task resources and independently measured cached/ordinary/audit costs. Receive Windows receipts before freezing formal inference.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -228,7 +228,7 @@
     "remaining_gates": [
       "Windows_receipts",
       "formal_runner_interruption_recovery_and_failure_classification",
-      "streaming_raw_array_analysis_and_paired_uncertainty",
+      "formal_schema_adapter_for_verified_raw_array_extraction_and_paired_uncertainty",
       "independent_cached_ordinary_audit_cost_measurement",
       "Windows_host_lock_disk_memory_and_max_task_validation",
       "immutable_formal_protocol_and_inputs"
@@ -278,6 +278,38 @@
       "source_snapshot_commit": "8e502a1308d2a8be52802f51e4d64378e39fe150",
       "sampling_source_commit": "67547a32e0c4adb85520061e6e67e7aebdb9e813",
       "all_member_hashes_verified": true,
+      "public_release": false
+    }
+  },
+  "f3_streaming_analysis": {
+    "status": "historical_pilot_raw_rebuild_validated_formal_adapter_pending",
+    "analysis_source_commit": "8f3c47c3edb4c52a991a1787e5cc3e58b519bb19",
+    "auditor_source_commit": "ceb2635c0fb855725bd081a958dd18df472f8714",
+    "planned": 324,
+    "valid": 323,
+    "failed_preserved": 1,
+    "new_MCMC_fits": 0,
+    "raw_function_estimates_exact": 323,
+    "R_binary_transports_exact": 323,
+    "R_function_rows_exact": 1292,
+    "prefix_comparisons_exact": 215,
+    "uncertainty_reports_exact": 45,
+    "public_behavior_tests_passed": 2,
+    "Python_peak_RSS_bytes": 147734528,
+    "largest_child_peak_RSS_bytes": 188661760,
+    "memory_scope": "Separate lifetime peaks; neither simultaneous tree RSS nor formal maximum-task/Windows validation",
+    "report": "docs/STREAMING-ANALYSIS.md",
+    "formal_inference_complete": false,
+    "raw_evidence_archive": {
+      "archive": "streaming-budget-analysis-v1.tar",
+      "bytes": 209141760,
+      "sha256": "773f84e5c5efe365829f0d4101229df5e35a9050e5a97a562e006fe441daf903",
+      "checked_files": 2352,
+      "source_snapshot_commit": "ceb2635c0fb855725bd081a958dd18df472f8714",
+      "analysis_source_commit": "8f3c47c3edb4c52a991a1787e5cc3e58b519bb19",
+      "all_member_hashes_verified": true,
+      "new_MCMC_fits": 0,
+      "original_raw_dependency": "3ad2764ad139e1d08012a2b4399cf4fd588382a1b410abeb5bcfc92d1515fe0e",
       "public_release": false
     }
   }
