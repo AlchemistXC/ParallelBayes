@@ -1,0 +1,16 @@
+{
+  "source_snapshot_commit": "0db0dd59dbcf83f3add1900cf09e58c729ed53e1",
+  "sampling_source_commit": "0eda1cbf354aa4e3164dc365f5294c6cc52b37b3",
+  "protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
+  "cases": 324,
+  "completed": 323,
+  "failed": 1,
+  "scope": "independent development budget pilot and saved-array reanalysis; not formal inference comparison",
+  "public_release": false,
+  "archive": "inference-budget-pilot-v1.tar",
+  "bytes": 866652160,
+  "sha256": "3ad2764ad139e1d08012a2b4399cf4fd588382a1b410abeb5bcfc92d1515fe0e",
+  "checked_files": 2913,
+  "source_bundle_verified": true,
+  "all_member_hashes_verified": true
+}

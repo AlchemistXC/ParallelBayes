@@ -55,3 +55,5 @@ python scripts/completion/analyze_budget_pilot.py --run RUN --inputs INPUTS --pr
 ```
 
 使用对应源码/依赖和R库。该命令只读取保存数组，要求新分析目录并核对全部身份。完整研究仍未完成；没有新Windows或CUDA结果、通用收敛或推断加速声明。
+
+完整本地归档`inference-budget-pilot-v1.tar`：866652160字节（约826.5MiB），SHA256 `3ad2764ad139e1d08012a2b4399cf4fd588382a1b410abeb5bcfc92d1515fe0e`，2913个文件逐项校验通过；含源码快照/历史bundle、输入、全部拟合与分析、恢复、依赖及许可来源。快照提交0db0dd5，采样源码0eda1cb；回执见同摘要目录`archive-receipt.json`。未公开发布Release；归档哈希核对不等于F5的两平台干净环境完整重建已完成。
