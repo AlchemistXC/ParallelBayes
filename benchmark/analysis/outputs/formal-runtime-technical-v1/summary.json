@@ -1,0 +1,144 @@
+{
+  "R_diagnostic_workflows": 10,
+  "cached_execution_measured": false,
+  "completed": 10,
+  "failed": 0,
+  "finite_function_rhat_above_1_01": 29,
+  "formal_inference_complete": false,
+  "interrupted": 0,
+  "maximum_sampled_tree_rss_bytes": 1274380288,
+  "native_windows_validated": false,
+  "newly_executed_tasks": 10,
+  "pairs": [
+    {
+      "acceptance_mismatches": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "allowed_path_error": [
+        3.418105352884411e-08,
+        4.40776056874799e-08,
+        4.0664175413229926e-08,
+        4.6450889435122835e-08
+      ],
+      "executor": "online_picard",
+      "kernel": "rwm",
+      "max_abs_output_error": [
+        5.551115123125783e-16,
+        2.220446049250313e-16,
+        2.220446049250313e-16,
+        8.881784197001252e-16
+      ],
+      "max_abs_path_error": [
+        5.551115123125783e-16,
+        2.220446049250313e-16,
+        2.220446049250313e-16,
+        8.881784197001252e-16
+      ],
+      "model": "G1",
+      "passed": true,
+      "scope": "Within-device same actual tape; each path also passes independent NumPy audit. Not a general guarantee."
+    },
+    {
+      "acceptance_mismatches": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "allowed_path_error": [
+        4.289587824113098e-08,
+        4.40776056874799e-08,
+        4.1457253307711515e-08,
+        3.7963150183491115e-08
+      ],
+      "executor": "quasi_deer",
+      "kernel": "mala",
+      "max_abs_output_error": [
+        1.103006574965093e-13,
+        7.027711745877241e-14,
+        2.6657831497800544e-10,
+        8.866074541202806e-12
+      ],
+      "max_abs_path_error": [
+        1.103006574965093e-13,
+        7.027711745877241e-14,
+        2.6657831497800544e-10,
+        8.866074541202806e-12
+      ],
+      "model": "G1",
+      "passed": true,
+      "scope": "Within-device same actual tape; each path also passes independent NumPy audit. Not a general guarantee."
+    },
+    {
+      "acceptance_mismatches": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "allowed_path_error": [
+        4.453399072055675e-08,
+        8.139516032740398e-08,
+        4.558716984055981e-08,
+        7.161478098073141e-08
+      ],
+      "executor": "online_picard",
+      "kernel": "rwm",
+      "max_abs_output_error": [
+        4.440892098500626e-16,
+        4.440892098500626e-16,
+        4.440892098500626e-16,
+        4.440892098500626e-16
+      ],
+      "max_abs_path_error": [
+        5.551115123125783e-16,
+        4.440892098500626e-16,
+        6.661338147750939e-16,
+        8.881784197001252e-16
+      ],
+      "model": "L1",
+      "passed": true,
+      "scope": "Within-device same actual tape; each path also passes independent NumPy audit. Not a general guarantee."
+    },
+    {
+      "acceptance_mismatches": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "allowed_path_error": [
+        4.1207626057903795e-08,
+        3.6427201264536245e-08,
+        4.139416689524628e-08,
+        4.951132585824542e-08
+      ],
+      "executor": "quasi_deer",
+      "kernel": "mala",
+      "max_abs_output_error": [
+        6.4550143008546e-11,
+        7.2661876515667245e-12,
+        3.796074565798335e-12,
+        4.65091853918409e-12
+      ],
+      "max_abs_path_error": [
+        1.989612918862349e-10,
+        1.9721002608719118e-11,
+        1.4336309916984646e-11,
+        2.1159185514818546e-11
+      ],
+      "model": "L1",
+      "passed": true,
+      "scope": "Within-device same actual tape; each path also passes independent NumPy audit. Not a general guarantee."
+    }
+  ],
+  "passed_pairs": 4,
+  "planned": 10,
+  "protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+  "scope": "Finite real-worker lifecycle validation, one actual four-chain input per target; not formal inference or timing comparison",
+  "source_commit": "67547a32e0c4adb85520061e6e67e7aebdb9e813",
+  "undefined_function_rhat": 0
+}

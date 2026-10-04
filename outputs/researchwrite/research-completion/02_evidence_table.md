@@ -27,3 +27,5 @@
 | 未定L2事件不能报告零误差 | formal_error_summary.py；3项契约检查；unresolved-reference-companion.json | 九行保存估计伴随纠正；历史文件保持不变，新增拟合0 |
 | 原全缓存分析器不适合正式全网格 | formal_design_planning.py；analyze_budget_pilot.py保存路径逻辑 | 输入23.78GiB、最新前缀路径104.06GiB；新流式分析未实现 |
 | 共享完整重复索引的损失/成本区间可重建，并保留缺失和失败条件 | FORMAL-UNCERTAINTY.md；formal-uncertainty-v1；SciPy公开bootstrap对照 | 4项新接口检查；315个旧合格点误差差0；四重复全部无BCa区间。非正式推断或覆盖率证明 |
+
+| Mac运行器有限实测支持任务封存与恢复，不支持正式实验已就绪声明 | FORMAL-RUNTIME-TECHNICAL.md；formal-runtime-technical-v1；采样67547a3／核验8e502a1 | 10任务、4配对、10R回写；196文件恢复不变；人工内存保护和3行为测试；29个有限Rhat>1.01保留。Windows及中断恢复未验证 |

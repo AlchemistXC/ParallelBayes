@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Implement the formal task runner and bounded raw-array/diagnostic extraction, phase timing, host-wide lock and disk checks; receive actual Windows readiness/mechanism receipts. The paired scalar-summary uncertainty layer is implemented and checked; it is not the formal end-to-end analysis or a frozen protocol.",
+  "next_recommended_action": "Complete interrupted-attempt classification/recovery, streaming raw-array diagnostics/loss extraction, and independently measured cached/ordinary/audit workflows. Receive Windows readiness/mechanism/application receipts and validate maximum-task resources before freezing formal inference.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -227,11 +227,10 @@
     ],
     "remaining_gates": [
       "Windows_receipts",
-      "formal_runner",
-      "streaming_analysis",
-      "integrate_paired_uncertainty_with_raw_array_extraction",
-      "host_lock_disk_memory_and_timing_validation",
-      "Windows_max_task_technical_check",
+      "formal_runner_interruption_recovery_and_failure_classification",
+      "streaming_raw_array_analysis_and_paired_uncertainty",
+      "independent_cached_ordinary_audit_cost_measurement",
+      "Windows_host_lock_disk_memory_and_max_task_validation",
       "immutable_formal_protocol_and_inputs"
     ]
   },
@@ -251,5 +250,35 @@
     "scope": "Public-interface numeric oracle and saved scalar pilot companion, not formal inference or full raw trajectory reconstruction",
     "report": "docs/FORMAL-UNCERTAINTY.md",
     "formal_protocol_frozen": false
+  },
+  "f3_formal_runtime": {
+    "status": "finite_Mac_technical_profile_validated_not_formal_ready",
+    "sampling_source_commit": "67547a32e0c4adb85520061e6e67e7aebdb9e813",
+    "auditor_source_commit": "8e502a1308d2a8be52802f51e4d64378e39fe150",
+    "protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+    "completed_tasks": 10,
+    "failed_tasks": 0,
+    "paired_checks_passed": 4,
+    "R_binary_roundtrips": 10,
+    "finite_function_rhat_above_1_01": 29,
+    "actual_resume_new_tasks": 0,
+    "terminal_files_unchanged": 196,
+    "public_behavior_tests_passed": 3,
+    "owned_memory_guard_fixture_passed": true,
+    "interrupted_attempt_recovery_implemented": false,
+    "ordinary_workflow_measured_separately": false,
+    "native_windows_validated": false,
+    "formal_inference_complete": false,
+    "report": "docs/FORMAL-RUNTIME-TECHNICAL.md",
+    "raw_evidence_archive": {
+      "archive": "formal-runtime-technical-v1.tar",
+      "bytes": 55603200,
+      "sha256": "912a6a4489f4c84be96846df7ac32a8f56459ab818f60719fca1d294955de7ee",
+      "checked_files": 230,
+      "source_snapshot_commit": "8e502a1308d2a8be52802f51e4d64378e39fe150",
+      "sampling_source_commit": "67547a32e0c4adb85520061e6e67e7aebdb9e813",
+      "all_member_hashes_verified": true,
+      "public_release": false
+    }
   }
 }

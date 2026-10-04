@@ -1,0 +1,10 @@
+{
+  "archive": "formal-runtime-technical-v1.tar",
+  "bytes": 55603200,
+  "sha256": "912a6a4489f4c84be96846df7ac32a8f56459ab818f60719fca1d294955de7ee",
+  "checked_files": 230,
+  "source_snapshot_commit": "8e502a1308d2a8be52802f51e4d64378e39fe150",
+  "sampling_source_commit": "67547a32e0c4adb85520061e6e67e7aebdb9e813",
+  "all_member_hashes_verified": true,
+  "public_release": false
+}

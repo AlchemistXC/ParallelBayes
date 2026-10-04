@@ -1,0 +1,1012 @@
+[
+  {
+    "completion": {
+      "asset_hash_seconds": 0.0019565410912036896,
+      "boundary": "Starts immediately before worker spawn; includes worker imports/shutdown, artifact hashing and durable terminal state write. Excludes preflight/request/reserve setup and this final receipt hash/write.",
+      "inclusive_preflight_through_terminal_seconds": 1.7797883339226246,
+      "nested_worker_phases_are_not_additive_to_parent_wall": true,
+      "preparation_seconds": 0.011339084012433887,
+      "state_sha256": "60a062fd21ef2e2032d4236b40d78db5216893777f51582bfd0b55f49a4a80b8",
+      "supervisor_cpu_seconds": 0.149359,
+      "terminal_write_seconds": 0.0004912500735372305,
+      "through_terminal_seconds": 1.7684492499101907,
+      "worker_lifecycle_seconds": 1.7659949159715325
+    },
+    "memory": {
+      "interval_seconds": 0.05,
+      "limit_bytes": 4294967296,
+      "observation_samples": 28,
+      "sampled_peak_tree_rss_bytes": 360054784,
+      "scope": "Sampled sum of worker/descendant RSS, may double-count shared pages; not a strict allocator or VRAM bound"
+    },
+    "phases": [
+      {
+        "end_offset_seconds": 0.007056916132569313,
+        "error": null,
+        "name": "request_protocol_source_validation",
+        "process_cpu_seconds": 0.007053000000000004,
+        "start_offset_seconds": 3.541121259331703e-06,
+        "status": "completed",
+        "synchronization_included": false,
+        "wall_seconds": 0.007053375011309981
+      },
+      {
+        "end_offset_seconds": 1.0993388330098242,
+        "error": null,
+        "name": "backend_import_and_initialization",
+        "process_cpu_seconds": 0.758565,
+        "start_offset_seconds": 0.007339790929108858,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 1.0919990420807153
+      },
+      {
+        "end_offset_seconds": 1.1007215410936624,
+        "error": null,
+        "name": "input_read_and_actual_array_validation",
+        "process_cpu_seconds": 0.0009399999999999409,
+        "start_offset_seconds": 1.0996304999571294,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.001091041136533022
+      },
+      {
+        "end_offset_seconds": 1.1138134999200702,
+        "error": null,
+        "name": "target_reconstruction",
+        "process_cpu_seconds": 0.00973400000000002,
+        "start_offset_seconds": 1.1009338330477476,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.01287966687232256
+      },
+      {
+        "end_offset_seconds": 1.1457057080697268,
+        "error": null,
+        "name": "sampler_including_internal_transfer_audit_transform",
+        "process_cpu_seconds": 0.014728999999999992,
+        "start_offset_seconds": 1.1140663749538362,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.03163933311589062
+      },
+      {
+        "end_offset_seconds": 1.1472672501113266,
+        "error": null,
+        "name": "raw_result_archive",
+        "process_cpu_seconds": 0.0011959999999999749,
+        "start_offset_seconds": 1.1460647080093622,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0012025421019643545
+      },
+      {
+        "end_offset_seconds": 1.510836208006367,
+        "error": null,
+        "name": "estimands_and_R_diagnostics_including_transport",
+        "process_cpu_seconds": 0.00479099999999999,
+        "start_offset_seconds": 1.1476103330496699,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.3632258749566972
+      }
+    ],
+    "task": {
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "8b91ab212abfc73e14d8",
+      "kernel": "rwm",
+      "model": "G1",
+      "replicate": 0
+    }
+  },
+  {
+    "completion": {
+      "asset_hash_seconds": 0.001814542105421424,
+      "boundary": "Starts immediately before worker spawn; includes worker imports/shutdown, artifact hashing and durable terminal state write. Excludes preflight/request/reserve setup and this final receipt hash/write.",
+      "inclusive_preflight_through_terminal_seconds": 2.1013130829669535,
+      "nested_worker_phases_are_not_additive_to_parent_wall": true,
+      "preparation_seconds": 0.006102500017732382,
+      "state_sha256": "f192751f010eabc5b41399f708f3c048c0f99af367988894d93b7c5ba6935851",
+      "supervisor_cpu_seconds": 0.19231900000000002,
+      "terminal_write_seconds": 0.0006992500275373459,
+      "through_terminal_seconds": 2.095210582949221,
+      "worker_lifecycle_seconds": 2.0926862920168787
+    },
+    "memory": {
+      "interval_seconds": 0.05,
+      "limit_bytes": 4294967296,
+      "observation_samples": 33,
+      "sampled_peak_tree_rss_bytes": 433405952,
+      "scope": "Sampled sum of worker/descendant RSS, may double-count shared pages; not a strict allocator or VRAM bound"
+    },
+    "phases": [
+      {
+        "end_offset_seconds": 0.00732025015167892,
+        "error": null,
+        "name": "request_protocol_source_validation",
+        "process_cpu_seconds": 0.007316000000000003,
+        "start_offset_seconds": 3.7499703466892242e-06,
+        "status": "completed",
+        "synchronization_included": false,
+        "wall_seconds": 0.007316500181332231
+      },
+      {
+        "end_offset_seconds": 0.7566286250948906,
+        "error": null,
+        "name": "backend_import_and_initialization",
+        "process_cpu_seconds": 0.740684,
+        "start_offset_seconds": 0.007596957962960005,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.7490316671319306
+      },
+      {
+        "end_offset_seconds": 0.7576898750849068,
+        "error": null,
+        "name": "input_read_and_actual_array_validation",
+        "process_cpu_seconds": 0.0008449999999999847,
+        "start_offset_seconds": 0.7568442919291556,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0008455831557512283
+      },
+      {
+        "end_offset_seconds": 0.7715598330833018,
+        "error": null,
+        "name": "target_reconstruction",
+        "process_cpu_seconds": 0.01365100000000008,
+        "start_offset_seconds": 0.7578880831133574,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.013671749969944358
+      },
+      {
+        "end_offset_seconds": 1.3752630001399666,
+        "error": null,
+        "name": "sampler_including_internal_transfer_audit_transform",
+        "process_cpu_seconds": 0.4879270000000001,
+        "start_offset_seconds": 0.7718901671469212,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.6033728329930454
+      },
+      {
+        "end_offset_seconds": 1.3766186670400202,
+        "error": null,
+        "name": "raw_result_archive",
+        "process_cpu_seconds": 0.0009650000000001047,
+        "start_offset_seconds": 1.3756536671426147,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0009649998974055052
+      },
+      {
+        "end_offset_seconds": 1.7290595001541078,
+        "error": null,
+        "name": "estimands_and_R_diagnostics_including_transport",
+        "process_cpu_seconds": 0.006617000000000095,
+        "start_offset_seconds": 1.3769220421090722,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.3521374580450356
+      }
+    ],
+    "task": {
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "2153a3c310f4b9b8b280",
+      "kernel": "mala",
+      "model": "G1",
+      "replicate": 0
+    }
+  },
+  {
+    "completion": {
+      "asset_hash_seconds": 0.0017031249590218067,
+      "boundary": "Starts immediately before worker spawn; includes worker imports/shutdown, artifact hashing and durable terminal state write. Excludes preflight/request/reserve setup and this final receipt hash/write.",
+      "inclusive_preflight_through_terminal_seconds": 1.440029416931793,
+      "nested_worker_phases_are_not_additive_to_parent_wall": true,
+      "preparation_seconds": 0.006172166904434562,
+      "state_sha256": "01cc870951d23b4e7f3737f8267c8ac4870431879804f5e0fb8950c7b2cc6bc5",
+      "supervisor_cpu_seconds": 0.14012100000000005,
+      "terminal_write_seconds": 0.000497917179018259,
+      "through_terminal_seconds": 1.4338572500273585,
+      "worker_lifecycle_seconds": 1.4316508751362562
+    },
+    "memory": {
+      "interval_seconds": 0.05,
+      "limit_bytes": 4294967296,
+      "observation_samples": 22,
+      "sampled_peak_tree_rss_bytes": 360366080,
+      "scope": "Sampled sum of worker/descendant RSS, may double-count shared pages; not a strict allocator or VRAM bound"
+    },
+    "phases": [
+      {
+        "end_offset_seconds": 0.0073334998451173306,
+        "error": null,
+        "name": "request_protocol_source_validation",
+        "process_cpu_seconds": 0.007328000000000001,
+        "start_offset_seconds": 3.6668498069047928e-06,
+        "status": "completed",
+        "synchronization_included": false,
+        "wall_seconds": 0.007329832995310426
+      },
+      {
+        "end_offset_seconds": 0.7650557078886777,
+        "error": null,
+        "name": "backend_import_and_initialization",
+        "process_cpu_seconds": 0.7466759999999999,
+        "start_offset_seconds": 0.007609207881614566,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.7574465000070632
+      },
+      {
+        "end_offset_seconds": 0.766197832999751,
+        "error": null,
+        "name": "input_read_and_actual_array_validation",
+        "process_cpu_seconds": 0.0009059999999999624,
+        "start_offset_seconds": 0.7652922919951379,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0009055410046130419
+      },
+      {
+        "end_offset_seconds": 0.7753593749366701,
+        "error": null,
+        "name": "target_reconstruction",
+        "process_cpu_seconds": 0.008933999999999997,
+        "start_offset_seconds": 0.7664182079024613,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.008941167034208775
+      },
+      {
+        "end_offset_seconds": 0.795852999901399,
+        "error": null,
+        "name": "sampler_including_internal_transfer_audit_transform",
+        "process_cpu_seconds": 0.015060999999999991,
+        "start_offset_seconds": 0.7759046249557287,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.019948374945670366
+      },
+      {
+        "end_offset_seconds": 0.797266999958083,
+        "error": null,
+        "name": "raw_result_archive",
+        "process_cpu_seconds": 0.0010139999999999594,
+        "start_offset_seconds": 0.7962532918900251,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0010137080680578947
+      },
+      {
+        "end_offset_seconds": 1.1531891669146717,
+        "error": null,
+        "name": "estimands_and_R_diagnostics_including_transport",
+        "process_cpu_seconds": 0.0046079999999999455,
+        "start_offset_seconds": 0.7975224577821791,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.35566670913249254
+      }
+    ],
+    "task": {
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "151c23e95214c429b2bc",
+      "kernel": "rwm",
+      "model": "G1",
+      "replicate": 0
+    }
+  },
+  {
+    "completion": {
+      "asset_hash_seconds": 0.0017882499378174543,
+      "boundary": "Starts immediately before worker spawn; includes worker imports/shutdown, artifact hashing and durable terminal state write. Excludes preflight/request/reserve setup and this final receipt hash/write.",
+      "inclusive_preflight_through_terminal_seconds": 2.3043547910638154,
+      "nested_worker_phases_are_not_additive_to_parent_wall": true,
+      "preparation_seconds": 0.005927333142608404,
+      "state_sha256": "62a8a44c671e882a17187ec1b8091e624ff4b8e255921ec75338b28c10857145",
+      "supervisor_cpu_seconds": 0.21804899999999994,
+      "terminal_write_seconds": 0.0006819588597863913,
+      "through_terminal_seconds": 2.298427457921207,
+      "worker_lifecycle_seconds": 2.2959520830772817
+    },
+    "memory": {
+      "interval_seconds": 0.05,
+      "limit_bytes": 4294967296,
+      "observation_samples": 37,
+      "sampled_peak_tree_rss_bytes": 452427776,
+      "scope": "Sampled sum of worker/descendant RSS, may double-count shared pages; not a strict allocator or VRAM bound"
+    },
+    "phases": [
+      {
+        "end_offset_seconds": 0.012303584022447467,
+        "error": null,
+        "name": "request_protocol_source_validation",
+        "process_cpu_seconds": 0.012285000000000004,
+        "start_offset_seconds": 3.4170225262641907e-06,
+        "status": "completed",
+        "synchronization_included": false,
+        "wall_seconds": 0.012300166999921203
+      },
+      {
+        "end_offset_seconds": 0.7610664591193199,
+        "error": null,
+        "name": "backend_import_and_initialization",
+        "process_cpu_seconds": 0.737301,
+        "start_offset_seconds": 0.012570584192872047,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.7484958749264479
+      },
+      {
+        "end_offset_seconds": 0.7622340840753168,
+        "error": null,
+        "name": "input_read_and_actual_array_validation",
+        "process_cpu_seconds": 0.0008980000000000654,
+        "start_offset_seconds": 0.7613372921478003,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0008967919275164604
+      },
+      {
+        "end_offset_seconds": 0.7735752090811729,
+        "error": null,
+        "name": "target_reconstruction",
+        "process_cpu_seconds": 0.01111300000000004,
+        "start_offset_seconds": 0.7624559591058642,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.011119249975308776
+      },
+      {
+        "end_offset_seconds": 1.5715540000237525,
+        "error": null,
+        "name": "sampler_including_internal_transfer_audit_transform",
+        "process_cpu_seconds": 0.7812289999999998,
+        "start_offset_seconds": 0.7740759172011167,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.7974780828226358
+      },
+      {
+        "end_offset_seconds": 1.5737267499789596,
+        "error": null,
+        "name": "raw_result_archive",
+        "process_cpu_seconds": 0.001562999999999981,
+        "start_offset_seconds": 1.5721632922068238,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0015634577721357346
+      },
+      {
+        "end_offset_seconds": 1.926258500199765,
+        "error": null,
+        "name": "estimands_and_R_diagnostics_including_transport",
+        "process_cpu_seconds": 0.005819000000000019,
+        "start_offset_seconds": 1.5739700000267476,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.3522885001730174
+      }
+    ],
+    "task": {
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "37f71a60a73a7df1a854",
+      "kernel": "mala",
+      "model": "G1",
+      "replicate": 0
+    }
+  },
+  {
+    "completion": {
+      "asset_hash_seconds": 0.0028000420425087214,
+      "boundary": "Starts immediately before worker spawn; includes worker imports/shutdown, artifact hashing and durable terminal state write. Excludes preflight/request/reserve setup and this final receipt hash/write.",
+      "inclusive_preflight_through_terminal_seconds": 2.58079587505199,
+      "nested_worker_phases_are_not_additive_to_parent_wall": true,
+      "preparation_seconds": 0.006069833878427744,
+      "state_sha256": "9f178e2c852be9b8e83daf72570f122add29d5d2e2616a4e8785a4ff0e9f7154",
+      "supervisor_cpu_seconds": 0.2684749999999999,
+      "terminal_write_seconds": 0.000712917186319828,
+      "through_terminal_seconds": 2.5747260411735624,
+      "worker_lifecycle_seconds": 2.571207958040759
+    },
+    "memory": {
+      "interval_seconds": 0.05,
+      "limit_bytes": 4294967296,
+      "observation_samples": 40,
+      "sampled_peak_tree_rss_bytes": 1274380288,
+      "scope": "Sampled sum of worker/descendant RSS, may double-count shared pages; not a strict allocator or VRAM bound"
+    },
+    "phases": [
+      {
+        "end_offset_seconds": 0.012288459111005068,
+        "error": null,
+        "name": "request_protocol_source_validation",
+        "process_cpu_seconds": 0.012270000000000003,
+        "start_offset_seconds": 3.583962097764015e-06,
+        "status": "completed",
+        "synchronization_included": false,
+        "wall_seconds": 0.012284875148907304
+      },
+      {
+        "end_offset_seconds": 0.7584052921738476,
+        "error": null,
+        "name": "backend_import_and_initialization",
+        "process_cpu_seconds": 0.735548,
+        "start_offset_seconds": 0.012560209026560187,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.7458450831472874
+      },
+      {
+        "end_offset_seconds": 0.7595023750327528,
+        "error": null,
+        "name": "input_read_and_actual_array_validation",
+        "process_cpu_seconds": 0.0008760000000000989,
+        "start_offset_seconds": 0.7586269171442837,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0008754578884691
+      },
+      {
+        "end_offset_seconds": 0.7679475420154631,
+        "error": null,
+        "name": "target_reconstruction",
+        "process_cpu_seconds": 0.008243,
+        "start_offset_seconds": 0.7597055840305984,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.008241957984864712
+      },
+      {
+        "end_offset_seconds": 1.9892255840823054,
+        "error": null,
+        "name": "sampler_including_internal_transfer_audit_transform",
+        "process_cpu_seconds": 0.02856700000000001,
+        "start_offset_seconds": 0.768214417155832,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 1.2210111669264734
+      },
+      {
+        "end_offset_seconds": 1.9942444590851665,
+        "error": null,
+        "name": "raw_result_archive",
+        "process_cpu_seconds": 0.004213000000000022,
+        "start_offset_seconds": 1.9900303340982646,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.004214124986901879
+      },
+      {
+        "end_offset_seconds": 2.34063145914115,
+        "error": null,
+        "name": "estimands_and_R_diagnostics_including_transport",
+        "process_cpu_seconds": 0.004801000000000055,
+        "start_offset_seconds": 1.9944990000221878,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.3461324591189623
+      }
+    ],
+    "task": {
+      "device": "cpu",
+      "executor": "spawn_chains",
+      "id": "bcb212e328275065ba55",
+      "kernel": "nuts",
+      "model": "G1",
+      "replicate": 0
+    }
+  },
+  {
+    "completion": {
+      "asset_hash_seconds": 0.0009055829141288996,
+      "boundary": "Starts immediately before worker spawn; includes worker imports/shutdown, artifact hashing and durable terminal state write. Excludes preflight/request/reserve setup and this final receipt hash/write.",
+      "inclusive_preflight_through_terminal_seconds": 1.418963999953121,
+      "nested_worker_phases_are_not_additive_to_parent_wall": true,
+      "preparation_seconds": 0.005734541919082403,
+      "state_sha256": "24316290eaeb4d4d90fd4ec727d9ab5739d002f6fce9ed6a2e63aeed00b6e990",
+      "supervisor_cpu_seconds": 0.14109499999999997,
+      "terminal_write_seconds": 0.0005471659824252129,
+      "through_terminal_seconds": 1.4132294580340385,
+      "worker_lifecycle_seconds": 1.411772333085537
+    },
+    "memory": {
+      "interval_seconds": 0.05,
+      "limit_bytes": 4294967296,
+      "observation_samples": 22,
+      "sampled_peak_tree_rss_bytes": 357842944,
+      "scope": "Sampled sum of worker/descendant RSS, may double-count shared pages; not a strict allocator or VRAM bound"
+    },
+    "phases": [
+      {
+        "end_offset_seconds": 0.007295707939192653,
+        "error": null,
+        "name": "request_protocol_source_validation",
+        "process_cpu_seconds": 0.007290999999999999,
+        "start_offset_seconds": 3.916909918189049e-06,
+        "status": "completed",
+        "synchronization_included": false,
+        "wall_seconds": 0.007291791029274464
+      },
+      {
+        "end_offset_seconds": 0.7655094170477241,
+        "error": null,
+        "name": "backend_import_and_initialization",
+        "process_cpu_seconds": 0.743939,
+        "start_offset_seconds": 0.007548041874542832,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.7579613751731813
+      },
+      {
+        "end_offset_seconds": 0.7667808749247342,
+        "error": null,
+        "name": "input_read_and_actual_array_validation",
+        "process_cpu_seconds": 0.0008949999999999791,
+        "start_offset_seconds": 0.76574687496759,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0010339999571442604
+      },
+      {
+        "end_offset_seconds": 0.777462458005175,
+        "error": null,
+        "name": "target_reconstruction",
+        "process_cpu_seconds": 0.010480000000000045,
+        "start_offset_seconds": 0.7669831670355052,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.010479290969669819
+      },
+      {
+        "end_offset_seconds": 0.7986206670757383,
+        "error": null,
+        "name": "sampler_including_internal_transfer_audit_transform",
+        "process_cpu_seconds": 0.02061400000000002,
+        "start_offset_seconds": 0.7777439169585705,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.02087675011716783
+      },
+      {
+        "end_offset_seconds": 0.8005547078792006,
+        "error": null,
+        "name": "raw_result_archive",
+        "process_cpu_seconds": 0.0016559999999999908,
+        "start_offset_seconds": 0.7988924579694867,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0016622499097138643
+      },
+      {
+        "end_offset_seconds": 1.1303197499364614,
+        "error": null,
+        "name": "estimands_and_R_diagnostics_including_transport",
+        "process_cpu_seconds": 0.004969999999999919,
+        "start_offset_seconds": 0.8008649579714984,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.3294547919649631
+      }
+    ],
+    "task": {
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "558dc4e2e36910c9a30a",
+      "kernel": "rwm",
+      "model": "L1",
+      "replicate": 0
+    }
+  },
+  {
+    "completion": {
+      "asset_hash_seconds": 0.0017371249850839376,
+      "boundary": "Starts immediately before worker spawn; includes worker imports/shutdown, artifact hashing and durable terminal state write. Excludes preflight/request/reserve setup and this final receipt hash/write.",
+      "inclusive_preflight_through_terminal_seconds": 2.0775257090572268,
+      "nested_worker_phases_are_not_additive_to_parent_wall": true,
+      "preparation_seconds": 0.005931125022470951,
+      "state_sha256": "d6801ec57dd9774376048df457e37a9011086b2ba5078d98b6ddf504a061560c",
+      "supervisor_cpu_seconds": 0.19604299999999997,
+      "terminal_write_seconds": 0.0006607919931411743,
+      "through_terminal_seconds": 2.071594584034756,
+      "worker_lifecycle_seconds": 2.06919112498872
+    },
+    "memory": {
+      "interval_seconds": 0.05,
+      "limit_bytes": 4294967296,
+      "observation_samples": 32,
+      "sampled_peak_tree_rss_bytes": 434290688,
+      "scope": "Sampled sum of worker/descendant RSS, may double-count shared pages; not a strict allocator or VRAM bound"
+    },
+    "phases": [
+      {
+        "end_offset_seconds": 0.007353374967351556,
+        "error": null,
+        "name": "request_protocol_source_validation",
+        "process_cpu_seconds": 0.007348,
+        "start_offset_seconds": 3.7499703466892242e-06,
+        "status": "completed",
+        "synchronization_included": false,
+        "wall_seconds": 0.007349624997004867
+      },
+      {
+        "end_offset_seconds": 0.800384416943416,
+        "error": null,
+        "name": "backend_import_and_initialization",
+        "process_cpu_seconds": 0.7826479999999999,
+        "start_offset_seconds": 0.0076300830114632845,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.7927543339319527
+      },
+      {
+        "end_offset_seconds": 0.8014870421029627,
+        "error": null,
+        "name": "input_read_and_actual_array_validation",
+        "process_cpu_seconds": 0.0008700000000000374,
+        "start_offset_seconds": 0.8006170419976115,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0008700001053512096
+      },
+      {
+        "end_offset_seconds": 0.8121418331284076,
+        "error": null,
+        "name": "target_reconstruction",
+        "process_cpu_seconds": 0.01045600000000002,
+        "start_offset_seconds": 0.8016868750564754,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.010454958071932197
+      },
+      {
+        "end_offset_seconds": 1.3401357501279563,
+        "error": null,
+        "name": "sampler_including_internal_transfer_audit_transform",
+        "process_cpu_seconds": 0.5184049999999999,
+        "start_offset_seconds": 0.8124799579381943,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.527655792189762
+      },
+      {
+        "end_offset_seconds": 1.3416993331629783,
+        "error": null,
+        "name": "raw_result_archive",
+        "process_cpu_seconds": 0.0009660000000000224,
+        "start_offset_seconds": 1.3407331251073629,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0009662080556154251
+      },
+      {
+        "end_offset_seconds": 1.6780374580994248,
+        "error": null,
+        "name": "estimands_and_R_diagnostics_including_transport",
+        "process_cpu_seconds": 0.005492000000000052,
+        "start_offset_seconds": 1.3419372921343893,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.33610016596503556
+      }
+    ],
+    "task": {
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "f8e095fdac240b9f7685",
+      "kernel": "mala",
+      "model": "L1",
+      "replicate": 0
+    }
+  },
+  {
+    "completion": {
+      "asset_hash_seconds": 0.0017318748869001865,
+      "boundary": "Starts immediately before worker spawn; includes worker imports/shutdown, artifact hashing and durable terminal state write. Excludes preflight/request/reserve setup and this final receipt hash/write.",
+      "inclusive_preflight_through_terminal_seconds": 1.41641545901075,
+      "nested_worker_phases_are_not_additive_to_parent_wall": true,
+      "preparation_seconds": 0.006208667065948248,
+      "state_sha256": "fae9dc07fa45d1ef8ae8e6870e8f451b8858925f9564ee8ba3459751d30018fc",
+      "supervisor_cpu_seconds": 0.13550600000000013,
+      "terminal_write_seconds": 0.0006850420031696558,
+      "through_terminal_seconds": 1.4102067919448018,
+      "worker_lifecycle_seconds": 1.4077837499789894
+    },
+    "memory": {
+      "interval_seconds": 0.05,
+      "limit_bytes": 4294967296,
+      "observation_samples": 22,
+      "sampled_peak_tree_rss_bytes": 361136128,
+      "scope": "Sampled sum of worker/descendant RSS, may double-count shared pages; not a strict allocator or VRAM bound"
+    },
+    "phases": [
+      {
+        "end_offset_seconds": 0.007513584103435278,
+        "error": null,
+        "name": "request_protocol_source_validation",
+        "process_cpu_seconds": 0.007488000000000002,
+        "start_offset_seconds": 3.708992153406143e-06,
+        "status": "completed",
+        "synchronization_included": false,
+        "wall_seconds": 0.007509875111281872
+      },
+      {
+        "end_offset_seconds": 0.7537304589059204,
+        "error": null,
+        "name": "backend_import_and_initialization",
+        "process_cpu_seconds": 0.737939,
+        "start_offset_seconds": 0.007807249901816249,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.7459232090041041
+      },
+      {
+        "end_offset_seconds": 0.7548022500704974,
+        "error": null,
+        "name": "input_read_and_actual_array_validation",
+        "process_cpu_seconds": 0.0008449999999999847,
+        "start_offset_seconds": 0.7539575840346515,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0008446660358458757
+      },
+      {
+        "end_offset_seconds": 0.7703740000724792,
+        "error": null,
+        "name": "target_reconstruction",
+        "process_cpu_seconds": 0.015348000000000028,
+        "start_offset_seconds": 0.7549995000008494,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.015374500071629882
+      },
+      {
+        "end_offset_seconds": 0.8233931250870228,
+        "error": null,
+        "name": "sampler_including_internal_transfer_audit_transform",
+        "process_cpu_seconds": 0.053172,
+        "start_offset_seconds": 0.7706776671111584,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.05271545797586441
+      },
+      {
+        "end_offset_seconds": 0.8248741670977324,
+        "error": null,
+        "name": "raw_result_archive",
+        "process_cpu_seconds": 0.0010809999999999986,
+        "start_offset_seconds": 0.8237941251136363,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0010800419840961695
+      },
+      {
+        "end_offset_seconds": 1.1624730839394033,
+        "error": null,
+        "name": "estimands_and_R_diagnostics_including_transport",
+        "process_cpu_seconds": 0.005197000000000007,
+        "start_offset_seconds": 0.8251194590702653,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.337353624869138
+      }
+    ],
+    "task": {
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "525e2e034a2d3f5df254",
+      "kernel": "rwm",
+      "model": "L1",
+      "replicate": 0
+    }
+  },
+  {
+    "completion": {
+      "asset_hash_seconds": 0.0018107080832123756,
+      "boundary": "Starts immediately before worker spawn; includes worker imports/shutdown, artifact hashing and durable terminal state write. Excludes preflight/request/reserve setup and this final receipt hash/write.",
+      "inclusive_preflight_through_terminal_seconds": 3.219975624931976,
+      "nested_worker_phases_are_not_additive_to_parent_wall": true,
+      "preparation_seconds": 0.005957041867077351,
+      "state_sha256": "c9624460c6bdc994cd3931af28e5172d31c86989b67045b3419ce415ba5cacd4",
+      "supervisor_cpu_seconds": 0.3194920000000001,
+      "terminal_write_seconds": 0.0006742910481989384,
+      "through_terminal_seconds": 3.214018583064899,
+      "worker_lifecycle_seconds": 3.211529458174482
+    },
+    "memory": {
+      "interval_seconds": 0.05,
+      "limit_bytes": 4294967296,
+      "observation_samples": 50,
+      "sampled_peak_tree_rss_bytes": 455507968,
+      "scope": "Sampled sum of worker/descendant RSS, may double-count shared pages; not a strict allocator or VRAM bound"
+    },
+    "phases": [
+      {
+        "end_offset_seconds": 0.007495082914829254,
+        "error": null,
+        "name": "request_protocol_source_validation",
+        "process_cpu_seconds": 0.0074779999999999985,
+        "start_offset_seconds": 3.7918798625469208e-06,
+        "status": "completed",
+        "synchronization_included": false,
+        "wall_seconds": 0.007491291034966707
+      },
+      {
+        "end_offset_seconds": 0.8466030000708997,
+        "error": null,
+        "name": "backend_import_and_initialization",
+        "process_cpu_seconds": 0.814507,
+        "start_offset_seconds": 0.00775916688144207,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.8388438331894577
+      },
+      {
+        "end_offset_seconds": 0.8477157920133322,
+        "error": null,
+        "name": "input_read_and_actual_array_validation",
+        "process_cpu_seconds": 0.0008890000000000287,
+        "start_offset_seconds": 0.8468265829142183,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0008892090991139412
+      },
+      {
+        "end_offset_seconds": 0.8585160828661174,
+        "error": null,
+        "name": "target_reconstruction",
+        "process_cpu_seconds": 0.010586000000000095,
+        "start_offset_seconds": 0.8479211670346558,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.010594915831461549
+      },
+      {
+        "end_offset_seconds": 2.4876995829399675,
+        "error": null,
+        "name": "sampler_including_internal_transfer_audit_transform",
+        "process_cpu_seconds": 1.7425220000000001,
+        "start_offset_seconds": 0.8588448748923838,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 1.6288547080475837
+      },
+      {
+        "end_offset_seconds": 2.490299666998908,
+        "error": null,
+        "name": "raw_result_archive",
+        "process_cpu_seconds": 0.001755000000000173,
+        "start_offset_seconds": 2.4885354170110077,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0017642499879002571
+      },
+      {
+        "end_offset_seconds": 2.827452874975279,
+        "error": null,
+        "name": "estimands_and_R_diagnostics_including_transport",
+        "process_cpu_seconds": 0.005681000000000047,
+        "start_offset_seconds": 2.490530624985695,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.3369222499895841
+      }
+    ],
+    "task": {
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "2c74f52a32683dd70837",
+      "kernel": "mala",
+      "model": "L1",
+      "replicate": 0
+    }
+  },
+  {
+    "completion": {
+      "asset_hash_seconds": 0.0027787499129772186,
+      "boundary": "Starts immediately before worker spawn; includes worker imports/shutdown, artifact hashing and durable terminal state write. Excludes preflight/request/reserve setup and this final receipt hash/write.",
+      "inclusive_preflight_through_terminal_seconds": 2.6270075829233974,
+      "nested_worker_phases_are_not_additive_to_parent_wall": true,
+      "preparation_seconds": 0.00587879098020494,
+      "state_sha256": "5479a38d5816ae58da80de2f7f0a6a76f88f4afb4bebb97ecdc6665f010a21ce",
+      "supervisor_cpu_seconds": 0.28766,
+      "terminal_write_seconds": 0.00048020901158452034,
+      "through_terminal_seconds": 2.6211287919431925,
+      "worker_lifecycle_seconds": 2.6178659999277443
+    },
+    "memory": {
+      "interval_seconds": 0.05,
+      "limit_bytes": 4294967296,
+      "observation_samples": 40,
+      "sampled_peak_tree_rss_bytes": 1232420864,
+      "scope": "Sampled sum of worker/descendant RSS, may double-count shared pages; not a strict allocator or VRAM bound"
+    },
+    "phases": [
+      {
+        "end_offset_seconds": 0.00816791714169085,
+        "error": null,
+        "name": "request_protocol_source_validation",
+        "process_cpu_seconds": 0.008150000000000001,
+        "start_offset_seconds": 3.5830307751893997e-06,
+        "status": "completed",
+        "synchronization_included": false,
+        "wall_seconds": 0.00816433411091566
+      },
+      {
+        "end_offset_seconds": 0.7612837499473244,
+        "error": null,
+        "name": "backend_import_and_initialization",
+        "process_cpu_seconds": 0.744471,
+        "start_offset_seconds": 0.008467083098366857,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.7528166668489575
+      },
+      {
+        "end_offset_seconds": 0.76239970815368,
+        "error": null,
+        "name": "input_read_and_actual_array_validation",
+        "process_cpu_seconds": 0.0008869999999999711,
+        "start_offset_seconds": 0.7615135000087321,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.0008862081449478865
+      },
+      {
+        "end_offset_seconds": 0.778201499953866,
+        "error": null,
+        "name": "target_reconstruction",
+        "process_cpu_seconds": 0.015581000000000067,
+        "start_offset_seconds": 0.762609250145033,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.015592249808833003
+      },
+      {
+        "end_offset_seconds": 2.0456727501004934,
+        "error": null,
+        "name": "sampler_including_internal_transfer_audit_transform",
+        "process_cpu_seconds": 0.028253000000000084,
+        "start_offset_seconds": 0.7785455421544611,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 1.2671272079460323
+      },
+      {
+        "end_offset_seconds": 2.0508844170253724,
+        "error": null,
+        "name": "raw_result_archive",
+        "process_cpu_seconds": 0.0042640000000000455,
+        "start_offset_seconds": 2.0466203750111163,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.00426404201425612
+      },
+      {
+        "end_offset_seconds": 2.382406833115965,
+        "error": null,
+        "name": "estimands_and_R_diagnostics_including_transport",
+        "process_cpu_seconds": 0.0048399999999999554,
+        "start_offset_seconds": 2.0510911671444774,
+        "status": "completed",
+        "synchronization_included": true,
+        "wall_seconds": 0.33131566597148776
+      }
+    ],
+    "task": {
+      "device": "cpu",
+      "executor": "spawn_chains",
+      "id": "173275cd12b6ca3834aa",
+      "kernel": "nuts",
+      "model": "L1",
+      "replicate": 0
+    }
+  }
+]
