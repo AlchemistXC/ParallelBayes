@@ -1,0 +1,18 @@
+{
+  "dimensions": [
+    1000,
+    10,
+    7
+  ],
+  "variables": [
+    "alpha",
+    "beta",
+    "alpha_squared",
+    "beta_squared",
+    "p_switch_0m",
+    "p_switch_100m",
+    "beta_positive"
+  ],
+  "batch_length": 50,
+  "posterior_version": "1.7.0"
+}

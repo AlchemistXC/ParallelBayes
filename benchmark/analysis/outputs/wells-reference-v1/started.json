@@ -1,0 +1,8 @@
+{
+  "identity": "wells-reference-audit-v1",
+  "lock_sha256": "fb632164445e9cc9b5fd30992445fa9439c94e67eb30c0de402867529956e479",
+  "source_commit": "612afdce8517a56de82846bf19606d0c5df63bf7",
+  "python_version": "3.12.14",
+  "numpy_version": "2.2.6",
+  "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc"
+}

@@ -18,8 +18,9 @@
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
     "8_fit_logistic_reference_identity_and_MCSE_reuse_audit",
-    "wells_independent_numpy_replay_and_R_binary_transport"
+    "wells_independent_numpy_replay_and_R_binary_transport",
+    "wells_finite_reference_7_function_audit"
   ],
-  "external_case": "wells target and Mac NumPy/Stan/torch/R validation passed; finite reference and formal case pending",
+  "external_case": "wells target and Mac/R validation passed; finite reference audited (6 continuous functions with MCSE, beta>0 uncertainty undetermined); independent quadrature and formal case pending",
   "new_experiment_scope": "external-wells-validation-v1/v2: finite Mac model/trajectory/R correctness only; no new formal inference/performance experiment"
 }

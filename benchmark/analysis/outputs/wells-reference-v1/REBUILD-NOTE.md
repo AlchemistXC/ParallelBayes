@@ -1,0 +1,1 @@
+原始参考从固定版posteriordb获取；本地派生的values-f64le.bin及roundtrip-f64le.bin留在独立运行目录，不收入Git。checksums.json保留完整运行文件校验和。按docs/WELLS-REFERENCE-AUDIT.md可重建二进制和诊断；本目录SHA256SUMS只列实际收录文件。

@@ -1,0 +1,11 @@
+{
+  "identity": "wells-reference-audit-v1",
+  "source_commit": "612afdce8517a56de82846bf19606d0c5df63bf7",
+  "sources": {
+    "scripts/completion/audit_wells_reference.py": "8b7a20f7263301f1d9b6e187aaa0fd95830fdabe44c7b086b9d6d85f8eb87a9a",
+    "scripts/completion/wells_reference_audit.R": "3b78448e9dfa88cf6aec915419f6e83d61254d2af7c37cb9e1cb57f4055d3f12",
+    "examples/external_wells.py": "cf5e8a49dff8aaa0d6e6e0df1fd262235c44365333b43f17c0b356d013546bfe",
+    "models/external/wells/source-manifest.json": "b64415687a58d3e2c34444d9e32523154b6002d960e505e31e2510d8356420ab",
+    "benchmark/protocols/wells-reference-audit-v1.json": "49fe938aa3f7fe30b95c4e18478a2c74cb043f8c03d3d707e0ec699da94c2e0c"
+  }
+}

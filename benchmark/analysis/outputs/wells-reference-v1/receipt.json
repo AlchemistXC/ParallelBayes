@@ -1,0 +1,101 @@
+{
+  "status": "completed",
+  "scope": "Companion reanalysis of a finite upstream reference; no new MCMC, performance or convergence proof",
+  "R_exit_code": 0,
+  "source_commit": "612afdce8517a56de82846bf19606d0c5df63bf7",
+  "upstream_commit": "91027f9cdd13b7e76283fec3f2898f59d4b83ec4",
+  "reference_zip_sha256": "cf50da1fea711dbc5210cce8277d7989f9584ceadd776ad6be6414a1ce328342",
+  "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+  "raw_shape": [
+    1000,
+    10,
+    2
+  ],
+  "functions": [
+    "alpha",
+    "beta",
+    "alpha_squared",
+    "beta_squared",
+    "p_switch_0m",
+    "p_switch_100m",
+    "beta_positive"
+  ],
+  "additional_discard": 0,
+  "binary_roundtrip_identical": true,
+  "binary_sha256": "d939e63b34ea7135508f560d3c4a32ec48761ec9f8fa0f9edcc22a0667b3fa14",
+  "replication": "One upstream Stan generation with ten chains, each storing 1000 thinned correlated draws; neither 10000 independent experiments nor ten independent generation studies.",
+  "propriety_certificate": {
+    "certified": true,
+    "witnesses": [
+      {
+        "distance_metres": 3.25200009346008,
+        "scaled_distance": 0.0325200009346008,
+        "zero_index": 532,
+        "one_index": 530
+      },
+      {
+        "distance_metres": 151.065994262695,
+        "scaled_distance": 1.51065994262695,
+        "zero_index": 2883,
+        "one_index": 189
+      }
+    ],
+    "determinant": 1.4781399416923493,
+    "integral_upper_bound": 2.7061037234541727,
+    "duplicate_outcome_distances": 31,
+    "bound": "L(alpha,beta) <= exp(-abs(alpha+x1*beta)-abs(alpha+x2*beta))",
+    "scope": "Sufficient integrability certificate for the exact likelihood and flat alpha/beta prior"
+  },
+  "upstream_diagnostic_comparison": [
+    {
+      "parameter": "alpha",
+      "rhat_local": 1.00052097454189,
+      "rhat_upstream": 1.00052097454189,
+      "rhat_difference": 0.0,
+      "ess_bulk_local": 10216.5400211589,
+      "ess_bulk_upstream": 10216.540021158913,
+      "ess_tail_local": 9845.27561852158,
+      "ess_tail_upstream": 9845.275618521579
+    },
+    {
+      "parameter": "beta[1]",
+      "rhat_local": 1.00033418922618,
+      "rhat_upstream": 1.00033418922618,
+      "rhat_difference": 0.0,
+      "ess_bulk_local": 9951.18204262105,
+      "ess_bulk_upstream": 9951.182042621052,
+      "ess_tail_local": 9907.80490258518,
+      "ess_tail_upstream": 9907.80490258518
+    }
+  ],
+  "upstream_generation": {
+    "method": "stan_sampling",
+    "method_arguments": {
+      "chains": 10,
+      "iter": 20000,
+      "warmup": 10000,
+      "thin": 10,
+      "seed": 2544,
+      "control": {
+        "adapt_delta": 0.8
+      }
+    }
+  },
+  "upstream_divergences_reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "upstream_divergences_independently_recomputed": false,
+  "reference_uncertainty": "Report posterior MCSE, SD of ten chain means divided by sqrt(10), and SD of 200 nonoverlapping length-50 batch means divided by sqrt(200). Maximum is a sensitivity summary, not a rigorous bound on Monte Carlo error or bias.",
+  "all_functions_uncertainty_available": false,
+  "torch_imported": false,
+  "jax_imported": false
+}
