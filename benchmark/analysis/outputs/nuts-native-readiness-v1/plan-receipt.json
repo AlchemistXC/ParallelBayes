@@ -1,0 +1,24 @@
+{
+  "windows_protocol_sha256": "6c6aadaed20f792715ab9b8b3a3bbb02181f74ecbe259aa1bb3302e370c78220",
+  "mac_protocol_sha256": "7e5c8e60afaaba73d762f7d435d01ec8916c7a4e17df7c5e0dde276ff623a15e",
+  "source_commit": "b7791e08e03449bd34ee764dc560bd3934044aeb",
+  "paired_actual_input_files": 9,
+  "source_hashes_verified": 61,
+  "windows_sampling_executed": false,
+  "non_native_guard_rejection": "Native platform mismatch; use a separate protocol identity",
+  "mac_asset_hashes_verified": 117,
+  "mac_targets": 9,
+  "mac_serial_spawn_array_comparisons": 54,
+  "mac_exact_array_comparisons": 54,
+  "mac_observed_workers": {
+    "A1": 4,
+    "G1": 4,
+    "G2": 4,
+    "H1": 4,
+    "H2": 4,
+    "L1": 4,
+    "L2": 4,
+    "M1": 4,
+    "W1": 4
+  }
+}

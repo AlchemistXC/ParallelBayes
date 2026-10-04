@@ -1,0 +1,19 @@
+{
+  "scope": "Bounded companion localization of the observed H1 budget-pilot failure.\n\nSaved inputs and original validity rules are immutable. Replays, common-state\nchecks and +/- one-ULP probes are technical investigations, not new repetitions.\n",
+  "original_protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
+  "original_source_commit": "0eda1cbf354aa4e3164dc365f5294c6cc52b37b3",
+  "analysis_source_sha256": "efb3efeb9b91010dba42e9c646c418ffa56c79b182c53d4eb1123d05f5a7eb76",
+  "original_task": {
+    "model": "H1",
+    "workflow": "mala",
+    "replicate": 2,
+    "budget": 4096,
+    "input": "H1-rep2.npz",
+    "id": "4dc55fe41afd7ee147b2"
+  },
+  "numpy": "2.2.6",
+  "torch": "2.13.0",
+  "threads": 4,
+  "probes": "One full identical replay; common-state transitions at all 18432 saved previous states; independent NumPy initial coordinate 0 perturbed toward +inf and -inf by one ULP.",
+  "gates": "Original scalar per-chain path limit = 100*(atol+rtol*max(1,max(abs(saved_path)))); exact acceptance events. No relaxation or relabelling."
+}

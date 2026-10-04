@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Localize the single H1/MALA long-path tolerance failure; choose explicit formal budget/repetition/uncertainty design using the independent pilot; receive Windows F1/F2/F4 evidence and validate native CPU NUTS before freezing formal same-machine inference.",
+  "next_recommended_action": "Freeze the finite formal inference design after explicit budget/repetition/reference decisions; receive Windows F1/F2/F4 and new native CPU NUTS readiness evidence. Budget-pilot failure localization is documented; original failure remains quarantined.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -24,14 +24,17 @@
     "Mac_mechanism_smoke_9_workflows_6_probe_batches_and_byte_identical_resume",
     "F3_nine_target_CPU_readiness_v2_45_workflows_and_binary_posterior_diagnostics; v1_failures_preserved",
     "F3_tuning_216_terminal_cases_212_score_and_R_diagnostic_reconstructions_four_preserved_sensitivity_failures",
-    "F3_independent_budget_pilot_324_terminal_323_valid_saved_array_error_diagnostics_and_zero_new_task_resume"
+    "F3_independent_budget_pilot_324_terminal_323_valid_saved_array_error_diagnostics_and_zero_new_task_resume",
+    "budget_single_failure_same_state_and_actual_discrepancy_suffix_localization",
+    "Mac_nine_target_serial_spawn_NUTS_54_bitwise_array_pairs_18_R_roundtrips_and_verified_resume"
   ],
   "external_case": "Mac target/trajectory/R validation, finite reference audit and 12-rule independent quadrature completed; numerical integration is not certified exact truth; Windows target validation and formal inference remain",
   "new_experiment_scope": "Wells model/reference companions, Mac mechanism smoke, inference readiness v1/v2 and independent MH tuning v1; no new formal inference/performance benchmark; independent CPU budget pilot v1 (development only)",
   "prepared_windows_protocols": [
     "external-wells-windows-cpu-v1",
     "external-wells-windows-cuda-v1",
-    "mechanism-windows-pilot-v1"
+    "mechanism-windows-pilot-v1",
+    "nuts-native-readiness-windows-v1"
   ],
   "f3_readiness": "Not formal inference: v2 45/45 numerical/workflow checks; 7/9 NUTS fits and 36/36 short MH fits have some finite Rhat>1.01; 23/45 contain undefined Rhat functions",
   "f3_raw_evidence": {
@@ -65,7 +68,7 @@
       "public_release": false
     }
   },
-  "f3_parallel_nuts": "Mac CPU: 108 nine-target pilot fits completed with four observed workers each, retained diagnostics include H1 divergences; native Windows baseline remains unverified.",
+  "f3_parallel_nuts": "Mac 108 pilot fits plus nine-target paired serial/spawn readiness: 54 array byte comparisons and 18 R roundtrips passed; original diagnostics/failed MH retained. Native Windows corresponding readiness is frozen but unexecuted.",
   "f3_budget_pilot": {
     "protocol": "inference-budget-pilot-mac-v1",
     "protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
@@ -80,7 +83,7 @@
     "undefined_rhat_fits": 109,
     "NUTS_divergences": 1799,
     "NUTS_divergence_scope": "H1 only, 11 fits; output completion is not convergence",
-    "failure_scope": "H1 MALA budget4096 replicate2; zero acceptance mismatches but path difference exceeds original tolerance; localization pending",
+    "failure_scope": "H1 MALA budget4096 replicate2 remains failed. Same-state 18432 transitions agree; actual first 4.441e-16 discrepancy amplifies to 3.638e-7 under the same independent NumPy suffix without event changes. Initial +/-ULP probe did not reproduce growth; bounded localization complete.",
     "formal_inference_complete": false,
     "raw_evidence_archive_pending": false,
     "raw_evidence_archive": {
@@ -98,6 +101,20 @@
       "checked_files": 2913,
       "source_bundle_verified": true,
       "all_member_hashes_verified": true
-    }
+    },
+    "failure_localization_complete": true
+  },
+  "f3_native_nuts_readiness": {
+    "source_commit": "b7791e08e03449bd34ee764dc560bd3934044aeb",
+    "windows_protocol_sha256": "6c6aadaed20f792715ab9b8b3a3bbb02181f74ecbe259aa1bb3302e370c78220",
+    "mac_protocol_sha256": "7e5c8e60afaaba73d762f7d435d01ec8916c7a4e17df7c5e0dde276ff623a15e",
+    "mac_completed_targets": 9,
+    "mac_failed_targets": 0,
+    "paired_array_comparisons": 54,
+    "verified_R_roundtrips": 18,
+    "verified_resume_terminal_files": 126,
+    "windows_actual_run": false,
+    "formal_inference_complete": false,
+    "companion_archive_pending": true
   }
 }

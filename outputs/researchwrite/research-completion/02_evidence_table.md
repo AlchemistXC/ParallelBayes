@@ -17,3 +17,5 @@
 | 最新优先级为失配审计→调参再分析→独立预算pilot→正式推断→复现和论文 | docs/RESEARCH-COMPLETION-PLAN.md最新进度段 | 更新执行顺序，不改冻结协议或历史结果 |
 | F3调参评分、诊断及失败机制伴随分析已完成，正式推断仍未完成 | docs/F3-TUNING-RESULTS.md、benchmark/analysis/outputs/inference-tuning-v1 | 212份评分/R回写；24576同前态转移零接受失配；一ULP敏感性；失败不改标 |
 | 独立预算pilot提供正式预算/重复设计资料，不能直接作正式推断结论 | docs/F3-BUDGET-PILOT-RESULTS.md、inference-budget-pilot-v1摘要与原始数组 | 323/324有效；单项路径容差失败、H1发散和未判定函数保留；Windows正式比较仍未完成 |
+| 预算单项长路径失败有有限数值敏感性证据，原失败仍隔离 | docs/BUDGET-PATH-LOCALIZATION.md、budget-failure-localization-v1 | 18432同前态、实际首差受控后续重放；初值ULP阴性探针保留，非一般正确性证明 |
+| 九目标CPU NUTS顺序/spawn可核验，Windows不能由Mac代替 | docs/NATIVE-NUTS-READINESS.md、nuts-native-readiness-v1 | Mac54项数组字节和18份R回写；Windows仅冻结协议，正式推断仍未完成 |

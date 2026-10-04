@@ -1,0 +1,24 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_______ test_serial_spawn_receipt_replays_arrays_and_resume_never_refits _______
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-43/test_serial_spawn_receipt_repl0')
+
+    def test_serial_spawn_receipt_replays_arrays_and_resume_never_refits(tmp_path):
+>       import nuts_readiness_run as study
+E       ModuleNotFoundError: No module named 'nuts_readiness_run'
+
+tests/external/test_nuts_readiness_run.py:12: ModuleNotFoundError
+=============================== warnings summary ===============================
+../../../../Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:475
+  /Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:475: PytestCacheWarning: could not create cache path /Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/.pytest_cache/v/cache/nodeids: [Errno 1] Operation not permitted: '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/pytest-cache-files-fb820szm'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../../../Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:429
+  /Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:429: PytestCacheWarning: could not create cache path /Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/.pytest_cache/v/cache/lastfailed: [Errno 1] Operation not permitted: '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/pytest-cache-files-3llpvh3_'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/external/test_nuts_readiness_run.py::test_serial_spawn_receipt_replays_arrays_and_resume_never_refits
+1 failed, 2 warnings in 0.04s

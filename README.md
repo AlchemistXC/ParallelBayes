@@ -8,7 +8,7 @@
 
 当前Windows执行[第二轮交接提示词](handoff/windows-completion/CODEX-PROMPT-F2-F4.md)：诊断固定样例、水井CPU/CUDA/R核验及新协议192工作流机制pilot；真实回执尚未到。历史环境安装说明保留在`handoff/windows-native/`，不要重跑首轮512项。
 
-本轮已完成[有限参考复用审计](docs/REFERENCE-REUSE.md)、[水井Mac模型/R核验](docs/WELLS-TARGET-VALIDATION.md)和参考伴随分析。[独立调参](docs/F3-TUNING-RESULTS.md)212/216有效、失败保留；[九目标多预算pilot](docs/F3-BUDGET-PILOT-RESULTS.md)323/324满足各自输出标准，1项长路径容差失败待定位。诊断仍显示H1发散、M1探索不足及稀有事件未判定。正式推断协议、Windows同机比较和统一发布/论文尚未完成。
+本轮已完成[有限参考复用审计](docs/REFERENCE-REUSE.md)、[水井Mac模型/R核验](docs/WELLS-TARGET-VALIDATION.md)和参考伴随分析。[独立调参](docs/F3-TUNING-RESULTS.md)212/216有效、失败保留；[九目标多预算pilot](docs/F3-BUDGET-PILOT-RESULTS.md)323/324满足各自输出标准，1项长路径容差失败已完成[有限定位](docs/BUDGET-PATH-LOCALIZATION.md)，仍保留失败。诊断仍显示H1发散、M1探索不足及稀有事件未判定。正式推断协议、Windows同机比较和统一发布/论文尚未完成。
 
 **本开发分支已完成原生PyTorch后端及RTX 5080实测。** 新协议512项CPU/CUDA任务通过数值输出核验，65项CPU和63项CUDA测试通过；详细结果、负例与限制见[Windows实测报告](docs/WINDOWS-RESULTS.md)和[安装/运行说明](docs/WINDOWS-NATIVE.md)。许多短链尚未混合，数值核验通过不等于推断收敛。`handoff/windows-native`保留移植前交接状态；历史`handoff/gpu`仅是WSL/JAX归档。
 
@@ -51,3 +51,5 @@ R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU�
 外部水井案例的后续参考证据见[有限参考复核](docs/WELLS-REFERENCE-AUDIT.md)和[独立二维积分](docs/WELLS-QUADRATURE.md)。两者不代替Windows目标核验或正式推断实验。
 
 第二轮Windows交接：[可直接转交的提示词](handoff/windows-completion/CODEX-PROMPT-F2-F4.md)，包含F1回执、水井CPU/CUDA/R核验和已冻结机制pilot；[试验设计及Mac运行器证据](docs/MECHANISM-PILOT.md)。Windows实际结果仍待回传。
+
+F3成熟基线的新增[Windows CPU NUTS核验提示词](handoff/windows-completion/CODEX-PROMPT-F3-NUTS.md)已就绪。[Mac九目标配对验证](docs/NATIVE-NUTS-READINESS.md)通过样本/预热/RNG字节检查，短链不利诊断保留；Windows同项尚未实测。这是独立研究CLI，不扩充R包核心的NUTS或GPU支持声明。

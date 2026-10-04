@@ -1,0 +1,312 @@
+{
+  "fits": [
+    {
+      "id": "G1-serial",
+      "input": "G1-serial.bin",
+      "shape": [
+        64,
+        4,
+        3
+      ],
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "input_sha256": "0c2d4cdbea351de4f7214ab05bc175fdbf7edd7b78410af5efcc51d568345013",
+      "source_raw_sha256": "52e7d7e090e5b6cd90fca08d68d18afd8227fd5af6de4813279adefa28cdee99"
+    },
+    {
+      "id": "G1-parallel",
+      "input": "G1-parallel.bin",
+      "shape": [
+        64,
+        4,
+        3
+      ],
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "input_sha256": "0c2d4cdbea351de4f7214ab05bc175fdbf7edd7b78410af5efcc51d568345013",
+      "source_raw_sha256": "8a3da13f177d844908f11c6cf373b848768a5552d7a14f2bb704d1bae3d0f8d4"
+    },
+    {
+      "id": "G2-serial",
+      "input": "G2-serial.bin",
+      "shape": [
+        64,
+        4,
+        3
+      ],
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "input_sha256": "e924cb1f5aaeb9c3ccbe1408c018f0395f5b6558752ce71a8b964b5c8642145a",
+      "source_raw_sha256": "52c91c1dd57e2d698e2df62ad5f1d85dadc464580b9606ba0d067dbfad596109"
+    },
+    {
+      "id": "G2-parallel",
+      "input": "G2-parallel.bin",
+      "shape": [
+        64,
+        4,
+        3
+      ],
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "input_sha256": "e924cb1f5aaeb9c3ccbe1408c018f0395f5b6558752ce71a8b964b5c8642145a",
+      "source_raw_sha256": "2aed38792172b0b390efc6a3b7806d2a38abb3711891ce9522e374ad64641dc2"
+    },
+    {
+      "id": "A1-serial",
+      "input": "A1-serial.bin",
+      "shape": [
+        64,
+        4,
+        3
+      ],
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "input_sha256": "e0d8dc6bc4eeb2f3735e37af7070b45d9b4e69d46002bd8b1962c481e5f74337",
+      "source_raw_sha256": "44478614c48bbaaa00d39cf6906f63854751bcd7c8d00871d2f0e08e78ba4257"
+    },
+    {
+      "id": "A1-parallel",
+      "input": "A1-parallel.bin",
+      "shape": [
+        64,
+        4,
+        3
+      ],
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "input_sha256": "e0d8dc6bc4eeb2f3735e37af7070b45d9b4e69d46002bd8b1962c481e5f74337",
+      "source_raw_sha256": "4866b6093836e5fccfe9be209efd6278b1b0aa460aa8450d070d219748464217"
+    },
+    {
+      "id": "L1-serial",
+      "input": "L1-serial.bin",
+      "shape": [
+        64,
+        4,
+        4
+      ],
+      "names": [
+        "q1",
+        "q2",
+        "sigmoid_q1",
+        "q1_positive"
+      ],
+      "input_sha256": "5586909054300a66f47fb0ad16df07ef210c60a86b70d7560cd795586d5ebc9c",
+      "source_raw_sha256": "d648851bfc67e57df0f9bec85fa5c00a3bb9ba874976b669a39ad338f396bc2d"
+    },
+    {
+      "id": "L1-parallel",
+      "input": "L1-parallel.bin",
+      "shape": [
+        64,
+        4,
+        4
+      ],
+      "names": [
+        "q1",
+        "q2",
+        "sigmoid_q1",
+        "q1_positive"
+      ],
+      "input_sha256": "5586909054300a66f47fb0ad16df07ef210c60a86b70d7560cd795586d5ebc9c",
+      "source_raw_sha256": "52ba982d3d00fcdaee480223f99385fd48ef23a6ce3fe425cb673e62f7c8f7ab"
+    },
+    {
+      "id": "L2-serial",
+      "input": "L2-serial.bin",
+      "shape": [
+        64,
+        4,
+        4
+      ],
+      "names": [
+        "q1",
+        "q2",
+        "sigmoid_q1",
+        "q1_positive"
+      ],
+      "input_sha256": "5909625923008dad0026ab050dccd6d914b8a3cb637709287dc49129d36ff499",
+      "source_raw_sha256": "96e26dcd3ebd4adc541375219ebc3fd0e3757bcf06babd8a1076c52f6fdb49a3"
+    },
+    {
+      "id": "L2-parallel",
+      "input": "L2-parallel.bin",
+      "shape": [
+        64,
+        4,
+        4
+      ],
+      "names": [
+        "q1",
+        "q2",
+        "sigmoid_q1",
+        "q1_positive"
+      ],
+      "input_sha256": "5909625923008dad0026ab050dccd6d914b8a3cb637709287dc49129d36ff499",
+      "source_raw_sha256": "2fa6e3fe278c31159eda6904bd249d52345685ebcdc2d16f8999d9b957de9a95"
+    },
+    {
+      "id": "H1-serial",
+      "input": "H1-serial.bin",
+      "shape": [
+        64,
+        4,
+        4
+      ],
+      "names": [
+        "v_over_3",
+        "tanh_v_over_3",
+        "x1_positive",
+        "cos_z1"
+      ],
+      "input_sha256": "90fb7e73d99955f0a780f659db1013aeccd2ce52b89d5b0a5cd7ccfc75c5332f",
+      "source_raw_sha256": "79da37b19177472d2d81fa8b7b05341292c4cd9013324ca184533af581db99c6"
+    },
+    {
+      "id": "H1-parallel",
+      "input": "H1-parallel.bin",
+      "shape": [
+        64,
+        4,
+        4
+      ],
+      "names": [
+        "v_over_3",
+        "tanh_v_over_3",
+        "x1_positive",
+        "cos_z1"
+      ],
+      "input_sha256": "90fb7e73d99955f0a780f659db1013aeccd2ce52b89d5b0a5cd7ccfc75c5332f",
+      "source_raw_sha256": "ef2bc6ce719e0cd7c09893a13fbd05ec0de2a6484cc247e6bffa03f831e51ef5"
+    },
+    {
+      "id": "H2-serial",
+      "input": "H2-serial.bin",
+      "shape": [
+        64,
+        4,
+        4
+      ],
+      "names": [
+        "v_over_3",
+        "tanh_v_over_3",
+        "x1_positive",
+        "cos_z1"
+      ],
+      "input_sha256": "b97b23ef230e30fd17d200ba305f5544b299be32bec9fb19587ae67123be7f94",
+      "source_raw_sha256": "5ffccc04b5250b4749ce2f51e3430c43e4b5f958efbdb27a050b5441600076b2"
+    },
+    {
+      "id": "H2-parallel",
+      "input": "H2-parallel.bin",
+      "shape": [
+        64,
+        4,
+        4
+      ],
+      "names": [
+        "v_over_3",
+        "tanh_v_over_3",
+        "x1_positive",
+        "cos_z1"
+      ],
+      "input_sha256": "b97b23ef230e30fd17d200ba305f5544b299be32bec9fb19587ae67123be7f94",
+      "source_raw_sha256": "8912deb98679e77aba39b6cfbf4746dfcc0714cc643d007c1da6a8564f8a549e"
+    },
+    {
+      "id": "M1-serial",
+      "input": "M1-serial.bin",
+      "shape": [
+        64,
+        4,
+        4
+      ],
+      "names": [
+        "standard_q1",
+        "q1_positive",
+        "q2",
+        "q2_squared"
+      ],
+      "input_sha256": "0a1d12aa1acb9479de596a187622d7bafdee3805312b6a5790854028579f7b50",
+      "source_raw_sha256": "6cdc82a13ff201160eda3122fbee46af49fd86d78839c45f8566debfafcefdd3"
+    },
+    {
+      "id": "M1-parallel",
+      "input": "M1-parallel.bin",
+      "shape": [
+        64,
+        4,
+        4
+      ],
+      "names": [
+        "standard_q1",
+        "q1_positive",
+        "q2",
+        "q2_squared"
+      ],
+      "input_sha256": "0a1d12aa1acb9479de596a187622d7bafdee3805312b6a5790854028579f7b50",
+      "source_raw_sha256": "9985dc9f2780e5952ce4fc07be042691a3d95b709fd4247bc49f8447e5f07adb"
+    },
+    {
+      "id": "W1-serial",
+      "input": "W1-serial.bin",
+      "shape": [
+        64,
+        4,
+        7
+      ],
+      "names": [
+        "alpha",
+        "beta",
+        "alpha_squared",
+        "beta_squared",
+        "p_switch_0m",
+        "p_switch_100m",
+        "beta_positive"
+      ],
+      "input_sha256": "9fb0e6fa42cd44c5486f81c0821a1a6dde9c187111a1e7bf854b8f3632541b44",
+      "source_raw_sha256": "6d34f51dc38b607c90d9919d3586417cdd06a42bca350e3d29eb513a9e388a7c"
+    },
+    {
+      "id": "W1-parallel",
+      "input": "W1-parallel.bin",
+      "shape": [
+        64,
+        4,
+        7
+      ],
+      "names": [
+        "alpha",
+        "beta",
+        "alpha_squared",
+        "beta_squared",
+        "p_switch_0m",
+        "p_switch_100m",
+        "beta_positive"
+      ],
+      "input_sha256": "9fb0e6fa42cd44c5486f81c0821a1a6dde9c187111a1e7bf854b8f3632541b44",
+      "source_raw_sha256": "1e4165df41249ba302b0336864dbbf3238b12ea59a7676428c5c0c545be60d97"
+    }
+  ],
+  "scope": "Native CPU NUTS readiness; serial/spawn repeats are paired technical executions, not independent inference experiments.",
+  "independent_unit": "One four-chain validation fixture per target; diagnostic results do not establish convergence or formal accuracy."
+}

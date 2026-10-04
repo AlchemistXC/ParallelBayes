@@ -1,0 +1,22 @@
+{
+  "terminal_files": 126,
+  "all_terminal_hashes_unchanged": true,
+  "newly_executed_targets": 0,
+  "completed": 9,
+  "failed": 0,
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+    "scripts/completion/nuts_readiness_run.py",
+    "run",
+    "--protocol",
+    "benchmark/protocols/nuts-native-readiness-mac-companion-v1.json",
+    "--inputs",
+    "benchmark/fixtures/nuts-native-readiness-mac-companion-v1",
+    "--source",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/external-source-inspection",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/nuts-native-mac-readiness-01",
+    "--resume"
+  ],
+  "original_summary_sha256": "40a2825500811605674474922766cd087f6202b2a182f3319f1506edcb5733e7"
+}

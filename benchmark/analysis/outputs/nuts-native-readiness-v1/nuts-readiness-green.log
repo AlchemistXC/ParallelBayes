@@ -1,0 +1,9 @@
+.                                                                        [100%]
+=============================== warnings summary ===============================
+../../../../Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:475
+  /Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:475: PytestCacheWarning: could not create cache path /Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/.pytest_cache/v/cache/nodeids: [Errno 1] Operation not permitted: '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/pytest-cache-files-kwzh78tt'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/haku/Workspace/ParallelBayes/output/research-completion/nuts-readiness-tests.xml -
+1 passed, 1 warning in 1.75s
