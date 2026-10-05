@@ -1,5 +1,7 @@
 # ParallelBayes
 
+2026-10-06 验收盘点：当前关键路径等待Windows后续原始回执，研究未完成。远端与草稿附件仍为已接收的 `ced54ef` 阶段；未上传的本机活动未知。见[剩余门槛与恢复入口](docs/COMPLETION-GATE-AUDIT.md)。
+
 2026-10-06 当前稿：修复历史CPU段与Windows能力的矛盾表述，完成[五段结果及PDF重建](docs/CURRENT-RESULT-REBUILD.md)，见[23页中文稿](output/software-paper/软件与基准研究-结果重建.pdf)。本次仅重建已保存摘要，未新增实验；正式推断研究仍待完成。
 
 2026-10-06 文献后继：已补核直接软件前作与现代多链方法，见[定位复核](review/文献定位复核_2026-10-06.md)和[23页中文文献修订稿](output/software-paper/软件与基准研究-文献修订.pdf)。结果与协议不变；正式研究仍待完成。
@@ -10,7 +12,7 @@
 
 2026-10-05：进入[研究收尾F0–F6](docs/RESEARCH-COMPLETION-PLAN.md)，实际状态见[当前工作包](execution/COMPLETION-WORK-PACKAGES.md)。Windows首轮开发、512项数值实验和回传审查已完成，不能再按初次移植提示词从头开发。
 
-Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-INTAKE.md)：F1、水井、九目标CPU NUTS及CPU/CUDA MH就绪证据已取得；跨系统逐位变换差异保留。F2的192工作流尚未执行，原始输入现已补入草稿附件，下一步使用[机制续跑提示词](handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md)。无需重跑已完成任务。
+Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-INTAKE.md)：F1、水井、九目标CPU NUTS及CPU/CUDA MH就绪证据已取得；跨系统逐位变换差异保留。最新已接收回执中F2的192工作流在采样前停止；后续执行状态未取得，原始输入现已补入草稿附件，下一步使用[机制续跑提示词](handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md)。无需重跑已完成任务。
 
 本机[批次与最大形状验收](docs/BATCH-MAXIMUM-VALIDATION.md)已完成14/15项，最大NUTS中断记录保留；零重算及搬移归档重建通过。最大MH技术验收不替代正式推断研究。 [成本与误差接口](docs/FORMAL-COST-POLICY.md)已补齐失败/未知时间及逐函数配对处理，正式研究尚待Windows运行门槛与协议冻结。
 

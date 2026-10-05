@@ -1,0 +1,127 @@
+{
+  "schema": "research-completion-gate-audit-v1",
+  "recorded_at_utc": "2026-10-05T18:59:23.523766+00:00",
+  "source_commit": "737adc34eb7507fece1b296996c99be6d673f722",
+  "host": "Darwin arm64",
+  "checks": {
+    "git_status_clean": true,
+    "git_ls_remote_exit_code": 0,
+    "github_release_api_exit_code": 0,
+    "remote_heads_observed": {
+      "codex/cache-failure-evidence": "826d6a83f2cd351457a6ff4dfa1d39de675d87e3",
+      "codex/measurement-runtime": "af2db5b3e2cbfa4157c704f7ef79bdcecf52b3b9",
+      "codex/release-candidate-0.2": "01609ed52e9737f00661ce5653a35a80ea9f8796",
+      "codex/research-integration": "737adc34eb7507fece1b296996c99be6d673f722",
+      "codex/windows-completion-v2": "ced54ef6ce945198339a138142dcdfede84f06bc",
+      "codex/windows-return-audit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+      "main": "a774d834497f2c134b2c4ab9129f221de39004ab",
+      "windows-native-dev": "3a51f98fc8d10187b8f71e477aaff56d86ea50cd"
+    },
+    "latest_windows_return": {
+      "tag": "windows-completion-v2-20261005",
+      "draft": true,
+      "last_asset_update": "2026-10-05T12:19:23Z",
+      "archive": "windows-native-20261005T113131Z.tar",
+      "bytes": 76267520,
+      "sha256": "bfd55d442fbb4137c54e573031781a95d75e0a86f20ccd4c8a994d338746efb9",
+      "supplement": "mechanism-windows-pilot-v1-original-inputs.tar",
+      "supplement_bytes": 10823680,
+      "supplement_sha256": "2b46eedc58067c920c8519cb4f99965bf944202f57392514d4643b847f9b9e5a",
+      "new_return_found": false
+    },
+    "live_windows_handle_available": false,
+    "actual_current_windows_process_state": "unknown; no claim of stopped or running"
+  },
+  "requirements": [
+    {
+      "id": "F0",
+      "requirement": "Current scope/version alignment",
+      "status": "bounded_current_alignment",
+      "evidence_and_gap": "Current entry points, capability matrix, integrated source and generated paper distinguish historical CPU, Windows-v1, readiness and incomplete formal work. Final identity still depends on later results."
+    },
+    {
+      "id": "F1",
+      "requirement": "Diagnostic discrepancy",
+      "status": "bounded_acceptance_complete",
+      "evidence_and_gap": "Native Windows fixed bytes and R diagnostics received; numerical midpoint mechanism and cross-host limitations retained. No need to rerun."
+    },
+    {
+      "id": "F2",
+      "requirement": "Windows mechanism study",
+      "status": "missing_followup_evidence",
+      "evidence_and_gap": "Latest received execution stopped before 192 workflows. Six original NPZ files are now in the private draft. No later execution archive/branch is accessible."
+    },
+    {
+      "id": "F3.runtime",
+      "requirement": "Native Windows ownership, recovery and resource limits",
+      "status": "missing_native_implementation_and_receipt",
+      "evidence_and_gap": "Current coordinator and batch launch explicitly restrict the validated profile to darwin. Windows readiness tests do not validate owned process cohorts or resource recovery."
+    },
+    {
+      "id": "F3.maximum",
+      "requirement": "Maximum task acceptance",
+      "status": "missing_windows_receipt",
+      "evidence_and_gap": "Mac maximum MH evidence exists, but maximum NUTS original and sole retry were interrupted. No third retry or Windows substitution is justified."
+    },
+    {
+      "id": "F3.formal",
+      "requirement": "Frozen common-inference comparison",
+      "status": "not_frozen_or_executed",
+      "evidence_and_gap": "41,472-fit / 9,216-cache-probe design remains a draft. Actual Windows resource and runtime gates precede freeze; numerical readiness is insufficient."
+    },
+    {
+      "id": "F4",
+      "requirement": "External case and extension",
+      "status": "extension_complete_case_inference_pending",
+      "evidence_and_gap": "Installed Poisson example and wells model/transport validation are checked. Formal wells inference still belongs to F3; it is not a held-out family."
+    },
+    {
+      "id": "F5.install",
+      "requirement": "Installable two-platform candidate",
+      "status": "Mac_checked_Windows_pending",
+      "evidence_and_gap": "Python 0.2.0.dev2 and R 0.2.0.9002 installed and tested in isolated Mac environments. Native Windows candidate CPU/CUDA/R installation evidence is absent."
+    },
+    {
+      "id": "F5.rebuild",
+      "requirement": "All raw data to final figures/tables/PDF",
+      "status": "incomplete_final_data",
+      "evidence_and_gap": "Historical raw rebuilds and the current five-section summary reconstruction are checked. Neither supplies future formal raw evidence; full final reconstruction remains open."
+    },
+    {
+      "id": "F6",
+      "requirement": "Final manuscript and author review",
+      "status": "current_draft_only",
+      "evidence_and_gap": "Current 23-page PDF, targeted literature and evidence boundaries are available. Final mechanisms/inference, claim review and author/submission metadata remain incomplete."
+    }
+  ],
+  "inspected_file_sha256": {
+    "docs/RESEARCH-COMPLETION-PLAN.md": "f62b6a35fcf8a385a9adc6cf2ddd891391fcec009f2c1a7cc38ec51df78062a6",
+    "execution/COMPLETION-WORK-PACKAGES.md": "e99bb3fa428f07db9f762c79b27c6b8fe0368be3951299c87bc6b3d41ddf333e",
+    "docs/F3-FORMAL-DESIGN-DRAFT.md": "a411c0c3ca592249d73e46a900f268c7cd150d91b9d667a1a7ce5aa7174610a5",
+    "docs/FORMAL-MEASUREMENT-DESIGN.md": "f703738e7bb5572dccaac97029997fd22fb7bd2f2f035fed53b4b331247d34a7",
+    "scripts/completion/batch_runner.py": "18e8bae94d9be35cd3eeea4fe0f757f6202506e18b59cbf020701ebae7feef98",
+    "scripts/completion/formal_coordinator.py": "f0e56c7a97dcb45dd7db0e863a6b833e827d29f5aec07b6e4668b87ba44a2181",
+    "docs/RELEASE-CANDIDATE-0.2.md": "5ddad84fd911168426f5a9dab3710df1b0e018e5ed96e04378f2c4fe7fe5800e",
+    "docs/INSTALLED-CUSTOM-TARGET.md": "7fa7af450c6b31d44458738b89c428a503a45dc86a47f2136ae5cd94fa448a97",
+    "docs/CURRENT-RESULT-REBUILD.md": "71b42f4dc0d2555fdf368debae99ccefda82e78562e5776de59c3654cf380c6f",
+    "benchmark/analysis/outputs/windows-round2-intake-v1/summary.json": "c34ec98f0093c93effb5a37fbaeb8c8739b1d7f5ad263825e3272317a047eaec",
+    "benchmark/analysis/outputs/current-result-sections-v1/archive-receipt.json": "ac6f93a518e60e480126ff0a9dc09b2aa5e5ca95e08a575b574d3feeaa59d850",
+    "handoff/windows-completion/README.md": "1981c75aaf745594c169c21635834c3e39ce1354622088c9c5fab4871fdd7314",
+    "handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md": "0127ee3790eda311322125ef0e59800283b13f2be240208721fed2dbf68039d5",
+    "handoff/windows-completion/CODEX-PROMPT-F3-RUNTIME.md": "3a016b12c5d1a3ec610c1e2c0e6d86c8d72acd4755f4f0a56359408da009b7a4",
+    "handoff/windows-completion/CODEX-PROMPT-PACKAGE.md": "14f0a41890ea43da23d4ca137526bb960ef07a6b7b9838bbd8e9e5966388fbdb"
+  },
+  "completion_proven": false,
+  "blocker": "No accessible follow-up Windows execution/installation evidence or live Windows execution handle; required scientific and platform gates cannot be certified on this Mac.",
+  "consecutive_goal_turns_with_same_blocker": [
+    "Installed custom target: source 3ca0a61 / evidence 327d38c; missing Windows follow-up; independent work completed.",
+    "Current result reconstruction: source b7ad1d1 / evidence 737adc3; same missing Windows follow-up; independent work completed.",
+    "This audit: remote heads and draft assets unchanged; remaining mandatory gates depend on the missing platform evidence."
+  ],
+  "previous_goal_turn_classification": "progress",
+  "this_turn_classification": "completion/blocker audit; no new numerical work; not a verified live-process wait",
+  "sampler_calls": 0,
+  "diagnostic_calls": 0,
+  "test_reruns": 0,
+  "resume_trigger": "Provide a newer Windows commit/branch and checksum-verifiable result archive, or usable access to the native Windows executor. If work has not been performed, execute the existing ordered prompts."
+}
