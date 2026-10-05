@@ -101,6 +101,7 @@ adversary able to rewrite both data and checksums.
     def _binding(self,task,request,worker,disk,rss):
         if not isinstance(task,dict) or any(not isinstance(task.get(k),str) or not task[k] for k in ('id','protocol_sha256')):
             raise ValueError('Task ID and protocol identity required')
+        formal_runtime.task_artifact_kind(task)
         if isinstance(disk,bool) or not isinstance(disk,int) or disk<0:raise ValueError('Nonnegative disk budget required')
         if isinstance(rss,bool) or not isinstance(rss,int) or rss<=0:raise ValueError('Positive memory guard required')
         return dict(task=task,request=request,worker_sha256=file_hash(worker),
@@ -178,7 +179,7 @@ adversary able to rewrite both data and checksums.
                 row=dict(attempt_id=str(out),binding_sha256=fingerprint(record['binding']),
                     outcome=outcome,seconds=None,evidence_sha256=fingerprint(a['snapshot']),
                     cost_scope='runtime_v1_preflight_through_terminal',fixed_task=record['binding']['task'],
-                    unknown_time_imputed=False)
+                    artifact_kind=formal_runtime.task_artifact_kind(record['binding']['task']),unknown_time_imputed=False)
             if row['binding_sha256']!=fingerprint(record['binding']):raise CoordinatorConflict('History binding differs')
             rows.append(row)
         return dict(original=record['original'],task=record['binding']['task'],attempts=rows,

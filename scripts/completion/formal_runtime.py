@@ -171,6 +171,28 @@ def _resume(output,binding):
     return dict(state,completion=receipt,resumed=True,newly_executed=False)
 
 
+def task_artifact_kind(task):
+    kind=task.get('artifact_kind','posterior')
+    if kind not in ('posterior','cache_measurement'):
+        raise ValueError('Unknown task artifact kind')
+    return kind
+
+
+def validate_worker_eligibility(task,result):
+    """Lifecycle completion and posterior eligibility are distinct contracts."""
+    kind=task_artifact_kind(task)
+    if result.get('status') not in ('completed','failed'):
+        raise ValueError('Worker result has unknown terminal status')
+    if result.get('artifact_kind','posterior')!=kind:
+        raise ValueError('Worker result artifact kind differs from declared task')
+    completed=result['status']=='completed'
+    if kind=='cache_measurement':
+        if result.get('samples_eligible') is not False or result.get('measurement_available') is not completed:
+            raise ValueError('Cache measurement may not become posterior samples')
+    elif result.get('samples_eligible') is not completed or result.get('measurement_available',False) is not False:
+        raise ValueError('Worker result has inconsistent numerical output eligibility')
+
+
 def execute_task(task,request,worker,output,host_lock,required_disk_bytes,max_tree_rss_bytes,resume=False):
     """Run one isolated worker and seal both success and numerical failure.
 
@@ -178,6 +200,7 @@ def execute_task(task,request,worker,output,host_lock,required_disk_bytes,max_tr
     worker-result.json with status and samples_eligible. This generic layer
     verifies lifecycle evidence; the worker must verify scientific identities.
     """
+    artifact_kind=task_artifact_kind(task)
     invocation_started=time.perf_counter()
     import psutil
     worker=Path(worker).resolve();output=Path(output).resolve()
@@ -236,8 +259,7 @@ def execute_task(task,request,worker,output,host_lock,required_disk_bytes,max_tr
                     failure_kind='worker_process_exit';error=f'worker exit code {code}'
                 else:
                     result=json.loads((attempt/'worker-result.json').read_text())
-                    if result.get('status') not in ('completed','failed') or result.get('samples_eligible')!=(result['status']=='completed'):
-                        raise ValueError('Worker result has inconsistent numerical output eligibility')
+                    validate_worker_eligibility(task,result)
                     status=result['status']
                     if status=='failed':failure_kind='worker_output_standard'
         except BaseException as exc:
@@ -259,7 +281,9 @@ def execute_task(task,request,worker,output,host_lock,required_disk_bytes,max_tr
         assets['binding.json']=file_hash(output/'binding.json')
         hash_seconds=time.perf_counter()-hash_begin
         state=dict(task=task,binding_sha256=binding,status=status,failure_kind=failure_kind,error=error,
-            samples_eligible=status=='completed',attempt=attempt.name,assets=assets,
+            artifact_kind=artifact_kind,samples_eligible=status=='completed' and artifact_kind=='posterior',
+            measurement_available=status=='completed' and artifact_kind=='cache_measurement',
+            attempt=attempt.name,assets=assets,
             worker_result=result,return_code=process.returncode if process is not None else None,
             disk_preflight=disk,memory=dict(sampled_peak_tree_rss_bytes=peak,observation_samples=samples,
                 limit_bytes=max_tree_rss_bytes,interval_seconds=.05,

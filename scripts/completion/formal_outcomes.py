@@ -8,9 +8,9 @@ import math
 from pathlib import Path
 
 from formal_uncertainty import analyze_costs
-from formal_runtime import file_hash, fingerprint
+from formal_runtime import file_hash, fingerprint, task_artifact_kind, validate_worker_eligibility
 
-OUTCOMES=('valid','numerical_failure','resource_failure','output_failure_unclassified',
+OUTCOMES=('valid','measurement_available','numerical_failure','resource_failure','output_failure_unclassified',
           'infrastructure_interruption','not_run')
 
 
@@ -44,9 +44,18 @@ def read_attempt(directory):
             path=directory/name
             if not path.resolve().is_relative_to(directory) or path.is_symlink() or file_hash(path)!=h:
                 raise ValueError('Terminal asset checksum differs')
+        kind=task_artifact_kind(binding['task'])
+        if state.get('artifact_kind','posterior')!=kind:raise ValueError('Terminal artifact kind differs')
+        if kind=='cache_measurement' and state['samples_eligible'] is not False:
+            raise ValueError('Measurement terminal cannot contain eligible posterior samples')
         if state['status']=='completed':
-            if state['samples_eligible'] is not True:raise ValueError('Completed output eligibility differs')
-            outcome='valid'
+            validate_worker_eligibility(binding['task'],state['worker_result'])
+            if kind=='posterior':
+                if state['samples_eligible'] is not True:raise ValueError('Completed output eligibility differs')
+                outcome='valid'
+            else:
+                if state.get('measurement_available') is not True:raise ValueError('Completed measurement unavailable')
+                outcome='measurement_available'
         elif state['status']=='interrupted':outcome='infrastructure_interruption'
         elif state['status']=='failed':
             if state['samples_eligible'] is not False:raise ValueError('Failed output eligibility differs')
@@ -59,7 +68,7 @@ def read_attempt(directory):
         cost=receipt['inclusive_preflight_through_terminal_seconds'];digest=file_hash(statefile)
     return dict(attempt_id=str(directory),binding_sha256=fingerprint(binding),outcome=outcome,seconds=cost,
                 evidence_sha256=digest,cost_scope='runtime_v1_preflight_through_terminal',
-                fixed_task=binding['task'],unknown_time_imputed=False)
+                fixed_task=binding['task'],artifact_kind=task_artifact_kind(binding['task']),unknown_time_imputed=False)
 
 
 def summarize_attempts(attempts):
@@ -70,7 +79,13 @@ def summarize_attempts(attempts):
     if len({x['attempt_id'] for x in attempts})!=len(attempts):raise ValueError('Duplicate attempt identities')
     if len({x['binding_sha256'] for x in attempts})!=1:raise ValueError('Retry request/environment binding changed')
     if len({x.get('cost_scope','unspecified') for x in attempts})!=1:raise ValueError('Attempt timing scopes differ')
+    kinds={x.get('artifact_kind','posterior') for x in attempts}
+    if len(kinds)!=1:raise ValueError('Mixed posterior and measurement histories')
     for i,row in enumerate(attempts):
+        if row['outcome']=='measurement_available' and row.get('artifact_kind','posterior')!='cache_measurement':
+            raise ValueError('Measurement outcome requires measurement artifact kind')
+        if row['outcome']=='valid' and row.get('artifact_kind','posterior')!='posterior':
+            raise ValueError('Measurement cannot have a valid posterior outcome')
         if row['outcome'] not in OUTCOMES or row['outcome']=='not_run':raise ValueError('Unknown executed attempt outcome')
         if i<len(attempts)-1 and row['outcome']!='infrastructure_interruption':
             raise ValueError('Only infrastructure interruptions may precede an explicit retry')
@@ -92,6 +107,8 @@ def analyze_attempt_costs(plan,executions,pairs=(),phase='unspecified'):
     Failure rates refer to output availability after permitted infrastructure
     recovery, not convergence or a pure numerical-algorithm failure probability.
     """
+    if any(row.get("artifact_kind","posterior")!="posterior" for tasks in executions.values() for attempts in tasks.values() for row in attempts):
+        raise ValueError("Measurement histories are not posterior inference costs")
     reduced={}
     for workflow,rows in executions.items():
         if set(rows)!=set(plan.replicate_ids):raise ValueError('Every planned repetition required')

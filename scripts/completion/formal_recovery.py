@@ -34,6 +34,8 @@ def _snapshot(directory):
 def _binding(original,host_lock):
     if sys.platform!='darwin':raise RecoveryConflict('Only the native Mac recovery profile is validated')
     binding=json.loads((original/'binding.json').read_text())
+    if formal_runtime.task_artifact_kind(binding['task'])=='cache_measurement':
+        raise RecoveryConflict('Cache measurement retries are not authorized; preserve the incomplete measurement')
     expected=dict(python=sys.version,executable=str(Path(sys.executable).resolve()),platform=sys.platform,
                   psutil=psutil.__version__,host_lock=str(Path(host_lock).resolve()),
                   runtime_helper_sha256=file_hash(Path(formal_runtime.__file__)))
