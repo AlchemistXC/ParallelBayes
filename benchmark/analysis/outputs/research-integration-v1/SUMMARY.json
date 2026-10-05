@@ -1,0 +1,34 @@
+{
+  "delivery_source_commit": "256befa698b8b0e0c6cb90322d1f83b82d520bae",
+  "verified_merge_source_commit": "e4f284ffd10b854ea1116573235f9733d0a3b46a",
+  "merge_parents": [
+    "826d6a83f2cd351457a6ff4dfa1d39de675d87e3",
+    "01609ed52e9737f00661ce5653a35a80ea9f8796"
+  ],
+  "package_files_identical": 30,
+  "research_files_identical": 179,
+  "python_modules_verified_in_all_payloads": 17,
+  "R_source_members_identical": 25,
+  "affected_checks_passed": 19,
+  "affected_checks_failed": 0,
+  "affected_checks_skipped": 0,
+  "installed_artifacts_reused": true,
+  "new_clean_installation": false,
+  "installed_R_model_validation": true,
+  "archived_probes_reconstructed": 20,
+  "archived_numerical_records": 80,
+  "archived_outer_invocations": 40,
+  "archive_reconstruction_sampler_calls": 0,
+  "archive_reconstruction_new_audits": 0,
+  "fixtures_are_new_research_repetitions": false,
+  "manuscript_and_PDF_bytes_unchanged": true,
+  "manuscript_recompiled": false,
+  "formal_grid_started": false,
+  "native_Windows_candidate_verified": false,
+  "retained_issues": [
+    "Initial documentation merge helper failed on input encoding before writing; merge resolved using explicit UTF-8",
+    "Original NumPy slogdet warnings retained in archived-intake.log"
+  ],
+  "no_main_merge": true,
+  "no_public_release": true
+}

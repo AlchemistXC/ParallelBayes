@@ -1,0 +1,59 @@
+{
+  "package_version": "0.2.0.9002",
+  "installed_R_package": "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library/parallelbayes",
+  "embedded_python": "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library/parallelbayes/python/parallelbayes/__init__.py",
+  "python_version": "0.2.0.dev2",
+  "python_executable": "/Users/haku/Workspace/ParallelBayes/.venv-release-review/bin/python",
+  "R": "R version 4.6.0 (2026-04-24)",
+  "environment": {
+    "provider": "native_torch",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "python_executable": "/Users/haku/Workspace/ParallelBayes/.venv-release-review/bin/python",
+    "os": "macOS-26.6.2-arm64-arm-64bit",
+    "torch": "2.13.0",
+    "cuda_build": {},
+    "cuda_available": false,
+    "gpu_name": {},
+    "ram_bytes": 17179869184,
+    "cpu_threads": 4,
+    "dtype": "float64"
+  },
+  "validation": {
+    "target_id": "3e3656281759da52eec97958e99d2c4f930c2571d7b1dbb409a2fe1de8f14258",
+    "device": "cpu",
+    "errors": {
+      "relative_density": 0,
+      "gradient": 0,
+      "hvp": 3.78578279836006e-11,
+      "constrain": 0
+    },
+    "passed": true,
+    "hvp_reference": "central difference of independent analytic NumPy gradient; epsilon=1e-5"
+  },
+  "capabilities": {
+    "provider": "native_torch",
+    "dtype": "float64",
+    "continuous_latents_only": true,
+    "combinations": [
+      ["mala", "sequential"],
+      ["rwm", "sequential"],
+      ["mala", "quasi_deer"],
+      ["rwm", "online_picard"]
+    ],
+    "available_devices": "cpu",
+    "verification_scope": "See execution/windows-native validation receipts; availability is not target certification",
+    "validation_evidence": {
+      "version": "0.2.0.dev1",
+      "torch": "2.13.0+cu130",
+      "os": "Windows 11",
+      "devices": ["AMD CPU", "RTX 5080 sm_120"],
+      "target_kinds": ["gaussian", "logistic", "lognormal", "funnel", "funnel_noncentered", "mixture", "normal_mean"],
+      "note": "Finite tested specs and tapes; other data/custom models require validation"
+    },
+    "arbitrary_stan_translation": false,
+    "nuts": false,
+    "compiled_device_control": false
+  },
+  "sampler_calls": 0,
+  "scope": "Existing isolated installed artifacts: origin, model validation, capabilities and metadata only"
+}

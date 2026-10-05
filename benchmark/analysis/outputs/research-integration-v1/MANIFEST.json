@@ -1,0 +1,16 @@
+{
+  "README.md": "f35a871fee9710861016560663c850606dd7e263d825b0a943de71c76dce87f5",
+  "SUMMARY.json": "3d0d20f8d966da7763034c2171350815dc335971ba5dde792e58fbe2ee368ab5",
+  "analysis-environment.json": "1a94ba333345b0c21771c12c6f8b7df95c01d024c85a22baaf91b6d7a315b6a7",
+  "archive-receipt.json": "e37e982384c0c236333cf15d000fd6134c09dd5d1c93474e9d362e9482da8e3c",
+  "archived-intake.log": "102c5ed42c67c3ef30b52c3a52230223e9d5c65dd1a28fa103adfdff275ad1fa",
+  "bundle-verify.log": "3b9f29cb0d90188c37a3b5097b289525afb6cb067e0f8eb7e7b196aa9f440de1",
+  "installed-R.json": "131cde260afb66be8e93c3d5d421e2344ecdc110aabcecf0787196d5dce236ea",
+  "installed-R.log": "8728e2acd2bdbb0fad573eb7ca014edac4e3971825328fb64bd43248e6d76234",
+  "installed-jax.json": "d99679638d5cb8e771c36e75529ee0d686f70377c511d8dbeda1f3b0ae7ad662",
+  "installed-torch.json": "399a823d744495153087f2f2ae4bdb8d2d86905c4bab0d4b2a08b0bd64f26da3",
+  "integration-tests.log": "589657fbc540c6a1f10b060918b2248510832f24958ecc58a55a644089607a60",
+  "integration-tests.xml": "4207357eb7dc1e55fb098e9ae868d512e94a9737a27567f407d312ef3ef18303",
+  "source-artifact-bridge.json": "f89a449a6f5d69a4510371555524fbd8e87ba8e28726976bb7ec6255bb6ae137",
+  "source-artifact-bridge.log": "a4d2b8f2c441955d1a49d39d60909b6835817c48e6719dac085dae55c15a0515"
+}

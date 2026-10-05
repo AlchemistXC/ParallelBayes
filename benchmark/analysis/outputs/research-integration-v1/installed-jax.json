@@ -1,0 +1,193 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "executable": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/bin/python",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "prefix": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review",
+  "base_prefix": "/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/python",
+  "isolated_mode": 1,
+  "module": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages/parallelbayes/__init__.py",
+  "version": "0.2.0.dev2",
+  "distribution_root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages",
+  "direct_url": {
+    "url": "file:///Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/final-dist/parallelbayes-0.2.0.dev2-py3-none-any.whl",
+    "archive_info": {}
+  },
+  "providers_installed": {
+    "jax": true,
+    "torch": false,
+    "pyro": false,
+    "bridgestan": true
+  },
+  "distributions": [
+    {
+      "name": "absl-py",
+      "version": "2.5.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "blackjax",
+      "version": "1.2.5",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "bridgestan",
+      "version": "2.7.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "chex",
+      "version": "0.1.89",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.4.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "dllist",
+      "version": "2.0.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "fastprogress",
+      "version": "1.0.3",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.66.1",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "jax",
+      "version": "0.6.2",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "jaxlib",
+      "version": "0.6.2",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "jaxopt",
+      "version": "0.8.5",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.1",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.10.6",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "ml_dtypes",
+      "version": "0.6.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "opt_einsum",
+      "version": "3.4.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "optax",
+      "version": "0.2.5",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "parallelbayes",
+      "version": "0.2.0.dev2",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "psutil",
+      "version": "7.1.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "scipy",
+      "version": "1.15.3",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "setuptools",
+      "version": "84.0.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "stanio",
+      "version": "0.5.1",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "toolz",
+      "version": "1.1.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "root": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages"
+    }
+  ]
+}

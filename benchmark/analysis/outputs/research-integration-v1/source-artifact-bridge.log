@@ -1,0 +1,12 @@
+{
+  "integration_source_commit": "e4f284ffd10b854ea1116573235f9733d0a3b46a",
+  "verifier_sha256": "a3cd1432cbe841eb77b809a7de0d7074db90df4ef3cc9b4d508bfeb96ebb956d",
+  "R_source_members_matched": 25,
+  "installed_R_receipt_sha256": "131cde260afb66be8e93c3d5d421e2344ecdc110aabcecf0787196d5dce236ea",
+  "installed_R_embedded_modules": 17,
+  "original_freeze_files_changed": false,
+  "new_clean_installation_claimed": false,
+  "numerical_kernels_changed": false,
+  "performance_equivalence_claimed": false,
+  "native_windows_installation_verified": false
+}

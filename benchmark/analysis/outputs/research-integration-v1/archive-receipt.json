@@ -1,0 +1,9 @@
+{
+  "archive": "research-integration-v1.tar",
+  "sha256": "12546fc293158ff8184c38ccf85a6e620dff293761793689ded64fd9274bc21c",
+  "bytes": 82094080,
+  "verified_files": 371,
+  "manifest_assets": 370,
+  "delivery_source_commit": "256befa698b8b0e0c6cb90322d1f83b82d520bae",
+  "public_release": false
+}
