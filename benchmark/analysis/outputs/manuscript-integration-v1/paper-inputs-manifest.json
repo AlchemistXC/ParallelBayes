@@ -1,0 +1,21 @@
+{
+  "scope": "portable paper inputs only; no experimental reproduction claim",
+  "source_commit": "6d9029e5e1b979e8d596cfd8f722fbaf7007c8c9",
+  "source_worktree_dirty": false,
+  "main": "manuscript/software/软件与基准研究.tex",
+  "files": {
+    "README.md": "0ebe69a73c5efd72bd1d56b890d050eae3d174d25d2d8be33404071314d88299",
+    "benchmark/analysis/outputs/windows-native-v1/speed-ratios.pdf": "e127cb235bad3501db7e2c3c9d618cbabfaf343957a89d8bd2876d9a6962f72c",
+    "figures/software/architecture-current.pdf": "409fc7d454eb041d5fe830419332e47a5d97105cacb580a58efc06a16e48edd3",
+    "figures/software/cpu-mechanism.pdf": "79eb08d53e2a73adf5786bc2e40437ce9c55519bb8e34ffd40f30963e317a334",
+    "figures/software/error-cost.pdf": "f75c7a41e805cf1e1b003880714cf09cd204026ec29c99ab2c22c0c22cc1d8f4",
+    "figures/software/methods.pdf": "f1b0987c1d2313f19d2b11a90a6637dac73e0c63c28a955b99c08d189f2f3fdf",
+    "figures/software/paired-costs.pdf": "ab5482eabbb404545237568bd46324da62a697d8d380d0e049c4ecf579753c35",
+    "manuscript/software/completion-companion.generated.tex": "e20cca0f955659023c3d459725eb89003aef59f9e58a2b2f67e853419c8573cf",
+    "manuscript/software/intake.generated.tex": "1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa",
+    "manuscript/software/results.generated.tex": "a66a52d21d676507c17a4e2078aa40b972eb6e88333c7a818e8ff0c1ecfcf247",
+    "manuscript/software/revision.generated.tex": "fa5ca73174ff6531081978a65da3076677dc37d9d11cca8afe99a1eaf97fb1c8",
+    "manuscript/software/windows-native.generated.tex": "c08461514675226eed22bcaaaa7c0f615bba90f5393a35dc7ae193c35820ac42",
+    "manuscript/software/软件与基准研究.tex": "4097c2d15ad52c934b399c92d91a36dc7111c190c08a1e92d6e41e9369db6956"
+  }
+}

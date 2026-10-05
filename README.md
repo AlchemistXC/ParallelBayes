@@ -32,7 +32,7 @@ Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-IN
 - 40组历史随机输入的版本对照接受事件零失配；不据此宣称0.1.0/0.1.1性能等价。
 - 独立Python环境、迁移目录及完整归档重建通过；仍共享同一Mac、R库和编译器，不声称外部团队或异构平台已复现。
 
-阅读[CPU与Windows扩展论文PDF](output/software-paper/软件与基准研究-收尾修订.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。当前21页PDF已编译，包含Windows实测、回传复核及新诊断/工作量伴随分析；[原20页回传稿](output/software-paper/软件与基准研究.pdf)保留。历史CPU稿保留于Git历史和CPU复现Release。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
+阅读[当前23页整合稿PDF](output/software-paper/软件与基准研究-整合修订.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。当前23页稿已统一能力、跨系统核验和新成本方法边界，并完成[独立输入搬移构建](docs/MANUSCRIPT-INTEGRATION.md)；[旧21页稿](output/software-paper/软件与基准研究-收尾修订.pdf)及[原20页回传稿](output/software-paper/软件与基准研究.pdf)保留。正式推断与最终投稿稿仍未完成。历史CPU稿保留于Git历史和CPU复现Release。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
 
 ## 原始证据与复现
 

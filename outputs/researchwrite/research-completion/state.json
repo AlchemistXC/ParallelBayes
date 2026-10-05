@@ -12,7 +12,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Windows executes F2 from original frozen inputs using CODEX-PROMPT-F2-RESUME. Mac continues batch recovery/queue and analysis integration. Preserve two interrupted max-NUTS attempts (sole retry exhausted), unknown costs and 14 unstarted tasks. Formal Windows cohort/resources and maximum-job validation still required.",
+  "next_recommended_action": "Windows executes F2 from original frozen inputs, then CODEX-PROMPT-F3-RUNTIME for native cohort/resources/recovery and maximum tasks. Mac continues formal cache-probe/batch cost policy and release preparation. Mac batch is 14 completed plus max-NUTS infrastructure interruption with unknown full cost; no third attempt. Formal inference remains unfrozen.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -723,5 +723,17 @@
     "report": "docs/FORMAL-COST-POLICY.md",
     "cached_probe_assignment_frozen": false,
     "batch_cost_policy_complete": false
+  },
+  "integrated_manuscript": {
+    "source_commit": "6d9029e5e1b979e8d596cfd8f722fbaf7007c8c9",
+    "pages": 23,
+    "current_evidence_integrated": true,
+    "source_inputs": 13,
+    "relocated_text_and_pixel_equal_pages": 23,
+    "numerical_frozen_files_unchanged": 79,
+    "new_independent_repetitions": 0,
+    "formal_inference_complete": false,
+    "submission_final": false,
+    "report": "docs/MANUSCRIPT-INTEGRATION.md"
   }
 }

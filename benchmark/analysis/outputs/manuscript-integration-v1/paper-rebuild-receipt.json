@@ -1,0 +1,13 @@
+{
+  "source_commit": "6d9029e5e1b979e8d596cfd8f722fbaf7007c8c9",
+  "scope": "paper input relocation on same Mac and cached Tectonic; not independent raw-result reproduction",
+  "input_files_verified": 13,
+  "archive_members_verified": 14,
+  "pages": 23,
+  "identical_text_pages": 23,
+  "identical_72dpi_pixel_pages": 23,
+  "compiler": "Tectonic 0.17.0",
+  "pdf_sha256": "e66cd300a7044365b346772a859e9b5c67edc686e8c55a215cff1b6e1e7b2f4b",
+  "relocated_pdf_sha256": "03d920ae04e6eb9f17107672f6be7557ec5c539803ccb064312edbea142648e4",
+  "final_pass_warning_lines": []
+}

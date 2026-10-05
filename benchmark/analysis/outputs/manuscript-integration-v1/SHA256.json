@@ -1,0 +1,13 @@
+{
+  "compile-final.json": "c59c09b065f90d779a5bbf84e462facfa45a6b6f08ebfcd9f50811e481141565",
+  "compile-relocated.json": "a51e2402f9a87ffebe471392a3b964d283134c69367a65989d839c87ea33819b",
+  "compile-tectonic.json": "84c9d4621462e84611365a59b8ab07d15575f45015a4d9767876f024d8ff8cdd",
+  "figure-collision-audit.json": "7d9d5fa5a0ad374c028aeffa529760fd60ee2f5abe08dfa9d85c555e6f6f1c63",
+  "figure-source-audit-final.json": "8ff8e2b12aa1152f9da2d2164e1aef68951e9672e4b9e2aa97c4e485f6a946bc",
+  "figure-text-audit.json": "9e976b8013b4152468a612b2d9fb509d8aa7496d66652d4d820a74d8e62cd009",
+  "paper-inputs-archive.json": "547781ca1d2a20413adb7f71822119ef40f3b220bef90414c6b27a7fdd2a620f",
+  "paper-inputs-manifest.json": "469f61dc10a040d7575d3cff025d4b2ac91497ded89b9df314604d0f7ba1326c",
+  "paper-rebuild-receipt.json": "46507c60b7bb90da982bd066e42c9ca39e6970648a6b9c1cc998fd272c861138",
+  "source-verification.json": "6c39d86efbda6f9d3e55e43742882d11ef61e957c1b59c0e2024831b4ce8608a",
+  "texlive-missing-package.log": "1943114ecb29926c8ea54936bcbb003986b806cecb3cd32433717e4820fae827"
+}
