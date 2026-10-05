@@ -1,0 +1,46 @@
+{
+  "confidence_intervals_created": 0,
+  "independent_repetitions_added": 0,
+  "original_inputs": 1,
+  "pairs": [
+    {
+      "confidence_interval": null,
+      "kernel": "rwm",
+      "sequential_over_parallel": 0.9458645832589664
+    },
+    {
+      "confidence_interval": null,
+      "kernel": "mala",
+      "sequential_over_parallel": 0.07455238158757617
+    }
+  ],
+  "protocol_sha256": "b425179ac5e91fb078f8afd6ced86d04301cbf5a02bccdd2cdf9c75f689a5c75",
+  "resampling_plan_created": false,
+  "scope": "Single reused technical input; prepared-call medians and descriptive ratios, not repeat-level inference or a general speed result",
+  "workflows": {
+    "cpu-mala-quasi_deer": {
+      "cached_seconds": 93.5357973750015,
+      "known_executor_seconds": 373.6526646250022,
+      "measurement_available": true,
+      "probe_id": "3406c3dfcafd4a39b14d0a1a"
+    },
+    "cpu-mala-sequential": {
+      "cached_seconds": 6.973316457999317,
+      "known_executor_seconds": 28.26888033400064,
+      "measurement_available": true,
+      "probe_id": "b28cb970d5759a8c5454d3af"
+    },
+    "cpu-rwm-online_picard": {
+      "cached_seconds": 1.9988593329999276,
+      "known_executor_seconds": 8.040455873999235,
+      "measurement_available": true,
+      "probe_id": "b0aee368e0e53d81dbfee415"
+    },
+    "cpu-rwm-sequential": {
+      "cached_seconds": 1.890650250001272,
+      "known_executor_seconds": 7.578353375998631,
+      "measurement_available": true,
+      "probe_id": "356bad6f11fbf369012b6fda"
+    }
+  }
+}

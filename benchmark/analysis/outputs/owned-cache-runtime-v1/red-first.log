@@ -1,0 +1,29 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_available_measurement_remains_nonposterior_and_resumes_without_execution _
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-24/test_available_measurement_rem0')
+
+    def test_available_measurement_remains_nonposterior_and_resumes_without_execution(tmp_path):
+        from formal_coordinator import TaskCoordinator
+        from formal_runtime import file_hash
+        worker=tmp_path/'worker.py'
+        worker.write_text('''import json,sys
+    from pathlib import Path
+    out=Path(sys.argv[2])
+    (out/'observations.bin').write_bytes(b'four-measurements-not-posterior')
+    (out/'worker-result.json').write_text(json.dumps(dict(status='completed',artifact_kind='cache_measurement',measurement_available=True,samples_eligible=False)))
+    ''')
+        task=dict(id='measurement',protocol_sha256='unit-measurement',artifact_kind='cache_measurement')
+        c=TaskCoordinator(tmp_path/'shared.lock');out=tmp_path/'task'
+        result=c.run(task,{},worker,out,1024,2**30)
+>       assert result['status']=='completed'
+E       AssertionError: assert 'interrupted' == 'completed'
+E         
+E         - completed
+E         + interrupted
+
+tests/external/test_measurement_runtime.py:25: AssertionError
+=========================== short test summary info ============================
+FAILED tests/external/test_measurement_runtime.py::test_available_measurement_remains_nonposterior_and_resumes_without_execution
+1 failed in 0.86s

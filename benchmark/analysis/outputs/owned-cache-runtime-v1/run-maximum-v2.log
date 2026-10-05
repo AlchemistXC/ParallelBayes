@@ -1,0 +1,20 @@
+{"starting": 1, "total": 4, "model": "G2", "workflow": "cpu-rwm-sequential"}
+{"starting": 2, "total": 4, "model": "G2", "workflow": "cpu-mala-sequential"}
+{"starting": 3, "total": 4, "model": "G2", "workflow": "cpu-rwm-online_picard"}
+{"starting": 4, "total": 4, "model": "G2", "workflow": "cpu-mala-quasi_deer"}
+Traceback (most recent call last):
+  File "/Users/haku/.codex/worktrees/measurement-runtime/ParallelBayes/scripts/completion/validate_owned_cache.py", line 145, in <module>
+    args=vars(parser.parse_args());action=args.pop('action');print(json.dumps(globals()[action](**args),indent=2),flush=True)
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/measurement-runtime/ParallelBayes/scripts/completion/validate_owned_cache.py", line 99, in run
+    for model in p['groups'][0]['models']:stats(allocation,p['tasks'],model,reports,output=analysis/model)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/measurement-runtime/ParallelBayes/scripts/completion/validate_cache_execution.py", line 34, in stats
+    plan=create_cache_plan(allocation,tasks,model) if stored is None else load_plan(stored/'resampling')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/measurement-runtime/ParallelBayes/scripts/completion/cache_probe_analysis.py", line 25, in create_cache_plan
+    return create_plan(POLICY+'::'+allocation['allocation_sha256'],model,ids)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/measurement-runtime/ParallelBayes/scripts/completion/formal_uncertainty.py", line 63, in create_plan
+    raise ValueError('At least two unique string repetition IDs required')
+ValueError: At least two unique string repetition IDs required

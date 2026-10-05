@@ -1,0 +1,12 @@
+{
+  "maximum-v2": {
+    "measurement_available": 4,
+    "newly_executed": 0,
+    "task_assets_unchanged": 120
+  },
+  "short-v2": {
+    "measurement_available": 16,
+    "newly_executed": 0,
+    "task_assets_unchanged": 480
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "verified_manifest_assets": 154,
+  "probe_artifacts": 4,
+  "outer_calls_verified": 8,
+  "runtime_seconds_rebuilt": 457.4666421660004,
+  "actual_input_bindings_verified": 4,
+  "saved_numerical_records": 16,
+  "saved_audits_passed": 16,
+  "saved_acceptance_mismatches": 0,
+  "saved_max_abs_path_error": 6.012670361599248e-10,
+  "singleton_companion_rebuilt": true,
+  "new_executor_calls": 0,
+  "new_independent_audits": 0,
+  "samples_eligible": 0,
+  "formal_inference_complete": false,
+  "native_Windows_validated": false
+}

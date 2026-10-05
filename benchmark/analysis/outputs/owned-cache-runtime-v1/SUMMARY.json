@@ -1,0 +1,64 @@
+{
+  "profiles": {
+    "short-v2": {
+      "identity": "owned-cache-runtime-mac-short-v2",
+      "protocol_sha256": "efa3922e5657e24d961ab15adcd74386d52170ec978a857793c44d13596bbc6e",
+      "source_commit": "87007f8616919c9b300b6570bc7cee7c21aef544",
+      "source_files": 87,
+      "probe_tasks": 16,
+      "measurement_available": 16,
+      "samples_eligible": 0,
+      "executor_calls": 64,
+      "numerical_audits_passed": 64,
+      "acceptance_mismatches": 0,
+      "max_abs_path_error": 2.220446049250313e-15,
+      "known_executor_seconds": 4.386924168989935,
+      "initial_outer_invocation_seconds": 18.032572585001617,
+      "later_verification_seconds": 0.11687012599941227,
+      "initial_driver_loop_wall_seconds": 18.152109000000564,
+      "peak_sampled_tree_rss_bytes": 361267200,
+      "resumed_new_executions": 0,
+      "reused_original_inputs": 4,
+      "new_independent_statistical_repetitions": 0,
+      "formal_inference_complete": false
+    },
+    "maximum-v2": {
+      "identity": "owned-cache-runtime-mac-maximum-v2",
+      "protocol_sha256": "b425179ac5e91fb078f8afd6ced86d04301cbf5a02bccdd2cdf9c75f689a5c75",
+      "source_commit": "87007f8616919c9b300b6570bc7cee7c21aef544",
+      "source_files": 86,
+      "probe_tasks": 4,
+      "measurement_available": 4,
+      "samples_eligible": 0,
+      "executor_calls": 16,
+      "numerical_audits_passed": 16,
+      "acceptance_mismatches": 0,
+      "max_abs_path_error": 6.012670361599248e-10,
+      "known_executor_seconds": 417.5403542090007,
+      "initial_outer_invocation_seconds": 457.6915535829994,
+      "later_verification_seconds": 0.29801287400005094,
+      "initial_driver_loop_wall_seconds": 458.4705881659993,
+      "peak_sampled_tree_rss_bytes": 681967616,
+      "resumed_new_executions": 0,
+      "reused_original_inputs": 1,
+      "new_independent_statistical_repetitions": 0,
+      "formal_inference_complete": false
+    }
+  },
+  "unique_new_behavior_checks": 9,
+  "affected_existing_checks": 17,
+  "runtime_source_commit": "87007f8616919c9b300b6570bc7cee7c21aef544",
+  "archive_analysis_source_commit": "d6b81b39f47e5c522a0825211c94fd11984d586c",
+  "old_worktrees_preserved": true,
+  "posterior_measurement_roles_separated": true,
+  "Windows_validated": false,
+  "interpretation": "Technical lifecycle and maximum-MH-shape evidence; not formal acceleration, repeated-error or convergence evidence",
+  "raw_costs_are_nested_not_additive": true,
+  "errors_preserved": [
+    "short-v1 prelaunch positional-argument error; no worker launched",
+    "maximum-v2 post-sealing repeat-analysis error; singleton companion generated without sampling"
+  ],
+  "warnings_preserved": [
+    "NumPy slogdet warnings during maximum-model reconstruction"
+  ]
+}

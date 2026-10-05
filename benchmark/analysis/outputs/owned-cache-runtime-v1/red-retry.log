@@ -1,0 +1,23 @@
+.....F                                                                   [100%]
+=================================== FAILURES ===================================
+___ test_interrupted_measurement_is_preserved_without_retrying_warm_replays ____
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-26/test_interrupted_measurement_i0')
+
+    def test_interrupted_measurement_is_preserved_without_retrying_warm_replays(tmp_path):
+        from formal_coordinator import TaskCoordinator
+        from formal_recovery import RecoveryConflict
+        from formal_runtime import file_hash
+        worker=tmp_path/'exit.py';worker.write_text('import sys;sys.exit(7)')
+        c=TaskCoordinator(tmp_path/'lock');out=tmp_path/'original'
+        result=c.run(dict(id='interrupted',protocol_sha256='unit',artifact_kind='cache_measurement'),{},worker,out,1024,2**30)
+        assert result['status']=='interrupted' and not result['measurement_available']
+        before={str(p.relative_to(out)):file_hash(p) for p in out.rglob('*') if p.is_file()}
+>       with pytest.raises(RecoveryConflict,match='measurement.*retr'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'formal_recovery.RecoveryConflict'>
+
+tests/external/test_measurement_runtime.py:72: Failed
+=========================== short test summary info ============================
+FAILED tests/external/test_measurement_runtime.py::test_interrupted_measurement_is_preserved_without_retrying_warm_replays
+1 failed, 5 passed in 0.73s

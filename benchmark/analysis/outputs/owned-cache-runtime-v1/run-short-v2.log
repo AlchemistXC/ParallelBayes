@@ -1,0 +1,30 @@
+{"starting": 1, "total": 16, "model": "L1", "workflow": "cpu-mala-sequential"}
+{"starting": 2, "total": 16, "model": "G1", "workflow": "cpu-rwm-sequential"}
+{"starting": 3, "total": 16, "model": "L1", "workflow": "cpu-mala-sequential"}
+{"starting": 4, "total": 16, "model": "L1", "workflow": "cpu-rwm-online_picard"}
+{"starting": 5, "total": 16, "model": "L1", "workflow": "cpu-rwm-sequential"}
+{"starting": 6, "total": 16, "model": "G1", "workflow": "cpu-mala-sequential"}
+{"starting": 7, "total": 16, "model": "L1", "workflow": "cpu-mala-quasi_deer"}
+{"starting": 8, "total": 16, "model": "G1", "workflow": "cpu-mala-quasi_deer"}
+{"starting": 9, "total": 16, "model": "G1", "workflow": "cpu-rwm-online_picard"}
+{"starting": 10, "total": 16, "model": "G1", "workflow": "cpu-mala-quasi_deer"}
+{"starting": 11, "total": 16, "model": "L1", "workflow": "cpu-rwm-online_picard"}
+{"starting": 12, "total": 16, "model": "G1", "workflow": "cpu-rwm-online_picard"}
+{"starting": 13, "total": 16, "model": "L1", "workflow": "cpu-mala-quasi_deer"}
+{"starting": 14, "total": 16, "model": "G1", "workflow": "cpu-rwm-sequential"}
+{"starting": 15, "total": 16, "model": "L1", "workflow": "cpu-rwm-sequential"}
+{"starting": 16, "total": 16, "model": "G1", "workflow": "cpu-mala-sequential"}
+{
+  "identity": "owned-cache-runtime-mac-short-v2",
+  "protocol_sha256": "efa3922e5657e24d961ab15adcd74386d52170ec978a857793c44d13596bbc6e",
+  "source_commit": "87007f8616919c9b300b6570bc7cee7c21aef544",
+  "newly_executed": 16,
+  "probes": 16,
+  "available": 16,
+  "samples_eligible": 0,
+  "independent_statistical_repetitions_added": 0,
+  "driver_loop_wall_seconds": 18.152109000000564,
+  "nested_costs_not_additive": true,
+  "formal_inference_complete": false,
+  "native_Windows_validated": false
+}

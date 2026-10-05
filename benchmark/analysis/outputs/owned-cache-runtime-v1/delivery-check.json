@@ -1,0 +1,20 @@
+{
+  "protocol_copies_exact": [
+    {
+      "path": "benchmark/protocols/owned-cache-runtime-mac-short-v1.json",
+      "sha256": "3bc06f5dbde338d0c5b9af436d9ee3284792359176bc7854d8841f8251316e96"
+    },
+    {
+      "path": "benchmark/protocols/owned-cache-runtime-mac-short-v2.json",
+      "sha256": "094471c5864c71ead187fa51aa695ebee9f32155f1cf8757c2cec20ad23e6827"
+    },
+    {
+      "path": "benchmark/protocols/owned-cache-runtime-mac-maximum-v2.json",
+      "sha256": "c818744689db589c36adce7c26728740ac15faaac033ef08c67c844999b96eeb"
+    }
+  ],
+  "package_numerical_source_unchanged_from": "52fdfd0446768033ffd975bc52ea8036c420880d",
+  "current_link_targets_exist": true,
+  "archive_sha256": "e616b20de7ebe332d685a0ad8f835db7918e8c46285a54b7b027ef9177f790b0",
+  "new_mcmc_executions_in_packaging": 0
+}

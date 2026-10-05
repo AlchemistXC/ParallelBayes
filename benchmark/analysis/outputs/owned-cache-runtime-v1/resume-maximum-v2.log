@@ -1,0 +1,18 @@
+{"starting": 1, "total": 4, "model": "G2", "workflow": "cpu-rwm-sequential"}
+{"starting": 2, "total": 4, "model": "G2", "workflow": "cpu-mala-sequential"}
+{"starting": 3, "total": 4, "model": "G2", "workflow": "cpu-rwm-online_picard"}
+{"starting": 4, "total": 4, "model": "G2", "workflow": "cpu-mala-quasi_deer"}
+{
+  "identity": "owned-cache-runtime-mac-maximum-v2",
+  "protocol_sha256": "b425179ac5e91fb078f8afd6ced86d04301cbf5a02bccdd2cdf9c75f689a5c75",
+  "source_commit": "87007f8616919c9b300b6570bc7cee7c21aef544",
+  "newly_executed": 0,
+  "probes": 4,
+  "available": 4,
+  "samples_eligible": 0,
+  "independent_statistical_repetitions_added": 0,
+  "driver_loop_wall_seconds": 1.1818996660003904,
+  "nested_costs_not_additive": true,
+  "formal_inference_complete": false,
+  "native_Windows_validated": false
+}

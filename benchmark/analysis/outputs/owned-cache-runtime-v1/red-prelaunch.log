@@ -1,0 +1,44 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_unknown_artifact_kind_is_rejected_before_registering_a_phantom_process __
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-29/test_unknown_artifact_kind_is_0')
+
+    def test_unknown_artifact_kind_is_rejected_before_registering_a_phantom_process(tmp_path):
+        from formal_coordinator import TaskCoordinator
+        worker=tmp_path/'worker.py'
+        worker.write_text('import json,sys\nfrom pathlib import Path\n(Path(sys.argv[2])/"worker-result.json").write_text(json.dumps(dict(status="completed",samples_eligible=True)))')
+        c=TaskCoordinator(tmp_path/'lock');out=tmp_path/'out'
+        task=dict(id='input-validation',protocol_sha256='unit',artifact_kind='unknown')
+        with pytest.raises(ValueError,match='artifact kind'):
+            c.run(task,{},worker,out,1024,2**30)
+        assert not out.exists()
+        task['artifact_kind']='posterior'
+>       assert c.run(task,{},worker,out,1024,2**30)['status']=='completed'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/external/test_measurement_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/completion/formal_coordinator.py:215: in run
+    self._reconcile(db)
+scripts/completion/formal_coordinator.py:154: in _reconcile
+    self._settle(db,key,self._load(db,key))
+scripts/completion/formal_coordinator.py:140: in _settle
+    observed=self._observe(record,attempt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <formal_coordinator.TaskCoordinator object at 0x10756ab10>
+record = {'attempts': [{'lifecycle': 'registered', 'output': '/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-o...te/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-29/test_unknown_artifact_kind_is_0/worker.py'}
+attempt = {'lifecycle': 'registered', 'output': '/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-29/test_unknown_artifact_kind_is_0/out'}
+
+    def _observe(self,record,attempt):
+        out=Path(attempt['output']);receipt=out/'attempt-0001/process.json'
+>       if not receipt.is_file():raise CoordinatorConflict('No process receipt for registered task; group absence is unknown')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       formal_coordinator.CoordinatorConflict: No process receipt for registered task; group absence is unknown
+
+scripts/completion/formal_coordinator.py:118: CoordinatorConflict
+=========================== short test summary info ============================
+FAILED tests/external/test_measurement_runtime.py::test_unknown_artifact_kind_is_rejected_before_registering_a_phantom_process
+1 failed, 8 deselected in 0.26s

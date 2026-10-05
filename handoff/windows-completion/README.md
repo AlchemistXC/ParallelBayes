@@ -1,6 +1,6 @@
 # Windows 研究收尾入口
 
-2026-10-05。当前开发分支 `codex/windows-return-audit`；原 `windows-native-dev` 的首轮512项是已接收的历史证据。只使用原生 Windows，不重启第一次移植，也不覆盖原协议或环境。
+2026-10-06。Windows已接收研究证据基线为 `codex/windows-return-audit`；Mac后继测量运行器位于 `codex/measurement-runtime`，包安装候选位于 `codex/release-candidate-0.2`，三者尚未合为最终发布；原 `windows-native-dev` 的首轮512项是已接收的历史证据。只使用原生 Windows，不重启第一次移植，也不覆盖原协议或环境。
 
 **第二轮`ced54ef`已接收。现在只需按[F2原始输入续跑提示词](CODEX-PROMPT-F2-RESUME.md)完成192工作流机制pilot。** 原文件已补入现有草稿，分析器已修复。F1/F4、九目标CPU NUTS和CPU/CUDA MH就绪检查已完成，无需再次运行；Mac跨系统严格变换差异见[接收报告](../../docs/WINDOWS-ROUND2-INTAKE.md)。F2封存后，再交给Windows Codex[原生运行器与最大任务提示词](CODEX-PROMPT-F3-RUNTIME.md)，实施尚缺的平台运行保护与有限真实批次。两个提示词按顺序执行，不同时启动基准。该后继提示词要求先开发和实测，不表示Windows运行器已经实现。
 
@@ -24,3 +24,5 @@ Mac后续计时验证：`docs/MEASURED-WORKFLOW.md`记录独立普通子进程�
 Mac后继：`docs/CACHED-AND-RECOVERY-COSTS.md`给出固定设备输入的原MH执行器计时，以及记录run/retry/拒绝/零重算调用的外层账本。科学源码和原协议未改；`MeasuredCoordinator`依赖当前仅Mac验收的TaskCoordinator，不能直接把Windows调用标为通过。Windows需原生进程/恢复验证及最大任务实测。MALA exit7工作程序为明确人工故障夹具，不得用于正式研究；缓存重放不增加独立统计n。
 
 Mac批次后继：[最大形状/搬移归档报告](../../docs/BATCH-MAXIMUM-VALIDATION.md)14项合格，最大NUTS原调用及唯一重试中断保留，未做第三次尝试；不能替代Windows验收。
+
+Mac 测量任务的有限原生管理验收见 [OWNED-CACHE-RUNTIME](../../docs/OWNED-CACHE-RUNTIME.md)。F3 提示词已纳入产物资格和独立的24项缓存技术探测；不修改正在运行的 Windows 协议。顺序仍为 F2 续跑封存 → F3 原生管理/有限技术批次 → [独立候选安装](CODEX-PROMPT-PACKAGE.md)。最后一项使用候选分支自己的安装材料，不能假定本分支已合并候选源码。

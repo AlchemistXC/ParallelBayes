@@ -1,0 +1,11 @@
+{
+  "archive": "owned-cache-runtime-v1.tar",
+  "sha256": "e616b20de7ebe332d685a0ad8f835db7918e8c46285a54b7b027ef9177f790b0",
+  "bytes": 382310400,
+  "verified_regular_files": 808,
+  "manifest_assets": 807,
+  "source_commit": "d6b81b39f47e5c522a0825211c94fd11984d586c",
+  "execution_source_commit": "87007f8616919c9b300b6570bc7cee7c21aef544",
+  "public_release": false,
+  "registry_records_verified": 20
+}

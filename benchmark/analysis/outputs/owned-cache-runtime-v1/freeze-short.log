@@ -1,0 +1,7 @@
+{
+  "identity": "owned-cache-runtime-mac-short-v1",
+  "protocol_sha256": "2e6cc1c248ac4514888982e92dc4a14139871820605d9cddb8a907f459de9833",
+  "probes": 16,
+  "source_commit": "945ba8c2e97a9ab4e29b0922f3f0fd3af4e05885",
+  "new_independent_inputs": 0
+}

@@ -1,0 +1,7 @@
+{
+  "identity": "owned-cache-runtime-mac-maximum-v2",
+  "protocol_sha256": "b425179ac5e91fb078f8afd6ced86d04301cbf5a02bccdd2cdf9c75f689a5c75",
+  "probes": 4,
+  "source_commit": "87007f8616919c9b300b6570bc7cee7c21aef544",
+  "new_independent_inputs": 0
+}

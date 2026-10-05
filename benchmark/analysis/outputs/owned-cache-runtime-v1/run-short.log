@@ -1,0 +1,9 @@
+{"starting": 1, "total": 16, "model": "L1", "workflow": "cpu-mala-quasi_deer"}
+Traceback (most recent call last):
+  File "/Users/haku/.codex/worktrees/measurement-runtime/ParallelBayes/scripts/completion/validate_owned_cache.py", line 145, in <module>
+    args=vars(parser.parse_args());action=args.pop('action');print(json.dumps(globals()[action](**args),indent=2),flush=True)
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/measurement-runtime/ParallelBayes/scripts/completion/validate_owned_cache.py", line 77, in run
+    result=c.run(task,dict(capsule=capsule,capsule_sha256=digest,probe=probe,inputs=str(bundle/'inputs')),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MeasuredCoordinator.run() takes 1 positional argument but 7 were given

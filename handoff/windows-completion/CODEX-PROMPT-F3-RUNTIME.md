@@ -2,18 +2,18 @@
 
 请在F2机制pilot已经封存后继续ParallelBayes的F3前置工程。既有用户授权包括原生Windows11/AMD CPU/RTX5080开发与实验；不使用WSL2。此次目标是使Windows能安全、可恢复地运行并审计正式格式的CPU/CUDA任务，完成有限技术验收；**不启动尚未冻结的41,472项正式网格**。
 
-先读AGENTS.md、docs/RESEARCH-COMPLETION-PLAN.md、docs/F3-FORMAL-DESIGN-DRAFT.md、docs/BATCH-MAXIMUM-VALIDATION.md及docs/FORMAL-COORDINATOR.md。F2如果仍在运行，不切换它的源码或与它同时进行性能测量；可用独立worktree做不占用实验设备的代码审查和测试设计。F2输入问题已由CODEX-PROMPT-F2-RESUME解决；F1/F4、CPU NUTS及MH就绪任务不重跑。
+先读AGENTS.md、docs/RESEARCH-COMPLETION-PLAN.md、docs/F3-FORMAL-DESIGN-DRAFT.md、docs/BATCH-MAXIMUM-VALIDATION.md及docs/FORMAL-COORDINATOR.md、docs/OWNED-CACHE-RUNTIME.md。F2如果仍在运行，不切换它的源码或与它同时进行性能测量；可用独立worktree做不占用实验设备的代码审查和测试设计。F2输入问题已由CODEX-PROMPT-F2-RESUME解决；F1/F4、CPU NUTS及MH就绪任务不重跑。
 
 ## 源码与现有边界
 
-从最新origin/codex/windows-return-audit建立独立 `codex/windows-runtime-validation` 开发分支；保留Windows机制分支及所有原始结果，必要修订通过明确的提交整合。记录起始HEAD和未提交状态，不能切换正在运行的工作目录。
+先核对远端 `codex/measurement-runtime` 的来源与差异；它后继于 `codex/windows-return-audit` 的 `52fdfd0`，包含 Mac 测量资格分离及实际技术验收。从已核对的该分支建立独立 `codex/windows-runtime-validation` 开发分支；如果 Windows 已开始本阶段，在自己的开发分支审查整合必要改动，不重置工作树、正在运行的源码或已冻结协议。保留Windows机制分支及所有原始结果，必要修订通过明确的提交整合。记录起始HEAD和未提交状态，不能切换正在运行的工作目录。
 
 Mac新结果：15个技术任务中14个合格，G2最大NUTS原调用与唯一重试在封存前中断；确认期间发生主机重启但原因未定。4种MH完成64维×4链×16,384保留步，390任务文件零重算、556文件归档搬移及47行R诊断重建通过。这不代表Windows进程保护或最大NUTS通过，也不授权第三次重试旧Mac任务。
 
 关键源码：
 
 - `scripts/completion/batch_contract.py`：完整计划及每任务契约、配置和源身份；与统计方法分离。
-- `formal_runtime.py`、`formal_coordinator.py`、`formal_recovery.py`：已冻结的Mac过程和证据布局。不要直接删掉平台检查伪装支持Windows，也不要修改冻结文件让旧源码哈希失效。
+- `formal_runtime.py`、`formal_coordinator.py`、`formal_recovery.py`：本分支已区分后验与测量资格；旧冻结 Mac 文件仍在原提交。不要直接删掉平台检查伪装支持 Windows；新适配需新源码/协议身份，不能以改哈希方式续跑旧任务。
 - `measured_workflow.py`、`measured_coordinator.py`：普通子进程/独立审计和调用成本边界；现有协调器依赖Mac进程观察。
 - `batch_worker.py`、`continue_batch.py`：只允许既有Mac技术协议。Windows需要新的、可审查的平台适配和协议身份。
 - `formal_evidence.py`、`formal_runtime_analysis.py`、`audit_batch_archive.py`：只读尝试链、原始数组/函数、失败与成本重建；Windows证据如采用新schema，应另写显式适配器，不能假装是Mac的进程组证明。
@@ -38,6 +38,17 @@ Mac新结果：15个技术任务中14个合格，G2最大NUTS原调用与唯一�
 
 在所有权管理尚不可靠时，不启动长任务。保留检查的成功/失败/跳过数、原命令/日志、环境和哈希；“测试返回0”不代替核对终态与全部子进程。
 
+
+### 缓存测量必须使用独立产物资格
+
+Mac 后继完成 20 个测量任务、80 次实际执行/独立审计，接受事件失配 0；恢复保持 600 文件、搬移核验 762 资产。它验证了 `artifact_kind=cache_measurement` 的运行语义：完成对应 `measurement_available=true`，`samples_eligible` 永远 false；失败/中断不产生合格测量。默认 posterior 保留原语义。未知类型在登记前拒绝；不得切换任务类别、把缓存重放计入推断重复，或为凑齐三次成功重放而重试缓存中断。数值核、目标、参考未因此改动。
+
+原生 Windows 必须实际检查相同语义与进程归属，包含产物矛盾拒绝、测量进程阻止竞争后验任务、资源失败及零重算。可参考 `owned_cache_worker.py`、`validate_owned_cache.py`、`audit_owned_cache_archive.py` 和 `test_measurement_runtime.py`；Mac 入口和进程组检查不可直接作为 Windows 验收。
+
+另行冻结一个有限缓存技术伴随协议：使用下述 27 项技术批次的三个模型原输入，在 CPU/CUDA 上各四种 MH 组合，共 24 探测，每探测一次初始加三次准备后执行（最多 96 次调用，失败则保留实际完成数），不含 NUTS。不按主任务是否成功筛掉配置，不新增随机输入。单模型只有一份技术输入，仅给描述性费用，区间留空；Mac 原最大形状驱动的通用汇总曾因单输入报错，Windows 应在冻结前适配只读单输入汇总，不通过补跑凑重复。
+
+这些额外测量独立登记、计时、归档，不能混入主任务免费成本。任何保护/数值失败保留，未完成项保持未完成；共享设备上依次执行，不与主批次争用资源。完整 9,216 探测规划仍不启动。
+
 ## 冻结独立技术协议并运行有限真实批次
 
 相关行为检查通过后，创建新的Windows技术协议，复用已核验的目标与所选核参数/仿射坐标，不改历史协议。技术身份与将来的正式输入命名空间分开。
@@ -52,7 +63,7 @@ Mac新结果：15个技术任务中14个合格，G2最大NUTS原调用与唯一�
 
 每个合格MH任务须完成独立NumPy实际数组重放、原始/无约束输出变换和接受事件检查；失败轨迹隔离。NUTS保留子链实际初值、种子/随机状态、预热、适应过程、发散、完整元数据及R现代诊断，不声称固定MH路径等价。12组同核比较也须核对实际随机数组，不只比较种子。
 
-这里不在每个主任务里隐藏额外缓存重放；若验证缓存计时，单独声明有限的技术重放输入、次数和计时边界，成本不能装作主调用免费。缓存探测分配与批次费用接口现已在docs/FORMAL-MEASUREMENT-DESIGN.md具体化；本阶段仍只做27项技术验收，不执行规划中的9,216缓存探测。后继正式worker不得直接复用只接受Mac有效原任务的cached_cost_worker.py；须在同一实际输入/配置下保留失败入选配置。批次费用可复用batch_cost_ledger.py，但原生Windows锁/中断仍应实际检查，不能把Mac测试当作Windows证据。缓存跨输入统计见docs/CACHE-PROBE-ANALYSIS.md及cache_probe_analysis.py；人工统计检查不替代实际输入/审计回执适配。本次单输入技术批次不生成跨重复区间，也不启动正式缓存网格。后继Mac真实接收验证见docs/CACHE-PROBE-EXECUTION.md：cache_probe_execution.py可作为数值/记录实现参考，当前入口明确只允许Mac技术执行。缓存产物始终samples_eligible=false，不能为了复用旧调度器而改成true；如接入原生调度，区分measurement_available与后验样本资格。完整源码冻结须显式包含cached_execution.py。本机小型同进程测试不代表Windows进程/资源保护通过。
+这里不在每个主任务里隐藏额外缓存重放；若验证缓存计时，单独声明有限的技术重放输入、次数和计时边界，成本不能装作主调用免费。缓存探测分配与批次费用接口现已在docs/FORMAL-MEASUREMENT-DESIGN.md具体化；本阶段只做27项主任务与上面明确的24项独立缓存探测，不执行规划中的9,216缓存探测。后继正式worker不得直接复用只接受Mac有效原任务的cached_cost_worker.py；须在同一实际输入/配置下保留失败入选配置。批次费用可复用batch_cost_ledger.py，但原生Windows锁/中断仍应实际检查，不能把Mac测试当作Windows证据。缓存跨输入统计见docs/CACHE-PROBE-ANALYSIS.md及cache_probe_analysis.py；人工统计检查不替代实际输入/审计回执适配。本次单输入技术批次不生成跨重复区间，也不启动正式缓存网格。后继Mac真实接收验证见docs/CACHE-PROBE-EXECUTION.md：cache_probe_execution.py可作为数值/记录实现参考，当前入口明确只允许Mac技术执行。缓存产物始终samples_eligible=false，不能为了复用旧调度器而改成true；如接入原生调度，区分measurement_available与后验样本资格。完整源码冻结须显式包含cached_execution.py。本机小型同进程测试不代表Windows进程/资源保护通过。
 
 ## 归档到分析及交付
 

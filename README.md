@@ -10,7 +10,9 @@ Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-IN
 
 本机[批次与最大形状验收](docs/BATCH-MAXIMUM-VALIDATION.md)已完成14/15项，最大NUTS中断记录保留；零重算及搬移归档重建通过。最大MH技术验收不替代正式推断研究。 [成本与误差接口](docs/FORMAL-COST-POLICY.md)已补齐失败/未知时间及逐函数配对处理，正式研究尚待Windows运行门槛与协议冻结。
 
-[测量设计v0.2](docs/FORMAL-MEASUREMENT-DESIGN.md)、[缓存配对统计](docs/CACHE-PROBE-ANALYSIS.md)及[真实CPU缓存记录接收](docs/CACHE-PROBE-EXECUTION.md)已完成有限核验；原生调度及Windows验收仍待完成。新增短路径用于技术验证，不是正式性能结果。
+[测量设计v0.2](docs/FORMAL-MEASUREMENT-DESIGN.md)、[缓存配对统计](docs/CACHE-PROBE-ANALYSIS.md)及[真实CPU缓存记录接收](docs/CACHE-PROBE-EXECUTION.md)已完成有限核验；后继 [Mac 测量运行器](docs/OWNED-CACHE-RUNTIME.md)已完成 20 任务/80 执行及 600 文件零重算、762 资产搬移重建；Windows 原生验收仍待完成。技术重放不增加独立重复数。
+
+独立软件安装候选位于 [`codex/release-candidate-0.2`](https://github.com/AlchemistXC/ParallelBayes/tree/codex/release-candidate-0.2)，已完成干净 Mac Python/R 安装与显式集成核验；仍待 Windows 安装验证。当前测量运行器分支未合并其包版本。
 
 本轮已完成[有限参考复用审计](docs/REFERENCE-REUSE.md)、[水井Mac模型/R核验](docs/WELLS-TARGET-VALIDATION.md)和参考伴随分析。[独立调参](docs/F3-TUNING-RESULTS.md)212/216有效、失败保留；[九目标多预算pilot](docs/F3-BUDGET-PILOT-RESULTS.md)323/324满足各自输出标准，1项长路径容差失败已完成[有限定位](docs/BUDGET-PATH-LOCALIZATION.md)，仍保留失败。诊断仍显示H1发散、M1探索不足及稀有事件未判定。正式推断协议、Windows同机比较和统一发布/论文尚未完成。
 
@@ -58,4 +60,4 @@ R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU�
 
 F3成熟基线的新增[Windows CPU NUTS核验提示词](handoff/windows-completion/CODEX-PROMPT-F3-NUTS.md)已就绪。[Mac九目标配对验证](docs/NATIVE-NUTS-READINESS.md)通过样本/预热/RNG字节检查，短链不利诊断保留；Windows同项实测已回传并核验，见第二轮接收报告。这是独立研究CLI，不扩充R包核心的NUTS或GPU支持声明。
 
-已选步长与仿射目标的时间执行组合核验见[SELECTED-MH-READINESS](docs/SELECTED-MH-READINESS.md)：Mac 54工作流/36配对及独立保存数组重放通过，仍有全拒绝链及保留的库警告；Windows CPU/CUDA实测待回传。Windows可接续[已选MH组合提示词](handoff/windows-completion/CODEX-PROMPT-F3-MH.md)，它与CPU NUTS及机制任务分别留证，不是正式推断实验。
+已选步长与仿射目标的时间执行组合核验见[SELECTED-MH-READINESS](docs/SELECTED-MH-READINESS.md)：Mac 54工作流/36配对及独立保存数组重放通过，仍有全拒绝链及保留的库警告；Windows CPU/CUDA实测已回传并经第二轮接收核验。下列已选MH提示词仅作历史入口，无需重复执行；Windows原提示词为[已选MH组合提示词](handoff/windows-completion/CODEX-PROMPT-F3-MH.md)，它与CPU NUTS及机制任务分别留证，不是正式推断实验。
