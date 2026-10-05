@@ -1,0 +1,23 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+____ test_probe_allocation_balances_batches_and_preserves_every_paired_slot ____
+
+    def test_probe_allocation_balances_batches_and_preserves_every_paired_slot():
+        from batch_contract import create_tasks,WORKFLOWS
+>       from formal_measurement_plan import create_measurement_plan,validate_measurement_plan
+E       ModuleNotFoundError: No module named 'formal_measurement_plan'
+
+tests/external/test_formal_measurement_plan.py:12: ModuleNotFoundError
+=============================== warnings summary ===============================
+../../../../Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:475
+  /Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:475: PytestCacheWarning: cache could not write path /Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/.pytest_cache/v/cache/nodeids: [Errno 1] Operation not permitted: '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/.pytest_cache/v/cache/nodeids'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../../../Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:429
+  /Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/_pytest/cacheprovider.py:429: PytestCacheWarning: cache could not write path /Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/.pytest_cache/v/cache/lastfailed: [Errno 1] Operation not permitted: '/Users/haku/.codex/worktrees/windows-evidence-review/ParallelBayes/.pytest_cache/v/cache/lastfailed'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/external/test_formal_measurement_plan.py::test_probe_allocation_balances_batches_and_preserves_every_paired_slot
+1 failed, 2 warnings in 0.06s

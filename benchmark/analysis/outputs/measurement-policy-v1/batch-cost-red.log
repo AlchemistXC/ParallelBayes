@@ -1,0 +1,14 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______ test_planned_batch_work_keeps_failed_pending_and_successful_costs _______
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-6/test_planned_batch_work_keeps_0')
+
+    def test_planned_batch_work_keeps_failed_pending_and_successful_costs(tmp_path):
+>       from batch_cost_ledger import BatchCostLedger,read_batch_costs
+E       ModuleNotFoundError: No module named 'batch_cost_ledger'
+
+tests/external/test_batch_cost_ledger.py:12: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_batch_cost_ledger.py::test_planned_batch_work_keeps_failed_pending_and_successful_costs
+1 failed in 0.02s

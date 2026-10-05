@@ -1,0 +1,127 @@
+{
+  "by_stage": {
+    "archive": {
+      "complete_seconds": 0.008459208000203944,
+      "completed": 1,
+      "failed": 0,
+      "known_seconds": 0.008459208000203944,
+      "not_run": 0,
+      "planned": 1,
+      "unfinished": 0
+    },
+    "input_preparation": {
+      "complete_seconds": 0.07266804199934995,
+      "completed": 1,
+      "failed": 0,
+      "known_seconds": 0.07266804199934995,
+      "not_run": 0,
+      "planned": 1,
+      "unfinished": 0
+    },
+    "transfer": {
+      "complete_seconds": 0.0004040000003442401,
+      "completed": 1,
+      "failed": 0,
+      "known_seconds": 0.0004040000003442401,
+      "not_run": 0,
+      "planned": 1,
+      "unfinished": 0
+    },
+    "verification": {
+      "complete_seconds": 0.0021005420003348263,
+      "completed": 1,
+      "failed": 0,
+      "known_seconds": 0.0021005420003348263,
+      "not_run": 0,
+      "planned": 1,
+      "unfinished": 0
+    }
+  },
+  "complete_seconds": 0.08363179200023296,
+  "finished_operations": 4,
+  "identity": {
+    "executable": "/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+    "host_lock": "/Users/haku/Workspace/ParallelBayes/output/research-completion/host-experiment.lock",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "recorder_source_sha256": "aaa3decf03ad561c23b213c7ba6827095976c46f99147860d0e44c5a67c0f96a",
+    "schema": 1,
+    "scope": "Wall time around one declared operation. Includes that operation and any subprocess waiting it performs; excludes ledger writes, report/reopen/duplicate checks, inter-operation gaps, and external unregistered activity. No per-fit allocation.",
+    "spec": {
+      "design_sha256": "b095d93a84b27ca47f3fe7e53aa21b3741476737744f47aba7c6ae057adf9361",
+      "operations": [
+        {
+          "id": "prepare-retained-input",
+          "stage": "input_preparation"
+        },
+        {
+          "id": "archive",
+          "stage": "archive"
+        },
+        {
+          "id": "local-copy",
+          "stage": "transfer"
+        },
+        {
+          "id": "verify-local-copy",
+          "stage": "verification"
+        }
+      ],
+      "study_identity": "measurement-policy-technical-mac-v1"
+    }
+  },
+  "known_seconds": 0.08363179200023296,
+  "operations": [
+    {
+      "error": null,
+      "id": "prepare-retained-input",
+      "outcome": "completed",
+      "result": {
+        "copied_files": 32,
+        "manifest_sha256": "327f0e89ce711dd6fd84e1c22e2ecdd1fe0ee6c9c61619bc6923e8378e99c4fe",
+        "scope": "Verify existing source hashes and copy retained outputs; no scientific random inputs generated",
+        "source_files_verified": 327
+      },
+      "seconds": 0.07266804199934995,
+      "stage": "input_preparation"
+    },
+    {
+      "error": null,
+      "id": "archive",
+      "outcome": "completed",
+      "result": {
+        "bytes": 296960,
+        "sha256": "74c0db78abd712dc25f46559e31511a9b7e3a27c3db124e62b94e0ec165b04fa"
+      },
+      "seconds": 0.008459208000203944,
+      "stage": "archive"
+    },
+    {
+      "error": null,
+      "id": "local-copy",
+      "outcome": "completed",
+      "result": {
+        "bytes": 296960,
+        "transport": "local filesystem copy only; not network transmission"
+      },
+      "seconds": 0.0004040000003442401,
+      "stage": "transfer"
+    },
+    {
+      "error": null,
+      "id": "verify-local-copy",
+      "outcome": "completed",
+      "result": {
+        "files_verified": 33,
+        "sha256": "74c0db78abd712dc25f46559e31511a9b7e3a27c3db124e62b94e0ec165b04fa"
+      },
+      "seconds": 0.0021005420003348263,
+      "stage": "verification"
+    }
+  ],
+  "per_fit_cost_allocation": null,
+  "planned_operations": 4,
+  "proves_process_termination": false,
+  "statistical_repetitions_added": 0,
+  "unfinished_operations": 0,
+  "unrecorded_operations": 0
+}

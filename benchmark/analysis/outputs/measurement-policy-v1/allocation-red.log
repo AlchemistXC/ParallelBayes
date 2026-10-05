@@ -1,0 +1,12 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+____ test_probe_allocation_balances_batches_and_preserves_every_paired_slot ____
+
+    def test_probe_allocation_balances_batches_and_preserves_every_paired_slot():
+>       from batch_contract import create_tasks,WORKFLOWS
+E       ModuleNotFoundError: No module named 'batch_contract'
+
+output/research-completion/staging/measurement-policy-v1/tests/external/test_formal_measurement_plan.py:11: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED output/research-completion/staging/measurement-policy-v1/tests/external/test_formal_measurement_plan.py::test_probe_allocation_balances_batches_and_preserves_every_paired_slot
+1 failed in 0.05s

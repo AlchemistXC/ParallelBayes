@@ -1,0 +1,12 @@
+{
+  "verified_files": 72,
+  "planned_primary_tasks": 41472,
+  "planned_probes": 9216,
+  "allocation_sha256": "d5dfde9bc094681fa0dc4b0eb5f3f041629ef36a51d99a53a6f3c885ff638da2",
+  "batch_costs_exact": true,
+  "retained_probes_exact": 4,
+  "retained_records_exact": 16,
+  "new_MCMC_fits": 0,
+  "new_timing_measurements": 0,
+  "source_scope": "Retained numerical validity receipts and arrays checked by hash, not a repeated independent NumPy audit"
+}

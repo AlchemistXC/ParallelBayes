@@ -12,7 +12,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Windows executes F2 from original frozen inputs, then CODEX-PROMPT-F3-RUNTIME for native cohort/resources/recovery and maximum tasks. Mac continues formal cache-probe/batch cost policy and release preparation. Mac batch is 14 completed plus max-NUTS infrastructure interruption with unknown full cost; no third attempt. Formal inference remains unfrozen.",
+  "next_recommended_action": "Windows completes F2 from original frozen inputs then native runtime/max-task validation. Mac connects the prespecified cache-probe allocation and batch-cost ledger to a new formal worker and matched analysis after preserving frozen technical sources; final protocol remains unfrozen.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -735,5 +735,23 @@
     "formal_inference_complete": false,
     "submission_final": false,
     "report": "docs/MANUSCRIPT-INTEGRATION.md"
+  },
+  "formal_measurement_design": {
+    "source_commit": "960e983",
+    "audit_commit": "d545247",
+    "planned_primary_tasks": 41472,
+    "planned_cached_probes": 9216,
+    "selected_original_repetitions_per_target": 32,
+    "prepared_replays_per_probe": 3,
+    "planned_executor_calls": 36864,
+    "additional_logical_bytes": 141302956032,
+    "new_tests_passed": 4,
+    "affected_tests_passed": 6,
+    "old_cached_records_reduced": 16,
+    "original_assets_verified": 327,
+    "new_MCMC_fits": 0,
+    "Windows_validated": false,
+    "formal_protocol_frozen": false,
+    "report": "docs/FORMAL-MEASUREMENT-DESIGN.md"
   }
 }

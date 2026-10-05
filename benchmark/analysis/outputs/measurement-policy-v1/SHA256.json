@@ -1,0 +1,17 @@
+{
+  "allocation-green.log": "5b19689a97d618d5cdfce632de67285a8efa3c57100a80350a5bb7ca9e05ae34",
+  "allocation-red-worktree.log": "adfbf07b5cd12930d3c10921fcaa343af165423641612778b00f4e251d688b77",
+  "allocation-red.log": "017a6225af625b8d5be6231e3e7fe83aa46f2394b206a34e0b4d62f4c900e11b",
+  "allocation-summary.json": "f72a0d415d5dc35bfa2c51868ebe1147700b7e270997aeaa4f468f1d761970e5",
+  "archive-receipt.json": "cd6d3a2e941d586ec5ba5596b825d19116321d3ab948ac6a3561ece76a43450d",
+  "batch-cost-green.log": "a71df3ef716cabe43ead70bd8311cda3aeadcb986bea501da0ea9262f31c3925",
+  "batch-cost-red.log": "1b1e94d8f2ed9f289d08bc517ddc1476fcfc7ad30997a70c92555980bbeef8d9",
+  "batch-cost-summary.json": "e029b018bb5c7ed2cdda78182773f0ce6bd7dbffe9fb03a4060cd5502723c6a8",
+  "design.json": "2b198a079762d8aabda82ebf46ca8180783aa913cc6bab484aa6d88046d888ba",
+  "probe-summary-red.log": "2f8287c0e7ecdae09b017131e7913867e3e7db2ba8354ecbfddc5f19b5138f09",
+  "relocated-audit.json": "7bb8f3024a91afa2b9306f95cf0e417fb69931a817396fc07522836885cf5dec",
+  "retained-probe-summary.json": "2f524e204f9b62eafc2a5808ef547e33080acdcec8cd505a336c3dd34e31f79e",
+  "summary.json": "d479e1a51f0ae3e7063af401f7726b5de0d866fdc0bfecfb7880b969cd62de63",
+  "tests-green.log": "098b83deff28dcb153c905d172ce0210982a70b01069731c8e14e777cb247fa4",
+  "tests.xml": "fd29ad42b83fd6ce0fc72598545bb00f15bfd6c7e4acdebeca7e1c426115294f"
+}

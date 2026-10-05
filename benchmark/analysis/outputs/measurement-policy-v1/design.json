@@ -1,0 +1,19 @@
+{
+  "additional_cached_path_and_accept_logical_bytes": 141302956032,
+  "dependency_manifest_sha256": "71db653f47178d4b1ef6c98c3ab10ad626a6f037c8cb32212a6c4762dfb8f011",
+  "executor_calls": 36864,
+  "formal_protocol_frozen": false,
+  "identity": "measurement-policy-technical-mac-v1",
+  "native_Windows_measured": false,
+  "new_MCMC_fits": 0,
+  "planning_only": true,
+  "primary_tasks": 41472,
+  "probes": 9216,
+  "scope": "No new inference; full-grid draft allocation plus local copy/archive/verification of retained cached evidence",
+  "source_commit": "960e983adfb12bb52c8852a738810d9e8754f7a2",
+  "source_files": {
+    "scripts/completion/batch_cost_ledger.py": "aaa3decf03ad561c23b213c7ba6827095976c46f99147860d0e44c5a67c0f96a",
+    "scripts/completion/formal_measurement_plan.py": "69fa441388e09ad37150c5a8938b979ecaa5f19062e84a4d99922c59cbd9e9bc",
+    "scripts/completion/validate_measurement_policy.py": "78c238458a6ca87d99fe7eee5d69c4fa8718f43426190faf875b917823fe660f"
+  }
+}
