@@ -102,6 +102,12 @@ def analyze_task_costs(plan,records,pairs=()):
     for phase in ('ordinary_workflow','research_execution'):
         costs={label:{r:v['phases'][phase]['complete_seconds'] for r,v in rows.items()} for label,rows in records.items()}
         report=analyze_costs(plan,costs,outcomes,pairs,phase)
+        gaps={label:sum(v['outcome']=='valid' and v['phases'][phase]['complete_seconds'] is None for v in rows.values()) for label,rows in records.items()}
+        valid_costs={label:{r:(v['phases'][phase]['complete_seconds'] if v['outcome']=='valid' and not gaps[label] else None)
+            for r,v in rows.items()} for label,rows in records.items()}
+        valid_report=analyze_costs(plan,valid_costs,outcomes,(),phase+'_valid_output_cost_axis')
+        for key,distribution in valid_report['bootstrap_statistics'].items():
+            report['bootstrap_statistics']['valid_output_'+key]=distribution
         for label,row in report['workflows'].items():
             values=list(records[label].values());measurements=[v['phases'][phase] for v in values]
             row['outcome_counts']={k:sum(v['outcome']==k for v in values) for k in OUTCOMES}
@@ -115,6 +121,16 @@ def analyze_task_costs(plan,records,pairs=()):
             row['cost_estimator_condition']='Means/intervals use complete per-task phase totals; total_recorded_seconds also retains known portions of incomplete totals'
             row['failure_rate_definition']='Output-contract failures including numerical, resource and unclassified output failure; interval unavailable while infrastructure/not-run outcomes remain; not posterior convergence'
             row['unknown_time_imputed']=False
+            valid=valid_report['workflows'][label]
+            row['valid_outputs_missing_cost']=gaps[label]
+            row['mean_all_valid_output_seconds']=valid['mean_recorded_seconds']
+            row['valid_output_cost_interval']=valid['confidence_interval']
+            row['valid_output_cost_interval_status']=('unavailable_cost_in_valid_outputs' if gaps[label] else
+                'no_valid_outputs' if row['outcome_counts']['valid']==0 else valid['interval_status'])
+            row['valid_output_cost_conditioning']='All numerically valid outputs, with complete costs for every such output; same four-chain repetition frame as conditional function error'
+            row['mean_successful_seconds_conditioning']='Valid outputs with recorded complete cost only; diagnostic field, not the error-cost axis when any valid output cost is missing'
+            row['valid_output_cost_interval_coverage']='pointwise_conditional_on_valid_output; shared whole-repetition resampling'
+            row['valid_output_cost_interval_diagnostics']={k:v for k,v in valid.items() if k.startswith(('bca_','bootstrap_','resampled_')) or k in ('undefined_bootstrap_replicates','resampling_plan_sha256','minimum_valid_repetitions')}
         reports[phase]=report
     return dict(policy=POLICY,phases=reports,operational_consumption=operation,
         primary_scopes_are_additive=False,attempts_are_statistical_repetitions=False,new_independent_repetitions=0,

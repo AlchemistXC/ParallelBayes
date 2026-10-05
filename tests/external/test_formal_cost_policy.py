@@ -76,3 +76,31 @@ def test_planned_cost_analysis_keeps_failures_unknown_costs_and_joint_valid_pair
     incomplete=dict(a);incomplete.pop('3')
     with pytest.raises(ValueError,match='planned'):
         analyze_task_costs(plan,{'a':incomplete,'b':b},pairs=[('a','b')])
+
+
+def test_error_cost_axis_uses_the_same_valid_outputs_and_is_unavailable_when_one_cost_is_lost():
+    import numpy as np
+    from scipy.stats import bootstrap
+    from formal_cost_policy import summarize_task_costs,analyze_task_costs
+    from formal_uncertainty import create_plan
+    plan=create_plan('cost-axis-fixture','G1',[str(i) for i in range(32)])
+    def record(i,missing=False):
+        name='axis-'+str(i);h=history(name,[('resource_failure' if i<4 else 'valid',float(i+1))])
+        h['task'].update(model='G1',replicate=i)
+        c=call(h,0,None) if missing else call(h,0,float(i+1),0)
+        return summarize_task_costs(h,dict(task=h['task'],original=name),[c],{name+'0':.5*(i+1)})
+    records={'a':{str(i):record(i) for i in range(32)}}
+    report=analyze_task_costs(plan,records)
+    row=report['phases']['research_execution']['workflows']['a']
+    assert row['mean_all_valid_output_seconds']==18.5
+    assert row['valid_outputs_missing_cost']==0 and row['total_recorded_seconds']==528.
+    expected=np.arange(1.,33.);expected[:4]=np.nan
+    oracle=bootstrap((expected,),np.nanmean,vectorized=True,method='BCa',batch=64,n_resamples=9999,rng=np.random.default_rng(plan.rng_seed))
+    assert row['valid_output_cost_interval']['low']==pytest.approx(oracle.confidence_interval.low,rel=2e-12)
+    assert row['valid_output_cost_interval']['high']==pytest.approx(oracle.confidence_interval.high,rel=2e-12)
+    records['a']['10']=record(10,missing=True)
+    missing=analyze_task_costs(plan,records)['phases']['research_execution']['workflows']['a']
+    assert missing['mean_all_valid_output_seconds'] is None
+    assert missing['valid_output_cost_interval'] is None and missing['valid_outputs_missing_cost']==1
+    assert missing['valid_output_cost_interval_status']=='unavailable_cost_in_valid_outputs'
+    assert missing['mean_successful_seconds'] is not None  # labelled recorded-only diagnostic remains available
