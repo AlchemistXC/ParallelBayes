@@ -8,27 +8,27 @@
 \pagestyle{fancy}\fancyhf{}\fancyhead[L]{ParallelBayes：软件与计算实验稿}\fancyfoot[C]{\thepage}
 \newcommand{\E}{\mathbb{E}}
 \newcommand{\R}{\mathbb{R}}
-\title{ParallelBayes：时间并行 MCMC 的可核验实现、CPU基准与原生Windows扩展}
+\title{ParallelBayes：时间并行 MCMC 的可核验实现与成本评估}
 \author{中文研究稿：作者与单位待定}
 \date{2026 年 10 月}
 \begin{document}
 \maketitle
 \begin{abstract}
-时间并行马尔可夫链蒙特卡洛（MCMC）将轨迹递推改写为并行求解问题，但执行加速与可靠推断成本仍须分别评价。本文实现研究软件ParallelBayes，提供Stan与BridgeStan的CPU顺序RWM/MALA入口，并通过R控制接口对明确实现的原生JAX目标组织顺序核、窗口quasi-DEER、Online Picard和BlackJAX NUTS，并保存实际随机输入、数值核验及完整任务记录。在M4 Mac CPU上，冻结的八个目标、两个预算和每组24次独立重复共1920项任务全部完成，最大独立核验路径差为$2.36\times10^{-8}$，接受事件无失配。quasi-DEER与Picard的组中位完整工作流速度比分别为0.072--0.739和0.226--0.814，均未显示组中位加速。较长预算下，NUTS在五个目标上满足预声明函数误差阈值的逐点区间判据，两个MH核各为两个；中心化漏斗、多峰探索和有限参考仍限制结论。另完成64个新生成数据集的320次拟合；审查后解析对照显示，该批数据的解析90\%区间覆盖本身为54/64，并通过配对端点及现代链诊断定位有限采样偏差。小型CPU机制实验与独立环境复现另行登记。贡献是可重放的软件、计算核验和指定CPU条件下的跨模型证据；不声称新采样算法、通用加速或一般正确性证明。
+时间并行马尔可夫链蒙特卡洛（MCMC）可以降低指定轨迹的执行延迟，但这种收益并不直接等于可靠推断加速。本文实现研究软件ParallelBayes，将目标与坐标、转移核、执行器和测量策略分离，保存实际随机数组、独立顺序参考、接受事件及失败记录。软件提供Stan/BridgeStan的CPU顺序入口，以及明确实现目标的JAX和torch时间并行路线。在冻结的M4 Mac CPU实验中，1920项任务通过数值核验；两种时间执行器在全部模型—预算组的缓存执行中位数均未获得加速。在另一独立协议的512项原生Windows CPU/CUDA任务中，RTX 5080上的Picard缓存执行组中位速度比为1.097--5.230，quasi-DEER为0.164--0.505。然而，部分Picard收益伴随低接受率或全部拒绝，且大量短链诊断不良，不能据此认定推断优势。解析SBC配对对照及跨系统重放进一步表明，输入、轨迹、参数变换与诊断的等价要求必须分别核对。结果提供了指定实现和硬件上的执行收益与推断可靠性边界；同机充分预算下的共同精度比较仍未完成，不声称通用加速或新采样算法。
 \end{abstract}
 
-\noindent\textbf{版本说明。}上述摘要和原CPU结果对应冻结的Mac里程碑。
-2026年10月4日新增的原生Windows开发版本及512项独立协议任务见第\ref{sec:windows-native}节；
-该扩展不替换1920项CPU任务、320次SBC拟合、72项机制任务及其历史身份。
+\noindent\textbf{证据范围。}Mac主实验使用归档0.1.0；0.1.1对应后续CPU修订及SBC。
+Windows的0.2.0开发版及512项任务使用独立协议，见第\ref{sec:windows-native}节。
+跨系统伴随核验不增加独立统计重复，也不替换历史结果。本文为研究中稿，待完成的实验不计入结果。
 
 \section{问题与研究范围}
 时间并行 MCMC 的吸引力在于缩短单条指定轨迹的计算延迟。轨迹中的相邻状态存在依赖，因此并行方法通常需要推测多个状态，再修正其一致性。已有工作研究了基于 Newton 类固定点求解的 MCMC 轨迹并行，以及基于增量 Picard 映射的 Metropolis 并行\cite{zoltowski,grazzi}。这些工作提供了算法机制和特定实验中的加速证据；是否能在另一种目标几何、硬件或核验标准下获得完整推断收益，仍须逐项测量。
 
-本研究围绕两个相互关联而不同的问题展开。第一，在核参数和实际随机输入固定时，并行执行能否更快地产生满足规定输出标准的轨迹？第二，允许不同采样核及合理预热后，在两个预先固定预算下，后验函数误差与完整成本如何变化？本研究没有连续扫描预算以估计精确达标时间。前者控制统计效率，后者同时受初始化、混合和数值计算影响。把二者合成一个速度比会使实现优化与推断效果难以区分。
+本研究围绕两个相互关联而不同的问题展开。第一，在核参数和实际随机输入固定时，并行执行能否更快地产生满足规定输出标准的轨迹？第二，允许不同采样核及各自预热后，后验函数误差与工作流成本如何变化？历史CPU实验只评价两个固定预算，Windows首轮则评价两种MH核的执行；二者都没有测得精确达标时间。前者控制统计效率，后者同时受初始化、混合和数值计算影响。把二者合成一个速度比会使实现优化与推断效果难以区分。
 
-软件复用现有建模和推断组件。Stan 为连续参数模型提供语义和约束变换\cite{stan}；BridgeStan 暴露已编译模型的密度及导数\cite{bridgestan}；BlackJAX 提供可组合的 JAX 推断组件\cite{blackjax}。ParallelBayes 的研究对象是这些组件之上的可核对执行与实验协议。当前Stan入口仅支持CPU顺序RWM/MALA，尚未连接CPU时间并行执行器；原生JAX路径须逐模型实现和核验。软件没有提供新建模语言。本版只考察固定维度、连续参数目标；不声称涵盖全部链内并行、多机后验合并或动态 NUTS 时间并行。
+软件复用现有建模和推断组件。Stan 为连续参数模型提供语义和约束变换\cite{stan}；BridgeStan 暴露已编译模型的密度及导数\cite{bridgestan}；BlackJAX 提供可组合的 JAX 推断组件\cite{blackjax}；Pyro 提供基于PyTorch的概率编程组件\cite{pyro}。ParallelBayes 的研究对象是这些组件之上的可核对执行与实验协议。当前Stan入口仅支持CPU顺序RWM/MALA，尚未连接CPU时间并行执行器；原生JAX与torch路径均须逐模型实现和核验。torch后端已在原生Windows CPU/CUDA上取得实测证据，其能力不由安装深度学习框架本身推定。软件没有提供新建模语言。本版只考察固定维度、连续参数目标；不声称涵盖全部链内并行、多机后验合并或动态 NUTS 时间并行。
 
-统一调用和跨模型比较已有直接前作。compareMCMCs 已支持 NIMBLE、JAGS 和 Stan 的运行、计时与结果管理，并允许扩展引擎和指标\cite{comparemcmcs}；PPL Bench 提供概率编程软件的基准框架\cite{pplbench}；posteriordb 提供模型、数据和参考蒙特卡洛样本\cite{posteriordb}。本研究不以这些通用能力作为首次贡献，而把实际随机输入、并行残差、接受分支、无效输出和完整任务成本共同纳入可重建记录，并在同核执行与跨核推断两个层次呈现指定时间执行器的适用边界。首批使用自包含的合成目标，尚未完成这些外部模型库或真实应用上的普遍性验证。
+统一调用和跨模型比较已有直接前作。compareMCMCs 已支持 NIMBLE、JAGS 和 Stan 的运行、计时与结果管理，并允许扩展引擎和指标\cite{comparemcmcs}；PPL Bench 提供概率编程软件的基准框架\cite{pplbench}；posteriordb 提供模型、数据和参考蒙特卡洛样本\cite{posteriordb}。本研究不以这些通用能力作为首次贡献，而把实际随机输入、并行残差、接受分支、无效输出和完整任务成本共同纳入可重建记录，并在同核执行与跨核推断两个层次呈现指定时间执行器的适用边界。首批使用自包含的合成目标；另已接入posteriordb水井模型并核验目标与接口，但尚未完成该案例的正式推断比较或外部模型库的普遍性验证。
 
 \section{模型、转移核与执行器}
 \subsection{目标与坐标}
@@ -38,22 +38,25 @@
 \end{equation}
 模型记录参数顺序、约束映射、完整数据、实现版本与指纹。两个提供方式可省略不同的参数无关常数，因此以 $\ell(q)-\ell(q_0)$、同坐标梯度及变换结果核对目标。正值测试例使用 $\theta=\exp(q)$ 和 lognormal 密度，其 $-\log\theta$ 项与 Jacobian 抵消。这一例同时用于检测遗漏 Jacobian 的实现错误。
 
-R 是建模控制与分析入口。BridgeStan 在 CPU 上调用编译后的 C++ 密度和自动微分，Python 串行循环组织转移；原生 JAX 模型进入 JIT 和批处理。Stan 模型指针不跨线程共享，Stan 内部线程关闭。此时高频调用边界的成本属于软件工作流，不能从跨后端差异直接推断并行算法的贡献。
+R 是建模控制与分析入口。BridgeStan 在 CPU 上调用编译后的 C++ 密度和自动微分，Python 串行循环组织转移；原生JAX模型进入JIT和批处理；独立torch后端使用NumPy参考及显式CPU/CUDA执行，当前时间执行器仍含Python主机控制。Stan 模型指针不跨线程共享，Stan 内部线程关闭。此时高频调用边界的成本属于软件工作流，不能从跨后端差异直接推断并行算法的贡献。
 
 \begin{table}[htbp]\centering\small
-\begin{tabular}{lccc}\toprule
-模型提供方式 & 顺序RWM/MALA & Picard RWM/quasi-DEER MALA & NUTS\\\midrule
-Stan/BridgeStan CPU & 支持 & 不支持 & 不支持\\
-明确实现的原生JAX目标 & 支持 & 支持相应组合 & 支持\\\bottomrule
+\begin{tabular}{>{\raggedright\arraybackslash}p{.27\linewidth}>{\raggedright\arraybackslash}p{.16\linewidth}>{\raggedright\arraybackslash}p{.24\linewidth}>{\raggedright\arraybackslash}p{.22\linewidth}}\toprule
+目标入口与实测设备 & 顺序RWM/MALA & Picard RWM / quasi-DEER MALA & NUTS\\\midrule
+Stan/BridgeStan，Mac CPU & 支持 & 不支持 & 不支持\\
+明确JAX目标，CPU & 支持 & 支持对应核 & BlackJAX顺序核\\
+明确torch目标，Windows CPU & 已核验 & 已核验，主机控制 & 独立研究CLI：Pyro四链\\
+明确torch目标，Windows CUDA & 已核验 & 已核验，主机控制 & 未接入/核验\\\bottomrule
 \end{tabular}
-\caption{历史发布0.1.1的能力边界。并非模型、核、执行器的任意组合均可运行。不支持的请求报错。该历史版本没有原生Windows GPU后端；独立开发版本的实测范围见第\ref{sec:windows-native}节。}
+\caption{当前代码的支持范围与实测边界。CPU Pyro基线是独立研究CLI，不是\texttt{pb\_sample()}的通用torch NUTS选项；四链并发也不是NUTS轨迹时间并行。原生Windows Stan编译尚未核验。支持数值输出不等于已证实后验精度。}
+\label{tab:capabilities}
 \end{table}
 
-R函数\texttt{pb\_capabilities()}查询这些组合；\texttt{pb\_benchmark()}只组织配置列表及R结果，正式协议冻结、检查点和完整证据管理依赖Python CLI及项目文件。Stan模型没有默认独立轨迹参考，\texttt{audit=TRUE}明确拒绝。扩展示例通过公开Python \texttt{Model}提供Poisson目标及独立NumPy参考，R经reticulate调用并转换为posterior对象；并非\texttt{pb\_model()}可直接接收任意R闭包。
+R函数\texttt{pb\_capabilities()}查询包接口支持的组合；独立研究CLI另列运行契约，不能从表\ref{tab:capabilities}推定全部路线都能由一个R函数调用。\texttt{pb\_benchmark()}只组织配置列表及R结果，正式协议冻结、检查点和完整证据管理依赖Python CLI及项目文件。Stan模型没有默认独立轨迹参考，\texttt{audit=TRUE}明确拒绝。扩展示例通过公开Python \texttt{Model}提供Poisson目标及独立NumPy参考，R经reticulate调用并转换为posterior对象；并非\texttt{pb\_model()}可直接接收任意R闭包。
 
 \begin{figure}[htbp]\centering
-\includegraphics[width=\linewidth]{../../figures/software/architecture.pdf}
-\caption{计算与验证流程。目标、核和执行器分别记录，失败轨迹与正常后验对象分离。NUTS 使用自身随机流及预热过程，不继承固定噪声 MH 的轨迹比较。该图是程序逻辑示意，不含性能预测。}
+\includegraphics[width=\linewidth]{../../figures/software/architecture-current.pdf}
+\caption{当前软件路线与证据流。Stan只连接CPU顺序核；JAX和torch仅接受明确实现的目标。独立顺序参考须另外提供，Stan入口没有默认参考。NUTS使用自身随机流及预热，独立Pyro CLI另作记录。数值有效输出继续接受统计诊断，失败不能转为正常样本。图示不含性能预测。}
 \end{figure}
 
 \subsection{固定随机输入下的核}
@@ -68,7 +71,7 @@ MALA 的步长约定为
 \end{equation}
 当 $\log u<a(q,y)$ 时接受，否则保留 $q$。随机游走 Metropolis（RWM）使用 $y=q+s z$，接受对数比为 $\ell(y)-\ell(q)$。拒绝产生的自环计为一个转移。本文的 $h$ 不等于提议噪声标准差；这一约定在所有配对执行中固定。
 
-随机输入由锁定 NumPy 版本下的 Philox 生成，采样与导数探测种子分开。比较固定的是噪声数组和对数均匀随机数组，而非跨软件的同名整数 seed。正式原始输出保存这些数组及其校验和。独立顺序 oracle 使用 NumPy 密度、解析梯度和显式循环，不调用待核验的 JAX 转移函数。
+随机输入由锁定 NumPy 版本下的 Philox 生成，采样与导数探测种子分开。比较固定的是噪声数组和对数均匀随机数组，而非跨软件的同名整数 seed。正式原始输出保存这些数组及其校验和。独立顺序 oracle 使用 NumPy 密度、解析梯度和显式循环，不调用待核验的JAX或torch转移函数。跨系统重建派生浮点数组不保证逐位一致；重复执行应传递已封存的实际数组，再分别核对文件与数组哈希。
 
 \subsection{两类时间执行}
 quasi-DEER 执行器使用非重叠窗口。每轮以 Rademacher 向量和 Jacobian--向量积估计转移映射的对角导数，截断导数后通过仿射结合扫描更新窗口路径。接受事件在前向计算中仍是硬分支，导数采用 sigmoid 直通构造。与上游实现相比，本版改变了窗口调度和停止判据，且不使用 NaN 归零或状态裁剪；因此称为基于 quasi-DEER 的适配实现，不将其性能等同原论文。
@@ -88,11 +91,11 @@ Online Picard 根据增量映射独立实现。固定 RWM 噪声后，接受增�
 \end{figure}
 
 \subsection{失败与结果对象}
-达到迭代上限、出现非有限状态或核验失配的轨迹不进入正常抽样对象。结果记录原始失败轨迹、残差、接受事件、求解次数、导数裁剪、确认长度和停止原因。MH 原型将非有限密度、梯度或提议视为失败；首版未一般地区分合法零密度提议与数值溢出。NUTS 保留 BlackJAX 的发散诊断，并在返回样本有限时保留其输出。两类数值事件分别报告，不能用统一的 ``completed'' 标签暗示收敛。
+达到迭代上限、出现非有限状态或核验失配的轨迹不进入正常抽样对象。结果记录原始失败轨迹、残差、接受事件、求解次数、导数裁剪、确认长度和停止原因。MH 原型将非有限密度、梯度或提议视为失败；首版未一般地区分合法零密度提议与数值溢出。NUTS 保留所用BlackJAX或Pyro基线的发散诊断，并在返回样本有限时保留其输出。两类数值事件分别报告，不能用统一的 ``completed'' 标签暗示收敛。
 
 用户可以显式选择执行器停止失败后的顺序回退；独立审计失配或变换错误不触发该选项。回退复用原随机数组重新计算整个指定轨迹，保留并行阶段的失败及成本；不重抽随机数，也不选择较快完成的链。本文正式比较采用失败保留策略，不通过回退隐藏并行求解失败。约束输出仍须检查形状、有限性及可表示的支持集；审查中发现的边界处理修复以独立软件版本交付，冻结实验的源码归档保留。R 返回 $\texttt{iteration}\times\texttt{chain}\times\texttt{variable}$ 排列的 \texttt{posterior::draws\_array}，与独立运行记录配套。
 
-\section{验证与开发证据}
+\section{历史CPU验证与开发证据}
 软件测试覆盖密度、梯度、Jacobian、约束输出、固定噪声路径、接受事件、拒绝自环、部分窗口、迭代耗尽、非有限目标、内存守卫和共同随机输入回退。错误注入包括遗漏 Jacobian、改变尺度以及改变实际目标造成接受事件失配。协议与文件校验测试还检查重复任务跳过和输出损坏检测。有限测试不能替代一般正确性证明，但提供了可重放的反例检测机制。
 
 冻结0.1.0通过43项Python测试和R包检查。审查修订版0.1.1进一步通过58项Python检查、R包检查及R到BridgeStan的端到端核验；后者的固定输入样本差为零。CPU主实验仍对应归档的0.1.0，新版边界修复不覆盖历史输出。高斯、logistic 与正值模型的 Stan/原生实现交叉核验通过；两个简单高斯目标上，上游固定提交的求解器与独立 MALA 参考的路径差小于 $10^{-8}$。这项复现仅检验上游求解器与指定映射的组合，不声称复现原文全部性能实验。
@@ -103,7 +106,7 @@ Online Picard 根据增量映射独立实现。固定 RWM 噪声后，接受增�
 
 在正式SBC拟合开始前，另冻结依赖数据的对数似然统计量 $f_y(\theta)=-\tfrac12\sum_i(y_i-\theta)^2$，并从同一批保存样本计算其秩和解析后验期望误差。秩每32步取一个样本，共64个；与真参数处统计量相等的样本单独计数，以独立Philox流在并列范围内随机化秩。此伴随分析不改变拟合协议，也不据有限、仍可能相关的秩宣布一般校准通过。
 
-\section{冻结实验设计}
+\section{历史Mac CPU的冻结实验设计}
 \subsection{目标族与基线}
 \begin{table}[htbp]\centering\small
 \begin{tabular}{lll}\toprule
@@ -115,7 +118,7 @@ H1/H2 & 9 维漏斗，中心化/非中心化 & 相同分布的坐标与预热效
 A1 & 64 维潜在 AR(1) 高斯后验 & 高维相关结构\\
 M1 & 8 维对称双峰高斯混合 & 跨模式探索压力\\\bottomrule
 \end{tabular}
-\caption{正式目标库。H1/H2 属于同一模型族；L1/L2 是同类回归的计算量变化。数据由记录的随机规则生成。本研究不把这些变体当作独立应用领域。}
+\caption{Mac CPU主协议的目标库。H1/H2 属于同一模型族；L1/L2 是同类回归的计算量变化。数据由记录的随机规则生成。本研究不把这些变体当作独立应用领域。}
 \end{table}
 
 五种工作流为顺序 MALA、窗口 quasi-DEER MALA、顺序 RWM、Online Picard RWM 和 BlackJAX NUTS。各工作流均采用四链；MH 使用预先固定步长，前 512 步作为丢弃段，随后保留 256 或 2048 步。NUTS 单独预热 512 步后保留相同数量，最大树深为 8。所有初始化固定为零，步长表、数据、随机种子及运行顺序写入机器可读协议。比较的对象是这些指定工作流，不能外推为经过全局最优调参的算法排名。
@@ -141,9 +144,9 @@ M1 & 8 维对称双峰高斯混合 & 跨模式探索压力\\\bottomrule
 
 MH 的步长与窗口作为指定工作流的输入；开发探测属于离线研究费用，单独保留，不在每个正式拟合中重复摊入。NUTS 的逐次适配则包含在预热成本中。因此完整工作流比较回答的是给定配置的运行成本，尚未覆盖未知新模型上选择MH参数所需的成本，不应称为自动调参方案之间的完整费用比较。
 
-CPU 内存为采样API期间每20 ms记录的进程绝对RSS峰值，包含先前驻留分配，未覆盖建模、写盘和子进程；本研究不评价GPU内存。数组空间有事前保守预算检查，数值迭代上限保留。运行没有人为总时长截止。冻结源代码和协议校验和、随机化任务顺序、逐任务原始数组与状态支持中断后恢复；成功与失败结果均保留。
+CPU 内存为采样API期间每20 ms记录的进程绝对RSS峰值，包含先前驻留分配，未覆盖建模、写盘和子进程；该CPU协议不评价GPU内存；Windows另有设备分配器记录。数组空间有事前保守预算检查，数值迭代上限保留。运行没有人为总时长截止。冻结源代码和协议校验和、随机化任务顺序、逐任务原始数组与状态支持中断后恢复；成功与失败结果均保留。
 
-\section{正式结果与范围}
+\section{历史CPU结果与范围}
 \input{results.generated.tex}
 
 \section{审查后的伴随分析与CPU机制实验}
@@ -152,17 +155,29 @@ CPU 内存为采样API期间每20 ms记录的进程绝对RSS峰值，包含先�
 \input{windows-native.generated.tex}
 \input{completion-companion.generated.tex}
 
+\section{跨系统核验与后续推断比较的边界}
+\input{intake.generated.tex}
+
+\subsection{外部目标与测量接口}
+水井案例采用posteriordb的3020个观测，保留原模型中截距和距离系数的平坦先验，而非用带正态先验的内置logistic替代。通过两个不同距离上均出现两种结局的观测，可构造可积的似然上界；本数据的后验因而可正规化。Stan、NumPy和torch的密度及导数对照、固定输入轨迹与R数组传输已核验，Windows的12项接口工作流也已独立重放。这些是目标和软件扩展证据；短链的明显不良诊断仍保留。有限参考样本与数值求积另行核对，未认证的罕见事件概率不能改写成解析真值。该案例已用于开发，不能再作为未见模型族的泛化检验。
+
+后续充分预算比较需要将可用输出和完整成本对应到同一批重复。为此，已实现三种分别记录的测量口径：准备后、显式同步的内核执行；包含进程启动、输入读取、采样、变换、普通输出与R诊断的批量工作流；以及进一步包含独立轨迹参考、资源检查和封存的研究审计调用。后两者为嵌套边界，不能相加。给定核参数和已封存输入的普通工作流不包含事先调参、环境安装或最外层R前端；这些费用须另列。后续终态核验也独立登记，不因增加检查次数而改变第一次推断的成本。
+
+一次完整四链拟合是重复单位，链、缓存重放和基础设施重试不增加重复数。任何一次实际尝试缺少计时回执时，该任务的完整成本保持未知，已知部分仍保留。对函数$f$，误差和成本坐标使用同一组数值有效且函数估计有限的重复；其中任何任务缺完整成本，不能通过删去它来生成横坐标。函数不可计算、参考未确定、数值失败和基础设施中断分别记录。共同可用重复上的成对费用比与误差差也采用同一集合，避免混合不同条件样本。
+
+上述归并与统计接口已在保存的任务、故障记录和人工检查样例上验证；它是后续协议的方法准备，并未追溯替换历史CPU或Windows首轮的计时与bootstrap规则。原生Windows的进程集合保护、最大任务及缓存探测分配仍待实际验收，正式共同精度比较尚未冻结或运行。
+
 \section{解释、限制与复现}
-目前证据支持的是一个能够区分目标一致性、轨迹求解与统计精度的研究实现。历史Mac CPU正式比较中，两种时间执行器均未取得组中位工作流加速；前向映射调用增加与这一结果一致，说明额外求值和导数计算可能抵消可利用的并行位置。新增机制测量进一步将批处理吞吐、重复求值与分段调度区分；由于分段执行插入同步，不能把其阶段比例直接当作生产程序的精确剖面。编译策略和底层运算仍限制因果归因。Picard原文在Apple M3 CPU上对昂贵延迟微分方程似然报告约2.52倍墙钟加速\cite{grazzi}；这与本研究的低成本合成目标不同。上游算法的窗口策略、停止规则和计时排除项亦不同，因此当前负例不能解释为CPU普遍不适合时间并行，也不识别正加速的分界。
+目前证据支持的是一个能够区分目标一致性、轨迹求解与统计精度的研究实现。Windows CUDA的Picard缓存执行收益与Mac CPU负结果对应不同实现、预算和硬件，不能合并成统一速度排名；全拒绝或混合不足也说明，快速重现指定路径可以与较差推断同时发生。历史Mac CPU正式比较中，两种时间执行器均未取得组中位工作流加速；前向映射调用增加与这一结果一致，说明额外求值和导数计算可能抵消可利用的并行位置。新增机制测量进一步将批处理吞吐、重复求值与分段调度区分；由于分段执行插入同步，不能把其阶段比例直接当作生产程序的精确剖面。编译策略和底层运算仍限制因果归因。Picard原文在Apple M3 CPU上对昂贵延迟微分方程似然报告约2.52倍墙钟加速\cite{grazzi}；这与本研究的低成本合成目标不同。上游算法的窗口策略、停止规则和计时排除项亦不同，因此当前负例不能解释为CPU普遍不适合时间并行，也不识别正加速的分界。
 
 合成模型使目标、真值和失败机制更易核对，同时限制了应用外推。中心化与非中心化漏斗可对照几何，但不能代替真实层次数据分析；潜在 AR(1) 仍具有高斯后验；双峰任务的有限样本模式比例也不证明普遍探索能力。正式结果应据函数、预算和诊断逐项阅读，不能由短链 ESS 或执行器返回成功推断可靠推断已经完成。
 
 quasi-DEER 的局部残差加独立轨迹核验是一种计算上可审查的约束，仍没有提供从容差到一般后验函数偏差的理论界。接受分支接近阈值时，浮点差异可能改变事件；因此本文保存事件差与失败而不以统一 API 隐去保证类别。Online Picard 同样受浮点前缀和与窗口调度影响。本版顺序回退重新计算全路径，尚未优化为仅重算未确认后缀。
 
-历史主实验仅评价指定Mac CPU环境；本轮独立Windows协议增加同机torch CPU/CUDA证据，历史WSL2交接资料仍仅归档保留。两个平台的完整工作流差异不能全部归因于显卡。自动配置模块未进入本版贡献，当前没有足够证据支持稳定收益区间。昂贵似然、真实数据应用和分散初始化属于后续研究；本轮不以挑选有利案例扩展结论。
+历史主实验仅评价指定Mac CPU环境；本轮独立Windows协议增加同机torch CPU/CUDA证据，历史WSL2交接资料仍仅归档保留。两个平台的完整工作流差异不能全部归因于显卡。自动配置模块未进入本版贡献，当前没有足够证据支持稳定收益区间。外部水井目标及分散初始化的开发探测已开展，尚未构成充分预算下的正式推断证据。更昂贵似然的机制验证和未见应用上的泛化仍待研究；本轮不以挑选有利案例扩展结论。
 
 \section*{代码、数据与辅助工具}
-数据由项目公开生成规则产生。源码、测试、协议、分析摘要及论文构建材料已上传至\url{https://github.com/AlchemistXC/ParallelBayes}；历史CPU原始证据见仓库的\texttt{cpu-review-v1} Release。Windows原始结果归档已上传\texttt{windows-native-v1}，截至2026年10月5日仍为草稿，尚不能视为公开可下载材料。接收端已核对归档及内部5866个文件。原始证据、分析源与论文输入以版本和校验和关联；投稿前仍须完成最终公开归档及统一候选包的独立重建。独立依赖环境和迁移目录验证已在同一Mac完成，不等同另一研究团队或操作系统的复现。R包检查与显式开启集成测试的日志分开保存。R 包发布候选及 Python 内核随项目交付；上游 BSD 许可源码保留来源，Online Picard 按论文独立实现。本文使用生成式工具辅助代码、实验组织、图表与中文草稿，并用实际运行、独立实现和可重建原始输出核验相关陈述。稿件尚需研究者最终审阅、确认署名与投稿范围，不将工具列为作者。
+历史主实验数据由项目公开生成规则产生；外部水井数据、模型及有限参考来自固定版本posteriordb\cite{posteriordb}，其来源、许可及文件哈希随案例清单保存。源码、测试、协议、分析摘要及论文构建材料已上传至\url{https://github.com/AlchemistXC/ParallelBayes}；历史CPU原始证据见仓库的\texttt{cpu-review-v1} Release。Windows原始结果归档已上传\texttt{windows-native-v1}，截至2026年10月5日仍为草稿，尚不能视为公开可下载材料。接收端已核对归档及内部5866个文件。第二轮Windows证据已上传另一个草稿并完成独立接收，本机后续批次与成本伴随归档尚未公开；克隆源码仓库不等于已取得所有原始证据。原始证据、分析源与论文输入以版本和校验和关联；投稿前仍须完成最终公开归档及统一候选包的独立重建。独立依赖环境和迁移目录验证已在同一Mac完成，不等同另一研究团队或操作系统的复现。R包检查与显式开启集成测试的日志分开保存。R 包发布候选及 Python 内核随项目交付；上游 BSD 许可源码保留来源，Online Picard 按论文独立实现。本文使用生成式工具辅助代码、实验组织、图表与中文草稿，并用实际运行、独立实现和可重建原始输出核验相关陈述。稿件尚需研究者最终审阅、确认署名与投稿范围，不将工具列为作者。
 
 \begin{thebibliography}{99}\small\setlength{\itemsep}{2pt}
 \bibitem{zoltowski} Zoltowski D.M., Wu S., Gonzalez X., et al. \href{https://proceedings.nips.cc/paper_files/paper/2025/hash/202886ee1c9ca735cb5bff3a00a69883-Abstract-Conference.html}{Parallelizing MCMC Across the Sequence Length}. Advances in Neural Information Processing Systems, 2025, 38.
@@ -170,6 +185,7 @@ quasi-DEER 的局部残差加独立轨迹核验是一种计算上可审查的约
 \bibitem{stan} Carpenter B., Gelman A., Hoffman M.D., et al. \href{https://doi.org/10.18637/jss.v076.i01}{Stan: A Probabilistic Programming Language}. Journal of Statistical Software, 2017, 76(1): 1--32.
 \bibitem{bridgestan} BridgeStan contributors. \href{https://roualdes.us/bridgestan/latest/languages/python.html}{BridgeStan: Python interface documentation}. 本研究使用版本 2.7.0，构建来源与许可随代码归档。
 \bibitem{blackjax} Cabezas A., Corenflos A., Lao J., Louf R., et al. \href{https://arxiv.org/abs/2402.10797}{BlackJAX: Composable Bayesian inference in JAX}. arXiv:2402.10797, 2024.
+\bibitem{pyro} Bingham E., Chen J.P., Jankowiak M., et al. \href{https://jmlr.org/papers/v20/18-403.html}{Pyro: Deep Universal Probabilistic Programming}. Journal of Machine Learning Research, 2019, 20(28):1--6.
 \bibitem{comparemcmcs} NIMBLE development team. \href{https://github.com/nimble-dev/compareMCMCs}{compareMCMCs: Tools for comparing MCMC efficiency from NIMBLE and other engines}. 软件作者仓库，访问于2026年10月3日；此处引用功能说明，未复现其性能。
 \bibitem{pplbench} PPL Bench contributors. \href{https://github.com/facebookresearch/pplbench}{PPL Bench: Evaluation Framework for Probabilistic Programming Languages}. 软件作者仓库，访问于2026年10月3日。
 \bibitem{posteriordb} Magnusson M., Torgander J., Bürkner P.-C., Zhang L., Carpenter B., Vehtari A. \href{https://proceedings.mlr.press/v258/magnusson25a.html}{posteriordb: Testing, Benchmarking and Developing Bayesian Inference Algorithms}. Proceedings of Machine Learning Research, 2025, 258:1198--1206.

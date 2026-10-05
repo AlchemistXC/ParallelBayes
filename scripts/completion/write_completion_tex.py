@@ -14,7 +14,10 @@ def render(root):
              "benchmark/analysis/outputs/completion-f1/mac-02/result.json",
              "benchmark/analysis/outputs/completion-f1/mac-02/receipt.json",
              "benchmark/analysis/outputs/completion-f2/summary.json"]
-    case, result, receipt, costs = [read(root / p) for p in paths]
+    paths.append("benchmark/analysis/outputs/completion-f1/windows-01/result.json")
+    case, result, receipt, costs, windows = [read(root / p) for p in paths]
+    if not all(windows["checks"].values()):
+        raise ValueError("Windows diagnostic fixture has not passed")
     if not receipt["passed"] or not all(result["checks"].values()):
         raise ValueError("Diagnostic fixture has not passed")
     if costs["tasks"] != 512 or costs["map_and_prefix_trace_checks"] != 512:
@@ -39,9 +42,11 @@ def render(root):
 折叠中位数比精确中点正确舍入值低一个ULP，约$2.1684\times10^{-19}$。
 固定输入和其余计算，仅替换这个折叠中心，就使@RANKS@个观测的秩改变，
 折叠$\hat R$由@LOWER@变为@ROUNDED@，后者重现原Windows记录。
-这定位了足以解释差异的数值机制；Windows原生R中位数和构建信息的实际回执仍待核对。
+Windows原生R 4.6.1/posterior 1.7.0的实际回执已返回：原生中位数采用正确舍入中点，
+折叠$\hat R$为@NATIVE@，二进制输入和回写相同。
+这核实了数值机制及跨系统观测，但未证明某个底层数学库是根因。
 两种$\hat R$都远高于1.01，不改变混合不足判断，也没有用较小值替换原诊断。
-12KiB二进制样例、精确有理数中点、两中心对照和Mac回执随分析源码保存。
+12KiB二进制样例、精确有理数中点、两中心对照和两平台回执随分析源码保存。
 
 对512项原记录逐轮核算映射、JVP和确认前缀，全部计数检查通过。
 在16个模型/预算组的中位数中，quasi-DEER每输出转移有@QMAP@次前向映射和@QJVP@次JVP；
@@ -68,6 +73,7 @@ Picard为@PWAIT@；等待含未完成设备工作且没有覆盖全部控制活�
 """
     fmt_range = lambda x: f"{x[0]:.3f}--{x[1]:.3f}"
     replacements = {
+        "NATIVE": f'{windows["rhat"]["folded_native"]:.10f}',
         "BULK": f'{result["rhat"]["bulk"]:.10f}', "RANKS": str(result["changed_rank_count"]),
         "LOWER": f'{result["rhat"]["folded_lower"]:.10f}',
         "ROUNDED": f'{result["rhat"]["folded_correct_midpoint"]:.10f}',

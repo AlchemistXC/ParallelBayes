@@ -20,7 +20,7 @@ Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-IN
 |---|---|---|---|
 | Stan/BridgeStan CPU | 支持 | 不支持 | 不支持 |
 | 明确实现和核验的原生JAX目标 | 支持 | 支持相应组合 | BlackJAX |
-| 原生Windows PyTorch CPU/CUDA | 内置目标已实测 | 相应组合已实测，eager Python控制 | GPU未接入；Pyro CPU九目标串行/spawn就绪核验通过 |
+| 原生Windows PyTorch CPU/CUDA | 内置目标已实测 | 相应组合已实测，eager Python控制 | GPU未接入；独立研究CLI的Pyro CPU九目标串行/spawn就绪核验通过 |
 
 完整[能力矩阵](docs/CAPABILITIES.md)、[计算契约](docs/COMPUTATION-CONTRACT.md)、[Mac安装与使用](docs/INSTALL-AND-USE.md)、[新增Poisson目标示例](docs/EXTENDING-TARGETS.md)。本开发版本支持torch/NumPy独立导入，JAX依赖移至可选安装；CUDA torch构建须按[Windows说明](docs/WINDOWS-NATIVE.md)安装并验证。
 

@@ -6,7 +6,7 @@
 
 | 提供方式及实测范围 | 顺序 RWM/MALA | Picard RWM / quasi-DEER MALA | NUTS |
 |---|---|---|---|
-| 原生 Windows torch CPU，明确内置目标 | 已核验 | 已核验，eager Python 控制 | Pyro CPU；九目标顺序/spawn就绪核验通过，非正式精度结论 |
+| 原生 Windows torch CPU，明确内置目标 | 已核验 | 已核验，eager Python 控制 | 独立研究CLI的Pyro CPU；九目标顺序/spawn就绪核验通过，非正式精度结论 |
 | 原生 Windows torch CUDA，RTX 5080 float64 | 已核验 | 已核验，未宣称融合设备内控制 | 尚未接入/核验 |
 | 原生 Windows JAX CPU | 原入口回归通过 | 原入口回归通过 | 原入口冒烟测试通过 |
 | 原生 Windows Stan/BridgeStan | 本轮未编译核验；历史能力仅 CPU 顺序 | 不支持 | 不支持 |
@@ -17,6 +17,7 @@
 新协议 512 项（CPU/CUDA 各 256）已完成数值核验，256 对跨设备实际数组接受事件零失配。
 大量短链混合不足，A1/RWM 全部拒绝提议；“已核验”不代表推断收敛。
 完整解释及未完成范围见 [WINDOWS-RESULTS.md](WINDOWS-RESULTS.md)。
+CPU Pyro基线通过独立研究CLI运行，不是`pb_sample(..., backend="torch", kernel="nuts")`的通用选项；torch包能力查询仍将NUTS标为不支持。
 
 2026-10-05第二轮：已选仿射坐标的九目标MH组合在CPU/CUDA各54工作流、36配对通过，
 独立NumPy重放及零重算恢复通过；九目标CPU NUTS六类数组串行/spawn一致。

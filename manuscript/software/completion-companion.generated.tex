@@ -2,6 +2,7 @@
 % Input SHA256 c83cef505f240b3ee513645f7f7161a774f93a13ff9e3536be2ca263ed93d0ca benchmark/analysis/outputs/completion-f1/mac-02/result.json
 % Input SHA256 245c6683393a09f4f1c57b5eecd90b37b780f9e049a8162347c5cbf645f85d8d benchmark/analysis/outputs/completion-f1/mac-02/receipt.json
 % Input SHA256 35d44485cb70199d0cc6a434cc8809e12a8c9c2c6dea3573ac90c07856fce102 benchmark/analysis/outputs/completion-f2/summary.json
+% Input SHA256 c3ac27a861c3a8cf7aeef63eabf089c130b726c8d00c9e294ed0f247dcc6dbdf benchmark/analysis/outputs/completion-f1/windows-01/result.json
 \subsection{收尾阶段新增的诊断与工作量伴随分析}
 \label{sec:completion-companion}
 以下分析于2026年10月5日从原始Windows记录追加，没有重新采样或更改原冻结协议。
@@ -11,9 +12,11 @@
 折叠中位数比精确中点正确舍入值低一个ULP，约$2.1684\times10^{-19}$。
 固定输入和其余计算，仅替换这个折叠中心，就使5个观测的秩改变，
 折叠$\hat R$由1.4085688369变为1.4082223724，后者重现原Windows记录。
-这定位了足以解释差异的数值机制；Windows原生R中位数和构建信息的实际回执仍待核对。
+Windows原生R 4.6.1/posterior 1.7.0的实际回执已返回：原生中位数采用正确舍入中点，
+折叠$\hat R$为1.4082223724，二进制输入和回写相同。
+这核实了数值机制及跨系统观测，但未证明某个底层数学库是根因。
 两种$\hat R$都远高于1.01，不改变混合不足判断，也没有用较小值替换原诊断。
-12KiB二进制样例、精确有理数中点、两中心对照和Mac回执随分析源码保存。
+12KiB二进制样例、精确有理数中点、两中心对照和两平台回执随分析源码保存。
 
 对512项原记录逐轮核算映射、JVP和确认前缀，全部计数检查通过。
 在16个模型/预算组的中位数中，quasi-DEER每输出转移有11.906--29.500次前向映射和5.953--14.750次JVP；

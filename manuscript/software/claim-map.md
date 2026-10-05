@@ -1,22 +1,26 @@
 # 软件研究稿的主张与证据定位
 
-CPU主实验采用0.1.0／protocol-v1；发布候选与正式SBC采用0.1.1。原生Windows GPU后端尚未实现且不属于本轮范围。
+2026-10-05整合稿。历史CPU主实验0.1.0/protocol-v1；CPU修订/SBC为0.1.1；原生Windows0.2.0.dev1使用独立协议。数字只能在其所属设计与计时边界内解释。
 
-| 正文主张 | 证据来源 | 主要位置与边界 |
+| 主张 | 可定位证据 | 正文范围和限制 |
 |---|---|---|
-| 目标、变换和路径核验可执行 | `execution/logs/python-reviewed-stage.xml`、`r-reviewed-check.txt`、`r-stan-end-to-end.json` | 验证节；有限测试，不是一般证明 |
-| 正式任务完整且没有事后删组 | `benchmark/protocols/protocol-v1.json`、全部`state.json`、`analysis-provenance.json` | 设计节、结果开头；独立单位为24次重复，不是全部配对任务数 |
-| 同核执行的成本收益 | `paired-speedups.json/csv` | 成对成本图；缓存重放不计为统计重复，失败配对保留在任务表 |
-| 给定配置后的函数精度与成本 | `formal-summary.json`、`run-metrics.json` | 误差表、误差—成本图；只涉及预声明函数和两个预算，不是自动停止或算法最优排名 |
-| L2参考精度未确定 | `reference-summary.json`及来源、参考原始样本 | 方法、表注、结果边界；不删掉全零符号函数，不把零经验方差写成零误差 |
-| 数值成功与诊断问题不同 | 逐任务`diagnostics`、发散/积分上限计数 | 结果；有限样本输出仍可能有发散或探索不足 |
-| 正式SBC及依赖数据测试量 | `statistical-v4`、`sbc-functions-v1`、`execution/statistical-v4/` | 生成式验证；有限功效、相关秩、并列处理，不宣称一般校准通过 |
-| CPU范围及能力边界 | `docs/CAPABILITIES.md`和源码capabilities | Stan仅顺序RWM/MALA；JAX为明确目标，GPU未实现 |
+| 当前支持组合 | docs/CAPABILITIES.md；各后端sampling.capabilities；r-package/R/interface.R；独立completion NUTS CLI | Stan仅CPU顺序，torch NUTS不能由pb_sample通用调用；GPU NUTS未接入 |
+| CPU1920任务、成对执行负结果 | protocol-v1.json；results.generated.tex及write-results-tex.py的原始摘要 | 24次完整四链重复/格；两个预算；不推断精确达标时间或CPU普遍无收益 |
+| L2参考未定、NUTS发散和探索不足 | 原formal/reference-summary、run-metrics、revision.generated.tex及生成器 | 保留符号事件，区分特定函数误差与后验可靠探索 |
+| 64组SBC解析配对、现代诊断 | revision.generated.tex；CPU修订sbc-analytic/modern分析 | 同64组数据，解析覆盖54/64；不能计作五组独立证据 |
+| CPU72项机制与40项版本对照 | cpu-mechanism-v1；version-replay；docs/CPU-REVIEW-REVISION.md | 分段测量有同步扰动，不等于生产剖面；数值一致不证明性能等价 |
+| Windows512任务及CUDA缓存速度区间 | windows-native-v1.json；windows-native.generated.tex；docs/WINDOWS-RESULTS.md | 每格4份数组；Picard1.097–5.230、quasi-DEER0.164–0.505为组中位数范围，不是置信区间；A1全拒绝及短链诊断同时呈现 |
+| F1折叠中心机制有实际Windows回执 | completion-f1/windows-01/result.json；同Mac固定样例；write_completion_tex.py | 改变中心使5秩变动；两种Rhat均不良，未证明底层库根因 |
+| 跨系统MH108路径/事件通过，但60变换逐位失败 | windows-round2-intake-v1/summary.json；independent-receipt-v2及原Mac审计false | 原严格失败保留，不将8.88e-15描述量改为通过容差 |
+| CPU NUTS九目标串行/spawn数组及原二进制R诊断 | 同接收summary：54数组对、18传输、72函数行；原始948文件归档 | 技术配对，不增加n；坏诊断和34未判定条目保留 |
+| F2输入派生数值差导致192工作流尚未执行 | 同接收summary；mechanism-component-differences；原输入transport.json | 82/49152对数均匀项不同；实际原文件已补传，未声称新结果 |
+| 水井扩展目标成立 | docs/WELLS-TARGET-VALIDATION.md、WELLS-REFERENCE-AUDIT.md、WELLS-QUADRATURE.md；models/external/wells/source-manifest.json | 保留平坦先验及可积性依据；目标/接口与充分推断区分；罕见事件参考未认证 |
+| 成本与函数可用集一致的分析接口 | docs/FORMAL-COST-POLICY.md；formal-cost-policy-v1；formal_cost_policy.py | 已测任务/人工样例核验，不是正式研究；未知成本不填零；技术批次n=1不画统计区间 |
+| 最大形状/恢复尚有缺口 | docs/BATCH-MAXIMUM-VALIDATION.md | Mac14/15，最大NUTS双中断保留；不宣称正式Windows就绪 |
+| 可用性 | README.md；各归档manifest与Release状态 | CPU公开；Windows草稿及部分本机大归档不自动公开；克隆不足以完整复现全部结果 |
 
-结果分配：核心证据为完整成本与共同函数误差；实现检查作为必要支持；参考问题、发散和版本差异作为正文限定。逐任务成本、每函数误差、秩直方图和原始随机数组保留在机器可读材料，不逐条抄入正文。
+## 编辑与证据分配记录
 
-论证顺序：定义同一计算对象 → 验证实现 → 固定比较任务 → 展示执行成本 → 展示推断误差及失败边界 → 限定硬件与应用外推。
+摘要从单纯CPU里程碑改为跨协议共同问题，只保留关键执行结果及推断边界；不将两个平台合成排名。旧architecture图保留，新architecture-current图仅展示当前路线，无数值结果。历史CPU/results、revision和Windows首轮generated输入保持原字节；completion伴随文本只更新已有Windows F1回执，新增intake.generated.tex从只读接收摘要产生。
 
-编辑记录：用实际生成结果替代占位段落；计时口径集中在方法节，图注只提供读图所需定义；参考全零问题在方法说明其原因，在结果限制精度判断，在图表用符号标记。重复出现承担不同功能，不增加新的首次或性能优越性声明。
-
-审查后证据：64组解析SBC配对见sbc-analytic.json；1928拟合现代诊断见output/cpu-revision/modern；72项机制任务见cpu-mechanism-v1及mechanism-summary.json；40组版本对照见version-replay/summary.json。所有补充均区别原预声明主协议，不为得到正结果改写原网格。独立复现见docs/PORTABLE-REPRODUCTION.md。
+引言、能力矩阵、限制和可用性对应当前实现；术语和计时口径集中解释。旧版本实际证据按原身份保留，不把前瞻BCa/成本规则追溯套到已发表述的历史统计量。详见本轮docs/MANUSCRIPT-INTEGRATION.md的构建回执与输入哈希。
