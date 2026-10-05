@@ -127,7 +127,7 @@ def analyze_task_costs(plan,records,pairs=()):
             row['valid_output_cost_interval']=valid['confidence_interval']
             row['valid_output_cost_interval_status']=('unavailable_cost_in_valid_outputs' if gaps[label] else
                 'no_valid_outputs' if row['outcome_counts']['valid']==0 else valid['interval_status'])
-            row['valid_output_cost_conditioning']='All numerically valid outputs, with complete costs for every such output; same four-chain repetition frame as conditional function error'
+            row['valid_output_cost_conditioning']='All numerically valid outputs, with complete costs for every such output; function-specific error-cost matching uses analyze_error_costs'
             row['mean_successful_seconds_conditioning']='Valid outputs with recorded complete cost only; diagnostic field, not the error-cost axis when any valid output cost is missing'
             row['valid_output_cost_interval_coverage']='pointwise_conditional_on_valid_output; shared whole-repetition resampling'
             row['valid_output_cost_interval_diagnostics']={k:v for k,v in valid.items() if k.startswith(('bca_','bootstrap_','resampled_')) or k in ('undefined_bootstrap_replicates','resampling_plan_sha256','minimum_valid_repetitions')}
@@ -135,3 +135,60 @@ def analyze_task_costs(plan,records,pairs=()):
     return dict(policy=POLICY,phases=reports,operational_consumption=operation,
         primary_scopes_are_additive=False,attempts_are_statistical_repetitions=False,new_independent_repetitions=0,
         cached_execution_measured=False,scope='Shared whole-four-chain resampling; pointwise cost ratios condition on both outputs valid and require every such pair to have positive complete costs')
+
+
+def analyze_error_costs(plan,records,estimates,reference,pairs=()):
+    """Match each function's error and cost to its actual estimable repetitions.
+
+    A numerically eligible trajectory may still have an unavailable function.
+    This is a function-level mask, never a new sampler failure classification.
+    Reference eligibility controls whether an error-cost point can be drawn.
+    """
+    from formal_uncertainty import analyze_function,analyze_costs
+    plan.validate()
+    if not records or set(records)!=set(estimates):raise ValueError('Matching declared function/cost workflows required')
+    observed=set();availability={}
+    for label,rows in records.items():
+        if set(rows)!=set(plan.replicate_ids) or set(estimates[label])!=set(plan.replicate_ids):raise ValueError('Every planned function/cost repetition required')
+        availability[label]={}
+        for rep,row in rows.items():
+            task=row['task'];key=(task['protocol_sha256'],task['id'])
+            if key in observed:raise ValueError('One task cannot supply multiple function/cost units')
+            observed.add(key)
+            if row['policy']!=POLICY or row['outcome'] not in OUTCOMES or task['model']!=plan.model or str(task['replicate'])!=rep:
+                raise ValueError('Function/cost task identity differs')
+            value=estimates[label][rep]
+            if value is not None and (not math.isfinite(value) or row['outcome']!='valid'):
+                raise ValueError('Finite estimates require numerically eligible outputs')
+            availability[label][rep]=value is not None
+    error=analyze_function(plan,estimates,reference,pairs)
+    # This temporary state vector encodes only the availability mask required
+    # by the existing statistics engine; its failure fields are not returned.
+    masks={label:{r:'valid' if available else 'not_run' for r,available in rows.items()} for label,rows in availability.items()}
+    costs={}
+    for phase in ('ordinary_workflow','research_execution'):
+        measured={label:{r:row['phases'][phase]['complete_seconds'] for r,row in rows.items()} for label,rows in records.items()}
+        gaps={label:sum(availability[label][r] and value is None for r,value in rows.items()) for label,rows in measured.items()}
+        axis_values={label:{r:value if availability[label][r] and not gaps[label] else None for r,value in rows.items()} for label,rows in measured.items()}
+        axis=analyze_costs(plan,axis_values,masks,(),phase+'_function_error_cost_axis')
+        paired=analyze_costs(plan,measured,masks,pairs,phase+'_common_function_cost')
+        workflows={}
+        for label,row in axis['workflows'].items():
+            values=list(records[label].values());err=error['workflows'][label]
+            point=row['mean_recorded_seconds'];n=sum(availability[label].values())
+            workflows[label]=dict(planned=len(plan.replicate_ids),function_available=n,available_functions_missing_cost=gaps[label],
+                output_outcome_counts={k:sum(v['outcome']==k for v in values) for k in OUTCOMES},
+                mean_seconds=point,confidence_interval=row['confidence_interval'],
+                interval_status='unavailable_cost_in_function_frame' if gaps[label] else 'no_function_estimates' if not n else row['interval_status'],
+                plot_error_cost_point=point is not None and err['conditional_squared_discrepancy'] is not None,
+                reference_kind=reference['kind'],conditioning='same finite function estimates as conditional error; all such costs must be complete',
+                interval_diagnostics={k:v for k,v in row.items() if k.startswith(('bca_','bootstrap_','resampled_')) or k in ('undefined_bootstrap_replicates','resampling_plan_sha256','minimum_valid_repetitions')})
+        for row,err in zip(paired['pairs'],error['pairs']):
+            if row['validity_table']!=err['validity_table']:raise ValueError('Paired cost/error availability differs')
+            row['conditioning']='both_workflows_have_finite_estimates_for_this_function'
+            row['output_failures_reclassified']=False
+        distributions={'axis:'+k:v for k,v in axis['bootstrap_statistics'].items()}
+        distributions.update({'common_function_'+k:v for k,v in paired['bootstrap_statistics'].items() if k.startswith('pair:')})
+        costs[phase]=dict(workflows=workflows,pairs=paired['pairs'],resampling=plan.receipt(),bootstrap_statistics=distributions)
+    return dict(policy=POLICY,error=error,costs=costs,output_failures_reclassified=False,
+        reference_uncertainty_propagated=False,scope='One function at a time; same whole-four-chain frame, function availability and common pair masks; unknown references cannot produce an error-cost point')

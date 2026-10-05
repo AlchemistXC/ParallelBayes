@@ -104,3 +104,30 @@ def test_error_cost_axis_uses_the_same_valid_outputs_and_is_unavailable_when_one
     assert missing['valid_output_cost_interval'] is None and missing['valid_outputs_missing_cost']==1
     assert missing['valid_output_cost_interval_status']=='unavailable_cost_in_valid_outputs'
     assert missing['mean_successful_seconds'] is not None  # labelled recorded-only diagnostic remains available
+
+
+def test_function_unavailability_uses_the_error_frame_without_reclassifying_valid_trajectories():
+    from formal_cost_policy import summarize_task_costs,analyze_error_costs
+    from formal_uncertainty import create_plan
+    plan=create_plan('function-cost-fixture','G1',['0','1','2','3'])
+    def record(label,i,seconds):
+        name=label+str(i);h=history(name,[('valid',seconds-1)])
+        h['task'].update(model='G1',replicate=i)
+        return summarize_task_costs(h,dict(task=h['task'],original=name),[call(h,0,seconds,0)],{name+'0':seconds/2})
+    records={label:{str(i):record(label,i,(i+1)*scale) for i in range(4)} for label,scale in [('a',10.),('b',5.)]}
+    estimates={'a':dict(zip(plan.replicate_ids,[1.,None,3.,4.])), 'b':dict(zip(plan.replicate_ids,[2.,2.,None,2.]))}
+    report=analyze_error_costs(plan,records,estimates,dict(kind='analytic',value=0.,mcse=0.),pairs=[('a','b')])
+    row=report['costs']['research_execution']['workflows']['a']
+    assert row['mean_seconds']==pytest.approx(80/3)
+    assert row['function_available']==3 and row['output_outcome_counts']['valid']==4
+    assert row['plot_error_cost_point'] is True
+    assert report['error']['workflows']['a']['conditional_squared_discrepancy']==pytest.approx(26/3)
+    pair=report['costs']['research_execution']['pairs'][0]
+    assert pair['validity_table']==dict(n11=2,n10=1,n01=1,n00=0) and pair['geometric_mean_ratio']==pytest.approx(2.)
+    unresolved=analyze_error_costs(plan,records,estimates,dict(kind='unresolved',value=0.,mcse=None),pairs=[('a','b')])
+    assert unresolved['costs']['research_execution']['workflows']['a']['plot_error_cost_point'] is False
+    assert unresolved['error']['workflows']['a']['conditional_squared_discrepancy'] is None
+    records['a']['2']['phases']['research_execution']['complete_seconds']=None
+    gap=analyze_error_costs(plan,records,estimates,dict(kind='analytic',value=0.,mcse=0.),pairs=[('a','b')])
+    assert gap['costs']['research_execution']['workflows']['a']['mean_seconds'] is None
+    assert gap['costs']['research_execution']['pairs'][0]['geometric_mean_ratio']==pytest.approx(2.)  # missing cost lies outside the common function frame
