@@ -2,7 +2,9 @@
 
 2026-10-05。当前开发分支 `codex/windows-return-audit`；原 `windows-native-dev` 的首轮512项是已接收的历史证据。只使用原生 Windows，不重启第一次移植，也不覆盖原协议或环境。
 
-**第二轮`ced54ef`已接收。现在只需按[F2原始输入续跑提示词](CODEX-PROMPT-F2-RESUME.md)完成192工作流机制pilot。** 原文件已补入现有草稿，分析器已修复。F1/F4、九目标CPU NUTS和CPU/CUDA MH就绪检查已完成，无需再次运行；Mac跨系统严格变换差异见[接收报告](../../docs/WINDOWS-ROUND2-INTAKE.md)。以下是原执行入口的保留索引：
+**第二轮`ced54ef`已接收。现在只需按[F2原始输入续跑提示词](CODEX-PROMPT-F2-RESUME.md)完成192工作流机制pilot。** 原文件已补入现有草稿，分析器已修复。F1/F4、九目标CPU NUTS和CPU/CUDA MH就绪检查已完成，无需再次运行；Mac跨系统严格变换差异见[接收报告](../../docs/WINDOWS-ROUND2-INTAKE.md)。F2封存后，再交给Windows Codex[原生运行器与最大任务提示词](CODEX-PROMPT-F3-RUNTIME.md)，实施尚缺的平台运行保护与有限真实批次。两个提示词按顺序执行，不同时启动基准。该后继提示词要求先开发和实测，不表示Windows运行器已经实现。
+
+以下是原执行入口的保留索引：
 
 1. [F1 诊断最小复现](CODEX-PROMPT.md)：固定二进制输入、R版本和两项Rhat差异核验，无新采样。
 2. [F2 机制与 F4 水井](CODEX-PROMPT-F2-F4.md)：按各自已冻结协议执行；水井目标/R接口、CPU/CUDA核验和192工作流机制pilot，保留负结果。
@@ -20,3 +22,5 @@ Mac后续计时验证：`docs/MEASURED-WORKFLOW.md`记录独立普通子进程�
 
 
 Mac后继：`docs/CACHED-AND-RECOVERY-COSTS.md`给出固定设备输入的原MH执行器计时，以及记录run/retry/拒绝/零重算调用的外层账本。科学源码和原协议未改；`MeasuredCoordinator`依赖当前仅Mac验收的TaskCoordinator，不能直接把Windows调用标为通过。Windows需原生进程/恢复验证及最大任务实测。MALA exit7工作程序为明确人工故障夹具，不得用于正式研究；缓存重放不增加独立统计n。
+
+Mac批次后继：[最大形状/搬移归档报告](../../docs/BATCH-MAXIMUM-VALIDATION.md)14项合格，最大NUTS原调用及唯一重试中断保留，未做第三次尝试；不能替代Windows验收。

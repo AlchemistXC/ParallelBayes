@@ -1,0 +1,1536 @@
+[
+  {
+    "budget": 16384,
+    "divergences": null,
+    "function_status": "unavailable",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/34d6162a6a062ff1cd600d7e",
+          "binding_sha256": "f12fd630ee66cd382a4859e39d4b905558e552997f7f3f7fda3f6ec5451bbbed",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "45597967f184667ed1a3658bc27a5bc0f22f96f9e12fb302dc3ada150edb8267",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 16384,
+            "device": "cpu",
+            "executor": "spawn_chains",
+            "id": "34d6162a6a062ff1cd600d7e",
+            "input": "G2-rep0000.npz",
+            "kernel": "nuts",
+            "model": "G2",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-nuts-spawn_chains"
+          },
+          "outcome": "infrastructure_interruption",
+          "seconds": null,
+          "unknown_time_imputed": false
+        },
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/34d6162a6a062ff1cd600d7e.retry",
+          "binding_sha256": "f12fd630ee66cd382a4859e39d4b905558e552997f7f3f7fda3f6ec5451bbbed",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "97ebfcb4c849182114620dbbf38961ba64edd2c2cd11986211b74686c4f212ad",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 16384,
+            "device": "cpu",
+            "executor": "spawn_chains",
+            "id": "34d6162a6a062ff1cd600d7e",
+            "input": "G2-rep0000.npz",
+            "kernel": "nuts",
+            "model": "G2",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-nuts-spawn_chains"
+          },
+          "outcome": "infrastructure_interruption",
+          "seconds": null,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": null,
+      "lifecycle": "stopped_unsealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/34d6162a6a062ff1cd600d7e",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 2,
+        "known_seconds": 0.0,
+        "outcome": "infrastructure_interruption",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": null,
+        "unknown_cost_attempts": 2
+      },
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "34d6162a6a062ff1cd600d7e",
+        "input": "G2-rep0000.npz",
+        "kernel": "nuts",
+        "model": "G2",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-nuts-spawn_chains"
+      }
+    },
+    "id": "34d6162a6a062ff1cd600d7e",
+    "means": null,
+    "model": "G2",
+    "names": null,
+    "outcome": "infrastructure_interruption",
+    "raw_sha256": null,
+    "replicate": "0",
+    "workflow": "cpu-nuts-spawn_chains"
+  },
+  {
+    "budget": 64,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "576": "6c59438aa4ce9424b342ff3f6202b966600d5358aabd8dc62ca2ef3da5f937eb"
+      },
+      "input_sha256": "dde1c24930fe05fea6fdb48578b0df8d63180a00cb4ab5bbb6495ac3e95153fd",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        -0.24234420150170277,
+        -0.6748569696359427,
+        0.44050708979847925,
+        0.10546875
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "q1",
+        "q2",
+        "sigmoid_q1",
+        "q1_positive"
+      ],
+      "path_prefix_sha256": {
+        "576": "f9a597b82c2f68562a4e2e7add82f196a48afa6c06bc17d2f504e6e176343799"
+      },
+      "raw_sha256": "4b6d96d22867384f30534bff062db6b8dc83fee721d816f275d39708bb147fca",
+      "retained_acceptance_rate": 0.46484375,
+      "shape": [
+        64,
+        4,
+        4
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/a893eb2fb7f380db49d7d58b",
+          "binding_sha256": "398dff6848c93b82cd14bf1227440ec8d37c1d4311bd6b70d7781d9be9031dcd",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "241c52e2564b40b8764d51bef3a40ddd6bcdc7f54faacc5044db05f6146e7d81",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 64,
+            "device": "cpu",
+            "executor": "quasi_deer",
+            "id": "a893eb2fb7f380db49d7d58b",
+            "input": "L1-rep0000.npz",
+            "kernel": "mala",
+            "model": "L1",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-mala-quasi_deer"
+          },
+          "outcome": "valid",
+          "seconds": 6.849645582999983,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/a893eb2fb7f380db49d7d58b",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/a893eb2fb7f380db49d7d58b",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 6.849645582999983,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 6.849645582999983,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "a893eb2fb7f380db49d7d58b",
+        "input": "L1-rep0000.npz",
+        "kernel": "mala",
+        "model": "L1",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-mala-quasi_deer"
+      }
+    },
+    "id": "a893eb2fb7f380db49d7d58b",
+    "means": [
+      -0.24234420150170277,
+      -0.6748569696359427,
+      0.44050708979847925,
+      0.10546875
+    ],
+    "model": "L1",
+    "names": [
+      "q1",
+      "q2",
+      "sigmoid_q1",
+      "q1_positive"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "4b6d96d22867384f30534bff062db6b8dc83fee721d816f275d39708bb147fca",
+    "replicate": "0",
+    "workflow": "cpu-mala-quasi_deer"
+  },
+  {
+    "budget": 64,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "576": "7e02cbd46e47ee09cc3fe8913dcf2cb5b0808456f7779416a2ba72f18833a772"
+      },
+      "input_sha256": "f42a561485952bd38dcbf52f64312067dd05a2675429381ef6c4f4708f38405f",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        0.15145156537478768,
+        0.8020368022937842,
+        0.1484375
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "path_prefix_sha256": {
+        "576": "5e73e814da353a4ea2045c2873ec4c9ff2c777b4a1759e09f1e0edfa17a7cabc"
+      },
+      "raw_sha256": "2ea7b7a928549e45f3c094822ee555e2c314805675ccddbec6b5074442f2500d",
+      "retained_acceptance_rate": 0.234375,
+      "shape": [
+        64,
+        4,
+        3
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/6702513c78972d4a7a5ee246",
+          "binding_sha256": "df61e8aa765dd5bc2324627f3364774830a7551e72ec8c2795879ad982bccabe",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "81cbc38b7dee788985bd120ab891db684c31966030fc9bd4fc5e4c7a3eab5054",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 64,
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "6702513c78972d4a7a5ee246",
+            "input": "G1-rep0000.npz",
+            "kernel": "rwm",
+            "model": "G1",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-rwm-sequential"
+          },
+          "outcome": "valid",
+          "seconds": 1.8263577920001808,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/6702513c78972d4a7a5ee246",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/6702513c78972d4a7a5ee246",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 1.8263577920001808,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 1.8263577920001808,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "6702513c78972d4a7a5ee246",
+        "input": "G1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G1",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-rwm-sequential"
+      }
+    },
+    "id": "6702513c78972d4a7a5ee246",
+    "means": [
+      0.15145156537478768,
+      0.8020368022937842,
+      0.1484375
+    ],
+    "model": "G1",
+    "names": [
+      "standard_q1",
+      "standard_q1_squared",
+      "standard_q1_gt1"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "2ea7b7a928549e45f3c094822ee555e2c314805675ccddbec6b5074442f2500d",
+    "replicate": "0",
+    "workflow": "cpu-rwm-sequential"
+  },
+  {
+    "budget": 16384,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "16896": "018cdc5301cfeb8dc380964953c00f29b40cde673c560acc5e9c57f8a231ab21"
+      },
+      "input_sha256": "913bc732d27b4453ad6c492a43d9d69ad347907de731430c970e4c97b9eb6b65",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        0.0031867585830502973,
+        1.0321193017288992,
+        0.1627960205078125
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "path_prefix_sha256": {
+        "16896": "b8230b90278363879bcff7cae5192922e922debae27a62739e2c970fe712c9d5"
+      },
+      "raw_sha256": "7b802aeb5749fcae760fbfc2d63e522bc7c82c1939dff10452dadcf73f750fd2",
+      "retained_acceptance_rate": 0.2352752685546875,
+      "shape": [
+        16384,
+        4,
+        3
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/f07592d1fb3b28649c0f681e",
+          "binding_sha256": "f40cc0ccae025fa036028f647bab25da41045d14140d0553e98b3f29d977ffab",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "0e1711f8e680e5aff1df2990051f9ac7f4bb1176035f198f42cdd6469b9c2eec",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 16384,
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "f07592d1fb3b28649c0f681e",
+            "input": "G2-rep0000.npz",
+            "kernel": "rwm",
+            "model": "G2",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-rwm-sequential"
+          },
+          "outcome": "valid",
+          "seconds": 5.9961511659998905,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/f07592d1fb3b28649c0f681e",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/f07592d1fb3b28649c0f681e",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 5.9961511659998905,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 5.9961511659998905,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "f07592d1fb3b28649c0f681e",
+        "input": "G2-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G2",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-rwm-sequential"
+      }
+    },
+    "id": "f07592d1fb3b28649c0f681e",
+    "means": [
+      0.0031867585830502973,
+      1.0321193017288992,
+      0.1627960205078125
+    ],
+    "model": "G2",
+    "names": [
+      "standard_q1",
+      "standard_q1_squared",
+      "standard_q1_gt1"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "7b802aeb5749fcae760fbfc2d63e522bc7c82c1939dff10452dadcf73f750fd2",
+    "replicate": "0",
+    "workflow": "cpu-rwm-sequential"
+  },
+  {
+    "budget": 64,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "576": "5bfdb5859d4f399fd65324b4221a44d6d713cacdbb15d85029557976381bccbd"
+      },
+      "input_sha256": "9b3d7805ae2642f09ead88acf9aea037d7a90339d523e7bd94d68ced6a8c974e",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        -0.2258847031000431,
+        -0.6371118325037189,
+        0.44417025799614396,
+        0.0859375
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "q1",
+        "q2",
+        "sigmoid_q1",
+        "q1_positive"
+      ],
+      "path_prefix_sha256": {
+        "576": "dd3db0135d7c8be2b5015c894eac01ebc993f049db0f5791160fb7990b69449c"
+      },
+      "raw_sha256": "a9dfd35998d9d008845d4d72741e3bf58a3a9c2349f93127378ff0b84d2d625d",
+      "retained_acceptance_rate": 0.234375,
+      "shape": [
+        64,
+        4,
+        4
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/27c052013528e3a007eec56c",
+          "binding_sha256": "950c74cc577e73751b24c5b33d7138d47299b4ec8f9ebc3f458919cc2729ec06",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "f27bb5469f6e78aadbe1573dc228d422ab1b689b9ea843897a2e9dbdeb1afe5d",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 64,
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "27c052013528e3a007eec56c",
+            "input": "L1-rep0000.npz",
+            "kernel": "rwm",
+            "model": "L1",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-rwm-sequential"
+          },
+          "outcome": "valid",
+          "seconds": 1.9343062079997253,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/27c052013528e3a007eec56c",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/27c052013528e3a007eec56c",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 1.9343062079997253,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 1.9343062079997253,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "27c052013528e3a007eec56c",
+        "input": "L1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "L1",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-rwm-sequential"
+      }
+    },
+    "id": "27c052013528e3a007eec56c",
+    "means": [
+      -0.2258847031000431,
+      -0.6371118325037189,
+      0.44417025799614396,
+      0.0859375
+    ],
+    "model": "L1",
+    "names": [
+      "q1",
+      "q2",
+      "sigmoid_q1",
+      "q1_positive"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "a9dfd35998d9d008845d4d72741e3bf58a3a9c2349f93127378ff0b84d2d625d",
+    "replicate": "0",
+    "workflow": "cpu-rwm-sequential"
+  },
+  {
+    "budget": 64,
+    "divergences": 0,
+    "extraction": {
+      "acceptance_prefix_sha256": {},
+      "input_sha256": "e6eb11c338ac241e97ebaba4583e6b31944ae6f8dc1ffcad3a93b98e3beb454a",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        0.08280072169705771,
+        1.2024926692130578,
+        0.16015625
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "path_prefix_sha256": {
+        "64": "695f675fe3a284bf5d4e76642e87ac316654cacb96082999e89e0b107b911406"
+      },
+      "raw_sha256": "5c838da829c814e23c1015fef04b6c5aeac4e1f75862f1962bb49a64446c3608",
+      "retained_acceptance_rate": null,
+      "shape": [
+        64,
+        4,
+        3
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/806edca2d8e7bf2eafc5ca64",
+          "binding_sha256": "d06c2acea46caa64b70e0fe60f9e84c7d602ada49d88a0bfe1b33582455ef47e",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "41dbd185584c29a5e16fad0d1b6c4a9e5c1f20d2a9d13ed484cea5550cfeb383",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 64,
+            "device": "cpu",
+            "executor": "spawn_chains",
+            "id": "806edca2d8e7bf2eafc5ca64",
+            "input": "G1-rep0000.npz",
+            "kernel": "nuts",
+            "model": "G1",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-nuts-spawn_chains"
+          },
+          "outcome": "valid",
+          "seconds": 3.2950105410000106,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/806edca2d8e7bf2eafc5ca64",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/806edca2d8e7bf2eafc5ca64",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 3.2950105410000106,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 3.2950105410000106,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "806edca2d8e7bf2eafc5ca64",
+        "input": "G1-rep0000.npz",
+        "kernel": "nuts",
+        "model": "G1",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-nuts-spawn_chains"
+      }
+    },
+    "id": "806edca2d8e7bf2eafc5ca64",
+    "initial_rng_sha256": "583c7d21be8d21daefaf0d3083070e1715cbeffab5556e778bd53d2f9f8708d6",
+    "means": [
+      0.08280072169705771,
+      1.2024926692130578,
+      0.16015625
+    ],
+    "model": "G1",
+    "names": [
+      "standard_q1",
+      "standard_q1_squared",
+      "standard_q1_gt1"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "5c838da829c814e23c1015fef04b6c5aeac4e1f75862f1962bb49a64446c3608",
+    "replicate": "0",
+    "workflow": "cpu-nuts-spawn_chains"
+  },
+  {
+    "budget": 16384,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "16896": "018cdc5301cfeb8dc380964953c00f29b40cde673c560acc5e9c57f8a231ab21"
+      },
+      "input_sha256": "3242046febdd23c65b0fbb3d0bce658d1137bbb2656def1916ff96e69c22631f",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        0.0031867585830515272,
+        1.032119301728895,
+        0.1627960205078125
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "path_prefix_sha256": {
+        "16896": "f89c6bd99c80643507a78c61625af32c964ef09b8ccb8da5b9a967a20c06eee5"
+      },
+      "raw_sha256": "fc2466d3436dd97a855ba4d1578418af374dc645692167fcc9e3ad71d0de7a68",
+      "retained_acceptance_rate": 0.2352752685546875,
+      "shape": [
+        16384,
+        4,
+        3
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/03cd042a38f673015ebde1ac",
+          "binding_sha256": "a5f686de458686a0d4e9e97fbb6786b97b66d668c8129beb8d40e6bf386be5ca",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "fa2f354e512709cb8d499dc885d29df3de329f854304acf84a12b742ffe96147",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 16384,
+            "device": "cpu",
+            "executor": "online_picard",
+            "id": "03cd042a38f673015ebde1ac",
+            "input": "G2-rep0000.npz",
+            "kernel": "rwm",
+            "model": "G2",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-rwm-online_picard"
+          },
+          "outcome": "valid",
+          "seconds": 6.100988916999995,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/03cd042a38f673015ebde1ac",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/03cd042a38f673015ebde1ac",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 6.100988916999995,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 6.100988916999995,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "03cd042a38f673015ebde1ac",
+        "input": "G2-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G2",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-rwm-online_picard"
+      }
+    },
+    "id": "03cd042a38f673015ebde1ac",
+    "means": [
+      0.0031867585830515272,
+      1.032119301728895,
+      0.1627960205078125
+    ],
+    "model": "G2",
+    "names": [
+      "standard_q1",
+      "standard_q1_squared",
+      "standard_q1_gt1"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "fc2466d3436dd97a855ba4d1578418af374dc645692167fcc9e3ad71d0de7a68",
+    "replicate": "0",
+    "workflow": "cpu-rwm-online_picard"
+  },
+  {
+    "budget": 64,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "576": "2ca5bc353c157adce7be2a0fb48dcd05d9d84c705bdea751a2008b19edccd2fb"
+      },
+      "input_sha256": "ac7dfb6227db736350d8e17b9327863e04fcdc43e420a07fee448b42bc768c39",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        0.04956462334479306,
+        0.6979081556202306,
+        0.109375
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "path_prefix_sha256": {
+        "576": "2f988983aa78d17c1e1791f3b9343f2ae65dccc8a0b94b2c94deba865ad3cef7"
+      },
+      "raw_sha256": "b3802b2715a571cef1d91a8327c235c82f999a1fb2fe2df2908df242913a8095",
+      "retained_acceptance_rate": 0.45703125,
+      "shape": [
+        64,
+        4,
+        3
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/783291c66aea34a699716f53",
+          "binding_sha256": "6b8a951e4f75773cdc7ecec1e9c12a3b77ebcac482ab0c7d4d890d9b65355322",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "c3226ccac1c4112cb8c12a8df50c64fe67aba62780db7e0298de85d20f1e09d4",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 64,
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "783291c66aea34a699716f53",
+            "input": "G1-rep0000.npz",
+            "kernel": "mala",
+            "model": "G1",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-mala-sequential"
+          },
+          "outcome": "valid",
+          "seconds": 2.545102957999916,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/783291c66aea34a699716f53",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/783291c66aea34a699716f53",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 2.545102957999916,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 2.545102957999916,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "783291c66aea34a699716f53",
+        "input": "G1-rep0000.npz",
+        "kernel": "mala",
+        "model": "G1",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-mala-sequential"
+      }
+    },
+    "id": "783291c66aea34a699716f53",
+    "means": [
+      0.04956462334479306,
+      0.6979081556202306,
+      0.109375
+    ],
+    "model": "G1",
+    "names": [
+      "standard_q1",
+      "standard_q1_squared",
+      "standard_q1_gt1"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "b3802b2715a571cef1d91a8327c235c82f999a1fb2fe2df2908df242913a8095",
+    "replicate": "0",
+    "workflow": "cpu-mala-sequential"
+  },
+  {
+    "budget": 64,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "576": "2ca5bc353c157adce7be2a0fb48dcd05d9d84c705bdea751a2008b19edccd2fb"
+      },
+      "input_sha256": "b83221b7d39faa9a0246449586ce65be0db82398e7693e46c3815bdfe2654d93",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        0.04956462334484434,
+        0.6979081556201926,
+        0.109375
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "path_prefix_sha256": {
+        "576": "dd25b79900b0cc4672b6acb6e814d41e55ab1d5bfcd56a73aecb877c3ece33d2"
+      },
+      "raw_sha256": "5a9123cf892cf306ddc5fa695349f29d0d9c1795da9d155013cdad7292ddec7a",
+      "retained_acceptance_rate": 0.45703125,
+      "shape": [
+        64,
+        4,
+        3
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/f87572758ef089ab1ad2b4e6",
+          "binding_sha256": "83e610b42ac1571f3f18f827ef4f3beb0e78d9e3926a9dac938bd301f3b12c60",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "b8b3ed1c102e337b764aa40f1eb9c2f776184f6545768f01d40bd1aeb574cefc",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 64,
+            "device": "cpu",
+            "executor": "quasi_deer",
+            "id": "f87572758ef089ab1ad2b4e6",
+            "input": "G1-rep0000.npz",
+            "kernel": "mala",
+            "model": "G1",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-mala-quasi_deer"
+          },
+          "outcome": "valid",
+          "seconds": 3.7521090830000503,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/f87572758ef089ab1ad2b4e6",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/f87572758ef089ab1ad2b4e6",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 3.7521090830000503,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 3.7521090830000503,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "f87572758ef089ab1ad2b4e6",
+        "input": "G1-rep0000.npz",
+        "kernel": "mala",
+        "model": "G1",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-mala-quasi_deer"
+      }
+    },
+    "id": "f87572758ef089ab1ad2b4e6",
+    "means": [
+      0.04956462334484434,
+      0.6979081556201926,
+      0.109375
+    ],
+    "model": "G1",
+    "names": [
+      "standard_q1",
+      "standard_q1_squared",
+      "standard_q1_gt1"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "5a9123cf892cf306ddc5fa695349f29d0d9c1795da9d155013cdad7292ddec7a",
+    "replicate": "0",
+    "workflow": "cpu-mala-quasi_deer"
+  },
+  {
+    "budget": 64,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "576": "6c59438aa4ce9424b342ff3f6202b966600d5358aabd8dc62ca2ef3da5f937eb"
+      },
+      "input_sha256": "a35e2e5a86153c44e30fdf2cff1c240b02ec02045502766e1b2c68bcbc71ff22",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        -0.2423442015017239,
+        -0.6748569696359251,
+        0.4405070897984739,
+        0.10546875
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "q1",
+        "q2",
+        "sigmoid_q1",
+        "q1_positive"
+      ],
+      "path_prefix_sha256": {
+        "576": "6fe27466b358e648bd85128d943dd16bc35f39d4a19c1eafd8cd8375cf266114"
+      },
+      "raw_sha256": "7da8039b50d1e25794ca38e8f303c0d7890fee2216305626673813e2926fe9c8",
+      "retained_acceptance_rate": 0.46484375,
+      "shape": [
+        64,
+        4,
+        4
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/d5fc731a4ab0621c2baa3e23",
+          "binding_sha256": "5b165fbc9549a0d51f8edb62048790e88d79d4a2b871d42e378cc1ad006c2d11",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "5b7360378633a070f6fec8110b7b349e0f370d81066d1c48432b6c84181da1a8",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 64,
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "d5fc731a4ab0621c2baa3e23",
+            "input": "L1-rep0000.npz",
+            "kernel": "mala",
+            "model": "L1",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-mala-sequential"
+          },
+          "outcome": "valid",
+          "seconds": 2.596616499999982,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/d5fc731a4ab0621c2baa3e23",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/d5fc731a4ab0621c2baa3e23",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 2.596616499999982,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 2.596616499999982,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "d5fc731a4ab0621c2baa3e23",
+        "input": "L1-rep0000.npz",
+        "kernel": "mala",
+        "model": "L1",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-mala-sequential"
+      }
+    },
+    "id": "d5fc731a4ab0621c2baa3e23",
+    "means": [
+      -0.2423442015017239,
+      -0.6748569696359251,
+      0.4405070897984739,
+      0.10546875
+    ],
+    "model": "L1",
+    "names": [
+      "q1",
+      "q2",
+      "sigmoid_q1",
+      "q1_positive"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "7da8039b50d1e25794ca38e8f303c0d7890fee2216305626673813e2926fe9c8",
+    "replicate": "0",
+    "workflow": "cpu-mala-sequential"
+  },
+  {
+    "budget": 16384,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "16896": "02ff542ab872ca3956a5275bd7ebe21a5e772e63c218fe0d03d3aff58cd09cff"
+      },
+      "input_sha256": "f6e49250071c48b34060484718c1a09780c62c231a7861559accbe43e23d803e",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        -0.012806045837068522,
+        1.0084813742688692,
+        0.157379150390625
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "path_prefix_sha256": {
+        "16896": "2d538bd8104b8d38876ef1ec206b0bf8c86003e1571ac31b19629fd5518ecf01"
+      },
+      "raw_sha256": "9b5975c2c7d3c8b9694570786e1ef8d22dfa548b29d5e6c9d1e6734c982b6ab3",
+      "retained_acceptance_rate": 0.4786376953125,
+      "shape": [
+        16384,
+        4,
+        3
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/5db43be5d0a8519b28490351",
+          "binding_sha256": "7bfddca94d526d36aca5a1b560dd010f6503221c4b986092bfdf8e2d263087a7",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "ba21d69da156da69912209442ba518fb587c7c2bcb9243f31e991c825a6c64c4",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 16384,
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "5db43be5d0a8519b28490351",
+            "input": "G2-rep0000.npz",
+            "kernel": "mala",
+            "model": "G2",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-mala-sequential"
+          },
+          "outcome": "valid",
+          "seconds": 12.860855957999775,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/5db43be5d0a8519b28490351",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/5db43be5d0a8519b28490351",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 12.860855957999775,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 12.860855957999775,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "5db43be5d0a8519b28490351",
+        "input": "G2-rep0000.npz",
+        "kernel": "mala",
+        "model": "G2",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-mala-sequential"
+      }
+    },
+    "id": "5db43be5d0a8519b28490351",
+    "means": [
+      -0.012806045837068522,
+      1.0084813742688692,
+      0.157379150390625
+    ],
+    "model": "G2",
+    "names": [
+      "standard_q1",
+      "standard_q1_squared",
+      "standard_q1_gt1"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "9b5975c2c7d3c8b9694570786e1ef8d22dfa548b29d5e6c9d1e6734c982b6ab3",
+    "replicate": "0",
+    "workflow": "cpu-mala-sequential"
+  },
+  {
+    "budget": 64,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "576": "5bfdb5859d4f399fd65324b4221a44d6d713cacdbb15d85029557976381bccbd"
+      },
+      "input_sha256": "8fca0c4b06da455d0e56f772b0ea66277b1a9f040d6608040a558236bf280b31",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        -0.22588470310004305,
+        -0.6371118325037189,
+        0.444170257996144,
+        0.0859375
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "q1",
+        "q2",
+        "sigmoid_q1",
+        "q1_positive"
+      ],
+      "path_prefix_sha256": {
+        "576": "422a023d13a97ef669496db35d57a13c0dfa14a01b151f8066fd22ed8bdf45de"
+      },
+      "raw_sha256": "a0ec799af151855a9bb82ca95d6184cabf7c33e4caf23b17ad5012e89ab42935",
+      "retained_acceptance_rate": 0.234375,
+      "shape": [
+        64,
+        4,
+        4
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/46bdaeaffd58373537aa039c",
+          "binding_sha256": "895cef433ecf74d13e566c8407856095372cac36d82b152ec2a1e24ae9d8beff",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "907e2b665adb84a278725e72685c77e2b3f5fa458e1ad85cbc8ba0cb66c13121",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 64,
+            "device": "cpu",
+            "executor": "online_picard",
+            "id": "46bdaeaffd58373537aa039c",
+            "input": "L1-rep0000.npz",
+            "kernel": "rwm",
+            "model": "L1",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-rwm-online_picard"
+          },
+          "outcome": "valid",
+          "seconds": 2.060005958000147,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/46bdaeaffd58373537aa039c",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/46bdaeaffd58373537aa039c",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 2.060005958000147,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 2.060005958000147,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "46bdaeaffd58373537aa039c",
+        "input": "L1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "L1",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-rwm-online_picard"
+      }
+    },
+    "id": "46bdaeaffd58373537aa039c",
+    "means": [
+      -0.22588470310004305,
+      -0.6371118325037189,
+      0.444170257996144,
+      0.0859375
+    ],
+    "model": "L1",
+    "names": [
+      "q1",
+      "q2",
+      "sigmoid_q1",
+      "q1_positive"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "a0ec799af151855a9bb82ca95d6184cabf7c33e4caf23b17ad5012e89ab42935",
+    "replicate": "0",
+    "workflow": "cpu-rwm-online_picard"
+  },
+  {
+    "budget": 64,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "576": "7e02cbd46e47ee09cc3fe8913dcf2cb5b0808456f7779416a2ba72f18833a772"
+      },
+      "input_sha256": "0da1d0a0e4851636dbc82133ed94a6387b5ac39d3c0450e014f71c4c115f4fd3",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        0.1514515653747874,
+        0.8020368022937827,
+        0.1484375
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "path_prefix_sha256": {
+        "576": "de3e70fbd91422ffca184bde3e8454aaa8ed54ca9b1dc71c7608871b5ba28893"
+      },
+      "raw_sha256": "9f1bc0cc213b809a150c0e555ce5e0ac910d91cec4eba0b05071bccf97f41ad6",
+      "retained_acceptance_rate": 0.234375,
+      "shape": [
+        64,
+        4,
+        3
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/82f80671c0e38343699cc3b2",
+          "binding_sha256": "870db243d73638e8d9bc4aa40d45bdcc968dfb1af11866e6e5f9e983de938f98",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "16c58fc4b7862486b87b6c8df735300b3a0d212d22bcd5d6f20bdd211fa70a8c",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 64,
+            "device": "cpu",
+            "executor": "online_picard",
+            "id": "82f80671c0e38343699cc3b2",
+            "input": "G1-rep0000.npz",
+            "kernel": "rwm",
+            "model": "G1",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-rwm-online_picard"
+          },
+          "outcome": "valid",
+          "seconds": 1.8474827079999159,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/82f80671c0e38343699cc3b2",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/82f80671c0e38343699cc3b2",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 1.8474827079999159,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 1.8474827079999159,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "82f80671c0e38343699cc3b2",
+        "input": "G1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G1",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-rwm-online_picard"
+      }
+    },
+    "id": "82f80671c0e38343699cc3b2",
+    "means": [
+      0.1514515653747874,
+      0.8020368022937827,
+      0.1484375
+    ],
+    "model": "G1",
+    "names": [
+      "standard_q1",
+      "standard_q1_squared",
+      "standard_q1_gt1"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "9f1bc0cc213b809a150c0e555ce5e0ac910d91cec4eba0b05071bccf97f41ad6",
+    "replicate": "0",
+    "workflow": "cpu-rwm-online_picard"
+  },
+  {
+    "budget": 64,
+    "divergences": 0,
+    "extraction": {
+      "acceptance_prefix_sha256": {},
+      "input_sha256": "8c5b5a28cce247e251118ffb64b45d637191e4a99affefc6b143a9b2e4f1056b",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        -0.28990581439045376,
+        -0.6889814393145941,
+        0.42910327279215665,
+        0.11328125
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "q1",
+        "q2",
+        "sigmoid_q1",
+        "q1_positive"
+      ],
+      "path_prefix_sha256": {
+        "64": "00bb79fe36b1953285605ea067bca000c6c33281559e00dd51a4a97db9114ba8"
+      },
+      "raw_sha256": "a3f15a87648ea3c3f1d6e90a6bad5ac0f93a749ecd1a98288c1f3a84776bcbdd",
+      "retained_acceptance_rate": null,
+      "shape": [
+        64,
+        4,
+        4
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/cef8279d25266cbcc179d240",
+          "binding_sha256": "3e670146e067f04bd5b41bbf30a37e6eb7efc526f293c908c094a9bf688eab04",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "67300fe999a573d650c091878b0770fa03483375742a09097f8868514a8b2b5b",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 64,
+            "device": "cpu",
+            "executor": "spawn_chains",
+            "id": "cef8279d25266cbcc179d240",
+            "input": "L1-rep0000.npz",
+            "kernel": "nuts",
+            "model": "L1",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-nuts-spawn_chains"
+          },
+          "outcome": "valid",
+          "seconds": 3.5862711250001666,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/cef8279d25266cbcc179d240",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/cef8279d25266cbcc179d240",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 3.5862711250001666,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 3.5862711250001666,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "cef8279d25266cbcc179d240",
+        "input": "L1-rep0000.npz",
+        "kernel": "nuts",
+        "model": "L1",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-nuts-spawn_chains"
+      }
+    },
+    "id": "cef8279d25266cbcc179d240",
+    "initial_rng_sha256": "7b9dff34d77c45004374532652e50e0eb25b1927fad8730c37186bca94d0e37a",
+    "means": [
+      -0.28990581439045376,
+      -0.6889814393145941,
+      0.42910327279215665,
+      0.11328125
+    ],
+    "model": "L1",
+    "names": [
+      "q1",
+      "q2",
+      "sigmoid_q1",
+      "q1_positive"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "a3f15a87648ea3c3f1d6e90a6bad5ac0f93a749ecd1a98288c1f3a84776bcbdd",
+    "replicate": "0",
+    "workflow": "cpu-nuts-spawn_chains"
+  },
+  {
+    "budget": 16384,
+    "divergences": null,
+    "extraction": {
+      "acceptance_prefix_sha256": {
+        "16896": "02ff542ab872ca3956a5275bd7ebe21a5e772e63c218fe0d03d3aff58cd09cff"
+      },
+      "input_sha256": "bf99f621bc5bd7634eb1ecd4830ce44162c1eb622883c5cae05b8e59485a682c",
+      "maximum_member_bytes": 134217728,
+      "means": [
+        -0.012806045837061509,
+        1.0084813742689602,
+        0.157379150390625
+      ],
+      "memory_policy": "One fit at a time, at most two raw members plus bounded transform blocks; no study-wide trajectory cache",
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ],
+      "path_prefix_sha256": {
+        "16896": "3408f829365148f85995405aa15db7a822ab4461f19f25ae45e426666c2e657c"
+      },
+      "raw_sha256": "beaa1d3e685befa92897dcea1b490a29dda28d5c299a6aa09318ab8842ca4057",
+      "retained_acceptance_rate": 0.4786376953125,
+      "shape": [
+        16384,
+        4,
+        3
+      ]
+    },
+    "function_status": "completed",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/3a254310042a22a4e92fb85d",
+          "binding_sha256": "22ea491d18d688722556821426c201cfcc10ddda32f29ab3f73b976299cb47e7",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "e6be9d940b00ffac0ade9a75781e7b872bf305f911bc18c9281cfca96ddcec27",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 16384,
+            "device": "cpu",
+            "executor": "quasi_deer",
+            "id": "3a254310042a22a4e92fb85d",
+            "input": "G2-rep0000.npz",
+            "kernel": "mala",
+            "model": "G2",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-mala-quasi_deer"
+          },
+          "outcome": "valid",
+          "seconds": 99.78680345800012,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempt boundaries only; coordinator/recovery/inter-call cost is excluded",
+      "eligible_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated/run/tasks/3a254310042a22a4e92fb85d",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/3a254310042a22a4e92fb85d",
+      "snapshot_sha256": "da7e1e03c4632c16be627ea5b1b5dbc33ea0d083e1fbddd9f6e834fec96c0f17",
+      "summary": {
+        "attempt_count": 1,
+        "known_seconds": 99.78680345800012,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": 99.78680345800012,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "3a254310042a22a4e92fb85d",
+        "input": "G2-rep0000.npz",
+        "kernel": "mala",
+        "model": "G2",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-mala-quasi_deer"
+      }
+    },
+    "id": "3a254310042a22a4e92fb85d",
+    "means": [
+      -0.012806045837061509,
+      1.0084813742689602,
+      0.157379150390625
+    ],
+    "model": "G2",
+    "names": [
+      "standard_q1",
+      "standard_q1_squared",
+      "standard_q1_gt1"
+    ],
+    "outcome": "valid",
+    "raw_sha256": "beaa1d3e685befa92897dcea1b490a29dda28d5c299a6aa09318ab8842ca4057",
+    "replicate": "0",
+    "workflow": "cpu-mala-quasi_deer"
+  }
+]

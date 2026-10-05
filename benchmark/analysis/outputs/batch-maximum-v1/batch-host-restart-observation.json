@@ -1,0 +1,8 @@
+{
+  "observed_ns": 1791206487686189000,
+  "kern_boottime": "{ sec = 1791203493, usec = 899993 } Mon Oct  5 21:31:33 2026",
+  "boot_unix_seconds": 1791203493,
+  "retry_started_unix_seconds": 1791203210.385087,
+  "boot_occurred_after_retry_started": true,
+  "scope": "Current host boot is later than the retry start. This establishes an intervening host restart, not why the host restarted or an elapsed-cost estimate."
+}

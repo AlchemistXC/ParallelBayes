@@ -1,0 +1,33 @@
+{
+  "batch": 0,
+  "complete_invocation_seconds_available": 14,
+  "completed": 14,
+  "cost_scope": "Driver loop including per-task history observation, retention decisions and journaling. Excludes initial source/input/dependency checks and own final report write. Original worker and invocation ledgers keep their distinct scopes.",
+  "driver_loop_seconds": 155.41432083300015,
+  "failed": 0,
+  "formal_inference_complete": false,
+  "formal_scientific_repetitions": 0,
+  "interrupted": 1,
+  "newly_executed": 14,
+  "pending": 0,
+  "planned": 15,
+  "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+  "retained_without_reexecution": 1,
+  "task_rows": [
+    "task-0000.json",
+    "task-0001.json",
+    "task-0002.json",
+    "task-0003.json",
+    "task-0004.json",
+    "task-0005.json",
+    "task-0006.json",
+    "task-0007.json",
+    "task-0008.json",
+    "task-0009.json",
+    "task-0010.json",
+    "task-0011.json",
+    "task-0012.json",
+    "task-0013.json",
+    "task-0014.json"
+  ]
+}

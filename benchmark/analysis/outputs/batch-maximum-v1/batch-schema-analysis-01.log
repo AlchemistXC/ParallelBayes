@@ -1,0 +1,36 @@
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+{
+  "analysis_sha256": "54503d78080b64c9e3b9cdb7e38898fc67fece4fbb8e5e20d3f563affb5b6e7f",
+  "source_commit": "3176b66db94859fe4b1a002f5155ace42b5d9e14",
+  "assets_checked": 556,
+  "planned": 15,
+  "valid": 14,
+  "interrupted": 1,
+  "means_exact": 14,
+  "histories_exact": 15,
+  "R_transports_exact": 14,
+  "modern_diagnostic_rows_exact": 47,
+  "finite_function_rhat_above_1_01": 29,
+  "undefined_function_rhat": 0,
+  "paired_paths": 6,
+  "paired_acceptance_mismatches": 0,
+  "primary_cost_available": 14,
+  "ordinary_cost_available": 14,
+  "technical_point_rows": 50,
+  "technical_pair_rows": 20,
+  "available_intervals": 0,
+  "new_MCMC_fits": 0,
+  "formal_scientific_repetitions": 0,
+  "formal_inference_complete": false,
+  "native_Windows_validated": false,
+  "analysis_wall_seconds": 5.95509229199979,
+  "analysis_is_sampler_time": false,
+  "Python_peak_RSS_bytes": 224722944,
+  "largest_child_peak_RSS_bytes": 163102720,
+  "memory_scope": "Separate Mac lifetime maxima, not summed process-tree peak"
+}

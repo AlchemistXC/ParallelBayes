@@ -1,0 +1,18 @@
+{
+  "archive": "batch-schema-maximum-mac-v1.tar",
+  "bytes": 225443840,
+  "checked_files": 556,
+  "completed": 14,
+  "frozen_sources_checked": 79,
+  "interrupted_attempts": 2,
+  "interrupted_logical_tasks": 1,
+  "new_independent_statistical_repetitions": 0,
+  "planned": 15,
+  "public_release": false,
+  "relocation": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-v1-relocated",
+  "sampling_source_commit": "b93a663169bb58b4ed985000b3ac357422e90299",
+  "sha256": "e2a32a9aac0fbb950132bf362c29704a398d0bf4e9d38cfac4665fafbb69e086",
+  "source_snapshot_commit": "3176b66db94859fe4b1a002f5155ace42b5d9e14",
+  "third_attempt_created": false,
+  "zero_recompute_task_files_preserved": 390
+}

@@ -1,0 +1,75 @@
+{
+  "G1": {
+    "base_target_id": "514971389da57c81e05933e03c3158901a37a2a3edbddbee6c3ce2ce0c02b515",
+    "kinds": [
+      "analytic",
+      "analytic",
+      "analytic"
+    ],
+    "mcse": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "means": [
+      0.0,
+      1.0,
+      0.15865525393145707
+    ],
+    "names": [
+      "standard_q1",
+      "standard_q1_squared",
+      "standard_q1_gt1"
+    ]
+  },
+  "G2": {
+    "base_target_id": "554d51fcef84272a0fd8444621cdd5888dbb185c5adf8579d0dd124ef8175598",
+    "kinds": [
+      "analytic",
+      "analytic",
+      "analytic"
+    ],
+    "mcse": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "means": [
+      0.0,
+      1.0,
+      0.15865525393145707
+    ],
+    "names": [
+      "standard_q1",
+      "standard_q1_squared",
+      "standard_q1_gt1"
+    ]
+  },
+  "L1": {
+    "base_target_id": "e9f9a77f5d98bd9cfcda542cc84d4c9415666bbb42f6588f292128c8792dd17d",
+    "kinds": [
+      "finite_mcmc",
+      "finite_mcmc",
+      "finite_mcmc",
+      "finite_mcmc"
+    ],
+    "mcse": [
+      0.00038899606027532126,
+      0.0005002227859549134,
+      9.405694023179964e-05,
+      0.0007639814255156833
+    ],
+    "means": [
+      -0.2780655741279529,
+      -0.6788954260209844,
+      0.4317947518790173,
+      0.10919189453125
+    ],
+    "names": [
+      "q1",
+      "q2",
+      "sigmoid_q1",
+      "q1_positive"
+    ]
+  }
+}

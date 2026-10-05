@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.375" timestamp="2026-10-05T22:34:05.720939+09:00" hostname="HaKudeMac-mini.local"><testcase classname="tests.external.test_batch_archive" name="test_rehashed_capsule_cannot_replace_frozen_scientific_plan" time="0.266" /><testcase classname="tests.external.test_runtime_analysis" name="test_only_eligible_registered_raw_output_enters_function_analysis" time="0.005"><failure message="PermissionError: [Errno 1] Operation not permitted (originated from sysctl(KERN_PROC_ALL))">tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-3/test_only_eligible_registered_0')
+
+    @pytest.mark.skipif(sys.platform!='darwin',reason='Artificial evidence producer uses native Mac runtime')
+    def test_only_eligible_registered_raw_output_enters_function_analysis(tmp_path):
+        from formal_coordinator import TaskCoordinator
+        from formal_evidence import RuntimeEvidence
+        from formal_runtime import file_hash
+        from mechanism_runner import actual_hash
+        from parallelbayes.reference import make_reference
+        from formal_runtime_analysis import extract_task
+        evidence_root=tmp_path/'evidence';evidence_root.mkdir()
+        model=make_reference(dict(kind='gaussian',dimension=2,mean=[0.,0.],covariance=[[1.,0.],[0.,1.]]))
+        tape=dict(noise=np.zeros((4,5,2)),log_uniform=np.zeros((4,5)),directions=np.ones((4,5,2)))
+        payload=dict(tape,initial=np.zeros((4,2)),nuts_seeds=np.arange(4,dtype=np.uint32))
+        inputs=evidence_root/'inputs.npz';np.savez_compressed(inputs,**payload)
+        draws=np.zeros((4,5,2));draws[:,0,0]=99.
+        draws[:,1:,0]=[[0.,1.,2.,-1.],[-2.,-1.,0.,1.],[2.,3.,4.,1.],[0.,0.,0.,0.]]
+        worker=tmp_path/'worker.py'
+        worker.write_text('''import json,sys,numpy as np
+    from pathlib import Path
+    out=Path(sys.argv[2]);r=json.loads(Path(sys.argv[1]).read_text());x=np.array(r['artificial_draws'],dtype=float)
+    np.savez_compressed(out/'fit.npz',draws=x,unconstrained=x,accept=np.ones(x.shape[:2],bool))
+    audit=dict(passed=True,acceptance_mismatches=[0,0,0,0],oracle='artificial_fixture_not_sampler_evidence')
+    (out/'fit.json').write_text(json.dumps(dict(status=r['status'],target_id=r['target_id'],config=r['config'],audit=audit,tape_sha256=r['tape_sha256'])))
+    (out/'worker-result.json').write_text(json.dumps(dict(status=r['status'],samples_eligible=r['status']=='completed',target_id=r['target_id'],task=r['science_task'],protocol_sha256='science-fixture',full_MH_audit=audit)))
+    ''')
+        c=TaskCoordinator(tmp_path/'host.lock');locations={};contracts=[]
+        for status in ('completed','failed','contradictory'):
+            science=dict(id=status,model='G',kernel='mala' if status=='contradictory' else 'rwm',executor='sequential',device='cpu',replicate=0)
+            task=dict(science,protocol_sha256='registry-fixture')
+            config=dict(kernel='rwm',executor='sequential',device='cpu',chains=4,draws=5,initial=payload['initial'].tolist(),step_size=.1)
+            request=dict(task_id=status,status='completed' if status=='contradictory' else status,science_task=science,target_id=model.target_id,
+                         artificial_draws=draws.tolist(),config=config,tape_sha256=actual_hash(tape))
+&gt;           out=evidence_root/status;c.run(task,request,worker,out,0,2**30);locations[str(out)]=status
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/external/test_runtime_analysis.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/completion/formal_coordinator.py:228: in run
+    result=self._invoke(db,key,record,lambda:execute_task(task,request,worker,destination,self.host_lock,required_disk_bytes,max_tree_rss_bytes,resume=resume))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/completion/formal_coordinator.py:195: in _invoke
+    try:return call()
+               ^^^^^^
+scripts/completion/formal_coordinator.py:228: in &lt;lambda&gt;
+    result=self._invoke(db,key,record,lambda:execute_task(task,request,worker,destination,self.host_lock,required_disk_bytes,max_tree_rss_bytes,resume=resume))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/completion/formal_runtime.py:199: in execute_task
+    psutil.Process().children(recursive=True)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/psutil/__init__.py:966: in children
+    ppid_map = _ppid_map()
+               ^^^^^^^^^^^
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/psutil/__init__.py:259: in _ppid_map
+    for pid in pids():
+               ^^^^^^
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/psutil/__init__.py:1454: in pids
+    ret = sorted(_psplatform.pids())
+                 ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def pids():
+&gt;       ls = cext.pids()
+             ^^^^^^^^^^^
+E       PermissionError: [Errno 1] Operation not permitted (originated from sysctl(KERN_PROC_ALL))
+
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/psutil/_psosx.py:312: PermissionError</failure></testcase><testcase classname="tests.external.test_runtime_analysis" name="test_planned_aggregation_keeps_resource_failure_unknown_retry_cost_and_not_run" time="0.009" /></testsuite></testsuites>
