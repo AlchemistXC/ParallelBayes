@@ -1,7 +1,7 @@
 .pb_module <- function() {
   path <- system.file("python", package = "parallelbayes")
   module <- reticulate::import_from_path("parallelbayes", path = path, convert = TRUE)
-  expected <- sub(".9001", ".dev1", as.character(utils::packageVersion("parallelbayes")), fixed = TRUE)
+  expected <- sub(".9002", ".dev2", as.character(utils::packageVersion("parallelbayes")), fixed = TRUE)
   if (!identical(module$"__version__", expected)) {
     stop("A different ParallelBayes Python version is already loaded; restart R with the pinned environment")
   }
@@ -63,7 +63,10 @@ pb_environment <- function(backend = c("jax", "torch")) {
   backend <- match.arg(backend)
   .pb_module()
   module <- if (backend == "torch") "parallelbayes.torch_backend.sampling" else "parallelbayes.sampling"
-  reticulate::import(module)$environment()
+  # Serialize metadata before R conversion: Python byte counts can exceed R integers.
+  record <- reticulate::import(module, convert = FALSE)$environment()
+  text <- reticulate::import("json", convert = FALSE)$dumps(record)
+  jsonlite::fromJSON(reticulate::py_to_r(text), simplifyVector = FALSE)
 }
 
 pb_benchmark <- function(model, configurations, output = NULL) {

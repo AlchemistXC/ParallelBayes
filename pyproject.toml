@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "parallelbayes"
-version = "0.2.0.dev1"
+version = "0.2.0.dev2"
 description = "Auditable sequential and time-parallel MCMC research kernels"
 requires-python = ">=3.11"
 dependencies = ["numpy==2.2.6", "scipy==1.15.3", "psutil>=7"]

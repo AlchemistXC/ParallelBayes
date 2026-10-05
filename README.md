@@ -1,8 +1,10 @@
 # ParallelBayes
 
-时间并行MCMC的可核验实现、R控制接口与单机基准。本开发分支为 **0.2.0.dev1**；历史发布内核 **0.1.1**，Mac CPU主实验使用独立归档的 **0.1.0**。软件与论文均为研究候选，尚非投稿终稿。
+时间并行MCMC的可核验实现、R控制接口与单机基准。本安装候选分支为 **0.2.0.dev2 / R 0.2.0.9002**，实验证据仍按原 **0.2.0.dev1** 归属；历史发布内核 **0.1.1**，Mac CPU主实验使用独立归档的 **0.1.0**。软件与论文均为研究候选，尚非投稿终稿。
 
 ## 当前研究阶段
+
+2026-10-06：[安装候选核验](docs/RELEASE-CANDIDATE-0.2.md)在独立分支完成本机 wheel / R 源码包安装与显式集成检查，修正 CLI 可选依赖和 R 环境内存字节数截断。数值内核与历史实验不变；Windows 安装候选待[后续验收](handoff/windows-completion/CODEX-PROMPT-PACKAGE.md)。该提示词排在现有 F2/F3 之后，不切换正在运行的实验工作树。
 
 2026-10-05：进入[研究收尾F0–F6](docs/RESEARCH-COMPLETION-PLAN.md)，实际状态见[当前工作包](execution/COMPLETION-WORK-PACKAGES.md)。Windows首轮开发、512项数值实验和回传审查已完成，不能再按初次移植提示词从头开发。
 
@@ -24,7 +26,7 @@ Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-IN
 | 明确实现和核验的原生JAX目标 | 支持 | 支持相应组合 | BlackJAX |
 | 原生Windows PyTorch CPU/CUDA | 内置目标已实测 | 相应组合已实测，eager Python控制 | GPU未接入；独立研究CLI的Pyro CPU九目标串行/spawn就绪核验通过 |
 
-完整[能力矩阵](docs/CAPABILITIES.md)、[计算契约](docs/COMPUTATION-CONTRACT.md)、[Mac安装与使用](docs/INSTALL-AND-USE.md)、[新增Poisson目标示例](docs/EXTENDING-TARGETS.md)。本开发版本支持torch/NumPy独立导入，JAX依赖移至可选安装；CUDA torch构建须按[Windows说明](docs/WINDOWS-NATIVE.md)安装并验证。
+完整[能力矩阵](docs/CAPABILITIES.md)、[计算契约](docs/COMPUTATION-CONTRACT.md)、[安装与使用](docs/INSTALL-AND-USE.md)、[新增Poisson目标示例](docs/EXTENDING-TARGETS.md)。本开发版本支持torch/NumPy独立导入，JAX依赖移至可选安装；CUDA torch构建须按[Windows说明](docs/WINDOWS-NATIVE.md)安装并验证。
 
 ## 已完成的CPU研究
 
@@ -58,4 +60,4 @@ R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU�
 
 F3成熟基线的新增[Windows CPU NUTS核验提示词](handoff/windows-completion/CODEX-PROMPT-F3-NUTS.md)已就绪。[Mac九目标配对验证](docs/NATIVE-NUTS-READINESS.md)通过样本/预热/RNG字节检查，短链不利诊断保留；Windows同项实测已回传并核验，见第二轮接收报告。这是独立研究CLI，不扩充R包核心的NUTS或GPU支持声明。
 
-已选步长与仿射目标的时间执行组合核验见[SELECTED-MH-READINESS](docs/SELECTED-MH-READINESS.md)：Mac 54工作流/36配对及独立保存数组重放通过，仍有全拒绝链及保留的库警告；Windows CPU/CUDA实测待回传。Windows可接续[已选MH组合提示词](handoff/windows-completion/CODEX-PROMPT-F3-MH.md)，它与CPU NUTS及机制任务分别留证，不是正式推断实验。
+已选步长与仿射目标的时间执行组合核验见[SELECTED-MH-READINESS](docs/SELECTED-MH-READINESS.md)：Mac 54工作流/36配对及独立保存数组重放通过，仍有全拒绝链及保留的库警告；Windows CPU/CUDA实测已回传并独立接收。历史Windows交接见[已选MH组合提示词](handoff/windows-completion/CODEX-PROMPT-F3-MH.md)，它与CPU NUTS及机制任务分别留证，不是正式推断实验。
