@@ -1,0 +1,9 @@
+{
+  "archive": "cache-analysis-v1.tar",
+  "bytes": 63856640,
+  "sha256": "0f5a8bf467e4cae3c1b8f22154e7f7ba80314690fa9f4a2949b09fb5c00e3b85",
+  "files": 19,
+  "verified_manifest_files": 18,
+  "source_commit": "5ccc0d6",
+  "scope": "Artificial cache statistical checks; no new research outputs"
+}

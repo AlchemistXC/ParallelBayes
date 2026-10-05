@@ -1,0 +1,12 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_paired_cache_analysis_preserves_failed_missing_and_unstarted_selected_inputs _
+
+    def test_paired_cache_analysis_preserves_failed_missing_and_unstarted_selected_inputs():
+>       from cache_probe_analysis import create_cache_plan,analyze_cache_probes
+E       ModuleNotFoundError: No module named 'cache_probe_analysis'
+
+tests/external/test_cache_probe_analysis.py:41: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_cache_probe_analysis.py::test_paired_cache_analysis_preserves_failed_missing_and_unstarted_selected_inputs
+1 failed in 0.02s

@@ -1,0 +1,11 @@
+{
+  "verified_files": 6,
+  "planned_inputs": 32,
+  "verified_probe_reductions": 512,
+  "verified_distributions": 16,
+  "resampling_sha256": "938bab8bf00415b81b069828daa692aa896e0b060cacd8ae93978c6e7a19ee6d",
+  "relocated_statistics_exact": true,
+  "new_MCMC_fits": 0,
+  "new_execution_timings": 0,
+  "scope": "Read-only reconstruction of artificial statistics, not new experimental evidence"
+}

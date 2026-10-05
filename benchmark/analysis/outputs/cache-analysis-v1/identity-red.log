@@ -1,0 +1,22 @@
+.F                                                                       [100%]
+=================================== FAILURES ===================================
+_ test_cache_ratios_reject_unpaired_actual_inputs_and_primary_bootstrap_frames _
+
+    def test_cache_ratios_reject_unpaired_actual_inputs_and_primary_bootstrap_frames():
+        from cache_probe_analysis import create_cache_plan,analyze_cache_probes
+        from formal_uncertainty import create_plan
+        allocation,tasks,bindings,observations=fixture()
+        plan=create_cache_plan(allocation,tasks,'G1')
+        primary=create_plan(allocation['primary_identity'],'G1',list(plan.replicate_ids))
+        with pytest.raises(ValueError,match='companion'):
+            analyze_cache_probes(allocation,tasks,primary,bindings,observations)
+        pid=get_probe(allocation,'cpu-rwm-online_picard',0)['id']
+        changed=copy.deepcopy(bindings);changed[pid]['input_file_sha256']='0'*64
+>       with pytest.raises(ValueError,match='input'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/external/test_cache_probe_analysis.py:81: Failed
+=========================== short test summary info ============================
+FAILED tests/external/test_cache_probe_analysis.py::test_cache_ratios_reject_unpaired_actual_inputs_and_primary_bootstrap_frames
+1 failed, 1 passed in 0.28s

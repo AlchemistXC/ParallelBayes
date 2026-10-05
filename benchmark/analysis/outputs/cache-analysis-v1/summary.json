@@ -1,0 +1,88 @@
+{
+  "absolute_endpoint_errors": [
+    0.0,
+    0.0
+  ],
+  "artificial_execution_records": 2048,
+  "comparison": {
+    "bca_acceleration": -3.7398344273671954e-17,
+    "bca_adjusted_quantiles": [
+      0.02400603024062346,
+      0.9739717549752942
+    ],
+    "bca_bias_percentile": 0.4965496549654965,
+    "bootstrap_expected_tail_counts": [
+      240.03629637599397,
+      260.2564220020333
+    ],
+    "conditioning": "both_input_level_cache_points_available",
+    "confidence_interval": {
+      "high": 2.010126823623841,
+      "low": 1.4376385967169236
+    },
+    "confidence_interval_scale": "log_cost_ratio",
+    "confidence_level": 0.95,
+    "geometric_mean_ratio": 5.656854249492379,
+    "interval_coverage": "pointwise_conditional_on_both_cache_points_available",
+    "interval_method": "BCa",
+    "interval_status": "available",
+    "jointly_valid_pairs_missing_cost": 0,
+    "jointly_valid_pairs_zero_cost": 0,
+    "mean_log_ratio": 1.732867951399863,
+    "minimum_valid_repetitions": 20,
+    "phase": "prepared_executor_cache_median",
+    "planned": 32,
+    "ratio_confidence_interval": {
+      "high": 7.4642639322944575,
+      "low": 4.210740810555823
+    },
+    "ratio_definition": "geometric_mean_of_A_seconds_divided_by_B_seconds",
+    "ratio_interpretation": "Sequential / time executor; greater than one means lower cached executor cost, not faster reliable inference",
+    "resampled_valid_count_range": [
+      20,
+      32
+    ],
+    "resampling_plan_sha256": "938bab8bf00415b81b069828daa692aa896e0b060cacd8ae93978c6e7a19ee6d",
+    "undefined_bootstrap_replicates": 0,
+    "validity_table": {
+      "n00": 0,
+      "n01": 4,
+      "n10": 0,
+      "n11": 28
+    },
+    "validity_table_definition": "n11 both available; n10 sequential only; n01 time executor only; n00 neither",
+    "workflow_a": "cpu-rwm-sequential@8",
+    "workflow_b": "cpu-rwm-online_picard@8"
+  },
+  "independent_hand_ratio": 5.656854249492381,
+  "limitations": "Fixed artificial availability and durations; does not validate actual input provenance, sampler correctness, native runtime, or coverage under load drift.",
+  "n_resamples": 9999,
+  "new_MCMC_fits": 0,
+  "new_execution_timings": 0,
+  "new_research_repetitions": 0,
+  "numpy": "2.2.6",
+  "planned_probes": 512,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "primary_frame_size": 128,
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "same_model_shared_resampling_sha256": "938bab8bf00415b81b069828daa692aa896e0b060cacd8ae93978c6e7a19ee6d",
+  "scipy": "1.15.3",
+  "scipy_log_ratio_bounds": [
+    1.4376385967169236,
+    2.010126823623841
+  ],
+  "scope": "Artificial statistical fixture only: every timing, hash, output flag and configuration below is constructed; no actual sampler evidence.",
+  "selected_original_inputs": 32,
+  "selected_per_batch": [
+    8,
+    8,
+    8,
+    8
+  ],
+  "source_files": {
+    "scripts/completion/cache_probe_analysis.py": "de6b414a3425f194ebd78080ac74aacd9cc3585bcb38de9a863f8966f7a4d8c2",
+    "scripts/completion/formal_measurement_plan.py": "69fa441388e09ad37150c5a8938b979ecaa5f19062e84a4d99922c59cbd9e9bc",
+    "scripts/completion/formal_uncertainty.py": "0bbe7fae58a301c7472cdcdf6887f17bdcf327cc2bd196045400a6a760324263",
+    "scripts/completion/validate_cache_analysis.py": "0105d86306edc84c244ffb4a122e88aa042063a00a7c82dc840beefcced718bd"
+  }
+}

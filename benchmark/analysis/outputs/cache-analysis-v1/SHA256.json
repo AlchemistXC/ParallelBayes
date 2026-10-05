@@ -1,0 +1,12 @@
+{
+  "archive-receipt.json": "1902a543c5228580739cc79580157dbb36eeb4871777e6611943d1a183dfbaab",
+  "frame-green.log": "59b9466559aeabf218a54ec041fd83cd357cf9bf1d80a17c47aab62ed0c205bf",
+  "frame-red.log": "7bc14a77d133fc3fabcf34213ee32ff09a36aeeeda9810df26df920648166273",
+  "frozen-source-check.json": "1dc4abc4121a1f44c7d7ea7b80af8293994c78f99c45cfa0d6541e1f0f22f81b",
+  "identity-green.log": "d2e19278f2acef7cfe468afa87fbba8925315ff38a8d23649526ec4f7bbe6521",
+  "identity-red.log": "4872f607c760aeaa7b2c05747efc1e51c29ba0ab25fe5e3989dab00f322665b1",
+  "relocated-audit.json": "390e3a83f044862f20fab26614cfce6e2a99e2840c15b111760eefcf5c6e56f2",
+  "summary.json": "f30d9b8152f0332a1dd3a174becbd30c42783860e18421ced39ee9148958c754",
+  "tests-green.log": "8bec5da5e90400e03d9d081f527999c6d91e7a17b14cd3b921375f9c66266c23",
+  "tests.xml": "b18cc199fbf31a03676e4b6fd37372235f8d8f1563b67775ae4e2a09bdaeb831"
+}

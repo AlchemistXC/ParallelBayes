@@ -12,7 +12,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Windows completes F2 from original frozen inputs then native runtime/max-task validation. Mac connects the prespecified cache-probe allocation and batch-cost ledger to a new formal worker and matched analysis after preserving frozen technical sources; final protocol remains unfrozen.",
+  "next_recommended_action": "Windows completes F2 from original frozen inputs then native runtime/max-task validation. Mac connects cache measurement, paired statistics and batch-cost accounting to a successor worker with verified actual-input/audit receipt adapters. Frozen technical sources remain unchanged; final protocol remains unfrozen.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -753,5 +753,22 @@
     "Windows_validated": false,
     "formal_protocol_frozen": false,
     "report": "docs/FORMAL-MEASUREMENT-DESIGN.md"
+  },
+  "cache_companion_statistics": {
+    "source_commit": "5ccc0d6",
+    "report": "docs/CACHE-PROBE-ANALYSIS.md",
+    "new_tests_passed": 3,
+    "affected_tests_passed": 10,
+    "artificial_planned_inputs": 128,
+    "artificial_selected_inputs": 32,
+    "artificial_probe_records": 512,
+    "artificial_execution_records": 2048,
+    "relocated_statistics_exact": true,
+    "source_files_unchanged": 79,
+    "new_MCMC_fits": 0,
+    "new_execution_timings": 0,
+    "new_research_repetitions": 0,
+    "formal_worker_integrated": false,
+    "Windows_validated": false
   }
 }
