@@ -61,6 +61,8 @@ def render(out):
         gutter_tolerance_pt=1.5,strict=True)
     fig.savefig(out/'architecture-current.pdf')
     fig.savefig(out/'architecture-current.svg')
+    svg = out/'architecture-current.svg'
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     fig.savefig(out/'architecture-current.png',dpi=600)
     plt.close(fig)
 
