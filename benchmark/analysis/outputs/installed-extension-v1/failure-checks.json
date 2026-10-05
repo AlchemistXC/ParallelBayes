@@ -1,0 +1,64 @@
+{
+  "scope": "Artificial fault checks; not formal experiments",
+  "checks": [
+    {
+      "case": "unsupported_kernel_executor_rejected",
+      "message": "unsupported torch kernel/executor combination",
+      "passed": true
+    },
+    {
+      "case": "existing_output_refused_without_modification",
+      "passed": true,
+      "files": 9
+    },
+    {
+      "case": "changed_actual_input_refused",
+      "message": "Input checksum mismatch: inputs.npz",
+      "passed": true
+    },
+    {
+      "case": "wrong_reference_gradient_detected_and_quarantined",
+      "passed": true,
+      "validation": {
+        "target_id": "32d17609317c3ff0b024ae798f7d37f809a9df13b05b3ba65946b8684111c41a",
+        "device": "cpu",
+        "errors": {
+          "relative_density": 1.4210854715202004e-14,
+          "gradient": 1.000000000000007,
+          "hvp": 6.465324986493215e-08,
+          "constrain": 0.0
+        },
+        "passed": false,
+        "hvp_reference": "central difference of independent analytic NumPy gradient; epsilon=1e-5"
+      },
+      "status": "failed",
+      "audit": {
+        "passed": false,
+        "max_abs_path_error": [
+          0.28006989659961073,
+          0.3871471599648961,
+          0.23865618748773149,
+          0.36328258557894155
+        ],
+        "acceptance_mismatches": [
+          8,
+          8,
+          6,
+          8
+        ],
+        "max_abs_constrained_error": [
+          0.28006989659961073,
+          0.3871471599648961,
+          0.23865618748773149,
+          0.36328258557894155
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "draws_available": false,
+      "failed_trajectory_saved": true,
+      "extra_numerical_calls": 1
+    }
+  ],
+  "all_passed": true,
+  "new_formal_repetitions": 0
+}

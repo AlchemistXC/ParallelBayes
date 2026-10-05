@@ -1,0 +1,12 @@
+{
+  "example_source_commit": "3ca0a610c8855cb9a2339c38fb60f26d51eb0469",
+  "package_source_commit": "0e38413",
+  "package_versions": {
+    "Python": "0.2.0.dev2",
+    "R": "0.2.0.9002"
+  },
+  "package_bridge": "source-bridge.json",
+  "original_package_archive": "package-candidate-v1.tar",
+  "package_archive_sha256": "4bf32475466ca4c1aa91fa69f2d7ab0d03bdc47ec482e49cf963a02ad46570c7",
+  "scope": "Local example evidence; not full paper reproduction or a fresh installation"
+}

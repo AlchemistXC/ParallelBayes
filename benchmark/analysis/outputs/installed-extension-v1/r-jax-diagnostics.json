@@ -1,0 +1,166 @@
+{
+  "scope": "Small installation/extension check; not formal sampling, convergence, or speed evidence",
+  "all_passed": true,
+  "r": "R version 4.6.0 (2026-04-24)",
+  "posterior": "1.7.0",
+  "parallelbayes": "0.2.0.9002",
+  "installed_r_path": "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library/parallelbayes",
+  "embedded_python_file": "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library/parallelbayes/python/parallelbayes/__init__.py",
+  "environment": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "python": "3.12.14",
+    "host": "HaKudeMac-mini.local",
+    "os_release": "25.6.0",
+    "processor": "arm",
+    "logical_cpus": 10,
+    "memory_bytes": 17179869184,
+    "packages": {
+      "jax": "0.6.2",
+      "jaxlib": "0.6.2",
+      "blackjax": "1.2.5",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "bridgestan": "2.7.0",
+      "parallelbayes": "0.2.0.dev2"
+    },
+    "devices": [
+      {
+        "platform": "cpu",
+        "kind": "cpu",
+        "id": 0
+      }
+    ],
+    "x64": true
+  },
+  "workflows": {
+    "workflow-0": {
+      "status": "completed",
+      "posterior_eligible": true,
+      "shape": [128, 4, 2],
+      "variable": ["beta0", "beta1"],
+      "diagnostics": [
+        {
+          "variable": "beta0",
+          "mean": 0.114277667676391,
+          "median": 0.122500437282959,
+          "sd": 0.166424108103791,
+          "mad": 0.170691602566299,
+          "q5": -0.162289230112429,
+          "q95": 0.38480173142722,
+          "rhat": 1.01917399415857,
+          "ess_bulk": 138.877678277534,
+          "ess_tail": 196.147361575978
+        },
+        {
+          "variable": "beta1",
+          "mean": -0.137335121664313,
+          "median": -0.145980742027138,
+          "sd": 0.173358263652159,
+          "mad": 0.179556615665717,
+          "q5": -0.419858472956877,
+          "q95": 0.166552064959824,
+          "rhat": 1.03179837154009,
+          "ess_bulk": 87.7172674864125,
+          "ess_tail": 157.63285915634
+        }
+      ]
+    },
+    "workflow-1": {
+      "status": "completed",
+      "posterior_eligible": true,
+      "shape": [128, 4, 2],
+      "variable": ["beta0", "beta1"],
+      "diagnostics": [
+        {
+          "variable": "beta0",
+          "mean": 0.114277667675228,
+          "median": 0.122500437283051,
+          "sd": 0.166424108104712,
+          "mad": 0.170691602568912,
+          "q5": -0.162289230110059,
+          "q95": 0.384801731427356,
+          "rhat": 1.01917417508771,
+          "ess_bulk": 138.882002681617,
+          "ess_tail": 196.147361575978
+        },
+        {
+          "variable": "beta1",
+          "mean": -0.13733512166245,
+          "median": -0.145980742027051,
+          "sd": 0.173358263652058,
+          "mad": 0.179556615665847,
+          "q5": -0.419858472956396,
+          "q95": 0.16655206495839,
+          "rhat": 1.03179836416055,
+          "ess_bulk": 87.7186962668714,
+          "ess_tail": 157.63285915634
+        }
+      ]
+    },
+    "workflow-2": {
+      "status": "completed",
+      "posterior_eligible": true,
+      "shape": [128, 4, 2],
+      "variable": ["beta0", "beta1"],
+      "diagnostics": [
+        {
+          "variable": "beta0",
+          "mean": 0.101115848373495,
+          "median": 0.094385154638985,
+          "sd": 0.144824436528764,
+          "mad": 0.14037574592602,
+          "q5": -0.0986795758652144,
+          "q95": 0.327130300452258,
+          "rhat": 1.11736541757279,
+          "ess_bulk": 51.2315017380381,
+          "ess_tail": 47.4478354244117
+        },
+        {
+          "variable": "beta1",
+          "mean": -0.123760946251438,
+          "median": -0.11438271609639,
+          "sd": 0.157562569690989,
+          "mad": 0.165036459609722,
+          "q5": -0.388568625918246,
+          "q95": 0.101453155179228,
+          "rhat": 1.06527684357799,
+          "ess_bulk": 33.2215827359252,
+          "ess_tail": 29.9124478088522
+        }
+      ]
+    },
+    "workflow-3": {
+      "status": "completed",
+      "posterior_eligible": true,
+      "shape": [128, 4, 2],
+      "variable": ["beta0", "beta1"],
+      "diagnostics": [
+        {
+          "variable": "beta0",
+          "mean": 0.101115848373494,
+          "median": 0.094385154638985,
+          "sd": 0.144824436528764,
+          "mad": 0.14037574592602,
+          "q5": -0.0986795758652142,
+          "q95": 0.327130300452258,
+          "rhat": 1.11736541757279,
+          "ess_bulk": 51.2315017380381,
+          "ess_tail": 47.4478354244117
+        },
+        {
+          "variable": "beta1",
+          "mean": -0.123760946251438,
+          "median": -0.11438271609639,
+          "sd": 0.157562569690989,
+          "mad": 0.165036459609722,
+          "q5": -0.388568625918246,
+          "q95": 0.101453155179228,
+          "rhat": 1.06527684357799,
+          "ess_bulk": 33.2215827359252,
+          "ess_tail": 29.9124478088522
+        }
+      ]
+    }
+  }
+}

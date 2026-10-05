@@ -1,0 +1,451 @@
+{
+  "schema": "installed-extension-evidence-v1",
+  "source_commit": "3ca0a610c8855cb9a2339c38fb60f26d51eb0469",
+  "assets": [
+    {
+      "path": "R-session.txt",
+      "bytes": 1196,
+      "sha256": "b7f3dcaf05ee8620d6c177e3724edd68a5380bd00bc50ecf5cbca0087489aed1"
+    },
+    {
+      "path": "check_failures.py",
+      "bytes": 3314,
+      "sha256": "0ae29cf3959c37ab86de3c7da8577f7b045c74fb5d5bfa53e5ec9ee25569937b"
+    },
+    {
+      "path": "commands.json",
+      "bytes": 2667,
+      "sha256": "49aee8183c3b3e0aab90be829c30f5d3ed260e56f8232f07c58a8918eb393ba9"
+    },
+    {
+      "path": "dist/.gitignore",
+      "bytes": 1,
+      "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+    },
+    {
+      "path": "dist/SHA256SUMS",
+      "bytes": 381,
+      "sha256": "87fdf8c5d39b93d56e2f9bcd3a8cbc9318a3cc8c07dc03d7f0ebe6780bb880f8"
+    },
+    {
+      "path": "dist/parallelbayes-0.2.0.dev2-py3-none-any.whl",
+      "bytes": 36675,
+      "sha256": "32556541f715f968b9ea8b381ca64486fe9aab9c9bedd64c266a9a86c395cab9"
+    },
+    {
+      "path": "dist/parallelbayes-0.2.0.dev2.tar.gz",
+      "bytes": 32634,
+      "sha256": "29bcd401e9065d49119f67823aa4dcc728688ab1bb202851a3c584156a981863"
+    },
+    {
+      "path": "dist/parallelbayes_0.2.0.9002.tar.gz",
+      "bytes": 29481,
+      "sha256": "b0985d1512821c2004da98d0bbfdb950f03feba1a380559d067b954837e2d9ee"
+    },
+    {
+      "path": "failure-checks.json",
+      "bytes": 1765,
+      "sha256": "a9ea4b8e2118fc6fa163c86cdf947a4086977ffc33729666d9238fb8ebbad63a"
+    },
+    {
+      "path": "failure-checks.log",
+      "bytes": 1765,
+      "sha256": "a9ea4b8e2118fc6fa163c86cdf947a4086977ffc33729666d9238fb8ebbad63a"
+    },
+    {
+      "path": "fault-corrupt-input/input-manifest.json",
+      "bytes": 941,
+      "sha256": "4dd91eccc69895e197c631203cfe02266bc939eeffd66902110575c427d59de9"
+    },
+    {
+      "path": "fault-corrupt-input/inputs.npz",
+      "bytes": 21910,
+      "sha256": "594e3c03b5eccce2fd58faff3a12cafba0bb31e6e1131333262e87d660f286d6"
+    },
+    {
+      "path": "fault-corrupt-input/model.json",
+      "bytes": 2067,
+      "sha256": "394f76285b3bf37855a437efcc06700bb9994390e6c9b7ef207971445b72d26f"
+    },
+    {
+      "path": "fault-reference-result.json",
+      "bytes": 3680,
+      "sha256": "7de9d4bf5d8807f1329b32db5480bb0eaecd051a80a6b05ad8169cbd0c647540"
+    },
+    {
+      "path": "fault-reference-result.npz",
+      "bytes": 10050,
+      "sha256": "86a1def8111ed7d66e56492a53a70f5782c1b3746c885efc6abbeea57b079388"
+    },
+    {
+      "path": "inputs/input-manifest.json",
+      "bytes": 941,
+      "sha256": "4dd91eccc69895e197c631203cfe02266bc939eeffd66902110575c427d59de9"
+    },
+    {
+      "path": "inputs/inputs.npz",
+      "bytes": 21884,
+      "sha256": "e815ebe58f3fb661d9e98da919f4b38d6acebf60150b310dd1ad4af42d216587"
+    },
+    {
+      "path": "inputs/model.json",
+      "bytes": 2067,
+      "sha256": "394f76285b3bf37855a437efcc06700bb9994390e6c9b7ef207971445b72d26f"
+    },
+    {
+      "path": "jax-packages.json",
+      "bytes": 958,
+      "sha256": "8adc8f752bb810386477fa6a863235c42f1ae2f2d68720e331d1e2f0b19e05cb"
+    },
+    {
+      "path": "python-jax/summary.json",
+      "bytes": 4509,
+      "sha256": "f405080243b87e6fe79f5456f4a06f6076fbf3c916ed1ddea0437886d171c7f3"
+    },
+    {
+      "path": "python-jax/workflow-0.json",
+      "bytes": 4314,
+      "sha256": "ef3c85a9dc45e8984f046e4e7d6bdfec22fcf9a187b9f649c59498a15fb66925"
+    },
+    {
+      "path": "python-jax/workflow-0.npz",
+      "bytes": 23118,
+      "sha256": "1fbcb28d2e6f8395dba53771b14ce56a8313d4fe80d8e7845706073605c47519"
+    },
+    {
+      "path": "python-jax/workflow-1.json",
+      "bytes": 4327,
+      "sha256": "728ca8913aa52a9a352cd33b4d9818b7446694e707c26809fb3ecc5fb739224a"
+    },
+    {
+      "path": "python-jax/workflow-1.npz",
+      "bytes": 23118,
+      "sha256": "5e9aceb1d21241b7f4b51668ef3f16b6951a603d34b03b6bcabfe0e0c7c2d468"
+    },
+    {
+      "path": "python-jax/workflow-2.json",
+      "bytes": 4310,
+      "sha256": "1818811cbef47d8c7e5b85c64a71bd278be5201ecb8bc1dab50152c375818cbb"
+    },
+    {
+      "path": "python-jax/workflow-2.npz",
+      "bytes": 23118,
+      "sha256": "dbfe6b0f087035a894ed273dc47b15b99c84f42aa647269c98a67e8685a5c8f5"
+    },
+    {
+      "path": "python-jax/workflow-3.json",
+      "bytes": 4338,
+      "sha256": "6b90512bf39a0fdaa877d7e139622005269dca9ae82423d4ac98cef82fc14741"
+    },
+    {
+      "path": "python-jax/workflow-3.npz",
+      "bytes": 23118,
+      "sha256": "0c3f7b6235c6c8a13fb979a85a2c40e5059c2297b39abd309d0042367d0eb1ce"
+    },
+    {
+      "path": "python-jax.log",
+      "bytes": 4509,
+      "sha256": "f405080243b87e6fe79f5456f4a06f6076fbf3c916ed1ddea0437886d171c7f3"
+    },
+    {
+      "path": "python-torch/summary.json",
+      "bytes": 5151,
+      "sha256": "f676f658b7f39fe1b799778c9c95b586d7a7f50b4acefc8c0e5ea07ca2631aeb"
+    },
+    {
+      "path": "python-torch/workflow-0.json",
+      "bytes": 3816,
+      "sha256": "66d77d3fd1081837d03af7079b8d1e797a910d687cb0091d619bfa54ac1d24d4"
+    },
+    {
+      "path": "python-torch/workflow-0.npz",
+      "bytes": 18490,
+      "sha256": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901"
+    },
+    {
+      "path": "python-torch/workflow-1.json",
+      "bytes": 25758,
+      "sha256": "41565463c0674a278d3eb859ee20ba52663afb398704adf1c5c3384f3f09bd90"
+    },
+    {
+      "path": "python-torch/workflow-1.npz",
+      "bytes": 18490,
+      "sha256": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76"
+    },
+    {
+      "path": "python-torch/workflow-2.json",
+      "bytes": 3533,
+      "sha256": "bdcc3110f4bd5702dd69d559339be235867b9dc85a29b9f993deef4d2ef598c5"
+    },
+    {
+      "path": "python-torch/workflow-2.npz",
+      "bytes": 18490,
+      "sha256": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22"
+    },
+    {
+      "path": "python-torch/workflow-3.json",
+      "bytes": 9093,
+      "sha256": "ab741e2a390658c30a0392f8dd27459177c5c44d95813debfcc9f2c420b3b7c7"
+    },
+    {
+      "path": "python-torch/workflow-3.npz",
+      "bytes": 18490,
+      "sha256": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854"
+    },
+    {
+      "path": "python-torch.log",
+      "bytes": 5151,
+      "sha256": "f676f658b7f39fe1b799778c9c95b586d7a7f50b4acefc8c0e5ea07ca2631aeb"
+    },
+    {
+      "path": "r-jax/R-summary.json",
+      "bytes": 4951,
+      "sha256": "772de214125cd87c87ef41e4ba51c9aa504aeab3649e65cf5932182a8ebcca54"
+    },
+    {
+      "path": "r-jax/summary.json",
+      "bytes": 4531,
+      "sha256": "18651f5ccf7e00644660de6e45ac239b642337f02f13434e7bf3af9b59ab7b9d"
+    },
+    {
+      "path": "r-jax/workflow-0-R.bin",
+      "bytes": 8192,
+      "sha256": "e855e52699d7fb07c6b43f4cac89b244e9224b1998264d442a821b57be3b9c57"
+    },
+    {
+      "path": "r-jax/workflow-0-draws.rds",
+      "bytes": 7756,
+      "sha256": "b993702c97ae9d20a6cd4bfe5fd7e30fdf381158d653870775584c3c90559fc7"
+    },
+    {
+      "path": "r-jax/workflow-0.json",
+      "bytes": 4313,
+      "sha256": "1a7a58dcc58ec5416a4f5793869ba912f12009fcefa8261a049e5122b7bfed7c"
+    },
+    {
+      "path": "r-jax/workflow-0.npz",
+      "bytes": 23118,
+      "sha256": "1fbcb28d2e6f8395dba53771b14ce56a8313d4fe80d8e7845706073605c47519"
+    },
+    {
+      "path": "r-jax/workflow-1-R.bin",
+      "bytes": 8192,
+      "sha256": "ca4feef724e514ad4900f30e181eab4fd38e73453c0075f664001781460324cf"
+    },
+    {
+      "path": "r-jax/workflow-1-draws.rds",
+      "bytes": 7801,
+      "sha256": "4fcc7a87026ab558bdebc39ffa8257600efb04b9386dbbdc8ba43f8880654447"
+    },
+    {
+      "path": "r-jax/workflow-1.json",
+      "bytes": 4330,
+      "sha256": "21b3f2da8e3b8f12f3b7aec78be1e6f5ce71ef3a7702d0ee8885c604c3d6db31"
+    },
+    {
+      "path": "r-jax/workflow-1.npz",
+      "bytes": 23118,
+      "sha256": "5e9aceb1d21241b7f4b51668ef3f16b6951a603d34b03b6bcabfe0e0c7c2d468"
+    },
+    {
+      "path": "r-jax/workflow-2-R.bin",
+      "bytes": 8192,
+      "sha256": "53157ad8977237baacd0c5ddf1c59acd7ed01a0f614a72ede974ef1ceb90416b"
+    },
+    {
+      "path": "r-jax/workflow-2-draws.rds",
+      "bytes": 6576,
+      "sha256": "a5f5c8f1b3aee0ceefa21b71b2feb25a0c5547af75e4adfb99d21c790c68d100"
+    },
+    {
+      "path": "r-jax/workflow-2.json",
+      "bytes": 4311,
+      "sha256": "95b5f852fc90c2b1f6e406654a9ee3f92264528a9a3e4961197c8ccce1801252"
+    },
+    {
+      "path": "r-jax/workflow-2.npz",
+      "bytes": 23118,
+      "sha256": "dbfe6b0f087035a894ed273dc47b15b99c84f42aa647269c98a67e8685a5c8f5"
+    },
+    {
+      "path": "r-jax/workflow-3-R.bin",
+      "bytes": 8192,
+      "sha256": "2e60bcb8d9530ba70a0fdf75499fcc255edc5072da10b3090d76ecb09683cff3"
+    },
+    {
+      "path": "r-jax/workflow-3-draws.rds",
+      "bytes": 6577,
+      "sha256": "e040b12171c715a360aca201e7a4de7de8ace237940dcd4bed74fcf3cd7be750"
+    },
+    {
+      "path": "r-jax/workflow-3.json",
+      "bytes": 4333,
+      "sha256": "541f0e05cb9a69a8d2b0e28af346c14d5194fabd0432e319a47d67edd5dac2ca"
+    },
+    {
+      "path": "r-jax/workflow-3.npz",
+      "bytes": 23118,
+      "sha256": "0c3f7b6235c6c8a13fb979a85a2c40e5059c2297b39abd309d0042367d0eb1ce"
+    },
+    {
+      "path": "r-jax.log",
+      "bytes": 2192,
+      "sha256": "ced2f45e6079a8c4fbcc4583f7a82940b5bba31bf5c89c7247bd30a96b639b3e"
+    },
+    {
+      "path": "r-torch/R-summary.json",
+      "bytes": 4806,
+      "sha256": "276068b1340d9ff731694a5f29319a6b3e1cdf334ada84fcf9a6506ed174a215"
+    },
+    {
+      "path": "r-torch/summary.json",
+      "bytes": 5177,
+      "sha256": "1f16e22e545513d09d424ce121218cee1f9a452b656d191992c88f0cf592a886"
+    },
+    {
+      "path": "r-torch/workflow-0-R.bin",
+      "bytes": 8192,
+      "sha256": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2"
+    },
+    {
+      "path": "r-torch/workflow-0-draws.rds",
+      "bytes": 7751,
+      "sha256": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45"
+    },
+    {
+      "path": "r-torch/workflow-0.json",
+      "bytes": 3820,
+      "sha256": "a16d9782560b3c237e51faadb4f8114fc3ea1d9b388ddd3e307c7c276fabc9a1"
+    },
+    {
+      "path": "r-torch/workflow-0.npz",
+      "bytes": 18490,
+      "sha256": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901"
+    },
+    {
+      "path": "r-torch/workflow-1-R.bin",
+      "bytes": 8192,
+      "sha256": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d"
+    },
+    {
+      "path": "r-torch/workflow-1-draws.rds",
+      "bytes": 7810,
+      "sha256": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612"
+    },
+    {
+      "path": "r-torch/workflow-1.json",
+      "bytes": 25759,
+      "sha256": "1d2ae8d8ed87ad3418de56619204b7e9bff467125b52a48ea498f6cd2a1c2d5f"
+    },
+    {
+      "path": "r-torch/workflow-1.npz",
+      "bytes": 18490,
+      "sha256": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76"
+    },
+    {
+      "path": "r-torch/workflow-2-R.bin",
+      "bytes": 8192,
+      "sha256": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4"
+    },
+    {
+      "path": "r-torch/workflow-2-draws.rds",
+      "bytes": 6577,
+      "sha256": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370"
+    },
+    {
+      "path": "r-torch/workflow-2.json",
+      "bytes": 3533,
+      "sha256": "e9f978a71e3b7bc90f730cf5b4cf75c142882407bc7cd0c90b0279300c4610e9"
+    },
+    {
+      "path": "r-torch/workflow-2.npz",
+      "bytes": 18490,
+      "sha256": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22"
+    },
+    {
+      "path": "r-torch/workflow-3-R.bin",
+      "bytes": 8192,
+      "sha256": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188"
+    },
+    {
+      "path": "r-torch/workflow-3-draws.rds",
+      "bytes": 6579,
+      "sha256": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff"
+    },
+    {
+      "path": "r-torch/workflow-3.json",
+      "bytes": 9094,
+      "sha256": "54b2d6b328255e58cb5bf0c09ee2da32c873bed68cb5362cc3a778570f992884"
+    },
+    {
+      "path": "r-torch/workflow-3.npz",
+      "bytes": 18490,
+      "sha256": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854"
+    },
+    {
+      "path": "r-torch.log",
+      "bytes": 2192,
+      "sha256": "ced2f45e6079a8c4fbcc4583f7a82940b5bba31bf5c89c7247bd30a96b639b3e"
+    },
+    {
+      "path": "source/LICENSE",
+      "bytes": 1316,
+      "sha256": "c0fa9f213fb2c984453043ce331311200ad8405bd18130257b2e43e49c94f64c"
+    },
+    {
+      "path": "source/docs/EXTENDING-TARGETS.md",
+      "bytes": 5818,
+      "sha256": "2da7b1aecb779e5d93f2f03450d8b0ecf616f5041d4bedcf1936475504633c51"
+    },
+    {
+      "path": "source/docs/INSTALL-AND-USE.md",
+      "bytes": 8157,
+      "sha256": "12f631ab7fe9d6dc2992100d07185d3d1b870e5d338af6ac869e2438881e7af5"
+    },
+    {
+      "path": "source/docs/INSTALLED-CUSTOM-TARGET.md",
+      "bytes": 3721,
+      "sha256": "aa2a8d894ea4af27ec37ab172aa8c0216712d07d84349d0c354619cfe34b8f97"
+    },
+    {
+      "path": "source/docs/RELEASE-CANDIDATE-0.2.md",
+      "bytes": 6110,
+      "sha256": "5ddad84fd911168426f5a9dab3710df1b0e018e5ed96e04378f2c4fe7fe5800e"
+    },
+    {
+      "path": "source/examples/installed-custom-target.R",
+      "bytes": 3042,
+      "sha256": "c917fa911ccafd035e3212d81a82eb01cba30fc567709daa4b050c778e7ee1b2"
+    },
+    {
+      "path": "source/examples/installed_custom_target.py",
+      "bytes": 11229,
+      "sha256": "4b0e33b2d7d0bbc4142ec7be127c96f0243bc5d09ba59cf62a14645ffdee7c9e"
+    },
+    {
+      "path": "source/scripts/release/verify_custom_extension.py",
+      "bytes": 5228,
+      "sha256": "85ceef3fb176bbf029a60f238edd9ca654a0ad18097a166624f53b622c003b93"
+    },
+    {
+      "path": "source-bridge.json",
+      "bytes": 4202,
+      "sha256": "5e183c6092cce3ff1e7a4270f94e94ca22505dd5f02dee83e25b6b515d1c5a93"
+    },
+    {
+      "path": "source.json",
+      "bytes": 477,
+      "sha256": "903115bc8ffbe8136976215d0d2a0b0a9e4771539f6bb5139aa0a784537f5334"
+    },
+    {
+      "path": "torch-packages.json",
+      "bytes": 575,
+      "sha256": "478e15893a9f505a6715f10f4f93c13847d6108dcd7686cd070bf11cc9abc19c"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 9280,
+      "sha256": "aba2d759a510c449d6456d90b978bb8faf979faa2877e8568dc1b3911b333214"
+    }
+  ]
+}

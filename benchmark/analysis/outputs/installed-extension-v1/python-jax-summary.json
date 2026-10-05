@@ -1,0 +1,158 @@
+{
+  "scope": "Small installation/extension check; not formal sampling, convergence, or speed evidence",
+  "backend": "jax",
+  "device": "cpu",
+  "target_id": "32d17609317c3ff0b024ae798f7d37f809a9df13b05b3ba65946b8684111c41a",
+  "inputs_manifest_sha256": "4dd91eccc69895e197c631203cfe02266bc939eeffd66902110575c427d59de9",
+  "input_files": {
+    "model.json": "394f76285b3bf37855a437efcc06700bb9994390e6c9b7ef207971445b72d26f",
+    "inputs.npz": "e815ebe58f3fb661d9e98da919f4b38d6acebf60150b310dd1ad4af42d216587"
+  },
+  "package_version": "0.2.0.dev2",
+  "package_file": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages/parallelbayes/__init__.py",
+  "python_executable": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/bin/python",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "jax": "0.6.2"
+  },
+  "validation": {
+    "target_id": "32d17609317c3ff0b024ae798f7d37f809a9df13b05b3ba65946b8684111c41a",
+    "max_relative_log_density_error": 4.547473508864641e-13,
+    "max_gradient_error": 3.552713678800501e-15,
+    "passed": true,
+    "reference": "independent_numpy"
+  },
+  "workflows": [
+    {
+      "index": 0,
+      "kernel": "mala",
+      "executor": "sequential",
+      "step_size": 0.01,
+      "status": "completed",
+      "tape_sha256": "ecb4c85825ef9ea50d769582727082cdc43fc67d529210f19a815d078994a507",
+      "audit": {
+        "max_abs_path_error": [
+          1.1102230246251565e-16,
+          1.1449174941446927e-16,
+          1.1102230246251565e-16,
+          1.1102230246251565e-16
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "comparison": "independent_numpy_float64",
+        "exact_bitwise_claim": false
+      },
+      "stopping_reason": "output_standard_met",
+      "error": null
+    },
+    {
+      "index": 1,
+      "kernel": "mala",
+      "executor": "quasi_deer",
+      "step_size": 0.01,
+      "status": "completed",
+      "tape_sha256": "ecb4c85825ef9ea50d769582727082cdc43fc67d529210f19a815d078994a507",
+      "audit": {
+        "max_abs_path_error": [
+          9.027711911357983e-11,
+          8.614747804003287e-11,
+          8.920757882391328e-11,
+          1.0768191893717471e-10
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "comparison": "independent_numpy_float64",
+        "exact_bitwise_claim": false
+      },
+      "stopping_reason": "output_standard_met",
+      "error": null
+    },
+    {
+      "index": 2,
+      "kernel": "rwm",
+      "executor": "sequential",
+      "step_size": 0.08,
+      "status": "completed",
+      "tape_sha256": "ecb4c85825ef9ea50d769582727082cdc43fc67d529210f19a815d078994a507",
+      "audit": {
+        "max_abs_path_error": [
+          1.942890293094024e-16,
+          1.3877787807814457e-16,
+          1.249000902703301e-16,
+          4.163336342344337e-16
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "comparison": "independent_numpy_float64",
+        "exact_bitwise_claim": false
+      },
+      "stopping_reason": "output_standard_met",
+      "error": null
+    },
+    {
+      "index": 3,
+      "kernel": "rwm",
+      "executor": "online_picard",
+      "step_size": 0.08,
+      "status": "completed",
+      "tape_sha256": "ecb4c85825ef9ea50d769582727082cdc43fc67d529210f19a815d078994a507",
+      "audit": {
+        "max_abs_path_error": [
+          1.1796119636642288e-16,
+          2.220446049250313e-16,
+          1.1102230246251565e-16,
+          1.6653345369377348e-16
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "comparison": "independent_numpy_float64",
+        "exact_bitwise_claim": false
+      },
+      "stopping_reason": "output_standard_met",
+      "error": null
+    }
+  ],
+  "comparisons": [
+    {
+      "sequential": 0,
+      "parallel": 1,
+      "passed": true,
+      "path_error": 1.0768191893717471e-10,
+      "path_limit": 2e-08,
+      "acceptance_mismatches": 0,
+      "actual_tape_equal": true
+    },
+    {
+      "sequential": 2,
+      "parallel": 3,
+      "passed": true,
+      "path_error": 3.0531133177191805e-16,
+      "path_limit": 2e-08,
+      "acceptance_mismatches": 0,
+      "actual_tape_equal": true
+    }
+  ],
+  "all_passed": true,
+  "optional_provider_imported": {
+    "torch": false,
+    "jax": true
+  }
+}

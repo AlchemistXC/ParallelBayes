@@ -2,7 +2,7 @@
   "date": "2026-10-06",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "unified_candidate_source_installation_and_archive_checks_complete",
+  "local_phase": "installed_custom_target_checked_and_new_windows_receipt_pending",
   "gpu_tasks": "Windows v1 and second-round readiness received; F2 original inputs delivered, 192 mechanism workflows still unexecuted; formal inference not started",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
@@ -88,6 +88,8 @@
     "fault_numerical_calls": 1,
     "new_formal_repetitions": 0,
     "new_clean_installation": false,
-    "Windows_verified": false
+    "Windows_verified": false,
+    "source_commit": "3ca0a610c8855cb9a2339c38fb60f26d51eb0469",
+    "archive_sha256": "30b590ba1cc3d664db2c5e3e4db3fc2e6e40a6e6206d1e6d6d68ba06bb224d6e"
   }
 }

@@ -1,0 +1,70 @@
+[
+  {
+    "cwd": "/private/tmp",
+    "kind": "Python installed wheel",
+    "command": [
+      "/Users/haku/Workspace/ParallelBayes/.venv-release-review/bin/python",
+      "-I",
+      "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/examples/installed_custom_target.py",
+      "run",
+      "--inputs",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/installed-extension-v1/inputs",
+      "--output",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/installed-extension-v1/python-torch",
+      "--backend",
+      "torch"
+    ],
+    "exit_code": 0
+  },
+  {
+    "cwd": "/private/tmp",
+    "kind": "R installed embedded module",
+    "environment": {
+      "R_LIBS_USER": "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library",
+      "RETICULATE_PYTHON": "/Users/haku/Workspace/ParallelBayes/.venv-release-review/bin/python"
+    },
+    "command": [
+      "Rscript",
+      "--vanilla",
+      "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/examples/installed-custom-target.R",
+      "torch",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/installed-extension-v1/inputs",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/installed-extension-v1/r-torch"
+    ],
+    "exit_code": 0
+  },
+  {
+    "cwd": "/private/tmp",
+    "kind": "Python installed wheel",
+    "command": [
+      "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/bin/python",
+      "-I",
+      "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/examples/installed_custom_target.py",
+      "run",
+      "--inputs",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/installed-extension-v1/inputs",
+      "--output",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/installed-extension-v1/python-jax",
+      "--backend",
+      "jax"
+    ],
+    "exit_code": 0
+  },
+  {
+    "cwd": "/private/tmp",
+    "kind": "R installed embedded module",
+    "environment": {
+      "R_LIBS_USER": "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library",
+      "RETICULATE_PYTHON": "/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/bin/python"
+    },
+    "command": [
+      "Rscript",
+      "--vanilla",
+      "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/examples/installed-custom-target.R",
+      "jax",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/installed-extension-v1/inputs",
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/installed-extension-v1/r-jax"
+    ],
+    "exit_code": 0
+  }
+]

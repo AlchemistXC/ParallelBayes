@@ -1,0 +1,11 @@
+{
+  "archive": "installed-extension-v1.tar",
+  "bytes": 1034240,
+  "sha256": "30b590ba1cc3d664db2c5e3e4db3fc2e6e40a6e6206d1e6d6d68ba06bb224d6e",
+  "manifest_assets": 89,
+  "total_files": 90,
+  "all_hashes_match": true,
+  "source_commit": "3ca0a610c8855cb9a2339c38fb60f26d51eb0469",
+  "relocated_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/installed-extension-relocated-v1",
+  "public_release_created": false
+}

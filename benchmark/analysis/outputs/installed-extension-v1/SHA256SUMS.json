@@ -1,0 +1,87 @@
+[
+  {
+    "path": "R-session.txt",
+    "bytes": 1196,
+    "sha256": "b7f3dcaf05ee8620d6c177e3724edd68a5380bd00bc50ecf5cbca0087489aed1"
+  },
+  {
+    "path": "archive.json",
+    "bytes": 442,
+    "sha256": "d081af74cddfb27306c7b686f99eec61b8aa7590849c7122f7e46362e7047ba7"
+  },
+  {
+    "path": "commands.json",
+    "bytes": 2667,
+    "sha256": "49aee8183c3b3e0aab90be829c30f5d3ed260e56f8232f07c58a8918eb393ba9"
+  },
+  {
+    "path": "failure-checks.json",
+    "bytes": 1765,
+    "sha256": "a9ea4b8e2118fc6fa163c86cdf947a4086977ffc33729666d9238fb8ebbad63a"
+  },
+  {
+    "path": "jax-packages.json",
+    "bytes": 958,
+    "sha256": "8adc8f752bb810386477fa6a863235c42f1ae2f2d68720e331d1e2f0b19e05cb"
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 14312,
+    "sha256": "0b0fbd4b44ef86826f031f77f9b761c0be0bc6b1e2fbc66a9a45de10852ad82d"
+  },
+  {
+    "path": "python-jax-summary.json",
+    "bytes": 4509,
+    "sha256": "f405080243b87e6fe79f5456f4a06f6076fbf3c916ed1ddea0437886d171c7f3"
+  },
+  {
+    "path": "python-torch-summary.json",
+    "bytes": 5151,
+    "sha256": "f676f658b7f39fe1b799778c9c95b586d7a7f50b4acefc8c0e5ea07ca2631aeb"
+  },
+  {
+    "path": "r-jax-diagnostics.json",
+    "bytes": 4951,
+    "sha256": "772de214125cd87c87ef41e4ba51c9aa504aeab3649e65cf5932182a8ebcca54"
+  },
+  {
+    "path": "r-jax-summary.json",
+    "bytes": 4531,
+    "sha256": "18651f5ccf7e00644660de6e45ac239b642337f02f13434e7bf3af9b59ab7b9d"
+  },
+  {
+    "path": "r-torch-diagnostics.json",
+    "bytes": 4806,
+    "sha256": "276068b1340d9ff731694a5f29319a6b3e1cdf334ada84fcf9a6506ed174a215"
+  },
+  {
+    "path": "r-torch-summary.json",
+    "bytes": 5177,
+    "sha256": "1f16e22e545513d09d424ce121218cee1f9a452b656d191992c88f0cf592a886"
+  },
+  {
+    "path": "relocated-verification.json",
+    "bytes": 9280,
+    "sha256": "aba2d759a510c449d6456d90b978bb8faf979faa2877e8568dc1b3911b333214"
+  },
+  {
+    "path": "source-bridge.json",
+    "bytes": 4202,
+    "sha256": "5e183c6092cce3ff1e7a4270f94e94ca22505dd5f02dee83e25b6b515d1c5a93"
+  },
+  {
+    "path": "source.json",
+    "bytes": 477,
+    "sha256": "903115bc8ffbe8136976215d0d2a0b0a9e4771539f6bb5139aa0a784537f5334"
+  },
+  {
+    "path": "torch-packages.json",
+    "bytes": 575,
+    "sha256": "478e15893a9f505a6715f10f4f93c13847d6108dcd7686cd070bf11cc9abc19c"
+  },
+  {
+    "path": "verification.json",
+    "bytes": 9280,
+    "sha256": "aba2d759a510c449d6456d90b978bb8faf979faa2877e8568dc1b3911b333214"
+  }
+]

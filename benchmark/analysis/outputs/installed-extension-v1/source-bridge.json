@@ -1,0 +1,159 @@
+{
+  "source_base": "b86f497dccfeb1be51368e6260cb6d49d04a4b57",
+  "numerical_core_modified": false,
+  "files": [
+    {
+      "path": "__init__.py",
+      "sha256": "7c54c6b83f3f39fdb0578b6e8fa32a040c6c335a8df3cc6d6fd7d769e710f5e9",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "cli.py",
+      "sha256": "d653469e962d7f09c78b4d37b5d2eaee75d3e617868be0465dd49fbb400d1605",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "executors.py",
+      "sha256": "aaa7f2cd8f42fd3a854a0251e37f420c5b69f42192feef03f21f5c563f8b0d40",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "experiment.py",
+      "sha256": "575be4a6ff786c69533e084c53c1838026784a51a514758fb0fc1237cef02003",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "kernels.py",
+      "sha256": "69461150e93d261079a1a28dcb0d9b3a7e499553bd86d09642c7b2a7988beae2",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "models.py",
+      "sha256": "dd3fa67d962c8e3ffcb2ff38585eae6b69d887a3439e4db39a76195674615613",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "nuts.py",
+      "sha256": "425258c803b74381220e04d4acb58011a7480f61d082f080ead5ce47ac3524f3",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "output.py",
+      "sha256": "201b016e957137f40d1a350f4b4344be2090327b60d8fa5727ccc4370c7dc645",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "reference.py",
+      "sha256": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "sampling.py",
+      "sha256": "db7d7e751dc53f98a5e4c43ee50a23f83ede763ce54909ceeb71bfd6a932b5ad",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "stan.py",
+      "sha256": "297c3e6d572a2eea86222b39c3572dc7efecc84d669624940c005ae1578c7e3b",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "torch_backend/__init__.py",
+      "sha256": "45d1a5e10721e3b7b4d0136dcba8a9c7718de5031aec9a012bafc25c2d1d5b8a",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "torch_backend/executors.py",
+      "sha256": "90fbe42ab3f878dfbd4575fac9db9f3103ac1817b907224a47fa2d0650bf3e4f",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "torch_backend/kernels.py",
+      "sha256": "c457d39ff2e8def2005c1a4c594664b6d4b826688e9008422eebcefc457e59e6",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "torch_backend/models.py",
+      "sha256": "895677cf1c3f6577b3594637821712cda949f21ebe83233e9feb1fff1913c41b",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "torch_backend/nuts_baseline.py",
+      "sha256": "984c1f7a94745c5b85be01d8deee89277d8d2337ee5375693802877feed9ef89",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    },
+    {
+      "path": "torch_backend/sampling.py",
+      "sha256": "907ac8bcfebe9136db33f8b0fe8fa6e6c39d1481c8c2c2225163ccddd7e2fdba",
+      "matches": {
+        "torch_wheel": true,
+        "jax_wheel": true,
+        "R_embedded": true
+      }
+    }
+  ]
+}
