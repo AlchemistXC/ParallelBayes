@@ -136,3 +136,46 @@ def test_cache_interval_matches_scipy_on_whole_input_rows_and_saved_indices(tmp_
     pair=next(p for p in degenerate['pairs'] if p['workflow_a']==seq+'@16')
     assert pair['geometric_mean_ratio']==2. and pair['ratio_confidence_interval'] is None
     assert pair['interval_status']=='degenerate_empirical_loss_or_difference'
+
+
+def test_owned_measurements_require_completed_tasks_and_keep_all_known_consumption():
+    from cache_probe_analysis import create_cache_plan,analyze_cache_probes
+    allocation,tasks,bindings,observations=fixture()
+    for value in observations.values():value['task_outcome']='measurement_available'
+    seq='cpu-rwm-sequential';par='cpu-rwm-online_picard'
+    a=observations[get_probe(allocation,seq,0)['id']]
+    a['task_outcome']='infrastructure_interruption'  # all four saved calls valid; lifecycle unfinished
+    b=observations[get_probe(allocation,seq,1)['id']]
+    b.update(task_outcome='resource_failure',execution_outcomes=['not_run']*4,records=[None]*4)
+    c=observations[get_probe(allocation,seq,2)['id']]
+    c.update(task_outcome='not_run',execution_outcomes=['not_run']*4,records=[None]*4)
+    d=observations[get_probe(allocation,seq,3)['id']]
+    d['task_outcome']='numerical_failure';d['execution_outcomes'][0]='numerical_failure'
+    d['records'][0]['technical_output_valid']=False
+    report=analyze_cache_probes(allocation,tasks,create_cache_plan(allocation,tasks,'G1'),bindings,observations)
+    row=report['workflows'][seq+'@8'];pair=next(x for x in report['pairs'] if x['workflow_a']==seq+'@8')
+    assert row['available_cache_points']==0
+    assert row['availability_counts']==dict(available=0,failed=2,interrupted=1,not_run=1,incomplete_record=0)
+    assert row['known_executor_seconds']==74. and row['mean_cached_seconds'] is None
+    assert row['task_outcome_counts']['resource_failure']==1
+    assert row['task_outcome_counts']['infrastructure_interruption']==1
+    assert row['recorded_executions']==8 and row['planned_executions']==16
+    assert pair['validity_table']==dict(n11=0,n10=0,n01=4,n00=0)
+    assert pair['geometric_mean_ratio'] is None
+    preserved=report['probes'][get_probe(allocation,seq,0)['id']]
+    assert preserved['all_executions_valid'] and preserved['execution_outcomes']==['valid']*4
+    assert preserved['cached_seconds'] is None and preserved['candidate_cached_seconds']==2.
+
+
+@pytest.mark.parametrize('violation',['mixed','posterior','completed_missing','unstarted_with_calls'])
+def test_owned_statistics_reject_inconsistent_task_and_call_contracts(violation):
+    from cache_probe_analysis import create_cache_plan,analyze_cache_probes
+    allocation,tasks,bindings,observations=fixture()
+    for row in observations.values():row['task_outcome']='measurement_available'
+    row=next(iter(observations.values()))
+    if violation=='mixed':row.pop('task_outcome')
+    elif violation=='posterior':row['task_outcome']='valid'
+    elif violation=='completed_missing':row['records'][0]=None
+    else:row['task_outcome']='not_run'
+    with pytest.raises(ValueError,match='task|Task'):
+        analyze_cache_probes(allocation,tasks,create_cache_plan(allocation,tasks,'G1'),bindings,observations)

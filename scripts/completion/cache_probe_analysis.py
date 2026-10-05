@@ -64,6 +64,9 @@ def analyze_cache_probes(allocation,primary_tasks,plan,bindings,observations):
     the same IDs to execution_outcomes and records, each initial+replay ordered.
     None means a missing timing/record, never zero elapsed time. Explicit valid
     output without a timing receipt remains unavailable for cache measurement.
+    Owned-runtime observations additionally require task_outcome for every probe.
+    A stopped/unsealed task never supplies an available cache point, even when
+    all saved numerical calls are valid; their measured consumption is retained.
     """
     expected=create_cache_plan(allocation,primary_tasks,plan.model)
     plan.validate()
@@ -72,6 +75,9 @@ def analyze_cache_probes(allocation,primary_tasks,plan,bindings,observations):
     ids={p['id'] for p in probes}
     if set(bindings)!=ids or set(observations)!=ids:raise ValueError('Every planned probe binding and observation required')
     _validate_bindings(probes,bindings)
+    owned=any('task_outcome' in o for o in observations.values())
+    if owned and not all(o.get('task_outcome') in set(OUTCOMES)-{'valid'} for o in observations.values()):
+        raise ValueError('Every owned measurement needs an explicit compatible task outcome')
     grouped={};reduced={}
     for probe in probes:
         pid=probe['id'];binding=bindings[pid];observation=observations[pid]
@@ -84,13 +90,21 @@ def analyze_cache_probes(allocation,primary_tasks,plan,bindings,observations):
                 raise ValueError('Execution outcome conflicts with numerical record')
         summary=summarize_probe(probe,records,expected_tape_sha256=binding['tape_sha256'],
             expected_target_id=binding['target_id'],expected_config=binding['config'])
-        if summary['all_executions_valid']:availability='available'
-        elif any(s in FAILURES for s in states):availability='failed'
-        elif 'infrastructure_interruption' in states:availability='interrupted'
+        task_outcome=observation.get('task_outcome')
+        if task_outcome=='measurement_available' and not summary['all_executions_valid']:
+            raise ValueError('Completed measurement task lacks four valid timed calls')
+        if task_outcome=='not_run' and (any(s!='not_run' for s in states) or any(r is not None for r in records)):
+            raise ValueError('Unstarted task conflicts with observed calls')
+        if summary['all_executions_valid'] and (not owned or task_outcome=='measurement_available'):availability='available'
+        elif any(s in FAILURES for s in states) or task_outcome in FAILURES:availability='failed'
+        elif 'infrastructure_interruption' in states or task_outcome=='infrastructure_interruption':availability='interrupted'
         elif all(s=='not_run' for s in states):availability='not_run'
         else:availability='incomplete_record'
         summary.update(availability=availability,execution_outcomes=list(states),
                        execution_outcome_counts={s:states.count(s) for s in OUTCOMES})
+        if owned:
+            summary.update(task_outcome=task_outcome,candidate_cached_seconds=summary['cached_seconds'])
+            if availability!='available':summary['cached_seconds']=None
         reduced[pid]=summary
         label=probe['workflow']+'@'+str(probe['budget'])
         grouped.setdefault(label,{})[str(probe['replicate'])]=summary
@@ -122,6 +136,9 @@ def analyze_cache_probes(allocation,primary_tasks,plan,bindings,observations):
                 ('undefined_bootstrap_replicates','resampling_plan_sha256','minimum_valid_repetitions')},
             conditioning='All initial and declared replays satisfy the output contract and have timing receipts',
             consumption_scope='Sum every recorded initial/replay executor time, including unsuccessful probes; excludes preparation, transfer, audits, and archives')
+    if owned:
+        for label,rows in grouped.items():
+            workflows[label]['task_outcome_counts']={s:sum(r['task_outcome']==s for r in rows.values()) for s in OUTCOMES if s!='valid'}
     for pair in statistics['pairs']:
         pair.update(conditioning='both_input_level_cache_points_available',
             interval_coverage='pointwise_conditional_on_both_cache_points_available',
