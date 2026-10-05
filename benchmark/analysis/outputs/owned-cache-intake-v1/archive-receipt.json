@@ -1,0 +1,9 @@
+{
+  "archive": "owned-cache-intake-v1.tar",
+  "bytes": 362721280,
+  "sha256": "9cb60cbb465f7debeec0f7788c6ebeb640f5d545895ebbd9448c6b729fc3c58e",
+  "verified_regular_files": 1196,
+  "manifest_assets": 1195,
+  "analysis_source_commit": "79b32b5d7c3c92fe3407f0219ea10b3749b8f6fb",
+  "public_release": false
+}

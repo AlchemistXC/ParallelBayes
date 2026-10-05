@@ -1,0 +1,31 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_owned_measurements_require_completed_tasks_and_keep_all_known_consumption _
+
+    def test_owned_measurements_require_completed_tasks_and_keep_all_known_consumption():
+        from cache_probe_analysis import create_cache_plan,analyze_cache_probes
+        allocation,tasks,bindings,observations=fixture()
+        for value in observations.values():value['task_outcome']='measurement_available'
+        seq='cpu-rwm-sequential';par='cpu-rwm-online_picard'
+        a=observations[get_probe(allocation,seq,0)['id']]
+        a['task_outcome']='infrastructure_interruption'  # all four saved calls valid; lifecycle unfinished
+        b=observations[get_probe(allocation,seq,1)['id']]
+        b.update(task_outcome='resource_failure',execution_outcomes=['not_run']*4,records=[None]*4)
+        c=observations[get_probe(allocation,seq,2)['id']]
+        c.update(task_outcome='not_run',execution_outcomes=['not_run']*4,records=[None]*4)
+        d=observations[get_probe(allocation,seq,3)['id']]
+        d['task_outcome']='numerical_failure';d['execution_outcomes'][0]='numerical_failure'
+        d['records'][0]['technical_output_valid']=False
+        report=analyze_cache_probes(allocation,tasks,create_cache_plan(allocation,tasks,'G1'),bindings,observations)
+        row=report['workflows'][seq+'@8'];pair=next(x for x in report['pairs'] if x['workflow_a']==seq+'@8')
+        assert row['available_cache_points']==0
+        assert row['availability_counts']==dict(available=0,failed=2,interrupted=1,not_run=1,incomplete_record=0)
+        assert row['known_executor_seconds']==74. and row['mean_cached_seconds'] is None
+>       assert row['task_outcome_counts']['resource_failure']==1
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'task_outcome_counts'
+
+tests/external/test_cache_probe_analysis.py:160: KeyError
+=========================== short test summary info ============================
+FAILED tests/external/test_cache_probe_analysis.py::test_owned_measurements_require_completed_tasks_and_keep_all_known_consumption
+1 failed, 7 deselected in 0.27s

@@ -1,0 +1,16 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_______ test_unstarted_and_disk_refused_measurements_survive_relocation ________
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-32/test_unstarted_and_disk_refuse0')
+
+    def test_unstarted_and_disk_refused_measurements_survive_relocation(tmp_path):
+        from measured_coordinator import MeasuredCoordinator
+        from formal_runtime import ResourceWait
+>       from owned_cache_evidence import OwnedCacheEvidence
+E       ModuleNotFoundError: No module named 'owned_cache_evidence'
+
+tests/external/test_owned_cache_evidence.py:64: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_owned_cache_evidence.py::test_unstarted_and_disk_refused_measurements_survive_relocation
+1 failed in 0.27s

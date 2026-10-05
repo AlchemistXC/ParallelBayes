@@ -10,7 +10,7 @@ Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-IN
 
 本机[批次与最大形状验收](docs/BATCH-MAXIMUM-VALIDATION.md)已完成14/15项，最大NUTS中断记录保留；零重算及搬移归档重建通过。最大MH技术验收不替代正式推断研究。 [成本与误差接口](docs/FORMAL-COST-POLICY.md)已补齐失败/未知时间及逐函数配对处理，正式研究尚待Windows运行门槛与协议冻结。
 
-[测量设计v0.2](docs/FORMAL-MEASUREMENT-DESIGN.md)、[缓存配对统计](docs/CACHE-PROBE-ANALYSIS.md)及[真实CPU缓存记录接收](docs/CACHE-PROBE-EXECUTION.md)已完成有限核验；后继 [Mac 测量运行器](docs/OWNED-CACHE-RUNTIME.md)已完成 20 任务/80 执行及 600 文件零重算、762 资产搬移重建；Windows 原生验收仍待完成。技术重放不增加独立重复数。
+[测量设计v0.2](docs/FORMAL-MEASUREMENT-DESIGN.md)、[缓存配对统计](docs/CACHE-PROBE-ANALYSIS.md)及[真实CPU缓存记录接收](docs/CACHE-PROBE-EXECUTION.md)已完成有限核验；后继 [Mac 测量运行器](docs/OWNED-CACHE-RUNTIME.md)已完成 20 任务/80 执行及 600 文件零重算、762 资产搬移重建；Windows 原生验收仍待完成。技术重放不增加独立重复数。 后继[失败归档接收](docs/OWNED-CACHE-FAILURE-EVIDENCE.md)已保留未启动、资源失败与中断状态，并要求外层完整结束后才产生可用缓存点；21 项相关检查及旧结果重建通过。
 
 独立软件安装候选位于 [`codex/release-candidate-0.2`](https://github.com/AlchemistXC/ParallelBayes/tree/codex/release-candidate-0.2)，已完成干净 Mac Python/R 安装与显式集成核验；仍待 Windows 安装验证。当前测量运行器分支未合并其包版本。
 

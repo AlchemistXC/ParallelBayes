@@ -1,0 +1,38 @@
+{
+  "maximum-v2": {
+    "known_executor_seconds": 417.5403542090007,
+    "measurement_available": 4,
+    "native_windows_validated": false,
+    "new_executor_calls": 0,
+    "new_independent_audits": 0,
+    "new_independent_repetitions": 0,
+    "paired_groups": 0,
+    "previous_statistical_comparisons_unchanged": true,
+    "probes": 4,
+    "profile": "owned-cache-runtime-mac-maximum-v2",
+    "samples_eligible": false,
+    "saved_acceptance_mismatches": 0,
+    "saved_audits_passed": 16,
+    "saved_call_records": 16,
+    "saved_max_abs_path_error": 6.012670361599248e-10,
+    "verified_outer_calls": 8
+  },
+  "short-v2": {
+    "known_executor_seconds": 4.386924168989935,
+    "measurement_available": 16,
+    "native_windows_validated": false,
+    "new_executor_calls": 0,
+    "new_independent_audits": 0,
+    "new_independent_repetitions": 0,
+    "paired_groups": 4,
+    "previous_statistical_comparisons_unchanged": true,
+    "probes": 16,
+    "profile": "owned-cache-runtime-mac-short-v2",
+    "samples_eligible": false,
+    "saved_acceptance_mismatches": 0,
+    "saved_audits_passed": 64,
+    "saved_call_records": 64,
+    "saved_max_abs_path_error": 2.220446049250313e-15,
+    "verified_outer_calls": 32
+  }
+}

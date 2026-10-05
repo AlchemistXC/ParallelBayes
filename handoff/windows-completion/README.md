@@ -1,6 +1,6 @@
 # Windows 研究收尾入口
 
-2026-10-06。Windows已接收研究证据基线为 `codex/windows-return-audit`；Mac后继测量运行器位于 `codex/measurement-runtime`，包安装候选位于 `codex/release-candidate-0.2`，三者尚未合为最终发布；原 `windows-native-dev` 的首轮512项是已接收的历史证据。只使用原生 Windows，不重启第一次移植，也不覆盖原协议或环境。
+2026-10-06。Windows已接收研究证据基线为 `codex/windows-return-audit`；Mac后继测量运行器位于 `codex/measurement-runtime`，其失败归档/统计接收后继在 `codex/cache-failure-evidence`，包安装候选位于 `codex/release-candidate-0.2`，这些分支尚未合为最终发布；原 `windows-native-dev` 的首轮512项是已接收的历史证据。只使用原生 Windows，不重启第一次移植，也不覆盖原协议或环境。
 
 **第二轮`ced54ef`已接收。现在只需按[F2原始输入续跑提示词](CODEX-PROMPT-F2-RESUME.md)完成192工作流机制pilot。** 原文件已补入现有草稿，分析器已修复。F1/F4、九目标CPU NUTS和CPU/CUDA MH就绪检查已完成，无需再次运行；Mac跨系统严格变换差异见[接收报告](../../docs/WINDOWS-ROUND2-INTAKE.md)。F2封存后，再交给Windows Codex[原生运行器与最大任务提示词](CODEX-PROMPT-F3-RUNTIME.md)，实施尚缺的平台运行保护与有限真实批次。两个提示词按顺序执行，不同时启动基准。该后继提示词要求先开发和实测，不表示Windows运行器已经实现。
 

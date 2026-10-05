@@ -1,0 +1,17 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_unsealed_supervisor_interruption_keeps_valid_calls_and_unknown_outer_time _
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-38/test_unsealed_supervisor_inter0')
+
+    def test_unsealed_supervisor_interruption_keeps_valid_calls_and_unknown_outer_time(tmp_path):
+        import os,signal,subprocess
+        from measured_coordinator import MeasuredCoordinator
+        from owned_cache_evidence import OwnedCacheEvidence
+>       from test_measurement_runtime import wait,absent
+E       ImportError: cannot import name 'wait' from 'test_measurement_runtime' (/Users/haku/.codex/worktrees/cache-failure-evidence/ParallelBayes/tests/external/test_measurement_runtime.py)
+
+tests/external/test_owned_cache_evidence.py:145: ImportError
+=========================== short test summary info ============================
+FAILED tests/external/test_owned_cache_evidence.py::test_unsealed_supervisor_interruption_keeps_valid_calls_and_unknown_outer_time
+1 failed, 6 deselected in 0.64s

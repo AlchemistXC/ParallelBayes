@@ -4,6 +4,8 @@
 `codex/measurement-runtime` 分支开发，不覆盖原审查工作树与安装候选。
 这是正式测量所需的运行器衔接，仍不是正式推断研究或 Windows 验收。
 
+后继 [失败保留接收](OWNED-CACHE-FAILURE-EVIDENCE.md)已补齐有限 Mac 失败/中断/未启动布局及统计衔接，原成功运行记录不变。
+
 ## 解决的问题
 
 原 runtime-v1 把 `status=completed` 固定解释成 `samples_eligible=true`。

@@ -1,0 +1,141 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_unsealed_supervisor_interruption_keeps_valid_calls_and_unknown_outer_time _
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-39/test_unsealed_supervisor_inter0')
+
+    def test_unsealed_supervisor_interruption_keeps_valid_calls_and_unknown_outer_time(tmp_path):
+        import os,signal,subprocess
+        from measured_coordinator import MeasuredCoordinator
+        from owned_cache_evidence import OwnedCacheEvidence
+        import time
+        def wait(predicate):
+            end=time.monotonic()+15
+            while not predicate():
+                if time.monotonic()>end:raise AssertionError('Fixture observation deadline')
+                time.sleep(.01)
+        def absent(pid):
+            try:os.killpg(pid,0)
+            except ProcessLookupError:return True
+            return False
+        root,plan,allocation=fixture(tmp_path);lock=tmp_path/'host.lock'
+        m=MeasuredCoordinator(lock,root/'calls')
+        probe=next(p for p in allocation['probes'] if p['workflow']=='cpu-rwm-sequential')
+        release=tmp_path/'release';worker=tmp_path/'wait-worker.py'
+        worker.write_text('''import os,sys,time
+    from pathlib import Path
+    sys.path.insert(0,''' + repr(str(ROOT/'scripts/completion')) + ''')
+    from owned_cache_worker import run
+    replace=os.replace
+    def pause(source,destination):
+        replace(source,destination)
+        if Path(destination).name=='candidate-0.json':
+            while not Path(''' + repr(str(release)) + ''').exists():time.sleep(.01)
+    os.replace=pause
+    run(sys.argv[1],sys.argv[2])
+    ''')
+        j=job(root,plan,probe,worker);request=tmp_path/'launch.json'
+        request.write_text(json.dumps({k:str(v) if isinstance(v,Path) else v for k,v in j.items()}))
+        code='''import json,sys
+    sys.path.insert(0,sys.argv[1])
+    from measured_coordinator import MeasuredCoordinator
+    MeasuredCoordinator(sys.argv[2],sys.argv[3]).run(**json.load(open(sys.argv[4])))
+    '''
+        supervisor=subprocess.Popen([sys.executable,'-c',code,str(ROOT/'scripts/completion'),str(lock),str(root/'calls'),str(request)])
+        out=j['output'];pid=None
+        try:
+            wait(lambda:(out/'attempt-0001/probe/candidate-0.json').exists())
+            pid=json.loads((out/'attempt-0001/process.json').read_text())['pid']
+>           supervisor.kill();supervisor.wait(timeout=3);release.touch();wait(lambda:absent(pid));pid=None
+                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/external/test_owned_cache_evidence.py:183: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/external/test_owned_cache_evidence.py:148: in wait
+    while not predicate():
+              ^^^^^^^^^^^
+tests/external/test_owned_cache_evidence.py:183: in <lambda>
+    supervisor.kill();supervisor.wait(timeout=3);release.touch();wait(lambda:absent(pid));pid=None
+                                                                             ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+pid = 18905
+
+    def absent(pid):
+>       try:os.killpg(pid,0)
+            ^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 1] Operation not permitted
+
+tests/external/test_owned_cache_evidence.py:152: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-39/test_unsealed_supervisor_inter0')
+
+    def test_unsealed_supervisor_interruption_keeps_valid_calls_and_unknown_outer_time(tmp_path):
+        import os,signal,subprocess
+        from measured_coordinator import MeasuredCoordinator
+        from owned_cache_evidence import OwnedCacheEvidence
+        import time
+        def wait(predicate):
+            end=time.monotonic()+15
+            while not predicate():
+                if time.monotonic()>end:raise AssertionError('Fixture observation deadline')
+                time.sleep(.01)
+        def absent(pid):
+            try:os.killpg(pid,0)
+            except ProcessLookupError:return True
+            return False
+        root,plan,allocation=fixture(tmp_path);lock=tmp_path/'host.lock'
+        m=MeasuredCoordinator(lock,root/'calls')
+        probe=next(p for p in allocation['probes'] if p['workflow']=='cpu-rwm-sequential')
+        release=tmp_path/'release';worker=tmp_path/'wait-worker.py'
+        worker.write_text('''import os,sys,time
+    from pathlib import Path
+    sys.path.insert(0,''' + repr(str(ROOT/'scripts/completion')) + ''')
+    from owned_cache_worker import run
+    replace=os.replace
+    def pause(source,destination):
+        replace(source,destination)
+        if Path(destination).name=='candidate-0.json':
+            while not Path(''' + repr(str(release)) + ''').exists():time.sleep(.01)
+    os.replace=pause
+    run(sys.argv[1],sys.argv[2])
+    ''')
+        j=job(root,plan,probe,worker);request=tmp_path/'launch.json'
+        request.write_text(json.dumps({k:str(v) if isinstance(v,Path) else v for k,v in j.items()}))
+        code='''import json,sys
+    sys.path.insert(0,sys.argv[1])
+    from measured_coordinator import MeasuredCoordinator
+    MeasuredCoordinator(sys.argv[2],sys.argv[3]).run(**json.load(open(sys.argv[4])))
+    '''
+        supervisor=subprocess.Popen([sys.executable,'-c',code,str(ROOT/'scripts/completion'),str(lock),str(root/'calls'),str(request)])
+        out=j['output'];pid=None
+        try:
+            wait(lambda:(out/'attempt-0001/probe/candidate-0.json').exists())
+            pid=json.loads((out/'attempt-0001/process.json').read_text())['pid']
+            supervisor.kill();supervisor.wait(timeout=3);release.touch();wait(lambda:absent(pid));pid=None
+            h=m.coordinator.history(out)
+            assert h['lifecycle']=='stopped_unsealed' and h['summary']['total_seconds'] is None
+            moved,digest=relocate(root,plan,allocation,m,tmp_path)
+            with OwnedCacheEvidence(moved,'owned-cache-layout.json',digest) as evidence:row=evidence.read_probe(probe['id'])
+            assert row['task_outcome']=='infrastructure_interruption'
+            assert row['observation']['execution_outcomes']==['valid']*4
+            assert row['numerical_summary']['known_executor_seconds']>0
+            assert row['history']['attempts'][0]['seconds'] is None
+            assert row['outer_costs']['unfinished_invocations']==1
+            assert row['outer_costs']['complete_invocation_seconds'] is None
+            assert not row['measurement_available'] and not row['samples_eligible']
+            assert row['history']['attempts'][0]['artifact_kind']=='cache_measurement'
+        finally:
+            release.touch()
+            if supervisor.poll() is None:supervisor.kill();supervisor.wait(timeout=3)
+            if pid is not None:
+>               try:os.killpg(pid,signal.SIGKILL)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               PermissionError: [Errno 1] Operation not permitted
+
+tests/external/test_owned_cache_evidence.py:200: PermissionError
+=========================== short test summary info ============================
+FAILED tests/external/test_owned_cache_evidence.py::test_unsealed_supervisor_interruption_keeps_valid_calls_and_unknown_outer_time
+1 failed, 6 deselected in 1.69s

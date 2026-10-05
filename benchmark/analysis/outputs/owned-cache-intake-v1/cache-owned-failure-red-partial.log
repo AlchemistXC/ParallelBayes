@@ -1,0 +1,74 @@
+F.                                                                       [100%]
+=================================== FAILURES ===================================
+_ test_storage_boundary_interruption_preserves_timed_calls_without_granting_completion[candidate-0.json-partial-1] _
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-36/test_storage_boundary_interrup0')
+stage = 'candidate-0.json', kind = 'partial', known_calls = 1
+
+    @pytest.mark.parametrize('stage,kind,known_calls',[
+        ('candidate-0.json','partial',1),('MANIFEST.json','sealed',4),
+    ])
+    def test_storage_boundary_interruption_preserves_timed_calls_without_granting_completion(tmp_path,stage,kind,known_calls):
+        from measured_coordinator import MeasuredCoordinator
+        from owned_cache_evidence import OwnedCacheEvidence
+        root,plan,allocation=fixture(tmp_path);m=MeasuredCoordinator(tmp_path/'host.lock',root/'calls')
+        probe=next(p for p in allocation['probes'] if p['workflow']=='cpu-rwm-sequential')
+        worker=tmp_path/'fault.py';write_fault_worker(worker,stage)
+        result=m.run(**job(root,plan,probe,worker))
+        assert result['status']=='interrupted'
+        moved,digest=relocate(root,plan,allocation,m,tmp_path)
+>       with OwnedCacheEvidence(moved,'owned-cache-layout.json',digest) as evidence:row=evidence.read_probe(probe['id'])
+                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/external/test_owned_cache_evidence.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <owned_cache_evidence.OwnedCacheEvidence object at 0x112e69070>
+probe_id = 'ac52b8d4fd922abce706c661'
+
+    def read_probe(self,probe_id):
+        probe=self.probes[probe_id];location=self.layout['probes'][probe_id]
+        capsule,digest=self.plan.capsule(probe['primary_task_id'])
+        task=dict(id=probe_id,protocol_sha256=self.plan.protocol_sha256,artifact_kind='cache_measurement')
+        history=self.runtime.history(task,location['original'])
+        if len(history['attempts'])>1 or history['lifecycle']=='recovered':raise ValueError('Cache measurement retries are forbidden')
+        # The older generic reader predates cache roles on stopped/unsealed rows.
+        # The snapshot has already verified the complete fixed measurement task.
+        for row in history['attempts']:
+            if row.get('artifact_kind','cache_measurement')!='cache_measurement':raise ValueError('Posterior history in cache evidence')
+            row['artifact_kind']='cache_measurement'
+        history['summary']=summarize_attempts(history['attempts'])
+        outcome=history['summary']['outcome']
+        values=payload(dict(inputs=str(self.inputs)),capsule)
+        config=settings(mh_config(capsule,values['initial'].tolist()))
+        tape={k:values[k][:,:config['draws']] for k in ('noise','log_uniform','directions')}
+        model=build_target(capsule['target'],None,'cpu')
+        binding=dict(input_file_sha256=capsule['input']['sha256'],tape_sha256=tape_hash(tape),target_id=model.target_id,config=config)
+        records=[None]*4;states=['not_run']*4;kind='absent'
+        if history['attempts']:
+            directory=inside(self.root,self.layout['locations'][location['original']])
+            request=json.loads((directory/'binding.json').read_text())['request']
+            if any(request.get(k)!=v for k,v in dict(capsule=capsule,capsule_sha256=digest,probe=probe).items()):
+                raise ValueError('Runtime request differs from the planned measurement capsule')
+            artifact=directory/'attempt-0001/probe'
+            if (artifact/'MANIFEST.json').is_file():
+                report=read_cached_probe(artifact)
+                saved=json.loads((artifact/'request.json').read_text())
+                if saved!=dict(capsule=capsule,capsule_sha256=digest,probe=probe) or report['binding']!=binding:
+                    raise ValueError('Cache artifact differs from actual planned inputs/target/config')
+                records=report['observation']['records'];states=report['observation']['execution_outcomes'];kind='sealed'
+                worker=directory/'attempt-0001/worker-result.json'
+                if worker.is_file():
+                    result=json.loads(worker.read_text())
+                    if result.get('probe_id')!=probe_id or result.get('capsule_sha256')!=digest or result.get('cache_manifest_sha256')!=file_hash(artifact/'MANIFEST.json'):
+                        raise ValueError('Worker receipt does not bind the sealed cache artifact')
+                if outcome=='measurement_available' and report['status']!='completed':
+                    raise ValueError('Completed task conflicts with failed numerical artifact')
+>           else:raise NotImplementedError('Partial owned cache evidence is not yet supported')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           NotImplementedError: Partial owned cache evidence is not yet supported
+
+scripts/completion/owned_cache_evidence.py:84: NotImplementedError
+=========================== short test summary info ============================
+FAILED tests/external/test_owned_cache_evidence.py::test_storage_boundary_interruption_preserves_timed_calls_without_granting_completion[candidate-0.json-partial-1]
+1 failed, 1 passed, 4 deselected in 2.09s

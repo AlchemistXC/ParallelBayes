@@ -1,0 +1,161 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_ test_completed_and_failed_numerical_artifacts_keep_their_original_scope[cpu-rwm-sequential-controls0-measurement_available-4] _
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-34/test_completed_and_failed_nume0')
+workflow = 'cpu-rwm-sequential', controls = {}
+outcome = 'measurement_available', known_calls = 4
+
+    @pytest.mark.parametrize('workflow,controls,outcome,known_calls',[
+        ('cpu-rwm-sequential',{},'measurement_available',4),
+        ('cpu-mala-quasi_deer',{'quasi_deer_max_iter':1},'numerical_failure',4),
+        ('cpu-rwm-online_picard',{'window':4096,'memory_limit_mb':1},'resource_failure',0),
+    ])
+    def test_completed_and_failed_numerical_artifacts_keep_their_original_scope(tmp_path,workflow,controls,outcome,known_calls):
+        from measured_coordinator import MeasuredCoordinator
+        from owned_cache_evidence import OwnedCacheEvidence
+        root,plan,allocation=fixture(tmp_path,**controls);m=MeasuredCoordinator(tmp_path/'host.lock',root/'calls')
+        probe=next(p for p in allocation['probes'] if p['workflow']==workflow)
+        m.run(**job(root,plan,probe))
+        moved,digest=relocate(root,plan,allocation,m,tmp_path)
+>       with OwnedCacheEvidence(moved,'owned-cache-layout.json',digest) as evidence:row=evidence.read_probe(probe['id'])
+                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/external/test_owned_cache_evidence.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <owned_cache_evidence.OwnedCacheEvidence object at 0x10fb0e960>
+probe_id = 'ac52b8d4fd922abce706c661'
+
+    def read_probe(self,probe_id):
+        probe=self.probes[probe_id];location=self.layout['probes'][probe_id]
+        capsule,digest=self.plan.capsule(probe['primary_task_id'])
+        task=dict(id=probe_id,protocol_sha256=self.plan.protocol_sha256,artifact_kind='cache_measurement')
+        history=self.runtime.history(task,location['original'])
+        if len(history['attempts'])>1 or history['lifecycle']=='recovered':raise ValueError('Cache measurement retries are forbidden')
+        # The older generic reader predates cache roles on stopped/unsealed rows.
+        # The snapshot has already verified the complete fixed measurement task.
+        for row in history['attempts']:
+            if row.get('artifact_kind','cache_measurement')!='cache_measurement':raise ValueError('Posterior history in cache evidence')
+            row['artifact_kind']='cache_measurement'
+        history['summary']=summarize_attempts(history['attempts'])
+        outcome=history['summary']['outcome']
+        values=payload(dict(inputs=str(self.inputs)),capsule)
+        config=settings(mh_config(capsule,values['initial'].tolist()))
+        tape={k:values[k][:,:config['draws']] for k in ('noise','log_uniform','directions')}
+        model=build_target(capsule['target'],None,probe['device'])
+        binding=dict(input_file_sha256=capsule['input']['sha256'],tape_sha256=tape_hash(tape),target_id=model.target_id,config=config)
+        records=[None]*4;states=['not_run']*4;kind='absent'
+>       if history['attempts']:raise NotImplementedError('Executed owned cache evidence is not yet supported')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       NotImplementedError: Executed owned cache evidence is not yet supported
+
+scripts/completion/owned_cache_evidence.py:64: NotImplementedError
+_ test_completed_and_failed_numerical_artifacts_keep_their_original_scope[cpu-mala-quasi_deer-controls1-numerical_failure-4] _
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-34/test_completed_and_failed_nume1')
+workflow = 'cpu-mala-quasi_deer', controls = {'quasi_deer_max_iter': 1}
+outcome = 'numerical_failure', known_calls = 4
+
+    @pytest.mark.parametrize('workflow,controls,outcome,known_calls',[
+        ('cpu-rwm-sequential',{},'measurement_available',4),
+        ('cpu-mala-quasi_deer',{'quasi_deer_max_iter':1},'numerical_failure',4),
+        ('cpu-rwm-online_picard',{'window':4096,'memory_limit_mb':1},'resource_failure',0),
+    ])
+    def test_completed_and_failed_numerical_artifacts_keep_their_original_scope(tmp_path,workflow,controls,outcome,known_calls):
+        from measured_coordinator import MeasuredCoordinator
+        from owned_cache_evidence import OwnedCacheEvidence
+        root,plan,allocation=fixture(tmp_path,**controls);m=MeasuredCoordinator(tmp_path/'host.lock',root/'calls')
+        probe=next(p for p in allocation['probes'] if p['workflow']==workflow)
+        m.run(**job(root,plan,probe))
+        moved,digest=relocate(root,plan,allocation,m,tmp_path)
+>       with OwnedCacheEvidence(moved,'owned-cache-layout.json',digest) as evidence:row=evidence.read_probe(probe['id'])
+                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/external/test_owned_cache_evidence.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <owned_cache_evidence.OwnedCacheEvidence object at 0x10ff5ad50>
+probe_id = '21c4b276ab22a17cbc999ed1'
+
+    def read_probe(self,probe_id):
+        probe=self.probes[probe_id];location=self.layout['probes'][probe_id]
+        capsule,digest=self.plan.capsule(probe['primary_task_id'])
+        task=dict(id=probe_id,protocol_sha256=self.plan.protocol_sha256,artifact_kind='cache_measurement')
+        history=self.runtime.history(task,location['original'])
+        if len(history['attempts'])>1 or history['lifecycle']=='recovered':raise ValueError('Cache measurement retries are forbidden')
+        # The older generic reader predates cache roles on stopped/unsealed rows.
+        # The snapshot has already verified the complete fixed measurement task.
+        for row in history['attempts']:
+            if row.get('artifact_kind','cache_measurement')!='cache_measurement':raise ValueError('Posterior history in cache evidence')
+            row['artifact_kind']='cache_measurement'
+        history['summary']=summarize_attempts(history['attempts'])
+        outcome=history['summary']['outcome']
+        values=payload(dict(inputs=str(self.inputs)),capsule)
+        config=settings(mh_config(capsule,values['initial'].tolist()))
+        tape={k:values[k][:,:config['draws']] for k in ('noise','log_uniform','directions')}
+        model=build_target(capsule['target'],None,probe['device'])
+        binding=dict(input_file_sha256=capsule['input']['sha256'],tape_sha256=tape_hash(tape),target_id=model.target_id,config=config)
+        records=[None]*4;states=['not_run']*4;kind='absent'
+>       if history['attempts']:raise NotImplementedError('Executed owned cache evidence is not yet supported')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       NotImplementedError: Executed owned cache evidence is not yet supported
+
+scripts/completion/owned_cache_evidence.py:64: NotImplementedError
+_ test_completed_and_failed_numerical_artifacts_keep_their_original_scope[cpu-rwm-online_picard-controls2-resource_failure-0] _
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-34/test_completed_and_failed_nume2')
+workflow = 'cpu-rwm-online_picard'
+controls = {'memory_limit_mb': 1, 'window': 4096}, outcome = 'resource_failure'
+known_calls = 0
+
+    @pytest.mark.parametrize('workflow,controls,outcome,known_calls',[
+        ('cpu-rwm-sequential',{},'measurement_available',4),
+        ('cpu-mala-quasi_deer',{'quasi_deer_max_iter':1},'numerical_failure',4),
+        ('cpu-rwm-online_picard',{'window':4096,'memory_limit_mb':1},'resource_failure',0),
+    ])
+    def test_completed_and_failed_numerical_artifacts_keep_their_original_scope(tmp_path,workflow,controls,outcome,known_calls):
+        from measured_coordinator import MeasuredCoordinator
+        from owned_cache_evidence import OwnedCacheEvidence
+        root,plan,allocation=fixture(tmp_path,**controls);m=MeasuredCoordinator(tmp_path/'host.lock',root/'calls')
+        probe=next(p for p in allocation['probes'] if p['workflow']==workflow)
+        m.run(**job(root,plan,probe))
+        moved,digest=relocate(root,plan,allocation,m,tmp_path)
+>       with OwnedCacheEvidence(moved,'owned-cache-layout.json',digest) as evidence:row=evidence.read_probe(probe['id'])
+                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/external/test_owned_cache_evidence.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <owned_cache_evidence.OwnedCacheEvidence object at 0x10ff5b950>
+probe_id = 'a91a622ddb16ae909d886b62'
+
+    def read_probe(self,probe_id):
+        probe=self.probes[probe_id];location=self.layout['probes'][probe_id]
+        capsule,digest=self.plan.capsule(probe['primary_task_id'])
+        task=dict(id=probe_id,protocol_sha256=self.plan.protocol_sha256,artifact_kind='cache_measurement')
+        history=self.runtime.history(task,location['original'])
+        if len(history['attempts'])>1 or history['lifecycle']=='recovered':raise ValueError('Cache measurement retries are forbidden')
+        # The older generic reader predates cache roles on stopped/unsealed rows.
+        # The snapshot has already verified the complete fixed measurement task.
+        for row in history['attempts']:
+            if row.get('artifact_kind','cache_measurement')!='cache_measurement':raise ValueError('Posterior history in cache evidence')
+            row['artifact_kind']='cache_measurement'
+        history['summary']=summarize_attempts(history['attempts'])
+        outcome=history['summary']['outcome']
+        values=payload(dict(inputs=str(self.inputs)),capsule)
+        config=settings(mh_config(capsule,values['initial'].tolist()))
+        tape={k:values[k][:,:config['draws']] for k in ('noise','log_uniform','directions')}
+        model=build_target(capsule['target'],None,probe['device'])
+        binding=dict(input_file_sha256=capsule['input']['sha256'],tape_sha256=tape_hash(tape),target_id=model.target_id,config=config)
+        records=[None]*4;states=['not_run']*4;kind='absent'
+>       if history['attempts']:raise NotImplementedError('Executed owned cache evidence is not yet supported')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       NotImplementedError: Executed owned cache evidence is not yet supported
+
+scripts/completion/owned_cache_evidence.py:64: NotImplementedError
+=========================== short test summary info ============================
+FAILED tests/external/test_owned_cache_evidence.py::test_completed_and_failed_numerical_artifacts_keep_their_original_scope[cpu-rwm-sequential-controls0-measurement_available-4]
+FAILED tests/external/test_owned_cache_evidence.py::test_completed_and_failed_numerical_artifacts_keep_their_original_scope[cpu-mala-quasi_deer-controls1-numerical_failure-4]
+FAILED tests/external/test_owned_cache_evidence.py::test_completed_and_failed_numerical_artifacts_keep_their_original_scope[cpu-rwm-online_picard-controls2-resource_failure-0]
+3 failed, 1 deselected in 3.75s

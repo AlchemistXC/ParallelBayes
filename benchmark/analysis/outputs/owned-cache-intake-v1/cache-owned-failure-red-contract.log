@@ -1,0 +1,84 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+___ test_owned_statistics_reject_inconsistent_task_and_call_contracts[mixed] ___
+
+violation = 'mixed'
+
+    @pytest.mark.parametrize('violation',['mixed','posterior','completed_missing','unstarted_with_calls'])
+    def test_owned_statistics_reject_inconsistent_task_and_call_contracts(violation):
+        from cache_probe_analysis import create_cache_plan,analyze_cache_probes
+        allocation,tasks,bindings,observations=fixture()
+        for row in observations.values():row['task_outcome']='measurement_available'
+        row=next(iter(observations.values()))
+        if violation=='mixed':row.pop('task_outcome')
+        elif violation=='posterior':row['task_outcome']='valid'
+        elif violation=='completed_missing':row['records'][0]=None
+        else:row['task_outcome']='not_run'
+>       with pytest.raises(ValueError,match='task|Task'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/external/test_cache_probe_analysis.py:178: Failed
+_ test_owned_statistics_reject_inconsistent_task_and_call_contracts[posterior] _
+
+violation = 'posterior'
+
+    @pytest.mark.parametrize('violation',['mixed','posterior','completed_missing','unstarted_with_calls'])
+    def test_owned_statistics_reject_inconsistent_task_and_call_contracts(violation):
+        from cache_probe_analysis import create_cache_plan,analyze_cache_probes
+        allocation,tasks,bindings,observations=fixture()
+        for row in observations.values():row['task_outcome']='measurement_available'
+        row=next(iter(observations.values()))
+        if violation=='mixed':row.pop('task_outcome')
+        elif violation=='posterior':row['task_outcome']='valid'
+        elif violation=='completed_missing':row['records'][0]=None
+        else:row['task_outcome']='not_run'
+>       with pytest.raises(ValueError,match='task|Task'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/external/test_cache_probe_analysis.py:178: Failed
+_ test_owned_statistics_reject_inconsistent_task_and_call_contracts[completed_missing] _
+
+violation = 'completed_missing'
+
+    @pytest.mark.parametrize('violation',['mixed','posterior','completed_missing','unstarted_with_calls'])
+    def test_owned_statistics_reject_inconsistent_task_and_call_contracts(violation):
+        from cache_probe_analysis import create_cache_plan,analyze_cache_probes
+        allocation,tasks,bindings,observations=fixture()
+        for row in observations.values():row['task_outcome']='measurement_available'
+        row=next(iter(observations.values()))
+        if violation=='mixed':row.pop('task_outcome')
+        elif violation=='posterior':row['task_outcome']='valid'
+        elif violation=='completed_missing':row['records'][0]=None
+        else:row['task_outcome']='not_run'
+>       with pytest.raises(ValueError,match='task|Task'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/external/test_cache_probe_analysis.py:178: Failed
+_ test_owned_statistics_reject_inconsistent_task_and_call_contracts[unstarted_with_calls] _
+
+violation = 'unstarted_with_calls'
+
+    @pytest.mark.parametrize('violation',['mixed','posterior','completed_missing','unstarted_with_calls'])
+    def test_owned_statistics_reject_inconsistent_task_and_call_contracts(violation):
+        from cache_probe_analysis import create_cache_plan,analyze_cache_probes
+        allocation,tasks,bindings,observations=fixture()
+        for row in observations.values():row['task_outcome']='measurement_available'
+        row=next(iter(observations.values()))
+        if violation=='mixed':row.pop('task_outcome')
+        elif violation=='posterior':row['task_outcome']='valid'
+        elif violation=='completed_missing':row['records'][0]=None
+        else:row['task_outcome']='not_run'
+>       with pytest.raises(ValueError,match='task|Task'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/external/test_cache_probe_analysis.py:178: Failed
+=========================== short test summary info ============================
+FAILED tests/external/test_cache_probe_analysis.py::test_owned_statistics_reject_inconsistent_task_and_call_contracts[mixed]
+FAILED tests/external/test_cache_probe_analysis.py::test_owned_statistics_reject_inconsistent_task_and_call_contracts[posterior]
+FAILED tests/external/test_cache_probe_analysis.py::test_owned_statistics_reject_inconsistent_task_and_call_contracts[completed_missing]
+FAILED tests/external/test_cache_probe_analysis.py::test_owned_statistics_reject_inconsistent_task_and_call_contracts[unstarted_with_calls]
+4 failed, 4 deselected in 0.30s

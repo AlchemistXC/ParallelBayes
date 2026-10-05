@@ -2,11 +2,11 @@
 
 请在F2机制pilot已经封存后继续ParallelBayes的F3前置工程。既有用户授权包括原生Windows11/AMD CPU/RTX5080开发与实验；不使用WSL2。此次目标是使Windows能安全、可恢复地运行并审计正式格式的CPU/CUDA任务，完成有限技术验收；**不启动尚未冻结的41,472项正式网格**。
 
-先读AGENTS.md、docs/RESEARCH-COMPLETION-PLAN.md、docs/F3-FORMAL-DESIGN-DRAFT.md、docs/BATCH-MAXIMUM-VALIDATION.md及docs/FORMAL-COORDINATOR.md、docs/OWNED-CACHE-RUNTIME.md。F2如果仍在运行，不切换它的源码或与它同时进行性能测量；可用独立worktree做不占用实验设备的代码审查和测试设计。F2输入问题已由CODEX-PROMPT-F2-RESUME解决；F1/F4、CPU NUTS及MH就绪任务不重跑。
+先读AGENTS.md、docs/RESEARCH-COMPLETION-PLAN.md、docs/F3-FORMAL-DESIGN-DRAFT.md、docs/BATCH-MAXIMUM-VALIDATION.md及docs/FORMAL-COORDINATOR.md、docs/OWNED-CACHE-RUNTIME.md、docs/OWNED-CACHE-FAILURE-EVIDENCE.md。F2如果仍在运行，不切换它的源码或与它同时进行性能测量；可用独立worktree做不占用实验设备的代码审查和测试设计。F2输入问题已由CODEX-PROMPT-F2-RESUME解决；F1/F4、CPU NUTS及MH就绪任务不重跑。
 
 ## 源码与现有边界
 
-先核对远端 `codex/measurement-runtime` 的来源与差异；它后继于 `codex/windows-return-audit` 的 `52fdfd0`，包含 Mac 测量资格分离及实际技术验收。从已核对的该分支建立独立 `codex/windows-runtime-validation` 开发分支；如果 Windows 已开始本阶段，在自己的开发分支审查整合必要改动，不重置工作树、正在运行的源码或已冻结协议。保留Windows机制分支及所有原始结果，必要修订通过明确的提交整合。记录起始HEAD和未提交状态，不能切换正在运行的工作目录。
+先核对远端 `codex/cache-failure-evidence` 的来源与差异；它包含 `codex/measurement-runtime` 的已核验运行器和后继失败接收，后继于 `codex/windows-return-audit` 的 `52fdfd0`，包含 Mac 测量资格分离及实际技术验收。从已核对的该分支建立独立 `codex/windows-runtime-validation` 开发分支；如果 Windows 已开始本阶段，在自己的开发分支审查整合必要改动，不重置工作树、正在运行的源码或已冻结协议。保留Windows机制分支及所有原始结果，必要修订通过明确的提交整合。记录起始HEAD和未提交状态，不能切换正在运行的工作目录。
 
 Mac新结果：15个技术任务中14个合格，G2最大NUTS原调用与唯一重试在封存前中断；确认期间发生主机重启但原因未定。4种MH完成64维×4链×16,384保留步，390任务文件零重算、556文件归档搬移及47行R诊断重建通过。这不代表Windows进程保护或最大NUTS通过，也不授权第三次重试旧Mac任务。
 
@@ -64,6 +64,8 @@ Mac 后继完成 20 个测量任务、80 次实际执行/独立审计，接受�
 每个合格MH任务须完成独立NumPy实际数组重放、原始/无约束输出变换和接受事件检查；失败轨迹隔离。NUTS保留子链实际初值、种子/随机状态、预热、适应过程、发散、完整元数据及R现代诊断，不声称固定MH路径等价。12组同核比较也须核对实际随机数组，不只比较种子。
 
 这里不在每个主任务里隐藏额外缓存重放；若验证缓存计时，单独声明有限的技术重放输入、次数和计时边界，成本不能装作主调用免费。缓存探测分配与批次费用接口现已在docs/FORMAL-MEASUREMENT-DESIGN.md具体化；本阶段只做27项主任务与上面明确的24项独立缓存探测，不执行规划中的9,216缓存探测。后继正式worker不得直接复用只接受Mac有效原任务的cached_cost_worker.py；须在同一实际输入/配置下保留失败入选配置。批次费用可复用batch_cost_ledger.py，但原生Windows锁/中断仍应实际检查，不能把Mac测试当作Windows证据。缓存跨输入统计见docs/CACHE-PROBE-ANALYSIS.md及cache_probe_analysis.py；人工统计检查不替代实际输入/审计回执适配。本次单输入技术批次不生成跨重复区间，也不启动正式缓存网格。后继Mac真实接收验证见docs/CACHE-PROBE-EXECUTION.md：cache_probe_execution.py可作为数值/记录实现参考，当前入口明确只允许Mac技术执行。缓存产物始终samples_eligible=false，不能为了复用旧调度器而改成true；如接入原生调度，区分measurement_available与后验样本资格。完整源码冻结须显式包含cached_execution.py。本机小型同进程测试不代表Windows进程/资源保护通过。
+
+只读接收后继：`owned_cache_evidence.py` 从完整计划与登记快照保留未启动、资源失败、写盘中断及未封存任务；`cache_probe_analysis.py` 对受管理测量要求每项提供 `task_outcome`。不得仅凭四份调用数值有效就将外层中断计为可用缓存点。未知外层时间保持未知，已知执行费用保留。可参考21项有限Mac检查及旧20测量的兼容重建；原生Windows登记/进程语义仍须独立适配和核验。正在执行的冻结Windows任务不得切换源码；新适配使用新身份，旧证据按原提交重建。
 
 ## 归档到分析及交付
 
