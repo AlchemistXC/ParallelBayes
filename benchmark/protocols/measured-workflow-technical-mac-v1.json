@@ -1,0 +1,79 @@
+{
+  "actual_inputs": {
+    "G1.npz": {
+      "actual_sha256": "f9763b2c615a28d76b02bca15d986cfc50368a8937b3c311b6c9096c2e93616c",
+      "sha256": "8009fff69fc9b5243ff8d2981cfa395ac03bd0239812fde9db41aff148693ea3"
+    },
+    "L1.npz": {
+      "actual_sha256": "f89e3337a1ab49e07741a14148166124414612e3d785b57e2a1d7adef9a916f8",
+      "sha256": "3cf8b2e86344c2e852ba0261752adce800a1ec8f97a143a128908c3511fe69a8"
+    }
+  },
+  "audit_scope": "External coordinator.run wall including registration, owned process lifecycle, independent audit, sealing and verified history; excludes the outer measurement receipt write and companion validation",
+  "cached_execution_measured": false,
+  "dependency_protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+  "formal_inference_complete": false,
+  "identity": "measured-workflow-technical-mac-v1",
+  "independent_statistical_repetitions_added": 0,
+  "measurement_sha256": "8f8ac5a0b31260a958a63ef723b7ea56768d12a9b02790509a19aae20ab135f2",
+  "no_total_time_cutoff": true,
+  "numerical_standards": "Unchanged dependency tolerances, fixed actual random arrays and independent NumPy oracle; no fallback",
+  "ordinary_scope": "Standalone Python batch startup through exit, full retained paths and R diagnostics, before independent MH path audit",
+  "required_platform": "darwin",
+  "resume_policy": "Keep initial execution-wall receipt unchanged; record resume verification as a separate invocation",
+  "source_commit": "eac65b50444729ba061bacfa190f8a0fd00119c3",
+  "source_files": {
+    "scripts/completion/audit_measured_workflow.py": "7614fcec9f9c84e2e1e5afdaa89c9a73aaf002bf953465d8d908a901329eb5c1",
+    "scripts/completion/formal_coordinator.py": "c8852045f6b425519dbc7e4353682fda5fe293d913f88dd6d688d4b6b97d110d",
+    "scripts/completion/formal_outcomes.py": "e8c04dffddb82593089e4660d412249fb7fbd6e5e2655ab23ebea25f6dfec76a",
+    "scripts/completion/formal_recovery.py": "faf3650db1b066ec6c62c765696bc0942ee75c2a4e334df214ce5c966623bec2",
+    "scripts/completion/formal_runtime.py": "d5592611316cb665f442a39117709908e52f7d30e0efa1d9aba56dd60b7e6e87",
+    "scripts/completion/formal_streaming.py": "c9a09d7fe82f20debd6d91b637d40dc2673e30a0c390409cddd6a354611a409f",
+    "scripts/completion/measured_audit_worker.py": "3dbb2fdea4de6885dbebecc34d1eb57f43c3e690824f7d99e0606c2ed6734aed",
+    "scripts/completion/measured_ordinary_worker.py": "0073d0896edcbc5dd78851570ed506442dac786d65a0a4032cff13ef0c1ddf1a",
+    "scripts/completion/measured_workflow.py": "91ec2b4f7618575f7f3ff58459a4119c5562814caf0edc8b7c80797013dfccf7",
+    "scripts/completion/selected_mh_readiness.py": "78f598eaa7e6f81879cdba72f3927e61f64f6873e8cff4113bf07a6e2f60d88f"
+  },
+  "tasks": [
+    {
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "8b91ab212abfc73e14d8",
+      "kernel": "rwm",
+      "model": "G1",
+      "replicate": 0
+    },
+    {
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "2153a3c310f4b9b8b280",
+      "kernel": "mala",
+      "model": "G1",
+      "replicate": 0
+    },
+    {
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "151c23e95214c429b2bc",
+      "kernel": "rwm",
+      "model": "G1",
+      "replicate": 0
+    },
+    {
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "37f71a60a73a7df1a854",
+      "kernel": "mala",
+      "model": "G1",
+      "replicate": 0
+    },
+    {
+      "device": "cpu",
+      "executor": "spawn_chains",
+      "id": "173275cd12b6ca3834aa",
+      "kernel": "nuts",
+      "model": "L1",
+      "replicate": 0
+    }
+  ]
+}
