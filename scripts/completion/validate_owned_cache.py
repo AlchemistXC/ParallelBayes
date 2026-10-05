@@ -23,7 +23,7 @@ def freeze(baseline,output,profile):
     expected='cache-probe-capsule-mac-v2' if profile=='short' else 'batch-schema-maximum-mac-v1'
     if p['identity']!=expected:raise ValueError('Wrong original technical input identity')
     original_sha=file_hash(baseline/'protocol.json')
-    p.pop('protocol_sha256');p['identity']='owned-cache-runtime-mac-'+profile+'-v1'
+    p.pop('protocol_sha256');p['identity']='owned-cache-runtime-mac-'+profile+'-v2'
     p['source_commit']=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
     workflows=['cpu-rwm-sequential','cpu-rwm-online_picard','cpu-mala-sequential','cpu-mala-quasi_deer']
     p['groups']=[dict(models=['G1','L1'] if profile=='short' else ['G2'],replicates=[0,1] if profile=='short' else [0],budgets=[8] if profile=='short' else [16384],workflows=workflows)]
@@ -74,9 +74,9 @@ def run(bundle,host_lock,resume=False):
         if directory.exists() and resume and c.coordinator.history(directory)['summary']['outcome']=='infrastructure_interruption':
             result=None  # no implicit retry, even if the cache output happens to exist
         else:
-            result=c.run(task,dict(capsule=capsule,capsule_sha256=digest,probe=probe,inputs=str(bundle/'inputs')),
-                         ROOT/'scripts/completion/owned_cache_worker.py',directory,
-                         p['required_disk_bytes_per_task'],p['process_tree_rss_limit_bytes'],resume=resume)
+            result=c.run(task=task,request=dict(capsule=capsule,capsule_sha256=digest,probe=probe,inputs=str(bundle/'inputs')),
+                         worker=ROOT/'scripts/completion/owned_cache_worker.py',output=directory,
+                         required_disk_bytes=p['required_disk_bytes_per_task'],max_tree_rss_bytes=p['process_tree_rss_limit_bytes'],resume=resume)
             new+=result['newly_executed']
         costs=c.report(directory);history=costs['history'];row=history['attempts'][0]
         if len(history['attempts'])!=1:raise ValueError('Cache probe has unexpected retry history')
