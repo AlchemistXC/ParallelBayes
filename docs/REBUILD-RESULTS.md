@@ -1,4 +1,40 @@
-# 从原始证据重建结果
+# 当前稿件的结果段重建
+
+当前入口为 `scripts/release/rebuild_current_results.py`。它将五个生成结果段、其已保存
+分析输入和当前论文依赖收集成独立目录，再从新目录执行生成器并逐字节比较。
+这是**已保存摘要到论文的重建**：不重跑采样、原始数组统计、R诊断或绘图，
+不能单凭它关闭完整研究的F5验收。范围和实际核验见
+[CURRENT-RESULT-REBUILD](CURRENT-RESULT-REBUILD.md)。
+
+CPU输入从已核对整体SHA256的 `evidence-paper-cpu-review-v1.tar` 取出，逐项再与归档内manifest比对；
+Windows输入从已独立接收的第一轮目录取出，生成器核对协议身份、摘要所绑定的逐任务记录与现代诊断哈希。
+当前F1/F2伴随摘要和第二轮接收摘要分别保留，不把尚未收到的192项机制任务写成完成。
+
+```sh
+# Python需要NumPy；无需torch/CUDA，也不调用采样器。
+python scripts/release/rebuild_current_results.py prepare \
+  --cpu-archive /path/to/evidence-paper-cpu-review-v1.tar \
+  --windows /path/to/extracted-windows-native-v1 \
+  --output /path/to/new-result-inputs
+
+# 可把整个输入目录移到其他位置，再用包内脚本重建；输出目录必须不存在。
+python /path/to/new-result-inputs/scripts/release/rebuild_current_results.py rebuild \
+  --capsule /path/to/new-result-inputs --output /path/to/new-rebuild
+
+cd /path/to/new-rebuild/manuscript/software
+tectonic 软件与基准研究.tex
+```
+
+当前Windows-v1生成器是固定历史协议的入口，不能用于未审查的新协议。其主要速度范围、
+高Rhat/常量拟合计数、诊断极值及成本从已保存记录核算；环境、实现、SBC和接收叙述
+使用该历史版本的已审查模板，未宣称每一句叙述都由原始轨迹自动推导。
+版本、输入哈希和生成命令写入MANIFEST/REBUILD，丢失或损坏输入明确报错。
+现有矢量图按原文件交付，不把成功编译当作图表数值复算。
+
+下面保留**历史CPU归档**的原始数组重建方法。应在该归档独立解压目录及其锁定环境中执行，
+不要在当前开发工作树覆盖数据，也不要用历史CPU范围说明判断当前Windows能力。
+
+# 历史CPU：从原始证据重建结果
 
 这些步骤读取完整原始任务，不按速度、收敛情况或结果方向挑选任务。结果目录含运行manifest、逐任务state、尝试目录、配置、result、raw.npz和校验和。重建要求所有预定任务已结束；缺失、额外、来源错误或文件损坏都会被拒绝。
 
@@ -16,7 +52,7 @@
 
 `analysis-provenance.json`将分析代码、协议、运行manifest、每个任务状态及参考摘要关联起来。参考摘要另有来源文件。`run-metrics.json`保存逐重复数值，`formal-summary.json`保留全部组、失败分母、成本及精度未判定状态，`paired-speedups.csv`保留同核配对。
 
-`sbc-functions-v1`在正式64个数据集拟合之前冻结，对保存的样本计算依赖数据的对数似然秩、并列数和解析期望误差。它是独立分析协议，不改变`statistical-v4`的采样配置。GPU不属于本轮范围；不等待外部回传。
+`sbc-functions-v1`在正式64个数据集拟合之前冻结，对保存的样本计算依赖数据的对数似然秩、并列数和解析期望误差。它是独立分析协议，不改变`statistical-v4`的采样配置。这个历史CPU协议不包含GPU结果；当前Windows阶段使用另外的版本、协议和原始证据。
 
 ## 重新执行历史CPU协议
 

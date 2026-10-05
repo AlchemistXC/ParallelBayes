@@ -52,6 +52,6 @@ for row in companion['rows']:
  if row['status']=='completed':assert 0<=row['rank']<=row['rank_draws']==64
 report=dict(status='passed',scope='Exact numerical summary rebuild, frozen task grid, all paired ratios, cost sums, unavailable-reference decisions, and SBC receipt arithmetic',
  formal_tasks=len(rows),groups=len(s['groups']),paired_comparisons=len(pairs),sbc_fits=320,
- rebuilt_hashes=after,gpu='Outside current scope: native Windows GPU backend not implemented')
+ rebuilt_hashes=after,gpu='Historical CPU evidence only; Windows has a separate source version and protocol')
 Path('execution/final-evidence-audit.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

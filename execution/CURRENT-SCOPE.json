@@ -91,5 +91,15 @@
     "Windows_verified": false,
     "source_commit": "3ca0a610c8855cb9a2339c38fb60f26d51eb0469",
     "archive_sha256": "30b590ba1cc3d664db2c5e3e4db3fc2e6e40a6e6206d1e6d6d68ba06bb224d6e"
+  },
+  "current_result_rebuild": {
+    "report": "docs/CURRENT-RESULT-REBUILD.md",
+    "sections": 5,
+    "input_assets": 40,
+    "sampler_calls": 0,
+    "R_diagnostic_calls": 0,
+    "raw_arrays_reanalyzed": false,
+    "figures_recomputed": false,
+    "pdf_pages": 23
   }
 }

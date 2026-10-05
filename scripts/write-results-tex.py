@@ -85,5 +85,5 @@ if stats_path.exists():
  text.append(f'对数似然测试量也完成{len(companion["rows"])}次拟合的伴随分析，共记录{sum(r.get("ties",0) for r in companion["rows"])}个秩并列。逐方法秩直方图、抽稀后相关性及解析期望误差随原始数据交付；这些描述性诊断不构成统一性检验或正确性证书。')
 else:text.append('正式64组SBC尚在运行；不得以已完成的小型SBC替代。')
 text.append('L2 的参考符号事件在262144个相关样本中均为零，Rhat 对该函数不可判定，不能把零经验方差当作事件概率已被精确确定。因此保留原函数集合，并将L2全函数精度判定标记为未确定。没有通过删除该函数得到达标结论。')
-text.append('上述结果仅为Mac CPU实测；原生Windows GPU后端未实现，处于本轮研究范围之外。')
+text.append('上述结果来自历史Mac CPU协议，不包含后续Windows实验；原生Windows实现及其独立协议的实测结果在后文另行报告。')
 Path('manuscript/software/results.generated.tex').write_text('\n\n'.join(text)+'\n')
