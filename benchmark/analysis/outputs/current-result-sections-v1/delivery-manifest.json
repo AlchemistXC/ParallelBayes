@@ -1,0 +1,255 @@
+{
+  "schema": "current-result-delivery-v1",
+  "source_commit": "b7ad1d167e889efad764bf092257fee0c24925f7",
+  "files": {
+    "README.md": {
+      "sha256": "b4bd0d8eb9fcb6c49f875b0d9706a1a0ec9b3f05f1d6826eafd66dc644679470",
+      "bytes": 1577
+    },
+    "docs/CURRENT-RESULT-REBUILD.md": {
+      "sha256": "d15185ec4b58244b60fcdcd9cefa929afa437d8e9fcfc69adaf998c1395cb266",
+      "bytes": 3300
+    },
+    "docs/REBUILD-RESULTS.md": {
+      "sha256": "bdad1fe5aa049c7495410025ba600f0811a40696c4281af3b2cdcad4422b3868",
+      "bytes": 6254
+    },
+    "inputs/LICENSE": {
+      "sha256": "c0fa9f213fb2c984453043ce331311200ad8405bd18130257b2e43e49c94f64c",
+      "bytes": 1316
+    },
+    "inputs/MANIFEST.json": {
+      "sha256": "4a29d26668c453e82b998085c964c24579b66b3979d9198106b1ab9775b26080",
+      "bytes": 9507
+    },
+    "inputs/benchmark/analysis/outputs/completion-f1/mac-02/receipt.json": {
+      "sha256": "245c6683393a09f4f1c57b5eecd90b37b780f9e049a8162347c5cbf645f85d8d",
+      "bytes": 687
+    },
+    "inputs/benchmark/analysis/outputs/completion-f1/mac-02/result.json": {
+      "sha256": "c83cef505f240b3ee513645f7f7161a774f93a13ff9e3536be2ca263ed93d0ca",
+      "bytes": 5349
+    },
+    "inputs/benchmark/analysis/outputs/completion-f1/windows-01/result.json": {
+      "sha256": "c3ac27a861c3a8cf7aeef63eabf089c130b726c8d00c9e294ed0f247dcc6dbdf",
+      "bytes": 5664
+    },
+    "inputs/benchmark/analysis/outputs/completion-f2/summary.json": {
+      "sha256": "35d44485cb70199d0cc6a434cc8809e12a8c9c2c6dea3573ac90c07856fce102",
+      "bytes": 219855
+    },
+    "inputs/benchmark/analysis/outputs/cpu-formal/formal-summary.json": {
+      "sha256": "7a3ea34ddc80766a86290ce7b1dfd8731757478b1ea2ce3dfc31b466686de137",
+      "bytes": 145751
+    },
+    "inputs/benchmark/analysis/outputs/cpu-formal/paired-speedups.json": {
+      "sha256": "d99b847255691f6127f1c1ba153608e7900f0a0b52af9a0868991b305126fe4b",
+      "bytes": 219986
+    },
+    "inputs/benchmark/analysis/outputs/cpu-formal/run-metrics.json": {
+      "sha256": "ed8be45786235b337f6389670a5ce3642cb2de81c25f93a91305d32f41266f25",
+      "bytes": 2531340
+    },
+    "inputs/benchmark/analysis/outputs/windows-native-v1/delivery-review.json": {
+      "sha256": "b5b8e496c8b312141cfaea6315e56f2de009c0ffe5f4c9325fbc247d2f1302f8",
+      "bytes": 5983
+    },
+    "inputs/benchmark/analysis/outputs/windows-native-v1/run-metrics.json": {
+      "sha256": "83ad7c01ea8f7fed38a46f7ce7a5db514be7dac857aaf8ff625dcf7ddc0c00f8",
+      "bytes": 945468
+    },
+    "inputs/benchmark/analysis/outputs/windows-native-v1/speed-ratios.pdf": {
+      "sha256": "e127cb235bad3501db7e2c3c9d618cbabfaf343957a89d8bd2876d9a6962f72c",
+      "bytes": 30371
+    },
+    "inputs/benchmark/analysis/outputs/windows-native-v1/summary.json": {
+      "sha256": "8ac2dcbe62ce623f102863ed4e32e716f3df5b2503a46e8f8b84738aa233c0f2",
+      "bytes": 249005
+    },
+    "inputs/benchmark/analysis/outputs/windows-round2-intake-v1/summary.json": {
+      "sha256": "c34ec98f0093c93effb5a37fbaeb8c8739b1d7f5ad263825e3272317a047eaec",
+      "bytes": 26674
+    },
+    "inputs/benchmark/fixtures/rhat-midpoint-v1/case.json": {
+      "sha256": "1ef33c7ec7c5f2bbf127a31ac4400ce515eaef3f5692a7963f3edd91848f7378",
+      "bytes": 3007
+    },
+    "inputs/execution/statistical-v4/likelihood-ranks.json": {
+      "sha256": "b878a006ff4d12d959686fe6c7e700e305737ff52ffc53ced7a32fa8f94e53a4",
+      "bytes": 208517
+    },
+    "inputs/execution/statistical-v4/summary.json": {
+      "sha256": "363cf350ee9eb7ae86b78ac8482a4072d3b188b8e558eaaf3b9c4d2d8dac3a45",
+      "bytes": 2757
+    },
+    "inputs/execution/windows-native/windows-native-v1/modern-diagnostics.json": {
+      "sha256": "c194551d497932db371668e268df2d98ef3619d03549dff1ce51cc48e3d251c5",
+      "bytes": 2527922
+    },
+    "inputs/execution/windows-native/windows-native-v1/protocol.json": {
+      "sha256": "23ee7c4aadcae4e032230cf05ffbc9bb0ef18edd97201ac4bd057fdade974b98",
+      "bytes": 1855885
+    },
+    "inputs/expected/completion-companion.generated.tex": {
+      "sha256": "e20cca0f955659023c3d459725eb89003aef59f9e58a2b2f67e853419c8573cf",
+      "bytes": 3681
+    },
+    "inputs/expected/intake.generated.tex": {
+      "sha256": "1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa",
+      "bytes": 1490
+    },
+    "inputs/expected/results.generated.tex": {
+      "sha256": "ca85f780e6fa392e793870fb9d10681c34db30000c0a15a7df6786738174ec40",
+      "bytes": 8608
+    },
+    "inputs/expected/revision.generated.tex": {
+      "sha256": "fa5ca73174ff6531081978a65da3076677dc37d9d11cca8afe99a1eaf97fb1c8",
+      "bytes": 10813
+    },
+    "inputs/expected/windows-native.generated.tex": {
+      "sha256": "c08461514675226eed22bcaaaa7c0f615bba90f5393a35dc7ae193c35820ac42",
+      "bytes": 6077
+    },
+    "inputs/figures/software/architecture-current.pdf": {
+      "sha256": "409fc7d454eb041d5fe830419332e47a5d97105cacb580a58efc06a16e48edd3",
+      "bytes": 24574
+    },
+    "inputs/figures/software/cpu-mechanism.pdf": {
+      "sha256": "79eb08d53e2a73adf5786bc2e40437ce9c55519bb8e34ffd40f30963e317a334",
+      "bytes": 30868
+    },
+    "inputs/figures/software/error-cost.pdf": {
+      "sha256": "f75c7a41e805cf1e1b003880714cf09cd204026ec29c99ab2c22c0c22cc1d8f4",
+      "bytes": 31837
+    },
+    "inputs/figures/software/methods.pdf": {
+      "sha256": "f1b0987c1d2313f19d2b11a90a6637dac73e0c63c28a955b99c08d189f2f3fdf",
+      "bytes": 20889
+    },
+    "inputs/figures/software/paired-costs.pdf": {
+      "sha256": "ab5482eabbb404545237568bd46324da62a697d8d380d0e049c4ecf579753c35",
+      "bytes": 59134
+    },
+    "inputs/manuscript/software/windows-native.template.tex": {
+      "sha256": "0d6436150a4715539c819572867ae16c956cca1ee73be00e2a3249ab336d7206",
+      "bytes": 6216
+    },
+    "inputs/manuscript/software/软件与基准研究.tex": {
+      "sha256": "9cdb67b9198c611e8a58fb0dbe1424949f27f2aff6ae74b7d46c3dbf82291e0a",
+      "bytes": 31730
+    },
+    "inputs/output/cpu-revision/cost-tiers.json": {
+      "sha256": "f3c4c210cae5571323f7ecfb3639de658d66609af3b13728824fd64a4dbd72f1",
+      "bytes": 1460143
+    },
+    "inputs/output/cpu-revision/grouped-diagnostics.json": {
+      "sha256": "007ac5427342c94041f31a98e72bf47f72c7e27c6b9014a7e2c69d6e377acd1f",
+      "bytes": 296414
+    },
+    "inputs/output/cpu-revision/mechanism-summary.json": {
+      "sha256": "6c41233623ecdc367c4a6969a949c724332158cc1259201d51aaa4901573609e",
+      "bytes": 139562
+    },
+    "inputs/output/cpu-revision/sbc-analytic.json": {
+      "sha256": "636a43238da37c207ebe9bc422a85d5fff4b65f68f36101bd3373995e72af45d",
+      "bytes": 249633
+    },
+    "inputs/scripts/completion/write_completion_tex.py": {
+      "sha256": "c6528ff1a9d0ca88cc0295c7c954d1690b66759d8dd6a2be89042026f660a865",
+      "bytes": 6067
+    },
+    "inputs/scripts/completion/write_intake_tex.py": {
+      "sha256": "bb3456f93635878d01f6958e642147c55d367265c959849a30930a394fe66a76",
+      "bytes": 2691
+    },
+    "inputs/scripts/completion/write_windows_tex.py": {
+      "sha256": "f9dae3dd745497e4176a1ff5b670e810b88f17c51f5987136328831e3aee2c94",
+      "bytes": 7395
+    },
+    "inputs/scripts/release/rebuild_current_results.py": {
+      "sha256": "40391fbb87944cec4ac2f6a6f1e9361057b397d5b4100c932d9718d836288628",
+      "bytes": 9079
+    },
+    "inputs/scripts/revision/write-revision-tex.py": {
+      "sha256": "3e1b81013077f5184c5651e2effb6a0f80ae5e4015eda360ff4ddca18b3f0d9f",
+      "bytes": 11561
+    },
+    "inputs/scripts/write-results-tex.py": {
+      "sha256": "8871c73357bd2e75f763d7b8df9eb945aeb810958f376045a1febcb598156e77",
+      "bytes": 10660
+    },
+    "pdf/软件与基准研究.pdf": {
+      "sha256": "fb15c419848583b99094ac59d1d3e692ca6d9316af8250a890a4fd2381ffcd86",
+      "bytes": 660295
+    },
+    "qa/page-12-final.png": {
+      "sha256": "886e11aea733c82b929ebad228b4716f5a9f321188def97fbd482ee730df939e",
+      "bytes": 336301
+    },
+    "verification/REBUILD.json": {
+      "sha256": "09f8314851ff9f74f426facd4202371e684c859385eeba5306a9c2d669a26d21",
+      "bytes": 2678
+    },
+    "verification/changed-input.log": {
+      "sha256": "87c70bffac38cc34e17e4afd4563ea3d5b0e10aa0c6369a334b2429aa6be03b4",
+      "bytes": 600
+    },
+    "verification/check_final_pdf.py": {
+      "sha256": "cff68ab9a6a1697638541c0fd500e44246f94bcd61739b44db41ec82129d7b4c",
+      "bytes": 1946
+    },
+    "verification/check_rebuild_guards.py": {
+      "sha256": "b4e3a212995bcffa017c642541e4d3a21630675a016994c6b9f9f93d78299797",
+      "bytes": 1790
+    },
+    "verification/compile.json": {
+      "sha256": "4a3d8b72d81006f7caf2b75eceb0ee493e747fac83b530242d354374c860109c",
+      "bytes": 17087
+    },
+    "verification/environment.json": {
+      "sha256": "e6eff12972f35afe1639e7493dcf2f531511fe0b1333084a309cc6253c1dc923",
+      "bytes": 373
+    },
+    "verification/existing-output.log": {
+      "sha256": "026a6f2eaf77ca13c469efa4f0251f68f3ee153a08cb3a7c6505ea29bf4077a9",
+      "bytes": 649
+    },
+    "verification/guard-checks.json": {
+      "sha256": "4d7e1e5c3f7518dbd4a68ebe79256603ef1b8fa8d6f2511d38f1e070c4f78093",
+      "bytes": 402
+    },
+    "verification/missing-input.log": {
+      "sha256": "156be786d64bec495b3b1a66cd6ddabf056c730e3c82c15fbe2b11f616fb6de9",
+      "bytes": 574
+    },
+    "verification/pdf-check.json": {
+      "sha256": "eb2b8ed4ac0f1e7299bf546fce845914e084b9d4e3f29be3ca6fc4eedaf45f15",
+      "bytes": 2597
+    },
+    "verification/rebuild-logs/1.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "verification/rebuild-logs/2.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "verification/rebuild-logs/3.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "verification/rebuild-logs/4.log": {
+      "sha256": "fa0749567e7346e8bc55f802ae1a95217eed666a5901e0cb921d3aafd3e98a1e",
+      "bytes": 55
+    },
+    "verification/rebuild-logs/5.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "verification/windows-numeric-provenance.json": {
+      "sha256": "d975ff2c2a17d8db39aceb1e623b666f3e3268df3a55b7bd111e51f81902ee95",
+      "bytes": 1994
+    }
+  },
+  "sampler_calls": 0
+}

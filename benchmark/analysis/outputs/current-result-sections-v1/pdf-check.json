@@ -1,0 +1,128 @@
+{
+  "pages": 23,
+  "prior_pdf_sha256": "7f05409c14a2ebff140a24e80eb22e86290479c7d218e5eade26a7d969c3f079",
+  "current_pdf_sha256": "fb15c419848583b99094ac59d1d3e692ca6d9316af8250a890a4fd2381ffcd86",
+  "comparisons": [
+    {
+      "page": 1,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 2,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 3,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 4,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 5,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 6,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 7,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 8,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 9,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 10,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 11,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 12,
+      "text_identical": false,
+      "pixels_identical": false
+    },
+    {
+      "page": 13,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 14,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 15,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 16,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 17,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 18,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 19,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 20,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 21,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 22,
+      "text_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "page": 23,
+      "text_identical": true,
+      "pixels_identical": true
+    }
+  ],
+  "changed_render_pages": [
+    12
+  ],
+  "final_pass_warnings": false,
+  "verification": "PDFium text + rendered pixels at 72 dpi; only page 12 changes; not PDF byte identity",
+  "earlier_locator": "pypdf could not locate the Chinese phrase; PDFium used instead"
+}

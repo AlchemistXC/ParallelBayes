@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/haku/Workspace/ParallelBayes/output/research-completion/current-result-sections-v1/inputs/scripts/release/rebuild_current_results.py", line 161, in <module>
+    else:rebuild(**args)
+         ^^^^^^^^^^^^^^^
+  File "/Users/haku/Workspace/ParallelBayes/output/research-completion/current-result-sections-v1/inputs/scripts/release/rebuild_current_results.py", line 124, in rebuild
+    raise ValueError('Missing or changed capsule input: '+name)
+ValueError: Missing or changed capsule input: output/cpu-revision/cost-tiers.json

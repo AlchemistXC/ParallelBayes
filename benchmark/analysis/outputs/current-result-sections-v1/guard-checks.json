@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "case": "existing-output",
+      "exit_code": 1,
+      "expected_rejection": true
+    },
+    {
+      "case": "changed-input",
+      "exit_code": 1,
+      "expected_rejection": true
+    },
+    {
+      "case": "missing-input",
+      "exit_code": 1,
+      "expected_rejection": true
+    }
+  ],
+  "passed": true,
+  "original_rebuilt_files_unchanged": 52,
+  "sampler_calls": 0
+}

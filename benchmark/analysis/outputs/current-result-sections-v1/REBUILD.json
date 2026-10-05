@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "capsule_manifest_sha256": "4a29d26668c453e82b998085c964c24579b66b3979d9198106b1ab9775b26080",
+  "steps": [
+    {
+      "command": [
+        "scripts/write-results-tex.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "scripts/revision/write-revision-tex.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "scripts/completion/write_windows_tex.py",
+        "--root",
+        ".",
+        "--evidence",
+        ".",
+        "--output",
+        "manuscript/software/windows-native.generated.tex"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "scripts/completion/write_completion_tex.py",
+        "--root",
+        ".",
+        "--output",
+        "manuscript/software/completion-companion.generated.tex"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "scripts/completion/write_intake_tex.py",
+        "--root",
+        ".",
+        "--output",
+        "manuscript/software/intake.generated.tex"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "sections": [
+    {
+      "section": "results.generated.tex",
+      "expected_sha256": "ca85f780e6fa392e793870fb9d10681c34db30000c0a15a7df6786738174ec40",
+      "actual_sha256": "ca85f780e6fa392e793870fb9d10681c34db30000c0a15a7df6786738174ec40",
+      "identical": true
+    },
+    {
+      "section": "revision.generated.tex",
+      "expected_sha256": "fa5ca73174ff6531081978a65da3076677dc37d9d11cca8afe99a1eaf97fb1c8",
+      "actual_sha256": "fa5ca73174ff6531081978a65da3076677dc37d9d11cca8afe99a1eaf97fb1c8",
+      "identical": true
+    },
+    {
+      "section": "windows-native.generated.tex",
+      "expected_sha256": "c08461514675226eed22bcaaaa7c0f615bba90f5393a35dc7ae193c35820ac42",
+      "actual_sha256": "c08461514675226eed22bcaaaa7c0f615bba90f5393a35dc7ae193c35820ac42",
+      "identical": true
+    },
+    {
+      "section": "completion-companion.generated.tex",
+      "expected_sha256": "e20cca0f955659023c3d459725eb89003aef59f9e58a2b2f67e853419c8573cf",
+      "actual_sha256": "e20cca0f955659023c3d459725eb89003aef59f9e58a2b2f67e853419c8573cf",
+      "identical": true
+    },
+    {
+      "section": "intake.generated.tex",
+      "expected_sha256": "1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa",
+      "actual_sha256": "1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa",
+      "identical": true
+    }
+  ],
+  "sources_relocated": true,
+  "sampler_calls": 0,
+  "R_diagnostic_calls": 0,
+  "figures_recomputed": false,
+  "scope": "Five generated sections rebuilt from saved summaries and checked rows; full raw-trajectory reconstruction and compiler verification are separate"
+}

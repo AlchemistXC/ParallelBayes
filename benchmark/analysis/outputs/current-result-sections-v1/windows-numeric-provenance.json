@@ -1,0 +1,57 @@
+{
+  "scope": "Fixed-v1 section assembly; selected reductions independently recalculated from saved rows/diagnostics; no path replay or new sampling",
+  "inputs": {
+    "benchmark/analysis/outputs/windows-native-v1/delivery-review.json": "b5b8e496c8b312141cfaea6315e56f2de009c0ffe5f4c9325fbc247d2f1302f8",
+    "benchmark/analysis/outputs/windows-native-v1/summary.json": "8ac2dcbe62ce623f102863ed4e32e716f3df5b2503a46e8f8b84738aa233c0f2",
+    "benchmark/analysis/outputs/windows-native-v1/run-metrics.json": "83ad7c01ea8f7fed38a46f7ce7a5db514be7dac857aaf8ff625dcf7ddc0c00f8",
+    "execution/windows-native/windows-native-v1/modern-diagnostics.json": "c194551d497932db371668e268df2d98ef3619d03549dff1ce51cc48e3d251c5",
+    "execution/windows-native/windows-native-v1/protocol.json": "23ee7c4aadcae4e032230cf05ffbc9bb0ef18edd97201ac4bd057fdade974b98"
+  },
+  "template_sha256": "0d6436150a4715539c819572867ae16c956cca1ee73be00e2a3249ab336d7206",
+  "protocol_sha256": "1d233dd09956c4575fc5775082310e5edca65407db5fcef40bc2ce329e6f5898",
+  "paired_speed_checks": [
+    {
+      "device": "cpu",
+      "kernel": "mala",
+      "groups": 16,
+      "tapes_per_group": 4,
+      "range": [
+        0.10115057293904095,
+        0.3590318880619123
+      ]
+    },
+    {
+      "device": "cpu",
+      "kernel": "rwm",
+      "groups": 16,
+      "tapes_per_group": 4,
+      "range": [
+        0.7736711667391539,
+        3.5600146113179205
+      ]
+    },
+    {
+      "device": "cuda",
+      "kernel": "mala",
+      "groups": 16,
+      "tapes_per_group": 4,
+      "range": [
+        0.16418366499984444,
+        0.5047716766669328
+      ]
+    },
+    {
+      "device": "cuda",
+      "kernel": "rwm",
+      "groups": 16,
+      "tapes_per_group": 4,
+      "range": [
+        1.096720048868826,
+        5.229683380245998
+      ]
+    }
+  ],
+  "diagnostic_fits": 512,
+  "numerical_values_changed": false,
+  "static_prose": "Fixed historical environment, algorithm, SBC and intake prose; not generated from new evidence"
+}

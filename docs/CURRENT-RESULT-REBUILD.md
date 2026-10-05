@@ -43,3 +43,18 @@ pypdf文本提取未能定位中文修正句，改用PDFium文本及实际渲染
 
 紧凑证据见 `benchmark/analysis/outputs/current-result-sections-v1/`；完整输入、构建日志和
 PDF保存在作者本地 `output/research-completion/current-result-sections-v1`。不自动公开Release。
+
+## 本次封存回执
+
+完整输入源码为 `b7ad1d167e889efad764bf092257fee0c24925f7`，准备时工作区干净。
+归档 `output/research-completion/current-result-sections-v1.tar` 为12,646,400字节，
+SHA256 `c233a8acfc3bdef4c620e999914d139e582fcb56b14d5ad99358c5d5270c1a6b`。
+62项资产加manifest共63文件全部校验；解压搬移后使用包内公共脚本再次重建五段，逐字节一致。
+它是本地交付候选，未自动发布Release，完整输入不加入Git。
+
+[当前23页PDF](../output/software-paper/软件与基准研究-结果重建.pdf)的SHA256为
+`fb15c419848583b99094ac59d1d3e692ca6d9316af8250a890a4fd2381ffcd86`。
+PDFium逐页提取及72dpi像素核对显示，只有第12页范围说明发生预期变化，其他22页
+与文献修订版一致；最终第12页另作视觉检查。未覆写旧版PDF。
+三项拒绝检查在初版内容包执行，重建入口源码与最终封存版本一致；最终只改中文说明用词。
+所有本轮技术重建的新增采样及R诊断次数均为0。

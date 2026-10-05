@@ -1,5 +1,7 @@
 # ParallelBayes
 
+2026-10-06 当前稿：修复历史CPU段与Windows能力的矛盾表述，完成[五段结果及PDF重建](docs/CURRENT-RESULT-REBUILD.md)，见[23页中文稿](output/software-paper/软件与基准研究-结果重建.pdf)。本次仅重建已保存摘要，未新增实验；正式推断研究仍待完成。
+
 2026-10-06 文献后继：已补核直接软件前作与现代多链方法，见[定位复核](review/文献定位复核_2026-10-06.md)和[23页中文文献修订稿](output/software-paper/软件与基准研究-文献修订.pdf)。结果与协议不变；正式研究仍待完成。
 
 时间并行MCMC的可核验实现、R控制接口与单机基准。本整合开发分支为 **0.2.0.dev2 / R 0.2.0.9002**，实验证据仍按原 **0.2.0.dev1** 归属；历史发布内核 **0.1.1**，Mac CPU主实验使用独立归档的 **0.1.0**。软件与论文均为研究候选，尚非投稿终稿。
@@ -38,7 +40,7 @@ Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-IN
 - 40组历史随机输入的版本对照接受事件零失配；不据此宣称0.1.0/0.1.1性能等价。
 - 独立Python环境、迁移目录及完整归档重建通过；仍共享同一Mac、R库和编译器，不声称外部团队或异构平台已复现。
 
-阅读[当前23页整合稿PDF](output/software-paper/软件与基准研究-整合修订.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。当前23页稿已统一能力、跨系统核验和新成本方法边界，并完成[独立输入搬移构建](docs/MANUSCRIPT-INTEGRATION.md)；[旧21页稿](output/software-paper/软件与基准研究-收尾修订.pdf)及[原20页回传稿](output/software-paper/软件与基准研究.pdf)保留。正式推断与最终投稿稿仍未完成。历史CPU稿保留于Git历史和CPU复现Release。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
+阅读[当前23页中文稿PDF](output/software-paper/软件与基准研究-结果重建.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。当前23页稿已统一能力、跨系统核验和新成本方法边界，并完成[独立输入搬移构建](docs/MANUSCRIPT-INTEGRATION.md)；[旧21页稿](output/software-paper/软件与基准研究-收尾修订.pdf)及[原20页回传稿](output/software-paper/软件与基准研究.pdf)保留。正式推断与最终投稿稿仍未完成。历史CPU稿保留于Git历史和CPU复现Release。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
 
 ## 原始证据与复现
 

@@ -82,6 +82,7 @@ __pycache__/
 /output/software-paper/*
 !/output/software-paper/软件与基准研究.pdf
 !/output/software-paper/软件与基准研究-收尾修订.pdf
+!/output/software-paper/软件与基准研究-结果重建.pdf
 /output/pdf/*
 !/output/pdf/parallel-bayes-review-zh.pdf
 /output/release/*

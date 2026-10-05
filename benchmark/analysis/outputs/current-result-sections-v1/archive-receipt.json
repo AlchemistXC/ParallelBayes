@@ -1,0 +1,16 @@
+{
+  "schema": "current-result-sections-archive-receipt-v1",
+  "source_commit": "b7ad1d167e889efad764bf092257fee0c24925f7",
+  "archive": "current-result-sections-v1.tar",
+  "bytes": 12646400,
+  "sha256": "c233a8acfc3bdef4c620e999914d139e582fcb56b14d5ad99358c5d5270c1a6b",
+  "assets_verified": 62,
+  "files_including_manifest": 63,
+  "relocated_sections_identical": 5,
+  "sampler_calls": 0,
+  "R_diagnostic_calls": 0,
+  "figures_recomputed": false,
+  "pdf_sha256": "fb15c419848583b99094ac59d1d3e692ca6d9316af8250a890a4fd2381ffcd86",
+  "verified": true,
+  "scope": "Saved summaries to five sections; archived PDF previously compiled and visually checked. No full raw-data reanalysis."
+}

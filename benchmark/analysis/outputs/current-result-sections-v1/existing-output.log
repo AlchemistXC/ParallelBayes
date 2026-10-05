@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/haku/Workspace/ParallelBayes/output/research-completion/current-result-sections-v1/inputs/scripts/release/rebuild_current_results.py", line 161, in <module>
+    else:rebuild(**args)
+         ^^^^^^^^^^^^^^^
+  File "/Users/haku/Workspace/ParallelBayes/output/research-completion/current-result-sections-v1/inputs/scripts/release/rebuild_current_results.py", line 118, in rebuild
+    if output.exists():raise FileExistsError(output)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: /Users/haku/Workspace/ParallelBayes/output/research-completion/current-result-sections-v1/rebuilt
