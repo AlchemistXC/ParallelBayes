@@ -62,6 +62,8 @@ def audit(bundle):
         row=read_attempt(directory);history=copy.deepcopy(saved['costs']['history']);expected=history['attempts'][0]
         row['attempt_id']=expected['attempt_id']
         if row!=expected or row['artifact_kind']!='cache_measurement':raise ValueError('Rebuilt attempt differs')
+        if row['fixed_task']!=dict(id=probe['id'],protocol_sha256=plan.protocol_sha256,artifact_kind='cache_measurement'):
+            raise ValueError('Runtime task is not the planned measurement')
         identity,calls=read_calls(bundle/saved['relative_calls']);reduced=summarize_calls(history,identity,calls)
         if any(saved['costs'][key]!=value for key,value in reduced.items()):raise ValueError('Outer costs differ')
         outer_calls+=len(calls);runtime_seconds+=row['seconds'] or 0.
