@@ -78,5 +78,16 @@
     "report": "review/文献定位复核_2026-10-06.md",
     "scope": "targeted discovery and citation/function verification; not exhaustive or new full-paper review",
     "formal_results_changed": false
+  },
+  "installed_custom_target": {
+    "report": "docs/INSTALLED-CUSTOM-TARGET.md",
+    "workflow_runs": 16,
+    "actual_input_blocks": 1,
+    "R_binary_roundtrips": 8,
+    "fault_checks": 4,
+    "fault_numerical_calls": 1,
+    "new_formal_repetitions": 0,
+    "new_clean_installation": false,
+    "Windows_verified": false
   }
 }

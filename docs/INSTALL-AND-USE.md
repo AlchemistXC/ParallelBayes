@@ -61,6 +61,10 @@ Rscript --vanilla examples/installed-torch.R execution/package-example-01
 64 次转移只验证接口，不证明收敛或性能。R 使用安装包内自带的 Python 模块；
 如果会话已载入不同版本，应重启 R，而不是绕过版本检查。
 
+自定义目标的完整安装后路径见 [Poisson扩展示例](EXTENDING-TARGETS.md)：
+分别给出torch/JAX原生模型、独立NumPy参考、共同实际随机输入和R整批调用。
+这使用外部Python `Model` 接口，不把任意R闭包注册为 `pb_model()`。
+
 交互式最小示例：
 
 ```r
