@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Implement the formal batch/worker driver and independently measured cached/ordinary/audit costs, using the verified Mac coordinator and runtime-v1 raw-evidence adapter. Validate the frozen full schema and maximum task end-to-end; native Windows cohort recovery, resources and readiness/mechanism receipts remain required before formal inference freeze.",
+  "next_recommended_action": "Complete independent cached-executor measurement and all-attempt outer-cost accounting; connect the measured worker to the formal batch/schema and validate the maximum task end-to-end. Native Windows process-cohort recovery, resources and readiness/mechanism receipts remain required before formal inference freeze.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -229,7 +229,7 @@
       "Windows_readiness_and_mechanism_receipts",
       "formal_batch_worker_driver_and_native_Windows_cohort_recovery",
       "frozen_formal_schema_and_maximum_task_end_to_end_analysis_validation",
-      "independent_cached_ordinary_audit_cost_measurement",
+      "independent_cached_execution_and_failed_recovery_inclusive_costs",
       "Windows_host_lock_disk_memory_and_max_task_validation",
       "immutable_formal_protocol_and_inputs"
     ]
@@ -448,6 +448,70 @@
           "mismatches": 0
         }
       ]
+    }
+  },
+  "f3_measured_workflow": {
+    "status": "finite_native_Mac_ordinary_and_audited_invocation_verified_cached_formal_and_Windows_pending",
+    "sampling_source_commit": "eac65b50444729ba061bacfa190f8a0fd00119c3",
+    "archive_reader_source_commit": "8d15d579620bf4d21882fc0ef0b8caf5faf80439",
+    "measurement_sha256": "8f8ac5a0b31260a958a63ef723b7ea56768d12a9b02790509a19aae20ab135f2",
+    "actual_technical_executions": 5,
+    "new_independent_statistical_repetitions": 0,
+    "new_behavior_tests_passed": 2,
+    "independent_MH_audits": 4,
+    "same_kernel_pairs_passed": 2,
+    "acceptance_mismatches": 0,
+    "own_historical_arrays_identical": 5,
+    "R_transports_and_diagnostics_identical": 5,
+    "finite_function_rhat_above_1_01": 10,
+    "undefined_function_rhat": 0,
+    "resume_new_tasks": 0,
+    "terminal_and_initial_measurement_files_unchanged": 143,
+    "ordinary_workflow_measured_separately": true,
+    "audited_invocation_measured_separately": true,
+    "cached_execution_measured": false,
+    "failed_recovery_inclusive_costs_validated": false,
+    "ordinary_scope": "Standalone Python batch, full path output plus R diagnostics; not minimal R front-end latency",
+    "audit_scope": "Coordinator.run invocation; excludes own timing receipt write and companion validation",
+    "archived_raw_tasks_rebuilt": 5,
+    "archive_rebuild_new_MCMC_or_R_invocations": 0,
+    "native_Windows_validated": false,
+    "formal_inference_complete": false,
+    "report": "docs/MEASURED-WORKFLOW.md",
+    "raw_evidence_archive": {
+      "archive": "measured-workflow-v1.tar",
+      "bytes": 56770560,
+      "sha256": "ec680c4ea14392c96d2267b50f2374b7bdd0abce4094ce22129803d51d3200f4",
+      "checked_files": 263,
+      "source_snapshot_commit": "8d15d579620bf4d21882fc0ef0b8caf5faf80439",
+      "sampling_source_commit": "eac65b50444729ba061bacfa190f8a0fd00119c3",
+      "registry_counts": {
+        "tasks": 8,
+        "events": 16
+      },
+      "all_member_hashes_verified": true,
+      "actual_technical_MCMC_executions": 5,
+      "new_independent_statistical_repetitions": 0,
+      "frozen_source_checks": [
+        {
+          "protocol": "inference-budget-pilot-mac-v1.json",
+          "source_files_checked": 58,
+          "mismatches": 0
+        },
+        {
+          "protocol": "formal-runtime-technical-mac-v1.json",
+          "source_files_checked": 65,
+          "mismatches": 0
+        },
+        {
+          "protocol": "measured-workflow-technical-mac-v1.json",
+          "source_files_checked": 10,
+          "mismatches": 0
+        }
+      ],
+      "cached_execution_measured": false,
+      "native_Windows_validated": false,
+      "public_release": false
     }
   }
 }

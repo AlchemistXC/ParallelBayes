@@ -1,0 +1,35 @@
+{
+  "archive": "measured-workflow-v1.tar",
+  "bytes": 56770560,
+  "sha256": "ec680c4ea14392c96d2267b50f2374b7bdd0abce4094ce22129803d51d3200f4",
+  "checked_files": 263,
+  "source_snapshot_commit": "8d15d579620bf4d21882fc0ef0b8caf5faf80439",
+  "sampling_source_commit": "eac65b50444729ba061bacfa190f8a0fd00119c3",
+  "registry_counts": {
+    "tasks": 8,
+    "events": 16
+  },
+  "all_member_hashes_verified": true,
+  "actual_technical_MCMC_executions": 5,
+  "new_independent_statistical_repetitions": 0,
+  "frozen_source_checks": [
+    {
+      "protocol": "inference-budget-pilot-mac-v1.json",
+      "source_files_checked": 58,
+      "mismatches": 0
+    },
+    {
+      "protocol": "formal-runtime-technical-mac-v1.json",
+      "source_files_checked": 65,
+      "mismatches": 0
+    },
+    {
+      "protocol": "measured-workflow-technical-mac-v1.json",
+      "source_files_checked": 10,
+      "mismatches": 0
+    }
+  ],
+  "cached_execution_measured": false,
+  "native_Windows_validated": false,
+  "public_release": false
+}

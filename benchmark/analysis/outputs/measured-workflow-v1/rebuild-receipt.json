@@ -1,0 +1,106 @@
+{
+  "archive_assets_checked": 263,
+  "finite_function_rhat_above_1_01": 10,
+  "formal_inference_complete": false,
+  "measurement_sha256": "8f8ac5a0b31260a958a63ef723b7ea56768d12a9b02790509a19aae20ab135f2",
+  "native_Windows_validated": false,
+  "new_MCMC_fits": 0,
+  "new_R_invocations": 0,
+  "rows": [
+    {
+      "R_input_bytes_exact": true,
+      "audited_task_invocation_wall_seconds": 2.344785457942635,
+      "cached_execution_measured": false,
+      "costs_are_nested": true,
+      "historical_costs_exact": true,
+      "independent_audit_phase_seconds": 0.7517280830070376,
+      "means_exact": true,
+      "ordinary_process_wall_seconds": 1.307035292033106,
+      "task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "8b91ab212abfc73e14d8",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0
+      }
+    },
+    {
+      "R_input_bytes_exact": true,
+      "audited_task_invocation_wall_seconds": 2.8744438339490443,
+      "cached_execution_measured": false,
+      "costs_are_nested": true,
+      "historical_costs_exact": true,
+      "independent_audit_phase_seconds": 0.7300034170038998,
+      "means_exact": true,
+      "ordinary_process_wall_seconds": 1.8960644998587668,
+      "task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "2153a3c310f4b9b8b280",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0
+      }
+    },
+    {
+      "R_input_bytes_exact": true,
+      "audited_task_invocation_wall_seconds": 2.3119634590111673,
+      "cached_execution_measured": false,
+      "costs_are_nested": true,
+      "historical_costs_exact": true,
+      "independent_audit_phase_seconds": 0.7316082080360502,
+      "means_exact": true,
+      "ordinary_process_wall_seconds": 1.3347353748977184,
+      "task": {
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "151c23e95214c429b2bc",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0
+      }
+    },
+    {
+      "R_input_bytes_exact": true,
+      "audited_task_invocation_wall_seconds": 3.129742250079289,
+      "cached_execution_measured": false,
+      "costs_are_nested": true,
+      "historical_costs_exact": true,
+      "independent_audit_phase_seconds": 0.682327541988343,
+      "means_exact": true,
+      "ordinary_process_wall_seconds": 2.178642083192244,
+      "task": {
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "37f71a60a73a7df1a854",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0
+      }
+    },
+    {
+      "R_input_bytes_exact": true,
+      "audited_task_invocation_wall_seconds": 3.442421249812469,
+      "cached_execution_measured": false,
+      "costs_are_nested": true,
+      "historical_costs_exact": true,
+      "independent_audit_phase_seconds": 0.7171860001981258,
+      "means_exact": true,
+      "ordinary_process_wall_seconds": 2.4711402498651296,
+      "task": {
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "173275cd12b6ca3834aa",
+        "kernel": "nuts",
+        "model": "L1",
+        "replicate": 0
+      }
+    }
+  ],
+  "scope": "Moved archive with explicit historical-ID mapping; saved costs, values and R bytes reconstructed. No new precision/coverage claim.",
+  "source_commit": "8d15d579620bf4d21882fc0ef0b8caf5faf80439",
+  "source_manifest_sha256": "cedc0fd2dd816969a04cc50e73ea73e01824c7b166f5d3e0c1928a7e301f9b5b",
+  "stored_diagnostic_rows": 16,
+  "tasks_rebuilt": 5
+}

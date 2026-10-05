@@ -1,0 +1,14 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___ test_external_audit_preserves_candidate_and_quarantines_wrong_trajectory ___
+
+    def test_external_audit_preserves_candidate_and_quarantines_wrong_trajectory():
+        from parallelbayes.torch_backend.models import make_model
+        from parallelbayes.torch_backend.sampling import sample,settings,random_tape
+>       from measured_workflow import audit_candidate
+E       ModuleNotFoundError: No module named 'measured_workflow'
+
+tests/external/test_measured_workflow.py:15: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_measured_workflow.py::test_external_audit_preserves_candidate_and_quarantines_wrong_trajectory
+1 failed in 0.73s
