@@ -28,7 +28,7 @@ Windows的0.2.0开发版及512项任务使用独立协议，见第\ref{sec:windo
 
 软件复用现有建模和推断组件。Stan 为连续参数模型提供语义和约束变换\cite{stan}；BridgeStan 暴露已编译模型的密度及导数\cite{bridgestan}；BlackJAX 提供可组合的 JAX 推断组件\cite{blackjax}；Pyro 提供基于PyTorch的概率编程组件\cite{pyro}。ParallelBayes 的研究对象是这些组件之上的可核对执行与实验协议。当前Stan入口仅支持CPU顺序RWM/MALA，尚未连接CPU时间并行执行器；原生JAX与torch路径均须逐模型实现和核验。torch后端已在原生Windows CPU/CUDA上取得实测证据，其能力不由安装深度学习框架本身推定。软件没有提供新建模语言。本版只考察固定维度、连续参数目标；不声称涵盖全部链内并行、多机后验合并或动态 NUTS 时间并行。
 
-统一调用和跨模型比较已有直接前作。compareMCMCs 已支持 NIMBLE、JAGS 和 Stan 的运行、计时与结果管理，并允许扩展引擎和指标\cite{comparemcmcs}；PPL Bench 提供概率编程软件的基准框架\cite{pplbench}；posteriordb 提供模型、数据和参考蒙特卡洛样本\cite{posteriordb}。本研究不以这些通用能力作为首次贡献，而把实际随机输入、并行残差、接受分支、无效输出和完整任务成本共同纳入可重建记录，并在同核执行与跨核推断两个层次呈现指定时间执行器的适用边界。首批使用自包含的合成目标；另已接入posteriordb水井模型并核验目标与接口，但尚未完成该案例的正式推断比较或外部模型库的普遍性验证。
+统一调用和跨模型比较已有直接前作。compareMCMCs支持不同引擎的运行与计时，PPL Bench提供概率编程基准框架，posteriordb提供目标、数据和参考样本\cite{comparemcmcs,pplbench,posteriordb}。更直接地，ParallelMCMC.jl已把时间并行MALA接入AbstractMCMC接口，BayesForge也提供连接JAX推断后端的R建模入口\cite{parallelmcmc,bayesforge}。这些软件文档说明功能重叠，本研究没有复现其性能。本文的证据增量在于将实际随机输入、并行残差、接受事件、无效输出和任务成本共同保存，在同核执行与跨核推断两个层次核对指定实现。它不构成首次库封装、首次R硬件加速或通用基准平台的优先权声明。水井案例已接入并核验目标与接口，其正式推断比较和外部模型库的普遍性验证尚未完成。
 
 \section{模型、转移核与执行器}
 \subsection{目标与坐标}
@@ -174,7 +174,7 @@ CPU 内存为采样API期间每20 ms记录的进程绝对RSS峰值，包含先�
 
 quasi-DEER 的局部残差加独立轨迹核验是一种计算上可审查的约束，仍没有提供从容差到一般后验函数偏差的理论界。接受分支接近阈值时，浮点差异可能改变事件；因此本文保存事件差与失败而不以统一 API 隐去保证类别。Online Picard 同样受浮点前缀和与窗口调度影响。本版顺序回退重新计算全路径，尚未优化为仅重算未确认后缀。
 
-历史主实验仅评价指定Mac CPU环境；本轮独立Windows协议增加同机torch CPU/CUDA证据，历史WSL2交接资料仍仅归档保留。两个平台的完整工作流差异不能全部归因于显卡。自动配置模块未进入本版贡献，当前没有足够证据支持稳定收益区间。外部水井目标及分散初始化的开发探测已开展，尚未构成充分预算下的正式推断证据。更昂贵似然的机制验证和未见应用上的泛化仍待研究；本轮不以挑选有利案例扩展结论。
+历史Mac与本轮Windows协议评价指定实现、硬件和预算，平台间工作流差异不能全部归因于显卡。比较对象也未覆盖现代多链方案：MEADS和LAPS研究群体调参与初始化，有限状态机方法研究多链向量化中的同步开销\cite{meads,laps,fsm}。因此，与本研究NUTS基线的比较不能决定时间并行相对全部多链策略的优劣。自动配置未进入贡献，水井已参与开发，其正式推断和未见应用泛化仍未验证；当前证据不足以给出通用执行方式选择规则。
 
 \section*{代码、数据与辅助工具}
 历史主实验数据由项目公开生成规则产生；外部水井数据、模型及有限参考来自固定版本posteriordb\cite{posteriordb}，其来源、许可及文件哈希随案例清单保存。源码、测试、协议、分析摘要及论文构建材料已上传至\url{https://github.com/AlchemistXC/ParallelBayes}；历史CPU原始证据见仓库的\texttt{cpu-review-v1} Release。Windows原始结果归档已上传\texttt{windows-native-v1}，截至2026年10月5日仍为草稿，尚不能视为公开可下载材料。接收端已核对归档及内部5866个文件。第二轮Windows证据已上传另一个草稿并完成独立接收，本机后续批次与成本伴随归档尚未公开；克隆源码仓库不等于已取得所有原始证据。原始证据、分析源与论文输入以版本和校验和关联；投稿前仍须完成最终公开归档及统一候选包的独立重建。独立依赖环境和迁移目录验证已在同一Mac完成，不等同另一研究团队或操作系统的复现。R包检查与显式开启集成测试的日志分开保存。R 包发布候选及 Python 内核随项目交付；上游 BSD 许可源码保留来源，Online Picard 按论文独立实现。本文使用生成式工具辅助代码、实验组织、图表与中文草稿，并用实际运行、独立实现和可重建原始输出核验相关陈述。稿件尚需研究者最终审阅、确认署名与投稿范围，不将工具列为作者。
@@ -183,12 +183,17 @@ quasi-DEER 的局部残差加独立轨迹核验是一种计算上可审查的约
 \bibitem{zoltowski} Zoltowski D.M., Wu S., Gonzalez X., et al. \href{https://proceedings.nips.cc/paper_files/paper/2025/hash/202886ee1c9ca735cb5bff3a00a69883-Abstract-Conference.html}{Parallelizing MCMC Across the Sequence Length}. Advances in Neural Information Processing Systems, 2025, 38.
 \bibitem{grazzi} Grazzi S., Zanella G. \href{https://doi.org/10.1093/biomet/asag022}{Parallel computations for Metropolis Markov chains with Picard maps}. Biometrika, 2026, 113(2): asag022.
 \bibitem{stan} Carpenter B., Gelman A., Hoffman M.D., et al. \href{https://doi.org/10.18637/jss.v076.i01}{Stan: A Probabilistic Programming Language}. Journal of Statistical Software, 2017, 76(1): 1--32.
-\bibitem{bridgestan} BridgeStan contributors. \href{https://roualdes.us/bridgestan/latest/languages/python.html}{BridgeStan: Python interface documentation}. 本研究使用版本 2.7.0，构建来源与许可随代码归档。
+\bibitem{bridgestan} Roualdes E.A., Ward B., Carpenter B., Seyboldt A., Axen S.D. \href{https://doi.org/10.21105/joss.05236}{BridgeStan: Efficient in-memory access to the methods of a Stan model}. Journal of Open Source Software, 2023, 8(87):5236. 本研究使用版本2.7.0，接口说明及构建来源另行归档。
 \bibitem{blackjax} Cabezas A., Corenflos A., Lao J., Louf R., et al. \href{https://arxiv.org/abs/2402.10797}{BlackJAX: Composable Bayesian inference in JAX}. arXiv:2402.10797, 2024.
 \bibitem{pyro} Bingham E., Chen J.P., Jankowiak M., et al. \href{https://jmlr.org/papers/v20/18-403.html}{Pyro: Deep Universal Probabilistic Programming}. Journal of Machine Learning Research, 2019, 20(28):1--6.
 \bibitem{comparemcmcs} NIMBLE development team. \href{https://github.com/nimble-dev/compareMCMCs}{compareMCMCs: Tools for comparing MCMC efficiency from NIMBLE and other engines}. 软件作者仓库，访问于2026年10月3日；此处引用功能说明，未复现其性能。
-\bibitem{pplbench} PPL Bench contributors. \href{https://github.com/facebookresearch/pplbench}{PPL Bench: Evaluation Framework for Probabilistic Programming Languages}. 软件作者仓库，访问于2026年10月3日。
+\bibitem{pplbench} Kulkarni S., Shah K.D., Arora N., et al. \href{https://arxiv.org/abs/2010.08886v1}{PPL Bench: Evaluation Framework For Probabilistic Programming Languages}. arXiv:2010.08886v1, 2020. 软件来源：\url{https://github.com/facebookresearch/pplbench}。
 \bibitem{posteriordb} Magnusson M., Torgander J., Bürkner P.-C., Zhang L., Carpenter B., Vehtari A. \href{https://proceedings.mlr.press/v258/magnusson25a.html}{posteriordb: Testing, Benchmarking and Developing Bayesian Inference Algorithms}. Proceedings of Machine Learning Research, 2025, 258:1198--1206.
 \bibitem{posterior} Stan development team. \href{https://mc-stan.org/posterior/reference/rhat.html}{posterior: Rhat, bulk ESS and tail ESS documentation}. 本研究使用posterior 1.7.0；常量链诊断保留为不可判定。
+\bibitem{parallelmcmc} Senne R. and contributors. \href{https://github.com/rsenne/ParallelMCMC.jl/tree/7be9c866c8be03ad994a5e7f0486ec3290088813}{ParallelMCMC.jl}. 软件仓库，提交7be9c86，访问于2026年10月6日；引用接口功能，未运行性能比较。
+\bibitem{bayesforge} Sosa S. \href{https://cran.r-universe.dev/BayesForge/doc/manual.html}{BayesForge: Bayesian Inference using numpyro and XLA}. R包0.0.1参考手册，访问于2026年10月6日；引用建模及后端接口。
+\bibitem{meads} Hoffman M.D., Sountsov P. \href{https://proceedings.mlr.press/v151/hoffman22a.html}{Tuning-Free Generalized Hamiltonian Monte Carlo}. Proceedings of Machine Learning Research, 2022, 151:7799--7813.
+\bibitem{laps} Robnik J., Seljak U. \href{https://proceedings.mlr.press/v300/robnik26a.html}{Faster Parallel MCMC: Metropolis Adjustment Is Best Served Warm}. Proceedings of Machine Learning Research, 2026, 300:2719--2727.
+\bibitem{fsm} Dance H., Glaser P., Orbanz P., Adams R.P. \href{https://proceedings.mlr.press/v267/dance25a.html}{Efficiently Vectorized MCMC on Modern Accelerators}. Proceedings of Machine Learning Research, 2025, 267:12436--12458.
 \end{thebibliography}
 \end{document}

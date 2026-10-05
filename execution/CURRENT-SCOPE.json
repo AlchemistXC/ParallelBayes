@@ -72,5 +72,11 @@
     "new_clean_installation": false,
     "native_windows_candidate_verified": false,
     "formal_research_complete": false
+  },
+  "literature_update": {
+    "date": "2026-10-06",
+    "report": "review/文献定位复核_2026-10-06.md",
+    "scope": "targeted discovery and citation/function verification; not exhaustive or new full-paper review",
+    "formal_results_changed": false
   }
 }

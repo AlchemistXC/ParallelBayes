@@ -24,3 +24,7 @@
 摘要从单纯CPU里程碑改为跨协议共同问题，只保留关键执行结果及推断边界；不将两个平台合成排名。旧architecture图保留，新architecture-current图仅展示当前路线，无数值结果。历史CPU/results、revision和Windows首轮generated输入保持原字节；completion伴随文本只更新已有Windows F1回执，新增intake.generated.tex从只读接收摘要产生。
 
 引言、能力矩阵、限制和可用性对应当前实现；术语和计时口径集中解释。旧版本实际证据按原身份保留，不把前瞻BCa/成本规则追溯套到已发表述的历史统计量。详见本轮docs/MANUSCRIPT-INTEGRATION.md的构建回执与输入哈希。
+
+## 2026-10-06相关工作校正
+
+见[定向检索与引用复核](../../review/文献定位复核_2026-10-06.md)。ParallelMCMC.jl/BayesForge只支持既有软件功能的定位，不提供本项目性能证据；MEADS/LAPS/FSM用于界定未比较方法。BridgeStan正式论文及PPL Bench预印本作者已核对，posteriordb原正式引用不变。核心贡献、历史数值及正式研究未完成状态不变。
