@@ -1,0 +1,28 @@
+{
+  "policy": "four-chain-runtime-costs-v1",
+  "analysis_sha256": "ade5f6b0b15898bcb1ee1a9e2d9c2b513a30fd9e494268453d021f1a9a18be18",
+  "source_commit": "260c1406d5ed4645bf37c0f19a2d4c4d667991f4",
+  "batch_planned": 15,
+  "batch_valid": 14,
+  "batch_interrupted": 1,
+  "recovery_fixture_tasks": 1,
+  "actual_attempt_histories": 18,
+  "ordinary_receipts_reconstructed": 16,
+  "complete_primary_task_costs": 15,
+  "complete_ordinary_task_costs": 15,
+  "known_recovery_primary_seconds": 5.722202875185758,
+  "known_recovery_ordinary_seconds": 3.774263374041766,
+  "known_recovery_verification_seconds": 0.008026791969314218,
+  "batch_missing_cost_is_not_zero": true,
+  "assets_checked": {
+    "batch": 556,
+    "recovery": 327
+  },
+  "new_sampler_calls": 0,
+  "new_R_calls": 0,
+  "new_timing_experiments": 0,
+  "new_independent_repetitions": 0,
+  "statistical_intervals_generated": 0,
+  "native_Windows_validated": false,
+  "formal_inference_complete": false
+}

@@ -1,0 +1,120 @@
+{
+  "actual_attempts": 2,
+  "attempts_are_statistical_repetitions": false,
+  "cached_execution_seconds": null,
+  "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+  "evidence_role": "intentional_recovery_fixture_not_scientific_repetition",
+  "invocations": 3,
+  "ordinary_receipts": [
+    {
+      "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery",
+      "relative_path": "run/injected-recovery/attempt-0001/ordinary-process.json",
+      "return_code": 0,
+      "sha256": "45f5208b81bfc81754429a32e2bc2c640c9e267184ac892166ed83a63e0ae906"
+    },
+    {
+      "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery.retry",
+      "relative_path": "run/injected-recovery.retry/attempt-0001/ordinary-process.json",
+      "return_code": 0,
+      "sha256": "e91c7dc586c9fe1fe9481556300924d39e0e3872480179bb357efd0130840b57"
+    }
+  ],
+  "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery",
+  "outcome": "valid",
+  "phase_totals_are_additive": false,
+  "phases": {
+    "additional_verification": {
+      "attempts_missing_call_return": 0,
+      "complete_seconds": 0.008026791969314218,
+      "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+      "known_seconds": 0.008026791969314218,
+      "prior_interruption_known_seconds": 0.0,
+      "recorded_measurements": 1,
+      "unknown_measurements": 0,
+      "unknown_time_imputed": false
+    },
+    "all_invocations": {
+      "attempts_missing_call_return": 0,
+      "complete_seconds": 5.730229667155072,
+      "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+      "known_seconds": 5.730229667155072,
+      "prior_interruption_known_seconds": 0.0,
+      "recorded_measurements": 3,
+      "unknown_measurements": 0,
+      "unknown_time_imputed": false
+    },
+    "ordinary_workflow": {
+      "attempts_missing_call_return": 0,
+      "complete_seconds": 3.774263374041766,
+      "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+      "known_seconds": 3.774263374041766,
+      "prior_interruption_known_seconds": 1.9186517079360783,
+      "recorded_measurements": 2,
+      "unknown_measurements": 0,
+      "unknown_time_imputed": false
+    },
+    "research_execution": {
+      "attempts_missing_call_return": 0,
+      "complete_seconds": 5.722202875185758,
+      "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+      "known_seconds": 5.722202875185758,
+      "prior_interruption_known_seconds": 2.8909470411017537,
+      "recorded_measurements": 2,
+      "unknown_measurements": 0,
+      "unknown_time_imputed": false
+    }
+  },
+  "policy": "four-chain-runtime-costs-v1",
+  "recorded_refusals_or_exceptions": 0,
+  "source_attempts": [
+    {
+      "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery",
+      "binding_sha256": "160f7dc6ae23b79268e74d5819df66a64edb4a97047461a7b87e8130b01ebc24",
+      "cost_scope": "runtime_v1_preflight_through_terminal",
+      "evidence_sha256": "cd474fdfcb9d6f87acf1354cafb9a7106eca6610c6e10195a5ed65210f08494c",
+      "fixed_task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "recovery-2153a3c310f4b9b8b280",
+        "kernel": "mala",
+        "model": "G1",
+        "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+        "replicate": 0,
+        "role": "intentional_recovery_fixture"
+      },
+      "outcome": "infrastructure_interruption",
+      "seconds": 2.8857148338574916,
+      "unknown_time_imputed": false
+    },
+    {
+      "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery.retry",
+      "binding_sha256": "160f7dc6ae23b79268e74d5819df66a64edb4a97047461a7b87e8130b01ebc24",
+      "cost_scope": "runtime_v1_preflight_through_terminal",
+      "evidence_sha256": "b723b253a5029d5dbfe4f59300cc72db984aa0ed2ed9e10192ff29f8d098188b",
+      "fixed_task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "recovery-2153a3c310f4b9b8b280",
+        "kernel": "mala",
+        "model": "G1",
+        "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+        "replicate": 0,
+        "role": "intentional_recovery_fixture"
+      },
+      "outcome": "valid",
+      "seconds": 2.8179559579584748,
+      "unknown_time_imputed": false
+    }
+  ],
+  "task": {
+    "device": "cpu",
+    "executor": "sequential",
+    "id": "recovery-2153a3c310f4b9b8b280",
+    "kernel": "mala",
+    "model": "G1",
+    "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+    "replicate": 0,
+    "role": "intentional_recovery_fixture"
+  },
+  "verification_only_invocations": 1
+}

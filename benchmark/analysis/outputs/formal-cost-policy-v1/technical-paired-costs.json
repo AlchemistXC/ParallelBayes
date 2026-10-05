@@ -1,0 +1,74 @@
+[
+  {
+    "budget": 64,
+    "confidence_interval": null,
+    "interpretation": "One technical paired timing observation; not a repeated performance inference",
+    "kernel": "rwm",
+    "model": "G1",
+    "planned_independent_inputs": 1,
+    "ratio_sequence_over_time_executor": {
+      "ordinary_workflow": 0.9867411346776205,
+      "research_execution": 0.9887656191772027
+    }
+  },
+  {
+    "budget": 64,
+    "confidence_interval": null,
+    "interpretation": "One technical paired timing observation; not a repeated performance inference",
+    "kernel": "mala",
+    "model": "G1",
+    "planned_independent_inputs": 1,
+    "ratio_sequence_over_time_executor": {
+      "ordinary_workflow": 0.5847927404934433,
+      "research_execution": 0.6789402934807941
+    }
+  },
+  {
+    "budget": 16384,
+    "confidence_interval": null,
+    "interpretation": "One technical paired timing observation; not a repeated performance inference",
+    "kernel": "rwm",
+    "model": "G2",
+    "planned_independent_inputs": 1,
+    "ratio_sequence_over_time_executor": {
+      "ordinary_workflow": 0.97420242991096,
+      "research_execution": 0.9829883920283865
+    }
+  },
+  {
+    "budget": 16384,
+    "confidence_interval": null,
+    "interpretation": "One technical paired timing observation; not a repeated performance inference",
+    "kernel": "mala",
+    "model": "G2",
+    "planned_independent_inputs": 1,
+    "ratio_sequence_over_time_executor": {
+      "ordinary_workflow": 0.09787605535630114,
+      "research_execution": 0.12922045045358138
+    }
+  },
+  {
+    "budget": 64,
+    "confidence_interval": null,
+    "interpretation": "One technical paired timing observation; not a repeated performance inference",
+    "kernel": "rwm",
+    "model": "L1",
+    "planned_independent_inputs": 1,
+    "ratio_sequence_over_time_executor": {
+      "ordinary_workflow": 0.8919616649130119,
+      "research_execution": 0.9394064093300916
+    }
+  },
+  {
+    "budget": 64,
+    "confidence_interval": null,
+    "interpretation": "One technical paired timing observation; not a repeated performance inference",
+    "kernel": "mala",
+    "model": "L1",
+    "planned_independent_inputs": 1,
+    "ratio_sequence_over_time_executor": {
+      "ordinary_workflow": 0.28865698730064143,
+      "research_execution": 0.3795919037118006
+    }
+  }
+]

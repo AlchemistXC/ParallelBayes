@@ -1,0 +1,9 @@
+{
+  "archive": "cost-policy-v1.tar",
+  "bytes": 57466880,
+  "sha256": "484d9feb1b6f4ad08a56728ef790587744bbe9907f75042896736f59f5421881",
+  "checked_files": 24,
+  "source_commit": "260c1406d5ed4645bf37c0f19a2d4c4d667991f4",
+  "new_sampler_calls": 0,
+  "public_release": false
+}

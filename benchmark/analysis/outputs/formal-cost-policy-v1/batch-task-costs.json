@@ -1,0 +1,1532 @@
+[
+  {
+    "actual_attempts": 2,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/34d6162a6a062ff1cd600d7e",
+    "outcome": "infrastructure_interruption",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.0,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 2,
+        "complete_seconds": null,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 2,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 2,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 2,
+        "complete_seconds": null,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 2,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/34d6162a6a062ff1cd600d7e",
+        "binding_sha256": "f12fd630ee66cd382a4859e39d4b905558e552997f7f3f7fda3f6ec5451bbbed",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "45597967f184667ed1a3658bc27a5bc0f22f96f9e12fb302dc3ada150edb8267",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 16384,
+          "device": "cpu",
+          "executor": "spawn_chains",
+          "id": "34d6162a6a062ff1cd600d7e",
+          "input": "G2-rep0000.npz",
+          "kernel": "nuts",
+          "model": "G2",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-nuts-spawn_chains"
+        },
+        "outcome": "infrastructure_interruption",
+        "seconds": null,
+        "unknown_time_imputed": false
+      },
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/34d6162a6a062ff1cd600d7e.retry",
+        "binding_sha256": "f12fd630ee66cd382a4859e39d4b905558e552997f7f3f7fda3f6ec5451bbbed",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "97ebfcb4c849182114620dbbf38961ba64edd2c2cd11986211b74686c4f212ad",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 16384,
+          "device": "cpu",
+          "executor": "spawn_chains",
+          "id": "34d6162a6a062ff1cd600d7e",
+          "input": "G2-rep0000.npz",
+          "kernel": "nuts",
+          "model": "G2",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-nuts-spawn_chains"
+        },
+        "outcome": "infrastructure_interruption",
+        "seconds": null,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "spawn_chains",
+      "id": "34d6162a6a062ff1cd600d7e",
+      "input": "G2-rep0000.npz",
+      "kernel": "nuts",
+      "model": "G2",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-nuts-spawn_chains"
+    },
+    "verification_only_invocations": 0
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/a893eb2fb7f380db49d7d58b",
+        "relative_path": "run/tasks/a893eb2fb7f380db49d7d58b/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "383861692508e42126be1c13c58072640c5f94c393b2f854510bf3e33eb46b4f"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/a893eb2fb7f380db49d7d58b",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.007456790999640361,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.007456790999640361,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 6.86572916599971,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 6.86572916599971,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 5.937953582999853,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 5.937953582999853,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 6.85827237500007,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 6.85827237500007,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/a893eb2fb7f380db49d7d58b",
+        "binding_sha256": "398dff6848c93b82cd14bf1227440ec8d37c1d4311bd6b70d7781d9be9031dcd",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "241c52e2564b40b8764d51bef3a40ddd6bcdc7f54faacc5044db05f6146e7d81",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 64,
+          "device": "cpu",
+          "executor": "quasi_deer",
+          "id": "a893eb2fb7f380db49d7d58b",
+          "input": "L1-rep0000.npz",
+          "kernel": "mala",
+          "model": "L1",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-mala-quasi_deer"
+        },
+        "outcome": "valid",
+        "seconds": 6.849645582999983,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "a893eb2fb7f380db49d7d58b",
+      "input": "L1-rep0000.npz",
+      "kernel": "mala",
+      "model": "L1",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/6702513c78972d4a7a5ee246",
+        "relative_path": "run/tasks/6702513c78972d4a7a5ee246/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "679477a1b8e97b3155c98f000d0d95620cad98d930c7b869c8d51927a3927324"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/6702513c78972d4a7a5ee246",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.006649625000136439,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.006649625000136439,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.8390875830004916,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 1.8390875830004916,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.0445795830000861,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 1.0445795830000861,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.8324379580003551,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 1.8324379580003551,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/6702513c78972d4a7a5ee246",
+        "binding_sha256": "df61e8aa765dd5bc2324627f3364774830a7551e72ec8c2795879ad982bccabe",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "81cbc38b7dee788985bd120ab891db684c31966030fc9bd4fc5e4c7a3eab5054",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 64,
+          "device": "cpu",
+          "executor": "sequential",
+          "id": "6702513c78972d4a7a5ee246",
+          "input": "G1-rep0000.npz",
+          "kernel": "rwm",
+          "model": "G1",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-rwm-sequential"
+        },
+        "outcome": "valid",
+        "seconds": 1.8263577920001808,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "6702513c78972d4a7a5ee246",
+      "input": "G1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G1",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/f07592d1fb3b28649c0f681e",
+        "relative_path": "run/tasks/f07592d1fb3b28649c0f681e/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "dbef13ecb71562d284d0f29fbdd856c87ca588ba4f7e44ddb5edbb02fb4c2c73"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/f07592d1fb3b28649c0f681e",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.03414333399996394,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.03414333399996394,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 6.060127583999929,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 6.060127583999929,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.6376969590000954,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 3.6376969590000954,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 6.025984249999965,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 6.025984249999965,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/f07592d1fb3b28649c0f681e",
+        "binding_sha256": "f40cc0ccae025fa036028f647bab25da41045d14140d0553e98b3f29d977ffab",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "0e1711f8e680e5aff1df2990051f9ac7f4bb1176035f198f42cdd6469b9c2eec",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 16384,
+          "device": "cpu",
+          "executor": "sequential",
+          "id": "f07592d1fb3b28649c0f681e",
+          "input": "G2-rep0000.npz",
+          "kernel": "rwm",
+          "model": "G2",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-rwm-sequential"
+        },
+        "outcome": "valid",
+        "seconds": 5.9961511659998905,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "f07592d1fb3b28649c0f681e",
+      "input": "G2-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G2",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/27c052013528e3a007eec56c",
+        "relative_path": "run/tasks/27c052013528e3a007eec56c/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "b86d65e1789a5a90cbd6001a284c8b49c74c013fc7ac9950894bcc485dc4c646"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/27c052013528e3a007eec56c",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.007021291999990353,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.007021291999990353,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.9487427919998481,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 1.9487427919998481,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.0741441660002238,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 1.0741441660002238,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.9417214999998578,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 1.9417214999998578,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/27c052013528e3a007eec56c",
+        "binding_sha256": "950c74cc577e73751b24c5b33d7138d47299b4ec8f9ebc3f458919cc2729ec06",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "f27bb5469f6e78aadbe1573dc228d422ab1b689b9ea843897a2e9dbdeb1afe5d",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 64,
+          "device": "cpu",
+          "executor": "sequential",
+          "id": "27c052013528e3a007eec56c",
+          "input": "L1-rep0000.npz",
+          "kernel": "rwm",
+          "model": "L1",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-rwm-sequential"
+        },
+        "outcome": "valid",
+        "seconds": 1.9343062079997253,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "27c052013528e3a007eec56c",
+      "input": "L1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "L1",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/806edca2d8e7bf2eafc5ca64",
+        "relative_path": "run/tasks/806edca2d8e7bf2eafc5ca64/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "857b5c8f9acc2a61273bc75da6f8f00f46f79b49c0a6399453e51197d5ebea96"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/806edca2d8e7bf2eafc5ca64",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.008586083999944094,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.008586083999944094,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.310298501000034,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 3.310298501000034,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.5316827090000515,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 2.5316827090000515,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.3017124170000898,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 3.3017124170000898,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/806edca2d8e7bf2eafc5ca64",
+        "binding_sha256": "d06c2acea46caa64b70e0fe60f9e84c7d602ada49d88a0bfe1b33582455ef47e",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "41dbd185584c29a5e16fad0d1b6c4a9e5c1f20d2a9d13ed484cea5550cfeb383",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 64,
+          "device": "cpu",
+          "executor": "spawn_chains",
+          "id": "806edca2d8e7bf2eafc5ca64",
+          "input": "G1-rep0000.npz",
+          "kernel": "nuts",
+          "model": "G1",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-nuts-spawn_chains"
+        },
+        "outcome": "valid",
+        "seconds": 3.2950105410000106,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "spawn_chains",
+      "id": "806edca2d8e7bf2eafc5ca64",
+      "input": "G1-rep0000.npz",
+      "kernel": "nuts",
+      "model": "G1",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-nuts-spawn_chains"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/03cd042a38f673015ebde1ac",
+        "relative_path": "run/tasks/03cd042a38f673015ebde1ac/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "b840f8b1d264b8c58e496a924412ac79545dfc49edc2ca3fbd1e309f79ac472c"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/03cd042a38f673015ebde1ac",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.034565625000141154,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.034565625000141154,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 6.164835625000251,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 6.164835625000251,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.7340257500000007,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 3.7340257500000007,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 6.13027000000011,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 6.13027000000011,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/03cd042a38f673015ebde1ac",
+        "binding_sha256": "a5f686de458686a0d4e9e97fbb6786b97b66d668c8129beb8d40e6bf386be5ca",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "fa2f354e512709cb8d499dc885d29df3de329f854304acf84a12b742ffe96147",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 16384,
+          "device": "cpu",
+          "executor": "online_picard",
+          "id": "03cd042a38f673015ebde1ac",
+          "input": "G2-rep0000.npz",
+          "kernel": "rwm",
+          "model": "G2",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-rwm-online_picard"
+        },
+        "outcome": "valid",
+        "seconds": 6.100988916999995,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "03cd042a38f673015ebde1ac",
+      "input": "G2-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G2",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/783291c66aea34a699716f53",
+        "relative_path": "run/tasks/783291c66aea34a699716f53/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "2daee7899ec175c1f9f2ab953f246b5fd9cf2f78915f345ea817dab2869dcf7b"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/783291c66aea34a699716f53",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.0068623329998445115,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.0068623329998445115,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.5587180409997927,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 2.5587180409997927,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.6900834999996732,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 1.6900834999996732,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.551855707999948,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 2.551855707999948,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/783291c66aea34a699716f53",
+        "binding_sha256": "6b8a951e4f75773cdc7ecec1e9c12a3b77ebcac482ab0c7d4d890d9b65355322",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "c3226ccac1c4112cb8c12a8df50c64fe67aba62780db7e0298de85d20f1e09d4",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 64,
+          "device": "cpu",
+          "executor": "sequential",
+          "id": "783291c66aea34a699716f53",
+          "input": "G1-rep0000.npz",
+          "kernel": "mala",
+          "model": "G1",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-mala-sequential"
+        },
+        "outcome": "valid",
+        "seconds": 2.545102957999916,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "783291c66aea34a699716f53",
+      "input": "G1-rep0000.npz",
+      "kernel": "mala",
+      "model": "G1",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/f87572758ef089ab1ad2b4e6",
+        "relative_path": "run/tasks/f87572758ef089ab1ad2b4e6/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "c244c1d4c62864c9c79e79368ad73af1313e76fd2c019b398800d956f68dc449"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/f87572758ef089ab1ad2b4e6",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.007148041999698762,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.007148041999698762,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.765734374999738,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 3.765734374999738,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.890055541000038,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 2.890055541000038,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.7585863330000393,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 3.7585863330000393,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/f87572758ef089ab1ad2b4e6",
+        "binding_sha256": "83e610b42ac1571f3f18f827ef4f3beb0e78d9e3926a9dac938bd301f3b12c60",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "b8b3ed1c102e337b764aa40f1eb9c2f776184f6545768f01d40bd1aeb574cefc",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 64,
+          "device": "cpu",
+          "executor": "quasi_deer",
+          "id": "f87572758ef089ab1ad2b4e6",
+          "input": "G1-rep0000.npz",
+          "kernel": "mala",
+          "model": "G1",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-mala-quasi_deer"
+        },
+        "outcome": "valid",
+        "seconds": 3.7521090830000503,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "f87572758ef089ab1ad2b4e6",
+      "input": "G1-rep0000.npz",
+      "kernel": "mala",
+      "model": "G1",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/d5fc731a4ab0621c2baa3e23",
+        "relative_path": "run/tasks/d5fc731a4ab0621c2baa3e23/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "7f1e614b999f9fdb7c172731b550c66a9eae5028d8ec06dec3646d2137cc00c0"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/d5fc731a4ab0621c2baa3e23",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.006963958000142156,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.006963958000142156,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.610308625000471,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 2.610308625000471,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.714031791999787,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 1.714031791999787,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.6033446670003286,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 2.6033446670003286,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/d5fc731a4ab0621c2baa3e23",
+        "binding_sha256": "5b165fbc9549a0d51f8edb62048790e88d79d4a2b871d42e378cc1ad006c2d11",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "5b7360378633a070f6fec8110b7b349e0f370d81066d1c48432b6c84181da1a8",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 64,
+          "device": "cpu",
+          "executor": "sequential",
+          "id": "d5fc731a4ab0621c2baa3e23",
+          "input": "L1-rep0000.npz",
+          "kernel": "mala",
+          "model": "L1",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-mala-sequential"
+        },
+        "outcome": "valid",
+        "seconds": 2.596616499999982,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "d5fc731a4ab0621c2baa3e23",
+      "input": "L1-rep0000.npz",
+      "kernel": "mala",
+      "model": "L1",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/5db43be5d0a8519b28490351",
+        "relative_path": "run/tasks/5db43be5d0a8519b28490351/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "68bfdd218ffa21aba32199db35c9d5caf99db9554a36d93cad04e0bbfce87358"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/5db43be5d0a8519b28490351",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.0510912909999206,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.0510912909999206,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 12.951992624000013,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 12.951992624000013,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 9.410312583000177,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 9.410312583000177,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 12.900901333000093,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 12.900901333000093,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/5db43be5d0a8519b28490351",
+        "binding_sha256": "7bfddca94d526d36aca5a1b560dd010f6503221c4b986092bfdf8e2d263087a7",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "ba21d69da156da69912209442ba518fb587c7c2bcb9243f31e991c825a6c64c4",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 16384,
+          "device": "cpu",
+          "executor": "sequential",
+          "id": "5db43be5d0a8519b28490351",
+          "input": "G2-rep0000.npz",
+          "kernel": "mala",
+          "model": "G2",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-mala-sequential"
+        },
+        "outcome": "valid",
+        "seconds": 12.860855957999775,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "5db43be5d0a8519b28490351",
+      "input": "G2-rep0000.npz",
+      "kernel": "mala",
+      "model": "G2",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/46bdaeaffd58373537aa039c",
+        "relative_path": "run/tasks/46bdaeaffd58373537aa039c/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "af8c940fdd836750499ea98ccc7f5cff1f327923d2265f837cffa6855cf5b2d3"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/46bdaeaffd58373537aa039c",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.007114125000043714,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.007114125000043714,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.074080542000047,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 2.074080542000047,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.2042492499999753,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 1.2042492499999753,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.0669664170000033,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 2.0669664170000033,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/46bdaeaffd58373537aa039c",
+        "binding_sha256": "895cef433ecf74d13e566c8407856095372cac36d82b152ec2a1e24ae9d8beff",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "907e2b665adb84a278725e72685c77e2b3f5fa458e1ad85cbc8ba0cb66c13121",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 64,
+          "device": "cpu",
+          "executor": "online_picard",
+          "id": "46bdaeaffd58373537aa039c",
+          "input": "L1-rep0000.npz",
+          "kernel": "rwm",
+          "model": "L1",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-rwm-online_picard"
+        },
+        "outcome": "valid",
+        "seconds": 2.060005958000147,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "46bdaeaffd58373537aa039c",
+      "input": "L1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "L1",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/82f80671c0e38343699cc3b2",
+        "relative_path": "run/tasks/82f80671c0e38343699cc3b2/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "f32181a240c238f333a37bfe39ab337342f13fdea9587208099c044f3a4844fd"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/82f80671c0e38343699cc3b2",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.006839041999683104,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.006839041999683104,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.8600972079998428,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 1.8600972079998428,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.0586156250001295,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 1.0586156250001295,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 1.8532581660001597,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 1.8532581660001597,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/82f80671c0e38343699cc3b2",
+        "binding_sha256": "870db243d73638e8d9bc4aa40d45bdcc968dfb1af11866e6e5f9e983de938f98",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "16c58fc4b7862486b87b6c8df735300b3a0d212d22bcd5d6f20bdd211fa70a8c",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 64,
+          "device": "cpu",
+          "executor": "online_picard",
+          "id": "82f80671c0e38343699cc3b2",
+          "input": "G1-rep0000.npz",
+          "kernel": "rwm",
+          "model": "G1",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-rwm-online_picard"
+        },
+        "outcome": "valid",
+        "seconds": 1.8474827079999159,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "82f80671c0e38343699cc3b2",
+      "input": "G1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G1",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/cef8279d25266cbcc179d240",
+        "relative_path": "run/tasks/cef8279d25266cbcc179d240/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "7022453d0390da9d113f9518e4f10f0fb21753ca764fa39efa0a4834d06c7206"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/cef8279d25266cbcc179d240",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.010058207999918523,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.010058207999918523,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.603442458000245,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 3.603442458000245,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.8101398750000044,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 2.8101398750000044,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.5933842500003266,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 3.5933842500003266,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/cef8279d25266cbcc179d240",
+        "binding_sha256": "3e670146e067f04bd5b41bbf30a37e6eb7efc526f293c908c094a9bf688eab04",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "67300fe999a573d650c091878b0770fa03483375742a09097f8868514a8b2b5b",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 64,
+          "device": "cpu",
+          "executor": "spawn_chains",
+          "id": "cef8279d25266cbcc179d240",
+          "input": "L1-rep0000.npz",
+          "kernel": "nuts",
+          "model": "L1",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-nuts-spawn_chains"
+        },
+        "outcome": "valid",
+        "seconds": 3.5862711250001666,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "spawn_chains",
+      "id": "cef8279d25266cbcc179d240",
+      "input": "L1-rep0000.npz",
+      "kernel": "nuts",
+      "model": "L1",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-nuts-spawn_chains"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "evidence_role": "one_declared_technical_batch_task",
+    "invocations": 2,
+    "ordinary_receipts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/3a254310042a22a4e92fb85d",
+        "relative_path": "run/tasks/3a254310042a22a4e92fb85d/attempt-0001/ordinary-process.json",
+        "return_code": 0,
+        "sha256": "21bd31703b3a379ec6b5fab8315e8eead405e87954fae8ad2ce4be620e1648cb"
+      }
+    ],
+    "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/3a254310042a22a4e92fb85d",
+    "outcome": "valid",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.06472962499992718,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.06472962499992718,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 99.90110449999975,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 99.90110449999975,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 96.14519658300014,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 96.14519658300014,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 99.83637487499982,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 99.83637487499982,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "source_attempts": [
+      {
+        "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/3a254310042a22a4e92fb85d",
+        "binding_sha256": "22ea491d18d688722556821426c201cfcc10ddda32f29ab3f73b976299cb47e7",
+        "cost_scope": "runtime_v1_preflight_through_terminal",
+        "evidence_sha256": "e6be9d940b00ffac0ade9a75781e7b872bf305f911bc18c9281cfca96ddcec27",
+        "fixed_task": {
+          "batch": 0,
+          "budget": 16384,
+          "device": "cpu",
+          "executor": "quasi_deer",
+          "id": "3a254310042a22a4e92fb85d",
+          "input": "G2-rep0000.npz",
+          "kernel": "mala",
+          "model": "G2",
+          "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+          "replicate": 0,
+          "workflow": "cpu-mala-quasi_deer"
+        },
+        "outcome": "valid",
+        "seconds": 99.78680345800012,
+        "unknown_time_imputed": false
+      }
+    ],
+    "task": {
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "3a254310042a22a4e92fb85d",
+      "input": "G2-rep0000.npz",
+      "kernel": "mala",
+      "model": "G2",
+      "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+      "replicate": 0,
+      "workflow": "cpu-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  }
+]

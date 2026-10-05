@@ -1,0 +1,32 @@
+[
+  {
+    "prior": "cost-policy-analysis-01",
+    "file": "batch-task-costs.json",
+    "bytes_identical": true
+  },
+  {
+    "prior": "cost-policy-analysis-01",
+    "file": "intentional-recovery-costs.json",
+    "bytes_identical": true
+  },
+  {
+    "prior": "cost-policy-analysis-01",
+    "file": "technical-paired-costs.json",
+    "bytes_identical": true
+  },
+  {
+    "prior": "cost-policy-analysis-02",
+    "file": "batch-task-costs.json",
+    "bytes_identical": true
+  },
+  {
+    "prior": "cost-policy-analysis-02",
+    "file": "intentional-recovery-costs.json",
+    "bytes_identical": true
+  },
+  {
+    "prior": "cost-policy-analysis-02",
+    "file": "technical-paired-costs.json",
+    "bytes_identical": true
+  }
+]

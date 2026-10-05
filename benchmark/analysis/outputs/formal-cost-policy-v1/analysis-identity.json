@@ -1,0 +1,29 @@
+{
+  "analysis_sha256": "ade5f6b0b15898bcb1ee1a9e2d9c2b513a30fd9e494268453d021f1a9a18be18",
+  "input_manifests": {
+    "batch": "842739e577d0c1779f5dd7b7163f73a51906d8d47aa0c2f924338335c0556c1f",
+    "recovery": "71db653f47178d4b1ef6c98c3ab10ad626a6f037c8cb32212a6c4762dfb8f011"
+  },
+  "policy": "four-chain-runtime-costs-v1",
+  "prospective_formal_protocol_frozen": false,
+  "scope": "Read-only technical reconstruction; stored elapsed durations only; no statistical intervals, sampler calls or new timing",
+  "scopes": {
+    "additional_verification": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+    "all_invocations": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+    "ordinary_workflow": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+    "research_execution": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting"
+  },
+  "source_commit": "260c1406d5ed4645bf37c0f19a2d4c4d667991f4",
+  "source_files": {
+    "scripts/completion/audit_batch_archive.py": "937983ce6d82fc0447edbbdffc6fb881aaccb1f68c9c60abe9e192556e784c84",
+    "scripts/completion/audit_cost_policy.py": "a79fcc80493ef2f45d93d937584f405d60f3cb5ec0fd4c8d1d9e3c8ea13f930f",
+    "scripts/completion/batch_contract.py": "8a2fb83d96237331637ca5347678edf1b8622a401278d8aa6ac9f550776f0d43",
+    "scripts/completion/formal_cost_policy.py": "43ee337bbf1f57ac58bc63bffe01a25b60133ee3606559d5777d7235519297ac",
+    "scripts/completion/formal_error_summary.py": "d858ce9b2d96fc3150e7f172c79ba4f11d2e3b2df65e30c6f14bb1971b8fcadf",
+    "scripts/completion/formal_evidence.py": "d23128d837695a4e507c33e2a990556d7bb9f92e5b34138d1bece100a71df27f",
+    "scripts/completion/formal_outcomes.py": "e8c04dffddb82593089e4660d412249fb7fbd6e5e2655ab23ebea25f6dfec76a",
+    "scripts/completion/formal_runtime.py": "d5592611316cb665f442a39117709908e52f7d30e0efa1d9aba56dd60b7e6e87",
+    "scripts/completion/formal_uncertainty.py": "0bbe7fae58a301c7472cdcdf6887f17bdcf327cc2bd196045400a6a760324263",
+    "scripts/completion/measured_coordinator.py": "1d26702c1014ff44822d3fb1383e22364addaf0d3968f9ebd99e5c19292403de"
+  }
+}
