@@ -1,0 +1,71 @@
+{
+  "actual_MH_executions_planned": 18,
+  "cached_NUTS_measured": false,
+  "cached_tasks": [
+    {
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "8b91ab212abfc73e14d8",
+      "kernel": "rwm",
+      "model": "G1",
+      "replicate": 0
+    },
+    {
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "2153a3c310f4b9b8b280",
+      "kernel": "mala",
+      "model": "G1",
+      "replicate": 0
+    },
+    {
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "151c23e95214c429b2bc",
+      "kernel": "rwm",
+      "model": "G1",
+      "replicate": 0
+    },
+    {
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "37f71a60a73a7df1a854",
+      "kernel": "mala",
+      "model": "G1",
+      "replicate": 0
+    }
+  ],
+  "formal_inference_complete": false,
+  "identity": "cached-cost-technical-mac-v1",
+  "measurement_profile_sha256": "8f8ac5a0b31260a958a63ef723b7ea56768d12a9b02790509a19aae20ab135f2",
+  "native_Windows_validated": false,
+  "new_independent_statistical_repetitions": 0,
+  "no_total_time_cutoff": true,
+  "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+  "purpose": "Finite timing/eligibility/recovery validation, no performance ranking or formal inference",
+  "recovery_execution_id": "recovery-2153a3c310f4b9b8b280",
+  "recovery_injection": "Exit code 7 after original audited worker completes; explicit retry preserves input and source",
+  "recovery_task": {
+    "device": "cpu",
+    "executor": "sequential",
+    "id": "2153a3c310f4b9b8b280",
+    "kernel": "mala",
+    "model": "G1",
+    "replicate": 0
+  },
+  "required_platform": "darwin",
+  "scientific_protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+  "source_commit": "8a24cb150ff757f97e0a6b43dfd1ee090e133488",
+  "source_files": {
+    "scripts/completion/audit_cached_costs.py": "5578cbd5725f9a832c406b07324f021080e0c627e582c3ce55ed78b734ef16a6",
+    "scripts/completion/cached_cost_worker.py": "f2227d2a15ac08d8132540bd8758f757b395b113f46487a047a82d08b255e3e0",
+    "scripts/completion/cached_execution.py": "43d3cd1431e75671c1d7a3ffe72a3e7cacf1b966a21e0de8d6ddd80170aa2381",
+    "scripts/completion/formal_coordinator.py": "c8852045f6b425519dbc7e4353682fda5fe293d913f88dd6d688d4b6b97d110d",
+    "scripts/completion/formal_outcomes.py": "e8c04dffddb82593089e4660d412249fb7fbd6e5e2655ab23ebea25f6dfec76a",
+    "scripts/completion/formal_recovery.py": "faf3650db1b066ec6c62c765696bc0942ee75c2a4e334df214ce5c966623bec2",
+    "scripts/completion/formal_runtime.py": "d5592611316cb665f442a39117709908e52f7d30e0efa1d9aba56dd60b7e6e87",
+    "scripts/completion/measured_coordinator.py": "1d26702c1014ff44822d3fb1383e22364addaf0d3968f9ebd99e5c19292403de",
+    "scripts/completion/measured_recovery_fixture.py": "498cee5fdf7379563b215d6f738991f2307f7afc6460bd95ed339401d295d6a1"
+  },
+  "warm_replays": 3
+}
