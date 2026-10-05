@@ -5,7 +5,7 @@
 不要把本分支合并到正在执行的冻结实验工作树。无 WSL2、Linux 虚拟机或容器。
 
 读取 `AGENTS.md`、`docs/RELEASE-CANDIDATE-0.2.md`、`docs/INSTALL-AND-USE.md`
-与 `docs/CAPABILITIES.md`。安装候选位于远端分支 `codex/release-candidate-0.2`，
+与 `docs/CAPABILITIES.md`。安装候选与研究工具现统一在远端分支 `codex/research-integration`（原安装来源分支 `codex/release-candidate-0.2` 保留），
 Python 0.2.0.dev2 / R 0.2.0.9002。用新的 Git worktree 检出该分支并记录实际提交；
 不要切换或更新当前冻结实验的目录、Python 环境、协议或源码。
 

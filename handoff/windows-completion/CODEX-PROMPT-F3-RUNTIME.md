@@ -6,7 +6,7 @@
 
 ## 源码与现有边界
 
-先核对远端 `codex/cache-failure-evidence` 的来源与差异；它包含 `codex/measurement-runtime` 的已核验运行器和后继失败接收，后继于 `codex/windows-return-audit` 的 `52fdfd0`，包含 Mac 测量资格分离及实际技术验收。从已核对的该分支建立独立 `codex/windows-runtime-validation` 开发分支；如果 Windows 已开始本阶段，在自己的开发分支审查整合必要改动，不重置工作树、正在运行的源码或已冻结协议。保留Windows机制分支及所有原始结果，必要修订通过明确的提交整合。记录起始HEAD和未提交状态，不能切换正在运行的工作目录。
+先核对远端 `codex/research-integration` 的来源与差异；它合入 0.2.0.dev2 安装候选，并包含 `codex/measurement-runtime` 的已核验运行器和后继失败接收，后继于 `codex/windows-return-audit` 的 `52fdfd0`，包含 Mac 测量资格分离及实际技术验收。从已核对的该分支建立独立 `codex/windows-runtime-validation` 开发分支；如果 Windows 已开始本阶段，在自己的开发分支审查整合必要改动，不重置工作树、正在运行的源码或已冻结协议。保留Windows机制分支及所有原始结果，必要修订通过明确的提交整合。记录起始HEAD和未提交状态，不能切换正在运行的工作目录。
 
 Mac新结果：15个技术任务中14个合格，G2最大NUTS原调用与唯一重试在封存前中断；确认期间发生主机重启但原因未定。4种MH完成64维×4链×16,384保留步，390任务文件零重算、556文件归档搬移及47行R诊断重建通过。这不代表Windows进程保护或最大NUTS通过，也不授权第三次重试旧Mac任务。
 

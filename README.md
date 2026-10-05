@@ -1,6 +1,6 @@
 # ParallelBayes
 
-时间并行MCMC的可核验实现、R控制接口与单机基准。本安装候选分支为 **0.2.0.dev2 / R 0.2.0.9002**，实验证据仍按原 **0.2.0.dev1** 归属；历史发布内核 **0.1.1**，Mac CPU主实验使用独立归档的 **0.1.0**。软件与论文均为研究候选，尚非投稿终稿。
+时间并行MCMC的可核验实现、R控制接口与单机基准。本整合开发分支为 **0.2.0.dev2 / R 0.2.0.9002**，实验证据仍按原 **0.2.0.dev1** 归属；历史发布内核 **0.1.1**，Mac CPU主实验使用独立归档的 **0.1.0**。软件与论文均为研究候选，尚非投稿终稿。
 
 ## 当前研究阶段
 
@@ -12,7 +12,7 @@ Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-IN
 
 [测量设计v0.2](docs/FORMAL-MEASUREMENT-DESIGN.md)、[缓存配对统计](docs/CACHE-PROBE-ANALYSIS.md)及[真实CPU缓存记录接收](docs/CACHE-PROBE-EXECUTION.md)已完成有限核验；后继 [Mac 测量运行器](docs/OWNED-CACHE-RUNTIME.md)已完成 20 任务/80 执行及 600 文件零重算、762 资产搬移重建；Windows 原生验收仍待完成。技术重放不增加独立重复数。 后继[失败归档接收](docs/OWNED-CACHE-FAILURE-EVIDENCE.md)已保留未启动、资源失败与中断状态，并要求外层完整结束后才产生可用缓存点；21 项相关检查及旧结果重建通过。
 
-独立软件安装候选位于 [`codex/release-candidate-0.2`](https://github.com/AlchemistXC/ParallelBayes/tree/codex/release-candidate-0.2)，已完成干净 Mac Python/R 安装与显式集成核验；仍待 Windows 安装验证。当前测量运行器分支未合并其包版本。
+当前统一开发入口为 `codex/research-integration`，已合入软件安装候选、测量运行器和失败证据接收。原分支及冻结实验保留；整合检查见[统一交付记录](docs/RESEARCH-INTEGRATION.md)。Windows 安装候选仍待核验。
 
 本轮已完成[有限参考复用审计](docs/REFERENCE-REUSE.md)、[水井Mac模型/R核验](docs/WELLS-TARGET-VALIDATION.md)和参考伴随分析。[独立调参](docs/F3-TUNING-RESULTS.md)212/216有效、失败保留；[九目标多预算pilot](docs/F3-BUDGET-PILOT-RESULTS.md)323/324满足各自输出标准，1项长路径容差失败已完成[有限定位](docs/BUDGET-PATH-LOCALIZATION.md)，仍保留失败。诊断仍显示H1发散、M1探索不足及稀有事件未判定。正式推断协议、Windows同机比较和统一发布/论文尚未完成。
 

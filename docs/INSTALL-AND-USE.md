@@ -1,7 +1,8 @@
 # 安装、使用与复现
 
 当前安装候选为 Python **0.2.0.dev2** / R **0.2.0.9002**，位于
-`codex/release-candidate-0.2`。这是本地研究候选，未发布到 PyPI、CRAN 或公共 Release。
+`codex/research-integration`；原安装来源 `codex/release-candidate-0.2` 保留。
+这是本地研究候选，未发布到 PyPI、CRAN 或公共 Release。
 实测安装与版本差异见 [候选核验记录](RELEASE-CANDIDATE-0.2.md)。
 下列命令创建新的环境；不要更新已冻结实验的环境，也不要用此版本继续旧协议。
 

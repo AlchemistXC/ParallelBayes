@@ -2,7 +2,7 @@
   "date": "2026-10-06",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "merged_candidate_integration_verification_pending",
+  "local_phase": "unified_candidate_source_installation_and_archive_checks_complete",
   "gpu_tasks": "Windows v1 and second-round readiness received; F2 original inputs delivered, 192 mechanism workflows still unexecuted; formal inference not started",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
@@ -42,7 +42,7 @@
     "relocated_assets": 762,
     "native_windows_validated": false
   },
-  "package_candidate_branch": "codex/release-candidate-0.2",
+  "package_candidate_branch": "codex/research-integration",
   "package_candidate_windows_validated": false,
   "local_failure_intake_report": "docs/OWNED-CACHE-FAILURE-EVIDENCE.md",
   "local_failure_intake": {
@@ -55,11 +55,22 @@
     "formal_inference_complete": false
   },
   "installation_candidate": {
-    "branch": "codex/release-candidate-0.2",
+    "branch": "codex/research-integration",
     "python": "0.2.0.dev2",
     "R": "0.2.0.9002",
     "Mac": "installed artifacts and explicit integration checked",
     "Windows": "pending separate installation receipt",
-    "report": "docs/RELEASE-CANDIDATE-0.2.md"
+    "report": "docs/RELEASE-CANDIDATE-0.2.md",
+    "origin_branch": "codex/release-candidate-0.2"
+  },
+  "integration_report": "docs/RESEARCH-INTEGRATION.md",
+  "integration": {
+    "source_commit": "e4f284ffd10b854ea1116573235f9733d0a3b46a",
+    "package_files_identical": 30,
+    "research_files_identical": 179,
+    "affected_interface_checks_passed": 19,
+    "new_clean_installation": false,
+    "native_windows_candidate_verified": false,
+    "formal_research_complete": false
   }
 }

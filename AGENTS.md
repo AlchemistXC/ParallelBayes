@@ -4,7 +4,7 @@
 
 As of 2026-10-04, the user has authorized the native Windows 11 / AMD CPU / RTX 5080 phase. Read `handoff/windows-native/README.md`, `CODEX-PROMPT.md` and `SKILLS-SETUP.md`. The user also authorized skill migration; use the separately transferred private ZIP, never publish it. Use native PowerShell and native Windows Python; do not substitute WSL2, a Linux VM or a Linux container. The historical handoff describes the 0.1.1 JAX core. The received `windows-native-dev` branch at `3a51f98` implements the optional 0.2.0.dev1 PyTorch backend and includes native Windows CPU/CUDA evidence. Consult `docs/WINDOWS-RESULTS.md` and `docs/WINDOWS-RETURN-AUDIT.md` for verified scope; do not restart completed experiments from the old handoff prompt. Older CPU documents that say GPU work is deferred describe the historical CPU milestone, not the current authorization.
 
-Current execution entry: `docs/RESEARCH-COMPLETION-PLAN.md` and `execution/COMPLETION-WORK-PACKAGES.md` (F0–F6). Windows follow-up uses `handoff/windows-completion/CODEX-PROMPT.md`; the original migration prompt is historical. Continue independent Mac work while awaiting actual Windows receipts.
+Current execution entry: `docs/RESEARCH-COMPLETION-PLAN.md` and `execution/COMPLETION-WORK-PACKAGES.md` (F0–F6). The unified development entry is `codex/research-integration`. Windows follow-up starts at `handoff/windows-completion/README.md`: finish F2 on its frozen source first, then F3 runtime validation and isolated package installation. Original F1 and migration prompts are historical; do not restart completed work. Continue independent Mac work while awaiting actual Windows receipts.
 
 ## Scientific invariants
 
@@ -18,7 +18,7 @@ Current execution entry: `docs/RESEARCH-COMPLETION-PLAN.md` and `execution/COMPL
 
 ## Work and evidence
 
-Use `execution/windows-native/WORK-PACKAGES.md` for actual progress. Record commands, source commit, dependency/device versions, counts of passed/failed/skipped tests and artifact hashes. Continue independent work when one step is blocked. Do not silently overwrite a frozen run; resume only with matching identities and checksums. Numerical iteration/memory guards are required; do not impose a total experiment time cutoff.
+Use `execution/COMPLETION-WORK-PACKAGES.md` for current progress; `execution/windows-native/WORK-PACKAGES.md` retains the historical first Windows phase. Record commands, source commit, dependency/device versions, counts of passed/failed/skipped tests and artifact hashes. Continue independent work when one step is blocked. Do not silently overwrite a frozen run; resume only with matching identities and checksums. Numerical iteration/memory guards are required; do not impose a total experiment time cutoff.
 
 Project numerical source lives at `r-package/inst/python/parallelbayes/`; version 0.2.0.dev1 separates optional torch/JAX imports and an independent NumPy reference. Maintain that separation. Audit tools may run on Mac without CUDA; this does not count as rerunning Windows or GPU timing. Preserve Mac tests and the package's truthful capability matrix. Tests added under `tests/handoff/` certify only portable handoff utilities.
 
