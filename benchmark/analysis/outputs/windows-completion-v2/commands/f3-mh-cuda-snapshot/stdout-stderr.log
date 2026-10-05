@@ -1,0 +1,20 @@
+{
+  "run": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes\\output\\completion\\windows-round2-20261005\\mh-cuda-run",
+  "summary": {
+    "protocol_sha256": "e29d26f2d5836c91001be9bfd5a7c6f156b54c96daf2cbaeaa30fb04d32acf93",
+    "device": "cuda:0",
+    "planned_targets": 9,
+    "completed_targets": 9,
+    "failed_targets": 0,
+    "planned_workflows": 54,
+    "completed_workflows": 54,
+    "failed_workflows": 0,
+    "passed_pairs": 36,
+    "planned_pairs": 36,
+    "newly_executed_targets": 9,
+    "invocation_seconds": 92.39837799999805,
+    "scope": "Device/target and selected-kernel time-executor readiness. Not formal inference, convergence or performance evidence.",
+    "formal_inference_complete": false
+  },
+  "summary_sha256": "ac2190061208c765b28bf42751ffab48507e72cdbe32518e097e5022a7912754"
+}

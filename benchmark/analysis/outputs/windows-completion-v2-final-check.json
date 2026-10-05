@@ -1,0 +1,199 @@
+{
+  "status": "passed",
+  "checked_protocols": [
+    {
+      "path": "benchmark/protocols/mechanism-windows-pilot-v1.json",
+      "identity": "9d8985f579a64df95ebbb22ce0a607020261e5a66516efc80edcf9c956894b2c",
+      "source_files": 41
+    },
+    {
+      "path": "benchmark/protocols/wells-windows-validation-v1/cpu.json",
+      "identity": "4c5eef4f7f1858e901d30e1e2f699c2b6c39e03cd53e82f4944056401488e06d",
+      "source_files": 45
+    },
+    {
+      "path": "benchmark/protocols/wells-windows-validation-v1/cuda.json",
+      "identity": "bde0b76104fbe233105848a113d4b67b6ac1dca86231ee904a680ecc23741c5e",
+      "source_files": 45
+    },
+    {
+      "path": "benchmark/protocols/nuts-native-readiness-windows-v1.json",
+      "identity": "6c6aadaed20f792715ab9b8b3a3bbb02181f74ecbe259aa1bb3302e370c78220",
+      "source_files": 61
+    },
+    {
+      "path": "benchmark/protocols/selected-mh-readiness-windows-cpu-v1.json",
+      "identity": "de1a3bdb35fef84c98fe502cc925574f9092f16da5959f691490b5f1ee55d2e5",
+      "source_files": 61
+    },
+    {
+      "path": "benchmark/protocols/selected-mh-readiness-windows-cuda-v1.json",
+      "identity": "e29d26f2d5836c91001be9bfd5a7c6f156b54c96daf2cbaeaa30fb04d32acf93",
+      "source_files": 61
+    }
+  ],
+  "raw_assets_verified": 369,
+  "curated_files_verified": 95,
+  "commands": [
+    {
+      "step": "environment-preflight",
+      "exit_code": 0
+    },
+    {
+      "step": "f1-rhat",
+      "exit_code": 0
+    },
+    {
+      "step": "f2-f4-handoff-tests",
+      "exit_code": 1
+    },
+    {
+      "step": "f2-f4-handoff-tests-02",
+      "exit_code": 0
+    },
+    {
+      "step": "f2-input-diagnostic",
+      "exit_code": 0
+    },
+    {
+      "step": "f2-prepare",
+      "exit_code": 1
+    },
+    {
+      "step": "f3-mh-cpu-audit",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-mh-cpu-resume",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-mh-cpu-run",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-mh-cpu-snapshot",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-mh-cpu-verify-resume",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-mh-cuda-audit",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-mh-cuda-resume",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-mh-cuda-run",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-mh-cuda-snapshot",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-mh-cuda-verify-resume",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-mh-tests",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-nuts-collect",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-nuts-r-diagnostics",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-nuts-resume",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-nuts-run",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-nuts-snapshot",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-nuts-tests",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-nuts-verify-diagnostics",
+      "exit_code": 0
+    },
+    {
+      "step": "f3-nuts-verify-resume",
+      "exit_code": 0
+    },
+    {
+      "step": "f4-cpu",
+      "exit_code": 0
+    },
+    {
+      "step": "f4-cuda",
+      "exit_code": 0
+    },
+    {
+      "step": "f4-fetch-source",
+      "exit_code": 0
+    },
+    {
+      "step": "f4-inspect",
+      "exit_code": 0
+    },
+    {
+      "step": "f4-r-cuda",
+      "exit_code": 0
+    },
+    {
+      "step": "f4-r-diagnostics",
+      "exit_code": 0
+    },
+    {
+      "step": "f4-return-verify",
+      "exit_code": 0
+    }
+  ],
+  "retained_failed_commands": [
+    "f2-f4-handoff-tests",
+    "f2-prepare"
+  ],
+  "tests": {
+    "handoff-tests.xml": {
+      "tests": 6,
+      "failures": 0,
+      "errors": 3,
+      "skipped": 1
+    },
+    "handoff-tests-02.xml": {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1
+    },
+    "nuts-tests.xml": {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "mh-tests.xml": {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "original_environment_and_marker_unchanged": true,
+  "scope": "Delivery integrity; explicitly preserves the blocked mechanism stage and adverse diagnostics."
+}

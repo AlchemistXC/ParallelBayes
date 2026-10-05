@@ -6,7 +6,7 @@
 
 | 提供方式及实测范围 | 顺序 RWM/MALA | Picard RWM / quasi-DEER MALA | NUTS |
 |---|---|---|---|
-| 原生 Windows torch CPU，明确内置目标 | 已核验 | 已核验，eager Python 控制 | 独立 Pyro CPU 基线，仅 normal/Gaussian 本轮统计核验 |
+| 原生 Windows torch CPU，明确内置目标 | 已核验 | 已核验，eager Python 控制 | Pyro CPU；九目标顺序/spawn就绪核验通过，非正式精度结论 |
 | 原生 Windows torch CUDA，RTX 5080 float64 | 已核验 | 已核验，未宣称融合设备内控制 | 尚未接入/核验 |
 | 原生 Windows JAX CPU | 原入口回归通过 | 原入口回归通过 | 原入口冒烟测试通过 |
 | 原生 Windows Stan/BridgeStan | 本轮未编译核验；历史能力仅 CPU 顺序 | 不支持 | 不支持 |
@@ -17,6 +17,11 @@
 新协议 512 项（CPU/CUDA 各 256）已完成数值核验，256 对跨设备实际数组接受事件零失配。
 大量短链混合不足，A1/RWM 全部拒绝提议；“已核验”不代表推断收敛。
 完整解释及未完成范围见 [WINDOWS-RESULTS.md](WINDOWS-RESULTS.md)。
+
+2026-10-05第二轮：已选仿射坐标的九目标MH组合在CPU/CUDA各54工作流、36配对通过，
+独立NumPy重放及零重算恢复通过；九目标CPU NUTS六类数组串行/spawn一致。
+H1/MALA全拒绝链、NUTS不利Rhat与不可判定函数保留；F2机制pilot仍因冻结输入哈希
+不匹配而未执行。详见[第二轮回执](WINDOWS-COMPLETION-V2-RESULTS.md)。
 
 ## 历史发布 0.1.1
 
@@ -48,4 +53,4 @@ pb_capabilities(stan) # combinations仅顺序RWM与MALA
 
 ## 外部目标扩展的实测例
 
-`examples/external_wells.py`通过公开Python Model接口提供posteriordb水井距离模型，保留其平坦先验；R经`examples/external_wells.R`整批调用。Mac CPU的Stan/NumPy/torch目标、顺序/时间轨迹与R数组字节核验通过，见[报告](WELLS-TARGET-VALIDATION.md)。它没有注册为pb_model内置kind，不能用带正态先验的内置logistic替换，也尚未取得该外部目标的Windows CUDA实测证据。
+`examples/external_wells.py`通过公开Python Model接口提供posteriordb水井距离模型，保留其平坦先验；R经`examples/external_wells.R`整批调用。Mac CPU的Stan/NumPy/torch目标、顺序/时间轨迹与R数组字节核验通过，见[报告](WELLS-TARGET-VALIDATION.md)。2026-10-05原生Windows CPU/CUDA及R-CUDA共12工作流、独立NumPy路径/接受事件和二进制回传核验通过，见[第二轮回执](WINDOWS-COMPLETION-V2-RESULTS.md)。它没有注册为pb_model内置kind，不能用带正态先验的内置logistic替换；短链核验不构成正式推断或收敛证据。

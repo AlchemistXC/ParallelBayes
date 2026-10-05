@@ -1,0 +1,10 @@
+{
+  "protocol_sha256": "6c6aadaed20f792715ab9b8b3a3bbb02181f74ecbe259aa1bb3302e370c78220",
+  "planned": 9,
+  "completed": 9,
+  "failed": 0,
+  "newly_executed_targets": 0,
+  "invocation_seconds": 0.03879939999023918,
+  "scope": "Within-host CPU baseline implementation/resource readiness on nine declared targets. Not inference accuracy, calibration, convergence or performance comparison.",
+  "formal_inference_complete": false
+}

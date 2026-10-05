@@ -1,0 +1,20 @@
+{
+  "run": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes\\output\\completion\\windows-round2-20261005\\mh-cpu-run",
+  "summary": {
+    "protocol_sha256": "de1a3bdb35fef84c98fe502cc925574f9092f16da5959f691490b5f1ee55d2e5",
+    "device": "cpu",
+    "planned_targets": 9,
+    "completed_targets": 9,
+    "failed_targets": 0,
+    "planned_workflows": 54,
+    "completed_workflows": 54,
+    "failed_workflows": 0,
+    "passed_pairs": 36,
+    "planned_pairs": 36,
+    "newly_executed_targets": 9,
+    "invocation_seconds": 56.83514060000016,
+    "scope": "Device/target and selected-kernel time-executor readiness. Not formal inference, convergence or performance evidence.",
+    "formal_inference_complete": false
+  },
+  "summary_sha256": "1fc8c9318baa16924a59f7eb9acbd0f2f5192492ee4cdf36cfbc7d2ae097c639"
+}

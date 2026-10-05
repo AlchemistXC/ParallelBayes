@@ -1,0 +1,1751 @@
+{
+  "protocol_sha256": "de1a3bdb35fef84c98fe502cc925574f9092f16da5959f691490b5f1ee55d2e5",
+  "source_run_summary_sha256": "1fc8c9318baa16924a59f7eb9acbd0f2f5192492ee4cdf36cfbc7d2ae097c639",
+  "task_asset_hashes_verified": 126,
+  "checked_completed_workflows": 54,
+  "retained_failed_workflows": 0,
+  "acceptance_mismatches": 0,
+  "saved_array_replay_passed": true,
+  "targets": [
+    {
+      "name": "G1",
+      "original_status": "completed",
+      "workflows": {
+        "rwm-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "allowed_path_error": [
+            4.593480949558628e-08,
+            5.990253577509122e-08,
+            4.875154290269737e-08,
+            5.550826261498662e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            71,
+            61,
+            61,
+            82
+          ]
+        },
+        "rwm-online_picard-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.7763568394002505e-15,
+            8.881784197001252e-16,
+            1.2212453270876722e-15,
+            1.1102230246251565e-15
+          ],
+          "allowed_path_error": [
+            4.593480949558628e-08,
+            5.990253577509122e-08,
+            4.875154290269737e-08,
+            5.550826261498662e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            71,
+            61,
+            61,
+            82
+          ]
+        },
+        "rwm-online_picard-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.1102230246251565e-15,
+            6.661338147750939e-16,
+            1.2212453270876722e-15,
+            1.5543122344752192e-15
+          ],
+          "allowed_path_error": [
+            4.593480949558628e-08,
+            5.990253577509122e-08,
+            4.875154290269737e-08,
+            5.550826261498662e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            71,
+            61,
+            61,
+            82
+          ]
+        },
+        "mala-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "allowed_path_error": [
+            4.095093736384052e-08,
+            5.270174091001472e-08,
+            5.032893831765442e-08,
+            5.058711100938412e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            110,
+            133,
+            135,
+            135
+          ]
+        },
+        "mala-quasi_deer-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            6.661338147750939e-16,
+            8.881784197001252e-16,
+            8.881784197001252e-16,
+            8.881784197001252e-16
+          ],
+          "allowed_path_error": [
+            4.0950937363840525e-08,
+            5.270174091001472e-08,
+            5.032893831765443e-08,
+            5.058711100938412e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            110,
+            133,
+            135,
+            135
+          ]
+        },
+        "mala-quasi_deer-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            4.766442796011461e-11,
+            1.7030399313000544e-10,
+            2.722400083143839e-11,
+            1.0444256570707466e-10
+          ],
+          "allowed_path_error": [
+            4.095093736384052e-08,
+            5.270174091001472e-08,
+            5.032893831765441e-08,
+            5.0587111009384107e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            110,
+            133,
+            135,
+            135
+          ]
+        }
+      },
+      "geometry_check": {
+        "slogdet": 0.0,
+        "independent_diagonal_log_sum": 0.0,
+        "absolute_difference": 0.0,
+        "passed": true,
+        "warnings": []
+      }
+    },
+    {
+      "name": "G2",
+      "original_status": "completed",
+      "workflows": {
+        "rwm-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "allowed_path_error": [
+            7.171521510423535e-08,
+            6.018802059324728e-08,
+            6.183710163250708e-08,
+            6.642714073183313e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            75,
+            80,
+            73,
+            77
+          ]
+        },
+        "rwm-online_picard-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            3.9968028886505635e-15,
+            2.220446049250313e-15,
+            1.7763568394002505e-15,
+            2.6922908347160046e-15
+          ],
+          "allowed_path_error": [
+            7.171521510423535e-08,
+            6.018802059324728e-08,
+            6.183710163250708e-08,
+            6.642714073183313e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            75,
+            80,
+            73,
+            77
+          ]
+        },
+        "rwm-online_picard-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            2.6645352591003757e-15,
+            2.220446049250313e-15,
+            1.7763568394002505e-15,
+            2.6645352591003757e-15
+          ],
+          "allowed_path_error": [
+            7.171521510423535e-08,
+            6.018802059324728e-08,
+            6.183710163250709e-08,
+            6.642714073183313e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            75,
+            80,
+            73,
+            77
+          ]
+        },
+        "mala-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            7.105427357601002e-15,
+            5.995204332975845e-15,
+            5.551115123125783e-15,
+            7.105427357601002e-15
+          ],
+          "allowed_path_error": [
+            5.2980902976229485e-08,
+            5.15504504226843e-08,
+            5.195842550170709e-08,
+            5.6900398263238584e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            135,
+            107,
+            140,
+            113
+          ]
+        },
+        "mala-quasi_deer-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            6.271372310351353e-14,
+            2.7933627633203173e-12,
+            6.439293542825908e-15,
+            5.662137425588298e-15
+          ],
+          "allowed_path_error": [
+            5.2980902976229485e-08,
+            5.15504504226843e-08,
+            5.195842550170709e-08,
+            5.6900398263238584e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            135,
+            107,
+            140,
+            113
+          ]
+        },
+        "mala-quasi_deer-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            3.030109496648947e-11,
+            2.060107640033948e-11,
+            1.599480548009069e-10,
+            2.560898715309179e-11
+          ],
+          "allowed_path_error": [
+            5.2980902976229485e-08,
+            5.15504504226843e-08,
+            5.1958425501707105e-08,
+            5.6900398263238584e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            135,
+            107,
+            140,
+            113
+          ]
+        }
+      },
+      "geometry_check": {
+        "slogdet": 73.68272297580948,
+        "independent_diagonal_log_sum": 73.68272297580945,
+        "absolute_difference": 2.842170943040401e-14,
+        "passed": true,
+        "warnings": []
+      }
+    },
+    {
+      "name": "A1",
+      "original_status": "completed",
+      "workflows": {
+        "rwm-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "allowed_path_error": [
+            6.488505507182771e-08,
+            6.379301411517359e-08,
+            7.612588662965785e-08,
+            5.993050300915049e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            79,
+            82,
+            84,
+            79
+          ]
+        },
+        "rwm-online_picard-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.7763568394002505e-15,
+            2.220446049250313e-15,
+            2.3314683517128287e-15,
+            2.4424906541753444e-15
+          ],
+          "allowed_path_error": [
+            6.488505507182772e-08,
+            6.379301411517359e-08,
+            7.612588662965785e-08,
+            5.993050300915049e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            79,
+            82,
+            84,
+            79
+          ]
+        },
+        "rwm-online_picard-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            3.552713678800501e-15,
+            2.3314683517128287e-15,
+            2.886579864025407e-15,
+            2.831068712794149e-15
+          ],
+          "allowed_path_error": [
+            6.488505507182773e-08,
+            6.379301411517359e-08,
+            7.612588662965785e-08,
+            5.993050300915049e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            79,
+            82,
+            84,
+            79
+          ]
+        },
+        "mala-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            7.549516567451064e-15,
+            6.161737786669619e-15,
+            8.770761894538737e-15,
+            6.661338147750939e-15
+          ],
+          "allowed_path_error": [
+            4.916635655609213e-08,
+            6.163385049539405e-08,
+            4.768095981533529e-08,
+            5.406524381332822e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            133,
+            121,
+            143,
+            129
+          ]
+        },
+        "mala-quasi_deer-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            7.438494264988549e-15,
+            6.300515664747763e-15,
+            8.770761894538737e-15,
+            7.549516567451064e-15
+          ],
+          "allowed_path_error": [
+            4.916635655609214e-08,
+            6.163385049539405e-08,
+            4.768095981533529e-08,
+            5.406524381332822e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            133,
+            121,
+            143,
+            129
+          ]
+        },
+        "mala-quasi_deer-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.0370382330648908e-10,
+            5.217715148830848e-12,
+            2.505268215102774e-11,
+            3.46300321751869e-10
+          ],
+          "allowed_path_error": [
+            4.916635655609214e-08,
+            6.163385049539407e-08,
+            4.768095981533529e-08,
+            5.406524381332822e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            133,
+            121,
+            143,
+            129
+          ]
+        }
+      },
+      "geometry_check": {
+        "slogdet": -64.13964798078413,
+        "independent_diagonal_log_sum": -64.13964798078415,
+        "absolute_difference": 1.4210854715202004e-14,
+        "passed": true,
+        "warnings": []
+      }
+    },
+    {
+      "name": "L1",
+      "original_status": "completed",
+      "workflows": {
+        "rwm-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "allowed_path_error": [
+            4.184572985241058e-08,
+            5.216582501487098e-08,
+            5.2132032039183873e-08,
+            3.725187354212438e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            80,
+            89,
+            75,
+            79
+          ]
+        },
+        "rwm-online_picard-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            8.881784197001252e-16,
+            1.3322676295501878e-15,
+            1.3322676295501878e-15,
+            8.881784197001252e-16
+          ],
+          "allowed_path_error": [
+            4.184572985241058e-08,
+            5.216582501487098e-08,
+            5.2132032039183873e-08,
+            3.7251873542124384e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            80,
+            89,
+            75,
+            79
+          ]
+        },
+        "rwm-online_picard-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.2212453270876722e-15,
+            1.4432899320127035e-15,
+            8.881784197001252e-16,
+            8.881784197001252e-16
+          ],
+          "allowed_path_error": [
+            4.1845729852410573e-08,
+            5.216582501487098e-08,
+            5.2132032039183873e-08,
+            3.7251873542124384e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            80,
+            89,
+            75,
+            79
+          ]
+        },
+        "mala-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            3.3306690738754696e-15,
+            2.886579864025407e-15,
+            3.1086244689504383e-15,
+            3.3306690738754696e-15
+          ],
+          "allowed_path_error": [
+            5.7322241696550195e-08,
+            4.501660250777144e-08,
+            4.250064824200213e-08,
+            5.3342850986942e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            131,
+            129,
+            128,
+            147
+          ]
+        },
+        "mala-quasi_deer-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            3.83026943495679e-15,
+            3.1086244689504383e-15,
+            4.440892098500626e-15,
+            3.3584246494910985e-15
+          ],
+          "allowed_path_error": [
+            5.73222416965502e-08,
+            4.501660250777145e-08,
+            4.2500648242002135e-08,
+            5.334285098694201e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            131,
+            129,
+            128,
+            147
+          ]
+        },
+        "mala-quasi_deer-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.0690337504115632e-12,
+            2.7459390317119414e-10,
+            6.402389729487368e-11,
+            4.539790765534235e-11
+          ],
+          "allowed_path_error": [
+            5.73222416965502e-08,
+            4.501660250777134e-08,
+            4.250064824200213e-08,
+            5.334285098694201e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            131,
+            129,
+            128,
+            147
+          ]
+        }
+      },
+      "geometry_check": {
+        "slogdet": -11.249345125154159,
+        "independent_diagonal_log_sum": -11.249345125154159,
+        "absolute_difference": 0.0,
+        "passed": true,
+        "warnings": []
+      }
+    },
+    {
+      "name": "L2",
+      "original_status": "completed",
+      "workflows": {
+        "rwm-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "allowed_path_error": [
+            4.303974441966665e-08,
+            4.4307526167799626e-08,
+            4.947841011426026e-08,
+            6.068599406625539e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            83,
+            75,
+            63,
+            72
+          ]
+        },
+        "rwm-online_picard-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.3877787807814457e-15,
+            1.3322676295501878e-15,
+            6.661338147750939e-16,
+            1.1102230246251565e-15
+          ],
+          "allowed_path_error": [
+            4.303974441966665e-08,
+            4.4307526167799626e-08,
+            4.947841011426026e-08,
+            6.068599406625539e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            83,
+            75,
+            63,
+            72
+          ]
+        },
+        "rwm-online_picard-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.0547118733938987e-15,
+            7.771561172376096e-16,
+            8.881784197001252e-16,
+            1.3322676295501878e-15
+          ],
+          "allowed_path_error": [
+            4.303974441966665e-08,
+            4.4307526167799626e-08,
+            4.9478410114260264e-08,
+            6.068599406625539e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            83,
+            75,
+            63,
+            72
+          ]
+        },
+        "mala-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.2878587085651816e-14,
+            1.2212453270876722e-14,
+            1.021405182655144e-14,
+            1.2656542480726785e-14
+          ],
+          "allowed_path_error": [
+            4.6378052897822244e-08,
+            4.7744596606512197e-08,
+            4.249619752826349e-08,
+            5.874789024272404e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            135,
+            118,
+            105,
+            128
+          ]
+        },
+        "mala-quasi_deer-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            8.43769498715119e-15,
+            1.0658141036401503e-14,
+            9.325873406851315e-15,
+            1.1546319456101628e-14
+          ],
+          "allowed_path_error": [
+            4.637805289782223e-08,
+            4.7744596606512236e-08,
+            4.24961975282635e-08,
+            5.874789024272404e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            135,
+            118,
+            105,
+            128
+          ]
+        },
+        "mala-quasi_deer-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            6.650668904484291e-11,
+            1.355013878878708e-10,
+            1.1417755629850035e-10,
+            1.7517287620449906e-10
+          ],
+          "allowed_path_error": [
+            4.6378052897822244e-08,
+            4.774459660651221e-08,
+            4.24961975282635e-08,
+            5.874789024272482e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            135,
+            118,
+            105,
+            128
+          ]
+        }
+      },
+      "geometry_check": {
+        "slogdet": -22.66168507504257,
+        "independent_diagonal_log_sum": -22.661685075042566,
+        "absolute_difference": 3.552713678800501e-15,
+        "passed": true,
+        "warnings": []
+      }
+    },
+    {
+      "name": "H1",
+      "original_status": "completed",
+      "workflows": {
+        "rwm-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "allowed_path_error": [
+            1.3548375683234342e-07,
+            6.647293711759884e-08,
+            9.417348141359507e-08,
+            6.4610228757316e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            42,
+            24,
+            46,
+            38
+          ]
+        },
+        "rwm-online_picard-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            2.6645352591003757e-15,
+            8.881784197001252e-16,
+            1.7763568394002505e-15,
+            1.3600232051658168e-15
+          ],
+          "allowed_path_error": [
+            1.3548375683234342e-07,
+            6.647293711759884e-08,
+            9.417348141359507e-08,
+            6.461022875731599e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            42,
+            24,
+            46,
+            38
+          ]
+        },
+        "rwm-online_picard-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            2.6645352591003757e-15,
+            8.881784197001252e-16,
+            1.7763568394002505e-15,
+            1.3322676295501878e-15
+          ],
+          "allowed_path_error": [
+            1.3548375683234342e-07,
+            6.647293711759884e-08,
+            9.417348141359507e-08,
+            6.461022875731599e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            42,
+            24,
+            46,
+            38
+          ]
+        },
+        "mala-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            3.019806626980426e-14,
+            3.3306690738754696e-14,
+            0.0,
+            5.67323965583455e-14
+          ],
+          "allowed_path_error": [
+            2.3909468004375623e-07,
+            1.526111136653819e-07,
+            5.3959911323365174e-08,
+            7.01132141605834e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            115,
+            133,
+            0,
+            112
+          ]
+        },
+        "mala-quasi_deer-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            2.4868995751603507e-14,
+            1.482769462768374e-11,
+            3.552713678800501e-15,
+            7.651657085716579e-13
+          ],
+          "allowed_path_error": [
+            2.3909468004375633e-07,
+            1.526111136653819e-07,
+            5.39599113233652e-08,
+            7.01132141605834e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            115,
+            133,
+            0,
+            112
+          ]
+        },
+        "mala-quasi_deer-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            3.197442310920451e-14,
+            2.4258239861296715e-10,
+            7.105427357601002e-15,
+            9.405587420019401e-12
+          ],
+          "allowed_path_error": [
+            2.3909468004375633e-07,
+            1.5261111366610361e-07,
+            5.3959911323365174e-08,
+            7.011321416058344e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            115,
+            133,
+            0,
+            112
+          ]
+        }
+      },
+      "geometry_check": {
+        "slogdet": 0.0,
+        "independent_diagonal_log_sum": 0.0,
+        "absolute_difference": 0.0,
+        "passed": true,
+        "warnings": []
+      }
+    },
+    {
+      "name": "H2",
+      "original_status": "completed",
+      "workflows": {
+        "rwm-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "allowed_path_error": [
+            6.36832797752139e-08,
+            6.206581883550242e-08,
+            6.691159211393767e-08,
+            4.3251493628400895e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            80,
+            64,
+            86,
+            84
+          ]
+        },
+        "rwm-online_picard-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            2.220446049250313e-15,
+            1.1102230246251565e-15,
+            9.992007221626409e-16,
+            3.1086244689504383e-15
+          ],
+          "allowed_path_error": [
+            6.36832797752139e-08,
+            6.206581883550242e-08,
+            6.691159211393767e-08,
+            4.3251493628400895e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            80,
+            64,
+            86,
+            84
+          ]
+        },
+        "rwm-online_picard-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            3.1086244689504383e-15,
+            2.220446049250313e-15,
+            1.7763568394002505e-15,
+            1.3322676295501878e-15
+          ],
+          "allowed_path_error": [
+            6.368327977521392e-08,
+            6.206581883550242e-08,
+            6.691159211393767e-08,
+            4.325149362840088e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            80,
+            64,
+            86,
+            84
+          ]
+        },
+        "mala-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            4.440892098500626e-16,
+            8.881784197001252e-16,
+            8.881784197001252e-16,
+            8.881784197001252e-16
+          ],
+          "allowed_path_error": [
+            8.727427357898858e-08,
+            8.928419460626834e-08,
+            8.850886997060129e-08,
+            8.008263921649764e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            152,
+            129,
+            133,
+            133
+          ]
+        },
+        "mala-quasi_deer-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            2.6645352591003757e-15,
+            2.9742874829707944e-13,
+            2.220446049250313e-15,
+            1.7763568394002505e-15
+          ],
+          "allowed_path_error": [
+            8.727427357898859e-08,
+            8.928419460626834e-08,
+            8.850886997060129e-08,
+            8.008263921649764e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            152,
+            129,
+            133,
+            133
+          ]
+        },
+        "mala-quasi_deer-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.0705059061422162e-10,
+            1.0341194567331513e-10,
+            3.391287251020003e-11,
+            4.424149935289279e-11
+          ],
+          "allowed_path_error": [
+            8.727427357898862e-08,
+            8.928419460625205e-08,
+            8.850886997060128e-08,
+            8.008263921649764e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            152,
+            129,
+            133,
+            133
+          ]
+        }
+      },
+      "geometry_check": {
+        "slogdet": 0.0,
+        "independent_diagonal_log_sum": 0.0,
+        "absolute_difference": 0.0,
+        "passed": true,
+        "warnings": []
+      }
+    },
+    {
+      "name": "M1",
+      "original_status": "completed",
+      "workflows": {
+        "rwm-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "allowed_path_error": [
+            8.367474727467907e-08,
+            8.130110894726706e-08,
+            8.943488063494557e-08,
+            8.990308973032892e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            83,
+            71,
+            68,
+            87
+          ]
+        },
+        "rwm-online_picard-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.7763568394002505e-15,
+            1.1102230246251565e-15,
+            3.552713678800501e-15,
+            3.552713678800501e-15
+          ],
+          "allowed_path_error": [
+            8.367474727467908e-08,
+            8.130110894726707e-08,
+            8.943488063494554e-08,
+            8.990308973032893e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            83,
+            71,
+            68,
+            87
+          ]
+        },
+        "rwm-online_picard-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            2.6645352591003757e-15,
+            1.7763568394002505e-15,
+            3.552713678800501e-15,
+            3.552713678800501e-15
+          ],
+          "allowed_path_error": [
+            8.367474727467906e-08,
+            8.130110894726707e-08,
+            8.943488063494554e-08,
+            8.990308973032893e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            83,
+            71,
+            68,
+            87
+          ]
+        },
+        "mala-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            4.440892098500626e-15,
+            2.886579864025407e-15,
+            1.3322676295501878e-15,
+            0.0
+          ],
+          "allowed_path_error": [
+            8.784648264339175e-08,
+            8.597117914020098e-08,
+            8.840331278799187e-08,
+            8.416470533170021e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            125,
+            119,
+            141,
+            141
+          ]
+        },
+        "mala-quasi_deer-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            3.0246916082887765e-12,
+            3.1086244689504383e-15,
+            2.6645352591003757e-15,
+            1.5996093338799255e-12
+          ],
+          "allowed_path_error": [
+            8.784648264339175e-08,
+            8.597117914020097e-08,
+            8.840331278799187e-08,
+            8.416470533170022e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            125,
+            119,
+            141,
+            141
+          ]
+        },
+        "mala-quasi_deer-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            7.945345770199452e-11,
+            7.718850558724455e-11,
+            1.7027335097452578e-10,
+            2.2659651932599445e-13
+          ],
+          "allowed_path_error": [
+            8.784648264339175e-08,
+            8.597117914020097e-08,
+            8.840331278799187e-08,
+            8.416470533170021e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            125,
+            119,
+            141,
+            141
+          ]
+        }
+      },
+      "geometry_check": {
+        "slogdet": 0.0,
+        "independent_diagonal_log_sum": 0.0,
+        "absolute_difference": 0.0,
+        "passed": true,
+        "warnings": []
+      }
+    },
+    {
+      "name": "W1",
+      "original_status": "completed",
+      "workflows": {
+        "rwm-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "allowed_path_error": [
+            3.210385570701233e-08,
+            3.925310287785673e-08,
+            4.1651663524550964e-08,
+            3.301493562273226e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            91,
+            74,
+            91,
+            83
+          ]
+        },
+        "rwm-online_picard-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.4432899320127035e-15,
+            2.220446049250313e-16,
+            6.661338147750939e-16,
+            4.440892098500626e-16
+          ],
+          "allowed_path_error": [
+            3.210385570701233e-08,
+            3.925310287785673e-08,
+            4.165166352455097e-08,
+            3.301493562273226e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            91,
+            74,
+            91,
+            83
+          ]
+        },
+        "rwm-online_picard-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.3322676295501878e-15,
+            6.661338147750939e-16,
+            4.440892098500626e-16,
+            4.996003610813204e-16
+          ],
+          "allowed_path_error": [
+            3.2103855707012324e-08,
+            3.925310287785673e-08,
+            4.1651663524550964e-08,
+            3.3014935622732254e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            91,
+            74,
+            91,
+            83
+          ]
+        },
+        "mala-sequential": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            4.929390229335695e-14,
+            3.419486915845482e-14,
+            4.929390229335695e-14,
+            3.1530333899354446e-14
+          ],
+          "allowed_path_error": [
+            4.012823237540965e-08,
+            4.7485144912038277e-08,
+            3.870176526815446e-08,
+            4.113009706308069e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            137,
+            121,
+            138,
+            143
+          ]
+        },
+        "mala-quasi_deer-w8": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            4.6407322429331543e-14,
+            3.430589146091734e-14,
+            4.4853010194856324e-14,
+            3.197442310920451e-14
+          ],
+          "allowed_path_error": [
+            4.012823237540965e-08,
+            4.7485144912038277e-08,
+            3.870176526815448e-08,
+            4.113009706308069e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            137,
+            121,
+            138,
+            143
+          ]
+        },
+        "mala-quasi_deer-w32": {
+          "original_status": "completed",
+          "replayed": true,
+          "passed": true,
+          "max_abs_path_error": [
+            1.8282264591107378e-11,
+            2.573585788923083e-11,
+            1.2120215941990864e-10,
+            1.2088818834854465e-10
+          ],
+          "allowed_path_error": [
+            4.012823237540964e-08,
+            4.74851449120378e-08,
+            3.870176526815447e-08,
+            4.11300970630807e-08
+          ],
+          "acceptance_mismatches": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_outputs_value_exact": true,
+          "accepted_per_chain": [
+            137,
+            121,
+            138,
+            143
+          ]
+        }
+      },
+      "geometry_check": {
+        "slogdet": -5.623584978198714,
+        "independent_diagonal_log_sum": -5.623584978198715,
+        "absolute_difference": 8.881784197001252e-16,
+        "passed": true,
+        "warnings": []
+      }
+    }
+  ],
+  "new_independent_replicates": 0,
+  "new_MCMC_fits": 0,
+  "scope": "Saved-array NumPy replay and triangular log-determinant companion. No posterior convergence, general numerical proof or fresh performance measurement."
+}

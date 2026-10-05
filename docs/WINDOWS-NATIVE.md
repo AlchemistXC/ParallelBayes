@@ -232,6 +232,16 @@ cover the archive bytes; the internal manifest covers every included file.
 
 ## Official support checked on 2026-10-04
 
+Second-round native execution on 2026-10-05 reused this frozen environment.
+F1, the wells CPU/CUDA/R interface, nine-target CPU NUTS serial/spawn replay,
+and 54 selected MH workflows per CPU/CUDA device passed their readiness checks.
+F2's 192-workflow mechanism pilot remains blocked before sampling because all
+six regenerated actual-tape hashes differ from the frozen hashes; original NPZ
+inputs are required. See [the second-round receipt](WINDOWS-COMPLETION-V2-RESULTS.md)
+for exact commands, failures, unfavorable diagnostics and archive instructions.
+These additions do not establish formal inference accuracy or efficient fused
+CUDA control, and do not change the original 512-task milestone.
+
 - [PyTorch Windows installation](https://pytorch.org/get-started/locally/) and
   [explicit Windows CUDA builds](https://pytorch.org/get-started/previous-versions/).
 - [Blackwell support starting in PyTorch 2.7](https://pytorch.org/blog/pytorch-2-7/).

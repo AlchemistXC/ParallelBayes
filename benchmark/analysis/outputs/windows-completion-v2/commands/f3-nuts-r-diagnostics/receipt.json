@@ -1,0 +1,25 @@
+{
+  "command": [
+    "D:/Tools/R-4.6.1/bin/Rscript.exe",
+    "--vanilla",
+    "scripts/completion/posterior_diagnostics.R",
+    "output/completion/windows-round2-20261005/nuts-diagnostics"
+  ],
+  "cwd": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes",
+  "source_commit": "f5148ee39868a657809f400bf1755d083c744fc8",
+  "started_utc": "2026-10-05T11:19:49.629570+00:00",
+  "environment_overrides": {
+    "R_LIBS_USER": "D:/Tools/R-library-4.6",
+    "LC_ALL": "C",
+    "LANG": "C",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes\\r-package\\inst\\python"
+  },
+  "pid": 5180,
+  "exit_code": 0,
+  "elapsed_seconds": 0.4895898999966448,
+  "ended_utc": "2026-10-05T11:19:50.119615+00:00",
+  "log_sha256": "22c5a7abe24f19bbdf73ca55b970539cc51694de446857ee3c092cdf2cb9bbb8"
+}

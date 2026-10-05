@@ -1,0 +1,28 @@
+{"starting": "G1", "total": 9}
+{"done": "G1", "status": "completed"}
+{"starting": "G2", "total": 9}
+{"done": "G2", "status": "completed"}
+{"starting": "A1", "total": 9}
+{"done": "A1", "status": "completed"}
+{"starting": "L1", "total": 9}
+{"done": "L1", "status": "completed"}
+{"starting": "L2", "total": 9}
+{"done": "L2", "status": "completed"}
+{"starting": "H1", "total": 9}
+{"done": "H1", "status": "completed"}
+{"starting": "H2", "total": 9}
+{"done": "H2", "status": "completed"}
+{"starting": "M1", "total": 9}
+{"done": "M1", "status": "completed"}
+{"starting": "W1", "total": 9}
+{"done": "W1", "status": "completed"}
+{
+  "protocol_sha256": "6c6aadaed20f792715ab9b8b3a3bbb02181f74ecbe259aa1bb3302e370c78220",
+  "planned": 9,
+  "completed": 9,
+  "failed": 0,
+  "newly_executed_targets": 9,
+  "invocation_seconds": 42.66507370000181,
+  "scope": "Within-host CPU baseline implementation/resource readiness on nine declared targets. Not inference accuracy, calibration, convergence or performance comparison.",
+  "formal_inference_complete": false
+}

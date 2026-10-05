@@ -82,3 +82,43 @@ OK with PB_RUN_INTEGRATION=1 (15 assertions passed, 0 failed/skipped/warnings).
 The updated 20-page Chinese PDF now compiles with the existing Tectonic runtime.
 Scientific source, protocol and all Windows/Mac raw data are unchanged. Review
 changes stay on `codex/windows-return-audit`; no main merge or Release publication.
+
+## Native Windows second-round execution, 2026-10-05
+
+Branch `codex/windows-completion-v2`, isolated worktree from `f5148ee`.
+No active Python/R experiment processes or existing second-round receipts were
+found before starting. The original project, venv and first-round raw arrays
+remain in place. Six new frozen protocol identities and every listed source
+hash matched before execution. Actual dependencies match the original frozen
+Windows environment; no installation or upgrade was performed.
+
+| Stage | Actual status | Evidence |
+|---|---|---|
+| F1 | Passed native fixed-input diagnostic | `benchmark/analysis/outputs/completion-f1/windows-01/`; R 4.6.1/posterior 1.7.0, native center `0x1.7701bac434f11p-10`, Rhat 1.40822237244096, five rank changes, identical binary roundtrip. |
+| F2 | Blocked before sampling; 192 pending | All six reconstructed actual tapes differ from frozen hashes. Full rejected arrays/component hashes and traceback retained in `mechanism-rejected-inputs/`; original frozen NPZs are needed. No hash or protocol changed. |
+| F4 | Passed target/transport validation | 12 CPU/CUDA/R workflows; zero event mismatches; maximum path difference 9.06e-11; R binary replay identical. Rhat 3.036/3.817 retained, no convergence claim. |
+| F3 CPU NUTS | Passed readiness and resume | 9 completed, 0 failed; six array classes byte-identical serial/spawn; 18 R binary roundtrips; zero recomputation, 126 terminal files unchanged. Seven targets have finite Rhat >1.01; L2/H1/M1/W1 have undefined functions. |
+| F3 CPU/CUDA MH | Passed readiness and resume | Each device: 9 targets, 54 workflows, 36 pairs, 54 independent saved-array NumPy replays; zero event mismatches. Resume: 0 new tasks, 135 terminal files unchanged per device. H1/MALA all-rejection chain preserved. |
+
+Every command has a separate command line, environment, timestamps, exit code
+and combined stdout/stderr record under the batch `commands/` directory.
+The private skill ZIP remains absent; no private skill contents are archived.
+No unfrozen formal inference grid is authorized by this execution record.
+
+F2/F4 handoff checks: initial 2 passed/1 skipped/3 setup errors from an inaccessible
+pre-existing pytest temporary directory. The preserved retry uses a fresh batch
+temporary directory: 5 passed/1 skipped/0 failed. Windows msvcrt exclusivity passed.
+NUTS tests: 3 passed/0 failed/0 skipped. Original attempted logs remain in `commands/`.
+
+MH tests: 3 passed/0 failed/0 skipped, including actual CUDA. Supplementary read-only
+CPU/CUDA comparison passed all 54 pairs, with zero event mismatches and maximum
+path/output difference 1.084e-12. No sampler source or frozen protocol changed.
+Small evidence and SHA256 manifest: `benchmark/analysis/outputs/windows-completion-v2/`.
+Full interpretation: `docs/WINDOWS-COMPLETION-V2-RESULTS.md`. The 192 blocked
+mechanism workflows remain pending, not passed or deleted. Final export retains
+raw arrays, failed input reconstructions, complete logs and source history.
+
+Pre-delivery validation passed: all six canonical protocol/source identities,
+unchanged original distributions/pip freeze/frozen marker, 369 raw task assets,
+95 curated receipt files, all command log hashes and actual JUnit counts.
+Receipt: `benchmark/analysis/outputs/windows-completion-v2-final-check.json`.

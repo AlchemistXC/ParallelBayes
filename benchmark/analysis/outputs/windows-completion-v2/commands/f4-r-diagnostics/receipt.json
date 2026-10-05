@@ -1,0 +1,26 @@
+{
+  "command": [
+    "D:/Tools/R-4.6.1/bin/Rscript.exe",
+    "--vanilla",
+    "scripts/completion/diagnose_wells_example.R",
+    "output/completion/windows-round2-20261005/wells-r-cuda/draws.rds",
+    "output/completion/windows-round2-20261005/wells-r-diagnostics.json"
+  ],
+  "cwd": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes",
+  "source_commit": "f5148ee39868a657809f400bf1755d083c744fc8",
+  "started_utc": "2026-10-05T11:16:26.958628+00:00",
+  "environment_overrides": {
+    "R_LIBS_USER": "D:/Tools/R-library-4.6",
+    "LC_ALL": "C",
+    "LANG": "C",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes\\r-package\\inst\\python"
+  },
+  "pid": 22988,
+  "exit_code": 0,
+  "elapsed_seconds": 0.3908861999952933,
+  "ended_utc": "2026-10-05T11:16:27.350140+00:00",
+  "log_sha256": "97409aca18bd4183ef5784c4cc8abed94bf12f12f00116aa817cff615a0a7121"
+}

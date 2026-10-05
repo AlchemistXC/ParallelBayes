@@ -1,0 +1,33 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "tests/external/test_inference_targets.py",
+    "tests/external/test_selected_mh_readiness.py",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "output/completion/windows-round2-20261005/pytest-temp-mh",
+    "--junitxml",
+    "output/completion/windows-round2-20261005/mh-tests.xml"
+  ],
+  "cwd": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes",
+  "source_commit": "f5148ee39868a657809f400bf1755d083c744fc8",
+  "started_utc": "2026-10-05T11:20:34.796417+00:00",
+  "environment_overrides": {
+    "R_LIBS_USER": "D:/Tools/R-library-4.6",
+    "LC_ALL": "C",
+    "LANG": "C",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes\\r-package\\inst\\python"
+  },
+  "pid": 1032,
+  "exit_code": 0,
+  "elapsed_seconds": 3.0813225000019884,
+  "ended_utc": "2026-10-05T11:20:37.877898+00:00",
+  "log_sha256": "45e950167b8b1ff5fd06b1a9dd5d2fd4a63db3695b42cb22d84c1598469b9f2c"
+}

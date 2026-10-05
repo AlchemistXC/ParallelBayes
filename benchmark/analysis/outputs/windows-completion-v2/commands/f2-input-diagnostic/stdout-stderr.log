@@ -1,0 +1,9 @@
+{
+  "status": "blocked_before_sampling",
+  "protocol_sha256": "9d8985f579a64df95ebbb22ce0a607020261e5a66516efc80edcf9c956894b2c",
+  "numpy": "2.2.6",
+  "sampler_tasks_executed": 0,
+  "pending_workflows": 192,
+  "required_resolution": "Obtain the six original frozen NPZ files and verify both file and actual-array hashes. These rejected reconstructions are not experiment inputs.",
+  "cause": "Combined actual-array hashes differ; absent original arrays prevent assigning a specific component or numerical-library cause."
+}

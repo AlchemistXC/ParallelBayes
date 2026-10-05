@@ -1,0 +1,30 @@
+{
+  "command": [
+    "D:/Tools/R-4.6.1/bin/Rscript.exe",
+    "--vanilla",
+    "examples/external_wells.R",
+    "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes",
+    "output/completion/windows-round2-20261005/wells-source",
+    "output/completion/windows-round2-20261005/wells-r-cuda",
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "benchmark/fixtures/wells-validation-v1/inputs.npz",
+    "benchmark/protocols/wells-windows-validation-v1/cuda.json"
+  ],
+  "cwd": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes",
+  "source_commit": "f5148ee39868a657809f400bf1755d083c744fc8",
+  "started_utc": "2026-10-05T11:16:15.738806+00:00",
+  "environment_overrides": {
+    "R_LIBS_USER": "D:/Tools/R-library-4.6",
+    "LC_ALL": "C",
+    "LANG": "C",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes\\r-package\\inst\\python"
+  },
+  "pid": 20956,
+  "exit_code": 0,
+  "elapsed_seconds": 11.14298219999182,
+  "ended_utc": "2026-10-05T11:16:26.882072+00:00",
+  "log_sha256": "3a7de9ab07ddffcdd0de5fff62e64563bbd5c21e1e250fad32340af95993a24e"
+}

@@ -1,0 +1,923 @@
+{
+  "scope": "Supplementary read-only paired saved-array comparison; no additional sampling or independent replication.",
+  "rows": [
+    {
+      "target": "G1",
+      "workflow": "rwm-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        4.593480949558628e-08,
+        5.990253577509122e-08,
+        4.875154290269737e-08,
+        5.550826261498662e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "5848f6862bbc15ed632172343e6dd7c80c3a59eeaa5e8069490a9c4408f7cef7",
+      "cuda_raw_sha256": "5848f6862bbc15ed632172343e6dd7c80c3a59eeaa5e8069490a9c4408f7cef7"
+    },
+    {
+      "target": "G1",
+      "workflow": "rwm-online_picard-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        4.593480949558628e-08,
+        5.990253577509122e-08,
+        4.875154290269737e-08,
+        5.550826261498662e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "17526c00ee7534f3bfb05b5dc1c017092b68610d780645d484919674e2158dad",
+      "cuda_raw_sha256": "17526c00ee7534f3bfb05b5dc1c017092b68610d780645d484919674e2158dad"
+    },
+    {
+      "target": "G1",
+      "workflow": "rwm-online_picard-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        4.593480949558628e-08,
+        5.990253577509122e-08,
+        4.875154290269737e-08,
+        5.550826261498662e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "605e676dece29937e606a44d06068fe9ce5779fdcaa8d707d9b889ed0c120464",
+      "cuda_raw_sha256": "605e676dece29937e606a44d06068fe9ce5779fdcaa8d707d9b889ed0c120464"
+    },
+    {
+      "target": "G1",
+      "workflow": "mala-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        4.095093736384052e-08,
+        5.270174091001472e-08,
+        5.032893831765442e-08,
+        5.058711100938412e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "f90ba75aec18a3b9c4f87c3f13483bd760e789aba243e637ef0e55144f28d5aa",
+      "cuda_raw_sha256": "f90ba75aec18a3b9c4f87c3f13483bd760e789aba243e637ef0e55144f28d5aa"
+    },
+    {
+      "target": "G1",
+      "workflow": "mala-quasi_deer-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 1.1102230246251565e-15,
+      "allowed_per_chain": [
+        4.0950937363840525e-08,
+        5.270174091001472e-08,
+        5.032893831765443e-08,
+        5.058711100938412e-08
+      ],
+      "max_constrained_output_difference": 1.1102230246251565e-15,
+      "finite": true,
+      "cpu_raw_sha256": "63d131491a95543d8fec8e659d2794c8160b763820cdb2f7ba2bd33d33c082a8",
+      "cuda_raw_sha256": "a2c2115a5c9bad121f83c097b3cf42047aafb1edb18ad21b67b32acb4b2b6e3c"
+    },
+    {
+      "target": "G1",
+      "workflow": "mala-quasi_deer-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 1.7763568394002505e-15,
+      "allowed_per_chain": [
+        4.095093736384052e-08,
+        5.270174091001472e-08,
+        5.032893831765441e-08,
+        5.0587111009384107e-08
+      ],
+      "max_constrained_output_difference": 1.7763568394002505e-15,
+      "finite": true,
+      "cpu_raw_sha256": "c004e3d78f9930f56b50f4aad5f674ccf671d90f9091fae01ec54a9b34a57d86",
+      "cuda_raw_sha256": "70ab9a5a2b21d54ee9fbc7783f0b41570059335fd1ab158bb3bc145950aa7c49"
+    },
+    {
+      "target": "G2",
+      "workflow": "rwm-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        7.171521510423535e-08,
+        6.018802059324728e-08,
+        6.183710163250708e-08,
+        6.642714073183313e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "51bc3330ad2c3e9bcb2f97411c1210c0f21c99d401fe0102bd387325385163cb",
+      "cuda_raw_sha256": "51bc3330ad2c3e9bcb2f97411c1210c0f21c99d401fe0102bd387325385163cb"
+    },
+    {
+      "target": "G2",
+      "workflow": "rwm-online_picard-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        7.171521510423535e-08,
+        6.018802059324728e-08,
+        6.183710163250708e-08,
+        6.642714073183313e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "94ea506ae0594ccb7a8603b5acb7efb6502ef43f47f76ada595d85c5fc64d60c",
+      "cuda_raw_sha256": "94ea506ae0594ccb7a8603b5acb7efb6502ef43f47f76ada595d85c5fc64d60c"
+    },
+    {
+      "target": "G2",
+      "workflow": "rwm-online_picard-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        7.171521510423535e-08,
+        6.018802059324728e-08,
+        6.183710163250709e-08,
+        6.642714073183313e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "78d9f670092e937e77e6d27c0e9b69fc82dbb41ab49c5e9d5f29565e8d3285f2",
+      "cuda_raw_sha256": "78d9f670092e937e77e6d27c0e9b69fc82dbb41ab49c5e9d5f29565e8d3285f2"
+    },
+    {
+      "target": "G2",
+      "workflow": "mala-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 4.551914400963142e-15,
+      "allowed_per_chain": [
+        5.2980902976229485e-08,
+        5.15504504226843e-08,
+        5.195842550170709e-08,
+        5.6900398263238584e-08
+      ],
+      "max_constrained_output_difference": 2.353672812205332e-14,
+      "finite": true,
+      "cpu_raw_sha256": "f76f65f204b9a749cd10fc05fd0d4ae8af2c68e7c20db686f3c062d29a44ab09",
+      "cuda_raw_sha256": "c08a0932aa1927c81487f246d14b321e15c0252b7a4ee70b7661d974527f666b"
+    },
+    {
+      "target": "G2",
+      "workflow": "mala-quasi_deer-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 4.107825191113079e-15,
+      "allowed_per_chain": [
+        5.2980902976229485e-08,
+        5.15504504226843e-08,
+        5.195842550170709e-08,
+        5.6900398263238584e-08
+      ],
+      "max_constrained_output_difference": 2.1316282072803006e-14,
+      "finite": true,
+      "cpu_raw_sha256": "1dce132b3620ba2f6d22d3decb740bb3052e1b6a9a08b244b477f3829222b161",
+      "cuda_raw_sha256": "b555e0a1f6553a8945c75fdc2815b35badd679243a75b6895247e4d68f5f9071"
+    },
+    {
+      "target": "G2",
+      "workflow": "mala-quasi_deer-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 4.440892098500626e-15,
+      "allowed_per_chain": [
+        5.2980902976229485e-08,
+        5.15504504226843e-08,
+        5.1958425501707105e-08,
+        5.6900398263238584e-08
+      ],
+      "max_constrained_output_difference": 2.1760371282653068e-14,
+      "finite": true,
+      "cpu_raw_sha256": "2b37db5b19872520973a9246afd551cec72f3cd508be8555dbf5869992a6744b",
+      "cuda_raw_sha256": "658e16a9f85e94eb476b529db079bbfec762e5065f0ef9237ccfe88b0fd6ca04"
+    },
+    {
+      "target": "A1",
+      "workflow": "rwm-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        6.488505507182771e-08,
+        6.379301411517359e-08,
+        7.612588662965785e-08,
+        5.993050300915049e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "c76d07a7313d8a5ceb665d7713bea06a6a31ab67e2aba1b5da90cabf2c0c0ba2",
+      "cuda_raw_sha256": "c76d07a7313d8a5ceb665d7713bea06a6a31ab67e2aba1b5da90cabf2c0c0ba2"
+    },
+    {
+      "target": "A1",
+      "workflow": "rwm-online_picard-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        6.488505507182772e-08,
+        6.379301411517359e-08,
+        7.612588662965785e-08,
+        5.993050300915049e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "5aa00532fa2f8f155bab50e30968ec0adf002d68f43bb06be796f851ef783a93",
+      "cuda_raw_sha256": "5aa00532fa2f8f155bab50e30968ec0adf002d68f43bb06be796f851ef783a93"
+    },
+    {
+      "target": "A1",
+      "workflow": "rwm-online_picard-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        6.488505507182773e-08,
+        6.379301411517359e-08,
+        7.612588662965785e-08,
+        5.993050300915049e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "057ae761891d340e15abfa4292dd60579c6110c79ce1b9e67f58891050a92760",
+      "cuda_raw_sha256": "057ae761891d340e15abfa4292dd60579c6110c79ce1b9e67f58891050a92760"
+    },
+    {
+      "target": "A1",
+      "workflow": "mala-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 2.6645352591003757e-15,
+      "allowed_per_chain": [
+        4.916635655609213e-08,
+        6.163385049539405e-08,
+        4.768095981533529e-08,
+        5.406524381332822e-08
+      ],
+      "max_constrained_output_difference": 1.3322676295501878e-15,
+      "finite": true,
+      "cpu_raw_sha256": "b4a192e3c36465683ffb91d59c3b0d828b431480efe213f9efe7c0d258aaea71",
+      "cuda_raw_sha256": "f8d1309787ef1a39bb168e0468bbf095de57f4e36d2c86646e6bc78d27cab948"
+    },
+    {
+      "target": "A1",
+      "workflow": "mala-quasi_deer-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 2.220446049250313e-15,
+      "allowed_per_chain": [
+        4.916635655609214e-08,
+        6.163385049539405e-08,
+        4.768095981533529e-08,
+        5.406524381332822e-08
+      ],
+      "max_constrained_output_difference": 1.1102230246251565e-15,
+      "finite": true,
+      "cpu_raw_sha256": "806f272226b8c3844e7968711d1c81f9dc0cc2c72c2aa1fdcbfa0fa9b43623e0",
+      "cuda_raw_sha256": "99a2eec2d540261ddabf546b5324ec9dc41b9958bc77bca98c15bd617d88ed15"
+    },
+    {
+      "target": "A1",
+      "workflow": "mala-quasi_deer-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 2.220446049250313e-15,
+      "allowed_per_chain": [
+        4.916635655609214e-08,
+        6.163385049539407e-08,
+        4.768095981533529e-08,
+        5.406524381332822e-08
+      ],
+      "max_constrained_output_difference": 1.3322676295501878e-15,
+      "finite": true,
+      "cpu_raw_sha256": "9b34df6498777f477e93a6e7ffcefe98568dec3e7a288d2a4055d69089887b55",
+      "cuda_raw_sha256": "8c897e9fbbb020f99c6671f6c8f274af95d9413751ae1902fa2cc25f10d1189e"
+    },
+    {
+      "target": "L1",
+      "workflow": "rwm-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        4.184572985241058e-08,
+        5.216582501487098e-08,
+        5.2132032039183873e-08,
+        3.725187354212438e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "1ec17a57bb476b786e91aeddb6907c7c644ea72fba14710a4d0da683a350b120",
+      "cuda_raw_sha256": "1ec17a57bb476b786e91aeddb6907c7c644ea72fba14710a4d0da683a350b120"
+    },
+    {
+      "target": "L1",
+      "workflow": "rwm-online_picard-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        4.184572985241058e-08,
+        5.216582501487098e-08,
+        5.2132032039183873e-08,
+        3.7251873542124384e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "d663bb7a8004101bd9b05c193e49c57b0858999d0521ddcd410decbf87ff3b36",
+      "cuda_raw_sha256": "d663bb7a8004101bd9b05c193e49c57b0858999d0521ddcd410decbf87ff3b36"
+    },
+    {
+      "target": "L1",
+      "workflow": "rwm-online_picard-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        4.1845729852410573e-08,
+        5.216582501487098e-08,
+        5.2132032039183873e-08,
+        3.7251873542124384e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "10cd17926eb5a1e060a35ce572b239edbc962475bdfc8edbc9894b4e76f85e17",
+      "cuda_raw_sha256": "10cd17926eb5a1e060a35ce572b239edbc962475bdfc8edbc9894b4e76f85e17"
+    },
+    {
+      "target": "L1",
+      "workflow": "mala-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 3.3306690738754696e-15,
+      "allowed_per_chain": [
+        5.7322241696550195e-08,
+        4.501660250777144e-08,
+        4.250064824200213e-08,
+        5.3342850986942e-08
+      ],
+      "max_constrained_output_difference": 1.7763568394002505e-15,
+      "finite": true,
+      "cpu_raw_sha256": "2880b8fbd9f9bd7792ab1af3fd7d563933d7d37edcc8da8c98b191c11f3b433f",
+      "cuda_raw_sha256": "51545881166f92642acd6cdd5ca7b38e32a45b5c2f717073fb4f06b445e2fbc2"
+    },
+    {
+      "target": "L1",
+      "workflow": "mala-quasi_deer-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 4.107825191113079e-15,
+      "allowed_per_chain": [
+        5.73222416965502e-08,
+        4.501660250777145e-08,
+        4.2500648242002135e-08,
+        5.334285098694201e-08
+      ],
+      "max_constrained_output_difference": 2.220446049250313e-15,
+      "finite": true,
+      "cpu_raw_sha256": "0b27dae8a6487833234b0266a48409fe0e5608d66076dbd91d78c156fe271393",
+      "cuda_raw_sha256": "227c6f2549ca6360d5f837f91ae92ad45baff46d7a02e5af92f0720528c63839"
+    },
+    {
+      "target": "L1",
+      "workflow": "mala-quasi_deer-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 3.552713678800501e-15,
+      "allowed_per_chain": [
+        5.73222416965502e-08,
+        4.501660250777134e-08,
+        4.250064824200213e-08,
+        5.334285098694201e-08
+      ],
+      "max_constrained_output_difference": 1.3322676295501878e-15,
+      "finite": true,
+      "cpu_raw_sha256": "b80ded3475e8ce57ed670b89c033f7dae22b5665fb6c174cba81bc6c6b1ce51c",
+      "cuda_raw_sha256": "7a1651b7ece5fd1d8f20b4aaf91188d7c3a2a7ca278dae33db84fd8f348fc617"
+    },
+    {
+      "target": "L2",
+      "workflow": "rwm-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        4.303974441966665e-08,
+        4.4307526167799626e-08,
+        4.947841011426026e-08,
+        6.068599406625539e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "7133fc55c411409a3511ada323267b9a2d168295e0d7b036de480a5603b128dc",
+      "cuda_raw_sha256": "7133fc55c411409a3511ada323267b9a2d168295e0d7b036de480a5603b128dc"
+    },
+    {
+      "target": "L2",
+      "workflow": "rwm-online_picard-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        4.303974441966665e-08,
+        4.4307526167799626e-08,
+        4.947841011426026e-08,
+        6.068599406625539e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "b1656dba5b9a630b4760d734d03ac523ae69f442b0286dfacb13c3eb41125e9e",
+      "cuda_raw_sha256": "b1656dba5b9a630b4760d734d03ac523ae69f442b0286dfacb13c3eb41125e9e"
+    },
+    {
+      "target": "L2",
+      "workflow": "rwm-online_picard-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        4.303974441966665e-08,
+        4.4307526167799626e-08,
+        4.9478410114260264e-08,
+        6.068599406625539e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "77ee8e25e197f898574ee68486409271e3e12a01284671fc413e47d4a20268e2",
+      "cuda_raw_sha256": "77ee8e25e197f898574ee68486409271e3e12a01284671fc413e47d4a20268e2"
+    },
+    {
+      "target": "L2",
+      "workflow": "mala-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 1.199040866595169e-14,
+      "allowed_per_chain": [
+        4.6378052897822244e-08,
+        4.7744596606512197e-08,
+        4.249619752826349e-08,
+        5.874789024272404e-08
+      ],
+      "max_constrained_output_difference": 1.7763568394002505e-15,
+      "finite": true,
+      "cpu_raw_sha256": "c402b0e7b77758fc1f4cd66a5dd00311b52dce63cb76bc246827119608453142",
+      "cuda_raw_sha256": "00c4705fe3cbdb14e7d1b6451f164c24dde51ef23e531b8dd12409d50debefbe"
+    },
+    {
+      "target": "L2",
+      "workflow": "mala-quasi_deer-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 1.0880185641326534e-14,
+      "allowed_per_chain": [
+        4.637805289782223e-08,
+        4.7744596606512236e-08,
+        4.24961975282635e-08,
+        5.874789024272404e-08
+      ],
+      "max_constrained_output_difference": 1.3322676295501878e-15,
+      "finite": true,
+      "cpu_raw_sha256": "233a4c146878ddc9b0dfcd4593d8b424c0cdecae379933998cd9ccaff6ebdd1e",
+      "cuda_raw_sha256": "142aeddcda820163129753b6447d87b4d96adb334fdf70951df25a8657d0764b"
+    },
+    {
+      "target": "L2",
+      "workflow": "mala-quasi_deer-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 1.4876988529977098e-14,
+      "allowed_per_chain": [
+        4.6378052897822244e-08,
+        4.774459660651221e-08,
+        4.24961975282635e-08,
+        5.874789024272482e-08
+      ],
+      "max_constrained_output_difference": 1.3322676295501878e-15,
+      "finite": true,
+      "cpu_raw_sha256": "2c8d7378cc4a211438aecb630ed6efc88a9b9fcb781272fbb2eb248bb420c5de",
+      "cuda_raw_sha256": "0dea96b0f9b8db21b9b71ccf07e56fe55d8f764edc378b66a9bd2901b3fa7329"
+    },
+    {
+      "target": "H1",
+      "workflow": "rwm-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        1.3548375683234342e-07,
+        6.647293711759884e-08,
+        9.417348141359507e-08,
+        6.4610228757316e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "a687d15db14d974a5bbd317ac9675b0f899c6129c6ee9ced42243d39cdfd8404",
+      "cuda_raw_sha256": "a687d15db14d974a5bbd317ac9675b0f899c6129c6ee9ced42243d39cdfd8404"
+    },
+    {
+      "target": "H1",
+      "workflow": "rwm-online_picard-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        1.3548375683234342e-07,
+        6.647293711759884e-08,
+        9.417348141359507e-08,
+        6.461022875731599e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "c6f39dee501b2edb6cf99d2683c1f0381188fc2502ce3a607ae7367719ac0828",
+      "cuda_raw_sha256": "c6f39dee501b2edb6cf99d2683c1f0381188fc2502ce3a607ae7367719ac0828"
+    },
+    {
+      "target": "H1",
+      "workflow": "rwm-online_picard-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        1.3548375683234342e-07,
+        6.647293711759884e-08,
+        9.417348141359507e-08,
+        6.461022875731599e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "b9d6f33e42c225147405ca662468aa817329460411dce7246138b86469efe894",
+      "cuda_raw_sha256": "b9d6f33e42c225147405ca662468aa817329460411dce7246138b86469efe894"
+    },
+    {
+      "target": "H1",
+      "workflow": "mala-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 1.0980105713542798e-13,
+      "allowed_per_chain": [
+        2.3909468004375623e-07,
+        1.526111136653819e-07,
+        5.3959911323365174e-08,
+        7.01132141605834e-08
+      ],
+      "max_constrained_output_difference": 1.0980105713542798e-13,
+      "finite": true,
+      "cpu_raw_sha256": "564ef0ff8119fe6d317c5637c639d0b942c3e1b1bfdc233865f34250e0087702",
+      "cuda_raw_sha256": "2b9d2b6d0fa37a61006c2d27469ed8a187ebe2cd6fe40ff4d52571379e927e19"
+    },
+    {
+      "target": "H1",
+      "workflow": "mala-quasi_deer-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 1.0839107389415403e-12,
+      "allowed_per_chain": [
+        2.3909468004375633e-07,
+        1.526111136653819e-07,
+        5.39599113233652e-08,
+        7.01132141605834e-08
+      ],
+      "max_constrained_output_difference": 1.0839107389415403e-12,
+      "finite": true,
+      "cpu_raw_sha256": "ecc53ee190c11cf9ae62c97eb6d6d93f3a4915fee64ac2387964ae2fce7fb8a7",
+      "cuda_raw_sha256": "039826bfdf4f58db5a7966fe98921d5b26763526a97115f302cfd0ff66cfdc86"
+    },
+    {
+      "target": "H1",
+      "workflow": "mala-quasi_deer-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 5.901945598907332e-13,
+      "allowed_per_chain": [
+        2.3909468004375633e-07,
+        1.5261111366610361e-07,
+        5.3959911323365174e-08,
+        7.011321416058344e-08
+      ],
+      "max_constrained_output_difference": 5.901945598907332e-13,
+      "finite": true,
+      "cpu_raw_sha256": "dce9dda47198d8eb444e4a3daea8eefa62f7dc34b747131facc47dd71a9d17bd",
+      "cuda_raw_sha256": "6b7377b358117db67a530bbdb99a1d63e8bc9c98bb4144e2466898ab9b0e4436"
+    },
+    {
+      "target": "H2",
+      "workflow": "rwm-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        6.36832797752139e-08,
+        6.206581883550242e-08,
+        6.691159211393767e-08,
+        4.3251493628400895e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "206a20684141353a62dc00b26ea0fda9e3b942fe643c8292d702a02e428ff80e",
+      "cuda_raw_sha256": "206a20684141353a62dc00b26ea0fda9e3b942fe643c8292d702a02e428ff80e"
+    },
+    {
+      "target": "H2",
+      "workflow": "rwm-online_picard-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        6.36832797752139e-08,
+        6.206581883550242e-08,
+        6.691159211393767e-08,
+        4.3251493628400895e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "f4525825872431d826bfa838dcaa11280dec4f716e229389f33c67fb5bf2b12e",
+      "cuda_raw_sha256": "f4525825872431d826bfa838dcaa11280dec4f716e229389f33c67fb5bf2b12e"
+    },
+    {
+      "target": "H2",
+      "workflow": "rwm-online_picard-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        6.368327977521392e-08,
+        6.206581883550242e-08,
+        6.691159211393767e-08,
+        4.325149362840088e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "25d89c02245b0dd43dff1daee8f4f7c14b430d467d54f6840248642fbfa8b572",
+      "cuda_raw_sha256": "25d89c02245b0dd43dff1daee8f4f7c14b430d467d54f6840248642fbfa8b572"
+    },
+    {
+      "target": "H2",
+      "workflow": "mala-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        8.727427357898858e-08,
+        8.928419460626834e-08,
+        8.850886997060129e-08,
+        8.008263921649764e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "b9634d3ff91a1b763487cd2980e1787b2852c121e5fc998ff139381ad48b3d73",
+      "cuda_raw_sha256": "b9634d3ff91a1b763487cd2980e1787b2852c121e5fc998ff139381ad48b3d73"
+    },
+    {
+      "target": "H2",
+      "workflow": "mala-quasi_deer-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 2.7755575615628914e-15,
+      "allowed_per_chain": [
+        8.727427357898859e-08,
+        8.928419460626834e-08,
+        8.850886997060129e-08,
+        8.008263921649764e-08
+      ],
+      "max_constrained_output_difference": 3.197442310920451e-14,
+      "finite": true,
+      "cpu_raw_sha256": "5d01912088c6c422a7d0ea21da7edaf769f25118119bed0bf5dc91993ab55c9f",
+      "cuda_raw_sha256": "522395ee309b72772b43057bfdd752f8a217da2ef0b35f8022978e35fb3ea503"
+    },
+    {
+      "target": "H2",
+      "workflow": "mala-quasi_deer-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 2.6645352591003757e-15,
+      "allowed_per_chain": [
+        8.727427357898862e-08,
+        8.928419460625205e-08,
+        8.850886997060128e-08,
+        8.008263921649764e-08
+      ],
+      "max_constrained_output_difference": 3.907985046680551e-14,
+      "finite": true,
+      "cpu_raw_sha256": "9656b7fc643999737d5c1e1c86e38282d4ac3664bf78dafd20549b086c6c9e57",
+      "cuda_raw_sha256": "aeaacfc5970dc2e860159f23e4a82a19c0040790101982833f1084827d25a019"
+    },
+    {
+      "target": "M1",
+      "workflow": "rwm-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        8.367474727467907e-08,
+        8.130110894726706e-08,
+        8.943488063494557e-08,
+        8.990308973032892e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "cc0c2eca9f5ef49be5fa9881af8866c28dfef47fe57879cdce5bac833b6bd4a5",
+      "cuda_raw_sha256": "cc0c2eca9f5ef49be5fa9881af8866c28dfef47fe57879cdce5bac833b6bd4a5"
+    },
+    {
+      "target": "M1",
+      "workflow": "rwm-online_picard-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        8.367474727467908e-08,
+        8.130110894726707e-08,
+        8.943488063494554e-08,
+        8.990308973032893e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "31fb0c39a942ddc9a5e1bb12e0f6799d2ecea1a3c274134928d287f1c1f8833c",
+      "cuda_raw_sha256": "31fb0c39a942ddc9a5e1bb12e0f6799d2ecea1a3c274134928d287f1c1f8833c"
+    },
+    {
+      "target": "M1",
+      "workflow": "rwm-online_picard-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        8.367474727467906e-08,
+        8.130110894726707e-08,
+        8.943488063494554e-08,
+        8.990308973032893e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "cf59f1c2060f86b691fd711ad7c77ac6f808d4ef641cc0fd33cfb05051e0deb7",
+      "cuda_raw_sha256": "cf59f1c2060f86b691fd711ad7c77ac6f808d4ef641cc0fd33cfb05051e0deb7"
+    },
+    {
+      "target": "M1",
+      "workflow": "mala-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        8.784648264339175e-08,
+        8.597117914020098e-08,
+        8.840331278799187e-08,
+        8.416470533170021e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "7f84e326b7036a070efe560f1a2c15066ec300402c9c2141adc77cf478bf8cd3",
+      "cuda_raw_sha256": "7f84e326b7036a070efe560f1a2c15066ec300402c9c2141adc77cf478bf8cd3"
+    },
+    {
+      "target": "M1",
+      "workflow": "mala-quasi_deer-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 2.6645352591003757e-15,
+      "allowed_per_chain": [
+        8.784648264339175e-08,
+        8.597117914020097e-08,
+        8.840331278799187e-08,
+        8.416470533170022e-08
+      ],
+      "max_constrained_output_difference": 2.6645352591003757e-15,
+      "finite": true,
+      "cpu_raw_sha256": "1a6b705639a0a09195d9d42970487816973fe77936b082d7f19b7c29e182a129",
+      "cuda_raw_sha256": "fb3bb87a947615ecdb9f0fd0cd9d1179005baa4903145aa24b8403b4e3ad8fc5"
+    },
+    {
+      "target": "M1",
+      "workflow": "mala-quasi_deer-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 3.552713678800501e-15,
+      "allowed_per_chain": [
+        8.784648264339175e-08,
+        8.597117914020097e-08,
+        8.840331278799187e-08,
+        8.416470533170021e-08
+      ],
+      "max_constrained_output_difference": 3.552713678800501e-15,
+      "finite": true,
+      "cpu_raw_sha256": "049c9ec27240634fafcadbb533a9f181fe815541c589031d7b9135a9dbd21a1e",
+      "cuda_raw_sha256": "1a2c4ce0980d7b559d76774a946aea7db9570ae395f12517d25448a1ca8a47ac"
+    },
+    {
+      "target": "W1",
+      "workflow": "rwm-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        3.210385570701233e-08,
+        3.925310287785673e-08,
+        4.1651663524550964e-08,
+        3.301493562273226e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "998402af919f480e1e721e211571455f18ee2ac755070342561bb3b19fb4aaca",
+      "cuda_raw_sha256": "998402af919f480e1e721e211571455f18ee2ac755070342561bb3b19fb4aaca"
+    },
+    {
+      "target": "W1",
+      "workflow": "rwm-online_picard-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        3.210385570701233e-08,
+        3.925310287785673e-08,
+        4.165166352455097e-08,
+        3.301493562273226e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "511bc48ee301ea37071cdc1ad5f6e2d5c16e4b773e7c558a69a1e4fe338205ca",
+      "cuda_raw_sha256": "511bc48ee301ea37071cdc1ad5f6e2d5c16e4b773e7c558a69a1e4fe338205ca"
+    },
+    {
+      "target": "W1",
+      "workflow": "rwm-online_picard-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 0.0,
+      "allowed_per_chain": [
+        3.2103855707012324e-08,
+        3.925310287785673e-08,
+        4.1651663524550964e-08,
+        3.3014935622732254e-08
+      ],
+      "max_constrained_output_difference": 0.0,
+      "finite": true,
+      "cpu_raw_sha256": "8ff22fad80f84e54af2a364bf7117e7f020a595fdd913d8f6f848d2c5c47540c",
+      "cuda_raw_sha256": "8ff22fad80f84e54af2a364bf7117e7f020a595fdd913d8f6f848d2c5c47540c"
+    },
+    {
+      "target": "W1",
+      "workflow": "mala-sequential",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 4.729550084903167e-14,
+      "allowed_per_chain": [
+        4.012823237540965e-08,
+        4.7485144912038277e-08,
+        3.870176526815446e-08,
+        4.113009706308069e-08
+      ],
+      "max_constrained_output_difference": 4.496403249731884e-15,
+      "finite": true,
+      "cpu_raw_sha256": "3e49d384ac22ade785e0e5d0616b9460ea9295ac6906516e695d19d3648d0a7f",
+      "cuda_raw_sha256": "edd05096670f8b9af14ffd0576bb7e0dc6afb5e4b656fc89c0afcf4803c1328d"
+    },
+    {
+      "target": "W1",
+      "workflow": "mala-quasi_deer-w8",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 4.529709940470639e-14,
+      "allowed_per_chain": [
+        4.012823237540965e-08,
+        4.7485144912038277e-08,
+        3.870176526815448e-08,
+        4.113009706308069e-08
+      ],
+      "max_constrained_output_difference": 4.884981308350689e-15,
+      "finite": true,
+      "cpu_raw_sha256": "fca1b9838f2ef53b8c1cb848828d0418447e85788b0094cdcac6bb4769ad607e",
+      "cuda_raw_sha256": "81cd5ac481b118af3bd27dd4e7c8e1a50d4c560393dfbaeb47365eb4a1ba4f83"
+    },
+    {
+      "target": "W1",
+      "workflow": "mala-quasi_deer-w32",
+      "passed": true,
+      "acceptance_mismatches": 0,
+      "max_path_error": 4.4853010194856324e-14,
+      "allowed_per_chain": [
+        4.012823237540964e-08,
+        4.74851449120378e-08,
+        3.870176526815447e-08,
+        4.11300970630807e-08
+      ],
+      "max_constrained_output_difference": 4.551914400963142e-15,
+      "finite": true,
+      "cpu_raw_sha256": "efee33ba032541796d63d3fb86adbec780a9b920823f94744298669839b29717",
+      "cuda_raw_sha256": "822899634db211a78b99b4a73d7d6b76181d6ef479cb7ce67338d05fe9a3f048"
+    }
+  ]
+}

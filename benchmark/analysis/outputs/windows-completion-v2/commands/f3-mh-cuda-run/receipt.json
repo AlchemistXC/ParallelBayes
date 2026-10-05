@@ -1,0 +1,32 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "scripts/completion/selected_mh_readiness.py",
+    "run",
+    "--protocol",
+    "benchmark/protocols/selected-mh-readiness-windows-cuda-v1.json",
+    "--inputs",
+    "benchmark/fixtures/selected-mh-readiness-v1",
+    "--source",
+    "output/completion/windows-round2-20261005/wells-source",
+    "--output",
+    "output/completion/windows-round2-20261005/mh-cuda-run"
+  ],
+  "cwd": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes",
+  "source_commit": "f5148ee39868a657809f400bf1755d083c744fc8",
+  "started_utc": "2026-10-05T11:22:14.587905+00:00",
+  "environment_overrides": {
+    "R_LIBS_USER": "D:/Tools/R-library-4.6",
+    "LC_ALL": "C",
+    "LANG": "C",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes\\r-package\\inst\\python"
+  },
+  "pid": 10448,
+  "exit_code": 0,
+  "elapsed_seconds": 93.80795879999641,
+  "ended_utc": "2026-10-05T11:23:48.395412+00:00",
+  "log_sha256": "2c89a53e76d40e46a6adcf5eb9f796190a59d0e1f8dfd576fb52cdcc62ebe0d6"
+}

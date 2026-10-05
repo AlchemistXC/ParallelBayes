@@ -1,0 +1,116 @@
+{
+  "binary_roundtrips": 18,
+  "fits": [
+    {
+      "id": "G1-serial",
+      "some_finite_rhat_gt_1_01": false,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.00121470761298
+    },
+    {
+      "id": "G1-parallel",
+      "some_finite_rhat_gt_1_01": false,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.00121470761298
+    },
+    {
+      "id": "G2-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.02105804135197
+    },
+    {
+      "id": "G2-parallel",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.02105804135197
+    },
+    {
+      "id": "A1-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.01921908024708
+    },
+    {
+      "id": "A1-parallel",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.01921908024708
+    },
+    {
+      "id": "L1-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.02384213358631
+    },
+    {
+      "id": "L1-parallel",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.02384213358631
+    },
+    {
+      "id": "L2-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 1.02866950968257
+    },
+    {
+      "id": "L2-parallel",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 1.02866950968257
+    },
+    {
+      "id": "H1-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 2.20891062902231
+    },
+    {
+      "id": "H1-parallel",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 2.20891062902231
+    },
+    {
+      "id": "H2-serial",
+      "some_finite_rhat_gt_1_01": false,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.00614355225536
+    },
+    {
+      "id": "H2-parallel",
+      "some_finite_rhat_gt_1_01": false,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.00614355225536
+    },
+    {
+      "id": "M1-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 1.72796140753196
+    },
+    {
+      "id": "M1-parallel",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 1.72796140753196
+    },
+    {
+      "id": "W1-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 1.03217906573886
+    },
+    {
+      "id": "W1-parallel",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 1.03217906573886
+    }
+  ],
+  "R": "R version 4.6.1 (2026-06-24 ucrt)",
+  "posterior": "1.7.0",
+  "scope": "Byte-level diagnostic input verification and descriptive modern diagnostics; no calibration/convergence certification"
+}

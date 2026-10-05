@@ -1,0 +1,23 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "output/completion/windows-round2-20261005/capture-environment.py"
+  ],
+  "cwd": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes",
+  "source_commit": "f5148ee39868a657809f400bf1755d083c744fc8",
+  "started_utc": "2026-10-05T11:10:20.296562+00:00",
+  "environment_overrides": {
+    "R_LIBS_USER": "D:/Tools/R-library-4.6",
+    "LC_ALL": "C",
+    "LANG": "C",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes\\r-package\\inst\\python"
+  },
+  "pid": 22504,
+  "exit_code": 0,
+  "elapsed_seconds": 2.361406900003203,
+  "ended_utc": "2026-10-05T11:10:22.658231+00:00",
+  "log_sha256": "936eebc3830eebecc1f7ca8e0e266feb4802c9b11ef09e4071aacb7afbc8dbdb"
+}

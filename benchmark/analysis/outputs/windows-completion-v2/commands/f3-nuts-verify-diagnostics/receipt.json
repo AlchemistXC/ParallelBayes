@@ -1,0 +1,26 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "scripts/completion/nuts_readiness_run.py",
+    "verify-diagnostics",
+    "--output",
+    "output/completion/windows-round2-20261005/nuts-diagnostics"
+  ],
+  "cwd": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes",
+  "source_commit": "f5148ee39868a657809f400bf1755d083c744fc8",
+  "started_utc": "2026-10-05T11:19:50.193615+00:00",
+  "environment_overrides": {
+    "R_LIBS_USER": "D:/Tools/R-library-4.6",
+    "LC_ALL": "C",
+    "LANG": "C",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes\\r-package\\inst\\python"
+  },
+  "pid": 28328,
+  "exit_code": 0,
+  "elapsed_seconds": 0.12071339999965858,
+  "ended_utc": "2026-10-05T11:19:50.314614+00:00",
+  "log_sha256": "4cc79a37fef450a66645a993a513dff73ef38d92e2499884fa54c1db25bd3729"
+}

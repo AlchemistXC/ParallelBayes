@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "script_sha256": "3ce36729a5a991f074f5f06b2a12b6b1dcda84b7bf6872d12b8a2f5080635d11",
+  "wrapper_sha256": "42b0fb426c73f4d9b0ff5703806993d2cbf42c19f25bda066388382f4081fb65",
+  "fixture_sha256": "5fc66d60bb22dbc98e75feb213fe936a912ce0cdd7ff3b21adda0515b324460d",
+  "R_exit_code": 0,
+  "binary_roundtrip_identical": true,
+  "diagnostic_status": "checks_passed",
+  "passed": true,
+  "outputs": {
+    "R.log": "bcbd90deb91a147dcb14ee09cbf205d8fb34d96604407d5e6f4db35f7cfc3755",
+    "result.json": "c3ac27a861c3a8cf7aeef63eabf089c130b726c8d00c9e294ed0f247dcc6dbdf",
+    "roundtrip-f64le.bin": "5fc66d60bb22dbc98e75feb213fe936a912ce0cdd7ff3b21adda0515b324460d"
+  }
+}

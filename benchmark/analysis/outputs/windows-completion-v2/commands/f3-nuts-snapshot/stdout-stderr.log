@@ -1,0 +1,14 @@
+{
+  "run": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes\\output\\completion\\windows-round2-20261005\\nuts-run",
+  "summary": {
+    "protocol_sha256": "6c6aadaed20f792715ab9b8b3a3bbb02181f74ecbe259aa1bb3302e370c78220",
+    "planned": 9,
+    "completed": 9,
+    "failed": 0,
+    "newly_executed_targets": 9,
+    "invocation_seconds": 42.66507370000181,
+    "scope": "Within-host CPU baseline implementation/resource readiness on nine declared targets. Not inference accuracy, calibration, convergence or performance comparison.",
+    "formal_inference_complete": false
+  },
+  "summary_sha256": "a758f49a0b133fa9bcfbab87e2c5e0670ee9c8f8796a8e16982530832af0f263"
+}

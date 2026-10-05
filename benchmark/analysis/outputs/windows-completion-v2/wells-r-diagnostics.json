@@ -1,0 +1,25 @@
+{
+  "scope": "Post hoc diagnostics of the R Picard extension example; 96 iterations, no discarded warmup; no convergence or accuracy claim",
+  "posterior_version": "1.7.0",
+  "dimensions": [96, 4, 2],
+  "summary": [
+    {
+      "variable": "alpha",
+      "mean": 0.56563550457744,
+      "sd": 0.347674160301648,
+      "rhat": 3.03601238885604,
+      "ess_bulk": 4.89446186819877,
+      "ess_tail": 11.6155606407323,
+      "mcse_mean": 0.158347983387788
+    },
+    {
+      "variable": "beta[1]",
+      "mean": -0.662664869773678,
+      "sd": 0.621291998220359,
+      "rhat": 3.81697301579116,
+      "ess_bulk": 4.68464206176619,
+      "ess_tail": 11.0967874160988,
+      "mcse_mean": 0.289960530589395
+    }
+  ]
+}

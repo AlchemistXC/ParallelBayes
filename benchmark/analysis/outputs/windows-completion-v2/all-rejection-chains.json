@@ -1,0 +1,38 @@
+[
+  {
+    "device": "cpu",
+    "target": "H1",
+    "workflow": "mala-sequential",
+    "chain": 2
+  },
+  {
+    "device": "cpu",
+    "target": "H1",
+    "workflow": "mala-quasi_deer-w8",
+    "chain": 2
+  },
+  {
+    "device": "cpu",
+    "target": "H1",
+    "workflow": "mala-quasi_deer-w32",
+    "chain": 2
+  },
+  {
+    "device": "cuda",
+    "target": "H1",
+    "workflow": "mala-sequential",
+    "chain": 2
+  },
+  {
+    "device": "cuda",
+    "target": "H1",
+    "workflow": "mala-quasi_deer-w8",
+    "chain": 2
+  },
+  {
+    "device": "cuda",
+    "target": "H1",
+    "workflow": "mala-quasi_deer-w32",
+    "chain": 2
+  }
+]

@@ -1,14 +1,40 @@
 # 当前研究收尾登记
 
+## Windows第二轮回执（2026-10-05，按阶段追加）
+
+独立工作树/分支 `codex/windows-completion-v2`，基于 `f5148ee`；原冻结环境和首轮结果不变。
+F1已实测通过：R4.6.1/posterior1.7.0读取固定12KiB输入，原生中位数
+`0x1.7701bac434f11p-10`，Rhat=1.40822237244096；较低一个ULP中心得
+1.40856883690538，5个秩改变，回写字节完全相同。`.Machine$sizeof.longdouble=16`，
+`longdouble.digits=64`。回执 `benchmark/analysis/outputs/completion-f1/windows-01/`。
+这补齐Windows原生结果和构建信息，不替换原始诊断或声称完整底层库因果定位。
+本轮后续仍按F2/F4 → CPU NUTS → CPU/CUDA MH执行；正式网格不启动。
+
+阶段回执：F4的12份CPU/CUDA/R工作流、独立NumPy路径及接受事件、R二进制回写均通过，
+最大路径差9.06e-11；短链Rhat=3.036/3.817，保留不利诊断。F2前置测试重试5通过/1跳过，
+包括Windows msvcrt互斥；首次pytest旧临时目录访问错误保留。F2六份实际主数组重建哈希
+均不匹配冻结值，192工作流在采样前阻塞；须取得原冻结NPZ，未修改哈希或协议。
+CPU NUTS测试3通过；九目标全部完成串行/spawn六类数组逐字节核验，18份R二进制往返通过，
+恢复新增任务0、126个终态文件不变。七目标有限Rhat>1.01，L2/H1/M1/W1有不可判定函数；
+这仅补齐原生Windows就绪证据，F3正式推断比较仍未完成。
+
+MH前置测试3通过/0跳过（包含实际CUDA）；CPU/CUDA各九目标、54工作流、36组配对和
+54份独立NumPy保存数组重放均通过。两设备各零重算恢复、135个终态文件不变。
+补充54组跨设备保存数组核对全部通过，接受事件零失配、最大路径差1.084e-12；
+H1/MALA同一全拒绝链原样保留。详见[完整本轮回执](../docs/WINDOWS-COMPLETION-V2-RESULTS.md)
+及`benchmark/analysis/outputs/windows-completion-v2/`。F2输入准备阻塞不影响以上独立步骤。
+交付前复核六份协议/源码、原环境与冻结标记未变；369原始资产和95份小型回执哈希通过，
+见`benchmark/analysis/outputs/windows-completion-v2-final-check.json`。
+
 2026-10-05。用户已授权沿F0–F6持续推进；[执行依据](../docs/RESEARCH-COMPLETION-PLAN.md)。历史Mac、Windows-v1及回传审查证据保留，旧GPU暂缓或待开发措辞只属于历史记录。
 
 | 工作包 | 当前状态 | 实际证据与下一门槛 |
 |---|---|---|
 | F0 状态与版本 | 当前入口已统一；最终发布整合留在F5 | CURRENT-SCOPE、README、能力矩阵及历史文件后继指针更新；稿件数据声明区分公开CPU Release和Windows草稿；旧scope有快照 |
-| F1 诊断差异 | Mac数值机制已复现，待Windows实际回执 | 12KiB固定样例；一ULP折叠中心差改变5个秩，重现两种历史Rhat；`docs/DIAGNOSTIC-MIDPOINT.md`及`completion-f1/mac-02`；Windows提示词已准备 |
-| F2 机制 | 已完成原512项的只读工作量核算；192工作流的开发性pilot已冻结，待Windows运行 | 所有映射/JVP/前缀及技术重放工作量核对通过；`docs/WINDOWS-MECHANISM-ACCOUNTING.md`；已准备窗口/链数/步长对照及成本探针；Mac运行器3组9工作流通过，正式机制解释仍待真实Windows结果 |
+| F1 诊断差异 | Mac机制和Windows原生回执均已取得 | 12KiB固定样例；一ULP折叠中心差改变5个秩；Windows原生中位数及二进制往返实测，见`completion-f1/windows-01`；不声称完整底层库因果定位 |
+| F2 机制 | 原512项只读核算完成；192工作流pilot在Windows输入校验前置失败，尚未采样 | 六份实际数组重建哈希均不符，原始冻结NPZ未附仓库；保留失败与候选数组，等待原文件；Mac运行器3组9工作流通过不替代Windows执行 |
 | F3 推断比较 | 独立调参与324项预算pilot/再分析完成；正式比较未完成 | 调参212/216有效，四项失败已定位且保留；新pilot 323/324有效，1项H1/MALA长路径容差失败已完成有限定位、仍保留失败；实际末位扰动在独立NumPy后续递推中放大。1836资产哈希、323份R回写、2160终态文件零重算恢复通过；174份有效拟合有有限Rhat>1.01，109份不可判定；H1 NUTS1799发散。正式重复/预算协议及Windows同机推断尚未完成；见docs/F3-BUDGET-PILOT-RESULTS.md |
-| F4 外部案例 | 目标与Mac/R扩展核验通过；正式案例未完成 | wells模型的可积性、Stan/NumPy/torch密度梯度、两对轨迹及R逐字节传输通过；短链Rhat不利结果保留。有限参考复算完成，六个连续函数有MCSE，稀有符号事件仍未定；独立积分12组已完成（事件约4.77e-11，非认证总误差）；Windows CPU/CUDA新核验协议及R接收检查已就绪，实测与正式案例待完成，见docs/WELLS-QUADRATURE.md |
+| F4 外部案例 | Mac及Windows CPU/CUDA/R目标核验通过；正式案例未完成 | wells模型的可积性、Stan/NumPy/torch密度梯度、轨迹及R逐字节传输通过；Windows第二轮12份技术执行实测通过，短链Rhat不利结果保留。有限参考六个连续函数有MCSE，稀有符号事件仍未定；独立积分12组（约4.77e-11，非认证总误差）保留，见docs/WELLS-QUADRATURE.md |
 | F5 发布与复现 | 未完成 | 统一版本候选、两平台干净安装、原始证据到全部表图/PDF的完整重建、公开材料状态核对 |
 | F6 论文 | 修正数据声明和新增伴随发现；整体重构未完成 | 新证据齐备后统一论证、文献更新、作者审阅、期刊/语言及复现材料准备；不自动投稿 |
 

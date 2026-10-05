@@ -1,0 +1,55 @@
+{
+  "versions": {
+    "torch": "2.13.0+cu130",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pyro-ppl": "1.9.2",
+    "psutil": "7.1.0",
+    "pytest": "8.4.2"
+  },
+  "checked_protocols": [
+    {
+      "path": "benchmark/protocols/mechanism-windows-pilot-v1.json",
+      "identity": "9d8985f579a64df95ebbb22ce0a607020261e5a66516efc80edcf9c956894b2c",
+      "source_commit": "97e6835476bf71f48c1236e7cc77f235e5191d6c",
+      "source_count": 41,
+      "source_mismatches": []
+    },
+    {
+      "path": "benchmark/protocols/wells-windows-validation-v1/cpu.json",
+      "identity": "4c5eef4f7f1858e901d30e1e2f699c2b6c39e03cd53e82f4944056401488e06d",
+      "source_commit": "b1434a1d8dd6d4bc99c9e975c8f12fc7ae6b3347",
+      "source_count": 45,
+      "source_mismatches": []
+    },
+    {
+      "path": "benchmark/protocols/wells-windows-validation-v1/cuda.json",
+      "identity": "bde0b76104fbe233105848a113d4b67b6ac1dca86231ee904a680ecc23741c5e",
+      "source_commit": "b1434a1d8dd6d4bc99c9e975c8f12fc7ae6b3347",
+      "source_count": 45,
+      "source_mismatches": []
+    },
+    {
+      "path": "benchmark/protocols/nuts-native-readiness-windows-v1.json",
+      "identity": "6c6aadaed20f792715ab9b8b3a3bbb02181f74ecbe259aa1bb3302e370c78220",
+      "source_commit": "b7791e08e03449bd34ee764dc560bd3934044aeb",
+      "source_count": 61,
+      "source_mismatches": []
+    },
+    {
+      "path": "benchmark/protocols/selected-mh-readiness-windows-cpu-v1.json",
+      "identity": "de1a3bdb35fef84c98fe502cc925574f9092f16da5959f691490b5f1ee55d2e5",
+      "source_commit": "779b8e4c56ba62939f365f6d723d71319dead221",
+      "source_count": 61,
+      "source_mismatches": []
+    },
+    {
+      "path": "benchmark/protocols/selected-mh-readiness-windows-cuda-v1.json",
+      "identity": "e29d26f2d5836c91001be9bfd5a7c6f156b54c96daf2cbaeaa30fb04d32acf93",
+      "source_commit": "779b8e4c56ba62939f365f6d723d71319dead221",
+      "source_count": 61,
+      "source_mismatches": []
+    }
+  ],
+  "status": "passed"
+}

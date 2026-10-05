@@ -1,0 +1,9 @@
+{
+  "protocol_sha256": "6c6aadaed20f792715ab9b8b3a3bbb02181f74ecbe259aa1bb3302e370c78220",
+  "diagnostic_fits": 18,
+  "failed_targets": 0,
+  "failures": [],
+  "source_run_summary_sha256": "c407c91ba283f5ac87687a56661fa2532a90a0af4236cc63312cb2b0601911e6",
+  "analysis_source_sha256": "d75dbf03f8bd5d23029c0de17fd8989391710322f9943e74e72d9cf2293283eb",
+  "numpy": "2.2.6"
+}

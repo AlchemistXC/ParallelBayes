@@ -1,0 +1,16 @@
+{
+  "protocol_sha256": "e29d26f2d5836c91001be9bfd5a7c6f156b54c96daf2cbaeaa30fb04d32acf93",
+  "device": "cuda:0",
+  "planned_targets": 9,
+  "completed_targets": 9,
+  "failed_targets": 0,
+  "planned_workflows": 54,
+  "completed_workflows": 54,
+  "failed_workflows": 0,
+  "passed_pairs": 36,
+  "planned_pairs": 36,
+  "newly_executed_targets": 0,
+  "invocation_seconds": 0.01352259999839589,
+  "scope": "Device/target and selected-kernel time-executor readiness. Not formal inference, convergence or performance evidence.",
+  "formal_inference_complete": false
+}

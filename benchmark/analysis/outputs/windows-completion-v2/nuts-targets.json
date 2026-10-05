@@ -1,0 +1,389 @@
+[
+  {
+    "target": "A1",
+    "status": "completed",
+    "six_arrays_identical": true,
+    "worker_pids": [
+      4180,
+      25604,
+      26616,
+      27872
+    ],
+    "worker_count": 4,
+    "child_resources": [
+      {
+        "pid": 26616,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 27872,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 25604,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 4180,
+        "threads": 1,
+        "interop_threads": 1
+      }
+    ],
+    "serial_divergences": 0,
+    "parallel_divergences": 0,
+    "tree_depth_hit_count": null,
+    "diagnostic": {
+      "id": "A1-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.01921908024708
+    }
+  },
+  {
+    "target": "G1",
+    "status": "completed",
+    "six_arrays_identical": true,
+    "worker_pids": [
+      15160,
+      24588,
+      26728,
+      27096
+    ],
+    "worker_count": 4,
+    "child_resources": [
+      {
+        "pid": 27096,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 26728,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 15160,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 24588,
+        "threads": 1,
+        "interop_threads": 1
+      }
+    ],
+    "serial_divergences": 0,
+    "parallel_divergences": 0,
+    "tree_depth_hit_count": null,
+    "diagnostic": {
+      "id": "G1-serial",
+      "some_finite_rhat_gt_1_01": false,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.00121470761298
+    }
+  },
+  {
+    "target": "G2",
+    "status": "completed",
+    "six_arrays_identical": true,
+    "worker_pids": [
+      12480,
+      13424,
+      14668,
+      15356
+    ],
+    "worker_count": 4,
+    "child_resources": [
+      {
+        "pid": 12480,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 15356,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 13424,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 14668,
+        "threads": 1,
+        "interop_threads": 1
+      }
+    ],
+    "serial_divergences": 0,
+    "parallel_divergences": 0,
+    "tree_depth_hit_count": null,
+    "diagnostic": {
+      "id": "G2-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.02105804135197
+    }
+  },
+  {
+    "target": "H1",
+    "status": "completed",
+    "six_arrays_identical": true,
+    "worker_pids": [
+      248,
+      4456,
+      12916,
+      22632
+    ],
+    "worker_count": 4,
+    "child_resources": [
+      {
+        "pid": 4456,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 22632,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 12916,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 248,
+        "threads": 1,
+        "interop_threads": 1
+      }
+    ],
+    "serial_divergences": 0,
+    "parallel_divergences": 0,
+    "tree_depth_hit_count": null,
+    "diagnostic": {
+      "id": "H1-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 2.20891062902231
+    }
+  },
+  {
+    "target": "H2",
+    "status": "completed",
+    "six_arrays_identical": true,
+    "worker_pids": [
+      7260,
+      10796,
+      18496,
+      27124
+    ],
+    "worker_count": 4,
+    "child_resources": [
+      {
+        "pid": 27124,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 18496,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 10796,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 7260,
+        "threads": 1,
+        "interop_threads": 1
+      }
+    ],
+    "serial_divergences": 0,
+    "parallel_divergences": 0,
+    "tree_depth_hit_count": null,
+    "diagnostic": {
+      "id": "H2-serial",
+      "some_finite_rhat_gt_1_01": false,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.00614355225536
+    }
+  },
+  {
+    "target": "L1",
+    "status": "completed",
+    "six_arrays_identical": true,
+    "worker_pids": [
+      4856,
+      6692,
+      11788,
+      25008
+    ],
+    "worker_count": 4,
+    "child_resources": [
+      {
+        "pid": 6692,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 25008,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 4856,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 11788,
+        "threads": 1,
+        "interop_threads": 1
+      }
+    ],
+    "serial_divergences": 0,
+    "parallel_divergences": 0,
+    "tree_depth_hit_count": null,
+    "diagnostic": {
+      "id": "L1-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 0,
+      "max_finite_rhat": 1.02384213358631
+    }
+  },
+  {
+    "target": "L2",
+    "status": "completed",
+    "six_arrays_identical": true,
+    "worker_pids": [
+      12276,
+      15372,
+      22704,
+      25416
+    ],
+    "worker_count": 4,
+    "child_resources": [
+      {
+        "pid": 25416,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 12276,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 22704,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 15372,
+        "threads": 1,
+        "interop_threads": 1
+      }
+    ],
+    "serial_divergences": 0,
+    "parallel_divergences": 0,
+    "tree_depth_hit_count": null,
+    "diagnostic": {
+      "id": "L2-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 1.02866950968257
+    }
+  },
+  {
+    "target": "M1",
+    "status": "completed",
+    "six_arrays_identical": true,
+    "worker_pids": [
+      3616,
+      20708,
+      27892,
+      28664
+    ],
+    "worker_count": 4,
+    "child_resources": [
+      {
+        "pid": 28664,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 3616,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 20708,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 27892,
+        "threads": 1,
+        "interop_threads": 1
+      }
+    ],
+    "serial_divergences": 0,
+    "parallel_divergences": 0,
+    "tree_depth_hit_count": null,
+    "diagnostic": {
+      "id": "M1-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 1.72796140753196
+    }
+  },
+  {
+    "target": "W1",
+    "status": "completed",
+    "six_arrays_identical": true,
+    "worker_pids": [
+      13292,
+      20856,
+      24556,
+      25672
+    ],
+    "worker_count": 4,
+    "child_resources": [
+      {
+        "pid": 20856,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 24556,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 25672,
+        "threads": 1,
+        "interop_threads": 1
+      },
+      {
+        "pid": 13292,
+        "threads": 1,
+        "interop_threads": 1
+      }
+    ],
+    "serial_divergences": 0,
+    "parallel_divergences": 0,
+    "tree_depth_hit_count": null,
+    "diagnostic": {
+      "id": "W1-serial",
+      "some_finite_rhat_gt_1_01": true,
+      "undefined_rhat": 1,
+      "max_finite_rhat": 1.03217906573886
+    }
+  }
+]

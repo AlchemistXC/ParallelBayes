@@ -1,0 +1,198 @@
+{
+  "protocol_sha256": "4c5eef4f7f1858e901d30e1e2f699c2b6c39e03cd53e82f4944056401488e06d",
+  "scientific_source_commit": "b1434a1d8dd6d4bc99c9e975c8f12fc7ae6b3347",
+  "stage": "torch",
+  "status": "passed",
+  "source_manifest_sha256": "b64415687a58d3e2c34444d9e32523154b6002d960e505e31e2510d8356420ab",
+  "propriety": {
+    "certified": true,
+    "witnesses": [
+      {
+        "distance_metres": 3.25200009346008,
+        "scaled_distance": 0.0325200009346008,
+        "zero_index": 532,
+        "one_index": 530
+      },
+      {
+        "distance_metres": 151.065994262695,
+        "scaled_distance": 1.51065994262695,
+        "zero_index": 2883,
+        "one_index": 189
+      }
+    ],
+    "determinant": 1.4781399416923493,
+    "integral_upper_bound": 2.7061037234541727,
+    "duplicate_outcome_distances": 31,
+    "bound": "L(alpha,beta) <= exp(-abs(alpha+x1*beta)-abs(alpha+x2*beta))",
+    "scope": "Sufficient integrability certificate for the exact likelihood and flat alpha/beta prior"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "scope": "Model and fixed-tape integration validation only; not performance, convergence or posterior accuracy evidence",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "torch": "2.13.0+cu130"
+  },
+  "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+  "environment": {
+    "provider": "native_torch",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable": "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.13.0+cu130",
+    "cuda_build": "13.0",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 5080",
+    "ram_bytes": 33346146304,
+    "cpu_threads": 1,
+    "dtype": "float64"
+  },
+  "jax_imported": false,
+  "validation": {
+    "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+    "device": "cpu",
+    "errors": {
+      "relative_density": 9.094947017729282e-13,
+      "gradient": 2.2737367544323206e-12,
+      "hvp": 1.2787768355337903e-07,
+      "constrain": 0.0
+    },
+    "passed": true,
+    "hvp_reference": "central difference of independent analytic NumPy gradient; epsilon=1e-5"
+  },
+  "tape_sha256": "90d0a90190fd2d4376d94d038f72ebb32d4920ba4dae7aaab3cb11bf6d34bddc",
+  "tape_file_sha256": "d07f8f401a1231c408544cd7acc1408775eded1af88e5594b04dc1ddeded440e",
+  "runs": {
+    "mala-sequential": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          5.551115123125783e-16,
+          6.661338147750939e-16,
+          4.440892098500626e-16,
+          5.551115123125783e-16
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          5.551115123125783e-16,
+          6.661338147750939e-16,
+          4.440892098500626e-16,
+          5.551115123125783e-16
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "accepted": 360,
+      "sample_seconds": 0.13627800000540446,
+      "raw_sha256": "e258babd1b8133e8afb72acf445cb95517687fa1c723a0caac47fb2b983d24eb",
+      "record_sha256": "53cfb23009746365c33bc66ca5553724f8526a04e7637f9ecf8f83c2ebcc0ebe"
+    },
+    "mala-quasi_deer": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          9.05097108372388e-11,
+          1.7743251312651864e-11,
+          2.0025869851281186e-11,
+          1.626643264529548e-11
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          9.05097108372388e-11,
+          1.7743251312651864e-11,
+          2.0025869851281186e-11,
+          1.626643264529548e-11
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "accepted": 360,
+      "sample_seconds": 2.624454100005096,
+      "raw_sha256": "9ef1780cbbe9736f83f8a9fa8d98ded902fd948ee00c3ad9b0ae527a1fb2a83c",
+      "record_sha256": "79dcad89bb18d8a0e1e23d05c21c1a69c13be019d86720fe0e5b9d3012f114eb"
+    },
+    "rwm-sequential": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "accepted": 195,
+      "sample_seconds": 0.04933280000113882,
+      "raw_sha256": "9992f233f1233e24cde45461ecf2786cde0818e50647666d661837b328974ee2",
+      "record_sha256": "a65710ce973e8892a680781c7f87ccbe8f8fa692a06f7f0df11eb9fb93e0660f"
+    },
+    "rwm-online_picard": {
+      "status": "completed",
+      "audit": {
+        "passed": true,
+        "max_abs_path_error": [
+          2.220446049250313e-16,
+          2.220446049250313e-16,
+          1.1102230246251565e-16,
+          6.661338147750939e-16
+        ],
+        "acceptance_mismatches": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_constrained_error": [
+          2.220446049250313e-16,
+          2.220446049250313e-16,
+          1.1102230246251565e-16,
+          6.661338147750939e-16
+        ],
+        "oracle": "independent_numpy_float64"
+      },
+      "accepted": 195,
+      "sample_seconds": 0.23224430000118446,
+      "raw_sha256": "3e647f302d64dd6da8d3a31461deeafbf60033743389cfedb066d55a39c6ec32",
+      "record_sha256": "9bde0ff8206de2fc3f8c2b599f4dbcf2ec8d1bb60acf61366a3a5a62c4a03cc0"
+    }
+  },
+  "pairs": [
+    {
+      "kernel": "mala",
+      "max_path_difference": 9.050926674802895e-11,
+      "acceptance_mismatches": 0,
+      "passed": true
+    },
+    {
+      "kernel": "rwm",
+      "max_path_difference": 6.661338147750939e-16,
+      "acceptance_mismatches": 0,
+      "passed": true
+    }
+  ]
+}

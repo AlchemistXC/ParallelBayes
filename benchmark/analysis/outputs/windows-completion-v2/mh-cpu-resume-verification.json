@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "terminal_files": 135,
+  "changed_files": [],
+  "newly_executed": 0,
+  "before_summary_sha256": "1fc8c9318baa16924a59f7eb9acbd0f2f5192492ee4cdf36cfbc7d2ae097c639",
+  "after_summary_sha256": "2f7c5515dedfd61e8fbe339b35c330d6051b482b1118dd567ad70f56ba523eea"
+}

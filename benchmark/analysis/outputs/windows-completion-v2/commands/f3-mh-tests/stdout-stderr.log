@@ -1,0 +1,9 @@
+...                                                                      [100%]
+============================== warnings summary ===============================
+tests/external/test_selected_mh_readiness.py: 18 warnings
+  D:\workspace\ParallelBayes\.venv-win-torch\Lib\site-packages\torch\jit\_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\chenh\.codex\worktrees\windows-completion-v2\ParallelBayes\output\completion\windows-round2-20261005\mh-tests.xml -
+3 passed, 18 warnings in 2.47s
