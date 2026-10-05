@@ -51,13 +51,13 @@ def run(output,host_lock):
     if sys.platform!='darwin':raise ValueError('Native Mac technical validation only')
     output=Path(output).resolve();output.mkdir(parents=True,exist_ok=False)
     p=json.loads((ROOT/'benchmark/protocols/batch-schema-maximum-mac-v1.json').read_text());p.pop('protocol_sha256')
-    p.update(identity='cache-probe-capsule-mac-v1',source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip())
+    p.update(identity='cache-probe-capsule-mac-v2',source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip())
     p['targets']=[t for t in p['targets'] if t['name'] in ('G1','L1')]
     workflows=['cpu-rwm-sequential','cpu-rwm-online_picard','cpu-mala-sequential','cpu-mala-quasi_deer']
     p['groups']=[dict(models=['G1','L1'],replicates=[0,1],budgets=[8],workflows=workflows)]
     p['tasks']=create_tasks(p['identity'],p['groups']);p['inputs']={}
     p['controls'].update(mh_discard=8,window=4,memory_limit_mb=128)
-    for name in ('cache_probe_execution','cache_probe_analysis','formal_measurement_plan','batch_cost_ledger','validate_cache_execution'):
+    for name in ('cached_execution','cache_probe_execution','cache_probe_analysis','formal_measurement_plan','batch_cost_ledger','validate_cache_execution'):
         key='scripts/completion/'+name+'.py';p['source_files'][key]=file_hash(ROOT/key)
     for name,h in p['source_files'].items():
         if file_hash(ROOT/name)!=h or hashlib.sha256(subprocess.check_output(['git','show','HEAD:'+name],cwd=ROOT)).hexdigest()!=h:
