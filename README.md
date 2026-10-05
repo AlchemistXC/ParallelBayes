@@ -10,7 +10,7 @@ Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-IN
 
 本机[批次与最大形状验收](docs/BATCH-MAXIMUM-VALIDATION.md)已完成14/15项，最大NUTS中断记录保留；零重算及搬移归档重建通过。最大MH技术验收不替代正式推断研究。 [成本与误差接口](docs/FORMAL-COST-POLICY.md)已补齐失败/未知时间及逐函数配对处理，正式研究尚待Windows运行门槛与协议冻结。
 
-[测量设计v0.2](docs/FORMAL-MEASUREMENT-DESIGN.md)及[缓存配对统计](docs/CACHE-PROBE-ANALYSIS.md)已完成有限核验；正式worker、实际回执衔接和Windows验收仍待完成，未产生新的性能结果。
+[测量设计v0.2](docs/FORMAL-MEASUREMENT-DESIGN.md)、[缓存配对统计](docs/CACHE-PROBE-ANALYSIS.md)及[真实CPU缓存记录接收](docs/CACHE-PROBE-EXECUTION.md)已完成有限核验；原生调度及Windows验收仍待完成。新增短路径用于技术验证，不是正式性能结果。
 
 本轮已完成[有限参考复用审计](docs/REFERENCE-REUSE.md)、[水井Mac模型/R核验](docs/WELLS-TARGET-VALIDATION.md)和参考伴随分析。[独立调参](docs/F3-TUNING-RESULTS.md)212/216有效、失败保留；[九目标多预算pilot](docs/F3-BUDGET-PILOT-RESULTS.md)323/324满足各自输出标准，1项长路径容差失败已完成[有限定位](docs/BUDGET-PATH-LOCALIZATION.md)，仍保留失败。诊断仍显示H1发散、M1探索不足及稀有事件未判定。正式推断协议、Windows同机比较和统一发布/论文尚未完成。
 

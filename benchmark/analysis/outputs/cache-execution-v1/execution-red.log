@@ -1,0 +1,14 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_cached_probe_without_primary_fit_is_audited_but_never_a_posterior_sample _
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-11/test_cached_probe_without_prim0')
+
+    def test_cached_probe_without_primary_fit_is_audited_but_never_a_posterior_sample(tmp_path):
+>       from cache_probe_execution import execute_cached_probe,read_cached_probe
+E       ModuleNotFoundError: No module named 'cache_probe_execution'
+
+tests/external/test_cache_probe_execution.py:35: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_cache_probe_execution.py::test_cached_probe_without_primary_fit_is_audited_but_never_a_posterior_sample
+1 failed in 0.06s

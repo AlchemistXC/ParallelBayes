@@ -1,0 +1,26 @@
+.F                                                                       [100%]
+=================================== FAILURES ===================================
+___ test_archive_error_preserves_actual_executor_cost_and_unexecuted_replays ___
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-13/test_archive_error_preserves_a0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x113f0bfe0>
+
+    def test_archive_error_preserves_actual_executor_cost_and_unexecuted_replays(tmp_path,monkeypatch):
+        from cache_probe_execution import execute_cached_probe,read_cached_probe
+        capsule,digest,probe,inputs=fixture(tmp_path)
+        # Inject a storage-boundary failure after actual numerical execution. The
+        # sampler, numerical audit and clocks are not mocked.
+        def unavailable_storage(*args,**kwargs):raise OSError('explicit archive-write failure fixture')
+        monkeypatch.setattr(np,'savez_compressed',unavailable_storage)
+        with pytest.raises(OSError,match='archive-write'):
+            execute_cached_probe(capsule,digest,probe,inputs,tmp_path/'probe')
+        saved=read_cached_probe(tmp_path/'probe')
+        assert saved['status']=='interrupted' and saved['samples_eligible'] is False
+        assert saved['observation']['execution_outcomes']==['infrastructure_interruption']+['not_run']*3
+>       assert saved['summary']['known_executor_seconds']>0
+E       assert 0.0 > 0
+
+tests/external/test_cache_probe_execution.py:61: AssertionError
+=========================== short test summary info ============================
+FAILED tests/external/test_cache_probe_execution.py::test_archive_error_preserves_actual_executor_cost_and_unexecuted_replays
+1 failed, 1 passed in 0.69s

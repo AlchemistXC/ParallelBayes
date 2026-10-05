@@ -1,0 +1,7 @@
+{
+  "omitted_from_v1_explicit_preflight": "scripts/completion/cached_execution.py",
+  "source_commit": "c745745",
+  "after_run_matches_committed_source": true,
+  "sha256": "43d3cd1431e75671c1d7a3ffe72a3e7cacf1b966a21e0de8d6ddd80170aa2381",
+  "scope": "Post-run source check; does not retroactively become a pre-execution check. V1 inputs/results retained; next technical identity fixes preflight."
+}

@@ -1,0 +1,136 @@
+{
+  "by_stage": {
+    "archive": {
+      "complete_seconds": 0.05652899999950023,
+      "completed": 1,
+      "failed": 0,
+      "known_seconds": 0.05652899999950023,
+      "not_run": 0,
+      "planned": 1,
+      "unfinished": 0
+    },
+    "input_preparation": {
+      "complete_seconds": 0.0031199160002870485,
+      "completed": 1,
+      "failed": 0,
+      "known_seconds": 0.0031199160002870485,
+      "not_run": 0,
+      "planned": 1,
+      "unfinished": 0
+    },
+    "verification": {
+      "complete_seconds": 0.01286216699918441,
+      "completed": 1,
+      "failed": 0,
+      "known_seconds": 0.01286216699918441,
+      "not_run": 0,
+      "planned": 1,
+      "unfinished": 0
+    }
+  },
+  "complete_seconds": 0.07251108299897169,
+  "finished_operations": 3,
+  "identity": {
+    "executable": "/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+    "host_lock": "/Users/haku/Workspace/ParallelBayes/output/research-completion/host-experiment.lock",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "recorder_source_sha256": "aaa3decf03ad561c23b213c7ba6827095976c46f99147860d0e44c5a67c0f96a",
+    "schema": 1,
+    "scope": "Wall time around one declared operation. Includes that operation and any subprocess waiting it performs; excludes ledger writes, report/reopen/duplicate checks, inter-operation gaps, and external unregistered activity. No per-fit allocation.",
+    "spec": {
+      "design_sha256": "bc0c3ad43c5dc26969b297309816466a9f9fd810474a36eb601c82fcef752c28",
+      "operations": [
+        {
+          "id": "inputs",
+          "stage": "input_preparation"
+        },
+        {
+          "id": "archive",
+          "stage": "archive"
+        },
+        {
+          "id": "verify",
+          "stage": "verification"
+        }
+      ],
+      "study_identity": "cache-probe-capsule-mac-v1"
+    }
+  },
+  "known_seconds": 0.07251108299897169,
+  "operations": [
+    {
+      "error": null,
+      "id": "inputs",
+      "outcome": "completed",
+      "result": {
+        "G1-rep0000.npz": {
+          "actual_sha256": "98302bbb59653bf578f8de8e4474885c6b9e5f7f2c13c84da6fde41675f7a6cd",
+          "chains": 4,
+          "dimension": 8,
+          "model": "G1",
+          "replicate": 0,
+          "sha256": "ea63d5b2cd272dc6ed27f9630320329b5bbf675a2ef114d94cbaee8251770a8e",
+          "steps": 16
+        },
+        "G1-rep0001.npz": {
+          "actual_sha256": "2f43c02e813806fc95741d69e2e9c1da6847fc0b0a0998160dcece0165920552",
+          "chains": 4,
+          "dimension": 8,
+          "model": "G1",
+          "replicate": 1,
+          "sha256": "af55808b64fb6a9870388e19d5e5db0738db038577cfe9030209b951d27be0ca",
+          "steps": 16
+        },
+        "L1-rep0000.npz": {
+          "actual_sha256": "dbd0e5e1212b0d4bfb73c9f51b428d62a001e13ebc7d2b17f5707e79cd56b2c1",
+          "chains": 4,
+          "dimension": 8,
+          "model": "L1",
+          "replicate": 0,
+          "sha256": "e21a375656ac5e78f3378244601f15b92295d28cf2d6c350e0068f285960984e",
+          "steps": 16
+        },
+        "L1-rep0001.npz": {
+          "actual_sha256": "933b0d7ad897fe2e1bd7f7db1418c6da9580a97d7e3e68afe457ccf51bbcc750",
+          "chains": 4,
+          "dimension": 8,
+          "model": "L1",
+          "replicate": 1,
+          "sha256": "52205f647d5155dbbc3602848383cd715c3356aeba72e99c9ba79b9da4b2eb00",
+          "steps": 16
+        }
+      },
+      "seconds": 0.0031199160002870485,
+      "stage": "input_preparation"
+    },
+    {
+      "error": null,
+      "id": "archive",
+      "outcome": "completed",
+      "result": {
+        "bytes": 2283520,
+        "members": 369,
+        "sha256": "9b1a37fcba67f698cf328b3d1e3c241379c797bf35de2f9c8880cb47367bd234"
+      },
+      "seconds": 0.05652899999950023,
+      "stage": "archive"
+    },
+    {
+      "error": null,
+      "id": "verify",
+      "outcome": "completed",
+      "result": {
+        "sha256": "9b1a37fcba67f698cf328b3d1e3c241379c797bf35de2f9c8880cb47367bd234",
+        "verified_members": 369
+      },
+      "seconds": 0.01286216699918441,
+      "stage": "verification"
+    }
+  ],
+  "per_fit_cost_allocation": null,
+  "planned_operations": 3,
+  "proves_process_termination": false,
+  "statistical_repetitions_added": 0,
+  "unfinished_operations": 0,
+  "unrecorded_operations": 0
+}

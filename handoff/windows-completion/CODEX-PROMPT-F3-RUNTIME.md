@@ -52,7 +52,7 @@ Mac新结果：15个技术任务中14个合格，G2最大NUTS原调用与唯一�
 
 每个合格MH任务须完成独立NumPy实际数组重放、原始/无约束输出变换和接受事件检查；失败轨迹隔离。NUTS保留子链实际初值、种子/随机状态、预热、适应过程、发散、完整元数据及R现代诊断，不声称固定MH路径等价。12组同核比较也须核对实际随机数组，不只比较种子。
 
-这里不在每个主任务里隐藏额外缓存重放；若验证缓存计时，单独声明有限的技术重放输入、次数和计时边界，成本不能装作主调用免费。缓存探测分配与批次费用接口现已在docs/FORMAL-MEASUREMENT-DESIGN.md具体化；本阶段仍只做27项技术验收，不执行规划中的9,216缓存探测。后继正式worker不得直接复用只接受Mac有效原任务的cached_cost_worker.py；须在同一实际输入/配置下保留失败入选配置。批次费用可复用batch_cost_ledger.py，但原生Windows锁/中断仍应实际检查，不能把Mac测试当作Windows证据。缓存跨输入统计见docs/CACHE-PROBE-ANALYSIS.md及cache_probe_analysis.py；人工统计检查不替代实际输入/审计回执适配。本次单输入技术批次不生成跨重复区间，也不启动正式缓存网格。
+这里不在每个主任务里隐藏额外缓存重放；若验证缓存计时，单独声明有限的技术重放输入、次数和计时边界，成本不能装作主调用免费。缓存探测分配与批次费用接口现已在docs/FORMAL-MEASUREMENT-DESIGN.md具体化；本阶段仍只做27项技术验收，不执行规划中的9,216缓存探测。后继正式worker不得直接复用只接受Mac有效原任务的cached_cost_worker.py；须在同一实际输入/配置下保留失败入选配置。批次费用可复用batch_cost_ledger.py，但原生Windows锁/中断仍应实际检查，不能把Mac测试当作Windows证据。缓存跨输入统计见docs/CACHE-PROBE-ANALYSIS.md及cache_probe_analysis.py；人工统计检查不替代实际输入/审计回执适配。本次单输入技术批次不生成跨重复区间，也不启动正式缓存网格。后继Mac真实接收验证见docs/CACHE-PROBE-EXECUTION.md：cache_probe_execution.py可作为数值/记录实现参考，当前入口明确只允许Mac技术执行。缓存产物始终samples_eligible=false，不能为了复用旧调度器而改成true；如接入原生调度，区分measurement_available与后验样本资格。完整源码冻结须显式包含cached_execution.py。本机小型同进程测试不代表Windows进程/资源保护通过。
 
 ## 归档到分析及交付
 

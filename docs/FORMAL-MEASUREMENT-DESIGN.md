@@ -70,3 +70,6 @@ python scripts/completion/audit_measurement_plan_archive.py --bundle EXTRACTED
 它只读，不使用旧绝对路径读取数据、不重新采样或计时。若要重新测量小型I/O夹具，需另取原`cached-cost-v1`解压包，再以新输出运行`validate_measurement_policy.py --bundle ORIGINAL --output NEW --host-lock HOST_LOCK`；不同运行的耗时自然不要求相同。
 
 本轮关闭分配规则、费用记录与有限技术重建；正式worker/缓存统计集成、Windows实际运行保护与最大任务、F2回传、正式冻结/执行、统一软件及完整研究终审仍待完成。
+
+
+2026-10-06后继：真实CPU缓存记录到本接口及批次费用已完成有限核验，见[CACHE-PROBE-EXECUTION](CACHE-PROBE-EXECUTION.md)。原生调度的测量任务类型、Windows验收及正式协议仍未完成；上述先前时点的边界保留。

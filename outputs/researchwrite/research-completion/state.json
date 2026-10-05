@@ -12,7 +12,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Windows completes F2 from original frozen inputs then native runtime/max-task validation. Mac connects cache measurement, paired statistics and batch-cost accounting to a successor worker with verified actual-input/audit receipt adapters. Frozen technical sources remain unchanged; final protocol remains unfrozen.",
+  "next_recommended_action": "Windows completes F2 and native runtime/max-task validation. Preserve explicit cache-measurement versus posterior-fit task roles when integrating the verified numerical/artifact module; do not bypass sample eligibility. Mac can continue unified software release/reproduction work. Formal protocol remains unfrozen.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -769,6 +769,28 @@
     "new_execution_timings": 0,
     "new_research_repetitions": 0,
     "formal_worker_integrated": false,
+    "Windows_validated": false
+  },
+  "cache_actual_intake": {
+    "execution_source": "c745745",
+    "preflight_source": "2f9956b",
+    "current_identity": "cache-probe-capsule-mac-v2",
+    "report": "docs/CACHE-PROBE-EXECUTION.md",
+    "new_tests_passed": 7,
+    "affected_tests_passed": 8,
+    "deprecation_warnings": 18,
+    "current_probe_count": 16,
+    "current_executor_records": 64,
+    "current_independent_audits_passed": 64,
+    "acceptance_mismatches": 0,
+    "new_technical_input_sets": 4,
+    "prior_identity_preserved": "cache-probe-capsule-mac-v1",
+    "both_technical_batches_executor_records": 128,
+    "posterior_eligible_probes": 0,
+    "formal_repetitions": 0,
+    "relocated_assets_verified": 378,
+    "actual_input_statistics_cost_intake_validated": true,
+    "process_supervision_validated": false,
     "Windows_validated": false
   }
 }

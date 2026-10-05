@@ -1,0 +1,14 @@
+{
+  "verified_manifest_files": 378,
+  "probe_artifacts": 16,
+  "actual_inputs_verified": 4,
+  "actual_executor_records": 64,
+  "samples_eligible_probes": 0,
+  "target_statistics_rebuilt": 2,
+  "batch_costs_exact": true,
+  "new_executor_calls": 0,
+  "new_independent_audits": 0,
+  "formal_inference_complete": false,
+  "native_Windows_validated": false,
+  "scope": "Moved read-only asset/input/binding/statistics reconstruction; prior independent path audits checked as sealed evidence, not re-executed"
+}
