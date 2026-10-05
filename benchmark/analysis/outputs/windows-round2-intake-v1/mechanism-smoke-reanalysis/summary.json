@@ -1,0 +1,39 @@
+{
+  "protocol_sha256": "534651bf3b0ae2984624e10bc668edc5837c78cf3b472fa4c3a1ade85254cf76",
+  "source_commit": "97e6835476bf71f48c1236e7cc77f235e5191d6c",
+  "run_manifest_sha256": "8b54debf330b8d56781cbbbc36f720924a18b071369d3685671ead79a6413818",
+  "state_sha256": {
+    "5940aa0b72e34c2cc237": "8f87956da3fe24793c6e85638eebae8b7ea56adbcc3fb6bf998411456e6accab",
+    "77be5a3c758c222ca253": "c1a79d50f512350515103220832cbe6cccbd6ef56358c2fee718edb84df3a1c4",
+    "f16bc3ac0091492964ed": "103b4d1e0abaf8ac44b9c7a228277b6d3f9ee9ff0c355a77956ca0901a561259"
+  },
+  "analyzer_sha256": "1fe99303d47eb407c93d5b2a0cafb61bde8f26a55cba97d0812a8bb92df2110b",
+  "device": "cpu",
+  "groups_planned": 3,
+  "input_verification": {
+    "mode": "frozen_files",
+    "files": 2,
+    "hashes": {
+      "G1-r0": {
+        "actual_sha256": "ea71804657be62b2d7fad4da5813620fb02a920bba03e556f5f6d39f6bd6a9fb",
+        "file_sha256": "834d35bad5b22edd90a3067e98aa4417232750a5ef16b2dead2404555762dc0d"
+      },
+      "G2-r0": {
+        "actual_sha256": "dc628c3e6e8dc573145e9e511e3d53f24c4b2f09f7ce511c1d011bd7a516fab5",
+        "file_sha256": "50bde69cf317b7cf1ca0c0dda4b83556576c11c187e6216a6f5c214f9097ee50"
+      }
+    }
+  },
+  "groups_completed": 3,
+  "groups_failed": 0,
+  "groups_pending": 0,
+  "workflows_planned": 9,
+  "workflows_completed": 9,
+  "workflow_status_counts": {
+    "completed": 9
+  },
+  "independent_tapes_per_model": 1,
+  "technical_replays": 3,
+  "scope": "Descriptive pilot tables; no confidence intervals, inference convergence or general speedup claim",
+  "cost_note": "Fixed-state probe operations overlap in real execution and must not be added. Post-probe timing is a sensitivity check, not causal overhead subtraction."
+}

@@ -9,16 +9,29 @@ import numpy as np
 
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'scripts/completion'))
-from mechanism_runner import read_plan,sha,write,actual_hash,master_tape
+from mechanism_runner import read_plan,sha,write,actual_hash
 from parallelbayes.reference import make_reference
 
 
-def analyze(plan_path,run,output):
+def analyze(plan_path,run,output,inputs=None):
     if output.exists():raise FileExistsError('Preserve prior pilot analysis')
     if output==run or run in output.parents:raise ValueError('Do not write into raw evidence')
+    if inputs is None:raise ValueError('Original frozen input directory is required; seed regeneration is not evidence')
+    inputs=Path(inputs).resolve()
+    if output.resolve()==inputs or inputs in output.resolve().parents:raise ValueError('Preserve frozen inputs')
     plan=read_plan(plan_path);manifest=json.loads((run/'run.json').read_text())
     if manifest['protocol_sha256']!=plan['protocol_sha256']:raise ValueError('Run/protocol identity differs')
     rows=[];probes=[];statuses=[];states={};master={}
+    # Validate the complete supplied input inventory even for pending groups.
+    # Platform-dependent log/normal generation must never redefine this tape.
+    for key,expected in plan['inputs'].items():
+        if Path(key).name!=key:raise ValueError('Invalid frozen input name')
+        path=inputs/(key+'.npz')
+        if sha(path)!=expected['file_sha256']:raise ValueError('Frozen input file checksum mismatch: '+key)
+        with np.load(path,allow_pickle=False) as z:tape={k:z[k].copy() for k in z.files}
+        if set(tape)!={'noise','log_uniform','directions'} or actual_hash(tape)!=expected['actual_sha256']:
+            raise ValueError('Frozen actual input checksum mismatch: '+key)
+        master[key]=tape
     target_ids={name:make_reference(spec).target_id for name,spec in plan['models'].items()}
     for g in plan['groups']:
         folder=run/'groups'/g['id'];path=folder/'state.json'
@@ -32,8 +45,7 @@ def analyze(plan_path,run,output):
         for name,digest in state['assets'].items():
             if sha(folder/name)!=digest:raise ValueError('Raw asset checksum mismatch: '+name)
         attempt=folder/state['attempt']
-        key=(g['model'],g['replicate'])
-        if key not in master:master[key]=master_tape(plan,*key)
+        key=f"{g['model']}-r{g['replicate']}"
         expected={k:a[:g['chains'],:g['draws']] for k,a in master[key].items()}
         with np.load(attempt/'inputs.npz',allow_pickle=False) as z:tape={k:z[k].copy() for k in z.files}
         if actual_hash(tape)!=actual_hash(expected):raise ValueError('Saved actual input is not the frozen prefix')
@@ -114,6 +126,7 @@ def analyze(plan_path,run,output):
     summary=dict(protocol_sha256=plan['protocol_sha256'],source_commit=plan['source_commit'],
         run_manifest_sha256=sha(run/'run.json'),state_sha256=states,analyzer_sha256=sha(Path(__file__)),
         device=manifest['device'],groups_planned=len(plan['groups']),
+        input_verification=dict(mode='frozen_files',files=len(master),hashes=plan['inputs']),
         groups_completed=statuses.count('completed'),groups_failed=statuses.count('failed'),groups_pending=statuses.count('pending'),
         workflows_planned=sum(1+len(g['windows']) for g in plan['groups']),
         workflows_completed=sum(r['status']=='completed' for r in rows),
@@ -129,4 +142,5 @@ def analyze(plan_path,run,output):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--plan',type=Path,required=True)
     p.add_argument('--run',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
-    a=p.parse_args();analyze(a.plan.resolve(),a.run.resolve(),a.output.resolve())
+    p.add_argument('--inputs',type=Path,required=True,help='Original frozen NPZ files; never regenerate from seeds')
+    a=p.parse_args();analyze(a.plan.resolve(),a.run.resolve(),a.output.resolve(),inputs=a.inputs.resolve())

@@ -1,0 +1,209 @@
+{
+  "scope": "Actual frozen Mac arrays versus rejected Windows reconstructions; component localization only, not a libm/compiler causal proof.",
+  "rows": [
+    {
+      "name": "G1-r0.npz",
+      "components": {
+        "noise": {
+          "shape": [
+            16,
+            512,
+            8
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        },
+        "log_uniform": {
+          "shape": [
+            16,
+            512
+          ],
+          "equal": false,
+          "unequal": 13,
+          "max_absolute_difference": 4.440892098500626e-16
+        },
+        "directions": {
+          "shape": [
+            16,
+            512,
+            8
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "name": "G1-r1.npz",
+      "components": {
+        "noise": {
+          "shape": [
+            16,
+            512,
+            8
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        },
+        "log_uniform": {
+          "shape": [
+            16,
+            512
+          ],
+          "equal": false,
+          "unequal": 12,
+          "max_absolute_difference": 2.220446049250313e-16
+        },
+        "directions": {
+          "shape": [
+            16,
+            512,
+            8
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "name": "G2-r0.npz",
+      "components": {
+        "noise": {
+          "shape": [
+            16,
+            512,
+            64
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        },
+        "log_uniform": {
+          "shape": [
+            16,
+            512
+          ],
+          "equal": false,
+          "unequal": 17,
+          "max_absolute_difference": 4.440892098500626e-16
+        },
+        "directions": {
+          "shape": [
+            16,
+            512,
+            64
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "name": "G2-r1.npz",
+      "components": {
+        "noise": {
+          "shape": [
+            16,
+            512,
+            64
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        },
+        "log_uniform": {
+          "shape": [
+            16,
+            512
+          ],
+          "equal": false,
+          "unequal": 16,
+          "max_absolute_difference": 2.220446049250313e-16
+        },
+        "directions": {
+          "shape": [
+            16,
+            512,
+            64
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "name": "L1-r0.npz",
+      "components": {
+        "noise": {
+          "shape": [
+            16,
+            512,
+            8
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        },
+        "log_uniform": {
+          "shape": [
+            16,
+            512
+          ],
+          "equal": false,
+          "unequal": 14,
+          "max_absolute_difference": 1.1102230246251565e-16
+        },
+        "directions": {
+          "shape": [
+            16,
+            512,
+            8
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "name": "L1-r1.npz",
+      "components": {
+        "noise": {
+          "shape": [
+            16,
+            512,
+            8
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        },
+        "log_uniform": {
+          "shape": [
+            16,
+            512
+          ],
+          "equal": false,
+          "unequal": 10,
+          "max_absolute_difference": 4.440892098500626e-16
+        },
+        "directions": {
+          "shape": [
+            16,
+            512,
+            8
+          ],
+          "equal": true,
+          "unequal": 0,
+          "max_absolute_difference": 0.0
+        }
+      }
+    }
+  ]
+}

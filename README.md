@@ -6,7 +6,7 @@
 
 2026-10-05：进入[研究收尾F0–F6](docs/RESEARCH-COMPLETION-PLAN.md)，实际状态见[当前工作包](execution/COMPLETION-WORK-PACKAGES.md)。Windows首轮开发、512项数值实验和回传审查已完成，不能再按初次移植提示词从头开发。
 
-当前Windows执行[第二轮交接提示词](handoff/windows-completion/CODEX-PROMPT-F2-F4.md)：诊断固定样例、水井CPU/CUDA/R核验及新协议192工作流机制pilot；真实回执尚未到。历史环境安装说明保留在`handoff/windows-native/`，不要重跑首轮512项。
+Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-INTAKE.md)：F1、水井、九目标CPU NUTS及CPU/CUDA MH就绪证据已取得；跨系统逐位变换差异保留。F2的192工作流尚未执行，原始输入现已补入草稿附件，下一步使用[机制续跑提示词](handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md)。无需重跑已完成任务。
 
 本轮已完成[有限参考复用审计](docs/REFERENCE-REUSE.md)、[水井Mac模型/R核验](docs/WELLS-TARGET-VALIDATION.md)和参考伴随分析。[独立调参](docs/F3-TUNING-RESULTS.md)212/216有效、失败保留；[九目标多预算pilot](docs/F3-BUDGET-PILOT-RESULTS.md)323/324满足各自输出标准，1项长路径容差失败已完成[有限定位](docs/BUDGET-PATH-LOCALIZATION.md)，仍保留失败。诊断仍显示H1发散、M1探索不足及稀有事件未判定。正式推断协议、Windows同机比较和统一发布/论文尚未完成。
 
@@ -18,7 +18,7 @@
 |---|---|---|---|
 | Stan/BridgeStan CPU | 支持 | 不支持 | 不支持 |
 | 明确实现和核验的原生JAX目标 | 支持 | 支持相应组合 | BlackJAX |
-| 原生Windows PyTorch CPU/CUDA | 内置目标已实测 | 相应组合已实测，eager Python控制 | GPU未接入；独立Pyro CPU正态基线已核验 |
+| 原生Windows PyTorch CPU/CUDA | 内置目标已实测 | 相应组合已实测，eager Python控制 | GPU未接入；Pyro CPU九目标串行/spawn就绪核验通过 |
 
 完整[能力矩阵](docs/CAPABILITIES.md)、[计算契约](docs/COMPUTATION-CONTRACT.md)、[Mac安装与使用](docs/INSTALL-AND-USE.md)、[新增Poisson目标示例](docs/EXTENDING-TARGETS.md)。本开发版本支持torch/NumPy独立导入，JAX依赖移至可选安装；CUDA torch构建须按[Windows说明](docs/WINDOWS-NATIVE.md)安装并验证。
 

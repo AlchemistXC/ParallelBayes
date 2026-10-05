@@ -21,7 +21,7 @@
 2026-10-05第二轮：已选仿射坐标的九目标MH组合在CPU/CUDA各54工作流、36配对通过，
 独立NumPy重放及零重算恢复通过；九目标CPU NUTS六类数组串行/spawn一致。
 H1/MALA全拒绝链、NUTS不利Rhat与不可判定函数保留；F2机制pilot仍因冻结输入哈希
-不匹配而未执行。详见[第二轮回执](WINDOWS-COMPLETION-V2-RESULTS.md)。
+不匹配而未执行。详见[第二轮回执](WINDOWS-COMPLETION-V2-RESULTS.md)。 Mac独立接收已完成，六份F2原输入已补传；108份路径/事件满足原标准，但其中60份原尺度跨系统逐位检查仍为false，最大差约8.88e-15。此差异与Windows同机核验分开报告，见[接收记录](WINDOWS-ROUND2-INTAKE.md)。
 
 ## 历史发布 0.1.1
 

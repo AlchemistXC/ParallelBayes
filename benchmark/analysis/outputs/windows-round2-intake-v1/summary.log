@@ -1,0 +1,68 @@
+{
+  "scope": "Read-only cross-host reception and same-received-binary R companion; no new posterior fits or independent repetitions.",
+  "archive": {
+    "status": "passed",
+    "archive": "/Users/haku/Workspace/ParallelBayes/downloads/windows-completion-v2/windows-native-20261005T113131Z.tar",
+    "archive_sha256": "bfd55d442fbb4137c54e573031781a95d75e0a86f20ccd4c8a994d338746efb9",
+    "checked_files": 948,
+    "source_commit": "ced54ef6ce945198339a138142dcdfede84f06bc",
+    "branch": "codex/windows-completion-v2"
+  },
+  "source_return_commit": "ced54ef6ce945198339a138142dcdfede84f06bc",
+  "raw_assets_verified": 369,
+  "curated_files_verified": 95,
+  "received_files_unchanged": 674,
+  "MH": {
+    "workflows": 108,
+    "paths_within_original_tolerance": 108,
+    "acceptance_mismatches": 0,
+    "exact_outputs": 48,
+    "nonexact_outputs": 60,
+    "max_absolute_output_difference": 8.881784197001252e-15,
+    "max_scaled_output_difference": 5.329070518200751e-15,
+    "strict_original_Mac_audit_passed": false,
+    "Windows_same_host_audit_passed": true,
+    "cross_device_pairs": 54,
+    "cross_device_passed": 54,
+    "interpretation": "The original exact transform check remains failed on 60 cross-host outputs. Small descriptive residuals do not redefine it or invalidate the separate Windows same-host receipt."
+  },
+  "NUTS": {
+    "targets": 9,
+    "exact_serial_spawn_array_pairs": 54,
+    "preserved_Windows_binary_roundtrips": 18,
+    "local_function_vectors_bitwise_equal": 8,
+    "max_local_function_difference": 2.220446049250313e-16,
+    "interpretation": "Transport hashes are exact on received binary data; recomputation of functions on another host is not assumed bitwise identical."
+  },
+  "R_companion": {
+    "Windows_R": "R version 4.6.1 (2026-06-24 ucrt)",
+    "Mac_R": "R version 4.6.0 (2026-04-24)",
+    "posterior": "1.7.0",
+    "fits": 18,
+    "function_rows": 72,
+    "missingness_matches": true,
+    "undefined_metric_entries": 34,
+    "max_absolute_differences": {
+      "mean": 1.0061396160665481e-16,
+      "sd": 9.992007221626409e-16,
+      "rhat": 0.0,
+      "ess_bulk": 1.0231815394945443e-12,
+      "ess_tail": 0.0,
+      "mcse_mean": 9.992007221626409e-16
+    },
+    "Windows_result_sha256": "73c2f7673b4eb881dcc2b92ee3dcc67a47973caba99937158c1518f79b5ad305",
+    "Mac_result_sha256": "bd07142fccce2364b5a06cfbd36990508bc9ab0d0f8ceb56beaa7847f13f25db"
+  },
+  "F2": {
+    "original_files_verified": 6,
+    "noise_and_directions_exact": true,
+    "differing_log_uniform_elements": 82,
+    "max_log_uniform_difference": 4.440892098500626e-16,
+    "completed_workflows": 0,
+    "pending_workflows": 192,
+    "interpretation": "Component localization; no specific libm/compiler causal claim. Original arrays supplied, no protocol hash or tolerance changed."
+  },
+  "new_MCMC_fits": 0,
+  "new_independent_repetitions": 0,
+  "formal_inference_complete": false
+}

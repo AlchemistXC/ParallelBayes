@@ -3,14 +3,13 @@
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
   "local_phase": "completion_analysis_and_release_integration",
-  "gpu_tasks": "windows_v1_received_and_audited; additional native Windows experiments require new protocols",
+  "gpu_tasks": "Windows v1 and second-round readiness received; F2 original inputs delivered, 192 mechanism workflows still unexecuted; formal inference not started",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
   "requires_user_resume": false,
   "rerun_completed_cpu_tasks": false,
   "active_outstanding_tasks": [
     "F0 current-state and evidence alignment",
-    "F1 diagnostic midpoint mechanism and Windows receipt",
     "F2 Windows cost mechanisms",
     "F3 reliable inference comparison",
     "F4 external model example",
@@ -22,6 +21,11 @@
   "gpu_backend": "torch_eager_0.2.0.dev1_implemented_and_scoped_validation",
   "legacy_handoff": "handoff/windows-native describes the completed initial migration; handoff/gpu is a historical WSL archive",
   "revision": "research-completion-v1",
-  "received_windows_commit": "3a51f98fc8d10187b8f71e477aaff56d86ea50cd",
-  "reception_review_commit": "38894409004dd9ebceb978755dc246fcb3418d01"
+  "received_windows_commit": "ced54ef6ce945198339a138142dcdfede84f06bc",
+  "reception_review_commit": "38894409004dd9ebceb978755dc246fcb3418d01",
+  "completed_bounded_milestones": [
+    "F1 fixed diagnostic mechanism plus native Windows receipt"
+  ],
+  "second_round_intake": "docs/WINDOWS-ROUND2-INTAKE.md",
+  "next_Windows_prompt": "handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md"
 }

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "archive": "/Users/haku/Workspace/ParallelBayes/downloads/windows-completion-v2/windows-native-20261005T113131Z.tar",
+  "archive_sha256": "bfd55d442fbb4137c54e573031781a95d75e0a86f20ccd4c8a994d338746efb9",
+  "checked_files": 948,
+  "source_commit": "ced54ef6ce945198339a138142dcdfede84f06bc",
+  "branch": "codex/windows-completion-v2"
+}

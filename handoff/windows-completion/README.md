@@ -2,7 +2,7 @@
 
 2026-10-05。当前开发分支 `codex/windows-return-audit`；原 `windows-native-dev` 的首轮512项是已接收的历史证据。只使用原生 Windows，不重启第一次移植，也不覆盖原协议或环境。
 
-按以下顺序处理已具备执行入口的工作；已通过且身份一致的任务使用原恢复规则，不重跑：
+**第二轮`ced54ef`已接收。现在只需按[F2原始输入续跑提示词](CODEX-PROMPT-F2-RESUME.md)完成192工作流机制pilot。** 原文件已补入现有草稿，分析器已修复。F1/F4、九目标CPU NUTS和CPU/CUDA MH就绪检查已完成，无需再次运行；Mac跨系统严格变换差异见[接收报告](../../docs/WINDOWS-ROUND2-INTAKE.md)。以下是原执行入口的保留索引：
 
 1. [F1 诊断最小复现](CODEX-PROMPT.md)：固定二进制输入、R版本和两项Rhat差异核验，无新采样。
 2. [F2 机制与 F4 水井](CODEX-PROMPT-F2-F4.md)：按各自已冻结协议执行；水井目标/R接口、CPU/CUDA核验和192工作流机制pilot，保留负结果。
@@ -13,7 +13,7 @@
 
 [正式推断设计草案v0.1](../../docs/F3-FORMAL-DESIGN-DRAFT.md)暂定九目标×四预算×九工作流×128次四链重复，共41,472拟合；它**尚未冻结，也没有正式执行命令**。不要将现有pilot直接扩为该网格。运行器已有Mac两目标十任务、合作主机锁、恢复完整性和人工内存保护的有限实测，见FORMAL-RUNTIME-TECHNICAL；已有324项预算pilot的原始数组逐任务重建及配对分析衔接通过（STREAMING-ANALYSIS）；Mac显式单任务中断恢复和全部尝试成本已有限核验（FORMAL-RECOVERY）；共享登记/遗留进程及尝试成本已在有限Mac配置中接入并核验（FORMAL-COORDINATOR）；runtime-v1登记到搬迁归档/有界数组/配对摘要已作有限Mac核验（FORMAL-RUNTIME-ANALYSIS）；原生Windows进程集合与恢复、正式批次驱动/冻结后完整格式验收、三种成本的独立测量及Windows最大任务／资源保护仍未完成。不得在Windows套用Mac进程组实现。Mac实测不代表Windows通过。实际磁盘／内存情况由Windows端记录，主要未压缩数组374.35GiB只是规划值，不能当作足够空间保证。
 
-全部研究完成条件在[总计划](../../docs/RESEARCH-COMPLETION-PLAN.md)与[工作包登记](../../execution/COMPLETION-WORK-PACKAGES.md)。上述回执回来后仍需正式推断、两平台干净安装、归档到表图/PDF的完整重建及作者终审。无需为本篇新增GPU NUTS、通用Stan转译或自动选择器。
+全部研究完成条件在[总计划](../../docs/RESEARCH-COMPLETION-PLAN.md)与[工作包登记](../../execution/COMPLETION-WORK-PACKAGES.md)。机制回执及运行门槛齐备后仍需正式推断、两平台干净安装、归档到表图/PDF的完整重建及作者终审。无需为本篇新增GPU NUTS、通用Stan转译或自动选择器。
 
 
 Mac后续计时验证：`docs/MEASURED-WORKFLOW.md`记录独立普通子进程和外层审计调用的五工作流实测、候选隔离及归档重建。它不是Windows验收；Windows后续应维持同样明确的计时边界，并单独核验原生进程生命周期。缓存执行、失败/恢复外层完整成本和正式规模仍待完成，不得将单次技术重放作为新的独立统计重复。

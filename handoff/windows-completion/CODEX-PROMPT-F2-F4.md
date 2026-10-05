@@ -1,5 +1,7 @@
 # Windows第二轮交接：外部目标核验与机制pilot
 
+2026-10-05后继：F4等就绪回执已经接收；F2在输入哈希处停止，现应使用[原输入续跑提示词](CODEX-PROMPT-F2-RESUME.md)。下文保留原交接过程，勿再按种子重建机制输入；分析器新增必需`--inputs`参数。
+
 请在我的原生Windows 11／AMD CPU／RTX5080电脑继续ParallelBayes。严格使用原生PowerShell、原生Windows Python和CUDA，不使用WSL2、Linux虚拟机或容器。当前授权为F1诊断回执、F4水井目标核验和已经冻结的F2开发性机制pilot。不要重跑历史512项网格，不更改旧环境、协议和结果，不自动合并main或发布Release、CRAN、期刊。
 
 先读取AGENTS.md、docs/RESEARCH-COMPLETION-PLAN.md、execution/COMPLETION-WORK-PACKAGES.md、docs/MECHANISM-PILOT.md及docs/WELLS-TARGET-VALIDATION.md。新代码在origin/codex/windows-return-audit。保留原工作区，可从交接提交新建独立开发分支codex/windows-completion-v2及worktree。记录实际HEAD；若后续提交改变冻结源码，检查会拒绝运行，不能修改哈希使其通过，应使用交接时的提交或回报差异。
@@ -53,8 +55,8 @@ CPU/CUDA各有独立新协议。模型保持原平坦先验、dist/100、alpha/b
 & $PB_PYTHON scripts/completion/mechanism_runner.py prepare --plan $PB_PLAN --inputs "$PB_BATCH/mechanism-inputs"
 & $PB_PYTHON scripts/completion/mechanism_runner.py run --plan $PB_PLAN --inputs "$PB_BATCH/mechanism-inputs" --output "$PB_BATCH/mechanism-cpu" --device cpu
 & $PB_PYTHON scripts/completion/mechanism_runner.py run --plan $PB_PLAN --inputs "$PB_BATCH/mechanism-inputs" --output "$PB_BATCH/mechanism-cuda" --device cuda
-& $PB_PYTHON scripts/completion/analyze_mechanism_pilot.py --plan $PB_PLAN --run "$PB_BATCH/mechanism-cpu" --output "$PB_BATCH/mechanism-analysis-cpu"
-& $PB_PYTHON scripts/completion/analyze_mechanism_pilot.py --plan $PB_PLAN --run "$PB_BATCH/mechanism-cuda" --output "$PB_BATCH/mechanism-analysis-cuda"
+& $PB_PYTHON scripts/completion/analyze_mechanism_pilot.py --plan $PB_PLAN --inputs "$PB_BATCH/mechanism-inputs" --run "$PB_BATCH/mechanism-cpu" --output "$PB_BATCH/mechanism-analysis-cpu"
+& $PB_PYTHON scripts/completion/analyze_mechanism_pilot.py --plan $PB_PLAN --inputs "$PB_BATCH/mechanism-inputs" --run "$PB_BATCH/mechanism-cuda" --output "$PB_BATCH/mechanism-analysis-cuda"
 ```
 
 每设备36组、96个工作流，G1/G2/L1及2份实际主数组；含窗口/链数网格、G2/RWM预设步长对照和512总输出的链分配对照。每工作流有1次审计、3次交错计时重放及1次探针后重放；固定状态探针另计。它们不是5次独立MCMC重复。每台设备的循环完成不代表96项都成功，必须报告completed/failed/pending。

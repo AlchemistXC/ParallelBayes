@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "scope": "Native Windows external-target and R transport checks, not convergence/performance",
+  "source_script_sha256": "458d45e97c6921fcef38d4271dd2149788949652cdaacd2790e18dbc673e5b75",
+  "verified_workflows": 12,
+  "independent_oracle_chains": 8,
+  "independent_random_tapes": 1,
+  "R_CUDA_replay_identical": true,
+  "R_binary_transport_identical": true,
+  "rows": [
+    {
+      "run": "CPU",
+      "workflow": "mala-sequential",
+      "max_path_error": 6.661338147750939e-16,
+      "acceptance_mismatches": 0
+    },
+    {
+      "run": "CPU",
+      "workflow": "mala-quasi_deer",
+      "max_path_error": 9.05097108372388e-11,
+      "acceptance_mismatches": 0
+    },
+    {
+      "run": "CPU",
+      "workflow": "rwm-sequential",
+      "max_path_error": 0.0,
+      "acceptance_mismatches": 0
+    },
+    {
+      "run": "CPU",
+      "workflow": "rwm-online_picard",
+      "max_path_error": 6.661338147750939e-16,
+      "acceptance_mismatches": 0
+    },
+    {
+      "run": "CUDA",
+      "workflow": "mala-sequential",
+      "max_path_error": 2.220446049250313e-16,
+      "acceptance_mismatches": 0
+    },
+    {
+      "run": "CUDA",
+      "workflow": "mala-quasi_deer",
+      "max_path_error": 9.050948879263387e-11,
+      "acceptance_mismatches": 0
+    },
+    {
+      "run": "CUDA",
+      "workflow": "rwm-sequential",
+      "max_path_error": 0.0,
+      "acceptance_mismatches": 0
+    },
+    {
+      "run": "CUDA",
+      "workflow": "rwm-online_picard",
+      "max_path_error": 6.661338147750939e-16,
+      "acceptance_mismatches": 0
+    },
+    {
+      "run": "R-CUDA",
+      "workflow": "mala-sequential",
+      "max_path_error": 2.220446049250313e-16,
+      "acceptance_mismatches": 0
+    },
+    {
+      "run": "R-CUDA",
+      "workflow": "mala-quasi_deer",
+      "max_path_error": 9.050948879263387e-11,
+      "acceptance_mismatches": 0
+    },
+    {
+      "run": "R-CUDA",
+      "workflow": "rwm-sequential",
+      "max_path_error": 0.0,
+      "acceptance_mismatches": 0
+    },
+    {
+      "run": "R-CUDA",
+      "workflow": "rwm-online_picard",
+      "max_path_error": 6.661338147750939e-16,
+      "acceptance_mismatches": 0
+    }
+  ],
+  "runtimes": {
+    "CPU": {
+      "provider": "native_torch",
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "python_executable": "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+      "os": "Windows-11-10.0.26200-SP0",
+      "torch": "2.13.0+cu130",
+      "cuda_build": "13.0",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5080",
+      "ram_bytes": 33346146304,
+      "cpu_threads": 1,
+      "dtype": "float64"
+    },
+    "CUDA": {
+      "provider": "native_torch",
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "python_executable": "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+      "os": "Windows-11-10.0.26200-SP0",
+      "torch": "2.13.0+cu130",
+      "cuda_build": "13.0",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5080",
+      "ram_bytes": 33346146304,
+      "cpu_threads": 1,
+      "dtype": "float64"
+    },
+    "R-CUDA": {
+      "provider": "native_torch",
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "python_executable": "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+      "os": "Windows-11-10.0.26200-SP0",
+      "torch": "2.13.0+cu130",
+      "cuda_build": "13.0",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5080",
+      "ram_bytes": 33346146304,
+      "cpu_threads": 1,
+      "dtype": "float64"
+    }
+  },
+  "torch_imported": false,
+  "jax_imported": false
+}

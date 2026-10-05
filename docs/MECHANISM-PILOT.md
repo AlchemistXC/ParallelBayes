@@ -1,6 +1,6 @@
 # 时间并行机制 pilot 与双机执行边界
 
-2026-10-05｜F2开发性试验已冻结；Windows实测待回传
+2026-10-05｜F2开发性试验已冻结；第二轮在输入校验处停止，192工作流未执行。六份原始输入现已补传，按[续跑入口](../handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md)继续。原输入/协议不变；分析器现在必须传入`--inputs`，不按种子重建。
 
 本次冻结源码97e6835，新增协议mechanism-windows-pilot-v1。它不修改windows-native-v1或历史Mac结果，不是F3正式推断基准。所有192个工作流配置都保留，包括失败、减速和低接受率；2份实际随机输入只足以作开发性、描述性分析，不形成一般加速或稳定排序声明。
 
@@ -41,7 +41,7 @@ Mac证据见`benchmark/analysis/outputs/mechanism-smoke-v1/`。18条torch.jit.sc
 python scripts/completion/mechanism_runner.py prepare --plan benchmark/protocols/mechanism-windows-pilot-v1.json --inputs NEW_INPUT_DIRECTORY
 python scripts/completion/mechanism_runner.py run --plan benchmark/protocols/mechanism-windows-pilot-v1.json --inputs NEW_INPUT_DIRECTORY --output NEW_CPU_OUTPUT --device cpu
 python scripts/completion/mechanism_runner.py run --plan benchmark/protocols/mechanism-windows-pilot-v1.json --inputs NEW_INPUT_DIRECTORY --output NEW_CUDA_OUTPUT --device cuda
-python scripts/completion/analyze_mechanism_pilot.py --plan benchmark/protocols/mechanism-windows-pilot-v1.json --run COMPLETED_OR_PARTIAL_OUTPUT --output NEW_ANALYSIS_OUTPUT
+python scripts/completion/analyze_mechanism_pilot.py --plan benchmark/protocols/mechanism-windows-pilot-v1.json --inputs VERIFIED_ORIGINAL_INPUTS --run COMPLETED_OR_PARTIAL_OUTPUT --output NEW_ANALYSIS_OUTPUT
 ```
 
 `run`完成网格不等于所有配置成功，应读取summary.json中的成功/失败数量。恢复时在原run命令末尾加`--resume`；不要删除状态文件来强制重跑。Windows协议在非Windows主机会被拒绝。原始主数组不放进Git，prepare按冻结哈希重建；汇总从实际输入、路径、接受事件及逐文件哈希生成。归档时包含原始主数组、全部尝试、环境、源码bundle、协议和汇总。

@@ -1,0 +1,127 @@
+{
+  "additional_retry_permitted": false,
+  "history_and_costs": {
+    "actual_attempts": 2,
+    "attempts_are_statistical_replicates": false,
+    "attempts_missing_outer_measurement": 2,
+    "by_action": {
+      "retry": {
+        "calls": 1,
+        "known_seconds": 0.0,
+        "unfinished_calls": 1
+      },
+      "run": {
+        "calls": 1,
+        "known_seconds": 0.0,
+        "unfinished_calls": 1
+      }
+    },
+    "calls": [
+      {
+        "action": "run",
+        "error": null,
+        "finished": false,
+        "index": 0,
+        "result": null,
+        "seconds": null
+      },
+      {
+        "action": "retry",
+        "error": null,
+        "finished": false,
+        "index": 1,
+        "result": null,
+        "seconds": null
+      }
+    ],
+    "complete_invocation_seconds": null,
+    "cost_scope": "Coordinator run/retry invocation only, including its registration/recovery/sealing/history; excludes measurement-ledger writes, report calls and between-call waiting",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/34d6162a6a062ff1cd600d7e",
+          "binding_sha256": "f12fd630ee66cd382a4859e39d4b905558e552997f7f3f7fda3f6ec5451bbbed",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "45597967f184667ed1a3658bc27a5bc0f22f96f9e12fb302dc3ada150edb8267",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 16384,
+            "device": "cpu",
+            "executor": "spawn_chains",
+            "id": "34d6162a6a062ff1cd600d7e",
+            "input": "G2-rep0000.npz",
+            "kernel": "nuts",
+            "model": "G2",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-nuts-spawn_chains"
+          },
+          "outcome": "infrastructure_interruption",
+          "seconds": null,
+          "unknown_time_imputed": false
+        },
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/34d6162a6a062ff1cd600d7e.retry",
+          "binding_sha256": "f12fd630ee66cd382a4859e39d4b905558e552997f7f3f7fda3f6ec5451bbbed",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "97ebfcb4c849182114620dbbf38961ba64edd2c2cd11986211b74686c4f212ad",
+          "fixed_task": {
+            "batch": 0,
+            "budget": 16384,
+            "device": "cpu",
+            "executor": "spawn_chains",
+            "id": "34d6162a6a062ff1cd600d7e",
+            "input": "G2-rep0000.npz",
+            "kernel": "nuts",
+            "model": "G2",
+            "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+            "replicate": 0,
+            "workflow": "cpu-nuts-spawn_chains"
+          },
+          "outcome": "infrastructure_interruption",
+          "seconds": null,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempts only; coordinator, recovery and between-call time are not included",
+      "lifecycle": "stopped_unsealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/tasks/34d6162a6a062ff1cd600d7e",
+      "summary": {
+        "attempt_count": 2,
+        "known_seconds": 0.0,
+        "outcome": "infrastructure_interruption",
+        "prior_interruption_known_seconds": 0.0,
+        "total_seconds": null,
+        "unknown_cost_attempts": 2
+      },
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "34d6162a6a062ff1cd600d7e",
+        "input": "G2-rep0000.npz",
+        "kernel": "nuts",
+        "model": "G2",
+        "protocol_sha256": "e4c3b0fc8b0c395c4e948560731f46b46ae4a64f6dcf58a69f09c8bcd0def396",
+        "replicate": 0,
+        "workflow": "cpu-nuts-spawn_chains"
+      }
+    },
+    "known_invocation_seconds": 0.0,
+    "ledger_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/batch-schema-maximum-mac-01/call-costs/f6817bf0b37d38f9526fdedc3b1f243c1e5f2b871a7670caf483a5e4f634388a",
+    "ledger_sha256": "dc717999b109545edbd012cc9ea472944fa0d53620c09a87044c98f6b21973ab",
+    "note": "Verification/refusal costs are retained separately; arbitrary extra resume calls are not a standardized time-to-inference estimator",
+    "outcome": "infrastructure_interruption",
+    "recorded_invocations": 2,
+    "unfinished_invocations": 2,
+    "unknown_time_imputed": false,
+    "verification_only_invocations": 0
+  },
+  "interpretation": "Original and reserved retry both stopped before supervisor finalization; OS absence checked by coordinator. No numeric failure receipt and no verified sample output. Cause not established. Unknown duration remains null; no third attempt created.",
+  "maximum_NUTS_completed": false,
+  "observed_ns": 1791205463828699000,
+  "planned_tasks": 15,
+  "remaining_unstarted_tasks": 14
+}

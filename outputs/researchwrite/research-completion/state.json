@@ -6,14 +6,13 @@
   "new_experiments_started": true,
   "new_protocol_frozen": true,
   "pending_research_issues": [
-    "native_Windows_Rhat_runtime_receipt",
     "Windows_mechanism_explanation",
     "reliable_inference_comparison",
     "external_model_example",
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Connect the verified Mac measured workers, prepared-executor probes and all-invocation ledger to a formal batch/schema and declared analysis cost policy; validate maximum tasks end-to-end. Native Windows cohort/resources/readiness/mechanism receipts remain required before formal scientific freeze and execution.",
+  "next_recommended_action": "Windows executes F2 from original frozen inputs using CODEX-PROMPT-F2-RESUME. Mac continues batch recovery/queue and analysis integration. Preserve two interrupted max-NUTS attempts (sole retry exhausted), unknown costs and 14 unstarted tasks. Formal Windows cohort/resources and maximum-job validation still required.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -28,9 +27,10 @@
     "budget_single_failure_same_state_and_actual_discrepancy_suffix_localization",
     "Mac_nine_target_serial_spawn_NUTS_54_bitwise_array_pairs_18_R_roundtrips_and_verified_resume",
     "F3_followup_240_file_archive_and_relocated_saved_array_rebuild",
-    "Mac_selected_MH_affine_device_readiness_54_workflows_36_pairs_saved_array_replay_and_resume"
+    "Mac_selected_MH_affine_device_readiness_54_workflows_36_pairs_saved_array_replay_and_resume",
+    "Windows_round2_independent_reception_and_same_binary_R_companion; cross-host exact output failures retained"
   ],
-  "external_case": "Mac target/trajectory/R validation, finite reference audit and 12-rule independent quadrature completed; numerical integration is not certified exact truth; Windows target validation and formal inference remain",
+  "external_case": "Mac and native Windows CPU/CUDA/R target validation received; finite reference and non-certified 12-rule quadrature retained; formal case remains.",
   "new_experiment_scope": "Wells model/reference companions, Mac mechanism smoke, inference readiness v1/v2 and independent MH tuning v1; no new formal inference/performance benchmark; independent CPU budget pilot v1 (development only)",
   "prepared_windows_protocols": [
     "external-wells-windows-cpu-v1",
@@ -72,7 +72,7 @@
       "public_release": false
     }
   },
-  "f3_parallel_nuts": "Mac 108 pilot fits plus nine-target paired serial/spawn readiness: 54 array byte comparisons and 18 R roundtrips passed; original diagnostics/failed MH retained. Native Windows corresponding readiness is frozen but unexecuted.",
+  "f3_parallel_nuts": "Mac prior paired readiness preserved. Windows nine-target serial/spawn six-array equality, 36 adaptation traces and 18 binary/R companions independently received; no formal inference or convergence claim.",
   "f3_budget_pilot": {
     "protocol": "inference-budget-pilot-mac-v1",
     "protocol_sha256": "f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b",
@@ -117,7 +117,7 @@
     "paired_array_comparisons": 54,
     "verified_R_roundtrips": 18,
     "verified_resume_terminal_files": 126,
-    "windows_actual_run": false,
+    "windows_actual_run": true,
     "formal_inference_complete": false,
     "companion_archive_pending": false,
     "companion_archive": {
@@ -153,7 +153,9 @@
       "suffix_summary_chains_exact": true,
       "new_MCMC_fits": 0,
       "limitation": "Same Mac, existing Python/R libraries; separate extraction/source paths. This validates this companion reconstruction, not a clean environment, external team or full manuscript rebuild."
-    }
+    },
+    "windows_receipt_commit": "ced54ef",
+    "windows_reception": "docs/WINDOWS-ROUND2-INTAKE.md"
   },
   "f3_selected_mh_readiness": {
     "sampling_source_commit": "779b8e4c56ba62939f365f6d723d71319dead221",
@@ -165,7 +167,7 @@
     "task_assets_verified": 126,
     "resume_terminal_files_unchanged": 135,
     "independent_technical_inputs_per_target": 1,
-    "windows_actual_run": false,
+    "windows_actual_run": true,
     "formal_inference_complete": false,
     "raw_evidence_archive_pending": false,
     "report": "docs/SELECTED-MH-READINESS.md",
@@ -199,7 +201,9 @@
       "new_MCMC_fits": 0,
       "summary_identity": "Original analysis refers to saved pre-resume summary; rebuilt analysis refers to archived resumed summary. Both checked, not overwritten.",
       "limitation": "Same Mac and existing Python dependencies; this companion rebuild is not clean installation, external team or full manuscript reproduction."
-    }
+    },
+    "windows_receipt_commit": "ced54ef",
+    "windows_reception": "docs/WINDOWS-ROUND2-INTAKE.md"
   },
   "f3_formal_design": {
     "status": "draft_v0.1_not_executable",
@@ -583,5 +587,31 @@
       "native_Windows_validated": false,
       "public_release": false
     }
+  },
+  "windows_second_round_intake": {
+    "return_commit": "ced54ef6ce945198339a138142dcdfede84f06bc",
+    "archive_sha256": "bfd55d442fbb4137c54e573031781a95d75e0a86f20ccd4c8a994d338746efb9",
+    "archive_files": 948,
+    "mh_paths_checked": 108,
+    "acceptance_mismatches": 0,
+    "strict_cross_host_transform_failures": 60,
+    "nuts_array_pairs": 54,
+    "R_binary_fits": 18,
+    "mechanism_workflows_executed": 0,
+    "mechanism_original_inputs_delivered": true,
+    "next_prompt": "handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md"
+  },
+  "mac_batch_maximum_v1": {
+    "protocol": "batch-schema-maximum-mac-v1",
+    "planned": 15,
+    "completed": 0,
+    "interrupted_attempts": 2,
+    "remaining_unstarted": 14,
+    "first_task": "G2-cpu-nuts-spawn_chains-16384",
+    "reserved_retry_exhausted": true,
+    "complete_cost_unknown": true,
+    "no_third_attempt": true,
+    "source_commit": "b93a663",
+    "receipt": "benchmark/analysis/outputs/windows-round2-intake-v1/batch-second-interruption.json"
   }
 }
