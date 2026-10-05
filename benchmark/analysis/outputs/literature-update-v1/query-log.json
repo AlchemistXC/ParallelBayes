@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-06",
+  "workflow": [
+    "multi-source-search",
+    "citation-verification"
+  ],
+  "academic_search_mcp": "not mounted",
+  "web_queries": [
+    {
+      "q": "\"parallel\" \"MCMC\" \"Picard\" 2026",
+      "domains": [
+        "arxiv.org",
+        "academic.oup.com",
+        "openreview.net",
+        "proceedings.mlr.press"
+      ]
+    },
+    {
+      "q": "\"Parallelizing MCMC Across the Sequence Length\"",
+      "domains": [
+        "arxiv.org",
+        "proceedings.neurips.cc",
+        "proceedings.nips.cc"
+      ]
+    },
+    {
+      "q": "\"parallel MCMC\" benchmark software 2026",
+      "domains": [
+        "arxiv.org",
+        "jstatsoft.org",
+        "jmlr.org",
+        "proceedings.mlr.press"
+      ]
+    },
+    {
+      "q": "\"MCMC\" \"quasi-DEER\" 2026",
+      "domains": [
+        "arxiv.org",
+        "openreview.net"
+      ]
+    },
+    {
+      "q": "BlackJAX Composable Bayesian inference JAX published journal",
+      "domains": []
+    },
+    {
+      "q": "posteriordb testing evaluating Bayesian posterior inference 2026",
+      "domains": []
+    },
+    {
+      "q": "\"ParallelMCMC.jl\"",
+      "domains": []
+    },
+    {
+      "q": "\"time parallel\" MCMC 2026 2025 benchmark",
+      "domains": []
+    },
+    {
+      "q": "\"PPL Bench\" evaluation framework paper",
+      "domains": [
+        "arxiv.org",
+        "proceedings.mlr.press",
+        "github.com"
+      ]
+    },
+    {
+      "q": "\"BridgeStan\" \"Journal\"",
+      "domains": []
+    },
+    {
+      "q": "\"BayesForge\" R GPU NumPyro",
+      "domains": [
+        "cran.r-project.org",
+        "github.com",
+        "cran.r-universe.dev"
+      ]
+    },
+    {
+      "q": "\"Parallelizing MCMC\" 2026 2025 \"benchmark\"",
+      "domains": []
+    },
+    {
+      "q": "MCMC \"Picard\" \"2026\" \"September\"",
+      "domains": [
+        "arxiv.org",
+        "openreview.net"
+      ]
+    },
+    {
+      "q": "MCMC \"parallel\" \"Newton\" \"2026\"",
+      "domains": [
+        "arxiv.org",
+        "proceedings.mlr.press",
+        "openreview.net"
+      ]
+    },
+    {
+      "q": "\"Parallel MCMC via machine learning classification\"",
+      "domains": []
+    },
+    {
+      "q": "\"Bayesian Inference library for Python, R, Julia\"",
+      "domains": []
+    }
+  ],
+  "openalex": {
+    "query": "parallel MCMC",
+    "year_from": 2025,
+    "limit": 20,
+    "sort": "publication_date",
+    "returned": 9,
+    "relevance_filter": true,
+    "exhaustive": false
+  },
+  "document_scope": "Only changed or adjacent claims. Not all references independently reverified; not a full-paper rereading."
+}

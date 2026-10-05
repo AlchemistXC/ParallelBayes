@@ -1,0 +1,22 @@
+{
+  "baseline": "2d82b53fd58af1fa465149f6c104a20f78ad93f4",
+  "before_sha256": "4097c2d15ad52c934b399c92d91a36dc7111c190c08a1e92d6e41e9369db6956",
+  "after_sha256": "9cdb67b9198c611e8a58fb0dbe1424949f27f2aff6ae74b7d46c3dbf82291e0a",
+  "changed_paragraphs": [
+    {
+      "section": "introduction_related_work",
+      "before_characters": 338,
+      "after_characters": 389
+    },
+    {
+      "section": "discussion_scope",
+      "before_characters": 201,
+      "after_characters": 217
+    }
+  ],
+  "count_unit": "Unicode characters including TeX markup; not English words",
+  "references_before": 10,
+  "references_after": 15,
+  "new_sampling": 0,
+  "new_independent_repetitions": 0
+}

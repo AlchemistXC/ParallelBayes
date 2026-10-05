@@ -1,0 +1,106 @@
+[
+  {
+    "title": "GPU-Parallelization of Markov Chain Pool Decoding with Unbiased MCMC",
+    "doi": "10.48550/arxiv.2608.30239",
+    "authors": [
+      "Ueno, Takato",
+      "Shuji Kijima"
+    ],
+    "year": 2026,
+    "publication_date": "2026-08-31",
+    "openalex_id": "https://openalex.org/W7204885596"
+  },
+  {
+    "title": "BayesPO: Bayesian Prompt Optimization via Parallel-Tempered Gradient-Guided Discrete MCMC",
+    "doi": "10.48550/arxiv.2607.16001",
+    "authors": [
+      "Junjie Zhou",
+      "Zhijian Ou"
+    ],
+    "year": 2026,
+    "publication_date": "2026-07-17",
+    "openalex_id": "https://openalex.org/W7169789416"
+  },
+  {
+    "title": "Parallel MCMC via machine learning classification and a Kullback–Leibler divergence criterion",
+    "doi": "10.1007/s40300-026-00316-2",
+    "authors": [
+      "Tomoki Matsumoto"
+    ],
+    "year": 2026,
+    "publication_date": "2026-07-10",
+    "openalex_id": "https://openalex.org/W4399794978"
+  },
+  {
+    "title": "Automated Well-tie SysteM (AWSM) for seismic depth calibration and wavelet estimation using parallel tempering MCMC (PT-MCMC): A Midland Basin case study",
+    "doi": "10.1190/image2025-4304877.1",
+    "authors": [
+      "Un Young Lim",
+      "Tom Van Wagoner",
+      "Reynaldo Cardona"
+    ],
+    "year": 2026,
+    "publication_date": "2026-02-10",
+    "openalex_id": "https://openalex.org/W7147498457"
+  },
+  {
+    "title": "Faster parallel MCMC: Metropolis adjustment is best served warm",
+    "doi": "10.48550/arxiv.2601.16696",
+    "authors": [
+      "Jakob Robnik",
+      "Uroš Seljak"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-23",
+    "openalex_id": "https://openalex.org/W7125691622"
+  },
+  {
+    "title": "Neutralising the curse of dimensionality: a neural transport-preconditioned MCMC framework for Bayesian structural identification",
+    "doi": "10.2139/ssrn.6815248",
+    "authors": [
+      "Jun Hu",
+      "Heung Fai LAM"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-01",
+    "openalex_id": "https://openalex.org/W7162089256"
+  },
+  {
+    "title": "Bayesian Inertia Estimation via Parallel MCMC Hammer in Power Systems",
+    "doi": "10.3390/en18153905",
+    "authors": [
+      "Weidong Zhong",
+      "Chun Li",
+      "Minghua Chu",
+      "Yuanhong Che",
+      "Shuyang Zhou"
+    ],
+    "year": 2025,
+    "publication_date": "2025-07-22",
+    "openalex_id": "https://openalex.org/W4412557796"
+  },
+  {
+    "title": "Parallelizing MCMC Across the Sequence Length",
+    "doi": "10.52202/085713-0751",
+    "authors": [
+      "David Zoltowski",
+      "Skyler Wu",
+      "Xavier Gonzalez",
+      "Leo Kozachkov",
+      "Scott Linderman"
+    ],
+    "year": 2025,
+    "publication_date": "2025-01-01",
+    "openalex_id": "https://openalex.org/W7196942017"
+  },
+  {
+    "title": "slmpi_emcee: MPI Parallelization of the S-Lang MCMC Hammer",
+    "doi": "10.26624/ljpv6003",
+    "authors": [
+      "Ashkbiz Danehkar"
+    ],
+    "year": 2025,
+    "publication_date": "2025-01-01",
+    "openalex_id": "https://openalex.org/W7167624103"
+  }
+]

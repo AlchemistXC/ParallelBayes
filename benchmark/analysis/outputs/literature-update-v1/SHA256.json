@@ -1,0 +1,13 @@
+{
+  "README.md": "95c4655adf0fd5d50d23cb48cd367a70219897b457ace0a8d88f144fcab4be47",
+  "compile-relocated.json": "126d1c5535950bacfa4518542016a657c2f90984fd6ede9cf87f2d906faefad0",
+  "compile.json": "28463b5af982127136f0bdecf51d3e30fffc713bbb98886f52088d24e95035d4",
+  "delivery-receipt.json": "30814f12b43f67353b1656e6c8a865bf5b5ba9e8ff6e86cdb07d01beacdf6c43",
+  "discovery-metadata.json": "6a6a3e6e3ada8ad5da7a8abd18500554c62e28f936b121ffade446fca8609cb2",
+  "edit-receipt.json": "dfc82441ebd8ee2f6981fac41e4ed6e3e2f06f063639468233cdee78e37af7be",
+  "metadata-retrieval.json": "83fa526974ed43943bf544d8f08763db6c66054cf1a9c93184bd5af2ce60a0d6",
+  "paper-inputs-manifest.json": "2f43973447129024aece860138c9b763371aca53176a9a4a7ffd8eea4aa8f6a6",
+  "pinned-readme-receipt.json": "56303db99c2d75dfd7fdd51b598d81830aa50b32a307fc6c682b6288ff8feef7",
+  "preflight.log": "18fdce6ca80bab0b96ae5da2dde640ffd39924df9e7f899925a2a6f9d33d89ef",
+  "query-log.json": "d4eda3b973d5f6a877412e01280db7b9ee2d686e3afb404af951b24a4c72bb3d"
+}

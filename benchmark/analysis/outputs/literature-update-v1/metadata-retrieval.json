@@ -1,0 +1,72 @@
+[
+  {
+    "id": "crossref-bridgestan",
+    "url": "https://api.crossref.org/works/10.21105/joss.05236",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.21105/joss.05236",
+    "content_type": "application/json",
+    "bytes": 8066,
+    "sha256": "77a765312bcffba9a11171ba6b460c52c770bcb95329c04d4813712e3c27668e",
+    "saved": "crossref-bridgestan.response"
+  },
+  {
+    "id": "crossref-picard",
+    "url": "https://api.crossref.org/works/10.1093/biomet/asag022",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1093/biomet/asag022",
+    "content_type": "application/json",
+    "bytes": 13625,
+    "sha256": "f3b69e3ffbe7d318657ca800342895c8636f6adcc20295a4949cfa6485035848",
+    "saved": "crossref-picard.response"
+  },
+  {
+    "id": "crossref-matsumoto",
+    "url": "https://api.crossref.org/works/10.1007/s40300-026-00316-2",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1007/s40300-026-00316-2",
+    "content_type": "application/json",
+    "bytes": 9210,
+    "sha256": "8d83f54de8a0b3888b18c3842f90d557d91923ec60dd830e90b32b7d5142fca4",
+    "saved": "crossref-matsumoto.response"
+  },
+  {
+    "id": "arxiv-records",
+    "url": "https://export.arxiv.org/api/query?id_list=2010.08886,2402.10797,2508.18413,2509.21716,2603.16850,2608.17666&max_results=6",
+    "status": 200,
+    "final_url": "https://export.arxiv.org/api/query?id_list=2010.08886,2402.10797,2508.18413,2509.21716,2603.16850,2608.17666&max_results=6",
+    "content_type": "application/atom+xml; charset=utf-8",
+    "bytes": 16488,
+    "sha256": "0bddaad4dd83ae863a4dcddc033db3e2b4c54f765e8d7d0aaf929730f59d2b94",
+    "saved": "arxiv-records.response"
+  },
+  {
+    "id": "parallelmcmc-commit",
+    "url": "https://api.github.com/repos/rsenne/ParallelMCMC.jl/commits?until=2026-10-06T23:59:59Z&per_page=1",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/rsenne/ParallelMCMC.jl/commits?until=2026-10-06T23:59:59Z&per_page=1",
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 8307,
+    "sha256": "3e6da301bceafa280351f422f5c599485e5bd174e648d87626f30a886519c85b",
+    "saved": "parallelmcmc-commit.response"
+  },
+  {
+    "id": "parallelmcmc-citation",
+    "url": "https://raw.githubusercontent.com/rsenne/ParallelMCMC.jl/main/CITATION.cff",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/rsenne/ParallelMCMC.jl/main/CITATION.cff",
+    "content_type": "text/plain; charset=utf-8",
+    "bytes": 303,
+    "sha256": "81147582fb5078e359c360a869e42b4af5b9afda579910c3da1f9bbc2f3910bb",
+    "saved": "parallelmcmc-citation.response"
+  },
+  {
+    "id": "pplbench-citation",
+    "url": "https://raw.githubusercontent.com/facebookresearch/pplbench/main/README.md",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/facebookresearch/pplbench/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "bytes": 2894,
+    "sha256": "604282189293863e62154ab56dbd64f93b696a032886fed48e94ea3c844d829e",
+    "saved": "pplbench-citation.response"
+  }
+]

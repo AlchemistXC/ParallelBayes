@@ -1,0 +1,115 @@
+{
+  "source_commit": "34533307ed35efebacbeae6f82e1c05e70990fb1",
+  "source_worktree_clean": true,
+  "baseline": "2d82b53fd58af1fa465149f6c104a20f78ad93f4",
+  "compiler": [
+    {
+      "receipt": "compile.json",
+      "exit_code": 0,
+      "compiler": "tectonic",
+      "version": "Tectonic 0.17.0",
+      "final_pass_issues": []
+    },
+    {
+      "receipt": "compile-relocated.json",
+      "exit_code": 0,
+      "compiler": "tectonic",
+      "version": "Tectonic 0.17.0",
+      "final_pass_issues": []
+    }
+  ],
+  "pages": 23,
+  "references": 15,
+  "unresolved_citation_keys": [],
+  "relocated_manifest_files_checked": 13,
+  "page_text_equal": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "page_pixels_equal_at_72dpi": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "pdf_sha256": "7f05409c14a2ebff140a24e80eb22e86290479c7d218e5eade26a7d969c3f079",
+  "relocated_pdf_sha256": "5bd7ddcbf852fe2b41be487653aedad3194fa70572652d7e2f9c7b28ff12d39b",
+  "protected_paths_unchanged": [
+    "r-package",
+    "scripts",
+    "tests",
+    "benchmark/protocols",
+    "execution/source-snapshots",
+    "figures",
+    "manuscript/software/windows-native.generated.tex",
+    "manuscript/software/intake.generated.tex",
+    "manuscript/software/revision.generated.tex",
+    "manuscript/software/results.generated.tex",
+    "manuscript/software/completion-companion.generated.tex"
+  ],
+  "visual_review_pages": [
+    2,
+    22,
+    23
+  ],
+  "rendering": "PDFium; same-machine relocation, not independent research replication",
+  "prior_render_attempts": [
+    {
+      "tool": "bundled Python fitz",
+      "outcome": "ModuleNotFoundError; no installation attempted"
+    },
+    {
+      "tool": "bundled pdftoppm",
+      "outcome": "missing Adobe-GB1 mapping, ignored for visual acceptance"
+    }
+  ],
+  "new_sampling": 0,
+  "new_statistical_repetitions": 0,
+  "raw_results_reanalyzed": false,
+  "paper_bundle": {
+    "archive": "paper-inputs-literature-v1.tar",
+    "bytes": 296960,
+    "sha256": "0399e1c5d96350c019103bb96ef4733053e1aa2067a54a282a38f0af9e47584b",
+    "files": 14
+  }
+}
