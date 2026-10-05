@@ -13,7 +13,7 @@
     "release_reproduction",
     "integrated_manuscript"
   ],
-  "next_recommended_action": "Complete independent cached-executor measurement and all-attempt outer-cost accounting; connect the measured worker to the formal batch/schema and validate the maximum task end-to-end. Native Windows process-cohort recovery, resources and readiness/mechanism receipts remain required before formal inference freeze.",
+  "next_recommended_action": "Connect the verified Mac measured workers, prepared-executor probes and all-invocation ledger to a formal batch/schema and declared analysis cost policy; validate maximum tasks end-to-end. Native Windows cohort/resources/readiness/mechanism receipts remain required before formal scientific freeze and execution.",
   "completed_companion_analyses": [
     "Mac_fixed_binary_midpoint_sensitivity",
     "512_task_map_JVP_prefix_accounting",
@@ -229,7 +229,7 @@
       "Windows_readiness_and_mechanism_receipts",
       "formal_batch_worker_driver_and_native_Windows_cohort_recovery",
       "frozen_formal_schema_and_maximum_task_end_to_end_analysis_validation",
-      "independent_cached_execution_and_failed_recovery_inclusive_costs",
+      "formal_batch_integration_of_declared_cached_ordinary_audit_cost_policies",
       "Windows_host_lock_disk_memory_and_max_task_validation",
       "immutable_formal_protocol_and_inputs"
     ]
@@ -510,6 +510,76 @@
         }
       ],
       "cached_execution_measured": false,
+      "native_Windows_validated": false,
+      "public_release": false
+    }
+  },
+  "f3_cached_costs": {
+    "status": "finite_native_Mac_MH_cached_execution_and_all_invocation_costs_verified_formal_and_Windows_pending",
+    "sampling_source_commit": "8a24cb150ff757f97e0a6b43dfd1ee090e133488",
+    "archive_reader_source_commit": "5c314cd3ebb7bf381ca43a92d6fcc897c7d654b9",
+    "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+    "initial_executor_calls": 4,
+    "warm_executor_calls": 12,
+    "independent_path_audits": 16,
+    "same_historical_arrays_exact": 16,
+    "acceptance_mismatches": 0,
+    "actual_MH_executions": 18,
+    "new_independent_statistical_repetitions": 0,
+    "new_behavior_test_instances_passed": 7,
+    "affected_behavior_tests_passed": 5,
+    "recovery_arrays_exact": 3,
+    "original_files_preserved": 26,
+    "terminal_files_preserved": 120,
+    "resume_new_tasks": 0,
+    "recovery_two_call_seconds": 5.722202875185758,
+    "recovery_with_verification_seconds": 5.730229667155072,
+    "missing_outer_time_remains_unknown": true,
+    "technical_infrastructure_injection_not_scientific_failure": true,
+    "archived_array_records_rebuilt": 16,
+    "archived_cost_histories_rebuilt": 5,
+    "rebuild_new_MCMC_or_R_invocations": 0,
+    "cached_NUTS_measured": false,
+    "native_Windows_validated": false,
+    "formal_inference_complete": false,
+    "report": "docs/CACHED-AND-RECOVERY-COSTS.md",
+    "raw_evidence_archive": {
+      "archive": "cached-cost-v1.tar",
+      "bytes": 57436160,
+      "sha256": "e4a1b3fdc2dc321931bcca21c24c1bad5d092c8131485383ce33880e34a9245a",
+      "checked_files": 327,
+      "source_snapshot_commit": "5c314cd3ebb7bf381ca43a92d6fcc897c7d654b9",
+      "sampling_source_commit": "8a24cb150ff757f97e0a6b43dfd1ee090e133488",
+      "registry_counts": {
+        "tasks": 13,
+        "events": 28
+      },
+      "all_member_hashes_verified": true,
+      "actual_MH_executions": 18,
+      "new_independent_statistical_repetitions": 0,
+      "frozen_source_checks": [
+        {
+          "protocol": "inference-budget-pilot-mac-v1.json",
+          "source_files_checked": 58,
+          "mismatches": 0
+        },
+        {
+          "protocol": "formal-runtime-technical-mac-v1.json",
+          "source_files_checked": 65,
+          "mismatches": 0
+        },
+        {
+          "protocol": "measured-workflow-technical-mac-v1.json",
+          "source_files_checked": 10,
+          "mismatches": 0
+        },
+        {
+          "protocol": "cached-cost-technical-mac-v1.json",
+          "source_files_checked": 9,
+          "mismatches": 0
+        }
+      ],
+      "cached_NUTS_measured": false,
       "native_Windows_validated": false,
       "public_release": false
     }

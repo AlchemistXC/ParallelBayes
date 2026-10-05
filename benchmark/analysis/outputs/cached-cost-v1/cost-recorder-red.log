@@ -1,0 +1,14 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_________ test_interrupted_and_retried_task_retains_all_measured_calls _________
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-94/test_interrupted_and_retried_t0')
+
+    def test_interrupted_and_retried_task_retains_all_measured_calls(tmp_path):
+>       from measured_coordinator import MeasuredCoordinator
+E       ModuleNotFoundError: No module named 'measured_coordinator'
+
+tests/external/test_measured_coordinator.py:9: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_measured_coordinator.py::test_interrupted_and_retried_task_retains_all_measured_calls
+1 failed in 0.02s

@@ -1,0 +1,122 @@
+{
+  "assets_checked": 327,
+  "cached_arrays_exact": 16,
+  "cost_histories_rebuilt": 5,
+  "formal_inference_complete": false,
+  "native_Windows_validated": false,
+  "new_MCMC_fits": 0,
+  "new_R_invocations": 0,
+  "new_independent_statistical_repetitions": 0,
+  "original_retry_arrays_exact": 3,
+  "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+  "rows": [
+    {
+      "actual_attempts": 1,
+      "complete_invocation_seconds": 1.034078290918842,
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/8b91ab212abfc73e14d8",
+      "outcome": "valid",
+      "recorded_invocations": 2,
+      "verification_only_invocations": 1
+    },
+    {
+      "actual_attempts": 1,
+      "complete_invocation_seconds": 1.7001652910839766,
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/2153a3c310f4b9b8b280",
+      "outcome": "valid",
+      "recorded_invocations": 2,
+      "verification_only_invocations": 1
+    },
+    {
+      "actual_attempts": 1,
+      "complete_invocation_seconds": 1.0409632080700248,
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/151c23e95214c429b2bc",
+      "outcome": "valid",
+      "recorded_invocations": 2,
+      "verification_only_invocations": 1
+    },
+    {
+      "actual_attempts": 1,
+      "complete_invocation_seconds": 2.6272151668090373,
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/37f71a60a73a7df1a854",
+      "outcome": "valid",
+      "recorded_invocations": 2,
+      "verification_only_invocations": 1
+    },
+    {
+      "actual_attempts": 2,
+      "complete_invocation_seconds": 5.730229667155072,
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery",
+      "outcome": "valid",
+      "recorded_invocations": 3,
+      "verification_only_invocations": 1
+    }
+  ],
+  "scope": "Moved read-only bundle; recorded executor durations and every call cost reconstructed. No new timing or inference experiment.",
+  "timings": [
+    {
+      "initial_seconds": 0.008222624892368913,
+      "task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "8b91ab212abfc73e14d8",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0
+      },
+      "warm_seconds": [
+        0.007353666936978698,
+        0.007204500027000904,
+        0.007983749965205789
+      ]
+    },
+    {
+      "initial_seconds": 0.5073612499982119,
+      "task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "2153a3c310f4b9b8b280",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0
+      },
+      "warm_seconds": [
+        0.03246962511911988,
+        0.027471791952848434,
+        0.031053083017468452
+      ]
+    },
+    {
+      "initial_seconds": 0.01048729196190834,
+      "task": {
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "151c23e95214c429b2bc",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0
+      },
+      "warm_seconds": [
+        0.009508374845609069,
+        0.008962874999269843,
+        0.008958584163337946
+      ]
+    },
+    {
+      "initial_seconds": 0.7542799168732017,
+      "task": {
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "37f71a60a73a7df1a854",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0
+      },
+      "warm_seconds": [
+        0.2634066669270396,
+        0.26917233411222696,
+        0.26499066688120365
+      ]
+    }
+  ],
+  "warm_executions": 12
+}

@@ -1,0 +1,56 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+_ test_prepared_replay_keeps_original_inputs_and_independent_path[rwm-sequential] _
+
+kernel = 'rwm', executor = 'sequential'
+
+    @pytest.mark.parametrize('kernel,executor',[('rwm','sequential'),('rwm','online_picard'),('mala','sequential'),('mala','quasi_deer')])
+    def test_prepared_replay_keeps_original_inputs_and_independent_path(kernel,executor):
+        from parallelbayes.torch_backend.models import make_model
+        from parallelbayes.torch_backend.sampling import settings,random_tape,audit_path
+>       from cached_execution import PreparedExecutor
+E       ModuleNotFoundError: No module named 'cached_execution'
+
+tests/external/test_cached_execution.py:14: ModuleNotFoundError
+_ test_prepared_replay_keeps_original_inputs_and_independent_path[rwm-online_picard] _
+
+kernel = 'rwm', executor = 'online_picard'
+
+    @pytest.mark.parametrize('kernel,executor',[('rwm','sequential'),('rwm','online_picard'),('mala','sequential'),('mala','quasi_deer')])
+    def test_prepared_replay_keeps_original_inputs_and_independent_path(kernel,executor):
+        from parallelbayes.torch_backend.models import make_model
+        from parallelbayes.torch_backend.sampling import settings,random_tape,audit_path
+>       from cached_execution import PreparedExecutor
+E       ModuleNotFoundError: No module named 'cached_execution'
+
+tests/external/test_cached_execution.py:14: ModuleNotFoundError
+_ test_prepared_replay_keeps_original_inputs_and_independent_path[mala-sequential] _
+
+kernel = 'mala', executor = 'sequential'
+
+    @pytest.mark.parametrize('kernel,executor',[('rwm','sequential'),('rwm','online_picard'),('mala','sequential'),('mala','quasi_deer')])
+    def test_prepared_replay_keeps_original_inputs_and_independent_path(kernel,executor):
+        from parallelbayes.torch_backend.models import make_model
+        from parallelbayes.torch_backend.sampling import settings,random_tape,audit_path
+>       from cached_execution import PreparedExecutor
+E       ModuleNotFoundError: No module named 'cached_execution'
+
+tests/external/test_cached_execution.py:14: ModuleNotFoundError
+_ test_prepared_replay_keeps_original_inputs_and_independent_path[mala-quasi_deer] _
+
+kernel = 'mala', executor = 'quasi_deer'
+
+    @pytest.mark.parametrize('kernel,executor',[('rwm','sequential'),('rwm','online_picard'),('mala','sequential'),('mala','quasi_deer')])
+    def test_prepared_replay_keeps_original_inputs_and_independent_path(kernel,executor):
+        from parallelbayes.torch_backend.models import make_model
+        from parallelbayes.torch_backend.sampling import settings,random_tape,audit_path
+>       from cached_execution import PreparedExecutor
+E       ModuleNotFoundError: No module named 'cached_execution'
+
+tests/external/test_cached_execution.py:14: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/external/test_cached_execution.py::test_prepared_replay_keeps_original_inputs_and_independent_path[rwm-sequential]
+FAILED tests/external/test_cached_execution.py::test_prepared_replay_keeps_original_inputs_and_independent_path[rwm-online_picard]
+FAILED tests/external/test_cached_execution.py::test_prepared_replay_keeps_original_inputs_and_independent_path[mala-sequential]
+FAILED tests/external/test_cached_execution.py::test_prepared_replay_keeps_original_inputs_and_independent_path[mala-quasi_deer]
+4 failed in 0.78s

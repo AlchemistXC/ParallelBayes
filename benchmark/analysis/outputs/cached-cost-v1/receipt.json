@@ -1,0 +1,4546 @@
+{
+  "actual_MH_executions": 18,
+  "cached_NUTS_measured": false,
+  "cached_records": [
+    {
+      "actual_executions": 4,
+      "cached_execution_measured": true,
+      "cached_executions": 3,
+      "failure_category": null,
+      "native_Windows_validated": false,
+      "new_independent_statistical_repetitions": 0,
+      "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+      "records": [
+        {
+          "actual_array_file": "execution-0.npz",
+          "actual_array_sha256": "ff1c4290f7b6c83eb22e5c85295a20e832fb4316ec1c59c0a9414731aaeb4c13",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_abs_path_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "sequential",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "rwm",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8485281374238569,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 320,
+            "host_scalar_reads": 1,
+            "host_scalar_wait_seconds": 1.3916054740548134e-05,
+            "iterations": 80,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 0,
+          "executor_wall_seconds": 0.008222624892368913,
+          "has_prior_execution": false,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.00012820889241993427,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 1.0082963854074478e-05,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-1.npz",
+          "actual_array_sha256": "ff1c4290f7b6c83eb22e5c85295a20e832fb4316ec1c59c0a9414731aaeb4c13",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_abs_path_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "sequential",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "rwm",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8485281374238569,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 320,
+            "host_scalar_reads": 1,
+            "host_scalar_wait_seconds": 2.7921050786972046e-06,
+            "iterations": 80,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 1,
+          "executor_wall_seconds": 0.007353666936978698,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.00012820889241993427,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 6.332993507385254e-06,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-2.npz",
+          "actual_array_sha256": "ff1c4290f7b6c83eb22e5c85295a20e832fb4316ec1c59c0a9414731aaeb4c13",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_abs_path_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "sequential",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "rwm",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8485281374238569,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 320,
+            "host_scalar_reads": 1,
+            "host_scalar_wait_seconds": 1.4579854905605316e-06,
+            "iterations": 80,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 2,
+          "executor_wall_seconds": 0.007204500027000904,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.00012820889241993427,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 5.00003807246685e-06,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-3.npz",
+          "actual_array_sha256": "ff1c4290f7b6c83eb22e5c85295a20e832fb4316ec1c59c0a9414731aaeb4c13",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_abs_path_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "sequential",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "rwm",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8485281374238569,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 320,
+            "host_scalar_reads": 1,
+            "host_scalar_wait_seconds": 2.959044650197029e-06,
+            "iterations": 80,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 3,
+          "executor_wall_seconds": 0.007983749965205789,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.00012820889241993427,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 8.667120710015297e-06,
+          "transform_included_in_executor_wall": false
+        }
+      ],
+      "samples_eligible": true,
+      "scientific_protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+      "scope": "Initial plus three prepared fixed-input eager executions; independent audits/output outside timed executor. All replays belong to one existing input, not additional inference replicates.",
+      "status": "completed",
+      "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+      "task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "8b91ab212abfc73e14d8",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0
+      }
+    },
+    {
+      "actual_executions": 4,
+      "cached_execution_measured": true,
+      "cached_executions": 3,
+      "failure_category": null,
+      "native_Windows_validated": false,
+      "new_independent_statistical_repetitions": 0,
+      "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+      "records": [
+        {
+          "actual_array_file": "execution-0.npz",
+          "actual_array_sha256": "4ac5c0046d0fe00c22edc640c6ba16f2d05c1e8ed7e2fe53d2cf2e3e11839a82",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_abs_path_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "sequential",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "mala",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 320,
+            "host_scalar_reads": 1,
+            "host_scalar_wait_seconds": 1.4749821275472641e-05,
+            "iterations": 80,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 0,
+          "executor_wall_seconds": 0.5073612499982119,
+          "has_prior_execution": false,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.00013066688552498817,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 1.9875122234225273e-05,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-1.npz",
+          "actual_array_sha256": "4ac5c0046d0fe00c22edc640c6ba16f2d05c1e8ed7e2fe53d2cf2e3e11839a82",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_abs_path_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "sequential",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "mala",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 320,
+            "host_scalar_reads": 1,
+            "host_scalar_wait_seconds": 4.207948222756386e-06,
+            "iterations": 80,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 1,
+          "executor_wall_seconds": 0.03246962511911988,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.00013066688552498817,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 1.5709083527326584e-05,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-2.npz",
+          "actual_array_sha256": "4ac5c0046d0fe00c22edc640c6ba16f2d05c1e8ed7e2fe53d2cf2e3e11839a82",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_abs_path_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "sequential",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "mala",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 320,
+            "host_scalar_reads": 1,
+            "host_scalar_wait_seconds": 2.7080532163381577e-06,
+            "iterations": 80,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 2,
+          "executor_wall_seconds": 0.027471791952848434,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.00013066688552498817,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 8.249888196587563e-06,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-3.npz",
+          "actual_array_sha256": "4ac5c0046d0fe00c22edc640c6ba16f2d05c1e8ed7e2fe53d2cf2e3e11839a82",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_abs_path_error": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "sequential",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "mala",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 320,
+            "host_scalar_reads": 1,
+            "host_scalar_wait_seconds": 3.0831433832645416e-06,
+            "iterations": 80,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 3,
+          "executor_wall_seconds": 0.031053083017468452,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.00013066688552498817,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 6.4999330788850784e-06,
+          "transform_included_in_executor_wall": false
+        }
+      ],
+      "samples_eligible": true,
+      "scientific_protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+      "scope": "Initial plus three prepared fixed-input eager executions; independent audits/output outside timed executor. All replays belong to one existing input, not additional inference replicates.",
+      "status": "completed",
+      "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+      "task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "2153a3c310f4b9b8b280",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0
+      }
+    },
+    {
+      "actual_executions": 4,
+      "cached_execution_measured": true,
+      "cached_executions": 3,
+      "failure_category": null,
+      "native_Windows_validated": false,
+      "new_independent_statistical_repetitions": 0,
+      "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+      "records": [
+        {
+          "actual_array_file": "execution-0.npz",
+          "actual_array_sha256": "5494b3e1c0e76da5e698d882008843470272326ed7b658d3777a302832a55dfa",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              5.551115123125783e-16,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              8.881784197001252e-16
+            ],
+            "max_abs_path_error": [
+              5.551115123125783e-16,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              8.881784197001252e-16
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "online_picard",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "rwm",
+            "max_iter": 80,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8485281374238569,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 4360,
+            "host_scalar_reads": 44,
+            "host_scalar_wait_seconds": 3.308453597128391e-05,
+            "iterations": 22,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [
+              {
+                "confirmed_prefix": 6,
+                "iteration": 1,
+                "offset": 0
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 2,
+                "offset": 6
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 3,
+                "offset": 7
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 4,
+                "offset": 9
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 5,
+                "offset": 12
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 6,
+                "offset": 14
+              },
+              {
+                "confirmed_prefix": 6,
+                "iteration": 7,
+                "offset": 16
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 8,
+                "offset": 22
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 9,
+                "offset": 24
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 10,
+                "offset": 25
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 11,
+                "offset": 28
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 12,
+                "offset": 36
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 13,
+                "offset": 39
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 14,
+                "offset": 47
+              },
+              {
+                "confirmed_prefix": 7,
+                "iteration": 15,
+                "offset": 50
+              },
+              {
+                "confirmed_prefix": 5,
+                "iteration": 16,
+                "offset": 57
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 17,
+                "offset": 62
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 18,
+                "offset": 70
+              },
+              {
+                "confirmed_prefix": 4,
+                "iteration": 19,
+                "offset": 72
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 20,
+                "offset": 76
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 21,
+                "offset": 77
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 22,
+                "offset": 79
+              }
+            ],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 0,
+          "executor_wall_seconds": 0.01048729196190834,
+          "has_prior_execution": false,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.0001377500593662262,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 1.0791001841425896e-05,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-1.npz",
+          "actual_array_sha256": "5494b3e1c0e76da5e698d882008843470272326ed7b658d3777a302832a55dfa",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              5.551115123125783e-16,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              8.881784197001252e-16
+            ],
+            "max_abs_path_error": [
+              5.551115123125783e-16,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              8.881784197001252e-16
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "online_picard",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "rwm",
+            "max_iter": 80,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8485281374238569,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 4360,
+            "host_scalar_reads": 44,
+            "host_scalar_wait_seconds": 2.616550773382187e-05,
+            "iterations": 22,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [
+              {
+                "confirmed_prefix": 6,
+                "iteration": 1,
+                "offset": 0
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 2,
+                "offset": 6
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 3,
+                "offset": 7
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 4,
+                "offset": 9
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 5,
+                "offset": 12
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 6,
+                "offset": 14
+              },
+              {
+                "confirmed_prefix": 6,
+                "iteration": 7,
+                "offset": 16
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 8,
+                "offset": 22
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 9,
+                "offset": 24
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 10,
+                "offset": 25
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 11,
+                "offset": 28
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 12,
+                "offset": 36
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 13,
+                "offset": 39
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 14,
+                "offset": 47
+              },
+              {
+                "confirmed_prefix": 7,
+                "iteration": 15,
+                "offset": 50
+              },
+              {
+                "confirmed_prefix": 5,
+                "iteration": 16,
+                "offset": 57
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 17,
+                "offset": 62
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 18,
+                "offset": 70
+              },
+              {
+                "confirmed_prefix": 4,
+                "iteration": 19,
+                "offset": 72
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 20,
+                "offset": 76
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 21,
+                "offset": 77
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 22,
+                "offset": 79
+              }
+            ],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 1,
+          "executor_wall_seconds": 0.009508374845609069,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.0001377500593662262,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 5.875015631318092e-06,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-2.npz",
+          "actual_array_sha256": "5494b3e1c0e76da5e698d882008843470272326ed7b658d3777a302832a55dfa",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              5.551115123125783e-16,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              8.881784197001252e-16
+            ],
+            "max_abs_path_error": [
+              5.551115123125783e-16,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              8.881784197001252e-16
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "online_picard",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "rwm",
+            "max_iter": 80,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8485281374238569,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 4360,
+            "host_scalar_reads": 44,
+            "host_scalar_wait_seconds": 2.2457214072346687e-05,
+            "iterations": 22,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [
+              {
+                "confirmed_prefix": 6,
+                "iteration": 1,
+                "offset": 0
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 2,
+                "offset": 6
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 3,
+                "offset": 7
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 4,
+                "offset": 9
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 5,
+                "offset": 12
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 6,
+                "offset": 14
+              },
+              {
+                "confirmed_prefix": 6,
+                "iteration": 7,
+                "offset": 16
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 8,
+                "offset": 22
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 9,
+                "offset": 24
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 10,
+                "offset": 25
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 11,
+                "offset": 28
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 12,
+                "offset": 36
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 13,
+                "offset": 39
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 14,
+                "offset": 47
+              },
+              {
+                "confirmed_prefix": 7,
+                "iteration": 15,
+                "offset": 50
+              },
+              {
+                "confirmed_prefix": 5,
+                "iteration": 16,
+                "offset": 57
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 17,
+                "offset": 62
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 18,
+                "offset": 70
+              },
+              {
+                "confirmed_prefix": 4,
+                "iteration": 19,
+                "offset": 72
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 20,
+                "offset": 76
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 21,
+                "offset": 77
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 22,
+                "offset": 79
+              }
+            ],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 2,
+          "executor_wall_seconds": 0.008962874999269843,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.0001377500593662262,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 4.749977961182594e-06,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-3.npz",
+          "actual_array_sha256": "5494b3e1c0e76da5e698d882008843470272326ed7b658d3777a302832a55dfa",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              5.551115123125783e-16,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              8.881784197001252e-16
+            ],
+            "max_abs_path_error": [
+              5.551115123125783e-16,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              8.881784197001252e-16
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "online_picard",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "rwm",
+            "max_iter": 80,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8485281374238569,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 0,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 4360,
+            "host_scalar_reads": 44,
+            "host_scalar_wait_seconds": 2.1375250071287155e-05,
+            "iterations": 22,
+            "jvp_evals": 0,
+            "residual": 0.0,
+            "rounds": [
+              {
+                "confirmed_prefix": 6,
+                "iteration": 1,
+                "offset": 0
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 2,
+                "offset": 6
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 3,
+                "offset": 7
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 4,
+                "offset": 9
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 5,
+                "offset": 12
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 6,
+                "offset": 14
+              },
+              {
+                "confirmed_prefix": 6,
+                "iteration": 7,
+                "offset": 16
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 8,
+                "offset": 22
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 9,
+                "offset": 24
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 10,
+                "offset": 25
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 11,
+                "offset": 28
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 12,
+                "offset": 36
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 13,
+                "offset": 39
+              },
+              {
+                "confirmed_prefix": 3,
+                "iteration": 14,
+                "offset": 47
+              },
+              {
+                "confirmed_prefix": 7,
+                "iteration": 15,
+                "offset": 50
+              },
+              {
+                "confirmed_prefix": 5,
+                "iteration": 16,
+                "offset": 57
+              },
+              {
+                "confirmed_prefix": 8,
+                "iteration": 17,
+                "offset": 62
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 18,
+                "offset": 70
+              },
+              {
+                "confirmed_prefix": 4,
+                "iteration": 19,
+                "offset": 72
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 20,
+                "offset": 76
+              },
+              {
+                "confirmed_prefix": 2,
+                "iteration": 21,
+                "offset": 77
+              },
+              {
+                "confirmed_prefix": 1,
+                "iteration": 22,
+                "offset": 79
+              }
+            ],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 3,
+          "executor_wall_seconds": 0.008958584163337946,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.0001377500593662262,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 3.916909918189049e-06,
+          "transform_included_in_executor_wall": false
+        }
+      ],
+      "samples_eligible": true,
+      "scientific_protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+      "scope": "Initial plus three prepared fixed-input eager executions; independent audits/output outside timed executor. All replays belong to one existing input, not additional inference replicates.",
+      "status": "completed",
+      "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+      "task": {
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "151c23e95214c429b2bc",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0
+      }
+    },
+    {
+      "actual_executions": 4,
+      "cached_execution_measured": true,
+      "cached_executions": 3,
+      "failure_category": null,
+      "native_Windows_validated": false,
+      "new_independent_statistical_repetitions": 0,
+      "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+      "records": [
+        {
+          "actual_array_file": "execution-0.npz",
+          "actual_array_sha256": "e81fbd129665d8d143de1d9d5fa762c522541a34fd5256e9cbdcacbabc7b4284",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              1.103006574965093e-13,
+              7.027711745877241e-14,
+              2.6657831497800544e-10,
+              8.866074541202806e-12
+            ],
+            "max_abs_path_error": [
+              1.103006574965093e-13,
+              7.027711745877241e-14,
+              2.6657831497800544e-10,
+              8.866074541202806e-12
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "quasi_deer",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "mala",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 10136,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 12416,
+            "host_scalar_reads": 165,
+            "host_scalar_wait_seconds": 0.0001538335345685482,
+            "iterations": 55,
+            "jvp_evals": 6208,
+            "residual": 0.8567864672706532,
+            "rounds": [
+              {
+                "confirmed": 0,
+                "iteration": 1,
+                "offset": 0,
+                "residual": 32727817205.104366
+              },
+              {
+                "confirmed": 0,
+                "iteration": 2,
+                "offset": 0,
+                "residual": 28748776266.848816
+              },
+              {
+                "confirmed": 0,
+                "iteration": 3,
+                "offset": 0,
+                "residual": 28985477096.796936
+              },
+              {
+                "confirmed": 0,
+                "iteration": 4,
+                "offset": 0,
+                "residual": 38532241266.47435
+              },
+              {
+                "confirmed": 0,
+                "iteration": 5,
+                "offset": 0,
+                "residual": 17341767840.40206
+              },
+              {
+                "confirmed": 0,
+                "iteration": 6,
+                "offset": 0,
+                "residual": 18428677712.842094
+              },
+              {
+                "confirmed": 0,
+                "iteration": 7,
+                "offset": 0,
+                "residual": 7390396399.29308
+              },
+              {
+                "confirmed": 0,
+                "iteration": 8,
+                "offset": 0,
+                "residual": 20799178359.746365
+              },
+              {
+                "confirmed": 0,
+                "iteration": 9,
+                "offset": 0,
+                "residual": 7991865740.273403
+              },
+              {
+                "confirmed": 0,
+                "iteration": 10,
+                "offset": 0,
+                "residual": 2818122720.613604
+              },
+              {
+                "confirmed": 0,
+                "iteration": 11,
+                "offset": 0,
+                "residual": 395509139.0712634
+              },
+              {
+                "confirmed": 0,
+                "iteration": 12,
+                "offset": 0,
+                "residual": 95391389.76077738
+              },
+              {
+                "confirmed": 0,
+                "iteration": 13,
+                "offset": 0,
+                "residual": 55812895.78872799
+              },
+              {
+                "confirmed": 0,
+                "iteration": 14,
+                "offset": 0,
+                "residual": 6601264.114146984
+              },
+              {
+                "confirmed": 0,
+                "iteration": 15,
+                "offset": 0,
+                "residual": 620387.572573213
+              },
+              {
+                "confirmed": 0,
+                "iteration": 16,
+                "offset": 0,
+                "residual": 20511.75766027876
+              },
+              {
+                "confirmed": 0,
+                "iteration": 17,
+                "offset": 0,
+                "residual": 4527.252310171704
+              },
+              {
+                "confirmed": 0,
+                "iteration": 18,
+                "offset": 0,
+                "residual": 1018.8396083923955
+              },
+              {
+                "confirmed": 0,
+                "iteration": 19,
+                "offset": 0,
+                "residual": 139.51713069556547
+              },
+              {
+                "confirmed": 0,
+                "iteration": 20,
+                "offset": 0,
+                "residual": 44.26756061354491
+              },
+              {
+                "confirmed": 0,
+                "iteration": 21,
+                "offset": 0,
+                "residual": 2.025647797316006
+              },
+              {
+                "confirmed": 0,
+                "iteration": 22,
+                "offset": 0,
+                "residual": 0.06892282360697308
+              },
+              {
+                "confirmed": 128,
+                "iteration": 1,
+                "offset": 32,
+                "residual": 22940650117.806362
+              },
+              {
+                "confirmed": 128,
+                "iteration": 2,
+                "offset": 32,
+                "residual": 33712292524.871117
+              },
+              {
+                "confirmed": 128,
+                "iteration": 3,
+                "offset": 32,
+                "residual": 32532143993.436165
+              },
+              {
+                "confirmed": 128,
+                "iteration": 4,
+                "offset": 32,
+                "residual": 36414067108.48779
+              },
+              {
+                "confirmed": 128,
+                "iteration": 5,
+                "offset": 32,
+                "residual": 33565123853.86876
+              },
+              {
+                "confirmed": 128,
+                "iteration": 6,
+                "offset": 32,
+                "residual": 22291474086.41618
+              },
+              {
+                "confirmed": 128,
+                "iteration": 7,
+                "offset": 32,
+                "residual": 21795080735.08547
+              },
+              {
+                "confirmed": 128,
+                "iteration": 8,
+                "offset": 32,
+                "residual": 11731728652.435265
+              },
+              {
+                "confirmed": 128,
+                "iteration": 9,
+                "offset": 32,
+                "residual": 5951341742.416322
+              },
+              {
+                "confirmed": 128,
+                "iteration": 10,
+                "offset": 32,
+                "residual": 261737128.6335997
+              },
+              {
+                "confirmed": 128,
+                "iteration": 11,
+                "offset": 32,
+                "residual": 56532992.17811108
+              },
+              {
+                "confirmed": 128,
+                "iteration": 12,
+                "offset": 32,
+                "residual": 7543156.471627402
+              },
+              {
+                "confirmed": 128,
+                "iteration": 13,
+                "offset": 32,
+                "residual": 28833.512357605327
+              },
+              {
+                "confirmed": 128,
+                "iteration": 14,
+                "offset": 32,
+                "residual": 21714.681821847786
+              },
+              {
+                "confirmed": 128,
+                "iteration": 15,
+                "offset": 32,
+                "residual": 2677.989014997142
+              },
+              {
+                "confirmed": 128,
+                "iteration": 16,
+                "offset": 32,
+                "residual": 1632.9576738337475
+              },
+              {
+                "confirmed": 128,
+                "iteration": 17,
+                "offset": 32,
+                "residual": 85.65515143210405
+              },
+              {
+                "confirmed": 128,
+                "iteration": 18,
+                "offset": 32,
+                "residual": 62.502126535830946
+              },
+              {
+                "confirmed": 128,
+                "iteration": 19,
+                "offset": 32,
+                "residual": 1.250594434976699
+              },
+              {
+                "confirmed": 128,
+                "iteration": 20,
+                "offset": 32,
+                "residual": 0.8567864672706532
+              },
+              {
+                "confirmed": 256,
+                "iteration": 1,
+                "offset": 64,
+                "residual": 16493019020.482536
+              },
+              {
+                "confirmed": 256,
+                "iteration": 2,
+                "offset": 64,
+                "residual": 17029812045.71145
+              },
+              {
+                "confirmed": 256,
+                "iteration": 3,
+                "offset": 64,
+                "residual": 16988920485.445963
+              },
+              {
+                "confirmed": 256,
+                "iteration": 4,
+                "offset": 64,
+                "residual": 14801798532.102095
+              },
+              {
+                "confirmed": 256,
+                "iteration": 5,
+                "offset": 64,
+                "residual": 6098417774.924961
+              },
+              {
+                "confirmed": 256,
+                "iteration": 6,
+                "offset": 64,
+                "residual": 287264349.3540748
+              },
+              {
+                "confirmed": 256,
+                "iteration": 7,
+                "offset": 64,
+                "residual": 87647084.04712042
+              },
+              {
+                "confirmed": 256,
+                "iteration": 8,
+                "offset": 64,
+                "residual": 10378635.307520274
+              },
+              {
+                "confirmed": 256,
+                "iteration": 9,
+                "offset": 64,
+                "residual": 1538833.2454984759
+              },
+              {
+                "confirmed": 256,
+                "iteration": 10,
+                "offset": 64,
+                "residual": 56554.926964494574
+              },
+              {
+                "confirmed": 256,
+                "iteration": 11,
+                "offset": 64,
+                "residual": 796.316833978196
+              },
+              {
+                "confirmed": 256,
+                "iteration": 12,
+                "offset": 64,
+                "residual": 10.281612773296496
+              },
+              {
+                "confirmed": 256,
+                "iteration": 13,
+                "offset": 64,
+                "residual": 0.0009381024492845262
+              }
+            ],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 0,
+          "executor_wall_seconds": 0.7542799168732017,
+          "has_prior_execution": false,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.0001237918622791767,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 2.537504769861698e-05,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-1.npz",
+          "actual_array_sha256": "e81fbd129665d8d143de1d9d5fa762c522541a34fd5256e9cbdcacbabc7b4284",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              1.103006574965093e-13,
+              7.027711745877241e-14,
+              2.6657831497800544e-10,
+              8.866074541202806e-12
+            ],
+            "max_abs_path_error": [
+              1.103006574965093e-13,
+              7.027711745877241e-14,
+              2.6657831497800544e-10,
+              8.866074541202806e-12
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "quasi_deer",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "mala",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 10136,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 12416,
+            "host_scalar_reads": 165,
+            "host_scalar_wait_seconds": 0.0001345858909189701,
+            "iterations": 55,
+            "jvp_evals": 6208,
+            "residual": 0.8567864672706532,
+            "rounds": [
+              {
+                "confirmed": 0,
+                "iteration": 1,
+                "offset": 0,
+                "residual": 32727817205.104366
+              },
+              {
+                "confirmed": 0,
+                "iteration": 2,
+                "offset": 0,
+                "residual": 28748776266.848816
+              },
+              {
+                "confirmed": 0,
+                "iteration": 3,
+                "offset": 0,
+                "residual": 28985477096.796936
+              },
+              {
+                "confirmed": 0,
+                "iteration": 4,
+                "offset": 0,
+                "residual": 38532241266.47435
+              },
+              {
+                "confirmed": 0,
+                "iteration": 5,
+                "offset": 0,
+                "residual": 17341767840.40206
+              },
+              {
+                "confirmed": 0,
+                "iteration": 6,
+                "offset": 0,
+                "residual": 18428677712.842094
+              },
+              {
+                "confirmed": 0,
+                "iteration": 7,
+                "offset": 0,
+                "residual": 7390396399.29308
+              },
+              {
+                "confirmed": 0,
+                "iteration": 8,
+                "offset": 0,
+                "residual": 20799178359.746365
+              },
+              {
+                "confirmed": 0,
+                "iteration": 9,
+                "offset": 0,
+                "residual": 7991865740.273403
+              },
+              {
+                "confirmed": 0,
+                "iteration": 10,
+                "offset": 0,
+                "residual": 2818122720.613604
+              },
+              {
+                "confirmed": 0,
+                "iteration": 11,
+                "offset": 0,
+                "residual": 395509139.0712634
+              },
+              {
+                "confirmed": 0,
+                "iteration": 12,
+                "offset": 0,
+                "residual": 95391389.76077738
+              },
+              {
+                "confirmed": 0,
+                "iteration": 13,
+                "offset": 0,
+                "residual": 55812895.78872799
+              },
+              {
+                "confirmed": 0,
+                "iteration": 14,
+                "offset": 0,
+                "residual": 6601264.114146984
+              },
+              {
+                "confirmed": 0,
+                "iteration": 15,
+                "offset": 0,
+                "residual": 620387.572573213
+              },
+              {
+                "confirmed": 0,
+                "iteration": 16,
+                "offset": 0,
+                "residual": 20511.75766027876
+              },
+              {
+                "confirmed": 0,
+                "iteration": 17,
+                "offset": 0,
+                "residual": 4527.252310171704
+              },
+              {
+                "confirmed": 0,
+                "iteration": 18,
+                "offset": 0,
+                "residual": 1018.8396083923955
+              },
+              {
+                "confirmed": 0,
+                "iteration": 19,
+                "offset": 0,
+                "residual": 139.51713069556547
+              },
+              {
+                "confirmed": 0,
+                "iteration": 20,
+                "offset": 0,
+                "residual": 44.26756061354491
+              },
+              {
+                "confirmed": 0,
+                "iteration": 21,
+                "offset": 0,
+                "residual": 2.025647797316006
+              },
+              {
+                "confirmed": 0,
+                "iteration": 22,
+                "offset": 0,
+                "residual": 0.06892282360697308
+              },
+              {
+                "confirmed": 128,
+                "iteration": 1,
+                "offset": 32,
+                "residual": 22940650117.806362
+              },
+              {
+                "confirmed": 128,
+                "iteration": 2,
+                "offset": 32,
+                "residual": 33712292524.871117
+              },
+              {
+                "confirmed": 128,
+                "iteration": 3,
+                "offset": 32,
+                "residual": 32532143993.436165
+              },
+              {
+                "confirmed": 128,
+                "iteration": 4,
+                "offset": 32,
+                "residual": 36414067108.48779
+              },
+              {
+                "confirmed": 128,
+                "iteration": 5,
+                "offset": 32,
+                "residual": 33565123853.86876
+              },
+              {
+                "confirmed": 128,
+                "iteration": 6,
+                "offset": 32,
+                "residual": 22291474086.41618
+              },
+              {
+                "confirmed": 128,
+                "iteration": 7,
+                "offset": 32,
+                "residual": 21795080735.08547
+              },
+              {
+                "confirmed": 128,
+                "iteration": 8,
+                "offset": 32,
+                "residual": 11731728652.435265
+              },
+              {
+                "confirmed": 128,
+                "iteration": 9,
+                "offset": 32,
+                "residual": 5951341742.416322
+              },
+              {
+                "confirmed": 128,
+                "iteration": 10,
+                "offset": 32,
+                "residual": 261737128.6335997
+              },
+              {
+                "confirmed": 128,
+                "iteration": 11,
+                "offset": 32,
+                "residual": 56532992.17811108
+              },
+              {
+                "confirmed": 128,
+                "iteration": 12,
+                "offset": 32,
+                "residual": 7543156.471627402
+              },
+              {
+                "confirmed": 128,
+                "iteration": 13,
+                "offset": 32,
+                "residual": 28833.512357605327
+              },
+              {
+                "confirmed": 128,
+                "iteration": 14,
+                "offset": 32,
+                "residual": 21714.681821847786
+              },
+              {
+                "confirmed": 128,
+                "iteration": 15,
+                "offset": 32,
+                "residual": 2677.989014997142
+              },
+              {
+                "confirmed": 128,
+                "iteration": 16,
+                "offset": 32,
+                "residual": 1632.9576738337475
+              },
+              {
+                "confirmed": 128,
+                "iteration": 17,
+                "offset": 32,
+                "residual": 85.65515143210405
+              },
+              {
+                "confirmed": 128,
+                "iteration": 18,
+                "offset": 32,
+                "residual": 62.502126535830946
+              },
+              {
+                "confirmed": 128,
+                "iteration": 19,
+                "offset": 32,
+                "residual": 1.250594434976699
+              },
+              {
+                "confirmed": 128,
+                "iteration": 20,
+                "offset": 32,
+                "residual": 0.8567864672706532
+              },
+              {
+                "confirmed": 256,
+                "iteration": 1,
+                "offset": 64,
+                "residual": 16493019020.482536
+              },
+              {
+                "confirmed": 256,
+                "iteration": 2,
+                "offset": 64,
+                "residual": 17029812045.71145
+              },
+              {
+                "confirmed": 256,
+                "iteration": 3,
+                "offset": 64,
+                "residual": 16988920485.445963
+              },
+              {
+                "confirmed": 256,
+                "iteration": 4,
+                "offset": 64,
+                "residual": 14801798532.102095
+              },
+              {
+                "confirmed": 256,
+                "iteration": 5,
+                "offset": 64,
+                "residual": 6098417774.924961
+              },
+              {
+                "confirmed": 256,
+                "iteration": 6,
+                "offset": 64,
+                "residual": 287264349.3540748
+              },
+              {
+                "confirmed": 256,
+                "iteration": 7,
+                "offset": 64,
+                "residual": 87647084.04712042
+              },
+              {
+                "confirmed": 256,
+                "iteration": 8,
+                "offset": 64,
+                "residual": 10378635.307520274
+              },
+              {
+                "confirmed": 256,
+                "iteration": 9,
+                "offset": 64,
+                "residual": 1538833.2454984759
+              },
+              {
+                "confirmed": 256,
+                "iteration": 10,
+                "offset": 64,
+                "residual": 56554.926964494574
+              },
+              {
+                "confirmed": 256,
+                "iteration": 11,
+                "offset": 64,
+                "residual": 796.316833978196
+              },
+              {
+                "confirmed": 256,
+                "iteration": 12,
+                "offset": 64,
+                "residual": 10.281612773296496
+              },
+              {
+                "confirmed": 256,
+                "iteration": 13,
+                "offset": 64,
+                "residual": 0.0009381024492845262
+              }
+            ],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 1,
+          "executor_wall_seconds": 0.2634066669270396,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.0001237918622791767,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 1.950003206729889e-05,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-2.npz",
+          "actual_array_sha256": "e81fbd129665d8d143de1d9d5fa762c522541a34fd5256e9cbdcacbabc7b4284",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              1.103006574965093e-13,
+              7.027711745877241e-14,
+              2.6657831497800544e-10,
+              8.866074541202806e-12
+            ],
+            "max_abs_path_error": [
+              1.103006574965093e-13,
+              7.027711745877241e-14,
+              2.6657831497800544e-10,
+              8.866074541202806e-12
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "quasi_deer",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "mala",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 10136,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 12416,
+            "host_scalar_reads": 165,
+            "host_scalar_wait_seconds": 0.00014016823843121529,
+            "iterations": 55,
+            "jvp_evals": 6208,
+            "residual": 0.8567864672706532,
+            "rounds": [
+              {
+                "confirmed": 0,
+                "iteration": 1,
+                "offset": 0,
+                "residual": 32727817205.104366
+              },
+              {
+                "confirmed": 0,
+                "iteration": 2,
+                "offset": 0,
+                "residual": 28748776266.848816
+              },
+              {
+                "confirmed": 0,
+                "iteration": 3,
+                "offset": 0,
+                "residual": 28985477096.796936
+              },
+              {
+                "confirmed": 0,
+                "iteration": 4,
+                "offset": 0,
+                "residual": 38532241266.47435
+              },
+              {
+                "confirmed": 0,
+                "iteration": 5,
+                "offset": 0,
+                "residual": 17341767840.40206
+              },
+              {
+                "confirmed": 0,
+                "iteration": 6,
+                "offset": 0,
+                "residual": 18428677712.842094
+              },
+              {
+                "confirmed": 0,
+                "iteration": 7,
+                "offset": 0,
+                "residual": 7390396399.29308
+              },
+              {
+                "confirmed": 0,
+                "iteration": 8,
+                "offset": 0,
+                "residual": 20799178359.746365
+              },
+              {
+                "confirmed": 0,
+                "iteration": 9,
+                "offset": 0,
+                "residual": 7991865740.273403
+              },
+              {
+                "confirmed": 0,
+                "iteration": 10,
+                "offset": 0,
+                "residual": 2818122720.613604
+              },
+              {
+                "confirmed": 0,
+                "iteration": 11,
+                "offset": 0,
+                "residual": 395509139.0712634
+              },
+              {
+                "confirmed": 0,
+                "iteration": 12,
+                "offset": 0,
+                "residual": 95391389.76077738
+              },
+              {
+                "confirmed": 0,
+                "iteration": 13,
+                "offset": 0,
+                "residual": 55812895.78872799
+              },
+              {
+                "confirmed": 0,
+                "iteration": 14,
+                "offset": 0,
+                "residual": 6601264.114146984
+              },
+              {
+                "confirmed": 0,
+                "iteration": 15,
+                "offset": 0,
+                "residual": 620387.572573213
+              },
+              {
+                "confirmed": 0,
+                "iteration": 16,
+                "offset": 0,
+                "residual": 20511.75766027876
+              },
+              {
+                "confirmed": 0,
+                "iteration": 17,
+                "offset": 0,
+                "residual": 4527.252310171704
+              },
+              {
+                "confirmed": 0,
+                "iteration": 18,
+                "offset": 0,
+                "residual": 1018.8396083923955
+              },
+              {
+                "confirmed": 0,
+                "iteration": 19,
+                "offset": 0,
+                "residual": 139.51713069556547
+              },
+              {
+                "confirmed": 0,
+                "iteration": 20,
+                "offset": 0,
+                "residual": 44.26756061354491
+              },
+              {
+                "confirmed": 0,
+                "iteration": 21,
+                "offset": 0,
+                "residual": 2.025647797316006
+              },
+              {
+                "confirmed": 0,
+                "iteration": 22,
+                "offset": 0,
+                "residual": 0.06892282360697308
+              },
+              {
+                "confirmed": 128,
+                "iteration": 1,
+                "offset": 32,
+                "residual": 22940650117.806362
+              },
+              {
+                "confirmed": 128,
+                "iteration": 2,
+                "offset": 32,
+                "residual": 33712292524.871117
+              },
+              {
+                "confirmed": 128,
+                "iteration": 3,
+                "offset": 32,
+                "residual": 32532143993.436165
+              },
+              {
+                "confirmed": 128,
+                "iteration": 4,
+                "offset": 32,
+                "residual": 36414067108.48779
+              },
+              {
+                "confirmed": 128,
+                "iteration": 5,
+                "offset": 32,
+                "residual": 33565123853.86876
+              },
+              {
+                "confirmed": 128,
+                "iteration": 6,
+                "offset": 32,
+                "residual": 22291474086.41618
+              },
+              {
+                "confirmed": 128,
+                "iteration": 7,
+                "offset": 32,
+                "residual": 21795080735.08547
+              },
+              {
+                "confirmed": 128,
+                "iteration": 8,
+                "offset": 32,
+                "residual": 11731728652.435265
+              },
+              {
+                "confirmed": 128,
+                "iteration": 9,
+                "offset": 32,
+                "residual": 5951341742.416322
+              },
+              {
+                "confirmed": 128,
+                "iteration": 10,
+                "offset": 32,
+                "residual": 261737128.6335997
+              },
+              {
+                "confirmed": 128,
+                "iteration": 11,
+                "offset": 32,
+                "residual": 56532992.17811108
+              },
+              {
+                "confirmed": 128,
+                "iteration": 12,
+                "offset": 32,
+                "residual": 7543156.471627402
+              },
+              {
+                "confirmed": 128,
+                "iteration": 13,
+                "offset": 32,
+                "residual": 28833.512357605327
+              },
+              {
+                "confirmed": 128,
+                "iteration": 14,
+                "offset": 32,
+                "residual": 21714.681821847786
+              },
+              {
+                "confirmed": 128,
+                "iteration": 15,
+                "offset": 32,
+                "residual": 2677.989014997142
+              },
+              {
+                "confirmed": 128,
+                "iteration": 16,
+                "offset": 32,
+                "residual": 1632.9576738337475
+              },
+              {
+                "confirmed": 128,
+                "iteration": 17,
+                "offset": 32,
+                "residual": 85.65515143210405
+              },
+              {
+                "confirmed": 128,
+                "iteration": 18,
+                "offset": 32,
+                "residual": 62.502126535830946
+              },
+              {
+                "confirmed": 128,
+                "iteration": 19,
+                "offset": 32,
+                "residual": 1.250594434976699
+              },
+              {
+                "confirmed": 128,
+                "iteration": 20,
+                "offset": 32,
+                "residual": 0.8567864672706532
+              },
+              {
+                "confirmed": 256,
+                "iteration": 1,
+                "offset": 64,
+                "residual": 16493019020.482536
+              },
+              {
+                "confirmed": 256,
+                "iteration": 2,
+                "offset": 64,
+                "residual": 17029812045.71145
+              },
+              {
+                "confirmed": 256,
+                "iteration": 3,
+                "offset": 64,
+                "residual": 16988920485.445963
+              },
+              {
+                "confirmed": 256,
+                "iteration": 4,
+                "offset": 64,
+                "residual": 14801798532.102095
+              },
+              {
+                "confirmed": 256,
+                "iteration": 5,
+                "offset": 64,
+                "residual": 6098417774.924961
+              },
+              {
+                "confirmed": 256,
+                "iteration": 6,
+                "offset": 64,
+                "residual": 287264349.3540748
+              },
+              {
+                "confirmed": 256,
+                "iteration": 7,
+                "offset": 64,
+                "residual": 87647084.04712042
+              },
+              {
+                "confirmed": 256,
+                "iteration": 8,
+                "offset": 64,
+                "residual": 10378635.307520274
+              },
+              {
+                "confirmed": 256,
+                "iteration": 9,
+                "offset": 64,
+                "residual": 1538833.2454984759
+              },
+              {
+                "confirmed": 256,
+                "iteration": 10,
+                "offset": 64,
+                "residual": 56554.926964494574
+              },
+              {
+                "confirmed": 256,
+                "iteration": 11,
+                "offset": 64,
+                "residual": 796.316833978196
+              },
+              {
+                "confirmed": 256,
+                "iteration": 12,
+                "offset": 64,
+                "residual": 10.281612773296496
+              },
+              {
+                "confirmed": 256,
+                "iteration": 13,
+                "offset": 64,
+                "residual": 0.0009381024492845262
+              }
+            ],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 2,
+          "executor_wall_seconds": 0.26917233411222696,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.0001237918622791767,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 1.237494871020317e-05,
+          "transform_included_in_executor_wall": false
+        },
+        {
+          "actual_array_file": "execution-3.npz",
+          "actual_array_sha256": "e81fbd129665d8d143de1d9d5fa762c522541a34fd5256e9cbdcacbabc7b4284",
+          "audit": {
+            "acceptance_mismatches": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "max_abs_constrained_error": [
+              1.103006574965093e-13,
+              7.027711745877241e-14,
+              2.6657831497800544e-10,
+              8.866074541202806e-12
+            ],
+            "max_abs_path_error": [
+              1.103006574965093e-13,
+              7.027711745877241e-14,
+              2.6657831497800544e-10,
+              8.866074541202806e-12
+            ],
+            "oracle": "independent_numpy_float64",
+            "passed": true
+          },
+          "audit_included_in_executor_wall": false,
+          "boundary": "Pre-synchronized prepared execute call through post-execution device synchronization; allocation and existing host-control telemetry included",
+          "config": {
+            "atol": 1e-10,
+            "audit": false,
+            "chains": 4,
+            "device": "cpu",
+            "draws": 80,
+            "executor": "quasi_deer",
+            "initial": [
+              [
+                -0.16369230958073322,
+                -0.7644098333603336,
+                -1.6779480887137517,
+                -0.6380129270933238,
+                -1.4206371921144134,
+                2.4181053528844103,
+                -0.5070307215836021,
+                0.8400457040575158
+              ],
+              [
+                -0.6512228666229413,
+                0.8454320099713941,
+                3.4077605687479897,
+                2.7857809512325273,
+                0.7520454339287252,
+                -0.10598070945232528,
+                -1.9375173953885516,
+                -1.8821715804482013
+              ],
+              [
+                0.8237501716657875,
+                -1.6566723592264732,
+                0.6020427716271389,
+                -1.6667868467708866,
+                1.6132219030798638,
+                -0.030642921367982207,
+                -1.175136709851984,
+                -1.2395108807698243
+              ],
+              [
+                1.5903523103854178,
+                -1.564353873525788,
+                1.7969077594191902,
+                -3.3301004130328775,
+                -1.6059415803975772,
+                2.8401893706693206,
+                2.399983910496041,
+                -1.769357485312184
+              ]
+            ],
+            "jacobian_clip": 1.0,
+            "kernel": "mala",
+            "max_iter": 2048,
+            "memory_limit_mb": 2048,
+            "on_failure": "error",
+            "rtol": 1e-10,
+            "seed": 2026,
+            "solver_seed": 7103,
+            "step_size": 0.8,
+            "window": 32
+          },
+          "diagnostics": {
+            "clips": 10136,
+            "confirmed": 320,
+            "control_policy": "eager Python; scalar reads synchronize CUDA; chain-shared minimum Picard prefix",
+            "forward_evals": 12416,
+            "host_scalar_reads": 165,
+            "host_scalar_wait_seconds": 0.0001434115692973137,
+            "iterations": 55,
+            "jvp_evals": 6208,
+            "residual": 0.8567864672706532,
+            "rounds": [
+              {
+                "confirmed": 0,
+                "iteration": 1,
+                "offset": 0,
+                "residual": 32727817205.104366
+              },
+              {
+                "confirmed": 0,
+                "iteration": 2,
+                "offset": 0,
+                "residual": 28748776266.848816
+              },
+              {
+                "confirmed": 0,
+                "iteration": 3,
+                "offset": 0,
+                "residual": 28985477096.796936
+              },
+              {
+                "confirmed": 0,
+                "iteration": 4,
+                "offset": 0,
+                "residual": 38532241266.47435
+              },
+              {
+                "confirmed": 0,
+                "iteration": 5,
+                "offset": 0,
+                "residual": 17341767840.40206
+              },
+              {
+                "confirmed": 0,
+                "iteration": 6,
+                "offset": 0,
+                "residual": 18428677712.842094
+              },
+              {
+                "confirmed": 0,
+                "iteration": 7,
+                "offset": 0,
+                "residual": 7390396399.29308
+              },
+              {
+                "confirmed": 0,
+                "iteration": 8,
+                "offset": 0,
+                "residual": 20799178359.746365
+              },
+              {
+                "confirmed": 0,
+                "iteration": 9,
+                "offset": 0,
+                "residual": 7991865740.273403
+              },
+              {
+                "confirmed": 0,
+                "iteration": 10,
+                "offset": 0,
+                "residual": 2818122720.613604
+              },
+              {
+                "confirmed": 0,
+                "iteration": 11,
+                "offset": 0,
+                "residual": 395509139.0712634
+              },
+              {
+                "confirmed": 0,
+                "iteration": 12,
+                "offset": 0,
+                "residual": 95391389.76077738
+              },
+              {
+                "confirmed": 0,
+                "iteration": 13,
+                "offset": 0,
+                "residual": 55812895.78872799
+              },
+              {
+                "confirmed": 0,
+                "iteration": 14,
+                "offset": 0,
+                "residual": 6601264.114146984
+              },
+              {
+                "confirmed": 0,
+                "iteration": 15,
+                "offset": 0,
+                "residual": 620387.572573213
+              },
+              {
+                "confirmed": 0,
+                "iteration": 16,
+                "offset": 0,
+                "residual": 20511.75766027876
+              },
+              {
+                "confirmed": 0,
+                "iteration": 17,
+                "offset": 0,
+                "residual": 4527.252310171704
+              },
+              {
+                "confirmed": 0,
+                "iteration": 18,
+                "offset": 0,
+                "residual": 1018.8396083923955
+              },
+              {
+                "confirmed": 0,
+                "iteration": 19,
+                "offset": 0,
+                "residual": 139.51713069556547
+              },
+              {
+                "confirmed": 0,
+                "iteration": 20,
+                "offset": 0,
+                "residual": 44.26756061354491
+              },
+              {
+                "confirmed": 0,
+                "iteration": 21,
+                "offset": 0,
+                "residual": 2.025647797316006
+              },
+              {
+                "confirmed": 0,
+                "iteration": 22,
+                "offset": 0,
+                "residual": 0.06892282360697308
+              },
+              {
+                "confirmed": 128,
+                "iteration": 1,
+                "offset": 32,
+                "residual": 22940650117.806362
+              },
+              {
+                "confirmed": 128,
+                "iteration": 2,
+                "offset": 32,
+                "residual": 33712292524.871117
+              },
+              {
+                "confirmed": 128,
+                "iteration": 3,
+                "offset": 32,
+                "residual": 32532143993.436165
+              },
+              {
+                "confirmed": 128,
+                "iteration": 4,
+                "offset": 32,
+                "residual": 36414067108.48779
+              },
+              {
+                "confirmed": 128,
+                "iteration": 5,
+                "offset": 32,
+                "residual": 33565123853.86876
+              },
+              {
+                "confirmed": 128,
+                "iteration": 6,
+                "offset": 32,
+                "residual": 22291474086.41618
+              },
+              {
+                "confirmed": 128,
+                "iteration": 7,
+                "offset": 32,
+                "residual": 21795080735.08547
+              },
+              {
+                "confirmed": 128,
+                "iteration": 8,
+                "offset": 32,
+                "residual": 11731728652.435265
+              },
+              {
+                "confirmed": 128,
+                "iteration": 9,
+                "offset": 32,
+                "residual": 5951341742.416322
+              },
+              {
+                "confirmed": 128,
+                "iteration": 10,
+                "offset": 32,
+                "residual": 261737128.6335997
+              },
+              {
+                "confirmed": 128,
+                "iteration": 11,
+                "offset": 32,
+                "residual": 56532992.17811108
+              },
+              {
+                "confirmed": 128,
+                "iteration": 12,
+                "offset": 32,
+                "residual": 7543156.471627402
+              },
+              {
+                "confirmed": 128,
+                "iteration": 13,
+                "offset": 32,
+                "residual": 28833.512357605327
+              },
+              {
+                "confirmed": 128,
+                "iteration": 14,
+                "offset": 32,
+                "residual": 21714.681821847786
+              },
+              {
+                "confirmed": 128,
+                "iteration": 15,
+                "offset": 32,
+                "residual": 2677.989014997142
+              },
+              {
+                "confirmed": 128,
+                "iteration": 16,
+                "offset": 32,
+                "residual": 1632.9576738337475
+              },
+              {
+                "confirmed": 128,
+                "iteration": 17,
+                "offset": 32,
+                "residual": 85.65515143210405
+              },
+              {
+                "confirmed": 128,
+                "iteration": 18,
+                "offset": 32,
+                "residual": 62.502126535830946
+              },
+              {
+                "confirmed": 128,
+                "iteration": 19,
+                "offset": 32,
+                "residual": 1.250594434976699
+              },
+              {
+                "confirmed": 128,
+                "iteration": 20,
+                "offset": 32,
+                "residual": 0.8567864672706532
+              },
+              {
+                "confirmed": 256,
+                "iteration": 1,
+                "offset": 64,
+                "residual": 16493019020.482536
+              },
+              {
+                "confirmed": 256,
+                "iteration": 2,
+                "offset": 64,
+                "residual": 17029812045.71145
+              },
+              {
+                "confirmed": 256,
+                "iteration": 3,
+                "offset": 64,
+                "residual": 16988920485.445963
+              },
+              {
+                "confirmed": 256,
+                "iteration": 4,
+                "offset": 64,
+                "residual": 14801798532.102095
+              },
+              {
+                "confirmed": 256,
+                "iteration": 5,
+                "offset": 64,
+                "residual": 6098417774.924961
+              },
+              {
+                "confirmed": 256,
+                "iteration": 6,
+                "offset": 64,
+                "residual": 287264349.3540748
+              },
+              {
+                "confirmed": 256,
+                "iteration": 7,
+                "offset": 64,
+                "residual": 87647084.04712042
+              },
+              {
+                "confirmed": 256,
+                "iteration": 8,
+                "offset": 64,
+                "residual": 10378635.307520274
+              },
+              {
+                "confirmed": 256,
+                "iteration": 9,
+                "offset": 64,
+                "residual": 1538833.2454984759
+              },
+              {
+                "confirmed": 256,
+                "iteration": 10,
+                "offset": 64,
+                "residual": 56554.926964494574
+              },
+              {
+                "confirmed": 256,
+                "iteration": 11,
+                "offset": 64,
+                "residual": 796.316833978196
+              },
+              {
+                "confirmed": 256,
+                "iteration": 12,
+                "offset": 64,
+                "residual": 10.281612773296496
+              },
+              {
+                "confirmed": 256,
+                "iteration": 13,
+                "offset": 64,
+                "residual": 0.0009381024492845262
+              }
+            ],
+            "status": 0,
+            "tensor_device": "cpu",
+            "tensor_dtype": "torch.float64"
+          },
+          "estimated_array_workspace_bytes": 1146880,
+          "execution_index": 3,
+          "executor_wall_seconds": 0.26499066688120365,
+          "has_prior_execution": true,
+          "implementation": "Unchanged torch eager executor, prepared inputs, no new explicit compilation or device-control fusion",
+          "original_arrays_identical": true,
+          "prepare_seconds": 0.0001237918622791767,
+          "samples_eligible": false,
+          "statistical_repetitions_added": 0,
+          "status": "candidate",
+          "tape_sha256": "3e9b44b9e820b88adab66aedb03f927b29303316e28485ebfd66a16b826e92c1",
+          "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+          "technical_output_valid": true,
+          "transfer_included_in_executor_wall": false,
+          "transfer_seconds": 1.1916039511561394e-05,
+          "transform_included_in_executor_wall": false
+        }
+      ],
+      "samples_eligible": true,
+      "scientific_protocol_sha256": "d876d1f37ab2fd4cf45794888bbfef26d4fa626ba7ea5cd7f5577a286f73b0c0",
+      "scope": "Initial plus three prepared fixed-input eager executions; independent audits/output outside timed executor. All replays belong to one existing input, not additional inference replicates.",
+      "status": "completed",
+      "target_id": "3a468425636076273810ee9d60d171a2c9a28212f72e2751757873f9d2a2c219",
+      "task": {
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "37f71a60a73a7df1a854",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0
+      }
+    }
+  ],
+  "cached_task_costs": [
+    {
+      "actual_attempts": 1,
+      "attempts_are_statistical_replicates": false,
+      "attempts_missing_outer_measurement": 0,
+      "by_action": {
+        "run": {
+          "calls": 2,
+          "known_seconds": 1.034078290918842,
+          "unfinished_calls": 0
+        }
+      },
+      "calls": [
+        {
+          "action": "run",
+          "error": null,
+          "finished": true,
+          "index": 0,
+          "result": {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/8b91ab212abfc73e14d8",
+            "history_sha256": "0664aa05f108cf6cf8e2c67c3130c7112acb232f9d143beb1ccb021f0b0e8f59",
+            "newly_executed": true,
+            "status": "completed",
+            "task": {
+              "device": "cpu",
+              "executor": "sequential",
+              "id": "8b91ab212abfc73e14d8",
+              "kernel": "rwm",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            }
+          },
+          "seconds": 1.029368249932304
+        },
+        {
+          "action": "run",
+          "error": null,
+          "finished": true,
+          "index": 1,
+          "result": {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/8b91ab212abfc73e14d8",
+            "history_sha256": "0664aa05f108cf6cf8e2c67c3130c7112acb232f9d143beb1ccb021f0b0e8f59",
+            "newly_executed": false,
+            "status": "completed",
+            "task": {
+              "device": "cpu",
+              "executor": "sequential",
+              "id": "8b91ab212abfc73e14d8",
+              "kernel": "rwm",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            }
+          },
+          "seconds": 0.004710040986537933
+        }
+      ],
+      "complete_invocation_seconds": 1.034078290918842,
+      "cost_scope": "Coordinator run/retry invocation only, including its registration/recovery/sealing/history; excludes measurement-ledger writes, report calls and between-call waiting",
+      "history": {
+        "attempts": [
+          {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/8b91ab212abfc73e14d8",
+            "binding_sha256": "6998bd71df63b403a5b2ce8c6032e9e7bf01cbb28ef7156e3b86f845fceb8922",
+            "cost_scope": "runtime_v1_preflight_through_terminal",
+            "evidence_sha256": "17c3578a1bba22d40f0d0939dfaf3c0e29e40f5fbe6f774310d52920bc43acf5",
+            "fixed_task": {
+              "device": "cpu",
+              "executor": "sequential",
+              "id": "8b91ab212abfc73e14d8",
+              "kernel": "rwm",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            },
+            "outcome": "valid",
+            "seconds": 1.0240359171293676,
+            "unknown_time_imputed": false
+          }
+        ],
+        "attempts_are_statistical_replicates": false,
+        "cost_scope": "Runtime-v1 attempts only; coordinator, recovery and between-call time are not included",
+        "lifecycle": "sealed",
+        "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/8b91ab212abfc73e14d8",
+        "summary": {
+          "attempt_count": 1,
+          "known_seconds": 1.0240359171293676,
+          "outcome": "valid",
+          "prior_interruption_known_seconds": 0.0,
+          "total_seconds": 1.0240359171293676,
+          "unknown_cost_attempts": 0
+        },
+        "task": {
+          "device": "cpu",
+          "executor": "sequential",
+          "id": "8b91ab212abfc73e14d8",
+          "kernel": "rwm",
+          "model": "G1",
+          "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+          "replicate": 0
+        }
+      },
+      "known_invocation_seconds": 1.034078290918842,
+      "ledger_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/call-costs/ac1a3f197f130e75d6050e6cdac7c00ff5e19a05a090741538a92db4307e13a9",
+      "ledger_sha256": "5a4c0cdb0a2542b72342a01dec44f4aa6b426b720d67e45658de5060ebf59553",
+      "note": "Verification/refusal costs are retained separately; arbitrary extra resume calls are not a standardized time-to-inference estimator",
+      "outcome": "valid",
+      "recorded_invocations": 2,
+      "unfinished_invocations": 0,
+      "unknown_time_imputed": false,
+      "verification_only_invocations": 1
+    },
+    {
+      "actual_attempts": 1,
+      "attempts_are_statistical_replicates": false,
+      "attempts_missing_outer_measurement": 0,
+      "by_action": {
+        "run": {
+          "calls": 2,
+          "known_seconds": 1.7001652910839766,
+          "unfinished_calls": 0
+        }
+      },
+      "calls": [
+        {
+          "action": "run",
+          "error": null,
+          "finished": true,
+          "index": 0,
+          "result": {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/2153a3c310f4b9b8b280",
+            "history_sha256": "16caa72acbf2dc1610a03672351c054771372b04948d565f8f73b3f8246da31e",
+            "newly_executed": true,
+            "status": "completed",
+            "task": {
+              "device": "cpu",
+              "executor": "sequential",
+              "id": "2153a3c310f4b9b8b280",
+              "kernel": "mala",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            }
+          },
+          "seconds": 1.6957532500382513
+        },
+        {
+          "action": "run",
+          "error": null,
+          "finished": true,
+          "index": 1,
+          "result": {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/2153a3c310f4b9b8b280",
+            "history_sha256": "16caa72acbf2dc1610a03672351c054771372b04948d565f8f73b3f8246da31e",
+            "newly_executed": false,
+            "status": "completed",
+            "task": {
+              "device": "cpu",
+              "executor": "sequential",
+              "id": "2153a3c310f4b9b8b280",
+              "kernel": "mala",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            }
+          },
+          "seconds": 0.004412041045725346
+        }
+      ],
+      "complete_invocation_seconds": 1.7001652910839766,
+      "cost_scope": "Coordinator run/retry invocation only, including its registration/recovery/sealing/history; excludes measurement-ledger writes, report calls and between-call waiting",
+      "history": {
+        "attempts": [
+          {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/2153a3c310f4b9b8b280",
+            "binding_sha256": "adba8657bb46538630c060494ab69a9cf5b8407fc569f8577174787a6d7caccf",
+            "cost_scope": "runtime_v1_preflight_through_terminal",
+            "evidence_sha256": "72a049e4738128934a042a4e9e9e4f83edfd815f2bd5b6d72c771ea9cb6c8c9d",
+            "fixed_task": {
+              "device": "cpu",
+              "executor": "sequential",
+              "id": "2153a3c310f4b9b8b280",
+              "kernel": "mala",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            },
+            "outcome": "valid",
+            "seconds": 1.691040333127603,
+            "unknown_time_imputed": false
+          }
+        ],
+        "attempts_are_statistical_replicates": false,
+        "cost_scope": "Runtime-v1 attempts only; coordinator, recovery and between-call time are not included",
+        "lifecycle": "sealed",
+        "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/2153a3c310f4b9b8b280",
+        "summary": {
+          "attempt_count": 1,
+          "known_seconds": 1.691040333127603,
+          "outcome": "valid",
+          "prior_interruption_known_seconds": 0.0,
+          "total_seconds": 1.691040333127603,
+          "unknown_cost_attempts": 0
+        },
+        "task": {
+          "device": "cpu",
+          "executor": "sequential",
+          "id": "2153a3c310f4b9b8b280",
+          "kernel": "mala",
+          "model": "G1",
+          "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+          "replicate": 0
+        }
+      },
+      "known_invocation_seconds": 1.7001652910839766,
+      "ledger_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/call-costs/332e22f26470c3860e5f26a9b14e6170ef136c5350b80430cbe40303efe84554",
+      "ledger_sha256": "84f0ad6b70510c74388721e9505999658732b78f7b36fa876d96d7b6de37ae71",
+      "note": "Verification/refusal costs are retained separately; arbitrary extra resume calls are not a standardized time-to-inference estimator",
+      "outcome": "valid",
+      "recorded_invocations": 2,
+      "unfinished_invocations": 0,
+      "unknown_time_imputed": false,
+      "verification_only_invocations": 1
+    },
+    {
+      "actual_attempts": 1,
+      "attempts_are_statistical_replicates": false,
+      "attempts_missing_outer_measurement": 0,
+      "by_action": {
+        "run": {
+          "calls": 2,
+          "known_seconds": 1.0409632080700248,
+          "unfinished_calls": 0
+        }
+      },
+      "calls": [
+        {
+          "action": "run",
+          "error": null,
+          "finished": true,
+          "index": 0,
+          "result": {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/151c23e95214c429b2bc",
+            "history_sha256": "8e97d18213e2020e8a332fe34915c25811a2d660062bb9626a9898883ae3cc6c",
+            "newly_executed": true,
+            "status": "completed",
+            "task": {
+              "device": "cpu",
+              "executor": "online_picard",
+              "id": "151c23e95214c429b2bc",
+              "kernel": "rwm",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            }
+          },
+          "seconds": 1.0365318330004811
+        },
+        {
+          "action": "run",
+          "error": null,
+          "finished": true,
+          "index": 1,
+          "result": {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/151c23e95214c429b2bc",
+            "history_sha256": "8e97d18213e2020e8a332fe34915c25811a2d660062bb9626a9898883ae3cc6c",
+            "newly_executed": false,
+            "status": "completed",
+            "task": {
+              "device": "cpu",
+              "executor": "online_picard",
+              "id": "151c23e95214c429b2bc",
+              "kernel": "rwm",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            }
+          },
+          "seconds": 0.004431375069543719
+        }
+      ],
+      "complete_invocation_seconds": 1.0409632080700248,
+      "cost_scope": "Coordinator run/retry invocation only, including its registration/recovery/sealing/history; excludes measurement-ledger writes, report calls and between-call waiting",
+      "history": {
+        "attempts": [
+          {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/151c23e95214c429b2bc",
+            "binding_sha256": "ea24004904fcec34e7703a205a238bfb10e71c4405150770f14ba01bfb059335",
+            "cost_scope": "runtime_v1_preflight_through_terminal",
+            "evidence_sha256": "8b4d2bb770327757927a30f56edf7a6dd1cbc9060dc45e9ef31bd14a8b9de457",
+            "fixed_task": {
+              "device": "cpu",
+              "executor": "online_picard",
+              "id": "151c23e95214c429b2bc",
+              "kernel": "rwm",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            },
+            "outcome": "valid",
+            "seconds": 1.0319099999032915,
+            "unknown_time_imputed": false
+          }
+        ],
+        "attempts_are_statistical_replicates": false,
+        "cost_scope": "Runtime-v1 attempts only; coordinator, recovery and between-call time are not included",
+        "lifecycle": "sealed",
+        "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/151c23e95214c429b2bc",
+        "summary": {
+          "attempt_count": 1,
+          "known_seconds": 1.0319099999032915,
+          "outcome": "valid",
+          "prior_interruption_known_seconds": 0.0,
+          "total_seconds": 1.0319099999032915,
+          "unknown_cost_attempts": 0
+        },
+        "task": {
+          "device": "cpu",
+          "executor": "online_picard",
+          "id": "151c23e95214c429b2bc",
+          "kernel": "rwm",
+          "model": "G1",
+          "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+          "replicate": 0
+        }
+      },
+      "known_invocation_seconds": 1.0409632080700248,
+      "ledger_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/call-costs/8a12e6b64a8744c7f846b2efd45ba677cbd07f38c6d98cfee8ad86ec94a48190",
+      "ledger_sha256": "565fa2cc95c7e0c2f01a559f31bc2545fffaebd55d782bf251808179ac9bc5ae",
+      "note": "Verification/refusal costs are retained separately; arbitrary extra resume calls are not a standardized time-to-inference estimator",
+      "outcome": "valid",
+      "recorded_invocations": 2,
+      "unfinished_invocations": 0,
+      "unknown_time_imputed": false,
+      "verification_only_invocations": 1
+    },
+    {
+      "actual_attempts": 1,
+      "attempts_are_statistical_replicates": false,
+      "attempts_missing_outer_measurement": 0,
+      "by_action": {
+        "run": {
+          "calls": 2,
+          "known_seconds": 2.6272151668090373,
+          "unfinished_calls": 0
+        }
+      },
+      "calls": [
+        {
+          "action": "run",
+          "error": null,
+          "finished": true,
+          "index": 0,
+          "result": {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/37f71a60a73a7df1a854",
+            "history_sha256": "38e8c63b4fdc31ebf728e2a3e42c6832874628b94e0c5bcd31f384e5a5997b0b",
+            "newly_executed": true,
+            "status": "completed",
+            "task": {
+              "device": "cpu",
+              "executor": "quasi_deer",
+              "id": "37f71a60a73a7df1a854",
+              "kernel": "mala",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            }
+          },
+          "seconds": 2.622507416876033
+        },
+        {
+          "action": "run",
+          "error": null,
+          "finished": true,
+          "index": 1,
+          "result": {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/37f71a60a73a7df1a854",
+            "history_sha256": "38e8c63b4fdc31ebf728e2a3e42c6832874628b94e0c5bcd31f384e5a5997b0b",
+            "newly_executed": false,
+            "status": "completed",
+            "task": {
+              "device": "cpu",
+              "executor": "quasi_deer",
+              "id": "37f71a60a73a7df1a854",
+              "kernel": "mala",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            }
+          },
+          "seconds": 0.004707749933004379
+        }
+      ],
+      "complete_invocation_seconds": 2.6272151668090373,
+      "cost_scope": "Coordinator run/retry invocation only, including its registration/recovery/sealing/history; excludes measurement-ledger writes, report calls and between-call waiting",
+      "history": {
+        "attempts": [
+          {
+            "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/37f71a60a73a7df1a854",
+            "binding_sha256": "d7dd6c0358318aac8db9b7c25f77b7b8c2cdf162959847614821250a96748cf4",
+            "cost_scope": "runtime_v1_preflight_through_terminal",
+            "evidence_sha256": "1bad43e73b14a263c981607a495ba353067b276440dc847b51dc4979d4a3b7fe",
+            "fixed_task": {
+              "device": "cpu",
+              "executor": "quasi_deer",
+              "id": "37f71a60a73a7df1a854",
+              "kernel": "mala",
+              "model": "G1",
+              "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+              "replicate": 0
+            },
+            "outcome": "valid",
+            "seconds": 2.6176540828309953,
+            "unknown_time_imputed": false
+          }
+        ],
+        "attempts_are_statistical_replicates": false,
+        "cost_scope": "Runtime-v1 attempts only; coordinator, recovery and between-call time are not included",
+        "lifecycle": "sealed",
+        "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/cached/37f71a60a73a7df1a854",
+        "summary": {
+          "attempt_count": 1,
+          "known_seconds": 2.6176540828309953,
+          "outcome": "valid",
+          "prior_interruption_known_seconds": 0.0,
+          "total_seconds": 2.6176540828309953,
+          "unknown_cost_attempts": 0
+        },
+        "task": {
+          "device": "cpu",
+          "executor": "quasi_deer",
+          "id": "37f71a60a73a7df1a854",
+          "kernel": "mala",
+          "model": "G1",
+          "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+          "replicate": 0
+        }
+      },
+      "known_invocation_seconds": 2.6272151668090373,
+      "ledger_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/call-costs/a36d8797ccc0adbb7bd2e3de89a39c2f932c2a7f67294cc2221edabecc9b3d58",
+      "ledger_sha256": "6588b1e46c8b7309128b5fea309d851c169dec5d2fe7621766dbe8380dedbe33",
+      "note": "Verification/refusal costs are retained separately; arbitrary extra resume calls are not a standardized time-to-inference estimator",
+      "outcome": "valid",
+      "recorded_invocations": 2,
+      "unfinished_invocations": 0,
+      "unknown_time_imputed": false,
+      "verification_only_invocations": 1
+    }
+  ],
+  "cached_workflows": 4,
+  "formal_inference_complete": false,
+  "independent_path_audits": 16,
+  "initial_executor_calls": 4,
+  "native_Windows_validated": false,
+  "new_independent_statistical_repetitions": 0,
+  "original_files_preserved": 26,
+  "original_retry_arrays_identical": {
+    "accept": true,
+    "draws": true,
+    "unconstrained": true
+  },
+  "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+  "recovery_cost_after_verification": {
+    "actual_attempts": 2,
+    "attempts_are_statistical_replicates": false,
+    "attempts_missing_outer_measurement": 0,
+    "by_action": {
+      "retry": {
+        "calls": 1,
+        "known_seconds": 2.831255834084004,
+        "unfinished_calls": 0
+      },
+      "run": {
+        "calls": 2,
+        "known_seconds": 2.898973833071068,
+        "unfinished_calls": 0
+      }
+    },
+    "calls": [
+      {
+        "action": "run",
+        "error": null,
+        "finished": true,
+        "index": 0,
+        "result": {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery",
+          "history_sha256": "e448bf6c5485462991bbaacb1d794814a3e041c6163a4ddb7132d61e3c6813d2",
+          "newly_executed": true,
+          "status": "interrupted",
+          "task": {
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "recovery-2153a3c310f4b9b8b280",
+            "kernel": "mala",
+            "model": "G1",
+            "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+            "replicate": 0,
+            "role": "intentional_recovery_fixture"
+          }
+        },
+        "seconds": 2.8909470411017537
+      },
+      {
+        "action": "retry",
+        "error": null,
+        "finished": true,
+        "index": 1,
+        "result": {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery.retry",
+          "history_sha256": "9af01854b0981396129d305bdd16ee3b0aa05fa8e40aa003e3dc5f9335b23891",
+          "newly_executed": true,
+          "status": "completed",
+          "task": {
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "recovery-2153a3c310f4b9b8b280",
+            "kernel": "mala",
+            "model": "G1",
+            "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+            "replicate": 0,
+            "role": "intentional_recovery_fixture"
+          }
+        },
+        "seconds": 2.831255834084004
+      },
+      {
+        "action": "run",
+        "error": null,
+        "finished": true,
+        "index": 2,
+        "result": {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery.retry",
+          "history_sha256": "9af01854b0981396129d305bdd16ee3b0aa05fa8e40aa003e3dc5f9335b23891",
+          "newly_executed": false,
+          "status": "completed",
+          "task": {
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "recovery-2153a3c310f4b9b8b280",
+            "kernel": "mala",
+            "model": "G1",
+            "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+            "replicate": 0,
+            "role": "intentional_recovery_fixture"
+          }
+        },
+        "seconds": 0.008026791969314218
+      }
+    ],
+    "complete_invocation_seconds": 5.730229667155072,
+    "cost_scope": "Coordinator run/retry invocation only, including its registration/recovery/sealing/history; excludes measurement-ledger writes, report calls and between-call waiting",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery",
+          "binding_sha256": "160f7dc6ae23b79268e74d5819df66a64edb4a97047461a7b87e8130b01ebc24",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "cd474fdfcb9d6f87acf1354cafb9a7106eca6610c6e10195a5ed65210f08494c",
+          "fixed_task": {
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "recovery-2153a3c310f4b9b8b280",
+            "kernel": "mala",
+            "model": "G1",
+            "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+            "replicate": 0,
+            "role": "intentional_recovery_fixture"
+          },
+          "outcome": "infrastructure_interruption",
+          "seconds": 2.8857148338574916,
+          "unknown_time_imputed": false
+        },
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery.retry",
+          "binding_sha256": "160f7dc6ae23b79268e74d5819df66a64edb4a97047461a7b87e8130b01ebc24",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "b723b253a5029d5dbfe4f59300cc72db984aa0ed2ed9e10192ff29f8d098188b",
+          "fixed_task": {
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "recovery-2153a3c310f4b9b8b280",
+            "kernel": "mala",
+            "model": "G1",
+            "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+            "replicate": 0,
+            "role": "intentional_recovery_fixture"
+          },
+          "outcome": "valid",
+          "seconds": 2.8179559579584748,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempts only; coordinator, recovery and between-call time are not included",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery",
+      "summary": {
+        "attempt_count": 2,
+        "known_seconds": 5.703670791815966,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 2.8857148338574916,
+        "total_seconds": 5.703670791815966,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "recovery-2153a3c310f4b9b8b280",
+        "kernel": "mala",
+        "model": "G1",
+        "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+        "replicate": 0,
+        "role": "intentional_recovery_fixture"
+      }
+    },
+    "known_invocation_seconds": 5.730229667155072,
+    "ledger_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/call-costs/3e2fec0df5eb62eafcb5ae9d6268e6534e6f171ceb449960d4555eac323b8800",
+    "ledger_sha256": "3f09a5899d515d09a275b69e9cc96419d4ec42c221c53a44f7c7a90b1c201c26",
+    "note": "Verification/refusal costs are retained separately; arbitrary extra resume calls are not a standardized time-to-inference estimator",
+    "outcome": "valid",
+    "recorded_invocations": 3,
+    "unfinished_invocations": 0,
+    "unknown_time_imputed": false,
+    "verification_only_invocations": 1
+  },
+  "recovery_cost_before_verification": {
+    "actual_attempts": 2,
+    "attempts_are_statistical_replicates": false,
+    "attempts_missing_outer_measurement": 0,
+    "by_action": {
+      "retry": {
+        "calls": 1,
+        "known_seconds": 2.831255834084004,
+        "unfinished_calls": 0
+      },
+      "run": {
+        "calls": 1,
+        "known_seconds": 2.8909470411017537,
+        "unfinished_calls": 0
+      }
+    },
+    "calls": [
+      {
+        "action": "run",
+        "error": null,
+        "finished": true,
+        "index": 0,
+        "result": {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery",
+          "history_sha256": "e448bf6c5485462991bbaacb1d794814a3e041c6163a4ddb7132d61e3c6813d2",
+          "newly_executed": true,
+          "status": "interrupted",
+          "task": {
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "recovery-2153a3c310f4b9b8b280",
+            "kernel": "mala",
+            "model": "G1",
+            "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+            "replicate": 0,
+            "role": "intentional_recovery_fixture"
+          }
+        },
+        "seconds": 2.8909470411017537
+      },
+      {
+        "action": "retry",
+        "error": null,
+        "finished": true,
+        "index": 1,
+        "result": {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery.retry",
+          "history_sha256": "9af01854b0981396129d305bdd16ee3b0aa05fa8e40aa003e3dc5f9335b23891",
+          "newly_executed": true,
+          "status": "completed",
+          "task": {
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "recovery-2153a3c310f4b9b8b280",
+            "kernel": "mala",
+            "model": "G1",
+            "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+            "replicate": 0,
+            "role": "intentional_recovery_fixture"
+          }
+        },
+        "seconds": 2.831255834084004
+      }
+    ],
+    "complete_invocation_seconds": 5.722202875185758,
+    "cost_scope": "Coordinator run/retry invocation only, including its registration/recovery/sealing/history; excludes measurement-ledger writes, report calls and between-call waiting",
+    "history": {
+      "attempts": [
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery",
+          "binding_sha256": "160f7dc6ae23b79268e74d5819df66a64edb4a97047461a7b87e8130b01ebc24",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "cd474fdfcb9d6f87acf1354cafb9a7106eca6610c6e10195a5ed65210f08494c",
+          "fixed_task": {
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "recovery-2153a3c310f4b9b8b280",
+            "kernel": "mala",
+            "model": "G1",
+            "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+            "replicate": 0,
+            "role": "intentional_recovery_fixture"
+          },
+          "outcome": "infrastructure_interruption",
+          "seconds": 2.8857148338574916,
+          "unknown_time_imputed": false
+        },
+        {
+          "attempt_id": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery.retry",
+          "binding_sha256": "160f7dc6ae23b79268e74d5819df66a64edb4a97047461a7b87e8130b01ebc24",
+          "cost_scope": "runtime_v1_preflight_through_terminal",
+          "evidence_sha256": "b723b253a5029d5dbfe4f59300cc72db984aa0ed2ed9e10192ff29f8d098188b",
+          "fixed_task": {
+            "device": "cpu",
+            "executor": "sequential",
+            "id": "recovery-2153a3c310f4b9b8b280",
+            "kernel": "mala",
+            "model": "G1",
+            "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+            "replicate": 0,
+            "role": "intentional_recovery_fixture"
+          },
+          "outcome": "valid",
+          "seconds": 2.8179559579584748,
+          "unknown_time_imputed": false
+        }
+      ],
+      "attempts_are_statistical_replicates": false,
+      "cost_scope": "Runtime-v1 attempts only; coordinator, recovery and between-call time are not included",
+      "lifecycle": "sealed",
+      "original": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/injected-recovery",
+      "summary": {
+        "attempt_count": 2,
+        "known_seconds": 5.703670791815966,
+        "outcome": "valid",
+        "prior_interruption_known_seconds": 2.8857148338574916,
+        "total_seconds": 5.703670791815966,
+        "unknown_cost_attempts": 0
+      },
+      "task": {
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "recovery-2153a3c310f4b9b8b280",
+        "kernel": "mala",
+        "model": "G1",
+        "protocol_sha256": "7bb277dd8d9076dbc3d88598f7923a65c3b711b20b479d49dad4d5907f08ea09",
+        "replicate": 0,
+        "role": "intentional_recovery_fixture"
+      }
+    },
+    "known_invocation_seconds": 5.722202875185758,
+    "ledger_directory": "/Users/haku/Workspace/ParallelBayes/output/research-completion/cached-cost-mac-01/call-costs/3e2fec0df5eb62eafcb5ae9d6268e6534e6f171ceb449960d4555eac323b8800",
+    "ledger_sha256": "507f3071c90c4cf569002cdc5359d48b8e8cfd879eb22b56642eb368d6ddfd3d",
+    "note": "Verification/refusal costs are retained separately; arbitrary extra resume calls are not a standardized time-to-inference estimator",
+    "outcome": "valid",
+    "recorded_invocations": 2,
+    "unfinished_invocations": 0,
+    "unknown_time_imputed": false,
+    "verification_only_invocations": 0
+  },
+  "registry": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-coordinator-validation-host-v1.lock.coordinator",
+  "resume_new_tasks": 0,
+  "scope": "Four frozen MH inputs, initial plus 3 prepared replays; two actual MALA executions in an explicit infrastructure-failure fixture. No new independent repeats or performance ranking.",
+  "source_commit": "8a24cb150ff757f97e0a6b43dfd1ee090e133488",
+  "terminal_files_preserved": 120,
+  "warm_executor_calls": 12
+}

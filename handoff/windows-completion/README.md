@@ -17,3 +17,6 @@
 
 
 Mac后续计时验证：`docs/MEASURED-WORKFLOW.md`记录独立普通子进程和外层审计调用的五工作流实测、候选隔离及归档重建。它不是Windows验收；Windows后续应维持同样明确的计时边界，并单独核验原生进程生命周期。缓存执行、失败/恢复外层完整成本和正式规模仍待完成，不得将单次技术重放作为新的独立统计重复。
+
+
+Mac后继：`docs/CACHED-AND-RECOVERY-COSTS.md`给出固定设备输入的原MH执行器计时，以及记录run/retry/拒绝/零重算调用的外层账本。科学源码和原协议未改；`MeasuredCoordinator`依赖当前仅Mac验收的TaskCoordinator，不能直接把Windows调用标为通过。Windows需原生进程/恢复验证及最大任务实测。MALA exit7工作程序为明确人工故障夹具，不得用于正式研究；缓存重放不增加独立统计n。

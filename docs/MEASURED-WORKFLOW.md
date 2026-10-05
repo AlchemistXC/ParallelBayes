@@ -59,3 +59,6 @@ python scripts/completion/audit_measured_archive.py --bundle EXTRACTED_BUNDLE --
 ## 尚未完成
 
 本次关闭的是**有限成功任务的普通子进程与含审计调用边界验证**。独立缓存执行、全部失败/恢复尝试的外层成本汇总、正式批次驱动和最大任务端到端验收仍待完成。实际 Windows 进程/资源/恢复验证和第二轮科学回执、正式推断网格、两平台干净安装、全论文重建与最终稿均未完成。2026-10-05 本次只读远端核对，`windows-native-dev` 仍为 `3a51f98`；Mac 证据不代替 Windows 实测。
+
+
+后继记录：有限Mac MH的独立准备后执行，以及中断/恢复/零重算调用成本，已由[CACHED-AND-RECOVERY-COSTS](CACHED-AND-RECOVERY-COSTS.md)补充核验。本文初次协议与原数值不追溯修改；正式批次整合、最大任务与Windows仍未验收。

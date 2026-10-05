@@ -1,0 +1,40 @@
+{
+  "archive": "cached-cost-v1.tar",
+  "bytes": 57436160,
+  "sha256": "e4a1b3fdc2dc321931bcca21c24c1bad5d092c8131485383ce33880e34a9245a",
+  "checked_files": 327,
+  "source_snapshot_commit": "5c314cd3ebb7bf381ca43a92d6fcc897c7d654b9",
+  "sampling_source_commit": "8a24cb150ff757f97e0a6b43dfd1ee090e133488",
+  "registry_counts": {
+    "tasks": 13,
+    "events": 28
+  },
+  "all_member_hashes_verified": true,
+  "actual_MH_executions": 18,
+  "new_independent_statistical_repetitions": 0,
+  "frozen_source_checks": [
+    {
+      "protocol": "inference-budget-pilot-mac-v1.json",
+      "source_files_checked": 58,
+      "mismatches": 0
+    },
+    {
+      "protocol": "formal-runtime-technical-mac-v1.json",
+      "source_files_checked": 65,
+      "mismatches": 0
+    },
+    {
+      "protocol": "measured-workflow-technical-mac-v1.json",
+      "source_files_checked": 10,
+      "mismatches": 0
+    },
+    {
+      "protocol": "cached-cost-technical-mac-v1.json",
+      "source_files_checked": 9,
+      "mismatches": 0
+    }
+  ],
+  "cached_NUTS_measured": false,
+  "native_Windows_validated": false,
+  "public_release": false
+}
