@@ -1,0 +1,5 @@
+"file","test","nb","failed","skipped","error","warning","passed"
+"test-environment-record.R","environment metadata preserves large Python byte counts in R",2,0,FALSE,FALSE,0,2
+"test-torch-installed.R","installed torch provider supports four MH workflows without JAX",39,0,FALSE,FALSE,0,39
+"test-torch-installed.R","torch failed trajectories remain inspectable and outside posterior samples",10,0,FALSE,FALSE,0,10
+"test-torch-installed.R","torch singleton vectors and undefined constant diagnostics are preserved",5,0,FALSE,FALSE,0,5

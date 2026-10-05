@@ -1,0 +1,4 @@
+"file","test","nb","failed","skipped","error","warning","passed"
+"test-end-to-end.R","installed R interface runs Python and preserves posterior array order",9,0,FALSE,FALSE,0,9
+"test-end-to-end.R","nonrepresentable constrained output never becomes a posterior object",4,0,FALSE,FALSE,0,4
+"test-end-to-end.R","single-element native vectors retain array shape",2,0,FALSE,FALSE,0,2

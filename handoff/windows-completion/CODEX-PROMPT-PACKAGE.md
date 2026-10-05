@@ -11,7 +11,7 @@ Python 0.2.0.dev2 / R 0.2.0.9002。用新的 Git worktree 检出该分支并记�
 
 1. **环境和构建。** 在新目录建立 `.venv-package` 与 `environment/R-package-library`。
    按本机已通过核验的 Windows CUDA 依赖清单安装相同版本，另存完整锁、
-   安装日志、驱动和设备信息，不借用 Mac wheel 或把 CPU torch 当 CUDA。
+   安装日志、驱动和设备信息，不复制 Mac 虚拟环境、平台依赖 wheel 或动态库，不把 CPU torch 当 CUDA。
    不要求完整 CUDA Toolkit、Stan、WSL、Triton 或新采样算法。
    构建 Python sdist，再在独立解压目录从 sdist 构建 wheel；构建 R 源码包。
    记录各归档 SHA256，安装实际 wheel 和 R 源码包，禁止 editable 安装。

@@ -1,0 +1,8 @@
+{
+  "archive": "package-candidate-v1.tar",
+  "size": 59842560,
+  "sha256": "4bf32475466ca4c1aa91fa69f2d7ab0d03bdc47ec482e49cf963a02ad46570c7",
+  "manifest_files_verified": 129,
+  "archive_file_count": 130,
+  "candidate_source_commit": "0e3841353b85a9827aff1b596a74fc4917202306"
+}

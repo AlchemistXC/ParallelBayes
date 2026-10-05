@@ -1,0 +1,16 @@
+
+══ Testing test-environment-record.R ═══════════════════════════════════════════
+
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ]
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ]
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 1 ]
+
+── Failure ('test-environment-record.R:8:3'): environment metadata preserves large Python byte counts in R ──
+Expected `actual$ram_bytes` to equal `reference$ram_bytes`.
+Differences:
+1/1 mismatches
+[1] 0 - 1.72e+10 == -1.72e+10
+
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 1 ]
+Error: all(as.data.frame(x)$failed == 0) is not TRUE
+Execution halted

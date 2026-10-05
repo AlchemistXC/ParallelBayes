@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="58" time="32.714" timestamp="2026-10-06T01:14:18.943428+09:00" hostname="HaKudeMac-mini.local"><testcase classname="tests.python.test_analysis" name="test_funnel_functions_compare_same_constrained_estimands" time="10.425" /><testcase classname="tests.python.test_analysis" name="test_failures_remain_in_cost_and_precision_and_rebuild_is_stable" time="0.010" /><testcase classname="tests.python.test_analysis" name="test_constant_function_is_uninformative_not_perfect_convergence" time="0.003" /><testcase classname="tests.python.test_experiments" name="test_extended_target_independent_derivatives[H1]" time="0.569" /><testcase classname="tests.python.test_experiments" name="test_extended_target_independent_derivatives[H2]" time="0.018" /><testcase classname="tests.python.test_experiments" name="test_extended_target_independent_derivatives[A1]" time="0.105" /><testcase classname="tests.python.test_experiments" name="test_extended_target_independent_derivatives[M1]" time="0.218" /><testcase classname="tests.python.test_experiments" name="test_frozen_protocol_resume_and_corruption_detection" time="0.104" /><testcase classname="tests.python.test_experiments" name="test_cached_timing_replays_are_separate_from_inference_cost" time="0.045" /><testcase classname="tests.python.test_kernels" name="test_independent_density_gradient[G1]" time="0.084" /><testcase classname="tests.python.test_kernels" name="test_independent_density_gradient[G2]" time="0.102" /><testcase classname="tests.python.test_kernels" name="test_independent_density_gradient[L1]" time="0.198" /><testcase classname="tests.python.test_kernels" name="test_independent_density_gradient[L2]" time="0.136" /><testcase classname="tests.python.test_kernels" name="test_independent_density_gradient[T1]" time="0.046" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[G1-mala-sequential]" time="0.052" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[G1-rwm-sequential]" time="0.034" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[G1-mala-quasi_deer]" time="0.288" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[G1-rwm-online_picard]" time="0.108" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[G2-mala-sequential]" time="0.063" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[G2-rwm-sequential]" time="0.040" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[G2-mala-quasi_deer]" time="0.343" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[G2-rwm-online_picard]" time="0.134" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[L1-mala-sequential]" time="0.080" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[L1-rwm-sequential]" time="0.046" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[L1-mala-quasi_deer]" time="0.439" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[L1-rwm-online_picard]" time="0.142" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[T1-mala-sequential]" time="0.039" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[T1-rwm-sequential]" time="0.027" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[T1-mala-quasi_deer]" time="0.204" /><testcase classname="tests.python.test_kernels" name="test_fixed_tape_against_independent_reference[T1-rwm-online_picard]" time="0.112" /><testcase classname="tests.python.test_kernels" name="test_partial_window_and_rejection_self_loops" time="0.331" /><testcase classname="tests.python.test_kernels" name="test_solver_failure_kept_and_same_tape_fallback" time="0.573" /><testcase classname="tests.python.test_kernels" name="test_picard_prefix_and_same_noise_replay" time="0.141" /><testcase classname="tests.python.test_kernels" name="test_nonfinite_target_not_silently_repaired" time="0.030" /><testcase classname="tests.python.test_kernels" name="test_memory_guard_before_large_allocation" time="0.001" /><testcase classname="tests.python.test_kernels" name="test_capability_and_input_rejection[config0]" time="0.000" /><testcase classname="tests.python.test_kernels" name="test_capability_and_input_rejection[config1]" time="0.000" /><testcase classname="tests.python.test_kernels" name="test_capability_and_input_rejection[config2]" time="0.000" /><testcase classname="tests.python.test_kernels" name="test_capability_and_input_rejection[config3]" time="0.000" /><testcase classname="tests.python.test_kernels" name="test_capability_and_input_rejection[config4]" time="0.000" /><testcase classname="tests.python.test_kernels" name="test_error_injection_jacobian_scale_acceptance" time="0.047" /><testcase classname="tests.python.test_kernels" name="test_affine_scan_matches_sequential_and_upstream" time="0.396" /><testcase classname="tests.python.test_kernels" name="test_nuts_smoke_and_adaptation_cost" time="1.497" /><testcase classname="tests.python.test_stan" name="test_bridgestan_against_native_density_gradient_transform_and_path[G1]" time="0.012"><failure message="RuntimeError: Set BRIDGESTAN to the extracted, pinned source distribution">name = 'G1'
+
+    @pytest.mark.stan
+    @pytest.mark.parametrize('name',['G1','L1','T1'])
+    def test_bridgestan_against_native_density_gradient_transform_and_path(name):
+        native=benchmark_model(name); spec=native.spec; d=native.dimension
+        if spec['kind']=='gaussian':
+            data=dict(D=d,mu=spec['mean'],precision=np.linalg.inv(spec['covariance']).tolist())
+        elif spec['kind']=='logistic':
+            data=dict(N=len(spec['y']),D=d,X=spec['X'],y=spec['y'],prior_scale=spec['prior_scale'])
+        else: data=dict(mu=spec['mu'],sigma=spec['sigma'])
+&gt;       stan=make_model(dict(kind='stan',stan_file=str(ROOT/'models/stan'/f'{spec["kind"]}.stan'),data=data,
+                            coordinate_id=spec['coordinate_id']))
+
+/Users/haku/.codex/worktrees/release-candidate/ParallelBayes/tests/python/test_stan.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages/parallelbayes/__init__.py:17: in make_model
+    return factory(spec)
+           ^^^^^^^^^^^^^
+/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages/parallelbayes/models.py:42: in make_model
+    return stan_model(spec)
+           ^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+spec = {'coordinate_id': 'identity', 'data': {'D': 8, 'mu': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...], 'precision': [[1.0, 0.0, 0.0... 'kind': 'stan', 'stan_file': '/Users/haku/.codex/worktrees/release-candidate/ParallelBayes/models/stan/gaussian.stan'}
+
+    def stan_model(spec):
+        import bridgestan as bs
+        source = Path(spec['stan_file']).expanduser().resolve()
+        if not source.is_file() or source.suffix != '.stan':
+            raise ValueError('stan_file must name an existing .stan source')
+        root = os.environ.get('BRIDGESTAN')
+        if not root:
+            candidate = Path.cwd()/'environment/bridgestan-2.7.0'
+            if candidate.is_dir(): root = str(candidate)
+        if not root:
+&gt;           raise RuntimeError('Set BRIDGESTAN to the extracted, pinned source distribution')
+E           RuntimeError: Set BRIDGESTAN to the extracted, pinned source distribution
+
+/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages/parallelbayes/stan.py:27: RuntimeError</failure></testcase><testcase classname="tests.python.test_stan" name="test_bridgestan_against_native_density_gradient_transform_and_path[L1]" time="0.002"><failure message="RuntimeError: Set BRIDGESTAN to the extracted, pinned source distribution">name = 'L1'
+
+    @pytest.mark.stan
+    @pytest.mark.parametrize('name',['G1','L1','T1'])
+    def test_bridgestan_against_native_density_gradient_transform_and_path(name):
+        native=benchmark_model(name); spec=native.spec; d=native.dimension
+        if spec['kind']=='gaussian':
+            data=dict(D=d,mu=spec['mean'],precision=np.linalg.inv(spec['covariance']).tolist())
+        elif spec['kind']=='logistic':
+            data=dict(N=len(spec['y']),D=d,X=spec['X'],y=spec['y'],prior_scale=spec['prior_scale'])
+        else: data=dict(mu=spec['mu'],sigma=spec['sigma'])
+&gt;       stan=make_model(dict(kind='stan',stan_file=str(ROOT/'models/stan'/f'{spec["kind"]}.stan'),data=data,
+                            coordinate_id=spec['coordinate_id']))
+
+/Users/haku/.codex/worktrees/release-candidate/ParallelBayes/tests/python/test_stan.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages/parallelbayes/__init__.py:17: in make_model
+    return factory(spec)
+           ^^^^^^^^^^^^^
+/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages/parallelbayes/models.py:42: in make_model
+    return stan_model(spec)
+           ^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+spec = {'coordinate_id': 'identity', 'data': {'D': 8, 'N': 256, 'X': [[1.0, 0.7162676468633159, 0.44738487666024607, 1.230034... 'kind': 'stan', 'stan_file': '/Users/haku/.codex/worktrees/release-candidate/ParallelBayes/models/stan/logistic.stan'}
+
+    def stan_model(spec):
+        import bridgestan as bs
+        source = Path(spec['stan_file']).expanduser().resolve()
+        if not source.is_file() or source.suffix != '.stan':
+            raise ValueError('stan_file must name an existing .stan source')
+        root = os.environ.get('BRIDGESTAN')
+        if not root:
+            candidate = Path.cwd()/'environment/bridgestan-2.7.0'
+            if candidate.is_dir(): root = str(candidate)
+        if not root:
+&gt;           raise RuntimeError('Set BRIDGESTAN to the extracted, pinned source distribution')
+E           RuntimeError: Set BRIDGESTAN to the extracted, pinned source distribution
+
+/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages/parallelbayes/stan.py:27: RuntimeError</failure></testcase><testcase classname="tests.python.test_stan" name="test_bridgestan_against_native_density_gradient_transform_and_path[T1]" time="0.000"><failure message="RuntimeError: Set BRIDGESTAN to the extracted, pinned source distribution">name = 'T1'
+
+    @pytest.mark.stan
+    @pytest.mark.parametrize('name',['G1','L1','T1'])
+    def test_bridgestan_against_native_density_gradient_transform_and_path(name):
+        native=benchmark_model(name); spec=native.spec; d=native.dimension
+        if spec['kind']=='gaussian':
+            data=dict(D=d,mu=spec['mean'],precision=np.linalg.inv(spec['covariance']).tolist())
+        elif spec['kind']=='logistic':
+            data=dict(N=len(spec['y']),D=d,X=spec['X'],y=spec['y'],prior_scale=spec['prior_scale'])
+        else: data=dict(mu=spec['mu'],sigma=spec['sigma'])
+&gt;       stan=make_model(dict(kind='stan',stan_file=str(ROOT/'models/stan'/f'{spec["kind"]}.stan'),data=data,
+                            coordinate_id=spec['coordinate_id']))
+
+/Users/haku/.codex/worktrees/release-candidate/ParallelBayes/tests/python/test_stan.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages/parallelbayes/__init__.py:17: in make_model
+    return factory(spec)
+           ^^^^^^^^^^^^^
+/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages/parallelbayes/models.py:42: in make_model
+    return stan_model(spec)
+           ^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+spec = {'coordinate_id': 'log-positive', 'data': {'mu': 0.0, 'sigma': 1.0}, 'kind': 'stan', 'stan_file': '/Users/haku/.codex/worktrees/release-candidate/ParallelBayes/models/stan/lognormal.stan'}
+
+    def stan_model(spec):
+        import bridgestan as bs
+        source = Path(spec['stan_file']).expanduser().resolve()
+        if not source.is_file() or source.suffix != '.stan':
+            raise ValueError('stan_file must name an existing .stan source')
+        root = os.environ.get('BRIDGESTAN')
+        if not root:
+            candidate = Path.cwd()/'environment/bridgestan-2.7.0'
+            if candidate.is_dir(): root = str(candidate)
+        if not root:
+&gt;           raise RuntimeError('Set BRIDGESTAN to the extracted, pinned source distribution')
+E           RuntimeError: Set BRIDGESTAN to the extracted, pinned source distribution
+
+/Users/haku/Workspace/ParallelBayes/.venv-release-jax-review/lib/python3.12/site-packages/parallelbayes/stan.py:27: RuntimeError</failure></testcase><testcase classname="tests.safety.test_release_safety" name="test_extreme_positive_transform_cannot_return_normal_draws[native-1000.0]" time="0.029" /><testcase classname="tests.safety.test_release_safety" name="test_extreme_positive_transform_cannot_return_normal_draws[native--1000.0]" time="0.026" /><testcase classname="tests.safety.test_release_safety" name="test_extreme_positive_transform_cannot_return_normal_draws[stan-1000.0]" time="0.000" /><testcase classname="tests.safety.test_release_safety" name="test_extreme_positive_transform_cannot_return_normal_draws[stan--1000.0]" time="0.000" /><testcase classname="tests.safety.test_release_safety" name="test_partial_block_ignores_fictitious_suffix" time="0.252" /><testcase classname="tests.safety.test_release_safety" name="test_fallback_preserves_primary_trajectory" time="0.274" /><testcase classname="tests.safety.test_release_safety" name="test_oracle_exception_preserves_native_raw_path" time="0.037" /><testcase classname="tests.safety.test_release_safety" name="test_stan_provider_retains_partial_failed_chain" time="0.000" /><testcase classname="tests.safety.test_release_safety" name="test_nuts_output_gate_retains_unconstrained_path" time="0.839" /><testcase classname="tests.safety.test_release_safety" name="test_resume_environment_change_is_rejected" time="0.107" /><testcase classname="tests.safety.test_release_safety" name="test_stan_cannot_silently_ignore_requested_independent_audit" time="0.001" /><testcase classname="tests.safety.test_release_safety" name="test_transitive_lock_tampering_is_rejected" time="0.003" /></testsuite></testsuites>

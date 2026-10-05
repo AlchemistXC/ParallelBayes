@@ -1,0 +1,30 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_________ test_help_does_not_require_an_unselected_numerical_provider __________
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-16/test_help_does_not_require_an_0')
+
+    def test_help_does_not_require_an_unselected_numerical_provider(tmp_path):
+        result = subprocess.run(
+            [sys.executable, "-I", "-m", "parallelbayes.cli", "--help"],
+            cwd=tmp_path, capture_output=True, text=True,
+        )
+>       assert result.returncode == 0, result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "<frozen runpy>", line 198, in _run_module_as_main
+E           File "<frozen runpy>", line 88, in _run_code
+E           File "/Users/haku/Workspace/ParallelBayes/.venv-release-review/lib/python3.12/site-packages/parallelbayes/cli.py", line 4, in <module>
+E             from .experiment import write_json,run_protocol,recover_lock
+E           File "/Users/haku/Workspace/ParallelBayes/.venv-release-review/lib/python3.12/site-packages/parallelbayes/experiment.py", line 14, in <module>
+E             from .models import fingerprint, make_model
+E           File "/Users/haku/Workspace/ParallelBayes/.venv-release-review/lib/python3.12/site-packages/parallelbayes/models.py", line 7, in <module>
+E             import jax
+E         ModuleNotFoundError: No module named 'jax'
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/Users/haku/Workspace/ParallelBayes/.venv-release-review/bin/python', '-I', '-m', 'parallelbay...ackages/parallelbayes/models.py", line 7, in <module>\n    import jax\nModuleNotFoundError: No module named \'jax\'\n').returncode
+
+/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/stage/tests/release/test_installed_cli.py:14: AssertionError
+=========================== short test summary info ============================
+FAILED ../../Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/stage/tests/release/test_installed_cli.py::test_help_does_not_require_an_unselected_numerical_provider
+1 failed in 0.08s

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/haku/Workspace/ParallelBayes/.venv-release-review/bin/pb", line 4, in <module>
+    from parallelbayes.cli import main
+  File "/Users/haku/Workspace/ParallelBayes/.venv-release-review/lib/python3.12/site-packages/parallelbayes/cli.py", line 4, in <module>
+    from .experiment import write_json,run_protocol,recover_lock
+  File "/Users/haku/Workspace/ParallelBayes/.venv-release-review/lib/python3.12/site-packages/parallelbayes/experiment.py", line 14, in <module>
+    from .models import fingerprint, make_model
+  File "/Users/haku/Workspace/ParallelBayes/.venv-release-review/lib/python3.12/site-packages/parallelbayes/models.py", line 7, in <module>
+    import jax
+ModuleNotFoundError: No module named 'jax'

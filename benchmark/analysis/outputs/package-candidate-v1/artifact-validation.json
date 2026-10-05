@@ -1,0 +1,93 @@
+{
+  "candidate_source_commit": "0e3841353b85a9827aff1b596a74fc4917202306",
+  "python_modules_in_each_artifact": 17,
+  "all_python_bytes_match_tested_wheel_and_source": true,
+  "all_R_code_bytes_match_source": true,
+  "R_DESCRIPTION_fields_preserved_with_standard_build_metadata": true,
+  "source_modules_unchanged_from_baseline": 15,
+  "artifacts": [
+    {
+      "path": ".gitignore",
+      "size": 1,
+      "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+    },
+    {
+      "path": "parallelbayes-0.2.0.dev2-py3-none-any.whl",
+      "size": 36675,
+      "sha256": "32556541f715f968b9ea8b381ca64486fe9aab9c9bedd64c266a9a86c395cab9"
+    },
+    {
+      "path": "parallelbayes-0.2.0.dev2.tar.gz",
+      "size": 32634,
+      "sha256": "29bcd401e9065d49119f67823aa4dcc728688ab1bb202851a3c584156a981863"
+    },
+    {
+      "path": "parallelbayes_0.2.0.9002.tar.gz",
+      "size": 29481,
+      "sha256": "b0985d1512821c2004da98d0bbfdb950f03feba1a380559d067b954837e2d9ee"
+    }
+  ],
+  "members": {
+    "wheel": [
+      "parallelbayes/__init__.py",
+      "parallelbayes/cli.py",
+      "parallelbayes/executors.py",
+      "parallelbayes/experiment.py",
+      "parallelbayes/kernels.py",
+      "parallelbayes/models.py",
+      "parallelbayes/nuts.py",
+      "parallelbayes/output.py",
+      "parallelbayes/reference.py",
+      "parallelbayes/sampling.py",
+      "parallelbayes/stan.py",
+      "parallelbayes/torch_backend/__init__.py",
+      "parallelbayes/torch_backend/executors.py",
+      "parallelbayes/torch_backend/kernels.py",
+      "parallelbayes/torch_backend/models.py",
+      "parallelbayes/torch_backend/nuts_baseline.py",
+      "parallelbayes/torch_backend/sampling.py",
+      "parallelbayes-0.2.0.dev2.dist-info/licenses/LICENSE",
+      "parallelbayes-0.2.0.dev2.dist-info/METADATA",
+      "parallelbayes-0.2.0.dev2.dist-info/WHEEL",
+      "parallelbayes-0.2.0.dev2.dist-info/entry_points.txt",
+      "parallelbayes-0.2.0.dev2.dist-info/top_level.txt",
+      "parallelbayes-0.2.0.dev2.dist-info/RECORD"
+    ],
+    "R_source": [
+      "parallelbayes/DESCRIPTION",
+      "parallelbayes/inst",
+      "parallelbayes/inst/python",
+      "parallelbayes/inst/python/parallelbayes",
+      "parallelbayes/inst/python/parallelbayes/__init__.py",
+      "parallelbayes/inst/python/parallelbayes/cli.py",
+      "parallelbayes/inst/python/parallelbayes/executors.py",
+      "parallelbayes/inst/python/parallelbayes/experiment.py",
+      "parallelbayes/inst/python/parallelbayes/kernels.py",
+      "parallelbayes/inst/python/parallelbayes/models.py",
+      "parallelbayes/inst/python/parallelbayes/nuts.py",
+      "parallelbayes/inst/python/parallelbayes/output.py",
+      "parallelbayes/inst/python/parallelbayes/reference.py",
+      "parallelbayes/inst/python/parallelbayes/sampling.py",
+      "parallelbayes/inst/python/parallelbayes/stan.py",
+      "parallelbayes/inst/python/parallelbayes/torch_backend",
+      "parallelbayes/inst/python/parallelbayes/torch_backend/__init__.py",
+      "parallelbayes/inst/python/parallelbayes/torch_backend/executors.py",
+      "parallelbayes/inst/python/parallelbayes/torch_backend/kernels.py",
+      "parallelbayes/inst/python/parallelbayes/torch_backend/models.py",
+      "parallelbayes/inst/python/parallelbayes/torch_backend/nuts_baseline.py",
+      "parallelbayes/inst/python/parallelbayes/torch_backend/sampling.py",
+      "parallelbayes/LICENSE",
+      "parallelbayes/man",
+      "parallelbayes/man/parallelbayes.Rd",
+      "parallelbayes/NAMESPACE",
+      "parallelbayes/R",
+      "parallelbayes/R/interface.R",
+      "parallelbayes/tests",
+      "parallelbayes/tests/testthat",
+      "parallelbayes/tests/testthat.R",
+      "parallelbayes/tests/testthat/test-end-to-end.R",
+      "parallelbayes/tests/testthat/test-environment-record.R",
+      "parallelbayes/tests/testthat/test-torch-installed.R"
+    ]
+  }
+}
