@@ -1,7 +1,7 @@
 Package: parallelbayes
 Type: Package
 Title: Auditable Experiments with Time Parallel Markov Chain Monte Carlo
-Version: 0.2.0.9001
+Version: 0.2.0.9002
 Authors@R: person("ParallelBayes", "Project", email = "parallelbayes@example.invalid", role = c("aut", "cre"))
 Description: A research interface to fixed-noise sequential and time parallel
     Markov chain Monte Carlo experiments. Separates targets, kernels, executors,

@@ -1,0 +1,23 @@
+..F                                                                      [100%]
+=================================== FAILURES ===================================
+______ test_missing_selected_provider_has_actionable_error_and_no_record _______
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-20/test_missing_selected_provider0')
+
+    def test_missing_selected_provider_has_actionable_error_and_no_record(tmp_path):
+        if importlib.util.find_spec("jax") is not None:
+            pytest.skip("requires the documented torch-only release environment")
+        output = tmp_path / "environment.json"
+        result = subprocess.run(
+            [sys.executable, "-I", "-m", "parallelbayes.cli", "environment", "--output", str(output)],
+            cwd=tmp_path, capture_output=True, text=True,
+        )
+        assert result.returncode != 0
+>       assert "optional 'jax' provider" in result.stderr
+E       assert "optional 'jax' provider" in 'Traceback (most recent call last):\n  File "<frozen runpy>", line 198, in _run_module_as_main\n  File "<frozen runpy>...ckages/parallelbayes/sampling.py", line 9, in <module>\n    import jax\nModuleNotFoundError: No module named \'jax\'\n'
+E        +  where 'Traceback (most recent call last):\n  File "<frozen runpy>", line 198, in _run_module_as_main\n  File "<frozen runpy>...ckages/parallelbayes/sampling.py", line 9, in <module>\n    import jax\nModuleNotFoundError: No module named \'jax\'\n' = CompletedProcess(args=['/Users/haku/Workspace/ParallelBayes/.venv-release-review/bin/python', '-I', '-m', 'parallelbay...kages/parallelbayes/sampling.py", line 9, in <module>\n    import jax\nModuleNotFoundError: No module named \'jax\'\n').stderr
+
+/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/stage/tests/release/test_installed_cli.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED ../../Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/stage/tests/release/test_installed_cli.py::test_missing_selected_provider_has_actionable_error_and_no_record
+1 failed, 2 passed in 0.68s

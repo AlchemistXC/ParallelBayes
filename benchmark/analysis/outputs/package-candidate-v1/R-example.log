@@ -1,0 +1,29 @@
+[[1]]
+# A tibble: 2 × 10
+  variable   mean median    sd   mad     q5   q95  rhat ess_bulk ess_tail
+  <chr>     <dbl>  <dbl> <dbl> <dbl>  <dbl> <dbl> <dbl>    <dbl>    <dbl>
+1 q[1]     -0.433 -0.262 0.884 0.855 -2.13  0.836  1.36     10.7     45.8
+2 q[2]      0.253  0.182 0.699 0.760 -0.801 1.49   1.19     17.7     46.2
+
+[[2]]
+# A tibble: 2 × 10
+  variable   mean median    sd   mad     q5   q95  rhat ess_bulk ess_tail
+  <chr>     <dbl>  <dbl> <dbl> <dbl>  <dbl> <dbl> <dbl>    <dbl>    <dbl>
+1 q[1]     -0.433 -0.262 0.884 0.855 -2.13  0.836  1.36     10.7     45.8
+2 q[2]      0.253  0.182 0.699 0.760 -0.801 1.49   1.19     17.7     46.2
+
+[[3]]
+# A tibble: 2 × 10
+  variable    mean  median    sd   mad     q5   q95  rhat ess_bulk ess_tail
+  <chr>      <dbl>   <dbl> <dbl> <dbl>  <dbl> <dbl> <dbl>    <dbl>    <dbl>
+1 q[1]     -0.156  -0.101  0.237 0.233 -0.658 0.119  1.70     7.17     13.6
+2 q[2]      0.0758  0.0566 0.154 0.171 -0.139 0.349  1.43     9.23     61.7
+
+[[4]]
+# A tibble: 2 × 10
+  variable    mean  median    sd   mad     q5   q95  rhat ess_bulk ess_tail
+  <chr>      <dbl>   <dbl> <dbl> <dbl>  <dbl> <dbl> <dbl>    <dbl>    <dbl>
+1 q[1]     -0.156  -0.101  0.237 0.233 -0.658 0.119  1.70     7.17     13.6
+2 q[2]      0.0758  0.0566 0.154 0.171 -0.139 0.349  1.43     9.23     61.7
+
+Four installed-package workflows passed numerical checks; diagnostics and records saved.

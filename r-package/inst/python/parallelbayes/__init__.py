@@ -2,7 +2,7 @@
 import os
 os.environ.setdefault("JAX_ENABLE_X64", "true")
 os.environ.setdefault("XLA_PYTHON_CLIENT_PREALLOCATE", "false")
-__version__ = "0.2.0.dev1"
+__version__ = "0.2.0.dev2"
 
 def make_model(spec, backend="jax", device="cpu"):
     if backend == "torch":

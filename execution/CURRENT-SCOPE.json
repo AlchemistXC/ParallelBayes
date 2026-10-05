@@ -2,7 +2,7 @@
   "date": "2026-10-06",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "owned_cache_failure_intake_and_compatibility_verified",
+  "local_phase": "merged_candidate_integration_verification_pending",
   "gpu_tasks": "Windows v1 and second-round readiness received; F2 original inputs delivered, 192 mechanism workflows still unexecuted; formal inference not started",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
@@ -30,7 +30,7 @@
   "next_Windows_prompt": "handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md",
   "local_batch_validation": "14/15 valid, maximum NUTS interrupted after original and sole retry; archived/rebuilt; formal inference remains pending",
   "local_batch_report": "docs/BATCH-MAXIMUM-VALIDATION.md",
-  "active_development_branch": "codex/cache-failure-evidence",
+  "active_development_branch": "codex/research-integration",
   "local_measurement_report": "docs/OWNED-CACHE-RUNTIME.md",
   "local_measurement_validation": {
     "tasks": 20,
@@ -53,5 +53,13 @@
     "old_outer_calls": 40,
     "reconstruction_new_executor_calls": 0,
     "formal_inference_complete": false
+  },
+  "installation_candidate": {
+    "branch": "codex/release-candidate-0.2",
+    "python": "0.2.0.dev2",
+    "R": "0.2.0.9002",
+    "Mac": "installed artifacts and explicit integration checked",
+    "Windows": "pending separate installation receipt",
+    "report": "docs/RELEASE-CANDIDATE-0.2.md"
   }
 }

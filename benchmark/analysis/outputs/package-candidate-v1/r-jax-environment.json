@@ -1,0 +1,31 @@
+{
+  "environment": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "python": "3.12.14",
+    "host": "HaKudeMac-mini.local",
+    "os_release": "25.6.0",
+    "processor": "arm",
+    "logical_cpus": 10,
+    "memory_bytes": 17179869184,
+    "packages": {
+      "jax": "0.6.2",
+      "jaxlib": "0.6.2",
+      "blackjax": "1.2.5",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "bridgestan": "2.7.0",
+      "parallelbayes": "0.2.0.dev2"
+    },
+    "devices": [
+      {
+        "platform": "cpu",
+        "kind": "cpu",
+        "id": 0
+      }
+    ],
+    "x64": true
+  },
+  "package": "0.2.0.9002",
+  "module": "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library/parallelbayes/python/parallelbayes/__init__.py"
+}
