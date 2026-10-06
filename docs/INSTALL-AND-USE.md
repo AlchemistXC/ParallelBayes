@@ -91,9 +91,11 @@ MH 的 `draws` 包括拒绝自环，包内 MH 不自动自适应或丢弃初始�
 不使用 WSL2。已收到的 torch 2.13.0+cu130、Windows 11、RTX 5080
 证据见 [WINDOWS-NATIVE.md](WINDOWS-NATIVE.md) 与 [WINDOWS-RESULTS.md](WINDOWS-RESULTS.md)。
 既有 `.venv-win-torch` 及 F2/F3 协议保持不变。
-新候选另建环境，按 [候选安装核验提示词](../handoff/windows-completion/CODEX-PROMPT-PACKAGE.md)
-完成原生安装、CPU/CUDA 与 R 检查后，才能登记该版本的 Windows 安装通过。
-这是后续独立工作包，不要求中断正在运行的机制或运行器验收。
+新候选在独立短路径工作树和环境中已完成原生安装、CPU/CUDA 与 R 检查，见
+[Windows 安装回执](WINDOWS-PACKAGE-CANDIDATE.md)。原实验目录及冻结 venv 保持原样。
+推荐使用较短的工作目录；本机首次在嵌套长路径安装 torch 时出现 WinError206，失败保留。
+本机验收依赖锁为 `environment/locks/windows-package-candidate-v1.txt`，包含 CUDA torch
+2.13.0+cu130，安装时使用官方 CUDA wheel 索引；不能将它替换为 CPU wheel。
 
 在原生 PowerShell 中，Python 可执行文件路径使用
 `.venv-package\Scripts\python.exe`，设置 R 入口例如：
@@ -103,6 +105,13 @@ $env:RETICULATE_PYTHON = (Resolve-Path .venv-package\Scripts\python.exe).Path
 $env:R_LIBS_USER = (Resolve-Path environment\R-package-library).Path
 Rscript --vanilla examples/installed-torch.R execution/package-example-01
 ```
+
+安装检查使用项目外目录、移除 `PYTHONPATH` 和 `python -I`；CPU 测试通过后再设
+`PB_TORCH_DEVICE=cuda`。完整原命令在回传包 `commands/*/started.json`，
+包括 R 的显式 `PB_RUN_TORCH_INTEGRATION=1` 检查。
+本机宿主环境 `C.UTF-8` 不能被 R 的 Windows locale 正确识别；若遇到同样错误，
+仅为 `R CMD check` 设置 `$env:LC_ALL='C'`、`$env:LC_CTYPE='C'`、`$env:LANG='C'`，
+保留第一次失败并在新目录检查。默认集成跳过仍不能计作通过。
 
 安装依赖与 GPU 探针成功不等于候选采样通过；不要用 Mac 锁文件安装 CUDA 版本，
 不要把 CPU 回退当 GPU 检验。完整 Windows 依赖及驱动按既有已核验环境另行锁定。

@@ -4,7 +4,7 @@
 `52fdfd0446768033ffd975bc52ea8036c420880d` 单独建立。
 Python 版本为 **0.2.0.dev2**，R 版本为 **0.2.0.9002**。
 原研究工作树、所有冻结协议、原始数组和历史版本均保留。
-这是 F5 的安装里程碑，正式研究 F2/F3、Windows 候选安装和最终论文仍未完成。
+下方保留该候选的 Mac 安装里程碑。2026-10-07 原生 Windows 安装后继已完成，见 [Windows 回执](WINDOWS-PACKAGE-CANDIDATE.md)；正式研究网格、完整两平台重建及最终论文仍未完成。
 
 ## 修正内容与可观察证据
 
@@ -76,6 +76,26 @@ Stan 复用了已有固定源码工具链，未做全新编译器安装。Window
 `pb_benchmark()` 不是协议冻结/资源管理/检查点工具。
 旧协议源码身份与候选不同，不能绕过核查接续旧运行。
 作者维护者元数据仍为占位，未公开发布或合并主分支。
+
+## 原生 Windows 安装后继（2026-10-07）
+
+从统一分支 `6f02f3735d0b534b0915a4732c31625ef6ba6bcb` 建立独立
+`codex/windows-package-validation`，构建使用 `341234ed4341c4c77458a9b352016e1581e4c62e`。
+Python 3.12.14 / torch 2.13.0+cu130 / RTX 5080 sm120 / 驱动 616.56 / R 4.6.1。
+新 venv 和新 R 库不继承旧用户库；44 个 R 依赖从 CRAN 原生 Windows ZIP 安装，
+R 发行版自带 base/recommended 包的复用逐项记录。
+Python sdist 独立解压后构建 wheel，实际安装 wheel 和 R 源码归档；没有 editable/JAX。
+
+CLI 3、CPU 63、CUDA 63 项通过，无失败或跳过；后端各 18 条弃用警告保留。
+R 显式 4 测试 / 56 断言通过，四工作流 CPU 和 CUDA 均成功，每设备两组实际随机数组、
+接受事件及路径对照通过；CUDA 错误轨迹隔离。原始 RDS 与现代诊断保存并只读重建。
+Python/R RAM 均为 33346146304 字节。17 个模块在源码/wheel/安装 Python/R 副本中相同，
+15 个数值模块与 52fdfd0 相同，历史能力标签仍为 dev1。
+
+首次长路径安装 WinError206、全局 wheel 缓存 WinError5、继承 C.UTF-8 的 R check
+失败均保留。短路径独立 venv、`--no-cache-dir`、仅 R check 的 `LC_ALL=C` 分别解决，
+没有改系统策略、依赖版本或数值源码。最终 `R CMD check --no-manual` OK，默认 7 跳过；
+显式 R 测试另列。短链不利 Rhat/ESS 保留，不称收敛或加速证据。
 
 
 ## 封存身份

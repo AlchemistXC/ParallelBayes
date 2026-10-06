@@ -1,0 +1,909 @@
+{
+  "R": "R version 4.6.1 (2026-06-24 ucrt)",
+  "library": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+  "lib_paths": ["D:/workspace/ParallelBayes/pkg/environment/R-package-library", "D:/Tools/R-4.6.1/library"],
+  "installed": [
+    {
+      "Package": "R6",
+      "Version": "2.6.1",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "R6"
+    },
+    {
+      "Package": "Rcpp",
+      "Version": "1.1.2",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "Rcpp"
+    },
+    {
+      "Package": "RcppTOML",
+      "Version": "0.2.3",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "RcppTOML"
+    },
+    {
+      "Package": "abind",
+      "Version": "1.4-8",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "abind"
+    },
+    {
+      "Package": "backports",
+      "Version": "1.5.1",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "backports"
+    },
+    {
+      "Package": "brio",
+      "Version": "1.1.5",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "brio"
+    },
+    {
+      "Package": "callr",
+      "Version": "3.8.0",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "callr"
+    },
+    {
+      "Package": "checkmate",
+      "Version": "2.3.4",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "checkmate"
+    },
+    {
+      "Package": "cli",
+      "Version": "3.6.6",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "cli"
+    },
+    {
+      "Package": "crayon",
+      "Version": "1.5.3",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "crayon"
+    },
+    {
+      "Package": "desc",
+      "Version": "1.4.3",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "desc"
+    },
+    {
+      "Package": "diffobj",
+      "Version": "0.3.9",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "diffobj"
+    },
+    {
+      "Package": "distributional",
+      "Version": "0.9.0",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "distributional"
+    },
+    {
+      "Package": "evaluate",
+      "Version": "1.0.5",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "evaluate"
+    },
+    {
+      "Package": "fs",
+      "Version": "2.1.0",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "fs"
+    },
+    {
+      "Package": "generics",
+      "Version": "0.1.4",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "generics"
+    },
+    {
+      "Package": "glue",
+      "Version": "1.8.1",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "glue"
+    },
+    {
+      "Package": "here",
+      "Version": "1.0.2",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "here"
+    },
+    {
+      "Package": "jsonlite",
+      "Version": "2.0.0",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "jsonlite"
+    },
+    {
+      "Package": "lifecycle",
+      "Version": "1.0.5",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "lifecycle"
+    },
+    {
+      "Package": "magrittr",
+      "Version": "2.0.5",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "magrittr"
+    },
+    {
+      "Package": "matrixStats",
+      "Version": "1.5.0",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "matrixStats"
+    },
+    {
+      "Package": "numDeriv",
+      "Version": "2016.8-1.1",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "numDeriv"
+    },
+    {
+      "Package": "otel",
+      "Version": "0.2.0",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "otel"
+    },
+    {
+      "Package": "pillar",
+      "Version": "1.11.1",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "pillar"
+    },
+    {
+      "Package": "pkgbuild",
+      "Version": "1.4.8",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "pkgbuild"
+    },
+    {
+      "Package": "pkgconfig",
+      "Version": "2.0.3",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "pkgconfig"
+    },
+    {
+      "Package": "pkgload",
+      "Version": "1.5.3",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "pkgload"
+    },
+    {
+      "Package": "png",
+      "Version": "0.1-9",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "png"
+    },
+    {
+      "Package": "posterior",
+      "Version": "1.7.0",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "posterior"
+    },
+    {
+      "Package": "praise",
+      "Version": "1.0.0",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "praise"
+    },
+    {
+      "Package": "processx",
+      "Version": "3.9.0",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "processx"
+    },
+    {
+      "Package": "ps",
+      "Version": "1.9.3",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "ps"
+    },
+    {
+      "Package": "rappdirs",
+      "Version": "0.3.4",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "rappdirs"
+    },
+    {
+      "Package": "reticulate",
+      "Version": "1.47.0",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "reticulate"
+    },
+    {
+      "Package": "rlang",
+      "Version": "1.3.0",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "rlang"
+    },
+    {
+      "Package": "rprojroot",
+      "Version": "2.1.1",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "rprojroot"
+    },
+    {
+      "Package": "tensorA",
+      "Version": "0.36.2.1",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "tensorA"
+    },
+    {
+      "Package": "testthat",
+      "Version": "3.3.2",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "testthat"
+    },
+    {
+      "Package": "tibble",
+      "Version": "3.3.1",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "tibble"
+    },
+    {
+      "Package": "utf8",
+      "Version": "1.2.6",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "utf8"
+    },
+    {
+      "Package": "vctrs",
+      "Version": "0.7.3",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "vctrs"
+    },
+    {
+      "Package": "waldo",
+      "Version": "0.6.2",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "waldo"
+    },
+    {
+      "Package": "withr",
+      "Version": "3.0.3",
+      "LibPath": "D:/workspace/ParallelBayes/pkg/environment/R-package-library",
+      "Priority": null,
+      "_row": "withr"
+    },
+    {
+      "Package": "KernSmooth",
+      "Version": "2.23-26",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "KernSmooth"
+    },
+    {
+      "Package": "MASS",
+      "Version": "7.3-65",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "MASS"
+    },
+    {
+      "Package": "Matrix",
+      "Version": "1.7-5",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "Matrix"
+    },
+    {
+      "Package": "base",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "base"
+    },
+    {
+      "Package": "boot",
+      "Version": "1.3-32",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "boot"
+    },
+    {
+      "Package": "class",
+      "Version": "7.3-23",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "class"
+    },
+    {
+      "Package": "cluster",
+      "Version": "2.1.8.2",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "cluster"
+    },
+    {
+      "Package": "codetools",
+      "Version": "0.2-20",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "codetools"
+    },
+    {
+      "Package": "compiler",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "compiler"
+    },
+    {
+      "Package": "datasets",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "datasets"
+    },
+    {
+      "Package": "foreign",
+      "Version": "0.8-91",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "foreign"
+    },
+    {
+      "Package": "grDevices",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "grDevices"
+    },
+    {
+      "Package": "graphics",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "graphics"
+    },
+    {
+      "Package": "grid",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "grid"
+    },
+    {
+      "Package": "lattice",
+      "Version": "0.22-9",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "lattice"
+    },
+    {
+      "Package": "methods",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "methods"
+    },
+    {
+      "Package": "mgcv",
+      "Version": "1.9-4",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "mgcv"
+    },
+    {
+      "Package": "nlme",
+      "Version": "3.1-169",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "nlme"
+    },
+    {
+      "Package": "nnet",
+      "Version": "7.3-20",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "nnet"
+    },
+    {
+      "Package": "parallel",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "parallel"
+    },
+    {
+      "Package": "rpart",
+      "Version": "4.1.27",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "rpart"
+    },
+    {
+      "Package": "spatial",
+      "Version": "7.3-18",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "spatial"
+    },
+    {
+      "Package": "splines",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "splines"
+    },
+    {
+      "Package": "stats",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "stats"
+    },
+    {
+      "Package": "stats4",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "stats4"
+    },
+    {
+      "Package": "survival",
+      "Version": "3.8-6",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "survival"
+    },
+    {
+      "Package": "tcltk",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "tcltk"
+    },
+    {
+      "Package": "tools",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "tools"
+    },
+    {
+      "Package": "translations",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": null,
+      "_row": "translations"
+    },
+    {
+      "Package": "utils",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "utils"
+    }
+  ],
+  "reused_system_base_or_recommended": [
+    {
+      "Package": "KernSmooth",
+      "Version": "2.23-26",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "KernSmooth"
+    },
+    {
+      "Package": "MASS",
+      "Version": "7.3-65",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "MASS"
+    },
+    {
+      "Package": "Matrix",
+      "Version": "1.7-5",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "Matrix"
+    },
+    {
+      "Package": "base",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "base"
+    },
+    {
+      "Package": "boot",
+      "Version": "1.3-32",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "boot"
+    },
+    {
+      "Package": "class",
+      "Version": "7.3-23",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "class"
+    },
+    {
+      "Package": "cluster",
+      "Version": "2.1.8.2",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "cluster"
+    },
+    {
+      "Package": "codetools",
+      "Version": "0.2-20",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "codetools"
+    },
+    {
+      "Package": "compiler",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "compiler"
+    },
+    {
+      "Package": "datasets",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "datasets"
+    },
+    {
+      "Package": "foreign",
+      "Version": "0.8-91",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "foreign"
+    },
+    {
+      "Package": "grDevices",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "grDevices"
+    },
+    {
+      "Package": "graphics",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "graphics"
+    },
+    {
+      "Package": "grid",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "grid"
+    },
+    {
+      "Package": "lattice",
+      "Version": "0.22-9",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "lattice"
+    },
+    {
+      "Package": "methods",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "methods"
+    },
+    {
+      "Package": "mgcv",
+      "Version": "1.9-4",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "mgcv"
+    },
+    {
+      "Package": "nlme",
+      "Version": "3.1-169",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "nlme"
+    },
+    {
+      "Package": "nnet",
+      "Version": "7.3-20",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "nnet"
+    },
+    {
+      "Package": "parallel",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "parallel"
+    },
+    {
+      "Package": "rpart",
+      "Version": "4.1.27",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "rpart"
+    },
+    {
+      "Package": "spatial",
+      "Version": "7.3-18",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "spatial"
+    },
+    {
+      "Package": "splines",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "splines"
+    },
+    {
+      "Package": "stats",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "stats"
+    },
+    {
+      "Package": "stats4",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "stats4"
+    },
+    {
+      "Package": "survival",
+      "Version": "3.8-6",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "recommended",
+      "_row": "survival"
+    },
+    {
+      "Package": "tcltk",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "tcltk"
+    },
+    {
+      "Package": "tools",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "tools"
+    },
+    {
+      "Package": "utils",
+      "Version": "4.6.1",
+      "LibPath": "D:/Tools/R-4.6.1/library",
+      "Priority": "base",
+      "_row": "utils"
+    }
+  ],
+  "downloaded": [
+    {
+      "V1": "reticulate",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/reticulate_1.47.0.zip"
+    },
+    {
+      "V1": "posterior",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/posterior_1.7.0.zip"
+    },
+    {
+      "V1": "jsonlite",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/jsonlite_2.0.0.zip"
+    },
+    {
+      "V1": "testthat",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/testthat_3.3.2.zip"
+    },
+    {
+      "V1": "Rcpp",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/Rcpp_1.1.2.zip"
+    },
+    {
+      "V1": "RcppTOML",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/RcppTOML_0.2.3.zip"
+    },
+    {
+      "V1": "here",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/here_1.0.2.zip"
+    },
+    {
+      "V1": "png",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/png_0.1-9.zip"
+    },
+    {
+      "V1": "rappdirs",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/rappdirs_0.3.4.zip"
+    },
+    {
+      "V1": "rlang",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/rlang_1.3.0.zip"
+    },
+    {
+      "V1": "withr",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/withr_3.0.3.zip"
+    },
+    {
+      "V1": "rprojroot",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/rprojroot_2.1.1.zip"
+    },
+    {
+      "V1": "abind",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/abind_1.4-8.zip"
+    },
+    {
+      "V1": "checkmate",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/checkmate_2.3.4.zip"
+    },
+    {
+      "V1": "tibble",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/tibble_3.3.1.zip"
+    },
+    {
+      "V1": "vctrs",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/vctrs_0.7.3.zip"
+    },
+    {
+      "V1": "tensorA",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/tensorA_0.36.2.1.zip"
+    },
+    {
+      "V1": "pillar",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/pillar_1.11.1.zip"
+    },
+    {
+      "V1": "distributional",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/distributional_0.9.0.zip"
+    },
+    {
+      "V1": "matrixStats",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/matrixStats_1.5.0.zip"
+    },
+    {
+      "V1": "backports",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/backports_1.5.1.zip"
+    },
+    {
+      "V1": "generics",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/generics_0.1.4.zip"
+    },
+    {
+      "V1": "numDeriv",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/numDeriv_2016.8-1.1.zip"
+    },
+    {
+      "V1": "lifecycle",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/lifecycle_1.0.5.zip"
+    },
+    {
+      "V1": "cli",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/cli_3.6.6.zip"
+    },
+    {
+      "V1": "glue",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/glue_1.8.1.zip"
+    },
+    {
+      "V1": "utf8",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/utf8_1.2.6.zip"
+    },
+    {
+      "V1": "magrittr",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/magrittr_2.0.5.zip"
+    },
+    {
+      "V1": "pkgconfig",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/pkgconfig_2.0.3.zip"
+    },
+    {
+      "V1": "brio",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/brio_1.1.5.zip"
+    },
+    {
+      "V1": "callr",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/callr_3.8.0.zip"
+    },
+    {
+      "V1": "desc",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/desc_1.4.3.zip"
+    },
+    {
+      "V1": "evaluate",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/evaluate_1.0.5.zip"
+    },
+    {
+      "V1": "pkgload",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/pkgload_1.5.3.zip"
+    },
+    {
+      "V1": "praise",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/praise_1.0.0.zip"
+    },
+    {
+      "V1": "processx",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/processx_3.9.0.zip"
+    },
+    {
+      "V1": "ps",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/ps_1.9.3.zip"
+    },
+    {
+      "V1": "R6",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/R6_2.6.1.zip"
+    },
+    {
+      "V1": "waldo",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/waldo_0.6.2.zip"
+    },
+    {
+      "V1": "otel",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/otel_0.2.0.zip"
+    },
+    {
+      "V1": "fs",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/fs_2.1.0.zip"
+    },
+    {
+      "V1": "pkgbuild",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/pkgbuild_1.4.8.zip"
+    },
+    {
+      "V1": "diffobj",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/diffobj_0.3.9.zip"
+    },
+    {
+      "V1": "crayon",
+      "V2": "D:/workspace/ParallelBayes/pkg/output/windows-package-candidate-v1/R-dependency-archives/crayon_1.5.3.zip"
+    }
+  ],
+  "scope": "Native Windows binary dependencies; no existing user library copied"
+}

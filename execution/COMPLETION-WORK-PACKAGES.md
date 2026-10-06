@@ -297,3 +297,11 @@ Resource-counter qualification: a bounded 128 MiB allocation is denied under a 6
 2026-10-07 delivery: primary archive windows-native-20261006T170711Z.tar, 1,083,330,560 bytes, SHA256 6ef0f6e299867d67b27cbd4067a062a30f3593894dc4b34c1da9086f80ae7274, 3,753 manifest files verified. Safe extraction into a new directory and independently owned read-only analysis rebuilt all 27 planned rows, 24 cache rows, 96 call records, 27 function binaries and 90 R rows; all 12 pairs passed. Reconstruction jobs finished kernel active count0. New reader preserves raw memory counter semantics and explicit cross-platform differences. Initial archive creation clock was not separately recorded and remains unknown; inference/cache invocation and extra verification clocks are preserved. No new sampling during recovery or reanalysis.
 
 Receiver: `python scripts/windows/audit_technical_batch.py audit --bundle EXTRACTED/output/windows-runtime-technical-v1 --output NEW_ANALYSIS --rscript Rscript --r-library R_LIBRARY --cross-platform`. Actual Mac execution of this command remains receiving-side work. Current bounded runtime checks pass; formal scientific freezes remain gated on merged F2/cost/analysis/version intake, not on this pilot alone.
+
+## 原生 Windows 候选安装后继（2026-10-07）
+
+F2/F3 已在各自独立分支封存后，codex/windows-package-validation 从统一6f02f37开始，新短路径 venv 与 R 库安装真实 wheel/R源包。CLI3、CPU63、CUDA63通过；R显式4测试56断言通过；R CMD check最终OK，默认7跳过另列。CPU/CUDA各4短MH工作流与失败隔离、原对象只读重建通过，正式重复新增0。初次长路径安装、全局wheel缓存和R locale失败全部保留；数值模块未改。见docs/WINDOWS-PACKAGE-CANDIDATE.md及execution/package-candidate/WORK-PACKAGES.md。
+
+F2返回1cfc83d；F3返回b0582c3的27主任务、24测量/96调用已封存并上传原草稿。旧Mac缺回执记录是历史状态，接收合并仍需独立核验。F5本机安装门槛通过，完整两平台结果重建及F6/正式冻结仍未关闭；不启动41,472或9,216正式规划。
+
+主包和伴随包的8个新增附件已上传到原草稿windows-completion-v2-20261005，远端SHA256/大小/state均通过；原19附件不变，现27附件，仍为draft。伴随包windows-native-20261006T173742Z.tar为286720字节、60清单文件，SHA256为53bf0afa96abaf094f6846cd3a0e29a56a96eea8cac0af8b513bd8003703ce8d。上传回执、原始失败、R对象、源码bundle与安装归档完整保留；本机安装门槛完成，研究总门槛仍未关闭。
