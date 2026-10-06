@@ -2,7 +2,7 @@
 import argparse
 import csv
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
 import statistics
 import sys
 import numpy as np
@@ -11,6 +11,22 @@ ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'scripts/completion'))
 from mechanism_runner import read_plan,sha,write,actual_hash
 from parallelbayes.reference import make_reference
+
+
+
+def evidence_path(root, name):
+    """Resolve archived relative names from either host without editing evidence."""
+    if not isinstance(name, str) or not name:
+        raise ValueError('Invalid relative evidence path')
+    windows = PureWindowsPath(name)
+    parts = PurePosixPath(name.replace('\\', '/')).parts
+    if windows.drive or windows.root or not parts or '..' in parts:
+        raise ValueError('Invalid relative evidence path')
+    root = Path(root).resolve()
+    result = root.joinpath(*parts).resolve()
+    if result == root or not result.is_relative_to(root):
+        raise ValueError('Evidence path escapes its group')
+    return result
 
 
 def analyze(plan_path,run,output,inputs=None):
@@ -43,8 +59,8 @@ def analyze(plan_path,run,output,inputs=None):
         state=json.loads(path.read_text());states[g['id']]=sha(path)
         if state['group']!=g or state['device']!=manifest['device']:raise ValueError('Task identity differs')
         for name,digest in state['assets'].items():
-            if sha(folder/name)!=digest:raise ValueError('Raw asset checksum mismatch: '+name)
-        attempt=folder/state['attempt']
+            if sha(evidence_path(folder,name))!=digest:raise ValueError('Raw asset checksum mismatch: '+name)
+        attempt=evidence_path(folder,state['attempt'])
         key=f"{g['model']}-r{g['replicate']}"
         expected={k:a[:g['chains'],:g['draws']] for k,a in master[key].items()}
         with np.load(attempt/'inputs.npz',allow_pickle=False) as z:tape={k:z[k].copy() for k in z.files}
@@ -52,7 +68,7 @@ def analyze(plan_path,run,output,inputs=None):
         statuses.append(state['status'])
         records={label:[] for label in labels}
         for record in state['records']:
-            data=json.loads((attempt/record['record']).read_text())
+            data=json.loads(evidence_path(attempt,record['record']).read_text())
             if data['status']=='completed':
                 if data['target_id']!=target_ids[g['model']] or data['tape_sha256']!=actual_hash(expected):
                     raise ValueError('Recorded target or actual tape identity differs')
@@ -70,10 +86,10 @@ def analyze(plan_path,run,output,inputs=None):
                        len(warmed)==plan['technical_replays'] and len(post)==1 and all(x['status']=='completed' for x in warmed+post))
             if valid:
                 initial_record=next(r for r,x in rr if x is first)
-                with np.load(attempt/initial_record['raw'],allow_pickle=False) as a:
+                with np.load(evidence_path(attempt,initial_record['raw']),allow_pickle=False) as a:
                     reference_path=a['unconstrained'].copy();reference_accept=a['accept'].copy()
                 for record,_ in rr:
-                    with np.load(attempt/record['raw'],allow_pickle=False) as a:
+                    with np.load(evidence_path(attempt,record['raw']),allow_pickle=False) as a:
                         if not np.array_equal(a['unconstrained'],reference_path) or not np.array_equal(a['accept'],reference_accept):
                             raise ValueError('A completed replay changed actual paths/events')
             status='completed' if valid else ('failed' if rr else 'not_executed')
@@ -83,7 +99,7 @@ def analyze(plan_path,run,output,inputs=None):
                 group_status=state['status'],cached_sample_seconds=None,paired_cached_ratio=None)
             if first and first['status']=='completed':
                 meta=next(r for r,x in rr if x is first)
-                with np.load(attempt/meta['raw'],allow_pickle=False) as a:
+                with np.load(evidence_path(attempt,meta['raw']),allow_pickle=False) as a:
                     row['acceptance_fraction']=float(a['accept'].mean())
                 d=first['diagnostics'];n=row['total_transitions']
                 row.update(first_audit_seconds=first['timing']['audit'],forward_maps_per_transition=d['forward_evals']/n,

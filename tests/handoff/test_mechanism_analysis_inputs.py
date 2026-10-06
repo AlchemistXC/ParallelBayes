@@ -36,6 +36,13 @@ def test_analysis_uses_frozen_files_and_rejects_changed_files(tmp_path):
     assert receipt['input_verification']['mode'] == 'frozen_files'
     assert receipt['input_verification']['files'] == 1
     before = (out/'workflows.csv').read_bytes()
+    # A Windows-origin state must resolve the same files on a receiving Mac.
+    state_path = run/'groups'/group['id']/'state.json'
+    state = json.loads(state_path.read_text())
+    state['assets'] = {name.replace('/', '\\'): value for name, value in state['assets'].items()}
+    state_path.write_text(json.dumps(state))
+    analyze(protocol, run, tmp_path/'windows-path-analysis', inputs=inputs)
+    assert (tmp_path/'windows-path-analysis/workflows.csv').read_bytes() == before
     with pytest.raises(ValueError, match='frozen input'):
         analyze(protocol, run, tmp_path/'no-inputs')
     assert not (tmp_path/'no-inputs').exists()
@@ -44,3 +51,10 @@ def test_analysis_uses_frozen_files_and_rejects_changed_files(tmp_path):
         analyze(protocol, run, tmp_path/'corrupt', inputs=inputs)
     assert not (tmp_path/'corrupt').exists()
     assert (out/'workflows.csv').read_bytes() == before
+
+
+@pytest.mark.parametrize('name', ['../outside', '..\\outside', 'C:\\outside', '/outside'])
+def test_archived_path_cannot_escape_group(tmp_path, name):
+    from analyze_mechanism_pilot import evidence_path
+    with pytest.raises(ValueError, match='evidence path'):
+        evidence_path(tmp_path, name)
