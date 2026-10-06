@@ -1,0 +1,24 @@
+{
+  "status": "complete_finite_pilot",
+  "protocol_sha256": "9d8985f579a64df95ebbb22ce0a607020261e5a66516efc80edcf9c956894b2c",
+  "frozen_source_commit": "97e6835476bf71f48c1236e7cc77f235e5191d6c",
+  "execution_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+  "summary_source_sha256": "bb27f4a3486384173f0bdcbc769cc055f0d8e700b0833c8107de6362c04c3922",
+  "command_index_scope": "Completed receipts at summary start. Full command tree, including the enclosing summary recorder, remains in the archive.",
+  "tests": {
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "raw_assets_verified": 2648,
+  "cross_device_pairs": 96,
+  "cross_device_pairs_passed": 96,
+  "independent_tapes_per_model": 2,
+  "technical_replays": 3,
+  "scope": "Finite F2 mechanism pilot; paired technical executions reuse actual arrays. No general speedup, stable ranking, convergence or formal accuracy conclusion.",
+  "formal_grid_started": false,
+  "Windows_process_collection_and_long_running_resource_guards_verified": false,
+  "cost_warning": "Fixed-state operations overlap and are not additive. RSS endpoints are not peaks. Host waits include pending device work.",
+  "original_environment_unchanged": true
+}

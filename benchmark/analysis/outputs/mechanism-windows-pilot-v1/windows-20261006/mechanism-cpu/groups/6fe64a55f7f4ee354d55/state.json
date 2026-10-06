@@ -1,0 +1,94 @@
+{
+  "identity": "9ecbf65a60cf706c419f5919e23e8694385cd71c2945528c0a0d15f4260713e5",
+  "status": "completed",
+  "attempt": "attempt-1791283428202531900",
+  "group": {
+    "model": "G2",
+    "kernel": "rwm",
+    "replicate": 1,
+    "chains": 16,
+    "draws": 32,
+    "windows": [],
+    "step_size": 0.25,
+    "role": "equal_512_output_chain_allocation",
+    "id": "6fe64a55f7f4ee354d55"
+  },
+  "device": "cpu",
+  "assets": {
+    "attempt-1791283428202531900\\comparison.json": "1d73c755008560803fbb80bf0a728ce549021f5618d7eed71a7cfc9aa759b667",
+    "attempt-1791283428202531900\\inputs.npz": "82e77b47d48a3ee30695fc987fb5cf7783e176b9c5f406a91574310d56a9ec00",
+    "attempt-1791283428202531900\\phase-0-sequential.json": "e1762ac4800db15f4edbe6941535960cad48614f71efc9f062f876ec81d3c77b",
+    "attempt-1791283428202531900\\phase-0-sequential.npz": "c400e536dbff8c72170276fd683bfbf82c7eceacccac3d6c7f475dff1b9f49f5",
+    "attempt-1791283428202531900\\phase-1-sequential.json": "a28c4c345360e486900f40074c7cdeb538020be73ff664b193a5202c8db81248",
+    "attempt-1791283428202531900\\phase-1-sequential.npz": "c400e536dbff8c72170276fd683bfbf82c7eceacccac3d6c7f475dff1b9f49f5",
+    "attempt-1791283428202531900\\phase-2-sequential.json": "3e0b377e9567954ebd362979232a7733aee14722caf8f520ca3d4f1e1d865db5",
+    "attempt-1791283428202531900\\phase-2-sequential.npz": "c400e536dbff8c72170276fd683bfbf82c7eceacccac3d6c7f475dff1b9f49f5",
+    "attempt-1791283428202531900\\phase-3-sequential.json": "436653e2d62aafd949d64c9801ffbc16f592cce0ee161ce04224baa6358a5df6",
+    "attempt-1791283428202531900\\phase-3-sequential.npz": "c400e536dbff8c72170276fd683bfbf82c7eceacccac3d6c7f475dff1b9f49f5",
+    "attempt-1791283428202531900\\phase-4-sequential.json": "188f354afd32ca693938f8b7a9440f115ea82a7a33cc3be82f38a4939aa23092",
+    "attempt-1791283428202531900\\phase-4-sequential.npz": "c400e536dbff8c72170276fd683bfbf82c7eceacccac3d6c7f475dff1b9f49f5",
+    "attempt-1791283428202531900\\probe-w1\\checked-values.npz": "4fb338e8841b116ffdf009b7d5bc9d3188ed54d771d706c66a553a74cd870dcc",
+    "attempt-1791283428202531900\\probe-w1\\checksums.json": "10cdcf33da8a198db0ecc1fa50b5321b702c256273a746d32480c9f05efcf9e9",
+    "attempt-1791283428202531900\\probe-w1\\inputs.npz": "d575c8697a76ca8250f2634c794c85e78c6d1f7a3743d313e18a814b5b47ee64",
+    "attempt-1791283428202531900\\probe-w1\\result.json": "199b23802462364ebacda89c7d055a8f886df98a13cb7140077b52626f76dc5b",
+    "attempt-1791283428202531900\\started.json": "645a798174d4bd822239c111bbff184bd9e4d12fb4fb7d00ccaabc1896ab127a"
+  },
+  "audited_workflows": 1,
+  "paired_acceptance_mismatches": 0,
+  "replays_identical": true,
+  "records": [
+    {
+      "label": "sequential",
+      "phase": 0,
+      "status": "completed",
+      "raw": "phase-0-sequential.npz",
+      "record": "phase-0-sequential.json",
+      "replay_identical": null,
+      "archive_seconds": 0.02005789999384433
+    },
+    {
+      "label": "sequential",
+      "phase": 1,
+      "status": "completed",
+      "raw": "phase-1-sequential.npz",
+      "record": "phase-1-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.01620439998805523
+    },
+    {
+      "label": "sequential",
+      "phase": 2,
+      "status": "completed",
+      "raw": "phase-2-sequential.npz",
+      "record": "phase-2-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.015153399988776073
+    },
+    {
+      "label": "sequential",
+      "phase": 3,
+      "status": "completed",
+      "raw": "phase-3-sequential.npz",
+      "record": "phase-3-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.015280199993867427
+    },
+    {
+      "label": "sequential",
+      "phase": 4,
+      "status": "completed",
+      "raw": "phase-4-sequential.npz",
+      "record": "phase-4-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.018733000004431233
+    }
+  ],
+  "model_setup_seconds": 0.0027851999911945313,
+  "probes": [
+    {
+      "width": 1,
+      "status": "passed"
+    }
+  ],
+  "group_seconds_before_final_state_write": 0.7161580999963917
+}

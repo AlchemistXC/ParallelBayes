@@ -1,0 +1,88 @@
+{
+  "protocol_sha256": "9d8985f579a64df95ebbb22ce0a607020261e5a66516efc80edcf9c956894b2c",
+  "source_commit": "97e6835476bf71f48c1236e7cc77f235e5191d6c",
+  "run_manifest_sha256": "13d03c17a2abe364f51e4bf55fe2aa7d7a207f67517c8fceae67cf01141bf6dc",
+  "state_sha256": {
+    "7993014143067fc485cd": "caae4bf8c2f96fde94de2d13296a89c15ac6e8635b2f0175e37561380246ec9b",
+    "57554c9e201545146e62": "d9c247d17893d3043037c17a3068da9e7fe3d8a9d788eac61bb92b7aa361b736",
+    "db009510c6a038a7d336": "1b9e11ce819008b2b1f19f9ba3eb342f57072d6cf6ae71bef44d17326787e615",
+    "9ed4ad1a2379acc98faa": "a7f448ab0cfee95ea7576d6f79355f8d93f91408f0508511fd02190218165bd5",
+    "41ebb3a6cbdb29786f9b": "d6c41e56165f69d0cf9a5f90919e25676397d6371bf150985e15df035efb0b27",
+    "782053169c32d00a2e93": "e12a772e83dd622ed08988729bad793500be76ab8b644930b530469303908e53",
+    "1e4770cf09037111e3f1": "ab168b3a37a785237a84e7454b7dd1e785b64e82b91edd7898e063cec4e39334",
+    "133726dd218d56787494": "aa93ba6de833de70edc8398950c837d9908c16eff12384cb62dc8655456977d4",
+    "36ed2f50bd9ceb31cb1b": "589acd66dad4f179912a03c621b766164edb25dcd6a826c1d281e70eedf897e7",
+    "4ba974c7e6fda33d6179": "942acea77a560f931b3827bed25ce064ccfd073e31312377ab92deefd735c9fb",
+    "b4de2b13c23f466f1883": "c1cee7c7533e17015668d90ce0d8a5cf5906a1acb88c5662d5abd09bb9f7d495",
+    "eee319e15f53bc7b64c8": "1d7a94afe0423751e855fbab4c766bb94f9c45ffbc366033e8aab128996bd710",
+    "04b73572d2ea745180c1": "6ebab479402a3091ad29d2bcf7178ae31a732c0679e8917fe2ef90f6bf0acc4f",
+    "44d7b9a275a134b0a7d6": "9e9de99ef743f379fc7f768b52351cbb20852f4cba073550383dd04fbb363792",
+    "801f2e40a6daf6d32d9f": "2ee3747f235a2af7866152b63d3727a18b461292ab1a39fe2868b30688ff5fe5",
+    "15bd073a685fcfdebd6e": "f7ac2ca8ab46c4b90105fef7c85432515d556577b7e62b13a6b694a11abe8c42",
+    "bf0d935aa555d9bb2ee5": "d5c62410c6e102937f0dbbff7fdb2edeeac920d048614eb6507456252cda23ae",
+    "cc2e3de0a76ce09bbd92": "097dd489a859e8ba6ecebfcaaf650fe24e6640c722ec6dc1567b5812a896db7d",
+    "a31c7b96902295727c19": "d315ec43846ba333a07101f9f8051da0d0dd723daae484d7bd3c858ec53154c3",
+    "e70213bcedb7f13b198e": "9b4c121576ba4dd11852686fa3f387ea80d8daf8e729438d037301046910f09b",
+    "e8711d47d46f98cca26c": "25ae26cdc500099a5af6ee6bc22567458bf5e22fbc85cac4ec4f13907f13d9fa",
+    "3d3d5a7c06af3d9cc7a6": "fab02d6d34d7cccb485607eb498ed1b3ebd8e7dee7017c60aa3ce509271fee5a",
+    "66e520f2572a544f785b": "75e6390fb81515ede0b004cd14027a1334401c18c4dfc73118c9760083bfdc2a",
+    "6f1f3aa080430d7013a0": "307281ca97a804ddf49219ced3865941b81b15dcba2dbfc2311e3f40fcacf91b",
+    "e37c3c860aa24b6cc386": "48ed22c176c5523d781a3b883b1ff5c91c80ca6115a327db068e0851d07116ef",
+    "32a2afea23f433784944": "450c608e481504db77d66b9985bebdde7d368b0b49acbc7b88ff7c477c6d6f95",
+    "38fccea812fd56fa5bca": "28300d6a62a4ad2ad87ca57e8f44cc529c74bc8a6688e137f2a05d9563dd5727",
+    "9ddd37f33470e4d6d948": "64268f97f7653633f52a5d00aad09b4eb365afd0a7c3f787f32a8ea2dc874e61",
+    "823278771a3d432ab7ad": "0acdca4790ae1d8c60290be24eca4ba78a39e905b5b6df523fb02255840579c6",
+    "54c9e2c8827114837ab0": "d4a3b8005b902516b7097a975425a7ec7fe932bb8eba583d89d93e842fdb24a2",
+    "0e45916f4053d69f1363": "1855bc241e43c0a23f98e02e32631aa8f6cf9c606e22f218a8b61648e09a69fd",
+    "036d1d236201c7b8d07c": "51d29b04847a628a51a06125b1a9436eb21f04c6528f7c75ad1f3478127f6a69",
+    "eafc8bec072d544ebbab": "bdb57c14020c5525d41713d719c0d8b2cfefa81dc9ff6568f0ee78a5a2dbae54",
+    "6fe64a55f7f4ee354d55": "abf6d8d5f6d1757e8dcbbffc7f23a94b3917a860fe8d7ff3125f80d044ba47ab",
+    "de4f3c281b578ab2c8bd": "cbabce18a8c859cc27f2123d71aec1c0283c3dfa146a142e15478dcbfe749296",
+    "b6c942d8354585579f51": "f023013f327da8c1d2ef504fb1d71b02bf88e434ee08a80ce3c3a6858f59de4d"
+  },
+  "analyzer_sha256": "1fe99303d47eb407c93d5b2a0cafb61bde8f26a55cba97d0812a8bb92df2110b",
+  "device": "cpu",
+  "groups_planned": 36,
+  "input_verification": {
+    "mode": "frozen_files",
+    "files": 6,
+    "hashes": {
+      "G1-r0": {
+        "actual_sha256": "ea71804657be62b2d7fad4da5813620fb02a920bba03e556f5f6d39f6bd6a9fb",
+        "file_sha256": "834d35bad5b22edd90a3067e98aa4417232750a5ef16b2dead2404555762dc0d"
+      },
+      "G1-r1": {
+        "actual_sha256": "3fcd24a5389a7a31c35b31bedc1754d277f881343f54e1eae7d95241e739c72d",
+        "file_sha256": "88192b4eb218dbf6be797108329fc4fcd4f03d9cef598bbe585611c9e3525db9"
+      },
+      "G2-r0": {
+        "actual_sha256": "dc628c3e6e8dc573145e9e511e3d53f24c4b2f09f7ce511c1d011bd7a516fab5",
+        "file_sha256": "50bde69cf317b7cf1ca0c0dda4b83556576c11c187e6216a6f5c214f9097ee50"
+      },
+      "G2-r1": {
+        "actual_sha256": "1f1205fc50e5b8541a7dcda6d5bc013bc97875de1a85cb95141aae8dbf77b642",
+        "file_sha256": "9434678a72e9d5384f564324476620693eb10440a48149c9d5bc969bd990e095"
+      },
+      "L1-r0": {
+        "actual_sha256": "fd8f42471df740eaa23ab2e6a52c5cf28d1f7042aa1cb82101736f75ec403139",
+        "file_sha256": "5507bb4b1388af5d73d98e1a099661692e980c3b1bb8f86a0c99e5a2f2425c4e"
+      },
+      "L1-r1": {
+        "actual_sha256": "b57baef7365776f1a09b149858276db2021598f2517970c44b2863c5a7a6fb7f",
+        "file_sha256": "e634b387e330b0cd7519859cf987a06a9c6e70dfbfb895e039408b11741b1054"
+      }
+    }
+  },
+  "groups_completed": 36,
+  "groups_failed": 0,
+  "groups_pending": 0,
+  "workflows_planned": 96,
+  "workflows_completed": 96,
+  "workflow_status_counts": {
+    "completed": 96
+  },
+  "independent_tapes_per_model": 2,
+  "technical_replays": 3,
+  "scope": "Descriptive pilot tables; no confidence intervals, inference convergence or general speedup claim",
+  "cost_note": "Fixed-state probe operations overlap in real execution and must not be added. Post-probe timing is a sensitivity check, not causal overhead subtraction."
+}

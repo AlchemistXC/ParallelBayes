@@ -1,0 +1,338 @@
+[
+  {
+    "name": "analyze-cpu",
+    "exit_code": 0,
+    "elapsed_seconds": 0.9993069000192918,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/analyze_mechanism_pilot.py",
+      "--plan",
+      "benchmark/protocols/mechanism-windows-pilot-v1.json",
+      "--inputs",
+      "output/completion/windows-mechanism-original-attempt01/original-inputs",
+      "--run",
+      "output/completion/windows-mechanism-original-attempt01/mechanism-cpu",
+      "--output",
+      "output/completion/windows-mechanism-original-attempt01/analysis-cpu"
+    ],
+    "receipt_sha256": "513807ed1b4ad7af905d91f7a1bac98bd13bba268900d5350d0c1ba76b845608",
+    "log_sha256": "2085ff0f19a261343cd2316f57da5f4a6930c02e460535984e61b8af72aa0a6a"
+  },
+  {
+    "name": "analyze-cuda",
+    "exit_code": 0,
+    "elapsed_seconds": 1.0068264000001363,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/analyze_mechanism_pilot.py",
+      "--plan",
+      "benchmark/protocols/mechanism-windows-pilot-v1.json",
+      "--inputs",
+      "output/completion/windows-mechanism-original-attempt01/original-inputs",
+      "--run",
+      "output/completion/windows-mechanism-original-attempt01/mechanism-cuda",
+      "--output",
+      "output/completion/windows-mechanism-original-attempt01/analysis-cuda"
+    ],
+    "receipt_sha256": "0f0cc03df4918fc636335f99c6d0edadaf556a40aac993ec6cb564c5243775e6",
+    "log_sha256": "22d25aceebc2b3de4db3ea0d93bedbe1c6bcb8896c642df3c646180c8e9b1868"
+  },
+  {
+    "name": "compare-original-to-rejected",
+    "exit_code": 0,
+    "elapsed_seconds": 0.8144896999874618,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/compare_mechanism_inputs.py",
+      "--plan",
+      "benchmark/protocols/mechanism-windows-pilot-v1.json",
+      "--original",
+      "output/completion/windows-mechanism-original-attempt01/original-inputs",
+      "--rejected",
+      "C:/Users/chenh/.codex/worktrees/windows-completion-v2/ParallelBayes/output/completion/windows-round2-20261005/mechanism-rejected-inputs",
+      "--output",
+      "output/completion/windows-mechanism-original-attempt01/original-rejected-comparison.json"
+    ],
+    "receipt_sha256": "e11d6ec4ee822f7ca0a97237263952592fc1c6da747ae34b6f53584670c5aada",
+    "log_sha256": "1b06fc11dffda892e7a33535c88b1f8caf9df4d124a5e9c151ec9d6e2c04203b"
+  },
+  {
+    "name": "cpu-resume",
+    "exit_code": 0,
+    "elapsed_seconds": 2.5757835999829695,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/mechanism_runner.py",
+      "run",
+      "--plan",
+      "benchmark/protocols/mechanism-windows-pilot-v1.json",
+      "--inputs",
+      "output/completion/windows-mechanism-original-attempt01/original-inputs",
+      "--output",
+      "output/completion/windows-mechanism-original-attempt01/mechanism-cpu",
+      "--device",
+      "cpu",
+      "--resume"
+    ],
+    "receipt_sha256": "6ddbbdfcd5fcb33ef5c56395d1c48e066c4a8ae464edb241868af0a10b2eb050",
+    "log_sha256": "4e727bec9b4a472d6b666d02eec9269be73587b4c113ff5bfe7eabe6ce09aac8"
+  },
+  {
+    "name": "cpu-snapshot",
+    "exit_code": 0,
+    "elapsed_seconds": 0.9168541999824811,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/check_mechanism_resume.py",
+      "snapshot",
+      "--run",
+      "output/completion/windows-mechanism-original-attempt01/mechanism-cpu",
+      "--output",
+      "output/completion/windows-mechanism-original-attempt01/cpu-before-resume.json"
+    ],
+    "receipt_sha256": "7183df2251a660abebe6fed5171b49eb1d7a6eb0684470988fcf42eaed72a590",
+    "log_sha256": "c2d3c7f54774d3db5b7171773667e8515c5eeef18c40d7a2afebeb8df301aa04"
+  },
+  {
+    "name": "cpu-verify-resume",
+    "exit_code": 0,
+    "elapsed_seconds": 0.9383826999983285,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/check_mechanism_resume.py",
+      "verify",
+      "--run",
+      "output/completion/windows-mechanism-original-attempt01/mechanism-cpu",
+      "--before",
+      "output/completion/windows-mechanism-original-attempt01/cpu-before-resume.json",
+      "--output",
+      "output/completion/windows-mechanism-original-attempt01/cpu-resume-verification.json"
+    ],
+    "receipt_sha256": "6f162cf7ceab8a69610569dda15f368d02e9d892826c636abc5988e98682aacb",
+    "log_sha256": "0e904c23736148fd0d3adc457ff45ad135580258704fa5dae99689d13e4ec2d9"
+  },
+  {
+    "name": "cuda-resume",
+    "exit_code": 0,
+    "elapsed_seconds": 2.466055700002471,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/mechanism_runner.py",
+      "run",
+      "--plan",
+      "benchmark/protocols/mechanism-windows-pilot-v1.json",
+      "--inputs",
+      "output/completion/windows-mechanism-original-attempt01/original-inputs",
+      "--output",
+      "output/completion/windows-mechanism-original-attempt01/mechanism-cuda",
+      "--device",
+      "cuda",
+      "--resume"
+    ],
+    "receipt_sha256": "506381bf7a0fbf92955be4339260cd5d2ba3f140f5934f6c551d947a2663310f",
+    "log_sha256": "b53586f5055ee098d69cf4ea9befb47efc320d171c1ba2167dc50c513be29ea4"
+  },
+  {
+    "name": "cuda-snapshot",
+    "exit_code": 0,
+    "elapsed_seconds": 0.898170200001914,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/check_mechanism_resume.py",
+      "snapshot",
+      "--run",
+      "output/completion/windows-mechanism-original-attempt01/mechanism-cuda",
+      "--output",
+      "output/completion/windows-mechanism-original-attempt01/cuda-before-resume.json"
+    ],
+    "receipt_sha256": "4de6c9ad3c7b9b1cd0ebd06447a33e2dd62454edfe0570b5173616357bc6a2ea",
+    "log_sha256": "01b29bbbceed31337eb184d2e5bdce95f7d713c342227713ef93ba3a4cf85469"
+  },
+  {
+    "name": "cuda-verify-resume",
+    "exit_code": 0,
+    "elapsed_seconds": 0.9382131999882404,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/check_mechanism_resume.py",
+      "verify",
+      "--run",
+      "output/completion/windows-mechanism-original-attempt01/mechanism-cuda",
+      "--before",
+      "output/completion/windows-mechanism-original-attempt01/cuda-before-resume.json",
+      "--output",
+      "output/completion/windows-mechanism-original-attempt01/cuda-resume-verification.json"
+    ],
+    "receipt_sha256": "9da96d5ab6cab8f47fd3cadd4a7d416f9cb2a310408b4bb096cd023d3251797e",
+    "log_sha256": "e2c6a8f4f8921b243d78242925ce1ce33cacc720a130f8669ae61ded39f38a79"
+  },
+  {
+    "name": "download-original-inputs",
+    "exit_code": 0,
+    "elapsed_seconds": 2.580237699992722,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "output/completion/windows-mechanism-original-attempt01/fetch_original.py"
+    ],
+    "receipt_sha256": "9f4c99431b931d3f134360121d783a85f7a95a454e4e5a882dfbd8b2c1d4ebef",
+    "log_sha256": "f1e6bd3a86bb1609bcfbee0082f76b56a4227694949df984a7ae04e1109fbccd"
+  },
+  {
+    "name": "extract-original-inputs",
+    "exit_code": 0,
+    "elapsed_seconds": 0.015877700003329664,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "tar",
+      "-xf",
+      "downloads/mechanism-windows-original-v1/mechanism-windows-pilot-v1-original-inputs.tar",
+      "-C",
+      "output/completion/windows-mechanism-original-attempt01/original-inputs"
+    ],
+    "receipt_sha256": "e3340ed52c2b3bceb214e36fcbaf396532e1e266e413fff6c53852b7628a14a1",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "handoff-tests",
+    "exit_code": 0,
+    "elapsed_seconds": 5.135373299999628,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests/handoff/test_mechanism_analysis_inputs.py",
+      "tests/handoff/test_mechanism_runner.py",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "output/completion/windows-mechanism-original-attempt01/pytest-temp",
+      "--junitxml",
+      "output/completion/windows-mechanism-original-attempt01/tests.xml"
+    ],
+    "receipt_sha256": "e6176c8800e4f57c7339759d20eca112675c67cb150ec283e848afd73deb454b",
+    "log_sha256": "c01bdb45544bbda862bda282aa57ec01599c2eedf76355b27c81f68ce9891112"
+  },
+  {
+    "name": "mechanism-cpu",
+    "exit_code": 0,
+    "elapsed_seconds": 258.68690140001127,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/mechanism_runner.py",
+      "run",
+      "--plan",
+      "benchmark/protocols/mechanism-windows-pilot-v1.json",
+      "--inputs",
+      "output/completion/windows-mechanism-original-attempt01/original-inputs",
+      "--output",
+      "output/completion/windows-mechanism-original-attempt01/mechanism-cpu",
+      "--device",
+      "cpu"
+    ],
+    "receipt_sha256": "2334b35ff9e666e37ef2578039d86f52a89c86a363644b11999a5c6a1756392a",
+    "log_sha256": "4e727bec9b4a472d6b666d02eec9269be73587b4c113ff5bfe7eabe6ce09aac8"
+  },
+  {
+    "name": "mechanism-cuda",
+    "exit_code": 0,
+    "elapsed_seconds": 494.4015357999888,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/mechanism_runner.py",
+      "run",
+      "--plan",
+      "benchmark/protocols/mechanism-windows-pilot-v1.json",
+      "--inputs",
+      "output/completion/windows-mechanism-original-attempt01/original-inputs",
+      "--output",
+      "output/completion/windows-mechanism-original-attempt01/mechanism-cuda",
+      "--device",
+      "cuda"
+    ],
+    "receipt_sha256": "0ce5b011a0a6f0f7998fdcb82350949fc9846e21a5b936b1ecda8a236989abb6",
+    "log_sha256": "b53586f5055ee098d69cf4ea9befb47efc320d171c1ba2167dc50c513be29ea4"
+  },
+  {
+    "name": "nvidia-smi",
+    "exit_code": 0,
+    "elapsed_seconds": 0.060180500004207715,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "nvidia-smi"
+    ],
+    "receipt_sha256": "3c8c47ad8da4296062077340020f4b6825a65b2ee84cd6350f9b79b721288403",
+    "log_sha256": "360ab0f922405202b9d278733444f148d224c3603e728786de6e36820eb4262f"
+  },
+  {
+    "name": "pip-check",
+    "exit_code": 0,
+    "elapsed_seconds": 0.3802352999919094,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "receipt_sha256": "f6cc3536219348183aa52af5e6902b2d4bdc91ff8aed98fc0a6027eae7d2abdd",
+    "log_sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+  },
+  {
+    "name": "pip-freeze",
+    "exit_code": 0,
+    "elapsed_seconds": 0.5209545000107028,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pip",
+      "freeze",
+      "--all"
+    ],
+    "receipt_sha256": "d1fcb4e950e64fcefa63035fdcd0ee487a7d31e808b9889aa9cef5fe41ad2b28",
+    "log_sha256": "fef0f506ead8c321cab2fd273a52944cf64d97825f04fdbc6a5da33a01b4ff08"
+  },
+  {
+    "name": "preflight",
+    "exit_code": 0,
+    "elapsed_seconds": 5.949285400012741,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "output/completion/windows-mechanism-original-attempt01/preflight.py"
+    ],
+    "receipt_sha256": "3a9f04d416990cdd8b3692f44012492678df06b274cefa024374953817e42755",
+    "log_sha256": "4b6a965e1edb0ab1df8f0fe903513df39facb6aa701b7aec08ed270a3a0f301f"
+  },
+  {
+    "name": "prepare-original-inputs",
+    "exit_code": 0,
+    "elapsed_seconds": 0.1969923000142444,
+    "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/completion/mechanism_runner.py",
+      "prepare",
+      "--plan",
+      "benchmark/protocols/mechanism-windows-pilot-v1.json",
+      "--inputs",
+      "output/completion/windows-mechanism-original-attempt01/original-inputs"
+    ],
+    "receipt_sha256": "50374493e11dfaedb8c80a3e0277ffa914246ae5fff0ceff71f644a1e444ea8a",
+    "log_sha256": "56958bf57d5f6db4da2ad8faf967842db00db053a2370556375c75f835c0bd59"
+  }
+]

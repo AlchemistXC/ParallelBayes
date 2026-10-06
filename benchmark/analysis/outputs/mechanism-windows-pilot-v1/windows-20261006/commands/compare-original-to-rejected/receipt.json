@@ -1,0 +1,30 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "scripts/completion/compare_mechanism_inputs.py",
+    "--plan",
+    "benchmark/protocols/mechanism-windows-pilot-v1.json",
+    "--original",
+    "output/completion/windows-mechanism-original-attempt01/original-inputs",
+    "--rejected",
+    "C:/Users/chenh/.codex/worktrees/windows-completion-v2/ParallelBayes/output/completion/windows-round2-20261005/mechanism-rejected-inputs",
+    "--output",
+    "output/completion/windows-mechanism-original-attempt01/original-rejected-comparison.json"
+  ],
+  "cwd": "D:\\workspace\\ParallelBayes",
+  "batch": "D:\\workspace\\ParallelBayes\\output\\completion\\windows-mechanism-original-attempt01",
+  "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+  "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+  "started_utc": "2026-10-06T10:43:07.542388+00:00",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "D:\\workspace\\ParallelBayes\\r-package\\inst\\python"
+  },
+  "pid": 5088,
+  "exit_code": 0,
+  "elapsed_seconds": 0.8144896999874618,
+  "ended_utc": "2026-10-06T10:43:08.357941+00:00",
+  "log_sha256": "1b06fc11dffda892e7a33535c88b1f8caf9df4d124a5e9c151ec9d6e2c04203b"
+}

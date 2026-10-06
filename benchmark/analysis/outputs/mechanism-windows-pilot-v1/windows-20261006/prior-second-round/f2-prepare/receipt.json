@@ -1,0 +1,28 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "scripts/completion/mechanism_runner.py",
+    "prepare",
+    "--plan",
+    "benchmark/protocols/mechanism-windows-pilot-v1.json",
+    "--inputs",
+    "output/completion/windows-round2-20261005/mechanism-inputs"
+  ],
+  "cwd": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes",
+  "source_commit": "f5148ee39868a657809f400bf1755d083c744fc8",
+  "started_utc": "2026-10-05T11:16:54.987493+00:00",
+  "environment_overrides": {
+    "R_LIBS_USER": "D:/Tools/R-library-4.6",
+    "LC_ALL": "C",
+    "LANG": "C",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "C:\\Users\\chenh\\.codex\\worktrees\\windows-completion-v2\\ParallelBayes\\r-package\\inst\\python"
+  },
+  "pid": 18840,
+  "exit_code": 1,
+  "elapsed_seconds": 0.14131409999390598,
+  "ended_utc": "2026-10-05T11:16:55.128598+00:00",
+  "log_sha256": "4a6bfdd4da45585bf30dbaa62316b4eab9b375557be82fd37ae4e71e8a594af0"
+}

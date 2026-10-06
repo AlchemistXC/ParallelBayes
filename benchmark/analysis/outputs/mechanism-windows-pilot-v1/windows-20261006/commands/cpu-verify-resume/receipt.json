@@ -1,0 +1,29 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "scripts/completion/check_mechanism_resume.py",
+    "verify",
+    "--run",
+    "output/completion/windows-mechanism-original-attempt01/mechanism-cpu",
+    "--before",
+    "output/completion/windows-mechanism-original-attempt01/cpu-before-resume.json",
+    "--output",
+    "output/completion/windows-mechanism-original-attempt01/cpu-resume-verification.json"
+  ],
+  "cwd": "D:\\workspace\\ParallelBayes",
+  "batch": "D:\\workspace\\ParallelBayes\\output\\completion\\windows-mechanism-original-attempt01",
+  "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+  "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+  "started_utc": "2026-10-06T10:47:53.254188+00:00",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "D:\\workspace\\ParallelBayes\\r-package\\inst\\python"
+  },
+  "pid": 2172,
+  "exit_code": 0,
+  "elapsed_seconds": 0.9383826999983285,
+  "ended_utc": "2026-10-06T10:47:54.192954+00:00",
+  "log_sha256": "0e904c23736148fd0d3adc457ff45ad135580258704fa5dae99689d13e4ec2d9"
+}

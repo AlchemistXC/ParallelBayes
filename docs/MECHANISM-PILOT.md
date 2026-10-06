@@ -1,6 +1,6 @@
 # 时间并行机制 pilot 与双机执行边界
 
-2026-10-05｜F2开发性试验已冻结；第二轮在输入校验处停止，192工作流未执行。六份原始输入现已补传，按[续跑入口](../handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md)继续。原输入/协议不变；分析器现在必须传入`--inputs`，不按种子重建。
+2026-10-06｜使用六份原始冻结输入，原生Windows CPU/CUDA各36组、96工作流全部数值核验通过；终态恢复各新增组0、1360文件不变。完整计时、不利结果与证据边界见[实际回执](WINDOWS-MECHANISM-COMPLETION.md)。原输入/协议不变；分析器必须传入`--inputs`，不按种子重建。下文保留设计与历史Mac验证，正式推断仍未完成。
 
 本次冻结源码97e6835，新增协议mechanism-windows-pilot-v1。它不修改windows-native-v1或历史Mac结果，不是F3正式推断基准。所有192个工作流配置都保留，包括失败、减速和低接受率；2份实际随机输入只足以作开发性、描述性分析，不形成一般加速或稳定排序声明。
 
@@ -46,4 +46,4 @@ python scripts/completion/analyze_mechanism_pilot.py --plan benchmark/protocols/
 
 `run`完成网格不等于所有配置成功，应读取summary.json中的成功/失败数量。恢复时在原run命令末尾加`--resume`；不要删除状态文件来强制重跑。Windows协议在非Windows主机会被拒绝。原始主数组不放进Git，prepare按冻结哈希重建；汇总从实际输入、路径、接受事件及逐文件哈希生成。归档时包含原始主数组、全部尝试、环境、源码bundle、协议和汇总。
 
-下一步接收Windows回执，检查计时波动、操作吞吐与额外工作的关系，再决定F2需要的有限补充。F3的独立调参、预算/重复数设计、成熟基线和正式推断比较仍须另立协议；本pilot不替代它们。
+Windows实际回执现已完成；接收端可从新增草稿附件独立重建。quasi-DEER在本pilot两端所有24配置均较慢，Picard也保留所有减速/低接受配置；两份输入不建立稳定排序。F3正式推断与Windows运行/最大任务门槛仍须另行完成，本pilot不替代它们。
