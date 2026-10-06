@@ -4,6 +4,8 @@ Reads relocated paths derived from the complete frozen plan, never old absolute
 paths, a live registry, samplers, RNG reconstruction or Mac process groups.
 """
 import argparse
+import math
+import shutil
 import json
 import os
 from pathlib import Path
@@ -54,12 +56,29 @@ def verify_attempt(directory,attempt):
     return dict(outcome=record['outcome'],samples_eligible=False,measurement_available=False,invocation_seconds=None)
 
 
-def audit(bundle,output,rscript,r_library):
+def numeric_comparison(left,right,atol,rtol):
+    """Explicit receiver comparison; missing/constant diagnostics remain exact."""
+    differences=[]
+    def visit(a,b):
+        if isinstance(a,dict) and isinstance(b,dict):return a.keys()==b.keys() and all(visit(a[k],b[k]) for k in a)
+        if isinstance(a,list) and isinstance(b,list):return len(a)==len(b) and all(visit(x,y) for x,y in zip(a,b))
+        if type(a) in (float,int) and type(b) in (float,int):
+            if not math.isfinite(a) or not math.isfinite(b):return False
+            differences.append(abs(a-b));return math.isclose(a,b,abs_tol=atol,rel_tol=rtol)
+        return type(a) is type(b) and a==b
+    passed=visit(left,right)
+    return dict(exact=left==right,passed=passed,maximum_absolute_difference=max(differences,default=0),atol=atol,rtol=rtol)
+
+
+def audit(bundle,output,rscript,r_library,cross_platform=False):
     bundle=Path(bundle).resolve();output=Path(output).resolve()
     if output.exists() or output.is_relative_to(bundle) or bundle.is_relative_to(output):raise ValueError('Fresh separate analysis directory required')
     if json.loads((bundle/'EVIDENCE-MANIFEST.json').read_text())!=manifest(bundle):raise ValueError('Sealed evidence inventory differs')
     p=json.loads((bundle/'protocol.json').read_text());plan=BatchPlan(p)
     cp=json.loads((bundle/'cache-protocol.json').read_text());cacheplan=BatchPlan(cp)
+    marker=json.loads((bundle/'PARALLELBAYES-FROZEN.json').read_text())
+    if marker['protocols']!=[p['protocol_sha256'],cp['protocol_sha256']] or marker['source_commit']!=p['source_commit'] or marker['dependency_sha256']!=file_hash(bundle/'pip-freeze.txt'):
+        raise ValueError('Frozen source/protocol/full environment lock binding differs')
     if p['required_platform']!='win32' or len(list(plan.tasks()))!=27 or len(list(cacheplan.tasks()))!=24:
         raise ValueError('Wrong bounded Windows engineering grid')
     for name,row in p['inputs'].items():
@@ -72,6 +91,13 @@ def audit(bundle,output,rscript,r_library):
     # A frozen source copy is checked independently; no Windows APIs are imported.
     for name,h in p['source_files'].items():
         if file_hash(bundle/'source'/name)!=h:raise ValueError('Archived numerical/runtime source differs')
+    # References are read from verified archived bytes, not the checkout's
+    # mutable data catalog. Reader numerical helpers must match that identity.
+    for name,h in p['source_files'].items():
+        if name.startswith(('r-package/inst/python/','examples/')) and file_hash(ROOT/name)!=h:
+            raise ValueError('Compatible numerical reader source required: '+name)
+    import analyze_budget_pilot
+    analyze_budget_pilot.ROOT=bundle/'source'
     models,refs=references(p,None);output.mkdir()
     atomic_json(output/'reference-contract.json',refs)
     rows=[];cache_rows=[];ownership=[];diagnostics=[];costs=[];fits={};cache_records={}
@@ -94,6 +120,12 @@ def audit(bundle,output,rscript,r_library):
                 for attempt in entry['attempts']:
                     folder=bundle/phase/'tasks'/task['id']/attempt['id']
                     latest=verify_attempt(folder,attempt)
+                    if latest.get('artifact_kind',kind)!=kind:
+                        raise ValueError('Native artifact kind contradicts the planned task')
+                    if kind=='cache_measurement' and latest['samples_eligible']:
+                        raise ValueError('Cache measurement cannot become posterior samples')
+                    if bool(latest['measurement_available'])!=(attempt['outcome']=='measurement_available') or bool(latest['samples_eligible'])!=(attempt['outcome']=='valid'):
+                        raise ValueError('Native task outcome contradicts eligibility')
                     binding_sha=latest.get('binding_sha256',fingerprint(binding))
                     attempts.append(dict(attempt_id=attempt['id'],binding_sha256=binding_sha,outcome=attempt['outcome'],seconds=latest.get('invocation_seconds'),artifact_kind=kind))
                     timing=folder/'ordinary-process.json'
@@ -104,8 +136,12 @@ def audit(bundle,output,rscript,r_library):
                         if any(not x['member_of_owned_job'] for x in members.values()):raise ValueError('Non-member in owned process observation')
                         ownership.append(dict(task_id=task['id'],phase=phase,members=list(members.values()),
                             sampled_rss_peak=max((s['sampled_rss_bytes'] for s in samples),default=0),
-                            kernel_peak_job_commit=max((s['kernel_peak_job_commit_bytes'] for s in samples),default=0),
-                            completed_kernel_job_proof=latest.get('job_final'),quiescent_registry=True))
+                            raw_PeakJobMemoryUsed_bytes=max((s['kernel_peak_job_commit_bytes'] for s in samples),default=0),
+                            kernel_peak_counter_scope='Raw Windows PeakJobMemoryUsed. Bounded denial fixture shows this counter can exceed the allocation limit after a denied request; not a proven maximum of successfully committed memory. Frozen input field name preserved.',
+                            completed_kernel_job_proof=latest.get('job_final'),quiescent_registry=True,
+                            process_cpu_seconds=latest.get('job_final',{}).get('job_cpu_seconds'),
+                            process_cpu_scope='Kernel cumulative user+kernel CPU of owned processes; may exceed wall seconds with multiple threads/processes',
+                            RSS_is_not_VRAM=True,polling_peak_is_not_hard_RSS_limit=True))
                 reduced=summarize_attempts(attempts)
                 row.update(outcome=reduced['outcome'],samples_eligible=bool(latest and latest['samples_eligible']),measurement_available=bool(latest and latest['measurement_available']))
                 ledger=bundle/phase/'call-costs'/task['id']
@@ -118,6 +154,11 @@ def audit(bundle,output,rscript,r_library):
                 if cache and (cache/'MANIFEST.json').exists():
                     from cache_probe_execution import read_cached_probe
                     report=read_cached_probe(cache)
+                    for execution in report['observation']['records']:
+                        if execution is not None and execution['technical_output_valid']:
+                            d=execution['diagnostics']
+                            if not d['tensor_device'].startswith(task['device']) or d['tensor_dtype']!='torch.float64':
+                                raise ValueError('Actual cached device/precision contradicts the plan')
                     row['description']=cache_description(report,row['outcome'])
                     row['binding']=report['binding'];cache_records[task['id']]=report
                 else:row['description']=None
@@ -135,17 +176,50 @@ def audit(bundle,output,rscript,r_library):
                     tape={k:read_member(bundle/'inputs'/task['input'],k)[:,:total] for k in ('noise','log_uniform','directions')}
                     if meta['config']!=expected_config or meta['tape_sha256']!=tape_hash(tape) or not meta['audit']['passed'] or any(meta['audit']['acceptance_mismatches']):raise ValueError('Saved MH audit/config/actual tape conflicts')
                     row['acceptance_rate']=float(a[:,512:].mean());row['tape_sha256']=meta['tape_sha256'];del tape
+                    row['mechanism']=meta.get('diagnostics')
+                    if not row['mechanism']['tensor_device'].startswith(task['device']) or row['mechanism']['tensor_dtype']!='torch.float64':
+                        raise ValueError('Actual MH device/precision contradicts the plan')
+                    row['nested_sampler_timing']=meta.get('timing')
+                    row['cuda_memory']=json.loads((folder/'cuda-after.json').read_text()) if task['device']=='cuda' else None
                 else:
                     if len(meta['worker_records'])!=4 or len(set(meta['observed_worker_pids']))!=4:raise ValueError('Four actual NUTS spawn workers required')
                     seen={p['pid'] for o in ownership if o['task_id']==task['id'] for p in o['members']}
                     if not set(meta['observed_worker_pids'])<=seen:raise ValueError('NUTS workers not observed in the owned Windows job')
                     row['nuts_worker_pids']=meta['observed_worker_pids']
+                    master=bundle/'inputs'/task['input']
+                    if not np.array_equal(read_member(raw,'initial'),read_member(master,'initial')) or meta['chain_seeds']!=read_member(master,'nuts_seeds').tolist():
+                        raise ValueError('NUTS actual initial/seeds differ')
+                    warm=read_member(raw,'warmup_states');rng=read_member(raw,'initial_torch_rng_states')
+                    if warm.shape!=(4,1024,item['dimension']) or rng.shape[0]!=4 or not np.isfinite(warm).all():
+                        raise ValueError('NUTS warmup/random-state evidence missing')
+                    del warm,rng
+                fits[task['id']]=(task,raw)
+                saved_worker=json.loads((folder/'worker-result.json').read_text())
+                if saved_worker['diagnostics_status']=='function_failure':
+                    row.update(function_status='function_failure',function_error=json.loads((folder/'function-failure.json').read_text()))
+                    rows.append(row);del q,a;continue
                 destination=output/'tasks'/task['id']
                 extracted=extract_functions(raw,file_hash(raw),models[task['model']],q.shape,512 if task['kernel']!='nuts' else 0,destination)
                 old=folder/'diagnostics'
-                if file_hash(destination/'functions.bin')!=file_hash(old/'functions.bin'):raise ValueError('Original function transport did not rebuild exactly')
+                exact_binary=file_hash(destination/'functions.bin')==file_hash(old/'functions.bin')
+                original_values=np.fromfile(old/'functions.bin',dtype='<f8');rebuilt_values=np.fromfile(destination/'functions.bin',dtype='<f8')
+                if original_values.shape!=rebuilt_values.shape:raise ValueError('Function transport shape differs')
+                function_compare=dict(exact=exact_binary,passed=bool(np.allclose(original_values,rebuilt_values,atol=p['controls']['atol'],rtol=p['controls']['rtol'])),
+                    maximum_absolute_difference=float(np.max(np.abs(original_values-rebuilt_values))),atol=p['controls']['atol'],rtol=p['controls']['rtol'])
+                if not function_compare['passed'] or not cross_platform and not exact_binary:raise ValueError('Original function transport did not meet declared receiver comparison')
+                if cross_platform:
+                    # Preserve both the receiver computation and the archived
+                    # Windows binary. R diagnostics consume the latter, never
+                    # silently rewrite the underlying scientific arrays.
+                    (destination/'functions.bin').rename(destination/'functions.receiver.bin')
+                    shutil.copy2(old/'functions.bin',destination/'functions.bin')
+                    atomic_json(destination/'receiver-extraction-binding.json',dict(receiver_binary='functions.receiver.bin',
+                        receiver_sha256=extracted['input_sha256'],R_input='functions.bin',R_input_sha256=file_hash(destination/'functions.bin'),
+                        comparison=function_compare,scientific_original_unchanged=True))
+                del original_values,rebuilt_values
                 estimates=json.loads((old/'estimates.json').read_text())
-                if extracted['means']!=estimates['means'] or extracted['names']!=estimates['names']:raise ValueError('Original estimates differ')
+                means_compare=numeric_comparison(extracted['means'],estimates['means'],p['controls']['atol'],p['controls']['rtol'])
+                if extracted['names']!=estimates['names'] or not means_compare['passed'] or not cross_platform and not means_compare['exact']:raise ValueError('Original estimates differ')
                 atomic_json(destination/'transport.json',dict(fits=[dict(id=task['id'],input='functions.bin',shape=extracted['shape'],names=extracted['names'])],
                     scope='Read-only relocated Windows technical arrays',independent_unit='One existing four-chain technical input'))
                 env=dict(os.environ,R_LIBS_USER=str(r_library))
@@ -153,11 +227,14 @@ def audit(bundle,output,rscript,r_library):
                 (destination/'R.log').write_text(result.stdout+result.stderr)
                 if result.returncode:raise RuntimeError('R reconstruction failed')
                 post=json.loads((destination/'posterior.json').read_text());original=json.loads((old/'posterior.json').read_text())
-                if post['results']!=original['results']:raise ValueError('Same-host modern diagnostics changed')
+                diagnostic_compare=numeric_comparison(post['results'],original['results'],p['controls']['atol'],p['controls']['rtol'])
+                if not diagnostic_compare['passed'] or not cross_platform and not diagnostic_compare['exact']:raise ValueError('Modern diagnostics differ beyond declared receiver comparison')
                 diagnostics.extend([dict(task_id=task['id'],**v) for v in post['results'][task['id']]])
-                row.update(means=extracted['means'],names=extracted['names'],function_status='completed',binary_rebuilt_exact=True,diagnostics_rebuilt_exact=True)
+                row.update(means=extracted['means'],names=extracted['names'],function_status='completed',binary_rebuilt_exact=exact_binary,diagnostics_rebuilt_exact=diagnostic_compare['exact'],
+                    receiver_function_comparison=function_compare,receiver_estimate_comparison=means_compare,receiver_diagnostics_comparison=diagnostic_compare,
+                    receiver_R=post['R'],original_R=original['R'],receiver_posterior=post['posterior'],original_posterior=original['posterior'],
+                    R_input='Archived Windows function binary' if cross_platform else 'Exactly rebuilt function binary')
                 row['reference_discrepancy']=[summarize([v],dict(kind=k,value=m,mcse=e)) for v,k,m,e in zip(row['means'],refs[task['model']]['kinds'],refs[task['model']]['means'],refs[task['model']]['mcse'])]
-                fits[task['id']]=(task,raw)
                 del q,a
             rows.append(row)
     pairs=[]
@@ -181,8 +258,11 @@ def audit(bundle,output,rscript,r_library):
         cache_planned=24,cache_counts={o:sum(r['outcome']==o for r in cache_rows) for o in ('measurement_available','numerical_failure','resource_failure','output_failure_unclassified','infrastructure_interruption','not_run')},
         cached_calls=sum(sum(x is not None for x in r['observation']['records']) for r in cache_records.values()),
         sample_eligible_cache_tasks=sum(r['samples_eligible'] for r in cache_rows),pairs=pairs,
-        exact_function_rebuilds=sum(r['function_status']=='completed' for r in rows),diagnostic_function_rows=len(diagnostics),
-        formal_repetitions=0,intervals=None,source_protocol=p['protocol_sha256'],cache_protocol=cp['protocol_sha256'])
+        function_rebuilds_available=sum(r['function_status']=='completed' for r in rows),
+        exact_function_rebuilds=sum(bool(r.get('binary_rebuilt_exact')) for r in rows),diagnostic_function_rows=len(diagnostics),
+        formal_repetitions=0,intervals=None,source_protocol=p['protocol_sha256'],cache_protocol=cp['protocol_sha256'],
+        receiver_cross_platform_mode=cross_platform,analyzer_sha256=file_hash(__file__),
+        receiver_rules='Default exact reconstruction. Explicit cross-platform mode preserves both binaries and uses frozen output atol/rtol for function/diagnostic comparisons; MH path/acceptance rules unchanged.')
     for name,data in (('SUMMARY',summary),('main',rows),('cache',cache_rows),('ownership',ownership),('costs',costs),('diagnostics',diagnostics)):
         atomic_json(output/(name+'.json'),data)
     atomic_json(output/'SHA256.json',{p.relative_to(output).as_posix():file_hash(p) for p in output.rglob('*') if p.is_file()})
@@ -192,5 +272,5 @@ def audit(bundle,output,rscript,r_library):
 if __name__=='__main__':
     p=argparse.ArgumentParser();s=p.add_subparsers(dest='command',required=True)
     v=s.add_parser('seal');v.add_argument('--bundle',type=Path,required=True)
-    a=s.add_parser('audit');a.add_argument('--bundle',type=Path,required=True);a.add_argument('--output',type=Path,required=True);a.add_argument('--rscript',type=Path,required=True);a.add_argument('--r-library',type=Path,required=True)
+    a=s.add_parser('audit');a.add_argument('--bundle',type=Path,required=True);a.add_argument('--output',type=Path,required=True);a.add_argument('--rscript',type=Path,required=True);a.add_argument('--r-library',type=Path,required=True);a.add_argument('--cross-platform',action='store_true')
     args=vars(p.parse_args());command=args.pop('command');print(json.dumps((seal if command=='seal' else audit)(**args)))

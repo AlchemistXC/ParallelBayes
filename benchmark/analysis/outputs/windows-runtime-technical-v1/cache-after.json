@@ -1,0 +1,8 @@
+{
+  "terminal_attempts": 24,
+  "all_kernel_active_zero": true,
+  "passed": true,
+  "scope": "All task assets; invocation ledgers/progress/registry change separately",
+  "unchanged_files": 828,
+  "newly_executed": 0
+}

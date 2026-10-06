@@ -199,3 +199,44 @@ def test_portable_cost_policy_accepts_native_call_ledger(tmp_path):
     assert report['verification_only_invocations']==1
     assert report['phases']['ordinary_workflow']['complete_seconds'] is None
     assert report['phases']['research_execution']['complete_seconds']>0
+
+
+def test_cuda_manager_death_ends_owned_descendants_preserves_other_context(tmp_path):
+    import torch
+    other=torch.ones(2,device='cuda',dtype=torch.float64)
+    c=Coordinator(tmp_path/'lock');s=spec(tmp_path/'cuda-managed',mode='descendants',kind='cache_measurement')
+    s['request'].update(cuda_fixture=True,release=str(Path(s['output'])/'attempt-0001/fixture-release'))
+    invocation=tmp_path/'launch.json';atomic_json(invocation,dict(s,host_lock=str(c.lock)))
+    with (tmp_path/'manager.log').open('wb') as log:
+        manager=subprocess.Popen([sys.executable,str(WORKER),'manager',str(invocation)],stdout=log,stderr=log)
+        try:
+            record=await_file(tmp_path/'cuda-managed/manager.json')
+            grandchild=await_file(Path(s['output'])/'attempt-0001/grandchild.json')
+            assert grandchild['device']=='cuda:0' and grandchild['dtype']=='torch.float64'
+            job=await_file(Path(s['output'])/'attempt-0001/job.json')
+            before=observe_named_job(job['name'])
+            assert grandchild['pid'] in {p['pid'] for p in before['members']}
+            with pytest.raises(HostBusy):c.run(**spec(tmp_path/'posterior-competitor'))
+            stop_fixture_manager(record);manager.wait(timeout=20)
+            end=time.monotonic()+20
+            while observe_named_job(job['name'])['state']!='absent':
+                assert time.monotonic()<end;time.sleep(.03)
+            after=observe_named_job(job['name'])
+            assert float(other.sum())==2.0
+            atomic_json(tmp_path/'cuda-manager-death-proof.json',dict(before=before,after=after,manager=record,
+                grandchild=grandchild,unrelated_test_context_preserved=True,device_free_snapshot=torch.cuda.mem_get_info()[0],
+                whole_device_memory_attribution=False,statistical_repetitions_added=0))
+            c.snapshot(tmp_path/'quiescent.json')
+        finally:
+            if manager.poll() is None:
+                stop_fixture_manager(json.loads((tmp_path/'cuda-managed/manager.json').read_text()));manager.wait(timeout=20)
+
+
+@pytest.mark.parametrize('limit_mb,denied',[(64,True),(256,False)])
+def test_kernel_commit_limit_denies_small_owned_allocation(tmp_path,limit_mb,denied):
+    s=spec(tmp_path/'commit-limit',mode='commit-limit');s['limits']['job_commit_bytes']=limit_mb*1024**2
+    result=Coordinator(tmp_path/'lock').run(**s)
+    proof=json.loads((Path(s['output'])/'attempt-0001/commit-proof.json').read_text())
+    assert proof['allocation_denied'] is denied
+    assert result['outcome']==('resource_failure' if denied else 'valid') and result['job_final']['active_processes']==0
+    assert result['job_final']['hard_job_commit_limit_bytes']==limit_mb*1024**2

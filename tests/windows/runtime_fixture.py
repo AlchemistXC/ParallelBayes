@@ -20,7 +20,7 @@ def worker(request_path,output):
         atomic_json(output/'worker-result.json',dict(status='failed',artifact_kind='posterior',samples_eligible=False,measurement_available=False,failure_category='numerical_failure'))
         while True:time.sleep(.05)
     if mode=='descendants':
-        child=subprocess.Popen([sys.executable,str(Path(__file__)),'child',str(output)])
+        child=subprocess.Popen([sys.executable,str(Path(__file__)),'cuda-child' if request.get('cuda_fixture') else 'child',str(output)])
         atomic_json(output/'child-launch.json',dict(pid=child.pid))
         while not (output/'grandchild.json').exists():time.sleep(.02)
         while not (Path(request['release'])).exists():time.sleep(.03)
@@ -29,6 +29,14 @@ def worker(request_path,output):
         data=bytearray(128*1024**2);time.sleep(20)
     elif mode=='interrupted':
         sys.exit(17)
+    elif mode=='commit-limit':
+        try:data=bytearray(128*1024**2)
+        except MemoryError:
+            atomic_json(output/'commit-proof.json',dict(requested_bytes=128*1024**2,allocation_denied=True))
+            atomic_json(output/'worker-result.json',dict(status='failed',samples_eligible=False,measurement_available=False,
+                failure_category='resource_failure',artifact_kind='posterior'))
+            return
+        atomic_json(output/'commit-proof.json',dict(requested_bytes=len(data),allocation_denied=False))
     elif mode=='cuda':
         import torch
         x=torch.ones(128,device='cuda',dtype=torch.float64)
@@ -58,10 +66,17 @@ if __name__=='__main__':
         spec=json.loads(Path(sys.argv[2]).read_text())
         atomic_json(Path(spec['output']).parent/'manager.json',identity(os.getpid()))
         Coordinator(spec.pop('host_lock')).run(**spec)
-    elif mode=='child':
-        output=Path(sys.argv[2]);p=subprocess.Popen([sys.executable,str(Path(__file__)),'grandchild',str(output)])
+    elif mode in ('child','cuda-child'):
+        output=Path(sys.argv[2]);p=subprocess.Popen([sys.executable,str(Path(__file__)),'cuda-grandchild' if mode=='cuda-child' else 'grandchild',str(output)])
         p.wait()
-    elif mode=='grandchild':
-        output=Path(sys.argv[2]);atomic_json(output/'grandchild.json',identity(os.getpid()))
-        while not (output/'fixture-release').exists():time.sleep(.05)
+    elif mode in ('grandchild','cuda-grandchild'):
+        output=Path(sys.argv[2]);record=identity(os.getpid())
+        if mode=='cuda-grandchild':
+            import torch
+            tensor=torch.ones(128,device='cuda',dtype=torch.float64);torch.cuda.synchronize()
+            record.update(device=str(tensor.device),dtype=str(tensor.dtype),allocated=torch.cuda.memory_allocated())
+        atomic_json(output/'grandchild.json',record)
+        while not (output/'fixture-release').exists():
+            if mode=='cuda-grandchild':tensor.square().sum().item()
+            time.sleep(.05)
     else:worker(sys.argv[1],sys.argv[2])
