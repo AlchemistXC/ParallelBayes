@@ -1,0 +1,14 @@
+{
+  "parallelbayes-0.2.0.dev2-py3-none-any.whl": {
+    "bytes": 36680,
+    "sha256": "3d2c519c78f5584766f81be25e7c20c45e88b7c019f2e99c42ae6e4164491d56"
+  },
+  "parallelbayes-0.2.0.dev2.tar.gz": {
+    "bytes": 32943,
+    "sha256": "a492ba4b1d95639ec453c56d8d553b1b116265a9e26825d151ff9edd671472fd"
+  },
+  "parallelbayes_0.2.0.9002.tar.gz": {
+    "bytes": 29644,
+    "sha256": "53a2b3512681d29c65d8a6e22c589cebfdbf157c2234218602afbf60715c84ac"
+  }
+}

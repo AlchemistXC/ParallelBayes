@@ -258,3 +258,9 @@ R依赖47包重新安装，Matrix复用同版本R发行版二进制；强制源�
 基线737adc3；只读核对全部远端分支及Release/草稿附件，Windows最新已接收仍ced54ef，无后续F2/原生运行器/候选安装回执。当前Windows上未上传活动未知，没有实时执行句柄，不记为活进程等待。F1有限门槛已关闭；F2、F3原生运行与正式推断、F4正式案例、F5两平台/全结果重建及F6最终稿未关闭。
 
 同一外部缺失在最近三个目标轮次连续出现；独立Mac安装扩展和当前稿重建已完成后，剩余关键验收依赖Windows证据及其后正式研究。总目标进入受阻状态，不标完成，不重跑旧网格或第三次最大NUTS。恢复需要新的Windows提交及完整结果包；若尚未执行，按已有F2续跑→F3原生运行器→候选安装提示词继续。见docs/COMPLETION-GATE-AUDIT.md与completion-gate-audit-v1机器记录。新增采样/诊断/测试重跑0。
+
+## 原生 Windows 候选安装后继（2026-10-07）
+
+F2/F3 已在各自独立分支封存后，codex/windows-package-validation 从统一6f02f37开始，新短路径 venv 与 R 库安装真实 wheel/R源包。CLI3、CPU63、CUDA63通过；R显式4测试56断言通过；R CMD check最终OK，默认7跳过另列。CPU/CUDA各4短MH工作流与失败隔离、原对象只读重建通过，正式重复新增0。初次长路径安装、全局wheel缓存和R locale失败全部保留；数值模块未改。见docs/WINDOWS-PACKAGE-CANDIDATE.md及execution/package-candidate/WORK-PACKAGES.md。
+
+F2返回1cfc83d；F3返回b0582c3的27主任务、24测量/96调用已封存并上传原草稿。旧Mac缺回执记录是历史状态，接收合并仍需独立核验。F5本机安装门槛通过，完整两平台结果重建及F6/正式冻结仍未关闭；不启动41,472或9,216正式规划。

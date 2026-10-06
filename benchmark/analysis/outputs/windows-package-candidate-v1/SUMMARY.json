@@ -1,0 +1,631 @@
+{
+  "scope": "F5 native Windows installed candidate; no formal inference/performance conclusion",
+  "build_source_commit": "341234ed4341c4c77458a9b352016e1581e4c62e",
+  "python_version": "0.2.0.dev2",
+  "R_version": "0.2.0.9002",
+  "tests": {
+    "cli": {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "cpu": {
+      "tests": 63,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "cuda": {
+      "tests": 63,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "torch_warnings_each_device": 18,
+  "R_explicit_tests": 4,
+  "R_explicit_assertions": 56,
+  "R_explicit_failed": 0,
+  "R_explicit_skipped": 0,
+  "R_check_final": "OK",
+  "R_check_default_skipped": 7,
+  "retained_failures": [
+    "attempt01 WinError206 long worktree path",
+    "wheel build global cache WinError5",
+    "initial R CMD check inherited C.UTF-8 locale: 1 ERROR, 1 WARNING"
+  ],
+  "expected_negative_check": "Default JAX environment exit 1 with actionable message, no output file",
+  "ram_bytes_R": 33346146304,
+  "ram_bytes_Python": 33346146304,
+  "examples": {
+    "cpu": {
+      "completed": 4,
+      "failed": 0,
+      "posterior_shape": [
+        64,
+        4,
+        2
+      ],
+      "same_kernel_pairs": 2,
+      "acceptance_mismatches": 0
+    },
+    "cuda": {
+      "completed": 4,
+      "failed": 0,
+      "posterior_shape": [
+        64,
+        4,
+        2
+      ],
+      "same_kernel_pairs": 2,
+      "acceptance_mismatches": 0
+    }
+  },
+  "CUDA_failed_trajectory_isolated": true,
+  "validation_evidence_historical_version": "0.2.0.dev1",
+  "numeric_modules_unchanged_from_52fdfd0": 15,
+  "modules_source_wheel_installed_R_identical": 17,
+  "source_kernel_changes": 0,
+  "formal_repeats_added": 0,
+  "private_skills_available": false,
+  "not_validated": [
+    "Windows JAX/Stan candidate installation",
+    "CUDA NUTS",
+    "external organization clean installation",
+    "formal posterior convergence/performance",
+    "formal research grid and full two-platform result rebuild"
+  ],
+  "commands": {
+    "build-R-source": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307345176171100,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 0.34375,
+        "job_name": "Local\\ParallelBayes-4cd2157af5964c9e87e99f023e54eda7",
+        "kernel_peak_job_commit_bytes": 222707712,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 7
+      },
+      "logs": {
+        "stderr.log": "5af4b9936c59644350030268cb496f0fd262da8ddf408382fd2b189b2ecaafc8",
+        "stdout.log": "c473f802ebd53b02bfb19f641da18c5c5f341c2655f78674daed5f542548dea9"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 0.7107899000111502,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "build-sdist": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307293143416700,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 0.21875,
+        "job_name": "Local\\ParallelBayes-c90e7716adb347a6a18fcd5c4593834e",
+        "kernel_peak_job_commit_bytes": 27631616,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 3
+      },
+      "logs": {
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "14f53aeb51d30a1f6adbdc884bdb8ac7a92b52125b242cb7a6598996f10436bf"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 0.46383250001235865,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "build-wheel-from-sdist": {
+      "error": null,
+      "exit_code": 1,
+      "finished_ns": 1791307294017835000,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 0.546875,
+        "job_name": "Local\\ParallelBayes-74917c262e5448a8b5dd95c6465820c8",
+        "kernel_peak_job_commit_bytes": 66957312,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 6
+      },
+      "logs": {
+        "stderr.log": "a441c260ab1dd24b78e154f4b4896f32eb66761a952e7afec02f616b65959669",
+        "stdout.log": "1699c439b3effcf2eb04ceee0a071d4098257c10fcbc2a8501156335882ccafd"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 0.6829744999995455,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "build-wheel-from-sdist-02": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307343558675800,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 0.796875,
+        "job_name": "Local\\ParallelBayes-5960fa5a6c2e42749607cadbf6dfbeae",
+        "kernel_peak_job_commit_bytes": 67284992,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 8
+      },
+      "logs": {
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "58547eafbe8f1e57a5b06d6a1b51c4bd551d12de38d33876eeae3b67038793db"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 1.108050100010587,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "explicit-R-tests": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307671666990000,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 7.21875,
+        "job_name": "Local\\ParallelBayes-c75d05f1b1fe45d3a7fdf7f843a73ba2",
+        "kernel_peak_job_commit_bytes": 2421850112,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 8
+      },
+      "logs": {
+        "stderr.log": "b3aad99a991f98252f3a0842635009f1fbec82b901a63d11a0168dadc69467cb",
+        "stdout.log": "5db888ddc26c848e2d38fd7a8c62e0ebb79af73b57ebf577569be136060857a7"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 8.811524100019597,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "install-python-dependencies": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307173970283600,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 32.765625,
+        "job_name": "Local\\ParallelBayes-4c7869c25d844eb29e59fb389e1339cb",
+        "kernel_peak_job_commit_bytes": 196100096,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 3
+      },
+      "logs": {
+        "stderr.log": "827d2c35d18cf62cf9dabe67c884f8557a3a5b51759c79249e10526e848c680a",
+        "stdout.log": "8b6b029028ecc6b70b570ea5eab17165388b026e0864e13d064967b0dcbb5c44"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 70.80462060001446,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "install-R-dependencies": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307225220044300,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 1.765625,
+        "job_name": "Local\\ParallelBayes-06985cad1607403ca4c683389279a1cf",
+        "kernel_peak_job_commit_bytes": 241315840,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 4
+      },
+      "logs": {
+        "stderr.log": "ff2ce8f9a58de26a12c49332a48fc49805336bf221cf7c15504db9363c203a45",
+        "stdout.log": "05283c3b91cf484dae4a8a242f7bbf0757d0b5e09701ec72e019d6ee702d803e"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 4.572243500006152,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "install-R-source": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307346634720200,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 0.703125,
+        "job_name": "Local\\ParallelBayes-5b0415a96b394e3db935c73dc131e298",
+        "kernel_peak_job_commit_bytes": 238727168,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 10
+      },
+      "logs": {
+        "stderr.log": "d5fe3d33885e2067a98c0c4a8ffefbf008b7a996c08cd62f5c7bf0bf28a3bd77",
+        "stdout.log": "f29e1dc36fa57f2b8f3dc739b4fb0202b209b81ec611742aa3b78d9b9c9403ac"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 1.3397800000093412,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "install-wheel": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307344347852000,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 0.359375,
+        "job_name": "Local\\ParallelBayes-84163a288f8f42b280e3cd6d80f094b0",
+        "kernel_peak_job_commit_bytes": 43900928,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 4
+      },
+      "logs": {
+        "stderr.log": "827d2c35d18cf62cf9dabe67c884f8557a3a5b51759c79249e10526e848c680a",
+        "stdout.log": "53346c4393899bca130055e960ac6af5b5c983150e2d2e07229870d3bd914f0d"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 0.6741129999863915,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "installed-cli-tests": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307424510876400,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 1.578125,
+        "job_name": "Local\\ParallelBayes-82700881d28a401fa744ccf46037218a",
+        "kernel_peak_job_commit_bytes": 2000166912,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 12
+      },
+      "logs": {
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "7f8260ef5c9e587d097dada77d0e7e10790c6a6622699090a5994964e7a732d6"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 1.7902280999987852,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "installed-CPU-tests": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307447536717800,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 16.671875,
+        "job_name": "Local\\ParallelBayes-fbf8979afdd241a5b333f3463d1f5985",
+        "kernel_peak_job_commit_bytes": 3009953792,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 7
+      },
+      "logs": {
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "23d4172fcc5d5081d30713645bee674afc191bec34b93a265d9eb6e6ed4a92d8"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 4.707020700006979,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "installed-CUDA-tests": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307455071609800,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 27.046875,
+        "job_name": "Local\\ParallelBayes-aeff4ca76f5b4809be53d203be442616",
+        "kernel_peak_job_commit_bytes": 3619258368,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 7
+      },
+      "logs": {
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "947064af6f93ae8044026c1e9204804683e336559f207013f1a3945724faddb6"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 7.412538099975791,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "installed-default-JAX-refusal": {
+      "error": null,
+      "exit_code": 2,
+      "finished_ns": 1791307422604736600,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 0.0625,
+        "job_name": "Local\\ParallelBayes-9c279b03048a42ccb8827bd6f05681ea",
+        "kernel_peak_job_commit_bytes": 10428416,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 3
+      },
+      "logs": {
+        "stderr.log": "fc5c8aee3a1a60f2754bc282e6fd21af5d109fc7e362c068f51c257272e73033",
+        "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 0.25407880000420846,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "installed-environment": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307420613507800,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 1.34375,
+        "job_name": "Local\\ParallelBayes-7cf4af69af0a404bac5bdcf08ce1bf1a",
+        "kernel_peak_job_commit_bytes": 1971806208,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 5
+      },
+      "logs": {
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 5.062100199982524,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "installed-help": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307415441726700,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 0.046875,
+        "job_name": "Local\\ParallelBayes-02bbf91e37ed4d528866eefd171dc283",
+        "kernel_peak_job_commit_bytes": 10137600,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 3
+      },
+      "logs": {
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "6c4824a5364b404dce00452d3f1ee82fefa21d63a944ac408904bda02f830b0b"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 0.2534759000118356,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "installed-provenance": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307422238557100,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 1.3125,
+        "job_name": "Local\\ParallelBayes-f11d609438194939b19c14e163d003ae",
+        "kernel_peak_job_commit_bytes": 1972686848,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 5
+      },
+      "logs": {
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 1.514422399981413,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "installed-R-example-CPU": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307713989096900,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 3.625,
+        "job_name": "Local\\ParallelBayes-95c8d7c4e5304da69866287bca4f7e48",
+        "kernel_peak_job_commit_bytes": 2407796736,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 8
+      },
+      "logs": {
+        "stderr.log": "b3aad99a991f98252f3a0842635009f1fbec82b901a63d11a0168dadc69467cb",
+        "stdout.log": "2671eab0c85484ab48fa400e50466af3f5a71b8b13522fd00e2f936db6a6016d"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 3.2271171000029426,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "installed-R-example-CUDA": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307717991666800,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 5.390625,
+        "job_name": "Local\\ParallelBayes-1c28efbf0e1f48bebc7b9ca78588c0d2",
+        "kernel_peak_job_commit_bytes": 3654094848,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 8
+      },
+      "logs": {
+        "stderr.log": "b3aad99a991f98252f3a0842635009f1fbec82b901a63d11a0168dadc69467cb",
+        "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 3.901867600012338,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "R-CMD-check": {
+      "error": null,
+      "exit_code": 1,
+      "finished_ns": 1791307654672744900,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 1.046875,
+        "job_name": "Local\\ParallelBayes-a78201252b9544e9a89f3ba47e9015fa",
+        "kernel_peak_job_commit_bytes": 362409984,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 16
+      },
+      "logs": {
+        "stderr.log": "6d181d54f69111e45a52f7e22476d32a132cc90f51916abd46291a29325d3f2c",
+        "stdout.log": "36e27ea727282c08994fb75579d6081ab0a37dfcb92bf3ddf17c3c2fa70f2fd3"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 2.4703835000109393,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "R-CMD-check-locale-C": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307700111233100,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 4.265625,
+        "job_name": "Local\\ParallelBayes-a5823db4e92946f285512730b25461ad",
+        "kernel_peak_job_commit_bytes": 388599808,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 55
+      },
+      "logs": {
+        "stderr.log": "c73cfd485acae4501d56b472cb62d79d99dc75581d5112289c7138d3849657a8",
+        "stdout.log": "fe715b99bafe40b935f02c8186f6c61643c31fc38c92244efecdad5dd1481175"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 6.918398900015745,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "read-R-objects-cpu": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307809539789000,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 0.34375,
+        "job_name": "Local\\ParallelBayes-848762d8b94b4004a881f8ff872470e1",
+        "kernel_peak_job_commit_bytes": 161058816,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 4
+      },
+      "logs": {
+        "stderr.log": "ec72a9bccd9ee3cab8018a6a539b2e2f0471ec1768ce3d8be8ba40e2095edc42",
+        "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 0.4680322000058368,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    },
+    "read-R-objects-cuda": {
+      "error": null,
+      "exit_code": 0,
+      "finished_ns": 1791307810103815700,
+      "job_final": {
+        "active_processes": 0,
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+        "hard_job_commit_limit_bytes": 12884901888,
+        "job_cpu_seconds": 0.328125,
+        "job_name": "Local\\ParallelBayes-17d2fe1560f7440aa36fde64da3370f4",
+        "kernel_peak_job_commit_bytes": 160370688,
+        "members": [],
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "sampled_rss_bytes": 0,
+        "total_processes": 4
+      },
+      "logs": {
+        "stderr.log": "ec72a9bccd9ee3cab8018a6a539b2e2f0471ec1768ce3d8be8ba40e2095edc42",
+        "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "measurement_available": false,
+      "samples_eligible": false,
+      "seconds": 0.46467509999638423,
+      "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7"
+    }
+  }
+}
