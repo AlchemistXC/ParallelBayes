@@ -1,5 +1,7 @@
 # Windows 后续：使用原始冻结输入完成 F2 机制 pilot
 
+> 状态更新（2026-10-07）：本提示词已执行并完成独立接收，保留作历史复现说明。不要再次提交给Windows Codex启动相同任务。当前证据与下一阶段见[接收报告](../../docs/WINDOWS-FOLLOWUP-INTAKE.md)。
+
 请继续 ParallelBayes。第二轮 `ced54ef` 已由 Mac 接收；F1、水井、九目标 NUTS 与 CPU/CUDA MH 就绪核验无需重跑。本次只完成尚未执行的 F2：原生 Windows CPU/CUDA 共192个工作流。不要启动尚未冻结的正式推断网格。
 
 先读取 `docs/WINDOWS-ROUND2-INTAKE.md`、`docs/MECHANISM-PILOT.md`、`handoff/windows-completion/CODEX-PROMPT-F2-F4.md` 与 AGENTS.md。本文件更新 F2 的输入传递和分析命令；其余科学约定不变。

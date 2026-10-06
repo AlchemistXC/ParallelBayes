@@ -1,0 +1,119 @@
+{
+  "mechanism": {
+    "cpu-workflows": {
+      "rows": 96,
+      "all_fields_equal": true,
+      "bytes_equal": true,
+      "old_sha256": "04d86adde990daa6809994ed97b0cbd3fb81a940771a5f0e6a54101b02134c7f",
+      "new_sha256": "04d86adde990daa6809994ed97b0cbd3fb81a940771a5f0e6a54101b02134c7f"
+    },
+    "cpu-probes": {
+      "rows": 576,
+      "all_fields_equal": true,
+      "bytes_equal": true,
+      "old_sha256": "5240979e1635094327b28df1f1541fa8d8154f370670238852c2769ca1fe759e",
+      "new_sha256": "5240979e1635094327b28df1f1541fa8d8154f370670238852c2769ca1fe759e"
+    },
+    "cpu-mala": {
+      "pairs": 24,
+      "minimum": 0.09240008430672272,
+      "maximum": 0.3217614695100865,
+      "over_one": 0
+    },
+    "cpu-rwm": {
+      "pairs": 36,
+      "minimum": 0.6120288826782753,
+      "maximum": 3.574277974957067,
+      "over_one": 20
+    },
+    "cpu-zero_acceptance_workflows": 6,
+    "cuda-workflows": {
+      "rows": 96,
+      "all_fields_equal": true,
+      "bytes_equal": true,
+      "old_sha256": "9e2fd3b87f61bbb453aac19b038c42bbe11710d5d2ff455239b5ffafe48c4b8b",
+      "new_sha256": "9e2fd3b87f61bbb453aac19b038c42bbe11710d5d2ff455239b5ffafe48c4b8b"
+    },
+    "cuda-probes": {
+      "rows": 576,
+      "all_fields_equal": true,
+      "bytes_equal": true,
+      "old_sha256": "9506a68079a7889283a7c9bd1f0a1e0cb0985da4c2b974dab7ddd45d1e3165b3",
+      "new_sha256": "9506a68079a7889283a7c9bd1f0a1e0cb0985da4c2b974dab7ddd45d1e3165b3"
+    },
+    "cuda-mala": {
+      "pairs": 24,
+      "minimum": 0.13858458708939334,
+      "maximum": 0.4368010329996476,
+      "over_one": 0
+    },
+    "cuda-rwm": {
+      "pairs": 36,
+      "minimum": 0.7775700982000586,
+      "maximum": 4.804674234734146,
+      "over_one": 32
+    },
+    "cuda-zero_acceptance_workflows": 6
+  },
+  "runtime": {
+    "function_binary_exact": 18,
+    "functions": 27,
+    "function_max_difference": 1.1102230246251565e-16,
+    "means_max_difference": 0.0,
+    "diagnostics_max_difference": 1.000444171950221e-10,
+    "diagnostic_rows": 90,
+    "rhat_over_1_01": 59,
+    "rhat_null": 0,
+    "tail_ess_null": 27
+  },
+  "package_R_cpu": {
+    "max_abs_difference": 9.947598300641403e-14,
+    "numerical_values": 134,
+    "atol": 1e-10,
+    "rtol": 1e-10
+  },
+  "package_R_cuda": {
+    "max_abs_difference": 9.947598300641403e-14,
+    "numerical_values": 134,
+    "atol": 1e-10,
+    "rtol": 1e-10
+  },
+  "tests": {
+    "package-cli": {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "package-cpu": {
+      "tests": 63,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "package-cuda": {
+      "tests": 63,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "runtime-behavior": {
+      "tests": 17,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "runtime-kernel-controls": {
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "limitations": [
+    "Original test results are inspected artifacts, not tests rerun on Windows by the receiver.",
+    "All performance numbers retain original Windows clocks; receiver wall time is not sampler timing.",
+    "R diagnostic tolerance is explicit companion comparison, not bitwise identity or evidence of convergence.",
+    "These technical records add no formal independent inference repetitions."
+  ]
+}

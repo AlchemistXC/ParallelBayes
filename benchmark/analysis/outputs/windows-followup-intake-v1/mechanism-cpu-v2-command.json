@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/sources/mechanism-reader-v2/scripts/completion/analyze_mechanism_pilot.py",
+    "--plan",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/sources/mechanism-reader-v2/benchmark/protocols/mechanism-windows-pilot-v1.json",
+    "--run",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/received/mechanism/output/completion/windows-mechanism-original-attempt01/mechanism-cpu",
+    "--inputs",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/received/mechanism/output/completion/windows-mechanism-original-attempt01/original-inputs",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/reconstruction/mechanism-cpu-v2"
+  ],
+  "exit_code": 0,
+  "receiver_seconds": 1.1101321250025649,
+  "source_base": "1cfc83d9f979b0b58e830affc67ac22e277acc7d",
+  "reader_sha256": "de8f48314945c6482a2efd0bf038b476d1afbedc3fe759a2c93a5bc56bef221d",
+  "frozen_numerical_source_changed": false
+}

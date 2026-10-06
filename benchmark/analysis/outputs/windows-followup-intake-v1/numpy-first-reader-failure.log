@@ -1,0 +1,17 @@
+Replayed mechanism cpu
+Replayed mechanism cuda
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv-inference/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+Replayed runtime main
+Traceback (most recent call last):
+  File "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/replay_received_paths.py", line 171, in <module>
+    a=p.parse_args();run(a.evidence_root.resolve(),a.source_root.resolve(),a.output.resolve())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/replay_received_paths.py", line 137, in run
+    assert len(paths)==4
+           ^^^^^^^^^^^^^
+AssertionError

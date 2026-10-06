@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-07",
+  "receiver": "Mac M4; Python3.12.14 NumPy2.2.6 SciPy1.15.3; R4.6.0 posterior1.7.0",
+  "source_heads": {
+    "mechanism": "1cfc83d9f979b0b58e830affc67ac22e277acc7d",
+    "runtime": "b0582c33a5ea855c384acc9b15da908dea2999b6",
+    "package": "0e44c2d5f2d5923f3c4ffa1c0700a18aca88b75b"
+  },
+  "integration_merge": "d7bfcdd",
+  "reader_fix": "3320817",
+  "raw_after": "raw-after.json",
+  "scientific_replay": "numpy-summary.json",
+  "tables_and_package": "comparison-summary.json",
+  "changed_numerical_sources": false,
+  "formal_repetitions": 0,
+  "reader_fixture_sampler_calls": 6,
+  "warnings_retained": [
+    "NumPy slogdet",
+    "torch.jit.script_method deprecation"
+  ],
+  "portable_reader": "scripts/completion/replay_windows_followup.py",
+  "portable_reader_sha256": "373b30b914cb12d1083a81ec3bfa1771d20b3f3c4e77bb1b9281bcd4f2ba7a04",
+  "firstparty_figure_visually_inspected": "figures/windows-mechanism-pilot-v1/work-and-cached-cost.png"
+}

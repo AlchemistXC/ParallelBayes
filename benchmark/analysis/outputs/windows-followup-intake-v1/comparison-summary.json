@@ -1,0 +1,154 @@
+{
+  "mechanism": {
+    "cpu-workflows": {
+      "rows": 96,
+      "all_fields_equal": true,
+      "bytes_equal": true,
+      "old_sha256": "04d86adde990daa6809994ed97b0cbd3fb81a940771a5f0e6a54101b02134c7f",
+      "new_sha256": "04d86adde990daa6809994ed97b0cbd3fb81a940771a5f0e6a54101b02134c7f"
+    },
+    "cpu-probes": {
+      "rows": 576,
+      "all_fields_equal": true,
+      "bytes_equal": true,
+      "old_sha256": "5240979e1635094327b28df1f1541fa8d8154f370670238852c2769ca1fe759e",
+      "new_sha256": "5240979e1635094327b28df1f1541fa8d8154f370670238852c2769ca1fe759e"
+    },
+    "cpu-mala": {
+      "pairs": 24,
+      "minimum": 0.09240008430672272,
+      "maximum": 0.3217614695100865,
+      "over_one": 0
+    },
+    "cpu-rwm": {
+      "pairs": 36,
+      "minimum": 0.6120288826782753,
+      "maximum": 3.574277974957067,
+      "over_one": 20
+    },
+    "cpu-zero_acceptance_workflows": 6,
+    "cuda-workflows": {
+      "rows": 96,
+      "all_fields_equal": true,
+      "bytes_equal": true,
+      "old_sha256": "9e2fd3b87f61bbb453aac19b038c42bbe11710d5d2ff455239b5ffafe48c4b8b",
+      "new_sha256": "9e2fd3b87f61bbb453aac19b038c42bbe11710d5d2ff455239b5ffafe48c4b8b"
+    },
+    "cuda-probes": {
+      "rows": 576,
+      "all_fields_equal": true,
+      "bytes_equal": true,
+      "old_sha256": "9506a68079a7889283a7c9bd1f0a1e0cb0985da4c2b974dab7ddd45d1e3165b3",
+      "new_sha256": "9506a68079a7889283a7c9bd1f0a1e0cb0985da4c2b974dab7ddd45d1e3165b3"
+    },
+    "cuda-mala": {
+      "pairs": 24,
+      "minimum": 0.13858458708939334,
+      "maximum": 0.4368010329996476,
+      "over_one": 0
+    },
+    "cuda-rwm": {
+      "pairs": 36,
+      "minimum": 0.7775700982000586,
+      "maximum": 4.804674234734146,
+      "over_one": 32
+    },
+    "cuda-zero_acceptance_workflows": 6
+  },
+  "runtime": {
+    "function_binary_exact": 18,
+    "functions": 27,
+    "function_max_difference": 1.1102230246251565e-16,
+    "means_max_difference": 0.0,
+    "diagnostics_max_difference": 1.000444171950221e-10,
+    "diagnostic_rows": 90,
+    "rhat_over_1_01": 59,
+    "rhat_null": 0,
+    "tail_ess_null": 27
+  },
+  "package_R_cpu": {
+    "max_abs_difference": 9.947598300641403e-14,
+    "numerical_values": 134,
+    "atol": 1e-10,
+    "rtol": 1e-10
+  },
+  "package_R_cuda": {
+    "max_abs_difference": 9.947598300641403e-14,
+    "numerical_values": 134,
+    "atol": 1e-10,
+    "rtol": 1e-10
+  },
+  "tests": {
+    "package-cli": {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "package-cpu": {
+      "tests": 63,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "package-cuda": {
+      "tests": 63,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "runtime-behavior": {
+      "tests": 17,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "runtime-kernel-controls": {
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "package_modules": {
+    "modules": 17,
+    "source_wheel_sdist_R_identical": true,
+    "installed_modules_directly_available": false,
+    "installed_identity_evidence": "Archived version-bridge and noneditable installation provenance",
+    "versions": {
+      "modules": {
+        "parallelbayes/cli.py": "d653469e962d7f09c78b4d37b5d2eaee75d3e617868be0465dd49fbb400d1605",
+        "parallelbayes/executors.py": "aaa7f2cd8f42fd3a854a0251e37f420c5b69f42192feef03f21f5c563f8b0d40",
+        "parallelbayes/experiment.py": "575be4a6ff786c69533e084c53c1838026784a51a514758fb0fc1237cef02003",
+        "parallelbayes/kernels.py": "69461150e93d261079a1a28dcb0d9b3a7e499553bd86d09642c7b2a7988beae2",
+        "parallelbayes/models.py": "dd3fa67d962c8e3ffcb2ff38585eae6b69d887a3439e4db39a76195674615613",
+        "parallelbayes/nuts.py": "425258c803b74381220e04d4acb58011a7480f61d082f080ead5ce47ac3524f3",
+        "parallelbayes/output.py": "201b016e957137f40d1a350f4b4344be2090327b60d8fa5727ccc4370c7dc645",
+        "parallelbayes/reference.py": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1",
+        "parallelbayes/sampling.py": "db7d7e751dc53f98a5e4c43ee50a23f83ede763ce54909ceeb71bfd6a932b5ad",
+        "parallelbayes/stan.py": "297c3e6d572a2eea86222b39c3572dc7efecc84d669624940c005ae1578c7e3b",
+        "parallelbayes/__init__.py": "7c54c6b83f3f39fdb0578b6e8fa32a040c6c335a8df3cc6d6fd7d769e710f5e9",
+        "parallelbayes/torch_backend/executors.py": "90fbe42ab3f878dfbd4575fac9db9f3103ac1817b907224a47fa2d0650bf3e4f",
+        "parallelbayes/torch_backend/kernels.py": "c457d39ff2e8def2005c1a4c594664b6d4b826688e9008422eebcefc457e59e6",
+        "parallelbayes/torch_backend/models.py": "895677cf1c3f6577b3594637821712cda949f21ebe83233e9feb1fff1913c41b",
+        "parallelbayes/torch_backend/nuts_baseline.py": "984c1f7a94745c5b85be01d8deee89277d8d2337ee5375693802877feed9ef89",
+        "parallelbayes/torch_backend/sampling.py": "907ac8bcfebe9136db33f8b0fe8fa6e6c39d1481c8c2c2225163ccddd7e2fdba",
+        "parallelbayes/torch_backend/__init__.py": "45d1a5e10721e3b7b4d0136dcba8a9c7718de5031aec9a012bafc25c2d1d5b8a"
+      },
+      "total": 17,
+      "unchanged_numerical": 15,
+      "changed": [
+        "parallelbayes/cli.py",
+        "parallelbayes/__init__.py"
+      ],
+      "wheel_R_and_installed_identical": true,
+      "original_validation_evidence_version_preserved": "0.2.0.dev1"
+    }
+  },
+  "limitations": [
+    "Original test results are inspected artifacts, not tests rerun on Windows by the receiver.",
+    "All performance numbers retain original Windows clocks; receiver wall time is not sampler timing.",
+    "R diagnostic tolerance is explicit companion comparison, not bitwise identity or evidence of convergence.",
+    "These technical records add no formal independent inference repetitions."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "scope": "Deterministic replay of archived actual arrays; no new inference repetitions or device timing",
+  "groups": {
+    "mechanism": {
+      "records": 960,
+      "failed": 0,
+      "acceptance_mismatches": 0,
+      "maximum_path_error": 3.844273788189412e-10,
+      "maximum_error_over_frozen_limit": 0.010136676005782263
+    },
+    "runtime/main": {
+      "records": 24,
+      "failed": 0,
+      "acceptance_mismatches": 0,
+      "maximum_path_error": 3.608271459398793e-10,
+      "maximum_error_over_frozen_limit": 0.006175340726395284
+    },
+    "runtime/cache": {
+      "records": 96,
+      "failed": 0,
+      "acceptance_mismatches": 0,
+      "maximum_path_error": 3.608271459398793e-10,
+      "maximum_error_over_frozen_limit": 0.006175340726395284
+    }
+  },
+  "total_records": 1080,
+  "unique_reference_calculations": 42,
+  "imported_sampler_backends": false,
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "numpy": "2.2.6",
+  "reference_sha256": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1",
+  "affine_sha256": "d8e9acf8b048ee53a39c4b7479132fc378307ee4a899d7aa3732c4b39d4a63b3",
+  "reader_sha256": "373b30b914cb12d1083a81ec3bfa1771d20b3f3c4e77bb1b9281bcd4f2ba7a04",
+  "frozen_rule": "zero accept mismatches and max_abs_error(chain) <= 100*(atol+rtol*max(1,maxabs(saved_chain)))",
+  "saved_transforms_reported_separately": true
+}

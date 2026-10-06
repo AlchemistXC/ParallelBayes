@@ -1,0 +1,3572 @@
+[
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\e93823d95615238c2f84baf4",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13652970001567155,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13652970001567155,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 9.168798900034744,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 9.168798900034744,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 7.080772299988894,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 7.080772299988894,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 9.032269200019073,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 9.032269200019073,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "spawn_chains",
+      "id": "e93823d95615238c2f84baf4",
+      "input": "G1-rep0000.npz",
+      "kernel": "nuts",
+      "model": "G1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-nuts-spawn_chains"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\37d37511c3f71d7a05bec194",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.16466439998475835,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.16466439998475835,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 9.05137279999326,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 9.05137279999326,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 5.1843839999928605,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 5.1843839999928605,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 8.886708400008501,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 8.886708400008501,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "37d37511c3f71d7a05bec194",
+      "input": "G2-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G2",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\2241a608d34204c6af19d0d5",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.1319952999765519,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.1319952999765519,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.414078199974028,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.414078199974028,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.3529639999906067,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 2.3529639999906067,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.2820828999974765,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 4.2820828999974765,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "2241a608d34204c6af19d0d5",
+      "input": "L1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "L1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\81efa591e3dc6c241d1631ee",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13040719999116845,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13040719999116845,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 5.735319400002481,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 5.735319400002481,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.529632699996,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 3.529632699996,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 5.604912200011313,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 5.604912200011313,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "81efa591e3dc6c241d1631ee",
+      "input": "G1-rep0000.npz",
+      "kernel": "mala",
+      "model": "G1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\703ca20edf946b4c9f7718b8",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.17249460000311956,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.17249460000311956,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 30.341276199993445,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 30.341276199993445,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 24.8618923999893,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 24.8618923999893,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 30.168781599990325,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 30.168781599990325,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "703ca20edf946b4c9f7718b8",
+      "input": "G2-rep0000.npz",
+      "kernel": "mala",
+      "model": "G2",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\954d7a81986bdeda160774fc",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13095039999461733,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13095039999461733,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.675244799989741,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.675244799989741,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.690268299978925,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 2.690268299978925,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.544294399995124,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 4.544294399995124,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "954d7a81986bdeda160774fc",
+      "input": "G1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\8e2fc63b74df2a200cc0c32c",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.1294562999974005,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.1294562999974005,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.157560699997703,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.157560699997703,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.1176812000048812,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 2.1176812000048812,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.028104400000302,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 4.028104400000302,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "8e2fc63b74df2a200cc0c32c",
+      "input": "G1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\86f4393e0bae3e54d1e0d4b5",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13073720000102185,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13073720000102185,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.587581100000534,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.587581100000534,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.584178300021449,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 2.584178300021449,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.456843899999512,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 4.456843899999512,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "online_picard",
+      "id": "86f4393e0bae3e54d1e0d4b5",
+      "input": "G1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\cee6bf7f8b8c478c18062faa",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18296590002137236,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18296590002137236,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 173.20361980001326,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 173.20361980001326,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 167.72147280001082,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 167.72147280001082,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 173.02065389999188,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 173.02065389999188,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "cee6bf7f8b8c478c18062faa",
+      "input": "G2-rep0000.npz",
+      "kernel": "mala",
+      "model": "G2",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\2e562952c308cb778a20867d",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.19805030000861734,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.19805030000861734,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 63.34565360000124,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 63.34565360000124,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 60.485269199998584,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 60.485269199998584,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 63.147603299992625,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 63.147603299992625,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "spawn_chains",
+      "id": "2e562952c308cb778a20867d",
+      "input": "G2-rep0000.npz",
+      "kernel": "nuts",
+      "model": "G2",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-nuts-spawn_chains"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\08096d6d96cf766f92b9914a",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.1660122000030242,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.1660122000030242,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 12.249325999990106,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 12.249325999990106,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 8.2326241999981,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 8.2326241999981,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 12.083313799987081,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 12.083313799987081,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cuda",
+      "executor": "online_picard",
+      "id": "08096d6d96cf766f92b9914a",
+      "input": "G2-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G2",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\9c8b7b3e2b05fe4a49f71c81",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13125149998813868,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13125149998813868,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 6.927595199987991,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 6.927595199987991,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.673518700001296,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 4.673518700001296,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 6.796343699999852,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 6.796343699999852,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "9c8b7b3e2b05fe4a49f71c81",
+      "input": "G1-rep0000.npz",
+      "kernel": "mala",
+      "model": "G1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\96c306655b48d5b81b8b20c2",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13268770001013763,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13268770001013763,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 9.230388800031506,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 9.230388800031506,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 7.167053099983605,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 7.167053099983605,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 9.097701100021368,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 9.097701100021368,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "spawn_chains",
+      "id": "96c306655b48d5b81b8b20c2",
+      "input": "L1-rep0000.npz",
+      "kernel": "nuts",
+      "model": "L1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-nuts-spawn_chains"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\7ac2c0b1af8ee5b2a842b60f",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18573109997669235,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18573109997669235,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 219.26323269997374,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 219.26323269997374,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 213.67223500000546,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 213.67223500000546,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 219.07750159999705,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 219.07750159999705,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cuda",
+      "executor": "quasi_deer",
+      "id": "7ac2c0b1af8ee5b2a842b60f",
+      "input": "G2-rep0000.npz",
+      "kernel": "mala",
+      "model": "G2",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\1013266ef4651b95ca78d0fa",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13359439998748712,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13359439998748712,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 8.775614999991376,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 8.775614999991376,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 6.524820099992212,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 6.524820099992212,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 8.642020600003889,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 8.642020600003889,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "1013266ef4651b95ca78d0fa",
+      "input": "G1-rep0000.npz",
+      "kernel": "mala",
+      "model": "G1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\e31896369b6464286a8924e2",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13549429998965934,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13549429998965934,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 7.481265799986431,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 7.481265799986431,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 5.145021899981657,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 5.145021899981657,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 7.345771499996772,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 7.345771499996772,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "e31896369b6464286a8924e2",
+      "input": "L1-rep0000.npz",
+      "kernel": "mala",
+      "model": "L1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\a55194991a6aacb730cb332d",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13231879999511875,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13231879999511875,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.447489399986807,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.447489399986807,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.1290816999971867,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 2.1290816999971867,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.3151705999916885,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 4.3151705999916885,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "a55194991a6aacb730cb332d",
+      "input": "L1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "L1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\1d99c1960dec600ab10de406",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13438410000526346,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13438410000526346,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 16.763725200027693,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 16.763725200027693,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 14.384504599991487,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 14.384504599991487,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 16.62934110002243,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 16.62934110002243,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "quasi_deer",
+      "id": "1d99c1960dec600ab10de406",
+      "input": "L1-rep0000.npz",
+      "kernel": "mala",
+      "model": "L1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\7363552f073e12af85ebe2b2",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13216330000432208,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13216330000432208,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.211761900020065,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.211761900020065,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.1052590000035707,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 2.1052590000035707,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.079598600015743,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 4.079598600015743,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "7363552f073e12af85ebe2b2",
+      "input": "G1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\71c273759de6352704f03962",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13392860000021756,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13392860000021756,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 12.498455799999647,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 12.498455799999647,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 10.229788999975426,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 10.229788999975426,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 12.36452719999943,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 12.36452719999943,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "quasi_deer",
+      "id": "71c273759de6352704f03962",
+      "input": "G1-rep0000.npz",
+      "kernel": "mala",
+      "model": "G1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\0f1b1683691e2570b39a6211",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.17604580000624992,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.17604580000624992,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 58.00265569999465,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 58.00265569999465,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 52.678425599995535,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 52.678425599995535,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 57.8266098999884,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 57.8266098999884,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "0f1b1683691e2570b39a6211",
+      "input": "G2-rep0000.npz",
+      "kernel": "mala",
+      "model": "G2",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\e2a990907f56322c675737ed",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13309640000807121,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13309640000807121,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 5.552856300026178,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 5.552856300026178,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.329949300008593,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 3.329949300008593,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 5.419759900018107,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 5.419759900018107,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "e2a990907f56322c675737ed",
+      "input": "L1-rep0000.npz",
+      "kernel": "mala",
+      "model": "L1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\9a2415dba55bb430d10ee65a",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.13316420000046492,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.13316420000046492,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.92926649999572,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.92926649999572,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.6477904000203125,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 2.6477904000203125,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.796102299995255,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 4.796102299995255,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "online_picard",
+      "id": "9a2415dba55bb430d10ee65a",
+      "input": "L1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "L1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\a5a1f31cd47f6b1d99a09afa",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.1668198000115808,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.1668198000115808,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 11.821202499995707,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 11.821202499995707,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 7.8286529000033624,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 7.8286529000033624,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 11.654382699984126,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 11.654382699984126,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "a5a1f31cd47f6b1d99a09afa",
+      "input": "G2-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G2",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\36fa461fac13349bd5f4ad9a",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.16832300001988187,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.16832300001988187,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 23.533443400025135,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 23.533443400025135,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 19.466222799994284,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 19.466222799994284,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 23.365120400005253,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 23.365120400005253,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "36fa461fac13349bd5f4ad9a",
+      "input": "G2-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G2",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\fdf4de73bba50bea0e6577e6",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.1339393999951426,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.1339393999951426,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.99720260000322,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.99720260000322,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.6133738000062294,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 2.6133738000062294,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.8632632000080775,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 4.8632632000080775,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "fdf4de73bba50bea0e6577e6",
+      "input": "L1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "L1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cuda-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\main\\tasks\\af710c66b7d41bca7e76e2b2",
+    "outcome": "valid",
+    "phase": "main",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.1324630999879446,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.1324630999879446,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 13.128986600000644,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 13.128986600000644,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 10.83489530000952,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 10.83489530000952,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 12.9965235000127,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 12.9965235000127,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "posterior",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "af710c66b7d41bca7e76e2b2",
+      "input": "L1-rep0000.npz",
+      "kernel": "mala",
+      "model": "L1",
+      "protocol_sha256": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c",
+      "replicate": 0,
+      "workflow": "cpu-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\8e605c593c2bcaddbc21141f",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.2684356000099797,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.2684356000099797,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 671.6134007000073,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 671.6134007000073,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 671.3449650999974,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 671.3449650999974,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "8e605c593c2bcaddbc21141f",
+      "input": "G2-rep0000.npz",
+      "kernel": "mala",
+      "model": "G2",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\8331203e19589ae5b871e921",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18401180001092143,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18401180001092143,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.988718400010839,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 2.988718400010839,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.8047065999999177,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 2.8047065999999177,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "8331203e19589ae5b871e921",
+      "input": "G1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\f4f94cb4c6a59638489bbad1",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18423290000646375,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18423290000646375,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 18.485511099977884,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 18.485511099977884,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 18.30127819997142,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 18.30127819997142,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "f4f94cb4c6a59638489bbad1",
+      "input": "G1-rep0000.npz",
+      "kernel": "mala",
+      "model": "G1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\290618909d30ef7265dcfb50",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18422359999385662,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18422359999385662,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 12.209870699996827,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 12.209870699996827,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 12.02564710000297,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 12.02564710000297,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "290618909d30ef7265dcfb50",
+      "input": "L1-rep0000.npz",
+      "kernel": "mala",
+      "model": "L1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\a942c979b143c2ada06a7769",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.22544140001991764,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.22544140001991764,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 18.834420200029854,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 18.834420200029854,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 18.608978800009936,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 18.608978800009936,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "a942c979b143c2ada06a7769",
+      "input": "G2-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G2",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\ffd6965d5a9e5ea8ae3c7e79",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18273190001491457,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18273190001491457,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.2068459000147413,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 3.2068459000147413,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.0241139999998268,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 3.0241139999998268,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "ffd6965d5a9e5ea8ae3c7e79",
+      "input": "L1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "L1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\a8e397bdfa6ba58eb4003ee1",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.24873600000864826,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.24873600000864826,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 100.21214970000437,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 100.21214970000437,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 99.96341369999573,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 99.96341369999573,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "a8e397bdfa6ba58eb4003ee1",
+      "input": "G2-rep0000.npz",
+      "kernel": "mala",
+      "model": "G2",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\1a1e8c1fa363d7512e8f88b7",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18251459999009967,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18251459999009967,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.03369329997804,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 3.03369329997804,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 2.8511786999879405,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 2.8511786999879405,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "1a1e8c1fa363d7512e8f88b7",
+      "input": "G1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\da76026070456de80ae03838",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.22505920002004132,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.22505920002004132,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 73.64962210002705,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 73.64962210002705,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 73.424562900007,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 73.424562900007,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "da76026070456de80ae03838",
+      "input": "G2-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G2",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\37a493ebaa4453c561db856a",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18320239998865873,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18320239998865873,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.9080087000038475,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.9080087000038475,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.724806300015189,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 4.724806300015189,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "37a493ebaa4453c561db856a",
+      "input": "L1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "L1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\de5e902c80e3a466d49b7d81",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.22524880000855774,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.22524880000855774,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 30.6257798000006,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 30.6257798000006,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 30.400530999992043,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 30.400530999992043,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cuda",
+      "executor": "online_picard",
+      "id": "de5e902c80e3a466d49b7d81",
+      "input": "G2-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G2",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\9909d7917ba0d2e66a1a91dd",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18382010000641458,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18382010000641458,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 32.98387440002989,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 32.98387440002989,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 32.800054300023476,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 32.800054300023476,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "quasi_deer",
+      "id": "9909d7917ba0d2e66a1a91dd",
+      "input": "G1-rep0000.npz",
+      "kernel": "mala",
+      "model": "G1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\be25dec1c87e0211378f2429",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.24490980000700802,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.24490980000700802,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 28.79835480003385,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 28.79835480003385,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 28.55344500002684,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 28.55344500002684,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "be25dec1c87e0211378f2429",
+      "input": "G2-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G2",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\349e3f5231f0ce8976d35834",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18420509999850765,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18420509999850765,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 10.901759400003357,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 10.901759400003357,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 10.71755430000485,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 10.71755430000485,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "349e3f5231f0ce8976d35834",
+      "input": "G1-rep0000.npz",
+      "kernel": "mala",
+      "model": "G1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\c2e412f1d1aaad1bb7b9d815",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.183947099983925,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.183947099983925,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 48.21439039998222,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 48.21439039998222,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 48.030443299998296,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 48.030443299998296,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "quasi_deer",
+      "id": "c2e412f1d1aaad1bb7b9d815",
+      "input": "L1-rep0000.npz",
+      "kernel": "mala",
+      "model": "L1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\7ac7ade3010e5b020d10bc46",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.2451586999814026,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.2451586999814026,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 209.51903899997706,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 209.51903899997706,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 209.27388029999565,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 209.27388029999565,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "7ac7ade3010e5b020d10bc46",
+      "input": "G2-rep0000.npz",
+      "kernel": "mala",
+      "model": "G2",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\5ef8c056ce414796055e67eb",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18404089999967255,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18404089999967255,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 5.846619700023439,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 5.846619700023439,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 5.662578800023766,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 5.662578800023766,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "5ef8c056ce414796055e67eb",
+      "input": "G1-rep0000.npz",
+      "kernel": "mala",
+      "model": "G1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\77e2ed994ba2c0528fdafef4",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18447630002629012,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18447630002629012,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.132525700028054,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.132525700028054,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.9480494000017643,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 3.9480494000017643,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "online_picard",
+      "id": "77e2ed994ba2c0528fdafef4",
+      "input": "L1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "L1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\87cbf28fc33aa0ec41d9b3cb",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.1843704999773763,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.1843704999773763,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.407828899973538,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.407828899973538,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.2234583999961615,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 4.2234583999961615,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "online_picard",
+      "id": "87cbf28fc33aa0ec41d9b3cb",
+      "input": "L1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "L1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\b3c58eab9021677d9e44d1fe",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18544509998173453,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18544509998173453,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.406894499988994,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 4.406894499988994,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 4.221449400007259,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 4.221449400007259,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "sequential",
+      "id": "b3c58eab9021677d9e44d1fe",
+      "input": "G1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-rwm-sequential"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\63d6320fd146278c7972f8aa",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18423270000494085,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18423270000494085,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 36.32309829999576,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 36.32309829999576,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 36.13886559999082,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 36.13886559999082,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "quasi_deer",
+      "id": "63d6320fd146278c7972f8aa",
+      "input": "L1-rep0000.npz",
+      "kernel": "mala",
+      "model": "L1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\cbeefd1c9760b9c19bece560",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.2684548000106588,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.2684548000106588,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 747.6961537000025,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 747.6961537000025,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 747.4276988999918,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 747.4276988999918,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 16384,
+      "device": "cuda",
+      "executor": "quasi_deer",
+      "id": "cbeefd1c9760b9c19bece560",
+      "input": "G2-rep0000.npz",
+      "kernel": "mala",
+      "model": "G2",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-mala-quasi_deer"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\87c7074e72c1dc0a72362295",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.18479040000238456,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.18479040000238456,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.94350699998904,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 3.94350699998904,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 3.7587165999866556,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 3.7587165999866556,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cuda",
+      "executor": "online_picard",
+      "id": "87c7074e72c1dc0a72362295",
+      "input": "G1-rep0000.npz",
+      "kernel": "rwm",
+      "model": "G1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cuda-rwm-online_picard"
+    },
+    "verification_only_invocations": 1
+  },
+  {
+    "actual_attempts": 1,
+    "attempts_are_statistical_repetitions": false,
+    "cached_execution_seconds": null,
+    "cached_scope": "Requires a separately declared prepared-execution measurement; never inferred from ordinary wall",
+    "invocations": 2,
+    "original": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-technical-v1\\cache\\tasks\\ec33ac689d8cf7dd9b1c4759",
+    "outcome": "measurement_available",
+    "phase": "cache",
+    "phase_totals_are_additive": false,
+    "phases": {
+      "additional_verification": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 0.1828451000037603,
+        "cost_scope": "Completed coordinator calls returning newly_executed=false; kept outside primary execution cost",
+        "known_seconds": 0.1828451000037603,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "all_invocations": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 6.238138600019738,
+        "cost_scope": "All coordinator calls, including additional verification; operational consumption, not standardized time-to-inference",
+        "known_seconds": 6.238138600019738,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 2,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      },
+      "ordinary_workflow": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": null,
+        "cost_scope": "Sum ordinary subprocess creation-through-exit wall over every registered actual attempt; includes ordinary output/diagnostics, excludes outer audit and inter-call waiting",
+        "known_seconds": 0.0,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 0,
+        "unknown_measurements": 1,
+        "unknown_time_imputed": false
+      },
+      "research_execution": {
+        "attempts_missing_call_return": 0,
+        "complete_seconds": 6.055293500015978,
+        "cost_scope": "Sum all coordinator run/retry calls except completed verification-only returns; includes recorded refusals/recovery/audit/sealing; excludes ledger writes, report observations and inter-call waiting",
+        "known_seconds": 6.055293500015978,
+        "prior_interruption_known_seconds": 0.0,
+        "recorded_measurements": 1,
+        "unknown_measurements": 0,
+        "unknown_time_imputed": false
+      }
+    },
+    "policy": "four-chain-runtime-costs-v1",
+    "recorded_refusals_or_exceptions": 0,
+    "task": {
+      "artifact_kind": "cache_measurement",
+      "batch": 0,
+      "budget": 64,
+      "device": "cpu",
+      "executor": "sequential",
+      "id": "ec33ac689d8cf7dd9b1c4759",
+      "input": "L1-rep0000.npz",
+      "kernel": "mala",
+      "model": "L1",
+      "protocol_sha256": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+      "replicate": 0,
+      "workflow": "cpu-mala-sequential"
+    },
+    "verification_only_invocations": 1
+  }
+]

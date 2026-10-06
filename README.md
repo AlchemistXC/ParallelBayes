@@ -1,6 +1,6 @@
 # ParallelBayes
 
-2026-10-06 验收盘点：当前关键路径等待Windows后续原始回执，研究未完成。远端与草稿附件仍为已接收的 `ced54ef` 阶段；未上传的本机活动未知。见[剩余门槛与恢复入口](docs/COMPLETION-GATE-AUDIT.md)。
+2026-10-07：Windows 三条后续分支已合入并完成[独立接收核验](docs/WINDOWS-FOLLOWUP-INTAKE.md)。五归档7,658文件、1,080份保存MH路径的独立NumPy重放、机制CSV及R诊断重建通过。F2、有限运行器和候选安装门槛已取得证据；正式推断协议/执行及最终论文仍待完成。旧F2／运行器／安装提示词无需再跑。
 
 2026-10-06 当前稿：修复历史CPU段与Windows能力的矛盾表述，完成[五段结果及PDF重建](docs/CURRENT-RESULT-REBUILD.md)，见[23页中文稿](output/software-paper/软件与基准研究-结果重建.pdf)。本次仅重建已保存摘要，未新增实验；正式推断研究仍待完成。
 
@@ -12,13 +12,13 @@
 
 2026-10-05：进入[研究收尾F0–F6](docs/RESEARCH-COMPLETION-PLAN.md)，实际状态见[当前工作包](execution/COMPLETION-WORK-PACKAGES.md)。Windows首轮开发、512项数值实验和回传审查已完成，不能再按初次移植提示词从头开发。
 
-Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-INTAKE.md)：F1、水井、九目标CPU NUTS及CPU/CUDA MH就绪证据已取得；跨系统逐位变换差异保留。最新已接收回执中F2的192工作流在采样前停止；后续执行状态未取得，原始输入现已补入草稿附件，下一步使用[机制续跑提示词](handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md)。无需重跑已完成任务。
+Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-INTAKE.md)：F1、水井、九目标CPU NUTS及CPU/CUDA MH就绪证据已取得；跨系统逐位变换差异保留。当时F2的输入阻塞现已解除：后续192工作流已完成并经独立接收；[原机制续跑提示词](handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md)仅保留历史。无需重跑已完成任务。
 
 本机[批次与最大形状验收](docs/BATCH-MAXIMUM-VALIDATION.md)已完成14/15项，最大NUTS中断记录保留；零重算及搬移归档重建通过。最大MH技术验收不替代正式推断研究。 [成本与误差接口](docs/FORMAL-COST-POLICY.md)已补齐失败/未知时间及逐函数配对处理，正式研究尚待Windows运行门槛与协议冻结。
 
-[测量设计v0.2](docs/FORMAL-MEASUREMENT-DESIGN.md)、[缓存配对统计](docs/CACHE-PROBE-ANALYSIS.md)及[真实CPU缓存记录接收](docs/CACHE-PROBE-EXECUTION.md)已完成有限核验；后继 [Mac 测量运行器](docs/OWNED-CACHE-RUNTIME.md)已完成 20 任务/80 执行及 600 文件零重算、762 资产搬移重建；Windows 原生验收仍待完成。技术重放不增加独立重复数。 后继[失败归档接收](docs/OWNED-CACHE-FAILURE-EVIDENCE.md)已保留未启动、资源失败与中断状态，并要求外层完整结束后才产生可用缓存点；21 项相关检查及旧结果重建通过。
+[测量设计v0.2](docs/FORMAL-MEASUREMENT-DESIGN.md)、[缓存配对统计](docs/CACHE-PROBE-ANALYSIS.md)及[真实CPU缓存记录接收](docs/CACHE-PROBE-EXECUTION.md)已完成有限核验；后继 [Mac 测量运行器](docs/OWNED-CACHE-RUNTIME.md)已完成 20 任务/80 执行及 600 文件零重算、762 资产搬移重建；Windows 原生27主任务、24探测/96调用现已完成并经[独立接收](docs/WINDOWS-FOLLOWUP-INTAKE.md)。技术重放不增加独立重复数。 后继[失败归档接收](docs/OWNED-CACHE-FAILURE-EVIDENCE.md)已保留未启动、资源失败与中断状态，并要求外层完整结束后才产生可用缓存点；21 项相关检查及旧结果重建通过。
 
-当前统一开发入口为 `codex/research-integration`，已合入软件安装候选、测量运行器和失败证据接收。原分支及冻结实验保留；整合检查见[统一交付记录](docs/RESEARCH-INTEGRATION.md)。Windows 安装候选仍待核验。
+当前统一开发入口为 `codex/research-integration`，已合入软件安装候选、测量运行器和失败证据接收。原分支及冻结实验保留；整合检查见[统一交付记录](docs/RESEARCH-INTEGRATION.md)。Windows 安装候选现已完成[实测及接收](docs/WINDOWS-PACKAGE-CANDIDATE.md)，Python129检查、R显式4测试56断言通过，默认跳过单列。
 
 本轮已完成[有限参考复用审计](docs/REFERENCE-REUSE.md)、[水井Mac模型/R核验](docs/WELLS-TARGET-VALIDATION.md)和参考伴随分析。[独立调参](docs/F3-TUNING-RESULTS.md)212/216有效、失败保留；[九目标多预算pilot](docs/F3-BUDGET-PILOT-RESULTS.md)323/324满足各自输出标准，1项长路径容差失败已完成[有限定位](docs/BUDGET-PATH-LOCALIZATION.md)，仍保留失败。诊断仍显示H1发散、M1探索不足及稀有事件未判定。正式推断协议、Windows同机比较和统一发布/论文尚未完成。
 
@@ -62,7 +62,7 @@ R包作者/维护者元数据仍是项目占位，不是正式CRAN发布。GPU�
 
 外部水井案例的后续参考证据见[有限参考复核](docs/WELLS-REFERENCE-AUDIT.md)和[独立二维积分](docs/WELLS-QUADRATURE.md)。两者不代替Windows目标核验或正式推断实验。
 
-第二轮Windows交接：[可直接转交的提示词](handoff/windows-completion/CODEX-PROMPT-F2-F4.md)，包含F1回执、水井CPU/CUDA/R核验和已冻结机制pilot；[试验设计及Mac运行器证据](docs/MECHANISM-PILOT.md)。Windows已回传并经核验，当前只补F2，见上方机制续跑入口。
+第二轮Windows交接：[可直接转交的提示词](handoff/windows-completion/CODEX-PROMPT-F2-F4.md)，包含F1回执、水井CPU/CUDA/R核验和已冻结机制pilot；[试验设计及Mac运行器证据](docs/MECHANISM-PILOT.md)。Windows第二轮和后续F2均已回传并核验；本段提示词为历史索引，下一步是新正式协议的准备。
 
 F3成熟基线的新增[Windows CPU NUTS核验提示词](handoff/windows-completion/CODEX-PROMPT-F3-NUTS.md)已就绪。[Mac九目标配对验证](docs/NATIVE-NUTS-READINESS.md)通过样本/预热/RNG字节检查，短链不利诊断保留；Windows同项实测已回传并核验，见第二轮接收报告。这是独立研究CLI，不扩充R包核心的NUTS或GPU支持声明。
 

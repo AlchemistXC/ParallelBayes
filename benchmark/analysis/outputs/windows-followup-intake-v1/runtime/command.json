@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/sources/runtime/scripts/windows/audit_technical_batch.py",
+    "audit",
+    "--bundle",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/received/runtime/output/windows-runtime-technical-v1",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/reconstruction/runtime",
+    "--rscript",
+    "/usr/local/bin/Rscript",
+    "--r-library",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library",
+    "--cross-platform"
+  ],
+  "started_utc": "2026-10-06T23:31:01.970377+00:00",
+  "R_LIBS_USER": "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library",
+  "scope": "Read-only reception; no Windows/CUDA timing or new MCMC",
+  "exit_code": 0,
+  "receiver_elapsed_seconds": 21.757884874998126,
+  "ended_utc": "2026-10-06T23:31:23.728724+00:00"
+}

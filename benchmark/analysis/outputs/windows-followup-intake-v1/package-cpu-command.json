@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/usr/local/bin/Rscript",
+    "--vanilla",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/sources/package/scripts/windows/installed_R_objects.R",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/received/package/output/windows-package-candidate-v1/R-example-cpu",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/reconstruction/package-cpu.json"
+  ],
+  "started_utc": "2026-10-06T23:31:01.969996+00:00",
+  "R_LIBS_USER": "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library",
+  "scope": "Read-only reception; no Windows/CUDA timing or new MCMC",
+  "exit_code": 0,
+  "receiver_elapsed_seconds": 0.9257257910066983,
+  "ended_utc": "2026-10-06T23:31:02.896330+00:00"
+}

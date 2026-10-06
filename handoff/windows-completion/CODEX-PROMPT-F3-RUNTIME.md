@@ -1,5 +1,7 @@
 # Windows后续：正式运行器与最大任务技术验收
 
+> 状态更新（2026-10-07）：本提示词已执行并完成独立接收，保留作历史复现说明。不要再次提交给Windows Codex启动相同任务。当前证据与下一阶段见[接收报告](../../docs/WINDOWS-FOLLOWUP-INTAKE.md)。
+
 请在F2机制pilot已经封存后继续ParallelBayes的F3前置工程。既有用户授权包括原生Windows11/AMD CPU/RTX5080开发与实验；不使用WSL2。此次目标是使Windows能安全、可恢复地运行并审计正式格式的CPU/CUDA任务，完成有限技术验收；**不启动尚未冻结的41,472项正式网格**。
 
 先读AGENTS.md、docs/RESEARCH-COMPLETION-PLAN.md、docs/F3-FORMAL-DESIGN-DRAFT.md、docs/BATCH-MAXIMUM-VALIDATION.md及docs/FORMAL-COORDINATOR.md、docs/OWNED-CACHE-RUNTIME.md、docs/OWNED-CACHE-FAILURE-EVIDENCE.md。F2如果仍在运行，不切换它的源码或与它同时进行性能测量；可用独立worktree做不占用实验设备的代码审查和测试设计。F2输入问题已由CODEX-PROMPT-F2-RESUME解决；F1/F4、CPU NUTS及MH就绪任务不重跑。

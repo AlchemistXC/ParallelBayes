@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/sources/mechanism/scripts/completion/analyze_mechanism_pilot.py",
+    "--plan",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/sources/mechanism/benchmark/protocols/mechanism-windows-pilot-v1.json",
+    "--run",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/received/mechanism/output/completion/windows-mechanism-original-attempt01/mechanism-cpu",
+    "--inputs",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/received/mechanism/output/completion/windows-mechanism-original-attempt01/original-inputs",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/windows-followup-intake-20261007/reconstruction/mechanism-cpu"
+  ],
+  "started_utc": "2026-10-06T23:31:01.970190+00:00",
+  "R_LIBS_USER": "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library",
+  "scope": "Read-only reception; no Windows/CUDA timing or new MCMC",
+  "exit_code": 1,
+  "receiver_elapsed_seconds": 0.6280501670116792,
+  "ended_utc": "2026-10-06T23:31:02.598618+00:00"
+}

@@ -1,0 +1,62 @@
+{
+  "archives": [
+    {
+      "status": "passed",
+      "archive": "/Users/haku/Workspace/ParallelBayes/downloads/windows-followup-20261007/windows-native-20261006T111324Z.tar",
+      "archive_sha256": "ec69fd8032cae9198cd1eb7823f903eebb72bcc624a942b7da6373598b3d6ba7",
+      "checked_files": 3107,
+      "source_commit": "1cfc83d9f979b0b58e830affc67ac22e277acc7d",
+      "branch": "codex/windows-mechanism-completion",
+      "kind": "mechanism",
+      "bytes": 186511360,
+      "extracted_files_verified": 3107
+    },
+    {
+      "status": "passed",
+      "archive": "/Users/haku/Workspace/ParallelBayes/downloads/windows-followup-20261007/windows-native-20261006T170711Z.tar",
+      "archive_sha256": "6ef0f6e299867d67b27cbd4067a062a30f3593894dc4b34c1da9086f80ae7274",
+      "checked_files": 3753,
+      "source_commit": "f9f305c752d718d75d7cfe66d148c597db83f0c2",
+      "branch": "codex/windows-runtime-validation",
+      "kind": "runtime",
+      "bytes": 1083330560,
+      "extracted_files_verified": 3753
+    },
+    {
+      "status": "passed",
+      "archive": "/Users/haku/Workspace/ParallelBayes/downloads/windows-followup-20261007/windows-native-20261006T171222Z.tar",
+      "archive_sha256": "a1f5752ad98b4d69c55a342a4f360d3162f6f35b7e8fc3c2f9156fe14a2a0ddb",
+      "checked_files": 191,
+      "source_commit": "b0582c33a5ea855c384acc9b15da908dea2999b6",
+      "branch": "codex/windows-runtime-validation",
+      "kind": "runtime-supplement",
+      "bytes": 33792000,
+      "extracted_files_verified": 191
+    },
+    {
+      "status": "passed",
+      "archive": "/Users/haku/Workspace/ParallelBayes/downloads/windows-followup-20261007/windows-native-20261006T173502Z.tar",
+      "archive_sha256": "9b8b805a4f4605541717f3644ff931e385156bf5f4ca009738a5a9f08d6017ce",
+      "checked_files": 547,
+      "source_commit": "0e99453bc7839cba2308f50bdcb0ae4969fada11",
+      "branch": "codex/windows-package-validation",
+      "kind": "package",
+      "bytes": 49428480,
+      "extracted_files_verified": 547
+    },
+    {
+      "status": "passed",
+      "archive": "/Users/haku/Workspace/ParallelBayes/downloads/windows-followup-20261007/windows-native-20261006T173742Z.tar",
+      "archive_sha256": "53bf0afa96abaf094f6846cd3a0e29a56a96eea8cac0af8b513bd8003703ce8d",
+      "checked_files": 60,
+      "source_commit": "9f9149b698231a61319db6ae62ccc859537c46c0",
+      "branch": "codex/windows-package-validation",
+      "kind": "package-supplement",
+      "bytes": 286720,
+      "extracted_files_verified": 60
+    }
+  ],
+  "files_verified": 7658,
+  "scope": "Archive and extracted-file integrity only; scientific checks follow separately",
+  "sampler_calls": 0
+}

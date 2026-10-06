@@ -1,34 +1,33 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-06",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "followup_windows_intake_passed_formal_driver_pre_freeze",
-  "gpu_tasks": "Received and independently checked F2 192 workflows, native runtime 27 main/24 cache tasks, and dev2 installation. Formal inference remains unfrozen and unexecuted.",
+  "local_phase": "blocked_on_followup_native_windows_evidence_after_completion_audit",
+  "gpu_tasks": "Latest received Windows v2 is ced54ef: F2 stopped before sampling. No follow-up F2/runtime/candidate receipt found; current unreported Windows activity is unknown. Formal inference is not frozen or started.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
   "requires_user_resume": false,
   "rerun_completed_cpu_tasks": false,
   "active_outstanding_tasks": [
-    "F3 formal batch driver, freezing, inference and uncertainty",
-    "F4 external wells formal comparison",
-    "F5 full raw-to-paper release reproduction",
-    "F6 integrated final manuscript"
+    "F0 current-state and evidence alignment",
+    "F2 Windows cost mechanisms",
+    "F3 reliable inference comparison",
+    "F4 external model example",
+    "F5 integrated release reproduction",
+    "F6 integrated manuscript"
   ],
   "note": "Current entry points are docs/RESEARCH-COMPLETION-PLAN.md and execution/COMPLETION-WORK-PACKAGES.md. Historical Mac and windows-native-v1 protocols and raw data remain immutable.",
   "desktop_os_requirement": "native_windows_11_no_wsl2",
-  "gpu_backend": "torch eager 0.2.0.dev2 candidate; archived experiments retain original source identities",
+  "gpu_backend": "torch_eager_0.2.0.dev1_implemented_and_scoped_validation",
   "legacy_handoff": "handoff/windows-native describes the completed initial migration; handoff/gpu is a historical WSL archive",
   "revision": "research-completion-v1",
-  "received_windows_commit": "b0582c33a5ea855c384acc9b15da908dea2999b6",
+  "received_windows_commit": "ced54ef6ce945198339a138142dcdfede84f06bc",
   "reception_review_commit": "38894409004dd9ebceb978755dc246fcb3418d01",
   "completed_bounded_milestones": [
-    "F1 fixed diagnostic mechanism plus native Windows receipt",
-    "F2 frozen Windows mechanism pilot and independent receiver replay",
-    "Native Windows bounded runtime and maximum-shape technical validation",
-    "dev2 candidate isolated Mac and Windows installation evidence"
+    "F1 fixed diagnostic mechanism plus native Windows receipt"
   ],
   "second_round_intake": "docs/WINDOWS-ROUND2-INTAKE.md",
-  "next_Windows_prompt": null,
+  "next_Windows_prompt": "handoff/windows-completion/CODEX-PROMPT-F2-RESUME.md",
   "local_batch_validation": "14/15 valid, maximum NUTS interrupted after original and sole retry; archived/rebuilt; formal inference remains pending",
   "local_batch_report": "docs/BATCH-MAXIMUM-VALIDATION.md",
   "active_development_branch": "codex/research-integration",
@@ -44,7 +43,7 @@
     "native_windows_validated": false
   },
   "package_candidate_branch": "codex/research-integration",
-  "package_candidate_windows_validated": true,
+  "package_candidate_windows_validated": false,
   "local_failure_intake_report": "docs/OWNED-CACHE-FAILURE-EVIDENCE.md",
   "local_failure_intake": {
     "new_checks": 16,
@@ -60,7 +59,7 @@
     "python": "0.2.0.dev2",
     "R": "0.2.0.9002",
     "Mac": "installed artifacts and explicit integration checked",
-    "Windows": "Native isolated installed-artifact evidence received and independently checked; docs/WINDOWS-PACKAGE-CANDIDATE.md",
+    "Windows": "pending separate installation receipt",
     "report": "docs/RELEASE-CANDIDATE-0.2.md",
     "origin_branch": "codex/release-candidate-0.2"
   },
@@ -116,36 +115,6 @@
     "completion_proven": false,
     "native_windows_live_handle_available": false,
     "resume_trigger": "New Windows source and full result archive, or accessible native Windows execution handle",
-    "do_not_repeat_completed_tasks": true,
-    "superseded_by": "docs/WINDOWS-FOLLOWUP-INTAKE.md",
-    "external_evidence_trigger_received": true
-  },
-  "next_Windows_action": "No repeat of completed F2/runtime/package prompts. Formal driver and protocol must be prepared before new native Windows execution.",
-  "followup_windows_intake": {
-    "report": "docs/WINDOWS-FOLLOWUP-INTAKE.md",
-    "heads": {
-      "mechanism": "1cfc83d9f979b0b58e830affc67ac22e277acc7d",
-      "runtime": "b0582c33a5ea855c384acc9b15da908dea2999b6",
-      "package": "0e44c2d5f2d5923f3c4ffa1c0700a18aca88b75b"
-    },
-    "archives": 5,
-    "manifest_files_verified": 7658,
-    "original_files_unchanged": true,
-    "independent_numpy_records": 1080,
-    "unique_reference_calculations": 42,
-    "acceptance_mismatches": 0,
-    "mechanism_csv_byte_identical": 4,
-    "runtime_main": 27,
-    "runtime_cache_probes": 24,
-    "runtime_cached_calls": 96,
-    "R_function_rows": 90,
-    "package_python_checks": 129,
-    "package_R_tests": 4,
-    "package_R_assertions": 56,
-    "package_default_R_skips": 7,
-    "new_formal_repetitions": 0,
-    "reader_test_fixture_calls": 6,
-    "formal_inference_complete": false,
-    "new_live_Windows_handle": false
+    "do_not_repeat_completed_tasks": true
   }
 }

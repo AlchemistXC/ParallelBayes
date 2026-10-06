@@ -1,0 +1,26 @@
+{
+  "all_received_files_unchanged_after_reconstruction": true,
+  "total": 7658,
+  "archives": [
+    {
+      "archive": "mechanism",
+      "unchanged_files": 3107
+    },
+    {
+      "archive": "package",
+      "unchanged_files": 547
+    },
+    {
+      "archive": "package-supplement",
+      "unchanged_files": 60
+    },
+    {
+      "archive": "runtime",
+      "unchanged_files": 3753
+    },
+    {
+      "archive": "runtime-supplement",
+      "unchanged_files": 191
+    }
+  ]
+}
