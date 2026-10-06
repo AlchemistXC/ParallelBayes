@@ -122,3 +122,78 @@ Pre-delivery validation passed: all six canonical protocol/source identities,
 unchanged original distributions/pip freeze/frozen marker, 369 raw task assets,
 95 curated receipt files, all command log hashes and actual JUnit counts.
 Receipt: `benchmark/analysis/outputs/windows-completion-v2-final-check.json`.
+
+## Original-input F2 completion, 2026-10-06
+
+Branch `codex/windows-mechanism-completion`, execution HEAD
+`52fdfd0446768033ffd975bc52ea8036c420880d`. Initial workspace was clean and no
+Python/R experiment process was active. The existing frozen Windows venv and
+its marker/distribution inventory match the prior round; no dependency changes.
+All 41 protocol source files match after restoring one pre-existing CRLF
+working copy of `reference.py` to the identical frozen Git blob. Previous bytes
+and before/after hashes are preserved in the new batch; no semantic change.
+
+The six original Mac-frozen NPZ files were downloaded from existing draft
+`windows-completion-v2-20261005`; tar 10,823,680 bytes, SHA256
+`2b46eedc58067c920c8519cb4f99965bf944202f57392514d4643b847f9b9e5a`.
+All six file/actual-array hashes passed. Comparison to preserved rejected
+Windows tapes confirms only 82 log-uniform elements differ; noise/directions
+are identical. Old candidates and preparation error logs remain untouched and
+are also copied into this batch for complete replay context.
+
+New input/runner tests: 5 passed, 0 failed, 0 errors, 0 skipped; 18 existing
+torch.jit deprecation warnings retained. Separate command receipts/logs under
+`output/completion/windows-mechanism-original-attempt01/commands/` use the new
+explicit-batch `scripts/windows/record_step.py`, not the old hardcoded wrapper.
+
+| Device | Groups completed/failed/pending | Workflows completed/failed/pending | Evidence |
+|---|---|---|---|
+| CPU | 36/0/0 | 96/0/0 | Explicit original-input analysis passed; actual terminal resume: 0 new groups, 1360 terminal files unchanged. |
+| CUDA | 36/0/0 | 96/0/0 | Actual RTX5080 CUDA, float64; original-input analysis and terminal resume passed, 0 new groups and 1360 unchanged files. |
+
+Per device: 480 technical calls, 60 sequential/time path pairs and 64 operation
+probe batches passed. Additional 96 CPU/CUDA saved-array pairs passed with zero
+events mismatched, maximum path/output difference 8.882e-15. Independent oracle
+path differences stay below 3.845e-10. All 2648 task assets and 143 small receipt
+files verified. Every first sampling call reports the expected device/float64.
+
+Adverse results: all 24 quasi-DEER cells per device were slower; Picard's cached
+ratio exceeded one in 20/36 CPU and 32/36 CUDA cells, with all other cells retained.
+Each device has 6 zero-acceptance workflows and 21 all-rejection chain records,
+which reuse inputs across windows and are not independent event replications.
+Initial maps/JVPs/confirmed transitions per device: 158430/51072/33024.
+All costs, rounds, prefixes, residuals, clipping and memory records are archived.
+Full report: `docs/WINDOWS-MECHANISM-COMPLETION.md`; small evidence and SHA256:
+`benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/`.
+
+Only terminal resume is tested here. Interrupted recovery, native Windows
+process-collection/resource protection, maximum tasks and formal inference
+remain separate gates. F1/F4/NUTS/MH and historical 512 tasks were not rerun.
+
+
+## 2026-10-07 Windows F3 native engineering, before science freeze
+
+Independent branch codex/windows-runtime-validation starts from verified research-integration 6f02f373 and merges the sealed F2 evidence at 9187bcb. Original mechanism worktree and frozen environment are unchanged. Native Windows Job Object lifecycle, shared lock, guarded resources, attempt classification, separate cache eligibility and portable cost receipts are implemented in new scripts/windows adapters; historical Mac runtime files remain untouched.
+
+Current behavior and single-input tests: 16 passed / 0 failed / 0 skipped. Earlier failed test attempts are retained in output/windows-runtime-engineering-v1. A hidden persistent fixture remained registered after its launching shell exited, then sealed kernel active-process count 0 with cache measurement_available=true and samples_eligible=false. Artificial fixtures are not MCMC repetitions. Requested private skills/ZIP are absent; no guessed private code or claimed skill use.
+
+Bounded 27-fit plus 24-cache-probe protocols are pending freeze/execution. No formal grid launched. See docs/WINDOWS-RUNTIME-VALIDATION.md.
+
+
+## 2026-10-07 native Windows technical result
+
+Frozen source 2ddcea970cf0ed78501b53f504d7230e9c2695ec; execution HEAD 6c04eb9782695ef4e600074fa36473cde5e249e8. Main protocol 8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c, cache protocol 350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab. All 27 main tasks valid, 24 cache measurements available, 96 cache calls; numerical/resource/infrastructure/unclassified failures and not-run counts all zero. Cache samples_eligible always false. No retry was needed.
+
+All 12 same-kernel actual-array pairs pass with zero acceptance mismatch; maximum path difference 3.6082914434132363e-10. Three NUTS tasks include four observed owned spawn workers each, saved initial states/RNG/warmup/adaptation/diagnostics. G2 maximum retains 16,384 steps in four chains at dimension64. CPU/CUDA MH arrays remain float64; actual CUDA records are cuda:0. All task jobs sealed active count0.
+
+Actual terminal resume executes 0 new tasks and preserves 831 main plus 828 cache files. Current behavior suite is 17 passed / 0 failed / 0 skipped, including real CUDA grandchild ownership and manager termination while a separate test CUDA context survives. Earlier failed test/ancillary launch attempts are retained. The read-only original-bundle audit reconstructs 27 function binaries and 90 modern R diagnostic rows exactly. Default native rebuild is exact; explicit receiver cross-platform mode preserves both binaries and uses frozen output tolerances for receiver calculations, without changing MH acceptance/path criteria.
+
+Evidence summary: benchmark/analysis/outputs/windows-runtime-technical-v1. Raw arrays, all attempts, commands, locks, Job observations, source snapshots and dependency freeze are separate. Archive relocation/delivery remains pending at this commit. This closes only finite technical execution checks; it does not establish formal inference, convergence, general acceleration, reboot recovery, or arbitrary workload resource safety. F5 installation and the formal F3/F4/F6 gates remain open.
+
+
+Resource-counter qualification: a bounded 128 MiB allocation is denied under a 64 MiB JobMemoryLimit and succeeds under 256 MiB (2 checks passed). The denied case nevertheless reports raw PeakJobMemoryUsed=147,828,736 bytes, above its limit. Therefore archived field kernel_peak_job_commit_bytes must be interpreted as the raw Windows counter, not a proven maximum of successful commitments. G2 NUTS raw counter 45,916,721,152 bytes is retained; its exact internal cause is not identified. Maximum sampled job RSS is 3,636,400,128 bytes, distinct from VRAM and not a no-missed-spike bound. Low RSS, observer error, lifecycle and CUDA resource refusal remain separately tested. Current distinct checks are 17 behavior/summary plus 2 matched allocation checks, all passed, no skips. No failed scientific task was removed or retried.
+
+
+2026-10-07 delivery: primary archive windows-native-20261006T170711Z.tar, 1,083,330,560 bytes, SHA256 6ef0f6e299867d67b27cbd4067a062a30f3593894dc4b34c1da9086f80ae7274, 3,753 manifest files verified. Safe extraction into a new directory and independently owned read-only analysis rebuilt all 27 planned rows, 24 cache rows, 96 call records, 27 function binaries and 90 R rows; all 12 pairs passed. Reconstruction jobs finished kernel active count0. New reader preserves raw memory counter semantics and explicit cross-platform differences. Initial archive creation clock was not separately recorded and remains unknown; inference/cache invocation and extra verification clocks are preserved. No new sampling during recovery or reanalysis.
+
+Receiver: `python scripts/windows/audit_technical_batch.py audit --bundle EXTRACTED/output/windows-runtime-technical-v1 --output NEW_ANALYSIS --rscript Rscript --r-library R_LIBRARY --cross-platform`. Actual Mac execution of this command remains receiving-side work. Current bounded runtime checks pass; formal scientific freezes remain gated on merged F2/cost/analysis/version intake, not on this pilot alone.

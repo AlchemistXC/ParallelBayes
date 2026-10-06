@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "terminal_groups": 36,
+  "terminal_files": 1360,
+  "changed_files": [],
+  "new_attempts": [],
+  "newly_executed_groups": 0,
+  "evidence": "Actual resume invocation plus unchanged complete terminal group trees and absence of new attempt directories. Frozen runner does not expose a new-group counter.",
+  "scope": "Terminal resume only; no claim of interrupted recovery or Windows process-collection/resource protection.",
+  "before_summary_sha256": "7efbf6e69708ebc7c9531cf05a41dfebc3bf2f3d82e6677f8576793b2122654d",
+  "after_summary_sha256": "7efbf6e69708ebc7c9531cf05a41dfebc3bf2f3d82e6677f8576793b2122654d"
+}

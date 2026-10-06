@@ -1,0 +1,8 @@
+{
+  "file": "r-package/inst/python/parallelbayes/reference.py",
+  "reason": "Pre-existing CRLF working bytes; repository blob and frozen SHA agree",
+  "before_sha256": "964d3a1b3084e18eac7748e3e6d9c9ae93ab5e3563e2f0a54fd5f32271900544",
+  "restored_blob_sha256": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1",
+  "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+  "semantic_source_changed": false
+}

@@ -1,0 +1,215 @@
+{
+  "identity": "0b6dd54bee78591d992fc4c8d8815b23e06a5686dc4e88f2b460ed955dcb2c71",
+  "status": "completed",
+  "attempt": "attempt-1791283846267008900",
+  "group": {
+    "model": "G1",
+    "kernel": "rwm",
+    "replicate": 1,
+    "chains": 4,
+    "draws": 128,
+    "windows": [
+      4,
+      16
+    ],
+    "step_size": 0.5,
+    "role": "window_chain_grid",
+    "id": "133726dd218d56787494"
+  },
+  "device": "cuda",
+  "assets": {
+    "attempt-1791283846267008900\\comparison.json": "e4aadf0b9e3904d4de252da7c6a978ef7674fb8346a0b7d0e2329ae3e27350bd",
+    "attempt-1791283846267008900\\inputs.npz": "68a058c4d3a82152a4a666810e1ff4294fdb69e851f12f40ab9e952af54c0b33",
+    "attempt-1791283846267008900\\phase-0-online_picard-w16.json": "25daccf6e812897d089d4a5ea5e13aa2326c24edb1953730840608bade20e496",
+    "attempt-1791283846267008900\\phase-0-online_picard-w16.npz": "3316bd22cd42d03c43cc5ed6b1ae580a417a0051f1eb1e4dd6f16c615d2096a5",
+    "attempt-1791283846267008900\\phase-0-online_picard-w4.json": "6f025d915fa9ff778aea9d437a7d4ec656396947b86ba54aaf1fe8f4638b30e9",
+    "attempt-1791283846267008900\\phase-0-online_picard-w4.npz": "a6e7a3fc3d41148ea18612f1a43d3566f154d22bf1701440342cf002db20d29d",
+    "attempt-1791283846267008900\\phase-0-sequential.json": "00f77307e31df0d75d18e97576361ad55e8e9e469cb2afa4693a3c5d6b11999a",
+    "attempt-1791283846267008900\\phase-0-sequential.npz": "3d44ecb2642cf2c9fa26393ca7e64a68affd1662a19205963926cde9b28ac934",
+    "attempt-1791283846267008900\\phase-1-online_picard-w16.json": "709a5f2340591a733724a8981f45b689ddbbd1033de003fedc95a3e9d0e16273",
+    "attempt-1791283846267008900\\phase-1-online_picard-w16.npz": "3316bd22cd42d03c43cc5ed6b1ae580a417a0051f1eb1e4dd6f16c615d2096a5",
+    "attempt-1791283846267008900\\phase-1-online_picard-w4.json": "3ed03c13d6c8f2a7328a1bba7218505177c70345246b70429a1a3c74b1c7c4a5",
+    "attempt-1791283846267008900\\phase-1-online_picard-w4.npz": "a6e7a3fc3d41148ea18612f1a43d3566f154d22bf1701440342cf002db20d29d",
+    "attempt-1791283846267008900\\phase-1-sequential.json": "ae27505e49a336d9f3c12b92fa8f986793b04cdbbac3e45bcc286bcbd7ba64bf",
+    "attempt-1791283846267008900\\phase-1-sequential.npz": "3d44ecb2642cf2c9fa26393ca7e64a68affd1662a19205963926cde9b28ac934",
+    "attempt-1791283846267008900\\phase-2-online_picard-w16.json": "24a6d7336ea821cbb5f69ce9d9b0082d531f059c785703f5a8c9582fbb1ce48f",
+    "attempt-1791283846267008900\\phase-2-online_picard-w16.npz": "3316bd22cd42d03c43cc5ed6b1ae580a417a0051f1eb1e4dd6f16c615d2096a5",
+    "attempt-1791283846267008900\\phase-2-online_picard-w4.json": "5c0ce9d91772f33c6048e671e9c35e152f5e411a47f34ed760fef423072c5234",
+    "attempt-1791283846267008900\\phase-2-online_picard-w4.npz": "a6e7a3fc3d41148ea18612f1a43d3566f154d22bf1701440342cf002db20d29d",
+    "attempt-1791283846267008900\\phase-2-sequential.json": "054314d6c165b949b1be3edaace5ba940d8803c0d617138caa7cc559509be8b4",
+    "attempt-1791283846267008900\\phase-2-sequential.npz": "3d44ecb2642cf2c9fa26393ca7e64a68affd1662a19205963926cde9b28ac934",
+    "attempt-1791283846267008900\\phase-3-online_picard-w16.json": "5039ff0a71f089f8446153144b5a91c015173737ceb28da139006067d83a6ae4",
+    "attempt-1791283846267008900\\phase-3-online_picard-w16.npz": "3316bd22cd42d03c43cc5ed6b1ae580a417a0051f1eb1e4dd6f16c615d2096a5",
+    "attempt-1791283846267008900\\phase-3-online_picard-w4.json": "8edbdd5396945ebcfd9991d380d703aeaced40cf2ebbd65ff21026b011c85ba3",
+    "attempt-1791283846267008900\\phase-3-online_picard-w4.npz": "a6e7a3fc3d41148ea18612f1a43d3566f154d22bf1701440342cf002db20d29d",
+    "attempt-1791283846267008900\\phase-3-sequential.json": "cf044eed54fc2dfea9ae008760b2a301e18f927ce14009171132383d8e64249f",
+    "attempt-1791283846267008900\\phase-3-sequential.npz": "3d44ecb2642cf2c9fa26393ca7e64a68affd1662a19205963926cde9b28ac934",
+    "attempt-1791283846267008900\\phase-4-online_picard-w16.json": "ad06e53eb8d13cf4635b1fae9dbdd8030a52b27fff9bd5b7ab77ebefc4f9a57c",
+    "attempt-1791283846267008900\\phase-4-online_picard-w16.npz": "3316bd22cd42d03c43cc5ed6b1ae580a417a0051f1eb1e4dd6f16c615d2096a5",
+    "attempt-1791283846267008900\\phase-4-online_picard-w4.json": "801edd0fd36147074f9b5a58045cbe748bfdf648bda7e941bc42afcb12c9e284",
+    "attempt-1791283846267008900\\phase-4-online_picard-w4.npz": "a6e7a3fc3d41148ea18612f1a43d3566f154d22bf1701440342cf002db20d29d",
+    "attempt-1791283846267008900\\phase-4-sequential.json": "150e9564a79220db76c5b294faec0240a4d81472e5f5e257767ecff1949bdaeb",
+    "attempt-1791283846267008900\\phase-4-sequential.npz": "3d44ecb2642cf2c9fa26393ca7e64a68affd1662a19205963926cde9b28ac934",
+    "attempt-1791283846267008900\\probe-w16\\checked-values.npz": "c0fb99ccba93391eb433665e12742dda1d5bffcb5523a59ce5a098867caf14d2",
+    "attempt-1791283846267008900\\probe-w16\\checksums.json": "9e43349fd24fb1a847c6da20ac0ed71a28c7ff5852d309e4f3b4c335859377a5",
+    "attempt-1791283846267008900\\probe-w16\\inputs.npz": "2dcbf5d60fc52dc692e48b2dfadc71b3fa8ae04c3a85d42ebc06bf7d54e6444f",
+    "attempt-1791283846267008900\\probe-w16\\result.json": "c93e7b5f3315443fde199f08f8ea509a1d0d46b485d403c55823df4aef59652d",
+    "attempt-1791283846267008900\\probe-w4\\checked-values.npz": "d9713ed7fd821febe0e4464a836dbda96744a6b965c6c8686d1bc5ebe5432081",
+    "attempt-1791283846267008900\\probe-w4\\checksums.json": "04314ed612389e0aacbef22bb7e0f147832a92cab52dddd25d65da64118e1be6",
+    "attempt-1791283846267008900\\probe-w4\\inputs.npz": "5647abb78a6bef3af8d8af80f3483988fe800e4334d8282ae8b19622b8e5923e",
+    "attempt-1791283846267008900\\probe-w4\\result.json": "7102ab5fa924ee0e51657983832980553303457b675af3eb55969c26d27290d0",
+    "attempt-1791283846267008900\\started.json": "7e1b2804f10d35e755e90172841e5c4aff59a59d9c51e1e73d81ba1323e3815a"
+  },
+  "audited_workflows": 3,
+  "paired_acceptance_mismatches": 0,
+  "replays_identical": true,
+  "records": [
+    {
+      "label": "online_picard-w16",
+      "phase": 0,
+      "status": "completed",
+      "raw": "phase-0-online_picard-w16.npz",
+      "record": "phase-0-online_picard-w16.json",
+      "replay_identical": null,
+      "archive_seconds": 0.006758400006219745
+    },
+    {
+      "label": "sequential",
+      "phase": 0,
+      "status": "completed",
+      "raw": "phase-0-sequential.npz",
+      "record": "phase-0-sequential.json",
+      "replay_identical": null,
+      "archive_seconds": 0.006713399983709678
+    },
+    {
+      "label": "online_picard-w4",
+      "phase": 0,
+      "status": "completed",
+      "raw": "phase-0-online_picard-w4.npz",
+      "record": "phase-0-online_picard-w4.json",
+      "replay_identical": null,
+      "archive_seconds": 0.00581090000923723
+    },
+    {
+      "label": "sequential",
+      "phase": 1,
+      "status": "completed",
+      "raw": "phase-1-sequential.npz",
+      "record": "phase-1-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.005497200007084757
+    },
+    {
+      "label": "online_picard-w4",
+      "phase": 1,
+      "status": "completed",
+      "raw": "phase-1-online_picard-w4.npz",
+      "record": "phase-1-online_picard-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.005632900021737441
+    },
+    {
+      "label": "online_picard-w16",
+      "phase": 1,
+      "status": "completed",
+      "raw": "phase-1-online_picard-w16.npz",
+      "record": "phase-1-online_picard-w16.json",
+      "replay_identical": true,
+      "archive_seconds": 0.004781399999046698
+    },
+    {
+      "label": "online_picard-w4",
+      "phase": 2,
+      "status": "completed",
+      "raw": "phase-2-online_picard-w4.npz",
+      "record": "phase-2-online_picard-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.005305200000293553
+    },
+    {
+      "label": "online_picard-w16",
+      "phase": 2,
+      "status": "completed",
+      "raw": "phase-2-online_picard-w16.npz",
+      "record": "phase-2-online_picard-w16.json",
+      "replay_identical": true,
+      "archive_seconds": 0.004311900003813207
+    },
+    {
+      "label": "sequential",
+      "phase": 2,
+      "status": "completed",
+      "raw": "phase-2-sequential.npz",
+      "record": "phase-2-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.005489000002853572
+    },
+    {
+      "label": "online_picard-w16",
+      "phase": 3,
+      "status": "completed",
+      "raw": "phase-3-online_picard-w16.npz",
+      "record": "phase-3-online_picard-w16.json",
+      "replay_identical": true,
+      "archive_seconds": 0.005119399982504547
+    },
+    {
+      "label": "sequential",
+      "phase": 3,
+      "status": "completed",
+      "raw": "phase-3-sequential.npz",
+      "record": "phase-3-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.005512000003363937
+    },
+    {
+      "label": "online_picard-w4",
+      "phase": 3,
+      "status": "completed",
+      "raw": "phase-3-online_picard-w4.npz",
+      "record": "phase-3-online_picard-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.006069900002330542
+    },
+    {
+      "label": "sequential",
+      "phase": 4,
+      "status": "completed",
+      "raw": "phase-4-sequential.npz",
+      "record": "phase-4-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.006759199983207509
+    },
+    {
+      "label": "online_picard-w4",
+      "phase": 4,
+      "status": "completed",
+      "raw": "phase-4-online_picard-w4.npz",
+      "record": "phase-4-online_picard-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.006001300003845245
+    },
+    {
+      "label": "online_picard-w16",
+      "phase": 4,
+      "status": "completed",
+      "raw": "phase-4-online_picard-w16.npz",
+      "record": "phase-4-online_picard-w16.json",
+      "replay_identical": true,
+      "archive_seconds": 0.005053500004578382
+    }
+  ],
+  "model_setup_seconds": 0.0005502999993041158,
+  "probes": [
+    {
+      "width": 4,
+      "status": "passed"
+    },
+    {
+      "width": 16,
+      "status": "passed"
+    }
+  ],
+  "group_seconds_before_final_state_write": 6.787031599989859
+}

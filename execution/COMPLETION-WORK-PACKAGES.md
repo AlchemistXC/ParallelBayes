@@ -5,6 +5,17 @@
 2026-10-06 后继（`79b32b5`）：独立 `codex/cache-failure-evidence` 分支补齐受管理缓存的失败/未启动/不完整归档接收及外层完成条件。16 新/5 受影响检查通过，真实故障夹具保留已测费用与未知时间。旧20测量、80保存调用及40外层调用搬移重建成功，原统计值不变，重建新增采样0。见 [失败保留报告](../docs/OWNED-CACHE-FAILURE-EVIDENCE.md)。正式研究与 Windows 运行门槛仍未完成；不更改原冻结工作树。
 
 测量运行器后继（2026-10-06，执行源码 `87007f8`）：在独立 `codex/measurement-runtime` 分支分开后验样本与缓存测量资格，保留旧工作树/冻结文件。9 项新增行为检查及 17 项受影响检查通过；短/最大 MH 形状共 20 测量任务、80 执行与独立审计通过、接受事件零失配，样本资格和新增独立重复均为 0。恢复保持 600 任务文件不变，762 资产搬移重建通过。最大形状封存后的单输入汇总错误及警告保留，新增只读描述性伴随分析，不补跑。详见 [测量运行器报告](../docs/OWNED-CACHE-RUNTIME.md)。只关闭有限 Mac 技术验收；Windows F2/F3、正式研究及统一发布仍待完成。软件候选在独立 `codex/release-candidate-0.2` 分支（HEAD `01609ed`、安装源 `0e38413`），其干净 Mac 安装证据已取得，尚未原生 Windows 验收；本分支未合并该包版本。
+## Windows原始输入F2续跑（2026-10-06）
+
+分支`codex/windows-mechanism-completion`，执行提交`52fdfd0`。六份原NPZ从原草稿
+下载，归档和各文件/实际数组双重哈希通过；原协议身份仍为`9d8985f5…894b2c`。
+5项接口测试实际通过（0失败/跳过），冻结环境及41份源码字节一致。
+CPU/CUDA各完成36组/96工作流、0失败/待执行；显式原输入分析通过，终态`--resume`
+各新增组0、1360文件不变。各60路径配对/64探针通过，补充96跨设备配对事件零失配，
+最大路径差8.882e-15；2648任务资产和143小型回执核验通过。quasi-DEER两端各24配置
+均较慢；6零接受工作流/21全拒绝链记录每端均保留。没有重跑其他已完成核验或正式网格。
+完整回执见[Windows机制结果](../docs/WINDOWS-MECHANISM-COMPLETION.md)。
+详细逐阶段回执见`execution/windows-native/WORK-PACKAGES.md`。
 
 ## Mac独立接收与后继（2026-10-05）
 
@@ -58,7 +69,7 @@ H1/MALA同一全拒绝链原样保留。详见[完整本轮回执](../docs/WINDO
 |---|---|---|
 | F0 状态与版本 | 当前入口已统一；最终发布整合留在F5 | CURRENT-SCOPE、README、能力矩阵及历史文件后继指针更新；稿件数据声明区分公开CPU Release和Windows草稿；旧scope有快照 |
 | F1 诊断差异 | Mac机制和Windows原生回执均已取得 | 12KiB固定样例；一ULP折叠中心差改变5个秩；Windows原生中位数及二进制往返实测，见`completion-f1/windows-01`；不声称完整底层库因果定位 |
-| F2 机制 | 原512项只读核算完成；192工作流pilot在Windows输入校验前置失败，尚未采样 | 六份实际数组重建哈希均不符，原始冻结NPZ未附仓库；保留失败与候选数组，原文件已补入草稿并修复分析输入入口；按CODEX-PROMPT-F2-RESUME继续，Mac9工作流不替代Windows执行 |
+| F2 机制 | 原512项只读核算与192工作流Windows有限pilot完成；一般机制结论仍受限 | 原文件解决输入阻塞，CPU/CUDA各36组/96工作流通过；所有减速、零接受及旧错误保留；每模型仅2份主输入，技术重放不增n；详见WINDOWS-MECHANISM-COMPLETION.md |
 | F3 推断比较 | 独立调参与324项预算pilot/再分析完成；正式比较未完成 | 调参212/216有效，四项失败已定位且保留；新pilot 323/324有效，1项H1/MALA长路径容差失败已完成有限定位、仍保留失败；实际末位扰动在独立NumPy后续递推中放大。1836资产哈希、323份R回写、2160终态文件零重算恢复通过；174份有效拟合有有限Rhat>1.01，109份不可判定；H1 NUTS1799发散。正式重复/预算协议及Windows同机推断尚未完成；见docs/F3-BUDGET-PILOT-RESULTS.md |
 | F4 外部案例 | Mac及Windows CPU/CUDA/R目标核验通过；正式案例未完成 | wells模型的可积性、Stan/NumPy/torch密度梯度、轨迹及R逐字节传输通过；Windows第二轮12份技术执行实测通过，短链Rhat不利结果保留。有限参考六个连续函数有MCSE，稀有符号事件仍未定；独立积分12组（约4.77e-11，非认证总误差）保留，见docs/WELLS-QUADRATURE.md |
 | F5 发布与复现 | 未完成 | 统一版本候选、两平台干净安装、原始证据到全部表图/PDF的完整重建、公开材料状态核对 |
@@ -258,3 +269,31 @@ R依赖47包重新安装，Matrix复用同版本R发行版二进制；强制源�
 基线737adc3；只读核对全部远端分支及Release/草稿附件，Windows最新已接收仍ced54ef，无后续F2/原生运行器/候选安装回执。当前Windows上未上传活动未知，没有实时执行句柄，不记为活进程等待。F1有限门槛已关闭；F2、F3原生运行与正式推断、F4正式案例、F5两平台/全结果重建及F6最终稿未关闭。
 
 同一外部缺失在最近三个目标轮次连续出现；独立Mac安装扩展和当前稿重建已完成后，剩余关键验收依赖Windows证据及其后正式研究。总目标进入受阻状态，不标完成，不重跑旧网格或第三次最大NUTS。恢复需要新的Windows提交及完整结果包；若尚未执行，按已有F2续跑→F3原生运行器→候选安装提示词继续。见docs/COMPLETION-GATE-AUDIT.md与completion-gate-audit-v1机器记录。新增采样/诊断/测试重跑0。
+
+
+## 2026-10-07 Windows F3 native engineering, before science freeze
+
+Independent branch codex/windows-runtime-validation starts from verified research-integration 6f02f373 and merges the sealed F2 evidence at 9187bcb. Original mechanism worktree and frozen environment are unchanged. Native Windows Job Object lifecycle, shared lock, guarded resources, attempt classification, separate cache eligibility and portable cost receipts are implemented in new scripts/windows adapters; historical Mac runtime files remain untouched.
+
+Current behavior and single-input tests: 16 passed / 0 failed / 0 skipped. Earlier failed test attempts are retained in output/windows-runtime-engineering-v1. A hidden persistent fixture remained registered after its launching shell exited, then sealed kernel active-process count 0 with cache measurement_available=true and samples_eligible=false. Artificial fixtures are not MCMC repetitions. Requested private skills/ZIP are absent; no guessed private code or claimed skill use.
+
+Bounded 27-fit plus 24-cache-probe protocols are pending freeze/execution. No formal grid launched. See docs/WINDOWS-RUNTIME-VALIDATION.md.
+
+
+## 2026-10-07 native Windows technical result
+
+Frozen source 2ddcea970cf0ed78501b53f504d7230e9c2695ec; execution HEAD 6c04eb9782695ef4e600074fa36473cde5e249e8. Main protocol 8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c, cache protocol 350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab. All 27 main tasks valid, 24 cache measurements available, 96 cache calls; numerical/resource/infrastructure/unclassified failures and not-run counts all zero. Cache samples_eligible always false. No retry was needed.
+
+All 12 same-kernel actual-array pairs pass with zero acceptance mismatch; maximum path difference 3.6082914434132363e-10. Three NUTS tasks include four observed owned spawn workers each, saved initial states/RNG/warmup/adaptation/diagnostics. G2 maximum retains 16,384 steps in four chains at dimension64. CPU/CUDA MH arrays remain float64; actual CUDA records are cuda:0. All task jobs sealed active count0.
+
+Actual terminal resume executes 0 new tasks and preserves 831 main plus 828 cache files. Current behavior suite is 17 passed / 0 failed / 0 skipped, including real CUDA grandchild ownership and manager termination while a separate test CUDA context survives. Earlier failed test/ancillary launch attempts are retained. The read-only original-bundle audit reconstructs 27 function binaries and 90 modern R diagnostic rows exactly. Default native rebuild is exact; explicit receiver cross-platform mode preserves both binaries and uses frozen output tolerances for receiver calculations, without changing MH acceptance/path criteria.
+
+Evidence summary: benchmark/analysis/outputs/windows-runtime-technical-v1. Raw arrays, all attempts, commands, locks, Job observations, source snapshots and dependency freeze are separate. Archive relocation/delivery remains pending at this commit. This closes only finite technical execution checks; it does not establish formal inference, convergence, general acceleration, reboot recovery, or arbitrary workload resource safety. F5 installation and the formal F3/F4/F6 gates remain open.
+
+
+Resource-counter qualification: a bounded 128 MiB allocation is denied under a 64 MiB JobMemoryLimit and succeeds under 256 MiB (2 checks passed). The denied case nevertheless reports raw PeakJobMemoryUsed=147,828,736 bytes, above its limit. Therefore archived field kernel_peak_job_commit_bytes must be interpreted as the raw Windows counter, not a proven maximum of successful commitments. G2 NUTS raw counter 45,916,721,152 bytes is retained; its exact internal cause is not identified. Maximum sampled job RSS is 3,636,400,128 bytes, distinct from VRAM and not a no-missed-spike bound. Low RSS, observer error, lifecycle and CUDA resource refusal remain separately tested. Current distinct checks are 17 behavior/summary plus 2 matched allocation checks, all passed, no skips. No failed scientific task was removed or retried.
+
+
+2026-10-07 delivery: primary archive windows-native-20261006T170711Z.tar, 1,083,330,560 bytes, SHA256 6ef0f6e299867d67b27cbd4067a062a30f3593894dc4b34c1da9086f80ae7274, 3,753 manifest files verified. Safe extraction into a new directory and independently owned read-only analysis rebuilt all 27 planned rows, 24 cache rows, 96 call records, 27 function binaries and 90 R rows; all 12 pairs passed. Reconstruction jobs finished kernel active count0. New reader preserves raw memory counter semantics and explicit cross-platform differences. Initial archive creation clock was not separately recorded and remains unknown; inference/cache invocation and extra verification clocks are preserved. No new sampling during recovery or reanalysis.
+
+Receiver: `python scripts/windows/audit_technical_batch.py audit --bundle EXTRACTED/output/windows-runtime-technical-v1 --output NEW_ANALYSIS --rscript Rscript --r-library R_LIBRARY --cross-platform`. Actual Mac execution of this command remains receiving-side work. Current bounded runtime checks pass; formal scientific freezes remain gated on merged F2/cost/analysis/version intake, not on this pilot alone.

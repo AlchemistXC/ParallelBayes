@@ -1,0 +1,40 @@
+Tue Oct  6 19:42:30 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 616.56                 KMD Version: 616.56        CUDA UMD Version: 13.4     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5080      WDDM  |   00000000:01:00.0  On |                  N/A |
+|  0%   39C    P8             23W /  360W |    2031MiB /  16303MiB |      9%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2096    C+G   ..._cw5n1h2txyewy\SearchHost.exe      N/A      |
+|    0   N/A  N/A            2596    C+G   ...IA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A            3416    C+G   ...y\StartMenuExperienceHost.exe      N/A      |
+|    0   N/A  N/A            6788    C+G   ...\codex-computer-use-swift.exe      N/A      |
+|    0   N/A  N/A            9128    C+G   ...App_cw5n1h2txyewy\LockApp.exe      N/A      |
+|    0   N/A  N/A            9440    C+G   C:\Windows\explorer.exe               N/A      |
+|    0   N/A  N/A           10616    C+G   ...acted\runtime\WeChatAppEx.exe      N/A      |
+|    0   N/A  N/A           10976    C+G   ...les\Tencent\Weixin\Weixin.exe      N/A      |
+|    0   N/A  N/A           11904    C+G   ...indows\System32\ShellHost.exe      N/A      |
+|    0   N/A  N/A           12896    C+G   ...__kzh8wxbdkxb8p\DCv2\DCv2.exe      N/A      |
+|    0   N/A  N/A           14848    C+G   ....0.4258.53\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           16404    C+G   ...IA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A           16560    C+G   ...2p2nqsd0c76g0\app\ChatGPT.exe      N/A      |
+|    0   N/A  N/A           17740    C+G   ...xyewy\ShellExperienceHost.exe      N/A      |
+|    0   N/A  N/A           20896    C+G   ...2txyewy\CrossDeviceResume.exe      N/A      |
+|    0   N/A  N/A           21760    C+G   ...cw5n1h2txyewy\WidgetBoard.exe      N/A      |
+|    0   N/A  N/A           25868    C+G   ...les\Tencent\Weixin\Weixin.exe      N/A      |
+|    0   N/A  N/A           26872    C+G   ...Sony\INZONE Hub\INZONEHub.exe      N/A      |
+|    0   N/A  N/A           26952    C+G   ...5n1h2txyewy\TextInputHost.exe      N/A      |
+|    0   N/A  N/A           28308    C+G   ...Chrome\Application\chrome.exe      N/A      |
+|    0   N/A  N/A           29144    C+G   ...Chrome\Application\chrome.exe      N/A      |
++-----------------------------------------------------------------------------------------+

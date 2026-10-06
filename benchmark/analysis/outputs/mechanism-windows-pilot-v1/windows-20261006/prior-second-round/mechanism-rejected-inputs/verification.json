@@ -1,0 +1,101 @@
+{
+  "status": "blocked_before_sampling",
+  "protocol_sha256": "9d8985f579a64df95ebbb22ce0a607020261e5a66516efc80edcf9c956894b2c",
+  "numpy": "2.2.6",
+  "rows": [
+    {
+      "key": "G1-r0",
+      "expected": {
+        "actual_sha256": "ea71804657be62b2d7fad4da5813620fb02a920bba03e556f5f6d39f6bd6a9fb",
+        "file_sha256": "834d35bad5b22edd90a3067e98aa4417232750a5ef16b2dead2404555762dc0d"
+      },
+      "actual_sha256": "5206bfb5854a2782cf6440cd6c589c4cc73a252c9cab82070001263d2a1ae6bb",
+      "file_sha256": "729928ba9dc4880c237b543075621aa2f2236d9ca6c26e1e9bc0b197c6fee04b",
+      "actual_matches": false,
+      "array_sha256": {
+        "noise": "dce89a8f6d2c162470f5fa6bcf6c7b64cf484b0a3f96a155630dc3807fef9347",
+        "log_uniform": "0f6598e1c474676e7642069755bb949b350077c4cd11ad031e6aed711e96ad3f",
+        "directions": "2df2352df9d7d9a6b8e9eb62a38ca4c8037aebdf9bc8d3bfd4cf2b925d1044aa"
+      }
+    },
+    {
+      "key": "G1-r1",
+      "expected": {
+        "actual_sha256": "3fcd24a5389a7a31c35b31bedc1754d277f881343f54e1eae7d95241e739c72d",
+        "file_sha256": "88192b4eb218dbf6be797108329fc4fcd4f03d9cef598bbe585611c9e3525db9"
+      },
+      "actual_sha256": "efa9e2aeb2467fe7c2d9527ceee07be5c49b6fd3152b83061f91a6022ccb145a",
+      "file_sha256": "8994fc3cc712195dee280563e0c97eb28932ea03ce56f5157360437b61b14682",
+      "actual_matches": false,
+      "array_sha256": {
+        "noise": "b2f2c78e3975f16ec4ff4c9e03dba0fb28d3e01171ff81ca1fbd8ce028c2a82b",
+        "log_uniform": "f58d772d3b3c9dae7dd6605701c4932dc26b1f4a9f978dcfacb4e8af8556c273",
+        "directions": "cdea7220e0dbd07cfb113ae47c122afc0053938a98a1e165bbf4f9266a94355b"
+      }
+    },
+    {
+      "key": "G2-r0",
+      "expected": {
+        "actual_sha256": "dc628c3e6e8dc573145e9e511e3d53f24c4b2f09f7ce511c1d011bd7a516fab5",
+        "file_sha256": "50bde69cf317b7cf1ca0c0dda4b83556576c11c187e6216a6f5c214f9097ee50"
+      },
+      "actual_sha256": "08f7f52bb0312455a312f8577ab5bcb51a899a4aaa77bd224f184b6cc8390fa7",
+      "file_sha256": "7abb3512f56621d6268330ccae3c4178125bb9de0ac69f3a75fa64dd806e7b1a",
+      "actual_matches": false,
+      "array_sha256": {
+        "noise": "d2a34df81b47f5444c51343122d7632f89dfaccb12808de874c47ce7c9df9135",
+        "log_uniform": "9249f1ac9fb935d7f56902203ac8225e64b9b1842a3e1a911bb39c15f6a8526d",
+        "directions": "52c51c4b037b8579ab74e6f7f7c86c1c3cf9e4008fb4306532099388c0934ab8"
+      }
+    },
+    {
+      "key": "G2-r1",
+      "expected": {
+        "actual_sha256": "1f1205fc50e5b8541a7dcda6d5bc013bc97875de1a85cb95141aae8dbf77b642",
+        "file_sha256": "9434678a72e9d5384f564324476620693eb10440a48149c9d5bc969bd990e095"
+      },
+      "actual_sha256": "48bbeb8c7f8c9b51bff5340ee3495766324e9f0bb82600fd225d9b4bce647a1f",
+      "file_sha256": "b9461b05c0e0fbb5ae30f5cd0076e300e0276eff268bbe216056f62354aad710",
+      "actual_matches": false,
+      "array_sha256": {
+        "noise": "f1f54890e734d63977187614933ffb3b80762265c8897bc8419892144727135d",
+        "log_uniform": "7f8413deab7ae9bc3b7b3d6e9b770b062ea958f1305451a4d4e3bf74337772cc",
+        "directions": "eda395973ae33583b69834d15690ce46284d274a938222720514222f3393177a"
+      }
+    },
+    {
+      "key": "L1-r0",
+      "expected": {
+        "actual_sha256": "fd8f42471df740eaa23ab2e6a52c5cf28d1f7042aa1cb82101736f75ec403139",
+        "file_sha256": "5507bb4b1388af5d73d98e1a099661692e980c3b1bb8f86a0c99e5a2f2425c4e"
+      },
+      "actual_sha256": "8d447e211eb840714ce6e041a06e54916cd6681f87922f5980b629857faf2263",
+      "file_sha256": "c6578fdb9fdc40839645e29c18e662a5808b8302c58e663ba24de81f6adbf1a4",
+      "actual_matches": false,
+      "array_sha256": {
+        "noise": "e8d855fc83df8b439bfd4fb5c3f8da3959f50b735f831f16b0486489c19a9bb1",
+        "log_uniform": "33c66cdf8ef535760965f4032ba2b1c4fc0c2c6cafdb84160f15d1057e5a4420",
+        "directions": "976cab32a819f13a399326e6983e41939b6292f36a57a9d0ba1e77aa43d6cc48"
+      }
+    },
+    {
+      "key": "L1-r1",
+      "expected": {
+        "actual_sha256": "b57baef7365776f1a09b149858276db2021598f2517970c44b2863c5a7a6fb7f",
+        "file_sha256": "e634b387e330b0cd7519859cf987a06a9c6e70dfbfb895e039408b11741b1054"
+      },
+      "actual_sha256": "ee5b00f39daccbdba525b7e096133d9c023568b76839b780eacb4a1f06d4d10f",
+      "file_sha256": "3909b80e98841ff47c08c4ca1b0a1ca296cbb1a0d8da7c4a1a0e51af2161130a",
+      "actual_matches": false,
+      "array_sha256": {
+        "noise": "0bd45c4200254a7835dbc17603a0893096c2f0a1002ed4b14f7dafa605b31932",
+        "log_uniform": "abd4fdfd9e3a49f59de3a6e36918890989813ee3df142112ab906dad547a68de",
+        "directions": "ece5c9de712ff1e0a6db21de536e136a294c26ce1600c0dc8bf3a0136b0f40c9"
+      }
+    }
+  ],
+  "sampler_tasks_executed": 0,
+  "pending_workflows": 192,
+  "required_resolution": "Obtain the six original frozen NPZ files and verify both file and actual-array hashes. These rejected reconstructions are not experiment inputs.",
+  "cause": "Combined actual-array hashes differ; absent original arrays prevent assigning a specific component or numerical-library cause."
+}

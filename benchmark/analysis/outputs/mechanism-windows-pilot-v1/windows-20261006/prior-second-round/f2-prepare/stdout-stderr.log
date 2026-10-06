@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\chenh\.codex\worktrees\windows-completion-v2\ParallelBayes\scripts\completion\mechanism_runner.py", line 376, in <module>
+    elif a.action=='prepare':print(json.dumps(prepare_inputs(read_plan(a.plan),a.inputs.resolve()),indent=2))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chenh\.codex\worktrees\windows-completion-v2\ParallelBayes\scripts\completion\mechanism_runner.py", line 295, in prepare_inputs
+    if actual_hash(tape)!=expected['actual_sha256']:raise ValueError('Regenerated actual arrays differ')
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Regenerated actual arrays differ

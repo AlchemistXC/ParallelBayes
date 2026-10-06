@@ -1,0 +1,1875 @@
+{
+  "main": [
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "e93823d95615238c2f84baf4",
+        "input": "G1-rep0000.npz",
+        "kernel": "nuts",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cpu-nuts-spawn_chains"
+      },
+      "outcome": "valid",
+      "acceptance_rate": null,
+      "tape_sha256": null,
+      "nested_sampler_timing": null,
+      "cuda_memory": null,
+      "nuts_worker_pids": [
+        2100,
+        16756,
+        23000,
+        23404
+      ],
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "37d37511c3f71d7a05bec194",
+        "input": "G2-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cpu-rwm-online_picard"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.2379302978515625,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.009100399998715147,
+        "sample": 2.0715688999916892,
+        "total": 2.1713414000114426,
+        "transfer": 3.5699980799108744e-05,
+        "transform": 0.08911390000139363,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "2241a608d34204c6af19d0d5",
+        "input": "L1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cpu-rwm-online_picard"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.2578125,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.00016269998741336167,
+        "sample": 0.3548777000105474,
+        "total": 0.35559970000758767,
+        "transfer": 3.130000550299883e-05,
+        "transform": 0.0004335000121500343,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "81efa591e3dc6c241d1631ee",
+        "input": "G1-rep0000.npz",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cpu-mala-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.5078125,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.0001736000122036785,
+        "sample": 1.4518134999962058,
+        "total": 1.4530804000096396,
+        "transfer": 2.340000355616212e-05,
+        "transform": 0.000968700012890622,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "703ca20edf946b4c9f7718b8",
+        "input": "G2-rep0000.npz",
+        "kernel": "mala",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cpu-mala-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.4816436767578125,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.008844299998600036,
+        "sample": 21.08553359998041,
+        "total": 21.18579819999286,
+        "transfer": 2.9000017093494534e-05,
+        "transform": 0.08969590000924654,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "954d7a81986bdeda160774fc",
+        "input": "G1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cuda-rwm-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.30078125,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.0002634999982547015,
+        "sample": 0.5792095999931917,
+        "total": 0.5821374999941327,
+        "transfer": 0.00013940001372247934,
+        "transform": 0.0022338000126183033,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 33556480,
+        "free_bytes": 15597568000,
+        "peak_allocated": 34312704,
+        "peak_reserved": 35651584,
+        "reserved": 35651584,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "8e2fc63b74df2a200cc0c32c",
+        "input": "G1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cpu-rwm-online_picard"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.30078125,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.00018009997438639402,
+        "sample": 0.11377689999062568,
+        "total": 0.11441169999307021,
+        "transfer": 2.1899992134422064e-05,
+        "transform": 0.0003595000016503036,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "online_picard",
+        "id": "86f4393e0bae3e54d1e0d4b5",
+        "input": "G1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cuda-rwm-online_picard"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.30078125,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.00027459999546408653,
+        "sample": 0.4570286000089254,
+        "total": 0.4583920000004582,
+        "transfer": 0.00013570001465268433,
+        "transform": 0.000687899999320507,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 33556480,
+        "free_bytes": 15597568000,
+        "peak_allocated": 34312704,
+        "peak_reserved": 35651584,
+        "reserved": 35651584,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "cee6bf7f8b8c478c18062faa",
+        "input": "G2-rep0000.npz",
+        "kernel": "mala",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cpu-mala-quasi_deer"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.4816436767578125,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.00855630001751706,
+        "sample": 163.45177899999544,
+        "total": 163.55237339998712,
+        "transfer": 3.170000854879618e-05,
+        "transform": 0.09038219999638386,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "2e562952c308cb778a20867d",
+        "input": "G2-rep0000.npz",
+        "kernel": "nuts",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cpu-nuts-spawn_chains"
+      },
+      "outcome": "valid",
+      "acceptance_rate": null,
+      "tape_sha256": null,
+      "nested_sampler_timing": null,
+      "cuda_memory": null,
+      "nuts_worker_pids": [
+        2124,
+        2460,
+        14760,
+        26000
+      ],
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cuda",
+        "executor": "online_picard",
+        "id": "08096d6d96cf766f92b9914a",
+        "input": "G2-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cuda-rwm-online_picard"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.2379302978515625,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.010219199990388006,
+        "sample": 5.039545800013002,
+        "total": 5.140656799980206,
+        "transfer": 0.004125100007513538,
+        "transform": 0.08482650000951253,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 33620992,
+        "free_bytes": 15419310080,
+        "peak_allocated": 212421632,
+        "peak_reserved": 213909504,
+        "reserved": 213909504,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "9c8b7b3e2b05fe4a49f71c81",
+        "input": "G1-rep0000.npz",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cuda-mala-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.5078125,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.0002800000074785203,
+        "sample": 2.4457746999978554,
+        "total": 2.4473494999983814,
+        "transfer": 0.00017519999528303742,
+        "transform": 0.0006760999967809767,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 67110912,
+        "free_bytes": 15555624960,
+        "peak_allocated": 67867136,
+        "peak_reserved": 69206016,
+        "reserved": 69206016,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "96c306655b48d5b81b8b20c2",
+        "input": "L1-rep0000.npz",
+        "kernel": "nuts",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cpu-nuts-spawn_chains"
+      },
+      "outcome": "valid",
+      "acceptance_rate": null,
+      "tape_sha256": null,
+      "nested_sampler_timing": null,
+      "cuda_memory": null,
+      "nuts_worker_pids": [
+        7620,
+        17604,
+        24360,
+        26336
+      ],
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cuda",
+        "executor": "quasi_deer",
+        "id": "7ac2c0b1af8ee5b2a842b60f",
+        "input": "G2-rep0000.npz",
+        "kernel": "mala",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cuda-mala-quasi_deer"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.4816436767578125,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.010551599989412352,
+        "sample": 209.3823903000157,
+        "total": 209.48903089997475,
+        "transfer": 0.005276699987007305,
+        "transform": 0.08894009998766705,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 67175424,
+        "free_bytes": 15354298368,
+        "peak_allocated": 245976064,
+        "peak_reserved": 270532608,
+        "reserved": 270532608,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "1013266ef4651b95ca78d0fa",
+        "input": "G1-rep0000.npz",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cpu-mala-quasi_deer"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.5078125,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.00016569998115301132,
+        "sample": 4.443128499988234,
+        "total": 4.44385529999272,
+        "transfer": 3.5500008380040526e-05,
+        "transform": 0.00042440000106580555,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "e31896369b6464286a8924e2",
+        "input": "L1-rep0000.npz",
+        "kernel": "mala",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cuda-mala-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.44921875,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.00026110000908374786,
+        "sample": 2.896627600013744,
+        "total": 2.8980803999875207,
+        "transfer": 0.00017819998902268708,
+        "transform": 0.0006649999995715916,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 67128320,
+        "free_bytes": 15555624960,
+        "peak_allocated": 67884544,
+        "peak_reserved": 69206016,
+        "reserved": 69206016,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "a55194991a6aacb730cb332d",
+        "input": "L1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cpu-rwm-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.2578125,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.00017129999469034374,
+        "sample": 0.15457750001223758,
+        "total": 0.15520269999979064,
+        "transfer": 2.0099978428333998e-05,
+        "transform": 0.00035829999251291156,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "quasi_deer",
+        "id": "1d99c1960dec600ab10de406",
+        "input": "L1-rep0000.npz",
+        "kernel": "mala",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cuda-mala-quasi_deer"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.44921875,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.0002607000060379505,
+        "sample": 12.210733599989908,
+        "total": 12.21199360000901,
+        "transfer": 0.00018319999799132347,
+        "transform": 0.0005344999954104424,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 67128320,
+        "free_bytes": 15549333504,
+        "peak_allocated": 71411200,
+        "peak_reserved": 73400320,
+        "reserved": 73400320,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "7363552f073e12af85ebe2b2",
+        "input": "G1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cpu-rwm-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.30078125,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.00017270000535063446,
+        "sample": 0.10832470000605099,
+        "total": 0.10981289998744614,
+        "transfer": 4.1399995097890496e-05,
+        "transform": 0.001203799998620525,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "quasi_deer",
+        "id": "71c273759de6352704f03962",
+        "input": "G1-rep0000.npz",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cuda-mala-quasi_deer"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.5078125,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.00026649999199435115,
+        "sample": 8.057567399984691,
+        "total": 8.059142299985979,
+        "transfer": 0.00021150000975467265,
+        "transform": 0.0007235000084619969,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 67110912,
+        "free_bytes": 15555624960,
+        "peak_allocated": 67867136,
+        "peak_reserved": 69206016,
+        "reserved": 69206016,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "0f1b1683691e2570b39a6211",
+        "input": "G2-rep0000.npz",
+        "kernel": "mala",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cuda-mala-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.4816436767578125,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.010279600013745949,
+        "sample": 48.8224412999989,
+        "total": 48.91744849999668,
+        "transfer": 0.0037742000131402165,
+        "transform": 0.07897000000230037,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 67175424,
+        "free_bytes": 15377367040,
+        "peak_allocated": 245976064,
+        "peak_reserved": 247463936,
+        "reserved": 247463936,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "e2a990907f56322c675737ed",
+        "input": "L1-rep0000.npz",
+        "kernel": "mala",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cpu-mala-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.44921875,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.000169599981745705,
+        "sample": 1.2946207000059076,
+        "total": 1.2953666000103112,
+        "transfer": 2.780000795610249e-05,
+        "transform": 0.00044999999227002263,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "online_picard",
+        "id": "9a2415dba55bb430d10ee65a",
+        "input": "L1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cuda-rwm-online_picard"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.2578125,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.0002710999979171902,
+        "sample": 0.531714299984742,
+        "total": 0.5329384000215214,
+        "transfer": 0.00015060001169331372,
+        "transform": 0.0005304999940562993,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 33573888,
+        "free_bytes": 15595470848,
+        "peak_allocated": 35155968,
+        "peak_reserved": 35651584,
+        "reserved": 35651584,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "a5a1f31cd47f6b1d99a09afa",
+        "input": "G2-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cpu-rwm-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.2379302978515625,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.008791000000201166,
+        "sample": 4.685276500007603,
+        "total": 4.783332000020891,
+        "transfer": 3.4199998481199145e-05,
+        "transform": 0.0876847000035923,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "36fa461fac13349bd5f4ad9a",
+        "input": "G2-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cuda-rwm-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.2379302978515625,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.010343700007069856,
+        "sample": 16.226765100000193,
+        "total": 16.325168599985773,
+        "transfer": 0.0036936000105924904,
+        "transform": 0.08258230000501499,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 33620992,
+        "free_bytes": 15419310080,
+        "peak_allocated": 212421632,
+        "peak_reserved": 213909504,
+        "reserved": 213909504,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "fdf4de73bba50bea0e6577e6",
+        "input": "L1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cuda-rwm-sequential"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.2578125,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.00026229998911730945,
+        "sample": 0.5974497999995947,
+        "total": 0.5987078000034671,
+        "transfer": 0.00015839998377487063,
+        "transform": 0.0005554000090342015,
+        "warmup": 0.0
+      },
+      "cuda_memory": {
+        "allocated": 33573888,
+        "free_bytes": 15597568000,
+        "peak_allocated": 34330112,
+        "peak_reserved": 35651584,
+        "reserved": 35651584,
+        "scope": "Ordinary-process allocator peak, not whole-device or job RSS",
+        "synchronized": true
+      },
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "af710c66b7d41bca7e76e2b2",
+        "input": "L1-rep0000.npz",
+        "kernel": "mala",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cpu-mala-quasi_deer"
+      },
+      "outcome": "valid",
+      "acceptance_rate": 0.44921875,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290",
+      "nested_sampler_timing": {
+        "audit": 0.0,
+        "compile": 0.0,
+        "fallback": 0.0,
+        "input": 0.0002972999936901033,
+        "sample": 8.778604899998754,
+        "total": 8.77950500001316,
+        "transfer": 3.7200021324679255e-05,
+        "transform": 0.0004245000018272549,
+        "warmup": 0.0
+      },
+      "cuda_memory": null,
+      "nuts_worker_pids": null,
+      "function_status": "completed",
+      "binary_rebuilt_exact": true,
+      "diagnostics_rebuilt_exact": true
+    }
+  ],
+  "cache": [
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "8e605c593c2bcaddbc21141f",
+        "input": "G2-rep0000.npz",
+        "kernel": "mala",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cpu-mala-quasi_deer"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 162.6888115000038,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 163.98138400001335,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 652.2324117999815,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "8331203e19589ae5b871e921",
+        "input": "G1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cpu-rwm-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 0.10735739997471683,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 0.11099420001846738,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 0.43376629997510463,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "f4f94cb4c6a59638489bbad1",
+        "input": "G1-rep0000.npz",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cpu-mala-quasi_deer"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 3.826192999986233,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 4.2886028999928385,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 15.741085599962389,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "290618909d30ef7265dcfb50",
+        "input": "L1-rep0000.npz",
+        "kernel": "mala",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cuda-mala-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 2.0795322000049055,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 2.8830779000127222,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 9.093560400069691,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "a942c979b143c2ada06a7769",
+        "input": "G2-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cpu-rwm-online_picard"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 2.4135135999822523,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 2.117201999993995,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 9.317611599952215,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "ffd6965d5a9e5ea8ae3c7e79",
+        "input": "L1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cpu-rwm-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 0.14283379999687895,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 0.14404149999609217,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 0.5765062000136822,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "a8e397bdfa6ba58eb4003ee1",
+        "input": "G2-rep0000.npz",
+        "kernel": "mala",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cpu-mala-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 20.31771070000832,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 21.047360099997604,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 81.97572399998899,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "1a1e8c1fa363d7512e8f88b7",
+        "input": "G1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cpu-rwm-online_picard"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 0.1122200999816414,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 0.119988899998134,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 0.45585299999220297,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "da76026070456de80ae03838",
+        "input": "G2-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cuda-rwm-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 15.28010610002093,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 16.473920399992494,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 62.91936270004953,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "37a493ebaa4453c561db856a",
+        "input": "L1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cuda-rwm-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 0.5207273999985773,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 0.6315120000217576,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 2.257792000018526,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cuda",
+        "executor": "online_picard",
+        "id": "de5e902c80e3a466d49b7d81",
+        "input": "G2-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cuda-rwm-online_picard"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 4.825400100002298,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 5.184212499996647,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 20.09313000002294,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "quasi_deer",
+        "id": "9909d7917ba0d2e66a1a91dd",
+        "input": "G1-rep0000.npz",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cuda-mala-quasi_deer"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 7.29866729999776,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 8.129595800011884,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 30.026512400014326,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "be25dec1c87e0211378f2429",
+        "input": "G2-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cpu-rwm-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 4.873963999998523,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 4.580085900000995,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 19.141897199995583,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "349e3f5231f0ce8976d35834",
+        "input": "G1-rep0000.npz",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cuda-mala-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 1.74033880000934,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 2.557853199978126,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 7.7767722999851685,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "quasi_deer",
+        "id": "c2e412f1d1aaad1bb7b9d815",
+        "input": "L1-rep0000.npz",
+        "kernel": "mala",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cuda-mala-quasi_deer"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 10.78443500000867,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 12.27916279999772,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 44.92615030001616,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "7ac7ade3010e5b020d10bc46",
+        "input": "G2-rep0000.npz",
+        "kernel": "mala",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cuda-mala-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 46.631492600019556,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 50.91229780000867,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 191.17063050004072,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "5ef8c056ce414796055e67eb",
+        "input": "G1-rep0000.npz",
+        "kernel": "mala",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cpu-mala-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 0.7333829999843147,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 1.1057964999927208,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 3.083345199964242,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "online_picard",
+        "id": "77e2ed994ba2c0528fdafef4",
+        "input": "L1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cpu-rwm-online_picard"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 0.33714300001156516,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 0.3382473000092432,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 1.3479958000243641,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "online_picard",
+        "id": "87cbf28fc33aa0ec41d9b3cb",
+        "input": "L1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cuda-rwm-online_picard"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 0.3041934000211768,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 0.5041369999817107,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 1.5070613000134472,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "sequential",
+        "id": "b3c58eab9021677d9e44d1fe",
+        "input": "G1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cuda-rwm-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 0.3858364000043366,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 0.502681499987375,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 1.726656599988928,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "63d6320fd146278c7972f8aa",
+        "input": "L1-rep0000.npz",
+        "kernel": "mala",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cpu-mala-quasi_deer"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 8.12298099999316,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 8.633453600021312,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 32.99467100002221,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 16384,
+        "device": "cuda",
+        "executor": "quasi_deer",
+        "id": "cbeefd1c9760b9c19bece560",
+        "input": "G2-rep0000.npz",
+        "kernel": "mala",
+        "model": "G2",
+        "replicate": 0,
+        "workflow": "cuda-mala-quasi_deer"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 177.9732512999908,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 194.6206552000076,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 730.2480484000116,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cuda",
+        "executor": "online_picard",
+        "id": "87c7074e72c1dc0a72362295",
+        "input": "G1-rep0000.npz",
+        "kernel": "rwm",
+        "model": "G1",
+        "replicate": 0,
+        "workflow": "cuda-rwm-online_picard"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 0.2596396000008099,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 0.4206535999837797,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 1.2039351999992505,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    },
+    {
+      "task": {
+        "batch": 0,
+        "budget": 64,
+        "device": "cpu",
+        "executor": "sequential",
+        "id": "ec33ac689d8cf7dd9b1c4759",
+        "input": "L1-rep0000.npz",
+        "kernel": "mala",
+        "model": "L1",
+        "replicate": 0,
+        "workflow": "cpu-mala-sequential"
+      },
+      "outcome": "measurement_available",
+      "measurement_available": true,
+      "samples_eligible": false,
+      "description": {
+        "cached_seconds": 0.6143693999911193,
+        "confidence_interval": null,
+        "execution_outcomes": [
+          "valid",
+          "valid",
+          "valid",
+          "valid"
+        ],
+        "executions_recorded": 4,
+        "first_seconds": 1.323637499997858,
+        "formal_repetitions_added": 0,
+        "independent_technical_inputs": 1,
+        "known_executor_seconds": 3.1818754999840166,
+        "measurement_available": true,
+        "missing_clock_measurements": 0,
+        "samples_eligible": false,
+        "scope": "One actual technical input; three replays are technical measurements, not independent MCMC repetitions",
+        "task_outcome": "measurement_available"
+      }
+    }
+  ],
+  "resources": {
+    "maximum_observed_RSS_bytes": 3636400128,
+    "owned_process_membership_confirmed": true,
+    "raw_PeakJobMemoryUsed_bytes": 45916721152,
+    "raw_counter_is_not_proven_successful_commit_peak": true,
+    "matched_commit_guard_checks": 2,
+    "kernel_counter_anomaly_retained": true
+  },
+  "scope": "One technical input per model; no statistical intervals or speed conclusion"
+}

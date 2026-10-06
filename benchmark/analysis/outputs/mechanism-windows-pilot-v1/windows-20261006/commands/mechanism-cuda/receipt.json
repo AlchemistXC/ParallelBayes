@@ -1,0 +1,31 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "scripts/completion/mechanism_runner.py",
+    "run",
+    "--plan",
+    "benchmark/protocols/mechanism-windows-pilot-v1.json",
+    "--inputs",
+    "output/completion/windows-mechanism-original-attempt01/original-inputs",
+    "--output",
+    "output/completion/windows-mechanism-original-attempt01/mechanism-cuda",
+    "--device",
+    "cuda"
+  ],
+  "cwd": "D:\\workspace\\ParallelBayes",
+  "batch": "D:\\workspace\\ParallelBayes\\output\\completion\\windows-mechanism-original-attempt01",
+  "source_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+  "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+  "started_utc": "2026-10-06T10:48:19.785576+00:00",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "D:\\workspace\\ParallelBayes\\r-package\\inst\\python"
+  },
+  "pid": 6540,
+  "exit_code": 0,
+  "elapsed_seconds": 494.4015357999888,
+  "ended_utc": "2026-10-06T10:56:34.187435+00:00",
+  "log_sha256": "b53586f5055ee098d69cf4ea9befb47efc320d171c1ba2167dc50c513be29ea4"
+}

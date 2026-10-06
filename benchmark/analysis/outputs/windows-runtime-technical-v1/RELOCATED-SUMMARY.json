@@ -1,0 +1,154 @@
+{
+  "analyzer_sha256": "9573b6b2d1ece86e537a624629bff00e22b4938824b87bf20325fade62be3e5a",
+  "cache_counts": {
+    "infrastructure_interruption": 0,
+    "measurement_available": 24,
+    "not_run": 0,
+    "numerical_failure": 0,
+    "output_failure_unclassified": 0,
+    "resource_failure": 0
+  },
+  "cache_planned": 24,
+  "cache_protocol": "350189ba8526c2020d1887aa98b9289e30ea0eb12d2eb2fbd8436cbb51ec80ab",
+  "cached_calls": 96,
+  "diagnostic_function_rows": 90,
+  "exact_function_rebuilds": 27,
+  "formal_repetitions": 0,
+  "function_rebuilds_available": 27,
+  "intervals": null,
+  "main_counts": {
+    "infrastructure_interruption": 0,
+    "not_run": 0,
+    "numerical_failure": 0,
+    "output_failure_unclassified": 0,
+    "resource_failure": 0,
+    "valid": 27
+  },
+  "main_planned": 27,
+  "pairs": [
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cpu",
+      "kernel": "rwm",
+      "maximum_path_difference": 1.9984014443252818e-15,
+      "model": "G1",
+      "passed": true,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f"
+    },
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cpu",
+      "kernel": "mala",
+      "maximum_path_difference": 2.4963719980064525e-10,
+      "model": "G1",
+      "passed": true,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f"
+    },
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cuda",
+      "kernel": "rwm",
+      "maximum_path_difference": 1.9984014443252818e-15,
+      "model": "G1",
+      "passed": true,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f"
+    },
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cuda",
+      "kernel": "mala",
+      "maximum_path_difference": 2.4963719980064525e-10,
+      "model": "G1",
+      "passed": true,
+      "tape_sha256": "d1095f973847173a993344d5f14084edd1fb350a2c523ea23164944930bced7f"
+    },
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cpu",
+      "kernel": "rwm",
+      "maximum_path_difference": 1.8318679906315083e-15,
+      "model": "L1",
+      "passed": true,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290"
+    },
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cpu",
+      "kernel": "mala",
+      "maximum_path_difference": 1.4408396697973558e-10,
+      "model": "L1",
+      "passed": true,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290"
+    },
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cuda",
+      "kernel": "rwm",
+      "maximum_path_difference": 1.8318679906315083e-15,
+      "model": "L1",
+      "passed": true,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290"
+    },
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cuda",
+      "kernel": "mala",
+      "maximum_path_difference": 1.440850772027602e-10,
+      "model": "L1",
+      "passed": true,
+      "tape_sha256": "f6e499151cdd25bed23ad2a4bcc295739ba77d21bbb6e98d6476c8c49215b290"
+    },
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cpu",
+      "kernel": "rwm",
+      "maximum_path_difference": 1.354472090042691e-14,
+      "model": "G2",
+      "passed": true,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a"
+    },
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cpu",
+      "kernel": "mala",
+      "maximum_path_difference": 3.608289222967187e-10,
+      "model": "G2",
+      "passed": true,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a"
+    },
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cuda",
+      "kernel": "rwm",
+      "maximum_path_difference": 1.354472090042691e-14,
+      "model": "G2",
+      "passed": true,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a"
+    },
+    {
+      "acceptance_mismatches": 0,
+      "available": true,
+      "device": "cuda",
+      "kernel": "mala",
+      "maximum_path_difference": 3.6082914434132363e-10,
+      "model": "G2",
+      "passed": true,
+      "tape_sha256": "8b385375b2453769f816462ee1a15f41490eec09176b45b23d840465d30dd05a"
+    }
+  ],
+  "receiver_cross_platform_mode": false,
+  "receiver_rules": "Default exact reconstruction. Explicit cross-platform mode preserves both binaries and uses frozen output atol/rtol for function/diagnostic comparisons; MH path/acceptance rules unchanged.",
+  "sample_eligible_cache_tasks": 0,
+  "source_protocol": "8abed79661a077b8b7a1746f1ee90b506187b79f4bf81b1c7872ec0ad3481f9c"
+}

@@ -1,0 +1,558 @@
+{
+  "cache-resume": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/windows/technical_batch.py",
+      "run",
+      "--bundle",
+      "output/windows-runtime-technical-v1",
+      "--host-lock",
+      "D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock",
+      "--rscript",
+      "D:/Tools/R-4.6.1/bin/Rscript.exe",
+      "--r-library",
+      "D:/Tools/R-library-4.6",
+      "--phase",
+      "cache",
+      "--resume"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T16:56:16.914257+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 28188,
+    "exit_code": 0,
+    "elapsed_seconds": 7.999454100005096,
+    "ended_utc": "2026-10-06T16:56:24.913194+00:00",
+    "log_sha256": "8b1b48ef8bc1c2db95c4008b51f6c1d8e38cb7f3e62496ea0b268c3328462a0b"
+  },
+  "cache-technical": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/windows/technical_batch.py",
+      "run",
+      "--bundle",
+      "output/windows-runtime-technical-v1",
+      "--host-lock",
+      "D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock",
+      "--rscript",
+      "D:/Tools/R-4.6.1/bin/Rscript.exe",
+      "--r-library",
+      "D:/Tools/R-library-4.6",
+      "--phase",
+      "cache"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T16:18:42.262335+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 1636,
+    "exit_code": 0,
+    "elapsed_seconds": 2081.1207460000005,
+    "ended_utc": "2026-10-06T16:53:23.347638+00:00",
+    "log_sha256": "3adca84b8985d9287bf7520497074eda3012fe1a7eee09095f3c26cecb2167cb"
+  },
+  "cache-terminal-after": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "output/windows-runtime-engineering-v1/snapshot_terminal.py",
+      "output/windows-runtime-technical-v1/cache",
+      "output/windows-runtime-engineering-v1/cache-after.json",
+      "--before",
+      "output/windows-runtime-engineering-v1/cache-before.json"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T16:56:25.012396+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 21732,
+    "exit_code": 0,
+    "elapsed_seconds": 0.6118975999997929,
+    "ended_utc": "2026-10-06T16:56:25.623958+00:00",
+    "log_sha256": "fd465b28456d08f53e9a60000a83a959bfbb71436d461f63fc263cccf2e1a0e9"
+  },
+  "cache-terminal-before": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "output/windows-runtime-engineering-v1/snapshot_terminal.py",
+      "output/windows-runtime-technical-v1/cache",
+      "output/windows-runtime-engineering-v1/cache-before.json"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T16:56:16.203804+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 25536,
+    "exit_code": 0,
+    "elapsed_seconds": 0.6110368000227027,
+    "ended_utc": "2026-10-06T16:56:16.815437+00:00",
+    "log_sha256": "e27c83a0f2fc75bb3bc1c945e309128b96fe705ff6438147b9f30f4cd072eff3"
+  },
+  "complete-behavior-tests": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests/windows/test_job_objects.py",
+      "tests/windows/test_owned_runtime.py",
+      "tests/windows/test_technical_summary.py",
+      "-q",
+      "--basetemp",
+      "output/windows-runtime-engineering-v1/pytest-complete",
+      "--junitxml",
+      "output/windows-runtime-engineering-v1/complete-tests.xml"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T16:56:25.724414+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 10768,
+    "exit_code": 0,
+    "elapsed_seconds": 11.683300799981225,
+    "ended_utc": "2026-10-06T16:56:37.408185+00:00",
+    "log_sha256": "9de2ab1b7dd78184bf6542828eba7c1560af196e4b86cc47d9a95e899ec4e980"
+  },
+  "freeze-technical": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/windows/technical_batch.py",
+      "freeze",
+      "--output",
+      "output/windows-runtime-technical-v1",
+      "--rscript",
+      "D:/Tools/R-4.6.1/bin/Rscript.exe",
+      "--r-library",
+      "D:/Tools/R-library-4.6"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "2ddcea970cf0ed78501b53f504d7230e9c2695ec",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T16:03:54.256646+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 6568,
+    "exit_code": 0,
+    "elapsed_seconds": 9.992609500011895,
+    "ended_utc": "2026-10-06T16:04:04.248984+00:00",
+    "log_sha256": "368bcd4e759e9cc4e4e5d06f94c920192349c5f57f4000307191f95c782930ca"
+  },
+  "job-kernel-tests": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests/windows/test_job_objects.py",
+      "-q",
+      "--basetemp",
+      "output/windows-runtime-engineering-v1/pytest-job",
+      "--junitxml",
+      "output/windows-runtime-engineering-v1/job-tests.xml"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "9187bcb559673049e97575484fcfa52cf3bea2bb",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T15:31:32.262740+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 17476,
+    "exit_code": 1,
+    "elapsed_seconds": 2.5785352000093553,
+    "ended_utc": "2026-10-06T15:31:34.841200+00:00",
+    "log_sha256": "3125a4d8a08d1546fbdd600c1d1e8ae4da05765a18f07723d40c349fda768ce7"
+  },
+  "kernel-commit-controls": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests/windows/test_owned_runtime.py::test_kernel_commit_limit_denies_small_owned_allocation",
+      "-q",
+      "--basetemp",
+      "output/windows-runtime-engineering-v1/pytest-kernel-controls",
+      "--junitxml",
+      "output/windows-runtime-engineering-v1/kernel-controls.xml"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T17:05:56.851436+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 7256,
+    "exit_code": 0,
+    "elapsed_seconds": 0.607850199972745,
+    "ended_utc": "2026-10-06T17:05:57.459055+00:00",
+    "log_sha256": "b7af573496a9f98245e57d016869dcf91f9ff73a3eb23997b50e4c55bed8c337"
+  },
+  "kernel-commit-probe": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests/windows/test_owned_runtime.py::test_kernel_commit_limit_denies_small_owned_allocation",
+      "-q",
+      "--basetemp",
+      "output/windows-runtime-engineering-v1/pytest-kernel-commit",
+      "--junitxml",
+      "output/windows-runtime-engineering-v1/kernel-commit.xml"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T17:04:20.729264+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 18548,
+    "exit_code": 0,
+    "elapsed_seconds": 0.43624170002294704,
+    "ended_utc": "2026-10-06T17:04:21.165590+00:00",
+    "log_sha256": "86d4f83974707607aa16ead7b533d3955c1d4cd00e9736f4e1777d397dd9228b"
+  },
+  "main-resume": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/windows/technical_batch.py",
+      "run",
+      "--bundle",
+      "output/windows-runtime-technical-v1",
+      "--host-lock",
+      "D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock",
+      "--rscript",
+      "D:/Tools/R-4.6.1/bin/Rscript.exe",
+      "--r-library",
+      "D:/Tools/R-library-4.6",
+      "--phase",
+      "main",
+      "--resume"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T16:17:54.839040+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 13264,
+    "exit_code": 0,
+    "elapsed_seconds": 6.18196899999748,
+    "ended_utc": "2026-10-06T16:18:01.020780+00:00",
+    "log_sha256": "a3b46bd754da42cee5d887081419f32e9b0e54702eec50bd5bb5407747a8dc37"
+  },
+  "main-technical": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/windows/technical_batch.py",
+      "run",
+      "--bundle",
+      "output/windows-runtime-technical-v1",
+      "--host-lock",
+      "D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock",
+      "--rscript",
+      "D:/Tools/R-4.6.1/bin/Rscript.exe",
+      "--r-library",
+      "D:/Tools/R-library-4.6",
+      "--phase",
+      "main"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T16:04:32.010387+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 25336,
+    "exit_code": 0,
+    "elapsed_seconds": 730.4439483000024,
+    "ended_utc": "2026-10-06T16:16:42.433958+00:00",
+    "log_sha256": "36a1a5e39b763efa438faf28d228ff1164c68c7e9c99cfca400623cc721e23db"
+  },
+  "main-terminal-after": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "output/windows-runtime-engineering-v1/snapshot_terminal.py",
+      "output/windows-runtime-technical-v1/main",
+      "output/windows-runtime-engineering-v1/main-after.json",
+      "--before",
+      "output/windows-runtime-engineering-v1/main-before.json"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T16:18:01.118367+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 24312,
+    "exit_code": 0,
+    "elapsed_seconds": 0.5198336000030395,
+    "ended_utc": "2026-10-06T16:18:01.637861+00:00",
+    "log_sha256": "5a280168201e360fb2a481f245652d60c6e42f8a98c8ab4b2fee1dd242ef9324"
+  },
+  "main-terminal-before": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "output/windows-runtime-engineering-v1/snapshot_terminal.py",
+      "output/windows-runtime-technical-v1/main",
+      "output/windows-runtime-engineering-v1/main-before.json"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T16:17:54.229877+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 16720,
+    "exit_code": 0,
+    "elapsed_seconds": 0.509681300027296,
+    "ended_utc": "2026-10-06T16:17:54.739935+00:00",
+    "log_sha256": "ba30b6bf83ed2a2c713612960a201a22ea16de8568e12b831d2e9fb64e05decc"
+  },
+  "ownership-and-summary-final": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests/windows/test_job_objects.py",
+      "tests/windows/test_owned_runtime.py",
+      "tests/windows/test_technical_summary.py",
+      "-q",
+      "--basetemp",
+      "output/windows-runtime-engineering-v1/pytest-final",
+      "--junitxml",
+      "output/windows-runtime-engineering-v1/final-tests.xml"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "9187bcb559673049e97575484fcfa52cf3bea2bb",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T15:52:36.712075+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 12748,
+    "exit_code": 0,
+    "elapsed_seconds": 9.011172600003192,
+    "ended_utc": "2026-10-06T15:52:45.723789+00:00",
+    "log_sha256": "ae879d4ff2e5df731e0bf48312998150d3f1e8515817ec8670d103d1ac997f64"
+  },
+  "ownership-behavior-tests-01": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests/windows/test_job_objects.py",
+      "tests/windows/test_owned_runtime.py",
+      "-q",
+      "--basetemp",
+      "output/windows-runtime-engineering-v1/pytest-owned-01",
+      "--junitxml",
+      "output/windows-runtime-engineering-v1/owned-tests-01.xml"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "9187bcb559673049e97575484fcfa52cf3bea2bb",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T15:36:38.052661+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 29396,
+    "exit_code": 1,
+    "elapsed_seconds": 10.2507203000132,
+    "ended_utc": "2026-10-06T15:36:48.302727+00:00",
+    "log_sha256": "b9128a0b6d6256752fd0ad1b1599519996d6d8dd40ad6420c0637f7517e62d96"
+  },
+  "ownership-behavior-tests-02": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests/windows/test_job_objects.py",
+      "tests/windows/test_owned_runtime.py",
+      "-q",
+      "--basetemp",
+      "output/windows-runtime-engineering-v1/pytest-owned-02",
+      "--junitxml",
+      "output/windows-runtime-engineering-v1/owned-tests-02.xml"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "9187bcb559673049e97575484fcfa52cf3bea2bb",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T15:37:49.232034+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 3044,
+    "exit_code": 0,
+    "elapsed_seconds": 7.716820100002224,
+    "ended_utc": "2026-10-06T15:37:56.948626+00:00",
+    "log_sha256": "52abdd059f0733c5f32827b29e56f51cdba3ded2b7369e2a5977f3d3f6f7928e"
+  },
+  "ownership-behavior-tests-03": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests/windows/test_job_objects.py",
+      "tests/windows/test_owned_runtime.py",
+      "-q",
+      "--basetemp",
+      "output/windows-runtime-engineering-v1/pytest-owned-03",
+      "--junitxml",
+      "output/windows-runtime-engineering-v1/owned-tests-03.xml"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "9187bcb559673049e97575484fcfa52cf3bea2bb",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T15:45:36.340516+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 6272,
+    "exit_code": 0,
+    "elapsed_seconds": 10.661218799999915,
+    "ended_utc": "2026-10-06T15:45:47.000833+00:00",
+    "log_sha256": "bd03e648e70fcbcbf1fe44ff7249e027eb6b0c12e7f08afa6d1b0fddb55d0f59"
+  },
+  "seal-technical-evidence": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "scripts/windows/audit_technical_batch.py",
+      "seal",
+      "--bundle",
+      "output/windows-runtime-technical-v1"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "6c04eb9782695ef4e600074fa36473cde5e249e8",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T16:57:51.679419+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 18256,
+    "exit_code": 0,
+    "elapsed_seconds": 2.8860414999944624,
+    "ended_utc": "2026-10-06T16:57:54.566038+00:00",
+    "log_sha256": "05346e6e242be7b455613424f4d2480157f38f4d446ce40a64a12947c7ae11de"
+  },
+  "single-input-tests": {
+    "command": [
+      "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests/windows/test_technical_summary.py",
+      "-q",
+      "--basetemp",
+      "output/windows-runtime-engineering-v1/pytest-summary",
+      "--junitxml",
+      "output/windows-runtime-engineering-v1/summary-tests.xml"
+    ],
+    "cwd": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation",
+    "batch": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\output\\windows-runtime-engineering-v1",
+    "source_commit": "9187bcb559673049e97575484fcfa52cf3bea2bb",
+    "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+    "started_utc": "2026-10-06T15:51:07.347401+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "PYTHONPATH": "D:\\workspace\\ParallelBayes\\output\\worktrees\\windows-runtime-validation\\r-package\\inst\\python"
+    },
+    "pid": 24320,
+    "exit_code": 0,
+    "elapsed_seconds": 0.26389269999344833,
+    "ended_utc": "2026-10-06T15:51:07.611756+00:00",
+    "log_sha256": "49078aad324e38985d21808992a910c11559f93df88826918fddd5a23f2e2e79"
+  }
+}

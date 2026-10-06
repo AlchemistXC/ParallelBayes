@@ -1,0 +1,12 @@
+{
+  "cache-after.json": "73caafe398956bff38cdcf2d024147326df1ad3ce9a45ca8fa0891dc8155a154",
+  "commands.json": "7f2a15ae1c1bec0e5493784cfbdc50a6219947c0d163308f8563ae156d3a3282",
+  "delivery.json": "8613fcb462b60cf9cd40e4fa8d2e03df9a34da9c303f06851c89c4b8aa6a8744",
+  "kernel-controls.xml": "a8966aa68734ddb9d6092b40ca780e41416ec12672e51154a62e1631e5675583",
+  "main-after.json": "69c5537ed55043877be594d0a85b5ecea8b1ecd77ad42131ade0007348d46baa",
+  "reference-contract.json": "b3a25fa044e24e5a9a65bfc88397137f918ff86afd65224ef3d817a60409930d",
+  "RELOCATED-SUMMARY.json": "a7a2d20c47b16c0c7450c1df27583e604acb2c70622d1eafcdea49bdfea3bb1d",
+  "SUMMARY.json": "7680d1e2656fceab693c5412971bcbac80333abc0a047e434367d5135a9349b5",
+  "technical-receipt.json": "fe4e6b7b710e1947572674dcf2c9a1ec33b34a909a055898d34254cac38ec673",
+  "tests.xml": "821d2cce5d1e16f85efbac19125f9322036ff0e845f00bc64d54ccf7db647b5c"
+}

@@ -1,0 +1,215 @@
+{
+  "identity": "e71747c7b86aaad930d7b9c4fb974f64a2cea908ee96414e42eb3e3347191f07",
+  "status": "completed",
+  "attempt": "attempt-1791283602642883600",
+  "group": {
+    "model": "G1",
+    "kernel": "mala",
+    "replicate": 0,
+    "chains": 4,
+    "draws": 128,
+    "windows": [
+      4,
+      16
+    ],
+    "step_size": 0.1,
+    "role": "window_chain_grid",
+    "id": "57554c9e201545146e62"
+  },
+  "device": "cpu",
+  "assets": {
+    "attempt-1791283602642883600\\comparison.json": "3bb2d47e216b1ef79c518e60db2815a0abb07d05580f52683626becfedec2aff",
+    "attempt-1791283602642883600\\inputs.npz": "cc1c2c4c141b79c7d8eaab1f9c65b9b0587e493cdc58b41e118820a17d94114c",
+    "attempt-1791283602642883600\\phase-0-quasi_deer-w16.json": "9c144391072a0452fac2046d55e1e54447b365189862c2d31be3c65883741369",
+    "attempt-1791283602642883600\\phase-0-quasi_deer-w16.npz": "03a3541a94f63f7e3793a57f90c379e8441704adc7038e0a4e4e9ba3042e9f4d",
+    "attempt-1791283602642883600\\phase-0-quasi_deer-w4.json": "481de1f6c12da132257e3abfee2e0ad68e4fcec8492ecd63d99583b9575be8b7",
+    "attempt-1791283602642883600\\phase-0-quasi_deer-w4.npz": "d85ad68f3013b33f9970db2446eb8ef57aa3196c792bacba950c9187c32622aa",
+    "attempt-1791283602642883600\\phase-0-sequential.json": "d4aaf76a58301c90d46568b57ee44a8dc9461ff05996465f7e19a1fe3ab045aa",
+    "attempt-1791283602642883600\\phase-0-sequential.npz": "20862725b0d13424fb3e20a224f2193c5e4477abba9e64769aacec1aa70a2e40",
+    "attempt-1791283602642883600\\phase-1-quasi_deer-w16.json": "2fc45966afc0d98dc418bb3321e56929c16b0d3f80dd4d8b1df7197b22a228e4",
+    "attempt-1791283602642883600\\phase-1-quasi_deer-w16.npz": "03a3541a94f63f7e3793a57f90c379e8441704adc7038e0a4e4e9ba3042e9f4d",
+    "attempt-1791283602642883600\\phase-1-quasi_deer-w4.json": "c44740e80df4ea553831b69a0e23e1025df7c1f51e12b351e22f805ea3b2e825",
+    "attempt-1791283602642883600\\phase-1-quasi_deer-w4.npz": "d85ad68f3013b33f9970db2446eb8ef57aa3196c792bacba950c9187c32622aa",
+    "attempt-1791283602642883600\\phase-1-sequential.json": "d6911753d3d3db7691fc9bca48b44666396d6b09a3737b31a427dbbbf8650003",
+    "attempt-1791283602642883600\\phase-1-sequential.npz": "20862725b0d13424fb3e20a224f2193c5e4477abba9e64769aacec1aa70a2e40",
+    "attempt-1791283602642883600\\phase-2-quasi_deer-w16.json": "a39bc75c84c9d3556401dbc20d494e78915a85c75f1b12d70415bcc9bb45dabb",
+    "attempt-1791283602642883600\\phase-2-quasi_deer-w16.npz": "03a3541a94f63f7e3793a57f90c379e8441704adc7038e0a4e4e9ba3042e9f4d",
+    "attempt-1791283602642883600\\phase-2-quasi_deer-w4.json": "e69accaabcff96980a8dccc8c07b3248d213e6e171fe5f137c1a8c78fdb4211e",
+    "attempt-1791283602642883600\\phase-2-quasi_deer-w4.npz": "d85ad68f3013b33f9970db2446eb8ef57aa3196c792bacba950c9187c32622aa",
+    "attempt-1791283602642883600\\phase-2-sequential.json": "28ffb99c2fd23c90dccf171e7acbaa15e0cf91502da2b9829e1029edf3ef3957",
+    "attempt-1791283602642883600\\phase-2-sequential.npz": "20862725b0d13424fb3e20a224f2193c5e4477abba9e64769aacec1aa70a2e40",
+    "attempt-1791283602642883600\\phase-3-quasi_deer-w16.json": "8710756eac3ab9892e0cf4cd6bb5646e0c4d421942077c39242503a714f2fac7",
+    "attempt-1791283602642883600\\phase-3-quasi_deer-w16.npz": "03a3541a94f63f7e3793a57f90c379e8441704adc7038e0a4e4e9ba3042e9f4d",
+    "attempt-1791283602642883600\\phase-3-quasi_deer-w4.json": "7d77c934aaa43ee6359529a868ef3fe6c38cbffc98475b0961a6c5016f29a76e",
+    "attempt-1791283602642883600\\phase-3-quasi_deer-w4.npz": "d85ad68f3013b33f9970db2446eb8ef57aa3196c792bacba950c9187c32622aa",
+    "attempt-1791283602642883600\\phase-3-sequential.json": "18c91fb32127b2cf796c17c13f8376b3883a76f0772701f26cd0a4ceb1192d6e",
+    "attempt-1791283602642883600\\phase-3-sequential.npz": "20862725b0d13424fb3e20a224f2193c5e4477abba9e64769aacec1aa70a2e40",
+    "attempt-1791283602642883600\\phase-4-quasi_deer-w16.json": "4a43baaa7b04e064517f064c1ab3eb6a202227bdd3c09a7731429df76c1319cf",
+    "attempt-1791283602642883600\\phase-4-quasi_deer-w16.npz": "03a3541a94f63f7e3793a57f90c379e8441704adc7038e0a4e4e9ba3042e9f4d",
+    "attempt-1791283602642883600\\phase-4-quasi_deer-w4.json": "f6777cab4ea67c1f7fc6523825e2d5b892627466332ac62e9733d8322bfef4a2",
+    "attempt-1791283602642883600\\phase-4-quasi_deer-w4.npz": "d85ad68f3013b33f9970db2446eb8ef57aa3196c792bacba950c9187c32622aa",
+    "attempt-1791283602642883600\\phase-4-sequential.json": "37ff21a3cdc3f09a3f5a638f133aefc218d2b343cb891dfa3acd558db6974b98",
+    "attempt-1791283602642883600\\phase-4-sequential.npz": "20862725b0d13424fb3e20a224f2193c5e4477abba9e64769aacec1aa70a2e40",
+    "attempt-1791283602642883600\\probe-w16\\checked-values.npz": "22c2b39cb15cfdbd105cdf60afb52c1ab092129ee98ea7a4572588c60f7fbc5e",
+    "attempt-1791283602642883600\\probe-w16\\checksums.json": "3f824ffceb41f708a8914a85c5ff47ac6ce593040d7516597cf7e8fef898f81f",
+    "attempt-1791283602642883600\\probe-w16\\inputs.npz": "2fb0eb878e017c09def748139b852163f4e94416e9d1886c22ef1dcdc4597e28",
+    "attempt-1791283602642883600\\probe-w16\\result.json": "7137ec3ab19fff3e4daf52b5acc47c95cc710f5997c0f8bccbe5b72c7d4d0631",
+    "attempt-1791283602642883600\\probe-w4\\checked-values.npz": "894658d4d11cfed3f7eed2e69060715ac048111ad1aedaaf6f458de4a5c5c453",
+    "attempt-1791283602642883600\\probe-w4\\checksums.json": "0095af64d0fbc9448b9de3f3b049510db60ac31d5eab0bd61d81f12a7e3d59a5",
+    "attempt-1791283602642883600\\probe-w4\\inputs.npz": "b0b970c1949a4f4862a2a60754961f13a982c024afb39ecf4d776b82f58193a4",
+    "attempt-1791283602642883600\\probe-w4\\result.json": "c9067b4d4eeaeeb79cacd4187407114f94dd91a788af20a9511d026c4321059a",
+    "attempt-1791283602642883600\\started.json": "bd47f1a72e1fc85c80b0b52d21bf0731faf2ed7c03081678972fc8bc81eef020"
+  },
+  "audited_workflows": 3,
+  "paired_acceptance_mismatches": 0,
+  "replays_identical": true,
+  "records": [
+    {
+      "label": "quasi_deer-w16",
+      "phase": 0,
+      "status": "completed",
+      "raw": "phase-0-quasi_deer-w16.npz",
+      "record": "phase-0-quasi_deer-w16.json",
+      "replay_identical": null,
+      "archive_seconds": 0.009219900006428361
+    },
+    {
+      "label": "quasi_deer-w4",
+      "phase": 0,
+      "status": "completed",
+      "raw": "phase-0-quasi_deer-w4.npz",
+      "record": "phase-0-quasi_deer-w4.json",
+      "replay_identical": null,
+      "archive_seconds": 0.00950020001619123
+    },
+    {
+      "label": "sequential",
+      "phase": 0,
+      "status": "completed",
+      "raw": "phase-0-sequential.npz",
+      "record": "phase-0-sequential.json",
+      "replay_identical": null,
+      "archive_seconds": 0.005568099993979558
+    },
+    {
+      "label": "quasi_deer-w4",
+      "phase": 1,
+      "status": "completed",
+      "raw": "phase-1-quasi_deer-w4.npz",
+      "record": "phase-1-quasi_deer-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.013705100020160899
+    },
+    {
+      "label": "sequential",
+      "phase": 1,
+      "status": "completed",
+      "raw": "phase-1-sequential.npz",
+      "record": "phase-1-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.007078499998897314
+    },
+    {
+      "label": "quasi_deer-w16",
+      "phase": 1,
+      "status": "completed",
+      "raw": "phase-1-quasi_deer-w16.npz",
+      "record": "phase-1-quasi_deer-w16.json",
+      "replay_identical": true,
+      "archive_seconds": 0.007481200009351596
+    },
+    {
+      "label": "sequential",
+      "phase": 2,
+      "status": "completed",
+      "raw": "phase-2-sequential.npz",
+      "record": "phase-2-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.0074894999852404
+    },
+    {
+      "label": "quasi_deer-w16",
+      "phase": 2,
+      "status": "completed",
+      "raw": "phase-2-quasi_deer-w16.npz",
+      "record": "phase-2-quasi_deer-w16.json",
+      "replay_identical": true,
+      "archive_seconds": 0.007890399981988594
+    },
+    {
+      "label": "quasi_deer-w4",
+      "phase": 2,
+      "status": "completed",
+      "raw": "phase-2-quasi_deer-w4.npz",
+      "record": "phase-2-quasi_deer-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.009153199993306771
+    },
+    {
+      "label": "quasi_deer-w16",
+      "phase": 3,
+      "status": "completed",
+      "raw": "phase-3-quasi_deer-w16.npz",
+      "record": "phase-3-quasi_deer-w16.json",
+      "replay_identical": true,
+      "archive_seconds": 0.009063999983482063
+    },
+    {
+      "label": "quasi_deer-w4",
+      "phase": 3,
+      "status": "completed",
+      "raw": "phase-3-quasi_deer-w4.npz",
+      "record": "phase-3-quasi_deer-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.009191500023007393
+    },
+    {
+      "label": "sequential",
+      "phase": 3,
+      "status": "completed",
+      "raw": "phase-3-sequential.npz",
+      "record": "phase-3-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.007714499981375411
+    },
+    {
+      "label": "quasi_deer-w4",
+      "phase": 4,
+      "status": "completed",
+      "raw": "phase-4-quasi_deer-w4.npz",
+      "record": "phase-4-quasi_deer-w4.json",
+      "replay_identical": true,
+      "archive_seconds": 0.010340000008000061
+    },
+    {
+      "label": "sequential",
+      "phase": 4,
+      "status": "completed",
+      "raw": "phase-4-sequential.npz",
+      "record": "phase-4-sequential.json",
+      "replay_identical": true,
+      "archive_seconds": 0.006577899999683723
+    },
+    {
+      "label": "quasi_deer-w16",
+      "phase": 4,
+      "status": "completed",
+      "raw": "phase-4-quasi_deer-w16.npz",
+      "record": "phase-4-quasi_deer-w16.json",
+      "replay_identical": true,
+      "archive_seconds": 0.010364299989305437
+    }
+  ],
+  "model_setup_seconds": 0.00023499998496845365,
+  "probes": [
+    {
+      "width": 4,
+      "status": "passed"
+    },
+    {
+      "width": 16,
+      "status": "passed"
+    }
+  ],
+  "group_seconds_before_final_state_write": 15.90435029999935
+}
