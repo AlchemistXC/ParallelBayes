@@ -169,3 +169,12 @@ Full report: `docs/WINDOWS-MECHANISM-COMPLETION.md`; small evidence and SHA256:
 Only terminal resume is tested here. Interrupted recovery, native Windows
 process-collection/resource protection, maximum tasks and formal inference
 remain separate gates. F1/F4/NUTS/MH and historical 512 tasks were not rerun.
+
+
+## 2026-10-07 Windows F3 native engineering, before science freeze
+
+Independent branch codex/windows-runtime-validation starts from verified research-integration 6f02f373 and merges the sealed F2 evidence at 9187bcb. Original mechanism worktree and frozen environment are unchanged. Native Windows Job Object lifecycle, shared lock, guarded resources, attempt classification, separate cache eligibility and portable cost receipts are implemented in new scripts/windows adapters; historical Mac runtime files remain untouched.
+
+Current behavior and single-input tests: 16 passed / 0 failed / 0 skipped. Earlier failed test attempts are retained in output/windows-runtime-engineering-v1. A hidden persistent fixture remained registered after its launching shell exited, then sealed kernel active-process count 0 with cache measurement_available=true and samples_eligible=false. Artificial fixtures are not MCMC repetitions. Requested private skills/ZIP are absent; no guessed private code or claimed skill use.
+
+Bounded 27-fit plus 24-cache-probe protocols are pending freeze/execution. No formal grid launched. See docs/WINDOWS-RUNTIME-VALIDATION.md.

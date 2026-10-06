@@ -57,3 +57,6 @@ pb_capabilities(stan) # combinations仅顺序RWM与MALA
 ## 外部目标扩展的实测例
 
 `examples/external_wells.py`通过公开Python Model接口提供posteriordb水井距离模型，保留其平坦先验；R经`examples/external_wells.R`整批调用。Mac CPU的Stan/NumPy/torch目标、顺序/时间轨迹与R数组字节核验通过，见[报告](WELLS-TARGET-VALIDATION.md)。2026-10-05原生Windows CPU/CUDA及R-CUDA共12工作流、独立NumPy路径/接受事件和二进制回传核验通过，见[第二轮回执](WINDOWS-COMPLETION-V2-RESULTS.md)。它没有注册为pb_model内置kind，不能用带正态先验的内置logistic替换；短链核验不构成正式推断或收敛证据。
+
+
+2026-10-07后续：F2原始输入机制pilot已完成CPU/CUDA共192工作流，同机独立审计和终态零重算核验通过；旧失败输入与负结果保留，见[机制回执](WINDOWS-MECHANISM-COMPLETION.md)。新Windows原生运行器当前16项人工行为检查通过，27项最大形状技术任务尚待执行；这不是正式推断或候选安装通过，见[运行器验收](WINDOWS-RUNTIME-VALIDATION.md)。

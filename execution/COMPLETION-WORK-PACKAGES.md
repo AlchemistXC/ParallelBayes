@@ -269,3 +269,12 @@ R依赖47包重新安装，Matrix复用同版本R发行版二进制；强制源�
 基线737adc3；只读核对全部远端分支及Release/草稿附件，Windows最新已接收仍ced54ef，无后续F2/原生运行器/候选安装回执。当前Windows上未上传活动未知，没有实时执行句柄，不记为活进程等待。F1有限门槛已关闭；F2、F3原生运行与正式推断、F4正式案例、F5两平台/全结果重建及F6最终稿未关闭。
 
 同一外部缺失在最近三个目标轮次连续出现；独立Mac安装扩展和当前稿重建已完成后，剩余关键验收依赖Windows证据及其后正式研究。总目标进入受阻状态，不标完成，不重跑旧网格或第三次最大NUTS。恢复需要新的Windows提交及完整结果包；若尚未执行，按已有F2续跑→F3原生运行器→候选安装提示词继续。见docs/COMPLETION-GATE-AUDIT.md与completion-gate-audit-v1机器记录。新增采样/诊断/测试重跑0。
+
+
+## 2026-10-07 Windows F3 native engineering, before science freeze
+
+Independent branch codex/windows-runtime-validation starts from verified research-integration 6f02f373 and merges the sealed F2 evidence at 9187bcb. Original mechanism worktree and frozen environment are unchanged. Native Windows Job Object lifecycle, shared lock, guarded resources, attempt classification, separate cache eligibility and portable cost receipts are implemented in new scripts/windows adapters; historical Mac runtime files remain untouched.
+
+Current behavior and single-input tests: 16 passed / 0 failed / 0 skipped. Earlier failed test attempts are retained in output/windows-runtime-engineering-v1. A hidden persistent fixture remained registered after its launching shell exited, then sealed kernel active-process count 0 with cache measurement_available=true and samples_eligible=false. Artificial fixtures are not MCMC repetitions. Requested private skills/ZIP are absent; no guessed private code or claimed skill use.
+
+Bounded 27-fit plus 24-cache-probe protocols are pending freeze/execution. No formal grid launched. See docs/WINDOWS-RUNTIME-VALIDATION.md.
