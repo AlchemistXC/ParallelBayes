@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "extracted_member_hashes_checked": 547,
+  "saved_R_workflows_rebuilt": 8,
+  "failed_R_object_rebuilt": 1,
+  "modern_diagnostic_variable_rows": 16,
+  "sampling_calls": 0,
+  "same_host_R_dependency_versions": true,
+  "cross_platform_R_reconstruction_tested": false
+}

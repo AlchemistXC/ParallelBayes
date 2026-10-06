@@ -64,3 +64,9 @@ Rscript --vanilla scripts/windows/installed_R_objects.R EXTRACTED/output/windows
 
 这两个命令只读 RDS，无重新采样。不同接收端 R/依赖版本必须另留版本记录，
 不能把接收端诊断重建称为 Windows CUDA 重跑。
+
+安装完整主包 `windows-native-20261006T173502Z.tar` 为 49,428,480 字节，SHA256
+`9b8b805a4f4605541717f3644ff931e385156bf5f4ca009738a5a9f08d6017ce`，547 个清单文件逐项通过。
+归档源码 `0e99453bc7839cba2308f50bdcb0ae4969fada11`，包构建源码仍为341234e。
+安全搬移后547文件再核验，8工作流/16现代诊断变量行/1失败对象只读重建一致，新增采样0。
+封存/搬移回执作为伴随包另存，主包不再改写。精确身份见紧凑目录的delivery.json。
