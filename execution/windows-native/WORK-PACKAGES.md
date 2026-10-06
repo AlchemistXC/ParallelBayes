@@ -122,3 +122,50 @@ Pre-delivery validation passed: all six canonical protocol/source identities,
 unchanged original distributions/pip freeze/frozen marker, 369 raw task assets,
 95 curated receipt files, all command log hashes and actual JUnit counts.
 Receipt: `benchmark/analysis/outputs/windows-completion-v2-final-check.json`.
+
+## Original-input F2 completion, 2026-10-06
+
+Branch `codex/windows-mechanism-completion`, execution HEAD
+`52fdfd0446768033ffd975bc52ea8036c420880d`. Initial workspace was clean and no
+Python/R experiment process was active. The existing frozen Windows venv and
+its marker/distribution inventory match the prior round; no dependency changes.
+All 41 protocol source files match after restoring one pre-existing CRLF
+working copy of `reference.py` to the identical frozen Git blob. Previous bytes
+and before/after hashes are preserved in the new batch; no semantic change.
+
+The six original Mac-frozen NPZ files were downloaded from existing draft
+`windows-completion-v2-20261005`; tar 10,823,680 bytes, SHA256
+`2b46eedc58067c920c8519cb4f99965bf944202f57392514d4643b847f9b9e5a`.
+All six file/actual-array hashes passed. Comparison to preserved rejected
+Windows tapes confirms only 82 log-uniform elements differ; noise/directions
+are identical. Old candidates and preparation error logs remain untouched and
+are also copied into this batch for complete replay context.
+
+New input/runner tests: 5 passed, 0 failed, 0 errors, 0 skipped; 18 existing
+torch.jit deprecation warnings retained. Separate command receipts/logs under
+`output/completion/windows-mechanism-original-attempt01/commands/` use the new
+explicit-batch `scripts/windows/record_step.py`, not the old hardcoded wrapper.
+
+| Device | Groups completed/failed/pending | Workflows completed/failed/pending | Evidence |
+|---|---|---|---|
+| CPU | 36/0/0 | 96/0/0 | Explicit original-input analysis passed; actual terminal resume: 0 new groups, 1360 terminal files unchanged. |
+| CUDA | 36/0/0 | 96/0/0 | Actual RTX5080 CUDA, float64; original-input analysis and terminal resume passed, 0 new groups and 1360 unchanged files. |
+
+Per device: 480 technical calls, 60 sequential/time path pairs and 64 operation
+probe batches passed. Additional 96 CPU/CUDA saved-array pairs passed with zero
+events mismatched, maximum path/output difference 8.882e-15. Independent oracle
+path differences stay below 3.845e-10. All 2648 task assets and 143 small receipt
+files verified. Every first sampling call reports the expected device/float64.
+
+Adverse results: all 24 quasi-DEER cells per device were slower; Picard's cached
+ratio exceeded one in 20/36 CPU and 32/36 CUDA cells, with all other cells retained.
+Each device has 6 zero-acceptance workflows and 21 all-rejection chain records,
+which reuse inputs across windows and are not independent event replications.
+Initial maps/JVPs/confirmed transitions per device: 158430/51072/33024.
+All costs, rounds, prefixes, residuals, clipping and memory records are archived.
+Full report: `docs/WINDOWS-MECHANISM-COMPLETION.md`; small evidence and SHA256:
+`benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/`.
+
+Only terminal resume is tested here. Interrupted recovery, native Windows
+process-collection/resource protection, maximum tasks and formal inference
+remain separate gates. F1/F4/NUTS/MH and historical 512 tasks were not rerun.

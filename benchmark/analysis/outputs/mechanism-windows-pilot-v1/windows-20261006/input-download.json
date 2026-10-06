@@ -1,0 +1,13 @@
+{
+  "status": "download_verified",
+  "release_id": 403644544,
+  "tag": "windows-completion-v2-20261005",
+  "draft": true,
+  "archive": "mechanism-windows-pilot-v1-original-inputs.tar",
+  "bytes": 10823680,
+  "sha256": "2b46eedc58067c920c8519cb4f99965bf944202f57392514d4643b847f9b9e5a",
+  "asset_id": 612497608,
+  "remote_digest": "sha256:2b46eedc58067c920c8519cb4f99965bf944202f57392514d4643b847f9b9e5a",
+  "authentication": "Existing Git credential helper; memory only",
+  "signed_URL_and_token_persisted": false
+}

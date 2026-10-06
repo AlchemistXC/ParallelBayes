@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "execution_commit": "52fdfd0446768033ffd975bc52ea8036c420880d",
+  "branch": "codex/windows-mechanism-completion",
+  "protocol_sha256": "9d8985f579a64df95ebbb22ce0a607020261e5a66516efc80edcf9c956894b2c",
+  "protocol_file_sha256": "d8b3a6090148f1ea7d3d49c20bb01d2349b345e5c1fab5d0c209021fb0f17e4e",
+  "frozen_source_commit": "97e6835476bf71f48c1236e7cc77f235e5191d6c",
+  "analyzer_sha256": "1fe99303d47eb407c93d5b2a0cafb61bde8f26a55cba97d0812a8bb92df2110b",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "original_frozen_marker_sha256": "5e8ed0b284b1ef83977fcea0ce45c16349bbf8c1f0eb249be238f8aea547999c",
+  "original_environment_unchanged": true,
+  "torch": "2.13.0+cu130",
+  "numpy": "2.2.6",
+  "cuda_build": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "capability": [
+    12,
+    0
+  ],
+  "vram_bytes": 17066033152,
+  "ram_bytes": 33346146304,
+  "cpu_physical": 8,
+  "cpu_logical": 16,
+  "thread_environment": {
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "disk_free_bytes": 1877138481152,
+  "archive_sha256": "2b46eedc58067c920c8519cb4f99965bf944202f57392514d4643b847f9b9e5a",
+  "archive_bytes": 10823680,
+  "archive_members": 6
+}
