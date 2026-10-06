@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "archive": "D:\\workspace\\ParallelBayes\\pkg\\output\\windows-package-return\\windows-native-20261006T173742Z.tar",
+  "archive_sha256": "53bf0afa96abaf094f6846cd3a0e29a56a96eea8cac0af8b513bd8003703ce8d",
+  "checked_files": 60,
+  "source_commit": "9f9149b698231a61319db6ae62ccc859537c46c0",
+  "branch": "codex/windows-package-validation"
+}

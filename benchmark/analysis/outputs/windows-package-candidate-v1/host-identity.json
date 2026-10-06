@@ -1,0 +1,14 @@
+{
+  "CPU": "AMD Ryzen 7 9800X3D 8-Core Processor",
+  "physical_cores": 8,
+  "logical_processors": 16,
+  "OS": "Windows-11-10.0.26200-SP0",
+  "RAM_bytes": 33346146304,
+  "sources": [
+    "Read-only HKLM hardware processor name",
+    "psutil",
+    "platform"
+  ],
+  "CIM_query": "Denied in sandbox; null-valued first receipt retained separately, no system-policy change",
+  "sampling_calls": 0
+}

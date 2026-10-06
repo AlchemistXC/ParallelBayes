@@ -1,0 +1,268 @@
+{
+  "repository": "AlchemistXC/ParallelBayes",
+  "branch": "codex/windows-package-validation",
+  "commit": "9f9149b698231a61319db6ae62ccc859537c46c0",
+  "release_id": 403644544,
+  "release_url": "https://github.com/AlchemistXC/ParallelBayes/releases/tag/untagged-a38d1dfe63e5584ac2ef",
+  "tag": "windows-completion-v2-20261005",
+  "draft": true,
+  "release_target_unchanged": "ced54ef6ce945198339a138142dcdfede84f06bc",
+  "previous_assets": [
+    {
+      "id": 615294423,
+      "name": "delivery-mechanism-1cfc83d.json",
+      "size": 6675,
+      "state": "uploaded",
+      "digest": "sha256:775c9ecb88c43aed9b3fb41113da7e877ba24c8125f39dbc26e2a2e33d04f1be",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/delivery-mechanism-1cfc83d.json"
+    },
+    {
+      "id": 616147830,
+      "name": "delivery-runtime.json",
+      "size": 6375,
+      "state": "uploaded",
+      "digest": "sha256:8613fcb462b60cf9cd40e4fa8d2e03df9a34da9c303f06851c89c4b8aa6a8744",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/delivery-runtime.json"
+    },
+    {
+      "id": 612497608,
+      "name": "mechanism-windows-pilot-v1-original-inputs.tar",
+      "size": 10823680,
+      "state": "uploaded",
+      "digest": "sha256:2b46eedc58067c920c8519cb4f99965bf944202f57392514d4643b847f9b9e5a",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/mechanism-windows-pilot-v1-original-inputs.tar"
+    },
+    {
+      "id": 612497609,
+      "name": "mechanism-windows-pilot-v1-original-inputs.tar.sha256",
+      "size": 113,
+      "state": "uploaded",
+      "digest": "sha256:13f3d3a15656a9ff770f7e887edb1aa7f95be8747735b49c2681c86745b0f8c2",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/mechanism-windows-pilot-v1-original-inputs.tar.sha256"
+    },
+    {
+      "id": 612384067,
+      "name": "source.bundle",
+      "size": 15812797,
+      "state": "uploaded",
+      "digest": "sha256:708b5a2db39fd2f20232e1c67a550ee62507d26b65adf536808a2fc8969fdf18",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/source.bundle"
+    },
+    {
+      "id": 612384017,
+      "name": "verification-final.json",
+      "size": 413,
+      "state": "uploaded",
+      "digest": "sha256:7c03db63280cb7aaf28c08caa084d9f93483a11a6998f1d118a46ad496162a4e",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/verification-final.json"
+    },
+    {
+      "id": 615294243,
+      "name": "verification-mechanism-1cfc83d.json",
+      "size": 375,
+      "state": "uploaded",
+      "digest": "sha256:d725e3a377d2695aa344093f4d92e5809290bc540f217826e5860a5833e295a2",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/verification-mechanism-1cfc83d.json"
+    },
+    {
+      "id": 616147662,
+      "name": "verification-runtime-f9f305c.json",
+      "size": 418,
+      "state": "uploaded",
+      "digest": "sha256:8805ad1e89e668baff2f7e588eb6066178cb64ae201b159f11153360eb694a99",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/verification-runtime-f9f305c.json"
+    },
+    {
+      "id": 616148070,
+      "name": "verification-runtime-supplement-b0582c3.json",
+      "size": 417,
+      "state": "uploaded",
+      "digest": "sha256:d961ac649326db1cddbc9a30a7f3d07e4eadd7d2d6ae494213c1ffaf6f90f2a3",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/verification-runtime-supplement-b0582c3.json"
+    },
+    {
+      "id": 615294291,
+      "name": "windows-mechanism-1cfc83d.bundle",
+      "size": 17676295,
+      "state": "uploaded",
+      "digest": "sha256:25c23cf775fa6ca81cf78ae6118302e8a2ec5ec73cd05e7ff8974355c84ca276",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-mechanism-1cfc83d.bundle"
+    },
+    {
+      "id": 612383781,
+      "name": "windows-native-20261005T113131Z.tar",
+      "size": 76267520,
+      "state": "uploaded",
+      "digest": "sha256:bfd55d442fbb4137c54e573031781a95d75e0a86f20ccd4c8a994d338746efb9",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261005T113131Z.tar"
+    },
+    {
+      "id": 612383988,
+      "name": "windows-native-20261005T113131Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:60da2155fd929635681824230e58e4e3fca6a81284db8d1081a560fdda436553",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261005T113131Z.tar.sha256"
+    },
+    {
+      "id": 615292121,
+      "name": "windows-native-20261006T111324Z.tar",
+      "size": 186511360,
+      "state": "uploaded",
+      "digest": "sha256:ec69fd8032cae9198cd1eb7823f903eebb72bcc624a942b7da6373598b3d6ba7",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261006T111324Z.tar"
+    },
+    {
+      "id": 615294198,
+      "name": "windows-native-20261006T111324Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:0f75acf0c339c086084143e7ea89fd168f20e0f51bdbf4aa2ca6a47d80d1cf1e",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261006T111324Z.tar.sha256"
+    },
+    {
+      "id": 616145157,
+      "name": "windows-native-20261006T170711Z.tar",
+      "size": 1083330560,
+      "state": "uploaded",
+      "digest": "sha256:6ef0f6e299867d67b27cbd4067a062a30f3593894dc4b34c1da9086f80ae7274",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261006T170711Z.tar"
+    },
+    {
+      "id": 616147618,
+      "name": "windows-native-20261006T170711Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:41d665ed187d60b0b9eaf34fb40a9210b440dfca41dc4e64d5950c98ff1dce66",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261006T170711Z.tar.sha256"
+    },
+    {
+      "id": 616147871,
+      "name": "windows-native-20261006T171222Z.tar",
+      "size": 33792000,
+      "state": "uploaded",
+      "digest": "sha256:a1f5752ad98b4d69c55a342a4f360d3162f6f35b7e8fc3c2f9156fe14a2a0ddb",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261006T171222Z.tar"
+    },
+    {
+      "id": 616148031,
+      "name": "windows-native-20261006T171222Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:970c84c79ec7e8be81b8351c1a604111e46c02dd861aba57688f6ae625271387",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261006T171222Z.tar.sha256"
+    },
+    {
+      "id": 616147704,
+      "name": "windows-runtime-source.bundle",
+      "size": 18665671,
+      "state": "uploaded",
+      "digest": "sha256:cf1d679049300c02ec763d9e551efbbc33c74c8e6046a3f24e644720aba3c2ba",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-runtime-source.bundle"
+    }
+  ],
+  "planned": {
+    "windows-native-20261006T173502Z.tar": {
+      "bytes": 49428480,
+      "sha256": "9b8b805a4f4605541717f3644ff931e385156bf5f4ca009738a5a9f08d6017ce"
+    },
+    "windows-native-20261006T173502Z.tar.sha256": {
+      "bytes": 103,
+      "sha256": "b215df3dc57c5392be2da0775941917cb074b9baf33f250928dcdd601597d9d2"
+    },
+    "verification-package.json": {
+      "bytes": 375,
+      "sha256": "1c0f6db233b6d5d438f2363708bee71d14a9ac71ecd655e58b2ad0b4997b0689"
+    },
+    "windows-package-source.bundle": {
+      "bytes": 18023253,
+      "sha256": "48b5eb8a9889dee8e76899f2362a16257a99f424f2316bae13aa1ecfde4b9b82"
+    },
+    "delivery-package.json": {
+      "bytes": 932,
+      "sha256": "d6b8d9098a5847ed18e6bc07949bed9c59af4aa9c8dcea3ce1233443ce1e99aa"
+    },
+    "windows-native-20261006T173742Z.tar": {
+      "bytes": 286720,
+      "sha256": "53bf0afa96abaf094f6846cd3a0e29a56a96eea8cac0af8b513bd8003703ce8d"
+    },
+    "windows-native-20261006T173742Z.tar.sha256": {
+      "bytes": 103,
+      "sha256": "12d3769e0f4f0736f1fe4404a6a450811da602e78e0221092da08dc663464541"
+    },
+    "verification-package-supplement.json": {
+      "bytes": 374,
+      "sha256": "2892eb0ce62e1dd77497a8ef8bc3905d2e3aa3f83521366d67f980c3b81511f4"
+    }
+  },
+  "assets": [
+    {
+      "id": 616201074,
+      "name": "windows-native-20261006T173502Z.tar",
+      "size": 49428480,
+      "state": "uploaded",
+      "digest": "sha256:9b8b805a4f4605541717f3644ff931e385156bf5f4ca009738a5a9f08d6017ce",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261006T173502Z.tar"
+    },
+    {
+      "id": 616201258,
+      "name": "windows-native-20261006T173502Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:b215df3dc57c5392be2da0775941917cb074b9baf33f250928dcdd601597d9d2",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261006T173502Z.tar.sha256"
+    },
+    {
+      "id": 616201301,
+      "name": "verification-package.json",
+      "size": 375,
+      "state": "uploaded",
+      "digest": "sha256:1c0f6db233b6d5d438f2363708bee71d14a9ac71ecd655e58b2ad0b4997b0689",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/verification-package.json"
+    },
+    {
+      "id": 616201345,
+      "name": "windows-package-source.bundle",
+      "size": 18023253,
+      "state": "uploaded",
+      "digest": "sha256:48b5eb8a9889dee8e76899f2362a16257a99f424f2316bae13aa1ecfde4b9b82",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-package-source.bundle"
+    },
+    {
+      "id": 616201466,
+      "name": "delivery-package.json",
+      "size": 932,
+      "state": "uploaded",
+      "digest": "sha256:d6b8d9098a5847ed18e6bc07949bed9c59af4aa9c8dcea3ce1233443ce1e99aa",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/delivery-package.json"
+    },
+    {
+      "id": 616201508,
+      "name": "windows-native-20261006T173742Z.tar",
+      "size": 286720,
+      "state": "uploaded",
+      "digest": "sha256:53bf0afa96abaf094f6846cd3a0e29a56a96eea8cac0af8b513bd8003703ce8d",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261006T173742Z.tar"
+    },
+    {
+      "id": 616201553,
+      "name": "windows-native-20261006T173742Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:12d3769e0f4f0736f1fe4404a6a450811da602e78e0221092da08dc663464541",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261006T173742Z.tar.sha256"
+    },
+    {
+      "id": 616201589,
+      "name": "verification-package-supplement.json",
+      "size": 374,
+      "state": "uploaded",
+      "digest": "sha256:2892eb0ce62e1dd77497a8ef8bc3905d2e3aa3f83521366d67f980c3b81511f4",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/verification-package-supplement.json"
+    }
+  ],
+  "status": "all_new_assets_uploaded_remote_sha256_verified",
+  "all_previous_assets_unchanged": true,
+  "final_draft": true,
+  "final_asset_count": 27
+}
