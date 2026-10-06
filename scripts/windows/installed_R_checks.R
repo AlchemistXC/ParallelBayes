@@ -3,9 +3,9 @@ if(length(args)!=3L) stop('test source root, new output, Python environment JSON
 dir.create(args[2],recursive=TRUE);library(parallelbayes)
 results <- list()
 for(name in c('test-torch-installed.R','test-environment-record.R')) {
-  result <- testthat::test_file(file.path(args[1],name),reporter='summary')
+  result <- testthat::test_file(file.path(args[1],name),reporter='summary',stop_on_failure=FALSE)
   frame <- as.data.frame(result)
-  results[[name]] <- frame
+  results[[name]] <- frame[,setdiff(names(frame),'result'),drop=FALSE]
   saveRDS(result,file.path(args[2],paste0(name,'.rds')))
   if(any(frame$failed>0L) || any(frame$error) || any(frame$skipped)) stop('Explicit installed torch test failed or skipped')
 }
