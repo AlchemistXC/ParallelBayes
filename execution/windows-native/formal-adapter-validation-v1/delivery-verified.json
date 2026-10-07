@@ -1,0 +1,175 @@
+{
+  "repository": "AlchemistXC/ParallelBayes",
+  "branch": "codex/windows-formal-adapter-validation",
+  "commit": "d094bcb0e934bbfba3f50fdf1f1c87ba45c1ff39",
+  "release_id": 403644544,
+  "release_url": "https://github.com/AlchemistXC/ParallelBayes/releases/tag/untagged-a38d1dfe63e5584ac2ef",
+  "tag": "windows-completion-v2-20261005",
+  "draft": true,
+  "release_target_unchanged": "ced54ef6ce945198339a138142dcdfede84f06bc",
+  "status": "all_new_assets_uploaded_remote_sha256_verified",
+  "all_previous_assets_unchanged": true,
+  "final_draft": true,
+  "final_asset_count": 40,
+  "assets": [
+    {
+      "id": 618828575,
+      "name": "windows-formal-adapter-validation-v1-20261007.tar",
+      "size": 987596800,
+      "state": "uploaded",
+      "digest": "sha256:ceb722b100570972c99684185bbf7cdeec1dd122efc863854d0c9168cbc2de62",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-adapter-validation-v1-20261007.tar"
+    },
+    {
+      "id": 618831756,
+      "name": "windows-formal-adapter-validation-v1-20261007.tar.sha256",
+      "size": 116,
+      "state": "uploaded",
+      "digest": "sha256:b3100c0ba265c866c03a1de375e661f7b65d975a000ff7ea4923649b8407c66e",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-adapter-validation-v1-20261007.tar.sha256"
+    },
+    {
+      "id": 618831799,
+      "name": "windows-formal-adapter-validation-v1-20261007.tar.receipt.json",
+      "size": 415,
+      "state": "uploaded",
+      "digest": "sha256:07306edfa83b90c527f81609c6470a3dbacdb62f8bdddc1877294c3ba95a64a2",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-adapter-validation-v1-20261007.tar.receipt.json"
+    },
+    {
+      "id": 618831859,
+      "name": "windows-formal-v2-members.json",
+      "size": 409,
+      "state": "uploaded",
+      "digest": "sha256:4e62c4e66ae53520d3ea018e619f2c9ca31ad903d3a3af53915c380ea5241584",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-v2-members.json"
+    },
+    {
+      "id": 618831919,
+      "name": "windows-formal-v2-relocation.json",
+      "size": 520,
+      "state": "uploaded",
+      "digest": "sha256:2e72ff8349d17a46e4602ebc36667cdc7d70c9c1bc1c4312831cdfe99fa97db1",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-v2-relocation.json"
+    },
+    {
+      "id": 618831988,
+      "name": "windows-formal-v2-summary.json",
+      "size": 1001585,
+      "state": "uploaded",
+      "digest": "sha256:ce0b21391fce83dcafd4ea5bdca70cf309c7a3fb4879f3f35ac88224beb7e724",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-v2-summary.json"
+    },
+    {
+      "id": 618832104,
+      "name": "windows-formal-v2-delivery.json",
+      "size": 2644,
+      "state": "uploaded",
+      "digest": "sha256:94c03f66529d7df6f29f7dca65bd2ca4cd4a91c29c0dc05e782c508ca92dd769",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-v2-delivery.json"
+    },
+    {
+      "id": 618832176,
+      "name": "windows-formal-v2-delivery-costs.json",
+      "size": 5281,
+      "state": "uploaded",
+      "digest": "sha256:f03761ba8fce2860b73fb4c1962dade6d5f6a4459e29a5fdf4ad6ec32c595ff1",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-v2-delivery-costs.json"
+    },
+    {
+      "id": 618832226,
+      "name": "windows-formal-v2-source-d094bcb.bundle",
+      "size": 22317648,
+      "state": "uploaded",
+      "digest": "sha256:a79a1d845d35be2561639ab6e88e0d979020f197109fbff048c43fa5a4390bd9",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-v2-source-d094bcb.bundle"
+    },
+    {
+      "id": 618832364,
+      "name": "windows-formal-v2-source-d094bcb.bundle.sha256",
+      "size": 107,
+      "state": "uploaded",
+      "digest": "sha256:0f37b81af4dfcf5b284d73bd88f0f220a51034b1942fb5e00b570b287a3f2514",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-v2-source-d094bcb.bundle.sha256"
+    },
+    {
+      "id": 618832414,
+      "name": "windows-native-20261007T134451Z.tar",
+      "size": 43284480,
+      "state": "uploaded",
+      "digest": "sha256:82a830104c39d9bfddb24d5f9783ab650a4a3b98ed3dc174355c933aff882337",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261007T134451Z.tar"
+    },
+    {
+      "id": 618832674,
+      "name": "windows-native-20261007T134451Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:1eeb0a53a386ae16576d7aa54a4ce3608476b70b97f6ae9341072c9336329569",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261007T134451Z.tar.sha256"
+    },
+    {
+      "id": 618832769,
+      "name": "windows-formal-v2-companion-members.json",
+      "size": 405,
+      "state": "uploaded",
+      "digest": "sha256:1fc9035a7c9e622e26200b98beaceef1fc4b3c8beeeb71195ec682772e8ea712",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-v2-companion-members.json"
+    }
+  ],
+  "planned": {
+    "windows-formal-adapter-validation-v1-20261007.tar": {
+      "bytes": 987596800,
+      "sha256": "ceb722b100570972c99684185bbf7cdeec1dd122efc863854d0c9168cbc2de62"
+    },
+    "windows-formal-adapter-validation-v1-20261007.tar.sha256": {
+      "bytes": 116,
+      "sha256": "b3100c0ba265c866c03a1de375e661f7b65d975a000ff7ea4923649b8407c66e"
+    },
+    "windows-formal-adapter-validation-v1-20261007.tar.receipt.json": {
+      "bytes": 415,
+      "sha256": "07306edfa83b90c527f81609c6470a3dbacdb62f8bdddc1877294c3ba95a64a2"
+    },
+    "windows-formal-v2-members.json": {
+      "bytes": 409,
+      "sha256": "4e62c4e66ae53520d3ea018e619f2c9ca31ad903d3a3af53915c380ea5241584"
+    },
+    "windows-formal-v2-relocation.json": {
+      "bytes": 520,
+      "sha256": "2e72ff8349d17a46e4602ebc36667cdc7d70c9c1bc1c4312831cdfe99fa97db1"
+    },
+    "windows-formal-v2-summary.json": {
+      "bytes": 1001585,
+      "sha256": "ce0b21391fce83dcafd4ea5bdca70cf309c7a3fb4879f3f35ac88224beb7e724"
+    },
+    "windows-formal-v2-delivery.json": {
+      "bytes": 2644,
+      "sha256": "94c03f66529d7df6f29f7dca65bd2ca4cd4a91c29c0dc05e782c508ca92dd769"
+    },
+    "windows-formal-v2-delivery-costs.json": {
+      "bytes": 5281,
+      "sha256": "f03761ba8fce2860b73fb4c1962dade6d5f6a4459e29a5fdf4ad6ec32c595ff1"
+    },
+    "windows-formal-v2-source-d094bcb.bundle": {
+      "bytes": 22317648,
+      "sha256": "a79a1d845d35be2561639ab6e88e0d979020f197109fbff048c43fa5a4390bd9"
+    },
+    "windows-formal-v2-source-d094bcb.bundle.sha256": {
+      "bytes": 107,
+      "sha256": "0f37b81af4dfcf5b284d73bd88f0f220a51034b1942fb5e00b570b287a3f2514"
+    },
+    "windows-native-20261007T134451Z.tar": {
+      "bytes": 43284480,
+      "sha256": "82a830104c39d9bfddb24d5f9783ab650a4a3b98ed3dc174355c933aff882337"
+    },
+    "windows-native-20261007T134451Z.tar.sha256": {
+      "bytes": 103,
+      "sha256": "1eeb0a53a386ae16576d7aa54a4ce3608476b70b97f6ae9341072c9336329569"
+    },
+    "windows-formal-v2-companion-members.json": {
+      "bytes": 405,
+      "sha256": "1fc9035a7c9e622e26200b98beaceef1fc4b3c8beeeb71195ec682772e8ea712"
+    }
+  },
+  "scope": "13 initial delivery assets verified; this receipt does not change frozen execution source or numerical evidence"
+}

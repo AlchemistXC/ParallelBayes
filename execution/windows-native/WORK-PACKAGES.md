@@ -228,3 +228,5 @@ Prepare前首次witness启动失败：7bbc39d的Job API在with NUL退出后才�
 实际main/cache verify-only均新增执行0，分别831/828任务文件不变。native-acceptance.json SHA256 1b71fc0809c5019140768778572681f076bfbf8e7810523f2aed92047c1dd173；封存后只读核验/导出。主tar windows-formal-adapter-validation-v1-20261007.tar，987596800字节，SHA256 ceb722b100570972c99684185bbf7cdeec1dd122efc863854d0c9168cbc2de62；3167成员核对、新目录安全搬移和validation verify均通过。静止共享登记快照51新v2/51旧v1，102真实Job无活动进程。原venv标记及旧工作树保持不变；所有失败、完整命令/资源观察与日志另行伴随归档，草稿新增附件不覆盖旧包。
 
 报告docs/WINDOWS-FORMAL-ADAPTER-VALIDATION.md，小型证据execution/windows-native/formal-adapter-validation-v1。Git保留执行源/兼容差异与报告；大原件另附tar和源码bundle。当前仅有限v2验收，交回Mac独立接收；未启动正式网格，不关闭正式统计、论文及总研究门槛。
+
+交付后继：原生验收开发分支已推送；13个主包/伴随包/校验/源码资产已追加原Windows草稿并逐项核对远端size/digest。旧27附件、draft及原target保持不变。伴随包windows-native-20261007T134451Z.tar，43284480字节，SHA256 82a830104c39d9bfddb24d5f9783ab650a4a3b98ed3dc174355c933aff882337，247成员通过。上传核验小回执已保留；最终交付源码bundle另附，不替换原bundle。没有新增采样或向已封存包写入记录。

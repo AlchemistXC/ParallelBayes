@@ -79,6 +79,8 @@ $pbBundle = 'D:/workspace/ParallelBayes/v2/output/formal-adapter-validation-v1'
 
 完整CLI/失败/清理/资源观察、静止注册表、搬移证明、完整描述性汇总和报告另用 `scripts/windows/export_results.py` 导出伴随完整性包，并用 `scripts/verify-windows-return.py`逐成员核对。源码分支另附Git bundle及SHA256。所有归档/sidecar新增到既有草稿 `windows-completion-v2-20261005`，不覆盖旧附件、不公开发布、不合并main；上传清单和远端大小/digest核对见交付sidecar。大NPZ、环境目录、私有技能和凭证不入Git。
 
+实际伴随包 `windows-native-20261007T134451Z.tar`，43,284,480字节，SHA256 `82a830104c39d9bfddb24d5f9783ab650a4a3b98ed3dc174355c933aff882337`，247成员通过。首次13个新资产已全部实际上传，GitHub大小/digest逐项匹配，原27附件不变，草稿与原target不变；见[上传核验回执](../execution/windows-native/formal-adapter-validation-v1/delivery-verified.json)。此后仅追加上传/源码交付证明，不改冻结原件或采样计数。
+
 接收方先核对tar整体SHA及逐成员清单，安全解压到新目录，然后仅运行：
 
 ```powershell
