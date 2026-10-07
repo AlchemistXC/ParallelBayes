@@ -98,6 +98,33 @@ input-identities及freeze-manifest；完整协议/任务顺序/参考及所有�
 新增8项顺序/不完整框架拒绝/保留失败契约检查通过，无失败或跳过；不是新的
 16项原生验收，不增加研究重复。全部辅助代码只在rf，执行源保持0ba5643干净。
 
-当前正式主任务0/41472，缓存探测0/9216；冻结小报告先提交推送，再启动0 main。
+冻结时正式主任务0/41472，缓存探测0/9216；冻结小报告先提交推送，再启动0 main。
 没有正式统计或性能结论。输入准备与各核验/备份外层费用分列，不与内部费用相加；
 未单独计量的初始预检/工程成本保持未知，不使用时间戳差补齐。
+
+## 四批执行正在进行
+
+冻结报告f77a415已推送后，真实启动batch0 main。顺序管理者PID25080、创建身份
+134358637075414703，工具会话77014；实际身份和全部Job在
+`f/output/formal-costs-v1/sequence-attempt01/`保存。此前旧验收/prepare/核验Job均已
+结束，本阶段存在真实活动进程，不能重复启动。动态任务状态以共享登记、原生
+观察及formal-runs为准；run-start-observation只是带时间的小型只读快照。
+
+后处理脚本finish_formal_study独立保存源码/日志，通过原管理者真实同步句柄等待，
+同时核对创建身份；不持有Job句柄以免延长kill-on-last-handle-close生命周期。
+实际一次只读核对身份相符、WaitForSingleObject(0)返回258（仍未终止），不将
+等待超时当作终止。微软依据：[WaitForSingleObject](https://learn.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject)。
+此单次接口核对不是重启恢复或新一轮16原生行为验收。
+
+后处理仅在八阶段完整关闭、原管理者真正结束、阶段Job观察无后代及原科学登记
+无活动任务后，重新核算真实容量，运行现有导出/逐成员核验/新C盘安全解压。
+新delivery施加仅该目录的写入/删除拒绝规则，分析输出在其他目录；使用最新分析
+检出，不加fixture或cross-platform，逐任务独立重放/R重建/统计/报告。
+终态分析恢复要求新分析0/复用50688且全部不可变资产不变；生产读取器明确更新
+可变SUMMARY bookkeeping，因此其前后原件单列保留，不能声称它逐字节不变。
+任一异常停止并保留原件，不重新采样、自动重试或修改源/门槛。
+
+本轮尚未完成四批、完整归档或分析；后处理源码目前只有句法和真实等待句柄
+核对，不能提前称完整后处理通过。所有成功/失败/未知费用与Mac独立接收仍需
+最终核验。Github当前每附件小于2GiB、单Release至多1000资产；完整大包如需
+分块须事前核对这些限制及已有附件，不覆盖或发布草稿。[官方限制](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)

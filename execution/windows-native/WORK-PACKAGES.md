@@ -29,6 +29,12 @@
 原生验收/统计重复。小型回执与全输入文件/实际数组身份已保存formal-inference-v1。
 冻结报告提交推送后即可依序0main→0cache→1main→1cache→2main→2cache→3main→3cache。
 
+实际执行后继：f77a415冻结报告及0ba5643执行分支已推送，已启动0main；管理者
+PID25080/创建身份134358637075414703，工具会话77014，原生Job仍有实际成员。
+当前小型状态快照见formal-inference-v1/run-start-observation.json，动态状态不能
+由该快照或等待超时推断。独立后处理实际核对同步句柄/身份后等待科学序列终止，
+不得重发活跃阶段命令。完整结果/统计/归档和F3–F6尚未完成。
+
 2026-10-07 原始结果读取后继（`62b7268`）：新增独立 `scripts/analysis/formal_science.py`，接入 v2 历史/费用、实际输入、独立 NumPy 路径重放、原坐标函数、原始 R 诊断重建及缓存失败保留。11项不同新检查通过，旧3份真实 NUTS 数值布局读取通过、原件不变；人工 v2 文件不构成 Windows 实测。执行源码、冻结协议和旧结果未改。完整研究框架索引、统计汇总、正式实验及论文仍待完成；现有 Windows 适配提示词继续有效，无需增加或重跑旧提示词。详见 docs/FORMAL-RAW-READER.md。
 
 Branch: `windows-native-dev`. Baseline: `a774d83` (0.1.1 JAX/BridgeStan).
