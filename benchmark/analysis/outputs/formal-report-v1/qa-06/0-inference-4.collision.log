@@ -1,0 +1,10 @@
+Nature Figure Rendered Collision Audit
+pdf: /Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-06/test_rendered_figures_keep_zer0/rendered/G1/inference-4.pdf
+pages: 1
+visible text boxes: 36
+stroke paths: 40
+
+
+summary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays
+verdict: PASS
+note: contained overlays can be intentional; WARN findings need final-size visual review

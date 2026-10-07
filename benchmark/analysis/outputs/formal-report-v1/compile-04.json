@@ -1,0 +1,62 @@
+{
+  "attempts": [
+    {
+      "command": [
+        "/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic",
+        "-X",
+        "compile",
+        "--outdir",
+        "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/build-04",
+        "--outfmt",
+        "pdf",
+        "--print",
+        "--untrusted",
+        "report.tex"
+      ],
+      "compiler": "tectonic",
+      "exitCode": 0,
+      "log": "note: \"version 2\" Tectonic command-line interface activated\nnote: Running TeX ...\n(report.tex\nLaTeX2e <2021-11-15> patch level 1\nL3 programming layer <2022-02-24> (ctexart.cls (ctexbackend.cfg) (expl3.sty\n(l3backend-xetex.def))\nDocument Class: ctexart 2021/12/12 v2.5.8 Chinese adapter for class article (CT\nEX)\n(xparse.sty) (l3keys2e.sty) (ctexhook.sty) (ctexpatch.sty) (fix-cm.sty\n(ts1enc.def)) (ctexopts.cfg) (article.cls\nDocument Class: article 2021/10/04 v1.4n Standard LaTeX document class\nnote: downloading size10.clo\n(size10.clo)) (ctex-engine-xetex.def (xeCJK.sty (xtemplate.sty) (fontspec.sty\n(fontspec-xetex.sty (fontenc.sty) (fontspec.cfg))) (xeCJK.cfg))) (zhnumber.sty\n(zhnumber-utf8.cfg)) (ctex-scheme-chinese-article.def (ctex-name-utf8.cfg))note: downloading ctex-c5size.clo\n\n(ctex-c5size.clo) (ctex-fontset-fandol.def)) (ctex.cfg) (geometry.sty\n(keyval.sty) (ifvtex.sty (iftex.sty))) (booktabs.sty) (longtable.sty)\n(graphicx.sty (graphics.sty (trig.sty) (graphics.cfg) (xetex.def)))\n(hyperref.sty (ltxcmds.sty) (pdftexcmds.sty (infwarerr.sty)) (kvsetkeys.sty)\n(kvdefinekeys.sty) (pdfescape.sty) (hycolor.sty) (letltxmacro.sty) (auxhook.sty\n) (kvoptions.sty) (pd1enc.def) (intcalc.sty) (etexcmds.sty) (puenc.def)\n(url.sty) (bitset.sty (bigintcalc.sty)) (atbegshi-ltx.sty)) (hxetex.def\n(stringenc.sty) (rerunfilecheck.sty (atveryend-ltx.sty) (uniquecounter.sty)))\n(fancyhdr.sty)\nNo file report.aux.\n*geometry* driver: auto-detecting\n*geometry* detected driver: xetex\n(nameref.sty (refcount.sty) (gettitlestring.sty))\n\nPackage hyperref Warning: Rerun to get /PageLabels entry.\n\n[1] [2] [3] [4] [5] [6] [7] [8] [9] (report.aux)\n\nPackage rerunfilecheck Warning: File `report.out' has changed.\n(rerunfilecheck)                Rerun to get outlines right\n(rerunfilecheck)                or use package `bookmark'.\n\n )\nOutput written on report.xdv (9 pages, 51544 bytes).\nTranscript written on report.log.\nnote: Rerunning TeX because \"report.aux\" changed ...\n(report.tex\nLaTeX2e <2021-11-15> patch level 1\nL3 programming layer <2022-02-24> (ctexart.cls (ctexbackend.cfg) (expl3.sty\n(l3backend-xetex.def))\nDocument Class: ctexart 2021/12/12 v2.5.8 Chinese adapter for class article (CT\nEX)\n(xparse.sty) (l3keys2e.sty) (ctexhook.sty) (ctexpatch.sty) (fix-cm.sty\n(ts1enc.def)) (ctexopts.cfg) (article.cls\nDocument Class: article 2021/10/04 v1.4n Standard LaTeX document class\n(size10.clo)) (ctex-engine-xetex.def (xeCJK.sty (xtemplate.sty) (fontspec.sty\n(fontspec-xetex.sty (fontenc.sty) (fontspec.cfg))) (xeCJK.cfg))) (zhnumber.sty\n(zhnumber-utf8.cfg)) (ctex-scheme-chinese-article.def (ctex-name-utf8.cfg))\n(ctex-c5size.clo) (ctex-fontset-fandol.def)) (ctex.cfg) (geometry.sty\n(keyval.sty) (ifvtex.sty (iftex.sty))) (booktabs.sty) (longtable.sty)\n(graphicx.sty (graphics.sty (trig.sty) (graphics.cfg) (xetex.def)))\n(hyperref.sty (ltxcmds.sty) (pdftexcmds.sty (infwarerr.sty)) (kvsetkeys.sty)\n(kvdefinekeys.sty) (pdfescape.sty) (hycolor.sty) (letltxmacro.sty) (auxhook.sty\n) (kvoptions.sty) (pd1enc.def) (intcalc.sty) (etexcmds.sty) (puenc.def)\n(url.sty) (bitset.sty (bigintcalc.sty)) (atbegshi-ltx.sty)) (hxetex.def\n(stringenc.sty) (rerunfilecheck.sty (atveryend-ltx.sty) (uniquecounter.sty)))\n(fancyhdr.sty) (report.aux)\n*geometry* driver: auto-detecting\n*geometry* detected driver: xetex\n(nameref.sty (refcount.sty) (gettitlestring.sty)) (report.out) (report.out)\n[1] [2] [3] [4] [5] [6] [7] [8] [9] (report.aux) )\nOutput written on report.xdv (9 pages, 51544 bytes).\nTranscript written on report.log.\nnote: Running xdvipdfmx ...\n[1][2note: downloading cmmi9.pfb\nnote: downloading cmr9.pfb\n][3][4][5][6][7][8][9]278403 bytes written\nnote: Writing `/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/build-04/report.pdf` (271.8779296875 KiB)\nnote: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)\n",
+      "pdfExists": true,
+      "pdfPath": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/build-04/report.pdf"
+    }
+  ],
+  "command": [
+    "/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic",
+    "-X",
+    "compile",
+    "--outdir",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/build-04",
+    "--outfmt",
+    "pdf",
+    "--print",
+    "--untrusted",
+    "report.tex"
+  ],
+  "compiler": "tectonic",
+  "exitCode": 0,
+  "log": "note: \"version 2\" Tectonic command-line interface activated\nnote: Running TeX ...\n(report.tex\nLaTeX2e <2021-11-15> patch level 1\nL3 programming layer <2022-02-24> (ctexart.cls (ctexbackend.cfg) (expl3.sty\n(l3backend-xetex.def))\nDocument Class: ctexart 2021/12/12 v2.5.8 Chinese adapter for class article (CT\nEX)\n(xparse.sty) (l3keys2e.sty) (ctexhook.sty) (ctexpatch.sty) (fix-cm.sty\n(ts1enc.def)) (ctexopts.cfg) (article.cls\nDocument Class: article 2021/10/04 v1.4n Standard LaTeX document class\nnote: downloading size10.clo\n(size10.clo)) (ctex-engine-xetex.def (xeCJK.sty (xtemplate.sty) (fontspec.sty\n(fontspec-xetex.sty (fontenc.sty) (fontspec.cfg))) (xeCJK.cfg))) (zhnumber.sty\n(zhnumber-utf8.cfg)) (ctex-scheme-chinese-article.def (ctex-name-utf8.cfg))note: downloading ctex-c5size.clo\n\n(ctex-c5size.clo) (ctex-fontset-fandol.def)) (ctex.cfg) (geometry.sty\n(keyval.sty) (ifvtex.sty (iftex.sty))) (booktabs.sty) (longtable.sty)\n(graphicx.sty (graphics.sty (trig.sty) (graphics.cfg) (xetex.def)))\n(hyperref.sty (ltxcmds.sty) (pdftexcmds.sty (infwarerr.sty)) (kvsetkeys.sty)\n(kvdefinekeys.sty) (pdfescape.sty) (hycolor.sty) (letltxmacro.sty) (auxhook.sty\n) (kvoptions.sty) (pd1enc.def) (intcalc.sty) (etexcmds.sty) (puenc.def)\n(url.sty) (bitset.sty (bigintcalc.sty)) (atbegshi-ltx.sty)) (hxetex.def\n(stringenc.sty) (rerunfilecheck.sty (atveryend-ltx.sty) (uniquecounter.sty)))\n(fancyhdr.sty)\nNo file report.aux.\n*geometry* driver: auto-detecting\n*geometry* detected driver: xetex\n(nameref.sty (refcount.sty) (gettitlestring.sty))\n\nPackage hyperref Warning: Rerun to get /PageLabels entry.\n\n[1] [2] [3] [4] [5] [6] [7] [8] [9] (report.aux)\n\nPackage rerunfilecheck Warning: File `report.out' has changed.\n(rerunfilecheck)                Rerun to get outlines right\n(rerunfilecheck)                or use package `bookmark'.\n\n )\nOutput written on report.xdv (9 pages, 51544 bytes).\nTranscript written on report.log.\nnote: Rerunning TeX because \"report.aux\" changed ...\n(report.tex\nLaTeX2e <2021-11-15> patch level 1\nL3 programming layer <2022-02-24> (ctexart.cls (ctexbackend.cfg) (expl3.sty\n(l3backend-xetex.def))\nDocument Class: ctexart 2021/12/12 v2.5.8 Chinese adapter for class article (CT\nEX)\n(xparse.sty) (l3keys2e.sty) (ctexhook.sty) (ctexpatch.sty) (fix-cm.sty\n(ts1enc.def)) (ctexopts.cfg) (article.cls\nDocument Class: article 2021/10/04 v1.4n Standard LaTeX document class\n(size10.clo)) (ctex-engine-xetex.def (xeCJK.sty (xtemplate.sty) (fontspec.sty\n(fontspec-xetex.sty (fontenc.sty) (fontspec.cfg))) (xeCJK.cfg))) (zhnumber.sty\n(zhnumber-utf8.cfg)) (ctex-scheme-chinese-article.def (ctex-name-utf8.cfg))\n(ctex-c5size.clo) (ctex-fontset-fandol.def)) (ctex.cfg) (geometry.sty\n(keyval.sty) (ifvtex.sty (iftex.sty))) (booktabs.sty) (longtable.sty)\n(graphicx.sty (graphics.sty (trig.sty) (graphics.cfg) (xetex.def)))\n(hyperref.sty (ltxcmds.sty) (pdftexcmds.sty (infwarerr.sty)) (kvsetkeys.sty)\n(kvdefinekeys.sty) (pdfescape.sty) (hycolor.sty) (letltxmacro.sty) (auxhook.sty\n) (kvoptions.sty) (pd1enc.def) (intcalc.sty) (etexcmds.sty) (puenc.def)\n(url.sty) (bitset.sty (bigintcalc.sty)) (atbegshi-ltx.sty)) (hxetex.def\n(stringenc.sty) (rerunfilecheck.sty (atveryend-ltx.sty) (uniquecounter.sty)))\n(fancyhdr.sty) (report.aux)\n*geometry* driver: auto-detecting\n*geometry* detected driver: xetex\n(nameref.sty (refcount.sty) (gettitlestring.sty)) (report.out) (report.out)\n[1] [2] [3] [4] [5] [6] [7] [8] [9] (report.aux) )\nOutput written on report.xdv (9 pages, 51544 bytes).\nTranscript written on report.log.\nnote: Running xdvipdfmx ...\n[1][2note: downloading cmmi9.pfb\nnote: downloading cmr9.pfb\n][3][4][5][6][7][8][9]278403 bytes written\nnote: Writing `/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/build-04/report.pdf` (271.8779296875 KiB)\nnote: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)\n",
+  "pdfExists": true,
+  "pdfPath": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/build-04/report.pdf",
+  "rootFile": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-04/test_rendered_figures_keep_zer0/rendered/report.tex",
+  "tectonic": {
+    "checked": [
+      {
+        "path": "/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic",
+        "source": "app"
+      }
+    ],
+    "path": "/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic",
+    "reason": "Tectonic executable is available.",
+    "source": "app",
+    "status": "available",
+    "version": "Tectonic 0.17.0"
+  },
+  "tectonicSuitability": {
+    "reasons": [],
+    "scannedFiles": [
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-04/test_rendered_figures_keep_zer0/rendered/report.tex"
+    ],
+    "suitable": true
+  },
+  "texliveDetection": null
+}

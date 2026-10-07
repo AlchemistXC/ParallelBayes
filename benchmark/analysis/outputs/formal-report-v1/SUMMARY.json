@@ -1,0 +1,40 @@
+{
+  "source_commit": "7babac5e04ecab685a9fd8417835887c3a94a129",
+  "source_sha256": {
+    "scripts/analysis/formal_report.py": "aa0d1ca50f62f94b45bcfa6201719e7eb1788cca95d6c1be7194c8b26e9ed1f9",
+    "scripts/analysis/formal_plots.py": "be9c54eaeff1648157a8fb0fecdf5b7e40ef89dca910046fdd8023041b52ce98",
+    "scripts/analysis/formal_report_text.py": "2df5cfcac3e12bd1f6d423e41bb23947d5c2305c530684166a9ff5240fca1e67",
+    "tests/handoff/test_formal_report.py": "997bc82baa2daaa4f3b0976cface63db6c46c5a53c65b7afee4301b22b3846b2"
+  },
+  "unique_tests": 10,
+  "failed_final": 0,
+  "skipped": 0,
+  "final_all_tests": "tests-04.xml",
+  "affected_checks_after_visual_fixes": [
+    "tests-05.xml",
+    "tests-06.xml"
+  ],
+  "artificial_figures": 8,
+  "panels": 18,
+  "alignment_checks": 8,
+  "font_checks": 8,
+  "collision_checks": 8,
+  "pdf_pages": 9,
+  "native_experiments": 0,
+  "new_formal_repetitions": 0,
+  "main_manuscript_changed": false,
+  "windows_prompt_changed": false,
+  "retained_failures": [
+    "initial missing TeX resource",
+    "intermediate indentation error",
+    "initial font/footnote QA failures",
+    "minor tick crowding found visually"
+  ],
+  "limitation": "Artificial interface validation only; new native v2 receipt and formal study are still absent",
+  "remote_heads": {
+    "mechanism": "1cfc83d",
+    "runtime": "b0582c3",
+    "package": "0e44c2d"
+  },
+  "draft_assets": 27
+}

@@ -1,0 +1,51 @@
+{
+  "attempts": [
+    {
+      "command": [
+        "/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic",
+        "-X",
+        "compile",
+        "--outdir",
+        "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/build-01",
+        "--outfmt",
+        "pdf",
+        "--print",
+        "--untrusted",
+        "report.tex"
+      ],
+      "compiler": "tectonic",
+      "exitCode": 1,
+      "log": "note: \"version 2\" Tectonic command-line interface activated\nnote: Running TeX ...\n(report.tex\nLaTeX2e <2021-11-15> patch level 1\nL3 programming layer <2022-02-24> (ctexart.cls (ctexbackend.cfg) (expl3.sty\n(l3backend-xetex.def))\nDocument Class: ctexart 2021/12/12 v2.5.8 Chinese adapter for class article (CT\nEX)\n(xparse.sty) (l3keys2e.sty) (ctexhook.sty) (ctexpatch.sty) (fix-cm.sty\n(ts1enc.def)) (ctexopts.cfg) (article.cls\nDocument Class: article 2021/10/04 v1.4n Standard LaTeX document class\nnote: downloading size10.clo\nwarning: failure fetching \"size10.clo\" from network (1/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: failure fetching \"size10.clo\" from network (2/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: failure fetching \"size10.clo\" from network (3/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: open of input size10.clo failed\ncaused by: failed to download \"size10.clo\"; please check your network connection.\nnote: downloading size10.clo\nwarning: failure fetching \"size10.clo\" from network (1/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: failure fetching \"size10.clo\" from network (2/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: failure fetching \"size10.clo\" from network (3/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: open of input size10.clo failed\ncaused by: failed to download \"size10.clo\"; please check your network connection.\nerror: article.cls:113: ! LaTeX Error: File `size10.clo' not found.\n! ! LaTeX Error: File `size10.clo' not found..\n\\@missingfileerror ...or: File `#1.#2' not found.}\n                                                  \nl.113 \\input{size1\\@ptsize.clo}\n                               \nNo pages of output.\nTranscript written on report.log.\nerror: something bad happened inside XeTeX, but no output was logged\nerror: the XeTeX engine had an unrecoverable error\ncaused by: halted on potentially-recoverable error as specified\n",
+      "pdfExists": false,
+      "pdfPath": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/build-01/report.pdf"
+    }
+  ],
+  "command": null,
+  "compiler": null,
+  "exitCode": 1,
+  "log": "note: \"version 2\" Tectonic command-line interface activated\nnote: Running TeX ...\n(report.tex\nLaTeX2e <2021-11-15> patch level 1\nL3 programming layer <2022-02-24> (ctexart.cls (ctexbackend.cfg) (expl3.sty\n(l3backend-xetex.def))\nDocument Class: ctexart 2021/12/12 v2.5.8 Chinese adapter for class article (CT\nEX)\n(xparse.sty) (l3keys2e.sty) (ctexhook.sty) (ctexpatch.sty) (fix-cm.sty\n(ts1enc.def)) (ctexopts.cfg) (article.cls\nDocument Class: article 2021/10/04 v1.4n Standard LaTeX document class\nnote: downloading size10.clo\nwarning: failure fetching \"size10.clo\" from network (1/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: failure fetching \"size10.clo\" from network (2/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: failure fetching \"size10.clo\" from network (3/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: open of input size10.clo failed\ncaused by: failed to download \"size10.clo\"; please check your network connection.\nnote: downloading size10.clo\nwarning: failure fetching \"size10.clo\" from network (1/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: failure fetching \"size10.clo\" from network (2/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: failure fetching \"size10.clo\" from network (3/3)\ncaused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)\ncaused by: client error (Connect)\ncaused by: dns error\ncaused by: failed to lookup address information: nodename nor servname provided, or not known\nwarning: open of input size10.clo failed\ncaused by: failed to download \"size10.clo\"; please check your network connection.\nerror: article.cls:113: ! LaTeX Error: File `size10.clo' not found.\n! ! LaTeX Error: File `size10.clo' not found..\n\\@missingfileerror ...or: File `#1.#2' not found.}\n                                                  \nl.113 \\input{size1\\@ptsize.clo}\n                               \nNo pages of output.\nTranscript written on report.log.\nerror: something bad happened inside XeTeX, but no output was logged\nerror: the XeTeX engine had an unrecoverable error\ncaused by: halted on potentially-recoverable error as specified\n",
+  "pdfExists": false,
+  "pdfPath": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/build-01/report.pdf",
+  "rootFile": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-01/test_rendered_figures_keep_zer0/rendered/report.tex",
+  "tectonic": {
+    "checked": [
+      {
+        "path": "/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic",
+        "source": "app"
+      }
+    ],
+    "path": "/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic",
+    "reason": "Tectonic executable is available.",
+    "source": "app",
+    "status": "available",
+    "version": "Tectonic 0.17.0"
+  },
+  "tectonicSuitability": {
+    "reasons": [],
+    "scannedFiles": [
+      "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-01/test_rendered_figures_keep_zer0/rendered/report.tex"
+    ],
+    "suitable": true
+  },
+  "texliveDetection": null
+}

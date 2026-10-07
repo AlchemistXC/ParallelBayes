@@ -333,3 +333,12 @@ F2返回1cfc83d；F3返回b0582c3的27主任务、24测量/96调用已封存并�
 执行源码06e75c1；prepare/test/run/verify-only/seal/verify/export接通，共享既定控制设置，27主任务与24缓存测量固定在独立技术身份。8项新增本地检查及2项受影响检查通过；首轮1个测试异常文字大小写失败保留，最终无失败/跳过。三份测试输入和归档仅用于本地接口/存储检查，无新Windows Job、CUDA、MCMC或正式重复。
 
 Windows新任务入口为handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md，一次全文提供，按顺序执行；旧F2/v1运行器/安装提示词不重复。原生16行为用例、51任务、96缓存调用、零重算及封存均尚待实机结果，不把代码准备计为通过。Mac继续完整正式原始结果分析，F3/F4/F5/F6未关闭。详见docs/FORMAL-NATIVE-VALIDATION.md和formal-native-producer-v1回执。
+
+
+## Verified statistics-to-report interface (2026-10-07)
+
+Source 7babac5. Added complete task/diagnostic/cost/error tables, paired same-kernel execution ratios, fixed-budget error-cost and paired loss figures, and a Chinese multi-file LaTeX report. Natural ratios and log intervals remain distinct. Failed/missing/constant/unresolved records stay in denominators; absent NUTS tree-depth counts remain unknown. No new sampler calls, R diagnostics or formal repetitions.
+
+Ten distinct checks pass, zero final failures/skips. Subsequent layout changes rerun affected checks only. Eight artificial figures / eighteen panels pass alignment, PDF font, collision and manual inspection. The artificial nine-page report compiles. Initial missing TeX cache, intermediate rendering indentation failure and earlier visual defects remain recorded. The existing 51-gap technical CLI output connects successfully with zero figures and zero sampling. See docs/FORMAL-REPORT.md and benchmark/analysis/outputs/formal-report-v1.
+
+Numerical source, executors, models, frozen protocols and Windows prompt have no diff from a1cc588. Remote Windows heads remain 1cfc83d/b0582c3/0e44c2d with 27 draft assets. No new v2 receipt is visible; its branch or Release identity has been requested. Do not repeat old acceptance. F3/F4 formal experiments, F5 full actual-data reconstruction and F6 final manuscript remain incomplete.

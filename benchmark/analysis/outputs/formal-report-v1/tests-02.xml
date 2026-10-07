@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="10" time="1.344" timestamp="2026-10-07T11:37:00.088597+09:00" hostname="HaKudeMac-mini.local"><testcase classname="tests.handoff.test_formal_report" name="test_small_frame_requires_fixture_and_preserves_all_qualifications" time="0.669" /><testcase classname="tests.handoff.test_formal_report" name="test_ratio_intervals_are_exponentiated_scale_and_not_log_bounds" time="0.017" /><testcase classname="tests.handoff.test_formal_report" name="test_nuts_unknown_tree_depth_is_not_zero_and_divergence_denominator_is_draws" time="0.022" /><testcase classname="tests.handoff.test_formal_report" name="test_corrupted_or_inconsistent_statistics_are_rejected[tamper]" time="0.009" /><testcase classname="tests.handoff.test_formal_report" name="test_corrupted_or_inconsistent_statistics_are_rejected[extra]" time="0.011" /><testcase classname="tests.handoff.test_formal_report" name="test_corrupted_or_inconsistent_statistics_are_rejected[semantic]" time="0.024" /><testcase classname="tests.handoff.test_formal_report" name="test_partial_model_and_technical_scope_never_make_formal_figures" time="0.119" /><testcase classname="tests.handoff.test_formal_report" name="test_diagnostics_cannot_promote_failed_task" time="0.005" /><testcase classname="tests.handoff.test_formal_report" name="test_rendered_figures_keep_zeros_unresolved_reference_and_fixture_watermark" time="0.099"><failure message="  File &quot;/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_plots.py&quot;, line 106&#10;    ax.set_xlim(min(values)/1.25,max(values)*1.25);ax.set_ylim(len(frame)-.45,-.65)&#10;IndentationError: unexpected indent">complete = (PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/report-source0/statistics'), '08ddc2c42180d0395122f8ab9216be09ada57142e6b6de2ca39cc9fb9a0fdcac')
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/test_rendered_figures_keep_zer0')
+
+    def test_rendered_figures_keep_zeros_unresolved_reference_and_fixture_watermark(complete,tmp_path):
+        pytest.importorskip('matplotlib')
+        root,digest=complete;out=tmp_path/'rendered'
+&gt;       result=build(root,digest,out,fixture=True,render=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/handoff/test_formal_report.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+statistics_directory = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/report-source0/statistics')
+manifest_sha256 = '08ddc2c42180d0395122f8ab9216be09ada57142e6b6de2ca39cc9fb9a0fdcac'
+output = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/test_rendered_figures_keep_zer0/rendered')
+
+    def build(statistics_directory,manifest_sha256,output,*,fixture=False,render=True):
+        source=StatisticsBundle(statistics_directory,manifest_sha256,fixture=fixture);output=Path(output).resolve()
+        if output.exists() or output.is_relative_to(source.root) or source.root.is_relative_to(output):raise ValueError('Fresh report separate from statistics required')
+        output.mkdir(parents=True);models=[];figures=[]
+        for name in source.models:
+            summary,tables=model_tables(source,name);dest=output/name;dest.mkdir()
+            for table,rows in tables.items():csv_write(dest/(table+'.csv'),rows)
+            atomic_json(dest/'tables.json',tables)
+            atomic_json(dest/'SUMMARY.json',summary)
+            if render:
+&gt;               from formal_plots import render_model
+E                 File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_plots.py", line 106
+E                   ax.set_xlim(min(values)/1.25,max(values)*1.25);ax.set_ylim(len(frame)-.45,-.65)
+E               IndentationError: unexpected indent
+
+scripts/analysis/formal_report.py:292: IndentationError</failure></testcase><testcase classname="tests.handoff.test_formal_report" name="test_full_layout_is_explicitly_artificial_and_keeps_all_configuration_slots" time="0.001"><failure message="  File &quot;/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_plots.py&quot;, line 106&#10;    ax.set_xlim(min(values)/1.25,max(values)*1.25);ax.set_ylim(len(frame)-.45,-.65)&#10;IndentationError: unexpected indent">complete = (PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/report-source0/statistics'), '08ddc2c42180d0395122f8ab9216be09ada57142e6b6de2ca39cc9fb9a0fdcac')
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/test_full_layout_is_explicitly0')
+
+    def test_full_layout_is_explicitly_artificial_and_keeps_all_configuration_slots(complete,tmp_path):
+        pytest.importorskip('matplotlib')
+        from batch_contract import WORKFLOWS
+&gt;       from formal_plots import configure,execution_figure,inference_figure,signed_axis,plt
+E         File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_plots.py", line 106
+E           ax.set_xlim(min(values)/1.25,max(values)*1.25);ax.set_ylim(len(frame)-.45,-.65)
+E       IndentationError: unexpected indent
+
+tests/handoff/test_formal_report.py:146: IndentationError</failure></testcase></testsuite></testsuites>

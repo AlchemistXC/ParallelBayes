@@ -1,0 +1,9 @@
+..                                                                       [100%]
+=============================== warnings summary ===============================
+tests/handoff/test_formal_report.py::test_rendered_figures_keep_zeros_unresolved_reference_and_fixture_watermark
+  /Users/haku/Workspace/ParallelBayes/.venv/lib/python3.12/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-06.xml -
+2 passed, 8 deselected, 1 warning in 10.97s

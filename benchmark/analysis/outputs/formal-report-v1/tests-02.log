@@ -1,0 +1,58 @@
+........FF                                                               [100%]
+=================================== FAILURES ===================================
+_ test_rendered_figures_keep_zeros_unresolved_reference_and_fixture_watermark __
+
+complete = (PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/report-source0/statistics'), '08ddc2c42180d0395122f8ab9216be09ada57142e6b6de2ca39cc9fb9a0fdcac')
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/test_rendered_figures_keep_zer0')
+
+    def test_rendered_figures_keep_zeros_unresolved_reference_and_fixture_watermark(complete,tmp_path):
+        pytest.importorskip('matplotlib')
+        root,digest=complete;out=tmp_path/'rendered'
+>       result=build(root,digest,out,fixture=True,render=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/handoff/test_formal_report.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+statistics_directory = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/report-source0/statistics')
+manifest_sha256 = '08ddc2c42180d0395122f8ab9216be09ada57142e6b6de2ca39cc9fb9a0fdcac'
+output = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/test_rendered_figures_keep_zer0/rendered')
+
+    def build(statistics_directory,manifest_sha256,output,*,fixture=False,render=True):
+        source=StatisticsBundle(statistics_directory,manifest_sha256,fixture=fixture);output=Path(output).resolve()
+        if output.exists() or output.is_relative_to(source.root) or source.root.is_relative_to(output):raise ValueError('Fresh report separate from statistics required')
+        output.mkdir(parents=True);models=[];figures=[]
+        for name in source.models:
+            summary,tables=model_tables(source,name);dest=output/name;dest.mkdir()
+            for table,rows in tables.items():csv_write(dest/(table+'.csv'),rows)
+            atomic_json(dest/'tables.json',tables)
+            atomic_json(dest/'SUMMARY.json',summary)
+            if render:
+>               from formal_plots import render_model
+E                 File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_plots.py", line 106
+E                   ax.set_xlim(min(values)/1.25,max(values)*1.25);ax.set_ylim(len(frame)-.45,-.65)
+E               IndentationError: unexpected indent
+
+scripts/analysis/formal_report.py:292: IndentationError
+------------------------------ Captured log call -------------------------------
+WARNING  matplotlib:__init__.py:537 mkdir -p failed for path /Users/haku/.matplotlib: [Errno 1] Operation not permitted: '/Users/haku/.matplotlib'
+WARNING  matplotlib:__init__.py:554 Matplotlib created a temporary cache directory at /var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/matplotlib-lg3_xzp0 because there was an issue with the default path (/Users/haku/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+_ test_full_layout_is_explicitly_artificial_and_keeps_all_configuration_slots __
+
+complete = (PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/report-source0/statistics'), '08ddc2c42180d0395122f8ab9216be09ada57142e6b6de2ca39cc9fb9a0fdcac')
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02/test_full_layout_is_explicitly0')
+
+    def test_full_layout_is_explicitly_artificial_and_keeps_all_configuration_slots(complete,tmp_path):
+        pytest.importorskip('matplotlib')
+        from batch_contract import WORKFLOWS
+>       from formal_plots import configure,execution_figure,inference_figure,signed_axis,plt
+E         File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_plots.py", line 106
+E           ax.set_xlim(min(values)/1.25,max(values)*1.25);ax.set_ylim(len(frame)-.45,-.65)
+E       IndentationError: unexpected indent
+
+tests/handoff/test_formal_report.py:146: IndentationError
+- generated xml file: /Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-02.xml -
+=========================== short test summary info ============================
+FAILED tests/handoff/test_formal_report.py::test_rendered_figures_keep_zeros_unresolved_reference_and_fixture_watermark
+FAILED tests/handoff/test_formal_report.py::test_full_layout_is_explicitly_artificial_and_keeps_all_configuration_slots
+2 failed, 8 passed in 1.34s

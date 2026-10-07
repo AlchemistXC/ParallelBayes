@@ -1,0 +1,41 @@
+{
+  "pdf": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-01/test_rendered_figures_keep_zercurrent/rendered/G1/execution-costs.pdf",
+  "auditable": true,
+  "minimum_required_pt": 5.0,
+  "minimum_found_pt": 4.2,
+  "text_run_count": 37,
+  "below_minimum_count": 6,
+  "below_minimum": [
+    {
+      "stream": 1,
+      "font": "F1",
+      "size_pt": 4.2
+    },
+    {
+      "stream": 1,
+      "font": "F1",
+      "size_pt": 4.2
+    },
+    {
+      "stream": 1,
+      "font": "F1",
+      "size_pt": 4.2
+    },
+    {
+      "stream": 1,
+      "font": "F1",
+      "size_pt": 4.2
+    },
+    {
+      "stream": 1,
+      "font": "F1",
+      "size_pt": 4.2
+    },
+    {
+      "stream": 1,
+      "font": "F1",
+      "size_pt": 4.2
+    }
+  ],
+  "warnings": []
+}

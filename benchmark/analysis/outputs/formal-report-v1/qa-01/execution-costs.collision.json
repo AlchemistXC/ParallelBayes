@@ -1,0 +1,90 @@
+{
+  "pdf": "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-01/test_rendered_figures_keep_zercurrent/rendered/G1/execution-costs.pdf",
+  "auditable": true,
+  "verdict": "FIX BEFORE DELIVERY",
+  "page_count": 1,
+  "visible_text_box_count": 29,
+  "text_trace_count": 37,
+  "stroke_path_count": 26,
+  "filled_region_count": 19,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 3,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "FAIL",
+      "kind": "text-text",
+      "page": 1,
+      "message": "Text boxes overlap by 100.0% of the smaller box",
+      "text": "Sequential / time cost",
+      "text_bbox": [
+        109.52421569824219,
+        225.6465606689453,
+        378.4794006347656,
+        233.5902862548828
+      ],
+      "other_text": "Sequential / time cost",
+      "other_bbox": [
+        249.55703735351562,
+        226.5902862548828,
+        326.23565673828125,
+        233.5902862548828
+      ],
+      "object_count": 1,
+      "object_indexes": []
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-text",
+      "page": 1,
+      "message": "Text boxes overlap by 88.7% of the smaller box",
+      "text": "Sequential / time cost",
+      "text_bbox": [
+        109.52421569824219,
+        225.6465606689453,
+        378.4794006347656,
+        233.5902862548828
+      ],
+      "other_text": "Points: paired geometric cost ratios; >1 means shorter time-executor cost.",
+      "other_bbox": [
+        142.1903839111328,
+        224.817626953125,
+        378.4801940917969,
+        232.15713500976562
+      ],
+      "object_count": 1,
+      "object_indexes": []
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-text",
+      "page": 1,
+      "message": "Text boxes overlap by 79.5% of the smaller box",
+      "text": "Sequential / time cost",
+      "text_bbox": [
+        249.55703735351562,
+        226.5902862548828,
+        326.23565673828125,
+        233.5902862548828
+      ],
+      "other_text": "Points: paired geometric cost ratios; >1 means shorter time-executor cost.",
+      "other_bbox": [
+        142.1903839111328,
+        224.817626953125,
+        378.4801940917969,
+        232.15713500976562
+      ],
+      "object_count": 1,
+      "object_indexes": []
+    }
+  ]
+}

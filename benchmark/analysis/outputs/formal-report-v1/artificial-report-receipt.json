@@ -1,0 +1,242 @@
+{
+  "all_cache_statistics_available": true,
+  "all_main_statistics_available": true,
+  "code_sha256": {
+    "formal_plots.py": "be9c54eaeff1648157a8fb0fecdf5b7e40ef89dca910046fdd8023041b52ce98",
+    "formal_report.py": "aa0d1ca50f62f94b45bcfa6201719e7eb1788cca95d6c1be7194c8b26e9ed1f9",
+    "formal_report_text.py": "2df5cfcac3e12bd1f6d423e41bb23947d5c2305c530684166a9ff5240fca1e67"
+  },
+  "complete_research_or_convergence_claim": false,
+  "diagnostics_recomputed": false,
+  "figures": [
+    {
+      "file": "G1/execution-costs.pdf",
+      "kind": "execution_costs",
+      "model": "G1",
+      "panels": 3,
+      "source_table": "G1/ratios.csv"
+    },
+    {
+      "file": "G1/inference-0.pdf",
+      "function": "varying",
+      "kind": "inference",
+      "model": "G1",
+      "panels": 2,
+      "source_table": "G1/errors.csv"
+    },
+    {
+      "file": "G1/inference-1.pdf",
+      "function": "constant",
+      "kind": "inference",
+      "model": "G1",
+      "panels": 2,
+      "source_table": "G1/errors.csv"
+    },
+    {
+      "file": "G1/inference-2.pdf",
+      "function": "unresolved",
+      "kind": "inference",
+      "model": "G1",
+      "panels": 2,
+      "source_table": "G1/errors.csv"
+    },
+    {
+      "file": "G1/inference-3.pdf",
+      "function": "finite_reference",
+      "kind": "inference",
+      "model": "G1",
+      "panels": 2,
+      "source_table": "G1/errors.csv"
+    },
+    {
+      "file": "G1/inference-4.pdf",
+      "function": "quadrature",
+      "kind": "inference",
+      "model": "G1",
+      "panels": 2,
+      "source_table": "G1/errors.csv"
+    }
+  ],
+  "fixture": true,
+  "frame": {
+    "cache_planned": 128,
+    "formal_scientific_repetitions_per_model": 32,
+    "identity": "artificial-receiver-statistics-no-sampling",
+    "main_planned": 192,
+    "protocol_sha256": "4299d2c0b45e724a9593dd94555f43fc7c73645db489e0c496ba64a20dda7358",
+    "scope": "formal_inference"
+  },
+  "new_sampler_calls": 0,
+  "new_statistical_repetitions": 0,
+  "producer_analysis_identity_sha256": null,
+  "raw_arrays_replayed": false,
+  "schema": "formal-results-report-v1",
+  "scientific_results": false,
+  "source_integrity_scope": "Verified supplied statistics manifest; original raw validation belongs to the recorded producer",
+  "source_models": [
+    {
+      "model": "G1",
+      "summary": {
+        "cache_dispositions": {
+          "analyzed": 128
+        },
+        "cache_outcomes": {
+          "measurement_available": 126,
+          "numerical_failure": 2
+        },
+        "cache_planned": 128,
+        "cache_resampling": {
+          "independent_unit": "complete_four_chain_repetition",
+          "model": "G1",
+          "n_resamples": 9999,
+          "namespace": "cached-input-companion-v1::c20c354748c597c6abcc1255e0b15257ea263c1b1d9ca2fa784eda641aa63e91",
+          "planned_repetitions": 32,
+          "reference_resampled": false,
+          "replicate_ids": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ],
+          "rng": "numpy.Generator(PCG64)",
+          "rng_seed_hex": "0x77fb69d7daef0829d3f0e2d2409c4c1d",
+          "schema": 1,
+          "sha256": "8ec64b833588074ba7aa0a4a1c3621d7bddea1f7a200865bd452cbed178bcc55",
+          "simultaneous_coverage": false
+        },
+        "cache_statistics": "completed",
+        "cost_statistics": "completed",
+        "formal_inference_complete": false,
+        "main_dispositions": {
+          "analyzed": 192
+        },
+        "main_outcomes": {
+          "numerical_failure": 2,
+          "valid": 190
+        },
+        "main_planned": 192,
+        "main_statistics": "completed",
+        "model": "G1",
+        "planned_repetitions": 32,
+        "reference": {
+          "kinds": [
+            "analytic",
+            "analytic",
+            "unresolved",
+            "finite_mcmc",
+            "numerical_uncertified"
+          ],
+          "mcse": [
+            0.0,
+            0.0,
+            null,
+            0.05,
+            null
+          ],
+          "means": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "names": [
+            "varying",
+            "constant",
+            "unresolved",
+            "finite_reference",
+            "quadrature"
+          ]
+        },
+        "reference_uncertainty_propagated": false,
+        "resampling": {
+          "independent_unit": "complete_four_chain_repetition",
+          "model": "G1",
+          "n_resamples": 9999,
+          "namespace": "artificial-receiver-statistics-no-sampling",
+          "planned_repetitions": 32,
+          "reference_resampled": false,
+          "replicate_ids": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ],
+          "rng": "numpy.Generator(PCG64)",
+          "rng_seed_hex": "0xafb8cacd7ac3b2e740ff457e3de716ad",
+          "schema": 1,
+          "sha256": "28179c3988a428b039fea13cdfd60eb4753177212afbc4115bf34870a2b821f3",
+          "simultaneous_coverage": false
+        }
+      },
+      "table_rows": {
+        "cache": 4,
+        "costs": 12,
+        "diagnostics": 30,
+        "errors": 60,
+        "nuts": 2,
+        "paired_errors": 30,
+        "ratios": 14,
+        "task_costs": 1280,
+        "tasks": 10
+      }
+    }
+  ],
+  "statistics_manifest_sha256": "08ddc2c42180d0395122f8ab9216be09ada57142e6b6de2ca39cc9fb9a0fdcac"
+}

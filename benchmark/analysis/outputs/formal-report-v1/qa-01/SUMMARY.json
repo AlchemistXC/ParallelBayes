@@ -1,0 +1,68 @@
+[
+  {
+    "file": "execution-costs.pdf",
+    "kind": "font",
+    "returncode": 1
+  },
+  {
+    "file": "execution-costs.pdf",
+    "kind": "collision",
+    "returncode": 1,
+    "summary": " 378.4794006347656, 233.5902862548828)\n[FAIL] page 1 text-text: Text boxes overlap by 88.7% of the smaller box \u2014 'Sequential / time cost'\n  other text: 'Points: paired geometric cost ratios; >1 means shorter time-executor cost.'\n  text bbox: (109.52421569824219, 225.6465606689453, 378.4794006347656, 233.5902862548828)\n[FAIL] page 1 text-text: Text boxes overlap by 79.5% of the smaller box \u2014 'Sequential / time cost'\n  other text: 'Points: paired geometric cost ratios; >1 means shorter time-executor cost.'\n  text bbox: (249.55703735351562, 226.5902862548828, 326.23565673828125, 233.5902862548828)\n\nsummary: 3 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: FIX BEFORE DELIVERY\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  },
+  {
+    "file": "inference-0.pdf",
+    "kind": "font",
+    "returncode": 0
+  },
+  {
+    "file": "inference-0.pdf",
+    "kind": "collision",
+    "returncode": 0,
+    "summary": "Nature Figure Rendered Collision Audit\npdf: /Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-01/test_rendered_figures_keep_zercurrent/rendered/G1/inference-0.pdf\npages: 1\nvisible text boxes: 27\nstroke paths: 32\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  },
+  {
+    "file": "inference-1.pdf",
+    "kind": "font",
+    "returncode": 0
+  },
+  {
+    "file": "inference-1.pdf",
+    "kind": "collision",
+    "returncode": 0,
+    "summary": "Nature Figure Rendered Collision Audit\npdf: /Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-01/test_rendered_figures_keep_zercurrent/rendered/G1/inference-1.pdf\npages: 1\nvisible text boxes: 33\nstroke paths: 30\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  },
+  {
+    "file": "inference-2.pdf",
+    "kind": "font",
+    "returncode": 0
+  },
+  {
+    "file": "inference-2.pdf",
+    "kind": "collision",
+    "returncode": 0,
+    "summary": "Nature Figure Rendered Collision Audit\npdf: /Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-01/test_rendered_figures_keep_zercurrent/rendered/G1/inference-2.pdf\npages: 1\nvisible text boxes: 42\nstroke paths: 26\n\n\nsummary: 0 fail, 0 warn, 1 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  },
+  {
+    "file": "inference-3.pdf",
+    "kind": "font",
+    "returncode": 0
+  },
+  {
+    "file": "inference-3.pdf",
+    "kind": "collision",
+    "returncode": 0,
+    "summary": "Nature Figure Rendered Collision Audit\npdf: /Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-01/test_rendered_figures_keep_zercurrent/rendered/G1/inference-3.pdf\npages: 1\nvisible text boxes: 27\nstroke paths: 32\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  },
+  {
+    "file": "inference-4.pdf",
+    "kind": "font",
+    "returncode": 0
+  },
+  {
+    "file": "inference-4.pdf",
+    "kind": "collision",
+    "returncode": 0,
+    "summary": "Nature Figure Rendered Collision Audit\npdf: /Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-v1/tests-01/test_rendered_figures_keep_zercurrent/rendered/G1/inference-4.pdf\npages: 1\nvisible text boxes: 27\nstroke paths: 32\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  }
+]
