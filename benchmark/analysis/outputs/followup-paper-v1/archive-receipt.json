@@ -1,0 +1,19 @@
+{
+  "source_commit": "2a758baacea6be0d6141c6932566cbdf552a1ee2",
+  "archive": "followup-paper-v1.tar",
+  "bytes": 12707840,
+  "sha256": "67837319946db3abb18bbb3e9c801b0e486944912926c2cb71ef7388ae38eaf6",
+  "manifest_files_verified": 64,
+  "manifest_self_excluded": true,
+  "pages": 26,
+  "source_dirty": false,
+  "new_sampling": 0,
+  "new_formal_repetitions": 0,
+  "scope": "Saved summaries to manuscript; not full raw research reconstruction",
+  "length_change": {
+    "unit": "Chinese characters in expanded TeX, excluding comment lines; includes captions/references, not a submission word count",
+    "before": 13730,
+    "after": 14891,
+    "change": 1161
+  }
+}

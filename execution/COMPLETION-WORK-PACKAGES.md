@@ -344,3 +344,10 @@ Source 7babac5. Added complete task/diagnostic/cost/error tables, paired same-ke
 Ten distinct checks pass, zero final failures/skips. Subsequent layout changes rerun affected checks only. Eight artificial figures / eighteen panels pass alignment, PDF font, collision and manual inspection. The artificial nine-page report compiles. Initial missing TeX cache, intermediate rendering indentation failure and earlier visual defects remain recorded. The existing 51-gap technical CLI output connects successfully with zero figures and zero sampling. See docs/FORMAL-REPORT.md and benchmark/analysis/outputs/formal-report-v1.
 
 Numerical source, executors, models, frozen protocols and Windows prompt have no diff from a1cc588. Remote Windows heads remain 1cfc83d/b0582c3/0e44c2d with 27 draft assets. No new v2 receipt is visible; its branch or Release identity has been requested. Do not repeat old acceptance. F3/F4 formal experiments, F5 full actual-data reconstruction and F6 final manuscript remain incomplete.
+
+
+## Windows实测进入当前论文（2026-10-07）
+
+源码2a758ba。192机制工作流及运行/候选安装证据进入26页中文稿，旧历史段、协议和数值源码不变。全部配置、全拒绝、短链诊断与跨系统严格失败保留；等512输出链数对照仅作为吞吐描述。六段结果在独立目录逐字节重建，v1五段兼容验证及生成器3种拒绝行为通过，最终PDF排版审读完成。完整内容包64资产逐项校验；新增采样、R诊断和正式重复均0。见docs/WINDOWS-FOLLOWUP-MANUSCRIPT.md及followup-paper-v1回执。
+
+当前v2原生有限验收仍待新回传，旧Windows头及27个草稿附件未变；不重复旧F2/运行器/安装。正式F3/F4、全原始证据F5及投稿F6保持未完成。本轮论文进展不关闭总研究目标。

@@ -1,0 +1,127 @@
+{
+  "scope": "Saved reviewed records to manuscript; no new sampling or device timing",
+  "source_inputs": {
+    "benchmark/protocols/mechanism-windows-pilot-v1.json": "d8b3a6090148f1ea7d3d49c20bb01d2349b345e5c1fab5d0c209021fb0f17e4e",
+    "benchmark/analysis/outputs/windows-followup-intake-v1/comparison-summary.json": "c99b15bf200d78d57b25faf668de37d7fb0c04cfd9c2729640fb6798859f1772",
+    "benchmark/analysis/outputs/windows-followup-intake-v1/numpy-summary.json": "8b89658b151fa4a0852038f497e6838edaf18da3409b56b7f199b86827f87a37",
+    "benchmark/analysis/outputs/windows-followup-intake-v1/runtime/SUMMARY.json": "d4b9ce12c23ecdbff615bc6566e2a5a61e43cf073aeadbb7f193bd82db670f86",
+    "manuscript/software/intake.generated.tex": "1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa",
+    "manuscript/software/followup.template.tex": "00008d8d76f15fe6ca9611bf379e46f4386cb6150888c618870dcee11e7faa69",
+    "figures/windows-mechanism-pilot-v1/work-and-cached-cost.pdf": "cb5bc9c51a9735d5e7f7a10de697c141ecac47093c26c6de5d505042a7b29329",
+    "benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cpu/workflows.csv": "04d86adde990daa6809994ed97b0cbd3fb81a940771a5f0e6a54101b02134c7f",
+    "benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cuda/workflows.csv": "9e2fd3b87f61bbb453aac19b038c42bbe11710d5d2ff455239b5ffafe48c4b8b",
+    "manuscript/software/completion-companion.generated.tex": "e20cca0f955659023c3d459725eb89003aef59f9e58a2b2f67e853419c8573cf"
+  },
+  "windows_workflows": 192,
+  "independent_inputs_per_model": 2,
+  "work_ranges": {
+    "cpu-mala": {
+      "forward_maps_per_transition": [
+        7.75,
+        22.5
+      ],
+      "JVPs_per_transition": [
+        3.875,
+        11.25
+      ]
+    },
+    "cpu-rwm": {
+      "forward_maps_per_transition": [
+        2.0,
+        7.59375
+      ],
+      "JVPs_per_transition": [
+        0.0,
+        0.0
+      ]
+    },
+    "cuda-mala": {
+      "forward_maps_per_transition": [
+        7.75,
+        22.5
+      ],
+      "JVPs_per_transition": [
+        3.875,
+        11.25
+      ]
+    },
+    "cuda-rwm": {
+      "forward_maps_per_transition": [
+        2.0,
+        7.59375
+      ],
+      "JVPs_per_transition": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "allocation_comparisons": [
+    {
+      "device": "cpu",
+      "model": "G2",
+      "input": "0",
+      "picard_seconds": 0.04288829999859445,
+      "sequential_16_seconds": 0.006409299996448681,
+      "ratio": 6.691573186207286
+    },
+    {
+      "device": "cpu",
+      "model": "G2",
+      "input": "1",
+      "picard_seconds": 0.05331069999374449,
+      "sequential_16_seconds": 0.009495800011791289,
+      "ratio": 5.614134662434614
+    },
+    {
+      "device": "cpu",
+      "model": "L1",
+      "input": "0",
+      "picard_seconds": 0.10210389998974279,
+      "sequential_16_seconds": 0.01492270000744611,
+      "ratio": 6.842186731542892
+    },
+    {
+      "device": "cpu",
+      "model": "L1",
+      "input": "1",
+      "picard_seconds": 0.09785200000624172,
+      "sequential_16_seconds": 0.020074900006875396,
+      "ratio": 4.87434557446008
+    },
+    {
+      "device": "cuda",
+      "model": "G2",
+      "input": "0",
+      "picard_seconds": 0.10567849999642931,
+      "sequential_16_seconds": 0.023851900012232363,
+      "ratio": 4.430611395412209
+    },
+    {
+      "device": "cuda",
+      "model": "G2",
+      "input": "1",
+      "picard_seconds": 0.12536830001045018,
+      "sequential_16_seconds": 0.023777299997163936,
+      "ratio": 5.272604544056879
+    },
+    {
+      "device": "cuda",
+      "model": "L1",
+      "input": "0",
+      "picard_seconds": 0.22284090000903234,
+      "sequential_16_seconds": 0.03362260002177209,
+      "ratio": 6.62771171369059
+    },
+    {
+      "device": "cuda",
+      "model": "L1",
+      "input": "1",
+      "picard_seconds": 0.20652000000700355,
+      "sequential_16_seconds": 0.029838599992217496,
+      "ratio": 6.921236253070456
+    }
+  ],
+  "formal_inference_repetitions_added": 0,
+  "figures_regenerated": false
+}

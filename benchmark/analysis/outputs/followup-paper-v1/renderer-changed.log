@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/write_followup_tex.py", line 129, in <module>
+    main()
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/write_followup_tex.py", line 116, in main
+    text, report = render(args.root.resolve())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/write_followup_tex.py", line 30, in render
+    raise ValueError('Changed reviewed input: ' + name)
+ValueError: Changed reviewed input: benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cpu/workflows.csv

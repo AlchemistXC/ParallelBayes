@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/write_followup_tex.py", line 129, in <module>
+    main()
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/write_followup_tex.py", line 116, in main
+    text, report = render(args.root.resolve())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/write_followup_tex.py", line 27, in render
+    raise ValueError('Missing/nonregular evidence input: ' + name)
+ValueError: Missing/nonregular evidence input: benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cpu/workflows.csv

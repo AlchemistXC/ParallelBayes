@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/write_followup_tex.py", line 129, in <module>
+    main()
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/write_followup_tex.py", line 119, in main
+    raise FileExistsError('Use new output paths; reviewed results are not overwritten')
+FileExistsError: Use new output paths; reviewed results are not overwritten

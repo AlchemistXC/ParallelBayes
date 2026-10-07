@@ -1,0 +1,21 @@
+{
+  "pages": 26,
+  "pdf_sha256": "de2850e7cb1cb5219d972ac808ac07ccb74c23ecff250e685b6f02ea242638ae",
+  "final_tex_warnings": [],
+  "issues": {
+    "missing_cjk_glyph": false,
+    "unresolved_reference": false,
+    "stale_mechanism": false,
+    "stale_future": false
+  },
+  "rendered_review_pages": [
+    1,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "visual_review": "Pages 1, 20–25 rendered; pages 20, 21, 25 inspected after final change; pages 21–24 inspected before the final historical-status wording change. Existing vector figure retained."
+}

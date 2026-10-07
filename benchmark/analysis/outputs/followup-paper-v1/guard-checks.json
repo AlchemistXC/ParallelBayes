@@ -1,0 +1,26 @@
+{
+  "scope": "Renderer integrity and no-overwrite behavior; no sampler tests",
+  "checks": [
+    {
+      "check": "renderer-valid",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "renderer-changed",
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "check": "renderer-missing",
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "check": "renderer-existing",
+      "exit_code": 1,
+      "passed": true
+    }
+  ],
+  "sampler_calls": 0
+}
