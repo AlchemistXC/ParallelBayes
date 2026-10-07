@@ -3,10 +3,58 @@
 % Reviewed input SHA256 8b89658b151fa4a0852038f497e6838edaf18da3409b56b7f199b86827f87a37 benchmark/analysis/outputs/windows-followup-intake-v1/numpy-summary.json
 % Reviewed input SHA256 d4b9ce12c23ecdbff615bc6566e2a5a61e43cf073aeadbb7f193bd82db670f86 benchmark/analysis/outputs/windows-followup-intake-v1/runtime/SUMMARY.json
 % Reviewed input SHA256 1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa manuscript/software/intake.generated.tex
-% Reviewed input SHA256 749f6f6710211b9cde823f13f051db57e45ad6b9a1c59d5cb3f9766b9f449f9e manuscript/software/followup.template.tex
+% Reviewed input SHA256 00008d8d76f15fe6ca9611bf379e46f4386cb6150888c618870dcee11e7faa69 manuscript/software/followup.template.tex
 % Reviewed input SHA256 cb5bc9c51a9735d5e7f7a10de697c141ecac47093c26c6de5d505042a7b29329 figures/windows-mechanism-pilot-v1/work-and-cached-cost.pdf
 % Reviewed input SHA256 04d86adde990daa6809994ed97b0cbd3fb81a940771a5f0e6a54101b02134c7f benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cpu/workflows.csv
 % Reviewed input SHA256 9e2fd3b87f61bbb453aac19b038c42bbe11710d5d2ff455239b5ffafe48c4b8b benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cuda/workflows.csv
+% Reviewed input SHA256 e20cca0f955659023c3d459725eb89003aef59f9e58a2b2f67e853419c8573cf manuscript/software/completion-companion.generated.tex
+% Input SHA256 1ef33c7ec7c5f2bbf127a31ac4400ce515eaef3f5692a7963f3edd91848f7378 benchmark/fixtures/rhat-midpoint-v1/case.json
+% Input SHA256 c83cef505f240b3ee513645f7f7161a774f93a13ff9e3536be2ca263ed93d0ca benchmark/analysis/outputs/completion-f1/mac-02/result.json
+% Input SHA256 245c6683393a09f4f1c57b5eecd90b37b780f9e049a8162347c5cbf645f85d8d benchmark/analysis/outputs/completion-f1/mac-02/receipt.json
+% Input SHA256 35d44485cb70199d0cc6a434cc8809e12a8c9c2c6dea3573ac90c07856fce102 benchmark/analysis/outputs/completion-f2/summary.json
+% Input SHA256 c3ac27a861c3a8cf7aeef63eabf089c130b726c8d00c9e294ed0f247dcc6dbdf benchmark/analysis/outputs/completion-f1/windows-01/result.json
+\subsection{收尾阶段新增的诊断与工作量伴随分析}
+\label{sec:completion-companion}
+以下分析于2026年10月5日从原始Windows记录追加，没有重新采样或更改原冻结协议。
+二进制输入后剩余的两个$\hat R$差异，来自H2/RWM顺序、512步、重复3的CPU与CUDA任务；
+丢弃128步后的q2数组逐值相同，故不是两份独立的差异证据。
+在Mac R 4.6.0、posterior 1.7.0中，未折叠分量为1.1777201954，
+折叠中位数比精确中点正确舍入值低一个ULP，约$2.1684\times10^{-19}$。
+固定输入和其余计算，仅替换这个折叠中心，就使5个观测的秩改变，
+折叠$\hat R$由1.4085688369变为1.4082223724，后者重现原Windows记录。
+Windows原生R 4.6.1/posterior 1.7.0的实际回执已返回：原生中位数采用正确舍入中点，
+折叠$\hat R$为1.4082223724，二进制输入和回写相同。
+这核实了数值机制及跨系统观测，但未证明某个底层数学库是根因。
+两种$\hat R$都远高于1.01，不改变混合不足判断，也没有用较小值替换原诊断。
+12KiB二进制样例、精确有理数中点、两中心对照和两平台回执随分析源码保存。
+
+对512项原记录逐轮核算映射、JVP和确认前缀，全部计数检查通过。
+在16个模型/预算组的中位数中，quasi-DEER每输出转移有11.906--29.500次前向映射和5.953--14.750次JVP；
+Picard有2.000--6.820次前向映射，每轮沿每链平均确认4.493--16.000步。
+对应CPU/CUDA工作量一致，拒绝自环计入输出转移。映射次数不是密度调用数或FLOPs，
+JVP不能当作一次普通映射定价；这些记录尚不能把总减速因果分解到各个组件。
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrrrr}\toprule
+目标 & warmed速度比 & 接受率 & 映射/转移 & 确认前缀/轮\\\midrule
+A1 & 4.088 & 0.00000 & 2.000 & 16.000\\
+G2 & 4.380 & 0.02051 & 2.293 & 13.838\\
+G1 & 1.355 & 0.49121 & 6.635 & 4.763\\
+L1 & 1.442 & 0.51611 & 6.236 & 5.045\\
+\bottomrule\end{tabular}
+\caption{CUDA Picard、512步的四个说明性配置；每格4份独立数组的中位数。
+接受率包含丢弃段，分母包括拒绝自环。完整八目标记录另存，未据此筛除任何配置。
+该表跨目标的几何和求值成本也不同，不能解释为接受率对速度的单独因果效应。}
+\end{table}
+
+A1全拒绝时每轮确认整个窗口；G2的执行加速也伴随很低的接受率。
+因此执行收益仍须与合理调参后的函数误差共同考察。
+CUDA首次执行的标量等待/采样时间比例，quasi-DEER组中位数范围为0.970--4.911\%，
+Picard为4.476--6.909\%；等待含未完成设备工作且没有覆盖全部控制活动，不是独立的主机开销估计。
+本伴随分析没有混加首次审计与warmed重放，也不将两次技术重放算作独立统计重复。
+上述历史记录不包含窗口/链数干预；独立机制协议的实测结果见第\ref{sec:windows-mechanism}节，共同推断比较仍待完成。
+
+\section{跨系统核验与后续推断比较的边界}
 % Input SHA256 c34ec98f0093c93effb5a37fbaeb8c8739b1d7f5ad263825e3272317a047eaec benchmark/analysis/outputs/windows-round2-intake-v1/summary.json
 第二轮接收把无约束路径、参数变换与下游诊断分别核对。
 108份MH保存路径均在原容差内，接受事件失配为0；但从同一无约束状态在Mac重算原尺度输出时，
@@ -23,6 +71,7 @@ bulk ESS最大差约$1.02\times10^{-12}$，不可判定位置一致。
 实际数组传递同样是复现契约的一部分。第二轮启动时，Windows重新生成的六份候选输入中，噪声与导数探测数组相同，但对数均匀数组有82/49152个元素不同，最大差约$4.44\times10^{-16}$，因此原协议拒绝启动机制工作流。随后传递原始封存文件，按原哈希和容差完成了下述测量；原启动失败与候选数组仍保留。相同种子和依赖版本不能替代实际数组校验，核验本身也未确定底层数学库差异的因果来源。
 
 \subsection{Windows有限机制测量}
+\label{sec:windows-mechanism}
 独立机制协议在G1、G2、L1上各使用2份主随机输入，比较窗口4/16、链数分配及预先规定的G2 RWM步长对照。CPU与CUDA各完成96个工作流；每个工作流包括首次审计、3次交错缓存重放和探针后重放。全部960份保存路径通过独立NumPy参考核验，接受事件零失配，最大绝对路径差为$3.84\times10^{-10}$。技术重放、窗口变体和跨设备副本均不增加独立输入数。
 
 测量使用同一台Windows 11计算机的Ryzen 7 9800X3D和RTX 5080，torch主机线程设为4，CUDA使用float64并显式同步。桌面显示负载仍存在，不将线程数等同独占物理核心数。表\ref{tab:windows-mechanism}给出全部配置的描述性比值；它们来自三次缓存sample时间中位数之比，既不是完整推断成本比，也不是跨独立重复的置信区间。

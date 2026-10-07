@@ -12,7 +12,7 @@ import json
 import math
 from pathlib import Path
 
-INPUTS = {'benchmark/protocols/mechanism-windows-pilot-v1.json': 'd8b3a6090148f1ea7d3d49c20bb01d2349b345e5c1fab5d0c209021fb0f17e4e', 'benchmark/analysis/outputs/windows-followup-intake-v1/comparison-summary.json': 'c99b15bf200d78d57b25faf668de37d7fb0c04cfd9c2729640fb6798859f1772', 'benchmark/analysis/outputs/windows-followup-intake-v1/numpy-summary.json': '8b89658b151fa4a0852038f497e6838edaf18da3409b56b7f199b86827f87a37', 'benchmark/analysis/outputs/windows-followup-intake-v1/runtime/SUMMARY.json': 'd4b9ce12c23ecdbff615bc6566e2a5a61e43cf073aeadbb7f193bd82db670f86', 'manuscript/software/intake.generated.tex': '1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa', 'manuscript/software/followup.template.tex': '749f6f6710211b9cde823f13f051db57e45ad6b9a1c59d5cb3f9766b9f449f9e', 'figures/windows-mechanism-pilot-v1/work-and-cached-cost.pdf': 'cb5bc9c51a9735d5e7f7a10de697c141ecac47093c26c6de5d505042a7b29329', 'benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cpu/workflows.csv': '04d86adde990daa6809994ed97b0cbd3fb81a940771a5f0e6a54101b02134c7f', 'benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cuda/workflows.csv': '9e2fd3b87f61bbb453aac19b038c42bbe11710d5d2ff455239b5ffafe48c4b8b'}
+INPUTS = {'benchmark/protocols/mechanism-windows-pilot-v1.json': 'd8b3a6090148f1ea7d3d49c20bb01d2349b345e5c1fab5d0c209021fb0f17e4e', 'benchmark/analysis/outputs/windows-followup-intake-v1/comparison-summary.json': 'c99b15bf200d78d57b25faf668de37d7fb0c04cfd9c2729640fb6798859f1772', 'benchmark/analysis/outputs/windows-followup-intake-v1/numpy-summary.json': '8b89658b151fa4a0852038f497e6838edaf18da3409b56b7f199b86827f87a37', 'benchmark/analysis/outputs/windows-followup-intake-v1/runtime/SUMMARY.json': 'd4b9ce12c23ecdbff615bc6566e2a5a61e43cf073aeadbb7f193bd82db670f86', 'manuscript/software/intake.generated.tex': '1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa', 'manuscript/software/followup.template.tex': '00008d8d76f15fe6ca9611bf379e46f4386cb6150888c618870dcee11e7faa69', 'figures/windows-mechanism-pilot-v1/work-and-cached-cost.pdf': 'cb5bc9c51a9735d5e7f7a10de697c141ecac47093c26c6de5d505042a7b29329', 'benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cpu/workflows.csv': '04d86adde990daa6809994ed97b0cbd3fb81a940771a5f0e6a54101b02134c7f', 'benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cuda/workflows.csv': '9e2fd3b87f61bbb453aac19b038c42bbe11710d5d2ff455239b5ffafe48c4b8b', 'manuscript/software/completion-companion.generated.tex': 'e20cca0f955659023c3d459725eb89003aef59f9e58a2b2f67e853419c8573cf'}
 
 
 def sha(data):
@@ -99,7 +99,12 @@ def render(root):
         source_inputs=INPUTS, windows_workflows=192, independent_inputs_per_model=2,
         work_ranges=work, allocation_comparisons=allocation,
         formal_inference_repetitions_added=0, figures_regenerated=False)
-    return provenance + prefix + template, report
+    companion = data['manuscript/software/completion-companion.generated.tex'].decode()
+    old_status = '有限窗口/链数干预、探针扰动核验和共同推断任务的补充实验仍待新协议实施。'
+    if companion.count(old_status) != 1:
+        raise ValueError('Unexpected historical companion text')
+    companion = companion.replace(old_status, '上述历史记录不包含窗口/链数干预；独立机制协议的实测结果见第\\ref{sec:windows-mechanism}节，共同推断比较仍待完成。')
+    return provenance + companion + '\n\\section{跨系统核验与后续推断比较的边界}\n' + prefix + template, report
 
 
 def main():

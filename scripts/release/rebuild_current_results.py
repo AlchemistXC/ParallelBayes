@@ -92,7 +92,7 @@ def prepare(root,cpu_archive,windows,output):
     followup='\\input{followup.generated.tex}' in (root/'manuscript/software/软件与基准研究.tex').read_text(encoding='utf-8')
     sections=SECTIONS+(['followup.generated.tex'] if followup else [])
     if followup:
-        files.update(FOLLOWUP_INPUTS+['scripts/analysis/write_followup_tex.py','manuscript/software/intake.generated.tex'])
+        files.update(FOLLOWUP_INPUTS+['scripts/analysis/write_followup_tex.py','manuscript/software/intake.generated.tex','manuscript/software/completion-companion.generated.tex'])
     main=root/'manuscript/software/软件与基准研究.tex'
     todo=[main];seen=set()
     while todo:
