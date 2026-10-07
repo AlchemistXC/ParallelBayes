@@ -2,7 +2,7 @@
   "date": "2026-10-07",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "formal_driver_development_indexed_storage_and_complete_design_checked",
+  "local_phase": "formal_preparation_implemented_portable_checks_passed_native_integration_pending",
   "gpu_tasks": "Received and independently checked F2 192 workflows, native runtime 27 main/24 cache tasks, and dev2 installation. Formal inference remains unfrozen and unexecuted.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
@@ -163,6 +163,19 @@
     "formal_inputs_generated": false,
     "native_v2_runtime_checked": false,
     "formal_protocol_frozen": false,
-    "formal_batch_driver_complete": false
+    "formal_batch_driver_complete": false,
+    "input_preparation": {
+      "report": "docs/FORMAL-FREEZE.md",
+      "source_commit": "ec3d8a1",
+      "portable_checks_passed": 8,
+      "failed_checks": 0,
+      "skipped_checks": 0,
+      "maximum_artificial_input_written_and_reopened": true,
+      "complete_protocol_metadata_checked": true,
+      "native_full_preparation_executed": false,
+      "full_1152_input_seal_verified": false,
+      "new_sampler_calls": 0,
+      "new_formal_repetitions": 0
+    }
   }
 }

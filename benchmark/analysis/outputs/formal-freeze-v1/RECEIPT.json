@@ -1,0 +1,63 @@
+{
+  "source_commit": "ec3d8a1fe8ef62ce16d5e6d9f77e44683f9b4198",
+  "source_sha256": {
+    "scripts/completion/formal_freeze.py": "0d65584be1f17f6e973414ee2654b57db0365ebc88b3d85789995f0d68ff480a",
+    "scripts/windows/prepare_formal_study.py": "7a69461c3ed85152d4b1f23d6ce38ab85eeb7a93afa657a8d01303ec78873f40",
+    "tests/handoff/test_formal_freeze.py": "28d1343d4a53abc0a410452a1ce5fe13baaa9bb0849fff29a37e295c756315e0"
+  },
+  "python": "Python 3.12.14",
+  "tests": {
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "case_names": [
+      "test_saved_inputs_resume_without_rng_and_reject_raw_mutation",
+      "test_interrupted_partial_input_is_retained_not_regenerated",
+      "test_resource_refusal_precedes_intent_and_rng",
+      "test_explicit_unsealed_recovery_keeps_original_and_same_address",
+      "test_binding_paths_and_unsealed_shape_are_rejected",
+      "test_maximum_declared_input_roundtrip_is_bounded",
+      "test_complete_protocol_keeps_frame_and_partial_inventory_cannot_seal",
+      "test_native_prepare_refuses_other_platform_before_output"
+    ]
+  },
+  "maximum_artificial_input": {
+    "actual_sha256": "0b9dd1c10b970ca2dbb3f4e9616f4475109ef4896add8caedd57349d3978a055",
+    "archive_binding_sha256": "2eaa362874036df949011dd38e2f2c2d6a40ea90e16ee8443b13853746af1661",
+    "file_bytes": 34929495,
+    "intent_sha256": "f4c8b130805b0788e26100186bd7f904b60184ed05f8a3f9ce507a84108f89f5",
+    "logical_array_bytes": 69748768,
+    "name": "G2-rep0000.npz",
+    "preparation_seconds": 1.5740018330106977,
+    "receipt_sha256": "5e04ea8294601be1729f90d50eb73f6a76e6472189722e425298f8e3fa58802b",
+    "requirement": {
+      "chains": 4,
+      "dimension": 64,
+      "model": "G2",
+      "replicate": 0,
+      "roles": [
+        "initial",
+        "noise",
+        "log_uniform",
+        "directions",
+        "nuts_seeds"
+      ],
+      "steps": 16896
+    },
+    "sampler_calls": 0,
+    "sha256": "6628511a5ba724e282923074e45b407b7357e4a1aac9d19119457882a3f36222",
+    "statistical_repetitions": 0
+  },
+  "complete_formal_frame_metadata_checked": true,
+  "native_Windows_preparation_executed": false,
+  "full_1152_input_freeze_executed": false,
+  "formal_sampler_calls": 0,
+  "formal_independent_repetitions": 0,
+  "formal_protocol_frozen": false,
+  "receipt_collection_note": "Resolved pytest current symlink before counting the one actual maximum-input receipt; initial glob assertion saw both names. Test outputs were not changed.",
+  "limitations": [
+    "Native source/environment capture and full bundle sealing remain unexecuted",
+    "Per-input array/byte guards are not a measured process RSS bound",
+    "Separate native runtime/worker acceptance is required before any sampler launch"
+  ]
+}
