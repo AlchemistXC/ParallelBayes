@@ -206,3 +206,13 @@ Receiver: `python scripts/windows/audit_technical_batch.py audit --bundle EXTRAC
 执行源码06e75c1；prepare/test/run/verify-only/seal/verify/export接通，共享既定控制设置，27主任务与24缓存测量固定在独立技术身份。8项新增本地检查及2项受影响检查通过；首轮1个测试异常文字大小写失败保留，最终无失败/跳过。三份测试输入和归档仅用于本地接口/存储检查，无新Windows Job、CUDA、MCMC或正式重复。
 
 Windows新任务入口为handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md，一次全文提供，按顺序执行；旧F2/v1运行器/安装提示词不重复。原生16行为用例、51任务、96缓存调用、零重算及封存均尚待实机结果，不把代码准备计为通过。Mac继续完整正式原始结果分析，F3/F4/F5/F6未关闭。详见docs/FORMAL-NATIVE-VALIDATION.md和formal-native-producer-v1回执。
+
+## 新 v2 原生适配验收开始（2026-10-07）
+
+从research-integration 6df04793e0cecb2633f5cc3bbdeea5a8b3228145建立短路径v2独立分支codex/windows-formal-adapter-validation，包含执行祖先06e75c113e3ea6ea5a2a4275d7341595eefd7191。原工作树/旧F2/F3/安装结果保留，不重跑。源码与测试的工作树字节均与Git canonical LF一致。
+
+使用既有冻结D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe，Rscript D:/Tools/R-4.6.1/bin/Rscript.exe，R库D:/Tools/R-library-4.6；实际旧回执确认。共享锁仍为D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock，位于证据包之外。旧水井快照8文件大小/SHA256全通过；不补取或更换上游版本。原venv标记不修改。
+
+新增witness_formal_stage仅在包外保存CLI命令、原生外层Job/实际句柄/所有后代、日志与外层调用时间；不持有科学主机锁、不增加资源/总时长限制、不改变数值或失败政策。内部原生运行器继续管理任务锁与资源。待依次prepare/16行为用例/27主任务/24缓存探测/终态核验/封存/搬移。正式统计重复0；不启动全网格。
+
+私有技能目录/ZIP缺失（parallelbayes-user-skills-2026-10-04.zip）；未猜测公开替代技能，继续独立执行。完整命令/失败/原始证据保存output/formal-adapter-validation-v1及独立commands目录。
