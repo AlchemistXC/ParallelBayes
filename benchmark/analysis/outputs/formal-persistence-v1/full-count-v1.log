@@ -1,0 +1,67 @@
+{"artificial_records": 2048, "rss_bytes": 66076672}
+{"artificial_records": 4096, "rss_bytes": 66306048}
+{"artificial_records": 6144, "rss_bytes": 31670272}
+{"artificial_records": 8192, "rss_bytes": 32325632}
+{"artificial_records": 10240, "rss_bytes": 33308672}
+{"artificial_records": 12288, "rss_bytes": 32538624}
+{"artificial_records": 14336, "rss_bytes": 31408128}
+{"artificial_records": 16384, "rss_bytes": 32276480}
+{"artificial_records": 18432, "rss_bytes": 32260096}
+{"artificial_records": 20480, "rss_bytes": 33341440}
+{"artificial_records": 22528, "rss_bytes": 37289984}
+{"artificial_records": 24576, "rss_bytes": 38273024}
+{"artificial_records": 26624, "rss_bytes": 39256064}
+{"artificial_records": 28672, "rss_bytes": 40239104}
+{"artificial_records": 30720, "rss_bytes": 41222144}
+{"artificial_records": 32768, "rss_bytes": 45170688}
+{"artificial_records": 34816, "rss_bytes": 46153728}
+{"artificial_records": 36864, "rss_bytes": 47136768}
+{"artificial_records": 38912, "rss_bytes": 48119808}
+{"artificial_records": 40960, "rss_bytes": 49102848}
+{"artificial_records": 43008, "rss_bytes": 50135040}
+{"artificial_records": 45056, "rss_bytes": 51101696}
+{"artificial_records": 47104, "rss_bytes": 52051968}
+{"artificial_records": 49152, "rss_bytes": 53002240}
+{
+  "scope": "Artificial full-count persistent metadata, not a native runtime or scientific test",
+  "main_task_headers": 41472,
+  "cache_task_headers": 9216,
+  "total": 50688,
+  "checked": 50688,
+  "events": 101376,
+  "outcomes_are_artificial": {
+    "numerical_failure": 2204,
+    "valid": 38596,
+    "infrastructure_interruption": 1310,
+    "measurement_available": 8577,
+    "active": 1
+  },
+  "active_index_records": 1,
+  "logical_record_bytes": 3432659002,
+  "database_bytes": 3558592512,
+  "sqlite_integrity": {
+    "integrity": "ok",
+    "scope": "SQLite structure, not all task identities or OS lifecycle"
+  },
+  "write_seconds": 187.66503929099417,
+  "read_verify_seconds": 30.599792291992344,
+  "sampled_receiver_rss_peak_bytes": 121831424,
+  "source_commit": "183adc52d26a7b7b020619974f6c383601206102",
+  "source_sha256": {
+    "scripts/completion/task_journal.py": "b8f0392dd61488425707848e9cf465e731ef47c8630f532672080436a361187e",
+    "scripts/completion/batch_contract.py": "8a2fb83d96237331637ca5347678edf1b8622a401278d8aa6ac9f550776f0d43",
+    "scripts/completion/formal_measurement_plan.py": "69fa441388e09ad37150c5a8938b979ecaa5f19062e84a4d99922c59cbd9e9bc"
+  },
+  "script_sha256": "11d76377276215f49aaea1ec233d1dd38788d8c88a490d5301edec2f704c9b77",
+  "new_sampler_calls": 0,
+  "new_formal_repetitions": 0,
+  "Windows_runtime_validated": false,
+  "formal_protocol_frozen": false,
+  "selected_entry_sha256": {
+    "856f5c10f463b2e5f45411afbb58c6b5ff419f327e27dca194f810843dbcec11": "dd847e1571ab766df9dde8d7a5b721ce3a63a61162766d173340f12446743a43",
+    "85a19b87a45af275bf79f92276193585fc0717d66eb10de37e0207b81614a88c": "7c8a486a8b5b58127dc7faa26737c8bbd6097d00210ad950d86f5837a62d1436",
+    "d18b52ec6e0a2cf69f6f350a316812a3c4d64fbb1170c27a7c567a3ffa07d027": "18482e22122943be88e69341f5dea10403edf1a7e29cbff103eccbb4928737c9",
+    "44a13f21b706b3bbaf527eb08c18e7edaa08567b2c27b07126d74e028fdc781f": "72513ebc827de4711963ac5fb13478b4e2d58d4ad286339e9be9d42ce981373b"
+  },
+  "note": "Durable metadata only. No inference timing, RAM bound, power-loss proof, full kernel lifecycle or formal output-size prediction."
+}

@@ -1,5 +1,7 @@
 # ParallelBayes
 
+2026-10-07 开发后继：[正式登记与完整计划契约](docs/FORMAL-PERSISTENCE.md)已补齐，并以50,688个人工任务身份验证实际存储规模。正式冻结器/执行入口及新适配器的Windows验收尚未完成，没有新增科学采样；旧提示词无需重跑。
+
 2026-10-07：Windows 三条后续分支已合入并完成[独立接收核验](docs/WINDOWS-FOLLOWUP-INTAKE.md)。五归档7,658文件、1,080份保存MH路径的独立NumPy重放、机制CSV及R诊断重建通过。F2、有限运行器和候选安装门槛已取得证据；正式推断协议/执行及最终论文仍待完成。旧F2／运行器／安装提示词无需再跑。
 
 2026-10-06 当前稿：修复历史CPU段与Windows能力的矛盾表述，完成[五段结果及PDF重建](docs/CURRENT-RESULT-REBUILD.md)，见[23页中文稿](output/software-paper/软件与基准研究-结果重建.pdf)。本次仅重建已保存摘要，未新增实验；正式推断研究仍待完成。

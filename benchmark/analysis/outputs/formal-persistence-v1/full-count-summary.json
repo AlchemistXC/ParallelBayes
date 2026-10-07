@@ -1,0 +1,43 @@
+{
+  "Windows_runtime_validated": false,
+  "active_index_records": 1,
+  "cache_task_headers": 9216,
+  "checked": 50688,
+  "database_bytes": 3558592512,
+  "events": 101376,
+  "formal_protocol_frozen": false,
+  "logical_record_bytes": 3432659002,
+  "main_task_headers": 41472,
+  "new_formal_repetitions": 0,
+  "new_sampler_calls": 0,
+  "note": "Durable metadata only. No inference timing, RAM bound, power-loss proof, full kernel lifecycle or formal output-size prediction.",
+  "outcomes_are_artificial": {
+    "active": 1,
+    "infrastructure_interruption": 1310,
+    "measurement_available": 8577,
+    "numerical_failure": 2204,
+    "valid": 38596
+  },
+  "read_verify_seconds": 30.599792291992344,
+  "sampled_receiver_rss_peak_bytes": 121831424,
+  "scope": "Artificial full-count persistent metadata, not a native runtime or scientific test",
+  "script_sha256": "11d76377276215f49aaea1ec233d1dd38788d8c88a490d5301edec2f704c9b77",
+  "selected_entry_sha256": {
+    "44a13f21b706b3bbaf527eb08c18e7edaa08567b2c27b07126d74e028fdc781f": "72513ebc827de4711963ac5fb13478b4e2d58d4ad286339e9be9d42ce981373b",
+    "856f5c10f463b2e5f45411afbb58c6b5ff419f327e27dca194f810843dbcec11": "dd847e1571ab766df9dde8d7a5b721ce3a63a61162766d173340f12446743a43",
+    "85a19b87a45af275bf79f92276193585fc0717d66eb10de37e0207b81614a88c": "7c8a486a8b5b58127dc7faa26737c8bbd6097d00210ad950d86f5837a62d1436",
+    "d18b52ec6e0a2cf69f6f350a316812a3c4d64fbb1170c27a7c567a3ffa07d027": "18482e22122943be88e69341f5dea10403edf1a7e29cbff103eccbb4928737c9"
+  },
+  "source_commit": "183adc52d26a7b7b020619974f6c383601206102",
+  "source_sha256": {
+    "scripts/completion/batch_contract.py": "8a2fb83d96237331637ca5347678edf1b8622a401278d8aa6ac9f550776f0d43",
+    "scripts/completion/formal_measurement_plan.py": "69fa441388e09ad37150c5a8938b979ecaa5f19062e84a4d99922c59cbd9e9bc",
+    "scripts/completion/task_journal.py": "b8f0392dd61488425707848e9cf465e731ef47c8630f532672080436a361187e"
+  },
+  "sqlite_integrity": {
+    "integrity": "ok",
+    "scope": "SQLite structure, not all task identities or OS lifecycle"
+  },
+  "total": 50688,
+  "write_seconds": 187.66503929099417
+}

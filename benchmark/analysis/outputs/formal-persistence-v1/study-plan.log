@@ -1,0 +1,9 @@
+{
+  "design_sha256": "68a1cba1b9309216d237ac4613531216f167ff344dfdfcb72dc3aaca0ca0baa5",
+  "catalog_file_sha256": "ba748836690baf15f135d862cc74664ea66a424bccff01261f6aadbf89a4181a",
+  "main_tasks": 41472,
+  "cache_probes": 9216,
+  "inputs": 1152,
+  "sampling_allowed": false,
+  "formal_inference_complete": false
+}

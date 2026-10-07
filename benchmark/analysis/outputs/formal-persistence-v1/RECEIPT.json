@@ -1,0 +1,24 @@
+{
+  "storage_execution_source": "183adc52d26a7b7b020619974f6c383601206102",
+  "plan_and_export_source": "6aa971ad71ce1a02d7e8401056fd414e8365df3b",
+  "storage_class_AST_unchanged_after_full_count_run": true,
+  "distinct_storage_behavior_checks": 6,
+  "distinct_plan_behavior_checks": 1,
+  "native_v2_behavior_checks_executed": 0,
+  "new_sampler_calls": 0,
+  "new_formal_repetitions": 0,
+  "full_plan_file": {
+    "bytes": 17442955,
+    "sha256": "d8dd4d0e9c22ffafbe4ad6db52b5da2579eca672951761646ff4bfb78e730357"
+  },
+  "formal_protocol_frozen": false,
+  "native_full_driver_complete": false,
+  "source_sha256": {
+    "scripts/completion/task_journal.py": "8b3b4533fa5f72458f03bf7bd93fa47256fd2162e5ff122219230c30704143a8",
+    "scripts/completion/formal_study_plan.py": "e83966ae78c5036b55c965688ac1d839d5c43e84d5c7284533e29ec2066cbeb6",
+    "scripts/windows/formal_owned_runtime.py": "014c4dee55af6e1b1085d5a6376d1f6ecaf6358d18e97874d67b18d4f613ea88",
+    "scripts/windows/formal_measured_runtime.py": "9ecbd2057282e9a10231b60669ed057988e76a011449196ab829a5f85b445534",
+    "tests/windows/test_formal_owned_runtime.py": "77d842c586c91d0890e27681294cdcbea5e1d763d9a5cd6339e3ea62cb7c16be",
+    "tests/windows/formal_runtime_fixture.py": "ee7e3007521b92b41ee4a9ac4406257f723c480d68a2edeba57e47e5efa79a60"
+  }
+}

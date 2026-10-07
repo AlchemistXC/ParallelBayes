@@ -2,7 +2,7 @@
   "date": "2026-10-07",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "followup_windows_intake_passed_formal_driver_pre_freeze",
+  "local_phase": "formal_driver_development_indexed_storage_and_complete_design_checked",
   "gpu_tasks": "Received and independently checked F2 192 workflows, native runtime 27 main/24 cache tasks, and dev2 installation. Formal inference remains unfrozen and unexecuted.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
@@ -147,5 +147,22 @@
     "reader_test_fixture_calls": 6,
     "formal_inference_complete": false,
     "new_live_Windows_handle": false
+  },
+  "formal_driver_development": {
+    "report": "docs/FORMAL-PERSISTENCE.md",
+    "storage_source": "183adc5",
+    "plan_source": "6aa971a",
+    "artificial_task_records": 50688,
+    "artificial_events": 101376,
+    "all_records_reopened_and_checked": true,
+    "database_bytes": 3558592512,
+    "distinct_storage_checks": 6,
+    "distinct_plan_checks": 1,
+    "new_sampler_calls": 0,
+    "new_formal_repetitions": 0,
+    "formal_inputs_generated": false,
+    "native_v2_runtime_checked": false,
+    "formal_protocol_frozen": false,
+    "formal_batch_driver_complete": false
   }
 }

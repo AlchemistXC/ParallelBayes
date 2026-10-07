@@ -1,0 +1,9 @@
+{
+  "distinct_stream_addresses": 23040,
+  "distinct_seedsequence_keys": 23040,
+  "distinct_nuts_seeds": 4608,
+  "scope": "Finite address/key audit, not mathematical independence or a substitute for archived actual arrays",
+  "actual_input_arrays_generated": false,
+  "formal_protocol_frozen": false,
+  "identity": "windows-formal-inference-v1"
+}

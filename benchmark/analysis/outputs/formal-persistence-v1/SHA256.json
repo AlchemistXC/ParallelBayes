@@ -1,0 +1,19 @@
+{
+  "RECEIPT.json": "af399eaae43cfe856d02d3884d652be52d95c4d9cdd281b656dac5029af0f05d",
+  "adapter-structure-check.json": "348b9a7b1f43fee36870270d0894a59889e0ea71f6746a2bca33e0c83a900187",
+  "address-check.json": "50b2ef63b50fa7fd515100a386a50a357bab612b7fd1c7fa8cfbe2f72c33005c",
+  "full-count-manifest.json": "8c00448549f663361ac34f83b382e86a38db76dc8ba9ea64ff11d2b77547386a",
+  "full-count-summary.json": "788a555c73f471f3fad20cfae5799d8aa60dad3dc7576aeaffd9b4639a288742",
+  "full-count-v1.log": "8d13f1b1c1e0bb25208049ddda92873181fdf4ead8421c0c79b78f149e8579f1",
+  "journal-tests-v2.log": "4b45d58de0934d0fb43b96df8645539e2d86975bc92b369a6476f6489e40c146",
+  "journal-tests-v2.xml": "45d369cd83af26e2e66a0fe219d7454c255b9220222f7f20b002d255ec0bf704",
+  "journal-tests.log": "491e2a8e411703098ae62950da9df1b926b8c7fa2ef2be15d26477b2fd8a241c",
+  "journal-tests.xml": "cedd065f00a4fec2f9eb4c7905d733ec7dc65d291b8ed90f3c1c94f4e20e5fa9",
+  "plan-export-tests.log": "66e3c2b5fd08e44aeff14cec8a57b7664494136918730331ecc8cdeb11326da1",
+  "plan-export-tests.xml": "e24f2357edb93fa790ed92978378f63008b1db34284cd31d1a025372282b7ce7",
+  "study-plan.log": "649fff9c9c3764e9327679a5527f7796d31f9f0fee7cb1221652b8f1da27e070",
+  "task-export-0.json": "cb8ca18c0686256272e9efd70d5ba55e30dfa2cada1c21063c0fdfb7a73114d2",
+  "task-export-1.json": "31ffdd6725d3f705cd84aac7336e3d9b09b767a4bbb1ee27c62366b5bbeb49f9",
+  "task-export-2.json": "1733954d6b8b436f0b83124a5c6ac5bda4f89202fdd75d48e73a3ca0985f19d3",
+  "task-export-3.json": "467e3cf1b8b5f548bb46c0a1e89a29b9b254f3650df5cfcc5f01c5086977faaf"
+}
