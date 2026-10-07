@@ -1,4 +1,4 @@
-"""Portable reconstruction of the current five generated manuscript sections.
+"""Portable reconstruction of the current generated manuscript sections.
 
 This capsule uses saved, authenticated analysis summaries. It does not rerun
 MCMC, raw-array analyses, modern R diagnostics, or figure generation. Historical
@@ -44,6 +44,8 @@ COMPANION_INPUTS = [
 CODE = ['scripts/write-results-tex.py','scripts/revision/write-revision-tex.py',
  'scripts/completion/write_windows_tex.py','scripts/completion/write_completion_tex.py',
  'scripts/completion/write_intake_tex.py','scripts/release/rebuild_current_results.py']
+FOLLOWUP_INPUTS = ['benchmark/protocols/mechanism-windows-pilot-v1.json', 'benchmark/analysis/outputs/windows-followup-intake-v1/comparison-summary.json', 'benchmark/analysis/outputs/windows-followup-intake-v1/numpy-summary.json', 'benchmark/analysis/outputs/windows-followup-intake-v1/runtime/SUMMARY.json', 'manuscript/software/followup.template.tex', 'figures/windows-mechanism-pilot-v1/work-and-cached-cost.pdf', 'benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cpu/workflows.csv', 'benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cuda/workflows.csv']
+
 SECTIONS = ['results.generated.tex','revision.generated.tex','windows-native.generated.tex',
  'completion-companion.generated.tex','intake.generated.tex']
 
@@ -87,6 +89,10 @@ def prepare(root,cpu_archive,windows,output):
     for name in WINDOWS_INPUTS:
         save(name,(windows/name).read_bytes(),'received Windows-v1 evidence')
     files=set(CODE+COMPANION_INPUTS+['manuscript/software/windows-native.template.tex','LICENSE'])
+    followup='\\input{followup.generated.tex}' in (root/'manuscript/software/软件与基准研究.tex').read_text(encoding='utf-8')
+    sections=SECTIONS+(['followup.generated.tex'] if followup else [])
+    if followup:
+        files.update(FOLLOWUP_INPUTS+['scripts/analysis/write_followup_tex.py','manuscript/software/intake.generated.tex'])
     main=root/'manuscript/software/软件与基准研究.tex'
     todo=[main];seen=set()
     while todo:
@@ -100,12 +106,12 @@ def prepare(root,cpu_archive,windows,output):
                 if command=='input' and not child.suffix:child=child.with_suffix('.tex')
                 todo.append(child)
     for name in sorted(files):
-        if Path(name).name in SECTIONS:
+        if Path(name).name in sections:
             dest='expected/'+Path(name).name
         else:dest=name
         save(dest,(root/name).read_bytes(),'current reviewed checkout')
     source=subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()
-    metadata=dict(schema='current-paper-summary-capsule-v1',source_commit=source,
+    metadata=dict(schema='current-paper-summary-capsule-v2' if followup else 'current-paper-summary-capsule-v1',sections=sections,source_commit=source,
         source_dirty=bool(subprocess.check_output(['git','status','--porcelain'],cwd=root,text=True).strip()),
         cpu_archive=expected,scope=__doc__.strip(),python=sys.version,
         inputs={name:dict(sha256=digest(output/name),bytes=(output/name).stat().st_size,origin=origin) for name,origin in sorted(origins.items())})
@@ -117,7 +123,10 @@ def rebuild(capsule,output):
     capsule,output=Path(capsule).resolve(),Path(output).resolve()
     if output.exists():raise FileExistsError(output)
     metadata=read(capsule/'MANIFEST.json')
-    if metadata['schema']!='current-paper-summary-capsule-v1':raise ValueError('Unsupported capsule')
+    if metadata['schema'] not in ['current-paper-summary-capsule-v1','current-paper-summary-capsule-v2']:raise ValueError('Unsupported capsule')
+    followup=metadata['schema']=='current-paper-summary-capsule-v2'
+    sections=SECTIONS+(['followup.generated.tex'] if followup else [])
+    if metadata.get('sections',sections)!=sections:raise ValueError('Unexpected section set')
     for name,row in metadata['inputs'].items():
         p=capsule/safe_relative(name)
         if p.is_symlink() or not p.is_file() or digest(p)!=row['sha256'] or p.stat().st_size!=row['bytes']:
@@ -131,6 +140,8 @@ def rebuild(capsule,output):
         ['scripts/completion/write_completion_tex.py','--root','.', '--output','manuscript/software/completion-companion.generated.tex'],
         ['scripts/completion/write_intake_tex.py','--root','.', '--output','manuscript/software/intake.generated.tex'],
     ]
+    if followup:
+        commands.append(['scripts/analysis/write_followup_tex.py','--root','.', '--output','manuscript/software/followup.generated.tex','--report','followup-analysis.json'])
     logdir=output/'rebuild-logs';logdir.mkdir()
     steps=[];env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1')
     for i,command in enumerate(commands):
@@ -140,13 +151,13 @@ def rebuild(capsule,output):
         write(output/'REBUILD.json',dict(status='running' if process.returncode==0 else 'failed',steps=steps))
         if process.returncode:raise RuntimeError('Result generator failed; see retained log')
     comparisons=[]
-    for name in SECTIONS:
+    for name in sections:
         before=digest(output/'expected'/name);after=digest(output/'manuscript/software'/name)
         comparisons.append(dict(section=name,expected_sha256=before,actual_sha256=after,identical=before==after))
     report=dict(status='passed' if all(r['identical'] for r in comparisons) else 'failed',
         capsule_manifest_sha256=digest(capsule/'MANIFEST.json'),steps=steps,sections=comparisons,
         sources_relocated=True,sampler_calls=0,R_diagnostic_calls=0,figures_recomputed=False,
-        scope='Five generated sections rebuilt from saved summaries and checked rows; full raw-trajectory reconstruction and compiler verification are separate')
+        scope=f'{len(sections)} generated sections rebuilt from saved summaries and checked rows; full raw-trajectory reconstruction and compiler verification are separate')
     write(output/'REBUILD.json',report)
     if report['status']!='passed':raise RuntimeError('Generated result text differs; do not replace expected evidence')
     print(json.dumps(dict(status=report['status'],sections=len(comparisons),sampler_calls=0,R_diagnostic_calls=0)))

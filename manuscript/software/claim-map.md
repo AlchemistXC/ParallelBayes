@@ -13,10 +13,12 @@
 | F1折叠中心机制有实际Windows回执 | completion-f1/windows-01/result.json；同Mac固定样例；write_completion_tex.py | 改变中心使5秩变动；两种Rhat均不良，未证明底层库根因 |
 | 跨系统MH108路径/事件通过，但60变换逐位失败 | windows-round2-intake-v1/summary.json；independent-receipt-v2及原Mac审计false | 原严格失败保留，不将8.88e-15描述量改为通过容差 |
 | CPU NUTS九目标串行/spawn数组及原二进制R诊断 | 同接收summary：54数组对、18传输、72函数行；原始948文件归档 | 技术配对，不增加n；坏诊断和34未判定条目保留 |
-| F2输入派生数值差导致192工作流尚未执行 | 同接收summary；mechanism-component-differences；原输入transport.json | 82/49152对数均匀项不同；实际原文件已补传，未声称新结果 |
+| F2原输入补传后192个机制工作流完成 | windows-followup-intake-v1；mechanism-windows-pilot-v1/windows-20261006；followup.generated.tex | 原82/49152差异和启动失败保留；960份路径零事件失配；每模型仅2输入，缓存重放不扩充n |
+| 全部机制配置与等输出链数对照 | 同目录两端workflows.csv；write_followup_tex.py | 额外映射/JVP不是等价FLOPs；8个等512输出对照的路径长度不同，不能解释为推断优势 |
 | 水井扩展目标成立 | docs/WELLS-TARGET-VALIDATION.md、WELLS-REFERENCE-AUDIT.md、WELLS-QUADRATURE.md；models/external/wells/source-manifest.json | 保留平坦先验及可积性依据；目标/接口与充分推断区分；罕见事件参考未认证 |
 | 成本与函数可用集一致的分析接口 | docs/FORMAL-COST-POLICY.md；formal-cost-policy-v1；formal_cost_policy.py | 已测任务/人工样例核验，不是正式研究；未知成本不填零；技术批次n=1不画统计区间 |
-| 最大形状/恢复尚有缺口 | docs/BATCH-MAXIMUM-VALIDATION.md | Mac14/15，最大NUTS双中断保留；不宣称正式Windows就绪 |
+| 封存Windows运行器的最大形状/恢复已测 | docs/WINDOWS-FOLLOWUP-INTAKE.md；windows-followup-intake-v1/runtime | 27主任务和24缓存探测/96调用；有限技术批次，后续适配器验收与正式实验另行进行 |
+| Windows新环境候选安装 | docs/WINDOWS-PACKAGE-CANDIDATE.md；同接收comparison-summary | CPU/CUDA MH与R入口核验；不包括Windows JAX/Stan、GPU NUTS或第三方全研究复现 |
 | 可用性 | README.md；各归档manifest与Release状态 | CPU公开；Windows草稿及部分本机大归档不自动公开；克隆不足以完整复现全部结果 |
 
 ## 编辑与证据分配记录
