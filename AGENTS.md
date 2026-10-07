@@ -33,4 +33,3 @@ Project numerical source lives at `r-package/inst/python/parallelbayes/`; versio
 Git tracks source, tests, protocols, summaries, manuscripts and first-party figures. Complete CPU raw evidence is in the `cpu-review-v1` Release, split into checksum-verified assets. Download/extract historical reproduction bundles into a separate directory, never over the active development checkout. Third-party paper/book PDFs, full-text extractions, private skill code, local environments, caches and credentials are not Git assets. Upstream permissively licensed source retains its license.
 
 Commit new source/protocol changes to a development branch. Do not force-push or overwrite history. Keep large raw outputs outside Git and provide integrity manifests and replayable result archives. No automatic CRAN or journal submission.
-
