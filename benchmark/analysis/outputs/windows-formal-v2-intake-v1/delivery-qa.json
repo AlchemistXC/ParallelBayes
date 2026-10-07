@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "compact_files": 48,
+  "markdown_files_checked": 6,
+  "broken_links": [],
+  "accepted_execution_files_still_identical": 188,
+  "report_only_source_change": "scripts/analysis/formal_report_text.py diagnostic table font",
+  "no_new_sampler_or_R_calls": true
+}

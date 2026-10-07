@@ -1,0 +1,17 @@
+{
+  "bundle_files": 3167,
+  "bundle_relative": "validation",
+  "database_sha256": "e5538778d6e8dbbefd8dc0d296948e41ba4544fe7ae0e2a239718458f41ae7c7",
+  "delivered_files": 3167,
+  "delivery_metadata": {
+    "branch": "codex/windows-formal-adapter-validation",
+    "scope": "Finite native acceptance evidence, not a claim of formal research completion",
+    "source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77"
+  },
+  "history_exports": 102,
+  "live_processes_observed": false,
+  "manifest_sha256": "b6bc221c724f05a14b1bb9782140b7536e0b03a0250820c4810c649091b679bd",
+  "numerical_results_validated": false,
+  "schema": "formal-delivery-index-v1",
+  "total_bytes": 981251964
+}

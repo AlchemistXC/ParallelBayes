@@ -1,0 +1,28 @@
+{
+  "counts": {
+    "cache": {
+      "analyzed": 24
+    },
+    "main": {
+      "analyzed": 27
+    }
+  },
+  "every_planned_task_represented": true,
+  "evidence_complete": true,
+  "formal_inference_complete": false,
+  "frame": {
+    "analysis_can_authorize_sampling": false,
+    "cache_planned": 24,
+    "formal_scientific_repetitions_per_model": 0,
+    "identity": "windows-formal-adapter-validation-v1",
+    "main_planned": 27,
+    "protocol_sha256": "e3acc02f32ef1cbb8cb88ae50bdf399b20cf8fde8b2f31f2079e5e393adc9baa",
+    "scope": "technical_batch_validation"
+  },
+  "new_analyses": 0,
+  "new_independent_repetitions": 0,
+  "new_sampler_calls": 0,
+  "reused_analyses": 51,
+  "summary_is_not_convergence_or_performance_inference": true,
+  "visited": 51
+}

@@ -1,0 +1,127 @@
+{
+  "release_id": 403644544,
+  "tag": "windows-completion-v2-20261005",
+  "draft": true,
+  "files": [
+    {
+      "name": "github-formal-v2-upload-receipt.json",
+      "bytes": 18835,
+      "sha256": "5da436774a5fb483d05d5227c917ed77b70c763043bf832f3ef1de335d131eb1",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-adapter-validation-v1-20261007.tar",
+      "bytes": 987596800,
+      "sha256": "ceb722b100570972c99684185bbf7cdeec1dd122efc863854d0c9168cbc2de62",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-adapter-validation-v1-20261007.tar.receipt.json",
+      "bytes": 415,
+      "sha256": "07306edfa83b90c527f81609c6470a3dbacdb62f8bdddc1877294c3ba95a64a2",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-adapter-validation-v1-20261007.tar.sha256",
+      "bytes": 116,
+      "sha256": "b3100c0ba265c866c03a1de375e661f7b65d975a000ff7ea4923649b8407c66e",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-companion-members.json",
+      "bytes": 405,
+      "sha256": "1fc9035a7c9e622e26200b98beaceef1fc4b3c8beeeb71195ec682772e8ea712",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-delivery-costs.json",
+      "bytes": 5281,
+      "sha256": "f03761ba8fce2860b73fb4c1962dade6d5f6a4459e29a5fdf4ad6ec32c595ff1",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-delivery-final.json",
+      "bytes": 2991,
+      "sha256": "1ea87bdecb101ed416667de02713c56d661d0db714c1665fecc7dd0ba0811f34",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-delivery.json",
+      "bytes": 2644,
+      "sha256": "94c03f66529d7df6f29f7dca65bd2ca4cd4a91c29c0dc05e782c508ca92dd769",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-members.json",
+      "bytes": 409,
+      "sha256": "4e62c4e66ae53520d3ea018e619f2c9ca31ad903d3a3af53915c380ea5241584",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-relocation.json",
+      "bytes": 520,
+      "sha256": "2e72ff8349d17a46e4602ebc36667cdc7d70c9c1bc1c4312831cdfe99fa97db1",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-source-d094bcb.bundle",
+      "bytes": 22317648,
+      "sha256": "a79a1d845d35be2561639ab6e88e0d979020f197109fbff048c43fa5a4390bd9",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-source-d094bcb.bundle.sha256",
+      "bytes": 107,
+      "sha256": "0f37b81af4dfcf5b284d73bd88f0f220a51034b1942fb5e00b570b287a3f2514",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-source-final-5885c71.bundle",
+      "bytes": 22319485,
+      "sha256": "2966f64ad757b69021a28fcdeb53877f51c943b9732009add40535c96725de92",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-source-final-5885c71.bundle.sha256",
+      "bytes": 113,
+      "sha256": "479070bbd05a3b0983a40ee584d7ab9d98d1bd5839ac359bffe1469ac25e1979",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-summary.json",
+      "bytes": 1001585,
+      "sha256": "ce0b21391fce83dcafd4ea5bdca70cf309c7a3fb4879f3f35ac88224beb7e724",
+      "verified": true
+    },
+    {
+      "name": "windows-formal-v2-transport-members.json",
+      "bytes": 404,
+      "sha256": "2abe2a631fbbeb19517b7ecfd0be092d1c4741c26e746ee84759a8a46639961a",
+      "verified": true
+    },
+    {
+      "name": "windows-native-20261007T134451Z.tar",
+      "bytes": 43284480,
+      "sha256": "82a830104c39d9bfddb24d5f9783ab650a4a3b98ed3dc174355c933aff882337",
+      "verified": true
+    },
+    {
+      "name": "windows-native-20261007T134451Z.tar.sha256",
+      "bytes": 103,
+      "sha256": "1eeb0a53a386ae16576d7aa54a4ce3608476b70b97f6ae9341072c9336329569",
+      "verified": true
+    },
+    {
+      "name": "windows-native-20261007T135234Z.tar",
+      "bytes": 22558720,
+      "sha256": "6c6edeb49273e87d39b708132951a21f61273233c98b097fe069611fb76299df",
+      "verified": true
+    },
+    {
+      "name": "windows-native-20261007T135234Z.tar.sha256",
+      "bytes": 103,
+      "sha256": "de9e89ca558ee9f8263c4fa6cbccefc322e76e985a85a16358fcad238778f49a",
+      "verified": true
+    }
+  ]
+}

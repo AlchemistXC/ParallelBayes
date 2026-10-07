@@ -1,0 +1,34 @@
+/Users/haku/Workspace/ParallelBayes/.venv/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/haku/Workspace/ParallelBayes/.venv/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2325: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+{
+  "frame": {
+    "identity": "windows-formal-adapter-validation-v1",
+    "scope": "technical_batch_validation",
+    "protocol_sha256": "e3acc02f32ef1cbb8cb88ae50bdf399b20cf8fde8b2f31f2079e5e393adc9baa",
+    "main_planned": 27,
+    "cache_planned": 24,
+    "formal_scientific_repetitions_per_model": 0,
+    "analysis_can_authorize_sampling": false
+  },
+  "visited": 51,
+  "new_analyses": 51,
+  "reused_analyses": 0,
+  "counts": {
+    "main": {
+      "analyzed": 27
+    },
+    "cache": {
+      "analyzed": 24
+    }
+  },
+  "every_planned_task_represented": true,
+  "evidence_complete": true,
+  "new_sampler_calls": 0,
+  "new_independent_repetitions": 0,
+  "formal_inference_complete": false,
+  "summary_is_not_convergence_or_performance_inference": true
+}

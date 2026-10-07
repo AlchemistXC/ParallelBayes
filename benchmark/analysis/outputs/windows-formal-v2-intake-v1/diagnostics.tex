@@ -1,0 +1,178 @@
+\documentclass[UTF8,fontset=fandol,a4paper]{ctexart}
+\usepackage[margin=20mm,headheight=16pt]{geometry}
+\usepackage{booktabs,longtable,graphicx,hyperref,fancyhdr,array}
+\hypersetup{hidelinks}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[C]{\small 有限技术验收分析附件}\fancyfoot[C]{\thepage}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\begin{document}
+\begin{center}{\Large\bfseries ParallelBayes：有限技术验收分析附件}\end{center}
+技术验收，不是正式推断实验；不计算正式重复区间，不证明后验收敛。
+本报告不自动判定研究完成或后验收敛。缺失证据保持缺失；数值有效输出仍可能有探索问题。
+正式模式的区间是逐点95\% BCa区间，以完整四链重复为单位，缓存调用不增加独立样本数。技术验收不生成正式区间；失败和未知时间不填零。
+\section*{任务框架}
+\begin{longtable}{lrrp{46mm}p{46mm}}
+\toprule 目标 & 主任务 & 缓存 & 主任务状态 & 缓存状态 \\ \midrule\endhead
+G1 & 9 & 8 & \{"analyzed": 9\} & \{"analyzed": 8\} \\
+G2 & 9 & 8 & \{"analyzed": 9\} & \{"analyzed": 8\} \\
+W1 & 9 & 8 & \{"analyzed": 9\} & \{"analyzed": 8\} \\
+\bottomrule\end{longtable}
+各目标的 task\_costs.csv 按任务保留原调用记录汇总的已知费用与未知项；diagnostics.csv 按函数、工作流和预算保留诊断分母。
+图中若采用对称对数坐标，其线性区阈值记录在对应 contract.json；零点保持原值，不以小正数替代。
+未显示误差--成本点的行仍保留于来源表。原因为参考未定、估计不可用或同一函数有效重复中费用不完整。
+\clearpage\section*{G1：诊断与资格}
+下表每行的计划数以完整四链重复为单位。已收到的不可判定诊断与未收到诊断分开；Rhat阈值只用于描述，不是整体后验可信的充分条件。
+\begingroup\footnotesize\begin{longtable}{P{28mm}P{40mm}rrrrr}
+\toprule 函数 & 工作流/预算 & 计划 & 缺诊断 & 未定Rhat & Rhat$>1.01$ & 最小尾ESS \\ \midrule\endhead
+standard\_\allowbreak{}q1 & CPU quasi-DEER / 64 & 1 & 0 & 0 & 1 & 61.439 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CPU quasi-DEER / 64 & 1 & 0 & 0 & 1 & 95.253 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CPU quasi-DEER / 64 & 1 & 0 & 0 & 1 & — \\
+standard\_\allowbreak{}q1 & CPU MALA seq / 64 & 1 & 0 & 0 & 1 & 61.439 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CPU MALA seq / 64 & 1 & 0 & 0 & 1 & 95.253 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CPU MALA seq / 64 & 1 & 0 & 0 & 1 & — \\
+standard\_\allowbreak{}q1 & CPU NUTS / 64 & 1 & 0 & 0 & 1 & 147.02 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CPU NUTS / 64 & 1 & 0 & 0 & 1 & 70.52 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CPU NUTS / 64 & 1 & 0 & 0 & 0 & — \\
+standard\_\allowbreak{}q1 & CPU Picard / 64 & 1 & 0 & 0 & 1 & 37.346 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CPU Picard / 64 & 1 & 0 & 0 & 1 & 49.582 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CPU Picard / 64 & 1 & 0 & 0 & 1 & — \\
+standard\_\allowbreak{}q1 & CPU RWM seq / 64 & 1 & 0 & 0 & 1 & 37.346 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CPU RWM seq / 64 & 1 & 0 & 0 & 1 & 49.582 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CPU RWM seq / 64 & 1 & 0 & 0 & 1 & — \\
+standard\_\allowbreak{}q1 & CUDA quasi-DEER / 64 & 1 & 0 & 0 & 1 & 61.439 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CUDA quasi-DEER / 64 & 1 & 0 & 0 & 1 & 95.253 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CUDA quasi-DEER / 64 & 1 & 0 & 0 & 1 & — \\
+standard\_\allowbreak{}q1 & CUDA MALA seq / 64 & 1 & 0 & 0 & 1 & 61.439 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CUDA MALA seq / 64 & 1 & 0 & 0 & 1 & 95.253 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CUDA MALA seq / 64 & 1 & 0 & 0 & 1 & — \\
+standard\_\allowbreak{}q1 & CUDA Picard / 64 & 1 & 0 & 0 & 1 & 37.346 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CUDA Picard / 64 & 1 & 0 & 0 & 1 & 49.582 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CUDA Picard / 64 & 1 & 0 & 0 & 1 & — \\
+standard\_\allowbreak{}q1 & CUDA RWM seq / 64 & 1 & 0 & 0 & 1 & 37.346 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CUDA RWM seq / 64 & 1 & 0 & 0 & 1 & 49.582 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CUDA RWM seq / 64 & 1 & 0 & 0 & 1 & — \\
+\bottomrule\end{longtable}\endgroup
+\subsection*{NUTS诊断}
+发散总数只对收到的记录计数，未知不填零。树深度命中若未被上游提供，仍不可判定；两者不会把数值有效自动变成统计收敛。
+\begin{longtable}{rrrrrr}
+\toprule 预算 & 计划 & 有记录任务 & 已知发散 & 未知链数 & 完整树深命中 \\ \midrule\endhead
+64 & 1 & 1 & 0 & 0 & — \\
+\bottomrule\end{longtable}
+\clearpage\section*{G2：诊断与资格}
+下表每行的计划数以完整四链重复为单位。已收到的不可判定诊断与未收到诊断分开；Rhat阈值只用于描述，不是整体后验可信的充分条件。
+\begingroup\footnotesize\begin{longtable}{P{28mm}P{40mm}rrrrr}
+\toprule 函数 & 工作流/预算 & 计划 & 缺诊断 & 未定Rhat & Rhat$>1.01$ & 最小尾ESS \\ \midrule\endhead
+standard\_\allowbreak{}q1 & CPU quasi-DEER / 16384 & 1 & 0 & 0 & 0 & 12506 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CPU quasi-DEER / 16384 & 1 & 0 & 0 & 0 & 13699 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CPU quasi-DEER / 16384 & 1 & 0 & 0 & 0 & — \\
+standard\_\allowbreak{}q1 & CPU MALA seq / 16384 & 1 & 0 & 0 & 0 & 12498 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CPU MALA seq / 16384 & 1 & 0 & 0 & 0 & 13693 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CPU MALA seq / 16384 & 1 & 0 & 0 & 0 & — \\
+standard\_\allowbreak{}q1 & CPU NUTS / 16384 & 1 & 0 & 0 & 0 & 47984 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CPU NUTS / 16384 & 1 & 0 & 0 & 0 & 32948 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CPU NUTS / 16384 & 1 & 0 & 0 & 0 & — \\
+standard\_\allowbreak{}q1 & CPU Picard / 16384 & 1 & 0 & 0 & 1 & 699.43 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CPU Picard / 16384 & 1 & 0 & 0 & 0 & 980.4 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CPU Picard / 16384 & 1 & 0 & 0 & 0 & — \\
+standard\_\allowbreak{}q1 & CPU RWM seq / 16384 & 1 & 0 & 0 & 1 & 699.43 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CPU RWM seq / 16384 & 1 & 0 & 0 & 0 & 980.4 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CPU RWM seq / 16384 & 1 & 0 & 0 & 0 & — \\
+standard\_\allowbreak{}q1 & CUDA quasi-DEER / 16384 & 1 & 0 & 0 & 0 & 12498 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CUDA quasi-DEER / 16384 & 1 & 0 & 0 & 0 & 13699 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CUDA quasi-DEER / 16384 & 1 & 0 & 0 & 0 & — \\
+standard\_\allowbreak{}q1 & CUDA MALA seq / 16384 & 1 & 0 & 0 & 0 & 12498 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CUDA MALA seq / 16384 & 1 & 0 & 0 & 0 & 13693 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CUDA MALA seq / 16384 & 1 & 0 & 0 & 0 & — \\
+standard\_\allowbreak{}q1 & CUDA Picard / 16384 & 1 & 0 & 0 & 1 & 699.43 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CUDA Picard / 16384 & 1 & 0 & 0 & 0 & 980.4 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CUDA Picard / 16384 & 1 & 0 & 0 & 0 & — \\
+standard\_\allowbreak{}q1 & CUDA RWM seq / 16384 & 1 & 0 & 0 & 1 & 699.43 \\
+standard\_\allowbreak{}q1\_\allowbreak{}squared & CUDA RWM seq / 16384 & 1 & 0 & 0 & 0 & 980.4 \\
+standard\_\allowbreak{}q1\_\allowbreak{}gt1 & CUDA RWM seq / 16384 & 1 & 0 & 0 & 0 & — \\
+\bottomrule\end{longtable}\endgroup
+\subsection*{NUTS诊断}
+发散总数只对收到的记录计数，未知不填零。树深度命中若未被上游提供，仍不可判定；两者不会把数值有效自动变成统计收敛。
+\begin{longtable}{rrrrrr}
+\toprule 预算 & 计划 & 有记录任务 & 已知发散 & 未知链数 & 完整树深命中 \\ \midrule\endhead
+16384 & 1 & 1 & 0 & 0 & — \\
+\bottomrule\end{longtable}
+\clearpage\section*{W1：诊断与资格}
+下表每行的计划数以完整四链重复为单位。已收到的不可判定诊断与未收到诊断分开；Rhat阈值只用于描述，不是整体后验可信的充分条件。
+\begingroup\footnotesize\begin{longtable}{P{28mm}P{40mm}rrrrr}
+\toprule 函数 & 工作流/预算 & 计划 & 缺诊断 & 未定Rhat & Rhat$>1.01$ & 最小尾ESS \\ \midrule\endhead
+alpha & CPU quasi-DEER / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+beta & CPU quasi-DEER / 64 & 1 & 0 & 0 & 1 & 128.98 \\
+alpha\_\allowbreak{}squared & CPU quasi-DEER / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+beta\_\allowbreak{}squared & CPU quasi-DEER / 64 & 1 & 0 & 0 & 1 & 114.62 \\
+p\_\allowbreak{}switch\_\allowbreak{}0m & CPU quasi-DEER / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+p\_\allowbreak{}switch\_\allowbreak{}100m & CPU quasi-DEER / 64 & 1 & 0 & 0 & 1 & 164.73 \\
+beta\_\allowbreak{}positive & CPU quasi-DEER / 64 & 1 & 0 & 1 & 0 & — \\
+alpha & CPU MALA seq / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+beta & CPU MALA seq / 64 & 1 & 0 & 0 & 1 & 114.24 \\
+alpha\_\allowbreak{}squared & CPU MALA seq / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+beta\_\allowbreak{}squared & CPU MALA seq / 64 & 1 & 0 & 0 & 1 & 114.62 \\
+p\_\allowbreak{}switch\_\allowbreak{}0m & CPU MALA seq / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+p\_\allowbreak{}switch\_\allowbreak{}100m & CPU MALA seq / 64 & 1 & 0 & 0 & 1 & 164.73 \\
+beta\_\allowbreak{}positive & CPU MALA seq / 64 & 1 & 0 & 1 & 0 & — \\
+alpha & CPU NUTS / 64 & 1 & 0 & 0 & 1 & 170.98 \\
+beta & CPU NUTS / 64 & 1 & 0 & 0 & 1 & 135.28 \\
+alpha\_\allowbreak{}squared & CPU NUTS / 64 & 1 & 0 & 0 & 1 & 170.98 \\
+beta\_\allowbreak{}squared & CPU NUTS / 64 & 1 & 0 & 0 & 1 & 135.28 \\
+p\_\allowbreak{}switch\_\allowbreak{}0m & CPU NUTS / 64 & 1 & 0 & 0 & 1 & 170.98 \\
+p\_\allowbreak{}switch\_\allowbreak{}100m & CPU NUTS / 64 & 1 & 0 & 0 & 0 & 150.9 \\
+beta\_\allowbreak{}positive & CPU NUTS / 64 & 1 & 0 & 1 & 0 & — \\
+alpha & CPU Picard / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+beta & CPU Picard / 64 & 1 & 0 & 0 & 1 & 54.643 \\
+alpha\_\allowbreak{}squared & CPU Picard / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+beta\_\allowbreak{}squared & CPU Picard / 64 & 1 & 0 & 0 & 1 & 59.659 \\
+p\_\allowbreak{}switch\_\allowbreak{}0m & CPU Picard / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+p\_\allowbreak{}switch\_\allowbreak{}100m & CPU Picard / 64 & 1 & 0 & 0 & 1 & 23.713 \\
+beta\_\allowbreak{}positive & CPU Picard / 64 & 1 & 0 & 1 & 0 & — \\
+alpha & CPU RWM seq / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+beta & CPU RWM seq / 64 & 1 & 0 & 0 & 1 & 54.643 \\
+alpha\_\allowbreak{}squared & CPU RWM seq / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+beta\_\allowbreak{}squared & CPU RWM seq / 64 & 1 & 0 & 0 & 1 & 59.659 \\
+p\_\allowbreak{}switch\_\allowbreak{}0m & CPU RWM seq / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+p\_\allowbreak{}switch\_\allowbreak{}100m & CPU RWM seq / 64 & 1 & 0 & 0 & 1 & 23.713 \\
+beta\_\allowbreak{}positive & CPU RWM seq / 64 & 1 & 0 & 1 & 0 & — \\
+alpha & CUDA quasi-DEER / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+beta & CUDA quasi-DEER / 64 & 1 & 0 & 0 & 1 & 114.24 \\
+alpha\_\allowbreak{}squared & CUDA quasi-DEER / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+beta\_\allowbreak{}squared & CUDA quasi-DEER / 64 & 1 & 0 & 0 & 1 & 114.62 \\
+p\_\allowbreak{}switch\_\allowbreak{}0m & CUDA quasi-DEER / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+p\_\allowbreak{}switch\_\allowbreak{}100m & CUDA quasi-DEER / 64 & 1 & 0 & 0 & 1 & 164.73 \\
+beta\_\allowbreak{}positive & CUDA quasi-DEER / 64 & 1 & 0 & 1 & 0 & — \\
+alpha & CUDA MALA seq / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+beta & CUDA MALA seq / 64 & 1 & 0 & 0 & 1 & 114.24 \\
+alpha\_\allowbreak{}squared & CUDA MALA seq / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+beta\_\allowbreak{}squared & CUDA MALA seq / 64 & 1 & 0 & 0 & 1 & 114.62 \\
+p\_\allowbreak{}switch\_\allowbreak{}0m & CUDA MALA seq / 64 & 1 & 0 & 0 & 1 & 119.15 \\
+p\_\allowbreak{}switch\_\allowbreak{}100m & CUDA MALA seq / 64 & 1 & 0 & 0 & 1 & 164.73 \\
+beta\_\allowbreak{}positive & CUDA MALA seq / 64 & 1 & 0 & 1 & 0 & — \\
+alpha & CUDA Picard / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+beta & CUDA Picard / 64 & 1 & 0 & 0 & 1 & 54.643 \\
+alpha\_\allowbreak{}squared & CUDA Picard / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+beta\_\allowbreak{}squared & CUDA Picard / 64 & 1 & 0 & 0 & 1 & 59.659 \\
+p\_\allowbreak{}switch\_\allowbreak{}0m & CUDA Picard / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+p\_\allowbreak{}switch\_\allowbreak{}100m & CUDA Picard / 64 & 1 & 0 & 0 & 1 & 23.713 \\
+beta\_\allowbreak{}positive & CUDA Picard / 64 & 1 & 0 & 1 & 0 & — \\
+alpha & CUDA RWM seq / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+beta & CUDA RWM seq / 64 & 1 & 0 & 0 & 1 & 54.643 \\
+alpha\_\allowbreak{}squared & CUDA RWM seq / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+beta\_\allowbreak{}squared & CUDA RWM seq / 64 & 1 & 0 & 0 & 1 & 59.659 \\
+p\_\allowbreak{}switch\_\allowbreak{}0m & CUDA RWM seq / 64 & 1 & 0 & 0 & 1 & 12.651 \\
+p\_\allowbreak{}switch\_\allowbreak{}100m & CUDA RWM seq / 64 & 1 & 0 & 0 & 1 & 23.713 \\
+beta\_\allowbreak{}positive & CUDA RWM seq / 64 & 1 & 0 & 1 & 0 & — \\
+\bottomrule\end{longtable}\endgroup
+\subsection*{NUTS诊断}
+发散总数只对收到的记录计数，未知不填零。树深度命中若未被上游提供，仍不可判定；两者不会把数值有效自动变成统计收敛。
+\begin{longtable}{rrrrrr}
+\toprule 预算 & 计划 & 有记录任务 & 已知发散 & 未知链数 & 完整树深命中 \\ \midrule\endhead
+64 & 1 & 1 & 0 & 0 & — \\
+\bottomrule\end{longtable}
+\clearpage\section*{来源与边界}
+来源统计清单SHA256：\texttt{88a42db776c88e48c26efbad0009a6f9}\par\texttt{b8c5f8fb3c137464c2f322e8519c8f36}
+原坐标函数、参考类别及MCSE保留于参考契约和来源表。有限参考偏移范围不是参考误差已传播的区间；未认证积分不称为解析真值。
+本文件及图件是可重建分析附件，不代替完整研究终稿、原始证据审计或作者审阅。
+\end{document}

@@ -49,7 +49,7 @@ def write_report(output,receipt):
         name=model['model'];tables=json.loads((output/name/'tables.json').read_text(encoding='utf-8'))
         body.extend([r'\clearpage\section*{'+tex(name)+'：诊断与资格}',
             '下表每行的计划数以完整四链重复为单位。已收到的不可判定诊断与未收到诊断分开；Rhat阈值只用于描述，不是整体后验可信的充分条件。',
-            r'\begingroup\small\begin{longtable}{P{28mm}P{40mm}rrrrr}',
+            r'\begingroup\footnotesize\begin{longtable}{P{28mm}P{40mm}rrrrr}',
             r'\toprule 函数 & 工作流/预算 & 计划 & 缺诊断 & 未定Rhat & Rhat$>1.01$ & 最小尾ESS \\ \midrule\endhead'])
         for r in tables['diagnostics']:
             values=[r['function'],DISPLAY[r['workflow']]+' / '+str(r['budget']),r['planned'],r['missing'],

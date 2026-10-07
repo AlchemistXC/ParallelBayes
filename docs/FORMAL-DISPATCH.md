@@ -1,3 +1,5 @@
+> 2026-10-07 当前后继：有限v2原生验收、实际数组读取及诊断已由Mac接收通过，见[独立接收](WINDOWS-FORMAL-V2-INTAKE.md)。[正式研究提示词](../handoff/windows-completion/CODEX-PROMPT-FORMAL-STUDY.md)已提供；完整1152输入和正式协议仍须在Windows按资源门槛冻结。下文是此前开发记录，不将较早“待验收”文字当作当前要求。
+
 # 正式任务与四批调度接入
 
 > 2026-10-07 后继状态：新原生适配验收入口与[一次性 Windows 提示词](../handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md)已完成并推送，执行源码为 `06e75c1`，详见 [FORMAL-NATIVE-VALIDATION](FORMAL-NATIVE-VALIDATION.md)。16项原生行为测试、27主任务及24缓存探测仍待 Windows 实测；完整正式数组分析仍在开发，不启动正式网格。下文保留本次较早实现记录，“没有提示词”等状态已由该后继取代。

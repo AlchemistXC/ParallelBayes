@@ -1,3 +1,5 @@
+> 2026-10-07 当前后继：有限v2原生验收、实际数组读取及诊断已由Mac接收通过，见[独立接收](WINDOWS-FORMAL-V2-INTAKE.md)。[正式研究提示词](../handoff/windows-completion/CODEX-PROMPT-FORMAL-STUDY.md)已提供；完整1152输入和正式协议仍须在Windows按资源门槛冻结。下文是此前开发记录，不将较早“待验收”文字当作当前要求。
+
 # F3 正式推断比较设计草案 v0.2
 
 2026-10-07 正式调度后继：接入正式worker、独立cache身份、四批顺序及中断保留；9项不同本地契约检查通过，原生验收要求已定义但未执行。验收生成和完整原始结果读取仍待完成，无新增MCMC。见[实现和范围](FORMAL-DISPATCH.md)。

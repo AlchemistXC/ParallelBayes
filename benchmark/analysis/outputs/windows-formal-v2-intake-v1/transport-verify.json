@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "archive": "/Users/haku/Workspace/ParallelBayes/downloads/windows-formal-v2-20261007/windows-native-20261007T135234Z.tar",
+  "archive_sha256": "6c6edeb49273e87d39b708132951a21f61273233c98b097fe069611fb76299df",
+  "checked_files": 27,
+  "source_commit": "5885c7189f08961658598a095b64ac2ca9bd39cf",
+  "branch": "codex/windows-formal-adapter-validation"
+}

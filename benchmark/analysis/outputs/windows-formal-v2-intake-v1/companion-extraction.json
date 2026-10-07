@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "archive": "/Users/haku/Workspace/ParallelBayes/downloads/windows-formal-v2-20261007/windows-native-20261007T134451Z.tar",
+  "archive_sha256": "82a830104c39d9bfddb24d5f9783ab650a4a3b98ed3dc174355c933aff882337",
+  "destination": "/Users/haku/Workspace/ParallelBayes/downloads/windows-formal-v2-20261007/extracted-companion",
+  "checked_files": 247,
+  "source_commit": "d094bcb0e934bbfba3f50fdf1f1c87ba45c1ff39",
+  "no_sampler_calls": true,
+  "safe_extraction_and_readback_seconds": 0.1795500829757657
+}

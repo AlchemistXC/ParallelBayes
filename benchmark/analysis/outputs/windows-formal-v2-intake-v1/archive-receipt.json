@@ -1,0 +1,12 @@
+{
+  "archive": "windows-formal-v2-mac-intake-v1.tar.gz",
+  "bytes": 23315685,
+  "sha256": "de64ea0ac4549275eb0fbdbdae8d3f7c8b1ed0e714b163b9b50ef0d8c91c8ad8",
+  "manifest_files_verified": 496,
+  "status": "passed",
+  "scope": "Derived Mac intake evidence; requires separately checksum-verified original Windows raw archive for replay",
+  "base_commit": "5885c7189f08961658598a095b64ac2ca9bd39cf",
+  "actual_reader_sources_bound": true,
+  "new_sampler_calls": 0,
+  "new_formal_repetitions": 0
+}

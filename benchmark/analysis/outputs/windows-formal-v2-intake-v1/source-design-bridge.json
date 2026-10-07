@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "accepted_execution_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77",
+  "matched_source_files": 188,
+  "current_head": "5885c7189f08961658598a095b64ac2ca9bd39cf",
+  "changed_accepted_files": [],
+  "current_extra_files": [
+    "scripts/windows/collect_native_validation_receipt.py",
+    "scripts/windows/extract_verified_return.py",
+    "scripts/windows/snapshot_quiescent_registry.py"
+  ],
+  "formal_identity_planned": "windows-formal-inference-v1",
+  "formal_design_sha256": "68a1cba1b9309216d237ac4613531216f167ff344dfdfcb72dc3aaca0ca0baa5",
+  "planned_main": 41472,
+  "planned_cache": 9216,
+  "planned_inputs": 1152,
+  "full_nine_target_controls_compatible": true,
+  "formal_inputs_generated": false,
+  "formal_protocol_frozen": false,
+  "new_sampler_calls": 0,
+  "scope": "Read-only accepted-source and complete-design metadata compatibility; execute formal preparation from exact accepted commit, not later expanded source inventory"
+}

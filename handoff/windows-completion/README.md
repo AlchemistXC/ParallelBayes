@@ -1,3 +1,5 @@
+> **2026-10-07 后继：有限v2已通过Windows实测及Mac独立接收，无需再执行本轮验收。下一入口为[正式研究提示词](CODEX-PROMPT-FORMAL-STUDY.md)，接收证据见[Mac报告](../../docs/WINDOWS-FORMAL-V2-INTAKE.md)。以下文字保留旧任务原范围。**
+
 # Windows 研究收尾入口
 
 2026-10-06。当前统一开发入口为 `codex/research-integration`，合入软件候选、测量运行器与失败证据接收。原来源分支及冻结实验均保留；F2 使用其原源码，F3/安装核验在新工作树继续。只使用原生 Windows，不重启第一次移植。
