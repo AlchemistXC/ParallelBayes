@@ -112,6 +112,10 @@ def test_one_explicit_infrastructure_retry_and_no_cache_retry(tmp_path):
     for kind in ('posterior','cache_measurement'):
         s=spec(tmp_path/kind,mode='interrupted',kind=kind);r=c.run(**s)
         assert r['outcome']=='infrastructure_interruption'
+        before=assets(Path(s['output']))
+        retained=c.run(**s,resume=True)
+        assert retained['outcome']=='infrastructure_interruption' and retained['newly_executed'] is False
+        assert retained['attempt_id']==r['attempt_id'] and assets(Path(s['output']))==before
         if kind=='posterior':
             second=c.run(**s,retry=True);assert second['attempt_id']=='attempt-0002'
         with pytest.raises(ResumeConflict):c.run(**s,retry=True)
@@ -242,3 +246,38 @@ def test_kernel_commit_limit_denies_small_owned_allocation(tmp_path,limit_mb,den
     assert proof['allocation_denied'] is denied
     assert result['outcome']==('resource_failure' if denied else 'valid') and result['job_final']['active_processes']==0
     assert result['job_final']['hard_job_commit_limit_bytes']==limit_mb*1024**2
+
+
+def test_legacy_registration_reconciled_before_v2_launch(tmp_path):
+    """The v2 entry cannot ignore the old runtime's interrupted registration."""
+    legacy_worker=Path(__file__).with_name('runtime_fixture.py')
+    c=Coordinator(tmp_path/'shared.lock');s=spec(tmp_path/'legacy-managed',mode='descendants')
+    s['worker']=str(legacy_worker)
+    s['request']['release']=str(Path(s['output'])/'attempt-0001/fixture-release')
+    invocation=tmp_path/'legacy-launch.json';atomic_json(invocation,dict(s,host_lock=str(c.lock)))
+    with (tmp_path/'legacy-manager.log').open('wb') as log:
+        manager=subprocess.Popen([sys.executable,str(legacy_worker),'manager',str(invocation)],stdout=log,stderr=log)
+        record=None
+        try:
+            record=await_file(tmp_path/'legacy-managed/manager.json')
+            await_file(Path(s['output'])/'attempt-0001/grandchild.json')
+            job=await_file(Path(s['output'])/'attempt-0001/job.json')
+            assert observe_named_job(job['name'])['active_processes']>=3
+            with pytest.raises(HostBusy):c.run(**spec(tmp_path/'new-competitor'))
+            stop_fixture_manager(record);manager.wait(timeout=20)
+            end=time.monotonic()+20
+            while observe_named_job(job['name'])['state']!='absent':
+                assert time.monotonic()<end;time.sleep(.03)
+            result=c.run(**spec(tmp_path/'new-after-legacy'))
+            assert result['outcome']=='valid'
+            from owned_runtime import Coordinator as LegacyCoordinator
+            legacy=LegacyCoordinator(c.lock)
+            with __import__('formal_runtime').host_lease(c.lock,'inspect artificial legacy recovery'):
+                data=legacy._read()
+            entry=next(v for v in data['tasks'].values() if v['task']==s['task'])
+            assert entry['attempts'][-1]['outcome']=='infrastructure_interruption'
+            assert entry['attempts'][-1]['exit_confirmed_by']['state']=='absent'
+        finally:
+            if manager.poll() is None:
+                if record is not None:stop_fixture_manager(record)
+                manager.wait(timeout=20)

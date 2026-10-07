@@ -158,6 +158,15 @@ class Coordinator:
                                               newly_executed=False,outcome=last['outcome']))
                     self._save(data,'verification_only',key)
                     return value
+                if last and resume and not retry and last['outcome']=='infrastructure_interruption':
+                    # Inspection is not a new attempt. Preserve unknown clocks
+                    # and retained interruption; the batch may visit other slots.
+                    state=self._verify_terminal(last)
+                    value=dict(state,task=task,newly_executed=False,attempt_id=last['id'])
+                    entry['calls'].append(dict(seconds=time.perf_counter()-start,attempt_id=last['id'],
+                                              newly_executed=False,outcome=last['outcome']))
+                    self._save(data,'retained_interruption',key)
+                    return value
                 if last:
                     if not retry or kind=='cache_measurement' or last['outcome']!='infrastructure_interruption' or len(entry['attempts'])>=2:
                         raise ResumeConflict('At most one explicit posterior infrastructure retry; cache interruption never retried')
