@@ -1,0 +1,24 @@
+{
+  "all_task_lookups_checked": true,
+  "database_bytes": 21118976,
+  "files_indexed": 50688,
+  "formal_raw_archive_verified": false,
+  "histories": 0,
+  "index_seconds": 27.439705915981904,
+  "manifest_bytes": 8676930,
+  "missing_history_not_reclassified_as_not_run": true,
+  "new_independent_repetitions": 0,
+  "new_sampler_calls": 0,
+  "planned_artificial_slots": 50688,
+  "query_seconds": 28.630995250015985,
+  "ru_maxrss": 217513984,
+  "ru_maxrss_units": "bytes on macOS, KiB on Linux",
+  "source_files": {
+    "scripts/analysis/formal_analyze.py": "8ad26ea6f8cb6ae10fddefc8ecb47ee383f3a9efda96a538eb86db479affbe1b",
+    "scripts/analysis/formal_archive.py": "daa7346e841c7571d7c89cfc2cb2cc8be81a19f7f959b4540a0c6feefde4a1e2",
+    "scripts/analysis/formal_science.py": "27b07aa5494ffe92f1dab407229fbfc84aa523600198b5bcc8c26e6edf073d35",
+    "scripts/analysis/formal_statistics.py": "01a201ebfda250fe06e134b60683d85ff4db4e7ab70f1eaca3f20b4e6921e383"
+  },
+  "timings_scope": "Artificial metadata check only; not MCMC or GPU/inference performance",
+  "write_fixture_seconds": 4.84340604202589
+}

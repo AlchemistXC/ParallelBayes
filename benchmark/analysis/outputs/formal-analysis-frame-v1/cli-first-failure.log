@@ -1,0 +1,11 @@
+/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python: No module named pip
+Traceback (most recent call last):
+  File "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-analysis-frame-v1/cli-check.py", line 28, in <module>
+    lock=subprocess.check_output([sys.executable,'-m','pip','freeze'],text=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python', '-m', 'pip', 'freeze']' returned non-zero exit status 1.

@@ -232,12 +232,34 @@
       "new_sampler_calls": 0,
       "new_formal_repetitions": 0,
       "execution_source_unchanged": true
+    },
+    "frame_analysis": {
+      "report": "docs/FORMAL-FRAME-ANALYSIS.md",
+      "source_commit": "6014af3597a0fab5abd2b698e79a67568161c5b1",
+      "manifest_index_implemented": true,
+      "recoverable_complete_frame_implemented": true,
+      "paired_statistics_connected": true,
+      "distinct_portable_checks": 26,
+      "failed_checks": 0,
+      "skipped_checks": 0,
+      "artificial_scale_file_slots": 50688,
+      "rebuilt_reference_models": 9,
+      "rebuilt_reference_functions": 36,
+      "CLI_fixture_evidence_gaps": 51,
+      "CLI_fixture_reused_without_replay": 51,
+      "full_formal_archive_analyzed": false,
+      "figures_and_paper_connected": false,
+      "native_v2_return_read": false,
+      "execution_sources_unchanged": true,
+      "new_sampler_calls": 0,
+      "new_formal_repetitions": 0
     }
   },
   "latest_upload_check": {
-    "report": "docs/FORMAL-NATIVE-EVIDENCE.md",
+    "report": "docs/FORMAL-FRAME-ANALYSIS.md",
     "Windows_heads_equal_previous_intake": true,
     "archive_metadata_matches": 5,
+    "assets": 27,
     "newer_evidence_found": false
   }
 }

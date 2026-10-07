@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+    "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_analyze.py",
+    "index",
+    "--delivery",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-analysis-frame-v1/cli-second/delivery",
+    "--bundle-relative",
+    "bundle",
+    "--manifest-sha256",
+    "21aaf3bfabd01d79b26bd4de35e7a7136b00e6d9ed5408cbb1bfa85ce7f64cc3",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-analysis-frame-v1/cli-second/index"
+  ],
+  "returncode": 0
+}

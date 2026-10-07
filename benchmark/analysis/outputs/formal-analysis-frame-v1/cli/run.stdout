@@ -1,0 +1,28 @@
+{
+  "frame": {
+    "identity": "windows-formal-adapter-validation-v1",
+    "scope": "technical_batch_validation",
+    "protocol_sha256": "5b88c399f68e482438b5fb84e15dfad803a9dcb61fbc31bbd60f719a796bb715",
+    "main_planned": 27,
+    "cache_planned": 24,
+    "formal_scientific_repetitions_per_model": 0,
+    "analysis_can_authorize_sampling": false
+  },
+  "visited": 51,
+  "new_analyses": 51,
+  "reused_analyses": 0,
+  "counts": {
+    "main": {
+      "evidence_gap": 27
+    },
+    "cache": {
+      "evidence_gap": 24
+    }
+  },
+  "every_planned_task_represented": true,
+  "evidence_complete": false,
+  "new_sampler_calls": 0,
+  "new_independent_repetitions": 0,
+  "formal_inference_complete": false,
+  "summary_is_not_convergence_or_performance_inference": true
+}

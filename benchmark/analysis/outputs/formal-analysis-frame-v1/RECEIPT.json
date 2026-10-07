@@ -1,0 +1,73 @@
+{
+  "source_commit": "6014af3597a0fab5abd2b698e79a67568161c5b1",
+  "baseline_commit": "d04731afb3912d1157f147fff8a2e3b339408ca0",
+  "scope": "Receiver implementation and explicitly artificial fixtures; no native or formal inference evidence",
+  "test_rounds": {
+    "tests-first.xml": {
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests-statistics.xml": {
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests-contract.xml": {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests-binding.xml": {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests-reader-binding.xml": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "distinct_tests_passed": 26,
+  "failed": 0,
+  "skipped": 0,
+  "receiver_sources": {
+    "scripts/analysis/formal_analyze.py": "c6d4a99b50c3e4478b0f897cf7925e6a5f876607fc1430b623d20f6aee58a349",
+    "scripts/analysis/formal_statistics.py": "388436d8776c5b405110bbc5834fcedafbe3a26cd92dcfc56efbe1cd68d6fc04",
+    "scripts/analysis/formal_science.py": "27b07aa5494ffe92f1dab407229fbfc84aa523600198b5bcc8c26e6edf073d35",
+    "scripts/analysis/formal_archive.py": "daa7346e841c7571d7c89cfc2cb2cc8be81a19f7f959b4540a0c6feefde4a1e2"
+  },
+  "scale_fixture_tasks": 50688,
+  "reference_models": 9,
+  "reference_functions": 36,
+  "external_reference_files": 8,
+  "cli_fixture": {
+    "files": 217,
+    "tasks": 51,
+    "evidence_gaps": 51,
+    "resumed_analyses": 51,
+    "new_replays_on_resume": 0
+  },
+  "retained_failure": "First CLI fixture script requested pip in a receiver environment without pip. Corrected fixture uses importlib.metadata; original log retained. Production source unchanged.",
+  "warnings": "Existing NumPy slogdet divide/overflow/invalid warnings retained",
+  "execution_sources_and_protocols_unchanged": true,
+  "windows_prompt_unchanged": true,
+  "github": {
+    "asset_count": 27,
+    "draft": true,
+    "matching_previously_received_archives": 5,
+    "new_native_v2_evidence_found": false
+  },
+  "new_sampler_calls": 0,
+  "new_formal_repetitions": 0,
+  "new_Windows_or_CUDA_execution": false,
+  "native_v2_return_verified": false,
+  "formal_grid_run": false,
+  "full_formal_raw_to_paper_complete": false
+}

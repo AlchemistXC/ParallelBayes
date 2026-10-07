@@ -1,0 +1,168 @@
+{
+  "frame": {
+    "identity": "windows-formal-adapter-validation-v1",
+    "scope": "technical_batch_validation",
+    "protocol_sha256": "5b88c399f68e482438b5fb84e15dfad803a9dcb61fbc31bbd60f719a796bb715",
+    "main_planned": 27,
+    "cache_planned": 24,
+    "formal_scientific_repetitions_per_model": 0,
+    "analysis_can_authorize_sampling": false
+  },
+  "models": [
+    {
+      "model": "G1",
+      "main_planned": 9,
+      "cache_planned": 8,
+      "main_dispositions": {
+        "evidence_gap": 9
+      },
+      "cache_dispositions": {
+        "evidence_gap": 8
+      },
+      "main_outcomes": {
+        "unknown_evidence": 9
+      },
+      "cache_outcomes": {
+        "unknown_evidence": 8
+      },
+      "main_statistics": "technical_descriptive_only",
+      "cache_statistics": "technical_descriptive_only",
+      "reference": {
+        "names": [
+          "standard_q1",
+          "standard_q1_squared",
+          "standard_q1_gt1"
+        ],
+        "means": [
+          0.0,
+          1.0,
+          0.15865525393145707
+        ],
+        "kinds": [
+          "analytic",
+          "analytic",
+          "analytic"
+        ],
+        "mcse": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "base_target_id": "514971389da57c81e05933e03c3158901a37a2a3edbddbee6c3ce2ce0c02b515"
+      },
+      "reference_uncertainty_propagated": false,
+      "formal_inference_complete": false
+    },
+    {
+      "model": "G2",
+      "main_planned": 9,
+      "cache_planned": 8,
+      "main_dispositions": {
+        "evidence_gap": 9
+      },
+      "cache_dispositions": {
+        "evidence_gap": 8
+      },
+      "main_outcomes": {
+        "unknown_evidence": 9
+      },
+      "cache_outcomes": {
+        "unknown_evidence": 8
+      },
+      "main_statistics": "technical_descriptive_only",
+      "cache_statistics": "technical_descriptive_only",
+      "reference": {
+        "names": [
+          "standard_q1",
+          "standard_q1_squared",
+          "standard_q1_gt1"
+        ],
+        "means": [
+          0.0,
+          1.0,
+          0.15865525393145707
+        ],
+        "kinds": [
+          "analytic",
+          "analytic",
+          "analytic"
+        ],
+        "mcse": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "base_target_id": "554d51fcef84272a0fd8444621cdd5888dbb185c5adf8579d0dd124ef8175598"
+      },
+      "reference_uncertainty_propagated": false,
+      "formal_inference_complete": false
+    },
+    {
+      "model": "W1",
+      "main_planned": 9,
+      "cache_planned": 8,
+      "main_dispositions": {
+        "evidence_gap": 9
+      },
+      "cache_dispositions": {
+        "evidence_gap": 8
+      },
+      "main_outcomes": {
+        "unknown_evidence": 9
+      },
+      "cache_outcomes": {
+        "unknown_evidence": 8
+      },
+      "main_statistics": "technical_descriptive_only",
+      "cache_statistics": "technical_descriptive_only",
+      "reference": {
+        "names": [
+          "alpha",
+          "beta",
+          "alpha_squared",
+          "beta_squared",
+          "p_switch_0m",
+          "p_switch_100m",
+          "beta_positive"
+        ],
+        "means": [
+          0.6065771117644989,
+          -0.6229832495256747,
+          0.37157705510657857,
+          0.39761870777386443,
+          0.6470373970343255,
+          0.49590258117089897,
+          4.7672087565484905e-11
+        ],
+        "kinds": [
+          "numerical_uncertified",
+          "numerical_uncertified",
+          "numerical_uncertified",
+          "numerical_uncertified",
+          "numerical_uncertified",
+          "numerical_uncertified",
+          "numerical_uncertified"
+        ],
+        "mcse": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "base_target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc"
+      },
+      "reference_uncertainty_propagated": false,
+      "formal_inference_complete": false
+    }
+  ],
+  "raw_arrays_replayed_during_summary": false,
+  "diagnostics_recomputed_during_summary": false,
+  "analyzer_sha256": "388436d8776c5b405110bbc5834fcedafbe3a26cd92dcfc56efbe1cd68d6fc04",
+  "analysis_identity_sha256": "b0e30940681859c1d7185a82ef398dbdc31f7a4384befe98ecb82a5dd659fa11",
+  "new_independent_repetitions": 0,
+  "formal_inference_complete": false,
+  "figures_and_paper_not_generated": true
+}

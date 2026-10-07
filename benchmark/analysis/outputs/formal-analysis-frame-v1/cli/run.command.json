@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+    "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_analyze.py",
+    "run",
+    "--delivery",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-analysis-frame-v1/cli-second/delivery",
+    "--index",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-analysis-frame-v1/cli-second/index",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-analysis-frame-v1/cli-second/analysis",
+    "--rscript",
+    "/usr/local/bin/Rscript",
+    "--r-library",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library",
+    "--cross-platform"
+  ],
+  "returncode": 0
+}

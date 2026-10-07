@@ -1,0 +1,253 @@
+{
+  "external_files_verified": 8,
+  "functions": 36,
+  "matches_frozen_reference_contract": true,
+  "models": 9,
+  "new_sampler_calls": 0,
+  "reference_uncertainty_propagated": false,
+  "references": {
+    "A1": {
+      "base_target_id": "0dcb0be2b185f43b1545c5d09be47b8eb31733d49b12f4f0bd038655b17a4145",
+      "kinds": [
+        "analytic",
+        "analytic",
+        "analytic"
+      ],
+      "mcse": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "means": [
+        0.0,
+        1.0,
+        0.15865525393145707
+      ],
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ]
+    },
+    "G1": {
+      "base_target_id": "514971389da57c81e05933e03c3158901a37a2a3edbddbee6c3ce2ce0c02b515",
+      "kinds": [
+        "analytic",
+        "analytic",
+        "analytic"
+      ],
+      "mcse": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "means": [
+        0.0,
+        1.0,
+        0.15865525393145707
+      ],
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ]
+    },
+    "G2": {
+      "base_target_id": "554d51fcef84272a0fd8444621cdd5888dbb185c5adf8579d0dd124ef8175598",
+      "kinds": [
+        "analytic",
+        "analytic",
+        "analytic"
+      ],
+      "mcse": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "means": [
+        0.0,
+        1.0,
+        0.15865525393145707
+      ],
+      "names": [
+        "standard_q1",
+        "standard_q1_squared",
+        "standard_q1_gt1"
+      ]
+    },
+    "H1": {
+      "base_target_id": "1d5a9ff3c16331a0814fad5fefb35c32bfdd0565e22f0a71b01da2fd045068b6",
+      "kinds": [
+        "analytic",
+        "analytic",
+        "analytic",
+        "analytic"
+      ],
+      "mcse": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "means": [
+        0.0,
+        0.0,
+        0.5,
+        0.6065306597126334
+      ],
+      "names": [
+        "v_over_3",
+        "tanh_v_over_3",
+        "x1_positive",
+        "cos_z1"
+      ]
+    },
+    "H2": {
+      "base_target_id": "a49d3652caace916ae39612a0331a8d9974345e5e552d09a71a19fda44542a0b",
+      "kinds": [
+        "analytic",
+        "analytic",
+        "analytic",
+        "analytic"
+      ],
+      "mcse": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "means": [
+        0.0,
+        0.0,
+        0.5,
+        0.6065306597126334
+      ],
+      "names": [
+        "v_over_3",
+        "tanh_v_over_3",
+        "x1_positive",
+        "cos_z1"
+      ]
+    },
+    "L1": {
+      "base_target_id": "e9f9a77f5d98bd9cfcda542cc84d4c9415666bbb42f6588f292128c8792dd17d",
+      "kinds": [
+        "finite_mcmc",
+        "finite_mcmc",
+        "finite_mcmc",
+        "finite_mcmc"
+      ],
+      "mcse": [
+        0.00038899606027532126,
+        0.0005002227859549134,
+        9.405694023179964e-05,
+        0.0007639814255156833
+      ],
+      "means": [
+        -0.2780655741279529,
+        -0.6788954260209844,
+        0.4317947518790173,
+        0.10919189453125
+      ],
+      "names": [
+        "q1",
+        "q2",
+        "sigmoid_q1",
+        "q1_positive"
+      ]
+    },
+    "L2": {
+      "base_target_id": "7d3e601010f3c362f0cb37a7eca3e13efdd60a9622b718831200ecc0d65cee4f",
+      "kinds": [
+        "finite_mcmc",
+        "finite_mcmc",
+        "finite_mcmc",
+        "unresolved"
+      ],
+      "mcse": [
+        8.892829255519044e-05,
+        0.00010191246932380079,
+        2.1694164929430826e-05,
+        null
+      ],
+      "means": [
+        -0.3111767722693598,
+        -0.6005257632922614,
+        0.42288078897091724,
+        0.0
+      ],
+      "names": [
+        "q1",
+        "q2",
+        "sigmoid_q1",
+        "q1_positive"
+      ]
+    },
+    "M1": {
+      "base_target_id": "160bef01e246c8de94b78de748a60270560b5adee43332345dd0bd289dc7c95f",
+      "kinds": [
+        "analytic",
+        "analytic",
+        "analytic",
+        "analytic"
+      ],
+      "mcse": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "means": [
+        0.0,
+        0.5,
+        0.0,
+        1.0
+      ],
+      "names": [
+        "standard_q1",
+        "q1_positive",
+        "q2",
+        "q2_squared"
+      ]
+    },
+    "W1": {
+      "base_target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+      "kinds": [
+        "numerical_uncertified",
+        "numerical_uncertified",
+        "numerical_uncertified",
+        "numerical_uncertified",
+        "numerical_uncertified",
+        "numerical_uncertified",
+        "numerical_uncertified"
+      ],
+      "mcse": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "means": [
+        0.6065771117644989,
+        -0.6229832495256747,
+        0.37157705510657857,
+        0.39761870777386443,
+        0.6470373970343255,
+        0.49590258117089897,
+        4.7672087565484905e-11
+      ],
+      "names": [
+        "alpha",
+        "beta",
+        "alpha_squared",
+        "beta_squared",
+        "p_switch_0m",
+        "p_switch_100m",
+        "beta_positive"
+      ]
+    }
+  }
+}

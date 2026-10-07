@@ -1,0 +1,11 @@
+826d6a83f2cd351457a6ff4dfa1d39de675d87e3	refs/heads/codex/cache-failure-evidence
+af2db5b3e2cbfa4157c704f7ef79bdcecf52b3b9	refs/heads/codex/measurement-runtime
+01609ed52e9737f00661ce5653a35a80ea9f8796	refs/heads/codex/release-candidate-0.2
+d04731afb3912d1157f147fff8a2e3b339408ca0	refs/heads/codex/research-integration
+ced54ef6ce945198339a138142dcdfede84f06bc	refs/heads/codex/windows-completion-v2
+1cfc83d9f979b0b58e830affc67ac22e277acc7d	refs/heads/codex/windows-mechanism-completion
+0e44c2d5f2d5923f3c4ffa1c0700a18aca88b75b	refs/heads/codex/windows-package-validation
+52fdfd0446768033ffd975bc52ea8036c420880d	refs/heads/codex/windows-return-audit
+b0582c33a5ea855c384acc9b15da908dea2999b6	refs/heads/codex/windows-runtime-validation
+a774d834497f2c134b2c4ab9129f221de39004ab	refs/heads/main
+3a51f98fc8d10187b8f71e477aaff56d86ea50cd	refs/heads/windows-native-dev

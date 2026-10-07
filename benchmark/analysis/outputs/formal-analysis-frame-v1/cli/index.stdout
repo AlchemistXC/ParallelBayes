@@ -1,0 +1,15 @@
+{
+  "schema": "formal-delivery-index-v1",
+  "manifest_sha256": "21aaf3bfabd01d79b26bd4de35e7a7136b00e6d9ed5408cbb1bfa85ce7f64cc3",
+  "bundle_relative": "bundle",
+  "delivered_files": 217,
+  "bundle_files": 217,
+  "total_bytes": 39410403,
+  "delivery_metadata": {
+    "scope": "CLI integration fixture with real input/source files but NO native results.\n\nEvery task must remain an evidence gap. This is not Windows acceptance and\nmust not be used to authorize sampling or estimate posterior accuracy.\n"
+  },
+  "history_exports": 0,
+  "numerical_results_validated": false,
+  "live_processes_observed": false,
+  "database_sha256": "0a7b9a08140a46a552e76b9e6644af93d68d85db3fc336737814bfadc03fc53b"
+}

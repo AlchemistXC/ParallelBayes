@@ -2,7 +2,7 @@
 
 2026-10-06。当前统一开发入口为 `codex/research-integration`，合入软件候选、测量运行器与失败证据接收。原来源分支及冻结实验均保留；F2 使用其原源码，F3/安装核验在新工作树继续。只使用原生 Windows，不重启第一次移植。
 
-**2026-10-07：F2续跑、原生运行器技术批次、候选安装三项已完成并经Mac独立接收，不要重复执行旧提示词。** 三条结果分支已合入`codex/research-integration`，见[后续接收报告](../../docs/WINDOWS-FOLLOWUP-INTAKE.md)。当前新入口为[有限 v2 原生适配验收](CODEX-PROMPT-FORMAL-VALIDATION.md)：一次全文提供，依次准备、行为测试、27主任务/24缓存、零重算、封存和回传。它尚待Windows实测，未授权从该入口启动正式全网格。Mac继续完整原始结果分析。下方入口与原门槛为历史索引，不改变已完成状态。
+**2026-10-07：F2续跑、原生运行器技术批次、候选安装三项已完成并经Mac独立接收，不要重复执行旧提示词。** 三条结果分支已合入`codex/research-integration`，见[后续接收报告](../../docs/WINDOWS-FOLLOWUP-INTAKE.md)。当前新入口为[有限 v2 原生适配验收](CODEX-PROMPT-FORMAL-VALIDATION.md)：一次全文提供，依次准备、行为测试、27主任务/24缓存、零重算、封存和回传。它尚待Windows实测，未授权从该入口启动正式全网格。Mac的[完整任务读取与配对统计接口](../../docs/FORMAL-FRAME-ANALYSIS.md)已接通并完成有限检查；正式数据及表图/PDF仍待完成。现有Windows提示词不变。下方入口与原门槛为历史索引，不改变已完成状态。
 
 以下是原执行入口的保留索引：
 

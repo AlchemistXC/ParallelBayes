@@ -1,6 +1,6 @@
 # 正式原始结果逐任务读取
 
-2026-10-07，源码 `62b726857a33c27b7803173ed246e30e6323dd28`。逐任务科学读取已实现并通过本机检查；**完整正式研究分析驱动仍未完成**。本轮新增模块位于 `scripts/analysis/`，不改变已交给 Windows 的执行源码、数值方法或协议。现有 [原生适配验收提示词](../handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md) 继续有效，没有新增一轮 Windows 任务。
+2026-10-07，源码 `62b726857a33c27b7803173ed246e30e6323dd28`。逐任务科学读取已实现并通过本机检查；**本文记录逐任务读取阶段；完整框架后继见[归档读取与配对统计](FORMAL-FRAME-ANALYSIS.md)，实际正式原始结果及表图/PDF仍未完成**。本轮新增模块位于 `scripts/analysis/`，不改变已交给 Windows 的执行源码、数值方法或协议。现有 [原生适配验收提示词](../handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md) 继续有效，没有新增一轮 Windows 任务。
 
 ## 已接通的科学读取
 

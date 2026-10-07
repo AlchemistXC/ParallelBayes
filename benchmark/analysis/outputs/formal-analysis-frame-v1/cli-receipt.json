@@ -1,0 +1,71 @@
+{
+  "artificial_OS_metadata": true,
+  "evidence_gaps": 51,
+  "files": 217,
+  "first_analysis": {
+    "counts": {
+      "cache": {
+        "evidence_gap": 24
+      },
+      "main": {
+        "evidence_gap": 27
+      }
+    },
+    "every_planned_task_represented": true,
+    "evidence_complete": false,
+    "formal_inference_complete": false,
+    "frame": {
+      "analysis_can_authorize_sampling": false,
+      "cache_planned": 24,
+      "formal_scientific_repetitions_per_model": 0,
+      "identity": "windows-formal-adapter-validation-v1",
+      "main_planned": 27,
+      "protocol_sha256": "5b88c399f68e482438b5fb84e15dfad803a9dcb61fbc31bbd60f719a796bb715",
+      "scope": "technical_batch_validation"
+    },
+    "new_analyses": 51,
+    "new_independent_repetitions": 0,
+    "new_sampler_calls": 0,
+    "reused_analyses": 0,
+    "summary_is_not_convergence_or_performance_inference": true,
+    "visited": 51
+  },
+  "input_files": 3,
+  "native_windows_executed": false,
+  "new_formal_repetitions": 0,
+  "new_sampler_calls": 0,
+  "planned_tasks": 51,
+  "real_numpy_inputs_and_source_snapshots": true,
+  "resume": {
+    "counts": {
+      "cache": {
+        "evidence_gap": 24
+      },
+      "main": {
+        "evidence_gap": 27
+      }
+    },
+    "every_planned_task_represented": true,
+    "evidence_complete": false,
+    "formal_inference_complete": false,
+    "frame": {
+      "analysis_can_authorize_sampling": false,
+      "cache_planned": 24,
+      "formal_scientific_repetitions_per_model": 0,
+      "identity": "windows-formal-adapter-validation-v1",
+      "main_planned": 27,
+      "protocol_sha256": "5b88c399f68e482438b5fb84e15dfad803a9dcb61fbc31bbd60f719a796bb715",
+      "scope": "technical_batch_validation"
+    },
+    "new_analyses": 0,
+    "new_independent_repetitions": 0,
+    "new_sampler_calls": 0,
+    "reused_analyses": 51,
+    "summary_is_not_convergence_or_performance_inference": true,
+    "visited": 51
+  },
+  "scope": "CLI integration fixture with real input/source files but NO native results.\n\nEvery task must remain an evidence gap. This is not Windows acceptance and\nmust not be used to authorize sampling or estimate posterior accuracy.\n",
+  "source_and_input_files_unchanged": true,
+  "source_commit": "6014af3597a0fab5abd2b698e79a67568161c5b1",
+  "summary_model_count": 3
+}
