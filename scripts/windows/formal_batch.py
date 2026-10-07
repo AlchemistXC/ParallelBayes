@@ -80,7 +80,7 @@ def run(bundle,host_lock,rscript,r_library,native_acceptance,batch,phase,*,resum
             if current!=env:raise ValueError('Frozen native Python/R/device environment changed')
             for name,digest in p['source_files'].items():
                 if file_hash(ROOT/name)!=digest:raise ValueError('Frozen source changed: '+name)
-            verify_native_acceptance(native_acceptance,p,ROOT)
+            verify_native_acceptance(native_acceptance,p,ROOT,environment=env)
             dispatch=StudyDispatch(p,design['cache_allocation'],catalog)
             phase_root=bundle/'formal-runs'/f'batch-{batch:02d}'/phase
             earlier={}

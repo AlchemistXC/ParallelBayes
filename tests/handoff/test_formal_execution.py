@@ -149,7 +149,8 @@ def test_acceptance_passed_flag_cannot_hide_incomplete_or_skipped_runtime(study,
     dispatch,_,_=study;p=dispatch.protocol
     gate={k:p[k] for k in ('source_files','required_versions','required_R_version','required_R_posterior')}
     gate.update(schema='formal-native-acceptance-v1',platform='win32',passed=True,
-                runtime_test_sha256=file_hash(ROOT/'tests/windows/test_formal_owned_runtime.py'),runtime_xml='runtime.xml')
+                runtime_test_sha256=file_hash(ROOT/'tests/windows/test_formal_owned_runtime.py'),runtime_xml='runtime.xml',
+                environment={'scope':'artificial gate-reader fixture'})
     for incomplete in (True,False):
         suite=ET.Element('testsuite')
         for name,count in RUNTIME_CASES.items():
@@ -161,8 +162,10 @@ def test_acceptance_passed_flag_cannot_hide_incomplete_or_skipped_runtime(study,
         gate['files']={'runtime.xml':file_hash(tmp_path/'runtime.xml')}
         gate.pop('gate_sha256',None);gate['gate_sha256']=fingerprint(gate)
         (tmp_path/'gate.json').write_text(json.dumps(gate))
+        with pytest.raises(ValueError,match='Full native'):
+            verify_native_acceptance(tmp_path/'gate.json',p,ROOT,environment={'scope':'changed'})
         with pytest.raises(ValueError,match='Every declared native runtime'):
-            verify_native_acceptance(tmp_path/'gate.json',p,ROOT)
+            verify_native_acceptance(tmp_path/'gate.json',p,ROOT,environment=gate['environment'])
 
 
 @pytest.mark.skipif(sys.platform=='win32',reason='Non-Windows refusal check only')

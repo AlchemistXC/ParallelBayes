@@ -38,7 +38,7 @@ def validation_groups():
             dict(models=['G2'], replicates=[0], budgets=[16384], workflows=list(WORKFLOWS))]
 
 
-def verify_native_acceptance(path, formal_protocol, source_root):
+def verify_native_acceptance(path, formal_protocol, source_root, *, environment):
     path = Path(path).resolve(); root = path.parent
     gate = json.loads(path.read_text()); unsigned = dict(gate); digest = unsigned.pop('gate_sha256')
     if (fingerprint(unsigned) != digest or gate['schema'] != 'formal-native-acceptance-v1' or
@@ -47,6 +47,8 @@ def verify_native_acceptance(path, formal_protocol, source_root):
     for key in ('source_files', 'required_versions', 'required_R_version', 'required_R_posterior'):
         if gate[key] != formal_protocol[key]:
             raise ValueError('Native acceptance source/environment differs: '+key)
+    if gate['environment'] != environment:
+        raise ValueError('Full native Python/dependency/device environment differs')
     if gate['runtime_test_sha256'] != file_hash(Path(source_root)/'tests/windows/test_formal_owned_runtime.py'):
         raise ValueError('Native test source differs')
     for name, expected in gate['files'].items():
@@ -69,6 +71,8 @@ def verify_native_acceptance(path, formal_protocol, source_root):
             protocol['required_platform'] != 'win32' or protocol['tasks'] != expected_tasks or
             protocol['native_runtime_schema'] != 'windows-owned-runtime-v2'):
         raise ValueError('Native adapter validation grid differs')
+    if protocol['validation_environment'] != environment:
+        raise ValueError('Original adapter validation environment differs')
     for key in ('source_files', 'required_versions', 'required_R_version', 'required_R_posterior', 'controls'):
         if protocol[key] != formal_protocol[key]:
             raise ValueError('Adapter validation does not use the formal implementation/controls: '+key)
