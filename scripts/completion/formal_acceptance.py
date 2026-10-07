@@ -38,6 +38,42 @@ def validation_groups():
             dict(models=['G2'], replicates=[0], budgets=[16384], workflows=list(WORKFLOWS))]
 
 
+def verify_runtime_cases(path):
+    """Require the exact native behavior suite, including no skips/errors."""
+    cases = list(ET.parse(path).iter('testcase'))
+    if (len({c.attrib['name'] for c in cases}) != len(cases) or
+            Counter(c.attrib['name'].split('[')[0] for c in cases) != RUNTIME_CASES or
+            any(c.find(k) is not None for c in cases for k in ('failure', 'error', 'skipped'))):
+        raise ValueError('Every declared native runtime case must pass without skips')
+    return len(cases)
+
+
+def verify_runtime_command(root, name, protocol, files):
+    """Check the retained command/Job receipt, not just its pytest XML."""
+    def read(member):
+        relative=name+'/'+member
+        path=relative_file(root,relative)
+        if files.get(relative)!=file_hash(path):
+            raise ValueError('Unbound native runtime command receipt: '+relative)
+        return json.loads(path.read_text())
+    started=read('started.json');finished=read('finished.json');intent=read('job-intent.json')
+    source=protocol['source_files']
+    command=[protocol['validation_environment']['executable'],'-m','pytest','-q','-p','no:cacheprovider',
+             'tests/windows/test_formal_owned_runtime.py']
+    if (started['command'][:7]!=command or len(started['command'])!=9 or
+            not started['command'][7].startswith('--basetemp=') or not started['command'][8].startswith('--junitxml=') or
+            started['source_sha256']!=source['scripts/windows/run_owned_command.py'] or
+            started['job_api_sha256']!=source['scripts/windows/job_objects.py'] or
+            finished['source_sha256']!=started['source_sha256'] or finished['exit_code']!=0 or finished['error'] is not None or
+            finished['job_final']['job_name']!=intent['name'] or
+            type(finished['job_final']['active_processes']) is not int or finished['job_final']['active_processes']!=0):
+        raise ValueError('Actual native runtime command/Job completion differs')
+    for member,digest in finished['logs'].items():
+        if files.get(name+'/'+member)!=digest:
+            raise ValueError('Native runtime command logs changed')
+    return finished
+
+
 def verify_native_acceptance(path, formal_protocol, source_root, *, environment):
     path = Path(path).resolve(); root = path.parent
     gate = json.loads(path.read_text()); unsigned = dict(gate); digest = unsigned.pop('gate_sha256')
@@ -59,11 +95,7 @@ def verify_native_acceptance(path, formal_protocol, source_root, *, environment)
         if name not in gate['files']:
             raise ValueError('Unbound acceptance artifact: '+name)
         return relative_file(root, name)
-    cases = list(ET.parse(artifact(gate['runtime_xml'])).iter('testcase'))
-    if (len({c.attrib['name'] for c in cases}) != len(cases) or
-            Counter(c.attrib['name'].split('[')[0] for c in cases) != RUNTIME_CASES or
-            any(c.find(k) is not None for c in cases for k in ('failure', 'error', 'skipped'))):
-        raise ValueError('Every declared native runtime case must pass without skips')
+    verify_runtime_cases(artifact(gate['runtime_xml']))
     protocol = json.loads(artifact(gate['validation_protocol']).read_text())
     plan = BatchPlan(protocol)
     expected_tasks = create_tasks(VALIDATION_ID, validation_groups())
@@ -73,6 +105,7 @@ def verify_native_acceptance(path, formal_protocol, source_root, *, environment)
         raise ValueError('Native adapter validation grid differs')
     if protocol['validation_environment'] != environment:
         raise ValueError('Original adapter validation environment differs')
+    verify_runtime_command(root,gate['runtime_command'],protocol,gate['files'])
     for key in ('source_files', 'required_versions', 'required_R_version', 'required_R_posterior', 'controls'):
         if protocol[key] != formal_protocol[key]:
             raise ValueError('Adapter validation does not use the formal implementation/controls: '+key)
@@ -98,10 +131,10 @@ def verify_native_acceptance(path, formal_protocol, source_root, *, environment)
             attempt_folder = relative_file(root, row['attempt_directory'])
             history = read_native_task(root, task=expected, history_export=row['history_export'],
                 directory=attempt_folder.parent.relative_to(root).as_posix(),
-                manifest=gate['files'], source_files=protocol['source_files'])
+                manifest=gate['files'], source_files=protocol['source_files'],ledger=row['ledger'])
             location = history['eligible_directory'] if phase == 'main' else history['measurement_directory']
             if (len(history['attempts']) != 1 or history['summary']['outcome'] != outcome or
-                    location != str(attempt_folder)):
+                    location != str(attempt_folder) or history['costs']['verification_only_invocations']<1):
                 raise ValueError('Native integration task did not pass on its declared attempt')
             capsule, capsule_sha = plan.capsule(row['task_id'] if phase == 'main' else
                 next(p['primary_task_id'] for p in allocation['probes'] if p['id'] == row['task_id']))

@@ -20,6 +20,13 @@ BATCH_SIZE=32
 DEVELOPMENT_PROTOCOL_SHA256='f8af8ab024baf0d0c97dc0e2cf52e61c112f57bfa647162204a74adc94ff298b'
 
 
+def study_controls():
+    """Shared frozen numerical settings for the study and finite adapter gate."""
+    return dict(chains=4,mh_discard=512,nuts_warmup=1024,nuts_tree_depth=8,nuts_target_accept=.8,
+        nuts_full_mass=False,nuts_workers=4,nuts_threads=1,torch_threads=4,window=32,quasi_deer_max_iter=2048,
+        atol=1e-10,rtol=1e-10,memory_limit_mb=2048,maximum_member_bytes=128*1024**2,minimum_gpu_free_bytes=3*1024**3)
+
+
 def create_study_plan(identity,catalog):
     if not isinstance(identity,str) or not re.fullmatch(r'windows-formal-[a-z0-9-]+',identity):
         raise ValueError('An explicit new Windows formal experiment identity is required')
@@ -41,9 +48,7 @@ def create_study_plan(identity,catalog):
         independent_unit='One original four-chain repetition; paired budgets, workflows and replays are not new repetitions',
         input_requirements={f'{name}-rep{r:04d}.npz':dict(model=name,replicate=r,dimension=targets[name]['dimension'],
             chains=4,steps=16896,roles=['initial','noise','log_uniform','directions','nuts_seeds']) for name in MODELS for r in range(REPLICATES)},
-        controls=dict(chains=4,mh_discard=512,nuts_warmup=1024,nuts_tree_depth=8,nuts_target_accept=.8,
-            nuts_full_mass=False,nuts_workers=4,nuts_threads=1,torch_threads=4,window=32,quasi_deer_max_iter=2048,
-            atol=1e-10,rtol=1e-10,memory_limit_mb=2048,maximum_member_bytes=128*1024**2,minimum_gpu_free_bytes=3*1024**3),
+        controls=study_controls(),
         initial_policy=dict(coordinates='frozen affine coordinates',distribution='N(0,4I)',
             M1_first_coordinate=[-5.,5.,-5.,5.],remaining_coordinates_unchanged=True),
         trajectory_policy=dict(Picard_max_iter='retained budget + 512',quasi_DEER_max_iter='2048 per window',

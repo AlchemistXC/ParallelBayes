@@ -21,7 +21,8 @@ class Fixture:
         self.sources = {n: fingerprint(n) for n in (
             'scripts/windows/formal_batch_worker.py', 'scripts/windows/formal_cache_worker.py',
             'scripts/windows/formal_owned_runtime.py', 'scripts/completion/task_journal.py',
-            'scripts/windows/job_objects.py', 'scripts/windows/formal_measured_runtime.py')}
+            'scripts/windows/job_objects.py', 'scripts/windows/formal_measured_runtime.py',
+            'scripts/windows/run_owned_command.py')}
         self.task = dict(id='artificial-native-reader', protocol_sha256='a'*64, batch=0,
                          artifact_kind=kind, model='G1', replicate=0)
         self.identity = dict(schema='windows-owned-runtime-v2', platform='win32', host_lock=r'D:\fixture\host.lock')
@@ -221,7 +222,7 @@ def test_complete_artificial_gate_uses_the_shared_reader_and_rejects_wrong_job(t
     controls=dict(chains=4,mh_discard=512,nuts_warmup=1024,nuts_tree_depth=8,nuts_workers=4,nuts_threads=1,
         torch_threads=4,window=32,quasi_deer_max_iter=2048,memory_limit_mb=2048,maximum_member_bytes=128*1024**2,
         atol=1e-10,rtol=1e-10,nuts_target_accept=.8,nuts_full_mass=False)
-    env=dict(fixture_only=True,not_a_native_execution_record=True)
+    env=dict(fixture_only=True,not_a_native_execution_record=True,executable=r'D:\fixture\python.exe')
     p=dict(schema=1,identity=VALIDATION_ID,scope_kind='technical_batch_validation',required_platform='win32',
         native_runtime_schema='windows-owned-runtime-v2',validation_environment=env,source_commit='b'*40,
         source_files=template.sources,required_versions={'numpy':'artificial'},required_R_version='fixture',
@@ -244,20 +245,30 @@ def test_complete_artificial_gate_uses_the_shared_reader_and_rejects_wrong_job(t
             capsule,digest=plan.capsule(primary_id)
             f.binding['request']=dict(capsule=capsule,capsule_sha256=digest)
             f.add('valid' if phase=='main' else 'measurement_available'); f.export()
+            f.ledger([(3.,'attempt-0001',True),(.25,'attempt-0001',False)])
             relative=phase+'/'+item['id']
             shutil.copytree(f.root,bundle/relative)
             report[phase].append(dict(task_id=item['id'],history_export=relative+'/'+f.history,
-                attempt_directory=relative+'/task/attempt-0001'))
+                attempt_directory=relative+'/task/attempt-0001',ledger=relative+'/ledger'))
             if mutated is None: mutated=bundle/relative/'task/attempt-0001'
     suite=ET.Element('testsuite')
     for name,count in RUNTIME_CASES.items():
         for index in range(count): ET.SubElement(suite,'testcase',name=name+'['+str(index)+']')
     ET.ElementTree(suite).write(bundle/'runtime.xml')
+    owned=bundle/'runtime-command';owned.mkdir()
+    atomic_json(owned/'started.json',dict(command=[env['executable'],'-m','pytest','-q','-p','no:cacheprovider',
+        'tests/windows/test_formal_owned_runtime.py','--basetemp=artificial','--junitxml=artificial'],
+        source_sha256=template.sources['scripts/windows/run_owned_command.py'],
+        job_api_sha256=template.sources['scripts/windows/job_objects.py']))
+    atomic_json(owned/'job-intent.json',dict(name='artificial-native-test-job'))
+    atomic_json(owned/'finished.json',dict(source_sha256=template.sources['scripts/windows/run_owned_command.py'],
+        exit_code=0,error=None,job_final=dict(job_name='artificial-native-test-job',active_processes=0),logs={}))
     atomic_json(bundle/'protocol.json',p); atomic_json(bundle/'integration.json',report)
     gate={k:p[k] for k in ('source_files','required_versions','required_R_version','required_R_posterior')}
     gate.update(schema='formal-native-acceptance-v1',platform='win32',passed=True,environment=env,
         runtime_test_sha256=file_hash(ROOT/'tests/windows/test_formal_owned_runtime.py'),
         runtime_xml='runtime.xml',validation_protocol='protocol.json',integration_report='integration.json',
+        runtime_command='runtime-command',
         fixture_only=True,not_a_native_execution_record=True)
     def write_gate():
         gate.pop('gate_sha256',None)
@@ -266,6 +277,18 @@ def test_complete_artificial_gate_uses_the_shared_reader_and_rejects_wrong_job(t
         gate['gate_sha256']=fingerprint(gate); atomic_json(bundle/'gate.json',gate)
     write_gate()
     assert verify_native_acceptance(bundle/'gate.json',p,ROOT,environment=env)==gate
+    terminal=json.loads((owned/'finished.json').read_text());terminal['exit_code']=1
+    atomic_json(owned/'finished.json',terminal);write_gate()
+    with pytest.raises(ValueError,match='Actual native runtime command'):
+        verify_native_acceptance(bundle/'gate.json',p,ROOT,environment=env)
+    terminal['exit_code']=0;atomic_json(owned/'finished.json',terminal)
+    # A successful sampling record alone does not establish a real verification
+    # invocation. Missing its outer receipt keeps that requirement unproven.
+    verification=bundle/report['main'][0]['ledger']/'call-000001/finished.json'
+    saved=verification.read_bytes();verification.unlink();write_gate()
+    with pytest.raises(ValueError,match='declared attempt'):
+        verify_native_acceptance(bundle/'gate.json',p,ROOT,environment=env)
+    verification.write_bytes(saved)
     reseal_state(mutated,lambda s:s['job_final'].update(job_name='unrelated'))
     write_gate()
     with pytest.raises(ValueError,match='Job identity'):
