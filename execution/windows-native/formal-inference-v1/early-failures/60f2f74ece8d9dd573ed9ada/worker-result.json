@@ -1,0 +1,35 @@
+{
+  "cached_execution_measured": false,
+  "capsule_sha256": "001380f70c83a89660cdaa139ce2e4e22e50408a0de04b57c46d5bd0f08c0da5",
+  "diagnostics_completed": false,
+  "diagnostics_status": "not_available",
+  "failure_category": "output_failure_unclassified",
+  "formal_inference_complete": false,
+  "full_MH_audit": null,
+  "numerical_validity_is_not_statistical_exploration": true,
+  "ordinary_process": {
+    "boundary": "Before child process creation through wait for its exit; includes imports, model/input, sampling, transform, ordinary output and diagnostics",
+    "logs_opening_included": false,
+    "nested_sampler_timings_additive": false,
+    "ordinary_process_wall_seconds": 23.006526999990456,
+    "outer_audit_included": false,
+    "return_code": 0
+  },
+  "ordinary_workflow_measured_separately": true,
+  "protocol_sha256": "62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176",
+  "samples_eligible": false,
+  "status": "failed",
+  "target_id": "e9d9d93a904cc97f1c89befa300a6e7375be21b1ad10519a37cfafb2734c39b8",
+  "task": {
+    "batch": 0,
+    "budget": 16384,
+    "device": "cpu",
+    "executor": "spawn_chains",
+    "id": "60f2f74ece8d9dd573ed9ada",
+    "input": "W1-rep0006.npz",
+    "kernel": "nuts",
+    "model": "W1",
+    "replicate": 6,
+    "workflow": "cpu-nuts-spawn_chains"
+  }
+}

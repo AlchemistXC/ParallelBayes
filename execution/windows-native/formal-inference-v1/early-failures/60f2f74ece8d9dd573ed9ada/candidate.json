@@ -1,0 +1,47 @@
+{
+  "status": "failed",
+  "draws": null,
+  "unconstrained": null,
+  "chain_seeds": [
+    2026993934,
+    2605427362,
+    2925545714,
+    146751222
+  ],
+  "target_id": "e9d9d93a904cc97f1c89befa300a6e7375be21b1ad10519a37cfafb2734c39b8",
+  "provider": "pyro_cpu_spawn_chains",
+  "workers_requested": 4,
+  "workers_allocated": 4,
+  "threads_per_worker": 1,
+  "observed_worker_pids": [],
+  "process_start_method": "spawn",
+  "components_are_additive": false,
+  "worker_records": [],
+  "worker_errors": {
+    "0": {
+      "error": "BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\nconcurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.\n"
+    },
+    "1": {
+      "error": "BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\nconcurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.\n"
+    },
+    "2": {
+      "error": "BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\nconcurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.\n"
+    },
+    "3": {
+      "error": "BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\nconcurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.\n"
+    }
+  },
+  "fixed_mh_tape_comparison": false,
+  "stored_array_estimate_bytes": 11141120,
+  "resource_note": "Requested process/thread configuration is recorded; not exclusive physical-core allocation",
+  "timing": {
+    "pool_wall": 21.361972199985757,
+    "total": 21.362015900027473
+  },
+  "cost_scope": "Parent pool wall includes process startup/imports, target reconstruction, warmup, sampling, IPC and shutdown; concurrent child durations cannot be summed as wall time",
+  "guarantee": "Numerical workflow output only; modern multichain diagnostics and accuracy evaluation remain separate"
+}

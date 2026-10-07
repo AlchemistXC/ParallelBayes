@@ -1,5 +1,13 @@
 # Native Windows development evidence
 
+2026-10-08 02:34 JST正式运行快照：137主任务valid、3数值失败、1未分类输出
+失败、1真实活动任务、41330未登记；9216缓存尚未登记。记录/索引校验和通过，
+活动Job实际5成员。三项H1接受事件失配0但NumPy路径超标准；W1四spawn NUTS
+保存BrokenProcessPool，退出原因未知，原分类不变。四项失败原Job另查均已结束，
+samples_eligible均false，无重试、无新核验采样。小型原回执early-failures保留；
+完整失败数组及已付费用在f原包。八阶段序列仍实际运行，未完成整批/归档/分析。
+详见docs/WINDOWS-FORMAL-INFERENCE.md及带时点的observation-20261008-0234.json。
+
 ## 正式 Windows 四批研究预检与准备（2026-10-08）
 
 完整研究已授权。执行分支codex/windows-formal-inference的独立短路径f固定

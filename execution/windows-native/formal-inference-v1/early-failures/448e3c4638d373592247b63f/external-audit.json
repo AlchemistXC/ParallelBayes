@@ -1,0 +1,31 @@
+{
+  "audit": {
+    "acceptance_mismatches": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "max_abs_constrained_error": [
+      0.0,
+      4.6807032294537976e-06,
+      0.0,
+      2.423148348640325e-10
+    ],
+    "max_abs_path_error": [
+      0.0,
+      4.6807032294537976e-06,
+      0.0,
+      2.423148348640325e-10
+    ],
+    "oracle": "independent_numpy_float64",
+    "passed": false
+  },
+  "audit_location": "after_ordinary_process_exit",
+  "candidate_arrays_retained": true,
+  "failure_category": "numerical_failure",
+  "independent_transform_passed": true,
+  "reason": "Independent full path, acceptance or transform audit failed",
+  "samples_eligible": false,
+  "status": "failed"
+}

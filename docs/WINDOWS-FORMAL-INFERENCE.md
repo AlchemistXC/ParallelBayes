@@ -136,3 +136,43 @@ publish_formal_study独立等待后处理管理者真实结束，保留其成功
 副本只有远端size/digest核验后才释放，范围顺序/偏移/哈希完整记录，可由原tar
 重建且不调用RNG。任何权限、容量或API错误停止并保留部分交付，不覆盖旧附件。
 此工具尚未实际执行上传，不能预报最终归档大小、哈希或通过状态。
+
+## 早期终态及恢复交接（2026-10-08 02:34 JST）
+
+此时只读登记快照核对记录/索引身份及校验和：主任务137 valid、3 numerical_failure、
+1 output_failure_unclassified、1 active、41330未登记；缓存9216均未登记。
+原生观察确认活动H1 CPU quasi-DEER任务的Job存在且有5个成员。该快照不是完整
+阶段关闭证明；更新状态以实时登记/Job和各阶段latest-closed为准。
+
+三项H1 MH失败任务为99ab308cabb7daa08c242c58、5d0b15d1cc89bbf91b3e1882、
+448e3c4638d373592247b63f。独立NumPy核验均为四链接受事件失配0，完整路径最大
+绝对差分别约0.0238193、7.64386e-7、4.68070e-6；原冻结标准未通过，
+samples_eligible=false。原始路径、诊断、已付费用及失败状态全部保留，无重试。
+
+W1 CPU四spawn NUTS任务60f2f74ece8d9dd573ed9ada在pool中保存四个
+BrokenProcessPool错误。退出原因未知，保留原output_failure_unclassified分类，
+不宣称OOM、数值问题或可重试基础设施故障。原Job终态活动0，轮询RSS峰值
+5,400,756,224字节，原始PeakJobMemoryUsed计数13,018,619,904字节；后者不是
+已证明成功提交峰值或显存。四项失败的另一次实际Job观察均无活动后代，
+小型原始回执及其哈希在early-failures，完整原数组仍在执行包内。
+
+真实科学管理者PID25080/创建身份134358637075414703和会话77014继续工作。
+后处理PID1920/创建身份134358651343620295、会话63639仍只持同步进程句柄等待；
+草稿交付等待器会话30517同样没有开始上传。不要重复执行活跃阶段。
+
+如果原科学管理者确已结束，先以原生Job确认其全部后代结束并保留异常回执，
+才可从独立交付树显式继续原计划：
+
+```powershell
+& 'D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe' `
+  'D:/workspace/ParallelBayes/rf/scripts/windows/sequence_formal_study.py' `
+  --config 'D:/workspace/ParallelBayes/f/output/formal-costs-v1/sequence-config.json' `
+  --output 'D:/workspace/ParallelBayes/f/output/formal-costs-v1/sequence-attempt02' `
+  --resume --previous 'D:/workspace/ParallelBayes/f/output/formal-costs-v1/sequence-attempt01'
+```
+
+此命令不是现在需要运行的第二份进程。它核对原管理者出生身份和旧Job，
+已有完整阶段只核验；未封存阶段调用原formal_batch的--resume，不重算数值失败，
+不自动重试main/cache。原attempt02若已存在，应保留并调查，不覆盖。原等待器只
+绑定attempt01，不会偷偷跟随新管理者；实际中断后的后处理需要新的独立目录。
+全部41472/9216终态、正式归档/分析、Mac完整独立接收与F5/F6尚未完成。

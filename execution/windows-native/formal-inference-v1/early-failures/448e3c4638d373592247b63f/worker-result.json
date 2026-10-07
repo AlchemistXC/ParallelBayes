@@ -1,0 +1,56 @@
+{
+  "cached_execution_measured": false,
+  "capsule_sha256": "4f39c8b4ab8d0cc0384d38a67bf7047ad7d28b5353495a2e26de114f446a3157",
+  "diagnostics_completed": true,
+  "diagnostics_status": "completed",
+  "failure_category": "numerical_failure",
+  "formal_inference_complete": false,
+  "full_MH_audit": {
+    "acceptance_mismatches": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "max_abs_constrained_error": [
+      0.0,
+      4.6807032294537976e-06,
+      0.0,
+      2.423148348640325e-10
+    ],
+    "max_abs_path_error": [
+      0.0,
+      4.6807032294537976e-06,
+      0.0,
+      2.423148348640325e-10
+    ],
+    "oracle": "independent_numpy_float64",
+    "passed": false
+  },
+  "numerical_validity_is_not_statistical_exploration": true,
+  "ordinary_process": {
+    "boundary": "Before child process creation through wait for its exit; includes imports, model/input, sampling, transform, ordinary output and diagnostics",
+    "logs_opening_included": false,
+    "nested_sampler_timings_additive": false,
+    "ordinary_process_wall_seconds": 22.69448740000371,
+    "outer_audit_included": false,
+    "return_code": 0
+  },
+  "ordinary_workflow_measured_separately": true,
+  "protocol_sha256": "62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176",
+  "samples_eligible": false,
+  "status": "failed",
+  "target_id": "1214769a4ff8fcb7a258e12247ee6ee39ce51a09dd92f6f6d09bb40c15117424",
+  "task": {
+    "batch": 0,
+    "budget": 16384,
+    "device": "cpu",
+    "executor": "sequential",
+    "id": "448e3c4638d373592247b63f",
+    "input": "H1-rep0000.npz",
+    "kernel": "mala",
+    "model": "H1",
+    "replicate": 0,
+    "workflow": "cpu-mala-sequential"
+  }
+}

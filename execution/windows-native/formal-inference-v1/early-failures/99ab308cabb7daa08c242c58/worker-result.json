@@ -1,0 +1,56 @@
+{
+  "cached_execution_measured": false,
+  "capsule_sha256": "f79253d600c87e245d4af5492bdbf4432c037912a8fdfd937345c17ac35be405",
+  "diagnostics_completed": true,
+  "diagnostics_status": "completed",
+  "failure_category": "numerical_failure",
+  "formal_inference_complete": false,
+  "full_MH_audit": {
+    "acceptance_mismatches": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "max_abs_constrained_error": [
+      0.0,
+      0.023819294984077866,
+      3.666344206010308e-08,
+      0.0
+    ],
+    "max_abs_path_error": [
+      0.0,
+      0.023819294984077866,
+      3.666344206010308e-08,
+      0.0
+    ],
+    "oracle": "independent_numpy_float64",
+    "passed": false
+  },
+  "numerical_validity_is_not_statistical_exploration": true,
+  "ordinary_process": {
+    "boundary": "Before child process creation through wait for its exit; includes imports, model/input, sampling, transform, ordinary output and diagnostics",
+    "logs_opening_included": false,
+    "nested_sampler_timings_additive": false,
+    "ordinary_process_wall_seconds": 76.30388159997528,
+    "outer_audit_included": false,
+    "return_code": 0
+  },
+  "ordinary_workflow_measured_separately": true,
+  "protocol_sha256": "62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176",
+  "samples_eligible": false,
+  "status": "failed",
+  "target_id": "1214769a4ff8fcb7a258e12247ee6ee39ce51a09dd92f6f6d09bb40c15117424",
+  "task": {
+    "batch": 0,
+    "budget": 4096,
+    "device": "cuda",
+    "executor": "quasi_deer",
+    "id": "99ab308cabb7daa08c242c58",
+    "input": "H1-rep0001.npz",
+    "kernel": "mala",
+    "model": "H1",
+    "replicate": 1,
+    "workflow": "cuda-mala-quasi_deer"
+  }
+}

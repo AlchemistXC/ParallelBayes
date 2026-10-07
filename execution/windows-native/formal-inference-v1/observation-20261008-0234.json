@@ -1,0 +1,133 @@
+{
+  "observed_utc": "2026-10-07T17:34:04.478819+00:00",
+  "protocol_sha256": "62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176",
+  "counts": {
+    "posterior": {
+      "valid": 137,
+      "output_failure_unclassified": 1,
+      "numerical_failure": 3,
+      "active": 1,
+      "not_registered": 41330
+    },
+    "cache_measurement": {
+      "not_registered": 9216
+    }
+  },
+  "manager_current_identity": {
+    "pid": 25080,
+    "creation_filetime": 134358637075414703,
+    "member_of_owned_job": null
+  },
+  "active_native_jobs": [
+    {
+      "task": {
+        "artifact_kind": "posterior",
+        "batch": 0,
+        "budget": 4096,
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "4cd119f68c451bfca4624aa3",
+        "input": "H1-rep0003.npz",
+        "kernel": "mala",
+        "model": "H1",
+        "protocol_sha256": "62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176",
+        "replicate": 3,
+        "workflow": "cpu-mala-quasi_deer"
+      },
+      "job": {
+        "state": "present",
+        "job_name": "Local\\ParallelBayes-8a063a5f5fd94ca4a32ac68b2cff42fd",
+        "active_processes": 5,
+        "total_processes": 5,
+        "members": [
+          {
+            "pid": 25300,
+            "creation_filetime": 134358680413144796,
+            "member_of_owned_job": true,
+            "rss_bytes": 5009408,
+            "command": [
+              "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+              "D:\\workspace\\ParallelBayes\\f\\scripts\\windows\\formal_batch_worker.py",
+              "D:\\workspace\\ParallelBayes\\f\\output\\windows-formal-inference-v1\\formal-runs\\batch-00\\main\\tasks\\4cd119f68c451bfca4624aa3\\attempt-0001\\request.json",
+              "D:\\workspace\\ParallelBayes\\f\\output\\windows-formal-inference-v1\\formal-runs\\batch-00\\main\\tasks\\4cd119f68c451bfca4624aa3\\attempt-0001"
+            ],
+            "parent_pid": 10812
+          },
+          {
+            "pid": 21668,
+            "creation_filetime": 134358680413216794,
+            "member_of_owned_job": true,
+            "rss_bytes": 7426048,
+            "command": [
+              "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+              "0x4"
+            ],
+            "parent_pid": 25300
+          },
+          {
+            "pid": 23312,
+            "creation_filetime": 134358680415316195,
+            "member_of_owned_job": true,
+            "rss_bytes": 5005312,
+            "command": [
+              "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+              "D:\\workspace\\ParallelBayes\\f\\scripts\\windows\\formal_batch_worker.py",
+              "ordinary",
+              "D:\\workspace\\ParallelBayes\\f\\output\\windows-formal-inference-v1\\formal-runs\\batch-00\\main\\tasks\\4cd119f68c451bfca4624aa3\\attempt-0001\\request.json",
+              "D:\\workspace\\ParallelBayes\\f\\output\\windows-formal-inference-v1\\formal-runs\\batch-00\\main\\tasks\\4cd119f68c451bfca4624aa3\\attempt-0001"
+            ],
+            "parent_pid": 4032
+          },
+          {
+            "pid": 4032,
+            "creation_filetime": 134358680413327144,
+            "member_of_owned_job": true,
+            "rss_bytes": 38780928,
+            "command": [
+              "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+              "D:\\workspace\\ParallelBayes\\f\\scripts\\windows\\formal_batch_worker.py",
+              "D:\\workspace\\ParallelBayes\\f\\output\\windows-formal-inference-v1\\formal-runs\\batch-00\\main\\tasks\\4cd119f68c451bfca4624aa3\\attempt-0001\\request.json",
+              "D:\\workspace\\ParallelBayes\\f\\output\\windows-formal-inference-v1\\formal-runs\\batch-00\\main\\tasks\\4cd119f68c451bfca4624aa3\\attempt-0001"
+            ],
+            "parent_pid": 25300
+          },
+          {
+            "pid": 21724,
+            "creation_filetime": 134358680415409498,
+            "member_of_owned_job": true,
+            "rss_bytes": 708186112,
+            "command": [
+              "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+              "D:\\workspace\\ParallelBayes\\f\\scripts\\windows\\formal_batch_worker.py",
+              "ordinary",
+              "D:\\workspace\\ParallelBayes\\f\\output\\windows-formal-inference-v1\\formal-runs\\batch-00\\main\\tasks\\4cd119f68c451bfca4624aa3\\attempt-0001\\request.json",
+              "D:\\workspace\\ParallelBayes\\f\\output\\windows-formal-inference-v1\\formal-runs\\batch-00\\main\\tasks\\4cd119f68c451bfca4624aa3\\attempt-0001"
+            ],
+            "parent_pid": 23312
+          }
+        ],
+        "sampled_rss_bytes": 764407808,
+        "job_cpu_seconds": 6.203125,
+        "kernel_peak_job_commit_bytes": 2683990016,
+        "hard_job_commit_limit_bytes": 12884901888,
+        "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+        "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation"
+      }
+    }
+  ],
+  "ram_available_bytes": 17083199488,
+  "disks": {
+    "C:/": {
+      "total": 2047228243968,
+      "used": 422427611136,
+      "free": 1624800632832
+    },
+    "D:/": {
+      "total": 2000381014016,
+      "used": 151631200256,
+      "free": 1848749813760
+    }
+  },
+  "snapshot_is_not_phase_closure": true,
+  "record_checksums_verified": true
+}
