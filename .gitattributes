@@ -17,4 +17,4 @@
 # Archived scientific output is byte evidence, including native newline conventions.
 benchmark/analysis/outputs/** -text
 # Native command receipts retain original bytes; numerical source/tests stay LF.
-execution/windows-native/formal-adapter-validation-v1/** -text
+execution/windows-native/formal-adapter-validation-v1/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
