@@ -14,7 +14,7 @@ from formal_execution import VALIDATION_ID
 from formal_freeze import relative_file
 from formal_measurement_plan import create_measurement_plan
 from formal_runtime import file_hash, fingerprint
-from task_journal import read_task_export
+from formal_native_evidence import read_native_task
 
 RUNTIME_CASES = dict(
     test_completion_zero_recompute_and_kind_separation=2,
@@ -93,36 +93,19 @@ def verify_native_acceptance(path, formal_protocol, source_root, *, environment)
         if len(rows) != len(frame) or {r['task_id'] for r in rows} != set(frame):
             raise ValueError('All finite native integration tasks must be present')
         for row in rows:
-            exported = read_task_export(artifact(row['history_export']))
-            entry = exported['entry']; task = entry['task']
             expected = dict(frame[row['task_id']], protocol_sha256=plan.protocol_sha256,
                             artifact_kind='posterior' if phase == 'main' else 'cache_measurement')
-            if task != expected or len(entry['attempts']) != 1 or entry['attempts'][0]['outcome'] != outcome:
+            attempt_folder = relative_file(root, row['attempt_directory'])
+            history = read_native_task(root, task=expected, history_export=row['history_export'],
+                directory=attempt_folder.parent.relative_to(root).as_posix(),
+                manifest=gate['files'], source_files=protocol['source_files'])
+            location = history['eligible_directory'] if phase == 'main' else history['measurement_directory']
+            if (len(history['attempts']) != 1 or history['summary']['outcome'] != outcome or
+                    location != str(attempt_folder)):
                 raise ValueError('Native integration task did not pass on its declared attempt')
-            worker_name = 'formal_batch_worker.py' if phase == 'main' else 'formal_cache_worker.py'
-            for field, source in [('worker_sha256', 'scripts/windows/'+worker_name),
-                                  ('runtime_sha256','scripts/windows/formal_owned_runtime.py'),
-                                  ('journal_sha256','scripts/completion/task_journal.py'),
-                                  ('job_api_sha256','scripts/windows/job_objects.py')]:
-                if entry['binding'][field] != protocol['source_files'][source]:
-                    raise ValueError('Native integration implementation differs')
             capsule, capsule_sha = plan.capsule(row['task_id'] if phase == 'main' else
                 next(p['primary_task_id'] for p in allocation['probes'] if p['id'] == row['task_id']))
-            request = entry['binding']['request']
+            request = history['binding']['request']
             if request['capsule'] != capsule or request['capsule_sha256'] != capsule_sha:
                 raise ValueError('Integration task used a different numerical capsule')
-            folder = relative_file(root, row['attempt_directory'])
-            state = json.loads(artifact(row['attempt_directory']+'/state.json').read_text())
-            completion = json.loads(artifact(row['attempt_directory']+'/completion.json').read_text())
-            if (completion['state_sha256'] != file_hash(folder/'state.json') or state['outcome'] != outcome or
-                    state['task'] != task or state['binding_sha256'] != fingerprint(entry['binding']) or
-                    state['job_final']['active_processes'] != 0):
-                raise ValueError('Native terminal identity or Job end proof differs')
-            for member, expected_sha in state['assets'].items():
-                if gate['files'].get(row['attempt_directory']+'/'+member) != expected_sha:
-                    raise ValueError('Integration terminal assets omitted or changed')
-            from formal_runtime import validate_worker_eligibility
-            validate_worker_eligibility(task, state['worker_result'])
-            if state['worker_result']['status'] != 'completed':
-                raise ValueError('Native worker eligibility differs')
     return gate
