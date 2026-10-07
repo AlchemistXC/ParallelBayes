@@ -3,7 +3,7 @@
 % Reviewed input SHA256 8b89658b151fa4a0852038f497e6838edaf18da3409b56b7f199b86827f87a37 benchmark/analysis/outputs/windows-followup-intake-v1/numpy-summary.json
 % Reviewed input SHA256 d4b9ce12c23ecdbff615bc6566e2a5a61e43cf073aeadbb7f193bd82db670f86 benchmark/analysis/outputs/windows-followup-intake-v1/runtime/SUMMARY.json
 % Reviewed input SHA256 1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa manuscript/software/intake.generated.tex
-% Reviewed input SHA256 00008d8d76f15fe6ca9611bf379e46f4386cb6150888c618870dcee11e7faa69 manuscript/software/followup.template.tex
+% Reviewed input SHA256 bf1a9ea29b284a6a78c6c423e64df14caeaad7285f20afc11d9124b93ca19a1a manuscript/software/followup.template.tex
 % Reviewed input SHA256 cb5bc9c51a9735d5e7f7a10de697c141ecac47093c26c6de5d505042a7b29329 figures/windows-mechanism-pilot-v1/work-and-cached-cost.pdf
 % Reviewed input SHA256 04d86adde990daa6809994ed97b0cbd3fb81a940771a5f0e6a54101b02134c7f benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cpu/workflows.csv
 % Reviewed input SHA256 9e2fd3b87f61bbb453aac19b038c42bbe11710d5d2ff455239b5ffafe48c4b8b benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cuda/workflows.csv
@@ -99,6 +99,6 @@ quasi-DEER每个输出转移对应7.75--22.5次前向映射及3.875--11.25次JVP
 预先规定的等512个总输出对照提供了另一种解释边界。在G2、L1的两份输入及两个设备上，16条各32步的顺序链均比单条512步、窗口16的Picard链更快，后者时间为前者的4.43--6.92倍。这8个技术对照说明链数分配会改变执行吞吐；两种分配的轨迹长度、初始化份数及探索能力不同，不能解释为相同推断精度下的优劣。图示的额外工作量与quasi-DEER减速相容，但不足以唯一归因于JVP、扫描或主机控制；固定状态操作探针与生产路径不同，同步及嵌套操作也使各阶段不能相加还原总时间。
 
 \subsection{批次运行与安装的实测范围}
-另一个Windows技术批次完成27项主任务和24项缓存探测（96次调用），包含最大形状、进程集合管理和终态恢复检查。接收端对保存MH数组独立重放，并核对函数与R诊断；这没有新增正式推断重复。90条函数诊断中仍有59条$\hat R>1.01$及27条tail ESS不可判定，不能将运行成功解释为收敛。该批次支持其封存运行器的技术能力；后续正式协议适配器的独立Windows验收与充分预算比较仍需完成。
+另一个Windows技术批次完成27项主任务和24项缓存探测（96次调用），包含最大形状、进程集合管理和终态恢复检查。接收端对保存MH数组独立重放，并核对函数与R诊断；这没有新增正式推断重复。90条函数诊断中仍有59条$\hat R>1.01$及27条tail ESS不可判定，不能将运行成功解释为收敛。该批次支持其封存运行器的技术能力；后继适配版本另经独立原生验收与接收核对，见第\ref{sec:native-adapter-validation}节。
 
 Python 0.2.0.dev2与R 0.2.0.9002候选已在Windows新建依赖环境和仓库外完成安装核验，覆盖CPU/CUDA MH和R批量入口。默认R包检查与显式集成测试分别保存；成功检查不隐去此前安装和locale失败。接收端核对源码、sdist、wheel与R包中17个模块，并从保存RDS重建诊断，没有在Mac重新测量CUDA。该证据不涵盖原生Windows的JAX/Stan安装、GPU NUTS或第三方团队的独立复现。

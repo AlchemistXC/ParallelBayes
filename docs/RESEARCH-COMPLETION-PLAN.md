@@ -2,7 +2,7 @@
 
 当前统一入口：[范围与证据索引](CURRENT-SCOPE.md)、[机器可读状态](../execution/CURRENT-SCOPE.json)。26页稿及六段重建已纳入实际Windows机制/运行/安装证据；正式推断和全研究归档仍待完成。
 
-**2026-10-07 当前状态**：完整任务读取、配对统计和报告生成已经实现，并完成[九模型人工规模验证](FORMAL-REPORT-SCALE.md)。实际v2 Windows回传、正式冻结与执行、水井正式比较及实际证据到终稿仍未完成。当前只执行既有有限v2验收提示词，原执行源码不变；下方开发条目保留当时状态。
+**2026-10-07 当前状态**：有限v2原生验收和Mac原始数组/诊断接收已通过，见[独立接收](WINDOWS-FORMAL-V2-INTAKE.md)。正式研究入口已更新为[正式四批提示词](../handoff/windows-completion/CODEX-PROMPT-FORMAL-STUDY.md)，执行工作树固定在已验收0ba5643；环境和存储先核对。1152正式输入、41472主任务和9216探测尚未冻结/执行，水井正式比较、全原始证据重建及最终稿仍未完成。以下按日期保留较早开发记录，旧“验收待回传”文字不再是当前执行要求。
 
 2026-10-07 原生验收生成后继：已提供新的有限 v2 验收命令和[一次性 Windows 提示词](../handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md)。8项新增/2项受影响本地检查通过；实际Windows行为、27/24执行和零重算待回传，正式网格尚不启动。完整正式数组分析、F3/F4/F5/F6仍未完成。见[新入口与证据](FORMAL-NATIVE-VALIDATION.md)。
 

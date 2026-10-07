@@ -18,6 +18,7 @@
 | 水井扩展目标成立 | docs/WELLS-TARGET-VALIDATION.md、WELLS-REFERENCE-AUDIT.md、WELLS-QUADRATURE.md；models/external/wells/source-manifest.json | 保留平坦先验及可积性依据；目标/接口与充分推断区分；罕见事件参考未认证 |
 | 成本与函数可用集一致的分析接口 | docs/FORMAL-COST-POLICY.md；formal-cost-policy-v1；formal_cost_policy.py | 已测任务/人工样例核验，不是正式研究；未知成本不填零；技术批次n=1不画统计区间 |
 | 封存Windows运行器的最大形状/恢复已测 | docs/WINDOWS-FOLLOWUP-INTAKE.md；windows-followup-intake-v1/runtime | 27主任务和24缓存探测/96调用；有限技术批次，后续适配器验收与正式实验另行进行 |
+| 有限v2原生适配与Mac完整接收 | docs/WINDOWS-FORMAL-V2-INTAKE.md；windows-formal-v2-intake-v1的receiver-summary、diagnostics CSV、resume与source-design-bridge；write_adapter_tex.py | 27主任务/24探测、零事件失配、117诊断；83高Rhat和不可判定保留，每目标n=1技术输入，不作正式区间或一般运行保证 |
 | Windows新环境候选安装 | docs/WINDOWS-PACKAGE-CANDIDATE.md；同接收comparison-summary | CPU/CUDA MH与R入口核验；不包括Windows JAX/Stan、GPU NUTS或第三方全研究复现 |
 | 可用性 | README.md；各归档manifest与Release状态 | CPU公开；Windows草稿及部分本机大归档不自动公开；克隆不足以完整复现全部结果 |
 
@@ -34,3 +35,12 @@
 ## 2026-10-07 实测机制与安装整合
 
 参见docs/WINDOWS-FOLLOWUP-MANUSCRIPT.md。用后继followup生成段替代当前稿过时状态，不覆盖历史completion/intake文本及生成器。新增120配置全量表图、8个等总输出技术对照和有限运行/安装边界。正文增加1161汉字（扩展TeX、去注释，含图注/参考文献），主要用于结果与解释；版本、命令和归档详情留在仓库文档。新增采样/正式重复为0；正式推断及投稿稿未完成。
+
+
+## 有限v2段的主文/附件分配
+
+- 必要支持：独立原生身份、全部任务与Mac重建、零重算恢复，位于新增adapter段。
+- 结论限定：有限输入数、83/117高Rhat及未定诊断，留在正文，不埋入附件。
+- 来源细节：所有哈希、失败重试链、原生进程观察时点和库警告，见接收报告及六页完整诊断附件。
+- 替换：followup段旧“后继验收未完成”改为指向新节；外部目标/测量段末尾压缩旧重复的待办状态。
+- 不提升：正式网格、充分精度、全研究独立复现均无新结果，仍未完成；不同跨系统检查的容差契约不混同。

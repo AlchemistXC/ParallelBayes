@@ -46,6 +46,8 @@ CODE = ['scripts/write-results-tex.py','scripts/revision/write-revision-tex.py',
  'scripts/completion/write_intake_tex.py','scripts/release/rebuild_current_results.py']
 FOLLOWUP_INPUTS = ['benchmark/protocols/mechanism-windows-pilot-v1.json', 'benchmark/analysis/outputs/windows-followup-intake-v1/comparison-summary.json', 'benchmark/analysis/outputs/windows-followup-intake-v1/numpy-summary.json', 'benchmark/analysis/outputs/windows-followup-intake-v1/runtime/SUMMARY.json', 'manuscript/software/followup.template.tex', 'figures/windows-mechanism-pilot-v1/work-and-cached-cost.pdf', 'benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cpu/workflows.csv', 'benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cuda/workflows.csv']
 
+ADAPTER_INPUTS = ['benchmark/analysis/outputs/windows-formal-v2-intake-v1/receiver-summary.json', 'benchmark/analysis/outputs/windows-formal-v2-intake-v1/analysis-resume-summary.json', 'benchmark/analysis/outputs/windows-formal-v2-intake-v1/source-design-bridge.json', 'benchmark/analysis/outputs/windows-formal-v2-intake-v1/G1/diagnostics.csv', 'benchmark/analysis/outputs/windows-formal-v2-intake-v1/G2/diagnostics.csv', 'benchmark/analysis/outputs/windows-formal-v2-intake-v1/W1/diagnostics.csv', 'manuscript/software/adapter.template.tex']
+
 SECTIONS = ['results.generated.tex','revision.generated.tex','windows-native.generated.tex',
  'completion-companion.generated.tex','intake.generated.tex']
 
@@ -90,9 +92,12 @@ def prepare(root,cpu_archive,windows,output):
         save(name,(windows/name).read_bytes(),'received Windows-v1 evidence')
     files=set(CODE+COMPANION_INPUTS+['manuscript/software/windows-native.template.tex','LICENSE'])
     followup='\\input{followup.generated.tex}' in (root/'manuscript/software/软件与基准研究.tex').read_text(encoding='utf-8')
-    sections=SECTIONS+(['followup.generated.tex'] if followup else [])
+    adapter='\\input{adapter.generated.tex}' in (root/'manuscript/software/软件与基准研究.tex').read_text(encoding='utf-8')
+    if adapter and not followup:raise ValueError('Adapter paper requires the reviewed follow-up section')
+    sections=SECTIONS+(['followup.generated.tex'] if followup else [])+(['adapter.generated.tex'] if adapter else [])
     if followup:
         files.update(FOLLOWUP_INPUTS+['scripts/analysis/write_followup_tex.py','manuscript/software/intake.generated.tex','manuscript/software/completion-companion.generated.tex'])
+    if adapter:files.update(ADAPTER_INPUTS+['scripts/analysis/write_adapter_tex.py'])
     main=root/'manuscript/software/软件与基准研究.tex'
     todo=[main];seen=set()
     while todo:
@@ -111,7 +116,7 @@ def prepare(root,cpu_archive,windows,output):
         else:dest=name
         save(dest,(root/name).read_bytes(),'current reviewed checkout')
     source=subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()
-    metadata=dict(schema='current-paper-summary-capsule-v2' if followup else 'current-paper-summary-capsule-v1',sections=sections,source_commit=source,
+    metadata=dict(schema='current-paper-summary-capsule-v3' if adapter else ('current-paper-summary-capsule-v2' if followup else 'current-paper-summary-capsule-v1'),sections=sections,source_commit=source,
         source_dirty=bool(subprocess.check_output(['git','status','--porcelain'],cwd=root,text=True).strip()),
         cpu_archive=expected,scope=__doc__.strip(),python=sys.version,
         inputs={name:dict(sha256=digest(output/name),bytes=(output/name).stat().st_size,origin=origin) for name,origin in sorted(origins.items())})
@@ -123,9 +128,10 @@ def rebuild(capsule,output):
     capsule,output=Path(capsule).resolve(),Path(output).resolve()
     if output.exists():raise FileExistsError(output)
     metadata=read(capsule/'MANIFEST.json')
-    if metadata['schema'] not in ['current-paper-summary-capsule-v1','current-paper-summary-capsule-v2']:raise ValueError('Unsupported capsule')
-    followup=metadata['schema']=='current-paper-summary-capsule-v2'
-    sections=SECTIONS+(['followup.generated.tex'] if followup else [])
+    if metadata['schema'] not in ['current-paper-summary-capsule-v1','current-paper-summary-capsule-v2','current-paper-summary-capsule-v3']:raise ValueError('Unsupported capsule')
+    followup=metadata['schema'] in ('current-paper-summary-capsule-v2','current-paper-summary-capsule-v3')
+    adapter=metadata['schema']=='current-paper-summary-capsule-v3'
+    sections=SECTIONS+(['followup.generated.tex'] if followup else [])+(['adapter.generated.tex'] if adapter else [])
     if metadata.get('sections',sections)!=sections:raise ValueError('Unexpected section set')
     for name,row in metadata['inputs'].items():
         p=capsule/safe_relative(name)
@@ -142,6 +148,8 @@ def rebuild(capsule,output):
     ]
     if followup:
         commands.append(['scripts/analysis/write_followup_tex.py','--root','.', '--output','manuscript/software/followup.generated.tex','--report','followup-analysis.json'])
+    if adapter:
+        commands.append(['scripts/analysis/write_adapter_tex.py','--root','.', '--output','manuscript/software/adapter.generated.tex','--report','adapter-analysis.json'])
     logdir=output/'rebuild-logs';logdir.mkdir()
     steps=[];env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1')
     for i,command in enumerate(commands):
