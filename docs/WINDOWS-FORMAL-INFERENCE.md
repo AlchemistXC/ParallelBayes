@@ -128,3 +128,11 @@ input-identities及freeze-manifest；完整协议/任务顺序/参考及所有�
 核对，不能提前称完整后处理通过。所有成功/失败/未知费用与Mac独立接收仍需
 最终核验。Github当前每附件小于2GiB、单Release至多1000资产；完整大包如需
 分块须事前核对这些限制及已有附件，不覆盖或发布草稿。[官方限制](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
+
+publish_formal_study独立等待后处理管理者真实结束，保留其成功或失败终态；
+未来仅提交小型终态/图表/压缩完整清单，生成包含固定执行源的Git bundle。
+仅对已有草稿追加并核对API返回的逐附件SHA256，核对旧资产未变、draft/原target
+未变。大原tar按1.5GiB字节范围上传；完整本地tar/原始输出保持不动，临时范围
+副本只有远端size/digest核验后才释放，范围顺序/偏移/哈希完整记录，可由原tar
+重建且不调用RNG。任何权限、容量或API错误停止并保留部分交付，不覆盖旧附件。
+此工具尚未实际执行上传，不能预报最终归档大小、哈希或通过状态。
