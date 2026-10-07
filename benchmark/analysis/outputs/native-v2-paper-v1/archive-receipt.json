@@ -1,0 +1,17 @@
+{
+  "source_commit": "664ed16879efbb0e3726d7a7661adc058affa4d7",
+  "archive": "native-v2-paper-v1.tar",
+  "bytes": 12851200,
+  "sha256": "943e7adad3e13d53a50529672fa3cf48d8bf0767502e2cb5692543ac86f20e6b",
+  "manifest_files_verified": 76,
+  "manifest_self_excluded": true,
+  "pages": 26,
+  "sections": 7,
+  "input_assets": 59,
+  "source_dirty": false,
+  "new_sampling": 0,
+  "new_R_diagnostic_calls": 0,
+  "new_formal_repetitions": 0,
+  "scope": "Saved reviewed records to manuscript; not full raw research reconstruction",
+  "pdf_sha256": "8a1ca4e2f65c8482208de5c9868737cec744a7b153b60bfda2bbea43e56348e7"
+}

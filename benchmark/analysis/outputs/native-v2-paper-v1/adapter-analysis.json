@@ -1,0 +1,30 @@
+{
+  "scope": "Reviewed finite native-v2 intake records to manuscript; not formal scientific results",
+  "source_inputs": {
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/receiver-summary.json": "9b9341f765e1c43252db0a6cf6289b95bd90de21d8d49dc1d6bb5c09d95600e8",
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/analysis-resume-summary.json": "2bf882cae2e3710549ad21588fe8a22292cc3b63ef85ef038b56139d48ce4ca5",
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/source-design-bridge.json": "04c47765f64c30796f278a574650f320dd86c0dbdd27afb9f77ec6f3e04bb65a",
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/G1/diagnostics.csv": "d7a22eee1795d966e663ae3f3399f43a17c27b737717df95cdf56f2c734a258a",
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/G2/diagnostics.csv": "d8902be4286adc9386a8314431846c424602e60f0d82893ed02a0800eb00826d",
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/W1/diagnostics.csv": "97d5222a0f5188bb17327e3e6d7bd1895dd8b17af2e3b89686132e23f3eba9f9",
+    "manuscript/software/adapter.template.tex": "af07ce8044628c2bb8e4521732cd8248eea3b79f129f90c70fafadcfb2066cbc"
+  },
+  "values": {
+    "MAIN": 27,
+    "CACHE": 24,
+    "CALLS": 96,
+    "MH": 24,
+    "MISMATCH": 0,
+    "DIAG": 117,
+    "REUSED": 51,
+    "BAD": 83,
+    "NULL": 9,
+    "TAIL": 27
+  },
+  "formal_independent_repetitions_added": 0,
+  "sampler_calls": 0,
+  "R_diagnostic_calls": 0,
+  "figures_regenerated": false,
+  "raw_replay_performed_by_prior_intake": true,
+  "raw_arrays_replayed_this_step": false
+}

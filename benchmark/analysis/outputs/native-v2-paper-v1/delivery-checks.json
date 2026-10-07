@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "source_commit": "664ed16879efbb0e3726d7a7661adc058affa4d7",
+  "accepted_source_files_unchanged": 188,
+  "changed_accepted_files": [],
+  "checked_local_document_links": 99,
+  "missing_links": [],
+  "current_pdf_and_scope_match": true,
+  "new_sampler_calls": 0,
+  "formal_protocol_changed": false,
+  "Windows_prompt_changed": false,
+  "initial_check_note": "Initial expectation of 188 files in delivery/source failed: 191 files include three archival helpers. No differing bytes; corrected comparison uses the actual native-acceptance source_files inventory of 188, not a directory-size guess."
+}

@@ -2,9 +2,11 @@
 
 [当前范围、版本、数据位置与剩余门槛](docs/CURRENT-SCOPE.md)｜[机器可读状态](execution/CURRENT-SCOPE.json)。下方按日期保留研究进展；完整研究尚未完成。
 
-2026-10-07 当前论文：[26页中文稿](output/software-paper/软件与基准研究-Windows机制整合.pdf)已纳入192项Windows机制工作流、批次运行和新环境安装实测；[修订及重建证据](docs/WINDOWS-FOLLOWUP-MANUSCRIPT.md)包含六段逐字节重建、完整配置与全拒绝记录。正式推断实验及投稿终稿仍未完成。
+2026-10-07 当前论文：[26页中文稿](output/software-paper/软件与基准研究-原生适配整合.pdf)已纳入有限v2原生验收及Mac独立接收。[文稿与重建回执](docs/NATIVE-V2-MANUSCRIPT.md)包括七段逐字节重建、59份输入及可搬移PDF；正式研究和投稿终稿仍未完成。
 
-2026-10-07 报告接口：完整任务读取、配对统计和[报告生成及规模核验](docs/FORMAL-REPORT-SCALE.md)已实现。九模型人工标量夹具覆盖41,472主任务/9,216缓存槽位，45图/99面板及85页测试PDF已核验；没有新增采样或科学结果。实际v2 Windows验收与正式研究仍待证据。当前[Windows提示词](handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md)一次全文提供、按阶段执行；不重跑已完成的F2、旧运行器和安装任务。以下日期段落保留历史状态。
+2026-10-07 当前Windows任务：有限v2的16项行为、27主任务及24缓存/96调用已[独立接收](docs/WINDOWS-FORMAL-V2-INTAKE.md)。下一入口为[正式研究提示词](handoff/windows-completion/CODEX-PROMPT-FORMAL-STUDY.md)，一次全文提供、按阶段执行；在精确已验收提交0ba5643的独立工作树检查存储/环境，冻结输入后按四批执行。不重跑旧有限验收、F2、运行器或安装任务。
+
+2026-10-07 报告接口：[报告生成及规模核验](docs/FORMAL-REPORT-SCALE.md)覆盖人工41,472主任务/9,216缓存槽位，45图/99面板及85页测试PDF；这些不是正式科学结果。以下日期段落保留历史状态。
 
 2026-10-07：Windows 三条后续分支已合入并完成[独立接收核验](docs/WINDOWS-FOLLOWUP-INTAKE.md)。五归档7,658文件、1,080份保存MH路径的独立NumPy重放、机制CSV及R诊断重建通过。F2、有限运行器和候选安装门槛已取得证据；正式推断协议/执行及最终论文仍待完成。旧F2／运行器／安装提示词无需再跑。
 
@@ -48,7 +50,7 @@ Windows第二轮`ced54ef`已接收并完成[独立核验](docs/WINDOWS-ROUND2-IN
 - 40组历史随机输入的版本对照接受事件零失配；不据此宣称0.1.0/0.1.1性能等价。
 - 独立Python环境、迁移目录及完整归档重建通过；仍共享同一Mac、R库和编译器，不声称外部团队或异构平台已复现。
 
-阅读[当前26页中文稿PDF](output/software-paper/软件与基准研究-Windows机制整合.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。当前26页稿纳入后续机制及安装实测并完成[六段重建与编译](docs/WINDOWS-FOLLOWUP-MANUSCRIPT.md)；[旧23页稿](output/software-paper/软件与基准研究-结果重建.pdf)及其[独立输入搬移构建](docs/MANUSCRIPT-INTEGRATION.md)保留；[旧21页稿](output/software-paper/软件与基准研究-收尾修订.pdf)及[原20页回传稿](output/software-paper/软件与基准研究.pdf)保留。正式推断与最终投稿稿仍未完成。历史CPU稿保留于Git历史和CPU复现Release。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
+阅读[当前26页中文稿PDF](output/software-paper/软件与基准研究-原生适配整合.pdf)、[LaTeX与完整输入](manuscript/software/软件与基准研究.tex)、[CPU审查修订报告](docs/CPU-REVIEW-REVISION.md)、[版本衔接](docs/VERSION-BRIDGE.md)。当前26页稿纳入机制、安装及有限v2原生接收证据，并完成[七段重建与编译](docs/NATIVE-V2-MANUSCRIPT.md)；[旧23页稿](output/software-paper/软件与基准研究-结果重建.pdf)及其[独立输入搬移构建](docs/MANUSCRIPT-INTEGRATION.md)保留；[旧21页稿](output/software-paper/软件与基准研究-收尾修订.pdf)及[原20页回传稿](output/software-paper/软件与基准研究.pdf)保留。正式推断与最终投稿稿仍未完成。历史CPU稿保留于Git历史和CPU复现Release。原[中文综述](manuscript/中文综述.tex)独立保留，文献结果不与新实验混同。
 
 ## 原始证据与复现
 

@@ -27,7 +27,7 @@ Windows路线使用原生Windows 11和原生Python/PowerShell。旧 `handoff/gpu
 | 旧原生运行器有限批次 | 27主任务、24缓存探测/96调用、最大形状及恢复 | [运行验收](WINDOWS-RUNTIME-VALIDATION.md)；仅技术能力，不能替代后继v2适配验收或正式统计重复 |
 | 有限v2正式适配验收 | 16原生行为用例；27主任务、24缓存/96调用；Mac51项完整重建、零重算恢复 | [独立接收](WINDOWS-FORMAL-V2-INTAKE.md)；正式重复0，诊断不利及旧失败保留 |
 | dev2安装候选 | Mac和Windows新依赖环境、已安装包和R显式集成 | 默认跳过与显式通过分开；不是另一研究团队完整复现 |
-| 当前中文稿 | 26页；保存分析记录到六段文本及PDF的独立重建 | [论文与回执](WINDOWS-FOLLOWUP-MANUSCRIPT.md)；源提交2a758ba；旧23页及更早稿保留，正式结论尚未完成 |
+| 当前中文稿 | 26页；有限v2接收进入正文，保存记录到七段文本及PDF独立重建 | [论文与回执](NATIVE-V2-MANUSCRIPT.md)；源提交664ed16；原五段/六段稿保留，正式结论尚未完成 |
 
 人工任务/标量框架、45张图和85页报告用于检验后继分析接口；它们不是科学数据，未写入上述研究结果。[规模核验](FORMAL-REPORT-SCALE.md)与真实研究证据分开阅读。
 
@@ -40,7 +40,7 @@ Git包含源码、测试、协议、分析摘要、第一方图件及论文输�
 | 历史CPU完整证据 | GitHub `cpu-review-v1` Release已公开，18附件；[原始重建说明](REBUILD-RESULTS.md) |
 | Windows首轮原始证据 | `windows-native-v1`仍为草稿，5附件；有权限者可取，不能声称公众已可下载 |
 | Windows第二轮及后续完整证据 | `windows-completion-v2-20261005`仍为草稿，47附件；新v2回传及后续三分支已接收，见[来源及哈希](WINDOWS-FOLLOWUP-INTAKE.md) |
-| 当前论文保存摘要重建包 | 作者本地 `output/research-completion/followup-paper-v1.tar`；64项文件校验，未发布Release；Git中有[清单回执](../benchmark/analysis/outputs/followup-paper-v1/archive-receipt.json) |
+| 当前论文保存记录重建包 | 作者本地 `output/research-completion/native-v2-paper-v1.tar`；76项文件校验，未发布Release；Git中有[清单回执](../benchmark/analysis/outputs/native-v2-paper-v1/archive-receipt.json) |
 | 最终全研究复现包 | 尚未形成；须等正式数据完成后，关联原始证据、分析源码、全部图表和稿件 |
 
 以上公开状态于2026-10-07通过GitHub API核对。解压历史归档时用独立目录，不能覆盖活动检出。保存摘要到PDF成功不等于全部原始轨迹已在本轮重建。

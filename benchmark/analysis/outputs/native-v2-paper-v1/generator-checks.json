@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case": "guard-valid",
+      "exit_code": 0,
+      "expected_success": true
+    },
+    {
+      "case": "guard-existing",
+      "exit_code": 1,
+      "expected_success": false
+    },
+    {
+      "case": "guard-changed",
+      "exit_code": 1,
+      "expected_success": false
+    },
+    {
+      "case": "guard-missing",
+      "exit_code": 1,
+      "expected_success": false
+    },
+    {
+      "case": "guard-aliased",
+      "exit_code": 1,
+      "expected_success": false
+    }
+  ],
+  "new_sampler_calls": 0,
+  "new_R_diagnostic_calls": 0
+}

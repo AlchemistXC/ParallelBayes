@@ -1,14 +1,14 @@
 # 当前稿件的结果段重建
 
-当前入口为 `scripts/release/rebuild_current_results.py`。它将六个生成结果段、其已保存
+当前入口为 `scripts/release/rebuild_current_results.py`。它将七个生成结果段、其已保存
 分析输入和当前论文依赖收集成独立目录，再从新目录执行生成器并逐字节比较。
 这是**已保存摘要到论文的重建**：不重跑采样、原始数组统计、R诊断或绘图，
 不能单凭它关闭完整研究的F5验收。范围和实际核验见
-[CURRENT-RESULT-REBUILD](CURRENT-RESULT-REBUILD.md)。
+[NATIVE-V2-MANUSCRIPT](NATIVE-V2-MANUSCRIPT.md)。
 
 CPU输入从已核对整体SHA256的 `evidence-paper-cpu-review-v1.tar` 取出，逐项再与归档内manifest比对；
 Windows输入从已独立接收的第一轮目录取出，生成器核对协议身份、摘要所绑定的逐任务记录与现代诊断哈希。
-当前v2内容包另绑定已独立接收的192项机制工作流及运行/安装摘要，生成followup后继段；历史F1/F2与接收段仍按原字节重建，旧v1五段内容包兼容。新稿证据见[WINDOWS-FOLLOWUP-MANUSCRIPT](WINDOWS-FOLLOWUP-MANUSCRIPT.md)。
+当前v3内容包保留192项机制工作流及运行/安装摘要，另绑定有限v2原生验收的独立接收、源码衔接和逐函数诊断，生成adapter段；共59份输入。历史F1/F2与接收段仍按原字节重建，旧v1五段、v2六段内容包都通过兼容检查。当前稿证据见[NATIVE-V2-MANUSCRIPT](NATIVE-V2-MANUSCRIPT.md)；上一稿见[WINDOWS-FOLLOWUP-MANUSCRIPT](WINDOWS-FOLLOWUP-MANUSCRIPT.md)。
 
 ```sh
 # Python需要NumPy；无需torch/CUDA，也不调用采样器。

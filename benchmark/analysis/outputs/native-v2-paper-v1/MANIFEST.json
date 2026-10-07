@@ -1,0 +1,17 @@
+{
+  "schema": "native-v2-paper-compact-receipts-v1",
+  "scope": "Saved-record manuscript integration; formal scientific results remain incomplete",
+  "files": {
+    "adapter-analysis.json": "a8ddc7b1787929fba9f7067bec8fdb10fdec50e001633a5a281b1799fb526837",
+    "archive-manifest.json": "4d05a8856b80d263a6f95ed4d9dfdc7117a87eb228ff7d7571dd2f77fbde977d",
+    "archive-receipt.json": "f7c39f604b127f4c70f2112c491e29c34d97ab2e26609c4ca761860fb7231315",
+    "delivery-checks.json": "4b5d871d780018f81e59f62d859e454417686c3a392b1331875f6b9d2e1c59c8",
+    "generator-checks.json": "f04389a5d5043ec8a3f5216dfa9a5b1d60fada84b96b574f56ec9b72bcca3551",
+    "inputs-manifest.json": "04057afe760db2de33aa5fcd5a7cadb2fde530ab6ab64a07d5594ce80f472bb2",
+    "legacy-five-section-rebuild.json": "0efe3eb991cc20e1db65d042de4bcddbf404707eacb59583d43b40e2a280b65d",
+    "legacy-six-section-rebuild.json": "499f3cbcf861725f384a7c8b0b26fca0cc51627a99d104f5071a2f7a78293a75",
+    "length-change.json": "1ea2c6868a58d2121db730981edfc42eb0f61ef4c33c612a29c1466482b8b5e9",
+    "pdf-check.json": "75f8b52fe96bc469972f096b962d4fc58788999267a7e2b9a9f9d6494608b0d1",
+    "seven-section-rebuild.json": "321f59b4570d40f753037db67bb1c9c41ebb8475788cb3e96e584de1d49591e0"
+  }
+}
