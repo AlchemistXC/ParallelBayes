@@ -1,5 +1,11 @@
 # Native Windows development evidence
 
+2026-10-08 02:40 JST小型冻结回传：87成员完整核验，tar 57,825,280字节/SHA256
+1bcf67145ff4aaddfbf65557abf3fcb0c465fba4a4e8b4a9bf3c1779af2883d3，包含完整
+科学协议/任务计划、全部输入身份及源码bundle，不含原始数组。五个附件实际
+追加原草稿，远端大小/digest/state一致，原47附件/draft不变。全部正式原件仍
+在Windows，四批终态与完整原始独立接收未完成；见early-draft-upload.json。
+
 2026-10-08 02:34 JST正式运行快照：137主任务valid、3数值失败、1未分类输出
 失败、1真实活动任务、41330未登记；9216缓存尚未登记。记录/索引校验和通过，
 活动Job实际5成员。三项H1接受事件失配0但NumPy路径超标准；W1四spawn NUTS

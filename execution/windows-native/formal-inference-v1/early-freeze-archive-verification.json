@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "archive": "D:\\workspace\\ParallelBayes\\rf\\output\\formal-freeze-archive-v1\\windows-native-20261007T173931Z.tar",
+  "archive_sha256": "1bcf67145ff4aaddfbf65557abf3fcb0c465fba4a4e8b4a9bf3c1779af2883d3",
+  "checked_files": 87,
+  "source_commit": "7c5cdc955bf4b0c6781ff63c14fb27c97aa5b13f",
+  "branch": "codex/windows-formal-delivery"
+}

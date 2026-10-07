@@ -1,0 +1,10 @@
+{
+  "early-draft-upload.json": {
+    "bytes": 2642,
+    "sha256": "41ab35a87ad96f2586a23ea994cb3ad7f053fbdeb67b0a65601ce646d9d84b5c"
+  },
+  "early-freeze-archive-verification.json": {
+    "bytes": 372,
+    "sha256": "2c212766a3c9550e9c50eb6671d0db290ee9358c7b6800f736a5a4211e004218"
+  }
+}

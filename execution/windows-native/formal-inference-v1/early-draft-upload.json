@@ -1,0 +1,52 @@
+{
+  "status": "early_freeze_assets_verified_on_original_draft",
+  "source_commit": "7c5cdc955bf4b0c6781ff63c14fb27c97aa5b13f",
+  "scientific_source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77",
+  "started_utc": "2026-10-07T17:40:23.817682+00:00",
+  "finished_utc": "2026-10-07T17:40:44.702747+00:00",
+  "wall_seconds": 20.88622139999643,
+  "draft": true,
+  "release_url": "https://github.com/AlchemistXC/ParallelBayes/releases/tag/untagged-a38d1dfe63e5584ac2ef",
+  "old_asset_count": 47,
+  "old_assets_unchanged": true,
+  "assets": [
+    {
+      "id": 619359907,
+      "name": "windows-native-20261007T173931Z.tar",
+      "size": 57825280,
+      "digest": "sha256:1bcf67145ff4aaddfbf65557abf3fcb0c465fba4a4e8b4a9bf3c1779af2883d3",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261007T173931Z.tar"
+    },
+    {
+      "id": 619360259,
+      "name": "windows-native-20261007T173931Z.tar.sha256",
+      "size": 103,
+      "digest": "sha256:33440340d7884473faece2c03d9ee50e22120354726897b6512c2e1227d440c3",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-native-20261007T173931Z.tar.sha256"
+    },
+    {
+      "id": 619360367,
+      "name": "windows-formal-freeze-verification-7c5cdc955bf4.json",
+      "size": 372,
+      "digest": "sha256:2c212766a3c9550e9c50eb6671d0db290ee9358c7b6800f736a5a4211e004218",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-freeze-verification-7c5cdc955bf4.json"
+    },
+    {
+      "id": 619360464,
+      "name": "windows-formal-freeze-source-7c5cdc955bf4.bundle",
+      "size": 23759848,
+      "digest": "sha256:98723a92d740bed0680583701bf27027f1a88a0e02f3230211e04a3382759bdc",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-freeze-source-7c5cdc955bf4.bundle"
+    },
+    {
+      "id": 619360640,
+      "name": "windows-formal-freeze-source-7c5cdc955bf4.bundle.sha256",
+      "size": 116,
+      "digest": "sha256:31b7d94b7b73ce921477072aecb6408e110eebc599cd0bb72b1987c2c8d39eb0",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-formal-freeze-source-7c5cdc955bf4.bundle.sha256"
+    }
+  ],
+  "full_formal_study_complete": false,
+  "full_raw_archive_created": false,
+  "independent_Mac_intake_complete": false
+}

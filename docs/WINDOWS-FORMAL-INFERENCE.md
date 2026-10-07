@@ -176,3 +176,33 @@ BrokenProcessPool错误。退出原因未知，保留原output_failure_unclassif
 不自动重试main/cache。原attempt02若已存在，应保留并调查，不覆盖。原等待器只
 绑定attempt01，不会偷偷跟随新管理者；实际中断后的后处理需要新的独立目录。
 全部41472/9216终态、正式归档/分析、Mac完整独立接收与F5/F6尚未完成。
+
+## 首次小型冻结回传（2026-10-08 02:40 JST）
+
+已用原export_results/verify-windows-return实际导出并核对87个成员，包含完整
+protocol、study-plan、catalog、freeze-manifest、全输入身份、小型环境/源/失败
+回执和Git bundle。仅回传冻结及带时点的早期状态；没有NPZ、venv、私有技能或
+凭证，不把本包称为四批终态原始包，也不声称Mac已核验1152份实际数组。
+
+| 资产 | 字节 | SHA256 |
+|---|---:|---|
+| windows-native-20261007T173931Z.tar | 57825280 | 1bcf67145ff4aaddfbf65557abf3fcb0c465fba4a4e8b4a9bf3c1779af2883d3 |
+| windows-formal-freeze-source-7c5cdc955bf4.bundle | 23759848 | 98723a92d740bed0680583701bf27027f1a88a0e02f3230211e04a3382759bdc |
+
+bundle包含完整历史与报告7c5cdc955bf4b0c6781ff63c14fb27c97aa5b13f、执行
+0ba5643a6b580e79b8040f13a5e3165322db0e77两引用，git bundle verify通过。
+tar、tar.sha256、逐成员核验JSON、bundle、bundle.sha256五个新增附件已追加
+原草稿windows-completion-v2-20261005，所有远端size/digest/state通过；原47
+附件及draft/原target不变。上传外层墙钟20.886秒，单列行政费用，不能作为
+推断或缓存时间。完整机器回执在early-draft-upload.json。
+
+接收方在新目录用有权限的账号下载，不能覆盖旧归档：
+
+```sh
+gh release download windows-completion-v2-20261005 --repo AlchemistXC/ParallelBayes --dir NEW_FREEZE_RECEIPTS --pattern 'windows-native-20261007T173931Z.tar*'
+python scripts/verify-windows-return.py NEW_FREEZE_RECEIPTS/windows-native-20261007T173931Z.tar
+```
+
+该命令只检查早期小包的87成员完整性，不重采样、不执行统计，不是完整正式
+原件独立接收。完整原件仍在Windows D执行包内；八阶段任务持续运行，完整
+原始归档的大小/哈希目前尚不存在，不预填未来状态。

@@ -1,5 +1,10 @@
 # 当前研究收尾登记
 
+2026-10-08 02:40 JST早期冻结回传：正式协议/计划/全部1152输入身份与两引用
+源码bundle的小包87成员通过，57,825,280字节，SHA256 1bcf67145ff4aaddfbf65557abf3fcb0c465fba4a4e8b4a9bf3c1779af2883d3。
+五附件追加原草稿，远端size/digest核对且原47附件不变。小包不包含实际NPZ，
+完整正式原始包/统计结果尚未生成；独立Mac原始接收及F3–F6未关闭。
+
 2026-10-08 02:34 JST正式研究实际已启动0main：137 valid、3 numerical_failure、
 1 output_failure_unclassified、1实际活动任务、41330未登记；cache9216未登记。
 三项H1独立路径核验失败和一项W1 NUTS池退出原件/费用保留，均非合格样本，
