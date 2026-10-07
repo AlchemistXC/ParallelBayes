@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="17" time="0.594" timestamp="2026-10-07T10:01:39.045211+09:00" hostname="HaKudeMac-mini.local"><testcase classname="tests.handoff.test_formal_native_evidence" name="test_relocated_success_and_three_nonadditive_cost_scopes" time="0.006"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_relocated_success_and_thr0/received/ledger/identity.json.43749.tmp'">tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_relocated_success_and_thr0')
+
+    def test_relocated_success_and_three_nonadditive_cost_scopes(tmp_path):
+        f = Fixture(tmp_path); f.add(); f.export()
+&gt;       f.ledger([(3., 'attempt-0001', True), (.25, 'attempt-0001', False)])
+
+tests/handoff/test_formal_native_evidence.py:113: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_formal_native_evidence.py:86: in ledger
+    atomic_json(self.root/'ledger/identity.json', identity)
+scripts/completion/formal_runtime.py:41: in atomic_json
+    with temporary.open('w',encoding='utf-8',newline='\n') as stream:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_relocated_success_and_thr0/received/ledger/identity.json.43749.tmp')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = '\n'
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_relocated_success_and_thr0/received/ledger/identity.json.43749.tmp'
+
+/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="tests.handoff.test_formal_native_evidence" name="test_every_ended_failure_keeps_known_cost_and_no_samples[numerical_failure]" time="0.008" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_every_ended_failure_keeps_known_cost_and_no_samples[resource_failure]" time="0.008" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_every_ended_failure_keeps_known_cost_and_no_samples[output_failure_unclassified]" time="0.007" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_every_ended_failure_keeps_known_cost_and_no_samples[infrastructure_interruption]" time="0.007" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_cache_output_is_measurement_only_and_cannot_retry" time="0.011" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_reconciled_interruption_retry_preserves_unknown_time" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_reconciled_interruption_r0/received/task/recovery/attempt-0001.json.43749.tmp'">tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_reconciled_interruption_r0')
+
+    def test_reconciled_interruption_retry_preserves_unknown_time(tmp_path):
+&gt;       f = Fixture(tmp_path); f.add('infrastructure_interruption', recovery=True); f.add(); f.export()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/handoff/test_formal_native_evidence.py:143: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_formal_native_evidence.py:57: in add
+    atomic_json(self.root/'task/recovery'/(identifier+'.json'), record)
+scripts/completion/formal_runtime.py:41: in atomic_json
+    with temporary.open('w',encoding='utf-8',newline='\n') as stream:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_reconciled_interruption_r0/received/task/recovery/attempt-0001.json.43749.tmp')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = '\n'
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_reconciled_interruption_r0/received/task/recovery/attempt-0001.json.43749.tmp'
+
+/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="tests.handoff.test_formal_native_evidence" name="test_saved_numeric_failure_cannot_be_relabelled_or_retried" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_saved_numeric_failure_can0/received/task/recovery/attempt-0001.json.43749.tmp'">tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_saved_numeric_failure_can0')
+
+    def test_saved_numeric_failure_cannot_be_relabelled_or_retried(tmp_path):
+&gt;       f = Fixture(tmp_path); f.add('numerical_failure', recovery=True, saved_failure='numerical_failure'); f.export()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/handoff/test_formal_native_evidence.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_formal_native_evidence.py:57: in add
+    atomic_json(self.root/'task/recovery'/(identifier+'.json'), record)
+scripts/completion/formal_runtime.py:41: in atomic_json
+    with temporary.open('w',encoding='utf-8',newline='\n') as stream:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_saved_numeric_failure_can0/received/task/recovery/attempt-0001.json.43749.tmp')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = '\n'
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_saved_numeric_failure_can0/received/task/recovery/attempt-0001.json.43749.tmp'
+
+/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="tests.handoff.test_formal_native_evidence" name="test_registered_prelaunch_is_not_run_but_missing_export_is_an_error" time="0.003" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_active_history_cannot_be_promoted_to_ended_by_a_status_summary" time="0.004" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_consistently_rehashed_but_incompatible_metadata_is_rejected[source]" time="0.004" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_consistently_rehashed_but_incompatible_metadata_is_rejected[job]" time="0.007" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_consistently_rehashed_but_incompatible_metadata_is_rejected[eligibility]" time="0.007" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_consistently_rehashed_but_incompatible_metadata_is_rejected[binding]" time="0.007" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_consistently_rehashed_but_incompatible_metadata_is_rejected[lineage]" time="0.004" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_missing_and_unlisted_files_and_escape_paths_are_rejected" time="0.008" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_recovery_unknown_observation_and_imputed_seconds_rejected" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_recovery_unknown_observat0/received/task/recovery/attempt-0001.json.43749.tmp'">tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_recovery_unknown_observat0')
+
+    def test_recovery_unknown_observation_and_imputed_seconds_rejected(tmp_path):
+&gt;       f=Fixture(tmp_path); f.add('infrastructure_interruption', recovery=True); f.export()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/handoff/test_formal_native_evidence.py:196: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_formal_native_evidence.py:57: in add
+    atomic_json(self.root/'task/recovery'/(identifier+'.json'), record)
+scripts/completion/formal_runtime.py:41: in atomic_json
+    with temporary.open('w',encoding='utf-8',newline='\n') as stream:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_recovery_unknown_observat0/received/task/recovery/attempt-0001.json.43749.tmp')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = '\n'
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-reader-v1/tests-first/test_recovery_unknown_observat0/received/task/recovery/attempt-0001.json.43749.tmp'
+
+/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-07",
+  "source_commit": "9439cfe23f897b16576ca4cea8bb5f319fa48e38",
+  "upload_check": {
+    "Windows_heads_equal_previous_intake": true,
+    "matched_archive_sizes_and_digests": 5,
+    "release_is_draft": true,
+    "assets": 27,
+    "newer_Windows_evidence_found": false
+  },
+  "distinct_new_checks": 18,
+  "affected_existing_checks": 1,
+  "final_failures": 0,
+  "final_skips": 0,
+  "first_attempt": {
+    "passed": 13,
+    "failed": 4,
+    "reason": "Artificial fixture directory setup"
+  },
+  "new_native_executions": 0,
+  "new_sampler_calls": 0,
+  "new_formal_repetitions": 0,
+  "full_formal_raw_reader_complete": false,
+  "native_acceptance_producer_complete": false,
+  "source_sha256": {
+    "scripts/completion/formal_native_evidence.py": "753328aa37e600680ff754a1934e30e81e7b274fc98778091691f285dfe0e3df",
+    "scripts/completion/formal_acceptance.py": "00e9d0d6dd92ff26949c7a1476a9370c1f4d79f628dd94afcb9086f438792d04",
+    "tests/handoff/test_formal_native_evidence.py": "54c3af188aee20318b240dea1b71f79e3152a5ca7de9e2251125058e763de2bf"
+  },
+  "artifacts_sha256": {
+    "tests-second.xml": "11b23e0d2f32185d8d04552bb789cd7c9f6e4e3d427e399008b5e8a4bc9199e1",
+    "github-assets.json": "c939c0df9fff9c3842ad7663fc526b67a7f0ccea2fc8e6339dcf920e51f72dca",
+    "tests-complete-gate.xml": "69449dead8832197a335a23361ece076e0d4eefdfeb8b473dd403c8b9d58b106",
+    "tests-gate.xml": "570ee4e59be85a3f27c45d53bed3a24201498ee6792d736394e7b2d8c6776ab0",
+    "github-heads.json": "a776159e851ebdc474b283cb3c88176ed0df6c60f12fbc39f6654c8da1e163a3",
+    "tests-first.xml": "f1d6fb644a8de45b38fb277972d97412b984443a5e7db344e2e85af6bd872719"
+  }
+}

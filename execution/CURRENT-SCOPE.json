@@ -2,7 +2,7 @@
   "date": "2026-10-07",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "formal_workers_and_batch_dispatch_implemented_native_acceptance_producer_and_reader_pending",
+  "local_phase": "formal_native_history_and_cost_reader_connected_full_raw_analysis_and_native_acceptance_producer_pending",
   "gpu_tasks": "Received and independently checked F2 192 workflows, native runtime 27 main/24 cache tasks, and dev2 installation. Formal inference remains unfrozen and unexecuted.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
@@ -192,6 +192,23 @@
       "formal_raw_result_reader_complete": false,
       "new_sampler_calls": 0,
       "new_formal_repetitions": 0
+    },
+    "native_evidence_reader": {
+      "report": "docs/FORMAL-NATIVE-EVIDENCE.md",
+      "source_commit": "9439cfe23f897b16576ca4cea8bb5f319fa48e38",
+      "distinct_new_checks": 18,
+      "affected_existing_checks": 1,
+      "native_runtime_executed": false,
+      "lifecycle_and_cost_reader_complete": true,
+      "full_formal_raw_result_reader_complete": false,
+      "new_sampler_calls": 0,
+      "new_formal_repetitions": 0
     }
+  },
+  "latest_upload_check": {
+    "report": "docs/FORMAL-NATIVE-EVIDENCE.md",
+    "Windows_heads_equal_previous_intake": true,
+    "archive_metadata_matches": 5,
+    "newer_evidence_found": false
   }
 }
