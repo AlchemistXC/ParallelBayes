@@ -356,3 +356,9 @@ Numerical source, executors, models, frozen protocols and Windows prompt have no
 ## 当前范围索引与论文身份衔接（2026-10-07）
 
 核对全部11个远端分支及三个Release；没有新的v2原生验收回执，原27附件草稿未变。补充docs/CURRENT-SCOPE.md，集中说明支持范围、版本/证据、公开状态和F0–F6剩余门槛。机器状态原先current_result_rebuild仍指23页历史稿，现指向2a758ba生成的26页、六段、50输入资产；原字段完整保留于historical_result_rebuilds。PDF及内容包哈希与既有封存回执逐项相符，文档链接和当前包版本核对通过。没有新采样、R诊断、测试重跑或正式重复；没有修改Windows冻结代码及提示词。下一必需外部输入仍为既有v2有限验收的原生回传，不重跑旧任务。
+
+## Windows v2有限实机回传（2026-10-07；待Mac独立接收）
+
+冻结执行0ba5643a6b580e79b8040f13a5e3165322db0e77，windows-formal-adapter-validation-v1协议e3acc02f32ef1cbb8cb88ae50bdf399b20cf8fde8b2f31f2079e5e393adc9baa。实际16行为用例最终16/0/0；早期启动/R权限及15/1失败完整保留。27主任务valid、24缓存measurement_available、96调用，科学失败/中断/pending/采样重试0，缓存样本资格false，正式重复0。24MH独立全路径和12同核配对通过，3CPU四spawn NUTS含G2最大形状完成；117R诊断中的不利与不可判定项全保留。
+
+main/cache实际只核验恢复新增0，831/828文件不变；封存、3167成员归档核对及安全搬移后只读verify通过。完整归档987596800字节、SHA256 ceb722b100570972c99684185bbf7cdeec1dd122efc863854d0c9168cbc2de62；共享静止登记102个实际Job无活动进程。见docs/WINDOWS-FORMAL-ADAPTER-VALIDATION.md及execution/windows-native/formal-adapter-validation-v1。原F2/v1/候选安装不重跑，正式网格未启动；源/成本/统一分析/正式版本的Mac独立合入与后续正式研究门槛仍开放。

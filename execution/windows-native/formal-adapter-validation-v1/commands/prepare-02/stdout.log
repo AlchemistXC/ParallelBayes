@@ -1,0 +1,11 @@
+{
+  "schema": "formal-adapter-validation-freeze-v1",
+  "identity": "windows-formal-adapter-validation-v1",
+  "protocol_sha256": "e3acc02f32ef1cbb8cb88ae50bdf399b20cf8fde8b2f31f2079e5e393adc9baa",
+  "source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77",
+  "manifest_sha256": "9e338bf821dc86be48b084ebe033e40e4248076787aea051dae83392deddba5c",
+  "main_tasks": 27,
+  "cache_probes": 24,
+  "formal_scientific_repetitions": 0,
+  "formal_sampling_authorized": false
+}

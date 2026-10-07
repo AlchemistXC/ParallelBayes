@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "archive": "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-return-v1\\windows-formal-adapter-validation-v1-20261007.tar",
+  "archive_sha256": "ceb722b100570972c99684185bbf7cdeec1dd122efc863854d0c9168cbc2de62",
+  "checked_files": 3167,
+  "source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77",
+  "branch": "codex/windows-formal-adapter-validation"
+}

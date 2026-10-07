@@ -1,0 +1,7 @@
+{"exit_code": 0, "error": null, "seconds": 10.919987200002652, "job_final": {"job_name": "Local\\ParallelBayes-155d6185471d4e8f8de9fe185af7ab22", "active_processes": 0, "total_processes": 90, "members": [], "sampled_rss_bytes": 0, "job_cpu_seconds": 11.03125, "kernel_peak_job_commit_bytes": 4682555392, "hard_job_commit_limit_bytes": 12884901888, "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes", "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation"}, "samples_eligible": false, "measurement_available": false, "source_sha256": "73b08e84fdc4def97390768abab36db540794fc081f6513079a356759618dec7", "logs": {"stdout.log": "f6cf20727b42c41ed2ef52f5e2060e5b92d3748cff5502080875b4fffcc53e27", "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"}, "finished_ns": 1791377020386641600}
+{
+  "passed": true,
+  "tests": 16,
+  "new_formal_repetitions": 0,
+  "artifacts": "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-v1\\runtime-tests\\attempt-daced1c935c649f89102eb92f120bac2"
+}

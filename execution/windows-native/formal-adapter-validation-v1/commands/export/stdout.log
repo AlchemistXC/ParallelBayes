@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "acceptance_sha256": "1b71fc0809c5019140768778572681f076bfbf8e7810523f2aed92047c1dd173",
+  "artifacts": 3166,
+  "reader_did_not_execute_Windows_or_sampler": true,
+  "archive_sha256": "ceb722b100570972c99684185bbf7cdeec1dd122efc863854d0c9168cbc2de62",
+  "bytes": 987596800,
+  "files": 3167,
+  "export_seconds": 4.716584099980537,
+  "source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77"
+}

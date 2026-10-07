@@ -1,0 +1,22 @@
+{
+  "error": "OSError: [WinError -1073741816] Windows Error 0xc0000008",
+  "exit_code": null,
+  "finished_ns": 1791376610129105000,
+  "invocation_seconds": 0.03665139997610822,
+  "job_final": {
+    "active_processes": 0,
+    "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+    "hard_job_commit_limit_bytes": 0,
+    "job_cpu_seconds": 0.0,
+    "job_name": "Local\\ParallelBayes-stage-11ac3290d7b04973800bc1cb0db139a4",
+    "kernel_peak_job_commit_bytes": 507904,
+    "members": [],
+    "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+    "sampled_rss_bytes": 0,
+    "total_processes": 1
+  },
+  "logs": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

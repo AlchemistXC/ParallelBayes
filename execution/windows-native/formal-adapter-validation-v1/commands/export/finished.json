@@ -1,0 +1,22 @@
+{
+  "error": null,
+  "exit_code": 0,
+  "finished_ns": 1791379938208935600,
+  "invocation_seconds": 14.213085299998056,
+  "job_final": {
+    "active_processes": 0,
+    "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+    "hard_job_commit_limit_bytes": 0,
+    "job_cpu_seconds": 13.40625,
+    "job_name": "Local\\ParallelBayes-stage-38534f2557784a9e99a9902938aedd7c",
+    "kernel_peak_job_commit_bytes": 1100652544,
+    "members": [],
+    "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+    "sampled_rss_bytes": 0,
+    "total_processes": 3
+  },
+  "logs": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "d4060bc65c027b1516cb39e9239d2690adcf6f979ce5c80553b4c7ce9be73951"
+  }
+}

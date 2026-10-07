@@ -1,0 +1,26 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "scripts/windows/validate_formal_adapter.py",
+    "prepare",
+    "--output",
+    "D:/workspace/ParallelBayes/v2/output/formal-adapter-validation-v1",
+    "--external",
+    "C:/Users/chenh/.codex/worktrees/windows-completion-v2/ParallelBayes/output/completion/windows-round2-20261005/wells-source",
+    "--host-lock",
+    "D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock",
+    "--rscript",
+    "D:/Tools/R-4.6.1/bin/Rscript.exe",
+    "--r-library",
+    "D:/Tools/R-library-4.6"
+  ],
+  "cost_scope": "Whole CLI invocation; nested clocks not additive",
+  "cwd": "D:\\workspace\\ParallelBayes\\v2",
+  "formal_repetitions": 0,
+  "job_api_sha256": "44c3d3a3b0bca00f52038275637fee12a8bbfc3f084636ceac5e1d320e390e7a",
+  "outer_job_has_no_additional_resource_or_time_limits": true,
+  "scientific_lease_owned_by_child": true,
+  "source_commit": "7bbc39db071530419b5685dba5b408d10a9066cd",
+  "started_ns": 1791376610090968500,
+  "witness_sha256": "5657c28f88845bf501d6e2c64e3400230c00044cd26d038733054a157511ac16"
+}

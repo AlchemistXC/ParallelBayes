@@ -64,3 +64,5 @@ pb_capabilities(stan) # combinations仅顺序RWM与MALA
 2026-10-07后续：F2原始输入机制pilot已完成CPU/CUDA共192工作流，同机独立审计和终态零重算核验通过；旧失败输入与负结果保留，见[机制回执](WINDOWS-MECHANISM-COMPLETION.md)。新Windows原生运行器当前16项人工行为检查通过，27项最大形状技术任务尚待执行；这不是正式推断或候选安装通过，见[运行器验收](WINDOWS-RUNTIME-VALIDATION.md)。
 
 2026-10-07有限技术后继：Windows新协议27主任务（含64维四链16,384步的CPU四spawn NUTS及CPU/CUDA四种MH）及24独立缓存探测/96调用通过；17项原生所有权与恢复行为检查、同机独立审计及终态零重算通过。仅三个模型各一份技术输入，无正式精度/性能结论。详见[原生运行器回执](WINDOWS-RUNTIME-VALIDATION.md)。
+
+2026-10-07新v2适配有限实机验收：独立windows-formal-adapter-validation-v1身份、执行源码0ba5643，G1/G2/W1共27主任务、24独立缓存探测/96调用完成；最终16原生行为用例、独立NumPy实际数组审计、实际Job终态、零新增执行恢复、封存及搬移核验通过。此前启动/行为失败完整保留。仅有限运行条件验收，正式重复0，不代表收敛、一般加速或完整正式网格；原0.2.0.dev1能力证据身份不改。见[新v2实机报告](WINDOWS-FORMAL-ADAPTER-VALIDATION.md)。

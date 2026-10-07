@@ -1,0 +1,18 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "scripts/windows/validate_formal_adapter.py",
+    "verify",
+    "--bundle",
+    "D:/workspace/ParallelBayes/v2/output/formal-adapter-validation-v1"
+  ],
+  "cost_scope": "Whole CLI invocation; nested clocks not additive",
+  "cwd": "D:\\workspace\\ParallelBayes\\v2",
+  "formal_repetitions": 0,
+  "job_api_sha256": "900c0cab23154805493915aa60c91709ff6f725cd8ccf5894f0b8fc51560118f",
+  "outer_job_has_no_additional_resource_or_time_limits": true,
+  "scientific_lease_owned_by_child": true,
+  "source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77",
+  "started_ns": 1791379901267087900,
+  "witness_sha256": "66a93f1be03ad5920a9ae8ea7f37f13ac7c8244fdf063a46caf61120f6773919"
+}

@@ -1,0 +1,31 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+Error in packageVersion("posterior") : 
+  there is no package called 'posterior'
+Calls: cat -> <Anonymous> -> force -> packageVersion
+Execution halted
+Traceback (most recent call last):
+  File "D:\workspace\ParallelBayes\v2\scripts\windows\validate_formal_adapter.py", line 400, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\workspace\ParallelBayes\v2\scripts\windows\validate_formal_adapter.py", line 397, in main
+    print(json.dumps(action(**args),indent=2),flush=True)
+                     ^^^^^^^^^^^^^^
+  File "D:\workspace\ParallelBayes\v2\scripts\windows\validate_formal_adapter.py", line 160, in runtime_tests
+    _, p, _, binding, _, _ = preflight(bundle)
+                             ^^^^^^^^^^^^^^^^^
+  File "D:\workspace\ParallelBayes\v2\scripts\windows\validate_formal_adapter.py", line 123, in preflight
+    current, _, resources, _, _ = gather_environment(Path(env['rscript']), Path(env['r_library']))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\ParallelBayes\v2\scripts\windows\prepare_formal_study.py", line 88, in gather_environment
+    r = json.loads(subprocess.check_output([str(rscript), '--vanilla', '-e', code], env=env, text=True))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chenh\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chenh\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\Tools\\R-4.6.1\\bin\\Rscript.exe', '--vanilla', '-e', 'cat(jsonlite::toJSON(list(R=R.version.string,posterior=as.character(packageVersion("posterior"))),auto_unbox=TRUE))']' returned non-zero exit status 1.

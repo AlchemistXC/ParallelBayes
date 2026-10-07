@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "main_tasks": 27,
+  "cache_probes": 24,
+  "behavior_tests": 16,
+  "formal_scientific_repetitions": 0,
+  "acceptance_sha256": "1b71fc0809c5019140768778572681f076bfbf8e7810523f2aed92047c1dd173"
+}

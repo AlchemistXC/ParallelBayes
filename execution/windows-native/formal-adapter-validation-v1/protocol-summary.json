@@ -1,0 +1,126 @@
+{
+  "identity": "windows-formal-adapter-validation-v1",
+  "source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77",
+  "protocol_sha256": "e3acc02f32ef1cbb8cb88ae50bdf399b20cf8fde8b2f31f2079e5e393adc9baa",
+  "controls": {
+    "atol": 1e-10,
+    "chains": 4,
+    "maximum_member_bytes": 134217728,
+    "memory_limit_mb": 2048,
+    "mh_discard": 512,
+    "minimum_gpu_free_bytes": 3221225472,
+    "nuts_full_mass": false,
+    "nuts_target_accept": 0.8,
+    "nuts_threads": 1,
+    "nuts_tree_depth": 8,
+    "nuts_warmup": 1024,
+    "nuts_workers": 4,
+    "quasi_deer_max_iter": 2048,
+    "rtol": 1e-10,
+    "torch_threads": 4,
+    "window": 32
+  },
+  "windows_limits": {
+    "disk_floor_bytes": 1073741824,
+    "disk_start_bytes": 4294967296,
+    "job_commit_bytes": 12884901888,
+    "poll_seconds": 0.2,
+    "rss_bytes": 8589934592
+  },
+  "cost_policy": {
+    "cached": "Separate one initial and three prepared calls; zero new independent repetitions",
+    "nested_phases_additive": false,
+    "ordinary": "Ordinary child creation through exit",
+    "research": "External invocation ledger; includes audit and sealing",
+    "unknown_cost": null
+  },
+  "formal_scientific_repetitions": 0,
+  "formal_inference_complete": false,
+  "source_start": "6df04793e0cecb2633f5cc3bbdeea5a8b3228145",
+  "freeze_manifest_sha256": "9e338bf821dc86be48b084ebe033e40e4248076787aea051dae83392deddba5c",
+  "inputs": {
+    "G1-rep0000.npz.json": {
+      "actual_sha256": "2f1914b5ff84413a01c0afea2b08da4bc9eb95fc2b66c10eb4b52620c4515ad6",
+      "archive_binding_sha256": "3151c900040b2bb4b5fc2cbf846fbf5143d757225928393cc788b693b843b87c",
+      "file_bytes": 165613,
+      "intent_sha256": "78488d784481b8e566d9f4702d13b5c516f3f2430c19b67dd638381a877439a0",
+      "logical_array_bytes": 313632,
+      "name": "G1-rep0000.npz",
+      "preparation_seconds": 0.030397100024856627,
+      "receipt_sha256": "011864ee65a8c2570dcbe52306b6b8343a316e06c626292c06cae04a98ef0d01",
+      "requirement": {
+        "chains": 4,
+        "dimension": 8,
+        "model": "G1",
+        "replicate": 0,
+        "roles": [
+          "initial",
+          "noise",
+          "log_uniform",
+          "directions",
+          "nuts_seeds"
+        ],
+        "steps": 576
+      },
+      "sampler_calls": 0,
+      "sha256": "3bc7057cbb4e239f46b67599b232eecf3224cb40c510c610fa9ba5742254b265",
+      "statistical_repetitions": 0
+    },
+    "G2-rep0000.npz.json": {
+      "actual_sha256": "b086550adddce8b723f5dda0556c181ddf432594cb481a5a1ebc42f5134656b6",
+      "archive_binding_sha256": "3151c900040b2bb4b5fc2cbf846fbf5143d757225928393cc788b693b843b87c",
+      "file_bytes": 34929177,
+      "intent_sha256": "3ef4d51740b973cc7b1c2d1d958509d09d32c3521e7b27114afab428af636ca1",
+      "logical_array_bytes": 69748768,
+      "name": "G2-rep0000.npz",
+      "preparation_seconds": 2.048572699946817,
+      "receipt_sha256": "6e7cccd5fadea690971d193e29aafe735b840e055ed1446eb7ceb50d82fbe722",
+      "requirement": {
+        "chains": 4,
+        "dimension": 64,
+        "model": "G2",
+        "replicate": 0,
+        "roles": [
+          "initial",
+          "noise",
+          "log_uniform",
+          "directions",
+          "nuts_seeds"
+        ],
+        "steps": 16896
+      },
+      "sampler_calls": 0,
+      "sha256": "3d0158c4e760aff70b68f69cab91587d851c014adaff50abf9f5bafd72088ac8",
+      "statistical_repetitions": 0
+    },
+    "W1-rep0000.npz.json": {
+      "actual_sha256": "e458a6894c7a067c1bcf031de02f7e396194598a6c84e0ba43590050f54e2164",
+      "archive_binding_sha256": "3151c900040b2bb4b5fc2cbf846fbf5143d757225928393cc788b693b843b87c",
+      "file_bytes": 55460,
+      "intent_sha256": "64c0623a7d2eb15d5dc3a5247b313143bb4d042e692bb293639b941c6e2fd066",
+      "logical_array_bytes": 92256,
+      "name": "W1-rep0000.npz",
+      "preparation_seconds": 0.015219499997328967,
+      "receipt_sha256": "85f9a12b0b175231e7ac0fe4573666210e54334be764006cc3300161b02712b2",
+      "requirement": {
+        "chains": 4,
+        "dimension": 2,
+        "model": "W1",
+        "replicate": 0,
+        "roles": [
+          "initial",
+          "noise",
+          "log_uniform",
+          "directions",
+          "nuts_seeds"
+        ],
+        "steps": 576
+      },
+      "sampler_calls": 0,
+      "sha256": "9be9fefaa8defe163eabf7298410a711e5c4d0c002d25c10842b56bcd635260c",
+      "statistical_repetitions": 0
+    }
+  },
+  "prior_environment_marker_unchanged": true,
+  "private_skills_zip": "missing; not used"
+}

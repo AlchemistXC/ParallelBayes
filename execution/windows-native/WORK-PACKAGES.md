@@ -218,3 +218,13 @@ Windows新任务入口为handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATI
 私有技能目录/ZIP缺失（parallelbayes-user-skills-2026-10-04.zip）；未猜测公开替代技能，继续独立执行。完整命令/失败/原始证据保存output/formal-adapter-validation-v1及独立commands目录。
 
 Prepare前首次witness启动失败：7bbc39d的Job API在with NUL退出后才清除继承标志，调用已关闭NUL句柄触发0xc0000008。子进程从未resume，Job active0，validation包不存在、输入生成0。原失败JSON和旧源码保留在包外commands目录。兼容修复仅延长NUL句柄生命周期到SetHandleInformation清理完成，并检查返回值；外层witness追加自身异常日志。微软API依据：https://learn.microsoft.com/windows/win32/api/handleapi/nf-handleapi-sethandleinformation。数值源码、参数和16行为用例不变；修复提交后重新prepare新目录，不续算任何旧冻结输入。
+
+## v2有限原生验收完成（2026-10-07）
+
+实际执行源码0ba5643a6b580e79b8040f13a5e3165322db0e77；独立身份windows-formal-adapter-validation-v1，协议e3acc02f32ef1cbb8cb88ae50bdf399b20cf8fde8b2f31f2079e5e393adc9baa。最终16行为用例通过/0失败/0跳过；原R权限preflight及15通过/1失败的legacy就绪读取尝试完整保留。后者真实外层Job13活动成员仅按登记Job终止并核对0，再以明确理由、不改源码/断言重测。
+
+27主任务全部valid，含G1/G2/W1各9工作流与最大64维×4链×16,384步CPU四spawn NUTS。24缓存探测/96实际调用全部measurement_available=true、samples_eligible=false。数值/资源/基础设施/未分类失败及pending均0，采样重试0，正式统计重复0。24MH独立NumPy全路径及接受事件通过；12同核实际数组配对失配0，最大路径差5.58938895167671e-10，约束输出差2.17276951985923e-9。117现代R诊断保留（83有限Rhat>1.01、9不可判定Rhat），不声明收敛。
+
+实际main/cache verify-only均新增执行0，分别831/828任务文件不变。native-acceptance.json SHA256 1b71fc0809c5019140768778572681f076bfbf8e7810523f2aed92047c1dd173；封存后只读核验/导出。主tar windows-formal-adapter-validation-v1-20261007.tar，987596800字节，SHA256 ceb722b100570972c99684185bbf7cdeec1dd122efc863854d0c9168cbc2de62；3167成员核对、新目录安全搬移和validation verify均通过。静止共享登记快照51新v2/51旧v1，102真实Job无活动进程。原venv标记及旧工作树保持不变；所有失败、完整命令/资源观察与日志另行伴随归档，草稿新增附件不覆盖旧包。
+
+报告docs/WINDOWS-FORMAL-ADAPTER-VALIDATION.md，小型证据execution/windows-native/formal-adapter-validation-v1。Git保留执行源/兼容差异与报告；大原件另附tar和源码bundle。当前仅有限v2验收，交回Mac独立接收；未启动正式网格，不关闭正式统计、论文及总研究门槛。

@@ -1,0 +1,201 @@
+{
+  "reason": "pytest exited with failed readiness read leaving artificial legacy fixture; terminate only this recorded outer Job",
+  "before": {
+    "state": "present",
+    "job_name": "Local\\ParallelBayes-stage-737abfdbc950428fa3d2963d25ea0a1e",
+    "active_processes": 13,
+    "total_processes": 107,
+    "members": [
+      {
+        "pid": 29736,
+        "creation_filetime": 134358504201448454,
+        "member_of_owned_job": true,
+        "rss_bytes": 4976640,
+        "command": [
+          "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+          "scripts/windows/validate_formal_adapter.py",
+          "test",
+          "--bundle",
+          "D:/workspace/ParallelBayes/v2/output/formal-adapter-validation-v1",
+          "--repeat-reason",
+          "First preflight could not read existing posterior library under restricted account; approved same native account as prepare, no source or dependency changes"
+        ],
+        "parent_pid": 25744
+      },
+      {
+        "pid": 11248,
+        "creation_filetime": 134358504201515558,
+        "member_of_owned_job": true,
+        "rss_bytes": 7409664,
+        "command": [
+          "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+          "0x4"
+        ],
+        "parent_pid": 29736
+      },
+      {
+        "pid": 11960,
+        "creation_filetime": 134358504201620229,
+        "member_of_owned_job": true,
+        "rss_bytes": 1165021184,
+        "command": [
+          "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "scripts/windows/validate_formal_adapter.py",
+          "test",
+          "--bundle",
+          "D:/workspace/ParallelBayes/v2/output/formal-adapter-validation-v1",
+          "--repeat-reason",
+          "First preflight could not read existing posterior library under restricted account; approved same native account as prepare, no source or dependency changes"
+        ],
+        "parent_pid": 29736
+      },
+      {
+        "pid": 17672,
+        "creation_filetime": 134358504239886195,
+        "member_of_owned_job": true,
+        "rss_bytes": 7401472,
+        "command": [
+          "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+          "0x4"
+        ],
+        "parent_pid": 17304
+      },
+      {
+        "pid": 19768,
+        "creation_filetime": 134358504339300011,
+        "member_of_owned_job": true,
+        "rss_bytes": 4984832,
+        "command": [
+          "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+          "D:\\workspace\\ParallelBayes\\v2\\tests\\windows\\runtime_fixture.py",
+          "manager",
+          "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-v1\\runtime-tests\\attempt-80df5370aa9341f585fe6aa1dfdc2afd\\artifacts\\test_legacy_registration_recon0\\legacy-launch.json"
+        ],
+        "parent_pid": 12276
+      },
+      {
+        "pid": 6972,
+        "creation_filetime": 134358504339389757,
+        "member_of_owned_job": true,
+        "rss_bytes": 33132544,
+        "command": [
+          "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "D:\\workspace\\ParallelBayes\\v2\\tests\\windows\\runtime_fixture.py",
+          "manager",
+          "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-v1\\runtime-tests\\attempt-80df5370aa9341f585fe6aa1dfdc2afd\\artifacts\\test_legacy_registration_recon0\\legacy-launch.json"
+        ],
+        "parent_pid": 19768
+      },
+      {
+        "pid": 19188,
+        "creation_filetime": 134358504340816256,
+        "member_of_owned_job": true,
+        "rss_bytes": 4988928,
+        "command": [
+          "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+          "D:\\workspace\\ParallelBayes\\v2\\tests\\windows\\runtime_fixture.py",
+          "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-v1\\runtime-tests\\attempt-80df5370aa9341f585fe6aa1dfdc2afd\\artifacts\\test_legacy_registration_recon0\\legacy-managed\\task\\attempt-0001\\request.json",
+          "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-v1\\runtime-tests\\attempt-80df5370aa9341f585fe6aa1dfdc2afd\\artifacts\\test_legacy_registration_recon0\\legacy-managed\\task\\attempt-0001"
+        ],
+        "parent_pid": 6972
+      },
+      {
+        "pid": 3616,
+        "creation_filetime": 134358504340887313,
+        "member_of_owned_job": true,
+        "rss_bytes": 7413760,
+        "command": [
+          "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+          "0x4"
+        ],
+        "parent_pid": 19188
+      },
+      {
+        "pid": 10704,
+        "creation_filetime": 134358504341600367,
+        "member_of_owned_job": true,
+        "rss_bytes": 4993024,
+        "command": [
+          "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+          "D:\\workspace\\ParallelBayes\\v2\\tests\\windows\\runtime_fixture.py",
+          "child",
+          "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-v1\\runtime-tests\\attempt-80df5370aa9341f585fe6aa1dfdc2afd\\artifacts\\test_legacy_registration_recon0\\legacy-managed\\task\\attempt-0001"
+        ],
+        "parent_pid": 26784
+      },
+      {
+        "pid": 2188,
+        "creation_filetime": 134358504342164532,
+        "member_of_owned_job": true,
+        "rss_bytes": 4988928,
+        "command": [
+          "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+          "D:\\workspace\\ParallelBayes\\v2\\tests\\windows\\runtime_fixture.py",
+          "grandchild",
+          "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-v1\\runtime-tests\\attempt-80df5370aa9341f585fe6aa1dfdc2afd\\artifacts\\test_legacy_registration_recon0\\legacy-managed\\task\\attempt-0001"
+        ],
+        "parent_pid": 3908
+      },
+      {
+        "pid": 26784,
+        "creation_filetime": 134358504340993252,
+        "member_of_owned_job": true,
+        "rss_bytes": 20844544,
+        "command": [
+          "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "D:\\workspace\\ParallelBayes\\v2\\tests\\windows\\runtime_fixture.py",
+          "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-v1\\runtime-tests\\attempt-80df5370aa9341f585fe6aa1dfdc2afd\\artifacts\\test_legacy_registration_recon0\\legacy-managed\\task\\attempt-0001\\request.json",
+          "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-v1\\runtime-tests\\attempt-80df5370aa9341f585fe6aa1dfdc2afd\\artifacts\\test_legacy_registration_recon0\\legacy-managed\\task\\attempt-0001"
+        ],
+        "parent_pid": 19188
+      },
+      {
+        "pid": 3908,
+        "creation_filetime": 134358504341685588,
+        "member_of_owned_job": true,
+        "rss_bytes": 20578304,
+        "command": [
+          "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "D:\\workspace\\ParallelBayes\\v2\\tests\\windows\\runtime_fixture.py",
+          "child",
+          "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-v1\\runtime-tests\\attempt-80df5370aa9341f585fe6aa1dfdc2afd\\artifacts\\test_legacy_registration_recon0\\legacy-managed\\task\\attempt-0001"
+        ],
+        "parent_pid": 10704
+      },
+      {
+        "pid": 24108,
+        "creation_filetime": 134358504342248287,
+        "member_of_owned_job": true,
+        "rss_bytes": 21045248,
+        "command": [
+          "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "D:\\workspace\\ParallelBayes\\v2\\tests\\windows\\runtime_fixture.py",
+          "grandchild",
+          "D:\\workspace\\ParallelBayes\\v2\\output\\formal-adapter-validation-v1\\runtime-tests\\attempt-80df5370aa9341f585fe6aa1dfdc2afd\\artifacts\\test_legacy_registration_recon0\\legacy-managed\\task\\attempt-0001"
+        ],
+        "parent_pid": 2188
+      }
+    ],
+    "sampled_rss_bytes": 1307779072,
+    "job_cpu_seconds": 88.4375,
+    "kernel_peak_job_commit_bytes": 7803813888,
+    "hard_job_commit_limit_bytes": 0,
+    "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+    "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation"
+  },
+  "after": {
+    "state": "present",
+    "job_name": "Local\\ParallelBayes-stage-737abfdbc950428fa3d2963d25ea0a1e",
+    "active_processes": 0,
+    "total_processes": 107,
+    "members": [],
+    "sampled_rss_bytes": 0,
+    "job_cpu_seconds": 88.46875,
+    "kernel_peak_job_commit_bytes": 7803813888,
+    "hard_job_commit_limit_bytes": 0,
+    "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+    "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation"
+  },
+  "terminated_job": "Local\\ParallelBayes-stage-737abfdbc950428fa3d2963d25ea0a1e",
+  "scientific_sampling_calls": 0
+}
