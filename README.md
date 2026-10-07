@@ -1,6 +1,6 @@
 # ParallelBayes
 
-2026-10-07 开发后继：[正式输入准备与封存接口](docs/FORMAL-FREEZE.md)已实现，8项本地检查通过；完整任务契约与登记规模见[前序报告](docs/FORMAL-PERSISTENCE.md)。尚未实际完成Windows输入封存或正式执行器验收，没有新增科学采样；旧提示词无需重跑。
+2026-10-07 开发后继：[正式任务与四批调度](docs/FORMAL-DISPATCH.md)已接入封存接口，9项本地契约检查通过。原生验收生成、完整结果读取及Windows端到端验证尚未完成，没有新增科学采样；旧提示词无需重跑。前序见[输入封存](docs/FORMAL-FREEZE.md)及[任务登记](docs/FORMAL-PERSISTENCE.md)。
 
 2026-10-07：Windows 三条后续分支已合入并完成[独立接收核验](docs/WINDOWS-FOLLOWUP-INTAKE.md)。五归档7,658文件、1,080份保存MH路径的独立NumPy重放、机制CSV及R诊断重建通过。F2、有限运行器和候选安装门槛已取得证据；正式推断协议/执行及最终论文仍待完成。旧F2／运行器／安装提示词无需再跑。
 

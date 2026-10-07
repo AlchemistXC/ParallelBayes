@@ -1,0 +1,63 @@
+{
+  "source_commit": "f6781bdf4a97d7fab7e0d44068643d9ed68caa85",
+  "first_implementation_source": "fe56feb",
+  "source_sha256": {
+    "scripts/completion/formal_acceptance.py": "c5d12c74f6683ff3a929badec552a94e7a50925f94550d17039225d305d63b57",
+    "scripts/completion/formal_execution.py": "f8bfe42806c576fef08adba9a94d731e476c7488c7d9b2136343c34807ae7b04",
+    "scripts/windows/formal_batch.py": "2d1c1a11c7c7c54e13ae4a6dd15615486e0339b59489bb4dc4206060eb6fe664",
+    "scripts/windows/formal_batch_worker.py": "0be5fde4837bf9a69ecf1a28aca41c64d8c36c0e8861d7879793b69315a066a4",
+    "scripts/windows/formal_cache_worker.py": "fe2457e7c3bd0a89d7d679dedda7f8983632ee3d29a402e4dfbecf1d12742ec9",
+    "scripts/windows/formal_owned_runtime.py": "58605a2c1f9c5895be12d4c5507559854cdfc637a220b465da2d7d33c8b4553f",
+    "tests/handoff/test_formal_execution.py": "0d4d066a3528d7d7927b213b9c14eb5fbb9325fd5ea87cfe1af5685d9fa962ca",
+    "tests/windows/test_formal_owned_runtime.py": "7984278053f67bbc5afd74cb42e609d2d4bb98eb25f85aef00f415e776bc6a75"
+  },
+  "test_runs": {
+    "tests-first.xml": {
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0
+    },
+    "test-wells-request.xml": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "tests-final.xml": {
+      "passed": 9,
+      "failed": 0,
+      "skipped": 0
+    },
+    "gate-environment.xml": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "distinct_portable_checks": 9,
+  "affected_environment_gate_recheck_passed": true,
+  "native_cases_defined": 16,
+  "native_cases_executed": 0,
+  "native_validation_grid": {
+    "main_tasks": 27,
+    "cache_probes": 24,
+    "models": [
+      "G1",
+      "W1",
+      "G2"
+    ],
+    "executed": false
+  },
+  "native_acceptance_producer_complete": false,
+  "native_formal_controller_executed": false,
+  "formal_raw_result_reader_complete": false,
+  "formal_inputs_generated": false,
+  "formal_protocol_frozen": false,
+  "new_sampler_calls": 0,
+  "new_formal_repetitions": 0,
+  "unchanged_historical_numerical_and_v1_technical_sources": true,
+  "limitations": [
+    "Local tests exercise complete metadata frames and refusal contracts only",
+    "Static routine preservation is not a native execution proof",
+    "Native acceptance generation, raw-result reading, finite end-to-end validation and formal study execution remain incomplete"
+  ]
+}

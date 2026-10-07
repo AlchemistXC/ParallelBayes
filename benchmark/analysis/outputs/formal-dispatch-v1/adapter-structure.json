@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "payload": true,
+    "ordinary": true,
+    "audited": true,
+    "cache_probe": true,
+    "cache_execution_and_audit_after_contract": true
+  },
+  "allowed_normalizations": [
+    "Diagnostic independent-unit label",
+    "New cache worker source filename"
+  ],
+  "scope": "Static structural preservation only; not native execution, model correctness or convergence",
+  "native_windows_checked": false
+}

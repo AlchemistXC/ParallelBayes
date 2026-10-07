@@ -1,0 +1,12 @@
+{
+  "RECEIPT.json": "75cd5a8d2fd0c4b9e1dd0d73478ff44689cf0229c0a036616709c5af3a14ab78",
+  "adapter-structure.json": "ccba3673d611b5956f0a99cb9b2e5869cac12c67f5b4a772b82a7c42193be3b6",
+  "gate-environment.log": "4270503835b7dd0e026724f5bc8d446dc344d437061764b4640cf62a6a04735f",
+  "gate-environment.xml": "29a35445ecb576d0c7e840c071df4482449cc3556115113395df69536b5165e6",
+  "test-wells-request.log": "bd7fbe71f5745c8b6e5c2acd0ffe32b6be8fd2af8665f922cbf6b93bc4e276d7",
+  "test-wells-request.xml": "c4484fd14ac1527d3c6843a30eff669b61f83ca782a39e5750dc83634b4b799d",
+  "tests-final.log": "ddeee834c2b5b16f95fb5dbac9eef360c84e34613f31aa5f621d5e32bf8ef3c8",
+  "tests-final.xml": "7353d86254c3754fe7766db3f5994a89060dd6b8ecb24916200d0a21e09b063d",
+  "tests-first.log": "849891d804fc79d0a663a1abd8983ef13784889ebfbdb3ce1a0b1446259df77e",
+  "tests-first.xml": "2f34a20712dcd25ca1963a1a3eefafcd941cc16c01c8ebf3fdd6eb51ea76f365"
+}
