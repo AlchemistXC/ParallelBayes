@@ -131,27 +131,30 @@ class Job:
         check(initialize(buffer, 2, 0, C.byref(length)))
         info = ProcessInfo()
         handles = []
+        stdin = open('NUL', 'rb')
         try:
-            with open('NUL', 'rb') as stdin:
-                handles = [msvcrt.get_osfhandle(f.fileno()) for f in (stdin, stdout, stderr)]
-                for h in handles: check(set_handle(h, 1, 1))
-                handle_list = (HANDLE * 3)(*handles)
-                job_list = (HANDLE * 1)(self.handle)
-                check(update(buffer, 0, 0x20002, handle_list, C.sizeof(handle_list), None, None))
-                check(update(buffer, 0, 0x2000D, job_list, C.sizeof(job_list), None, None))
-                startup = StartupEx(); startup.startup.cb = C.sizeof(startup)
-                startup.startup.flags = 0x100; startup.startup.stdin, startup.startup.stdout, startup.startup.stderr = handles
-                startup.attributes = C.cast(buffer, C.c_void_p)
-                env = dict(os.environ if environment is None else environment)
-                env_buffer = C.create_unicode_buffer('\0'.join(k+'='+str(v) for k,v in sorted(env.items(), key=lambda kv:kv[0].upper()))+'\0\0')
-                command = C.create_unicode_buffer(subprocess.list2cmdline([str(a) for a in argv]))
-                check(create_process(None, command, None, None, True,
-                    0x00080000 | 0x00000400 | 0x00000004 | 0x08000000,
-                    env_buffer, str(Path(cwd).resolve()), C.byref(startup), C.byref(info)))
-                self.process = info
+            handles = [msvcrt.get_osfhandle(f.fileno()) for f in (stdin, stdout, stderr)]
+            for h in handles: check(set_handle(h, 1, 1))
+            handle_list = (HANDLE * 3)(*handles)
+            job_list = (HANDLE * 1)(self.handle)
+            check(update(buffer, 0, 0x20002, handle_list, C.sizeof(handle_list), None, None))
+            check(update(buffer, 0, 0x2000D, job_list, C.sizeof(job_list), None, None))
+            startup = StartupEx(); startup.startup.cb = C.sizeof(startup)
+            startup.startup.flags = 0x100; startup.startup.stdin, startup.startup.stdout, startup.startup.stderr = handles
+            startup.attributes = C.cast(buffer, C.c_void_p)
+            env = dict(os.environ if environment is None else environment)
+            env_buffer = C.create_unicode_buffer('\0'.join(k+'='+str(v) for k,v in sorted(env.items(), key=lambda kv:kv[0].upper()))+'\0\0')
+            command = C.create_unicode_buffer(subprocess.list2cmdline([str(a) for a in argv]))
+            check(create_process(None, command, None, None, True,
+                0x00080000 | 0x00000400 | 0x00000004 | 0x08000000,
+                env_buffer, str(Path(cwd).resolve()), C.byref(startup), C.byref(info)))
+            self.process = info
         finally:
-            for h in handles: set_handle(h, 1, 0)
-            delete(buffer)
+            try:
+                for h in handles: check(set_handle(h, 1, 0))
+            finally:
+                stdin.close()
+                delete(buffer)
         record = identity(info.pid, self.handle)
         if not record['member_of_owned_job']:
             self.terminate(); raise RuntimeError('Atomic job assignment failed')

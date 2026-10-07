@@ -55,7 +55,9 @@ def main():
                     while job.observe()['active_processes']:time.sleep(.1)
                     final=job.observe();raise
     except BaseException as exc:
-        error=type(exc).__name__+': '+str(exc);traceback.print_exc()
+        error=type(exc).__name__+': '+str(exc)
+        (out/'witness-error.log').write_text(traceback.format_exc(),encoding='utf-8')
+        traceback.print_exc()
     result=dict(exit_code=code,error=error,job_final=final,invocation_seconds=time.perf_counter()-begin,
         finished_ns=time.time_ns(),logs={f.name:file_hash(f) for f in (out/'stdout.log',out/'stderr.log') if f.exists()})
     atomic_json(out/'finished.json',result);print(json.dumps(result),flush=True)

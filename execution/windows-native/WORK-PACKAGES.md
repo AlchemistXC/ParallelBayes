@@ -216,3 +216,5 @@ Windows新任务入口为handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATI
 新增witness_formal_stage仅在包外保存CLI命令、原生外层Job/实际句柄/所有后代、日志与外层调用时间；不持有科学主机锁、不增加资源/总时长限制、不改变数值或失败政策。内部原生运行器继续管理任务锁与资源。待依次prepare/16行为用例/27主任务/24缓存探测/终态核验/封存/搬移。正式统计重复0；不启动全网格。
 
 私有技能目录/ZIP缺失（parallelbayes-user-skills-2026-10-04.zip）；未猜测公开替代技能，继续独立执行。完整命令/失败/原始证据保存output/formal-adapter-validation-v1及独立commands目录。
+
+Prepare前首次witness启动失败：7bbc39d的Job API在with NUL退出后才清除继承标志，调用已关闭NUL句柄触发0xc0000008。子进程从未resume，Job active0，validation包不存在、输入生成0。原失败JSON和旧源码保留在包外commands目录。兼容修复仅延长NUL句柄生命周期到SetHandleInformation清理完成，并检查返回值；外层witness追加自身异常日志。微软API依据：https://learn.microsoft.com/windows/win32/api/handleapi/nf-handleapi-sethandleinformation。数值源码、参数和16行为用例不变；修复提交后重新prepare新目录，不续算任何旧冻结输入。
