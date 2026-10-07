@@ -1,0 +1,142 @@
+{
+  "artificial_data": true,
+  "scope": "Complete scalar report-shape validation; no native execution or scientific inference",
+  "source_commit": "de1c7e4d228ad59551fd7aac7ed4b03e6a1069f7",
+  "execution_baseline": "06e75c113e3ea6ea5a2a4275d7341595eefd7191",
+  "source_sha256": {
+    "scripts/analysis/formal_report.py": "1ea83161936975da1d15b2e10ffcae1b4b0c12cde6698babcc4cc0ca5cdf6517",
+    "scripts/analysis/formal_report_text.py": "400d0b76eb9b8a939e700c36f2c578eefe3df066dd1280812a61c32ec9cb7fa0",
+    "scripts/analysis/formal_plots.py": "be9c54eaeff1648157a8fb0fecdf5b7e40ef89dca910046fdd8023041b52ce98",
+    "tests/handoff/test_formal_report.py": "2ce030cf38ce32538188b2bc93f360d2d2d803b7f06325c6a02f6609ac402a77",
+    "tests/handoff/run_formal_report_scale.py": "3e1395f474f3b83583c42d0e89624c1584fd8d39a6455c1e558c7b72436d0505"
+  },
+  "main_slots": 41472,
+  "cache_slots": 9216,
+  "models": 9,
+  "functions": 36,
+  "figures": 45,
+  "panels": 99,
+  "diagnostics_rows": 1296,
+  "test_runs": [
+    {
+      "file": "tests.xml",
+      "passed": 9,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "file": "tests-fix.xml",
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "file": "tests-template.xml",
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "distinct_checks_in_this_round": 11,
+  "two_new_regressions_passed": true,
+  "full_task_identity_checked_even_for_fixture": true,
+  "artificial_claim_without_fixture_rejected": true,
+  "wrong_full_task_id_rejected": true,
+  "first_companion_run_completed": false,
+  "first_failure": "Ordered log interval collapsed to equal natural-ratio endpoints; statistics intact.",
+  "recovery": "Reuse unchanged statistics through public report CLI; regenerate text only after layout repair. No bootstrap or sampling rerun.",
+  "statistics_model_timings": [
+    {
+      "phase": "artificial-statistics",
+      "model": "G1",
+      "seconds": 5.9735402499791235,
+      "process_peak_rss_bytes": 291160064
+    },
+    {
+      "phase": "artificial-statistics",
+      "model": "G2",
+      "seconds": 6.400046541995835,
+      "process_peak_rss_bytes": 322371584
+    },
+    {
+      "phase": "artificial-statistics",
+      "model": "A1",
+      "seconds": 6.4155860420141835,
+      "process_peak_rss_bytes": 339640320
+    },
+    {
+      "phase": "artificial-statistics",
+      "model": "L1",
+      "seconds": 7.1902587080257945,
+      "process_peak_rss_bytes": 349093888
+    },
+    {
+      "phase": "artificial-statistics",
+      "model": "L2",
+      "seconds": 6.913286333990982,
+      "process_peak_rss_bytes": 365051904
+    },
+    {
+      "phase": "artificial-statistics",
+      "model": "H1",
+      "seconds": 7.189426042023115,
+      "process_peak_rss_bytes": 383811584
+    },
+    {
+      "phase": "artificial-statistics",
+      "model": "H2",
+      "seconds": 7.226674957986688,
+      "process_peak_rss_bytes": 400719872
+    },
+    {
+      "phase": "artificial-statistics",
+      "model": "M1",
+      "seconds": 6.926129416999174,
+      "process_peak_rss_bytes": 415596544
+    },
+    {
+      "phase": "artificial-statistics",
+      "model": "W1",
+      "seconds": 10.523765207995893,
+      "process_peak_rss_bytes": 438665216
+    }
+  ],
+  "statistics_model_seconds_sum": 64.75871350101079,
+  "statistics_process_peak_rss_bytes": 438665216,
+  "report_execution": {
+    "returncode": 0,
+    "seconds": 29.824465167010203,
+    "child_peak_rss_bytes": 573177856,
+    "artificial_data": true,
+    "new_sampler_calls": 0
+  },
+  "figure_qa": {
+    "checks": {
+      "font": 45,
+      "collision": 45,
+      "alignment": 45
+    },
+    "failed": 0,
+    "warnings": 0,
+    "manually_inspected_figures": 45,
+    "manually_inspected_panels": 99
+  },
+  "layout": {
+    "pdf_pages": 85,
+    "diagnostic_rows_found": 1296,
+    "overfull_boxes": 0,
+    "underfull_boxes": 0,
+    "final_tex_pass_warnings": 0,
+    "first_pass_rerun_warnings_retained": true,
+    "minimum_pdf_font_pt": 5.574000358581543
+  },
+  "unchanged_model_files": 369,
+  "new_sampler_calls": 0,
+  "new_formal_repetitions": 0,
+  "native_v2_verified": false,
+  "full_formal_study_complete": false,
+  "statistics_manifest_sha256": "bd58d7411ecd49881714da369aa8425a76f05153a3bc1824044cf5fc047bd6ca",
+  "report_manifest_sha256": "9785154f9e3cb7787786a2b12cd3dff796950c12c4a61d7a18075376a847d97b",
+  "pdf_sha256": "ce7edd10cc15c1c01cfb78c185c48ea8598aec17b5d20bbf990073a13db14206",
+  "complete_scalar_outputs_in_git": false
+}

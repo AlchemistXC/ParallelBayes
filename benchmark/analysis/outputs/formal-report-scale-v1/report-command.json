@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv/bin/python",
+    "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_report.py",
+    "--statistics-directory",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-scale-v1/run-01/statistics",
+    "--manifest-sha256",
+    "bd58d7411ecd49881714da369aa8425a76f05153a3bc1824044cf5fc047bd6ca",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-scale-v1/report-02",
+    "--fixture"
+  ],
+  "source_manifest_sha256": "bd58d7411ecd49881714da369aa8425a76f05153a3bc1824044cf5fc047bd6ca",
+  "artificial_data": true
+}

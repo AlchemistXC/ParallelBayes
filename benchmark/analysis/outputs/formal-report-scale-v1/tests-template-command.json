@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:cacheprovider",
+    "tests/handoff/test_formal_report.py",
+    "-k",
+    "small_frame",
+    "--basetemp=/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-scale-v1/tests-template",
+    "--junitxml=/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-report-scale-v1/tests-template.xml",
+    "-q"
+  ],
+  "exit_code": 0,
+  "seconds": 1.2981527500087395
+}

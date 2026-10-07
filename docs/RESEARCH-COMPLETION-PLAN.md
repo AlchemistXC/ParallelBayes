@@ -1,5 +1,7 @@
 # ParallelBayes 研究收尾计划
 
+**2026-10-07 当前状态**：完整任务读取、配对统计和报告生成已经实现，并完成[九模型人工规模验证](FORMAL-REPORT-SCALE.md)。实际v2 Windows回传、正式冻结与执行、水井正式比较及实际证据到终稿仍未完成。当前只执行既有有限v2验收提示词，原执行源码不变；下方开发条目保留当时状态。
+
 2026-10-07 原生验收生成后继：已提供新的有限 v2 验收命令和[一次性 Windows 提示词](../handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md)。8项新增/2项受影响本地检查通过；实际Windows行为、27/24执行和零重算待回传，正式网格尚不启动。完整正式数组分析、F3/F4/F5/F6仍未完成。见[新入口与证据](FORMAL-NATIVE-VALIDATION.md)。
 
 2026-10-07 正式调度后继：接入正式worker、独立cache身份、四批顺序及中断保留；9项不同本地契约检查通过，原生验收要求已定义但未执行。验收生成和完整原始结果读取仍待完成，无新增MCMC。见[实现和范围](FORMAL-DISPATCH.md)。

@@ -2,14 +2,14 @@
   "date": "2026-10-07",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "native_adapter_awaits_Windows_per_task_raw_reader_checked_full_frame_analysis_pending",
+  "local_phase": "native_v2_evidence_pending_full_frame_analysis_and_report_implemented_artificial_scale_checked",
   "gpu_tasks": "Received and independently checked F2 192 workflows, native runtime 27 main/24 cache tasks, and dev2 installation. Formal inference remains unfrozen and unexecuted.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
   "requires_user_resume": false,
   "rerun_completed_cpu_tasks": false,
   "active_outstanding_tasks": [
-    "F3 formal batch driver, freezing, inference and uncertainty",
+    "F3 native v2 acceptance, formal freeze/execution and actual inference uncertainty",
     "F4 external wells formal comparison",
     "F5 full raw-to-paper release reproduction",
     "F6 integrated final manuscript"
@@ -248,11 +248,33 @@
       "CLI_fixture_evidence_gaps": 51,
       "CLI_fixture_reused_without_replay": 51,
       "full_formal_archive_analyzed": false,
-      "figures_and_paper_connected": false,
+      "figures_and_paper_connected": true,
       "native_v2_return_read": false,
       "execution_sources_unchanged": true,
       "new_sampler_calls": 0,
       "new_formal_repetitions": 0
+    },
+    "report_pipeline": {
+      "report": "docs/FORMAL-REPORT-SCALE.md",
+      "source_commit": "de1c7e4d228ad59551fd7aac7ed4b03e6a1069f7",
+      "statistics_to_tables_figures_report_implemented": true,
+      "artificial_main_slots": 41472,
+      "artificial_cache_slots": 9216,
+      "artificial_models": 9,
+      "artificial_functions": 36,
+      "figures": 45,
+      "panels": 99,
+      "artificial_pdf_pages": 85,
+      "distinct_checks_this_round": 11,
+      "new_regression_checks": 2,
+      "affected_checks": 9,
+      "failed_checks": 0,
+      "skipped_checks": 0,
+      "actual_v2_return_analyzed": false,
+      "full_formal_results_in_paper": false,
+      "new_sampler_calls": 0,
+      "new_formal_repetitions": 0,
+      "execution_sources_unchanged": true
     }
   },
   "latest_upload_check": {
@@ -261,5 +283,6 @@
     "archive_metadata_matches": 5,
     "assets": 27,
     "newer_evidence_found": false
-  }
+  },
+  "status_interpretation": "Top-level fields and report_pipeline describe current state. Earlier nested milestone records retain their original validation limits."
 }

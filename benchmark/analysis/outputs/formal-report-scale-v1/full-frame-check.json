@@ -1,0 +1,163 @@
+{
+  "artificial_data": true,
+  "models": [
+    {
+      "model": "G1",
+      "main": 4608,
+      "cache": 1024,
+      "table_rows": {
+        "cache": 32,
+        "costs": 72,
+        "diagnostics": 108,
+        "errors": 216,
+        "nuts": 4,
+        "paired_errors": 144,
+        "ratios": 112,
+        "task_costs": 22528,
+        "tasks": 68
+      },
+      "collapsed_ratio_intervals": 3
+    },
+    {
+      "model": "G2",
+      "main": 4608,
+      "cache": 1024,
+      "table_rows": {
+        "cache": 32,
+        "costs": 72,
+        "diagnostics": 108,
+        "errors": 216,
+        "nuts": 4,
+        "paired_errors": 144,
+        "ratios": 112,
+        "task_costs": 22528,
+        "tasks": 68
+      },
+      "collapsed_ratio_intervals": 3
+    },
+    {
+      "model": "A1",
+      "main": 4608,
+      "cache": 1024,
+      "table_rows": {
+        "cache": 32,
+        "costs": 72,
+        "diagnostics": 108,
+        "errors": 216,
+        "nuts": 4,
+        "paired_errors": 144,
+        "ratios": 112,
+        "task_costs": 22528,
+        "tasks": 68
+      },
+      "collapsed_ratio_intervals": 5
+    },
+    {
+      "model": "L1",
+      "main": 4608,
+      "cache": 1024,
+      "table_rows": {
+        "cache": 32,
+        "costs": 72,
+        "diagnostics": 144,
+        "errors": 288,
+        "nuts": 4,
+        "paired_errors": 192,
+        "ratios": 112,
+        "task_costs": 22528,
+        "tasks": 68
+      },
+      "collapsed_ratio_intervals": 2
+    },
+    {
+      "model": "L2",
+      "main": 4608,
+      "cache": 1024,
+      "table_rows": {
+        "cache": 32,
+        "costs": 72,
+        "diagnostics": 144,
+        "errors": 288,
+        "nuts": 4,
+        "paired_errors": 192,
+        "ratios": 112,
+        "task_costs": 22528,
+        "tasks": 68
+      },
+      "collapsed_ratio_intervals": 2
+    },
+    {
+      "model": "H1",
+      "main": 4608,
+      "cache": 1024,
+      "table_rows": {
+        "cache": 32,
+        "costs": 72,
+        "diagnostics": 144,
+        "errors": 288,
+        "nuts": 4,
+        "paired_errors": 192,
+        "ratios": 112,
+        "task_costs": 22528,
+        "tasks": 68
+      },
+      "collapsed_ratio_intervals": 2
+    },
+    {
+      "model": "H2",
+      "main": 4608,
+      "cache": 1024,
+      "table_rows": {
+        "cache": 32,
+        "costs": 72,
+        "diagnostics": 144,
+        "errors": 288,
+        "nuts": 4,
+        "paired_errors": 192,
+        "ratios": 112,
+        "task_costs": 22528,
+        "tasks": 68
+      },
+      "collapsed_ratio_intervals": 4
+    },
+    {
+      "model": "M1",
+      "main": 4608,
+      "cache": 1024,
+      "table_rows": {
+        "cache": 32,
+        "costs": 72,
+        "diagnostics": 144,
+        "errors": 288,
+        "nuts": 4,
+        "paired_errors": 192,
+        "ratios": 112,
+        "task_costs": 22528,
+        "tasks": 68
+      },
+      "collapsed_ratio_intervals": 3
+    },
+    {
+      "model": "W1",
+      "main": 4608,
+      "cache": 1024,
+      "table_rows": {
+        "cache": 32,
+        "costs": 72,
+        "diagnostics": 252,
+        "errors": 504,
+        "nuts": 4,
+        "paired_errors": 336,
+        "ratios": 112,
+        "task_costs": 22528,
+        "tasks": 68
+      },
+      "collapsed_ratio_intervals": 1
+    }
+  ],
+  "new_sampler_calls": 0,
+  "new_formal_repetitions": 0,
+  "statistics_manifest_sha256": "bd58d7411ecd49881714da369aa8425a76f05153a3bc1824044cf5fc047bd6ca",
+  "report_manifest_sha256": "be019649e974d6bdaaad456ad95f513b6f417b057d6beb317d903252d65c1817",
+  "output_bytes": 296492238
+}

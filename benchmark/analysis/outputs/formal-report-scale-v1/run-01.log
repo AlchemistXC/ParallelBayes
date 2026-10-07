@@ -1,0 +1,27 @@
+{"phase": "artificial-statistics", "model": "G1", "seconds": 5.9735402499791235, "process_peak_rss_bytes": 291160064}
+{"phase": "artificial-statistics", "model": "G2", "seconds": 6.400046541995835, "process_peak_rss_bytes": 322371584}
+{"phase": "artificial-statistics", "model": "A1", "seconds": 6.4155860420141835, "process_peak_rss_bytes": 339640320}
+{"phase": "artificial-statistics", "model": "L1", "seconds": 7.1902587080257945, "process_peak_rss_bytes": 349093888}
+{"phase": "artificial-statistics", "model": "L2", "seconds": 6.913286333990982, "process_peak_rss_bytes": 365051904}
+{"phase": "artificial-statistics", "model": "H1", "seconds": 7.189426042023115, "process_peak_rss_bytes": 383811584}
+{"phase": "artificial-statistics", "model": "H2", "seconds": 7.226674957986688, "process_peak_rss_bytes": 400719872}
+{"phase": "artificial-statistics", "model": "M1", "seconds": 6.926129416999174, "process_peak_rss_bytes": 415596544}
+{"phase": "artificial-statistics", "model": "W1", "seconds": 10.523765207995893, "process_peak_rss_bytes": 438665216}
+Traceback (most recent call last):
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/tests/handoff/run_formal_report_scale.py", line 162, in <module>
+    run(parser.parse_args().output)
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/tests/handoff/run_formal_report_scale.py", line 136, in run
+    report_start=time.perf_counter();result=build(statistics,digest,output/'report',fixture=True,render=True)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_report.py", line 292, in build
+    summary,tables=model_tables(source,name);dest=output/name;dest.mkdir()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_report.py", line 277, in model_tables
+    tables['ratios'].append(ratio_row(pair,phase=scope,kind=kinds[(pair['workflow_a'],pair['workflow_b'])]))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_report.py", line 207, in ratio_row
+    lo,hi=interval(pair,'ratio_confidence_interval')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/formal_report.py", line 56, in interval
+    raise ValueError('Invalid saved interval; no zero-width substitute')
+ValueError: Invalid saved interval; no zero-width substitute
