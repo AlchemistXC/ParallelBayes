@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "real_task_array_schema_checks": 51,
+  "guard_cases": [
+    {
+      "case": "existing",
+      "expected_refusal": true,
+      "exit_code": 1,
+      "existing_analysis_unchanged": true
+    },
+    {
+      "case": "changed-manifest",
+      "expected_refusal": true,
+      "exit_code": 1,
+      "existing_analysis_unchanged": true
+    },
+    {
+      "case": "nested-output",
+      "expected_refusal": true,
+      "exit_code": 1,
+      "existing_analysis_unchanged": true
+    }
+  ],
+  "metadata_only_script_binding_change_preserved_numerical_storage_results": true,
+  "new_sampler_calls": 0,
+  "new_R_diagnostic_calls": 0
+}

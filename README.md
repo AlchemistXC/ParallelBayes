@@ -4,7 +4,7 @@
 
 2026-10-07 当前论文：[26页中文稿](output/software-paper/软件与基准研究-原生适配整合.pdf)已纳入有限v2原生验收及Mac独立接收。[文稿与重建回执](docs/NATIVE-V2-MANUSCRIPT.md)包括七段逐字节重建、59份输入及可搬移PDF；正式研究和投稿终稿仍未完成。
 
-2026-10-07 当前Windows任务：有限v2的16项行为、27主任务及24缓存/96调用已[独立接收](docs/WINDOWS-FORMAL-V2-INTAKE.md)。下一入口为[正式研究提示词](handoff/windows-completion/CODEX-PROMPT-FORMAL-STUDY.md)，一次全文提供、按阶段执行；在精确已验收提交0ba5643的独立工作树检查存储/环境，冻结输入后按四批执行。不重跑旧有限验收、F2、运行器或安装任务。
+2026-10-07 当前Windows任务：有限v2的16项行为、27主任务及24缓存/96调用已[独立接收](docs/WINDOWS-FORMAL-V2-INTAKE.md)。下一入口为[正式研究提示词](handoff/windows-completion/CODEX-PROMPT-FORMAL-STUDY.md)，一次全文提供、按阶段执行；在精确已验收提交0ba5643的独立工作树检查存储/环境，冻结输入后按四批执行。不重跑旧有限验收、F2、运行器或安装任务。2026-10-08新增[容量伴随核算](docs/FORMAL-STORAGE-COMPANION.md)，明确原件、归档、解压及接收分析的不同存储开销；不是新实验或充分空间保证。
 
 2026-10-07 报告接口：[报告生成及规模核验](docs/FORMAL-REPORT-SCALE.md)覆盖人工41,472主任务/9,216缓存槽位，45图/99面板及85页测试PDF；这些不是正式科学结果。以下日期段落保留历史状态。
 

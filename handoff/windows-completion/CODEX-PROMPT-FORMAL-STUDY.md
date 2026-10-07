@@ -2,7 +2,7 @@
 
 一、先读证据，分开文档检出与执行检出
 
-从最新 `origin/codex/research-integration` 读取 AGENTS.md、docs/WINDOWS-FORMAL-V2-INTAKE.md、docs/F3-FORMAL-DESIGN-DRAFT.md、docs/FORMAL-COST-POLICY.md、docs/FORMAL-MEASUREMENT-DESIGN.md、docs/FORMAL-DISPATCH.md、docs/FORMAL-RAW-READER.md、docs/FORMAL-FRAME-ANALYSIS.md及本提示词。旧报告保留当时状态，当前入口以Mac接收报告为准。
+从最新 `origin/codex/research-integration` 读取 AGENTS.md、docs/WINDOWS-FORMAL-V2-INTAKE.md、docs/F3-FORMAL-DESIGN-DRAFT.md、docs/FORMAL-COST-POLICY.md、docs/FORMAL-MEASUREMENT-DESIGN.md、docs/FORMAL-DISPATCH.md、docs/FORMAL-RAW-READER.md、docs/FORMAL-FRAME-ANALYSIS.md、docs/FORMAL-STORAGE-COMPANION.md及本提示词。旧报告保留当时状态，当前入口以Mac接收报告为准。
 
 有限v2已由Mac独立接收：真实16/0/0、27主任务、24探测/96调用全部读取，接受事件零失配，主包3167文件未变。验收文件SHA256为1b71fc0809c5019140768778572681f076bfbf8e7810523f2aed92047c1dd173。前期失败及修复原件保留，不再重跑以“刷新”结果。
 
@@ -26,7 +26,9 @@
 
 **先落实实际存储方案。** 完整主要数组逻辑容量约505.95GiB，不包含逐轮JSON、重复的诊断二进制、失败原件、Git/环境、归档和解压/分析副本；输入自身约23.78GiB。这不是压缩后估计或足够空间保证。记录每个拟使用卷的容量/余量、文件系统、原始包/归档/分析目录、备份方式及预留。结合已保存最大G2任务的实际目录字节检查可行性；不以某个小模型压缩率推算全部任务。空间不足时保留为资源等待并报告所需存储，不缩减网格、不删历史或原始数组、不购买设备。
 
-Mac目前只有约151GiB空闲，不默认将500GiB以上数据直接传过去。完整原件先可靠保存在Windows；先回传协议、清单、状态和分析小包。完整接收由用户可用的外置/网络存储安排承接，或由Mac提供后续已核验的分批读取方案。不能因此声称独立完整复现已完成。
+2026-10-08补充的只读容量核算见docs/FORMAL-STORAGE-COMPANION.md：已验收保存格式的完整命名数组约506.13GiB；若50,688任务均一次成功，现实现保留的1MiB/任务故障记录预留另占49.5GiB。独立接收时三份函数二进制另约80.68GiB。原件＋未压缩tar＋解压树＋这些接收函数文件的无压缩情景约1747.57GiB，仍不含JSON/观察日志、索引、失败重试、文件系统及其他副本开销，不能当作容量保证或放行阈值。不要把有限批次NPZ压缩率推广到完整研究，也不要删除预留文件。按每个实际卷分配记录这些目录；无需执行新的有限验收，采样源码/网格/资源保护不变。
+
+Mac最近仅约149GiB空闲，不默认将500GiB以上数据直接传过去。完整原件先可靠保存在Windows；先回传协议、清单、状态和分析小包。完整接收由用户可用的外置/网络存储安排承接，或由Mac提供后续已核验的分批读取方案。不能因此声称独立完整复现已完成。
 
 核对共享登记的真实原生Job/进程状态，不只看文件；存在活动旧任务则等待或调查，不误杀无关进程。保留原12GiB准备可用RAM、3GiB空闲GPU要求及每任务8GiB观察RSS、12GiB Job commit、4GiB启动磁盘/1GiB运行储备。原PeakJobMemoryUsed计数不能冒充实际成功提交峰值或VRAM。不得增加总实验时限；数值轮数、内存/磁盘和失败终止规则继续生效。
 

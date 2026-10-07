@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
   "local_phase": "native_v2_independently_received_formal_study_handoff_ready_freeze_pending",
@@ -376,10 +376,30 @@
     "design_sha256": "68a1cba1b9309216d237ac4613531216f167ff344dfdfcb72dc3aaca0ca0baa5"
   },
   "full_formal_delivery_storage": {
-    "Mac_observed_free_GiB_approx": 151,
+    "Mac_observed_free_GiB_approx": 148.73,
     "planned_primary_array_GiB": 505.95,
     "logs_archives_analysis_and_copies_extra": true,
     "full_Mac_raw_intake_capacity_not_yet_confirmed": true,
-    "original_Windows_arrays_must_be_retained": true
+    "original_Windows_arrays_must_be_retained": true,
+    "capacity_observed_utc": "2026-10-07T15:10:56.531699+00:00",
+    "planned_named_array_GiB": 506.12822341918945,
+    "all_success_attempt_reserve_GiB": 49.5,
+    "receiver_function_binaries_GiB": 80.68359375,
+    "three_uncompressed_copies_and_receiver_scenario_GiB": 1747.5682640075684,
+    "scenario_is_capacity_guarantee": false,
+    "companion_report": "docs/FORMAL-STORAGE-COMPANION.md"
+  },
+  "storage_companion": {
+    "date": "2026-10-08",
+    "report": "docs/FORMAL-STORAGE-COMPANION.md",
+    "received_inventory_files": 3167,
+    "observed_task_schema_checks": 51,
+    "guard_cases_passed": 3,
+    "new_sampler_calls": 0,
+    "new_R_diagnostic_calls": 0,
+    "new_formal_inputs": 0,
+    "scientific_design_changed": false,
+    "accepted_execution_source_changed": false,
+    "archive_sha256": "e3c4ce142fec57b9684b12b17e35b95463857661e8c1823c6c3d1173273ce233"
   }
 }

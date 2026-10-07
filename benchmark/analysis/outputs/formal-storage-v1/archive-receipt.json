@@ -1,0 +1,10 @@
+{
+  "archive": "formal-storage-v1.tar",
+  "bytes": 747520,
+  "sha256": "e3c4ce142fec57b9684b12b17e35b95463857661e8c1823c6c3d1173273ce233",
+  "manifest_files_verified": 11,
+  "manifest_self_excluded": true,
+  "new_sampler_calls": 0,
+  "new_formal_inputs": 0,
+  "new_formal_repetitions": 0
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "formal-storage-companion-package-v1",
+  "source_base_commit": "730d483317b09bc9d045fd36f10cffc8367720a1",
+  "files": {
+    "README.md": "e4fa3a2507685fbdc20b260873abdebff271729f24d429c4699af9b781a9f291",
+    "REPORT.md": "e1b414d54f81c7dfa648f065bf6ab8c2876ac257cfe63d5afee77c36b9328a74",
+    "analysis/SHA256.json": "27ebe933037c1e5e9c01eb1929cb6535854b1063dbb9fb3da843083ab270451b",
+    "analysis/file-footprint.json": "6c62bf5a5aa1fb9805f170f6f39ceedf6def13cf865ff3818e6a4cfec0ef743d",
+    "analysis/npz-headers.json": "6a03c1f6c1e1f9587baf6a315a3e52dc506ba3f7e3303faf9ae1947a18b2ad64",
+    "analysis/summary.json": "2f218c30a33c1ae0c0ada22ec3ea228ae39eb2e475f9e0a7bb8c7b496883e04f",
+    "audit_formal_storage.py": "eeb640eb8127a24627dc5a3e8459390843ca00e6d2713c9c49e9fe1b59f23e0f",
+    "checks.json": "2fd3ccf9bafbceb5e6c79add12b1ee26acfc5f50c1e7cb0e038316b99b6866e7",
+    "guards/changed-manifest.log": "ba855d06cae95f70c449e7b5f06cbb78a115a4679b0242d3aaea966433133ead",
+    "guards/existing.log": "6ec24307c898c9d8fcab168fc1f92fe8cc9922d7ac33d999e17f073b21330ca2",
+    "guards/nested-output.log": "d62b39014befa70ed472b31a630f85bfd1aa40deb5b19f8673638e512909bf84"
+  }
+}

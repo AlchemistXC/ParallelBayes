@@ -1,0 +1,11 @@
+{
+  "scope": "Storage companion, not formal results",
+  "files": {
+    "analysis-files-SHA256.json": "27ebe933037c1e5e9c01eb1929cb6535854b1063dbb9fb3da843083ab270451b",
+    "archive-manifest.json": "a36ff7b6a9908dbdcbd74d7d57c9a152091858f399ddfc82ada464f4c31f3dd2",
+    "archive-receipt.json": "71342f0871dce80b5281c302e51dbbaae34fb857cec2ec734778fb85891e16f6",
+    "checks.json": "2fd3ccf9bafbceb5e6c79add12b1ee26acfc5f50c1e7cb0e038316b99b6866e7",
+    "delivery-checks.json": "fb20148091c8f1c92cf8401929570bea9c8eb91d4414e042e0400fbaac6ece44",
+    "summary.json": "2f218c30a33c1ae0c0ada22ec3ea228ae39eb2e475f9e0a7bb8c7b496883e04f"
+  }
+}

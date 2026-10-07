@@ -1,0 +1,1012 @@
+{
+  "schema": "formal-storage-companion-v1",
+  "scope": "Actual finite file lengths and all-success no-retry formal storage scenarios, not disk sufficiency, runtime, compression or convergence forecasts",
+  "received_manifest_sha256": "b6bc221c724f05a14b1bb9782140b7536e0b03a0250820c4810c649091b679bd",
+  "received_inventory_files": 3167,
+  "received_inventory_file_bytes": 981251964,
+  "observed_components": {
+    "json_and_observation_logs": 127845668,
+    "other": 2645489,
+    "npz_stored": 727708775,
+    "failure_reserve": 94371840,
+    "function_binaries": 28680192
+  },
+  "observed_tasks": [
+    {
+      "phase": "main",
+      "id": "9979e11d06d0a979163a45e6",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cpu-mala-sequential",
+      "files": 29,
+      "file_bytes": 1344423,
+      "components": {
+        "json_and_observation_logs": 225497,
+        "other": 202,
+        "function_binaries": 28672,
+        "failure_reserve": 1048576,
+        "npz_stored": 41476
+      },
+      "npz_array_bytes": 78336,
+      "npz_stored_over_array_bytes": 0.5294628267973857,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "6fbe9cf0166dc827654c9bbb",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cuda-rwm-sequential",
+      "files": 31,
+      "file_bytes": 1303478,
+      "components": {
+        "json_and_observation_logs": 200022,
+        "other": 202,
+        "function_binaries": 28672,
+        "failure_reserve": 1048576,
+        "npz_stored": 26006
+      },
+      "npz_array_bytes": 78336,
+      "npz_stored_over_array_bytes": 0.3319801879084967,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "91d01de3dda4030b2108a952",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cpu-rwm-sequential",
+      "files": 29,
+      "file_bytes": 1334223,
+      "components": {
+        "json_and_observation_logs": 190213,
+        "other": 202,
+        "function_binaries": 12288,
+        "failure_reserve": 1048576,
+        "npz_stored": 82944
+      },
+      "npz_array_bytes": 299520,
+      "npz_stored_over_array_bytes": 0.27692307692307694,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "923c6525d9482c55cea3d926",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cpu-mala-quasi_deer",
+      "files": 29,
+      "file_bytes": 1661789,
+      "components": {
+        "json_and_observation_logs": 433513,
+        "other": 202,
+        "function_binaries": 12288,
+        "failure_reserve": 1048576,
+        "npz_stored": 167210
+      },
+      "npz_array_bytes": 299520,
+      "npz_stored_over_array_bytes": 0.5582598824786325,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "24333c95b38fa47d254f0959",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cuda-mala-quasi_deer",
+      "files": 31,
+      "file_bytes": 1702521,
+      "components": {
+        "json_and_observation_logs": 474315,
+        "other": 202,
+        "function_binaries": 12288,
+        "failure_reserve": 1048576,
+        "npz_stored": 167140
+      },
+      "npz_array_bytes": 299520,
+      "npz_stored_over_array_bytes": 0.5580261752136753,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "5a4632c4c5557c08ef7889e5",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cuda-rwm-sequential",
+      "files": 31,
+      "file_bytes": 20986608,
+      "components": {
+        "json_and_observation_logs": 634116,
+        "other": 202,
+        "function_binaries": 3145728,
+        "failure_reserve": 1048576,
+        "npz_stored": 16157986
+      },
+      "npz_array_bytes": 69341184,
+      "npz_stored_over_array_bytes": 0.23302148979746293,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "74f8e9a7f6444d0ecebde872",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cpu-mala-quasi_deer",
+      "files": 29,
+      "file_bytes": 1607125,
+      "components": {
+        "json_and_observation_logs": 484896,
+        "other": 202,
+        "function_binaries": 28672,
+        "failure_reserve": 1048576,
+        "npz_stored": 44779
+      },
+      "npz_array_bytes": 78336,
+      "npz_stored_over_array_bytes": 0.5716273488562091,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "df7824d410743260c878db6f",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cpu-rwm-sequential",
+      "files": 29,
+      "file_bytes": 1299439,
+      "components": {
+        "json_and_observation_logs": 195983,
+        "other": 202,
+        "function_binaries": 28672,
+        "failure_reserve": 1048576,
+        "npz_stored": 26006
+      },
+      "npz_array_bytes": 78336,
+      "npz_stored_over_array_bytes": 0.3319801879084967,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "8732b10c40cf77ac547a192a",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cuda-rwm-sequential",
+      "files": 31,
+      "file_bytes": 1341263,
+      "components": {
+        "json_and_observation_logs": 197253,
+        "other": 202,
+        "function_binaries": 12288,
+        "failure_reserve": 1048576,
+        "npz_stored": 82944
+      },
+      "npz_array_bytes": 299520,
+      "npz_stored_over_array_bytes": 0.27692307692307694,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "6eb08b036ca535647b12a759",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cpu-nuts-spawn_chains",
+      "files": 37,
+      "file_bytes": 1454493,
+      "components": {
+        "json_and_observation_logs": 254946,
+        "other": 202,
+        "function_binaries": 28672,
+        "failure_reserve": 1048576,
+        "npz_stored": 122097
+      },
+      "npz_array_bytes": 149056,
+      "npz_stored_over_array_bytes": 0.8191350901674539,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "d2de7f6ac9b76a655f76c42d",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cpu-rwm-sequential",
+      "files": 29,
+      "file_bytes": 20859782,
+      "components": {
+        "json_and_observation_logs": 507290,
+        "other": 202,
+        "function_binaries": 3145728,
+        "failure_reserve": 1048576,
+        "npz_stored": 16157986
+      },
+      "npz_array_bytes": 69341184,
+      "npz_stored_over_array_bytes": 0.23302148979746293,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "ff19dcf0c1ac31a9f4fddf85",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cuda-rwm-online_picard",
+      "files": 31,
+      "file_bytes": 1379847,
+      "components": {
+        "json_and_observation_logs": 276391,
+        "other": 202,
+        "function_binaries": 28672,
+        "failure_reserve": 1048576,
+        "npz_stored": 26006
+      },
+      "npz_array_bytes": 78336,
+      "npz_stored_over_array_bytes": 0.3319801879084967,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "67fb4cd6ff7f1aa81c06092d",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cuda-mala-sequential",
+      "files": 31,
+      "file_bytes": 1428961,
+      "components": {
+        "json_and_observation_logs": 223495,
+        "other": 202,
+        "function_binaries": 12288,
+        "failure_reserve": 1048576,
+        "npz_stored": 144400
+      },
+      "npz_array_bytes": 299520,
+      "npz_stored_over_array_bytes": 0.48210470085470086,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "1c2d1dacbaf0bff74e61c692",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cuda-rwm-online_picard",
+      "files": 31,
+      "file_bytes": 21586602,
+      "components": {
+        "json_and_observation_logs": 1235327,
+        "other": 202,
+        "function_binaries": 3145728,
+        "failure_reserve": 1048576,
+        "npz_stored": 16156769
+      },
+      "npz_array_bytes": 69341184,
+      "npz_stored_over_array_bytes": 0.23300393890014914,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "ff489ae48b14f20b88802f69",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cpu-rwm-online_picard",
+      "files": 29,
+      "file_bytes": 1385311,
+      "components": {
+        "json_and_observation_logs": 241291,
+        "other": 202,
+        "function_binaries": 12288,
+        "failure_reserve": 1048576,
+        "npz_stored": 82954
+      },
+      "npz_array_bytes": 299520,
+      "npz_stored_over_array_bytes": 0.27695646367521365,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "9520ded4f649a065b78c9e1f",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cpu-rwm-online_picard",
+      "files": 29,
+      "file_bytes": 21544304,
+      "components": {
+        "json_and_observation_logs": 1193029,
+        "other": 202,
+        "function_binaries": 3145728,
+        "failure_reserve": 1048576,
+        "npz_stored": 16156769
+      },
+      "npz_array_bytes": 69341184,
+      "npz_stored_over_array_bytes": 0.23300393890014914,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "36fbf96771347389711df0ef",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cpu-rwm-online_picard",
+      "files": 29,
+      "file_bytes": 1387025,
+      "components": {
+        "json_and_observation_logs": 283569,
+        "other": 202,
+        "function_binaries": 28672,
+        "failure_reserve": 1048576,
+        "npz_stored": 26006
+      },
+      "npz_array_bytes": 78336,
+      "npz_stored_over_array_bytes": 0.3319801879084967,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "20fb8065aaea9a9967c13a4c",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cpu-nuts-spawn_chains",
+      "files": 37,
+      "file_bytes": 71992723,
+      "components": {
+        "json_and_observation_logs": 1135800,
+        "other": 4082,
+        "function_binaries": 3145728,
+        "failure_reserve": 1048576,
+        "npz_stored": 66658537
+      },
+      "npz_array_bytes": 69805568,
+      "npz_stored_over_array_bytes": 0.9549171922789884,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "4caca08533be149051e3b4b8",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cpu-mala-sequential",
+      "files": 29,
+      "file_bytes": 37295317,
+      "components": {
+        "json_and_observation_logs": 699413,
+        "other": 202,
+        "function_binaries": 3145728,
+        "failure_reserve": 1048576,
+        "npz_stored": 32401398
+      },
+      "npz_array_bytes": 69341184,
+      "npz_stored_over_array_bytes": 0.46727494586766793,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "3a0fc5f235397aa1c095cdb3",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cuda-rwm-online_picard",
+      "files": 31,
+      "file_bytes": 1391692,
+      "components": {
+        "json_and_observation_logs": 247672,
+        "other": 202,
+        "function_binaries": 12288,
+        "failure_reserve": 1048576,
+        "npz_stored": 82954
+      },
+      "npz_array_bytes": 299520,
+      "npz_stored_over_array_bytes": 0.27695646367521365,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "ed6a127c7333fd42c6bf7b54",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cuda-mala-quasi_deer",
+      "files": 31,
+      "file_bytes": 1587449,
+      "components": {
+        "json_and_observation_logs": 465181,
+        "other": 202,
+        "function_binaries": 28672,
+        "failure_reserve": 1048576,
+        "npz_stored": 44818
+      },
+      "npz_array_bytes": 78336,
+      "npz_stored_over_array_bytes": 0.572125204248366,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "b4f296afbecd888b80379277",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cuda-mala-quasi_deer",
+      "files": 31,
+      "file_bytes": 52505101,
+      "components": {
+        "json_and_observation_logs": 8675852,
+        "other": 202,
+        "function_binaries": 3145728,
+        "failure_reserve": 1048576,
+        "npz_stored": 39634743
+      },
+      "npz_array_bytes": 69341184,
+      "npz_stored_over_array_bytes": 0.5715902255144648,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "a3b64b750daae03923ecac56",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cpu-nuts-spawn_chains",
+      "files": 37,
+      "file_bytes": 1651358,
+      "components": {
+        "json_and_observation_logs": 263347,
+        "other": 337,
+        "function_binaries": 12288,
+        "failure_reserve": 1048576,
+        "npz_stored": 326810
+      },
+      "npz_array_bytes": 370432,
+      "npz_stored_over_array_bytes": 0.8822401952315134,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "2b59824bc1c57d172584b892",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cuda-mala-sequential",
+      "files": 31,
+      "file_bytes": 1348143,
+      "components": {
+        "json_and_observation_logs": 229239,
+        "other": 202,
+        "function_binaries": 28672,
+        "failure_reserve": 1048576,
+        "npz_stored": 41454
+      },
+      "npz_array_bytes": 78336,
+      "npz_stored_over_array_bytes": 0.5291819852941176,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "26a8504801fea4e534ce70fd",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cpu-mala-sequential",
+      "files": 29,
+      "file_bytes": 1412235,
+      "components": {
+        "json_and_observation_logs": 206769,
+        "other": 202,
+        "function_binaries": 12288,
+        "failure_reserve": 1048576,
+        "npz_stored": 144400
+      },
+      "npz_array_bytes": 299520,
+      "npz_stored_over_array_bytes": 0.48210470085470086,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "7616ff202ae3013e93584bdc",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cuda-mala-sequential",
+      "files": 31,
+      "file_bytes": 37706991,
+      "components": {
+        "json_and_observation_logs": 1110839,
+        "other": 202,
+        "function_binaries": 3145728,
+        "failure_reserve": 1048576,
+        "npz_stored": 32401646
+      },
+      "npz_array_bytes": 69341184,
+      "npz_stored_over_array_bytes": 0.46727852238577294,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "main",
+      "id": "16fb04841a2c382d73d0621d",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cpu-mala-quasi_deer",
+      "files": 29,
+      "file_bytes": 51690926,
+      "components": {
+        "json_and_observation_logs": 7847785,
+        "other": 202,
+        "function_binaries": 3145728,
+        "failure_reserve": 1048576,
+        "npz_stored": 39648635
+      },
+      "npz_array_bytes": 69341184,
+      "npz_stored_over_array_bytes": 0.5717905682141222,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "c6b68f0199ce5054e22fa5cc",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cuda-rwm-online_picard",
+      "files": 35,
+      "file_bytes": 36380558,
+      "components": {
+        "json_and_observation_logs": 3163722,
+        "npz_stored": 32168260,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 138682368,
+      "npz_stored_over_array_bytes": 0.23195637963147558,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "662dec7975128ecc68fd40f3",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cpu-mala-sequential",
+      "files": 34,
+      "file_bytes": 1587380,
+      "components": {
+        "json_and_observation_logs": 249960,
+        "npz_stored": 288844,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 599040,
+      "npz_stored_over_array_bytes": 0.4821781517094017,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "5cf301415235b5209247be47",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cuda-rwm-sequential",
+      "files": 35,
+      "file_bytes": 1459195,
+      "components": {
+        "json_and_observation_logs": 244687,
+        "npz_stored": 165932,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 599040,
+      "npz_stored_over_array_bytes": 0.2769965277777778,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "8db02e7cdfb2cc1d9e765238",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cuda-mala-sequential",
+      "files": 35,
+      "file_bytes": 1433354,
+      "components": {
+        "json_and_observation_logs": 300714,
+        "npz_stored": 84064,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 156672,
+      "npz_stored_over_array_bytes": 0.5365604575163399,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "7d3a00ad6524d031bf087477",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cuda-mala-quasi_deer",
+      "files": 35,
+      "file_bytes": 104006575,
+      "components": {
+        "json_and_observation_logs": 25299663,
+        "npz_stored": 77658336,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 138682368,
+      "npz_stored_over_array_bytes": 0.5599726707868156,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "65a4c1586e9ea2b9c02e9916",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cuda-rwm-online_picard",
+      "files": 35,
+      "file_bytes": 1621199,
+      "components": {
+        "json_and_observation_logs": 406671,
+        "npz_stored": 165952,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 599040,
+      "npz_stored_over_array_bytes": 0.27702991452991454,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "24d49939613984b5566a1071",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cpu-rwm-sequential",
+      "files": 34,
+      "file_bytes": 34068485,
+      "components": {
+        "json_and_observation_logs": 846345,
+        "npz_stored": 32173564,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 138682368,
+      "npz_stored_over_array_bytes": 0.23199462530088902,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "cc6b4793e11959de5031bca1",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cpu-mala-quasi_deer",
+      "files": 34,
+      "file_bytes": 2326687,
+      "components": {
+        "json_and_observation_logs": 943647,
+        "npz_stored": 334464,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 599040,
+      "npz_stored_over_array_bytes": 0.5583333333333333,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "e99c4469e26200a0cb385d32",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cpu-rwm-sequential",
+      "files": 34,
+      "file_bytes": 1340141,
+      "components": {
+        "json_and_observation_logs": 238773,
+        "npz_stored": 52792,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 156672,
+      "npz_stored_over_array_bytes": 0.33695874183006536,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "38a0f69d57334cacafaa1d4a",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cpu-mala-quasi_deer",
+      "files": 34,
+      "file_bytes": 101957422,
+      "components": {
+        "json_and_observation_logs": 23230194,
+        "npz_stored": 77678652,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 138682368,
+      "npz_stored_over_array_bytes": 0.5601191638146819,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "39c1b9d665bab521e3e491af",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cpu-mala-sequential",
+      "files": 34,
+      "file_bytes": 1411065,
+      "components": {
+        "json_and_observation_logs": 278413,
+        "npz_stored": 84076,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 156672,
+      "npz_stored_over_array_bytes": 0.5366370506535948,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "79458f13b19f1f5b0dff8ad3",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cpu-rwm-online_picard",
+      "files": 34,
+      "file_bytes": 1609103,
+      "components": {
+        "json_and_observation_logs": 394575,
+        "npz_stored": 165952,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 599040,
+      "npz_stored_over_array_bytes": 0.27702991452991454,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "5f12530b8a6ea9723724325e",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cuda-mala-sequential",
+      "files": 35,
+      "file_bytes": 67880544,
+      "components": {
+        "json_and_observation_logs": 2329084,
+        "npz_stored": 64502884,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 138682368,
+      "npz_stored_over_array_bytes": 0.46511236381542026,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "ed5a75615e7e2f081c877c53",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cpu-rwm-sequential",
+      "files": 34,
+      "file_bytes": 1443911,
+      "components": {
+        "json_and_observation_logs": 229403,
+        "npz_stored": 165932,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 599040,
+      "npz_stored_over_array_bytes": 0.2769965277777778,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "3d2b31f692b134fe0e95fe02",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cuda-rwm-online_picard",
+      "files": 35,
+      "file_bytes": 1596744,
+      "components": {
+        "json_and_observation_logs": 495368,
+        "npz_stored": 52800,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 156672,
+      "npz_stored_over_array_bytes": 0.33700980392156865,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "b48a58d01beb52a943c837e5",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cpu-rwm-online_picard",
+      "files": 34,
+      "file_bytes": 1613542,
+      "components": {
+        "json_and_observation_logs": 512166,
+        "npz_stored": 52800,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 156672,
+      "npz_stored_over_array_bytes": 0.33700980392156865,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "bef880b68c8299e7fbf0deae",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cuda-mala-quasi_deer",
+      "files": 35,
+      "file_bytes": 2145427,
+      "components": {
+        "json_and_observation_logs": 1003107,
+        "npz_stored": 93744,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 156672,
+      "npz_stored_over_array_bytes": 0.5983455882352942,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "f97f4443302513f3cb44f9c5",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cpu-mala-sequential",
+      "files": 34,
+      "file_bytes": 66877674,
+      "components": {
+        "json_and_observation_logs": 1325922,
+        "npz_stored": 64503176,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 138682368,
+      "npz_stored_over_array_bytes": 0.4651144693462402,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "2ef75777a5a12dcb0bc503dc",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cuda-mala-quasi_deer",
+      "files": 35,
+      "file_bytes": 2452080,
+      "components": {
+        "json_and_observation_logs": 1069180,
+        "npz_stored": 334324,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 599040,
+      "npz_stored_over_array_bytes": 0.558099626068376,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "70b0313454b8eba107c2f440",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cpu-rwm-online_picard",
+      "files": 34,
+      "file_bytes": 36288140,
+      "components": {
+        "json_and_observation_logs": 3071304,
+        "npz_stored": 32168260,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 138682368,
+      "npz_stored_over_array_bytes": 0.23195637963147558,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "b43980cc9befe87e81b678e5",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cpu-mala-quasi_deer",
+      "files": 34,
+      "file_bytes": 2211333,
+      "components": {
+        "json_and_observation_logs": 1069113,
+        "npz_stored": 93644,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 156672,
+      "npz_stored_over_array_bytes": 0.5977073120915033,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "f56a569fd5cb88c691d44b9a",
+      "model": "G2",
+      "budget": 16384,
+      "workflow": "cuda-rwm-sequential",
+      "files": 35,
+      "file_bytes": 34409886,
+      "components": {
+        "json_and_observation_logs": 1187746,
+        "npz_stored": 32173564,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 138682368,
+      "npz_stored_over_array_bytes": 0.23199462530088902,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "f8a01a75f2ac3ca26c6ff772",
+      "model": "G1",
+      "budget": 64,
+      "workflow": "cuda-mala-sequential",
+      "files": 35,
+      "file_bytes": 1642475,
+      "components": {
+        "json_and_observation_logs": 305055,
+        "npz_stored": 288844,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 599040,
+      "npz_stored_over_array_bytes": 0.4821781517094017,
+      "source_schema_bytes_match": true
+    },
+    {
+      "phase": "cache",
+      "id": "88bb40b0416f7bb412288e1d",
+      "model": "W1",
+      "budget": 64,
+      "workflow": "cuda-rwm-sequential",
+      "files": 35,
+      "file_bytes": 1348526,
+      "components": {
+        "json_and_observation_logs": 247158,
+        "npz_stored": 52792,
+        "failure_reserve": 1048576,
+        "other": 0
+      },
+      "npz_array_bytes": 156672,
+      "npz_stored_over_array_bytes": 0.33695874183006536,
+      "source_schema_bytes_match": true
+    }
+  ],
+  "observed_task_schema_checks": 51,
+  "native_rng_state_bytes": 5056,
+  "formal_design_sha256": "68a1cba1b9309216d237ac4613531216f167ff344dfdfcb72dc3aaca0ca0baa5",
+  "planned_inputs": 1152,
+  "planned_main": 41472,
+  "planned_cache": 9216,
+  "formal_named_array_bytes": {
+    "master_inputs": 25537794048,
+    "MH_two_coordinates": 280850595840,
+    "MH_two_accept_arrays": 1755316224,
+    "original_two_function_binaries": 57755566080,
+    "NUTS_two_coordinates_and_warmup": 35106324480,
+    "NUTS_step_sizes": 953155584,
+    "NUTS_initial": 2949120,
+    "NUTS_rng_states": 186384384,
+    "cache_four_calls_arrays": 141302956032
+  },
+  "formal_named_arrays_total": 543451041792,
+  "successful_attempt_reserve_bytes": 53150220288,
+  "receiver_three_function_binaries_bytes": 86633349120,
+  "no_compression_no_retry_scenarios": {
+    "one_execution_tree_named_arrays_and_reserves": 596601262080,
+    "execution_tree_plus_tar_plus_extracted_delivery": 1789803786240,
+    "three_copies_plus_receiver_function_binaries": 1876437135360,
+    "one_received_delivery_plus_receiver_function_binaries": 683234611200
+  },
+  "scenario_exclusions": [
+    "NPY/ZIP/TAR headers and filesystem allocation",
+    "JSON and runtime-dependent observation logs",
+    "SQLite journals and indexes",
+    "failure/retry partial outputs",
+    "analysis metadata, extra verification/archive copies, environments and history"
+  ],
+  "actual_file_lengths_not_Windows_allocated_clusters": true,
+  "all_success_no_retry_assumption": true,
+  "compression_ratio_not_extrapolated": true,
+  "full_content_hashing_repeated": false,
+  "provenance": "Manifest identity, file inventory/sizes and consumed metadata hashes checked here; prior independent intake authenticated all original file contents. NPZ data are not decompressed/replayed.",
+  "source_files": {
+    "scripts/windows/formal_owned_runtime.py": "58605a2c1f9c5895be12d4c5507559854cdfc637a220b465da2d7d33c8b4553f",
+    "scripts/windows/formal_cache_worker.py": "fe2457e7c3bd0a89d7d679dedda7f8983632ee3d29a402e4dfbecf1d12742ec9",
+    "scripts/completion/formal_study_plan.py": "693572f754df56a2968f5fbc45d8dff805a0ccf7b921aa2122ac85094060aa42",
+    "scripts/analysis/formal_science.py": "27b07aa5494ffe92f1dab407229fbfc84aa523600198b5bcc8c26e6edf073d35",
+    "benchmark/protocols/inference-budget-pilot-mac-v1.json": "ba748836690baf15f135d862cc74664ea66a424bccff01261f6aadbf89a4181a",
+    "benchmark/analysis/outputs/inference-budget-pilot-v1/analysis/reference-contract.json": "5bcd7528c3cf71ed9ca816c48219f7c3616762161858b5ffd6816a1594519772"
+  },
+  "analysis_script_sha256": "eeb640eb8127a24627dc5a3e8459390843ca00e6d2713c9c49e9fe1b59f23e0f",
+  "new_sampler_calls": 0,
+  "new_R_diagnostic_calls": 0,
+  "actual_formal_inputs_generated": 0,
+  "new_formal_repetitions": 0
+}
