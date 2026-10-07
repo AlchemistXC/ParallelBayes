@@ -1,5 +1,7 @@
 # ParallelBayes
 
+[当前范围、版本、数据位置与剩余门槛](docs/CURRENT-SCOPE.md)｜[机器可读状态](execution/CURRENT-SCOPE.json)。下方按日期保留研究进展；完整研究尚未完成。
+
 2026-10-07 当前论文：[26页中文稿](output/software-paper/软件与基准研究-Windows机制整合.pdf)已纳入192项Windows机制工作流、批次运行和新环境安装实测；[修订及重建证据](docs/WINDOWS-FOLLOWUP-MANUSCRIPT.md)包含六段逐字节重建、完整配置与全拒绝记录。正式推断实验及投稿终稿仍未完成。
 
 2026-10-07 报告接口：完整任务读取、配对统计和[报告生成及规模核验](docs/FORMAL-REPORT-SCALE.md)已实现。九模型人工标量夹具覆盖41,472主任务/9,216缓存槽位，45图/99面板及85页测试PDF已核验；没有新增采样或科学结果。实际v2 Windows验收与正式研究仍待证据。当前[Windows提示词](handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md)一次全文提供、按阶段执行；不重跑已完成的F2、旧运行器和安装任务。以下日期段落保留历史状态。

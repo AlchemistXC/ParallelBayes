@@ -2,7 +2,7 @@
   "date": "2026-10-07",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "native_v2_evidence_pending_full_frame_analysis_and_report_implemented_artificial_scale_checked",
+  "local_phase": "native_v2_evidence_pending_analysis_report_implemented_and_actual_followup_manuscript_rebuilt",
   "gpu_tasks": "Received and independently checked F2 192 workflows, native runtime 27 main/24 cache tasks, and dev2 installation. Formal inference remains unfrozen and unexecuted.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
@@ -94,20 +94,21 @@
     "archive_sha256": "30b590ba1cc3d664db2c5e3e4db3fc2e6e40a6e6206d1e6d6d68ba06bb224d6e"
   },
   "current_result_rebuild": {
-    "report": "docs/CURRENT-RESULT-REBUILD.md",
-    "sections": 5,
-    "input_assets": 40,
+    "report": "docs/WINDOWS-FOLLOWUP-MANUSCRIPT.md",
+    "sections": 6,
+    "input_assets": 50,
     "sampler_calls": 0,
     "R_diagnostic_calls": 0,
     "raw_arrays_reanalyzed": false,
     "figures_recomputed": false,
-    "pdf_pages": 23,
-    "source_commit": "b7ad1d167e889efad764bf092257fee0c24925f7",
-    "archive_sha256": "c233a8acfc3bdef4c620e999914d139e582fcb56b14d5ad99358c5d5270c1a6b",
-    "archive_files": 63,
+    "pdf_pages": 26,
+    "source_commit": "2a758baacea6be0d6141c6932566cbdf552a1ee2",
+    "archive_sha256": "67837319946db3abb18bbb3e9c801b0e486944912926c2cb71ef7388ae38eaf6",
+    "archive_files_including_manifest": 65,
+    "archive_manifest_files_verified": 64,
     "relocated_rebuild_passed": true,
-    "pdf": "output/software-paper/软件与基准研究-结果重建.pdf",
-    "pdf_sha256": "fb15c419848583b99094ac59d1d3e692ca6d9316af8250a890a4fd2381ffcd86",
+    "pdf": "output/software-paper/软件与基准研究-Windows机制整合.pdf",
+    "pdf_sha256": "de2850e7cb1cb5219d972ac808ac07ccb74c23ecff250e685b6f02ea242638ae",
     "full_raw_reproduction_completed_this_round": false
   },
   "completion_gate_audit": {
@@ -284,5 +285,41 @@
     "assets": 27,
     "newer_evidence_found": false
   },
-  "status_interpretation": "Top-level fields and report_pipeline describe current state. Earlier nested milestone records retain their original validation limits."
+  "status_interpretation": "Top-level fields and current_result_rebuild describe current state. Historical_result_rebuilds and earlier nested milestone records retain their original validation limits.",
+  "historical_result_rebuilds": [
+    {
+      "report": "docs/CURRENT-RESULT-REBUILD.md",
+      "sections": 5,
+      "input_assets": 40,
+      "sampler_calls": 0,
+      "R_diagnostic_calls": 0,
+      "raw_arrays_reanalyzed": false,
+      "figures_recomputed": false,
+      "pdf_pages": 23,
+      "source_commit": "b7ad1d167e889efad764bf092257fee0c24925f7",
+      "archive_sha256": "c233a8acfc3bdef4c620e999914d139e582fcb56b14d5ad99358c5d5270c1a6b",
+      "archive_files": 63,
+      "relocated_rebuild_passed": true,
+      "pdf": "output/software-paper/软件与基准研究-结果重建.pdf",
+      "pdf_sha256": "fb15c419848583b99094ac59d1d3e692ca6d9316af8250a890a4fd2381ffcd86",
+      "full_raw_reproduction_completed_this_round": false
+    }
+  ],
+  "current_scope_report": "docs/CURRENT-SCOPE.md",
+  "data_availability": {
+    "checked_date": "2026-10-07",
+    "cpu-review-v1": {
+      "draft": false,
+      "assets": 18
+    },
+    "windows-native-v1": {
+      "draft": true,
+      "assets": 5
+    },
+    "windows-completion-v2-20261005": {
+      "draft": true,
+      "assets": 27
+    },
+    "full_research_raw_to_final_paper_bundle_complete": false
+  }
 }
