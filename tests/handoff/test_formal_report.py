@@ -83,6 +83,22 @@ def test_ratio_intervals_are_exponentiated_scale_and_not_log_bounds(complete):
     assert result['point']<result['low']  # An interval need not contain the point estimate.
 
 
+def test_ratio_interval_losing_width_in_exp_is_preserved_but_not_drawn(complete):
+    root,digest=complete
+    _,tables=model_tables(StatisticsBundle(root,digest,fixture=True),'G1')
+    pair=copy.deepcopy(tables['ratios'][0]['source_record'])
+    pair.update(confidence_interval=dict(low=-.4054651081081645,high=-.4054651081081644),
+        ratio_confidence_interval=dict(low=2/3,high=2/3),interval_status='available')
+    original=copy.deepcopy(pair)
+    row=ratio_row(pair,phase='ordinary_workflow',kind='end_to_end_workflow')
+    assert row['low'] is row['high'] is None
+    assert row['ratio_interval_collapsed_under_transform']
+    assert row['source_interval_status']=='available' and row['interval_status']=='unrepresentable_width_on_saved_ratio_scale'
+    assert row['source_record']==original==pair
+    pair['confidence_interval']=None
+    with pytest.raises(ValueError,match='ordered log source'):ratio_row(pair,phase='ordinary_workflow',kind='end_to_end_workflow')
+
+
 def test_nuts_unknown_tree_depth_is_not_zero_and_divergence_denominator_is_draws(complete):
     root,digest=complete
     _,tables=model_tables(StatisticsBundle(root,digest,fixture=True),'G1')
@@ -123,6 +139,15 @@ def test_diagnostics_cannot_promote_failed_task(complete):
     root,_=complete;rows=json.loads((root/'G1/task-frame.json').read_text())
     row=next(r for r in rows if r['diagnostics']);row['outcome']='numerical_failure'
     with pytest.raises(ValueError,match='ineligible'):diagnostic_rows(rows,['varying','constant','unresolved','finite_reference','quadrature'])
+
+
+def test_artificial_source_requires_explicit_marking_even_before_shape_checks(complete,tmp_path):
+    source,_=complete;root=tmp_path/'copy';shutil.copytree(source,root)
+    path=root/'SUMMARY.json';value=json.loads(path.read_text());value['artificial_data']=True
+    atomic_json(path,value);digest=seal(root)
+    with pytest.raises(ValueError,match='Artificial statistics require --fixture'):
+        StatisticsBundle(root,digest)
+    assert StatisticsBundle(root,digest,fixture=True).fixture
 
 
 def test_rendered_figures_keep_zeros_unresolved_reference_and_fixture_watermark(complete,tmp_path):

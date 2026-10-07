@@ -28,7 +28,8 @@ def write_report(output,receipt):
         'CSV空单元表示不可用；完整状态与分母在同一行或对应JSON中。没有通过筛掉失败、常量函数、慢配置或未定参考来生成图件。','',
         '| 目标 | 计划主任务 | 计划缓存 | 主任务证据状态 | 缓存证据状态 |','|---|---:|---:|---|---|']
     body=[r'\documentclass[UTF8,fontset=fandol,a4paper]{ctexart}',r'\usepackage[margin=20mm,headheight=16pt]{geometry}',
-          r'\usepackage{booktabs,longtable,graphicx,hyperref,fancyhdr}',r'\hypersetup{hidelinks}',
+          r'\usepackage{booktabs,longtable,graphicx,hyperref,fancyhdr,array}',r'\hypersetup{hidelinks}',
+          r'\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}',
           r'\pagestyle{fancy}\fancyhf{}',r'\fancyhead[C]{\small '+tex(title)+r'}\fancyfoot[C]{\thepage}',
           r'\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}',r'\begin{document}',
           r'\begin{center}{\Large\bfseries ParallelBayes：'+tex(title)+r'}\end{center}',tex(notice),
@@ -48,12 +49,14 @@ def write_report(output,receipt):
         name=model['model'];tables=json.loads((output/name/'tables.json').read_text(encoding='utf-8'))
         body.extend([r'\clearpage\section*{'+tex(name)+'：诊断与资格}',
             '下表每行的计划数以完整四链重复为单位。已收到的不可判定诊断与未收到诊断分开；Rhat阈值只用于描述，不是整体后验可信的充分条件。',
-            r'\begingroup\small\begin{longtable}{p{23mm}p{36mm}rrrrr}',
+            r'\begingroup\small\begin{longtable}{P{28mm}P{40mm}rrrrr}',
             r'\toprule 函数 & 工作流/预算 & 计划 & 缺诊断 & 未定Rhat & Rhat$>1.01$ & 最小尾ESS \\ \midrule\endhead'])
         for r in tables['diagnostics']:
             values=[r['function'],DISPLAY[r['workflow']]+' / '+str(r['budget']),r['planned'],r['missing'],
                     r['rhat_undefined'],r['rhat_above_1_01'],number(r['ess_tail_minimum'])]
-            body.append(' & '.join(map(tex,values))+r' \\')
+            cells=[tex(v) for v in values]
+            cells[0]=cells[0].replace(r'\_',r'\_\allowbreak{}')
+            body.append(' & '.join(cells)+r' \\')
         body.extend([r'\bottomrule\end{longtable}\endgroup'])
         if tables['nuts']:
             body.extend([r'\subsection*{NUTS诊断}',

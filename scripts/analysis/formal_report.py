@@ -80,14 +80,18 @@ class StatisticsBundle:
             if p.is_file() and p!=self.root/'SHA256.json':actual.add(p.relative_to(self.root).as_posix())
         if actual!=set(self.manifest):raise ValueError('Statistics inventory incomplete')
         self.summary=self.read('SUMMARY.json');self.frame=self.summary['frame'];self.references=self.read('reference-contract.json')
+        if self.summary.get('artificial_data',False) is not False and not fixture:
+            raise ValueError('Artificial statistics require --fixture, even at the full formal shape')
         self.models=[m['model'] for m in self.summary['models']]
         if len(set(self.models))!=len(self.models) or not set(self.models)<=set(MODELS) or set(self.references)!=set(self.models):
             raise ValueError('Model/reference frame differs')
         if self.frame['scope'] not in ('formal_inference','technical_batch_validation'):raise ValueError('Unknown statistical scope')
         if self.summary['formal_inference_complete'] is not False:raise ValueError('Unsupported automatic completion claim')
+        self.full_formal_frame=(self.frame['scope']=='formal_inference' and set(self.models)==set(MODELS) and
+            self.frame['main_planned']==41472 and self.frame['cache_planned']==9216 and
+            self.frame['formal_scientific_repetitions_per_model']==128)
         if not fixture and self.frame['scope']=='formal_inference':
-            if (set(self.models)!=set(MODELS) or self.frame['main_planned']!=41472 or self.frame['cache_planned']!=9216 or
-                    self.frame['formal_scientific_repetitions_per_model']!=128):
+            if not self.full_formal_frame:
                 raise ValueError('Complete formal design required; artificial data need --fixture')
         if not fixture and self.frame['scope']=='technical_batch_validation':
             if set(self.models)!={'G1','G2','W1'} or (self.frame['main_planned'],self.frame['cache_planned'])!=(27,24):
@@ -118,7 +122,8 @@ class StatisticsBundle:
             if (len(part)!=summary[phase+'_planned'] or dict(Counter(r['disposition'] for r in part))!=summary[phase+'_dispositions'] or
                     dict(Counter(r.get('outcome') or 'unknown_evidence' for r in part))!=summary[phase+'_outcomes']):
                 raise ValueError('Projected outcomes/dispositions differ')
-        if not self.fixture and self.frame['scope']=='formal_inference':
+        # An artificial watermark does not waive full-design identity checks.
+        if self.full_formal_frame:
             primary=create_tasks(self.frame['identity'],[dict(models=[name],replicates=list(range(128)),budgets=list(BUDGETS),workflows=list(WORKFLOWS))])
             allocation=create_measurement_plan(self.frame['identity'],primary)
             originals={t['id']:t for t in primary};expected={}
@@ -199,12 +204,22 @@ def nuts_rows(rows):
 def ratio_row(pair,*,phase,kind):
     a,b=label_parts(pair['workflow_a']),label_parts(pair['workflow_b'])
     if a[1]!=b[1]:raise ValueError('Paired budgets differ')
-    lo,hi=interval(pair,'ratio_confidence_interval')
+    saved=pair.get('ratio_confidence_interval');status=pair['interval_status']
+    collapsed=(isinstance(saved,dict) and set(saved)=={'low','high'} and
+        all(type(v) in (int,float) and math.isfinite(v) and v>0 for v in saved.values()) and saved['low']==saved['high'])
+    if collapsed:
+        # A strictly ordered log interval can lose its width under exp in
+        # floating point. Preserve that source, but do not draw a zero CI or
+        # widen it with nextafter/pseudocounts. This is a display qualification.
+        if interval(pair)==(None,None):raise ValueError('Collapsed ratio interval lacks its ordered log source')
+        lo=hi=None;status='unrepresentable_width_on_saved_ratio_scale'
+    else:lo,hi=interval(pair,'ratio_confidence_interval')
     point=pair['geometric_mean_ratio']
     if point is not None and (not math.isfinite(point) or point<=0):raise ValueError('Cost ratio must be positive or unavailable')
     return dict(phase=phase,kind=kind,workflow_a=a[0],workflow_b=b[0],budget=a[1],
         planned=pair['planned'],paired=pair['validity_table']['n11'],validity_table=pair['validity_table'],
-        point=point,low=lo,high=hi,interval_status=pair['interval_status'],
+        point=point,low=lo,high=hi,interval_status=status,source_interval_status=pair['interval_status'],
+        ratio_interval_collapsed_under_transform=collapsed,
         missing_cost_pairs=pair['jointly_valid_pairs_missing_cost'],zero_cost_pairs=pair['jointly_valid_pairs_zero_cost'],
         definition='geometric mean of A/B cost; interval on ratio scale',source_record=pair)
 
