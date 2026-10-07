@@ -1,0 +1,47 @@
+{
+  "matches": [
+    {
+      "event": {
+        "RecordId": 7067,
+        "TimeCreatedUtc": "2026-10-07T17:40:29.6146036Z",
+        "owned_member": {
+          "pid": 22396,
+          "creation_filetime": 134358684086949330,
+          "task_directory": "D:/workspace/ParallelBayes/f/output/windows-formal-inference-v1/formal-runs/batch-00/main/tasks/5a017adf69075d858a650ad1/attempt-0001"
+        },
+        "application": "python.exe",
+        "application_path": "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "module": "c10.dll",
+        "exception_code": "c0000005",
+        "event_is_not_a_complete_exit_cause_proof": true
+      },
+      "event_within_owned_creation_and_terminal_file_interval": true,
+      "terminal_file_sha256": "193f2eed29015f05a2ccdb114e507e0e0f61df3dba198fc2c4c10955f72b3c74",
+      "terminal_file_last_write_utc": "2026-10-07T17:40:33.828446+00:00",
+      "boundary_timestamps_are_not_duration_measurements": true
+    },
+    {
+      "event": {
+        "RecordId": 7064,
+        "TimeCreatedUtc": "2026-10-07T17:14:50.0597784Z",
+        "owned_member": {
+          "pid": 10412,
+          "creation_filetime": 134358668711315572,
+          "task_directory": "D:/workspace/ParallelBayes/f/output/windows-formal-inference-v1/formal-runs/batch-00/main/tasks/60f2f74ece8d9dd573ed9ada/attempt-0001"
+        },
+        "application": "python.exe",
+        "application_path": "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "module": "c10.dll",
+        "exception_code": "c0000005",
+        "event_is_not_a_complete_exit_cause_proof": true
+      },
+      "event_within_owned_creation_and_terminal_file_interval": true,
+      "terminal_file_sha256": "ed665e430e495e7d57b18b3a0d2eaf0115145c72ffce35eac15271e3b9185e87",
+      "terminal_file_last_write_utc": "2026-10-07T17:14:54.244763+00:00",
+      "boundary_timestamps_are_not_duration_measurements": true
+    }
+  ],
+  "root_cause_still_unknown": true,
+  "frozen_failure_classification_unchanged": true,
+  "additional_sampling": 0
+}

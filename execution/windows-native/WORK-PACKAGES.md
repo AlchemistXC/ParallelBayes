@@ -1,5 +1,10 @@
 # Native Windows development evidence
 
+2026-10-08 02:45 JST失败观察后继：只读Application日志在两个已结束W1 NUTS
+Job实际成员的出生至终态区间内匹配c10.dll/c0000005事件，记录及归属资格保留。
+不是OOM或已确定根因证明，不改output_failure_unclassified类别、不重试，
+不升级冻结环境；其他任务继续。新增采样及数值重放0，四批仍未完成。
+
 2026-10-08 02:40 JST小型冻结回传：87成员完整核验，tar 57,825,280字节/SHA256
 1bcf67145ff4aaddfbf65557abf3fcb0c465fba4a4e8b4a9bf3c1779af2883d3，包含完整
 科学协议/任务计划、全部输入身份及源码bundle，不含原始数组。五个附件实际

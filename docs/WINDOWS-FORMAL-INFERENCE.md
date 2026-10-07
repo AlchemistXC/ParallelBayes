@@ -206,3 +206,13 @@ python scripts/verify-windows-return.py NEW_FREEZE_RECEIPTS/windows-native-20261
 该命令只检查早期小包的87成员完整性，不重采样、不执行统计，不是完整正式
 原件独立接收。完整原件仍在Windows D执行包内；八阶段任务持续运行，完整
 原始归档的大小/哈希目前尚不存在，不预填未来状态。
+
+02:45 JST只读系统事件后继：两项W1 NUTS任务60f2f74ece8d9dd573ed9ada和
+5a017adf69075d858a650ad1的实际Job成员PID10412及22396分别匹配Application
+事件7064和7067，均为python.exe、故障模块c10.dll、异常码c0000005。事件时点
+位于该成员出生FILETIME与该尝试终态文件写入之间，避免将后来PID复用的事件
+误认成本任务；该时间区间只作归属资格，不补填运行时长。微软将此代码定义为
+访问无效内存地址的异常：[官方说明](https://learn.microsoft.com/en-us/shows/inside/c0000005)。
+原始事件字段、匹配资格及对应终态文件SHA已保存。这补充了进程崩溃观察，不
+确定c10内部根因、OOM、硬件问题或可重试基础设施原因。原output_failure_unclassified
+分类和samples_eligible=false不变，不修改依赖/源码或重跑；其他冻结任务继续。

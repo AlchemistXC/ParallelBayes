@@ -1,0 +1,39 @@
+{
+  "observed_utc": "2026-10-07T17:45:24.2095122Z",
+  "scope": "Read-only Application event 1000 search restricted to observed members of two ended failed NUTS jobs",
+  "owned_member_count": 18,
+  "matches": [
+    {
+      "RecordId": 7067,
+      "TimeCreatedUtc": "2026-10-07T17:40:29.6146036Z",
+      "owned_member": {
+        "pid": 22396,
+        "creation_filetime": 134358684086949330,
+        "task_directory": "D:/workspace/ParallelBayes/f/output/windows-formal-inference-v1/formal-runs/batch-00/main/tasks/5a017adf69075d858a650ad1/attempt-0001"
+      },
+      "application": "python.exe",
+      "application_path": "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "module": "c10.dll",
+      "exception_code": "c0000005",
+      "event_is_not_a_complete_exit_cause_proof": true
+    },
+    {
+      "RecordId": 7064,
+      "TimeCreatedUtc": "2026-10-07T17:14:50.0597784Z",
+      "owned_member": {
+        "pid": 10412,
+        "creation_filetime": 134358668711315572,
+        "task_directory": "D:/workspace/ParallelBayes/f/output/windows-formal-inference-v1/formal-runs/batch-00/main/tasks/60f2f74ece8d9dd573ed9ada/attempt-0001"
+      },
+      "application": "python.exe",
+      "application_path": "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "module": "c10.dll",
+      "exception_code": "c0000005",
+      "event_is_not_a_complete_exit_cause_proof": true
+    }
+  ],
+  "read_error": null,
+  "no_matching_event_does_not_prove_no_crash": true,
+  "failure_categories_unchanged": true,
+  "additional_sampling": 0
+}
