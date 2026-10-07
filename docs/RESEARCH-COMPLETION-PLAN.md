@@ -1,5 +1,7 @@
 # ParallelBayes 研究收尾计划
 
+2026-10-07 原生验收生成后继：已提供新的有限 v2 验收命令和[一次性 Windows 提示词](../handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md)。8项新增/2项受影响本地检查通过；实际Windows行为、27/24执行和零重算待回传，正式网格尚不启动。完整正式数组分析、F3/F4/F5/F6仍未完成。见[新入口与证据](FORMAL-NATIVE-VALIDATION.md)。
+
 2026-10-07 正式调度后继：接入正式worker、独立cache身份、四批顺序及中断保留；9项不同本地契约检查通过，原生验收要求已定义但未执行。验收生成和完整原始结果读取仍待完成，无新增MCMC。见[实现和范围](FORMAL-DISPATCH.md)。
 
 2026-10-07 正式准备后继：新增按文件封存实际输入、失败原件保留及显式恢复、完整协议和源码/环境/水井数据快照。8项本地行为检查通过；尚未执行Windows全量冻结，正式worker/调度/分析和原生验收仍待接通。见[实现及证据](FORMAL-FREEZE.md)。没有新增MCMC或正式重复。

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="8" time="3.537" timestamp="2026-10-07T10:16:46.385639+09:00" hostname="HaKudeMac-mini.local"><testcase classname="tests.handoff.test_formal_validation" name="test_exact_three_input_27_24_plan_and_full_parameter_contract" time="1.857"><failure message="AssertionError: Regex pattern did not match.&#10; Regex: 'finite validation design'&#10; Input: 'Finite validation design changed'">prepared = (PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-producer-v1/tests-first/finit...7e0795a026765143a6aaf84de216b3a'}, 'minimum_available_ram_bytes': 12884901888, 'required_R_posterior': 'fixture', ...})
+
+    def test_exact_three_input_27_24_plan_and_full_parameter_contract(prepared):
+        root,marker,catalog,design,binding=prepared
+        actual,p,rebuilt,bound=verify_validation_bundle(root)
+        assert (actual,rebuilt,bound)==(marker,design,binding)
+        assert p['controls']==study_controls()
+        assert len(p['tasks'])==27 and len(design['cache_allocation']['probes'])==24
+        assert len(p['inputs'])==3 and p['inputs']['G2-rep0000.npz']['steps']==16896
+        assert {p['inputs'][n]['steps'] for n in ('G1-rep0000.npz','W1-rep0000.npz')}=={576}
+        assert marker['formal_sampling_authorized'] is False and p['formal_scientific_repetitions']==0
+        with pytest.raises(FreezeConflict,match='finite validation design'):
+            bad=copy.deepcopy(design);bad['controls']['window']=16
+&gt;           validation_protocol(bad,catalog,p['inputs'],binding)
+
+tests/handoff/test_formal_validation.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+design = {'cache_allocation': {'allocation_sha256': 'b47a009fbea0c1b8a468b904256699e12cf57690c99b7bcf98fcb7a17aeeb6d4', 'batch_...memory_limit_mb': 2048, ...}, 'design_sha256': 'e1711868724b03a0053a6f927b288b4405247c77cdf4175db55e2a0eb8f8891f', ...}
+catalog = {'analysis': 'Historical original-parameter estimands plus seven wells functions. Report all failures and undefined di...], 'chains': 4, 'development_protocol_sha256': '6cc71de8a5a5949943f59b2972eb32814782b4ccdd149c6e1bc1961b3e8d4a92', ...}
+inventory = {'G1-rep0000.npz': {'actual_sha256': 'cfbda5482683311b54e457954104064cac9f0690cee2e0bb774ae94a2182162e', 'chains': 4, ...: 'b36cd05a5bfa28dd13d4849a1ba7c4702df838efb011a613c5806ef8c0100333', 'chains': 4, 'dimension': 2, 'model': 'W1', ...}}
+binding = {'environment': {'fixture_only': True, 'pip_freeze_sha256': 'd41bc62ff614eae0aa3351a29b43a0d6517b3e662e1a71e417dbfa38a...57e0795a026765143a6aaf84de216b3a'}, 'minimum_available_ram_bytes': 12884901888, 'required_R_posterior': 'fixture', ...}
+
+    def validation_protocol(design, catalog, inventory, binding):
+        if design != validation_design(catalog):
+&gt;           raise FreezeConflict('Finite validation design changed')
+E           formal_freeze.FreezeConflict: Finite validation design changed
+
+scripts/completion/formal_validation.py:46: FreezeConflict
+
+During handling of the above exception, another exception occurred:
+
+prepared = (PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-native-producer-v1/tests-first/finit...7e0795a026765143a6aaf84de216b3a'}, 'minimum_available_ram_bytes': 12884901888, 'required_R_posterior': 'fixture', ...})
+
+    def test_exact_three_input_27_24_plan_and_full_parameter_contract(prepared):
+        root,marker,catalog,design,binding=prepared
+        actual,p,rebuilt,bound=verify_validation_bundle(root)
+        assert (actual,rebuilt,bound)==(marker,design,binding)
+        assert p['controls']==study_controls()
+        assert len(p['tasks'])==27 and len(design['cache_allocation']['probes'])==24
+        assert len(p['inputs'])==3 and p['inputs']['G2-rep0000.npz']['steps']==16896
+        assert {p['inputs'][n]['steps'] for n in ('G1-rep0000.npz','W1-rep0000.npz')}=={576}
+        assert marker['formal_sampling_authorized'] is False and p['formal_scientific_repetitions']==0
+&gt;       with pytest.raises(FreezeConflict,match='finite validation design'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'finite validation design'
+E        Input: 'Finite validation design changed'
+
+tests/handoff/test_formal_validation.py:58: AssertionError</failure></testcase><testcase classname="tests.handoff.test_formal_validation" name="test_input_resume_does_not_invoke_rng_or_change_evidence" time="0.060" /><testcase classname="tests.handoff.test_formal_validation" name="test_every_worker_request_has_frozen_inputs_and_external_target" time="0.150" /><testcase classname="tests.handoff.test_formal_validation" name="test_relocation_and_tampered_actual_input_are_distinct" time="0.279" /><testcase classname="tests.handoff.test_formal_validation" name="test_manifest_cannot_omit_required_test_source_even_when_resigned" time="0.046" /><testcase classname="tests.handoff.test_formal_validation" name="test_native_entry_points_refuse_before_creating_outputs" time="0.001" /><testcase classname="tests.handoff.test_formal_validation" name="test_command_help_is_portable_and_exposes_explicit_steps" time="0.403" /><testcase classname="tests.handoff.test_formal_validation" name="test_export_roundtrip_uses_original_common_integrity_verifier" time="0.151" /></testsuite></testsuites>

@@ -2,7 +2,7 @@
   "date": "2026-10-07",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "formal_native_history_and_cost_reader_connected_full_raw_analysis_and_native_acceptance_producer_pending",
+  "local_phase": "native_adapter_entry_ready_for_Windows_validation_full_formal_raw_analysis_pending",
   "gpu_tasks": "Received and independently checked F2 192 workflows, native runtime 27 main/24 cache tasks, and dev2 installation. Formal inference remains unfrozen and unexecuted.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
@@ -28,7 +28,7 @@
     "dev2 candidate isolated Mac and Windows installation evidence"
   ],
   "second_round_intake": "docs/WINDOWS-ROUND2-INTAKE.md",
-  "next_Windows_prompt": null,
+  "next_Windows_prompt": "handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md",
   "local_batch_validation": "14/15 valid, maximum NUTS interrupted after original and sole retry; archived/rebuilt; formal inference remains pending",
   "local_batch_report": "docs/BATCH-MAXIMUM-VALIDATION.md",
   "active_development_branch": "codex/research-integration",
@@ -120,7 +120,7 @@
     "superseded_by": "docs/WINDOWS-FOLLOWUP-INTAKE.md",
     "external_evidence_trigger_received": true
   },
-  "next_Windows_action": "No repeat of completed F2/runtime/package prompts. Formal driver and protocol must be prepared before new native Windows execution.",
+  "next_Windows_action": "Run the new finite v2 adapter validation once from the new prompt; do not repeat completed F2/v1 runtime/package tasks or launch the formal grid.",
   "followup_windows_intake": {
     "report": "docs/WINDOWS-FOLLOWUP-INTAKE.md",
     "heads": {
@@ -186,12 +186,13 @@
       "static_numerical_structure_checks": 5,
       "native_cases_defined": 16,
       "native_cases_executed": 0,
-      "native_acceptance_producer_complete": false,
+      "native_acceptance_producer_complete": true,
       "formal_batch_controller_implemented": true,
       "native_controller_end_to_end_verified": false,
       "formal_raw_result_reader_complete": false,
       "new_sampler_calls": 0,
-      "new_formal_repetitions": 0
+      "new_formal_repetitions": 0,
+      "native_acceptance_producer_verified_on_Windows": false
     },
     "native_evidence_reader": {
       "report": "docs/FORMAL-NATIVE-EVIDENCE.md",
@@ -203,6 +204,20 @@
       "full_formal_raw_result_reader_complete": false,
       "new_sampler_calls": 0,
       "new_formal_repetitions": 0
+    },
+    "native_acceptance_entry": {
+      "report": "docs/FORMAL-NATIVE-VALIDATION.md",
+      "source_commit": "06e75c113e3ea6ea5a2a4275d7341595eefd7191",
+      "portable_checks_passed": 8,
+      "affected_checks_passed": 2,
+      "failed_checks": 0,
+      "skipped_checks": 0,
+      "finite_main_tasks": 27,
+      "finite_cache_probes": 24,
+      "native_entry_executed": false,
+      "new_sampler_calls": 0,
+      "new_formal_repetitions": 0,
+      "prompt": "handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md"
     }
   },
   "latest_upload_check": {

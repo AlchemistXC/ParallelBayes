@@ -1,0 +1,23 @@
+{
+  "numerical_controls_identical_to": "466605e",
+  "controls": {
+    "chains": 4,
+    "mh_discard": 512,
+    "nuts_warmup": 1024,
+    "nuts_tree_depth": 8,
+    "nuts_target_accept": 0.8,
+    "nuts_full_mass": false,
+    "nuts_workers": 4,
+    "nuts_threads": 1,
+    "torch_threads": 4,
+    "window": 32,
+    "quasi_deer_max_iter": 2048,
+    "atol": 1e-10,
+    "rtol": 1e-10,
+    "memory_limit_mb": 2048,
+    "maximum_member_bytes": 134217728,
+    "minimum_gpu_free_bytes": 3221225472
+  },
+  "source_parse_checks": 4,
+  "new_sampler_calls": 0
+}

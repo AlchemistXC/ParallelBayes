@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-07",
+  "source_commit": "06e75c113e3ea6ea5a2a4275d7341595eefd7191",
+  "new_portable_checks": 8,
+  "affected_existing_checks": 2,
+  "latest_failures": 0,
+  "latest_skips": 0,
+  "first_attempt": {
+    "passed": 7,
+    "failed": 1,
+    "reason": "Test expected lowercase exception text; production correctly refused changed design"
+  },
+  "artificial_input_files": 3,
+  "finite_frame_main": 27,
+  "finite_frame_cache": 24,
+  "new_native_executions": 0,
+  "new_sampler_calls": 0,
+  "new_formal_repetitions": 0,
+  "native_entry_implemented": true,
+  "native_entry_validated_on_Windows": false,
+  "full_formal_raw_analysis_complete": false,
+  "archive_check_scope": "Artificial acceptance injected only to test tar integrity mechanics; not native evidence",
+  "controls_equal_previous_source": "466605e",
+  "source_sha256": {
+    "scripts/completion/formal_study_plan.py": "693572f754df56a2968f5fbc45d8dff805a0ccf7b921aa2122ac85094060aa42",
+    "scripts/completion/formal_acceptance.py": "e426dd641714265be6944d07c754de63fc9c6066241aa9c0a23dec1f60dd2826",
+    "scripts/completion/formal_validation.py": "9217f6d4d0f4ca29677e56227edb68d12e86a5e92f708cbd8742b0b47759d725",
+    "scripts/windows/validate_formal_adapter.py": "0454f9c831d834d40776c7a7abcf6555c3780c07036819634da6d86d0ec9f44d",
+    "tests/handoff/test_formal_validation.py": "fbb84f935179ac908c0fb50b95686349ede965cb4cc80d75212407ca90f507b5",
+    "tests/handoff/test_formal_native_evidence.py": "756de97320534a24a2805a0825b831df8d334bc43b720b0563581c38acb9ee81"
+  },
+  "evidence_sha256": {
+    "tests-targeted.xml": "292185b1dacf757f73e742c4e3dfde33aa56a33aca092f7b85544ec7e0f611ec",
+    "structural-check.json": "af92c86140f18ad03086e3cc4617689808db265a39c3a0c397872f314f792282",
+    "tests-first.xml": "35e578166b437c144aeef0304fdc159ca2e7f3b1243540385eb483e56488d603",
+    "tests-gate-final.xml": "1c98231bd9ca4723ce0409dbdbe35584922641d824e90f517a8060197fc965fd"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "python": "/Users/haku/Workspace/ParallelBayes/.venv-inference/bin/python",
+  "root": "/Users/haku/.codex/worktrees/research-integration/ParallelBayes",
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "pytest_options": [
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "runs": [
+    {
+      "xml": "tests-first.xml",
+      "tests": [
+        "tests/handoff/test_formal_validation.py"
+      ]
+    },
+    {
+      "xml": "tests-targeted.xml",
+      "tests": [
+        "tests/handoff/test_formal_validation.py::test_exact_three_input_27_24_plan_and_full_parameter_contract",
+        "tests/handoff/test_formal_validation.py::test_native_entry_points_refuse_before_creating_outputs",
+        "tests/handoff/test_formal_validation.py::test_command_help_is_portable_and_exposes_explicit_steps",
+        "tests/handoff/test_formal_study_plan.py",
+        "tests/handoff/test_formal_native_evidence.py::test_complete_artificial_gate_uses_the_shared_reader_and_rejects_wrong_job"
+      ]
+    },
+    {
+      "xml": "tests-gate-final.xml",
+      "tests": [
+        "tests/handoff/test_formal_native_evidence.py::test_complete_artificial_gate_uses_the_shared_reader_and_rejects_wrong_job"
+      ]
+    }
+  ]
+}

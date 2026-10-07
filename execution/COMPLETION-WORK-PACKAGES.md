@@ -320,3 +320,10 @@ F2返回1cfc83d；F3返回b0582c3的27主任务、24测量/96调用已封存并�
 源码9439cfe；read_native_task独立读取单任务导出、终态/中断原件、Windows历史路径和外层账本，已接入有限验收读取。失败/中断/未启动与证据缺失分开，未知时间不填零，缓存不进入普通样本。18项新增人工文件检查及1项受影响检查通过；首轮4个夹具目录失败日志保留。没有新原生Job、GPU、MCMC或正式重复。
 
 上传核对的三个Windows头与此前接收一致，五归档大小/SHA256一致，原草稿27附件未变；不重复历史下载/采样。详见docs/FORMAL-NATIVE-EVIDENCE.md及formal-native-reader-v1回执。完整数组分析、原生验收生成和正式Windows新提示词仍待完成，不放行正式实验，不关闭F3/F4/F5/F6。
+
+
+## 新有限 v2 原生验收入口（2026-10-07）
+
+执行源码06e75c1；prepare/test/run/verify-only/seal/verify/export接通，共享既定控制设置，27主任务与24缓存测量固定在独立技术身份。8项新增本地检查及2项受影响检查通过；首轮1个测试异常文字大小写失败保留，最终无失败/跳过。三份测试输入和归档仅用于本地接口/存储检查，无新Windows Job、CUDA、MCMC或正式重复。
+
+Windows新任务入口为handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md，一次全文提供，按顺序执行；旧F2/v1运行器/安装提示词不重复。原生16行为用例、51任务、96缓存调用、零重算及封存均尚待实机结果，不把代码准备计为通过。Mac继续完整正式原始结果分析，F3/F4/F5/F6未关闭。详见docs/FORMAL-NATIVE-VALIDATION.md和formal-native-producer-v1回执。

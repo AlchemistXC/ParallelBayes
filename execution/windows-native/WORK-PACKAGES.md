@@ -197,3 +197,10 @@ Resource-counter qualification: a bounded 128 MiB allocation is denied under a 6
 2026-10-07 delivery: primary archive windows-native-20261006T170711Z.tar, 1,083,330,560 bytes, SHA256 6ef0f6e299867d67b27cbd4067a062a30f3593894dc4b34c1da9086f80ae7274, 3,753 manifest files verified. Safe extraction into a new directory and independently owned read-only analysis rebuilt all 27 planned rows, 24 cache rows, 96 call records, 27 function binaries and 90 R rows; all 12 pairs passed. Reconstruction jobs finished kernel active count0. New reader preserves raw memory counter semantics and explicit cross-platform differences. Initial archive creation clock was not separately recorded and remains unknown; inference/cache invocation and extra verification clocks are preserved. No new sampling during recovery or reanalysis.
 
 Receiver: `python scripts/windows/audit_technical_batch.py audit --bundle EXTRACTED/output/windows-runtime-technical-v1 --output NEW_ANALYSIS --rscript Rscript --r-library R_LIBRARY --cross-platform`. Actual Mac execution of this command remains receiving-side work. Current bounded runtime checks pass; formal scientific freezes remain gated on merged F2/cost/analysis/version intake, not on this pilot alone.
+
+
+## 新有限 v2 原生验收入口（2026-10-07）
+
+执行源码06e75c1；prepare/test/run/verify-only/seal/verify/export接通，共享既定控制设置，27主任务与24缓存测量固定在独立技术身份。8项新增本地检查及2项受影响检查通过；首轮1个测试异常文字大小写失败保留，最终无失败/跳过。三份测试输入和归档仅用于本地接口/存储检查，无新Windows Job、CUDA、MCMC或正式重复。
+
+Windows新任务入口为handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md，一次全文提供，按顺序执行；旧F2/v1运行器/安装提示词不重复。原生16行为用例、51任务、96缓存调用、零重算及封存均尚待实机结果，不把代码准备计为通过。Mac继续完整正式原始结果分析，F3/F4/F5/F6未关闭。详见docs/FORMAL-NATIVE-VALIDATION.md和formal-native-producer-v1回执。
