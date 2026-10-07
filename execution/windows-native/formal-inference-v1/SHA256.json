@@ -1,0 +1,174 @@
+{
+  "commands/005-frozen-input-backup/started.json": {
+    "bytes": 1499,
+    "sha256": "3eda63f2c7cab622ef91f25e8740518463d21f789eeaec8e98032c9f910289bd"
+  },
+  "commands/004-native-formal-gate/finished.json": {
+    "bytes": 894,
+    "sha256": "10cf65b8605c532e3c7ce16a28367f2231264520ef62b492cae89ecaeddfb6fb"
+  },
+  "sequence-tests.xml": {
+    "bytes": 1345,
+    "sha256": "be569446185b18462588b20d94d68721efd21a6bf108a50535b2d5096346a762"
+  },
+  "commands/001-old-acceptance-verify/finished.json": {
+    "bytes": 893,
+    "sha256": "d346799fafaaf282c3a6b74d534c40434916ffcc5d37555723d88718a7444b47"
+  },
+  "backup-receipt.json": {
+    "bytes": 184,
+    "sha256": "9773858e29c938af71937d0f0a5dc4e78143f430f4ce22a0e19cdec6218991d2"
+  },
+  "storage-preflight.json": {
+    "bytes": 1125,
+    "sha256": "658649dd560499285e8270d520b260929ec582340fc892baf2b47cb8f3a0f46a"
+  },
+  "FROZEN.json": {
+    "bytes": 561,
+    "sha256": "34f257dbdaaf009ec17966a7d74f32a691fce80dba0c897028c563e82e084c4f"
+  },
+  "freeze-summary.json": {
+    "bytes": 2024,
+    "sha256": "98a6b288e49f27de99e32ac61ca0f6279caa34bcbaff9095ec49cfd3b103fa9d"
+  },
+  "environment.json": {
+    "bytes": 1650,
+    "sha256": "074e1d0f733abba86623f1a17eb57cfd0ea3e121aeeeb4c46d7ae111af942fb3"
+  },
+  "commands/005-frozen-input-backup/job-intent.json": {
+    "bytes": 120,
+    "sha256": "16d780a016c0290feaa6551af53b1e3cc38afe0d7526ed7dcdfeb61161d2d6cb"
+  },
+  "preflight-environment-attempt01.json": {
+    "bytes": 5347,
+    "sha256": "e828107c4bba889e5fece264e28309e0b70ec9e066df59b9707cb9351b27ea56"
+  },
+  "pip-check.txt": {
+    "bytes": 31,
+    "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+  },
+  "preflight.stderr.log": {
+    "bytes": 561,
+    "sha256": "09483f112eb8318e37e6db1c000cfdd3c5c0e1cc82824711d97dfe743252c9fb"
+  },
+  "editable-source-anchor.json": {
+    "bytes": 679,
+    "sha256": "d5fe1908eaaea54fe594cd3934c1d89fadd8eb3b5f8d43bc613fd46422134fe8"
+  },
+  "commands/004-native-formal-gate/started.json": {
+    "bytes": 1865,
+    "sha256": "aa9a76b85838c492ee20727c61ef3e13c67b8142c5e4d58a00a200c1de13bc41"
+  },
+  "freeze-manifest.json": {
+    "bytes": 368437,
+    "sha256": "0e37ef98965a867429bdeab57458e332f8f62e30716583b8aec1d4a2f3b9f77b"
+  },
+  "commands/002-prepare/started.json": {
+    "bytes": 1777,
+    "sha256": "5e19099e86bf25ea63c63994f81a9632eb1d3ed1cf78a97ce511dace0d3c42a2"
+  },
+  "commands/003-formal-freeze-verify/finished.json": {
+    "bytes": 895,
+    "sha256": "e772d6e175319a683f08c89a8dff50abdc2a60d519efcef6f2a9be31b600bae4"
+  },
+  "source-identities.json": {
+    "bytes": 21788,
+    "sha256": "02f58a127a759537a0ee5d92ee0ce687989f00bb122ee6f693188db006207583"
+  },
+  "input-identities.json": {
+    "bytes": 349479,
+    "sha256": "6d57c2596234d2263a080039aded43318777790504b3f59c1a698a18d4af7750"
+  },
+  "address-check.json": {
+    "bytes": 224,
+    "sha256": "ba3b5c5933f303817dc58b57b36ac33dfd5760d8db7b32a53ce4c09aa4b4cd02"
+  },
+  "sequence-tests.stdout.log": {
+    "bytes": 200,
+    "sha256": "dde328f9b85457a6ccd1e009c936015350df2f5729289fecdd012892a3e8bde4"
+  },
+  "preflight-registry-receipt.json": {
+    "bytes": 28627,
+    "sha256": "209832ce5c136bdfd897042830a027e8d0b22970e034976f9b35013596dbfcfd"
+  },
+  "commands/004-native-formal-gate/primary.json": {
+    "bytes": 92,
+    "sha256": "56ba2079e07f19ebfb5a2ec6763233f747eb89b4ed50af1a08b4ebd1770fc8ed"
+  },
+  "paths-and-source.json": {
+    "bytes": 31014,
+    "sha256": "03b9f07b50042e21e10a3996da4dfdb0ec22d8015053ad5e569b3c5623b7edea"
+  },
+  "pip-freeze-attempt01.txt": {
+    "bytes": 694,
+    "sha256": "41b123d9fd48530cf8ab2b08b2f1732c7c7b97fc3c910ac128df7c59322b7d82"
+  },
+  "commands/001-old-acceptance-verify/primary.json": {
+    "bytes": 93,
+    "sha256": "3e92017939d62753fc7149b27e06bcc811d0edd116a353fc5f44ef6620297612"
+  },
+  "storage-after-freeze.json": {
+    "bytes": 267,
+    "sha256": "bf1708fc4bd70c23c90265c514dcea45aa031946e419055767df3d7bca0c740b"
+  },
+  "commands/003-formal-freeze-verify/job-intent.json": {
+    "bytes": 120,
+    "sha256": "788f111196501eecf7049f4f791c9ef7e4fb13a91dc5e4487f0853e032b9d709"
+  },
+  "commands/001-old-acceptance-verify/job-intent.json": {
+    "bytes": 120,
+    "sha256": "3cb17e4db5d39605652d19c1977c3b113c6471f5d8e987ea9d767dbdc829b2b0"
+  },
+  "commands/005-frozen-input-backup/finished.json": {
+    "bytes": 894,
+    "sha256": "3a2bee05b1b1572be6e4f060addce9e80b920d428021ef55dae5c738e463a44a"
+  },
+  "commands/002-prepare/job-intent.json": {
+    "bytes": 120,
+    "sha256": "0a517d8987713b6388e6f9a6a01a7103589a74400e5219477a2e71e4eaa8bcc4"
+  },
+  "commands/005-frozen-input-backup/primary.json": {
+    "bytes": 93,
+    "sha256": "004e116463de64e1b62820842384d903e984543066ee84244b7fdf9c2a513f99"
+  },
+  "preflight-attempt02.stderr.log": {
+    "bytes": 188,
+    "sha256": "b3aad99a991f98252f3a0842635009f1fbec82b901a63d11a0168dadc69467cb"
+  },
+  "preflight-environment.json": {
+    "bytes": 5346,
+    "sha256": "8bbe6f45f625cb6b6685305a4dfbb439934a1d5096709eba0314e64ffd3fd37f"
+  },
+  "commands/001-old-acceptance-verify/started.json": {
+    "bytes": 1381,
+    "sha256": "72928aa89b574d13dc57149853bd7d15cb7556a29b4296a6da84fa665dcbce75"
+  },
+  "commands/004-native-formal-gate/job-intent.json": {
+    "bytes": 120,
+    "sha256": "3ea6ab2dc654d17b35ce322c142fef29890fa70686c54bed532291d9fbb1a667"
+  },
+  "commands/002-prepare/finished.json": {
+    "bytes": 897,
+    "sha256": "692eb8d71b4141c309fbe4568d958d08af84b265bf49e95d1f1d9115f55926f4"
+  },
+  "commands/002-prepare/primary.json": {
+    "bytes": 93,
+    "sha256": "dbaa23c0bd62504ff2f5c0fc3635d93adc7f83e4920846c3183ab7108a2158a2"
+  },
+  "commands/003-formal-freeze-verify/started.json": {
+    "bytes": 1376,
+    "sha256": "1653290f21f44759977e1c54aa2187f9681f816b13e219ac3882c92c7b13860b"
+  },
+  "storage-plan.json": {
+    "bytes": 2005,
+    "sha256": "a7038f4e43cbbdc61c58eadd16381fbb71ac3484d5a4b9da45fc6312223fd81a"
+  },
+  "commands/003-formal-freeze-verify/primary.json": {
+    "bytes": 93,
+    "sha256": "72086e6dbb6de4a0a52a44a6a85bd907476e6c6635875672a7a493edc5760b1a"
+  },
+  "pip-freeze.txt": {
+    "bytes": 694,
+    "sha256": "ac0a4e4512894d5f63420a2b751659aa4278b1bd711a2e57038e3c411aa6b398"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "identity": "windows-formal-inference-v1",
+  "basis": "docs/FORMAL-STORAGE-COMPANION.md at fe850061",
+  "source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77",
+  "compression_assumption": "No compression ratio extrapolated",
+  "conditional_array_gib": 506.13,
+  "conditional_success_reserve_gib": 49.5,
+  "conditional_receiver_functions_gib": 80.68,
+  "conditional_three_copies_plus_functions_gib": 1747.57,
+  "scenario_is_not_threshold_upper_bound_or_capacity_guarantee": true,
+  "volumes": [
+    {
+      "volume": "D:",
+      "physical_disk": "WD_BLACK SN770",
+      "original": "D:/workspace/ParallelBayes/f/output/windows-formal-inference-v1",
+      "original_and_cost_allocation_gib": 700,
+      "archive": "D:/workspace/ParallelBayes/f/output/formal-return",
+      "archive_allocation_gib": 700,
+      "minimum_unallocated_margin_gib": 150
+    },
+    {
+      "volume": "C:",
+      "physical_disk": "ZHITAI TiPlus9100",
+      "new_extract": "C:/ParallelBayes-formal-delivery-v1",
+      "extract_allocation_gib": 700,
+      "analysis": "C:/ParallelBayes-formal-analysis-v1",
+      "analysis_allocation_gib": 200,
+      "input_metadata_backup": "C:/ParallelBayes-formal-backup-v1",
+      "backup_allocation_gib": 64,
+      "minimum_os_unallocated_margin_gib": 400
+    }
+  ],
+  "backup_scope": "Frozen inputs/control/small ended receipts copied and SHA verified between measurements; all trajectories have no independent second physical copy until complete archive relocation/extraction is verified",
+  "full_mac_intake": "Not assumed; currently ~149GiB free, small receipts first",
+  "reassess": "Actual file bytes/free volume after each phase and before any archive/extraction; retain resource waits, no deletion/grid reduction",
+  "original_guards": {
+    "preparation_ram_gib": 12,
+    "gpu_free_gib": 3,
+    "sampled_rss_gib": 8,
+    "job_commit_limit_gib": 12,
+    "start_disk_gib": 4,
+    "running_disk_gib": 1,
+    "time_cutoff": null
+  }
+}

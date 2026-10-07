@@ -1,0 +1,14 @@
+[
+  {
+    "DriveLetter": "D",
+    "Size": 2000381014016,
+    "SizeRemaining": 1849885425664,
+    "FileSystemType": "NTFS"
+  },
+  {
+    "DriveLetter": "C",
+    "Size": 2047228243968,
+    "SizeRemaining": 1625540562944,
+    "FileSystemType": "NTFS"
+  }
+]

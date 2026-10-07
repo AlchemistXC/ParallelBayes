@@ -1,0 +1,72 @@
+{
+  "identity": "windows-formal-inference-v1",
+  "source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77",
+  "protocol_sha256": "62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176",
+  "design_sha256": "68a1cba1b9309216d237ac4613531216f167ff344dfdfcb72dc3aaca0ca0baa5",
+  "frozen_file_sha256": "34f257dbdaaf009ec17966a7d74f32a691fce80dba0c897028c563e82e084c4f",
+  "freeze_manifest_sha256": "0e37ef98965a867429bdeab57458e332f8f62e30716583b8aec1d4a2f3b9f77b",
+  "inputs": 1152,
+  "main_tasks": 41472,
+  "cache_probes": 9216,
+  "planned_cache_calls": 36864,
+  "planned_four_chain_repeats_per_target": 128,
+  "target_names": [
+    "G1",
+    "G2",
+    "A1",
+    "L1",
+    "L2",
+    "H1",
+    "H2",
+    "M1",
+    "W1"
+  ],
+  "controls": {
+    "atol": 1E-10,
+    "chains": 4,
+    "maximum_member_bytes": 134217728,
+    "memory_limit_mb": 2048,
+    "mh_discard": 512,
+    "minimum_gpu_free_bytes": 3221225472,
+    "nuts_full_mass": false,
+    "nuts_target_accept": 0.8,
+    "nuts_threads": 1,
+    "nuts_tree_depth": 8,
+    "nuts_warmup": 1024,
+    "nuts_workers": 4,
+    "quasi_deer_max_iter": 2048,
+    "rtol": 1E-10,
+    "torch_threads": 4,
+    "window": 32
+  },
+  "windows_limits": {
+    "disk_floor_bytes": 1073741824,
+    "disk_start_bytes": 4294967296,
+    "job_commit_bytes": 12884901888,
+    "poll_seconds": 0.2,
+    "rss_bytes": 8589934592
+  },
+  "environment_matches_native_acceptance": true,
+  "gate_exit_code": 0,
+  "source_canonical_files": 188,
+  "sampler_calls_at_freeze": 0,
+  "main_status_at_freeze": {
+    "not_run": 41472
+  },
+  "cache_status_at_freeze": {
+    "not_run": 9216
+  },
+  "phase_order": [
+    "0 main",
+    "0 cache",
+    "1 main",
+    "1 cache",
+    "2 main",
+    "2 cache",
+    "3 main",
+    "3 cache"
+  ],
+  "raw_arrays_location": "D:/workspace/ParallelBayes/f/output/windows-formal-inference-v1",
+  "backup_location": "C:/ParallelBayes-formal-backup-v1",
+  "full_raw_independent_Mac_intake_complete": false
+}

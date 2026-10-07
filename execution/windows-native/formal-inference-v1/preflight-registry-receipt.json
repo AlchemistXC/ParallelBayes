@@ -1,0 +1,529 @@
+{
+  "status": "passed",
+  "shared_lock": "D:\\workspace\\ParallelBayes\\output\\runtime\\windows-shared-host.lock",
+  "indexed_tasks": 51,
+  "legacy_tasks": 51,
+  "indexed_active_count": 0,
+  "registered_jobs_observed": 102,
+  "owned_active_processes": 0,
+  "native_job_observations": {
+    "Local\\ParallelBayes-01dd73c4cb7842d48c49fb3860bbaad0": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-01dd73c4cb7842d48c49fb3860bbaad0",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-0304d187ad714cd6a512e1ce33b87c48": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-0304d187ad714cd6a512e1ce33b87c48",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-0bd5c31253334992a7a657f5f5fe7fc5": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-0bd5c31253334992a7a657f5f5fe7fc5",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-0e1136ed09094ab4b41f2c85cd6b29b6": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-0e1136ed09094ab4b41f2c85cd6b29b6",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-109879ce0ab34da6bdf759e22b7f6b28": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-109879ce0ab34da6bdf759e22b7f6b28",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-14f8ba152af34527bc8fff4f97bcb7b7": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-14f8ba152af34527bc8fff4f97bcb7b7",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-196cceaca4dc483fafb9e14281defe2e": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-196cceaca4dc483fafb9e14281defe2e",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-1b70594003a24b9d9ac9ce293db4be80": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-1b70594003a24b9d9ac9ce293db4be80",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-1bf95051a55242b2af2d76c93531d87a": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-1bf95051a55242b2af2d76c93531d87a",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-1e026335ef3e444892dbdb5ab7b6d5d8": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-1e026335ef3e444892dbdb5ab7b6d5d8",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-203e4e30e7e94db6b44bca22aa20fd35": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-203e4e30e7e94db6b44bca22aa20fd35",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-2056c407805341b7bc0bf03ee81cdc30": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-2056c407805341b7bc0bf03ee81cdc30",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-20ad466929484e188a5d699e3e22ea97": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-20ad466929484e188a5d699e3e22ea97",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-2128fc1ab3c44520b942dcb44cb7509c": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-2128fc1ab3c44520b942dcb44cb7509c",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-2304605079d840968258b5564055a3e2": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-2304605079d840968258b5564055a3e2",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-23b7afff7db64d9d850bfe47c856d1c1": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-23b7afff7db64d9d850bfe47c856d1c1",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-25ec919f4f204328ae229d7e5404d97e": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-25ec919f4f204328ae229d7e5404d97e",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-25fa872a040147a897edd89e91d23c2e": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-25fa872a040147a897edd89e91d23c2e",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-26dda08e5db2494dba0ee98016886357": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-26dda08e5db2494dba0ee98016886357",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-2a53b1219c8f4ee49edfab04301bff8f": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-2a53b1219c8f4ee49edfab04301bff8f",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-2c6f3cb018ae41fe8aa5b9abacd4084a": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-2c6f3cb018ae41fe8aa5b9abacd4084a",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-3037f7be531542e694ee479b9bb531f9": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-3037f7be531542e694ee479b9bb531f9",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-379af6445a704e7b8ec00046064e8c45": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-379af6445a704e7b8ec00046064e8c45",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-38657f5603c345db9cd13d8b174c77b3": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-38657f5603c345db9cd13d8b174c77b3",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-3bea5db065e8430193d493291ed063af": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-3bea5db065e8430193d493291ed063af",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-3c73363f8b3c4aa98e0f5817b9970c5e": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-3c73363f8b3c4aa98e0f5817b9970c5e",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-3de3d05f082d45939629acd7efb241f3": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-3de3d05f082d45939629acd7efb241f3",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-45103bc4b6224b5aaea97d13d781fe02": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-45103bc4b6224b5aaea97d13d781fe02",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-45dd971c81cd430c9854ad9cd96704cb": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-45dd971c81cd430c9854ad9cd96704cb",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-495afc01fa69487fb7eadcf37a75be24": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-495afc01fa69487fb7eadcf37a75be24",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-4a302301727c41e7bd59d22024bf927d": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-4a302301727c41e7bd59d22024bf927d",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-4ac166f42b994a6da8a6d25bf33d3f42": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-4ac166f42b994a6da8a6d25bf33d3f42",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-501e0412c9db44a890daceebd5caf7a3": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-501e0412c9db44a890daceebd5caf7a3",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-52b447cd769a48fdba7be2d843850661": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-52b447cd769a48fdba7be2d843850661",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-52b8b4ab928245aa9d020fc50d9a31d1": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-52b8b4ab928245aa9d020fc50d9a31d1",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-553aef6fab08460f83ea935428ae5fe7": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-553aef6fab08460f83ea935428ae5fe7",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-5636c62ff4a64501b95dd856d6316687": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-5636c62ff4a64501b95dd856d6316687",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-57b52b094484415f9d9cf2baddf12aa6": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-57b52b094484415f9d9cf2baddf12aa6",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-57fce880b1a6455f885d7c194712539a": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-57fce880b1a6455f885d7c194712539a",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-58a50f1b156e4dbda965d0de50a20c4c": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-58a50f1b156e4dbda965d0de50a20c4c",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-594d92aad98e42aebebbdd9d361d9061": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-594d92aad98e42aebebbdd9d361d9061",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-5e311065b8cb40a0a38d8dd40c4690b8": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-5e311065b8cb40a0a38d8dd40c4690b8",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-5e95ba8d62064b28a3886aa92dd481aa": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-5e95ba8d62064b28a3886aa92dd481aa",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-5f47f79e0a5d4caaaedcac9348b4a6b7": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-5f47f79e0a5d4caaaedcac9348b4a6b7",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-5f86b9ccbea94ea68e2d259ce6deb7a0": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-5f86b9ccbea94ea68e2d259ce6deb7a0",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-630068bb02fa498686c6496cd613c79b": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-630068bb02fa498686c6496cd613c79b",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-65398ccebb164aec844f7894a23ba2e5": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-65398ccebb164aec844f7894a23ba2e5",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-6899994dc1fd4508b5b91047fcc52426": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-6899994dc1fd4508b5b91047fcc52426",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-6a1918a71d16425598a36b5637dd4a5a": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-6a1918a71d16425598a36b5637dd4a5a",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-6b59db53f99e4b6aabd9a01aeba1eb42": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-6b59db53f99e4b6aabd9a01aeba1eb42",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-6c86cf7930f7405ab6aca9ab46624ed2": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-6c86cf7930f7405ab6aca9ab46624ed2",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-6d56a1e4bf8d4aaf9bde774d35f439c4": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-6d56a1e4bf8d4aaf9bde774d35f439c4",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-71e6093a92b34486adeb1038477f7585": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-71e6093a92b34486adeb1038477f7585",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-724620386c024b41b7fc2effca2fdf66": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-724620386c024b41b7fc2effca2fdf66",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-7843a6da480d44a08522d7348a33902d": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-7843a6da480d44a08522d7348a33902d",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-7c200a34e592431b9f53d294447e0fa5": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-7c200a34e592431b9f53d294447e0fa5",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-7cefb616e46e4bf4935d2207bbc54212": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-7cefb616e46e4bf4935d2207bbc54212",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-7e1e0dfba08d44c4b1d72114f8c92ce6": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-7e1e0dfba08d44c4b1d72114f8c92ce6",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-7fdb6b4a12154ce7950aab889a8df11c": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-7fdb6b4a12154ce7950aab889a8df11c",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-817911fbd548419eb8782546dcb0e502": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-817911fbd548419eb8782546dcb0e502",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-826a246b9d01499f9665cb15c21a6b46": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-826a246b9d01499f9665cb15c21a6b46",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-86fb32f0b8ae46008f0a4c18a4e2fd7c": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-86fb32f0b8ae46008f0a4c18a4e2fd7c",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-8743562d3241438da6459afbb03369d1": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-8743562d3241438da6459afbb03369d1",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-8a01d9c9141942729325c53a540baf78": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-8a01d9c9141942729325c53a540baf78",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-8b36bc9c396c4ba18d46c1464d3cec84": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-8b36bc9c396c4ba18d46c1464d3cec84",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-929665a7e2984a82a4e189d2021f6869": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-929665a7e2984a82a4e189d2021f6869",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-929d406884b14714b520d089c216b548": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-929d406884b14714b520d089c216b548",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-92ed08f20f5541eaab101de2149ef7d1": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-92ed08f20f5541eaab101de2149ef7d1",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-9569f0760ea946b1997b3dea61a63b4e": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-9569f0760ea946b1997b3dea61a63b4e",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-9ac4e90223ce416b99b16f856b682a42": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-9ac4e90223ce416b99b16f856b682a42",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-9eaf8840c49446b19d1e8bf08b139812": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-9eaf8840c49446b19d1e8bf08b139812",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-a1c9b80b18f84bffa21b054734336b4b": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-a1c9b80b18f84bffa21b054734336b4b",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-a709219f8b8e44ef8a46e62ee7b2a6cd": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-a709219f8b8e44ef8a46e62ee7b2a6cd",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-a8387aeca4ea4e38917a64f7d8cac9a6": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-a8387aeca4ea4e38917a64f7d8cac9a6",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-aa9591738f614974a22a0ddd3e5f122d": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-aa9591738f614974a22a0ddd3e5f122d",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-ade8b5603eea4f3da3dee1edb0d7912c": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-ade8b5603eea4f3da3dee1edb0d7912c",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-b00efbe1379c440986aa3740c4f822dc": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-b00efbe1379c440986aa3740c4f822dc",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-b28685a85acb4b7699d798916922029d": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-b28685a85acb4b7699d798916922029d",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-b4cff46a601d4e0baec14b277a227ed3": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-b4cff46a601d4e0baec14b277a227ed3",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-b88905988557482ab2ae8497ae3b6a24": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-b88905988557482ab2ae8497ae3b6a24",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-c2a4bbdb4b0b4d84ac5cf0a03b8c23d0": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-c2a4bbdb4b0b4d84ac5cf0a03b8c23d0",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-ca397fa0b8d046298dd9bc166a081117": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-ca397fa0b8d046298dd9bc166a081117",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-cc899292aeb44b8288875664ef93e464": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-cc899292aeb44b8288875664ef93e464",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-d42ff12403c3401ebf19f3ead57dfe1d": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-d42ff12403c3401ebf19f3ead57dfe1d",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-d486153f617d4cca8780b40f22f55d44": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-d486153f617d4cca8780b40f22f55d44",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-d7e36d150af94d22b16ed7e38549709e": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-d7e36d150af94d22b16ed7e38549709e",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-dece6a6b999e4643a556e62c8b978c76": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-dece6a6b999e4643a556e62c8b978c76",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-dfe42643030d4908ad95dd89adc4dfe2": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-dfe42643030d4908ad95dd89adc4dfe2",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-e0bd87faf66548f4a9f3bd8583f56e9e": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-e0bd87faf66548f4a9f3bd8583f56e9e",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-e2e1008d3e2c4a21953055de830d0c1a": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-e2e1008d3e2c4a21953055de830d0c1a",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-e8b078fab65a434d99569d8d45ea8512": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-e8b078fab65a434d99569d8d45ea8512",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-eaeeba8c59474bdb89c19b1bcb8edb4d": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-eaeeba8c59474bdb89c19b1bcb8edb4d",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-eb04c3b8d1dc4266a219444e69d8a93e": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-eb04c3b8d1dc4266a219444e69d8a93e",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-eb83618ee1254ef793028a2ea8f5bf5c": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-eb83618ee1254ef793028a2ea8f5bf5c",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-eb94ab49d1354744b6275135efe638cd": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-eb94ab49d1354744b6275135efe638cd",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-ec383df163aa43d68fe1db6d77313cea": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-ec383df163aa43d68fe1db6d77313cea",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-eed1d2453059453e80bf1668296ba7bf": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-eed1d2453059453e80bf1668296ba7bf",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-f2317f725dee4b30a468ef8d4c3440a1": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-f2317f725dee4b30a468ef8d4c3440a1",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-f480af88d43a4ba8a96927e57647ae87": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-f480af88d43a4ba8a96927e57647ae87",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-f488fa3f994c47e9944b9b19ee8e97c4": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-f488fa3f994c47e9944b9b19ee8e97c4",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-f4e9806e843442f88eb2c9ae3b2f5f7c": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-f4e9806e843442f88eb2c9ae3b2f5f7c",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-fc5e60506c6c44f781eab54f39d8c08b": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-fc5e60506c6c44f781eab54f39d8c08b",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    }
+  },
+  "source_and_copied_sha256": {
+    "windows-shared-host.windows-registry.json": "c11172414f27384bacce87f184e92c3f19f0ae84cb27d952482a5c666ae8a8d7",
+    "windows-shared-host.lock.formal-journal\\identity.json": "a04235e8199c96ccc531d69b2f36dfbe1d9947eebc87063a54225cb7be7fa8db",
+    "windows-shared-host.lock.formal-journal\\tasks.sqlite3": "25ce9528743bb4b4a895c73a9ab403829afb2b87317075f25612ac83b7b3fb1c"
+  },
+  "scope": "Quiescent registry copy; not a relocated live lease or whole-OS process census",
+  "snapshot_seconds": 0.14841570000862703,
+  "no_sampling": true
+}

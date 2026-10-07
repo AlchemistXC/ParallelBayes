@@ -1,0 +1,11 @@
+{
+  "observed_utc": "2026-10-07T15:57:53.5851424Z",
+  "preserved_branch": "codex/windows-mechanism-completion",
+  "preserved_commit": "fe850061defb79be69355a0d5db4c2fad87fb5ea",
+  "installed_editable_directory": "D:/workspace/ParallelBayes",
+  "anchor_branch": "codex/windows-editable-environment-anchor",
+  "anchor_commit": "6df04793e0cecb2633f5cc3bbdeea5a8b3228145",
+  "reason": "pip freeze obtains editable VCS HEAD from original installed directory; restore actual accepted installation source without changing site-packages, venv marker or frozen execution tree",
+  "active_python_or_R_before_checkout": 0,
+  "source_or_dependency_changes_to_execution_tree": 0
+}

@@ -1,0 +1,51 @@
+{
+  "observed_utc": "2026-10-07T15:54:22.7313331Z",
+  "volumes": [
+    {
+      "DriveLetter": "D",
+      "FileSystemType": "NTFS",
+      "Size": 2000381014016,
+      "SizeRemaining": 1862927056896,
+      "HealthStatus": "Healthy"
+    },
+    {
+      "DriveLetter": "C",
+      "FileSystemType": "NTFS",
+      "Size": 2047228243968,
+      "SizeRemaining": 1638573903872,
+      "HealthStatus": "Healthy"
+    }
+  ],
+  "partitions": [
+    {
+      "DriveLetter": "D",
+      "DiskNumber": 1,
+      "PartitionNumber": 2,
+      "Size": 2000381018112
+    },
+    {
+      "DriveLetter": "C",
+      "DiskNumber": 0,
+      "PartitionNumber": 3,
+      "Size": 2047228248064
+    }
+  ],
+  "disks": [
+    {
+      "DeviceId": "0",
+      "FriendlyName": "ZHITAI TiPlus9100 2TB",
+      "MediaType": "SSD",
+      "BusType": "NVMe",
+      "Size": 2048408248320,
+      "HealthStatus": "Healthy"
+    },
+    {
+      "DeviceId": "1",
+      "FriendlyName": "WD_BLACK SN770 2TB",
+      "MediaType": "SSD",
+      "BusType": "NVMe",
+      "Size": 2000398934016,
+      "HealthStatus": "Healthy"
+    }
+  ]
+}

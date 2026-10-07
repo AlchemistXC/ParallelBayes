@@ -126,6 +126,8 @@ __pycache__/
 !/execution/windows-native/commands.ps1
 !/execution/windows-native/formal-adapter-validation-v1/
 !/execution/windows-native/formal-adapter-validation-v1/**
+!/execution/windows-native/formal-inference-v1/
+!/execution/windows-native/formal-inference-v1/**
 /materials/*
 !/materials/README.md
 !/materials/并行贝叶斯.md

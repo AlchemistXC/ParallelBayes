@@ -1,0 +1,12 @@
+{
+  "design_sha256": "68a1cba1b9309216d237ac4613531216f167ff344dfdfcb72dc3aaca0ca0baa5",
+  "formal_inference_complete": false,
+  "identity": "windows-formal-inference-v1",
+  "inputs": 1152,
+  "manifest_sha256": "0e37ef98965a867429bdeab57458e332f8f62e30716583b8aec1d4a2f3b9f77b",
+  "native_execution_gate_required": true,
+  "protocol_sha256": "62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176",
+  "sampling_authorized_by_this_document": false,
+  "schema": "formal-study-freeze-v1",
+  "source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77"
+}

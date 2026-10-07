@@ -1,0 +1,32 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "scripts/windows/prepare_formal_study.py",
+    "verify",
+    "--bundle",
+    "D:/workspace/ParallelBayes/f/output/windows-formal-inference-v1"
+  ],
+  "cost_scope": "Whole CLI process and descendant lifetime; includes nested clocks, not additive. Observer setup and final receipt writing excluded. Timestamps are not durations.",
+  "cwd": "D:\\workspace\\ParallelBayes\\f",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONUTF8": "1"
+  },
+  "executable": "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+  "job_api_sha256": "900c0cab23154805493915aa60c91709ff6f725cd8ccf5894f0b8fc51560118f",
+  "observer_adds_statistical_repetitions": 0,
+  "outer_job_has_no_additional_resource_or_time_limits": true,
+  "planned_cache_probes": 9216,
+  "planned_main_tasks": 41472,
+  "planned_original_four_chain_repeats_per_target": 128,
+  "removed_environment": [
+    "PYTHONPATH"
+  ],
+  "scientific_lease_owned_by_child": true,
+  "source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77",
+  "started_ns": 1791389608408946000,
+  "started_utc": "2026-10-07T16:13:28.408946+00:00",
+  "study_identity": "windows-formal-inference-v1",
+  "witness_sha256": "a82efda599d26a928b2e3aff85e08edf6e2e33a94e7b1ddc519b815c691cb4ea"
+}

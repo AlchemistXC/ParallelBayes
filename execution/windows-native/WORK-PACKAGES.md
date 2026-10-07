@@ -1,5 +1,34 @@
 # Native Windows development evidence
 
+## 正式 Windows 四批研究预检与准备（2026-10-08）
+
+完整研究已授权。执行分支codex/windows-formal-inference的独立短路径f固定
+0ba5643a6b580e79b8040f13a5e3165322db0e77；报告分支codex/windows-formal-delivery
+的rf从最新fe850061建立。保留所有旧工作树/分支/结果，无reset或覆盖。
+旧验收仅只读verify退出0，3166门槛资产及原验收SHA通过；没有重跑有限任务。
+原共享锁下观察102登记原生Job，活动0。188规范源码字节、原水井八文件及17个
+最大G2实存目录长度通过。实际原Python/torch CUDA/R/完整版本核对一致。
+
+首次预检保留editable pip来源提交随主目录变动导致的锁哈希失败；确认空闲后
+建立6df0479安装来源锚定分支，保留原fe85006分支，未改任何依赖或venv标记。
+再次完整环境核对通过。原失败/修复原因及R locale警告均保留。
+双物理NVMe按D原件/tar、C新解压/分析/输入控制备份分配，不套用有限压缩率。
+完整存储方案与具体目录见docs/WINDOWS-FORMAL-INFERENCE.md。
+
+1152份实际主输入prepare已启动，尚未封存FROZEN或启动正式采样；每份文件/
+实际数组回执及外层真实Job/墙钟日志保存在f/output/windows-formal-inference-v1
+及f/output/formal-costs-v1。独立交付树的witness_formal_study不添加执行源，
+不持有科学锁、不增加时间/资源限制；不复用有限formal_repetitions=0身份。
+当前41472主任务/9216缓存探测全部尚未执行，F3–F6未完成。
+
+本阶段后继：prepare/完整verify/正式原生源环境门槛均实际退出0，1152主输入
+封存完成，设计SHA68a1cba1、协议SHA62ca9db5、FROZEN字节SHA34f257db。
+完整源仍0ba5643/188文件，原环境标记未改。新C盘输入/控制备份3665文件、
+13019612404字节逐件SHA通过；以上外层Job终态活动均0。完整计划与128重复/
+四预算/九目标保留，输入非旧技术样本。另8项外层调度契约检查通过，不计作
+原生验收/统计重复。小型回执与全输入文件/实际数组身份已保存formal-inference-v1。
+冻结报告提交推送后即可依序0main→0cache→1main→1cache→2main→2cache→3main→3cache。
+
 2026-10-07 原始结果读取后继（`62b7268`）：新增独立 `scripts/analysis/formal_science.py`，接入 v2 历史/费用、实际输入、独立 NumPy 路径重放、原坐标函数、原始 R 诊断重建及缓存失败保留。11项不同新检查通过，旧3份真实 NUTS 数值布局读取通过、原件不变；人工 v2 文件不构成 Windows 实测。执行源码、冻结协议和旧结果未改。完整研究框架索引、统计汇总、正式实验及论文仍待完成；现有 Windows 适配提示词继续有效，无需增加或重跑旧提示词。详见 docs/FORMAL-RAW-READER.md。
 
 Branch: `windows-native-dev`. Baseline: `a774d83` (0.1.1 JAX/BridgeStan).
