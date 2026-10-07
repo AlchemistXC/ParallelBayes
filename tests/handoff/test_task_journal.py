@@ -8,7 +8,7 @@ import pytest
 
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'scripts/completion'))
-from task_journal import TaskJournal, JournalConflict
+from task_journal import TaskJournal, JournalConflict, read_task_export
 
 
 def entry(name,batch=0):
@@ -37,10 +37,23 @@ def test_durable_independent_tasks_active_index_and_relocated_export(tmp_path):
         assert j.active()=={}
         j.export(key,tmp_path/'export.json')
         with pytest.raises(FileExistsError):j.export(key,tmp_path/'export.json')
-    export=json.loads((tmp_path/'export.json').read_text())
+    export=read_task_export(tmp_path/'export.json')
     assert export['entry']['calls'][0]['seconds'] is None
     assert [e['kind'] for e in export['events']]==['registered','launch_intent','reconciled']
     assert export['process_termination_proven'] is False
+
+
+def test_relocated_export_rejects_resealed_inconsistent_history(tmp_path):
+    from formal_runtime import fingerprint
+    value=entry('test');key=TaskJournal.key(value['task'])
+    with TaskJournal(tmp_path/'original',dict(host='test')) as j:
+        j.save(key,value,'registered');j.export(key,tmp_path/'copy.json')
+    assert read_task_export(tmp_path/'copy.json')['entry']==value
+    bad=json.loads((tmp_path/'copy.json').read_text());bad.pop('sha256')
+    bad['events'][0]['kind']='changed without updating chained event'
+    bad['sha256']=fingerprint(bad)
+    (tmp_path/'bad.json').write_text(json.dumps(bad))
+    with pytest.raises(JournalConflict):read_task_export(tmp_path/'bad.json')
 
 
 def test_rebind_history_truncation_output_alias_and_corruption_fail_closed(tmp_path):

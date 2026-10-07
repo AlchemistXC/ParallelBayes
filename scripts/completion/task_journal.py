@@ -20,6 +20,28 @@ class JournalConflict(RuntimeError):
     pass
 
 
+def read_task_export(path):
+    """Verify a relocated history; does not load its live SQLite database."""
+    value=json.loads(Path(path).read_text())
+    digest=value.pop('sha256')
+    if (fingerprint(value)!=digest or value['schema']!=SCHEMA or
+            value['export_is_live_registry'] is not False or value['process_termination_proven'] is not False):
+        raise JournalConflict('Export identity or scope differs')
+    entry=value['entry'];key=TaskJournal.key(entry['task'])
+    TaskJournal._metadata(entry)
+    if key!=value['task_key']:raise JournalConflict('Export task identity differs')
+    previous=None;last=None
+    for index,signed in enumerate(value['events']):
+        event=dict(signed);event_digest=event.pop('sha256')
+        if (fingerprint(event)!=event_digest or event['index']!=index or
+                event['previous']!=previous or event['task_key']!=key):
+            raise JournalConflict('Export event chain differs')
+        previous=event_digest;last=event
+    if last is None or last['entry_sha256']!=fingerprint(entry):
+        raise JournalConflict('Export final event and record differ')
+    return dict(value,sha256=digest)
+
+
 class TaskJournal:
     """Durably bind tasks, retain attempts, and export individual histories.
 
