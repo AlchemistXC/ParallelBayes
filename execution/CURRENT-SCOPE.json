@@ -2,7 +2,7 @@
   "date": "2026-10-07",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "native_adapter_entry_ready_for_Windows_validation_full_formal_raw_analysis_pending",
+  "local_phase": "native_adapter_awaits_Windows_per_task_raw_reader_checked_full_frame_analysis_pending",
   "gpu_tasks": "Received and independently checked F2 192 workflows, native runtime 27 main/24 cache tasks, and dev2 installation. Formal inference remains unfrozen and unexecuted.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
@@ -218,6 +218,20 @@
       "new_sampler_calls": 0,
       "new_formal_repetitions": 0,
       "prompt": "handoff/windows-completion/CODEX-PROMPT-FORMAL-VALIDATION.md"
+    },
+    "scientific_raw_reader": {
+      "report": "docs/FORMAL-RAW-READER.md",
+      "source_commit": "62b726857a33c27b7803173ed246e30e6323dd28",
+      "distinct_new_checks": 11,
+      "failed_checks": 0,
+      "skipped_checks": 0,
+      "historical_NUTS_layout_checks": 3,
+      "per_task_scientific_reader_implemented": true,
+      "full_formal_frame_analysis_complete": false,
+      "native_v2_return_read": false,
+      "new_sampler_calls": 0,
+      "new_formal_repetitions": 0,
+      "execution_source_unchanged": true
     }
   },
   "latest_upload_check": {

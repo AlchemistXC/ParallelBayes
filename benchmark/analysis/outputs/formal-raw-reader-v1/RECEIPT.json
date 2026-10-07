@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-07",
+  "source_commit": "62b726857a33c27b7803173ed246e30e6323dd28",
+  "new_distinct_checks_passed": 11,
+  "latest_failures": 0,
+  "latest_skips": 0,
+  "attempts": {
+    "tests-first.xml": {
+      "passed": 1,
+      "failed": 7,
+      "skipped": 0
+    },
+    "tests-second.xml": {
+      "passed": 8,
+      "failed": 0,
+      "skipped": 0
+    },
+    "tests-cache-nuts.xml": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    },
+    "tests-transport-final.xml": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "first_failure_reason": "Artificial test fixture kept old synthetic implementation hashes and reused copied history names; production correctly refused these bindings/overwrites. Fixtures repaired, original logs retained.",
+  "historical_NUTS_numeric_layouts": 3,
+  "historical_numeric_check_is_v2_native_validation": false,
+  "historical_originals_unchanged": true,
+  "new_native_executions": 0,
+  "new_sampler_calls": 0,
+  "new_formal_repetitions": 0,
+  "test_scope": "Artificial v2 lifecycle with actual NumPy-generated array fixtures and real R/posterior reconstruction; independent oracle recurrences are verification, not new sampler runs.",
+  "unmodified_execution_source_check": {
+    "command": [
+      "git",
+      "diff",
+      "--exit-code",
+      "75701bb",
+      "HEAD",
+      "--",
+      "scripts/completion",
+      "scripts/windows",
+      "r-package/inst/python",
+      "examples",
+      "benchmark/protocols"
+    ],
+    "return_code": 0,
+    "stdout": ""
+  },
+  "native_Windows_reader_integration_verified": false,
+  "full_formal_frame_analysis_complete": false,
+  "remaining": [
+    "full archive index and resumable phase reader",
+    "complete-frame paired uncertainty and reference integration",
+    "formal raw-to-figures/paper rebuild",
+    "returned native adapter validation",
+    "formal experiments"
+  ],
+  "source_sha256": {
+    "scripts/analysis/formal_science.py": "27b07aa5494ffe92f1dab407229fbfc84aa523600198b5bcc8c26e6edf073d35",
+    "tests/handoff/test_formal_science.py": "aae8cf8717735a30ee0604f3d4e58514ff423e331fcb27c1f0ee7f24ecd06c93"
+  },
+  "evidence_sha256": {
+    "tests-second.xml": "e0920ba270d02baaa2274a732cb6ce19857b04b09c37002b837abbdcc14d280e",
+    "tests-transport-final.xml": "607c411d193d790e3282197ca3de9646ae7d89388a03727173121334c6c82892",
+    "historical-nuts-format-check.json": "f46ca06be44dfba6db49812ea459857f5f8770b4aed1f189f8a45aeed5fdb90d",
+    "tests-first.xml": "4c8efad833ec5f86167db3e77507d2d43833927ee0e85591d26b4f6d2b030a06",
+    "tests-cache-nuts.xml": "a81f9b6c6fe797b32b5bb4ecac744eecc3e7acbc447973fe58421018a83c694f"
+  }
+}

@@ -1,5 +1,7 @@
 # Native Windows development evidence
 
+2026-10-07 原始结果读取后继（`62b7268`）：新增独立 `scripts/analysis/formal_science.py`，接入 v2 历史/费用、实际输入、独立 NumPy 路径重放、原坐标函数、原始 R 诊断重建及缓存失败保留。11项不同新检查通过，旧3份真实 NUTS 数值布局读取通过、原件不变；人工 v2 文件不构成 Windows 实测。执行源码、冻结协议和旧结果未改。完整研究框架索引、统计汇总、正式实验及论文仍待完成；现有 Windows 适配提示词继续有效，无需增加或重跑旧提示词。详见 docs/FORMAL-RAW-READER.md。
+
 Branch: `windows-native-dev`. Baseline: `a774d83` (0.1.1 JAX/BridgeStan).
 New version: `0.2.0.dev1`. Local date: 2026-10-04 (Asia/Tokyo).
 Historical 1920 main tasks, 320 SBC tasks, 72 mechanism tasks, L2 uncertainty and all frozen identities remain unchanged.

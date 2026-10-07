@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="7" skipped="0" tests="8" time="1.252" timestamp="2026-10-07T10:42:08.954455+09:00" hostname="HaKudeMac-mini.local"><testcase classname="tests.handoff.test_formal_science" name="test_actual_arrays_and_R_rebuild_after_relocation" time="0.642"><failure message="ValueError: Native implementation binding differs: worker_sha256">specimen = (&lt;test_formal_native_evidence.Fixture object at 0x10f8f83e0&gt;, {'controls': {'atol': 1e-10, 'chains': 4, 'maximum_membe...5e-01,
+          6.01404881e-01,  1.97802117e-01,  1.18147102e+00,
+          4.81085745e-01,  4.90739955e-01]]]), ...})
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_actual_arrays_and_R_rebui0')
+
+    def test_actual_arrays_and_R_rebuild_after_relocation(specimen,tmp_path):
+&gt;       f,c,_,_=copy_fixture(specimen,tmp_path);before=f.manifest();r=read(f,c,tmp_path)
+                                                                      ^^^^^^^^^^^^^^^^^^
+
+tests/handoff/test_formal_science.py:106: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_formal_science.py:101: in read
+    return reader.read(dict(task=f.task,capsule=c,capsule_sha256=fingerprint(c),probe=None),
+scripts/analysis/formal_science.py:141: in read
+    h = read_native_task(self.root, task=slot['task'], history_export=history_export,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+root = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_actual_arrays_and_R_rebui0/relocated')
+
+    def read_native_task(root, *, task, history_export, directory, manifest, source_files, ledger=None):
+        """Read a registered task, including prelaunch refusal and retained failure.
+    
+        `history_export`, `directory`, and optional `ledger` are explicit relative
+        archive locations. A missing export is an evidence gap, not proof that a
+        task never ran. An exported registration with zero attempts is not_run.
+        Unresolved active attempts are refused; reconcile them on their own host.
+        Returned sample/measurement locations only identify recorded eligibility;
+        numerical raw-array auditing remains a separate required operation.
+        """
+        files = _Assets(root, manifest)
+        exported = read_task_export(files.path(history_export))
+        entry = exported['entry']; binding = entry['binding']
+        kind = task_artifact_kind(task)
+        if (entry['task'] != task or binding['schema'] != SCHEMA or
+                binding['environment']['platform'] != 'win32' or
+                exported['live_identity'] != dict(schema=SCHEMA, platform='win32', host_lock=binding['host_lock'])):
+            raise ValueError('Native task, source platform or journal identity differs')
+        original = PureWindowsPath(entry['output'])
+        if not original.is_absolute():
+            raise ValueError('Original native output identity must be absolute')
+        worker = 'formal_batch_worker.py' if kind == 'posterior' else 'formal_cache_worker.py'
+        for field, source in (
+            ('worker_sha256', 'scripts/windows/' + worker),
+            ('runtime_sha256', 'scripts/windows/formal_owned_runtime.py'),
+            ('journal_sha256', 'scripts/completion/task_journal.py'),
+            ('job_api_sha256', 'scripts/windows/job_objects.py')):
+            if binding[field] != source_files[source]:
+&gt;               raise ValueError('Native implementation binding differs: ' + field)
+E               ValueError: Native implementation binding differs: worker_sha256
+
+scripts/completion/formal_native_evidence.py:120: ValueError</failure></testcase><testcase classname="tests.handoff.test_formal_science" name="test_rehashed_scientific_faults_cannot_pass_saved_success[accept]" time="0.013"><failure message="FileExistsError: No evidence overwrite">specimen = (&lt;test_formal_native_evidence.Fixture object at 0x10f8f83e0&gt;, {'controls': {'atol': 1e-10, 'chains': 4, 'maximum_membe...5e-01,
+          6.01404881e-01,  1.97802117e-01,  1.18147102e+00,
+          4.81085745e-01,  4.90739955e-01]]]), ...})
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_rehashed_scientific_fault0')
+change = 'accept'
+
+    @pytest.mark.parametrize('change',['accept','transform','tape','device'])
+    def test_rehashed_scientific_faults_cannot_pass_saved_success(specimen,tmp_path,change):
+        f,c,_,_=copy_fixture(specimen,tmp_path);p=f.root/'task/attempt-0001'
+        meta=json.loads((p/'fit.json').read_text())
+        if change in ('accept','transform'):
+            with np.load(p/'fit.npz') as z: arrays={k:z[k] for k in z.files}
+            if change=='accept': arrays['accept'][0,0]=not arrays['accept'][0,0]
+            else: arrays['draws'][0,0,0]+=1.
+            np.savez_compressed(p/'fit.npz',**arrays);meta['ordinary_candidate_arrays_sha256']=file_hash(p/'fit.npz')
+        elif change=='tape': meta['tape_sha256']='e'*64
+        else: meta['diagnostics']['tensor_device']='cuda:0'
+&gt;       atomic_json(p/'fit.json',meta);reseal(f,p)
+                                       ^^^^^^^^^^^
+
+tests/handoff/test_formal_science.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_formal_science.py:36: in reseal
+    f.export()
+tests/handoff/test_formal_native_evidence.py:81: in export
+    journal.export(key, destination)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;task_journal.TaskJournal object at 0x10f922960&gt;
+key = '4a78e6cda83aed0602889e683456b4fba844c9812d52bbc7263d9b85d69941d1'
+destination = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_rehashed_scientific_fault0/relocated/history-0.json')
+
+    def export(self, key, destination):
+        """Export a checked task/history without reading unrelated task bodies."""
+        path=Path(destination)
+&gt;       if path.exists():raise FileExistsError('No evidence overwrite')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileExistsError: No evidence overwrite
+
+scripts/completion/task_journal.py:207: FileExistsError</failure></testcase><testcase classname="tests.handoff.test_formal_science" name="test_rehashed_scientific_faults_cannot_pass_saved_success[transform]" time="0.013"><failure message="FileExistsError: No evidence overwrite">specimen = (&lt;test_formal_native_evidence.Fixture object at 0x10f8f83e0&gt;, {'controls': {'atol': 1e-10, 'chains': 4, 'maximum_membe...5e-01,
+          6.01404881e-01,  1.97802117e-01,  1.18147102e+00,
+          4.81085745e-01,  4.90739955e-01]]]), ...})
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_rehashed_scientific_fault1')
+change = 'transform'
+
+    @pytest.mark.parametrize('change',['accept','transform','tape','device'])
+    def test_rehashed_scientific_faults_cannot_pass_saved_success(specimen,tmp_path,change):
+        f,c,_,_=copy_fixture(specimen,tmp_path);p=f.root/'task/attempt-0001'
+        meta=json.loads((p/'fit.json').read_text())
+        if change in ('accept','transform'):
+            with np.load(p/'fit.npz') as z: arrays={k:z[k] for k in z.files}
+            if change=='accept': arrays['accept'][0,0]=not arrays['accept'][0,0]
+            else: arrays['draws'][0,0,0]+=1.
+            np.savez_compressed(p/'fit.npz',**arrays);meta['ordinary_candidate_arrays_sha256']=file_hash(p/'fit.npz')
+        elif change=='tape': meta['tape_sha256']='e'*64
+        else: meta['diagnostics']['tensor_device']='cuda:0'
+&gt;       atomic_json(p/'fit.json',meta);reseal(f,p)
+                                       ^^^^^^^^^^^
+
+tests/handoff/test_formal_science.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_formal_science.py:36: in reseal
+    f.export()
+tests/handoff/test_formal_native_evidence.py:81: in export
+    journal.export(key, destination)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;task_journal.TaskJournal object at 0x10f8faf30&gt;
+key = '4a78e6cda83aed0602889e683456b4fba844c9812d52bbc7263d9b85d69941d1'
+destination = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_rehashed_scientific_fault1/relocated/history-0.json')
+
+    def export(self, key, destination):
+        """Export a checked task/history without reading unrelated task bodies."""
+        path=Path(destination)
+&gt;       if path.exists():raise FileExistsError('No evidence overwrite')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileExistsError: No evidence overwrite
+
+scripts/completion/task_journal.py:207: FileExistsError</failure></testcase><testcase classname="tests.handoff.test_formal_science" name="test_rehashed_scientific_faults_cannot_pass_saved_success[tape]" time="0.012"><failure message="FileExistsError: No evidence overwrite">specimen = (&lt;test_formal_native_evidence.Fixture object at 0x10f8f83e0&gt;, {'controls': {'atol': 1e-10, 'chains': 4, 'maximum_membe...5e-01,
+          6.01404881e-01,  1.97802117e-01,  1.18147102e+00,
+          4.81085745e-01,  4.90739955e-01]]]), ...})
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_rehashed_scientific_fault2')
+change = 'tape'
+
+    @pytest.mark.parametrize('change',['accept','transform','tape','device'])
+    def test_rehashed_scientific_faults_cannot_pass_saved_success(specimen,tmp_path,change):
+        f,c,_,_=copy_fixture(specimen,tmp_path);p=f.root/'task/attempt-0001'
+        meta=json.loads((p/'fit.json').read_text())
+        if change in ('accept','transform'):
+            with np.load(p/'fit.npz') as z: arrays={k:z[k] for k in z.files}
+            if change=='accept': arrays['accept'][0,0]=not arrays['accept'][0,0]
+            else: arrays['draws'][0,0,0]+=1.
+            np.savez_compressed(p/'fit.npz',**arrays);meta['ordinary_candidate_arrays_sha256']=file_hash(p/'fit.npz')
+        elif change=='tape': meta['tape_sha256']='e'*64
+        else: meta['diagnostics']['tensor_device']='cuda:0'
+&gt;       atomic_json(p/'fit.json',meta);reseal(f,p)
+                                       ^^^^^^^^^^^
+
+tests/handoff/test_formal_science.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_formal_science.py:36: in reseal
+    f.export()
+tests/handoff/test_formal_native_evidence.py:81: in export
+    journal.export(key, destination)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;task_journal.TaskJournal object at 0x10f920470&gt;
+key = '4a78e6cda83aed0602889e683456b4fba844c9812d52bbc7263d9b85d69941d1'
+destination = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_rehashed_scientific_fault2/relocated/history-0.json')
+
+    def export(self, key, destination):
+        """Export a checked task/history without reading unrelated task bodies."""
+        path=Path(destination)
+&gt;       if path.exists():raise FileExistsError('No evidence overwrite')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileExistsError: No evidence overwrite
+
+scripts/completion/task_journal.py:207: FileExistsError</failure></testcase><testcase classname="tests.handoff.test_formal_science" name="test_rehashed_scientific_faults_cannot_pass_saved_success[device]" time="0.011"><failure message="FileExistsError: No evidence overwrite">specimen = (&lt;test_formal_native_evidence.Fixture object at 0x10f8f83e0&gt;, {'controls': {'atol': 1e-10, 'chains': 4, 'maximum_membe...5e-01,
+          6.01404881e-01,  1.97802117e-01,  1.18147102e+00,
+          4.81085745e-01,  4.90739955e-01]]]), ...})
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_rehashed_scientific_fault3')
+change = 'device'
+
+    @pytest.mark.parametrize('change',['accept','transform','tape','device'])
+    def test_rehashed_scientific_faults_cannot_pass_saved_success(specimen,tmp_path,change):
+        f,c,_,_=copy_fixture(specimen,tmp_path);p=f.root/'task/attempt-0001'
+        meta=json.loads((p/'fit.json').read_text())
+        if change in ('accept','transform'):
+            with np.load(p/'fit.npz') as z: arrays={k:z[k] for k in z.files}
+            if change=='accept': arrays['accept'][0,0]=not arrays['accept'][0,0]
+            else: arrays['draws'][0,0,0]+=1.
+            np.savez_compressed(p/'fit.npz',**arrays);meta['ordinary_candidate_arrays_sha256']=file_hash(p/'fit.npz')
+        elif change=='tape': meta['tape_sha256']='e'*64
+        else: meta['diagnostics']['tensor_device']='cuda:0'
+&gt;       atomic_json(p/'fit.json',meta);reseal(f,p)
+                                       ^^^^^^^^^^^
+
+tests/handoff/test_formal_science.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_formal_science.py:36: in reseal
+    f.export()
+tests/handoff/test_formal_native_evidence.py:81: in export
+    journal.export(key, destination)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;task_journal.TaskJournal object at 0x10f95b200&gt;
+key = '4a78e6cda83aed0602889e683456b4fba844c9812d52bbc7263d9b85d69941d1'
+destination = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_rehashed_scientific_fault3/relocated/history-0.json')
+
+    def export(self, key, destination):
+        """Export a checked task/history without reading unrelated task bodies."""
+        path=Path(destination)
+&gt;       if path.exists():raise FileExistsError('No evidence overwrite')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileExistsError: No evidence overwrite
+
+scripts/completion/task_journal.py:207: FileExistsError</failure></testcase><testcase classname="tests.handoff.test_formal_science" name="test_failed_output_retains_cost_and_never_extracts_samples" time="0.012"><failure message="FileExistsError: No evidence overwrite">specimen = (&lt;test_formal_native_evidence.Fixture object at 0x10f8f83e0&gt;, {'controls': {'atol': 1e-10, 'chains': 4, 'maximum_membe...5e-01,
+          6.01404881e-01,  1.97802117e-01,  1.18147102e+00,
+          4.81085745e-01,  4.90739955e-01]]]), ...})
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_failed_output_retains_cos0')
+
+    def test_failed_output_retains_cost_and_never_extracts_samples(specimen,tmp_path):
+        f,c,_,_=copy_fixture(specimen,tmp_path);p=f.root/'task/attempt-0001'
+        f.entry['attempts'][0]['outcome']='numerical_failure'
+        worker=json.loads((p/'worker-result.json').read_text());worker.update(status='failed',samples_eligible=False,failure_category='numerical_failure')
+        atomic_json(p/'worker-result.json',worker)
+        state=json.loads((p/'state.json').read_text());state.update(status='failed',outcome='numerical_failure',samples_eligible=False,exit_code=1)
+&gt;       atomic_json(p/'state.json',state);reseal(f,p)
+                                          ^^^^^^^^^^^
+
+tests/handoff/test_formal_science.py:139: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_formal_science.py:36: in reseal
+    f.export()
+tests/handoff/test_formal_native_evidence.py:81: in export
+    journal.export(key, destination)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;task_journal.TaskJournal object at 0x10f957620&gt;
+key = '4a78e6cda83aed0602889e683456b4fba844c9812d52bbc7263d9b85d69941d1'
+destination = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_failed_output_retains_cos0/relocated/history-0.json')
+
+    def export(self, key, destination):
+        """Export a checked task/history without reading unrelated task bodies."""
+        path=Path(destination)
+&gt;       if path.exists():raise FileExistsError('No evidence overwrite')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileExistsError: No evidence overwrite
+
+scripts/completion/task_journal.py:207: FileExistsError</failure></testcase><testcase classname="tests.handoff.test_formal_science" name="test_task_binding_and_source_change_refused_before_analysis" time="0.016"><failure message="AssertionError: Regex pattern did not match.&#10; Regex: 'capsule'&#10; Input: 'Native implementation binding differs: worker_sha256'">specimen = (&lt;test_formal_native_evidence.Fixture object at 0x10f8f83e0&gt;, {'controls': {'atol': 1e-10, 'chains': 4, 'maximum_membe...5e-01,
+          6.01404881e-01,  1.97802117e-01,  1.18147102e+00,
+          4.81085745e-01,  4.90739955e-01]]]), ...})
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_task_binding_and_source_c0')
+
+    def test_task_binding_and_source_change_refused_before_analysis(specimen,tmp_path):
+        f,c,_,_=copy_fixture(specimen,tmp_path);c['target']['step_rwm']*=2
+&gt;       with pytest.raises(ValueError,match='capsule'):read(f,c,tmp_path)
+                                                       ^^^^^^^^^^^^^^^^^^
+
+tests/handoff/test_formal_science.py:149: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/handoff/test_formal_science.py:101: in read
+    return reader.read(dict(task=f.task,capsule=c,capsule_sha256=fingerprint(c),probe=None),
+scripts/analysis/formal_science.py:141: in read
+    h = read_native_task(self.root, task=slot['task'], history_export=history_export,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+root = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_task_binding_and_source_c0/relocated')
+
+    def read_native_task(root, *, task, history_export, directory, manifest, source_files, ledger=None):
+        """Read a registered task, including prelaunch refusal and retained failure.
+    
+        `history_export`, `directory`, and optional `ledger` are explicit relative
+        archive locations. A missing export is an evidence gap, not proof that a
+        task never ran. An exported registration with zero attempts is not_run.
+        Unresolved active attempts are refused; reconcile them on their own host.
+        Returned sample/measurement locations only identify recorded eligibility;
+        numerical raw-array auditing remains a separate required operation.
+        """
+        files = _Assets(root, manifest)
+        exported = read_task_export(files.path(history_export))
+        entry = exported['entry']; binding = entry['binding']
+        kind = task_artifact_kind(task)
+        if (entry['task'] != task or binding['schema'] != SCHEMA or
+                binding['environment']['platform'] != 'win32' or
+                exported['live_identity'] != dict(schema=SCHEMA, platform='win32', host_lock=binding['host_lock'])):
+            raise ValueError('Native task, source platform or journal identity differs')
+        original = PureWindowsPath(entry['output'])
+        if not original.is_absolute():
+            raise ValueError('Original native output identity must be absolute')
+        worker = 'formal_batch_worker.py' if kind == 'posterior' else 'formal_cache_worker.py'
+        for field, source in (
+            ('worker_sha256', 'scripts/windows/' + worker),
+            ('runtime_sha256', 'scripts/windows/formal_owned_runtime.py'),
+            ('journal_sha256', 'scripts/completion/task_journal.py'),
+            ('job_api_sha256', 'scripts/windows/job_objects.py')):
+            if binding[field] != source_files[source]:
+&gt;               raise ValueError('Native implementation binding differs: ' + field)
+E               ValueError: Native implementation binding differs: worker_sha256
+
+scripts/completion/formal_native_evidence.py:120: ValueError
+
+During handling of the above exception, another exception occurred:
+
+specimen = (&lt;test_formal_native_evidence.Fixture object at 0x10f8f83e0&gt;, {'controls': {'atol': 1e-10, 'chains': 4, 'maximum_membe...5e-01,
+          6.01404881e-01,  1.97802117e-01,  1.18147102e+00,
+          4.81085745e-01,  4.90739955e-01]]]), ...})
+tmp_path = PosixPath('/Users/haku/Workspace/ParallelBayes/output/research-completion/formal-raw-reader-v1/tests-first/test_task_binding_and_source_c0')
+
+    def test_task_binding_and_source_change_refused_before_analysis(specimen,tmp_path):
+        f,c,_,_=copy_fixture(specimen,tmp_path);c['target']['step_rwm']*=2
+&gt;       with pytest.raises(ValueError,match='capsule'):read(f,c,tmp_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'capsule'
+E        Input: 'Native implementation binding differs: worker_sha256'
+
+tests/handoff/test_formal_science.py:149: AssertionError</failure></testcase><testcase classname="tests.handoff.test_formal_science" name="test_missing_diagnostics_and_constant_values_are_not_ideal_convergence" time="0.000" /></testsuite></testsuites>
