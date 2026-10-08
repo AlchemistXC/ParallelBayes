@@ -107,6 +107,9 @@ def render(root, output):
     fig.savefig(output/'architecture-readable.svg')
     fig.savefig(output/'architecture-readable.png',dpi=600)
     plt.close(fig)
+    # Matplotlib path attributes contain harmless line-end spaces.
+    for svg in output.glob('*.svg'):
+        svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     contract=dict(source=source.relative_to(root).as_posix(),source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
         rows=512,pairs=256,excluded=0,independent_inputs_per_cell=4,technical_replays_add_n=False,
         claim='Historical within-device cached ratios differ by executor; these are not inference speedups.',
