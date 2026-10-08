@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "capsule_manifest_sha256": "337b3449cab71156e5697d21559f7052676cfd716e0b2909f08d2f082ca12266",
+  "steps": [
+    {
+      "command": [
+        "scripts/write-results-tex.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "scripts/revision/write-revision-tex.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "scripts/completion/write_windows_tex.py",
+        "--root",
+        ".",
+        "--evidence",
+        ".",
+        "--output",
+        "manuscript/software/windows-native.generated.tex"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "scripts/completion/write_completion_tex.py",
+        "--root",
+        ".",
+        "--output",
+        "manuscript/software/completion-companion.generated.tex"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "scripts/completion/write_intake_tex.py",
+        "--root",
+        ".",
+        "--output",
+        "manuscript/software/intake.generated.tex"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "scripts/analysis/write_followup_tex.py",
+        "--root",
+        ".",
+        "--output",
+        "manuscript/software/followup.generated.tex",
+        "--report",
+        "followup-analysis.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "scripts/analysis/write_adapter_tex.py",
+        "--root",
+        ".",
+        "--output",
+        "manuscript/software/adapter.generated.tex",
+        "--report",
+        "adapter-analysis.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "sections": [
+    {
+      "section": "results.generated.tex",
+      "expected_sha256": "ca85f780e6fa392e793870fb9d10681c34db30000c0a15a7df6786738174ec40",
+      "actual_sha256": "ca85f780e6fa392e793870fb9d10681c34db30000c0a15a7df6786738174ec40",
+      "identical": true
+    },
+    {
+      "section": "revision.generated.tex",
+      "expected_sha256": "fa5ca73174ff6531081978a65da3076677dc37d9d11cca8afe99a1eaf97fb1c8",
+      "actual_sha256": "fa5ca73174ff6531081978a65da3076677dc37d9d11cca8afe99a1eaf97fb1c8",
+      "identical": true
+    },
+    {
+      "section": "windows-native.generated.tex",
+      "expected_sha256": "c08461514675226eed22bcaaaa7c0f615bba90f5393a35dc7ae193c35820ac42",
+      "actual_sha256": "c08461514675226eed22bcaaaa7c0f615bba90f5393a35dc7ae193c35820ac42",
+      "identical": true
+    },
+    {
+      "section": "completion-companion.generated.tex",
+      "expected_sha256": "e20cca0f955659023c3d459725eb89003aef59f9e58a2b2f67e853419c8573cf",
+      "actual_sha256": "e20cca0f955659023c3d459725eb89003aef59f9e58a2b2f67e853419c8573cf",
+      "identical": true
+    },
+    {
+      "section": "intake.generated.tex",
+      "expected_sha256": "1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa",
+      "actual_sha256": "1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa",
+      "identical": true
+    },
+    {
+      "section": "followup.generated.tex",
+      "expected_sha256": "08d85e2bbf9b2cad90cb347e0f34f9e842e5e251ce978294ea696da08e8369bb",
+      "actual_sha256": "08d85e2bbf9b2cad90cb347e0f34f9e842e5e251ce978294ea696da08e8369bb",
+      "identical": true
+    },
+    {
+      "section": "adapter.generated.tex",
+      "expected_sha256": "6d22f22e89bbd8da6bc1e815ff04465429d3893c3753be62ec2c8996186ee642",
+      "actual_sha256": "6d22f22e89bbd8da6bc1e815ff04465429d3893c3753be62ec2c8996186ee642",
+      "identical": true
+    }
+  ],
+  "sources_relocated": true,
+  "sampler_calls": 0,
+  "R_diagnostic_calls": 0,
+  "figures_recomputed": false,
+  "scope": "7 generated sections rebuilt from saved summaries and checked rows; full raw-trajectory reconstruction and compiler verification are separate"
+}

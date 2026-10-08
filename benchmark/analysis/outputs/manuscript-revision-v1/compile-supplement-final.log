@@ -1,0 +1,9 @@
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+warning: references.tex:21: Underfull \hbox (badness 1496) in paragraph at lines 20--21
+note: Rerunning TeX because "补充材料.aux" changed ...
+warning: references.tex:21: Underfull \hbox (badness 1496) in paragraph at lines 20--21
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `/Users/haku/Workspace/ParallelBayes/output/manuscript-revision-20261009/tectonic-supplement/补充材料.pdf` (627.1962890625 KiB)
+note: Skipped writing 3 intermediate files (use --keep-intermediates to keep them)

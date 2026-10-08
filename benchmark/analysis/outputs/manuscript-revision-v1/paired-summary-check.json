@@ -1,0 +1,7 @@
+{
+  "groups": 64,
+  "pairs": 256,
+  "all_matched": true,
+  "max_abs_ratio_difference": 0,
+  "rtol": 1e-14
+}

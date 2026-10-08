@@ -19,7 +19,9 @@ def build(root, output):
     if output.exists():
         raise ValueError('Use a new output directory')
     main = root / 'manuscript/software/软件与基准研究.tex'
-    pending, files = [main], set()
+    supplement = root / 'manuscript/software/补充材料.tex'
+    entries = [main] + ([supplement] if supplement.exists() else [])
+    pending, files = list(entries), set()
     while pending:
         p = pending.pop().resolve()
         if p in files:
@@ -48,15 +50,17 @@ def build(root, output):
 ```text
 cd manuscript/software
 tectonic 软件与基准研究.tex
+tectonic 补充材料.tex
 ```
 
-或在同目录使用`latexmk -xelatex 软件与基准研究.tex`。编译器资源与字体不随包再分发。各协议数字由生成文本保留；历史结果与前瞻方法已明确分开。对正文数字的独立复算须另取仓库源码、协议及相应原始证据。完整研究目标仍包含Windows机制补充、正式推断、统一候选与重建。
+或在同目录使用`latexmk -xelatex 软件与基准研究.tex`。编译器资源与字体不随包再分发。各协议数字由生成文本保留；历史结果与前瞻方法已明确分开。对正文数字的独立复算须另取仓库源码、协议及相应原始证据。当前紧凑研究尚待完整回传与原始结果重建。正文和补充材料应分别编译。
 '''
     (output/'README.md').write_text(readme)
     manifest = {'scope':'portable paper inputs only; no experimental reproduction claim',
                 'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip(),
                 'source_worktree_dirty':bool(subprocess.check_output(['git','status','--porcelain'],cwd=root,text=True).strip()),
                 'main':main.relative_to(root).as_posix(),
+                'entries':[p.relative_to(root).as_posix() for p in entries],
                 'files':{p.relative_to(output).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
                          for p in sorted(output.rglob('*')) if p.is_file()}}
     (output/'MANIFEST.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

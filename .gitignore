@@ -133,3 +133,8 @@ __pycache__/
 # Current research-completion state and small, first-party diagnostic handoff.
 !/execution/COMPLETION-WORK-PACKAGES.md
 !/handoff/windows-completion/
+
+# Current question-organized manuscript and companion, first-party PDFs
+!/output/software-paper/软件与基准研究-问题导向修订.pdf
+!/output/software-paper/补充材料-问题导向修订.pdf
+!/output/pdf/parallel-bayes-review-zh-dde-correction.pdf

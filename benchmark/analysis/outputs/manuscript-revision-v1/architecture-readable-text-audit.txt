@@ -1,0 +1,8 @@
+Nature Figure PDF Text Audit
+pdf: output/manuscript-revision-20261009/figures-final/architecture-readable.pdf
+minimum required: 8 pt
+minimum found: 8.5 pt
+text runs: 23
+below minimum: 0
+verdict: PASS
+note: Tf scanning does not replace final-size visual inspection or account for every PDF transform

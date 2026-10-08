@@ -1,0 +1,16 @@
+{
+  "source": "benchmark/analysis/outputs/windows-native-v1/run-metrics.json",
+  "source_sha256": "8e982be309bb0c1bade61c21597bdd7415f86486fe6b0bb3a67ff342c9e4cf36",
+  "rows": 512,
+  "pairs": 256,
+  "excluded": 0,
+  "independent_inputs_per_cell": 4,
+  "technical_replays_add_n": false,
+  "claim": "Historical within-device cached ratios differ by executor; these are not inference speedups.",
+  "ratio": "sequential warmed seconds / parallel warmed seconds on the same actual input",
+  "intervals": "none; individual paired points and n=4 median",
+  "format": "160 mm; editable PDF/SVG; 8.5 pt minimum nominal font",
+  "figure_role": "CUDA main comparison; CPU companion; all 256 pairs retained",
+  "architecture_role": "Style adaptation; all three existing provider arrows retained",
+  "sampler_calls": 0
+}

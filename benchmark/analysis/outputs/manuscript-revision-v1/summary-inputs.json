@@ -1,0 +1,335 @@
+{
+  "schema": "current-paper-summary-capsule-v3",
+  "sections": [
+    "results.generated.tex",
+    "revision.generated.tex",
+    "windows-native.generated.tex",
+    "completion-companion.generated.tex",
+    "intake.generated.tex",
+    "followup.generated.tex",
+    "adapter.generated.tex"
+  ],
+  "source_commit": "818d7e29aad01bf15b4b3b690490fc0f45e4af01",
+  "source_dirty": true,
+  "cpu_archive": {
+    "component": "evidence-paper",
+    "path": "evidence-paper-cpu-review-v1.tar",
+    "files": 10947,
+    "bytes": 4967352320,
+    "sha256": "2e3cff9d06310cb123c778ba9cdbdf9dacae413f4207c13c4887b2460430d679"
+  },
+  "scope": "Portable reconstruction of the current generated manuscript sections.\n\nThis capsule uses saved, authenticated analysis summaries. It does not rerun\nMCMC, raw-array analyses, modern R diagnostics, or figure generation. Historical\nraw reproduction remains a separate stage with the corresponding archives.",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "inputs": {
+    "LICENSE": {
+      "sha256": "c0fa9f213fb2c984453043ce331311200ad8405bd18130257b2e43e49c94f64c",
+      "bytes": 1316,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/completion-f1/mac-02/receipt.json": {
+      "sha256": "245c6683393a09f4f1c57b5eecd90b37b780f9e049a8162347c5cbf645f85d8d",
+      "bytes": 687,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/completion-f1/mac-02/result.json": {
+      "sha256": "c83cef505f240b3ee513645f7f7161a774f93a13ff9e3536be2ca263ed93d0ca",
+      "bytes": 5349,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/completion-f1/windows-01/result.json": {
+      "sha256": "c3ac27a861c3a8cf7aeef63eabf089c130b726c8d00c9e294ed0f247dcc6dbdf",
+      "bytes": 5664,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/completion-f2/summary.json": {
+      "sha256": "35d44485cb70199d0cc6a434cc8809e12a8c9c2c6dea3573ac90c07856fce102",
+      "bytes": 219855,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/cpu-formal/formal-summary.json": {
+      "sha256": "7a3ea34ddc80766a86290ce7b1dfd8731757478b1ea2ce3dfc31b466686de137",
+      "bytes": 145751,
+      "origin": "cpu-review-v1/evidence-paper verified archive member"
+    },
+    "benchmark/analysis/outputs/cpu-formal/paired-speedups.json": {
+      "sha256": "d99b847255691f6127f1c1ba153608e7900f0a0b52af9a0868991b305126fe4b",
+      "bytes": 219986,
+      "origin": "cpu-review-v1/evidence-paper verified archive member"
+    },
+    "benchmark/analysis/outputs/cpu-formal/run-metrics.json": {
+      "sha256": "ed8be45786235b337f6389670a5ce3642cb2de81c25f93a91305d32f41266f25",
+      "bytes": 2531340,
+      "origin": "cpu-review-v1/evidence-paper verified archive member"
+    },
+    "benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cpu/workflows.csv": {
+      "sha256": "04d86adde990daa6809994ed97b0cbd3fb81a940771a5f0e6a54101b02134c7f",
+      "bytes": 31387,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/mechanism-windows-pilot-v1/windows-20261006/analysis-cuda/workflows.csv": {
+      "sha256": "9e2fd3b87f61bbb453aac19b038c42bbe11710d5d2ff455239b5ffafe48c4b8b",
+      "bytes": 31339,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/windows-followup-intake-v1/comparison-summary.json": {
+      "sha256": "c99b15bf200d78d57b25faf668de37d7fb0c04cfd9c2729640fb6798859f1772",
+      "bytes": 5783,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/windows-followup-intake-v1/numpy-summary.json": {
+      "sha256": "8b89658b151fa4a0852038f497e6838edaf18da3409b56b7f199b86827f87a37",
+      "bytes": 1393,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/windows-followup-intake-v1/runtime/SUMMARY.json": {
+      "sha256": "d4b9ce12c23ecdbff615bc6566e2a5a61e43cf073aeadbb7f193bd82db670f86",
+      "bytes": 4868,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/G1/diagnostics.csv": {
+      "sha256": "d7a22eee1795d966e663ae3f3399f43a17c27b737717df95cdf56f2c734a258a",
+      "bytes": 7271,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/G2/diagnostics.csv": {
+      "sha256": "d8902be4286adc9386a8314431846c424602e60f0d82893ed02a0800eb00826d",
+      "bytes": 7463,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/W1/diagnostics.csv": {
+      "sha256": "97d5222a0f5188bb17327e3e6d7bd1895dd8b17af2e3b89686132e23f3eba9f9",
+      "bytes": 15646,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/analysis-resume-summary.json": {
+      "sha256": "2bf882cae2e3710549ad21588fe8a22292cc3b63ef85ef038b56139d48ce4ca5",
+      "bytes": 755,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/receiver-summary.json": {
+      "sha256": "9b9341f765e1c43252db0a6cf6289b95bd90de21d8d49dc1d6bb5c09d95600e8",
+      "bytes": 38678,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/windows-formal-v2-intake-v1/source-design-bridge.json": {
+      "sha256": "04c47765f64c30796f278a574650f320dd86c0dbdd27afb9f77ec6f3e04bb65a",
+      "bytes": 970,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/windows-native-v1/delivery-review.json": {
+      "sha256": "b5b8e496c8b312141cfaea6315e56f2de009c0ffe5f4c9325fbc247d2f1302f8",
+      "bytes": 5983,
+      "origin": "received Windows-v1 evidence"
+    },
+    "benchmark/analysis/outputs/windows-native-v1/run-metrics.json": {
+      "sha256": "83ad7c01ea8f7fed38a46f7ce7a5db514be7dac857aaf8ff625dcf7ddc0c00f8",
+      "bytes": 945468,
+      "origin": "received Windows-v1 evidence"
+    },
+    "benchmark/analysis/outputs/windows-native-v1/speed-ratios.pdf": {
+      "sha256": "e127cb235bad3501db7e2c3c9d618cbabfaf343957a89d8bd2876d9a6962f72c",
+      "bytes": 30371,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/analysis/outputs/windows-native-v1/summary.json": {
+      "sha256": "8ac2dcbe62ce623f102863ed4e32e716f3df5b2503a46e8f8b84738aa233c0f2",
+      "bytes": 249005,
+      "origin": "received Windows-v1 evidence"
+    },
+    "benchmark/analysis/outputs/windows-round2-intake-v1/summary.json": {
+      "sha256": "c34ec98f0093c93effb5a37fbaeb8c8739b1d7f5ad263825e3272317a047eaec",
+      "bytes": 26674,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/fixtures/rhat-midpoint-v1/case.json": {
+      "sha256": "1ef33c7ec7c5f2bbf127a31ac4400ce515eaef3f5692a7963f3edd91848f7378",
+      "bytes": 3007,
+      "origin": "current reviewed checkout"
+    },
+    "benchmark/protocols/mechanism-windows-pilot-v1.json": {
+      "sha256": "d8b3a6090148f1ea7d3d49c20bb01d2349b345e5c1fab5d0c209021fb0f17e4e",
+      "bytes": 211367,
+      "origin": "current reviewed checkout"
+    },
+    "execution/statistical-v4/likelihood-ranks.json": {
+      "sha256": "b878a006ff4d12d959686fe6c7e700e305737ff52ffc53ced7a32fa8f94e53a4",
+      "bytes": 208517,
+      "origin": "cpu-review-v1/evidence-paper verified archive member"
+    },
+    "execution/statistical-v4/summary.json": {
+      "sha256": "363cf350ee9eb7ae86b78ac8482a4072d3b188b8e558eaaf3b9c4d2d8dac3a45",
+      "bytes": 2757,
+      "origin": "cpu-review-v1/evidence-paper verified archive member"
+    },
+    "execution/windows-native/windows-native-v1/modern-diagnostics.json": {
+      "sha256": "c194551d497932db371668e268df2d98ef3619d03549dff1ce51cc48e3d251c5",
+      "bytes": 2527922,
+      "origin": "received Windows-v1 evidence"
+    },
+    "execution/windows-native/windows-native-v1/protocol.json": {
+      "sha256": "23ee7c4aadcae4e032230cf05ffbc9bb0ef18edd97201ac4bd057fdade974b98",
+      "bytes": 1855885,
+      "origin": "received Windows-v1 evidence"
+    },
+    "expected/adapter.generated.tex": {
+      "sha256": "6d22f22e89bbd8da6bc1e815ff04465429d3893c3753be62ec2c8996186ee642",
+      "bytes": 2838,
+      "origin": "current reviewed checkout"
+    },
+    "expected/completion-companion.generated.tex": {
+      "sha256": "e20cca0f955659023c3d459725eb89003aef59f9e58a2b2f67e853419c8573cf",
+      "bytes": 3681,
+      "origin": "current reviewed checkout"
+    },
+    "expected/followup.generated.tex": {
+      "sha256": "08d85e2bbf9b2cad90cb347e0f34f9e842e5e251ce978294ea696da08e8369bb",
+      "bytes": 11325,
+      "origin": "current reviewed checkout"
+    },
+    "expected/intake.generated.tex": {
+      "sha256": "1d3576fe927db1433c2712f5caaff45c24aacaf6401527068754323feeda0ffa",
+      "bytes": 1490,
+      "origin": "current reviewed checkout"
+    },
+    "expected/results.generated.tex": {
+      "sha256": "ca85f780e6fa392e793870fb9d10681c34db30000c0a15a7df6786738174ec40",
+      "bytes": 8608,
+      "origin": "current reviewed checkout"
+    },
+    "expected/revision.generated.tex": {
+      "sha256": "fa5ca73174ff6531081978a65da3076677dc37d9d11cca8afe99a1eaf97fb1c8",
+      "bytes": 10813,
+      "origin": "current reviewed checkout"
+    },
+    "expected/windows-native.generated.tex": {
+      "sha256": "c08461514675226eed22bcaaaa7c0f615bba90f5393a35dc7ae193c35820ac42",
+      "bytes": 6077,
+      "origin": "current reviewed checkout"
+    },
+    "figures/software-revision/architecture-readable.pdf": {
+      "sha256": "b767baa1074969a99b02b4e42c419dc5bc0dbc1cf760bd0f3099e502606f68ea",
+      "bytes": 23596,
+      "origin": "current reviewed checkout"
+    },
+    "figures/software-revision/windows-cpu-pairs.pdf": {
+      "sha256": "4dc57178a4caf5992e6d680f58ff122020cae9d882ae0e733a3fa164a0930a01",
+      "bytes": 24433,
+      "origin": "current reviewed checkout"
+    },
+    "figures/software-revision/windows-cuda-pairs.pdf": {
+      "sha256": "b8651ecca08283223eb1ae47805e409ddae78bfa821ff7514522a7eecf2ecf3b",
+      "bytes": 24454,
+      "origin": "current reviewed checkout"
+    },
+    "figures/software/cpu-mechanism.pdf": {
+      "sha256": "79eb08d53e2a73adf5786bc2e40437ce9c55519bb8e34ffd40f30963e317a334",
+      "bytes": 30868,
+      "origin": "current reviewed checkout"
+    },
+    "figures/software/error-cost.pdf": {
+      "sha256": "f75c7a41e805cf1e1b003880714cf09cd204026ec29c99ab2c22c0c22cc1d8f4",
+      "bytes": 31837,
+      "origin": "current reviewed checkout"
+    },
+    "figures/software/paired-costs.pdf": {
+      "sha256": "ab5482eabbb404545237568bd46324da62a697d8d380d0e049c4ecf579753c35",
+      "bytes": 59134,
+      "origin": "current reviewed checkout"
+    },
+    "figures/windows-mechanism-pilot-v1/work-and-cached-cost.pdf": {
+      "sha256": "cb5bc9c51a9735d5e7f7a10de697c141ecac47093c26c6de5d505042a7b29329",
+      "bytes": 39441,
+      "origin": "current reviewed checkout"
+    },
+    "manuscript/software/adapter.template.tex": {
+      "sha256": "af07ce8044628c2bb8e4521732cd8248eea3b79f129f90c70fafadcfb2066cbc",
+      "bytes": 1781,
+      "origin": "current reviewed checkout"
+    },
+    "manuscript/software/followup.template.tex": {
+      "sha256": "bf1a9ea29b284a6a78c6c423e64df14caeaad7285f20afc11d9124b93ca19a1a",
+      "bytes": 4946,
+      "origin": "current reviewed checkout"
+    },
+    "manuscript/software/references.tex": {
+      "sha256": "0d90683bd419f3a44796523bdba9a09f2fe231cb4e392872ee97e1ab5b2fec96",
+      "bytes": 4237,
+      "origin": "current reviewed checkout"
+    },
+    "manuscript/software/windows-native.template.tex": {
+      "sha256": "0d6436150a4715539c819572867ae16c956cca1ee73be00e2a3249ab336d7206",
+      "bytes": 6216,
+      "origin": "current reviewed checkout"
+    },
+    "manuscript/software/补充材料.tex": {
+      "sha256": "66e38aa5db113e0444493e38ebe45ac20e8b1e280888f2ed903812015066f6a8",
+      "bytes": 13582,
+      "origin": "current reviewed checkout"
+    },
+    "manuscript/software/软件与基准研究.tex": {
+      "sha256": "7e381af001cfa235941bfb281a7af2288ebe6c5b953b39087cd4ef333445cf33",
+      "bytes": 28905,
+      "origin": "current reviewed checkout"
+    },
+    "output/cpu-revision/cost-tiers.json": {
+      "sha256": "f3c4c210cae5571323f7ecfb3639de658d66609af3b13728824fd64a4dbd72f1",
+      "bytes": 1460143,
+      "origin": "cpu-review-v1/evidence-paper verified archive member"
+    },
+    "output/cpu-revision/grouped-diagnostics.json": {
+      "sha256": "007ac5427342c94041f31a98e72bf47f72c7e27c6b9014a7e2c69d6e377acd1f",
+      "bytes": 296414,
+      "origin": "cpu-review-v1/evidence-paper verified archive member"
+    },
+    "output/cpu-revision/mechanism-summary.json": {
+      "sha256": "6c41233623ecdc367c4a6969a949c724332158cc1259201d51aaa4901573609e",
+      "bytes": 139562,
+      "origin": "cpu-review-v1/evidence-paper verified archive member"
+    },
+    "output/cpu-revision/sbc-analytic.json": {
+      "sha256": "636a43238da37c207ebe9bc422a85d5fff4b65f68f36101bd3373995e72af45d",
+      "bytes": 249633,
+      "origin": "cpu-review-v1/evidence-paper verified archive member"
+    },
+    "scripts/analysis/write_adapter_tex.py": {
+      "sha256": "9ed63ca2b55acc9567dfb0c7ca21cdd6be1392d3d35ea6379386e4bfc0a3c127",
+      "bytes": 6296,
+      "origin": "current reviewed checkout"
+    },
+    "scripts/analysis/write_followup_tex.py": {
+      "sha256": "f3157c45c36ad053880395c03661ca8ab5bcb8cf12d6d056f5587e8242087c0f",
+      "bytes": 8806,
+      "origin": "current reviewed checkout"
+    },
+    "scripts/completion/write_completion_tex.py": {
+      "sha256": "c6528ff1a9d0ca88cc0295c7c954d1690b66759d8dd6a2be89042026f660a865",
+      "bytes": 6067,
+      "origin": "current reviewed checkout"
+    },
+    "scripts/completion/write_intake_tex.py": {
+      "sha256": "bb3456f93635878d01f6958e642147c55d367265c959849a30930a394fe66a76",
+      "bytes": 2691,
+      "origin": "current reviewed checkout"
+    },
+    "scripts/completion/write_windows_tex.py": {
+      "sha256": "f9dae3dd745497e4176a1ff5b670e810b88f17c51f5987136328831e3aee2c94",
+      "bytes": 7395,
+      "origin": "current reviewed checkout"
+    },
+    "scripts/release/rebuild_current_results.py": {
+      "sha256": "bfe21d82ce8e8910c6021cfec53eab2e702fcd3467a3d44443ed6162c03c41fa",
+      "bytes": 12131,
+      "origin": "current reviewed checkout"
+    },
+    "scripts/revision/write-revision-tex.py": {
+      "sha256": "3e1b81013077f5184c5651e2effb6a0f80ae5e4015eda360ff4ddca18b3f0d9f",
+      "bytes": 11561,
+      "origin": "current reviewed checkout"
+    },
+    "scripts/write-results-tex.py": {
+      "sha256": "8871c73357bd2e75f763d7b8df9eb945aeb810958f376045a1febcb598156e77",
+      "bytes": 10660,
+      "origin": "current reviewed checkout"
+    }
+  }
+}

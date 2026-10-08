@@ -91,15 +91,18 @@ def prepare(root,cpu_archive,windows,output):
     for name in WINDOWS_INPUTS:
         save(name,(windows/name).read_bytes(),'received Windows-v1 evidence')
     files=set(CODE+COMPANION_INPUTS+['manuscript/software/windows-native.template.tex','LICENSE'])
-    followup='\\input{followup.generated.tex}' in (root/'manuscript/software/软件与基准研究.tex').read_text(encoding='utf-8')
-    adapter='\\input{adapter.generated.tex}' in (root/'manuscript/software/软件与基准研究.tex').read_text(encoding='utf-8')
+    supplement=root/'manuscript/software/补充材料.tex'
+    paper_text=(root/'manuscript/software/软件与基准研究.tex').read_text(encoding='utf-8')
+    if supplement.exists():paper_text+='\n'+supplement.read_text(encoding='utf-8')
+    followup='\\input{followup.generated.tex}' in paper_text
+    adapter='\\input{adapter.generated.tex}' in paper_text
     if adapter and not followup:raise ValueError('Adapter paper requires the reviewed follow-up section')
     sections=SECTIONS+(['followup.generated.tex'] if followup else [])+(['adapter.generated.tex'] if adapter else [])
     if followup:
         files.update(FOLLOWUP_INPUTS+['scripts/analysis/write_followup_tex.py','manuscript/software/intake.generated.tex','manuscript/software/completion-companion.generated.tex'])
     if adapter:files.update(ADAPTER_INPUTS+['scripts/analysis/write_adapter_tex.py'])
     main=root/'manuscript/software/软件与基准研究.tex'
-    todo=[main];seen=set()
+    todo=[main]+([supplement] if supplement.exists() else []);seen=set()
     while todo:
         p=todo.pop().resolve()
         if p in seen:continue

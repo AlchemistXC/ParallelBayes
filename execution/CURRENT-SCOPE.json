@@ -123,7 +123,7 @@
     "superseded_by": "docs/WINDOWS-FOLLOWUP-INTAKE.md",
     "external_evidence_trigger_received": true
   },
-  "next_Windows_action": "Stop and preserve the already-started old formal study with native owned-process evidence, then follow CODEX-PROMPT-COMPACT-STUDY.md to adapt, validate and execute the new resource amendment.",
+  "next_Windows_action": "Continue the already-started compact frozen study and deliver complete source/identity/results; no new prompt or protocol amendment from the manuscript revision.",
   "followup_windows_intake": {
     "report": "docs/WINDOWS-FOLLOWUP-INTAKE.md",
     "heads": {
@@ -428,5 +428,16 @@
     "combined_two_originals_receiver_condition_GiB": 51.45935773849487,
     "actual_storage_guaranteed": false,
     "old_results_may_be_reused_as_new_repetitions": false
+  },
+  "manuscript_revision_20261009": {
+    "report": "docs/MANUSCRIPT-REVISION-2026-10-09.md",
+    "main_pages": 13,
+    "supplement_pages": 22,
+    "portable_build_verified": true,
+    "saved_result_sections_rebuilt": 7,
+    "new_sampler_calls": 0,
+    "new_R_diagnostic_calls": 0,
+    "compact_sampling_user_reported": true,
+    "compact_complete_independently_verified": false
   }
 }

@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-09",
+  "base_commit": "818d7e29aad01bf15b4b3b690490fc0f45e4af01",
+  "scope": "manuscript, figures, build tooling, plan; no sampling",
+  "outputs": {
+    "output/software-paper/软件与基准研究-问题导向修订.pdf": {
+      "pages": 13,
+      "sha256": "40504c1ca9f1bf55272b06f0c01c51adea4bccc1f78bb648f59843697818a1db"
+    },
+    "output/software-paper/补充材料-问题导向修订.pdf": {
+      "pages": 22,
+      "sha256": "66950e096140327d37313b357d3948ae9aa8e66440ff53392fefed6e514a4e68"
+    }
+  },
+  "protected_generated_sections_unchanged": 7,
+  "historical_plan_byte_identical": true,
+  "manuscript_assets": {
+    "manuscript/software/软件与基准研究.tex": "7e381af001cfa235941bfb281a7af2288ebe6c5b953b39087cd4ef333445cf33",
+    "manuscript/software/补充材料.tex": "66e38aa5db113e0444493e38ebe45ac20e8b1e280888f2ed903812015066f6a8",
+    "manuscript/software/references.tex": "0d90683bd419f3a44796523bdba9a09f2fe231cb4e392872ee97e1ab5b2fec96",
+    "docs/RESEARCH-COMPLETION-PLAN.md": "99da6ed14dfac6dd8ac1202fa9d23d41f861b553e398c7a3f079080b7f322169",
+    "scripts/analysis/render_revision_figures.py": "905f3d3c3b83e545a495640525eccb127fd1f8a0cd88afa6d07ca6eeb6390f98",
+    "scripts/completion/build_paper_bundle.py": "0ee2c4c82839d2dba32709143e4c311aaf455b178bc32bcada3a6dd8fbdecb5b",
+    "scripts/release/rebuild_current_results.py": "bfe21d82ce8e8910c6021cfec53eab2e702fcd3467a3d44443ed6162c03c41fa"
+  },
+  "windows_rows": 512,
+  "paired_ratios": 256,
+  "median_groups": 64,
+  "excluded_pairs": 0,
+  "new_sampler_calls": 0,
+  "new_R_diagnostic_calls": 0,
+  "all_raw_results_reanalyzed": false,
+  "compact_formal_results_received": false,
+  "seven_result_generators_byte_identical": true,
+  "figure_minimum_font_pt": 8.5,
+  "figure_static": {
+    "pass": 18,
+    "warn": 3,
+    "fail": 0
+  },
+  "figure_warnings": [
+    "PDF/SVG are primary; PNG preview rather than TIFF",
+    "160 mm matches manuscript width, not a fixed Nature 183 mm template",
+    "log-axis guard validator heuristic: actual inputs explicitly checked finite and positive"
+  ],
+  "build_limitations": [
+    "native single-file compiler cannot include project dependencies",
+    "basic system XeLaTeX lacks zhnumber; existing Tectonic used",
+    "missing standard TeX resources fetched through existing Tectonic; no new TeX installation"
+  ],
+  "retained_initial_failure": "first summary preparation used parent of historical inputs and failed with missing file; retry used final-inputs, retained both logs",
+  "remaining": [
+    "compact Windows independent intake and final inference results",
+    "outer R front-end timing",
+    "full raw-to-final-paper delivery and author review"
+  ],
+  "review_correction": {
+    "source": "manuscript/中文综述.tex",
+    "pdf": "output/pdf/parallel-bayes-review-zh-dde-correction.pdf",
+    "pages": 20,
+    "sha256": "faf0251605311e0b472008a3426fbc25dce835599fe897a6d8062819ede12840",
+    "scope": "three DDE terminology corrections only"
+  }
+}

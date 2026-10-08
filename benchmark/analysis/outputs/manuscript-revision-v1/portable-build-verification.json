@@ -1,0 +1,18 @@
+{
+  "manifest_assets_verified": 17,
+  "comparisons": [
+    {
+      "entry": "软件与基准研究",
+      "pages": 13,
+      "text_equal": true,
+      "render_equal": true
+    },
+    {
+      "entry": "补充材料",
+      "pages": 22,
+      "text_equal": true,
+      "render_equal": true
+    }
+  ],
+  "scope": "portable TeX compilation only"
+}
