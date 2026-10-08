@@ -42,7 +42,7 @@ def _validate(p):
     seen=set();coverage={name:0 for name in p['files']}
     for name,value in p['files'].items():
         safe(Path.cwd(),name)
-        if name.casefold() in seen or name.endswith('.partial') or name=='WINDOWS-RETURN-MANIFEST.json':
+        if name.casefold() in seen or name=='WINDOWS-RETURN-MANIFEST.json':
             raise ValueError('Aliased or reserved delivery member')
         seen.add(name.casefold())
         if type(value['bytes']) is not int or value['bytes']<0 or not re.fullmatch('[0-9a-f]{64}',value['sha256']):
@@ -163,7 +163,11 @@ def ingest(manifest,manifest_sha256,index,chunk,output):
                     if path.stat().st_size!=item['bytes'] or file_hash(path)!=item['sha256']:
                         raise ValueError('Existing receiver file differs; never overwrite')
                     continue
-                path.parent.mkdir(parents=True,exist_ok=True);partial=path.with_name(path.name+'.partial')
+                path.parent.mkdir(parents=True,exist_ok=True)
+                # Failed original .partial files are ordinary evidence members.
+                # Receive temporaries live in the sibling state tree, never at
+                # a filename that can alias a retained original asset.
+                partial=safe(state/'partials',seg['path']);partial.parent.mkdir(parents=True,exist_ok=True)
                 size=partial.stat().st_size if partial.exists() else 0
                 if not seg['file_offset']<=size<=seg['file_offset']+seg['bytes']:
                     raise ValueError('Partial receiver coverage differs; retained')

@@ -81,6 +81,10 @@ a time (default 256 MiB, maximum 1 GiB; copy buffers 1 MiB); no full tar is
 created. Receiver state is outside its immutable data tree. Missing/corrupt/
 out-of-order blocks, unsafe paths and conflicting partial prefixes are refused.
 Completed files are never overwritten. Re-ingestion performs zero data writes.
+Receive temporaries are in the sibling state tree so original failed `.partial`
+assets and same-name completed files can both be preserved. The first actual
+technical transfer preflight exposed this collision before scientific execution;
+its frozen package and exit-1 evidence remain under attempt01.
 
 ```powershell
 & $python scripts/windows/compact_transfer.py plan --root $technical --output $manifest

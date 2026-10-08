@@ -16,6 +16,7 @@ def fixture(tmp_path):
     (root/'sub/data.npz').write_bytes(bytes(range(256))*4)
     (root/'small.json').write_text('{"status":"failed","time":null}\n')
     (root/'empty.log').touch()
+    (root/'empty.log.partial').write_bytes(b'original failed write, retain')
     manifest=tmp_path/'transfer.json';plan(root,manifest,block_bytes=173)
     return root,manifest,file_hash(manifest),json.loads(manifest.read_text())
 
@@ -56,13 +57,13 @@ def test_partial_prefix_replay_is_checked_not_truncated(tmp_path):
     from compact_transfer import _state
     _state(receiver,p,h)
     seg=p['chunks'][0]['segments'][0];target=receiver/seg['path'];target.parent.mkdir(parents=True,exist_ok=True)
-    partial=target.with_name(target.name+'.partial')
+    partial=receiver.with_name(receiver.name+'.receive-state')/'partials'/seg['path'];partial.parent.mkdir(parents=True,exist_ok=True)
     raw=chunk.read_bytes();partial.write_bytes(raw[:7])
     ingest(m,h,0,chunk,receiver)
     assert json.loads((receiver.with_name(receiver.name+'.receive-state')/'progress.json').read_text())['completed_chunks']==1
     # A foreign receiver is never overwritten, even with a valid incoming block.
     other=tmp_path/'foreign';_state(other,p,h);target=other/seg['path'];target.parent.mkdir(parents=True,exist_ok=True)
-    partial=target.with_name(target.name+'.partial');partial.write_bytes(b'changed')
+    partial=other.with_name(other.name+'.receive-state')/'partials'/seg['path'];partial.parent.mkdir(parents=True,exist_ok=True);partial.write_bytes(b'changed')
     before=partial.read_bytes()
     with pytest.raises(ValueError):ingest(m,h,0,chunk,other)
     assert partial.read_bytes()==before

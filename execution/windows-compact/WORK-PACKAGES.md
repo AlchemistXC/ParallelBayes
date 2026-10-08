@@ -9,6 +9,7 @@
 | Affected historical reading/statistics/report regressions | 71 passed / 0 failed / 2 skipped, 1 warning | regression02.xml; native-only fixture skips remain explicit; first 18 setup errors preserved |
 | C finite scientific difference | not started | Clean candidate commit and full source binding are required before new technical freeze |
 | C bounded receive | interface checks passed; full technical reconstruction pending | No full tar; missing/corrupt block, unsafe member, partial-prefix replay and zero-ingestion checks |
+| First complete-package transfer preflight | failed and preserved before sampling | attempt01 has 35 portable/4 native passes but original `.partial` failure assets collided with receiver temporaries; revised receiver stores temporary files outside delivery |
 | D real compact freeze/execution | not started | Requires new native acceptance and actual per-volume resource ledger; old successful tasks never selected or merged |
 | E full analysis/Mac intake | not started | Windows technical receive is not independent Mac intake; formal 24-repeat statistics/cache n4 descriptive only |
 
