@@ -86,6 +86,33 @@ Actual shared-lock preflight observed 1,095 indexed tasks, 51 legacy tasks and
 to registered scientific Jobs, not a whole-machine census. The same original
 absolute host lock is used. Post-start native source and evidence remain separate.
 
+## Actual formal execution
+
+The persistent sequence started at 2026-10-08 01:30:44 UTC. Its native manager
+is PID 19900, creation FILETIME 134358966443663979. The batch-0/main command Job
+is `Local\ParallelBayes-compact-command-21d439f8da774dc396920cd9fa95d78a`.
+The original scientific host lock remains
+`D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock`.
+Full outer command/output/ownership costs are in
+`D:/workspace/ParallelBayes/c/output/compact-formal-costs-v1`.
+
+Receipt `execution/windows-compact/receipts/formal-progress/observation-20261008-01.json`
+records 73 terminal batch-0/main rows: 66 valid and seven output failures
+unclassified. Other five phases were unstarted at that observation. The native
+manager creation time matched, and its actual phase Job still had six processes.
+Counts describe an active observation, not a completed batch or an immutable
+inventory. Read the receipt timestamp before using these counts.
+
+The first unclassified failure, task `2518b3bc5624ab57f7944d8f`, is L2 replicate 5
+CPU NUTS at budget 4096. Only two of four workers returned; the other futures
+reported BrokenProcessPool. The failed candidate and partial worker output stay
+in the original attempt. The ordinary parent returned zero but the candidate
+was failed, so it is not an eligible posterior fit. The native task Job ended;
+its guard_failure was absent. No supported cause beyond the saved pool errors
+has been established. A kernel peak commitment counter does not prove OOM or
+successful committed memory, and does not measure VRAM. No retry or scientific
+change was made. Remaining tasks and all prespecified cache probes continue.
+
 ## Continuation
 
 Use only the pinned accepted execution tree and the new native gate:
@@ -97,6 +124,12 @@ Use only the pinned accepted execution tree and the new native gate:
 The sequence persists ordered batch main/cache commands and their actual owned
 Jobs. A pause or incomplete/error phase stops further dispatch. Resume is explicit
 and does not retry numerical failures; a named main infrastructure retry remains
-an independent audited action, never automatic. Formal main 24-repeat statistics,
-cache n4 descriptions, full bounded draft-release return and independent Mac
-tables/PDF intake remain unfinished at this pre-dispatch report.
+an independent audited action, never automatic. Do not launch this command again
+while the recorded manager/Job is active. After verified native termination,
+resume uses the same arguments with `--resume`. A cooperative task-boundary
+pause uses `compact_batch.py pause --bundle <original bundle> --reason <reason>`;
+a pause receipt still requires actual Job end verification.
+
+Formal main 24-repeat statistics, cache n4 descriptions, full bounded draft-release
+return and independent Mac tables/PDF intake remain unfinished while sampling is
+active. This report does not declare study completion.

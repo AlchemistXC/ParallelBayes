@@ -1,0 +1,45 @@
+{
+  "phases": [
+    {
+      "end_offset_seconds": 0.07475219998741522,
+      "error": null,
+      "name": "task_contract_validation",
+      "process_cpu_seconds": 0.078125,
+      "start_offset_seconds": 7.90000194683671e-06,
+      "status": "completed",
+      "synchronization_included": false,
+      "wall_seconds": 0.07474429998546839
+    },
+    {
+      "end_offset_seconds": 18.046096900012344,
+      "error": null,
+      "name": "ordinary_process_start_through_exit",
+      "process_cpu_seconds": 0.015625,
+      "start_offset_seconds": 0.07562750001670793,
+      "status": "completed",
+      "synchronization_included": false,
+      "wall_seconds": 17.970469399995636
+    },
+    {
+      "end_offset_seconds": 19.08458269998664,
+      "error": null,
+      "name": "independent_research_audit",
+      "process_cpu_seconds": 0.953125,
+      "start_offset_seconds": 18.047946500009857,
+      "status": "completed",
+      "synchronization_included": false,
+      "wall_seconds": 1.0366361999767832
+    },
+    {
+      "end_offset_seconds": 19.087181699986104,
+      "error": null,
+      "name": "research_evidence_finalization",
+      "process_cpu_seconds": 0.0,
+      "start_offset_seconds": 19.085412400017958,
+      "status": "completed",
+      "synchronization_included": false,
+      "wall_seconds": 0.0017692999681457877
+    }
+  ],
+  "scope": "Disjoint worker phases; journal writes and gaps are outside phase sums. Nested sampler timings must not be added to these inclusive phases."
+}

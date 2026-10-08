@@ -1,0 +1,35 @@
+{
+  "phases": [
+    {
+      "end_offset_seconds": 0.1473206999944523,
+      "error": null,
+      "name": "source_environment_input_target",
+      "process_cpu_seconds": 0.140625,
+      "start_offset_seconds": 5.999987479299307e-06,
+      "status": "completed",
+      "synchronization_included": true,
+      "wall_seconds": 0.147314700006973
+    },
+    {
+      "end_offset_seconds": 16.198639799957164,
+      "error": null,
+      "name": "ordinary_sampling_including_transfer_transform",
+      "process_cpu_seconds": 0.046875,
+      "start_offset_seconds": 0.14815470000030473,
+      "status": "completed",
+      "synchronization_included": true,
+      "wall_seconds": 16.05048509995686
+    },
+    {
+      "end_offset_seconds": 16.255690999969374,
+      "error": null,
+      "name": "ordinary_full_array_output",
+      "process_cpu_seconds": 0.0625,
+      "start_offset_seconds": 16.19957150000846,
+      "status": "completed",
+      "synchronization_included": true,
+      "wall_seconds": 0.056119499960914254
+    }
+  ],
+  "scope": "Disjoint worker phases; journal writes and gaps are outside phase sums. Nested sampler timings must not be added to these inclusive phases."
+}

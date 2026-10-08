@@ -1,0 +1,63 @@
+{
+  "status": "failed",
+  "draws": null,
+  "unconstrained": null,
+  "chain_seeds": [
+    2535485675,
+    1747012372,
+    3799290554,
+    1026061973
+  ],
+  "target_id": "1e93c94e37beb1b3c5044dbb66cb4884b4d00f3b60a0cd1601306501e42fe9c1",
+  "provider": "pyro_cpu_spawn_chains",
+  "workers_requested": 4,
+  "workers_allocated": 4,
+  "threads_per_worker": 1,
+  "observed_worker_pids": [
+    22000,
+    25684
+  ],
+  "process_start_method": "spawn",
+  "components_are_additive": false,
+  "worker_records": [
+    {
+      "chain": 1,
+      "worker_pid": 22000,
+      "threads": 1,
+      "interop_threads": 1,
+      "target_setup_seconds": 0.0504248000215739,
+      "worker_wall": 10.523281799978577,
+      "transport": "owned NumPy and plain values; no torch storage handles",
+      "result_directory": "worker-1"
+    },
+    {
+      "chain": 3,
+      "worker_pid": 25684,
+      "threads": 1,
+      "interop_threads": 1,
+      "target_setup_seconds": 0.045117100002244115,
+      "worker_wall": 10.988264399988111,
+      "transport": "owned NumPy and plain values; no torch storage handles",
+      "result_directory": "worker-3"
+    }
+  ],
+  "worker_errors": {
+    "0": {
+      "error": "BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\c\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\nconcurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.\n"
+    },
+    "2": {
+      "error": "BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\c\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"D:\\workspace\\ParallelBayes\\c\\scripts\\completion\\inference_parallel_nuts.py\", line 82, in sample_parallel_nuts\n    try:received[index]=future.result()\n                        ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\nconcurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.\n"
+    }
+  },
+  "fixed_mh_tape_comparison": false,
+  "stored_array_estimate_bytes": 13107200,
+  "resource_note": "Requested process/thread configuration is recorded; not exclusive physical-core allocation",
+  "timing": {
+    "pool_wall": 16.04171350004617,
+    "total": 16.041763600020204
+  },
+  "cost_scope": "Parent pool wall includes process startup/imports, target reconstruction, warmup, sampling, IPC and shutdown; concurrent child durations cannot be summed as wall time",
+  "guarantee": "Numerical workflow output only; modern multichain diagnostics and accuracy evaluation remain separate"
+}

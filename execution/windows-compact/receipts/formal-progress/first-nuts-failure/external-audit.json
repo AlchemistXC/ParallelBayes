@@ -1,0 +1,11 @@
+{
+  "audit": {
+    "MH_path_equivalence": false,
+    "convergence_proven": false,
+    "kind": "NUTS_full_shapes_finite_transform_actual_initial_and_seeds",
+    "passed": false
+  },
+  "failure_category": "output_failure_unclassified",
+  "samples_eligible": false,
+  "status": "failed"
+}
