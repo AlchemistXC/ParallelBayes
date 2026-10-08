@@ -28,8 +28,10 @@ def write_report(output,receipt):
         'CSV空单元表示不可用；完整状态与分母在同一行或对应JSON中。没有通过筛掉失败、常量函数、慢配置或未定参考来生成图件。','',
         '| 目标 | 计划主任务 | 计划缓存 | 主任务证据状态 | 缓存证据状态 |','|---|---:|---:|---|---|']
     compact=receipt['frame'].get('execution_contract')=='windows-compact-contract-v1'
-    if compact:
+    if compact and formal:
         lines[4:4]=['本研究是旧采样启动后的资源修订；旧结果单独保留，未合入新重复。新正式研究为24次完整四链重复、1024/4096两个固定预算；缓存每格4份输入仅作描述，区间留空，失败不以成功子调用替代。','']
+    elif compact:
+        lines[4:4]=['本附件是独立紧凑技术验收：18主任务、16缓存探测/64调用，正式重复数为0；技术输入不并入正式研究，不生成区间。','']
     body=[r'\documentclass[UTF8,fontset=fandol,a4paper]{ctexart}',r'\usepackage[margin=20mm,headheight=16pt]{geometry}',
           r'\usepackage{booktabs,longtable,graphicx,hyperref,fancyhdr,array}',r'\hypersetup{hidelinks}',
           r'\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}',
@@ -39,9 +41,12 @@ def write_report(output,receipt):
           '本报告不自动判定研究完成或后验收敛。缺失证据保持缺失；数值有效输出仍可能有探索问题。',
           r'正式模式的区间是逐点95\% BCa区间，以完整四链重复为单位，缓存调用不增加独立样本数。技术验收不生成正式区间；失败和未知时间不填零。',
           r'\section*{任务框架}',r'\begin{longtable}{lrrp{46mm}p{46mm}}',r'\toprule 目标 & 主任务 & 缓存 & 主任务状态 & 缓存状态 \\ \midrule\endhead']
-    if compact:
+    if compact and formal:
         body[body.index(r'\section*{任务框架}'):body.index(r'\section*{任务框架}')]=[
             r'本研究是旧采样启动后的资源修订，不是完全事前预注册。旧结果未混入新24次完整四链重复。仅比较1024/4096预算；缓存每格4输入只作描述，不生成区间，不用成功子调用替代不合格输入。']
+    elif compact:
+        body[body.index(r'\section*{任务框架}'):body.index(r'\section*{任务框架}')]=[
+            '本附件仅为独立紧凑技术验收：18主任务、16缓存探测/64调用，正式重复数为0，不生成区间。']
     for model in receipt['source_models']:
         name=model['model'];s=model['summary']
         a=json.dumps(s['main_dispositions'],sort_keys=True);b=json.dumps(s['cache_dispositions'],sort_keys=True)
@@ -78,6 +83,14 @@ def write_report(output,receipt):
         caption=('三个口径分别回答已准备内核、普通工作流和含审计执行的成本问题。RWM比较Online Picard与顺序执行，MALA比较quasi-DEER与顺序执行。点为同核顺序/时间成本比的配对几何均值，线为比值尺度的逐点95% BCa区间；右侧标注共同有效重复数，星号表示点不可用。'
             if figure['kind']=='execution_costs' else
             '左图为各已测预算下的条件误差和同一函数可用重复上的普通成本。横纵区间分别为逐点95% BCa区间，不是联合置信区域。右图为共同有效重复上MH平方损失减CPU NUTS平方损失，零线不是显著性门槛。没有预算插值或精确达到精度时间的声明。')
+        if figure['kind']=='execution_costs' and compact and formal:
+            caption=('缓存每格4份预选输入，仅给描述性配对比，不生成区间；每输入初次及全部三次prepared调用均核验合格且计时齐全后才使用prepared中位数。'
+                '普通工作流与含审计执行使用24次原始四链主任务的共同有效重复；至少20份时给逐点95% BCa区间，否则区间未定。'
+                '点为共同合格输入上顺序/时间成本比的几何均值。RWM比较Online Picard，MALA比较quasi-DEER；缓存比不是普通后验推断加速。')
+        elif figure['kind']=='execution_costs' and not formal:
+            caption=('技术输入的同核顺序/时间成本比仅作描述，不生成区间，也不增加正式重复。'
+                '初次及全部三次prepared调用完整核验和计时均合格才给缓存中位数；失败或缺失保持未定。'
+                '普通工作流、缓存与含审计执行费用分开，缓存比不证明推断加速或后验收敛。')
         caption+=' 空心标记表示区间不可判定；缺失点不补零。完整分母、缺失原因、参考类别及配对四格表见来源数据。'
         if fixture:caption='人工数据，仅作接口和版面检查。'+caption
         lines.extend(['### '+label,'',f"![{label}]({figure['file'][:-4]}.png)",'',caption,'',f"来源：[{figure['source_table']}]({figure['source_table']})。",''])

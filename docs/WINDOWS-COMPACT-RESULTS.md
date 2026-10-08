@@ -103,6 +103,16 @@ manager creation time matched, and its actual phase Job still had six processes.
 Counts describe an active observation, not a completed batch or an immutable
 inventory. Read the receipt timestamp before using these counts.
 
+The later observation-20261008-02 has 140 terminal rows: 131 valid, eight
+output_failure_unclassified and one numerical_failure. The first numerical
+failure is H1 replicate 4 CPU quasi-DEER MALA/4096,
+task `33e2ca296a5e8ff170853377`. Its four acceptance mismatch counts are zero,
+but independent full-path/constraint audit does not pass the unchanged original
+tolerance (reported maximum absolute path differences include 9.3474e-7).
+Acceptance-event agreement alone does not qualify the path. The complete
+candidate, functions, diagnostics and audit remain, samples_eligible=false;
+no tolerance change, numerical retry or successful-subset replacement occurred.
+
 The first unclassified failure, task `2518b3bc5624ab57f7944d8f`, is L2 replicate 5
 CPU NUTS at budget 4096. Only two of four workers returned; the other futures
 reported BrokenProcessPool. The failed candidate and partial worker output stay
@@ -133,3 +143,26 @@ a pause receipt still requires actual Job end verification.
 Formal main 24-repeat statistics, cache n4 descriptions, full bounded draft-release
 return and independent Mac tables/PDF intake remain unfinished while sampling is
 active. This report does not declare study completion.
+
+## Delivery-only source bridge and early draft assets
+
+The delivery branch corrects report captions so compact cache n4 never gets a
+generic BCa caption, and the independent technical report explicitly says
+formal repetitions=0. It does not change numerical or reader dependencies;
+all 253 pinned execution source files still match their accepted hashes and the
+execution worktree remains clean. The separate renderer SHA/source delta is in
+receipts/delivery-source-bridge.json. Two presentation regressions first fail as
+expected, are retained, then pass; combined with the 15 publisher checks, the
+joint suite has 17 passes / zero failures / zero skips. These are not native
+scientific experiments, and the renderer change does not silently replace the
+accepted execution source.
+
+Three early metadata assets were actually added to draft release 403644544:
+windows-compact-protocol-3a37a89.json (file SHA
+f7f2cc616900bbe1d9989ae3c54c270e36f7acac61e68178be96cd1cd701683e),
+windows-compact-FROZEN-3a37a89.json (file SHA
+2d155e8a979cb11fcec7396f7e71296da5f4e666d37107822a44f39a224a0fa0),
+and windows-compact-native-acceptance-3a37a89.json (SHA recorded above).
+Remote SHA256/size, all 52 prior assets and the final unchanged draft were
+verified. These small identity files are not a complete scientific return;
+all formal actual arrays remain on Windows and independent Mac intake is pending.

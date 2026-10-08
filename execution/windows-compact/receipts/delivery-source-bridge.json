@@ -1,0 +1,32 @@
+{
+  "execution_source_commit": "3a37a891896faedc62c0d6af185bfad77696054f",
+  "execution_source_files": 253,
+  "execution_files_all_match": true,
+  "execution_worktree_clean": true,
+  "accepted_source_files_sha256": "55fb109c9aa3e188b3f404226f69610aa482ac1a3afed0429087271e104934c8",
+  "delivery_changes_to_bound_sources": [
+    {
+      "path": "scripts/analysis/formal_report_text.py",
+      "accepted_sha256": "06eb461dbe60099c1963f0888094b98ea956f23026b9be02018836a9b6f6e80f",
+      "delivery_sha256": "548f3dbb1e84809d80a75d2a65ba906d7c59136f0911437fd624eeed1f425d7d",
+      "role": "presentation_only"
+    }
+  ],
+  "extra_delivery_files": {
+    "scripts/delivery/compact_draft_upload.py": "96fde514efa7307ef6d189619eb311d97ae6714192ce5fc7376ef144222f9f51",
+    "tests/delivery/test_compact_draft_upload.py": "2cb2fa8d76aeb53f343bca670ea0153c374b7e8014ed712046cbbaa03bf54a56",
+    "tests/delivery/test_compact_report_scope.py": "f73525e6a490d439b2a72f2303034d355a4cb1215bc70f527034ae0e2ea5edf1"
+  },
+  "numerical_and_reader_dependencies_changed": false,
+  "numeric_reexecution_needed": false,
+  "native_gate_reused_for_modified_sampling_source": false,
+  "tests": {
+    "publisher": 15,
+    "presentation": 2,
+    "combined_green": 17,
+    "combined_failed": 0,
+    "combined_skipped": 0,
+    "first_red_failures_preserved": 2
+  },
+  "note": "Reporting renderer and draft publisher have separate delivery identities; pinned sampling source unchanged. Tests are presentation/network safety, not scientific repeats. Original logs retain raw bytes; Git text copies may normalize LF."
+}
