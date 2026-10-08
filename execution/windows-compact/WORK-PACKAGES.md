@@ -16,6 +16,7 @@
 | D real compact freeze | completed | 216 new actual inputs, 3,888/256 complete task frame, same accepted source 3a37a89; protocol 91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb; source/environment gate passed |
 | D three ordered compact batches | running, batch 0/main | 73 terminal rows at observation-20261008-01: 66 valid / 7 output_failure_unclassified; all other main/cache phases unstarted at that observation; actual manager and owned Job live; no retries |
 | E full analysis/Mac intake | not started | Windows technical receive is not independent Mac intake; formal 24-repeat statistics/cache n4 descriptive only |
+| E additive draft publisher | 15 passed / 0 failed / 0 skipped (network-free safety cases) | Actual paginated read of existing draft: 52 assets, no mutations; CLI refuses overwrite/publication/foreign endpoints and checks remote SHA. Delivery-only CR source is independent from pinned C sampling source |
 
 Native environment is the previously frozen Python/torch CUDA/R environment.
 No dependency install or marker modification was performed. Numerical sources,

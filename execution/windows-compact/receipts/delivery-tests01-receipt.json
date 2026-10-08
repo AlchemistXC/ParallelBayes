@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "source": "delivery-only CR branch, does not alter accepted sampling source",
+  "command": "python -m pytest tests/delivery/test_compact_draft_upload.py -q --basetemp output/delivery-tests-temp01 --junitxml execution/windows-compact/receipts/delivery-tests01.xml -p no:cacheprovider"
+}
