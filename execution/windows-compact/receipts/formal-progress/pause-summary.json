@@ -1,0 +1,148 @@
+{
+  "schema": "compact-user-pause-receipt-v1",
+  "observed": "2026-10-08T22:20:58.208298+09:00",
+  "reason": "User explicitly requested pause; no automatic continuation authorized",
+  "status": "paused_at_task_boundary_and_registered_jobs_quiescent",
+  "source_commit": "3a37a891896faedc62c0d6af185bfad77696054f",
+  "tracked_source_status": "",
+  "identity": "windows-compact-inference-v1",
+  "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+  "current_batch": 1,
+  "current_phase": "main",
+  "visited_in_phase": 1000,
+  "remaining_in_phase": 296,
+  "last_completed_task": {
+    "batch": 1,
+    "budget": 4096,
+    "device": "cpu",
+    "executor": "sequential",
+    "id": "37020f59d00fcf7a0fdf75e2",
+    "input": "M1-rep0010.npz",
+    "kernel": "mala",
+    "model": "M1",
+    "replicate": 10,
+    "workflow": "cpu-mala-sequential"
+  },
+  "main_outcomes": {
+    "valid": 2187,
+    "output_failure_unclassified": 85,
+    "numerical_failure": 24
+  },
+  "main_terminal": 2296,
+  "main_planned": 3888,
+  "main_unstarted": 1592,
+  "cache_outcomes": {
+    "measurement_available": 64
+  },
+  "cache_terminal": 64,
+  "cache_planned": 256,
+  "cache_unstarted": 192,
+  "completed_cache_calls": 256,
+  "actual_input_count": 216,
+  "bundle_bytes": 10983908657,
+  "volumes": {
+    "C": {
+      "total": 2047228243968,
+      "used": 432984563712,
+      "free": 1614243680256
+    },
+    "D": {
+      "total": 2000381014016,
+      "used": 172513316864,
+      "free": 1827867697152
+    }
+  },
+  "known_terminal_invocation_seconds": 42188.71860069805,
+  "timing_note": "Nested invocation scope only; unknown components not imputed or summed",
+  "outer_phase": {
+    "error": null,
+    "exit_code": 0,
+    "finished_utc": "2026-10-08T13:18:30.179411+00:00",
+    "invocation_seconds": 17048.073238199984,
+    "job_final": {
+      "active_processes": 0,
+      "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation",
+      "hard_job_commit_limit_bytes": 0,
+      "job_cpu_seconds": 32668.140625,
+      "job_name": "Local\\ParallelBayes-compact-command-ec6da6e78511409d84f011a6df555f7c",
+      "kernel_peak_job_commit_bytes": 16783347712,
+      "members": [],
+      "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+      "sampled_rss_bytes": 0,
+      "total_processes": 8363
+    },
+    "logs": {
+      "stderr.log": "b3aad99a991f98252f3a0842635009f1fbec82b901a63d11a0168dadc69467cb",
+      "stdout.log": "17271bd1c3306916321d5928030b142544cc19279ca4b95d5b2a12a2fdb790a4"
+    },
+    "source_sha256": "0e764b58e588ae85a7438063e4923c4939edbb454dc6dd9be67a6b2befeb4bc9",
+    "unknown_time_imputed": false
+  },
+  "manager_final": {
+    "batch": 1,
+    "phase": "main",
+    "reason": "Boundary pause or incomplete phase",
+    "status": "not_closed_dispatch_stopped"
+  },
+  "registry_summary": {
+    "status": "passed",
+    "indexed_tasks": 3455,
+    "legacy_tasks": 51,
+    "indexed_active_count": 0,
+    "registered_jobs_observed": 3506,
+    "owned_active_processes": 0
+  },
+  "registry_scope": "Quiescent registry copy; not a relocated live lease or whole-OS process census",
+  "preservation": "All original inputs, terminal/failed/partial attempts, protocols, logs, checkpoints and environment retained; no deletion, retry, resampling or protocol change",
+  "process_wait_note": "Opening expected manager PID for a wait returned WinError 87 after it had already exited; original error retained in command output. End proof also includes actual named-Job absence, outer Job final active_processes=0 and complete quiescent registry observations.",
+  "bindings": [
+    {
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\FROZEN.json",
+      "bytes": 652,
+      "sha256": "2d155e8a979cb11fcec7396f7e71296da5f4e666d37107822a44f39a224a0fa0"
+    },
+    {
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\protocol.json",
+      "bytes": 1471400,
+      "sha256": "f7f2cc616900bbe1d9989ae3c54c270e36f7acac61e68178be96cd1cd701683e"
+    },
+    {
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\control\\requests\\2e446a4ce76343cdae877a9cba602957\\request.json",
+      "bytes": 388,
+      "sha256": "9706aff1e53e0c1b1be0a458327ed42f1bfd65122edcdc93ad0ac98fd328826e"
+    },
+    {
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\driver-invocations\\b2d199990c6342a5a9e9d6223869774f\\paused.json",
+      "bytes": 789461,
+      "sha256": "92f7a8d4ca3565567ac47fc6753ecb76711d1962b77c2b033a5c319773fdfd04"
+    },
+    {
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\compact-formal-costs-v1\\invocations\\7e80ccfb7e2e4bdf9a6da19114e1f693\\finished.json",
+      "bytes": 129,
+      "sha256": "1787b4f2f667bc1d602733d960d177e948e1ac7c1b597b5f3e13874a98e138bc"
+    },
+    {
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\compact-formal-costs-v1\\invocations\\7e80ccfb7e2e4bdf9a6da19114e1f693\\batch-1-main\\finished.json",
+      "bytes": 987,
+      "sha256": "be2867c812eae188d2f0bfbcd16c84e61accd283a47d39b98c7f6bf134bb57d5"
+    },
+    {
+      "path": "D:\\workspace\\ParallelBayes\\cr\\output\\compact-user-pause-registry-v1\\snapshot-receipt.json",
+      "bytes": 954516,
+      "sha256": "c298d3b7176c49f9ef5ce902f2a6b7d30cd1ba4e0289f484c8ff75339785ae93"
+    },
+    {
+      "path": "D:\\workspace\\ParallelBayes\\cr\\execution\\windows-compact\\receipts\\formal-progress\\pause-request-observation.json",
+      "bytes": 90113,
+      "sha256": "e889e50834f2fcec434d3987757de409c7a349c0089c5f3b0e67e89eada5fc99"
+    },
+    {
+      "path": "D:\\workspace\\ParallelBayes\\cr\\execution\\windows-compact\\receipts\\formal-progress\\pause-ended-observation.json",
+      "bytes": 84585,
+      "sha256": "ad9b2e9c7f449c11302cef96247f17804edd2c35d95707fd888aced9d710bffc"
+    }
+  ],
+  "no_sampling": true,
+  "resumed": false,
+  "pause_request_left_pending": true
+}

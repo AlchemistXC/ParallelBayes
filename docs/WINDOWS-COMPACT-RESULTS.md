@@ -236,3 +236,54 @@ PyTorch documents `.item()` as a host/device synchronization concern in its
 Any optimization experiment requires a separate identity and actual correctness
 validation after the current frozen study; current parameters and source remain
 unchanged.
+
+## User-requested boundary pause, 2026-10-08 22:18 JST
+
+The user subsequently requested "先暂停运行". The accepted pinned source's
+`compact_batch.py pause` command wrote request
+`control/requests/2e446a4ce76343cdae877a9cba602957/request.json`, SHA256
+9706aff1e53e0c1b1be0a458327ed42f1bfd65122edcdc93ad0ac98fd328826e.
+The current task completed before the driver checked that request; no next task
+or later phase was dispatched. No interrupt, PID termination, lock deletion,
+source modification or numerical retry was used.
+
+Batch 1 main stopped after task `37020f59d00fcf7a0fdf75e2`, M1 replicate 10,
+CPU sequential MALA, budget 4096, attempt-0001. Its completed boundary is
+1,000/1,296 visits; 296 in this phase remain unstarted. The original paused.json
+and all task assets remain in the execution bundle. The sequence's final status
+is `not_closed_dispatch_stopped`, which denotes the requested incomplete phase,
+not a completed study or a numerical failure. The actual outer Job final record
+at 22:18:30.179411 JST has active_processes=0 and no members; all three phase
+Jobs were independently observed absent. Attempting to acquire a wait handle
+afterward found the expected manager PID already absent (WinError 87); this
+observation was not used alone as descendant-end proof.
+
+The protected quiescent registry snapshot used the unchanged original shared
+lock and the helper from the independent delivery worktree. It passed with
+3,455 indexed tasks, 51 legacy tasks, indexed_active_count=0 and all 3,506
+registered Jobs inactive/absent. No coordinator run/resume/retry was called.
+The complete raw snapshot is at
+`D:/workspace/ParallelBayes/cr/output/compact-user-pause-registry-v1`;
+snapshot-receipt.json SHA256 is
+c298d3b7176c49f9ef5ce902f2a6b7d30cd1ba4e0289f484c8ff75339785ae93.
+This proves the registered project cohorts quiescent, not every process on the
+user's computer.
+
+At pause, main totals are 2,296 terminal: 2,187 valid, 85 unclassified output
+failures and 24 numerical failures; 1,592 main tasks have not started. Cache
+totals remain 64 measurements available / 256 qualified calls, with 192 probes
+unstarted. The original 216 actual input files and all successful/failed/partial
+attempts, costs, checkpoints, protocol, source and environment remain. Original
+formal bundle size by logical file bytes is 10,983,908,657; C free bytes are
+1,614,243,680,256 and D free bytes 1,827,867,697,152 at receipt time. No new full
+tar or analysis copy was generated.
+
+The compact pause summary is
+`execution/windows-compact/receipts/formal-progress/pause-summary.json`, SHA256
+f66ee2835a0ded3b563b88cf8749ae4fc99154259843dc50157677986fac2f66.
+It binds the original pause request, frozen marker/protocol, native Job final
+record, paused driver receipt, stopped manager and registry snapshot. Scientific
+execution source remains clean at 3a37a891896faedc62c0d6af185bfad77696054f.
+The pause remains unacknowledged; no automatic continuation is configured or
+authorized while the user's pause remains in force. Formal analysis and full
+Mac return remain unfinished.
