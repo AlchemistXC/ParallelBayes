@@ -1,0 +1,92 @@
+"""Read-only preservation of a user-paused study, never sample or resume."""
+from pathlib import Path
+import csv
+import hashlib
+import json
+import os
+import shutil
+import sqlite3
+import sys
+import time
+from datetime import datetime, timezone
+
+ROOT=Path('D:/workspace/ParallelBayes/f')
+BUNDLE=ROOT/'output/windows-formal-inference-v1'
+COSTS=ROOT/'output/formal-costs-v1'
+OUT=Path('D:/workspace/ParallelBayes/rf/output/formal-user-pause-preservation-v1')
+SNAPSHOT=Path('D:/workspace/ParallelBayes/rf/output/formal-user-pause-audit-v1/registry')
+sys.path[:0]=[str(ROOT/'scripts/windows'),str(ROOT/'scripts/completion')]
+from task_journal import TaskJournal,read_task_export
+from formal_runtime import fingerprint,atomic_json,file_hash
+
+OUT.mkdir(exist_ok=False)
+begin=time.perf_counter()
+p=json.loads((BUNDLE/'protocol.json').read_text())
+s=json.loads((BUNDLE/'study-plan.json').read_text())
+directory=SNAPSHOT/'windows-shared-host.lock.formal-journal'
+descriptor=json.loads((directory/'identity.json').read_text())
+db=sqlite3.connect((directory/'tasks.sqlite3').as_uri()+'?mode=ro',uri=True)
+journal=TaskJournal(directory,descriptor['identity']);journal.connection=db
+states={}
+for key in journal.keys(p['protocol_sha256']):
+    e=journal.read(key)
+    if e['attempts'][-1]['outcome']=='active':raise ValueError('An active record survived pause')
+    states[e['task']['id']]=e
+last='b5bfe17c3371b4fd6db13907'
+e=states[last]
+journal.export(TaskJournal.key(e['task']),OUT/'last-completed-task.history.json')
+read_task_export(OUT/'last-completed-task.history.json')
+
+counts={'main':{},'cache':{}}
+frame=OUT/'task-frame.csv'
+cols=['phase','id','batch','model','replicate','budget','workflow','device','kernel','executor','input','outcome','attempts','registered','protocol_sha256']
+with frame.open('x',encoding='utf-8',newline='') as stream:
+    writer=csv.DictWriter(stream,fieldnames=cols);writer.writeheader()
+    for phase,tasks in [('main',p['tasks']),('cache',s['cache_allocation']['probes'])]:
+        for t in tasks:
+            entry=states.get(t['id'])
+            outcome=entry['attempts'][-1]['outcome'] if entry else 'not_started'
+            counts[phase][outcome]=counts[phase].get(outcome,0)+1
+            row={k:t[k] for k in cols if k in t}
+            row.update(phase=phase,outcome=outcome,attempts=len(entry['attempts']) if entry else 0,
+                       registered=bool(entry),protocol_sha256=p['protocol_sha256'])
+            writer.writerow(row)
+db.close()
+atomic_json(OUT/'FRAME.json',dict(protocol_sha256=p['protocol_sha256'],counts=counts,
+            last_completed_task=e['task'],last_completed_outcome=e['attempts'][-1]['outcome'],
+            phases_completed=0,main_progress_recorded_visits=1009,actual_registered_terminal_tasks=1010,
+            stage_history_export_interrupted_after_task_sealing=True,
+            administrative_pause_not_new_numerical_failure=True,study_complete=False))
+
+manifest={}
+for base in [BUNDLE,COSTS]:
+    for folder,dirs,names in os.walk(base):
+        for name in sorted(names):
+            f=Path(folder)/name
+            if f.is_symlink():raise ValueError('Unexpected preservation symlink')
+            size=f.stat().st_size
+            digest=file_hash(f)
+            if f.stat().st_size!=size:raise ValueError('Asset changed while preserving')
+            manifest[f.relative_to(ROOT).as_posix()]=dict(bytes=size,sha256=digest)
+            if len(manifest)%5000==0:print(json.dumps(dict(checked_files=len(manifest))),flush=True)
+frozen_manifest=json.loads((BUNDLE/'freeze-manifest.json').read_text())
+for rel,expected in frozen_manifest.items():
+    if manifest['output/windows-formal-inference-v1/'+rel]['sha256']!=expected:
+        raise ValueError('Original frozen asset changed: '+rel)
+if file_hash(BUNDLE/'FROZEN.json')!='34f257dbdaaf009ec17966a7d74f32a691fce80dba0c897028c563e82e084c4f':
+    raise ValueError('FROZEN original changed')
+atomic_json(OUT/'PRESERVATION-MANIFEST.json',dict(scope='Full paused original study and outer records; integrity snapshot, not full formal completion',
+            source_commit='0ba5643a6b580e79b8040f13a5e3165322db0e77',files=manifest))
+bybase={}
+for prefix in ['output/windows-formal-inference-v1/','output/formal-costs-v1/']:
+    subset=[v for k,v in manifest.items() if k.startswith(prefix)]
+    bybase[prefix]=dict(files=len(subset),bytes=sum(x['bytes'] for x in subset))
+result=dict(status='user_paused_preservation_passed',observed_utc=datetime.now(timezone.utc).isoformat(),
+            counts=counts,total_files=len(manifest),file_bytes=sum(x['bytes'] for x in manifest.values()),
+            paths=bybase,manifest_sha256=file_hash(OUT/'PRESERVATION-MANIFEST.json'),
+            all_original_frozen_manifest_files_unchanged=True,inputs_preserved=1152,
+            disks={v:shutil.disk_usage(v)._asdict() for v in ['C:/','D:/']},
+            additional_sampling=0,numerical_retries=0,original_protocol_unchanged=True,
+            full_research_completed=False,preservation_seconds=time.perf_counter()-begin)
+atomic_json(OUT/'SUMMARY.json',result)
+print(json.dumps(result,indent=2),flush=True)

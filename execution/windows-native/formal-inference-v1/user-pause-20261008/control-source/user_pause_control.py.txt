@@ -1,0 +1,148 @@
+"""User-requested boundary barrier; no sampler, retry or protocol changes."""
+import ctypes as C
+from ctypes import wintypes as W
+from datetime import datetime, timezone
+import hashlib
+import json
+import msvcrt
+import os
+from pathlib import Path
+import sqlite3
+import sys
+import time
+
+ROOT = Path('D:/workspace/ParallelBayes/f')
+OUT = Path('D:/workspace/ParallelBayes/rf/output/formal-user-pause-v1')
+LOCK = Path('D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock')
+PROTOCOL = '62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176'
+sys.path[:0] = [str(ROOT/'scripts/windows'), str(ROOT/'scripts/completion')]
+from job_objects import identity, observe_named_job, open_process, wait, close
+from formal_runtime import atomic_json, fingerprint, file_hash
+from task_journal import TaskJournal
+
+def snapshot():
+    db = sqlite3.connect('file:'+str(LOCK)+'.formal-journal/tasks.sqlite3?mode=ro', uri=True)
+    db.execute('BEGIN')
+    counts = {'posterior': {}, 'cache_measurement': {}}
+    entries = []
+    for key, output, rec, digest, active, p, batch, outcome in db.execute(
+            'SELECT key,output,record,checksum,active,protocol,batch,outcome FROM tasks WHERE protocol=?', (PROTOCOL,)):
+        entry = json.loads(rec)
+        if (fingerprint(entry) != digest or TaskJournal.key(entry['task']) != key or
+                TaskJournal._metadata(entry) != (output, active, p, batch, outcome)):
+            raise ValueError('Journal identity/checksum differs')
+        kind = entry['task']['artifact_kind']
+        counts[kind][outcome] = counts[kind].get(outcome, 0) + 1
+        if active:
+            entries.append(entry)
+    db.rollback(); db.close()
+    for kind, total in [('posterior',41472), ('cache_measurement',9216)]:
+        counts[kind]['not_registered'] = total - sum(counts[kind].values())
+    return dict(observed_utc=datetime.now(timezone.utc).isoformat(), counts=counts, active_entries=entries)
+
+class Overlapped(C.Structure):
+    _fields_ = [('Internal', C.c_size_t), ('InternalHigh', C.c_size_t),
+                ('Offset', W.DWORD), ('OffsetHigh', W.DWORD), ('hEvent', W.HANDLE)]
+
+k = C.WinDLL('kernel32', use_last_error=True)
+lock_file = k.LockFileEx
+lock_file.argtypes = [W.HANDLE, W.DWORD, W.DWORD, W.DWORD, W.DWORD, C.POINTER(Overlapped)]
+lock_file.restype = W.BOOL
+unlock_file = k.UnlockFileEx
+unlock_file.argtypes = [W.HANDLE, W.DWORD, W.DWORD, W.DWORD, C.POINTER(Overlapped)]
+unlock_file.restype = W.BOOL
+terminate = k.TerminateProcess
+terminate.argtypes = [W.HANDLE, W.UINT]; terminate.restype = W.BOOL
+
+def held_process(pid, creation):
+    h = open_process(0x1000 | 0x100000 | 0x0001, False, pid)
+    if not h:
+        raise C.WinError(C.get_last_error())
+    if identity(pid)['creation_filetime'] != creation:
+        close(h); raise ValueError('PID reuse; refuse process action')
+    return h
+
+def stop_waiter(pid, creation, role):
+    import psutil
+    h = held_process(pid, creation)
+    try:
+        command = psutil.Process(pid).cmdline()
+        expected = 'publish_formal_study.py' if role=='publisher' else 'finish_formal_study.py'
+        if not any(Path(arg).name==expected for arg in command):
+            raise ValueError('Different waiter command')
+        before = dict(identity=identity(pid), command=command, role=role,
+                      reason='User requested pause; cancel future automatic postprocessing/publication')
+        atomic_json(OUT/(role+'-stop-intent.json'), before)
+        if not terminate(h, 0xE002):
+            raise C.WinError(C.get_last_error())
+        while True:
+            result = wait(h,1000)
+            if result==0: break
+            if result!=258: raise C.WinError(C.get_last_error())
+        atomic_json(OUT/(role+'-stopped.json'), dict(**before, real_process_handle_signaled=True,
+                    scientific_task_process_not_targeted=True))
+    finally:
+        close(h)
+
+OUT.mkdir(parents=True, exist_ok=False)
+seq = ROOT/'output/formal-costs-v1/sequence-attempt01'
+started = json.loads((seq/'started.json').read_text())
+manager = started['manager_identity']
+manager_handle = held_process(manager['pid'],manager['creation_filetime'])
+job_name = json.loads((seq/'00-batch-00-main.job.json').read_text())['name']
+atomic_json(OUT/'REQUEST.json', dict(reason='User decided to reduce formal experiment; stop dispatch and wait for compact plan',
+            protocol_sha256=PROTOCOL, frozen_source_commit='0ba5643a6b580e79b8040f13a5e3165322db0e77',
+            control_source_sha256=file_hash(__file__), manager_identity=manager,
+            stage_job_before=observe_named_job(job_name), snapshot=snapshot(),
+            sampling_retries=0, source_protocol_input_changes=False,
+            shared_host_lock=str(LOCK), intervention='Wait for existing exclusive byte-zero lease; then hold to refuse subsequent work'))
+try:
+    # Publisher is stopped first, preventing it from reacting to the post waiter's exit.
+    stop_waiter(8308,134358675225366930,'publisher')
+    stop_waiter(1920,134358651343620295,'postprocessing')
+    if not LOCK.is_file(): raise FileNotFoundError('Original scientific host lock absent')
+    with LOCK.open('r+b', buffering=0) as stream:
+        handle = msvcrt.get_osfhandle(stream.fileno())
+        overlap = Overlapped()
+        atomic_json(OUT/'BARRIER-WAITING.json',dict(observed_utc=datetime.now(timezone.utc).isoformat(),
+                    file=str(LOCK),offset=0,bytes=1,exclusive=True,blocking=True,
+                    current_task_not_terminated_or_suspended=True))
+        begin=time.perf_counter()
+        # A synchronous handle plus no FAIL_IMMEDIATELY waits for the old owner;
+        # it does not unlock, steal or replace the scientific lease.
+        if not lock_file(handle,2,0,1,0,C.byref(overlap)):
+            raise C.WinError(C.get_last_error())
+        try:
+            acquired=snapshot()
+            atomic_json(OUT/'BARRIER-ACQUIRED.json',dict(wait_seconds=time.perf_counter()-begin,
+                        acquired_snapshot=acquired,scientific_coordinator_no_longer_owns_lease=True))
+            if acquired['active_entries']:
+                raise ValueError('Lease released with active registration; preserve and investigate')
+            while True:
+                proof=observe_named_job(job_name)
+                signaled=wait(manager_handle,0)
+                atomic_json(OUT/'STOPPING.json',dict(observed_utc=datetime.now(timezone.utc).isoformat(),
+                            stage_job=proof,manager_wait_result=signaled,lease_barrier_held=True))
+                if (proof['state']=='absent' or proof['active_processes']==0) and signaled==0:
+                    break
+                if signaled not in (0,258):raise C.WinError(C.get_last_error())
+                time.sleep(1)
+            atomic_json(OUT/'PAUSED.json',dict(reason='User-requested pause; original design remains immutable',
+                        observed_utc=datetime.now(timezone.utc).isoformat(),snapshot=snapshot(),
+                        stage_job_final=proof,manager_process_handle_signaled=True,
+                        current_task_allowed_to_finish=True,scientific_processes_force_terminated=0,
+                        sampling_retries=0,new_scientific_dispatch_blocked=True,
+                        full_phase_closed=False,formal_study_complete=False))
+        finally:
+            if not unlock_file(handle,0,1,0,C.byref(overlap)):
+                raise C.WinError(C.get_last_error())
+    atomic_json(OUT/'BARRIER-RELEASED.json',dict(observed_utc=datetime.now(timezone.utc).isoformat(),
+                original_shared_lock_file_retained=True,all_scientific_managers_already_ended=True))
+except BaseException as exc:
+    import traceback
+    atomic_json(OUT/'ERROR.json',dict(error=str(exc),traceback=traceback.format_exc(),
+                preserve_all_originals=True,no_retry=True))
+    raise
+finally:
+    close(manager_handle)
+print(json.dumps(dict(status='user_paused',receipt=str(OUT/'PAUSED.json'))))

@@ -1,0 +1,55 @@
+{"checked_files": 5000}
+{"checked_files": 10000}
+{"checked_files": 15000}
+{"checked_files": 20000}
+{"checked_files": 25000}
+{"checked_files": 30000}
+{"checked_files": 35000}
+{"checked_files": 40000}
+{
+  "status": "user_paused_preservation_passed",
+  "observed_utc": "2026-10-08T00:15:42.834722+00:00",
+  "counts": {
+    "main": {
+      "valid": 990,
+      "numerical_failure": 16,
+      "output_failure_unclassified": 4,
+      "not_started": 40462
+    },
+    "cache": {
+      "not_started": 9216
+    }
+  },
+  "total_files": 41769,
+  "file_bytes": 20644750245,
+  "paths": {
+    "output/windows-formal-inference-v1/": {
+      "files": 41697,
+      "bytes": 20507365882
+    },
+    "output/formal-costs-v1/": {
+      "files": 72,
+      "bytes": 137384363
+    }
+  },
+  "manifest_sha256": "3b6bb9544ab14c3d1fd777aa8f1e932bb1d39cb288750948fef3bf045c6bcb83",
+  "all_original_frozen_manifest_files_unchanged": true,
+  "inputs_preserved": 1152,
+  "disks": {
+    "C:/": {
+      "total": 2047228243968,
+      "used": 424746553344,
+      "free": 1622481690624
+    },
+    "D:/": {
+      "total": 2000381014016,
+      "used": 158499979264,
+      "free": 1841881034752
+    }
+  },
+  "additional_sampling": 0,
+  "numerical_retries": 0,
+  "original_protocol_unchanged": true,
+  "full_research_completed": false,
+  "preservation_seconds": 72.44899679999799
+}

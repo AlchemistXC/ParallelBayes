@@ -1,5 +1,8 @@
 # 当前研究收尾登记
 
+2026-10-08 09:20 JST用户资源修订：旧0main已真实停止，990 valid、16 numerical_failure、4 output_failure_unclassified，共1010终态；主40462/缓存9216未运行。原progress1009差异与最后封存任务独立历史保留。原源码/协议/1152输入未改，41769文件全SHA保全；task_keys对账后1112登记原生Job活动0。无删除/重试/旧网格恢复。见docs/WINDOWS-FORMAL-HOLD.md及user-pause-20261008回执；新紧凑身份开发另计，研究未完成。
+
+
 2026-10-08 02:40 JST早期冻结回传：正式协议/计划/全部1152输入身份与两引用
 源码bundle的小包87成员通过，57,825,280字节，SHA256 1bcf67145ff4aaddfbf65557abf3fcb0c465fba4a4e8b4a9bf3c1779af2883d3。
 五附件追加原草稿，远端size/digest核对且原47附件不变。小包不包含实际NPZ，

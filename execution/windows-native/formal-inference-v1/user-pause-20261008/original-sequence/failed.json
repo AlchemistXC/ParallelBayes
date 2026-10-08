@@ -1,0 +1,8 @@
+{
+  "automatic_retry": false,
+  "completed_phases": [],
+  "error": "RuntimeError: Phase CLI did not exit successfully with an ended owned process cohort",
+  "known_sequence_seconds": 27981.679093500017,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\rf\\scripts\\windows\\sequence_formal_study.py\", line 143, in main\n    raise RuntimeError('Phase CLI did not exit successfully with an ended owned process cohort')\nRuntimeError: Phase CLI did not exit successfully with an ended owned process cohort\n",
+  "unvisited_tasks_are_not_failures": true
+}

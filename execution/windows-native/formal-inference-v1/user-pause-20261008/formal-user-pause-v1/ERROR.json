@@ -1,0 +1,6 @@
+{
+  "error": "PID reuse; refuse process action",
+  "no_retry": true,
+  "preserve_all_originals": true,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\rf\\output\\formal-engineering\\user_pause_control.py\", line 101, in <module>\n    stop_waiter(8308,134358675225366930,'publisher')\n  File \"D:\\workspace\\ParallelBayes\\rf\\output\\formal-engineering\\user_pause_control.py\", line 67, in stop_waiter\n    h = held_process(pid, creation)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\workspace\\ParallelBayes\\rf\\output\\formal-engineering\\user_pause_control.py\", line 62, in held_process\n    close(h); raise ValueError('PID reuse; refuse process action')\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: PID reuse; refuse process action\n"
+}

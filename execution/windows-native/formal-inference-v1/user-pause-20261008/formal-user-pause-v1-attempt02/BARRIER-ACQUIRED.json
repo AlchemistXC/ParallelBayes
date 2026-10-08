@@ -1,0 +1,19 @@
+{
+  "acquired_snapshot": {
+    "active_entries": [],
+    "counts": {
+      "cache_measurement": {
+        "not_registered": 9216
+      },
+      "posterior": {
+        "not_registered": 40462,
+        "numerical_failure": 16,
+        "output_failure_unclassified": 4,
+        "valid": 990
+      }
+    },
+    "observed_utc": "2026-10-08T00:08:55.230737+00:00"
+  },
+  "scientific_coordinator_no_longer_owns_lease": true,
+  "wait_seconds": 17.101983600005042
+}

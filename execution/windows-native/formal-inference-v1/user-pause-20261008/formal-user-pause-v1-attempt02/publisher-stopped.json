@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "scripts/windows/publish_formal_study.py",
+    "--post",
+    "D:/workspace/ParallelBayes/rf/output/formal-postwork-v1",
+    "--output",
+    "D:/workspace/ParallelBayes/rf/output/formal-publish-v1"
+  ],
+  "identity": {
+    "creation_filetime": 134358675225366937,
+    "member_of_owned_job": null,
+    "pid": 8308
+  },
+  "real_process_handle_signaled": true,
+  "reason": "User requested pause; cancel future automatic postprocessing/publication",
+  "role": "publisher",
+  "scientific_task_process_not_targeted": true
+}

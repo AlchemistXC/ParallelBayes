@@ -1,0 +1,10 @@
+{
+  "lease_barrier_held": true,
+  "manager_wait_result": 0,
+  "observed_utc": "2026-10-08T00:09:00.253781+00:00",
+  "stage_job": {
+    "job_name": "Local\\ParallelBayes-formal-sequence-c073995f5ec847508a64ff7fceff6616",
+    "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy",
+    "state": "absent"
+  }
+}

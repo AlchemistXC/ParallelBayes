@@ -1,0 +1,31 @@
+{
+  "current_task_allowed_to_finish": true,
+  "formal_study_complete": false,
+  "full_phase_closed": false,
+  "manager_process_handle_signaled": true,
+  "new_scientific_dispatch_blocked": true,
+  "observed_utc": "2026-10-08T00:09:00.255172+00:00",
+  "reason": "User-requested pause; original design remains immutable",
+  "sampling_retries": 0,
+  "scientific_processes_force_terminated": 0,
+  "snapshot": {
+    "active_entries": [],
+    "counts": {
+      "cache_measurement": {
+        "not_registered": 9216
+      },
+      "posterior": {
+        "not_registered": 40462,
+        "numerical_failure": 16,
+        "output_failure_unclassified": 4,
+        "valid": 990
+      }
+    },
+    "observed_utc": "2026-10-08T00:09:00.814171+00:00"
+  },
+  "stage_job_final": {
+    "job_name": "Local\\ParallelBayes-formal-sequence-c073995f5ec847508a64ff7fceff6616",
+    "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy",
+    "state": "absent"
+  }
+}

@@ -1,0 +1,50 @@
+"""Administrative reconciliation only, using the original frozen Windows runtime."""
+from datetime import datetime, timezone
+from pathlib import Path
+import json
+import subprocess
+import sys
+
+ROOT = Path('D:/workspace/ParallelBayes/f')
+OUT = Path('D:/workspace/ParallelBayes/rf/output/formal-user-pause-reconciliation-v1')
+LOCK = Path('D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock')
+COMMIT = '0ba5643a6b580e79b8040f13a5e3165322db0e77'
+PROTOCOL = '62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176'
+sys.path[:0] = [str(ROOT/'scripts/windows'), str(ROOT/'scripts/completion')]
+from formal_owned_runtime import Coordinator
+from formal_runtime import atomic_json, file_hash
+from job_objects import observe_named_job
+
+if subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip() != COMMIT:
+    raise ValueError('Original frozen source required')
+if subprocess.check_output(['git', 'status', '--porcelain'], cwd=ROOT, text=True).strip():
+    raise ValueError('Original frozen checkout changed')
+proof = {}
+for name in [
+    'Local\\ParallelBayes-formal-sequence-c073995f5ec847508a64ff7fceff6616',
+    'Local\\ParallelBayes-formal-stage-42812d425ff148789de12ce82d6e4438',
+    'Local\\ParallelBayes-0277d4057e98494fa8ced6e2b4b838ff',
+]:
+    observation = observe_named_job(name)
+    proof[name] = observation
+    if observation['state'] != 'absent' and observation['active_processes']:
+        raise RuntimeError('Original owned job is active; do not reconcile')
+paused = json.loads(Path('D:/workspace/ParallelBayes/rf/output/formal-user-pause-v1-attempt02/PAUSED.json').read_text())
+if not paused['manager_process_handle_signaled']:
+    raise RuntimeError('Original manager termination not confirmed')
+OUT.mkdir(exist_ok=False)
+bundle = ROOT/'output/windows-formal-inference-v1'
+before = {str(p.relative_to(bundle)): file_hash(p) for p in bundle.rglob('recovery/*.json')}
+# This method only reconciles registrations under the original shared lease.
+# No run, retry, formal_batch, sampler, RNG or input preparation is invoked.
+keys = Coordinator(LOCK).task_keys(PROTOCOL)
+after = {str(p.relative_to(bundle)): file_hash(p) for p in bundle.rglob('recovery/*.json')}
+record = dict(status='passed', observed_utc=datetime.now(timezone.utc).isoformat(),
+    source_commit=COMMIT, runtime_sha256=file_hash(ROOT/'scripts/windows/formal_owned_runtime.py'),
+    protocol_sha256=PROTOCOL, shared_host_lock=str(LOCK), method='Coordinator(...).task_keys(protocol_sha256)',
+    original_manager_ended_by_held_process_handle=True, original_owned_job_observations=proof,
+    registered_task_keys=keys, registered_task_count=len(keys), recovery_sidecars_before=before,
+    recovery_sidecars_after=after, additional_sampling=0, retries=0, original_state_files_not_edited=True,
+    purpose='User requested preservation and reduction; no automatic continuation')
+atomic_json(OUT/'reconciliation.json', record)
+print(json.dumps({k: record[k] for k in ('status', 'registered_task_count', 'additional_sampling', 'retries')}, indent=2))

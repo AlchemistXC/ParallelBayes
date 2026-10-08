@@ -1,0 +1,35 @@
+{
+  "actual_registered_terminal_tasks": 1010,
+  "administrative_pause_not_new_numerical_failure": true,
+  "counts": {
+    "cache": {
+      "not_started": 9216
+    },
+    "main": {
+      "not_started": 40462,
+      "numerical_failure": 16,
+      "output_failure_unclassified": 4,
+      "valid": 990
+    }
+  },
+  "last_completed_outcome": "valid",
+  "last_completed_task": {
+    "artifact_kind": "posterior",
+    "batch": 0,
+    "budget": 16384,
+    "device": "cpu",
+    "executor": "quasi_deer",
+    "id": "b5bfe17c3371b4fd6db13907",
+    "input": "H2-rep0011.npz",
+    "kernel": "mala",
+    "model": "H2",
+    "protocol_sha256": "62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176",
+    "replicate": 11,
+    "workflow": "cpu-mala-quasi_deer"
+  },
+  "main_progress_recorded_visits": 1009,
+  "phases_completed": 0,
+  "protocol_sha256": "62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176",
+  "stage_history_export_interrupted_after_task_sealing": true,
+  "study_complete": false
+}

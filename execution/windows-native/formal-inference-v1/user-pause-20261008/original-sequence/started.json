@@ -1,0 +1,61 @@
+{
+  "automatic_retry": false,
+  "config": {
+    "acceptance": "D:/workspace/ParallelBayes/v2/output/formal-adapter-validation-v1/native-acceptance.json",
+    "bundle": "D:/workspace/ParallelBayes/f/output/windows-formal-inference-v1",
+    "costs": "D:/workspace/ParallelBayes/f/output/formal-costs-v1",
+    "host_lock": "D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock",
+    "python": "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "r_library": "D:/Tools/R-library-4.6",
+    "root": "D:/workspace/ParallelBayes/f",
+    "rscript": "D:/Tools/R-4.6.1/bin/Rscript.exe",
+    "witness": "D:/workspace/ParallelBayes/rf/scripts/windows/witness_formal_study.py",
+    "witness_sha256": "a82efda599d26a928b2e3aff85e08edf6e2e33a94e7b1ddc519b815c691cb4ea"
+  },
+  "config_sha256": "1d11abaeaf91be7a47be668344a1b90f15dbd8715fe0fd532f536a25443410f5",
+  "coordinator_sha256": "f9b5a2f706925bb5da6a5d10844cea0ffe451d45c9dc2c05c8e770bd1ea4c5ad",
+  "explicit_resume": false,
+  "manager_identity": {
+    "creation_filetime": 134358637075414703,
+    "member_of_owned_job": null,
+    "pid": 25080
+  },
+  "order": [
+    [
+      0,
+      "main"
+    ],
+    [
+      0,
+      "cache"
+    ],
+    [
+      1,
+      "main"
+    ],
+    [
+      1,
+      "cache"
+    ],
+    [
+      2,
+      "main"
+    ],
+    [
+      2,
+      "cache"
+    ],
+    [
+      3,
+      "main"
+    ],
+    [
+      3,
+      "cache"
+    ]
+  ],
+  "scope": "Outer command sequence; nested CLI/task clocks are not additive",
+  "source_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77",
+  "started_utc": "2026-10-07T16:22:38.295462+00:00",
+  "total_time_cutoff": null
+}

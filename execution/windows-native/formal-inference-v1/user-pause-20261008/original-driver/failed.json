@@ -1,0 +1,10 @@
+{
+  "automatic_retries": false,
+  "controller_seconds": 27976.177346099983,
+  "error": "HostBusy: Another cooperating process holds the shared host lease",
+  "failure_is_not_a_numerical_task_result": true,
+  "newly_executed": 1009,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\formal_runtime.py\", line 93, in host_lease\n    msvcrt.locking(stream.fileno(),msvcrt.LK_NBLCK,1)\nPermissionError: [Errno 13] Permission denied\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\windows\\formal_batch.py\", line 116, in run\n    coordinator.export_task(task,export)\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\windows\\formal_owned_runtime.py\", line 279, in export_task\n    with host_lease(self.lock,'formal Windows evidence export'):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\contextlib.py\", line 137, in __enter__\n    return next(self.gen)\n           ^^^^^^^^^^^^^^\n  File \"D:\\workspace\\ParallelBayes\\f\\scripts\\completion\\formal_runtime.py\", line 98, in host_lease\n    except OSError as exc:raise HostBusy('Another cooperating process holds the shared host lease') from exc\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nformal_runtime.HostBusy: Another cooperating process holds the shared host lease\n",
+  "unvisited_tasks_are_not_failures": true,
+  "visited": 1009
+}

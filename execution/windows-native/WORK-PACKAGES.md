@@ -1,5 +1,8 @@
 # Native Windows development evidence
 
+2026-10-08 09:20 JST用户资源修订：旧0main已真实停止，990 valid、16 numerical_failure、4 output_failure_unclassified，共1010终态；主40462/缓存9216未运行。原progress1009差异与最后封存任务独立历史保留。原源码/协议/1152输入未改，41769文件全SHA保全；task_keys对账后1112登记原生Job活动0。无删除/重试/旧网格恢复。见docs/WINDOWS-FORMAL-HOLD.md及user-pause-20261008回执；新紧凑身份开发另计，研究未完成。
+
+
 2026-10-08 02:45 JST失败观察后继：只读Application日志在两个已结束W1 NUTS
 Job实际成员的出生至终态区间内匹配c10.dll/c0000005事件，记录及归属资格保留。
 不是OOM或已确定根因证明，不改output_failure_unclassified类别、不重试，

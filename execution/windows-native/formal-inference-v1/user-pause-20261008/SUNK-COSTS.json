@@ -1,0 +1,14 @@
+{
+  "task_calls": 1010,
+  "task_invocation_known_seconds": 27751.434633199184,
+  "task_invocation_unknown_count": 0,
+  "ordinary_process_known_seconds": 23936.59610349883,
+  "ordinary_process_unknown_count": 0,
+  "audit_known_seconds": 3148.2900014994666,
+  "audit_time_not_available_in_selected_field_count": 0,
+  "stage_cli_wall_seconds": 27978.129980399972,
+  "outer_sequence_seconds": 27981.679093500017,
+  "clock_boundary": "Outer and task costs overlap; never sum nested scopes. Missing times remain unknown.",
+  "sampling_retries": 0,
+  "additional_sampling_after_pause": 0
+}

@@ -1,0 +1,9 @@
+{
+  "blocking": true,
+  "bytes": 1,
+  "current_task_not_terminated_or_suspended": true,
+  "exclusive": true,
+  "file": "D:\\workspace\\ParallelBayes\\output\\runtime\\windows-shared-host.lock",
+  "observed_utc": "2026-10-08T00:08:38.128416+00:00",
+  "offset": 0
+}

@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "scripts/windows/finish_formal_study.py",
+    "--config",
+    "D:/workspace/ParallelBayes/f/output/formal-costs-v1/sequence-config.json",
+    "--sequence",
+    "D:/workspace/ParallelBayes/f/output/formal-costs-v1/sequence-attempt01",
+    "--output",
+    "D:/workspace/ParallelBayes/rf/output/formal-postwork-v1"
+  ],
+  "identity": {
+    "creation_filetime": 134358651343620295,
+    "member_of_owned_job": null,
+    "pid": 1920
+  },
+  "real_process_handle_signaled": true,
+  "reason": "User requested pause; cancel future automatic postprocessing/publication",
+  "role": "postprocessing",
+  "scientific_task_process_not_targeted": true
+}

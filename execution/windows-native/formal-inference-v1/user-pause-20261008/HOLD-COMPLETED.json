@@ -1,0 +1,49 @@
+{
+  "status": "user_resource_amendment_old_grid_stopped",
+  "observed_utc": "2026-10-08T00:22:52.355712+00:00",
+  "old_study_identity": "windows-formal-inference-v1",
+  "frozen_execution_commit": "0ba5643a6b580e79b8040f13a5e3165322db0e77",
+  "protocol_sha256": "62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176",
+  "counts": {
+    "cache": {
+      "not_started": 9216
+    },
+    "main": {
+      "not_started": 40462,
+      "numerical_failure": 16,
+      "output_failure_unclassified": 4,
+      "valid": 990
+    }
+  },
+  "registered_terminal_tasks": 1010,
+  "last_task": {
+    "artifact_kind": "posterior",
+    "batch": 0,
+    "budget": 16384,
+    "device": "cpu",
+    "executor": "quasi_deer",
+    "id": "b5bfe17c3371b4fd6db13907",
+    "input": "H2-rep0011.npz",
+    "kernel": "mala",
+    "model": "H2",
+    "protocol_sha256": "62ca9db5547c2701232d200f2978255a3ef1b0f06c47b9ccd0145b1f19364176",
+    "replicate": 11,
+    "workflow": "cpu-mala-quasi_deer"
+  },
+  "shared_lock": "D:\\workspace\\ParallelBayes\\output\\runtime\\windows-shared-host.lock",
+  "native_registered_jobs_observed": 1112,
+  "indexed_active_count": 0,
+  "owned_active_processes": 0,
+  "old_grid_resume_forbidden": true,
+  "additional_sampling": 0,
+  "retries": 0,
+  "old_protocol_unchanged": true,
+  "post_start_amendment": true,
+  "fully_prospective_preregistration": false,
+  "full_formal_study_completed": false,
+  "large_tar_created": false,
+  "full_raw_independent_Mac_intake_completed": false,
+  "preserved_raw_root": "D:\\workspace\\ParallelBayes\\f\\output\\windows-formal-inference-v1",
+  "outer_costs_root": "D:\\workspace\\ParallelBayes\\f\\output\\formal-costs-v1",
+  "preservation_manifest_sha256": "3b6bb9544ab14c3d1fd777aa8f1e932bb1d39cb288750948fef3bf045c6bcb83"
+}
