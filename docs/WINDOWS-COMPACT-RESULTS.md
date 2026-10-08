@@ -184,3 +184,55 @@ and windows-compact-native-acceptance-3a37a89.json (SHA recorded above).
 Remote SHA256/size, all 52 prior assets and the final unchanged draft were
 verified. These small identity files are not a complete scientific return;
 all formal actual arrays remain on Windows and independent Mac intake is pending.
+
+## Live progress and utilization inquiry, 2026-10-08 20:02 JST
+
+New receipt `execution/windows-compact/receipts/formal-progress/observation-05.json`
+(SHA256 0af68a2525b3e7eeaeaf5df5227bf8e5411b3a8173056041aa1f40c1607a9d3c)
+supersedes the earlier live counts, without changing their saved evidence.
+Batch 0 main closed with 1,296 terminal rows: 1,236 valid, 48 unclassified
+output failures and 12 numerical failures. Batch 0 cache closed with all 64
+measurements available. Batch 1 main is active with 528 terminal rows: 498 valid,
+22 unclassified output failures and eight numerical failures. Later phases are
+unstarted. In total 1,824/3,888 main rows are terminal (1,734 valid, 70 unclassified
+output failures, 20 numerical failures); 64/256 cache probes are terminal.
+These are live task outcomes, not final statistical conclusions.
+
+The manager PID 19900 retains its expected native creation identity. The first
+two phase Jobs are absent; the current batch-1-main Job is present with six
+actual active processes. No second manager, retry, source change or profiler
+was launched for this inquiry. C free bytes: 1,615,728,885,760; D free bytes:
+1,830,546,407,424. Known terminal coordinator invocations total 33,939.0688712 s;
+this is a nested cost scope, not total study wall time or a remaining-time
+estimate. First main phase outer wall is 21,852.9033961 s.
+
+The user's approximately 26% GPU / 30% CPU / 14.2 GB memory observation does
+not establish a speedup ceiling. A separate instantaneous nvidia-smi reading
+at 20:02:40 JST reports GPU activity 2%, device memory used 2,241 MiB of
+16,303 MiB. It is a different sampling instant, not a correction to the user's
+reading. System RAM occupancy, device memory occupancy and arithmetic activity
+are distinct quantities. CPU-only phases, independent CPU audit, R diagnostics
+and output are included in the study workflow, so sustained full GPU activity
+is not expected throughout the complete workflow.
+
+Pinned `torch_backend/executors.py` explicitly uses eager Python round control;
+quasi-DEER reads three scalar controls per round, and Picard reads its prefix
+and finite flag. Small four-chain/window-32 workloads and launch/control overhead
+are plausible limits, but no trace-based bottleneck attribution has been made.
+The copied original G2 CUDA prepared record in
+`receipts/formal-progress/g2-cuda-prepared-example.json` preserves a concrete
+example: 51.0201455 s executor wall, 2,800 rounds, 8,400 scalar reads and
+0.503604499 s recorded scalar-read waits, float64 tensors on cuda:0. The wait
+telemetry alone therefore does not account for most of this call's duration.
+No added GPU benchmark or heavy analysis was run alongside scientific sampling.
+
+Microsoft documents Task Manager's overall GPU utilization as its busiest
+engine, while NVIDIA defines nvidia-smi GPU utilization as the fraction of the
+sample period with a kernel executing. Neither is a direct fraction of peak
+arithmetic throughput. See [Microsoft](https://devblogs.microsoft.com/directx/gpus-in-the-task-manager/)
+and [NVIDIA](https://docs.nvidia.com/deploy/nvidia-smi/index.html).
+PyTorch documents `.item()` as a host/device synchronization concern in its
+[CUDA usage guide](https://github.com/pytorch/pytorch/wiki/CUDA-basics).
+Any optimization experiment requires a separate identity and actual correctness
+validation after the current frozen study; current parameters and source remain
+unchanged.
