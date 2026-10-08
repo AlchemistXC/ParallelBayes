@@ -136,10 +136,17 @@ class ScientificReader:
         expected = dict(c['task'], protocol_sha256=c['protocol_sha256'], artifact_kind='posterior')
         probe = slot.get('probe')
         if probe is not None:
-            _probe(c, slot['capsule_sha256'], probe)
+            if c.get('compact_execution_contract'):
+                from compact_contract import validate_probe
+                validate_probe(c,slot['capsule_sha256'],probe)
+            else:_probe(c, slot['capsule_sha256'], probe)
             expected.update(id=probe['id'], artifact_kind='cache_measurement')
         if slot['task'] != expected: raise ValueError('Owned and scientific task identities differ')
-        h = read_native_task(self.root, task=slot['task'], history_export=history_export,
+        lifecycle_reader=read_native_task
+        if c.get('compact_execution_contract'):
+            from compact_native_evidence import read_native_task as read_compact_native_task
+            lifecycle_reader=read_compact_native_task
+        h = lifecycle_reader(self.root, task=slot['task'], history_export=history_export,
             directory=directory, ledger=ledger, manifest=manifest, source_files=self.sources)
         request = h['binding']['request']
         if request.get('capsule') != c or request.get('capsule_sha256') != slot['capsule_sha256']:
@@ -323,7 +330,10 @@ class ScientificReader:
             folder=relative_file(self.root,directory+'/'+h['attempts'][-1]['attempt_id']+'/cache')
             request=dict(capsule=c,capsule_sha256=fingerprint(c),probe=probe)
             if (folder/'MANIFEST.json').exists():
-                report=read_cached_probe(folder)
+                if c.get('compact_execution_contract'):
+                    from compact_cache_evidence import read_cached_probe as read_compact_probe
+                    report=read_compact_probe(folder)
+                else:report=read_cached_probe(folder)
                 if json.loads((folder/'request.json').read_text()) != request or report['binding'] != binding: raise ValueError('Cache actual input/capsule differs')
                 records=report['observation']['records']; states=report['observation']['execution_outcomes']; kind='sealed'
             else:
@@ -335,7 +345,11 @@ class ScientificReader:
                     replay=self._replay(model,config,values,folder/record['actual_array_file'])
                     if not replay['passed']: raise ValueError('Receiver cached path/event replay failed')
                     replays.append(dict(execution_index=i,**replay))
-        summary=summarize_probe(probe,records,expected_tape_sha256=binding['tape_sha256'],expected_target_id=binding['target_id'],expected_config=config)
+        reducer=summarize_probe
+        if c.get('compact_execution_contract'):
+            from compact_cache_summary import summarize_probe as compact_reducer
+            reducer=compact_reducer
+        summary=reducer(probe,records,expected_tape_sha256=binding['tape_sha256'],expected_target_id=binding['target_id'],expected_config=config)
         available=h['summary']['outcome']=='measurement_available'
         if available and not summary['all_executions_valid']: raise ValueError('Eligible measurement lacks four valid calls')
         return dict(probe=probe,binding=binding,observation=dict(records=records,execution_outcomes=states),

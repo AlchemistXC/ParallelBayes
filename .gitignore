@@ -132,4 +132,11 @@ __pycache__/
 
 # Current research-completion state and small, first-party diagnostic handoff.
 !/execution/COMPLETION-WORK-PACKAGES.md
+!/execution/windows-compact/
+/execution/windows-compact/*
+!/execution/windows-compact/WORK-PACKAGES.md
+!/execution/windows-compact/*.json
+!/execution/windows-compact/*.md
+!/execution/windows-compact/receipts/
+!/execution/windows-compact/receipts/**
 !/handoff/windows-completion/

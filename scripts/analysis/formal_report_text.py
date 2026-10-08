@@ -27,6 +27,9 @@ def write_report(output,receipt):
         '普通工作流、研究审计执行、额外核验和总调用分开记录，不累加嵌套时间。缓存执行比大于1不表示可靠推断加速。',
         'CSV空单元表示不可用；完整状态与分母在同一行或对应JSON中。没有通过筛掉失败、常量函数、慢配置或未定参考来生成图件。','',
         '| 目标 | 计划主任务 | 计划缓存 | 主任务证据状态 | 缓存证据状态 |','|---|---:|---:|---|---|']
+    compact=receipt['frame'].get('execution_contract')=='windows-compact-contract-v1'
+    if compact:
+        lines[4:4]=['本研究是旧采样启动后的资源修订；旧结果单独保留，未合入新重复。新正式研究为24次完整四链重复、1024/4096两个固定预算；缓存每格4份输入仅作描述，区间留空，失败不以成功子调用替代。','']
     body=[r'\documentclass[UTF8,fontset=fandol,a4paper]{ctexart}',r'\usepackage[margin=20mm,headheight=16pt]{geometry}',
           r'\usepackage{booktabs,longtable,graphicx,hyperref,fancyhdr,array}',r'\hypersetup{hidelinks}',
           r'\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}',
@@ -36,6 +39,9 @@ def write_report(output,receipt):
           '本报告不自动判定研究完成或后验收敛。缺失证据保持缺失；数值有效输出仍可能有探索问题。',
           r'正式模式的区间是逐点95\% BCa区间，以完整四链重复为单位，缓存调用不增加独立样本数。技术验收不生成正式区间；失败和未知时间不填零。',
           r'\section*{任务框架}',r'\begin{longtable}{lrrp{46mm}p{46mm}}',r'\toprule 目标 & 主任务 & 缓存 & 主任务状态 & 缓存状态 \\ \midrule\endhead']
+    if compact:
+        body[body.index(r'\section*{任务框架}'):body.index(r'\section*{任务框架}')]=[
+            r'本研究是旧采样启动后的资源修订，不是完全事前预注册。旧结果未混入新24次完整四链重复。仅比较1024/4096预算；缓存每格4输入只作描述，不生成区间，不用成功子调用替代不合格输入。']
     for model in receipt['source_models']:
         name=model['model'];s=model['summary']
         a=json.dumps(s['main_dispositions'],sort_keys=True);b=json.dumps(s['cache_dispositions'],sort_keys=True)

@@ -87,14 +87,20 @@ class StatisticsBundle:
             raise ValueError('Model/reference frame differs')
         if self.frame['scope'] not in ('formal_inference','technical_batch_validation'):raise ValueError('Unknown statistical scope')
         if self.summary['formal_inference_complete'] is not False:raise ValueError('Unsupported automatic completion claim')
-        self.full_formal_frame=(self.frame['scope']=='formal_inference' and set(self.models)==set(MODELS) and
+        historical_formal=(self.frame['scope']=='formal_inference' and set(self.models)==set(MODELS) and
             self.frame['main_planned']==41472 and self.frame['cache_planned']==9216 and
             self.frame['formal_scientific_repetitions_per_model']==128)
+        self.compact_frame=self.frame.get('execution_contract')=='windows-compact-contract-v1'
+        compact_formal=(self.compact_frame and self.frame['scope']=='formal_inference' and set(self.models)==set(MODELS) and
+            self.frame['main_planned']==3888 and self.frame['cache_planned']==256 and
+            self.frame['formal_scientific_repetitions_per_model']==24)
+        self.full_formal_frame=historical_formal or compact_formal
         if not fixture and self.frame['scope']=='formal_inference':
             if not self.full_formal_frame:
                 raise ValueError('Complete formal design required; artificial data need --fixture')
         if not fixture and self.frame['scope']=='technical_batch_validation':
-            if set(self.models)!={'G1','G2','W1'} or (self.frame['main_planned'],self.frame['cache_planned'])!=(27,24):
+            wanted=({'G2','W1'},(18,16)) if self.compact_frame else ({'G1','G2','W1'},(27,24))
+            if set(self.models)!=wanted[0] or (self.frame['main_planned'],self.frame['cache_planned'])!=wanted[1]:
                 raise ValueError('Finite technical design differs')
         if sum(m['main_planned'] for m in self.summary['models'])!=self.frame['main_planned'] or sum(m['cache_planned'] for m in self.summary['models'])!=self.frame['cache_planned']:
             raise ValueError('Model and whole-study task counts differ')
@@ -123,9 +129,16 @@ class StatisticsBundle:
                     dict(Counter(r.get('outcome') or 'unknown_evidence' for r in part))!=summary[phase+'_outcomes']):
                 raise ValueError('Projected outcomes/dispositions differ')
         # An artificial watermark does not waive full-design identity checks.
-        if self.full_formal_frame:
-            primary=create_tasks(self.frame['identity'],[dict(models=[name],replicates=list(range(128)),budgets=list(BUDGETS),workflows=list(WORKFLOWS))])
-            allocation=create_measurement_plan(self.frame['identity'],primary)
+        if self.full_formal_frame or self.compact_frame:
+            if self.compact_frame:
+                from compact_contract import create_plan as compact_plan
+                planned=compact_plan(ROOT,technical=self.frame['scope']=='technical_batch_validation')
+                if planned['identity']!=self.frame['identity']:raise ValueError('Compact report identity differs')
+                primary=[t for t in planned['tasks'] if t['model']==name]
+                allocation=dict(probes=[p for p in planned['cache_allocation']['probes'] if p['model']==name])
+            else:
+                primary=create_tasks(self.frame['identity'],[dict(models=[name],replicates=list(range(128)),budgets=list(BUDGETS),workflows=list(WORKFLOWS))])
+                allocation=create_measurement_plan(self.frame['identity'],primary)
             originals={t['id']:t for t in primary};expected={}
             for phase,items in [('main',primary),('cache',allocation['probes'])]:
                 for item in items:
