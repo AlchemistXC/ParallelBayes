@@ -287,3 +287,54 @@ execution source remains clean at 3a37a891896faedc62c0d6af185bfad77696054f.
 The pause remains unacknowledged; no automatic continuation is configured or
 authorized while the user's pause remains in force. Formal analysis and full
 Mac return remain unfinished.
+
+## Explicit user continuation, 2026-10-09 00:01 JST
+
+The user subsequently instructed "继续运行" and asked for a remaining-time
+estimate. This revokes the administrative pause, without altering the protocol,
+inputs, terminal outcomes or earlier pause evidence. Before acknowledging the
+pause, the one-shot resume preflight verified all 216 frozen inputs, the exact
+253 canonical source files, the entire new native-acceptance package, unchanged
+Python/R/package/driver/device identity and original environment marker. Original
+shared-lock reconciliation confirmed no active owned cohort. Actual available
+RAM was 21,824,581,632 bytes, device free memory 15,488,516,096 bytes and D free
+space 1,827,867,316,224 bytes, above frozen guards. No dependency install, source
+update, new input generation or sampler call occurred in this preflight.
+R startup locale warnings were retained in stderr; the complete frozen identity
+comparison passed. Its full raw evidence is in
+`D:/workspace/ParallelBayes/cr/output/compact-resume-preflight-01`, with small
+bound receipt `receipts/formal-progress/resume-preflight-01.json`.
+
+The existing compact clear-pause command then acknowledged the original pending
+request, with the explicit user instruction recorded. A single hidden persistent
+manager was launched at 00:01:53 JST using unchanged execution source/environment
+and `compact_sequence.py --resume`. The venv launcher PID is 22328; the actual
+manager PID is 21620, native creation FILETIME 134359453138611600, invocation
+e9534ccd76094fa787572d474cc42d88. Its independent stdout/stderr and launch receipt
+are under the original cost root's `manager-resume-20261009-01` directory. Old
+manager logs were not overwritten. Both closed batch-0 phases have explicit
+zero-new-sampler reuse receipts. The active batch-1-main invocation is
+897dadf411f94227b6022a95d8f27d59.
+
+`resume-observation-01.json` (SHA256
+4ef6b87dba74606b70aaba97f44de898e22e53bfee4bcec8190e3fef85a15820)
+confirms the actual manager identity and a present owned Job with three
+processes. At that observation 160 terminal tasks were reverified and zero new
+sampling executions had occurred. Lifetime task counts remain 2,296 main
+terminal and 64 cache terminal: the latest resumed driver's visit counter is
+not a lifetime count. The read-only observational adapter therefore deduplicates
+identical terminal task/outcome rows across invocations, preserving its raw
+current-invocation progress separately and refusing conflicting outcomes.
+No prior scientific result was deleted, selected, rerun or reclassified.
+
+Operational duration estimate uses only disjoint closed/paused outer phase wall
+times: 21,852.9033961 s for the first 1,296 main tasks and 17,048.0732382 s for
+the next 1,000, plus the separately completed 64-probe cache phase. Extrapolation
+to the remaining 1,592 main tasks is about 7.5 hours, and to 192 cache probes
+about three hours; roughly 10–12 hours from continuation is a planning estimate,
+not a statistical interval, time-to-accuracy result, performance conclusion or
+execution cutoff. Different model difficulty, failures/resource interruptions
+and recovery verification can extend it. Full-frame analysis, figures and upload
+are excluded and remain unfinished. The exact calculation and scope are saved
+in `receipts/formal-progress/resume-duration-estimate-01.json`. No scheduled
+agent automation was configured, and no old full-grid task was resumed.

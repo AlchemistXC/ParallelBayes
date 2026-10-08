@@ -1,0 +1,23 @@
+{
+  "LauncherPID": 22328,
+  "CreationTime": "2026-10-08T15:01:53.8337627Z",
+  "Executable": "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+  "Arguments": [
+    "scripts/windows/compact_sequence.py",
+    "--bundle",
+    "D:/workspace/ParallelBayes/c/output/windows-compact-inference-v1",
+    "--output",
+    "D:/workspace/ParallelBayes/c/output/compact-formal-costs-v1",
+    "--native-acceptance",
+    "D:/workspace/ParallelBayes/c/output/compact-adapter-validation-v1-attempt02/native-acceptance.json",
+    "--resume"
+  ],
+  "WorkingDirectory": "D:/workspace/ParallelBayes/c",
+  "ScienceLock": "D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock",
+  "FrozenSource": "3a37a891896faedc62c0d6af185bfad77696054f",
+  "ProtocolSHA256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+  "NoAutomaticRetry": true,
+  "WindowStyle": "Hidden",
+  "Reason": "User explicitly resumed compact study",
+  "Preflight": "D:/workspace/ParallelBayes/cr/output/compact-resume-preflight-01/finished.json"
+}
