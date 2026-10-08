@@ -14,11 +14,12 @@
 | C complete bounded receiver | passed, Windows simulation only | 2,226 files / 333,358,784 bytes / 2 blocks; manifest file 18192259ef8672c8bcc660a0af987f290839015fc9f9a10cfd0777b59d6e876e; complete 34-row reconstruction, then 34 reused / 0 new; 246 analysis assets unchanged |
 | C new compact native acceptance | sealed and verified | File SHA256 fae450b9170efac576370f8b59e632b44bb78df8ea036aadb459a9a1928e307b; internal gate 3718cacd7479320c753b5d40b832cc0894a20cc5c3c729f0e48dc3fe48480a3a |
 | D real compact freeze | completed | 216 new actual inputs, 3,888/256 complete task frame, same accepted source 3a37a89; protocol 91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb; source/environment gate passed |
-| D three ordered compact batches | running, batch 0/main | Later observation-20261008-02: 140 terminal rows, 131 valid / 8 output_failure_unclassified / 1 numerical_failure; all other main/cache phases unstarted at that observation; actual manager and owned Job live; no retries |
+| D three ordered compact batches | running, batch 0/main | observation-20261008-04 at 02:33:13 UTC: 226 terminal rows, 214 valid / 11 output_failure_unclassified / 1 numerical_failure; other five main/cache phases unstarted; actual manager identity matches, phase Job has 6 active processes; no retries |
 | E full analysis/Mac intake | not started | Windows technical receive is not independent Mac intake; formal 24-repeat statistics/cache n4 descriptive only |
 | E additive draft publisher | 15 passed / 0 failed / 0 skipped (network-free safety cases) | Actual paginated read of existing draft: 52 assets, no mutations; CLI refuses overwrite/publication/foreign endpoints and checks remote SHA. Delivery-only CR source is independent from pinned C sampling source |
 | E report scope/presentation correction | 2 new cases pass; joint delivery suite 17/0/0 | Technical repetitions=0, formal compact cache n4 captions explicitly omit intervals; retained expected red 2 failures; separate renderer hash, numerical/reader dependencies and all C source unchanged |
 | E early draft metadata return | 3 new assets remote SHA/size verified | New protocol/FROZEN/compact gate only; 52 prior assets unchanged, final draft=true; complete original arrays not yet uploaded |
+| Agent continuation | manual observations; scheduled continuation not created | Automatic reviewer rejected persistent automation without explicit user authorization; one approval question pending. No workaround or new sampling manager; existing authorized native sequence continues |
 
 Native environment is the previously frozen Python/torch CUDA/R environment.
 No dependency install or marker modification was performed. Numerical sources,

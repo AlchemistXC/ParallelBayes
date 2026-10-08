@@ -113,6 +113,16 @@ Acceptance-event agreement alone does not qualify the path. The complete
 candidate, functions, diagnostics and audit remain, samples_eligible=false;
 no tolerance change, numerical retry or successful-subset replacement occurred.
 
+The latest preserved local observation, observation-20261008-04, is at
+2026-10-08 02:33:13 UTC: 226 terminal batch-0/main tasks (214 valid,
+11 output_failure_unclassified, one numerical_failure). The manager native birth
+identity still matches and the phase Job has six actual active processes. All
+256 cache probes and the later two main batches are unstarted. C free bytes are
+1,617,392,803,840; D free bytes are 1,838,641,344,512. Known terminal coordinator
+invocations total 3,702.2097805 s; unfinished outer-phase duration remains unknown.
+Nested timing scopes are not added. This observation's file SHA256 is
+f18859cc3bf55316a6cfad0d06bf3c9291550a9ee2a614bcb8de852c7855c537.
+
 The first unclassified failure, task `2518b3bc5624ab57f7944d8f`, is L2 replicate 5
 CPU NUTS at budget 4096. Only two of four workers returned; the other futures
 reported BrokenProcessPool. The failed candidate and partial worker output stay
@@ -143,6 +153,14 @@ a pause receipt still requires actual Job end verification.
 Formal main 24-repeat statistics, cache n4 descriptions, full bounded draft-release
 return and independent Mac tables/PDF intake remain unfinished while sampling is
 active. This report does not declare study completion.
+
+An in-chat scheduled continuation was attempted but rejected by automatic
+approval because explicit authorization for creating the persistent automation
+was absent. It was not created and no workaround was installed. A single user
+approval question is pending; current manual observations and the previously
+authorized native sequence continue. The scientific driver does not depend on
+that rejected scheduled task. Agent-side post-run verification/analysis/return
+has not happened and must not be reported as automatically arranged.
 
 ## Delivery-only source bridge and early draft assets
 
