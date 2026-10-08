@@ -1,0 +1,12 @@
+{
+  "bundle_bytes": 149882006,
+  "checked_at_phase_boundary": true,
+  "disk": {
+    "free": 1841065574400,
+    "total": 2000381014016,
+    "used": 159315439616
+  },
+  "maximum_bundle_bytes": 2147483648,
+  "polling_peak_is_not_hard_cap": true,
+  "volume": "D:\\"
+}

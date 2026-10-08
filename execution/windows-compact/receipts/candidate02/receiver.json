@@ -1,0 +1,9 @@
+{
+  "chunks": 2,
+  "files": 2226,
+  "manifest_file_sha256": "18192259ef8672c8bcc660a0af987f290839015fc9f9a10cfd0777b59d6e876e",
+  "new_sampler_calls": 0,
+  "passed": true,
+  "return_manifest_sha256": "0fb059d495f5edddb23aa95396c39d8172481b3dfbf7f7267dda89471cbaa9fb",
+  "whole_tar_created": false
+}

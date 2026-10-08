@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\workspace\ParallelBayes\c\scripts\windows\compact_transfer.py", line 235, in <module>
+    print(json.dumps({'plan':plan,'emit':emit,'ingest':ingest,'verify':verify_received}[cmd](**args),indent=2))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\ParallelBayes\c\scripts\windows\compact_transfer.py", line 103, in plan
+    p['manifest_sha256']=fingerprint(p);_validate(p);atomic_json(output,p)
+                                        ^^^^^^^^^^^^
+  File "D:\workspace\ParallelBayes\c\scripts\windows\compact_transfer.py", line 46, in _validate
+    raise ValueError('Aliased or reserved delivery member')
+ValueError: Aliased or reserved delivery member
