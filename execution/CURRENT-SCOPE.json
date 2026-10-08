@@ -2,14 +2,14 @@
   "date": "2026-10-08",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "native_v2_independently_received_formal_study_handoff_ready_freeze_pending",
-  "gpu_tasks": "Finite native v2 independently received: 27 main/24 cache tasks and 96 cached calls. Formal 41472/9216 remain unfrozen and unexecuted.",
+  "local_phase": "compact_resource_amendment_after_old_sampling_started",
+  "gpu_tasks": "Old formal sampling started per user; stop status and counts not independently received. Compact plan 3888 main/256 cache is design-only; native adaptation pending.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
   "requires_user_resume": false,
   "rerun_completed_cpu_tasks": false,
   "active_outstanding_tasks": [
-    "F3 formal resource preflight, input freeze/execution and actual inference uncertainty",
+    "F3 old-run preservation, compact runtime/receiver adaptation and native validation, then fresh input freeze and 3888/256 execution",
     "F4 external wells formal comparison",
     "F5 full raw-to-paper release reproduction",
     "F6 integrated final manuscript"
@@ -18,7 +18,7 @@
   "desktop_os_requirement": "native_windows_11_no_wsl2",
   "gpu_backend": "torch eager 0.2.0.dev2 candidate; archived experiments retain original source identities",
   "legacy_handoff": "handoff/windows-native describes the completed initial migration; handoff/gpu is a historical WSL archive",
-  "revision": "research-completion-v1",
+  "revision": "research-completion-compact-amendment-v1",
   "received_windows_commit": "5885c7189f08961658598a095b64ac2ca9bd39cf",
   "reception_review_commit": "38894409004dd9ebceb978755dc246fcb3418d01",
   "completed_bounded_milestones": [
@@ -29,7 +29,7 @@
     "Finite native v2 acceptance plus independent Mac raw-array/R-diagnostic/full-frame reconstruction"
   ],
   "second_round_intake": "docs/WINDOWS-ROUND2-INTAKE.md",
-  "next_Windows_prompt": "handoff/windows-completion/CODEX-PROMPT-FORMAL-STUDY.md",
+  "next_Windows_prompt": "handoff/windows-completion/CODEX-PROMPT-HOLD-FORMAL.md",
   "local_batch_validation": "14/15 valid, maximum NUTS interrupted after original and sole retry; archived/rebuilt; formal inference remains pending",
   "local_batch_report": "docs/BATCH-MAXIMUM-VALIDATION.md",
   "active_development_branch": "codex/research-integration",
@@ -123,7 +123,7 @@
     "superseded_by": "docs/WINDOWS-FOLLOWUP-INTAKE.md",
     "external_evidence_trigger_received": true
   },
-  "next_Windows_action": "Use exact accepted source 0ba5643 in a separate clean worktree, verify storage/environment, freeze all formal inputs, then execute the four prespecified batches; do not rerun finite acceptance.",
+  "next_Windows_action": "Stop and preserve the already-started old formal study with native owned-process evidence, then follow CODEX-PROMPT-COMPACT-STUDY.md to adapt, validate and execute the new resource amendment.",
   "followup_windows_intake": {
     "report": "docs/WINDOWS-FOLLOWUP-INTAKE.md",
     "heads": {
@@ -373,7 +373,8 @@
     "latest_head_has_three_extra_helper_sources": true,
     "run_in_separate_exact_accepted_worktree": true,
     "identity_planned": "windows-formal-inference-v1",
-    "design_sha256": "68a1cba1b9309216d237ac4613531216f167ff344dfdfcb72dc3aaca0ca0baa5"
+    "design_sha256": "68a1cba1b9309216d237ac4613531216f167ff344dfdfcb72dc3aaca0ca0baa5",
+    "current_execution_authorization": "old grid superseded; source retained for reconciliation/history, not new dispatch"
   },
   "full_formal_delivery_storage": {
     "Mac_observed_free_GiB_approx": 148.73,
@@ -401,5 +402,31 @@
     "scientific_design_changed": false,
     "accepted_execution_source_changed": false,
     "archive_sha256": "e3c4ce142fec57b9684b12b17e35b95463857661e8c1823c6c3d1173273ce233"
+  },
+  "compact_amendment": {
+    "date": "2026-10-08",
+    "report": "docs/F3-COMPACT-DESIGN-v1.md",
+    "identity": "windows-compact-inference-v1",
+    "design_sha256": "f9417eb01c01bbc16a6d676870922c479da6c970c69ca8827f270f79ad22626f",
+    "user_confirmed_old_sampling_started": true,
+    "Windows_pause_verified": false,
+    "progress_counts_received": false,
+    "extra_storage_budget_GiB": [
+      50,
+      80
+    ],
+    "main": 3888,
+    "cache": 256,
+    "cache_calls": 1024,
+    "inputs": 216,
+    "metadata_planner_implemented": true,
+    "compact_runtime_implemented": false,
+    "native_compact_validation_passed": false,
+    "formal_inputs_generated_this_revision": 0,
+    "new_sampler_calls_this_revision": 0,
+    "next_prompt": "handoff/windows-completion/CODEX-PROMPT-COMPACT-STUDY.md",
+    "combined_two_originals_receiver_condition_GiB": 51.45935773849487,
+    "actual_storage_guaranteed": false,
+    "old_results_may_be_reused_as_new_repetitions": false
   }
 }

@@ -1,0 +1,48 @@
+{
+  "schema": "compact-design-validation-v1",
+  "date": "2026-10-08",
+  "baseline_commit": "fe850061defb79be69355a0d5db4c2fad87fb5ea",
+  "checks": [
+    {
+      "name": "deterministic_design_and_ledger_regeneration",
+      "status": "passed"
+    },
+    {
+      "name": "unchanged_targets_controls_initial_trajectory_analysis_cost",
+      "status": "passed"
+    },
+    {
+      "name": "complete_pairing_and_three_batches",
+      "status": "passed"
+    },
+    {
+      "name": "fresh_ids_and_correct_input_extent",
+      "status": "passed"
+    },
+    {
+      "name": "planning_has_no_sampling_or_native_pass_claim",
+      "status": "passed"
+    },
+    {
+      "name": "independent_closed_form_storage_and_receiver",
+      "status": "passed"
+    },
+    {
+      "name": "no_cache_partial_success_median_or_false_replication",
+      "status": "passed"
+    },
+    {
+      "name": "existing_output_refused_without_rewrite",
+      "status": "passed"
+    }
+  ],
+  "passed": 8,
+  "failed": 0,
+  "skipped": 0,
+  "scope": "Portable design/shape/identity checks only; not compact runtime or native sampling tests",
+  "sampler_calls": 0,
+  "actual_random_inputs_generated": 0,
+  "native_windows_checks": 0,
+  "design_sha256": "f9417eb01c01bbc16a6d676870922c479da6c970c69ca8827f270f79ad22626f",
+  "generator_sha256": "fc06b0b0fe16e9f210bbe45fa45f0dce4edef2e6a6695944ff1b60c3e63b64aa"
+}

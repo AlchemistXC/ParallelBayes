@@ -1,3 +1,5 @@
+> **2026-10-08 已被资源修订替代：用户确认旧正式采样已开始；不要再按下文派发/恢复完整旧网格。先用[HOLD提示词](CODEX-PROMPT-HOLD-FORMAL.md)准确停止并保全，再按[紧凑提示词](CODEX-PROMPT-COMPACT-STUDY.md)适配新3888/256研究。旧正文作为历史说明保留。新[设计](../../docs/F3-COMPACT-DESIGN-v1.md)与旧冻结源码/协议分开，新入口尚待实现及原生差异验收。**
+
 > **2026-10-07 后继：有限v2已通过Windows实测及Mac独立接收，无需再执行本轮验收。下一入口为[正式研究提示词](CODEX-PROMPT-FORMAL-STUDY.md)，接收证据见[Mac报告](../../docs/WINDOWS-FORMAL-V2-INTAKE.md)。以下文字保留旧任务原范围。**
 
 2026-10-08存储补记：[实际文件与情景账本](../../docs/FORMAL-STORAGE-COMPANION.md)补充任务预留和接收分析副本。正式提示词只增加容量依据；没有新的有限验收、旧任务重跑或科学网格变更。

@@ -1,5 +1,7 @@
 # ParallelBayes 研究收尾计划
 
+**2026-10-08 资源修订：用户确认旧正式采样已启动，要求缩减并给出约50–80 GiB新增空间。旧完整网格不再继续派发；先按[旧任务保全提示词](../handoff/windows-completion/CODEX-PROMPT-HOLD-FORMAL.md)停止并保存，再执行[紧凑设计](F3-COMPACT-DESIGN-v1.md)的适配与验收。新方案3,888主任务/256缓存/216新输入，运行器适配尚未完成。旧实际进度及停机待Windows实时回执。下方旧日期文字保留历史状态。**
+
 当前统一入口：[范围与证据索引](CURRENT-SCOPE.md)、[机器可读状态](../execution/CURRENT-SCOPE.json)。26页稿及六段重建已纳入实际Windows机制/运行/安装证据；正式推断和全研究归档仍待完成。
 
 **2026-10-07 当前状态**：有限v2原生验收和Mac原始数组/诊断接收已通过，见[独立接收](WINDOWS-FORMAL-V2-INTAKE.md)。正式研究入口已更新为[正式四批提示词](../handoff/windows-completion/CODEX-PROMPT-FORMAL-STUDY.md)，执行工作树固定在已验收0ba5643；环境和存储先核对。1152正式输入、41472主任务和9216探测尚未冻结/执行，水井正式比较、全原始证据重建及最终稿仍未完成。以下按日期保留较早开发记录，旧“验收待回传”文字不再是当前执行要求。

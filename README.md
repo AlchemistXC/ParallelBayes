@@ -1,5 +1,7 @@
 # ParallelBayes
 
+2026-10-08：用户因资源要求缩减已启动的旧正式研究。当前按[暂停保全](handoff/windows-completion/CODEX-PROMPT-HOLD-FORMAL.md)→[紧凑研究接力](handoff/windows-completion/CODEX-PROMPT-COMPACT-STUDY.md)依次执行；[新设计](docs/F3-COMPACT-DESIGN-v1.md)为3,888主任务＋256缓存，元数据已完成，运行器适配/原生差异验收待做。下方旧“继续四批”入口不再有效。
+
 [当前范围、版本、数据位置与剩余门槛](docs/CURRENT-SCOPE.md)｜[机器可读状态](execution/CURRENT-SCOPE.json)。下方按日期保留研究进展；完整研究尚未完成。
 
 2026-10-07 当前论文：[26页中文稿](output/software-paper/软件与基准研究-原生适配整合.pdf)已纳入有限v2原生验收及Mac独立接收。[文稿与重建回执](docs/NATIVE-V2-MANUSCRIPT.md)包括七段逐字节重建、59份输入及可搬移PDF；正式研究和投稿终稿仍未完成。

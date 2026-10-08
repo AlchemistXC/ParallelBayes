@@ -1,0 +1,49 @@
+{
+  "schema": "compact-storage-ledger-v1",
+  "design_sha256": "f9417eb01c01bbc16a6d676870922c479da6c970c69ca8827f270f79ad22626f",
+  "named_arrays_bytes": {
+    "master_inputs": 1306015488,
+    "MH_two_coordinates": 13589544960,
+    "MH_two_accept_arrays": 84934656,
+    "original_two_function_binaries": 2548039680,
+    "NUTS_two_coordinates_and_warmup": 1698693120,
+    "NUTS_step_sizes": 49545216,
+    "NUTS_initial": 276480,
+    "NUTS_rng_states": 17473536,
+    "cache_four_calls_arrays": 2076180480
+  },
+  "named_arrays_total_bytes": 21370703616,
+  "retained_success_attempt_reserves_bytes": 4345298944,
+  "receiver_function_binaries_bytes": 3822059520,
+  "scenarios_bytes": {
+    "one_Windows_original": 25716002560,
+    "one_Mac_original_and_receiver": 29538062080,
+    "two_machine_originals_and_receiver": 55254064640,
+    "three_full_copies_and_receiver": 80970067200
+  },
+  "zero_failures_n24_pointwise_two_sided_95_percent_upper": 0.14247359772252566,
+  "reductions": {
+    "main_fraction": 0.90625,
+    "cache_fraction": 0.9722222222222222,
+    "main_retained_steps_fraction": 0.9558823529411765
+  },
+  "assumptions": [
+    "all tasks succeed once; no retries",
+    "native NUTS RNG state length 5056 bytes as in finite v2",
+    "unchanged saved array roles and float64; actual tape shape includes discarded draws",
+    "no full tar plus duplicate extracted tree on the same machine"
+  ],
+  "exclusions": [
+    "JSON, observation logs, SQLite and metadata",
+    "failed and partial retries",
+    "NPY/ZIP/TAR headers and filesystem allocation",
+    "transfer buffers and extra analysis outputs",
+    "old already-started study; environments and history"
+  ],
+  "capacity_guarantee": false,
+  "compression_forecast": false,
+  "runtime_forecast": false,
+  "sampler_calls": 0,
+  "actual_inputs_generated": 0,
+  "planning_script_sha256": "fc06b0b0fe16e9f210bbe45fa45f0dce4edef2e6a6695944ff1b60c3e63b64aa"
+}
