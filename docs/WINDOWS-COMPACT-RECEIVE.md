@@ -151,6 +151,16 @@ unchanged. The new sender has its own committed source hash and costs.
 
 ## Complete formal raw component, 2026-10-10
 
+The full Windows reconstruction/statistics/report is also returned as
+`windows-compact-postprocess-v3-3a37a89-v1-manifest.json`, external SHA256
+`4a3f55e60bb13d1fe08b58deaeedad048d942c130f4433a62efb4c67e4055e3c`,
+and part-000000 through part-000022 with that same prefix. Its 42,616 original
+members total 6,070,464,691 bytes, including every R binary, reference replay,
+bootstrap/statistics input, 45 figure originals, and zero-reanalysis hashes.
+This Windows output is a comparison record, not the independent Mac reconstruction.
+The final `windows-compact-complete-return-v1-catalog.json` and its separately
+downloaded SHA256 enumerate all components and the three-branch source Git bundle.
+
 The existing draft now contains the complete scientific raw component:
 `windows-compact-formal-3a37a89-v1-manifest.json`, external SHA256
 `38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e`,
