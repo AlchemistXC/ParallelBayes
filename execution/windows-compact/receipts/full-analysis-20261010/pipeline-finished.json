@@ -1,0 +1,82 @@
+{
+  "all_original_task_assets_unchanged": true,
+  "analysis_first": {
+    "counts": {
+      "cache": {
+        "analyzed": 256
+      },
+      "main": {
+        "analyzed": 3888
+      }
+    },
+    "every_planned_task_represented": true,
+    "evidence_complete": true,
+    "formal_inference_complete": false,
+    "frame": {
+      "analysis_can_authorize_sampling": false,
+      "cache_planned": 256,
+      "execution_contract": "windows-compact-contract-v1",
+      "formal_scientific_repetitions_per_model": 24,
+      "identity": "windows-compact-inference-v1",
+      "main_planned": 3888,
+      "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+      "scope": "formal_inference"
+    },
+    "new_analyses": 4144,
+    "new_independent_repetitions": 0,
+    "new_sampler_calls": 0,
+    "reused_analyses": 0,
+    "summary_is_not_convergence_or_performance_inference": true,
+    "visited": 4144
+  },
+  "analysis_resume": {
+    "counts": {
+      "cache": {
+        "analyzed": 256
+      },
+      "main": {
+        "analyzed": 3888
+      }
+    },
+    "every_planned_task_represented": true,
+    "evidence_complete": true,
+    "formal_inference_complete": false,
+    "frame": {
+      "analysis_can_authorize_sampling": false,
+      "cache_planned": 256,
+      "execution_contract": "windows-compact-contract-v1",
+      "formal_scientific_repetitions_per_model": 24,
+      "identity": "windows-compact-inference-v1",
+      "main_planned": 3888,
+      "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+      "scope": "formal_inference"
+    },
+    "new_analyses": 0,
+    "new_independent_repetitions": 0,
+    "new_sampler_calls": 0,
+    "reused_analyses": 4144,
+    "summary_is_not_convergence_or_performance_inference": true,
+    "visited": 4144
+  },
+  "commands": [
+    "verify-0-main-reused",
+    "verify-0-cache-reused",
+    "verify-1-main",
+    "verify-1-cache",
+    "verify-2-main",
+    "verify-2-cache",
+    "quiescent-registry",
+    "formal-transfer-plan",
+    "analysis-index",
+    "analysis",
+    "analysis-resume",
+    "statistics",
+    "report"
+  ],
+  "finished": "2026-10-10T06:58:23.983816+09:00",
+  "new_sampler_calls": 0,
+  "scope": "Windows origin analysis; full draft upload and independent Mac reconstruction remain pending",
+  "seconds": 10071.3980963,
+  "statistics_manifest_sha256": "0c1857a7767ab5c8a117c00b75992db40c03c06e2453ad64c1398a64080a0c00",
+  "status": "completed"
+}

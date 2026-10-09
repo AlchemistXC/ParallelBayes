@@ -72,6 +72,10 @@ Use the receiver's already verified native Python/NumPy/SciPy and R/posterior
 environment. These commands are cross-platform Python CLIs; execute them on
 Mac itself, not a Windows WSL environment. Download only the next block to the
 bounded cache and verify its external manifest-bound SHA and size before ingest.
+Set `PYTHONDONTWRITEBYTECODE=1` and `PYTHONUTF8=1` in that native receiving
+shell before reading the immutable tree. Keep all index, analysis, statistics
+and report outputs in separate fresh directories; do not create bytecode caches
+inside the received source snapshot.
 
 ```text
 python scripts/windows/compact_transfer.py ingest --manifest MANIFEST --manifest-sha256 VERIFIED_SHA --index ORDINAL --chunk DOWNLOADED_BLOCK --output FRESH_COMPONENT_DIRECTORY

@@ -139,4 +139,11 @@ __pycache__/
 !/execution/windows-compact/*.md
 !/execution/windows-compact/receipts/
 !/execution/windows-compact/receipts/**
+!/execution/windows-compact/formal-results/
+!/execution/windows-compact/formal-results/*/
+!/execution/windows-compact/formal-results/*.json
+!/execution/windows-compact/formal-results/*.csv
+!/execution/windows-compact/formal-results/*.md
+!/execution/windows-compact/formal-results/*/*.csv
+!/execution/windows-compact/formal-results/*/*.svg
 !/handoff/windows-completion/

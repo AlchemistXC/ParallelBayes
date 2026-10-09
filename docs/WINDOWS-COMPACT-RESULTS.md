@@ -9,8 +9,13 @@ has now been appended to the unchanged Windows draft: 180,582 files,
 19,671,228,544 bytes in 74 bounded blocks. Its external manifest SHA256 is
 `38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e`.
 The upload Job actually ended with zero active processes. Windows read-only
-analysis is still running; final statistical/report receipts and independent
-Mac reception remain pending. See `receipts/formal-return-20261010` and the
+analysis, statistics and all 45 report figures finished at 2026-10-10 06:58 JST.
+All 4,144 planned rows were read with zero reader errors/evidence gaps; actual
+resume reused 4,144 rows, created zero new analyses/sampler calls and preserved
+42,035 analysis assets. Exact raw analysis evidence is returned separately from
+the LF-normalized Git display tables/figures. Independent Mac reception remains
+pending. See `execution/windows-compact/FINAL-REPORT.md`,
+`receipts/formal-return-20261010`, `receipts/full-analysis-20261010` and the
 receive instructions for exact assets. Historical observations below retain
 their original dates and scope.
 

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.740157pt" height="368.503937pt" viewBox="0 0 518.740157 368.503937" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 368.503937 
+L 518.740157 368.503937 
+L 518.740157 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 51.874016 250.582677 
+L 200.341026 250.582677 
+L 200.341026 62.645669 
+L 51.874016 62.645669 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <text style="font-size: 7px; font-family: 'DejaVu Sans', sans-serif; text-anchor: middle" x="126.107521" y="259.901583" transform="rotate(-0 126.107521 259.901583)">Mean ordinary workflow seconds</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="text_2">
+     <text style="font-size: 7px; font-family: 'DejaVu Sans', sans-serif; text-anchor: middle" x="46.418234" y="156.614173" transform="rotate(-90 46.418234 156.614173)">Conditional squared discrepancy</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 51.874016 250.582677 
+L 51.874016 62.645669 
+" style="fill: none; stroke: #000000; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 51.874016 250.582677 
+L 200.341026 250.582677 
+" style="fill: none; stroke: #000000; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7px; font-family: 'DejaVu Sans', sans-serif; text-anchor: middle" x="126.107521" y="156.614173" transform="rotate(-0 126.107521 156.614173)">No eligible error–cost point</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="44.874016" y="53.645669" transform="rotate(-0 44.874016 53.645669)">a</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans', sans-serif; text-anchor: middle" x="126.107521" y="49.645669" transform="rotate(-0 126.107521 49.645669)">Fixed-budget error and cost</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 333.961336 250.582677 
+L 482.428346 250.582677 
+L 482.428346 62.645669 
+L 333.961336 62.645669 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 333.961336 250.582677 
+L 333.961336 62.645669 
+" clip-path="url(#p64150bf13c)" style="fill: none; stroke: #9ca5ad; stroke-width: 0.65; stroke-linecap: square"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="text_6">
+     <text style="font-size: 7px; font-family: 'DejaVu Sans', sans-serif; text-anchor: middle" x="408.194841" y="259.901583" transform="rotate(-0 408.194841 259.901583)">MH loss − CPU NUTS loss</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_1">
+     <g id="line2d_2"/>
+     <g id="text_7">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="72.465883" transform="rotate(-0 330.461336 72.465883)">CPU quasi-DEER · 1024</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_3"/>
+     <g id="text_8">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="84.066933" transform="rotate(-0 330.461336 84.066933)">CPU quasi-DEER · 4096</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_4"/>
+     <g id="text_9">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="95.667983" transform="rotate(-0 330.461336 95.667983)">CPU MALA seq · 1024</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_5"/>
+     <g id="text_10">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="107.269033" transform="rotate(-0 330.461336 107.269033)">CPU MALA seq · 4096</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_6"/>
+     <g id="text_11">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="118.870082" transform="rotate(-0 330.461336 118.870082)">CPU Picard · 1024</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_7"/>
+     <g id="text_12">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="130.471132" transform="rotate(-0 330.461336 130.471132)">CPU Picard · 4096</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_8"/>
+     <g id="text_13">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="142.072182" transform="rotate(-0 330.461336 142.072182)">CPU RWM seq · 1024</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_9"/>
+     <g id="text_14">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="153.673232" transform="rotate(-0 330.461336 153.673232)">CPU RWM seq · 4096</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_10"/>
+     <g id="text_15">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="165.274282" transform="rotate(-0 330.461336 165.274282)">CUDA quasi-DEER · 1024</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_11"/>
+     <g id="text_16">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="176.875332" transform="rotate(-0 330.461336 176.875332)">CUDA quasi-DEER · 4096</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_12"/>
+     <g id="text_17">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="188.476382" transform="rotate(-0 330.461336 188.476382)">CUDA MALA seq · 1024</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_13"/>
+     <g id="text_18">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="200.077432" transform="rotate(-0 330.461336 200.077432)">CUDA MALA seq · 4096</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_14"/>
+     <g id="text_19">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="211.678481" transform="rotate(-0 330.461336 211.678481)">CUDA Picard · 1024</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_15"/>
+     <g id="text_20">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="223.279531" transform="rotate(-0 330.461336 223.279531)">CUDA Picard · 4096</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_16"/>
+     <g id="text_21">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="234.880581" transform="rotate(-0 330.461336 234.880581)">CUDA RWM seq · 1024</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_17"/>
+     <g id="text_22">
+      <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: end" x="330.461336" y="246.481631" transform="rotate(-0 330.461336 246.481631)">CUDA RWM seq · 4096</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_6">
+    <path d="M 333.961336 250.582677 
+L 333.961336 62.645669 
+" style="fill: none; stroke: #000000; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 333.961336 250.582677 
+L 482.428346 250.582677 
+" style="fill: none; stroke: #000000; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="71.841977" transform="rotate(-0 487.624692 71.841977)">24*</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="83.443027" transform="rotate(-0 487.624692 83.443027)">6*</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="95.044076" transform="rotate(-0 487.624692 95.044076)">24*</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="106.645126" transform="rotate(-0 487.624692 106.645126)">6*</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="118.246176" transform="rotate(-0 487.624692 118.246176)">24*</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="129.847226" transform="rotate(-0 487.624692 129.847226)">6*</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="141.448276" transform="rotate(-0 487.624692 141.448276)">24*</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="153.049326" transform="rotate(-0 487.624692 153.049326)">6*</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="164.650376" transform="rotate(-0 487.624692 164.650376)">24*</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="176.251426" transform="rotate(-0 487.624692 176.251426)">6*</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="187.852475" transform="rotate(-0 487.624692 187.852475)">24*</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="199.453525" transform="rotate(-0 487.624692 199.453525)">6*</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="211.054575" transform="rotate(-0 487.624692 211.054575)">24*</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="222.655625" transform="rotate(-0 487.624692 222.655625)">6*</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="234.256675" transform="rotate(-0 487.624692 234.256675)">24*</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="487.624692" y="245.857725" transform="rotate(-0 487.624692 245.857725)">6*</text>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="326.961336" y="53.645669" transform="rotate(-0 326.961336 53.645669)">b</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans', sans-serif; text-anchor: middle" x="408.194841" y="49.645669" transform="rotate(-0 408.194841 49.645669)">Paired loss difference</text>
+   </g>
+  </g>
+  <g id="text_41">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans', sans-serif; text-anchor: middle" x="259.370079" y="33.165354" transform="rotate(-0 259.370079 33.165354)">L2 | q1_positive</text>
+  </g>
+  <g id="text_42">
+   <text style="font-size: 6.1px; font-family: 'DejaVu Sans', sans-serif" transform="translate(131.808594 342.848979)">Each point uses a measured budget; no interpolation or time-to-accuracy estimate.</text>
+   <text style="font-size: 6.1px; font-family: 'DejaVu Sans', sans-serif" transform="translate(97.894977 351.070159)">Pointwise 95% BCa intervals; axes are not a joint confidence region. Open marks: an interval unavailable.</text>
+   <text style="font-size: 6.1px; font-family: 'DejaVu Sans', sans-serif" transform="translate(88.711618 359.291339)">Paired n is shown at right; * point unavailable. Reference: unresolved. See source tables for every denominator.</text>
+  </g>
+  <g id="legend_1">
+   <g id="line2d_18">
+    <defs>
+     <path id="m67615bcc65" d="M -2 2 
+L 2 2 
+L 2 -2 
+L -2 -2 
+z
+" style="stroke: #a66025; stroke-linejoin: miter"/>
+    </defs>
+    <g>
+     <use xlink:href="#m67615bcc65" x="158.394297" y="284.237015" style="fill: #a66025; stroke: #a66025; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="167.394297" y="286.337015" transform="rotate(-0 167.394297 286.337015)">CPU quasi-DEER</text>
+   </g>
+   <g id="line2d_19">
+    <defs>
+     <path id="m7a17de0f71" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #a66025"/>
+    </defs>
+    <g>
+     <use xlink:href="#m7a17de0f71" x="158.394297" y="293.04389" style="fill: #a66025; stroke: #a66025"/>
+    </g>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="167.394297" y="295.14389" transform="rotate(-0 167.394297 295.14389)">CPU MALA seq</text>
+   </g>
+   <g id="line2d_20">
+    <defs>
+     <path id="m46bec26272" d="M 0 -2 
+L -0.449028 -0.618034 
+L -1.902113 -0.618034 
+L -0.726543 0.236068 
+L -1.175571 1.618034 
+L -0 0.763932 
+L 1.175571 1.618034 
+L 0.726543 0.236068 
+L 1.902113 -0.618034 
+L 0.449028 -0.618034 
+z
+" style="stroke: #353b44; stroke-linejoin: bevel"/>
+    </defs>
+    <g>
+     <use xlink:href="#m46bec26272" x="158.394297" y="301.850765" style="fill: #353b44; stroke: #353b44; stroke-linejoin: bevel"/>
+    </g>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="167.394297" y="303.950765" transform="rotate(-0 167.394297 303.950765)">CPU NUTS</text>
+   </g>
+   <g id="line2d_21">
+    <defs>
+     <path id="maf0212f7fc" d="M -2 2 
+L 2 2 
+L 2 -2 
+L -2 -2 
+z
+" style="stroke: #376b9c; stroke-linejoin: miter"/>
+    </defs>
+    <g>
+     <use xlink:href="#maf0212f7fc" x="231.11711" y="284.237015" style="fill: #376b9c; stroke: #376b9c; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="240.11711" y="286.337015" transform="rotate(-0 240.11711 286.337015)">CPU Picard</text>
+   </g>
+   <g id="line2d_22">
+    <defs>
+     <path id="m55996780fe" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #376b9c"/>
+    </defs>
+    <g>
+     <use xlink:href="#m55996780fe" x="231.11711" y="293.04389" style="fill: #376b9c; stroke: #376b9c"/>
+    </g>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="240.11711" y="295.14389" transform="rotate(-0 240.11711 295.14389)">CPU RWM seq</text>
+   </g>
+   <g id="line2d_23">
+    <defs>
+     <path id="m69484e034c" d="M 0 2.828427 
+L 2.828427 0 
+L 0 -2.828427 
+L -2.828427 0 
+z
+" style="stroke: #b9899d; stroke-linejoin: miter"/>
+    </defs>
+    <g>
+     <use xlink:href="#m69484e034c" x="231.11711" y="301.850765" style="fill: #b9899d; stroke: #b9899d; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="240.11711" y="303.950765" transform="rotate(-0 240.11711 303.950765)">CUDA quasi-DEER</text>
+   </g>
+   <g id="line2d_24">
+    <defs>
+     <path id="me11e0a008d" d="M 0 -2 
+L -2 2 
+L 2 2 
+z
+" style="stroke: #b9899d; stroke-linejoin: miter"/>
+    </defs>
+    <g>
+     <use xlink:href="#me11e0a008d" x="308.841485" y="284.237015" style="fill: #b9899d; stroke: #b9899d; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="317.841485" y="286.337015" transform="rotate(-0 317.841485 286.337015)">CUDA MALA seq</text>
+   </g>
+   <g id="line2d_25">
+    <defs>
+     <path id="m8e3274d24d" d="M 0 2.828427 
+L 2.828427 0 
+L 0 -2.828427 
+L -2.828427 0 
+z
+" style="stroke: #54a5b3; stroke-linejoin: miter"/>
+    </defs>
+    <g>
+     <use xlink:href="#m8e3274d24d" x="308.841485" y="293.04389" style="fill: #54a5b3; stroke: #54a5b3; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="317.841485" y="295.14389" transform="rotate(-0 317.841485 295.14389)">CUDA Picard</text>
+   </g>
+   <g id="line2d_26">
+    <defs>
+     <path id="m989d531842" d="M 0 -2 
+L -2 2 
+L 2 2 
+z
+" style="stroke: #54a5b3; stroke-linejoin: miter"/>
+    </defs>
+    <g>
+     <use xlink:href="#m989d531842" x="308.841485" y="301.850765" style="fill: #54a5b3; stroke: #54a5b3; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="text_51">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="317.841485" y="303.950765" transform="rotate(-0 317.841485 303.950765)">CUDA RWM seq</text>
+   </g>
+  </g>
+  <g id="legend_2">
+   <g id="text_52">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="200.34836" y="326.872448" transform="rotate(-0 200.34836 326.872448)">Retained draws per chain (marker size)</text>
+   </g>
+   <g id="line2d_27">
+    <defs>
+     <path id="m1d9abda037" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #555555"/>
+    </defs>
+    <g>
+     <use xlink:href="#m1d9abda037" x="230.600079" y="333.579323" style="fill-opacity: 0; stroke: #555555"/>
+    </g>
+   </g>
+   <g id="text_53">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="239.600079" y="335.679323" transform="rotate(-0 239.600079 335.679323)">1024</text>
+   </g>
+   <g id="line2d_28">
+    <defs>
+     <path id="m03399cc18a" d="M 0 1.9 
+C 0.503886 1.9 0.987202 1.699804 1.343503 1.343503 
+C 1.699804 0.987202 1.9 0.503886 1.9 0 
+C 1.9 -0.503886 1.699804 -0.987202 1.343503 -1.343503 
+C 0.987202 -1.699804 0.503886 -1.9 0 -1.9 
+C -0.503886 -1.9 -0.987202 -1.699804 -1.343503 -1.343503 
+C -1.699804 -0.987202 -1.9 -0.503886 -1.9 0 
+C -1.9 0.503886 -1.699804 0.987202 -1.343503 1.343503 
+C -0.987202 1.699804 -0.503886 1.9 0 1.9 
+z
+" style="stroke: #555555"/>
+    </defs>
+    <g>
+     <use xlink:href="#m03399cc18a" x="269.870079" y="333.579323" style="fill-opacity: 0; stroke: #555555"/>
+    </g>
+   </g>
+   <g id="text_54">
+    <text style="font-size: 6px; font-family: 'DejaVu Sans', sans-serif; text-anchor: start" x="278.870079" y="335.679323" transform="rotate(-0 278.870079 335.679323)">4096</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p64150bf13c">
+   <rect x="333.961336" y="62.645669" width="148.467011" height="187.937008"/>
+  </clipPath>
+ </defs>
+</svg>
