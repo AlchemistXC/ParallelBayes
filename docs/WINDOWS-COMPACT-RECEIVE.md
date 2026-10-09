@@ -113,7 +113,29 @@ calls and unchanged original analysis assets; SUMMARY is replaceable bookkeeping
 and is recorded separately. Mac reconstruction and final figure/PDF review are
 an independent gate; Windows technical receiver simulation is not that gate.
 
-## Current readiness
+## One-component return with a single disposable block
+
+The delivery-only finite wrapper below calls the existing frozen transport and
+draft publisher. It uploads the explicit manifest, then emits/uploads/verifies
+one block at a time. Only the exact disposable block is removed after its remote
+SHA256, size and uploaded state have been acknowledged. The Windows originals
+remain untouched. Any failure stops and retains the failed block and receipts;
+the wrapper refuses an existing administrative output directory and does not
+perform retries or publish the Release.
+
+```powershell
+& $pbPython scripts/delivery/compact_component_return.py --root $component --manifest $manifest --manifest-sha256 $manifestHash --prefix $uniqueAssetPrefix --output $freshReturnReceiptDirectory
+```
+
+The maximum live disposable block is 256 MiB and copy buffers are 1 MiB. Eight
+new artificial transport/cache safety checks and the existing 17 publisher/report
+scope checks passed together, 25/0/0, on 2026-10-10. A prior invocation used wrong
+test paths and collected no tests (exit 4); its XML/log/native end record remain
+in `output/compact-component-return-tests01`. The successful invocation and exact
+source/command record are in `output/compact-component-return-tests02`.
+These checks add no scientific repetitions and do not establish Mac intake.
+
+## Historical readiness before full-frame reconstruction
 
 The Windows technical receiver actually reconstructed 34/34 planned rows,
 then reused 34 with zero new analysis and unchanged 246 analysis files. Fifteen

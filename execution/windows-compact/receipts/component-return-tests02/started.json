@@ -1,0 +1,31 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "D:/workspace/ParallelBayes/cr/tests/handoff/test_component_return.py",
+    "D:/workspace/ParallelBayes/cr/tests/delivery/test_compact_draft_upload.py",
+    "D:/workspace/ParallelBayes/cr/tests/delivery/test_compact_report_scope.py",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "D:/workspace/ParallelBayes/cr/output/compact-component-return-tests02/temp",
+    "--junitxml",
+    "D:/workspace/ParallelBayes/cr/output/compact-component-return-tests02/tests.xml"
+  ],
+  "cost_scope": "Child process creation through actual owned cohort end; includes nested task costs, do not sum",
+  "cwd": "D:\\workspace\\ParallelBayes\\c",
+  "git_status": "",
+  "job_api_sha256": "900c0cab23154805493915aa60c91709ff6f725cd8ccf5894f0b8fc51560118f",
+  "lease": null,
+  "manager_identity": {
+    "creation_filetime": 134360469700616623,
+    "member_of_owned_job": null,
+    "pid": 6360
+  },
+  "source_commit": "3a37a891896faedc62c0d6af185bfad77696054f",
+  "source_sha256": "0e764b58e588ae85a7438063e4923c4939edbb454dc6dd9be67a6b2befeb4bc9",
+  "started_utc": "2026-10-09T19:16:10.125507+00:00",
+  "total_time_cutoff": null
+}

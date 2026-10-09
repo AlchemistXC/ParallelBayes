@@ -19,6 +19,7 @@
 | E additive draft publisher | 15 passed / 0 failed / 0 skipped (network-free safety cases) | Actual paginated read of existing draft: 52 assets, no mutations; CLI refuses overwrite/publication/foreign endpoints and checks remote SHA. Delivery-only CR source is independent from pinned C sampling source |
 | E report scope/presentation correction | 2 new cases pass; joint delivery suite 17/0/0 | Technical repetitions=0, formal compact cache n4 captions explicitly omit intervals; retained expected red 2 failures; separate renderer hash, numerical/reader dependencies and all C source unchanged |
 | E early draft metadata return | 3 new assets remote SHA/size verified | New protocol/FROZEN/compact gate only; 52 prior assets unchanged, final draft=true; complete original arrays not yet uploaded |
+| E one-component bounded return | 25 passed / 0 failed / 0 skipped, including eight new artificial cases | Single 256 MiB disposable cache; remote SHA/size/state acknowledgement before exact cache removal; failed transport stops and preserves original/block. Prior wrong test paths collected zero tests, exit 4, logs retained. Does not constitute Mac scientific intake |
 | Agent continuation | explicitly resumed after boot, 2026-10-10 04:10 JST | Actual postprocess manager PID 472 / creation FILETIME 134360466320326325; fresh directory compact-postprocess-v3. The original shutdown receipts and interrupted attempt remain unchanged. No startup or recurring automation configured |
 
 Native environment is the previously frozen Python/torch CUDA/R environment.
