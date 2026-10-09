@@ -1,0 +1,82 @@
+{
+  "known_disjoint_scientific_phase_wall_seconds": 82874.80951260001,
+  "manager_unmeasured_overhead_seconds": null,
+  "new_sampler_calls": 0,
+  "pre_shutdown_interrupted_postprocessing_wall_seconds": null,
+  "preparation_installation_validation_analysis_transfer_costs_included": false,
+  "rows": [
+    {
+      "cohort_ended": true,
+      "invocation": "7e80ccfb7e2e4bdf9a6da19114e1f693",
+      "known_wall_seconds": 3547.7881740999874,
+      "observed_job_cpu_seconds": 7740.03125,
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\compact-formal-costs-v1\\invocations\\7e80ccfb7e2e4bdf9a6da19114e1f693\\batch-0-cache\\finished.json",
+      "phase": "batch-0-cache",
+      "sha256": "fc275edf4964b655bf59377ed574b3a0a7efc6b3a4951e6134da27237c583872",
+      "task_costs_nested_not_additive": true
+    },
+    {
+      "cohort_ended": true,
+      "invocation": "7e80ccfb7e2e4bdf9a6da19114e1f693",
+      "known_wall_seconds": 21852.90339610004,
+      "observed_job_cpu_seconds": 40590.5625,
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\compact-formal-costs-v1\\invocations\\7e80ccfb7e2e4bdf9a6da19114e1f693\\batch-0-main\\finished.json",
+      "phase": "batch-0-main",
+      "sha256": "f4e810e0eb538f8a394e629a02d24a225fe831e040e4669045de5044e305bbe7",
+      "task_costs_nested_not_additive": true
+    },
+    {
+      "cohort_ended": true,
+      "invocation": "7e80ccfb7e2e4bdf9a6da19114e1f693",
+      "known_wall_seconds": 17048.073238199984,
+      "observed_job_cpu_seconds": 32668.140625,
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\compact-formal-costs-v1\\invocations\\7e80ccfb7e2e4bdf9a6da19114e1f693\\batch-1-main\\finished.json",
+      "phase": "batch-1-main",
+      "sha256": "be2867c812eae188d2f0bfbcd16c84e61accd283a47d39b98c7f6bf134bb57d5",
+      "task_costs_nested_not_additive": true
+    },
+    {
+      "cohort_ended": true,
+      "invocation": "e9534ccd76094fa787572d474cc42d88",
+      "known_wall_seconds": 3764.4487178,
+      "observed_job_cpu_seconds": 9001.484375,
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\compact-formal-costs-v1\\invocations\\e9534ccd76094fa787572d474cc42d88\\batch-1-cache\\finished.json",
+      "phase": "batch-1-cache",
+      "sha256": "9cb977af95e36f8b71f427b14b237637c62557247d58b8a637120e489d7fa9ab",
+      "task_costs_nested_not_additive": true
+    },
+    {
+      "cohort_ended": true,
+      "invocation": "e9534ccd76094fa787572d474cc42d88",
+      "known_wall_seconds": 5528.784243599999,
+      "observed_job_cpu_seconds": 10050.390625,
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\compact-formal-costs-v1\\invocations\\e9534ccd76094fa787572d474cc42d88\\batch-1-main\\finished.json",
+      "phase": "batch-1-main",
+      "sha256": "e6070e9ec6fe209731281ae1740fbf8dfe897cce3f83d834634ce1a8522f8732",
+      "task_costs_nested_not_additive": true
+    },
+    {
+      "cohort_ended": true,
+      "invocation": "e9534ccd76094fa787572d474cc42d88",
+      "known_wall_seconds": 8032.209748400004,
+      "observed_job_cpu_seconds": 18509.375,
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\compact-formal-costs-v1\\invocations\\e9534ccd76094fa787572d474cc42d88\\batch-2-cache\\finished.json",
+      "phase": "batch-2-cache",
+      "sha256": "4d00b9e63b1ead4e6acd2a6700fb80bb8aa8cb3ace802340a2e6250a26b13bdb",
+      "task_costs_nested_not_additive": true
+    },
+    {
+      "cohort_ended": true,
+      "invocation": "e9534ccd76094fa787572d474cc42d88",
+      "known_wall_seconds": 23100.6019944,
+      "observed_job_cpu_seconds": 46673.9375,
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\compact-formal-costs-v1\\invocations\\e9534ccd76094fa787572d474cc42d88\\batch-2-main\\finished.json",
+      "phase": "batch-2-main",
+      "sha256": "0cf2667ec7d9d6f30c7ff2051f402bd0c0b153e66a39ccad1b5157ac83c33bfd",
+      "task_costs_nested_not_additive": true
+    }
+  ],
+  "scope": "Known nonoverlapping scientific phase walls only; not an end-to-end research or inference-speed statistic",
+  "unknown_time_imputed": false,
+  "whole_research_wall_seconds": null
+}

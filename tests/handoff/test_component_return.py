@@ -8,8 +8,9 @@ import pytest
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT/'scripts/delivery'))
-from compact_component_return import remove_acknowledged_cache, return_component
-from compact_transfer import plan
+from compact_component_return import remove_acknowledged_cache, return_component, emit_prepared
+from compact_transfer import plan, load, emit
+from formal_runtime import fingerprint
 
 
 def receipt(name, size, digest):
@@ -76,3 +77,37 @@ def test_upload_failure_stops_preserving_block_and_original(tmp_path):
     assert (root/'data').read_bytes()==b'0123456789'
     assert (tmp_path/'return/cache/part-000000.bin').read_bytes()==b'0123'
     assert (tmp_path/'return/failed.json').is_file()
+
+
+def test_prepared_emitter_bytes_match_frozen_emitter(tmp_path):
+    root=tmp_path/'original';root.mkdir();(root/'data').write_bytes(b'0123456789')
+    manifest=tmp_path/'manifest.json';summary=plan(root,manifest,block_bytes=4)
+    digest=summary['manifest_file_sha256'];p=load(manifest,digest);signature=fingerprint(p)
+    for i in range(3):
+        old=tmp_path/f'old-{i}';new=tmp_path/f'new-{i}'
+        emit(root,manifest,digest,i,old)
+        emit_prepared(root,manifest,digest,p,signature,i,new)
+        assert old.read_bytes()==new.read_bytes()
+
+
+@pytest.mark.parametrize('which', ['file','memory'])
+def test_prepared_manifest_tampering_refused_before_writes(tmp_path,which):
+    root=tmp_path/'original';root.mkdir();(root/'data').write_bytes(b'0123456789')
+    manifest=tmp_path/'manifest.json';summary=plan(root,manifest,block_bytes=4)
+    digest=summary['manifest_file_sha256'];p=load(manifest,digest);signature=fingerprint(p)
+    if which=='file':manifest.write_bytes(manifest.read_bytes()+b' ')
+    else:p['chunks'][0]['sha256']='0'*64
+    out=tmp_path/'block'
+    with pytest.raises(ValueError):emit_prepared(root,manifest,digest,p,signature,0,out)
+    assert not out.exists() and not out.with_name('block.partial').exists()
+
+
+def test_prepared_emitter_preserves_changed_source_partial(tmp_path):
+    root=tmp_path/'original';root.mkdir();(root/'data').write_bytes(b'0123456789')
+    manifest=tmp_path/'manifest.json';summary=plan(root,manifest,block_bytes=4)
+    digest=summary['manifest_file_sha256'];p=load(manifest,digest);signature=fingerprint(p)
+    (root/'data').write_bytes(b'changed!!!')
+    out=tmp_path/'block'
+    with pytest.raises(ValueError):emit_prepared(root,manifest,digest,p,signature,0,out)
+    assert not out.exists() and out.with_name('block.partial').exists()
+    assert (root/'data').read_bytes()==b'changed!!!'

@@ -1,0 +1,32 @@
+{
+  "batch": 1,
+  "cache_replays_add_statistical_repetitions": false,
+  "closed": true,
+  "closed_is_convergence": false,
+  "controller_seconds": 57.32459559999916,
+  "counts": {
+    "active": 0,
+    "infrastructure_interruption": 0,
+    "measurement_available": 64,
+    "not_run": 0,
+    "numerical_failure": 0,
+    "output_failure_unclassified": 0,
+    "resource_failure": 0,
+    "valid": 0
+  },
+  "formal_inference_complete": false,
+  "invocation": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\driver-invocations\\c127a09e39f74a689e7d65192da45ada",
+  "missing": 0,
+  "newly_executed": 0,
+  "outcome_frame_sha256": "b5399f8adcd7902684726fdc309618206e14ad5e10d8de2871cd37c5213d4b54",
+  "phase": "cache",
+  "planned": 64,
+  "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+  "status": "closed",
+  "status_summary_is_process_proof": false,
+  "task_asset_count": 2208,
+  "task_assets_sha256": "2727a6cbecf99007ae59de505c98135bbffabf795aeb304a7efc1687c70a21e0",
+  "task_assets_unchanged": true,
+  "verify_only": true,
+  "visited": 64
+}

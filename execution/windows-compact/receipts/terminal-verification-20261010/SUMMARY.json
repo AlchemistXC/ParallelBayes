@@ -1,0 +1,79 @@
+{
+  "observed": "2026-10-10T04:42:22.9361976+09:00",
+  "phases": [
+    {
+      "batch": 0,
+      "phase": "main",
+      "planned": 1296,
+      "newly_executed": 0,
+      "task_asset_count": 39494,
+      "task_assets_sha256": "d6277baf5e844224345bbae06ad8687580dbbf834d7fbcc70d7eadafaf2772d4",
+      "receipt_sha256": "34d01cb8d975b93d56a87b4c3c2d2c1add77e7dcb8f98dd29d9251d8d0deefbb",
+      "reused_completed_check": true
+    },
+    {
+      "batch": 0,
+      "phase": "cache",
+      "planned": 64,
+      "newly_executed": 0,
+      "task_asset_count": 2208,
+      "task_assets_sha256": "e3c7e0e1875cb88451969732bb1abb411339c48e5f478e6a4e2c4964855fa1cf",
+      "receipt_sha256": "fb842cc78b286032a6d8a4c834b84cb6477d8f1bf51f6da51f87cfdafe35a079",
+      "reused_completed_check": true
+    },
+    {
+      "batch": 1,
+      "phase": "main",
+      "planned": 1296,
+      "newly_executed": 0,
+      "task_asset_count": 39530,
+      "task_assets_sha256": "ae1e37b418f1fdbe516f5095d03341e71ebc0253a7027bd268cd0e05fc3839ac",
+      "receipt_sha256": "1cfd107dd6307d7f0807dd4834563275caddd278e24396339d6c33816db772cb",
+      "reused_completed_check": false
+    },
+    {
+      "batch": 1,
+      "phase": "cache",
+      "planned": 64,
+      "newly_executed": 0,
+      "task_asset_count": 2208,
+      "task_assets_sha256": "2727a6cbecf99007ae59de505c98135bbffabf795aeb304a7efc1687c70a21e0",
+      "receipt_sha256": "378e5f2dfbe2d528bf393961711005946ae736155ccca7ec29af15be17f65ea7",
+      "reused_completed_check": false
+    },
+    {
+      "batch": 2,
+      "phase": "main",
+      "planned": 1296,
+      "newly_executed": 0,
+      "task_asset_count": 39780,
+      "task_assets_sha256": "ceff9cfe53d1ca5dd51fc00adf32a03af46c83ca97f904f830baa473f9a70b24",
+      "receipt_sha256": "fc26d3e989e3f9e780094d6bff257c61572a673fa445b0a255b8f3b11fcc1466",
+      "reused_completed_check": false
+    },
+    {
+      "batch": 2,
+      "phase": "cache",
+      "planned": 128,
+      "newly_executed": 0,
+      "task_asset_count": 4416,
+      "task_assets_sha256": "12250d32cae6a5e806c3cdb931820ad1d5f9edd71d054b5989e16c44719f53ea",
+      "receipt_sha256": "d92e73cc58c9e041f2ce345b7ed2c1bb0dcf2db72f76165aca65ec3a4afb23b4",
+      "reused_completed_check": false
+    }
+  ],
+  "new_sampler_executions": 0,
+  "original_task_assets_unchanged": true,
+  "registry": {
+    "indexed_tasks": 5239,
+    "indexed_active": 0,
+    "registered_jobs_observed": 5290,
+    "owned_active_processes": 0,
+    "raw_path": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-v3/registry/snapshot-receipt.json",
+    "receipt_sha256": "cd4c203854f6dbc0efe3c9162e3c8e844a1f35c9602dc08ba238e6269166fe95"
+  },
+  "pre_shutdown_partial_preserved": true,
+  "unknown_interrupted_outer_time": null,
+  "analysis_complete": false,
+  "independent_Mac_receive": false
+}

@@ -7,7 +7,9 @@ publishes a Release, creates a complete tar, or deletes original members.
 """
 import argparse
 from datetime import datetime, timezone
+import hashlib
 import json
+import os
 from pathlib import Path
 import re
 import sys
@@ -15,9 +17,44 @@ import time
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path[:0] = [str(ROOT/'scripts/windows'), str(ROOT/'scripts/completion')]
-from compact_transfer import load, emit
-from formal_runtime import atomic_json, file_hash
+from compact_transfer import load, safe, BUFFER
+from formal_runtime import atomic_json, file_hash, fingerprint
 from compact_draft_upload import upload
+
+
+def emit_prepared(root, manifest, manifest_sha256, p, signature, index, output):
+    """Same block format, one fully validated metadata map instead of two.
+
+    Rehash the external manifest and in-memory map on every block. Source paths,
+    sizes, content hashes and exclusive/partial output rules remain checked.
+    Receiver validation is unchanged. This is delivery-only, not frozen sampling.
+    """
+    if file_hash(manifest) != manifest_sha256 or fingerprint(p) != signature:
+        raise ValueError('Prepared transfer manifest changed; no block writes')
+    chunk=p['chunks'][index];output=Path(output)
+    partial=output.with_name(output.name+'.partial')
+    if output.exists() or partial.exists():
+        raise FileExistsError('Existing/partial block retained; fresh cache required')
+    h=hashlib.sha256()
+    with partial.open('xb') as target:
+        for seg in chunk['segments']:
+            path=safe(root,seg['path'])
+            if path.stat().st_size!=p['files'][seg['path']]['bytes']:
+                raise ValueError('Source size changed')
+            with path.open('rb') as source:
+                source.seek(seg['file_offset']);left=seg['bytes']
+                while left:
+                    data=source.read(min(BUFFER,left))
+                    if not data:raise ValueError('Source ended unexpectedly')
+                    target.write(data);h.update(data);left-=len(data)
+        target.flush();os.fsync(target.fileno())
+    if partial.stat().st_size!=chunk['bytes'] or h.hexdigest()!=chunk['sha256']:
+        raise ValueError('Source bytes differ from frozen plan; partial retained')
+    if file_hash(manifest)!=manifest_sha256:
+        raise ValueError('External manifest changed during emission; partial retained')
+    partial.rename(output)
+    return dict(index=index,bytes=chunk['bytes'],sha256=chunk['sha256'],
+        maximum_buffer_bytes=BUFFER,fully_validated_metadata_reused=True)
 
 
 def remove_acknowledged_cache(path, cache, expected, receipt, asset_name):
@@ -46,6 +83,7 @@ def return_component(root, manifest, manifest_sha256, prefix, output, *, publish
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]*', prefix):
         raise ValueError('Safe unique component asset prefix required')
     p = load(manifest, manifest_sha256)
+    prepared_signature = fingerprint(p)
     if output.exists() or output.is_relative_to(root) or root.is_relative_to(output):
         raise ValueError('Fresh, separate administrative output required')
     if p['block_limit_bytes'] > 256*1024**2:
@@ -80,7 +118,7 @@ def return_component(root, manifest, manifest_sha256, prefix, output, *, publish
         send(prefix+'-manifest.json', manifest, manifest.stat().st_size, manifest_sha256, 'manifest')
         for chunk in p['chunks']:
             name = chunk['name']; path = cache/name
-            emitted = emit(root, manifest, manifest_sha256, chunk['index'], path)
+            emitted = emit_prepared(root, manifest, manifest_sha256, p, prepared_signature, chunk['index'], path)
             atomic_json(output/(name+'.emit.json'), emitted)
             remote_name = prefix+'-'+name
             receipt = send(remote_name, path, chunk['bytes'], chunk['sha256'], name)
@@ -88,11 +126,14 @@ def return_component(root, manifest, manifest_sha256, prefix, output, *, publish
             atomic_json(output/(name+'.cache-removed.json'), dict(path=str(path),
                 bytes=chunk['bytes'], sha256=chunk['sha256'],
                 remote_sha_verified_before_removal=True, original_members_removed=0))
+        if file_hash(manifest)!=manifest_sha256 or fingerprint(p)!=prepared_signature:
+            raise ValueError('Final component manifest changed')
         result = dict(status='complete_component_remote_sha_verified',
             manifest_file_sha256=manifest_sha256, assets=assets,
             files=len(p['files']), bytes=sum(v['bytes'] for v in p['files'].values()),
             blocks=len(p['chunks']), elapsed_seconds=time.perf_counter()-began,
             original_members_removed=0, whole_tar_created=False,
+            fully_validated_metadata_reused=True,
             independent_Mac_receive=False, new_sampler_calls=0)
         atomic_json(output/'finished.json', result)
         return result

@@ -459,3 +459,28 @@ No sampling, input regeneration, numerical retry, recurring automation or
 automatic restart was initiated. The pre-shutdown partial batch-1 verification
 and unknown interrupted outer duration remain retained separately. Small
 postboot evidence is in `receipts/postprocess-resume-20261010`.
+
+All six scientific phases now have actual terminal zero-execution proofs:
+127,636 original task assets remained unchanged. Completed batch-0 proofs were
+rebound/reused; four remaining phases executed verification only. The partial
+pre-shutdown invocation was preserved. Fresh quiescent evidence again shows
+5,290 registered Jobs inactive; receipt SHA256 is
+cd4c203854f6dbc0efe3c9162e3c8e844a1f35c9602dc08ba238e6269166fe95.
+Small full-phase receipts are in `receipts/terminal-verification-20261010`.
+
+The complete formal component has 180,582 files, 19,671,228,544 bytes and 74
+bounded blocks. Transfer-manifest SHA256 is
+38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e;
+the Windows origin read-only-view manifest SHA256 is
+729c6e3fea44200fe94d52a27decf155ecfdd58c6639e258c0e6e1113dc87d1d.
+No full tar or third complete original tree was made. The receiver will generate
+its own explicitly scoped return manifest and hash after complete ingestion;
+the origin hash is not a claim of relocated or independent Mac receive.
+
+Seven disjoint, actually ended scientific command intervals total
+82,874.8095126 seconds. This includes the paused and resumed batch-1 main calls
+and is not added to nested task times. Preparation, installations, tests,
+postprocessing and return costs are separate; unmeasured manager overhead and
+the interrupted administrative wall remain unknown. It is an operational ledger,
+not an end-to-end inference speed claim. Full-frame reconstruction and statistics
+are still pending at this checkpoint.

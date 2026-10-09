@@ -135,6 +135,16 @@ in `output/compact-component-return-tests01`. The successful invocation and exac
 source/command record are in `output/compact-component-return-tests02`.
 These checks add no scientific repetitions and do not establish Mac intake.
 
+The full formal manifest contains 180,582 files and is 73,565,154 bytes. For this
+size, the delivery-only sender holds one fully validated metadata map instead
+of reparsing a second map for every block. It rehashes both the external manifest
+and the prepared map for every block, retains original source-path/size/content
+checks, and verifies final identity. Four added cases compare every emitted byte
+with the unchanged frozen sender and reject file/map/source tampering. The
+joint suite now passes 29/0/0; the earlier 25-case evidence remains at its original
+identity. Frozen C execution/transport/receiver source and payload schema remain
+unchanged. The new sender has its own committed source hash and costs.
+
 ## Historical readiness before full-frame reconstruction
 
 The Windows technical receiver actually reconstructed 34/34 planned rows,
