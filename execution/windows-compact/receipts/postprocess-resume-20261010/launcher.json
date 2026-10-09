@@ -1,0 +1,15 @@
+{
+  "Started": "2026-10-10T04:10:32.0194672+09:00",
+  "LauncherPid": 22820,
+  "LauncherCreationTime": "2026-10-10T04:10:32.0050567+09:00",
+  "Python": "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+  "Script": "D:/workspace/ParallelBayes/cr/output/compact_postprocess_resume.py",
+  "ScriptSHA256": "d93eaddf8cf9deac8ae73119426f30c9b8b6234be7b553454a1de23c5137a8fa",
+  "Arguments": [
+    "D:/workspace/ParallelBayes/cr/output/compact_postprocess_resume.py",
+    "D:/workspace/ParallelBayes/cr/output/compact-postprocess-v3"
+  ],
+  "Output": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-v3",
+  "Scope": "Single finite authorized continuation; only verify-only and read-only analysis; no sampling, recurring automation, or automatic retry",
+  "ParentPidIsNotCohortEndProof": true
+}

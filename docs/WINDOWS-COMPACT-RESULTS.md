@@ -433,3 +433,29 @@ remaining verification/read-only analysis/report/return. The finite wrapper refu
 an existing output directory; recovery must explicitly account for the old completed
 and partial steps in a new administrative directory. Do not relaunch sampling or
 repeat the completed scientific grid.
+
+## Explicit postboot continuation, 2026-10-10
+
+The user requested continuation after boot. A fresh actual native snapshot under
+the original shared host lock again observed all 5,290 registered Jobs inactive,
+with zero indexed active tasks. Its receipt SHA256 is
+4b97fa1f33a65703a78e6955dc8ffe4eda0b4a4f2b82811003bf4d8f51ba0ccd.
+The full frozen environment, accepted 253-file source inventory, 216 inputs and
+compact gate passed again without changing dependencies or the execution tree.
+There were 4,144 registered compact tasks, all already scientifically terminal.
+Observed available RAM was 21,711,298,560 bytes; CUDA free memory was
+15,488,516,096 bytes. C and D had 1,598,923,632,640 and 1,817,446,182,912 free
+bytes respectively. These observations are not future capacity guarantees.
+
+A new finite administrative continuation was launched at 04:10:32 JST. Actual
+manager PID 472 has creation FILETIME 134360466320326325; output is
+`D:/workspace/ParallelBayes/cr/output/compact-postprocess-v3`. Its orchestration
+source SHA256 is d93eaddf8cf9deac8ae73119426f30c9b8b6234be7b553454a1de23c5137a8fa.
+Before reusing batch-0 main/cache receipts, it verifies original command/log
+identities, actual cohort end receipts, and current task-file hashes. The four
+remaining phases use only the frozen CLI's verify-only mode, followed by
+read-only indexing, reconstruction, zero-reanalysis verification and reports.
+No sampling, input regeneration, numerical retry, recurring automation or
+automatic restart was initiated. The pre-shutdown partial batch-1 verification
+and unknown interrupted outer duration remain retained separately. Small
+postboot evidence is in `receipts/postprocess-resume-20261010`.

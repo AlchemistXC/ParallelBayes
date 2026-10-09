@@ -1,0 +1,51 @@
+{
+  "scope": "Postboot read-only continuation, no sampling",
+  "files": {
+    "environment-gate.json": {
+      "raw_path": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-resume-preflight-v1/environment/finished.json",
+      "sha256": "9acb9a08e8abf556c951f2f8bd1415250d8faa30f75fd9956c4f6f73995b1a88"
+    },
+    "environment.json": {
+      "raw_path": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-resume-preflight-v1/environment/environment.json",
+      "sha256": "ff7fb2f415b3b07c473cdd84eef3cd2263eb42f573994670730f635d04d02b46"
+    },
+    "probe.json": {
+      "raw_path": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-resume-preflight-v1/environment/probe.json",
+      "sha256": "2c577b37580822003fc61d6ef9e1159deea4463b2c44732897023245b6d4554d"
+    },
+    "resources.json": {
+      "raw_path": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-resume-preflight-v1/environment/resources.json",
+      "sha256": "de14ca65788a5bcae8edd913c3826efcf2217face700b3fe066f668c23a8f730"
+    },
+    "pip-freeze.txt": {
+      "raw_path": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-resume-preflight-v1/environment/pip-freeze.txt",
+      "sha256": "796a6e23b5bbdfc8d82b62ffd904a1b78cc2b0905e8439b337394af222517f9b"
+    },
+    "pip-check.txt": {
+      "raw_path": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-resume-preflight-v1/environment/pip-check.txt",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    "manager-started.json": {
+      "raw_path": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-v3/started.json",
+      "sha256": "409092b8d22cd5cd272a0bd70866e2228271a5c442b879642c1672c083241154"
+    },
+    "launcher.json": {
+      "raw_path": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-launch-v3/launcher.json",
+      "sha256": "2310806bf954867949cb4cec761779bf69b0d5a52d2990b6779eb1a97d0b2672"
+    },
+    "environment-command-ended.json": {
+      "raw_path": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-resume-preflight-v1/environment-command/finished.json",
+      "sha256": "b0a8db754697fbcf517a8af457cfeb4f1633698819d1aa893c032ea7b05cf222"
+    },
+    "registry-command-ended.json": {
+      "raw_path": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-resume-preflight-v1/registry-command/finished.json",
+      "sha256": "f95e0ce598d4b3b818f3414b5574824626e4dc8a8b00eb1170c8fa9968fb02cb"
+    }
+  },
+  "fresh_native_registry": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-resume-preflight-v1/registry",
+  "raw_registry_receipt_sha256": "4b97fa1f33a65703a78e6955dc8ffe4eda0b4a4f2b82811003bf4d8f51ba0ccd",
+  "postprocess_root": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-v3",
+  "pre_shutdown_partial_retained": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-v2",
+  "unknown_interrupted_outer_duration": null,
+  "normal_manifest_not_yet_frozen": true
+}

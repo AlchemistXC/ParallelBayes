@@ -1,0 +1,14 @@
+{
+  "bundle": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1",
+  "delivery_source": "D:\\workspace\\ParallelBayes\\cr",
+  "execution_source": "D:\\workspace\\ParallelBayes\\c",
+  "manager": {
+    "creation_filetime": 134360466320326325,
+    "member_of_owned_job": null,
+    "pid": 472
+  },
+  "new_sampling_not_authorized_by_this_script": true,
+  "source_sha256": "d93eaddf8cf9deac8ae73119426f30c9b8b6234be7b553454a1de23c5137a8fa",
+  "started": "2026-10-10T04:10:32.586207+09:00",
+  "total_time_limit": null
+}

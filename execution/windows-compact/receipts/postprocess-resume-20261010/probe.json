@@ -1,0 +1,56 @@
+{
+  "capability": [
+    12,
+    0
+  ],
+  "checks": [
+    "fp64 algebra",
+    "grad",
+    "jvp_of_grad",
+    "vmap",
+    "Cholesky",
+    "independent NumPy equality",
+    "device and dtype assertions"
+  ],
+  "compiled_arches": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "cpu_logical": 16,
+  "cpu_physical": 8,
+  "device": "cuda:0",
+  "device_memory_bytes": 17066033152,
+  "dtype": "torch.float64",
+  "gpu_name": "NVIDIA GeForce RTX 5080",
+  "gpu_verified": true,
+  "gradient_max_abs_error": 6.661338147750939e-16,
+  "machine": "AMD64",
+  "numpy": "2.2.6",
+  "nvidia_smi": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "NVIDIA GeForce RTX 5080, 616.56, 16303 MiB"
+  },
+  "os_cpu_count": 16,
+  "peak_allocated_bytes": 67118080,
+  "peak_reserved_bytes": 69206016,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+  "ram_bytes": 33346146304,
+  "requested": {
+    "cuda": true,
+    "expected_device": "RTX 5080",
+    "native_windows": true
+  },
+  "scope": "Framework operations only; no MCMC/backend/performance certification",
+  "started_utc": "2026-10-09T19:09:24Z",
+  "status": "passed",
+  "torch": "2.13.0+cu130",
+  "torch_cuda": "13.0"
+}
