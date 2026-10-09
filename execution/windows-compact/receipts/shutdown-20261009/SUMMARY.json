@@ -1,0 +1,36 @@
+{
+  "Status": "stopped_for_user_shutdown",
+  "Observed": "2026-10-09T21:58:32.9776803+09:00",
+  "ScientificMainTerminal": 3888,
+  "ScientificMainValid": 3741,
+  "ScientificNumericalFailure": 42,
+  "ScientificUnclassifiedOutputFailure": 105,
+  "CacheAvailable": 256,
+  "CacheCallsQualified": 1024,
+  "PostprocessManagerTerminatedPID": 22196,
+  "NativeJobEndProof": "All three owned postprocess Jobs absent; manager absent",
+  "SharedRegistryIndexedTasks": 5239,
+  "SharedRegistryActive": 0,
+  "SharedRegistryJobs": 5290,
+  "SharedRegistryOwnedActiveProcesses": 0,
+  "RegistryRawPath": "D:/workspace/ParallelBayes/cr/output/compact-shutdown-registry-v1",
+  "RegistryReceiptSHA256": "854fab1ba814d83b3156ac4035184b6e748e323051a2443257a38b379ff66f65",
+  "CompletedZeroExecutionChecks": [
+    "batch0-main",
+    "batch0-cache"
+  ],
+  "PartialCheck": {
+    "invocation": "729ab186b77947fdbfe8e7bdda4f9cc5",
+    "last_task": "5ef082478edeb339108c8190",
+    "newly_executed": 0,
+    "phase_closed": false,
+    "remaining": 715,
+    "visited": 581
+  },
+  "StoppedAttemptUnknownOuterDuration": null,
+  "OriginalScientificResultsAndInputsRetained": true,
+  "FrozenSource": "3a37a891896faedc62c0d6af185bfad77696054f",
+  "FrozenMarkerSHA256": "2d155e8a979cb11fcec7396f7e71296da5f4e666d37107822a44f39a224a0fa0",
+  "NoAutomaticResume": true,
+  "ResumeScope": "After user boots Windows and explicitly requests continuation: reuse completed zero-execution proofs; preserve partial verify-1-main and command logs; continue only remaining verify-only checks, manifest/index/read-only analysis/report/delivery. No sampling reexecution. The current finite wrapper cannot reuse an existing output root; inspect and adapt explicit recovery into a new administrative directory. Do not relaunch scientific compact_sequence."
+}

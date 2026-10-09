@@ -395,3 +395,41 @@ upload, with low precision because full-scale reader throughput and upload rate
 are not yet measured. It is an operational estimate only and can be revised from
 actual progress; no total task duration cutoff is introduced. Windows local
 analysis does not constitute independent Mac raw-to-figure/PDF reconstruction.
+
+## User shutdown hold, 2026-10-09 21:57 JST
+
+The user requested stopping execution before shutting down, with continuation
+after boot. Scientific sampling/cache had already ended; only finite postprocessing
+was active. The wrapper has no cooperative pause interface. Its exact manager
+PID 22196 was checked against native creation FILETIME 134360232598594564 and
+the full expected script/output command line before termination through a held
+Windows process handle. The handle signaled actual exit; original noninherited
+Job last-handle policy ended descendants. All three postprocess Jobs were then
+observed absent. No process-name kill, unrelated process termination, lock
+deletion, source switch or scientific task retry was used.
+
+Batch 0 main/cache zero-execution checks completed with unchanged original assets:
+39,494 main files and 2,208 cache files. The independent batch 1 main check was
+stopped at 581/1,296 visits with newly_executed=0. Its partially written command,
+invocation, costs and logs remain; unknown unfinished outer time stays unknown.
+This administrative interruption does not reclassify any scientific task.
+The full 3,888 main terminal outcomes and 256 cache/1,024 calls remain as above.
+The frozen source is clean and FROZEN.json still hashes to
+2d155e8a979cb11fcec7396f7e71296da5f4e666d37107822a44f39a224a0fa0.
+
+Under the original shared host lock, a fresh quiescent registry snapshot passed:
+5,239 indexed tasks, indexed_active_count=0; 51 legacy tasks, all 5,290 registered
+Jobs inactive/absent. Raw native/registry evidence remains at
+`D:/workspace/ParallelBayes/cr/output/compact-shutdown-preservation-v1` and
+`D:/workspace/ParallelBayes/cr/output/compact-shutdown-registry-v1`.
+Small checkpoint/proof copies and exact resume scope are in
+`execution/windows-compact/receipts/shutdown-20261009/SUMMARY.json`.
+
+No shutdown or restart command was issued to the operating system and no
+automatic continuation is configured. After the user boots Windows and explicitly
+requests continuation, first verify source/environment/process identities, reuse
+the completed batch-0 checks, preserve the partial batch-1 check and continue only
+remaining verification/read-only analysis/report/return. The finite wrapper refuses
+an existing output directory; recovery must explicitly account for the old completed
+and partial steps in a new administrative directory. Do not relaunch sampling or
+repeat the completed scientific grid.

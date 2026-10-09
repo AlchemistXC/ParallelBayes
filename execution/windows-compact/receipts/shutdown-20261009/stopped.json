@@ -1,0 +1,37 @@
+{
+  "status": "stopped",
+  "observed": "2026-10-09T21:55:41.201307+09:00",
+  "action": {
+    "action": "Terminated exact postprocess manager via held native handle",
+    "manager_wait_result": 0,
+    "termination_code": 57347,
+    "descendants_policy": "Original owned Jobs kill descendants on last noninherited manager handle close"
+  },
+  "manager": {
+    "state": "absent",
+    "winerror": 87
+  },
+  "jobs": {
+    "Local\\ParallelBayes-compact-command-321ff1e3211e439da5cfb9b44c155eb2": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-compact-command-321ff1e3211e439da5cfb9b44c155eb2",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-compact-command-96f3f63ed73c43a38744690ff686d7d4": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-compact-command-96f3f63ed73c43a38744690ff686d7d4",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    },
+    "Local\\ParallelBayes-compact-command-1b64782250434226bbcb623fc9ad3e75": {
+      "state": "absent",
+      "job_name": "Local\\ParallelBayes-compact-command-1b64782250434226bbcb623fc9ad3e75",
+      "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+    }
+  },
+  "owned_active_processes": 0,
+  "original_scientific_inputs_results_protocol_environment_preserved": true,
+  "current_verification_attempt_partial": true,
+  "unknown_time_not_imputed": true,
+  "automatic_resume": false,
+  "no_new_sampling": true
+}
