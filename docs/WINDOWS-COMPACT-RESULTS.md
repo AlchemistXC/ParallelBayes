@@ -1,5 +1,19 @@
 # Compact Windows freeze and native difference intake
 
+Current terminal handoff, 2026-10-10: all 3,888 main tasks ended (3,741 valid,
+42 numerical failures, 105 unclassified output failures); all 256 cache probes
+and 1,024 technical calls qualified. Scientific sampling is not running. All
+six phase checks prove zero new executions and unchanged 127,636 original task
+assets. Full formal raw evidence, including failures, actual inputs and reserves,
+has now been appended to the unchanged Windows draft: 180,582 files,
+19,671,228,544 bytes in 74 bounded blocks. Its external manifest SHA256 is
+`38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e`.
+The upload Job actually ended with zero active processes. Windows read-only
+analysis is still running; final statistical/report receipts and independent
+Mac reception remain pending. See `receipts/formal-return-20261010` and the
+receive instructions for exact assets. Historical observations below retain
+their original dates and scope.
+
 Execution remains pinned at `3a37a891896faedc62c0d6af185bfad77696054f`
 in `D:/workspace/ParallelBayes/c`, branch `codex/windows-compact-study`.
 Reports are maintained separately on `codex/windows-compact-delivery`. No

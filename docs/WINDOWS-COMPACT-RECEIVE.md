@@ -145,6 +145,34 @@ joint suite now passes 29/0/0; the earlier 25-case evidence remains at its origi
 identity. Frozen C execution/transport/receiver source and payload schema remain
 unchanged. The new sender has its own committed source hash and costs.
 
+## Complete formal raw component, 2026-10-10
+
+The existing draft now contains the complete scientific raw component:
+`windows-compact-formal-3a37a89-v1-manifest.json`, external SHA256
+`38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e`,
+and `windows-compact-formal-3a37a89-v1-part-000000.bin` through
+`windows-compact-formal-3a37a89-v1-part-000073.bin`. It holds 180,582 members,
+19,671,228,544 bytes. Every asset's actual ID/size/SHA acknowledgement is in
+`execution/windows-compact/receipts/formal-return-20261010/formal-component-upload.json`.
+All 74 blocks were SHA-verified remotely; the native command Job ended at
+2026-10-10 05:36:17 JST with zero active processes. Original members were not
+removed. This is complete remote raw transport, not independent Mac intake.
+
+Use the immutable execution branch `codex/windows-compact-study` at
+`3a37a891896faedc62c0d6af185bfad77696054f` for `compact_transfer.py`. The draft
+is `windows-completion-v2-20261005` in `AlchemistXC/ParallelBayes`; authorized
+GitHub access is required. Download its manifest and verify the SHA above. For
+each of the 74 ordinals, download only that named block into the disposable cache,
+use its manifest SHA/size and the `ingest` command above, and retain the receipt
+before removing that exact disposable block. Do not use overwrite download
+options. Final `verify` supplies the receiver's own normal manifest SHA; use
+that SHA for the read-only index, not Windows' origin-view manifest SHA.
+
+Windows full-frame analysis and later postprocessing components are still
+active/pending at this receipt. Their eventual complete catalog will bind all
+technical/failure/cost/analysis/source-history components separately. Existing
+draft attachments stay in place and the Release stays draft.
+
 ## Historical readiness before full-frame reconstruction
 
 The Windows technical receiver actually reconstructed 34/34 planned rows,

@@ -23,6 +23,13 @@
 | E large-manifest sender | 29 passed / 0 failed / 0 skipped joint checks | Four added prepared-metadata cases retain frozen sender byte equivalence and manifest/source tamper refusal; one metadata map, one disposable block. Separate delivery source only; C sampling and receiver source unchanged |
 | Agent continuation | explicitly resumed after boot, 2026-10-10 04:10 JST | Actual postprocess manager PID 472 / creation FILETIME 134360466320326325; fresh directory compact-postprocess-v3. The original shutdown receipts and interrupted attempt remain unchanged. No startup or recurring automation configured |
 
+New terminal return receipt, 2026-10-10 05:36 JST: complete formal raw component
+is remotely SHA-verified, 74/74 blocks / 180,582 files / 19,671,228,544 bytes.
+Manifest SHA `38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e`.
+Native upload Job ended, active_processes=0; no original member removed, no full
+tar, no sampler call. Full-frame Windows analysis still active; complete final
+postprocessing return and independent Mac reconstruction remain pending.
+
 Native environment is the previously frozen Python/torch CUDA/R environment.
 No dependency install or marker modification was performed. Numerical sources,
 actual arrays and failure categories are preserved. Existing local private skill
