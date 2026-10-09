@@ -338,3 +338,60 @@ and recovery verification can extend it. Full-frame analysis, figures and upload
 are excluded and remain unfinished. The exact calculation and scope are saved
 in `receipts/formal-progress/resume-duration-estimate-01.json`. No scheduled
 agent automation was configured, and no old full-grid task was resumed.
+
+## Scientific execution ended, 2026-10-09
+
+The resumed scientific sequence completed all six prespecified phases at
+2026-10-09 11:16:10.606078 JST. Its final status is
+`all_prespecified_phases_closed`. A new actual native observation at 21:33 JST
+found both original/resumed managers absent and all seven actual outer phase
+Jobs absent. This is native ownership/end evidence, not an inference from stale
+progress files or elapsed time. Receipt `status-20261009-01.json` SHA256 is
+498664e9a2733fa801ec51db6c83e36930200d060290b0053b8b712b1a95c449.
+
+| Batch | Main valid | Numerical failure | Output failure unclassified | Cache available |
+|---|---:|---:|---:|---:|
+| 0 | 1,236 | 12 | 48 | 64 |
+| 1 | 1,236 | 16 | 44 | 64 |
+| 2 | 1,269 | 14 | 13 | 128 |
+| Total | 3,741 | 42 | 105 | 256 |
+
+All 3,888 main tasks have terminal outcomes; none are unstarted, infrastructure
+interrupted or resource_failure in the saved outcome frame. All 105 unclassified
+output failures are CPU spawn-chain NUTS and keep that category; a cause has not
+been established from the saved errors. Numerical failures are 20 CPU quasi-DEER
+MALA, 20 CUDA quasi-DEER MALA, one CPU sequential MALA and one CUDA sequential
+MALA. No failure was retried or removed. Every planned cache probe was executed
+irrespective of the paired main outcome; all 1,024 saved numerical-call receipts
+have technical_output_valid=true. Cache success does not repair a failed main
+task or add posterior samples/independent repetitions. This is an execution
+qualification count, not a convergence or acceleration conclusion.
+
+The remaining work is terminal zero-execution verification, quiescent registry
+export, bounded full-member manifests, full-frame read-only reconstruction,
+paired statistics/report and complete draft return. These were not run by the
+scientific sequence itself. A separate, finite postprocessing program was
+started at 21:40:59 JST in
+`D:/workspace/ParallelBayes/cr/output/compact-postprocess-v2`; actual manager PID
+22196 has native creation FILETIME 134360232598594564. It uses the pinned source's
+six verify-only commands, requiring newly_executed=0 and unchanged original task
+assets, before creating a quiescent registry snapshot or origin read-only analysis
+view. It does not dispatch a sampler or reconstruct inputs. Native command Jobs
+include any R descendants. Raw program/log/source receipts remain outside the
+immutable scientific source tree. No recurring automation was configured.
+
+The first independent postprocessing attempt failed before launching any command
+because Path objects were passed to JSON serialization; its error handler also
+encountered an absent progress file. Original script, partial administrative
+JSON, manager record and stderr remain in compact-postprocess-v1 and its launch
+directory. Only the separate orchestration helper was repaired (string command
+arguments and initial-error preservation); the fresh v2 postprocessing directory
+does not overwrite the prior attempt. Scientific source, inputs, tolerances,
+protocol, environment and outcomes did not change. The original failure log is
+also preserved as `receipts/formal-progress/postprocess-01-failure.log`.
+
+Postprocessing is provisionally estimated at 4–8 hours including analysis and
+upload, with low precision because full-scale reader throughput and upload rate
+are not yet measured. It is an operational estimate only and can be revised from
+actual progress; no total task duration cutoff is introduced. Windows local
+analysis does not constitute independent Mac raw-to-figure/PDF reconstruction.
