@@ -1,0 +1,18 @@
+.F.....                                                                  [100%]
+=================================== FAILURES ===================================
+_______________________ test_mode_order_counterbalanced ________________________
+
+    def test_mode_order_counterbalanced():
+        tasks = timing.tasks()
+        for workflow in range(4):
+            first_modes = [next(t["audit"] for t in tasks if t["workflow"] == workflow and t["block"] == b)
+                           for b in range(4)]
+>           assert first_modes.count(True) == 2
+E           assert 0 == 2
+E            +  where 0 = <built-in method count of list object at 0x10b6cc500>(True)
+E            +    where <built-in method count of list object at 0x10b6cc500> = [False, False, False, False].count
+
+output/r-frontend-timing-dev/tests/analysis/test_r_frontend_timing.py:28: AssertionError
+=========================== short test summary info ============================
+FAILED output/r-frontend-timing-dev/tests/analysis/test_r_frontend_timing.py::test_mode_order_counterbalanced
+1 failed, 6 passed in 0.24s

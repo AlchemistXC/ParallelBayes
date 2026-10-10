@@ -1,0 +1,18 @@
+{
+  "schema": "r-frontend-preparation-v1",
+  "status": "prepared_not_measured",
+  "final_tests": {
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0
+  },
+  "initial_tests": {
+    "passed": 6,
+    "failed": 1
+  },
+  "R_parse_passed": true,
+  "new_sampler_calls": 0,
+  "planned_maximum_sampler_calls": 64,
+  "formal_repetitions_added": 0,
+  "requires": "Actual intake and reconstruction completion before measurement"
+}
