@@ -1,0 +1,14 @@
+{
+  "member_files": 170,
+  "inputs": 169,
+  "all_matched": true,
+  "source_commit": "699e645af9051a4ef47c3e40bedd28d741e2e689",
+  "source_worktree_dirty": false,
+  "archive_sha256": "f15972b2d59d49138c877cbe06dcb44545c029e5ec41eb31fdc55d3fa361fb12",
+  "complete_results_inputs_unchanged": {
+    "source_manifest_sha256": "ddfe88051602c13314f1d95d9544197e51d756bd2607bd6f2cddd1af5290ba1f",
+    "files": 129,
+    "scope": "All report TeX, figure PDFs and CSV source tables; no raw trajectories"
+  },
+  "previous_extraction_attempt": "Default host Python lacked tar filter argument; no files extracted, final validation uses existing Python 3.12 environment"
+}

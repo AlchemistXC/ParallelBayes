@@ -12,7 +12,7 @@
     "execution": "3a37a891896faedc62c0d6af185bfad77696054f",
     "delivery": "94bebec95177b03f0497d748cbc9f54a45492ce4",
     "pre_revision_manuscript": "2762b20577449f602853a472c2a2809ff59055bc",
-    "current_manuscript_identity": "targeted-paper-companion-v3; final delivery hashes in its record"
+    "current_manuscript_identity": "manuscript-review-v3 / targeted-paper-v4; delivery in benchmark/analysis/outputs/manuscript-review-v3/delivery.json"
   },
   "main": {
     "planned": 3888,
@@ -40,13 +40,13 @@
   },
   "paper": {
     "main_pages": 18,
-    "supplement_pages": 42,
+    "supplement_pages": 45,
     "complete_results_pages": 67,
     "author_metadata_pending": true,
-    "revision": "targeted-paper-companion-v1",
-    "review": "docs/TARGETED-FOLLOWUPS-PAPER.md",
+    "revision": "targeted-paper-v4",
+    "review": "docs/MANUSCRIPT-REVIEW-V3.md",
     "delivery": "docs/TARGETED-FOLLOWUPS-PAPER.md",
-    "current_identity": "targeted-paper-companion-v3",
+    "current_identity": "targeted-paper-v4",
     "portable_rebuild_passed": true
   },
   "remaining_author_decisions": [
@@ -149,5 +149,17 @@
       },
       "delivery": "benchmark/analysis/outputs/targeted-paper-companion-v3/delivery.json"
     }
+  },
+  "third_review": {
+    "status": "complete",
+    "date": "2026-10-11",
+    "new_formal_repetitions": 0,
+    "actual_api_technical_calls": 2,
+    "frozen_protocol_changes": 0,
+    "portable_rebuild_passed": true,
+    "report": "docs/MANUSCRIPT-REVIEW-V3.md",
+    "delivery": "benchmark/analysis/outputs/manuscript-review-v3/delivery.json",
+    "previous_current_status_snapshot": "execution/CURRENT-SCOPE-through-2026-10-11-paper-v3.json",
+    "controlled_reviewer_original_access_pending": true
   }
 }

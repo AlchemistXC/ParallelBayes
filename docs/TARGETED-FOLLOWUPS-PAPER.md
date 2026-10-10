@@ -9,6 +9,9 @@
 - [完整结果附录67页，原样保留](../output/software-paper/完整结果附录-审查修订v2.pdf)
 - [本地v4完整编译输入包](../output/software-paper/parallelbayes-targeted-paper-v4.tar)；最终大小、哈希和独立目录重编译见[交付清单](../benchmark/analysis/outputs/manuscript-review-v3/delivery.json)。
 
+
+本地v4包为17,387,520字节，169个内容输入（另加清单），SHA256 `f15972b2d59d49138c877cbe06dcb44545c029e5ec41eb31fdc55d3fa361fb12`；构建源为`699e645`。独立解包后两PDF全部63页文本和72 dpi像素一致，同机Tectonic 0.17.0。PDF字节因ID/元数据可能不同，未称异机实验复现。包未上传或公开；源码、PDF及小型核对依据随研究分支保存。
+
 论文构建与原始实验复现分开。原件公开/受控访问目前尚待作者决定，见[材料访问说明](REVIEWER-ACCESS.md)。下列v3及以前交付均为历史版本，旧PDF、原始文件与哈希不覆盖。
 
 ## 历史交付：四项补充完成，v3

@@ -1,0 +1,23 @@
+{
+  "identity": "manuscript-review-v3-portable-v4",
+  "same_host_only": true,
+  "comparison": "Page text plus raster at 72 dpi; PDF binary hashes may differ due to metadata/IDs",
+  "pdfs": {
+    "main": {
+      "pages": 18,
+      "all_page_text_equal": true,
+      "all_72dpi_pixels_equal": true,
+      "original_sha256": "155d184ec5cc2d52f12c5a84d843fc5b29dd563b95ebe80208523e1f2daa99db",
+      "rebuilt_sha256": "94abda288e7d634e72534c96bcaf6bd3bca48adeb72174b12bb9b7b70e6bb561",
+      "compiler": "Tectonic 0.17.0"
+    },
+    "si": {
+      "pages": 45,
+      "all_page_text_equal": true,
+      "all_72dpi_pixels_equal": true,
+      "original_sha256": "a795e5423cc2c2803cf2c45904ea0aa9316c32b091be7e58fc1bf467b042293d",
+      "rebuilt_sha256": "2477e21ae52aa0de3b8b2072dc861744f51fb4e6139539ea25be419cd4b788e5",
+      "compiler": "Tectonic 0.17.0"
+    }
+  }
+}

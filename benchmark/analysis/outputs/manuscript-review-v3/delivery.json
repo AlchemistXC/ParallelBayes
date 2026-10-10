@@ -1,0 +1,87 @@
+{
+  "identity": "manuscript-review-v3-targeted-paper-v4",
+  "source_commit_for_build": "699e645af9051a4ef47c3e40bedd28d741e2e689",
+  "source_clean_when_packaged": true,
+  "pdfs": [
+    {
+      "file": "output/software-paper/软件与基准研究-审查修订v4.pdf",
+      "bytes": 588240,
+      "sha256": "155d184ec5cc2d52f12c5a84d843fc5b29dd563b95ebe80208523e1f2daa99db",
+      "pages": 18
+    },
+    {
+      "file": "output/software-paper/补充材料-审查修订v4.pdf",
+      "bytes": 849099,
+      "sha256": "a795e5423cc2c2803cf2c45904ea0aa9316c32b091be7e58fc1bf467b042293d",
+      "pages": 45
+    }
+  ],
+  "portable_inputs": {
+    "archive": "parallelbayes-targeted-paper-v4.tar",
+    "bytes": 17387520,
+    "sha256": "f15972b2d59d49138c877cbe06dcb44545c029e5ec41eb31fdc55d3fa361fb12",
+    "files": 170
+  },
+  "portable_inputs_content_files": 169,
+  "raw_experiment_reproduction": false,
+  "rebuild": {
+    "identity": "manuscript-review-v3-portable-v4",
+    "same_host_only": true,
+    "comparison": "Page text plus raster at 72 dpi; PDF binary hashes may differ due to metadata/IDs",
+    "pdfs": {
+      "main": {
+        "pages": 18,
+        "all_page_text_equal": true,
+        "all_72dpi_pixels_equal": true,
+        "original_sha256": "155d184ec5cc2d52f12c5a84d843fc5b29dd563b95ebe80208523e1f2daa99db",
+        "rebuilt_sha256": "94abda288e7d634e72534c96bcaf6bd3bca48adeb72174b12bb9b7b70e6bb561",
+        "compiler": "Tectonic 0.17.0"
+      },
+      "si": {
+        "pages": 45,
+        "all_page_text_equal": true,
+        "all_72dpi_pixels_equal": true,
+        "original_sha256": "a795e5423cc2c2803cf2c45904ea0aa9316c32b091be7e58fc1bf467b042293d",
+        "rebuilt_sha256": "2477e21ae52aa0de3b8b2072dc861744f51fb4e6139539ea25be419cd4b788e5",
+        "compiler": "Tectonic 0.17.0"
+      }
+    }
+  },
+  "numerical_reporting_checks": {
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "checks": [
+      "saved_outputs_rebuild_byte_identical",
+      "relocated_saved_evidence_same_outputs",
+      "tampered_tail_rejected_before_output",
+      "iid_decimal_and_directed_rounding_independently_checked"
+    ],
+    "scope": "Saved-data reporting checks only; no sampling, target evaluation, frozen source changes or benchmark replication",
+    "script_sha256": "074a4ba09d49907cb9632d72da7a34031ed80fe45918910735b542048cb99487"
+  },
+  "actual_public_api_calls": 2,
+  "new_formal_repetitions": 0,
+  "new_W1_integrand_evaluations": 0,
+  "scientific_results_and_protocols_changed": false,
+  "raw_public_release_performed": false,
+  "paper_tar_uploaded": false,
+  "remaining": "Human author information, final review and actual controlled/public original-evidence access",
+  "corrections_preserved": [
+    {
+      "stage": "Initial SI compile",
+      "issue": "An escaped texttt became a tab and caused overflow",
+      "resolution": "Template corrected/regenerated and final compile has zero warnings"
+    },
+    {
+      "stage": "First local paper build",
+      "issue": "TeX EOF whitespace warning",
+      "resolution": "Unpublished first build retained, normalized source and final archive bound to clean 699e645"
+    },
+    {
+      "stage": "Initial extraction",
+      "issue": "Default Python did not support tar filter, leaving empty destination; subsequent compile found no source",
+      "resolution": "Existing Python 3.12 used to extract to a fresh directory and verify every member before final compilation"
+    }
+  ]
+}
