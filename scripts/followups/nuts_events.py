@@ -16,6 +16,25 @@ def sha(path):
     with Path(path).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 
 
+
+def portable_manifest(hashes):
+    """Interpret archived Windows separators without rewriting signed files.
+
+    New manifests use POSIX paths. Legacy backslashes are accepted only for
+    unambiguous relative names; aliases, drives and traversal are rejected.
+    """
+    result = {}
+    for name, digest in hashes.items():
+        if not isinstance(name, str):
+            raise ValueError('Unsafe relative path: non-string name')
+        canonical = name.replace('\\', '/')
+        if ':' in canonical or any(part in ('', '.', '..') for part in canonical.split('/')):
+            raise ValueError('Unsafe relative path: ' + name)
+        if canonical in result:
+            raise ValueError('Duplicate portable path: ' + canonical)
+        result[canonical] = digest
+    return result
+
 def jsonable(value):
     if isinstance(value,np.ndarray):return value.tolist()
     if isinstance(value,np.generic):return value.item()

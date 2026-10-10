@@ -2,6 +2,8 @@
 
 先阅读 AGENTS.md、docs/TARGETED-FOLLOWUPS-PLAN.md 的 S2、handoff/windows-nuts-localization/README.md，以及 scripts/followups 的协调器、阶段记录与运行器。当前 Mac 便携检查不能替代 Windows 原生资格。选择最新 codex/research-integration 源码，建立 codex/windows-nuts-localization 分支；保留本机其他未提交工作。技能可选用本机已安装的研究统计、实验日志与代码审查技能，使用前读取其说明；技能缺失不阻止这项有限工作。
 
+本轮源码于2026-10-11补充了Windows/Mac路径兼容修订，输入包哈希不变。若尚未开始原生资格和冻结，请先取开发分支最新源码；若已有冻结协议或运行中调用，先保留当前源码、原协议和任务登记，不直接合并更新，也不重置调用配额。按既定兼容性修复及资格规则决定后续版本，Mac可以只读核验旧式Windows清单。
+
 确认已经取得输入包 windows-nuts-localization-inputs-v1.tar 和 receipt，逐成员校验并解压到新目录。缺包时不要重新生成九个输入，也不要启动旧提示词；说明缺少的具体材料。源码只提交第一方工具、协议、摘要和文档；大数组、私有技能和环境留在 Git 外。
 
 按 README 逐阶段操作：prepare → check → diagnostics → qualify → freeze → run → verify → analyze → export。定位原有 Python 3.12 环境与 Rscript/包库，保持其依赖版本，不运行升级安装。核对并使用原项目共同的 host lock，不另造锁绕过运行中的研究。每条命令检查退出码。prepare 输出完整依赖清单和实际 RNG 状态；四条件共享每条链的 Python、NumPy、torch CPU RNG 状态，不能只比较整数种子。

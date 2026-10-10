@@ -1,0 +1,316 @@
+FFFFFF                                                                   [100%]
+=================================== FAILURES ===================================
+_____ test_archived_windows_manifest_is_read_only_and_still_detects_tamper _____
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_archived_windows_manifest0')
+
+    def test_archived_windows_manifest_is_read_only_and_still_detects_tamper(tmp_path):
+        outcome = windows_fixture(tmp_path)
+        before = {p.relative_to(tmp_path).as_posix(): sha(p)
+                  for p in tmp_path.rglob('*') if p.is_file()}
+>       assert verify(tmp_path, outcome) == 2
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/handoff/test_nuts_localization_portability.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+root = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_archived_windows_manifest0')
+outcome = {'checksums_sha256': '530c1a52f9de6d9ce231773f152c6a9c4b74faba5418e751ad1dd4e5139bdab7', 'kernel_terminal_verified': True, 'managed_active_processes': 0, 'posterior_samples_eligible': False, ...}
+
+    def verify(root,outcome):
+        if sha(root/'checksums.json')!=outcome['checksums_sha256']:raise ValueError('Call integrity manifest differs')
+        values=json.loads((root/'checksums.json').read_text())
+        actual={str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and p!=root/'checksums.json'}
+>       if actual!=set(values):raise ValueError('Call asset set differs')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Call asset set differs
+
+scripts/followups/nuts_runtime.py:51: ValueError
+___ test_manifest_rejects_ambiguous_or_escaping_paths[chain-0/evidence.txt] ____
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou0')
+alias = 'chain-0/evidence.txt'
+
+    @pytest.mark.parametrize('alias', ['chain-0/evidence.txt', '../outside.txt',
+                                      '..\\outside.txt', 'C:\\outside.txt',
+                                      '/outside.txt'])
+    def test_manifest_rejects_ambiguous_or_escaping_paths(tmp_path, alias):
+        outcome = windows_fixture(tmp_path)
+        manifest = tmp_path / 'checksums.json'
+        hashes = json.loads(manifest.read_text())
+        hashes[alias] = hashes['chain-0\\evidence.txt']
+        atomic_json(manifest, hashes)
+        outcome['checksums_sha256'] = sha(manifest)
+        with pytest.raises(ValueError, match='Duplicate portable path|Unsafe relative path'):
+>           verify(tmp_path, outcome)
+
+tests/handoff/test_nuts_localization_portability.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+root = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou0')
+outcome = {'checksums_sha256': 'f161032bbbb7316e5280455cbad8925e6ad8976fab873dde8dc13e4f689d741c', 'kernel_terminal_verified': True, 'managed_active_processes': 0, 'posterior_samples_eligible': False, ...}
+
+    def verify(root,outcome):
+        if sha(root/'checksums.json')!=outcome['checksums_sha256']:raise ValueError('Call integrity manifest differs')
+        values=json.loads((root/'checksums.json').read_text())
+        actual={str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and p!=root/'checksums.json'}
+>       if actual!=set(values):raise ValueError('Call asset set differs')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Call asset set differs
+
+scripts/followups/nuts_runtime.py:51: ValueError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou0')
+alias = 'chain-0/evidence.txt'
+
+    @pytest.mark.parametrize('alias', ['chain-0/evidence.txt', '../outside.txt',
+                                      '..\\outside.txt', 'C:\\outside.txt',
+                                      '/outside.txt'])
+    def test_manifest_rejects_ambiguous_or_escaping_paths(tmp_path, alias):
+        outcome = windows_fixture(tmp_path)
+        manifest = tmp_path / 'checksums.json'
+        hashes = json.loads(manifest.read_text())
+        hashes[alias] = hashes['chain-0\\evidence.txt']
+        atomic_json(manifest, hashes)
+        outcome['checksums_sha256'] = sha(manifest)
+>       with pytest.raises(ValueError, match='Duplicate portable path|Unsafe relative path'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'Duplicate portable path|Unsafe relative path'
+E        Input: 'Call asset set differs'
+
+tests/handoff/test_nuts_localization_portability.py:49: AssertionError
+______ test_manifest_rejects_ambiguous_or_escaping_paths[../outside.txt] _______
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou1')
+alias = '../outside.txt'
+
+    @pytest.mark.parametrize('alias', ['chain-0/evidence.txt', '../outside.txt',
+                                      '..\\outside.txt', 'C:\\outside.txt',
+                                      '/outside.txt'])
+    def test_manifest_rejects_ambiguous_or_escaping_paths(tmp_path, alias):
+        outcome = windows_fixture(tmp_path)
+        manifest = tmp_path / 'checksums.json'
+        hashes = json.loads(manifest.read_text())
+        hashes[alias] = hashes['chain-0\\evidence.txt']
+        atomic_json(manifest, hashes)
+        outcome['checksums_sha256'] = sha(manifest)
+        with pytest.raises(ValueError, match='Duplicate portable path|Unsafe relative path'):
+>           verify(tmp_path, outcome)
+
+tests/handoff/test_nuts_localization_portability.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+root = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou1')
+outcome = {'checksums_sha256': 'ccd2a71525d2897e5280e5b1a2c6f9763c5ee477f03429b490657d3ac0a5a7a8', 'kernel_terminal_verified': True, 'managed_active_processes': 0, 'posterior_samples_eligible': False, ...}
+
+    def verify(root,outcome):
+        if sha(root/'checksums.json')!=outcome['checksums_sha256']:raise ValueError('Call integrity manifest differs')
+        values=json.loads((root/'checksums.json').read_text())
+        actual={str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and p!=root/'checksums.json'}
+>       if actual!=set(values):raise ValueError('Call asset set differs')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Call asset set differs
+
+scripts/followups/nuts_runtime.py:51: ValueError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou1')
+alias = '../outside.txt'
+
+    @pytest.mark.parametrize('alias', ['chain-0/evidence.txt', '../outside.txt',
+                                      '..\\outside.txt', 'C:\\outside.txt',
+                                      '/outside.txt'])
+    def test_manifest_rejects_ambiguous_or_escaping_paths(tmp_path, alias):
+        outcome = windows_fixture(tmp_path)
+        manifest = tmp_path / 'checksums.json'
+        hashes = json.loads(manifest.read_text())
+        hashes[alias] = hashes['chain-0\\evidence.txt']
+        atomic_json(manifest, hashes)
+        outcome['checksums_sha256'] = sha(manifest)
+>       with pytest.raises(ValueError, match='Duplicate portable path|Unsafe relative path'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'Duplicate portable path|Unsafe relative path'
+E        Input: 'Call asset set differs'
+
+tests/handoff/test_nuts_localization_portability.py:49: AssertionError
+______ test_manifest_rejects_ambiguous_or_escaping_paths[..\\outside.txt] ______
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou2')
+alias = '..\\outside.txt'
+
+    @pytest.mark.parametrize('alias', ['chain-0/evidence.txt', '../outside.txt',
+                                      '..\\outside.txt', 'C:\\outside.txt',
+                                      '/outside.txt'])
+    def test_manifest_rejects_ambiguous_or_escaping_paths(tmp_path, alias):
+        outcome = windows_fixture(tmp_path)
+        manifest = tmp_path / 'checksums.json'
+        hashes = json.loads(manifest.read_text())
+        hashes[alias] = hashes['chain-0\\evidence.txt']
+        atomic_json(manifest, hashes)
+        outcome['checksums_sha256'] = sha(manifest)
+        with pytest.raises(ValueError, match='Duplicate portable path|Unsafe relative path'):
+>           verify(tmp_path, outcome)
+
+tests/handoff/test_nuts_localization_portability.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+root = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou2')
+outcome = {'checksums_sha256': 'beb966692fcbc48220c3efcf630b22b643e1ae42c4fc3aa5516cb339879139d7', 'kernel_terminal_verified': True, 'managed_active_processes': 0, 'posterior_samples_eligible': False, ...}
+
+    def verify(root,outcome):
+        if sha(root/'checksums.json')!=outcome['checksums_sha256']:raise ValueError('Call integrity manifest differs')
+        values=json.loads((root/'checksums.json').read_text())
+        actual={str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and p!=root/'checksums.json'}
+>       if actual!=set(values):raise ValueError('Call asset set differs')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Call asset set differs
+
+scripts/followups/nuts_runtime.py:51: ValueError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou2')
+alias = '..\\outside.txt'
+
+    @pytest.mark.parametrize('alias', ['chain-0/evidence.txt', '../outside.txt',
+                                      '..\\outside.txt', 'C:\\outside.txt',
+                                      '/outside.txt'])
+    def test_manifest_rejects_ambiguous_or_escaping_paths(tmp_path, alias):
+        outcome = windows_fixture(tmp_path)
+        manifest = tmp_path / 'checksums.json'
+        hashes = json.loads(manifest.read_text())
+        hashes[alias] = hashes['chain-0\\evidence.txt']
+        atomic_json(manifest, hashes)
+        outcome['checksums_sha256'] = sha(manifest)
+>       with pytest.raises(ValueError, match='Duplicate portable path|Unsafe relative path'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'Duplicate portable path|Unsafe relative path'
+E        Input: 'Call asset set differs'
+
+tests/handoff/test_nuts_localization_portability.py:49: AssertionError
+______ test_manifest_rejects_ambiguous_or_escaping_paths[C:\\outside.txt] ______
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou3')
+alias = 'C:\\outside.txt'
+
+    @pytest.mark.parametrize('alias', ['chain-0/evidence.txt', '../outside.txt',
+                                      '..\\outside.txt', 'C:\\outside.txt',
+                                      '/outside.txt'])
+    def test_manifest_rejects_ambiguous_or_escaping_paths(tmp_path, alias):
+        outcome = windows_fixture(tmp_path)
+        manifest = tmp_path / 'checksums.json'
+        hashes = json.loads(manifest.read_text())
+        hashes[alias] = hashes['chain-0\\evidence.txt']
+        atomic_json(manifest, hashes)
+        outcome['checksums_sha256'] = sha(manifest)
+        with pytest.raises(ValueError, match='Duplicate portable path|Unsafe relative path'):
+>           verify(tmp_path, outcome)
+
+tests/handoff/test_nuts_localization_portability.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+root = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou3')
+outcome = {'checksums_sha256': '53cd1e03cc31829d095c2cbbfb6d8f08dd67228e6efadc15f840fe2ad4037b45', 'kernel_terminal_verified': True, 'managed_active_processes': 0, 'posterior_samples_eligible': False, ...}
+
+    def verify(root,outcome):
+        if sha(root/'checksums.json')!=outcome['checksums_sha256']:raise ValueError('Call integrity manifest differs')
+        values=json.loads((root/'checksums.json').read_text())
+        actual={str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and p!=root/'checksums.json'}
+>       if actual!=set(values):raise ValueError('Call asset set differs')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Call asset set differs
+
+scripts/followups/nuts_runtime.py:51: ValueError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou3')
+alias = 'C:\\outside.txt'
+
+    @pytest.mark.parametrize('alias', ['chain-0/evidence.txt', '../outside.txt',
+                                      '..\\outside.txt', 'C:\\outside.txt',
+                                      '/outside.txt'])
+    def test_manifest_rejects_ambiguous_or_escaping_paths(tmp_path, alias):
+        outcome = windows_fixture(tmp_path)
+        manifest = tmp_path / 'checksums.json'
+        hashes = json.loads(manifest.read_text())
+        hashes[alias] = hashes['chain-0\\evidence.txt']
+        atomic_json(manifest, hashes)
+        outcome['checksums_sha256'] = sha(manifest)
+>       with pytest.raises(ValueError, match='Duplicate portable path|Unsafe relative path'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'Duplicate portable path|Unsafe relative path'
+E        Input: 'Call asset set differs'
+
+tests/handoff/test_nuts_localization_portability.py:49: AssertionError
+_______ test_manifest_rejects_ambiguous_or_escaping_paths[/outside.txt] ________
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou4')
+alias = '/outside.txt'
+
+    @pytest.mark.parametrize('alias', ['chain-0/evidence.txt', '../outside.txt',
+                                      '..\\outside.txt', 'C:\\outside.txt',
+                                      '/outside.txt'])
+    def test_manifest_rejects_ambiguous_or_escaping_paths(tmp_path, alias):
+        outcome = windows_fixture(tmp_path)
+        manifest = tmp_path / 'checksums.json'
+        hashes = json.loads(manifest.read_text())
+        hashes[alias] = hashes['chain-0\\evidence.txt']
+        atomic_json(manifest, hashes)
+        outcome['checksums_sha256'] = sha(manifest)
+        with pytest.raises(ValueError, match='Duplicate portable path|Unsafe relative path'):
+>           verify(tmp_path, outcome)
+
+tests/handoff/test_nuts_localization_portability.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+root = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou4')
+outcome = {'checksums_sha256': '05955ab1c7789024f6e37539c508ccc1abdbe8aa2acc70e3572d28a4d97d32dd', 'kernel_terminal_verified': True, 'managed_active_processes': 0, 'posterior_samples_eligible': False, ...}
+
+    def verify(root,outcome):
+        if sha(root/'checksums.json')!=outcome['checksums_sha256']:raise ValueError('Call integrity manifest differs')
+        values=json.loads((root/'checksums.json').read_text())
+        actual={str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and p!=root/'checksums.json'}
+>       if actual!=set(values):raise ValueError('Call asset set differs')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Call asset set differs
+
+scripts/followups/nuts_runtime.py:51: ValueError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/private/var/folders/gv/dfzdj0l16ks_jlqb52rq33br0000gn/T/pytest-of-haku/pytest-77/test_manifest_rejects_ambiguou4')
+alias = '/outside.txt'
+
+    @pytest.mark.parametrize('alias', ['chain-0/evidence.txt', '../outside.txt',
+                                      '..\\outside.txt', 'C:\\outside.txt',
+                                      '/outside.txt'])
+    def test_manifest_rejects_ambiguous_or_escaping_paths(tmp_path, alias):
+        outcome = windows_fixture(tmp_path)
+        manifest = tmp_path / 'checksums.json'
+        hashes = json.loads(manifest.read_text())
+        hashes[alias] = hashes['chain-0\\evidence.txt']
+        atomic_json(manifest, hashes)
+        outcome['checksums_sha256'] = sha(manifest)
+>       with pytest.raises(ValueError, match='Duplicate portable path|Unsafe relative path'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'Duplicate portable path|Unsafe relative path'
+E        Input: 'Call asset set differs'
+
+tests/handoff/test_nuts_localization_portability.py:49: AssertionError
+=========================== short test summary info ============================
+FAILED tests/handoff/test_nuts_localization_portability.py::test_archived_windows_manifest_is_read_only_and_still_detects_tamper
+FAILED tests/handoff/test_nuts_localization_portability.py::test_manifest_rejects_ambiguous_or_escaping_paths[chain-0/evidence.txt]
+FAILED tests/handoff/test_nuts_localization_portability.py::test_manifest_rejects_ambiguous_or_escaping_paths[../outside.txt]
+FAILED tests/handoff/test_nuts_localization_portability.py::test_manifest_rejects_ambiguous_or_escaping_paths[..\\outside.txt]
+FAILED tests/handoff/test_nuts_localization_portability.py::test_manifest_rejects_ambiguous_or_escaping_paths[C:\\outside.txt]
+FAILED tests/handoff/test_nuts_localization_portability.py::test_manifest_rejects_ambiguous_or_escaping_paths[/outside.txt]
+6 failed in 0.20s

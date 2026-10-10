@@ -73,7 +73,7 @@ def analyze(root,output):
                 sample_persisted=0 if sample is None else len(sample),
                 baseline_status=metadata['status'] if metadata else None,
                 diagnostic_record_available=bool(metadata and metadata.get('chain_records')),
-                metadata_file=str((folder/'result-metadata.json').relative_to(root)) if metadata else None))
+                metadata_file=(folder/'result-metadata.json').relative_to(root).as_posix() if metadata else None))
     for model in MODELS:
         selected=[r for r in records if r['phase']=='main' and r['request']['model']==model]
         for left,right in itertools.combinations(selected,2):

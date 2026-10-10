@@ -15,7 +15,7 @@ import subprocess
 import sys
 import xml.etree.ElementTree as ET
 import numpy as np
-from nuts_events import atomic_json,sha
+from nuts_events import atomic_json,sha,portable_manifest
 from nuts_instrumented_worker import require_windows,prepare_rng_states
 from nuts_registry import Registry,fingerprint,schedule,MODELS,CONDITIONS
 from nuts_runtime import host_lease,execute,recover,verify
@@ -30,7 +30,7 @@ PREPARED_INPUT_MANIFEST_SHA256='d92824d78f352295449d80556368fd9ee3bed1e9b7af2d04
 def read(path):return json.loads(Path(path).read_text())
 
 def verify_files(root,hashes):
-    for name,digest in hashes.items():
+    for name,digest in portable_manifest(hashes).items():
         path=root/name
         if not path.resolve().is_relative_to(root.resolve()) or path.is_symlink() or sha(path)!=digest:
             raise ValueError('Input/source checksum differs: '+name)
@@ -43,7 +43,7 @@ def source_paths():
     paths.update(ROOT/p for p in ('examples/external_wells.py','examples/affine_target.py',
         'scripts/windows/job_objects.py','scripts/completion/posterior_diagnostics.R',
         'tests/windows/test_nuts_localization_job.py','tests/windows/test_job_objects.py'))
-    return sorted(str(p.relative_to(ROOT)) for p in paths)
+    return sorted(p.relative_to(ROOT).as_posix() for p in paths)
 
 
 def binding(study):
@@ -74,7 +74,7 @@ def binding(study):
 def baseline_files(case):
     names=['scripts/completion/inference_nuts.py','scripts/completion/inference_parallel_nuts.py',
         'examples/affine_target.py','examples/external_wells.py']
-    names.extend(str(p.relative_to(ROOT)) for p in (ROOT/'r-package/inst/python/parallelbayes').rglob('*.py'))
+    names.extend(p.relative_to(ROOT).as_posix() for p in (ROOT/'r-package/inst/python/parallelbayes').rglob('*.py'))
     old=case['source_capsule']['source_files']
     for name in names:
         if name not in old or sha(ROOT/name)!=old[name]:raise ValueError('Frozen baseline implementation changed: '+name)
@@ -125,7 +125,7 @@ def prepare(inputs,root,rscript,r_library):
     atomic_json(root/'prepared-cases'/'Q2.json',fixture);prepare_rng_states(fixture['chain_seeds'],root/'rng'/'Q2.json')
     atomic_json(root/'bindings'/f"{current['binding_sha256']}.json",current)
     atomic_json(root/'schedule.json',schedule(study['schedule_seed']))
-    prepared={str(p.relative_to(root)):sha(p) for prefix in ('inputs','rng','prepared-cases','environment') for p in (root/prefix).rglob('*') if p.is_file()}
+    prepared={p.relative_to(root).as_posix():sha(p) for prefix in ('inputs','rng','prepared-cases','environment') for p in (root/prefix).rglob('*') if p.is_file()}
     prepared['schedule.json']=sha(root/'schedule.json');atomic_json(root/'prepared-checksums.json',prepared)
     r=Registry(root/'calls.sqlite',study);r.close()
     print(json.dumps(dict(status='prepared',new_sampler_calls=0,cases=9,rng_streams=40)),flush=True)

@@ -6,7 +6,7 @@
 |---|---|---|---|
 | P 计划 | 完成 | 范围、输入规则、资源及终态一致；两位独立审查 | docs/TARGETED-FOLLOWUPS-PLAN.md、PLAN.json、selection.json |
 | S1 H1函数差 | complete | 80项/3200函数行；恢复新增0；42旧失败不变 | docs/H1-FUNCTION-PATH-RESULTS.md；对应delivery.json |
-| S2 NUTS故障定位 | handoff_prepared | 14项便携检查通过；Windows实际通过Job及四条件资格后冻结 | handoff/windows-nuts-localization/README.md；qualification/nuts-portable-qualification.json |
+| S2 NUTS故障定位 | handoff_prepared | 21项便携检查通过；Windows实际通过Job及四条件资格后冻结 | handoff/windows-nuts-localization/README.md；qualification/nuts-portable-qualification.json |
 | S3A W1参考 | running | 21项检查通过；冻结后运行两种积分组织，随后独立核对及参考敏感性分析 | benchmark/protocols/w1-reference-enclosure-v1.json；无最终W1认证结果 |
 | S3B L2参考 | complete | 2097152正式点+16384试探；633资产恢复不变；96点独立权重核对 | docs/L2-RARE-REFERENCE-RESULTS.md；对应SUMMARY/audit.json |
 | 合并 | partial_S1_S3B | H1/L2已写入正文及SI；W1/S2待实际结果 | docs/TARGETED-FOLLOWUPS-PAPER.md；5项报告检查通过 |
@@ -42,3 +42,5 @@ Gauss完成件独立核对：31533单元、两区域覆盖与精确端点聚合�
 2026-10-11：已启动一次性本地收尾进程，绑定原积分PID与创建时间及源码SHA；只等待现有积分结束，不重启科学计算。计划依次进行完整核验、报告、恢复零新增、本地归档和独立目录重建，任一步失败即停止并留日志。启动时这些阶段均未执行，不预记通过。实际状态在主数据工作区output/targeted-followups-v1/w1-finalization-v1/state.json；小型启动记录见qualification/w1-finalization-launch-v1.json。
 
 S2输入交接（2026-10-11）：用户明确授权后，已追加上传固定输入tar及回执到windows-completion-v2-20261005草稿；两份远端大小/SHA256匹配，原215附件未改，现217件且仍draft。包21,544,960字节，SHA256为3b97a221ea8a5a61644f3394474e2ceaf8f0b981803456181a012a99d26f5b12。下载与核验记录见handoff/windows-nuts-localization/TRANSFER-STATUS.md及github-upload-receipt-v1.json；新增采样0，Windows原生资格与主体仍待实测。
+
+S2路径兼容修订（2026-10-11）：实测旧代码无法在Mac读取含Windows反斜杠的嵌套校验清单。新代码对只读核验兼容旧分隔符、拒绝别名/绝对路径/越界路径，新源码清单、结果路径统一使用POSIX形式，避免向git show传Windows文件名。21项便携检查通过0失败0跳过，含7项新回归；修复前失败日志保留。见qualification/nuts-portable-paths-v1.json。无新增采样；输入tar和W1冻结源码未改。已冻结的Windows工作不得直接合并本修订。

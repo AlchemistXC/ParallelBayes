@@ -12,7 +12,7 @@ import time
 import traceback
 import uuid
 import psutil
-from nuts_events import atomic_json,sha
+from nuts_events import atomic_json,sha,portable_manifest
 from nuts_instrumented_worker import require_windows
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'scripts/completion'))
@@ -39,19 +39,19 @@ def preflight(root):
 
 def seal(root,summary):
     atomic_json(root/'finished.json',summary)
-    hashes={str(p.relative_to(root)):sha(p) for p in sorted(root.rglob('*')) if p.is_file() and p!=root/'checksums.json'}
+    hashes={p.relative_to(root).as_posix():sha(p) for p in sorted(root.rglob('*')) if p.is_file() and p!=root/'checksums.json'}
     atomic_json(root/'checksums.json',hashes)
     return dict(**summary,checksums_sha256=sha(root/'checksums.json'))
 
 
 def verify(root,outcome):
     if sha(root/'checksums.json')!=outcome['checksums_sha256']:raise ValueError('Call integrity manifest differs')
-    values=json.loads((root/'checksums.json').read_text())
-    actual={str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and p!=root/'checksums.json'}
+    values=portable_manifest(json.loads((root/'checksums.json').read_text()))
+    actual={p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file() and p!=root/'checksums.json'}
     if actual!=set(values):raise ValueError('Call asset set differs')
     for relative,digest in values.items():
         p=root/relative
-        if not p.resolve().is_relative_to(root.resolve()) or sha(p)!=digest:raise ValueError('Call asset differs: '+relative)
+        if p.is_symlink() or not p.resolve().is_relative_to(root.resolve()) or sha(p)!=digest:raise ValueError('Call asset differs: '+relative)
     if json.loads((root/'finished.json').read_text())!={k:v for k,v in outcome.items() if k!='checksums_sha256'}:
         raise ValueError('Call outcome differs from the registry')
     return len(values)
@@ -77,7 +77,7 @@ def recover(root,record,registry):
     if (root/'finished.json').exists():
         existing=json.loads((root/'finished.json').read_text())
         if not (root/'checksums.json').exists():
-            hashes={str(p.relative_to(root)):sha(p) for p in sorted(root.rglob('*')) if p.is_file()}
+            hashes={p.relative_to(root).as_posix():sha(p) for p in sorted(root.rglob('*')) if p.is_file()}
             atomic_json(root/'checksums.json',hashes)
         result=dict(**existing,checksums_sha256=sha(root/'checksums.json'))
         verify(root,result);registry.finish(record['id'],result);return len(json.loads((root/'checksums.json').read_text()))

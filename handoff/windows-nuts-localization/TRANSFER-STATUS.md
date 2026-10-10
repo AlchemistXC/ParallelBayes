@@ -1,6 +1,6 @@
 # 本轮交接状态
 
-源码、执行器、14项Mac便携检查及提示词已推送到 `codex/research-integration`；实现提交为 `66e9d85`，完整环境绑定修订为 `4ae52af`。Windows原生Job与采样资格尚未执行。
+源码、执行器、14项Mac便携检查及提示词已推送到 `codex/research-integration`；实现提交为 `66e9d85`，完整环境绑定修订为 `4ae52af`。随后完成路径兼容修订，21项Mac便携检查通过（7项新回归）；具体源码与日志摘要见 `execution/targeted-followups-v1/qualification/nuts-portable-paths-v1.json`。Windows原生Job与采样资格尚无回传验证。
 
 固定输入包已在Mac制作并独立解包校验：
 

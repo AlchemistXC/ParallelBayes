@@ -1,0 +1,30 @@
+{
+  "identity": "nuts-portable-paths-v1",
+  "date": "2026-10-11",
+  "baseline_commit": "f41daad",
+  "issue": "Windows backslash manifest keys prevented Mac verification; source path serialization could also pass backslashes to git show.",
+  "change": "New source and manifest paths use POSIX separators; read-only verification accepts unambiguous legacy Windows separators without rewriting original evidence; ambiguous, drive-qualified and traversing paths are rejected.",
+  "passed": 21,
+  "failed": 0,
+  "skipped": 0,
+  "new_regression_cases": 7,
+  "pre_fix_positive_regression": "Archived Windows-style call manifest rejected on Mac; complete pre-fix test report preserves six failing regression cases.",
+  "source_sha256": {
+    "scripts/followups/nuts_events.py": "455c6be552d8e8a39ae548d973e7cad5642586e1ab4b3dc1c921edd4f2549b19",
+    "scripts/followups/nuts_runtime.py": "a35b9dffe2de4a16c8f973803ec04562a2dc68a5ef8ec94c809720293a99c2ba",
+    "scripts/followups/run_nuts_localization.py": "d0d1d8ae3e4fb1a1e5f1608150726d6e90742636e68649cb20a1b1448131eca7",
+    "scripts/followups/analyze_nuts_localization.py": "a7bdc468eed820e3a0846455cf94b203c60ffe2287a643f70358c6973c7861e2",
+    "tests/handoff/test_nuts_localization_portability.py": "707acde48cab70ea76c3c4fc747232eb285336c4bb13b2fc8c5d58175456a8ab"
+  },
+  "command": "PYTHONDONTWRITEBYTECODE=1 .venv-followups/bin/python -W error -m pytest -q -p no:cacheprovider tests/handoff/test_nuts_localization_{portability,registry,controller,records,evidence}.py",
+  "logs": {
+    "portability-before-fix.log": "fc84a4c57c2026acbaaa347f7debb1de2850a6732f49969d5a446386937c12ef",
+    "portable-tests-paths-v1.log": "6b5819c1d4819c7ec9aba53ba5c47be6eb9235fcc9e782d1c9515f5a0fdcaca6",
+    "portable-tests-paths-v1.xml": "4813cf02d6c0fb6f2aa96fad287202c83dce66ba0febcb00abd85c894baf293c"
+  },
+  "native_windows_execution_verified": false,
+  "new_sampler_calls": 0,
+  "scientific_transition_or_input_changes": false,
+  "input_archive_sha256": "3b97a221ea8a5a61644f3394474e2ceaf8f0b981803456181a012a99d26f5b12",
+  "frozen_source_policy": "Use the new revision before native qualification/freeze. Preserve any already frozen source/protocol; do not merge this revision into an active frozen study."
+}
