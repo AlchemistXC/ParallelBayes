@@ -1,0 +1,40 @@
+{
+  "main": {
+    "pages": 18,
+    "final_warnings": [],
+    "positions": {
+      "R用户如何": [
+        5
+      ],
+      "自定义Poisson": [
+        6
+      ],
+      "水井案例的推断任务": [
+        15
+      ]
+    }
+  },
+  "si": {
+    "pages": 45,
+    "final_warnings": [],
+    "positions": {
+      "关键中间界": [
+        12
+      ],
+      "理想独立抽样基准": [
+        13
+      ],
+      "自定义Poisson": [
+        19
+      ]
+    },
+    "final_compile": "si-delivery-compile.json"
+  },
+  "review": "All 18+45 pages visually inspected; key API, IID, W1 bounds and section transition inspected at full size",
+  "float_order": {
+    "figure_3_page": 13,
+    "figure_4_page": 14,
+    "wells_heading_and_first_paragraph_page": 15,
+    "barrier_passed": true
+  }
+}

@@ -19,6 +19,10 @@ S2明确了选定G2/A1新四worker工作流：采样完整保存之后进入旧�
 
 [H1报告](H1-FUNCTION-PATH-RESULTS.md) · [NUTS Mac审阅](WINDOWS-NUTS-MAC-REVIEW.md) · [W1报告](W1-REFERENCE-RESULTS.md) · [L2报告](L2-RARE-REFERENCE-RESULTS.md)
 
+## 当前论文修订
+
+2026-10-11第三轮意见修订完成，当前中文v4正文18页、SI45页；[逐项审核](MANUSCRIPT-REVIEW-V3.md)与[当前交付](TARGETED-FOLLOWUPS-PAPER.md)。稀有全零事件现在明确为经验频率的相对精度局限，不独立推断混合失败。计算结项和原冻结结果不变。以下v3交付继续作为历史记录保留。
+
 ## 论文与可重建材料
 
 [当前正文18页](../output/software-paper/软件与基准研究-定向补充v3.pdf) · [SI42页](../output/software-paper/补充材料-定向补充v3.pdf) · [原完整结果附录67页](../output/software-paper/完整结果附录-审查修订v2.pdf) · [论文输入及重建入口](TARGETED-FOLLOWUPS-PAPER.md)。新两PDF已编译且全部60页版式核验；最终便携归档与独立目录编译结果在交付回执中记录，不替代完整原始实验复现。

@@ -6,15 +6,18 @@
 
 本版完成后的[三项限定补充计划](docs/TARGETED-FOLLOWUPS-PLAN.md)已制定：H1函数差、NUTS故障定位、W1/L2参考改进。四项现均完成计算与独立核验：[H1函数差](docs/H1-FUNCTION-PATH-RESULTS.md)、[NUTS有限定位与Mac审阅](docs/WINDOWS-NUTS-MAC-REVIEW.md)、[W1数值包络](docs/W1-REFERENCE-RESULTS.md)、[L2独立重要性参考](docs/L2-RARE-REFERENCE-RESULTS.md)。[当前交付](docs/TARGETED-FOLLOWUPS-PAPER.md)保留全部历史失败，无需续跑Windows任务。
 
+2026-10-11：第三轮意见已逐项核对并完成v4中文修订。新增稀有事件IID解释、W1中间界和公开R API示例；原实验不改，2次接口技术调用不计正式重复。原件审稿访问仍由作者落实。
+
 ## 阅读与使用
 
-- [当前中文正文：18页](output/software-paper/软件与基准研究-定向补充v3.pdf) · [LaTeX](manuscript/software/软件与基准研究.tex)
-- [当前补充材料：42页](output/software-paper/补充材料-定向补充v3.pdf) · [完整结果附录：67页](output/software-paper/完整结果附录-审查修订v2.pdf)
+- [当前中文正文：18页](output/software-paper/软件与基准研究-审查修订v4.pdf) · [LaTeX](manuscript/software/软件与基准研究.tex)
+- [当前补充材料：45页](output/software-paper/补充材料-审查修订v4.pdf) · [完整结果附录：67页](output/software-paper/完整结果附录-审查修订v2.pdf)
 - [研究交付报告](docs/RESEARCH-COMPLETION-REPORT.md) · [当前范围](docs/CURRENT-SCOPE.md) · [收尾计划与完成标准](docs/RESEARCH-COMPLETION-PLAN.md)
+- [公开R API示例](examples/paper-api.R) · [材料访问清单](docs/REVIEWER-ACCESS.md)
 - [安装与使用](docs/INSTALL-AND-USE.md) · [原生Windows](docs/WINDOWS-NATIVE.md) · [新增Poisson目标示例](docs/EXTENDING-TARGETS.md)
 - [从紧凑原件重建](docs/COMPACT-REPRODUCTION.md) · [历史CPU重建](docs/PORTABLE-REPRODUCTION.md)
 
-- [逐项审核与本轮修订](docs/MANUSCRIPT-REVIEW-V2.md) · [当前便携论文包与重建记录](docs/TARGETED-FOLLOWUPS-PAPER.md)
+- [逐项审核与本轮修订](docs/MANUSCRIPT-REVIEW-V3.md) · [当前便携论文包与重建记录](docs/TARGETED-FOLLOWUPS-PAPER.md)
 
 本轮加入四项限定补充及独立核验；NUTS技术调用不增加正式重复，原冻结主结果不变。
 

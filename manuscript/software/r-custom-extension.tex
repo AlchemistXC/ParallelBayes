@@ -1,0 +1,36 @@
+\subsection{自定义Poisson目标的R扩展路径}
+安装版示例以二维Poisson回归为例，$y_i\sim\operatorname{Poisson}(\exp(X_i\beta))$、$\beta_j\sim N(0,4)$。外部Python模型提供框架密度、独立NumPy密度/解析梯度和恒等参数变换；R整批调用，再转换为\texttt{posterior}对象。以下为仓库中实际示例的调用顺序，环境变量在启动R前指定，输出使用不存在的新目录。
+\begingroup\small
+\begin{verbatim}
+# Once: create the shared data and actual random arrays
+python examples/installed_custom_target.py prepare \
+  --output output/poisson-inputs
+# Set R_LIBS_USER and RETICULATE_PYTHON before starting R
+Rscript --vanilla examples/installed-custom-target.R \
+  torch output/poisson-inputs output/poisson-fit cpu
+\end{verbatim}
+\endgroup
+以下片段展示与上述R命令等价的调用，两者选择其一运行。从仓库根目录出发，目录与返回值的关系如下。核和执行器在Python示例的\texttt{workflows}配置中选择，依次为MALA顺序/quasi-DEER、RWM顺序/Picard；主示例对四种组合全部运行。
+\begingroup\small
+\begin{verbatim}
+example_dir <- normalizePath("examples", mustWork = TRUE)
+inputs <- normalizePath("output/poisson-inputs", mustWork = TRUE)
+output <- "output/poisson-fit" # Must not already exist
+library(parallelbayes)
+pb_environment("torch")
+helper <- reticulate::import_from_path(
+  "installed_custom_target", path = example_dir, convert = TRUE)
+result <- helper$run_example(inputs, output, "torch", "cpu")
+print(vapply(result$workflows, function(w) w$status, ""))
+for (w in result$workflows) {
+  if (!identical(w$status, "completed")) next
+  a <- w$draws
+  dimnames(a) <- list(NULL, NULL, unlist(w$names))
+  draws <- posterior::as_draws_array(a)
+  print(dim(draws)) # iteration, chain, parameter
+  print(posterior::summarise_draws(draws))
+}
+\end{verbatim}
+\endgroup
+实际Mac torch安装示例返回四个\texttt{completed}状态，每组样本维度为\texttt{128 × 4 × 2}。第一组顺序MALA的\texttt{beta0}均值为0.11428、标准差0.16642、$\hat R=1.01917$，\texttt{beta1}的$\hat R=1.03180$，说明接口成功返回仍可伴随短链诊断问题。完整脚本同时核对安装模块来源和输入哈希，保存失败项、样本及诊断，并在数值检查失败时返回错误。该例已在Mac安装环境下运行JAX/torch与R入口，四链各128次转移用于说明接口；没有预热，不能作为推荐推断预算。它的Windows/CUDA组合尚未实测。水井案例另有Windows CPU/CUDA/R接口证据。\texttt{pb\_model()}不接收任意R闭包，Pyro CPU NUTS也仍是独立研究CLI。
+

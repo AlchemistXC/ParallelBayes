@@ -36,3 +36,6 @@ benchmark/analysis/outputs/h1-function-path-companion-v1/*.svg -text whitespace=
 
 # Preserve independently rebuilt S2 evidence bytes across native checkouts.
 benchmark/analysis/outputs/nuts-mac-intake-v1/** -text whitespace=-blank-at-eol,-blank-at-eof
+
+# Review v4 saved source tables keep original CSV bytes across native checkouts.
+benchmark/analysis/outputs/manuscript-review-v3/** -text whitespace=-blank-at-eol,-blank-at-eof

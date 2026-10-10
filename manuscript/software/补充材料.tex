@@ -1,7 +1,7 @@
 \documentclass[UTF8,fontset=fandol,zihao=-4]{ctexart}
 \usepackage[a4paper,margin=25mm]{geometry}
 \usepackage{amsmath,amssymb,booktabs,array,graphicx,hyperref,xcolor}
-\usepackage{caption,fancyhdr}
+\usepackage{caption,fancyhdr,placeins}
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 \setlength{\headheight}{15pt}
 \setlength{\emergencystretch}{2em}
@@ -15,9 +15,10 @@
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thefigure}{S\arabic{figure}}
 \newcommand{\ind}{\mathbf{1}}
+\input{review3-scalars.generated.tex}
 \begin{document}
 \maketitle
-\noindent 本材料保留历史实验的完整数值、诊断、成本口径和跨系统记录，并补充紧凑研究的状态、数值失败、双峰路径及R使用费用。原生成段落描述各自批次，不作为新的执行命令。九目标36函数的完整紧凑结果、两预算及三种成本口径另见独立结果附录；正文按研究问题选择必要表图。
+\noindent 本材料保留历史实验的完整数值、诊断、成本口径和跨系统记录，并补充紧凑研究的状态、数值失败、双峰路径及R使用费用。第1--5节为与当前研究结论相关的补充方法和分析；此后的历史部分保留各批次的数值与实现记录，不作为新的执行命令。成员清单、恢复和交接细节另见仓库报告。九目标36函数的完整紧凑结果、两预算及三种成本口径另见独立结果附录；正文按研究问题选择必要表图。
 \setcounter{tocdepth}{1}\tableofcontents
 \clearpage
 
@@ -27,6 +28,7 @@
 \input{targeted-l2-si.generated.tex}
 \input{w1-enclosure-method.tex}
 \input{w1-enclosure-results.tex}
+\input{review3-rare-iid.generated.tex}
 
 \section{水井后验可正规化的充分条件}
 仅有截距和距离系数两个参数，且平坦先验相对于$d\alpha\,d\beta$定义。保存数据的1基行号533/531在3.25200009346008米分别对应结局0/1；2884/190在151.065994262695米对应0/1。实际协变量为距离除以100，记两个不同值为$a,b$。设$g(v)=\sigma(v)\{1-\sigma(v)\}$，选取上述四个似然因子，其余因子均不超过1，故
@@ -59,7 +61,7 @@ Mac使用冻结的独立NumPy递推、实际初值和输入数组复核602112次
 \input{compact-outcomes.generated.tex}
 
 \subsection{原数组与跨平台统计重建}
-Mac独立读取3888项主任务与256个缓存探测，全部4144项有记录且无读取错误。实际恢复复用全部记录、未新增分析，42035个分析资产保持不变。有效MH主任务与缓存合计54448128次转移的接受事件失配为零；失败候选另按前节核验，不混入有效路径分母。
+Mac独立读取3888项主任务与256个缓存探测，全部4144项有记录且无读取错误。恢复与文件完整性记录见仓库复现报告。有效MH主任务与缓存合计54448128次转移的接受事件失配为零；失败候选另按前节核验，不混入有效路径分母。
 
 在同一原Windows二进制上重算R诊断，14981函数行的未定位置保留，$\hat R=1.01$的分类变化为零；最大$\hat R$差为$4.00\times10^{-14}$。逐项比较两平台完整统计，共1132个投影浮点值不同，最大按$\max(1,|a|,|b|)$缩放的差为$7.51\times10^{-15}$，状态、分母及描述性阈值判断无变化。4589个bootstrap数组中4566个逐值一致，其余元素最大差为$6.67\times10^{-16}$，NaN位置无变化。原统计和全部差值均保留，没有加大容差或覆盖原值。
 
@@ -77,8 +79,11 @@ NumPy的既有slogdet除零、溢出和无效值警告原样保留；冻结变�
 
 \input{r-frontend.generated.tex}
 
-全部64次调用保留实际数组、原始计时、现代诊断及独立路径检查，R返回的float64字节与Python样本相符。恢复复用32个进程，新增执行0。四次技术重放使用同一随机输入，不作BCa或显著性检验，也不增加正式研究的独立重复；短链仍不能作为Poisson推断精度证据。
+全部64次调用保留实际数组、原始计时、现代诊断及独立路径检查，R返回的float64字节与Python样本相符。四次技术重放使用同一随机输入，不作BCa或显著性检验，也不增加正式研究的独立重复；短链仍不能作为Poisson推断精度证据。
 
+\input{r-custom-extension.tex}
+
+\clearpage
 \section{历史CPU验证与开发证据}
 \noindent\textbf{历史材料：0.1.0/0.1.1，Mac CPU开发和核验。本节时态和预算属于该批次，不描述主要实验的完成状态。}
 

@@ -39,12 +39,12 @@
     "unpack.json": "9b15fa896002c8526cac43c8f6e6404c0a2e2e473fe5f1684a878691ef820876"
   },
   "templates": {
-    "nuts-localization-main.template.tex": "96ae0b381fe72c9599deb571dd5bcc67d2044b1a9691bb603ffcb31c0e601975",
-    "nuts-localization-si.template.tex": "a2d1f3650b84c6300310ad4ef1e6c5d726127bae9bbe5d41a148d4f97d4608f7"
+    "nuts-localization-main.template.tex": "64d41cab72ce5ea03689312c16e8b137cf210a50cc9301f85de745a1aa15e0eb",
+    "nuts-localization-si.template.tex": "a97eaac31ce4f6201e89b18461db88b232acd9287e56f2fdbcc59541c31da358"
   },
   "outputs": {
-    "nuts-localization-main.generated.tex": "feeb933950fa927d1c162b9960a06a5ee637aa4ca2a1e6be0ce5513d8bc015f3",
-    "nuts-localization-si.generated.tex": "cd24e9066a3a5584e11471f63124009d2b492fd7ce2ec9d30fd60195decb0a06"
+    "nuts-localization-main.generated.tex": "4ba5b718b063c3120a77276d073b68a0094c70e2b0560722867d7fa45014fad9",
+    "nuts-localization-si.generated.tex": "f8900be9037699235326479d5cc30145a257497fea4189cc13e0ea593c839cb4"
   },
   "new_sampler_calls": 0
 }

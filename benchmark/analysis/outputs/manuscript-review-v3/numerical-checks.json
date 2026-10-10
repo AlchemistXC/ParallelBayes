@@ -1,0 +1,13 @@
+{
+  "passed": 4,
+  "failed": 0,
+  "skipped": 0,
+  "checks": [
+    "saved_outputs_rebuild_byte_identical",
+    "relocated_saved_evidence_same_outputs",
+    "tampered_tail_rejected_before_output",
+    "iid_decimal_and_directed_rounding_independently_checked"
+  ],
+  "scope": "Saved-data reporting checks only; no sampling, target evaluation, frozen source changes or benchmark replication",
+  "script_sha256": "074a4ba09d49907cb9632d72da7a34031ed80fe45918910735b542048cb99487"
+}

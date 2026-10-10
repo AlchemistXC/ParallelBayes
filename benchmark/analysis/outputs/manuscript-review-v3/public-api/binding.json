@@ -1,0 +1,9 @@
+{
+  "script_sha256": "ceb675858bfe5aed9ae9596ed6c51dbca025b79e18328192426df93939e374db",
+  "source_before_revision": "b5850a552e6671c7abc9ddb8b84e831f4187948f",
+  "actual_technical_calls": 2,
+  "new_formal_repetitions": 0,
+  "frozen_protocols_changed": 0,
+  "installed_r_library": "/Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/R-library/parallelbayes",
+  "scope": "Manuscript API illustration only; saved timing is not used as a performance result."
+}

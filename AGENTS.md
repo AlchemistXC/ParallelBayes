@@ -2,7 +2,7 @@
 
 ## Current work
 
-2026-10-11: S1/S2/S3A/S3B finite supplements have completed scientific execution and independent Mac review. Read `docs/TARGETED-FOLLOWUPS-COMPLETION.md` and current work packages. Do not restart Windows localization or use up unused calls; preserve five resource stops and all historical failure labels. The original PLAN.json is a historical planning snapshot. Current manuscript is targeted-paper-companion-v3; portable packaging and all required checks have passed; no further scientific work is required by this finite plan.
+2026-10-11: S1/S2/S3A/S3B finite supplements have completed scientific execution and independent Mac review. Read `docs/TARGETED-FOLLOWUPS-COMPLETION.md` and current work packages. Do not restart Windows localization or use up unused calls; preserve five resource stops and all historical failure labels. The original PLAN.json is a historical planning snapshot. Current manuscript is the reviewed v4 (see docs/MANUSCRIPT-REVIEW-V3.md); portable packaging and all required checks have passed; no further scientific work is required by this finite plan.
 
 2026-10-10 follow-up authorization: the user requested execution of `docs/TARGETED-FOLLOWUPS-PLAN.md`. Track S1/S2/S3 in `execution/targeted-followups-v1/WORK-PACKAGES.md`; assign the planned new identities, preserve all original failures/reference files, and retain the 20 GiB incremental per-host cap. S1 uses saved trajectories only. S2 must run on native Windows, with at most 48 registered four-chain technical calls. The prior completion below describes the delivered research version, not a prohibition on this newly authorized supplement.
 

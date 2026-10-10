@@ -1,7 +1,7 @@
 \documentclass[UTF8,fontset=fandol,zihao=-4]{ctexart}
 \usepackage[a4paper,margin=25mm]{geometry}
 \usepackage{amsmath,amssymb,booktabs,array,graphicx,hyperref,xcolor}
-\usepackage{caption,fancyhdr}
+\usepackage{caption,fancyhdr,placeins}
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 \setlength{\headheight}{15pt}
 \setlength{\emergencystretch}{2em}
@@ -15,10 +15,11 @@
 \newcommand{\ind}{\mathbf{1}}
 
 \input{compact-scalars.generated.tex}
+\input{review3-scalars.generated.tex}
 \begin{document}
 \maketitle
 \begin{abstract}
-时间并行MCMC同时求解多个采样位置，尝试缩短单条轨迹的计算时间。本文介绍带R接口的研究软件ParallelBayes，将目标、转移核和执行器分开，在固定实际随机输入下比较顺序执行、窗口quasi-DEER MALA与Online Picard RWM。九个目标、两档预算的CPU/CUDA研究中，3888项主任务有\PBCompactValid{}项通过数值标准，\PBCompactNumerical{}项数值失败和\PBCompactUnclassified{}项进程失败均保留。普通工作流的组内配对几何平均速度比在CPU上为Picard \PBCPURWMMin--\PBCPURWMMax，在CUDA上为\PBCUDARWMMin--\PBCUDARWMMax；quasi-DEER的全部组均慢于对应顺序实现。窗口对照显示，批处理机会可被重复求值和较慢的前缀推进抵消。水井案例进一步显示，函数误差较小的配置并不一定具有最低的调用成本；双峰目标的合并符号比例则可由均衡初值维持，而非来自跨峰探索。对选定NUTS工作流的有限定位还观察到完整采样后的诊断内存停止。独立原数组重建、完整失败记录与R调用测量共同表明，时间并行执行收益需要结合数值输出标准、具体函数和工作流边界评价。
+时间并行MCMC同时求解多个采样位置，尝试缩短单条轨迹的计算时间。本文介绍带R接口的研究软件ParallelBayes，将目标、转移核和执行器分开，在固定实际随机输入下比较顺序执行、窗口quasi-DEER MALA与Online Picard RWM。九个目标、两档预算的CPU/CUDA研究中，3888项主任务有\PBCompactValid{}项通过数值标准，\PBCompactNumerical{}项数值失败和\PBCompactUnclassified{}项进程失败均保留。普通工作流的组内配对几何平均速度比在CPU上为Picard \PBCPURWMMin--\PBCPURWMMax，在CUDA上为\PBCUDARWMMin--\PBCUDARWMMax；quasi-DEER的全部组均慢于对应顺序实现。窗口对照显示，批处理机会可被重复求值和较慢的前缀推进抵消。水井案例进一步显示，函数误差较小的配置并不一定具有最低的调用成本；双峰目标的合并符号比例则可由均衡初值维持，而非来自跨峰探索。独立原数组重建、完整失败记录与R调用测量共同表明，时间并行执行收益需要结合数值输出标准、具体函数和工作流边界评价。
 \end{abstract}
 
 \section{引言}
@@ -120,40 +121,32 @@ $100[\mathrm{atol}+\mathrm{rtol}\max(1,\max|q|)]$，本文协议的两种容差�
 迭代耗尽、非有限值或独立审计失配的输出保留原记录，不转换为普通后验样本。当前MH实现把非有限提议密度统一视为失败；合法的支持集外提议密度$-\infty$尚未一般地区分，因此有界支持目标的适用范围受限。NUTS的发散与返回有限数组分别记录。显式顺序回退复用原数组重算整个轨迹并计入失败成本，本文实验不启用回退隐藏求解失败。
 
 \subsection{R用户如何运行和扩展}
-安装版示例以二维Poisson回归为例，$y_i\sim\operatorname{Poisson}(\exp(X_i\beta))$、$\beta_j\sim N(0,4)$。外部Python模型提供框架密度、独立NumPy密度/解析梯度和恒等参数变换；R整批调用，再转换为\texttt{posterior}对象。以下为仓库中实际示例的调用顺序，环境变量在启动R前指定，输出使用不存在的新目录。
+R接口组织目标、配置列表、结果记录和\texttt{posterior}样本。以下使用包已支持的二维标准高斯目标，由R直接选择顺序RWM与Online Picard；模型核验、调用和结果比较均通过公开接口完成。启动R前指定安装库与\texttt{RETICULATE\_PYTHON}；完整可运行脚本为\texttt{examples/paper-api.R}，接受一个尚不存在的输出目录。
 \begingroup\small
 \begin{verbatim}
-# Once: create the shared data and actual random arrays
-python examples/installed_custom_target.py prepare \
-  --output output/poisson-inputs
-# Set R_LIBS_USER and RETICULATE_PYTHON before starting R
-Rscript --vanilla examples/installed-custom-target.R \
-  torch output/poisson-inputs output/poisson-fit cpu
-\end{verbatim}
-\endgroup
-以下片段展示与上述R命令等价的调用，两者选择其一运行。从仓库根目录出发，目录与返回值的关系如下。核和执行器在Python示例的\texttt{workflows}配置中选择，依次为MALA顺序/quasi-DEER、RWM顺序/Picard；主示例对四种组合全部运行。
-\begingroup\small
-\begin{verbatim}
-example_dir <- normalizePath("examples", mustWork = TRUE)
-inputs <- normalizePath("output/poisson-inputs", mustWork = TRUE)
-output <- "output/poisson-fit" # Must not already exist
 library(parallelbayes)
-pb_environment("torch")
-helper <- reticulate::import_from_path(
-  "installed_custom_target", path = example_dir, convert = TRUE)
-result <- helper$run_example(inputs, output, "torch", "cpu")
-print(vapply(result$workflows, function(w) w$status, ""))
-for (w in result$workflows) {
-  if (!identical(w$status, "completed")) next
-  a <- w$draws
-  dimnames(a) <- list(NULL, NULL, unlist(w$names))
-  draws <- posterior::as_draws_array(a)
-  print(dim(draws)) # iteration, chain, parameter
-  print(posterior::summarise_draws(draws))
-}
+model <- pb_model("gaussian", dimension = 2L, backend = "torch")
+stopifnot(pb_validate(model)$passed)
+print(pb_capabilities(model))
+configs <- lapply(c("sequential", "online_picard"), function(executor)
+  list(kernel = "rwm", executor = executor, device = "cpu",
+       draws = 128L, chains = 4L, step_size = 0.4, window = 16L,
+       seed = 2026L, audit = TRUE))
+fits <- pb_benchmark(model, configs)
+stopifnot(all(vapply(fits, function(fit)
+  identical(fit$record$status, "completed"), logical(1))))
+stopifnot(identical(fits[[1]]$record$tape_sha256,
+                    fits[[2]]$record$tape_sha256),
+          identical(fits[[1]]$record$accept, fits[[2]]$record$accept))
+print(max(abs(as.array(fits[[1]]$draws) -
+              as.array(fits[[2]]$draws))))
+print(vapply(fits, function(fit) fit$record$timing$total, numeric(1)))
+print(posterior::summarise_draws(fits[[2]]$draws))
 \end{verbatim}
 \endgroup
-实际Mac torch安装示例返回四个\texttt{completed}状态，每组样本维度为\texttt{128 × 4 × 2}。第一组顺序MALA的\texttt{beta0}均值为0.11428、标准差0.16642、$\hat R=1.01917$，\texttt{beta1}的$\hat R=1.03180$，说明接口成功返回仍可伴随短链诊断问题。完整脚本同时核对安装模块来源和输入哈希，保存失败项、样本及诊断，并在数值检查失败时返回错误。该例已在Mac安装环境下运行JAX/torch与R入口，四链各128次转移用于说明接口；没有预热，不能作为推荐推断预算。它的Windows/CUDA组合尚未实测。水井案例另有Windows CPU/CUDA/R接口证据。\texttt{pb\_model()}不接收任意R闭包，Pyro CPU NUTS也仍是独立研究CLI。
+此例已从安装版R包在Mac torch CPU环境执行。两次调用均返回\texttt{128 × 4 × 2}的样本，实际随机数组指纹相同，接受事件零失配，且各自通过独立NumPy路径检查。128次转移不含预热；两个参数的$\hat R$约为1.22和1.44，说明返回可用样本对象并不保证探索充分。完整脚本保存两份\texttt{pb\_fit}、失败状态、诊断和环境；其中\texttt{timing\$total}为含独立审计的采样接口耗时，不是整个R进程费用，也不据这两次技术调用比较性能。
+
+配置由R列表组织，样本直接进入已有\texttt{posterior}工具；数值循环仍在Python后端中执行。新增内置目标需要明确后端实现；自定义Poisson目标的框架密度、独立NumPy参考及R批量调用见补充材料的扩展示例。Stan入口和独立Pyro CLI的范围保持表\ref{tab:capabilities}所示。
 
 \section{核验方法与实验设计}
 \subsection{实验身份、目标与独立单位}
@@ -258,15 +251,16 @@ Windows机制协议中的步长、窗口和链数对照也显示重复求值与�
 
 \input{targeted-l2-main.generated.tex}
 
+\FloatBarrier
 \subsection{水井案例的推断任务}
 W1使用posteriordb的3020个观测，模型为
 $\Pr(y_i=1)=\sigma(\alpha+\beta d_i/100)$，保留原模型对$\alpha,\beta$的平坦先验。问题是距离与换井概率的关系，以及0米、100米处预测概率的估计成本。两个不同距离处均出现异结局观测，足以证明该二维后验可正规化（补充材料附录）。Stan、NumPy、torch密度及导数和Windows的CPU/CUDA/R数组路径已有核验。该案例已参与开发，不作为未见模型族测试。新的数值包络给出$\beta$后验均值约$-0.62298325$，0米与100米处的换井概率均值约为0.64703740和0.49590258。既有独立MCMC参考的95\%等尾区间分别为$[-0.8108,-0.4300]$、$[0.6197,0.6733]$和$[0.4652,0.5262]$；这些分位数区间仍为有限样本估计，与均值的确定数值包络分别列示（补充材料第2节）。这是指定二维模型内的后验关联描述，非距离的因果效应。
 
-表\ref{tab:compact-wells}比较4096步预算的所有工作流。CPU顺序RWM的普通工作流耗时约4.94秒、$\alpha$参考平方差约$2.06\times10^{-6}$；CPU顺序MALA约10.58秒、平方差约$0.58\times10^{-6}$；CPU NUTS约11.62秒、平方差约$0.28\times10^{-6}$。同核时间并行执行没有改善这些轨迹的统计信息，却增加了本例的普通工作流耗时。新的确定数值包络使六个连续函数的参考半宽均不超过$10^{-8}$。将这些区间传播到原配对损失差后，MALA/NUTS的点排序保持不变；旧MCMC参考的$\pm2$ MCSE偏移虽可使排序翻转，但它不是实际求积误差界。数值参考误差在本例中已被限定，重复实验不确定性仍按原区间解释（补充材料第2节）。
+表\ref{tab:compact-wells}比较4096步预算的所有工作流。CPU顺序RWM的普通工作流耗时约4.94秒、$\alpha$参考平方差约$2.06\times10^{-6}$；CPU顺序MALA约10.58秒、平方差约$0.58\times10^{-6}$；CPU NUTS约11.62秒、平方差约$0.28\times10^{-6}$。同核时间并行执行没有改善这些轨迹的统计信息，却增加了本例的普通工作流耗时。新的确定数值包络使六个连续函数的参考半宽均不超过$10^{-8}$。将这些区间传播到既有配对平方损失差后，各比较的点排序均未改变。该结果消除了本例主要的数值参考歧义，不同方法的总体比较仍受到独立重复数量与抽样波动的限制（补充材料第2节）。
 
 \input{compact-wells.generated.tex}
 
-4096步下，六个非稀有函数的保存$\hat R$均不超过1.01；但$\ind(\beta>0)$在所有拟合中恒零，诊断仍未定。两规则包络的交集给出$\Pr(\beta>0)\in[4.7671124,4.7673026]\times10^{-11}$（向外舍入）。所有拟合的零事件估计因而具有100\%的相对参考误差，尽管绝对平方差仅约$2.27\times10^{-21}$。这一结果明确了图R45中极小损失的含义：常规系数估计良好，并不意味着已经观测或可靠估计了罕见事件。
+4096步下，六个非稀有函数的保存$\hat R$均不超过1.01；但$\ind(\beta>0)$在所有拟合中恒零，诊断仍未定。两规则包络的交集给出$\Pr(\beta>0)\in[4.7671124,4.7673026]\times10^{-11}$（向外舍入）。所有拟合的零事件估计具有100\%的相对参考误差，尽管绝对平方差仅约$2.27\times10^{-21}$。全部有效拟合共含\PBIIDWOneStates{}个保留状态条目；若假想它们都是独立后验样本，期望命中仍仅约$\PBIIDWOneHits$次，零命中概率约\PBIIDWOneZero\%。实际轨迹相关且配对执行共享输入，此数值只是IID量级参照。图R45的极小损失因而主要反映事件本身极罕见；全零不能单独证明混合不良，却说明当前经验频率无法提供该事件的有用相对精度。
 
 \subsection{实际R调用的额外耗时}
 有限Poisson补测直接记录新R进程启动到首次样本和诊断可用的延迟，以及同会话再次完整调用的耗时。32个进程、64次调用均完成独立NumPy路径检查及R浮点字节核对，接受事件零失配。普通模式首次可用延迟的组中位数为1.27--2.06秒，同会话再次调用为0.014--0.340秒。首次普通MALA顺序调用中还出现5.22秒观测，完整保留；四次技术重放的范围和耗时分解见补充材料。这项测量补足R前端的使用边界，与Windows正式比较分别报告；短Poisson轨迹没有据此获得精度认证。
@@ -276,12 +270,12 @@ $\Pr(y_i=1)=\sigma(\alpha+\beta d_i/100)$，保留原模型对$\alpha,\beta$的�
 
 这种限定与原方法的收益并不冲突。Picard原文在Apple M3上对由时滞微分方程定义的昂贵黑箱似然报告约2.52倍墙钟收益\cite{grazzi}，成本结构不同于本文多数廉价目标。本文的窗口与停止规则也属于适配实现。后续若要判断昂贵似然的适用边界，需要预先控制单次求值成本和批处理吞吐，而不是从现有网格中挑选最快的配置。
 
-路径标准、函数误差和后验探索回答不同问题。H1的函数均值差较小，却不能替代完整路径合格条件；M1的合并符号比例可由均衡初值维持；L2的绝对事件误差又可能掩盖相对误差。这些对照要求研究者结合所关心函数、初始化和误差尺度解释收益。W1的数值包络收窄了参考不确定性，却不改变常量事件的探索局限。NUTS补充定位表明，完整采样后诊断仍可使工作流因内存保护而终止；这些后处理费用与失败不能全归为转移核的性质。六个历史失败案例本轮未复现，原105项仍未定，因此保留成功条件比较和全部失败成本，不据点排序作无条件方法排名。
+路径标准、函数误差和后验探索回答不同问题。H1的函数均值差较小，却不能替代完整路径合格条件；M1的合并符号比例可由均衡初值维持；L2的绝对事件误差又可能掩盖相对误差。这些对照要求研究者结合所关心函数、初始化和误差尺度解释收益。L2/W1的全零事件在理想IID预算下也属常见结果，揭示普通经验频率的相对精度局限，而不是额外的混合失败证据。NUTS补充定位表明，完整采样后诊断仍可使工作流因内存保护而终止；这些后处理费用与失败不能全归为转移核的性质。六个历史失败案例本轮未复现，原105项仍未定，因此保留成功条件比较和全部失败成本，不据点排序作无条件方法排名。
 
-ParallelBayes的贡献是可复用的目标/核/执行分离、固定已保存的随机数组的独立核验，以及从原始结果重建的成本和误差证据。Stan仍仅接CPU顺序核，Pyro NUTS是独立研究CLI，R前端耗时只在指定Mac CPU示例中直接测量。自动选择器、GPU NUTS和MEADS/LAPS等更广的多链比较\cite{meads,laps,fsm}不属于本版实测能力。现有结果支持按明确目标和计时边界使用该软件进行执行器研究；它们没有建立普遍推断加速或跨模型自动配置规则。
+ParallelBayes的贡献是可复用的目标/核/执行分离、固定已保存的随机数组的独立核验，以及从原始结果重建的成本和误差证据。Stan仍仅接CPU顺序核，Pyro NUTS是独立研究CLI，R前端耗时只在指定Mac CPU示例中直接测量。GPU NUTS和MEADS/LAPS等更广的多链比较\cite{meads,laps,fsm}不属于本版实测能力。对于廉价目标，可先测量顺序执行的费用；本文的W1比较支持将其作为该案例的首选执行方式。若目标可在CUDA上有效批处理，再在固定输入下探测Picard的普通调用费用，并同时检查接受率和所关心函数的误差。窗口扩大应以确认推进和重复工作判断，不预设更大窗口更快。出现非有限值、迭代耗尽或路径审计失败时，保留记录并拒绝将输出转为正常样本。这些建议限于本文实现和设备，跨模型自动配置仍需独立研究。
 
 \section*{代码、数据与构建材料}
-源码、冻结协议、分析摘要和论文输入见\href{https://github.com/AlchemistXC/ParallelBayes/tree/codex/research-integration}{ParallelBayes研究分支}，代码采用MIT许可。紧凑实验执行源固定为\texttt{3a37a89}，Windows交付源为\texttt{94bebec}；H1函数伴随分析重放旧输入，L2重要性参考及W1数值包络采用独立新协议，三项补充与原主实验分开归档。CPU NUTS有限定位绑定执行源\texttt{1269690}，Windows交付\texttt{1a8759f}，已完成Mac独立接收；技术调用不增加正式统计重复。具体构建提交及输入SHA256随论文包记录；新H1/L2/W1原始补充包目前保存在本地，汇总和重建脚本随研究分支提供。历史CPU原始证据位于\href{https://github.com/AlchemistXC/ParallelBayes/releases/tag/cpu-review-v1}{cpu-review-v1 Release}。Windows紧凑原数组与Mac派生包及NUTS有限定位原件截至2026年10月11日存放于具有访问权限的草稿Release，尚未公开；完整复现需要取得这些原件，不能仅凭公开源码下载完成。仓库的\href{https://github.com/AlchemistXC/ParallelBayes/blob/codex/research-integration/docs/COMPACT-REPRODUCTION.md}{复现指南}列出组件、清单及重建命令，\href{https://github.com/AlchemistXC/ParallelBayes/blob/codex/research-integration/docs/MANUSCRIPT-REVIEW-V2.md}{本版修订记录}列出可编译论文包和完整结果附录入口。
+源码、冻结协议、分析摘要和论文输入见\href{https://github.com/AlchemistXC/ParallelBayes/tree/codex/research-integration}{ParallelBayes研究分支}，代码采用MIT许可。紧凑实验执行源固定为\texttt{3a37a89}，Windows交付源为\texttt{94bebec}；H1函数伴随分析重放旧输入，L2重要性参考及W1数值包络采用独立新协议，三项补充与原主实验分开归档。CPU NUTS有限定位绑定执行源\texttt{1269690}，Windows交付\texttt{1a8759f}，已完成Mac独立接收；技术调用不增加正式统计重复。具体构建提交及输入SHA256随论文包记录；新H1/L2/W1原始补充包目前保存在本地，汇总和重建脚本随研究分支提供。历史CPU原始证据位于\href{https://github.com/AlchemistXC/ParallelBayes/releases/tag/cpu-review-v1}{cpu-review-v1 Release}。Windows紧凑原数组与Mac派生包及NUTS有限定位原件截至2026年10月11日存放于具有访问权限的草稿Release，尚未公开；完整复现需要取得这些原件，不能仅凭公开源码下载完成。分组件清单与受控交付检查见仓库\href{https://github.com/AlchemistXC/ParallelBayes/blob/codex/research-integration/docs/REVIEWER-ACCESS.md}{材料访问说明}；审稿访问权限尚需作者落实，论文构建包仅保证从已提供输入重编译，不代替原始实验访问。仓库的\href{https://github.com/AlchemistXC/ParallelBayes/blob/codex/research-integration/docs/COMPACT-REPRODUCTION.md}{复现指南}列出组件、清单及重建命令，\href{https://github.com/AlchemistXC/ParallelBayes/blob/codex/research-integration/docs/MANUSCRIPT-REVIEW-V3.md}{v4修订记录}列出可编译论文包和完整结果附录入口。
 
 生成式工具用于辅助代码实现、分析组织、图表制作和中文表述。数值陈述与图表由保存的实际输入、独立参考和可重复构建检查支持；最终学术判断与稿件责任属于作者。
 

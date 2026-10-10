@@ -1,0 +1,10 @@
+{
+  "identity": "manuscript-review-v3-derived-interpretation-v1",
+  "files": {
+    "L2-tasks.csv": "2eda999c21ba5c525d2aec5bf543c73d040581484c90955775860da2549af629",
+    "W1-tasks.csv": "8d6d66c827660fd5f38d546768e80a9a7d75343148b36b924ee93021afefc3d0",
+    "w1-tail.json": "407d371bdde75b9896eeb6eac6ddd98d56490acffdc1c6a61e6d9ece073d36f7"
+  },
+  "original_complete_manifest_sha256": "ddfe88051602c13314f1d95d9544197e51d756bd2607bd6f2cddd1af5290ba1f",
+  "new_mcmc_fits": 0
+}

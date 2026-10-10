@@ -1,0 +1,44 @@
+{
+  "identity": "manuscript-review-v3-writing-audit",
+  "count_rule": "Chinese characters plus English/numeric tokens in recursively expanded TeX, not a journal word count",
+  "subsection_units": {
+    "R用户如何运行和扩展": {
+      "before": 549,
+      "after": 495,
+      "delta": -54
+    },
+    "固定预算误差与探索诊断": {
+      "before": 1418,
+      "after": 1509,
+      "delta": 91
+    },
+    "水井案例的推断任务": {
+      "before": 870,
+      "after": 939,
+      "delta": 69
+    },
+    "讨论与结论": {
+      "before": 696,
+      "after": 833,
+      "delta": 137
+    }
+  },
+  "new_formal_repetitions": 0,
+  "api_technical_calls": 2,
+  "retained_main_claims": [
+    "Numerical output and inferential information differ",
+    "Paired execution costs depend on workflow boundary",
+    "Rare-event zero alone is not evidence of poor mixing"
+  ],
+  "relocated": [
+    "Poisson extension main to SI",
+    "Archive/recovery details to existing repository reports"
+  ],
+  "preserved": [
+    "All original failures",
+    "All frozen protocols",
+    "Old main/SI PDFs",
+    "Original complete results"
+  ],
+  "not_completed": "Human author/reviewer material access decision"
+}

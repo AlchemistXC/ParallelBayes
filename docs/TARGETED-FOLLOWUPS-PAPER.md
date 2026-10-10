@@ -1,6 +1,17 @@
 # 限定补充结果的论文整合
 
-## 当前交付：四项补充完成，v3
+## 当前交付：第三轮审查修订v4
+
+2026-10-11。逐项判断见[修订报告](MANUSCRIPT-REVIEW-V3.md)。正文18页、SI45页均已编译并检查；新增L2/W1理想IID参照、保存W1中间界、公开R接口示例，压缩NUTS与操作记录并修复浮动图顺序。冻结科学结果不变，新增正式重复为0，另有2次CPU接口技术调用。
+
+- [当前正文18页](../output/software-paper/软件与基准研究-审查修订v4.pdf) · [主TeX](../manuscript/software/软件与基准研究.tex)
+- [当前SI45页](../output/software-paper/补充材料-审查修订v4.pdf) · [SI TeX](../manuscript/software/补充材料.tex)
+- [完整结果附录67页，原样保留](../output/software-paper/完整结果附录-审查修订v2.pdf)
+- [本地v4完整编译输入包](../output/software-paper/parallelbayes-targeted-paper-v4.tar)；最终大小、哈希和独立目录重编译见[交付清单](../benchmark/analysis/outputs/manuscript-review-v3/delivery.json)。
+
+论文构建与原始实验复现分开。原件公开/受控访问目前尚待作者决定，见[材料访问说明](REVIEWER-ACCESS.md)。下列v3及以前交付均为历史版本，旧PDF、原始文件与哈希不覆盖。
+
+## 历史交付：四项补充完成，v3
 
 2026-10-11。S1、S2、S3A、S3B均已完成限定计算和独立审阅。新增S2揭示选定G2/A1工作流在完整采样后的诊断阶段因内存保护停止；六个历史失败未复现，原105分类与正式分母不变。正文将它作为软件/资源边界，SI提供九输入四条件、五个资源停止、实际路径/RNG、ESS静态规模与Mac诊断差值。细节见[Mac科学审阅](WINDOWS-NUTS-MAC-REVIEW.md)。
 
