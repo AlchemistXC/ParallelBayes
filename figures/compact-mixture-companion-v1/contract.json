@@ -1,0 +1,40 @@
+{
+  "core_conclusion": "A balanced pooled sign estimate can coexist with no observed within-chain sign crossing",
+  "question": "Does a correct pooled sign probability establish within-chain exploration?",
+  "archetype": "quantitative grid",
+  "backend": "Python/matplotlib",
+  "panels": [
+    {
+      "label": "a",
+      "role": "Balanced-start no-crossing example",
+      "task": "5b173c7a2bdf99a46ab24da2"
+    },
+    {
+      "label": "b",
+      "role": "The sole crossing exception in complete valid-fit audit",
+      "task": "d5a9cf6a9c76310134edcf28"
+    }
+  ],
+  "selection_rule": "Retrospectively select the unique observed crossing fit and the CPU sequential RWM fit at the same original repeat and budget",
+  "full_frame": {
+    "planned": 432,
+    "valid": 412,
+    "failed": 20
+  },
+  "independent_unit": "The same original four-chain repetition; two workflows are not two independent datasets",
+  "uncertainty": "Raw traces only, no confidence interval or fit-level performance inference",
+  "caveat": "Known mode weights can support stratified estimation under additional conditions; absence of crossing alone does not refute accuracy of every pooled estimand",
+  "summary_sha256": "a90040dc6ff0dd2c96cd8c531d9fb70f8b92b4aea07391507db5813d1f664621",
+  "tasks_sha256": "e0af2ab414d2f320bac0ba7f701ce19f73620fe7cae392b3907b09e0f1b61dfd",
+  "original_manifest_sha256": "38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e",
+  "raw_assets_sha256": {
+    "formal-runs/batch-00/main/tasks/5b173c7a2bdf99a46ab24da2/attempt-0001/fit.npz": "7ba2f8509b63db64645efa10ca77a70701749cfa72cfde2487c6636c5d259e74",
+    "formal-runs/batch-00/main/tasks/d5a9cf6a9c76310134edcf28/attempt-0001/fit.npz": "9df47f237263ca9aaf1ed3aa5ee813d81506468b2696133c5eeff037af0ae3eb"
+  },
+  "new_sampler_calls": 0,
+  "new_R_diagnostic_calls": 0,
+  "new_formal_repetitions": 0,
+  "final_width_mm": 160,
+  "final_height_mm": 125,
+  "minimum_font_pt": 8.5
+}

@@ -1,0 +1,10 @@
+{
+  "pdf": "output/windows-compact-intake-v1/mixture-figure-v1/mixture-example.pdf",
+  "auditable": true,
+  "minimum_required_pt": 8.5,
+  "minimum_found_pt": 8.5,
+  "text_run_count": 24,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}

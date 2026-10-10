@@ -1,0 +1,48 @@
+{
+  "pdf": "output/windows-compact-intake-v1/mixture-figure-v1/mixture-example.pdf",
+  "auditable": true,
+  "verdict": "FIX BEFORE DELIVERY",
+  "page_count": 1,
+  "visible_text_box_count": 24,
+  "text_trace_count": 24,
+  "stroke_path_count": 38,
+  "filled_region_count": 23,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 1,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "FAIL",
+      "kind": "text-page-clipping",
+      "page": 1,
+      "message": "Text extends beyond the final PDF page boundary",
+      "text": "1024",
+      "text_bbox": [
+        433.6599426269531,
+        320.6483459472656,
+        455.285888671875,
+        329.1483459472656
+      ],
+      "other_text": null,
+      "other_bbox": [
+        0.0,
+        0.0,
+        453.5433044433594,
+        354.3307189941406
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        11
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "base_commit": "c533d03",
+  "scope": "Retrospective read-only original M1 trajectory companion; whole-study reconstruction still running",
+  "original_manifest_sha256": "38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e",
+  "raw_tasks": 432,
+  "valid": 412,
+  "failed_kept": 20,
+  "checked_chain_paths": 1648,
+  "all_saved_sign_crossings": 1,
+  "exact_half_fits": 411,
+  "one_crossing_task": "d5a9cf6a9c76310134edcf28",
+  "test_results": {
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0
+  },
+  "figure": {
+    "final": "figures/compact-mixture-companion-v1/mixture-example.pdf",
+    "source_rows": 8192,
+    "minimum_font_pt": 8.5,
+    "alignment": "passed",
+    "collision_fail": 0,
+    "collision_warn": 0,
+    "manual_review": "Both panels and full figure at final width reviewed",
+    "original_failures_retained": "v1 rightmost 1024 tick clipped; corrected by wider right margin. Font family made explicit; no data or tolerance change.",
+    "static_warnings": [
+      "160 mm matches manuscript width; journal not selected",
+      "PDF/SVG primary, PNG only preview",
+      "Preview 300 dpi; no raster submission claim"
+    ]
+  },
+  "source_sha256": {
+    "scripts/analysis/review_mixture_paths.py": "d2c613c330e11bae6308d34e4263b74bc71248142d94044867c3c4887dd2c320",
+    "scripts/analysis/plot_mixture_example.py": "da598ce60e25024fd594b4633c58f68b586c49710f016ccd7170c96456b37e9c",
+    "tests/analysis/test_mixture_path_review.py": "f834788f8e6e9a8edba74ab55502d104876697f6789d926ad07e65e66771c7ae"
+  },
+  "new_sampler_calls": 0,
+  "new_R_diagnostic_calls": 0,
+  "new_formal_repetitions": 0
+}
