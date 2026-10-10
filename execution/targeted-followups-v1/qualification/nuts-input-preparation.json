@@ -1,0 +1,18 @@
+{
+  "status": "inputs_prepared_not_native_validated",
+  "cases": 9,
+  "diagnostic_sets": 3,
+  "verified_assets": 26,
+  "working_bytes": 21487819,
+  "all_nine_reconstructed_target_ids_equal_original": true,
+  "new_sampler_calls": 0,
+  "first_attempt": "Preserved partial folder; warnings-as-errors stopped archived NumPy slogdet on G2",
+  "second_attempt": "Archived reader ran with warnings visible; finite geometry checks and all original target identities match",
+  "remaining": [
+    "Native stage instrumentation",
+    "Actual RNG snapshots for four conditions",
+    "Windows qualification and frozen protocol",
+    "9 diagnostic jobs and bounded calls",
+    "Windows return and independent intake"
+  ]
+}

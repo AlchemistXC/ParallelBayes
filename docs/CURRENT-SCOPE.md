@@ -28,4 +28,4 @@ Windows原始证据仍在草稿Release；当前源码和稿件公开不等于原
 
 ## 补充计划执行更新
 
-用户已授权执行。S1 H1四函数分析已完成，见[结果报告](H1-FUNCTION-PATH-RESULTS.md)：80项既有轨迹、3200行函数对照；接受事件/符号函数差异0，旧42失败仍排除。S2/S3待实施，当前无新Windows执行提示词；旧主研究完成状态不变。上文planned_not_started记录为计划发布时状态，实时状态以本节和CURRENT-SCOPE.json为准。
+用户已授权执行。S1 H1四函数分析已完成，见[结果报告](H1-FUNCTION-PATH-RESULTS.md)：80项既有轨迹、3200行函数对照；接受事件/符号函数差异0，旧42失败仍排除。S3B独立L2参考已完成，见[L2结果](L2-RARE-REFERENCE-RESULTS.md)。S2输入已核验但原生阶段记录待实现；S3A组件资格通过但W1完整认证待做。当前无新Windows执行提示词；旧主研究完成状态不变。上文planned_not_started记录为计划发布时状态，实时状态以本节和CURRENT-SCOPE.json为准。

@@ -1,0 +1,345 @@
+{
+  "identity": "l2-rare-reference-is-v1",
+  "protocol_sha256": "94e0493dc7e4848a0c4bf375e30f53305f5523c26fafa0694c73bf368f1b9562",
+  "target_sha256": "7d3e601010f3c362f0cb37a7eca3e13efdd60a9622b718831200ecc0d65cee4f",
+  "source_commit": "691dcfb4f1bb4da832472448276bfd19771f999e",
+  "reference_estimates": [
+    {
+      "probability": 1.5654789263319528e-09,
+      "log_probability": -20.275074036554543,
+      "draws": 1048576,
+      "event_proposals": 524454,
+      "denominator_ess": 356889.7431211195,
+      "numerator_ess": 176551.83305612832,
+      "maximum_denominator_weight": 4.673224573466393e-06,
+      "maximum_numerator_weight": 0.0007728584943182788,
+      "log_denominator_mean": -1197.6169902531885,
+      "log_numerator_mean": -1217.892064289743,
+      "mcse": 5.690905351991113e-12,
+      "relative_mcse": 0.0036352487767595675,
+      "mcse_method": "8 independent batch (A,B) covariance; delta approximation",
+      "batch_scaling_log_shift": -1196.0277078797258,
+      "batch_scaled_numerator_denominator": [
+        [
+          3.204156678681819e-10,
+          0.2041237113251807
+        ],
+        [
+          3.2071934021753316e-10,
+          0.2051368128979873
+        ],
+        [
+          3.1535360251028457e-10,
+          0.20437977434539606
+        ],
+        [
+          3.2397303516996767e-10,
+          0.20378810110557183
+        ],
+        [
+          3.1807960869106094e-10,
+          0.20518958522887568
+        ],
+        [
+          3.180642071346921e-10,
+          0.2031664230171712
+        ],
+        [
+          3.213278619166288e-10,
+          0.20268373652943214
+        ],
+        [
+          3.1783008387396487e-10,
+          0.2041079090463604
+        ]
+      ],
+      "batch_joint_covariance": [
+        [
+          7.103944093412959e-24,
+          -5.83575677120109e-16
+        ],
+        [
+          -5.83575677120109e-16,
+          7.584936482014124e-07
+        ]
+      ],
+      "batches": [
+        {
+          "probability": 1.569713120479828e-09,
+          "log_probability": -20.272372960091616,
+          "draws": 131072,
+          "event_proposals": 65652,
+          "denominator_ess": 44594.761794924336,
+          "numerator_ess": 30841.72116743743,
+          "maximum_denominator_weight": 3.700357588801495e-05,
+          "maximum_numerator_weight": 0.0017838440164050485,
+          "log_denominator_mean": -1197.6167369206023,
+          "log_numerator_mean": -1217.889109880694
+        },
+        {
+          "probability": 1.5634411770692786e-09,
+          "log_probability": -20.2763765623356,
+          "draws": 131072,
+          "event_proposals": 65627,
+          "denominator_ess": 44804.9375322341,
+          "numerator_ess": 15594.550228224269,
+          "maximum_denominator_weight": 3.710836547399698e-05,
+          "maximum_numerator_weight": 0.004792660225603883,
+          "log_denominator_mean": -1197.6117860221782,
+          "log_numerator_mean": -1217.8881625845138
+        },
+        {
+          "probability": 1.5429785237817684e-09,
+          "log_probability": -20.289551182144578,
+          "draws": 131072,
+          "event_proposals": 65274,
+          "denominator_ess": 44627.80000818444,
+          "numerator_ess": 34723.536026810565,
+          "maximum_denominator_weight": 3.713527603400742e-05,
+          "maximum_numerator_weight": 0.0016566790462640305,
+          "log_denominator_mean": -1197.6154832566178,
+          "log_numerator_mean": -1217.9050344387624
+        },
+        {
+          "probability": 1.5897544234055376e-09,
+          "log_probability": -20.259686283331348,
+          "draws": 131072,
+          "event_proposals": 65491,
+          "denominator_ess": 44614.89632854777,
+          "numerator_ess": 11680.957211744748,
+          "maximum_denominator_weight": 3.6760629750719156e-05,
+          "maximum_numerator_weight": 0.006096937844925109,
+          "log_denominator_mean": -1197.618382424778,
+          "log_numerator_mean": -1217.8780687081094
+        },
+        {
+          "probability": 1.5501742368465953e-09,
+          "log_probability": -20.284898501464113,
+          "draws": 131072,
+          "event_proposals": 65579,
+          "denominator_ess": 44773.04011563948,
+          "numerator_ess": 31624.241228079027,
+          "maximum_denominator_weight": 3.696689416343137e-05,
+          "maximum_numerator_weight": 0.0019558318200568283,
+          "log_denominator_mean": -1197.6115288009446,
+          "log_numerator_mean": -1217.8964273024087
+        },
+        {
+          "probability": 1.5655353006229554e-09,
+          "log_probability": -20.275038026311904,
+          "draws": 131072,
+          "event_proposals": 65642,
+          "denominator_ess": 44452.864606957875,
+          "numerator_ess": 38343.135413236116,
+          "maximum_denominator_weight": 3.699276997893605e-05,
+          "maximum_numerator_weight": 0.0008498603530023729,
+          "log_denominator_mean": -1197.6214376977146,
+          "log_numerator_mean": -1217.8964757240265
+        },
+        {
+          "probability": 1.5853657891785087e-09,
+          "log_probability": -20.2624506744271,
+          "draws": 131072,
+          "event_proposals": 65717,
+          "denominator_ess": 44352.91168129631,
+          "numerator_ess": 20594.823949124428,
+          "maximum_denominator_weight": 3.731714200569874e-05,
+          "maximum_numerator_weight": 0.0027159544844878565,
+          "log_denominator_mean": -1197.6238163426601,
+          "log_numerator_mean": -1217.8862670170872
+        },
+        {
+          "probability": 1.5571669190034455e-09,
+          "log_probability": -20.280397744314996,
+          "draws": 131072,
+          "event_proposals": 65472,
+          "denominator_ess": 44669.02599509044,
+          "numerator_ess": 23105.886229799456,
+          "maximum_denominator_weight": 3.737922046674633e-05,
+          "maximum_numerator_weight": 0.003413975329270792,
+          "log_denominator_mean": -1197.6168143388034,
+          "log_numerator_mean": -1217.8972120831183
+        }
+      ],
+      "quality_targets_met": true,
+      "candidate": 0,
+      "scale_pair": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "probability": 1.7604797411477602e-09,
+      "log_probability": -20.157679484841992,
+      "draws": 1048576,
+      "event_proposals": 526059,
+      "denominator_ess": 161503.97618192792,
+      "numerator_ess": 220.2046777702727,
+      "maximum_denominator_weight": 1.0714866862641435e-05,
+      "maximum_numerator_weight": 0.02485620759081657,
+      "log_denominator_mean": -1197.613683125022,
+      "log_numerator_mean": -1217.771362609864,
+      "mcse": 1.2442090085780074e-10,
+      "relative_mcse": 0.07067442921932374,
+      "mcse_method": "8 independent batch (A,B) covariance; delta approximation",
+      "batch_scaling_log_shift": -1195.194617868264,
+      "batch_scaled_numerator_denominator": [
+        [
+          1.2299581685324877e-10,
+          0.08861074700127053
+        ],
+        [
+          2.1492977260785041e-10,
+          0.0893012429962543
+        ],
+        [
+          1.3306375187061517e-10,
+          0.08893172932944349
+        ],
+        [
+          1.622002714062164e-10,
+          0.08923087468952086
+        ],
+        [
+          1.6627593325286184e-10,
+          0.08865496024528684
+        ],
+        [
+          1.3235002032291032e-10,
+          0.08945878344502968
+        ],
+        [
+          1.8586891046200377e-10,
+          0.08983709553586974
+        ],
+        [
+          1.3584435206281932e-10,
+          0.08801276835655975
+        ]
+      ],
+      "batch_joint_covariance": [
+        [
+          1.0122866219883991e-21,
+          9.153673778390017e-15
+        ],
+        [
+          9.153673778390017e-15,
+          3.2927668028676414e-07
+        ]
+      ],
+      "batches": [
+        {
+          "probability": 1.3880462699573236e-09,
+          "log_probability": -20.395368639713297,
+          "draws": 131072,
+          "event_proposals": 65628,
+          "denominator_ess": 20159.85902353078,
+          "numerator_ess": 52.977199030141904,
+          "maximum_denominator_weight": 8.548352302417827e-05,
+          "maximum_numerator_weight": 0.08751771074779968,
+          "log_denominator_mean": -1197.6181199990083,
+          "log_numerator_mean": -1218.0134886387216
+        },
+        {
+          "probability": 2.406794859696051e-09,
+          "log_probability": -19.844969908326675,
+          "draws": 131072,
+          "event_proposals": 65525,
+          "denominator_ess": 20389.29562959328,
+          "numerator_ess": 21.728172703254646,
+          "maximum_denominator_weight": 8.513099237038858e-05,
+          "maximum_numerator_weight": 0.14496815593591264,
+          "log_denominator_mean": -1197.6103577401295,
+          "log_numerator_mean": -1217.4553276484562
+        },
+        {
+          "probability": 1.4962460853278304e-09,
+          "log_probability": -20.32030647538204,
+          "draws": 131072,
+          "event_proposals": 65870,
+          "denominator_ess": 20135.715301581196,
+          "numerator_ess": 32.345725763782845,
+          "maximum_denominator_weight": 8.536170313019122e-05,
+          "maximum_numerator_weight": 0.14431278691096608,
+          "log_denominator_mean": -1197.6145041580612,
+          "log_numerator_mean": -1217.9348106334432
+        },
+        {
+          "probability": 1.8177595139643094e-09,
+          "log_probability": -20.125661130488652,
+          "draws": 131072,
+          "event_proposals": 65937,
+          "denominator_ess": 20190.4676319352,
+          "numerator_ess": 34.88229725511548,
+          "maximum_denominator_weight": 8.550173421247392e-05,
+          "maximum_numerator_weight": 0.09179597892339328,
+          "log_denominator_mean": -1197.6111460387426,
+          "log_numerator_mean": -1217.7368071692313
+        },
+        {
+          "probability": 1.8755401028078124e-09,
+          "log_probability": -20.09436916417303,
+          "draws": 131072,
+          "event_proposals": 66059,
+          "denominator_ess": 20101.087993302983,
+          "numerator_ess": 29.615794902831063,
+          "maximum_denominator_weight": 8.585529766327343e-05,
+          "maximum_numerator_weight": 0.12766749749823764,
+          "log_denominator_mean": -1197.6176211631578,
+          "log_numerator_mean": -1217.7119903273308
+        },
+        {
+          "probability": 1.479452494502736e-09,
+          "log_probability": -20.331593753760444,
+          "draws": 131072,
+          "event_proposals": 65498,
+          "denominator_ess": 20170.478586169174,
+          "numerator_ess": 37.53666084049767,
+          "maximum_denominator_weight": 8.487948403779689e-05,
+          "maximum_numerator_weight": 0.10600638305461267,
+          "log_denominator_mean": -1197.6085951482046,
+          "log_numerator_mean": -1217.940188901965
+        },
+        {
+          "probability": 2.068955027467533e-09,
+          "log_probability": -19.996222174780996,
+          "draws": 131072,
+          "event_proposals": 65791,
+          "denominator_ess": 20351.122317722395,
+          "numerator_ess": 21.846265369163607,
+          "maximum_denominator_weight": 8.469400729651363e-05,
+          "maximum_numerator_weight": 0.14655012968080197,
+          "log_denominator_mean": -1197.6043751666366,
+          "log_numerator_mean": -1217.6005973414176
+        },
+        {
+          "probability": 1.5434618703560206e-09,
+          "log_probability": -20.289237975656533,
+          "draws": 131072,
+          "event_proposals": 65751,
+          "denominator_ess": 20008.054954400955,
+          "numerator_ess": 41.844359128954984,
+          "maximum_denominator_weight": 8.663925847853503e-05,
+          "maximum_numerator_weight": 0.09760886255263673,
+          "log_denominator_mean": -1197.6248912483322,
+          "log_numerator_mean": -1217.9141292239888
+        }
+      ],
+      "quality_targets_met": true,
+      "candidate": 1,
+      "scale_pair": [
+        1.5,
+        0.5
+      ]
+    }
+  ],
+  "proposals_compatible_3_combined_mcse": true,
+  "between_proposals_absolute_difference": 1.950008148158074e-10,
+  "combined_mcse": 1.2455098142524612e-10,
+  "independent_batches_per_proposal": 8,
+  "formal_reference_points": 2097152,
+  "pilot_points": 16384,
+  "new_mcmc_fits": 0,
+  "status": "quality_targets_met",
+  "interpretation": "Finite-sample self-normalized ratio, approximate MCSE, no strict probability certification; original zero-event reference preserved"
+}

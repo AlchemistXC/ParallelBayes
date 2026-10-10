@@ -4,7 +4,7 @@
 
 2026-10-10：Windows 紧凑研究已完成，Mac 独立接收、4144 项重建、统计比较及中文论文材料已完成。**当前不需要重跑任何 Windows 提示词。** 研究完成指本版约定范围内的计算与材料交付，不代表所有配置收敛或普遍加速；署名、公开原件和投稿由作者决定。
 
-本版完成后的[三项限定补充计划](docs/TARGETED-FOLLOWUPS-PLAN.md)已制定：H1函数差、NUTS故障定位、W1/L2参考改进。现已授权执行；[S1 H1函数分析](docs/H1-FUNCTION-PATH-RESULTS.md)完成，S2/S3继续推进，不重跑原网格。
+本版完成后的[三项限定补充计划](docs/TARGETED-FOLLOWUPS-PLAN.md)已制定：H1函数差、NUTS故障定位、W1/L2参考改进。现已授权执行；[S1 H1函数分析](docs/H1-FUNCTION-PATH-RESULTS.md)完成，[S3B L2独立参考](docs/L2-RARE-REFERENCE-RESULTS.md)完成；S2 Windows定位和S3A W1认证继续推进，不重跑原网格。
 
 ## 阅读与使用
 

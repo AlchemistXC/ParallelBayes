@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checked_source_assets": 633,
+  "scalar_log_weight_checks": 96,
+  "maximum_independent_log_weight_difference": 3.637978807091713e-12,
+  "independent_reaggregation": [
+    {
+      "candidate": 0,
+      "probability": 1.5654789263320618e-09,
+      "mcse": 5.69090535199115e-12,
+      "denominator_ess": 356889.74312120356,
+      "numerator_ess": 176551.83305619744,
+      "verified": true
+    },
+    {
+      "candidate": 1,
+      "probability": 1.7604797411474622e-09,
+      "mcse": 1.244209008578008e-10,
+      "denominator_ess": 161503.9761819153,
+      "numerator_ess": 220.2046777702517,
+      "verified": true
+    }
+  ],
+  "source_summary_sha256": "054160b69f3182c5c369726f5746088c4476c167dedad837c4c4c5bdd15d813b",
+  "old_frame_sha256": "bae58d58ab91fe4e9a293d7ec51b375ffa76a8e607fd47b6007d5bcd95db6521",
+  "old_frame_counts": {
+    "valid": 414,
+    "output_failure_unclassified": 18,
+    "measurement_available": 64
+  },
+  "interpretation": "Approximate independent importance reference only; unchanged original diagnostic and task eligibility rules"
+}

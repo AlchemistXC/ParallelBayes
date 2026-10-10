@@ -51,4 +51,4 @@ R1–R4已完成。修订稿为17页正文、34页SI和67页完整结果附录�
 
 当前仅完成计划与输入选择，没有新科学计算、环境安装或Windows执行指令。每机新增工作文件加归档上限20 GiB，复用原件，不重跑3888网格。新实现资格与新协议冻结后才进入对应执行；允许未复现、未认证或参考仍未定。详细状态见[工作登记](../execution/targeted-followups-v1/WORK-PACKAGES.md)和[机器计划](../execution/targeted-followups-v1/PLAN.json)。
 
-执行更新：用户已授权实施，S1完成，见[H1结果](H1-FUNCTION-PATH-RESULTS.md)。S2/S3仍在后续范围；不把S1结项视为全部补充完成。
+执行更新：用户已授权实施，S1完成，见[H1结果](H1-FUNCTION-PATH-RESULTS.md)。S3B已完成固定预算[L2独立参考](L2-RARE-REFERENCE-RESULTS.md)；S2待原生阶段记录和执行，S3A待W1完整包络，统一论文增补待完成。不把S1/S3B结项视为全部补充完成。

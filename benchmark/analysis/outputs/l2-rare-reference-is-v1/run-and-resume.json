@@ -1,0 +1,31 @@
+{
+  "invocations": [
+    {
+      "new_proposal_points": 2113536,
+      "reused_proposal_points": 0,
+      "new_weight_chunks": 260,
+      "reused_weight_chunks": 0,
+      "rss_observed_max": 207634432,
+      "elapsed_seconds": 99.55632305145264
+    },
+    {
+      "new_proposal_points": 0,
+      "reused_proposal_points": 2113536,
+      "new_weight_chunks": 0,
+      "reused_weight_chunks": 260,
+      "rss_observed_max": 177029120,
+      "elapsed_seconds": 1.5153779983520508
+    }
+  ],
+  "existing_assets_unchanged": 633,
+  "qualification_tests_at_start": {
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0
+  },
+  "later_w1_tests": {
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0
+  }
+}

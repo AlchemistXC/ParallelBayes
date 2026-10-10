@@ -69,7 +69,7 @@
     "windows_prompt": null
   },
   "targeted_followups": {
-    "status": "in_progress_S1_complete",
+    "status": "in_progress_S1_S3B_complete",
     "plan": "docs/TARGETED-FOLLOWUPS-PLAN.md",
     "machine_plan": "execution/targeted-followups-v1/PLAN.json",
     "work_packages": "execution/targeted-followups-v1/WORK-PACKAGES.md",
@@ -86,10 +86,22 @@
       "new_on_resume": 0
     },
     "S2": {
-      "status": "pending_implementation"
+      "status": "inputs_prepared_pending_native_instrumentation",
+      "cases": 9,
+      "diagnostic_sets": 3,
+      "new_sampler_calls": 0
     },
     "S3": {
-      "status": "pending_implementation"
+      "W1": {
+        "status": "components_qualified_full_enclosure_pending"
+      },
+      "L2": {
+        "status": "complete",
+        "reference_type": "independent importance with approximate MCSE",
+        "formal_reference_points": 2097152,
+        "pilot_points": 16384,
+        "report": "docs/L2-RARE-REFERENCE-RESULTS.md"
+      }
     }
   }
 }
