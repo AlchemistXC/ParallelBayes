@@ -1,0 +1,31 @@
+{
+  "source_commit": "2762b20577449f602853a472c2a2809ff59055bc",
+  "documents": [
+    {
+      "file": "软件与基准研究-紧凑研究完成版.pdf",
+      "pages": 16,
+      "bytes": 536566,
+      "sha256": "527874ca28b9864bad73ccee72e2c3eac22dad5c52fbda8dc35b577f6f0ca290"
+    },
+    {
+      "file": "补充材料-紧凑研究完成版.pdf",
+      "pages": 27,
+      "bytes": 697729,
+      "sha256": "969d77744b48346d73a89e4e9fe6d00983ea1cbf8e062d628d8cf8e0064b7a11"
+    },
+    {
+      "file": "紧凑研究-完整结果附录.pdf",
+      "pages": 66,
+      "bytes": 1384704,
+      "sha256": "1e74dd9b99223bad070fe1258b8ba48da0ca3c535d18a2bdf61d21568421d93d"
+    }
+  ],
+  "relocated_input_files": 23,
+  "relocated_main_text_equal": true,
+  "relocated_main_render_equal": true,
+  "compiler": "existing Tectonic 0.17.0",
+  "native_editor": "External project inputs unsupported; preserved source, existing project compiler used.",
+  "new_sampler_calls": 0,
+  "visual_review": "Whole main 16 pages, supplement 27 before cross-host addition, all 66 appendix pages reviewed in contact sheets; main pages 10/13 and R table inspected at final readable scale. Final changed supplement pages reviewed separately.",
+  "external_independent_team_claim": false
+}

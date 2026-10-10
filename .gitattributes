@@ -23,3 +23,6 @@ execution/windows-compact/formal-results/*/*.svg text eol=lf whitespace=-blank-a
 
 # Figure source data retain renderer bytes bound by their SHA256 manifests.
 figures/compact-mixture-companion-v1/source.csv -text
+
+benchmark/analysis/outputs/compact-final-reconstruction-v1/*.csv -text whitespace=-blank-at-eol
+figures/compact-final-v1/*.svg text eol=lf whitespace=-blank-at-eol

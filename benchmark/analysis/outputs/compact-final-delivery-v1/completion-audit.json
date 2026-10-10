@@ -1,0 +1,58 @@
+{
+  "schema": "agreed-research-completion-audit-v1",
+  "date": "2026-10-10",
+  "scope": "F0-F6 technical, scientific analysis and manuscript delivery; no publication or author decisions",
+  "requirements": {
+    "F0": {
+      "complete": true,
+      "evidence": "Complete 21-component intake, source bindings and truthful capability matrix"
+    },
+    "F1": {
+      "complete": true,
+      "evidence": "4144 raw records; original binary R diagnostics; no changed NA or Rhat classification"
+    },
+    "F2": {
+      "complete": true,
+      "evidence": "Prior Mac/Windows finite mechanism studies plus H1/M1 companions; no new causal profiling claim"
+    },
+    "F3": {
+      "complete": true,
+      "evidence": "Full 3888+256 reconstruction; zero-new resume; all models/functions and cross-platform statistics reviewed"
+    },
+    "F4": {
+      "complete": true,
+      "evidence": "W1 formal comparison, installed target example, 32-process/64-call R timing and relocated read-only verification"
+    },
+    "F5": {
+      "complete": true,
+      "evidence": "Raw-to-statistics-to-45-figure report and generated manuscript; isolated installation receipts retained; relocated 23-input paper build"
+    },
+    "F6": {
+      "complete": true,
+      "evidence": "Chinese main 16p/SI27p/results66p, scientific claim review, full PDF layout review; author metadata explicitly pending"
+    }
+  },
+  "unresolved_findings": [
+    "105 original unclassified failures retain unknown precise cause",
+    "Rare L2 reference remains unresolved",
+    "W1 quadrature uncertainty uncertified",
+    "Poor exploration is retained, not treated as failed project completion"
+  ],
+  "not_claimed": [
+    "All configurations converge",
+    "Universal inference acceleration",
+    "Precise interpolated time-to-accuracy",
+    "Unaffiliated external-team replication",
+    "Public raw evidence access",
+    "Submission-ready author approval"
+  ],
+  "source_changes": "Numerical kernels and frozen protocols unchanged. New R reader relocation verifies the frozen reference SHA; actual run is preserved at its original source identity.",
+  "validation_policy": "Existing passing sampler/package checks not rerun without numerical changes. New rendering/aggregation checked on complete actual data; portable reference tampering rejected.",
+  "author_decisions": [
+    "Author names and affiliations",
+    "Raw-data public release",
+    "Journal/submission"
+  ],
+  "new_formal_repetitions": 0,
+  "windows_resampling": 0
+}

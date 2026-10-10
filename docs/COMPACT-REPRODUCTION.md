@@ -1,6 +1,6 @@
 # 从紧凑研究原件重建结果
 
-本入口用于**读取保存的Windows结果**，不启动新MCMC、CUDA计时或Windows任务。完整Mac重建当前仍在运行；本页的环境与路径规则已经核对，完整4144项到最终论文的验收须等实际重建结束后补齐。既有Windows原件、Mac接收树及失败记录均不覆盖。
+本入口用于**读取保存的Windows结果**，不启动新MCMC、CUDA计时或Windows任务。完整Mac4144项重建、真实恢复、统计比较及最终论文构建已经完成，见[交付报告](RESEARCH-COMPLETION-REPORT.md)。既有Windows原件、Mac接收树及失败记录均不覆盖。
 
 ## 需要取得的材料
 
@@ -70,7 +70,7 @@ ANALYSIS_PYTHON ARCHIVED_SOURCE/scripts/analysis/formal_statistics.py --delivery
 ANALYSIS_PYTHON CURRENT_SOURCE/scripts/analysis/compare_compact_statistics.py --left-directory ORIGINAL_WINDOWS_STATISTICS --left-sha256 VERIFIED_WINDOWS_STATISTICS_SHA --right-directory STATISTICS --right-sha256 VERIFIED_MAC_STATISTICS_SHA --output STATISTICS_COMPARISON
 ```
 
-该检查保留投影数值、状态/分母、全部bootstrap数组及描述性阈值分类的差异，不以宽容差隐藏变化。冻结bootstrap中空分母造成的NaN位置也逐项比较，不删除或补零。它不重新计算区间；ZIP元数据和重复来源记录不当作统计值。四项针对性检查通过，完整两平台比较仍需等待本轮Mac统计完成。
+该检查保留投影数值、状态/分母、全部bootstrap数组及描述性阈值分类的差异，不以宽容差隐藏变化。冻结bootstrap中空分母造成的NaN位置也逐项比较，不删除或补零。它不重新计算区间；ZIP元数据和重复来源记录不当作统计值。四项针对性检查及完整两平台比较已完成。状态、分母、阈值和NaN位置无变化；浮点末位差全部保留，未将重建声称为逐位相同。
 
 之后使用当前展示层，不修改归档读取器：
 
@@ -90,3 +90,14 @@ ANALYSIS_PYTHON CURRENT_SOURCE/scripts/analysis/write_compact_manuscript.py --st
 `build_paper_bundle.py`仅收集已经生成的TeX与图件，适合将中文正文和补充材料搬到另一目录编译；它本身不重算原始数据。当前论文编辑器不支持此项目的全部外部文件，构建采用已存在的Tectonic或具备ctex/fandol的XeLaTeX，不需要安装Codex私有插件。
 
 最终验收必须分别保存：原件完整性、4144项读取及恢复、统计与原Windows结果的对应、图表源数据、完整PDF版式和便携构建。仅安装成功、汇总通过或PDF能编译，都不能单独关闭研究复现工作包。
+
+
+## 本轮最终输出与R伴随表
+
+统计清单SHA256为`d928a497889e11f6aaf5829bf1ffd807a647a880a5d4ae7cef4acf3046c34bfb`，完整重建审查SHA256为`a04b3b8effc833c29deb93f2555d8161bde725dcd8d0bd0f9e15e0df1aab9ef7`。这些标识供核对本次原件，不应复制为另一环境自己的运行成功标记。
+
+将生成的三个`compact-*.generated.tex`置于当前`manuscript/software/`，普通费用图目录对应`figures/compact-final-v1/`。已签入的原件派生文本与小型图件使普通读者可直接编译主文；完整结果附件由`formal_report.py --publication-layout`生成的`report.tex`单独编译。
+
+R技术原件另按`r_frontend_verify.py --root R_TIMING --reference-file ORIGINAL_REFERENCE_PY --output R_ANALYSIS`只读重建，再用`r_frontend_report.py --analysis R_ANALYSIS --recovery ACTUAL_RECOVERY_JSON --output R_TABLES`生成`r-frontend.generated.tex`。它要求真实32进程恢复证明和64次独立核验，不能用四次技术重放生成统计区间。原R协议含本次安装来源/绝对路径；搬移核验通过显式`--reference-file`指向随证据提供的原`reference.py`，工具要求它与冻结安装文件SHA256完全一致，不重写协议、不伪造路径，也不重新执行计时。实际搬移64次保存调用重放、两份CSV逐字节一致，以及篡改参考文件被拒绝的检查均已完成。R表格也可从随附已核验`calls.csv`检查全部64行，不需新采样。
+
+本次便携论文输入为`output/software-paper/portable-final-inputs-v1.tar`；23文件与清单在新目录验证并使用原Tectonic编译。主文文本和页面像素一致。此包不含完整原始轨迹，仍须与上述原件/源码和分析输出共同使用。

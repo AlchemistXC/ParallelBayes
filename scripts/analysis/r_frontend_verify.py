@@ -31,7 +31,7 @@ def check_path(path, accept, reference, reference_accept, config):
                 acceptance_mismatches=mismatches)
 
 
-def verify(root, output):
+def verify(root, output, reference_file=None):
     root, output = Path(root), Path(output)
     if output.exists():
         raise FileExistsError(output)
@@ -47,7 +47,8 @@ def verify(root, output):
     model = SimpleNamespace(
         reference=lambda q: float(np.sum(y * (x @ q) - np.exp(x @ q)) - .5 * np.sum(q*q) / sd**2),
         gradient_reference=lambda q: x.T @ (y - np.exp(x @ q)) - q / sd**2)
-    ref_file = Path(plan["package_path"]) / "python/parallelbayes/reference.py"
+    ref_file = (Path(reference_file) if reference_file is not None else
+                Path(plan["package_path"]) / "python/parallelbayes/reference.py")
     if sha(ref_file) != plan["installed_package_sha256"]["python/parallelbayes/reference.py"]:
         raise ValueError("Independent NumPy reference changed")
     spec = importlib.util.spec_from_file_location("frozen_reference", ref_file)
@@ -136,6 +137,8 @@ def verify(root, output):
     summary = dict(schema="r-frontend-timing-verification-v1", process_states=process_states,
                    rows=len(rows), numerical_checks=checks, formal_repetitions_added=0,
                    actual_input_blocks=1, independent_reference_paths=8,
+                   reference_source=dict(sha256=sha(ref_file),
+                       explicit_relocation=reference_file is not None),
                    missing_or_failed_processes=sum(s["status"] != "completed" for s in process_states),
                    all_numerical_checks_passed=all(c["passed"] for c in checks) and len(checks) == 64)
     output.mkdir(parents=True)
@@ -152,6 +155,7 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--root", required=True)
     p.add_argument("--output", required=True)
+    p.add_argument("--reference-file", help="Relocated original NumPy reference; must match frozen installed-file SHA256")
     a = p.parse_args()
-    result = verify(a.root, a.output)
+    result = verify(a.root, a.output, a.reference_file)
     print(json.dumps({k:v for k,v in result.items() if k not in ("numerical_checks", "process_states")}, indent=2))

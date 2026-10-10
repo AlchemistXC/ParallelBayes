@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "relocated_calls": 64,
+  "numerical_summary_equal": true,
+  "csv_bytes_equal": true,
+  "changed_reference_rejected": "Independent NumPy reference changed",
+  "rejected_output_not_created": true,
+  "new_sampler_calls": 0,
+  "original_protocol_unchanged": true,
+  "reference_sha256": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1"
+}

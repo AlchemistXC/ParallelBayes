@@ -1,0 +1,7 @@
+{
+  "initial_failure": "System Python 3.9 tarfile lacks filter; extraction did not start. Compile paths therefore did not exist.",
+  "repair": "Used the already recorded Python 3.12 analysis environment. No source or archive changes.",
+  "verified_files": 23,
+  "source_commit": "2762b20577449f602853a472c2a2809ff59055bc",
+  "source_worktree_dirty": false
+}
