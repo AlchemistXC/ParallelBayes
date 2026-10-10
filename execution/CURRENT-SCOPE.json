@@ -6,7 +6,7 @@
   "technical_research_complete": true,
   "automatic_submission": false,
   "automatic_public_release": false,
-  "windows_next_prompt": null,
+  "windows_next_prompt": "handoff/windows-nuts-localization/CODEX-PROMPT.md",
   "formal_sampling_terminal": true,
   "source": {
     "execution": "3a37a891896faedc62c0d6af185bfad77696054f",
@@ -74,7 +74,7 @@
     "machine_plan": "execution/targeted-followups-v1/PLAN.json",
     "work_packages": "execution/targeted-followups-v1/WORK-PACKAGES.md",
     "scientific_calls_started": 0,
-    "windows_prompt": null,
+    "windows_prompt": "handoff/windows-nuts-localization/CODEX-PROMPT.md",
     "prior_completion_reopened": false,
     "authorization": "User requested execution based on the plan",
     "S1": {
@@ -86,14 +86,30 @@
       "new_on_resume": 0
     },
     "S2": {
-      "status": "inputs_prepared_pending_native_instrumentation",
+      "status": "handoff_prepared_pending_native_qualification",
       "cases": 9,
       "diagnostic_sets": 3,
-      "new_sampler_calls": 0
+      "new_sampler_calls": 0,
+      "portable_tests": {
+        "passed": 14,
+        "failed": 0,
+        "skipped": 0
+      },
+      "native_tests_run": false,
+      "report": "handoff/windows-nuts-localization/README.md"
     },
     "S3": {
       "W1": {
-        "status": "components_qualified_full_enclosure_pending"
+        "status": "running_full_enclosure_pending",
+        "qualification": {
+          "passed": 21,
+          "failed": 0,
+          "skipped": 0
+        },
+        "protocol": "benchmark/protocols/w1-reference-enclosure-v1.json",
+        "protocol_sha256": "85506f871a4fedb6f1cb30da1d9509afa764d2621e40ee51c48a1a6b44a97d36",
+        "source_commit": "504253c3f1ed5fa890cf213de40f7601b3a6c450",
+        "final_certified_intervals_available": false
       },
       "L2": {
         "status": "complete",

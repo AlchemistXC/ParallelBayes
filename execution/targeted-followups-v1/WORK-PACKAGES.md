@@ -1,13 +1,13 @@
 # 限定补充工作登记
 
-2026-10-10，计划v1.0。用户已授权按计划执行。S1已完成80项既有输入重放、图表、恢复与归档核验；S3B已完成固定预算重要性参考及独立复算；S2输入已准备但尚无原生结果；S3A组件资格通过，W1完整认证尚未执行。
+2026-10-10，计划v1.0。用户已授权按计划执行。S1已完成80项既有输入重放、图表、恢复与归档核验；S3B已完成固定预算重要性参考及独立复算；S2工具与输入交接已准备，但尚无原生结果；S3A的21项资格检查通过，W1完整包络计算已启动，尚未产生最终认证结果。
 
 | 包 | 状态 | 下一步与验收 | 产物 |
 |---|---|---|---|
 | P 计划 | 完成 | 范围、输入规则、资源及终态一致；两位独立审查 | docs/TARGETED-FOLLOWUPS-PLAN.md、PLAN.json、selection.json |
 | S1 H1函数差 | complete | 80项/3200函数行；恢复新增0；42旧失败不变 | docs/H1-FUNCTION-PATH-RESULTS.md；对应delivery.json |
-| S2 NUTS故障定位 | inputs_prepared | 9输入/3旧轨迹已核验；实现原生插桩及资格后冻结协议 | qualification/nuts-input-preparation.json；无新执行提示词 |
-| S3A W1参考 | components_qualified | 有限域8项、目标/导数/尾界5项通过；仍需可恢复积分及完整比率 | docs/W1-ENCLOSURE-METHOD-NOTE.md；无W1认证结果 |
+| S2 NUTS故障定位 | handoff_prepared | 14项便携检查通过；Windows实际通过Job及四条件资格后冻结 | handoff/windows-nuts-localization/README.md；qualification/nuts-portable-qualification.json |
+| S3A W1参考 | running | 21项检查通过；冻结后运行两种积分组织，随后独立核对及参考敏感性分析 | benchmark/protocols/w1-reference-enclosure-v1.json；无最终W1认证结果 |
 | S3B L2参考 | complete | 2097152正式点+16384试探；633资产恢复不变；96点独立权重核对 | docs/L2-RARE-REFERENCE-RESULTS.md；对应SUMMARY/audit.json |
 | 合并 | pending | 独立接收新原件；论文只写已完成结果 | 尚未改动结果正文 |
 
@@ -20,3 +20,7 @@ S1完成证据：1,130,496转移，接受事件与符号函数差异0；3200行�
 S3B：源码691dcfb，协议SHA256 94e0493dc7e4848a0c4bf375e30f53305f5523c26fafa0694c73bf368f1b9562。两套估计1.565478926e−9和1.760479741e−9，相对MCSE0.3635%和7.0674%；全部预设权重门槛通过，仍是近似随机误差。运行约99.56秒，观察RSS约198.02 MiB；恢复新增点/权重块均0。独立复算96点log权重最大差3.64e−12。原414有效、18失败与常量事件诊断均不变。累计21项组件检查通过0失败0跳过；它们不替代Windows原生验收。
 
 L2交付：约178.94 MiB本地tar的660件成员逐项校验；同机独立目录从归档重建7件报告/表格逐字节一致，恢复新提议/权重均0。完整SHA见benchmark/analysis/outputs/l2-rare-reference-is-v1/delivery.json。W1实际目标的两个方向×七个四阶导数通过128-bit独立幂级数包络检查，NumPy与Arb对数目标差2.27e−13；尚无W1后验认证区间。
+
+W1运行更新：执行源码504253c3f1ed5fa890cf213de40f7601b3a6c450；协议在278c04a提交，SHA256为85506f871a4fedb6f1cb30da1d9509afa764d2621e40ee51c48a1a6b44a97d36。21项资格检查通过、0失败、0跳过，明细见qualification/w1-driver-qualification.json。运行命令为`scripts/analysis/run_w1_enclosure.py run --protocol benchmark/protocols/w1-reference-enclosure-v1.json --data <已核验原件>/formal/external --output <补充输出>/w1-reference-enclosure-v1`，使用独立.venv-followups、warnings-as-errors及协议绑定的单线程环境。进度、SQLite检查点和资源记录保存在输出目录；截至本次核对仍在有限域细分，不能提前填写最终认证状态。
+
+S2实现更新：增加scripts/followups中的独立阶段记录、诊断前持久化、受管Job消息/退出/私有内存观察、固定调用登记、原生资格门槛、分阶段协调、只核验恢复、独立分析和导出。14项Mac便携检查通过0失败0跳过；原生测试尚未运行，未新增MCMC调用。输入tar 21,544,960字节，27个文件独立解包逐项相同，SHA256为3b97a221ea8a5a61644f3394474e2ceaf8f0b981803456181a012a99d26f5b12。使用新handoff/windows-nuts-localization/CODEX-PROMPT.md整份提示词；原48调用上限不变。

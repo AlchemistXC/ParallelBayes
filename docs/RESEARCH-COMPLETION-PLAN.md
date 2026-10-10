@@ -1,6 +1,6 @@
 # 研究计划：本版完成与后续边界
 
-2026-10-10。当前约定的软件、实验、独立重建与论文材料已经完成。前一版逐项计划完整保留于[重建期间计划](RESEARCH-COMPLETION-PLAN-through-2026-10-10-reconstruction.md)。本文件不改动任何冻结协议；本版完成后新增的限定补充计划见文末，当前尚未启动。
+2026-10-10。当前约定的软件、实验、独立重建与论文材料已经完成。前一版逐项计划完整保留于[重建期间计划](RESEARCH-COMPLETION-PLAN-through-2026-10-10-reconstruction.md)。本文件不改动任何冻结协议；本版完成后新增的限定补充计划及当前执行状态见文末。
 
 ## 已回答的研究问题
 
@@ -49,6 +49,6 @@ R1–R4已完成。修订稿为17页正文、34页SI和67页完整结果附录�
 
 2026-10-10追加。依本轮要求制定[三项限定补充计划](TARGETED-FOLLOWUPS-PLAN.md)：S1重放80条既有H1任务并比较四函数；S2以9输入、2×2条件进行Windows原生CPU故障定位，所有资格/主体/确认最多48次四链技术调用；S3分开处理W1确定误差包络与L2独立重要性参考。原F0–F6及R1–R4完成状态不撤销。
 
-当前仅完成计划与输入选择，没有新科学计算、环境安装或Windows执行指令。每机新增工作文件加归档上限20 GiB，复用原件，不重跑3888网格。新实现资格与新协议冻结后才进入对应执行；允许未复现、未认证或参考仍未定。详细状态见[工作登记](../execution/targeted-followups-v1/WORK-PACKAGES.md)和[机器计划](../execution/targeted-followups-v1/PLAN.json)。
+计划发布时仅完成范围与输入选择；当前执行状态见下段更新。每机新增工作文件加归档上限20 GiB，复用原件，不重跑3888网格。新实现资格与新协议冻结后才进入对应执行；允许未复现、未认证或参考仍未定。详细状态见[工作登记](../execution/targeted-followups-v1/WORK-PACKAGES.md)和[机器计划](../execution/targeted-followups-v1/PLAN.json)。
 
-执行更新：用户已授权实施，S1完成，见[H1结果](H1-FUNCTION-PATH-RESULTS.md)。S3B已完成固定预算[L2独立参考](L2-RARE-REFERENCE-RESULTS.md)；S2待原生阶段记录和执行，S3A待W1完整包络，统一论文增补待完成。不把S1/S3B结项视为全部补充完成。
+执行更新：用户已授权实施，S1完成，见[H1结果](H1-FUNCTION-PATH-RESULTS.md)。S3B已完成固定预算[L2独立参考](L2-RARE-REFERENCE-RESULTS.md)；S2已准备执行工具及[专用交接](../handoff/windows-nuts-localization/README.md)，14项便携检查通过，原生资格和执行仍待完成；S3A已通过21项资格检查并冻结协议，W1完整包络正在计算。独立核对、参考敏感性及统一论文增补待完成。不把S1/S3B结项视为全部补充完成。

@@ -24,8 +24,8 @@ Windows原始证据仍在草稿Release；当前源码和稿件公开不等于原
 
 ## 新增的限定补充计划
 
-用户已要求制定S1 H1函数路径差、S2 NUTS故障定位、S3 W1/L2参考改进的计划；[计划v1.0](TARGETED-FOLLOWUPS-PLAN.md)现已整理。当前状态为planned_not_started，不代表这些新工作已经执行。旧研究与修订稿交付仍完成；新计划预留有限技术调用和独立参考计算，均不增加原主实验独立重复。没有新的Windows提示词；代码与新协议就绪后才制作对应提示词。
+用户已要求制定S1 H1函数路径差、S2 NUTS故障定位、S3 W1/L2参考改进的计划；[计划v1.0](TARGETED-FOLLOWUPS-PLAN.md)现已整理。计划发布时状态为planned_not_started；当前执行状态见下节与工作登记。旧研究与修订稿交付仍完成；新计划预留有限技术调用和独立参考计算，均不增加原主实验独立重复。没有新的Windows提示词；代码与新协议就绪后才制作对应提示词。
 
 ## 补充计划执行更新
 
-用户已授权执行。S1 H1四函数分析已完成，见[结果报告](H1-FUNCTION-PATH-RESULTS.md)：80项既有轨迹、3200行函数对照；接受事件/符号函数差异0，旧42失败仍排除。S3B独立L2参考已完成，见[L2结果](L2-RARE-REFERENCE-RESULTS.md)。S2输入已核验但原生阶段记录待实现；S3A组件资格通过但W1完整认证待做。当前无新Windows执行提示词；旧主研究完成状态不变。上文planned_not_started记录为计划发布时状态，实时状态以本节和CURRENT-SCOPE.json为准。
+用户已授权执行。S1 H1四函数分析已完成，见[结果报告](H1-FUNCTION-PATH-RESULTS.md)：80项既有轨迹、3200行函数对照；接受事件/符号函数差异0，旧42失败仍排除。S3B独立L2参考已完成，见[L2结果](L2-RARE-REFERENCE-RESULTS.md)。S2输入与执行工具已准备，14项Mac便携检查通过，仍待Windows原生资格和有限主体；S3A的21项资格检查通过、协议已冻结，W1完整包络正在计算，尚无最终认证结果。本轮新Windows提示词见[交接入口](../handoff/windows-nuts-localization/README.md)，须先完成原生资格；旧主研究完成状态不变。上文planned_not_started记录为计划发布时状态，实时状态以本节和CURRENT-SCOPE.json为准。

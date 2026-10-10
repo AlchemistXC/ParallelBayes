@@ -1,0 +1,118 @@
+{
+  "archive": "windows-nuts-localization-inputs-v1.tar",
+  "bytes": 21544960,
+  "sha256": "3b97a221ea8a5a61644f3394474e2ceaf8f0b981803456181a012a99d26f5b12",
+  "files": {
+    "16bc1edb545bad53bf8d780c-source-assets.json": {
+      "bytes": 566,
+      "sha256": "c747fc3e1a28b56193ddb29f134825f909c875ab326910e9f7ad07d29478fb88"
+    },
+    "2c83781b7323c9b8da3096fb-source-assets.json": {
+      "bytes": 566,
+      "sha256": "cd2d031228b47df7b9db8f1c3e022710e18c5391a8462360874a7862590dea93"
+    },
+    "4bd166b10537e7004fcf60b4-source-assets.json": {
+      "bytes": 566,
+      "sha256": "ec94eaacdc42d83dc87c06f123fa3ad87adeb87a6dc39d1a7561f07395d1617d"
+    },
+    "8b9233918258fd15cb0bd300-source-assets.json": {
+      "bytes": 566,
+      "sha256": "0a58ed228b09812d2681b8b3a387dc7a8fa1f6839094407d4e49ebd182a87a9e"
+    },
+    "9384dbd929b29d9013dddcbb-source-assets.json": {
+      "bytes": 869,
+      "sha256": "e903e3c42f480e5c2a4ded4012f13c2e060151ef4f9e5327f7158d4c33ea78c7"
+    },
+    "A1-case.json": {
+      "bytes": 383645,
+      "sha256": "2846b205eff061936b27ee3655af8ac666eb4a308cefdb94db097da06c8dc0ba"
+    },
+    "G1-case.json": {
+      "bytes": 39203,
+      "sha256": "014b2d39d0a371a9acadb917aac97970fbc43f1a1c56fa0d70fda26e41f9a389"
+    },
+    "G1-diagnostic.json": {
+      "bytes": 39432,
+      "sha256": "2eff376bf996f9f1589783107db6f5c6495eae018836c6318bce632d3c012ac4"
+    },
+    "G1-diagnostic.npz": {
+      "bytes": 2004810,
+      "sha256": "b3e023ce8ccfd807a29ba23b8263e5649abb8cf13de5f75593f7580326717cc4"
+    },
+    "G2-case.json": {
+      "bytes": 360010,
+      "sha256": "556ae9da51b41707788f901dbf94e77d38c2d47405d03fe4f07cae5222cdf834"
+    },
+    "G2-diagnostic.json": {
+      "bytes": 360280,
+      "sha256": "b9aebb51a02ce0deea14e42b9773e50e49c46487d361e4e19e803203d3ffde25"
+    },
+    "G2-diagnostic.npz": {
+      "bytes": 16174253,
+      "sha256": "0c14fe57a7ccac62a7f4d50a6f5541c2dac98b6620c0d3c9b0741ee03ac07830"
+    },
+    "H1-case.json": {
+      "bytes": 38619,
+      "sha256": "467a116a66559ffb9f8f66e175986edbd125313a5277bf66fa6ea1403dec564a"
+    },
+    "H2-case.json": {
+      "bytes": 38626,
+      "sha256": "93bc4b1f6e24e626825af650d02799a89c829fce4d59e6a8e83a76d39f40c3fc"
+    },
+    "L1-case.json": {
+      "bytes": 109473,
+      "sha256": "f892076b0ff8196e26f878b281e263f5418fc5791fa167ff079a87aa64b544c0"
+    },
+    "L2-case.json": {
+      "bytes": 1109515,
+      "sha256": "7c36b7e3568fcf08b35985aa0aa77c9ca3a994e07ccd031fdc895738bb1cc988"
+    },
+    "M1-case.json": {
+      "bytes": 37895,
+      "sha256": "ac5316c3bc6f9f265949d9f206e5abb7eea9a98c114d8e49f682c6335a68c5e9"
+    },
+    "SUMMARY.json": {
+      "bytes": 1175,
+      "sha256": "8a2da0053af0ac9b48f0550bcb400c8a5a8f2e8600653430d3c8b0ff2dfe0b4d"
+    },
+    "W1-case.json": {
+      "bytes": 147643,
+      "sha256": "1996c3b8b0c051edaacbc8c742ef39ca31bb39a8e84c06e48112aaa7adcdde66"
+    },
+    "W1-diagnostic.json": {
+      "bytes": 147913,
+      "sha256": "a45eb8799b5fbfdb5bfff6100c8c99823577b052f3977793781659ec5e603739"
+    },
+    "W1-diagnostic.npz": {
+      "bytes": 486176,
+      "sha256": "ff4dc239a9eec5a041c378c27f39b982062b3cebfcb5684926e518b225432020"
+    },
+    "cbe1e119d63775a732099418-source-assets.json": {
+      "bytes": 566,
+      "sha256": "5706eb7140f178626b87b02e57ce7398008fca15d7080bc0bb11712e72719bd4"
+    },
+    "ccb7caa505286acab31d3224-source-assets.json": {
+      "bytes": 869,
+      "sha256": "7efce7e0e86c30478c678b31a04762527425ad05098288549c6eb25e4812f9e0"
+    },
+    "checksums.json": {
+      "bytes": 2582,
+      "sha256": "d92824d78f352295449d80556368fd9ee3bed1e9b7af2d0443c3ffb7bfbc7504"
+    },
+    "d65ab7e78de56284cf7cc8dc-source-assets.json": {
+      "bytes": 869,
+      "sha256": "b127b53dce2e54663f5aee4acd02d327118e9ef8074370468bd6d55c6e97d93a"
+    },
+    "ea2c80626ac8c5eb6ddd48ad-source-assets.json": {
+      "bytes": 566,
+      "sha256": "195b6815b13985c9ee8443f25aa94a3049bedeff36d72a5cc4fbcd2502451939"
+    },
+    "fc8cf5c25991f6f6c2c3a023-source-assets.json": {
+      "bytes": 566,
+      "sha256": "e4b5979c0a9b3ade0c552d4a359b24a62e2c72cd8daaeb8470edba5538ba1950"
+    }
+  },
+  "input_manifest_sha256": "d92824d78f352295449d80556368fd9ee3bed1e9b7af2d0443c3ffb7bfbc7504",
+  "original_archive_duplicated": false,
+  "new_sampler_calls": 0
+}
