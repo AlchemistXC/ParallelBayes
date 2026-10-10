@@ -67,5 +67,14 @@
     "new_formal_repetitions": 0,
     "frozen_protocol_changes": 0,
     "windows_prompt": null
+  },
+  "targeted_followups": {
+    "status": "planned_not_started",
+    "plan": "docs/TARGETED-FOLLOWUPS-PLAN.md",
+    "machine_plan": "execution/targeted-followups-v1/PLAN.json",
+    "work_packages": "execution/targeted-followups-v1/WORK-PACKAGES.md",
+    "scientific_calls_started": 0,
+    "windows_prompt": null,
+    "prior_completion_reopened": false
   }
 }

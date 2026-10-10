@@ -1,0 +1,28 @@
+{
+  "mode": "hybrid",
+  "status": "plan_reviewed_delivered_not_started",
+  "scientific_execution_started": false,
+  "work_packages": [
+    "S1",
+    "S2",
+    "S3A",
+    "S3B"
+  ],
+  "base_commit": "690bd465851f677abeee167533e2ff0651659d7b",
+  "foundation_scores": {
+    "numerical_statistics": 8.56,
+    "windows_feasibility": 8.5
+  },
+  "final_scores": {
+    "numerical_statistics": 8.75,
+    "windows_feasibility": 8.75
+  },
+  "plan": "docs/TARGETED-FOLLOWUPS-PLAN.md",
+  "machine_plan": "execution/targeted-followups-v1/PLAN.json",
+  "remaining_scientific_risks": [
+    "W1 interval integration may not qualify within budget",
+    "L2 importance reference may not meet quality targets",
+    "Windows instrumentation may not reproduce historical failure"
+  ],
+  "export_type": "repository_internal_markdown_and_json"
+}

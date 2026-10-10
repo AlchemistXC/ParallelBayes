@@ -508,3 +508,7 @@ R有限计时的37项来源/环境/输入约束仍匹配。已观察实际重建
 审核判断与每项处理见`docs/MANUSCRIPT-REVIEW-V2.md`；新生成器、JSON、测试与构建回执位于`benchmark/analysis/outputs/manuscript-review-v2/`。旧16/27/66页版本继续保留，新版使用“审查修订v2”文件名。参考排序不认证、105进程失败未定位、L2未定、W1稀有事件未认证均继续报告。
 
 本轮R1–R4交付：17/34/67页三份PDF；报告、紧凑分析门控与布局19项检查通过、R语法通过；新增采样0。完整结果附录324个既有资产逐字节不变。源码、环境、命令及SHA见`benchmark/analysis/outputs/manuscript-review-v2/delivery.json`。
+
+## 2026-10-10 三项限定补充计划
+
+依用户要求完成S1–S3规划、80/9/3项输入选择及资源/停止/验收规则。当前科学调用新增0、正式重复新增0、原协议/数组变更0；没有Windows派发。计划与执行状态分开登记在`execution/targeted-followups-v1/`。先前完成版本不撤销，后继证据不会替换旧失败或旧参考。

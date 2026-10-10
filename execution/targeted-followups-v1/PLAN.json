@@ -1,0 +1,142 @@
+{
+  "schema": "parallelbayes-targeted-followups-plan-v1",
+  "date": "2026-10-10",
+  "status": "planned_not_started",
+  "executable": false,
+  "frozen_scientific_protocol": false,
+  "source_baseline": "690bd465851f677abeee167533e2ff0651659d7b",
+  "plan": "docs/TARGETED-FOLLOWUPS-PLAN.md",
+  "selection": "execution/targeted-followups-v1/selection.json",
+  "authorization_scope_this_turn": "Prepare plans only; no scientific computation, environment installation or Windows dispatch",
+  "new_formal_repetitions": 0,
+  "scientific_calls_started": 0,
+  "windows_prompt": null,
+  "total_runtime_cutoff": null,
+  "per_host_new_disk_cap_gib": 20,
+  "working_data_caps_gib": {
+    "S1": 1,
+    "S2": 6,
+    "S3": 3
+  },
+  "mac_total_scientific_rss_cap_gib": 4,
+  "packages": {
+    "S1": {
+      "identity": "h1-function-path-companion-v1",
+      "platform": "Mac CPU",
+      "saved_tasks": 80,
+      "original_failed": 42,
+      "original_valid": 38,
+      "original_input_labels": 13,
+      "functions": 4,
+      "new_random_inputs": 0,
+      "status": "planned"
+    },
+    "S2": {
+      "identity": "windows-nuts-localization-v1",
+      "platform": "Windows native CPU",
+      "diagnostic_only_jobs": 9,
+      "fixed_inputs": 9,
+      "worker_configurations": [
+        1,
+        4
+      ],
+      "legacy_internal_diagnostics": [
+        "enabled",
+        "bypassed"
+      ],
+      "qualification_four_chain_calls": 4,
+      "main_four_chain_calls": 36,
+      "confirmation_four_chain_calls_max": 8,
+      "all_four_chain_calls_including_retries_max": 48,
+      "historical_job_commit_cap_gib": 12,
+      "status": "planned",
+      "qualification_four_chain_calls_per_round": 4,
+      "qualification_rounds_max": 3,
+      "qualification_calls_max": 12,
+      "confirmation_calls_formula": "min(8,48-actual_qualification_calls-36)",
+      "call_count_increment": "at task registration/start, including failed or not spawned",
+      "process_tree_rss_poll_cap_gib": 8,
+      "rss_poll_seconds": 0.2,
+      "minimum_available_ram_gib": 12,
+      "per_worker_threads": 1,
+      "main_warmup": 1024,
+      "main_retained": 4096,
+      "tree_depth": 8,
+      "target_accept": 0.8,
+      "full_mass": false
+    },
+    "S3A": {
+      "identity": "w1-reference-enclosure-v1",
+      "platform": "Mac CPU",
+      "functions": 7,
+      "precision_bits": [
+        128,
+        256,
+        384
+      ],
+      "independent_formulations_max": 2,
+      "active_cells_per_formulation_max": 262144,
+      "interval_integrand_evaluations_total_max": 4000000,
+      "continuous_halfwidth_target": 1e-08,
+      "event_halfwidth_target": 1e-13,
+      "event_relative_halfwidth_target": 0.01,
+      "status": "planned"
+    },
+    "S3B": {
+      "identity": "l2-rare-reference-is-v1",
+      "platform": "Mac CPU",
+      "pilot_candidates_max": 4,
+      "pilot_draws_per_candidate": 4096,
+      "frozen_proposals": 2,
+      "independent_batches_per_proposal": 8,
+      "draws_per_batch_final": 131072,
+      "checkpoints_per_batch": [
+        8192,
+        32768,
+        131072
+      ],
+      "estimation_draws_total": 2097152,
+      "pilot_draws_max": 16384,
+      "all_proposal_draws_max": 2113536,
+      "component_weights": [
+        0.45,
+        0.45,
+        0.1
+      ],
+      "iid_component_selection": true,
+      "stop_when_accuracy_target_met": false,
+      "relative_mcse_target": 0.1,
+      "numerator_ess_target": 200,
+      "denominator_ess_target": 1000,
+      "maximum_normalized_numerator_weight_target": 0.05,
+      "maximum_normalized_denominator_weight_target": 0.01,
+      "status": "planned"
+    }
+  },
+  "entry_gates": [
+    "Implement and inspect limited readers/instrumentation",
+    "Pass package-specific qualification",
+    "Freeze new source, dependencies, input selection, parameters and protocol",
+    "No old protocol modifications; no promotion of invalid paths"
+  ],
+  "open_implementation_details": [
+    "W1 validated two-dimensional integration and moment-tail enclosure qualification",
+    "L2 four pilot scale pairs and covariance floor fixed before pilot",
+    "Windows hooks and memory checks validated before limited calls"
+  ],
+  "allowed_terminal_states": [
+    "completed",
+    "completed_with_unresolved_question",
+    "qualification_failed",
+    "resource_stopped",
+    "missing_input"
+  ],
+  "scientific_invariants": [
+    "No replacement of historical failures or timings",
+    "No new formal benchmark repetitions",
+    "No deleted unfavorable cases",
+    "No automatic public release",
+    "No WSL/VM/container",
+    "No GPU dependency"
+  ]
+}

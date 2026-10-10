@@ -158,3 +158,10 @@ __pycache__/
 !/output/software-paper/补充材料-审查修订v2.pdf
 !/output/software-paper/完整结果附录-审查修订v2.pdf
 !/output/software-paper/parallelbayes-paper-review-v2.tar
+
+# Bounded follow-up plan metadata; scientific arrays remain excluded.
+!/execution/targeted-followups-v1/
+/execution/targeted-followups-v1/*
+!/execution/targeted-followups-v1/PLAN.json
+!/execution/targeted-followups-v1/selection.json
+!/execution/targeted-followups-v1/WORK-PACKAGES.md

@@ -1,0 +1,28 @@
+{
+  "schema": "targeted-followups-planning-validation-v1",
+  "date": "2026-10-10",
+  "scope": "Documentation and metadata checks only; no scientific tests or runs",
+  "checks": [
+    "plan state is not started and not executable",
+    "prior research completion preserved",
+    "H1 80 unique IDs and 42 original failures",
+    "H1 13 original input labels",
+    "NUTS nine selected inputs and three saved diagnostic inputs",
+    "nine inputs times four conditions equals36",
+    "max qualification12 plus main36 equals total48",
+    "L2 two proposals times eight batches times131072 equals2097152",
+    "pilot plus final proposal count2113536",
+    "working data plus archive cap20GiB",
+    "all referenced planning files exist",
+    "Git diff whitespace check passed"
+  ],
+  "result": "passed",
+  "new_scientific_calls": 0,
+  "frozen_source_or_protocol_changes": 0,
+  "files": {
+    "docs/TARGETED-FOLLOWUPS-PLAN.md": "0e43b3b57b50def5454c0d014dff54520168a83a3adc9ee0785ec9b27d73c33c",
+    "execution/targeted-followups-v1/PLAN.json": "a49ac941ccfe89c1f12f99721333d7fa0648767adf4247350db81d67345ce7fd",
+    "execution/targeted-followups-v1/selection.json": "0fbeefc15c7953b0c4a81afda59452466119f7ff3945a6de9a16e5ee0a2995ce",
+    "execution/targeted-followups-v1/WORK-PACKAGES.md": "dcb236b02806fd2372ecc68bc1e49db9252eb0313793d7f1d20b3707074a63c1"
+  }
+}
