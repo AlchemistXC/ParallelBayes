@@ -130,6 +130,16 @@
           },
           "actual_final_report_generated": false,
           "script": "scripts/analysis/report_w1_enclosure.py"
+        },
+        "archiver": {
+          "status": "prepared_final_evidence_pending",
+          "tests": {
+            "passed": 6,
+            "failed": 0,
+            "skipped": 0
+          },
+          "final_archive_created": false,
+          "script": "scripts/analysis/export_w1_evidence.py"
         }
       },
       "L2": {

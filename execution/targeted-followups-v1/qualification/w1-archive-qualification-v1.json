@@ -1,0 +1,21 @@
+{
+  "identity": "w1-archive-qualification-v1",
+  "status": "prepared_final_evidence_pending",
+  "tests": {
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  },
+  "tested_source_sha256": "7cd75efd7ecc2a888f009dbe848efb5fe06d80278ab4fd995a28be807dcb353b",
+  "source_sha256": {
+    "scripts/analysis/export_w1_evidence.py": "ff903d035c62fb303527eef0f72660fb5947102e55f1fc1fd9dc79541cb60752",
+    "tests/handoff/test_w1_archive.py": "aeaf7779c4f6e86ea73c863507f19806ac4d0b34314f363b0ed2f5548ab5a21f"
+  },
+  "test_evidence_sha256": "97aa514897fe83693151d4be2ed53f91f79eae2a517e6ff4457cef92f98d0fce",
+  "scope": "Synthetic packaging fixtures, required evidence gates, zero-evaluation resume, original-file preservation and relocation-stable tar identity. Final real archive and independent extraction/rebuild still pending.",
+  "new_target_evaluations": 0,
+  "new_mcmc_calls": 0,
+  "final_archive_created": false,
+  "post_test_change": "Added the archive test and qualification files to the explicit source inventory; packaging behavior unchanged.",
+  "command": "PYTHONDONTWRITEBYTECODE=1 .venv-followups/bin/python -W error -m pytest tests/handoff/test_w1_archive.py -q -p no:cacheprovider"
+}
