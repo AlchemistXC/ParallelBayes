@@ -42,10 +42,10 @@ D(c)=mean(A²−B²)−2c mean(A−B)。
 
 从仍运行的Gauss检查点用SQLite一致性备份取得独立快照（86,794,240字节）。两个区域分别20513/609单元，共21122；分区和逐单元聚合检查通过。该快照的六个连续函数半宽约1.59×10⁻⁸至2.54×10⁻⁸，尚未全部达到10⁻⁸目标。中途结果明确记为`checkpoint_only`、`completed_result_verified=false`；未放入论文。原432份W1有效拟合的敏感性接口已完成126/504行开发检查，不作为最终认证结果。
 
-完整计算结束后，从仓库根目录运行：
+完整计算结束后，从仓库根目录运行。先把`PB_AUDIT_PYTHON`设为本轮独立环境的Python 3.12.14可执行文件，并用`"$PB_AUDIT_PYTHON" --version`核对；不要假定系统`python3`就是该版本。核验器虽仅使用标准库，但使用了较新Python提供的`hashlib.file_digest`。以下报告和归档命令使用同一解释器：
 
 ```sh
-python3 scripts/analysis/audit_w1_enclosure.py \
+"$PB_AUDIT_PYTHON" scripts/analysis/audit_w1_enclosure.py \
   --source "$PB_W1_OUTPUT" \
   --protocol benchmark/protocols/w1-reference-enclosure-v1.json \
   --root . \
@@ -62,7 +62,7 @@ PB_W1_OUTPUT指完整积分输出，PB_COMPACT_STATISTICS指已核验的formal-s
 十进制区间从精确有理端点向外舍入，包括负数；显示位数不用于判定精度。交集保存时的向外舍入可能使端点略超出某个方法区间，因此检查其包含精确交集，不误要求舍入后的交集严格嵌入两球区间。宽但有效的区间继续报告“未达标”。
 
 ```sh
-python3 scripts/analysis/report_w1_enclosure.py \
+"$PB_AUDIT_PYTHON" scripts/analysis/report_w1_enclosure.py \
   --source "$PB_W1_OUTPUT" --audit "$PB_W1_AUDIT" \
   --output "$PB_W1_REPORT"
 ```
@@ -76,7 +76,7 @@ python3 scripts/analysis/report_w1_enclosure.py \
 最终独立核验和结果表生成完成后，先按原冻结命令对完整输出运行一次恢复核验。新增评价必须为0，原checksums中的全部文件保持不变；只追加本次invocations记录。随后执行：
 
 ```sh
-python3 scripts/analysis/export_w1_evidence.py \
+"$PB_AUDIT_PYTHON" scripts/analysis/export_w1_evidence.py \
   --root . --raw "$PB_W1_OUTPUT" --audit "$PB_W1_AUDIT" \
   --report "$PB_W1_REPORT" --statistics "$PB_COMPACT_STATISTICS" \
   --data "$PB_WELLS_EXTERNAL" --output "$PB_W1_ARCHIVE"
@@ -85,3 +85,14 @@ python3 scripts/analysis/export_w1_evidence.py \
 PB_W1_ARCHIVE为尚不存在的.tar路径。归档只含完整W1积分与核验、必要旧W1函数汇总、八份上游W1来源文件及许可证、明确列出的冻结/核验源码、测试与依赖锁。它不包含旧主实验大数组、环境目录、论文PDF或私有技能。全部交付源码必须已提交，文件内容与交付提交相同；原数值源码还须匹配冻结协议。没有自动上传步骤。
 
 归档程序验证原件哈希，持有只读运行锁，检查新增恢复评价0；按稳定路径和时间戳写tar，再逐成员读取核验。输入上限3 GiB，写入前另预留归档、验证副本和4 GiB余量。失败归档保留且不写成功回执，不以重试覆盖。六项针对性检查通过、0失败、0跳过；正式归档尚未建立，搬移后的完整数值报告重建仍需在实际终态上执行。
+
+## 已结束Gauss规则的独立核对
+
+2026-10-10：原驱动已关闭Gauss数据库、保存其完成结果，随后在同一会话运行Simpson。独立调用既有`audit_database`接口，只读Gauss完成件；未复制或修改数据库，不冒充全研究结束后的入口检查。
+
+- 31533个活动单元：非正侧30592、正侧941。两个归一化分区的精确面积均为1、覆盖次数均为1；所有叶单元求积和与余项和均包含于保存累计区间。
+- 正归一化常数及七函数比率包络均通过；六连续函数半宽最大约9.9998942×10⁻⁹，符号事件半宽约1.9063798×10⁻¹⁵，相对半宽约0.0040%。这些展示数值不是额外舍入后的严格端点，原二进制球和有理端点见核验JSON。
+- 12份完成件、探测及来源文件的SHA在读取前后相同；冻结的8份数值源文件未改。新增目标评价与MCMC调用均0，核对约8.82秒。
+- 首次用系统`python3`启动时因缺少`hashlib.file_digest`在输入核验前终止；完整错误保留。改用既定Python 3.12.14后通过，未更换核验算法、协议或科学环境依赖。
+
+该记录只证明Gauss完成件通过上述检查。Simpson、两规则交集、全研究资源计数、完整资产清单及恢复零新增尚待终态核验；故本记录明确设`full_study_verified=false`，未作为双规则最终结果写入论文。阶段记录为`qualification/w1-gauss-completed-method-audit-v1.json`，附可重放调用脚本及两次解释器调用记录。最终仍运行本文件原有完整核验入口。

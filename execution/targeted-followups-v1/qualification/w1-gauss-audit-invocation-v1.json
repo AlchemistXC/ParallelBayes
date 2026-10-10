@@ -1,0 +1,24 @@
+{
+  "identity": "w1-gauss-completed-method-audit-invocation-v1",
+  "attempts": [
+    {
+      "interpreter": "system python3",
+      "outcome": "failed_before_source_hash_verification",
+      "exception": "AttributeError: hashlib.file_digest unavailable",
+      "new_integrand_evaluations": 0,
+      "new_mcmc_calls": 0,
+      "stderr": "attempt-1.stderr.log"
+    },
+    {
+      "interpreter": ".venv-followups/bin/python",
+      "python": "3.12.14",
+      "outcome": "passed",
+      "new_integrand_evaluations": 0,
+      "new_mcmc_calls": 0,
+      "stderr": "stderr.log",
+      "stdout": "stdout.log"
+    }
+  ],
+  "command": "PYTHONDONTWRITEBYTECODE=1 .venv-followups/bin/python audit-command.py --root <development checkout> --source <completed Gauss and active Simpson directory> --output <this fresh audit directory>",
+  "source_modified": false
+}

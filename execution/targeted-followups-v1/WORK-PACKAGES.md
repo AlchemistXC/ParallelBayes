@@ -36,3 +36,5 @@ W1结果表准备：新增从完整独立核验生成区间/成本/敏感性表�
 W1归档准备：本地完整归档工具的6项检查通过0失败0跳过，覆盖缺件/未完成拒绝、恢复新增评价0、磁盘预留、打包时变化检测与稳定tar哈希。只列入必要源码/数据/旧统计，不复制全部主原件；实际终态归档与搬移重建尚待完成，新增科学评价0。见qualification/w1-archive-qualification-v1.json。
 
 W1方法写作：已完成数值包络的方法与两条原始引用核对，三页独立LaTeX预览编译及全页视觉检查通过；8份冻结数值源码未改。Gauss规则达到协议精度，原会话继续Simpson；尚无最终独立核验或双规则表，不更新正文数值结论。见docs/W1-METHOD-WRITING.md及qualification/w1-method-writing-v1.json。
+
+Gauss完成件独立核对：31533单元、两区域覆盖与精确端点聚合通过，7/7函数达到冻结精度；12份完成件读取前后不变，新增目标评价/MCMC均0。原Simpson会话仍运行，全研究终态及恢复未核验。本次系统Python版本误用在读入前失败，改用原独立环境Python3.12.14通过；错误留存，文档已明确解释器。详见qualification/w1-gauss-completed-method-audit-v1.json与docs/W1-INDEPENDENT-AUDIT.md。
