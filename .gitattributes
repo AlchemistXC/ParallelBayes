@@ -20,3 +20,6 @@ benchmark/analysis/outputs/** -text
 execution/windows-native/formal-adapter-validation-v1/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
 # Generated SVG path formatting is kept from the original renderer; source stays LF.
 execution/windows-compact/formal-results/*/*.svg text eol=lf whitespace=-blank-at-eol
+
+# Figure source data retain renderer bytes bound by their SHA256 manifests.
+figures/compact-mixture-companion-v1/source.csv -text
