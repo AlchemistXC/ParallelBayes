@@ -1,0 +1,24 @@
+{
+  "source_base_commit": "feca93e",
+  "artifacts": [
+    {
+      "path": "output/software-paper/软件与基准研究-路径审查修订.pdf",
+      "pages": 15,
+      "sha256": "909a7764e71abd7bf8fd349ee99d78a9e927488148a0889d3ac2c81f222b7391"
+    },
+    {
+      "path": "output/software-paper/补充材料-路径审查修订.pdf",
+      "pages": 24,
+      "sha256": "9be13f7848ef89a4da3d1523c1054d3c616bf4dba4c6ee4447580191937e9bc7"
+    }
+  ],
+  "tex_sha256": {
+    "软件与基准研究.tex": "e1110d384c18b5a58629db538dedd5067b012095b12b595492615a09f9d6c613",
+    "补充材料.tex": "6305f4163b577050678a60c56304831f0b1d8098925fcaaf7e46cfdb9328567d"
+  },
+  "numerical_replay_scope": "42 originally excluded H1 paths; no eligibility changes",
+  "mixture_scope": "All 432 original M1 tasks; 412 valid fits and 20 failures retained",
+  "complete_main_results": false,
+  "new_sampler_calls": 0,
+  "PDF_review": "New passages and main M1 figure reviewed at final size; full 15/24-page contact sheets checked. Historical CPU figure moved to its own SI section page before the references, and page 22 reviewed. Final whole-study manuscript review still pending."
+}

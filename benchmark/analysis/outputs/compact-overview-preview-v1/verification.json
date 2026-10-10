@@ -1,0 +1,36 @@
+{
+  "scope": "Readable layout only, original Windows scalar bundle; independent Mac full-frame reconstruction pending",
+  "source_sha256": {
+    "scripts/analysis/plot_compact_overview.py": "54ae2c8f39407b31c2f97e1dc9c99fe6b11c02c345f88c18c12b8c45399eb8d4",
+    "scripts/analysis/formal_publication_plots.py": "4b667fff83b69620f8db5262b71ca22674c0ab11b1ae6a40c3f83a59d7696a26",
+    "tests/analysis/test_compact_overview.py": "238291e57b48aa33427477ec9c16bc834d2078a028320ea684808700a2e3ce34"
+  },
+  "input_statistics_manifest_sha256": "0c1857a7767ab5c8a117c00b75992db40c03c06e2453ad64c1398a64080a0c00",
+  "contrasts": 72,
+  "intervals_available": 68,
+  "all_models_retained": true,
+  "tests": {
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "dependency_deprecation_warnings": 14
+  },
+  "qa": {
+    "minimum_font_pt": 8.5,
+    "alignment": "passed",
+    "collisions": {
+      "fail": 0,
+      "warn": 0
+    },
+    "manual": "All four panels and full-size overview inspected; two-budget n labels made horizontal after first audit detected overlap. Original failed QA retained.",
+    "static_single_module": "Five false missing-helper findings retained; renderer config/export/alignment are imported. Combined actual helper+entrypoint source audited.",
+    "static_bundle": {
+      "passed": 18,
+      "warn": 3,
+      "failed": 0
+    },
+    "warnings": "160 mm matches manuscript; vector PDF/SVG primary, 300 dpi PNG preview only."
+  },
+  "new_sampler_calls": 0,
+  "new_statistical_estimates": 0
+}

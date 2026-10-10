@@ -1,0 +1,10 @@
+{
+  "source_sha256": "6e0115ebffbfa5648bfd83465b97f9c1392f50efbd4b8cbccebd024cb0b91347",
+  "source_base_commit": "feca93e",
+  "original_failed_paths": 42,
+  "independent_replay_still_fails": 42,
+  "acceptance_mismatches": 0,
+  "original_classifications_changed": 0,
+  "scope": "Archived independent NumPy recurrence on originally excluded paths; no torch sampling, no new inputs, no R diagnostics",
+  "previous_local_run": "v1 retained; v2 adds explicit target and actual random-array binding; all replay numerical summaries unchanged"
+}

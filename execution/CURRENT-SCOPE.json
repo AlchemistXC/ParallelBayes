@@ -2,14 +2,14 @@
   "date": "2026-10-10",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "compact_full_frame_reconstruction_and_remaining_component_intake",
-  "gpu_tasks": "Windows compact execution and upload completed; Mac full original reception and reconstruction incomplete. No new Windows sampling requested.",
+  "local_phase": "compact_independent_reconstruction_and_manuscript_companions",
+  "gpu_tasks": "Windows compact execution/upload completed. All 21 original components and bundle received and verified on Mac; independent reconstruction continues. No new Windows sampling requested.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
   "requires_user_resume": false,
   "rerun_completed_cpu_tasks": false,
   "active_outstanding_tasks": [
-    "F3 remaining evidence components, independent 4144-item replay/diagnostics/statistics and claims review",
+    "F3 independent 4144-item replay/diagnostics/statistics and claims review",
     "F4 finite R-front-end timing after reception and reconstruction are quiet",
     "F5 complete raw-to-paper reproduction and integrity archive",
     "F6 final results, claims, manuscript and figure review"
@@ -513,25 +513,25 @@
       "next_Windows_prompt": "handoff/windows-completion/CODEX-PROMPT-HOLD-FORMAL.md"
     }
   ],
-  "current_required_action": "Continue existing Mac receiver and reconstruction; no repeat of prior Windows prompt or grid.",
+  "current_required_action": "Continue existing Mac reconstruction; finish finite R timing when quiet and final raw-to-paper rebuild. No repeat Windows grid.",
   "publication_layout_preparation": "docs/PUBLICATION-FIGURE-LAYOUT.md",
   "current_manuscript_status_build": {
-    "status": "Formal raw reconstruction pending; historical numerical results unchanged",
+    "status": "Complete evidence received; independently reviewed excluded paths and mixture companion integrated; all-model statistical reconstruction pending",
     "artifacts": [
       {
-        "path": "output/software-paper/软件与基准研究-紧凑接收修订.pdf",
-        "sha256": "b1e6ca424bb981fa540bf0ba6aedc8a798edeae42a09206d95245168801457e9",
-        "pages": 13
+        "path": "output/software-paper/软件与基准研究-路径审查修订.pdf",
+        "pages": 15,
+        "sha256": "909a7764e71abd7bf8fd349ee99d78a9e927488148a0889d3ac2c81f222b7391"
       },
       {
-        "path": "output/software-paper/补充材料-紧凑接收修订.pdf",
-        "sha256": "12f94863b62496f6d1b230d3338ef03e4b29a4717f81dab14e119865d3068801",
-        "pages": 22
+        "path": "output/software-paper/补充材料-路径审查修订.pdf",
+        "pages": 24,
+        "sha256": "9be13f7848ef89a4da3d1523c1054d3c616bf4dba4c6ee4447580191937e9bc7"
       }
     ],
-    "compiler": "Existing bundled Tectonic 0.17.0",
-    "native_editor": "Opened; standalone compiler lacks external project files",
-    "remaining_tex_warning": "Historical reference underfull hbox (references.tex:21)",
+    "compiler": "Existing Tectonic 0.17.0",
+    "native_editor": "Multi-file project open; known external-file limitation, existing compiler used",
+    "remaining_tex_warning": null,
     "new_sampler_calls": 0
   },
   "formal_raw_component": {
@@ -549,5 +549,13 @@
     "failure_cause": "not_established",
     "legacy_ess_all_null_child_records": 192,
     "report": "review/WINDOWS-COMPACT-FAILURE-AUDIT.md"
+  },
+  "compact_full_intake_receipt": "benchmark/analysis/outputs/windows-compact-mac-intake-v1/complete-receipt.json",
+  "compact_path_companions": {
+    "mixture_report": "docs/MIXTURE-EXPLORATION-COMPANION.md",
+    "numerical_failure_report": "review/WINDOWS-COMPACT-FAILURE-AUDIT.md",
+    "numerical_failure_replays": 42,
+    "failures_confirmed": 42,
+    "new_formal_repetitions": 0
   }
 }

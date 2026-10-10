@@ -1,5 +1,7 @@
 # Compact bounded delivery and receiver commands
 
+**Mac update, 2026-10-10:** all 21 components (232,755 files, 29,311,383,786 bytes) and the complete source bundle have now been received and verified. The 4,144-item independent reconstruction is running. Later paragraphs describing an active Windows study or pending catalog are dated sender-side history, not current commands. See [Mac intake](WINDOWS-COMPACT-MAC-INTAKE.md) for the current evidence boundary.
+
 Sampling source stays at `3a37a891896faedc62c0d6af185bfad77696054f` in the
 independent Windows execution tree `D:/workspace/ParallelBayes/c`. This delivery
 branch adds documentation and a publisher only. It does not change the accepted

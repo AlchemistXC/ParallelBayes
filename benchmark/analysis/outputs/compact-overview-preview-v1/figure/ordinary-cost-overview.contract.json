@@ -1,0 +1,974 @@
+{
+  "archetype": "quantitative grid",
+  "backend": "Python/matplotlib",
+  "cells": [
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "G1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "G1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "G2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "G2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "A1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "A1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "L1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "L1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "L2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "L2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "H1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "H1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "H2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "H2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "M1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "M1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "W1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "W1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "G1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "G1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "G2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "G2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "A1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "A1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "L1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "L1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "L2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "L2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "H1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "H1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "H2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "H2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "M1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "M1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "W1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "rwm",
+      "model": "W1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "G1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "G1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "G2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "G2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "A1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "A1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "L1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "L1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "L2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "L2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": false,
+      "kernel": "mala",
+      "model": "H1",
+      "paired": 17,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": false,
+      "kernel": "mala",
+      "model": "H1",
+      "paired": 11,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "H2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "H2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "M1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "M1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "W1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cpu",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "W1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "G1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "G1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "G2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "G2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "A1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "A1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "L1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "L1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "L2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "L2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": false,
+      "kernel": "mala",
+      "model": "H1",
+      "paired": 17,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": false,
+      "kernel": "mala",
+      "model": "H1",
+      "paired": 11,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "H2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "H2",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "M1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "M1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 1024,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "W1",
+      "paired": 24,
+      "point_available": true
+    },
+    {
+      "budget": 4096,
+      "device": "cuda",
+      "interval_available": true,
+      "kernel": "mala",
+      "model": "W1",
+      "paired": 24,
+      "point_available": true
+    }
+  ],
+  "center": "Geometric mean of within-input sequential/time-executor cost",
+  "core_conclusion": "Ordinary time-executor benefits depend on device and kernel; all tested model/budget contrasts are shown",
+  "displayed_contrasts": 72,
+  "exported_pdf_sha256": "2105062f26764508af1fb6df61688946320e650f34bc0f6e769df458c4318e9a",
+  "frame": {
+    "analysis_can_authorize_sampling": false,
+    "cache_planned": 256,
+    "execution_contract": "windows-compact-contract-v1",
+    "formal_scientific_repetitions_per_model": 24,
+    "identity": "windows-compact-inference-v1",
+    "main_planned": 3888,
+    "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+    "scope": "formal_inference"
+  },
+  "independent_unit": "One original four-chain input per model; 24 planned. Shared budgets, kernels and devices do not increase n.",
+  "interval": "Saved pointwise conditional 95% BCa, 9999 resamples; at least 20 common valid inputs. Not simultaneous intervals.",
+  "layout_identity": "publication-layout-v1",
+  "minimum_requested_font_pt": 8.5,
+  "missing": "Missing interval shown by open marker; missing point has no mark but retains denominator and source row.",
+  "missing_intervals": "Open points; no zero-width substitute. Unavailable points have no plotted mark.",
+  "new_sampler_calls": 0,
+  "new_statistical_estimates": 0,
+  "original_planned_contrasts": 72,
+  "panel_roles": [
+    "CPU Picard comparison",
+    "CUDA Picard device boundary",
+    "CPU quasi-DEER kernel boundary",
+    "CUDA quasi-DEER device/kernel boundary"
+  ],
+  "physical_height_mm": 170.0,
+  "physical_width_mm": 160.0,
+  "preview_original_reconstruction_pending": true,
+  "question": "Do ordinary same-kernel cost gains persist across devices, kernels and all declared models?",
+  "scientific_claim": "Fixed declared configurations only; no convergence or precise time-to-accuracy claim",
+  "selection_rule": "All nine models, two budgets, two kernels and two devices; ordinary workflow costs only. Prepared and audit costs remain in complete supplementary report.",
+  "source_statistics_manifest_sha256": "0c1857a7767ab5c8a117c00b75992db40c03c06e2453ad64c1398a64080a0c00",
+  "source_table": "source.csv",
+  "uncertainty": "Saved pointwise 95% whole-four-chain BCa intervals; no simultaneous coverage",
+  "visible_ticks": [
+    {
+      "axis": "x",
+      "offset": "",
+      "panel": 0,
+      "ticks": [
+        [
+          0.1,
+          "0.1"
+        ],
+        [
+          0.2,
+          "0.2"
+        ],
+        [
+          0.5,
+          "0.5"
+        ],
+        [
+          1.0,
+          "1"
+        ],
+        [
+          2.0,
+          "2"
+        ]
+      ]
+    },
+    {
+      "axis": "y",
+      "offset": "",
+      "panel": 0,
+      "ticks": [
+        [
+          0.0,
+          "G1"
+        ],
+        [
+          1.0,
+          "G2"
+        ],
+        [
+          2.0,
+          "A1"
+        ],
+        [
+          3.0,
+          "L1"
+        ],
+        [
+          4.0,
+          "L2"
+        ],
+        [
+          5.0,
+          "H1"
+        ],
+        [
+          6.0,
+          "H2"
+        ],
+        [
+          7.0,
+          "M1"
+        ],
+        [
+          8.0,
+          "W1"
+        ]
+      ]
+    },
+    {
+      "axis": "x",
+      "offset": "",
+      "panel": 1,
+      "ticks": [
+        [
+          0.1,
+          "0.1"
+        ],
+        [
+          0.2,
+          "0.2"
+        ],
+        [
+          0.5,
+          "0.5"
+        ],
+        [
+          1.0,
+          "1"
+        ],
+        [
+          2.0,
+          "2"
+        ]
+      ]
+    },
+    {
+      "axis": "y",
+      "offset": "",
+      "panel": 1,
+      "ticks": [
+        [
+          0.0,
+          "G1"
+        ],
+        [
+          1.0,
+          "G2"
+        ],
+        [
+          2.0,
+          "A1"
+        ],
+        [
+          3.0,
+          "L1"
+        ],
+        [
+          4.0,
+          "L2"
+        ],
+        [
+          5.0,
+          "H1"
+        ],
+        [
+          6.0,
+          "H2"
+        ],
+        [
+          7.0,
+          "M1"
+        ],
+        [
+          8.0,
+          "W1"
+        ]
+      ]
+    },
+    {
+      "axis": "x",
+      "offset": "",
+      "panel": 2,
+      "ticks": [
+        [
+          0.1,
+          "0.1"
+        ],
+        [
+          0.2,
+          "0.2"
+        ],
+        [
+          0.5,
+          "0.5"
+        ],
+        [
+          1.0,
+          "1"
+        ],
+        [
+          2.0,
+          "2"
+        ]
+      ]
+    },
+    {
+      "axis": "y",
+      "offset": "",
+      "panel": 2,
+      "ticks": [
+        [
+          0.0,
+          "G1"
+        ],
+        [
+          1.0,
+          "G2"
+        ],
+        [
+          2.0,
+          "A1"
+        ],
+        [
+          3.0,
+          "L1"
+        ],
+        [
+          4.0,
+          "L2"
+        ],
+        [
+          5.0,
+          "H1"
+        ],
+        [
+          6.0,
+          "H2"
+        ],
+        [
+          7.0,
+          "M1"
+        ],
+        [
+          8.0,
+          "W1"
+        ]
+      ]
+    },
+    {
+      "axis": "x",
+      "offset": "",
+      "panel": 3,
+      "ticks": [
+        [
+          0.1,
+          "0.1"
+        ],
+        [
+          0.2,
+          "0.2"
+        ],
+        [
+          0.5,
+          "0.5"
+        ],
+        [
+          1.0,
+          "1"
+        ],
+        [
+          2.0,
+          "2"
+        ]
+      ]
+    },
+    {
+      "axis": "y",
+      "offset": "",
+      "panel": 3,
+      "ticks": [
+        [
+          0.0,
+          "G1"
+        ],
+        [
+          1.0,
+          "G2"
+        ],
+        [
+          2.0,
+          "A1"
+        ],
+        [
+          3.0,
+          "L1"
+        ],
+        [
+          4.0,
+          "L2"
+        ],
+        [
+          5.0,
+          "H1"
+        ],
+        [
+          6.0,
+          "H2"
+        ],
+        [
+          7.0,
+          "M1"
+        ],
+        [
+          8.0,
+          "W1"
+        ]
+      ]
+    }
+  ]
+}

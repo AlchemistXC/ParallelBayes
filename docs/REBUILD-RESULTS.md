@@ -1,3 +1,18 @@
+# 当前紧凑研究的原始重建
+
+2026-10-10：完整原件已经接收，独立4144项NumPy/R重建仍在运行。源版本、命令、完整清单与恢复要求见[紧凑接收指南](WINDOWS-COMPACT-RECEIVE.md)，已完成范围见[Mac记录](WINDOWS-COMPACT-MAC-INTAKE.md)。以下“七个生成段”入口仅重建历史结果，不覆盖新紧凑结果、路径伴随检查或最终研究的F5。
+
+当前新增两项只读伴随分析，不修改原任务状态。设原件根目录为`FORMAL`，其外部分块清单为`MANIFEST`，完整计划表为交付版本的`execution/windows-compact/formal-results/tasks.csv`。外部清单SHA256为`38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e`。输出必须是原件外的新目录。
+
+```text
+python scripts/analysis/review_mixture_paths.py --delivery FORMAL --manifest MANIFEST --manifest-sha256 EXTERNAL_SHA --tasks TASKS_CSV --output NEW_MIXTURE_AUDIT
+python scripts/analysis/review_numerical_failures.py --delivery FORMAL --manifest MANIFEST --manifest-sha256 EXTERNAL_SHA --tasks TASKS_CSV --output NEW_FAILURE_REPLAY
+```
+
+失败补查从已核对的253份原始源码导入独立NumPy参考；不调用torch/JAX采样器，不重新抽取输入，也不将失败改标为合格。M1图件生成另要求审查SUMMARY与tasks的独立SHA；选择规则和源数据见[双峰伴随说明](MIXTURE-EXPLORATION-COMPANION.md)。
+
+完整统计包校验通过后，正文普通费用概览由`plot_compact_overview.py --statistics-directory STATISTICS --manifest-sha256 VERIFIED_STATISTICS_SHA --output NEW_FIGURE`生成；保留全部72个普通成本对照。`--preview`只增加待重建标记，不创建虚构数据。实际Mac最终统计及其完整图文复建记录完成后追加，不把当前Windows统计预览当作已完成的独立研究复现。
+
 # 当前稿件的结果段重建
 
 当前入口为 `scripts/release/rebuild_current_results.py`。它将七个生成结果段、其已保存

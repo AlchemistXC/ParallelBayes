@@ -1,0 +1,61 @@
+{
+  "id": "253867a474a64e8b1201370b",
+  "workflow": "cuda-mala-quasi_deer",
+  "budget": 1024,
+  "replicate": 23,
+  "original_outcome": "numerical_failure",
+  "original_candidate_status": "completed",
+  "original_stop": "output_standard_met",
+  "original_solver_status": 0,
+  "original_residual": 0.8661994598938293,
+  "original_audit": {
+    "acceptance_mismatches": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "max_abs_constrained_error": [
+      8.37588391700006e-08,
+      9.165471608341136e-07,
+      0.0,
+      3.072778476109761e-09
+    ],
+    "max_abs_path_error": [
+      8.37588391700006e-08,
+      9.165471608341136e-07,
+      0.0,
+      3.072778476109761e-09
+    ],
+    "oracle": "independent_numpy_float64",
+    "passed": false
+  },
+  "original_transform_passed": true,
+  "independent_mac_replay": {
+    "passed": false,
+    "maximum_path_error": [
+      8.37588391700006e-08,
+      9.165445322700805e-07,
+      0.0,
+      3.0727389521700843e-09
+    ],
+    "frozen_path_limits": [
+      7.46268768929643e-08,
+      1.3048819316664313e-07,
+      3.6126370111402e-08,
+      1.2938869980977987e-07
+    ],
+    "acceptance_mismatches": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "reference": "independent_numpy_float64",
+    "transitions": 6144,
+    "path_sha256": "cb6faf444012984021c58f02a01c2dd3d355c3c991824ad78916fdd9b3015fa8",
+    "acceptance_sha256": "f50d0b46fbcd74a8ea8112a8db9922a7d47aca29298b246831cf68a25bcb93a2"
+  },
+  "original_classification_changed": false,
+  "samples_eligible": false
+}

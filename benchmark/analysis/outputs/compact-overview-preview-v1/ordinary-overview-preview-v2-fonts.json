@@ -1,0 +1,10 @@
+{
+  "pdf": "output/windows-compact-intake-v1/ordinary-overview-preview-v2/ordinary-cost-overview.pdf",
+  "auditable": true,
+  "minimum_required_pt": 8.5,
+  "minimum_found_pt": 8.5,
+  "text_run_count": 104,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}
