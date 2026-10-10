@@ -4,6 +4,8 @@
 
 把同目录 `CODEX-PROMPT.md` **完整一次性**交给 Windows Codex，由它按阶段执行。每阶段的脚本会检查进入条件，不需把旧的四轮提示词重新发送。
 
+当前源码和输入的传输状态见[TRANSFER-STATUS.md](TRANSFER-STATUS.md)。源码已推送，输入上传待明确授权。
+
 ## 转交材料
 
 1. 获取开发分支 `codex/research-integration` 的最新代码，另建 `codex/windows-nuts-localization` 工作分支，保留本机现有工作。
