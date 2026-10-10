@@ -38,3 +38,5 @@ W1归档准备：本地完整归档工具的6项检查通过0失败0跳过，覆
 W1方法写作：已完成数值包络的方法与两条原始引用核对，三页独立LaTeX预览编译及全页视觉检查通过；8份冻结数值源码未改。Gauss规则达到协议精度，原会话继续Simpson；尚无最终独立核验或双规则表，不更新正文数值结论。见docs/W1-METHOD-WRITING.md及qualification/w1-method-writing-v1.json。
 
 Gauss完成件独立核对：31533单元、两区域覆盖与精确端点聚合通过，7/7函数达到冻结精度；12份完成件读取前后不变，新增目标评价/MCMC均0。原Simpson会话仍运行，全研究终态及恢复未核验。本次系统Python版本误用在读入前失败，改用原独立环境Python3.12.14通过；错误留存，文档已明确解释器。详见qualification/w1-gauss-completed-method-audit-v1.json与docs/W1-INDEPENDENT-AUDIT.md。
+
+2026-10-11：已启动一次性本地收尾进程，绑定原积分PID与创建时间及源码SHA；只等待现有积分结束，不重启科学计算。计划依次进行完整核验、报告、恢复零新增、本地归档和独立目录重建，任一步失败即停止并留日志。启动时这些阶段均未执行，不预记通过。实际状态在主数据工作区output/targeted-followups-v1/w1-finalization-v1/state.json；小型启动记录见qualification/w1-finalization-launch-v1.json。

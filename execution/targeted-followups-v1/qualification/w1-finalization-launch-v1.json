@@ -1,0 +1,16 @@
+{
+  "identity": "w1-local-finalization-launch-v1",
+  "date": "2026-10-11",
+  "source_commit_at_start": "d20708bb54b63ac14347aacee45c0f9cfc40acf6",
+  "phase_observed_at_launch": "waiting_for_original_process",
+  "coordinator_sha256": "abae0f21b56c097e0cd89335cb8446052d00b1ed9e3e58bded9c6085123b1930",
+  "local_command": "PYTHONDONTWRITEBYTECODE=1 .venv-followups/bin/python output/targeted-followups-v1/w1-finalization-v1/finalize.py",
+  "original_pid": 5936,
+  "original_creation_time": 1791638378.109916,
+  "scope": "Wait only for the existing bound process; then execute completed-result audit, report, zero-work resume, local tar export and independent-directory reconstruction. No new integration or MCMC, no upload.",
+  "stage_results_at_launch": [],
+  "full_thread_goal_complete": false,
+  "state_and_logs": "Main data workspace: output/targeted-followups-v1/w1-finalization-v1/",
+  "validation": "Python syntax checked; preflight bound numerical and audit/report/export source hashes, observed original PID/create_time and fresh output destinations. Full stages still unexecuted at this launch snapshot.",
+  "runtime_observation_permission": "Default sandbox denied reading process table; escalated read of own W1 process approved. No process stopped."
+}
