@@ -1,0 +1,28 @@
+[
+  {
+    "name": "软件与基准研究",
+    "command": [
+      "/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic",
+      "--keep-logs",
+      "--outdir",
+      "/Users/haku/Workspace/ParallelBayes/output/software-paper/citation-update-v1",
+      "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/manuscript/software/软件与基准研究.tex"
+    ],
+    "returncode": 0,
+    "pages": 13,
+    "pdf_sha256": "b463c3a12c3d5044bbc926e9d7dbd9937e374af586fb2ab31ce11a533c4f7eda"
+  },
+  {
+    "name": "补充材料",
+    "command": [
+      "/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic",
+      "--keep-logs",
+      "--outdir",
+      "/Users/haku/Workspace/ParallelBayes/output/software-paper/citation-update-v1",
+      "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/manuscript/software/补充材料.tex"
+    ],
+    "returncode": 0,
+    "pages": 22,
+    "pdf_sha256": "32b97708c9ad1d3829f52fefd65477f2dd1abc7c79e67a843e2ef3cd61db56f8"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "base_commit": "9b81dd4",
+  "scope": "Read-only audit of all original NUTS task and returned-child metadata; not full raw trajectory replay",
+  "checks": {
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0
+  },
+  "source_sha256": {
+    "scripts/analysis/review_nuts_failures.py": "aabbf52e3ba530dfa19f8359ad65b03ab3848f478dab28674c9e87e071cdca13",
+    "scripts/analysis/review_nuts_workers.py": "4498aeb157dddb0b32b2cfb44405c23b5959977cc45d5d579a4dda779b0a3ec9",
+    "tests/analysis/test_nuts_worker_review.py": "c8fe4c474ffe1ee31038a9d2aee0487b8dc3b2cb98216266791a1c76b0ad5bd2"
+  },
+  "original_manifest_sha256": "38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e",
+  "new_sampler_calls": 0,
+  "new_R_diagnostic_calls": 0,
+  "new_formal_repetitions": 0,
+  "retained_partial_reader_note": "Earlier nuts-workers-partial-v1 ignored failed aggregate children because they serialize as partial-fit.json; corrected in partial-v2 and this complete audit. Original evidence unchanged."
+}

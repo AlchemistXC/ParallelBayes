@@ -1,0 +1,254 @@
+{
+  "modrak-crossref": {
+    "source": "https://api.crossref.org/works/10.1214/23-BA1404",
+    "status": 200,
+    "sha256": "6d48f70ce9500e8349f4ad5631239cbcdd52d08605506b3aa3cb6c6697729330",
+    "metadata": {
+      "title": [
+        "Simulation-Based Calibration Checking for Bayesian Computation: The Choice of Test Quantities Shapes Sensitivity"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Modrák",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Institute of Microbiology of the Czech Academy of Sciences"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Angie H.",
+          "family": "Moon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shinyoung",
+          "family": "Kim",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paul",
+          "family": "Bürkner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Niko",
+          "family": "Huurre",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kateřina",
+          "family": "Faltejsková",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Gelman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aki",
+          "family": "Vehtari",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "volume": "20",
+      "issue": "2",
+      "page": "461-488",
+      "DOI": "10.1214/23-ba1404"
+    }
+  },
+  "zoltowski-crossref": {
+    "source": "https://api.crossref.org/works/10.52202/085713-0751",
+    "status": 200,
+    "sha256": "06f510f273824d6d8758e1efa8fd170af581ca5d8b78b46c62f31e240fdd36bf",
+    "metadata": {
+      "title": [
+        "Parallelizing MCMC Across the Sequence Length"
+      ],
+      "author": [
+        {
+          "given": "David",
+          "family": "Zoltowski",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Skyler",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xavier",
+          "family": "Gonzalez",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Stanford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Leo",
+          "family": "Kozachkov",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Brown University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Scott",
+          "family": "Linderman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "volume": null,
+      "issue": null,
+      "page": "25284-25319",
+      "DOI": "10.52202/085713-0751"
+    }
+  },
+  "zoltowski-bibtex": {
+    "source": "https://proceedings.nips.cc/paper_files/paper/30039-/bibtex",
+    "status": 200,
+    "sha256": "ca5e233d4bc1be2ae1e6a85b24da15b4ddecd345ec0397bbc74d4296deffb9f5",
+    "text": "@inproceedings{NEURIPS2025_202886ee,\n author = {Zoltowski, David and Wu, Skyler and Gonzalez, Xavier and Kozachkov, Leo and Linderman, Scott},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/085713-0751},\n editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},\n pages = {22242--22277},\n publisher = {Curran Associates, Inc.},\n title = {Parallelizing MCMC Across the Sequence Length},\n url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/202886ee1c9ca735cb5bff3a00a69883-Paper-Conference.pdf},\n volume = {38, Main Conference},\n year = {2025}\n}\n"
+  }
+}

@@ -2,14 +2,14 @@
   "date": "2026-10-10",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "compact_mac_raw_intake_and_independent_reconstruction_in_progress",
+  "local_phase": "compact_full_frame_reconstruction_and_remaining_component_intake",
   "gpu_tasks": "Windows compact execution and upload completed; Mac full original reception and reconstruction incomplete. No new Windows sampling requested.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
   "requires_user_resume": false,
   "rerun_completed_cpu_tasks": false,
   "active_outstanding_tasks": [
-    "F3 full original reception, independent 4144-item replay/diagnostics/statistics and failure review",
+    "F3 remaining evidence components, independent 4144-item replay/diagnostics/statistics and claims review",
     "F4 finite R-front-end timing after reception and reconstruction are quiet",
     "F5 complete raw-to-paper reproduction and integrity archive",
     "F6 final results, claims, manuscript and figure review"
@@ -99,14 +99,16 @@
     "kind": "status_and_layout_update_before_full_formal_reconstruction",
     "source": "manuscript/software/软件与基准研究.tex",
     "pdf": "output/software-paper/软件与基准研究-紧凑接收修订.pdf",
-    "pdf_sha256": "b1e6ca424bb981fa540bf0ba6aedc8a798edeae42a09206d95245168801457e9",
+    "pdf_sha256": "b463c3a12c3d5044bbc926e9d7dbd9937e374af586fb2ab31ce11a533c4f7eda",
     "pdf_pages": 13,
     "supplement_pages": 22,
     "new_sampler_calls": 0,
     "new_R_diagnostic_calls": 0,
     "full_raw_reproduction_completed_this_round": false,
     "portable_build_verified_this_update": false,
-    "previous_saved_result_reproduction": "docs/MANUSCRIPT-REVISION-2026-10-09.md"
+    "previous_saved_result_reproduction": "docs/MANUSCRIPT-REVISION-2026-10-09.md",
+    "supplement_pdf_sha256": "32b97708c9ad1d3829f52fefd65477f2dd1abc7c79e67a843e2ef3cd61db56f8",
+    "citation_check": "review/REFERENCE-CHECK-2026-10-10.md"
   },
   "completion_gate_audit": {
     "report": "docs/COMPLETION-GATE-AUDIT.md",
@@ -338,6 +340,20 @@
       "pdf": "output/software-paper/软件与基准研究-原生适配整合.pdf",
       "pdf_sha256": "8a1ca4e2f65c8482208de5c9868737cec744a7b153b60bfda2bbea43e56348e7",
       "full_raw_reproduction_completed_this_round": false
+    },
+    {
+      "report": "docs/PUBLICATION-FIGURE-LAYOUT.md",
+      "kind": "status_and_layout_update_before_full_formal_reconstruction",
+      "source": "manuscript/software/软件与基准研究.tex",
+      "pdf": "output/software-paper/软件与基准研究-紧凑接收修订.pdf",
+      "pdf_sha256": "b1e6ca424bb981fa540bf0ba6aedc8a798edeae42a09206d95245168801457e9",
+      "pdf_pages": 13,
+      "supplement_pages": 22,
+      "new_sampler_calls": 0,
+      "new_R_diagnostic_calls": 0,
+      "full_raw_reproduction_completed_this_round": false,
+      "portable_build_verified_this_update": false,
+      "previous_saved_result_reproduction": "docs/MANUSCRIPT-REVISION-2026-10-09.md"
     }
   ],
   "current_scope_report": "docs/CURRENT-SCOPE.md",
@@ -517,5 +533,21 @@
     "native_editor": "Opened; standalone compiler lacks external project files",
     "remaining_tex_warning": "Historical reference underfull hbox (references.tex:21)",
     "new_sampler_calls": 0
+  },
+  "formal_raw_component": {
+    "passed": true,
+    "files": 180582,
+    "chunks": 74,
+    "return_manifest_sha256": "81590d6e3cc07452ce46e9668222dcbe9b347cc33278396836e39992b0c3dc57"
+  },
+  "nuts_original_record_review": {
+    "tasks": 432,
+    "valid": 327,
+    "output_failure_unclassified": 105,
+    "returned_child_records": 1613,
+    "unreturned_futures": 115,
+    "failure_cause": "not_established",
+    "legacy_ess_all_null_child_records": 192,
+    "report": "review/WINDOWS-COMPACT-FAILURE-AUDIT.md"
   }
 }
