@@ -1,0 +1,412 @@
+{
+  "scope": "Partial intake; each nonempty log read against original SHA256",
+  "records": [
+    {
+      "task": "064414754cdbbe914a6ef369",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-01/main/tasks/064414754cdbbe914a6ef369/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "0cb80a19377327877481e681",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-01/main/tasks/0cb80a19377327877481e681/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "1a888a3b813e30153d7eaf0f",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/1a888a3b813e30153d7eaf0f/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "1e6c53538e8c8638a1ad8e2e",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-01/main/tasks/1e6c53538e8c8638a1ad8e2e/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "341929007fdb51399a166abf",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-01/main/tasks/341929007fdb51399a166abf/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "374b78fe2b977e473bed66f8",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-01/main/tasks/374b78fe2b977e473bed66f8/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "38c41b9fa005c04b6874e5f5",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/38c41b9fa005c04b6874e5f5/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "3ddb38d1906eff39c87c437f",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-01/main/tasks/3ddb38d1906eff39c87c437f/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "40faee30696a1614fe1b4b01",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-01/main/tasks/40faee30696a1614fe1b4b01/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "4b2727559f2a820ce76aa3fc",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/4b2727559f2a820ce76aa3fc/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "4d8d30be2e7319ea504f1181",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-01/main/tasks/4d8d30be2e7319ea504f1181/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "4e3a65f5c91ee2c3b82584c9",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/4e3a65f5c91ee2c3b82584c9/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "562dd2b961df22e5b2f16a07",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-01/main/tasks/562dd2b961df22e5b2f16a07/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "60089e19c2233ef72e948c36",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/60089e19c2233ef72e948c36/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "61747f4136043c55181bd256",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/61747f4136043c55181bd256/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "653c15e1c104d61ded6f6987",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/653c15e1c104d61ded6f6987/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "6ae78b1ec1897fe3d4db06ad",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/6ae78b1ec1897fe3d4db06ad/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "6dce102953c9291569e5a897",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/6dce102953c9291569e5a897/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "90b0af3e35ee0ae0e1557e6f",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/90b0af3e35ee0ae0e1557e6f/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "925298923d67a75acbae67b3",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/925298923d67a75acbae67b3/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "c74611c22d208d3bcbd47af5",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/c74611c22d208d3bcbd47af5/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "cbe1e119d63775a732099418",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/cbe1e119d63775a732099418/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "ccb7caa505286acab31d3224",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/ccb7caa505286acab31d3224/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "d2c10214dc04634703736531",
+      "model": "G2",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/d2c10214dc04634703736531/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    },
+    {
+      "task": "fb4c10eacd0b6ff3cc217b28",
+      "model": "A1",
+      "budget": 4096,
+      "outcome": "valid",
+      "path": "formal-runs/batch-00/main/tasks/fb4c10eacd0b6ff3cc217b28/attempt-0001/ordinary-stderr.log",
+      "sha256": "5334d48d8b3276685007892a11c4355aed97c55b7f8caa9027def37e2ba1f0b4",
+      "warning_count": 4,
+      "allocation_bytes": [
+        2145387008,
+        2145387008,
+        2145387008,
+        2145387008
+      ],
+      "ess_cummin": true
+    }
+  ],
+  "payload_formula": {
+    "expression": "8 * d * (draws//2-1)^2",
+    "draws": 4096,
+    "dimension": 64,
+    "computed_bytes": 2145387008
+  },
+  "new_sampler_calls": 0
+}

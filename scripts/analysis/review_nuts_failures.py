@@ -9,6 +9,7 @@ from collections import Counter
 import csv
 import hashlib
 import json
+import re
 from pathlib import Path
 
 
@@ -41,6 +42,7 @@ def review(delivery, manifest, manifest_sha256, tasks, output, partial=False):
             pending.append(task["id"])
             continue
         record = {}
+        stderr_text = []
         for name in names:
             path = delivery / (prefix + name)
             expected = members[prefix + name]
@@ -54,6 +56,12 @@ def review(delivery, manifest, manifest_sha256, tasks, output, partial=False):
             provenance[prefix + name] = expected["sha256"]
             if name.endswith(".json"):
                 record[name] = json.loads(data)
+            elif "stderr" in name:
+                stderr_text.append(data.decode("utf-8", errors="replace"))
+        text = "\n".join(stderr_text)
+        allocation_warnings = re.findall(r"tried to allocate (\d+) bytes", text)
+        ess_memory_warning = ("not enough memory" in text and
+                              "effective_sample_size" in text and "_cummin" in text)
         state, job, candidate, process = (record[n] for n in
                                           ("state.json", "job.json", "candidate.json", "ordinary-process.json"))
         if record["completion.json"]["state_sha256"] != members[prefix+"state.json"]["sha256"]:
@@ -82,7 +90,9 @@ def review(delivery, manifest, manifest_sha256, tasks, output, partial=False):
             final_active_processes=final["active_processes"],
             ordinary_seconds=process["ordinary_process_wall_seconds"],
             stderr_declared_bytes=sum(members[prefix+n]["bytes"] for n in logs if "stderr" in n),
-            all_log_files_materialized=all((delivery/(prefix+n)).is_file() for n in logs)))
+            all_log_files_materialized=all((delivery/(prefix+n)).is_file() for n in logs),
+            legacy_ess_memory_warning=ess_memory_warning,
+            logged_allocation_bytes=";".join(allocation_warnings)))
     if pending and not partial:
         raise ValueError(f"Full failure review requires {len(pending)} further original tasks")
     groups = []
@@ -99,7 +109,8 @@ def review(delivery, manifest, manifest_sha256, tasks, output, partial=False):
         planned_nuts_tasks=432, inspected=len(rows), pending_task_ids=pending,
         outcome_counts=dict(Counter(r["outcome"] for r in rows)),groups=groups,
         valid_outputs_with_raw_counter_above_limit=sum(r["outcome"]=="valid" and r["raw_counter_over_limit"] is True for r in rows),
-        root_cause="Not established by these records",
+        legacy_ess_memory_warning_tasks=sum(r["legacy_ess_memory_warning"] for r in rows),
+        root_cause="Worker termination cause not established; explicit allocation warnings described separately",
         interpretation=["BrokenProcessPool identifies failed futures, not the number or cause of worker crashes",
             "An ordinary parent exit code of zero is compatible with a recorded failed sampler result",
             "The raw kernel peak counter is not a certified maximum of successful memory commitments",

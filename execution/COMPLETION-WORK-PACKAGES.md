@@ -426,3 +426,9 @@ OOM；BrokenProcessPool的future错误数不能等同实际崩溃worker数。
 不改变105项原未分类失败，不补采或丢弃partial链。完整原件到齐后再执行432项
 审阅。三项读入拒绝检查通过，新增采样/R诊断/正式重复均0。见
 review/WINDOWS-COMPACT-FAILURE-AUDIT.md及compact-nuts-failure-review-partial-v1。
+
+
+同日后继读取25份有效A1/G2原始stderr，100次内置ESS分配异常均申请2,145,387,008
+字节，与Pyro 1.9.2平方中间数组形状一致。一个原件例的四worker共256个旧ESS均null，
+现代R诊断独立保留。该证据证明部分诊断分配失败，不证明105进程失败的共同根因。
+已将诊断成本/阶段审查加入收尾计划，没有补采、更改分类或修改原环境。
