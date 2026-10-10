@@ -1,0 +1,70 @@
+{
+  "identity": "targeted-paper-companion-v1",
+  "created_utc": "2026-10-10T14:09:21.930838+00:00",
+  "source_commit": "1de637b1e8d1b09134a5e9e98c31214e9a6b0962",
+  "branch": "codex/research-integration",
+  "scope": "Completed S1 and S3B integrated; S2 native and S3A W1 results still pending",
+  "source_inputs_manifest_sha256": "38ae1bd5600240e451f3d1beb80a0bf7f34c65304263431daa6f47555beabb51",
+  "pdfs": {
+    "main": {
+      "path": "output/software-paper/软件与基准研究-定向补充v1.pdf",
+      "bytes": 581919,
+      "sha256": "72051c30dc208c200e8ebcb611c20b1262270569c4a512f3a8e561b4b5bf2205",
+      "pages": 18
+    },
+    "si": {
+      "path": "output/software-paper/补充材料-定向补充v1.pdf",
+      "bytes": 784867,
+      "sha256": "371acebf7d61d8d06ef6a5b90e783ee39de1256bda3030282984bac0114d7183",
+      "pages": 37
+    }
+  },
+  "archives": {
+    "parallelbayes-targeted-paper-v1": {
+      "archive": "parallelbayes-targeted-paper-v1.tar",
+      "sha256": "e44d284e51f27a48cefca109b892b8c0ebe6925689afd480f60191d011158023",
+      "bytes": 17346560,
+      "verified_nonmanifest_files": 159
+    },
+    "parallelbayes-targeted-summary-v1": {
+      "archive": "parallelbayes-targeted-summary-v1.tar",
+      "sha256": "69548ed6d1304ed2fe8ba522afe1f0d324f3af8a2a9a015fc2eab897d9b7f9a4",
+      "bytes": 798720,
+      "verified_nonmanifest_files": 26,
+      "byte_identical_rebuilt_files": 5
+    }
+  },
+  "relocation": {
+    "main": {
+      "pages": 18,
+      "all_text_equal": true,
+      "all_72dpi_pixels_equal": true
+    },
+    "si": {
+      "pages": 37,
+      "all_text_equal": true,
+      "all_72dpi_pixels_equal": true
+    },
+    "complete_results": {
+      "pages": 67,
+      "sha256": "2a71da18334b781586afbae95b517446b890576825df3d1f8f9e0208e358bdf8",
+      "original_pdf_unchanged": true,
+      "source_files_verified_by_bundle_manifest": true,
+      "not_recompiled_this_revision": true
+    },
+    "scope": "Same host, different extraction directory, cached Tectonic 0.17.0; not independent-machine or raw-trajectory reproduction"
+  },
+  "checks": {
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0,
+    "new_sampling_calls": 0,
+    "new_formal_repetitions": 0,
+    "old_failure_classifications_changed": 0
+  },
+  "access": {
+    "source_and_summaries": "research branch",
+    "new_archives": "local only; not uploaded",
+    "windows_input_package": "upload awaits explicit permission after automatic review rejection"
+  }
+}

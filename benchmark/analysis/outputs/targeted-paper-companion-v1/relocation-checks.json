@@ -1,0 +1,20 @@
+{
+  "main": {
+    "pages": 18,
+    "all_text_equal": true,
+    "all_72dpi_pixels_equal": true
+  },
+  "si": {
+    "pages": 37,
+    "all_text_equal": true,
+    "all_72dpi_pixels_equal": true
+  },
+  "complete_results": {
+    "pages": 67,
+    "sha256": "2a71da18334b781586afbae95b517446b890576825df3d1f8f9e0208e358bdf8",
+    "original_pdf_unchanged": true,
+    "source_files_verified_by_bundle_manifest": true,
+    "not_recompiled_this_revision": true
+  },
+  "scope": "Same host, different extraction directory, cached Tectonic 0.17.0; not independent-machine or raw-trajectory reproduction"
+}

@@ -35,3 +35,13 @@ python3 scripts/analysis/write_targeted_followups_tex.py \
 论文输入便携包用于重新编译；新增汇总重建包用于重建四份新片段。这两类包都不等于完整原始实验复现包。旧主证据不重复复制；H1/L2新增原始归档留在本地，未自动发布。
 
 S2仍需Windows原生资格与有限定位；S3A仍在原会话计算，完成后还需独立检查误差包络及排序敏感性。现稿据此保留105次NUTS失败阶段未定和W1未认证的表述。
+
+## 本次文件
+
+- [正文PDF](../output/software-paper/软件与基准研究-定向补充v1.pdf) · [正文TeX](../manuscript/software/软件与基准研究.tex)
+- [补充材料PDF](../output/software-paper/补充材料-定向补充v1.pdf) · [补充材料TeX](../manuscript/software/补充材料.tex)
+- [便携论文包](../output/software-paper/parallelbayes-targeted-paper-v1.tar)：17,346,560字节；159个输入逐项校验，另附清单。含旧完整结果附录的编译输入，原67页PDF哈希不变。
+- [新增汇总重建包](../output/software-paper/parallelbayes-targeted-summary-v1.tar)：798,720字节；26个文件逐项校验，另附清单，五个生成文件搬移后逐字节相同。
+- [交付清单与完整SHA256](../benchmark/analysis/outputs/targeted-paper-companion-v1/delivery.json)。
+
+上述链接指本地交付；归档未上传或公开。论文输入来自源码`1de637b`。两份PDF在独立解包目录重编译，全部55页的文本及72 dpi像素相同；编译使用同机缓存Tectonic 0.17.0，未将这一结果写成异机复现。历史主证据与原始H1/L2计算归档没有修改。

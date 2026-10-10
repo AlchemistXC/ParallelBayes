@@ -1,0 +1,15 @@
+{
+  "parallelbayes-targeted-paper-v1": {
+    "archive": "parallelbayes-targeted-paper-v1.tar",
+    "sha256": "e44d284e51f27a48cefca109b892b8c0ebe6925689afd480f60191d011158023",
+    "bytes": 17346560,
+    "verified_nonmanifest_files": 159
+  },
+  "parallelbayes-targeted-summary-v1": {
+    "archive": "parallelbayes-targeted-summary-v1.tar",
+    "sha256": "69548ed6d1304ed2fe8ba522afe1f0d324f3af8a2a9a015fc2eab897d9b7f9a4",
+    "bytes": 798720,
+    "verified_nonmanifest_files": 26,
+    "byte_identical_rebuilt_files": 5
+  }
+}
