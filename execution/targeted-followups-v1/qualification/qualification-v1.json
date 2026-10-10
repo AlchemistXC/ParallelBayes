@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-10",
+  "passed": 16,
+  "failed": 0,
+  "skipped": 0,
+  "warnings_as_errors": true,
+  "command": "OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python -m pytest -q -W error -p no:cacheprovider tests/handoff/test_rare_importance.py tests/handoff/test_verified_cubature.py",
+  "target_arb_points": 6,
+  "proposal_draws_on_L2": 0,
+  "qualification_fixture_draws_are_not_L2": true,
+  "prior_attempts": [
+    {
+      "component": "W1 finite-box",
+      "passed": 5,
+      "failed": 2,
+      "cause": "arb power on zero-crossing interval returned nan; replaced by explicit integer multiplication"
+    },
+    {
+      "component": "L2 mixture",
+      "passed": 6,
+      "warnings": 9,
+      "cause": "matmul emitted nonfinite warnings despite finite results; replaced relevant products by explicit einsum; no warning suppression"
+    }
+  ],
+  "limitations": [
+    "W1 finite-box component only; target-specific moments/tails and ratios not yet certified",
+    "L2 MCSE is approximate; no MCMC benchmark data replaced"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "identity": "l2-rare-reference-is-v1",
+  "frozen": true,
+  "source_commit": "691dcfb4f1bb4da832472448276bfd19771f999e",
+  "source_files": {
+    "scripts/analysis/rare_importance.py": "ced4b507e2fff1d07554b39bd537ad1e249d7f1085d840884fb0e20d5438d479",
+    "scripts/analysis/run_l2_importance.py": "53d99a66b19e9ce30cb4a613324d4e69514037f20d1001a2f9895a24ddb32c06"
+  },
+  "model_file": "benchmark/protocols/windows-native-v1.json",
+  "model_file_sha256": "6a9f830d2b870ab693ee7db57942b11d35d22aef9fd31039c09a1a90e37ec12d",
+  "target_sha256": "7d3e601010f3c362f0cb37a7eca3e13efdd60a9622b718831200ecc0d65cee4f",
+  "python": "3.12.14",
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "python-flint": "0.9.0",
+    "psutil": "7.2.2"
+  },
+  "seed_namespace": [
+    20261010,
+    917
+  ],
+  "pilot_scale_pairs": [
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.5,
+      0.5
+    ],
+    [
+      2.0,
+      0.25
+    ],
+    [
+      3.0,
+      0.125
+    ]
+  ],
+  "scale_interpretation": "standard deviation multipliers for t and event covariance; squared in covariance",
+  "pilot_draws": 4096,
+  "pilot_selection": "Two legal proposals with lowest estimated relative influence variance; stable tie by candidate index. Pilot excluded from final estimate.",
+  "batches_per_proposal": 8,
+  "draws_per_batch": 131072,
+  "checkpoint_points": [
+    8192,
+    32768,
+    131072
+  ],
+  "evaluation_block": 256,
+  "persisted_weight_chunk": 8192,
+  "maximum_proposal_points": 2113536,
+  "component_weights": [
+    0.45,
+    0.45,
+    0.1
+  ],
+  "student_df": 5,
+  "actual_rng": "Independent PCG64 states saved before and after immutable full-batch proposal generation",
+  "event": "Original first coordinate theta[0]>0; no affine transformation",
+  "map_maxiter": 1000,
+  "information_eigenvalue_floor": "max(1e-12, max_eigenvalue*1e-10)",
+  "event_covariance": "At boundary mode rescale first-coordinate SD to min(Hinv SD,1/abs(boundary log-target slope)); preserve conditional covariance and regression",
+  "total_time_limit": null,
+  "rss_limit_gib": 4,
+  "working_limit_gib": 3,
+  "minimum_free_gib": 10,
+  "qualification_required": true,
+  "new_formal_benchmark_repetitions": 0,
+  "reference_type": "self-normalized independent importance ratio with approximate batch delta MCSE; not certified",
+  "quality_targets": {
+    "relative_mcse": 0.1,
+    "numerator_ess": 200,
+    "denominator_ess": 1000,
+    "maximum_numerator_weight": 0.05,
+    "maximum_denominator_weight": 0.01
+  }
+}
