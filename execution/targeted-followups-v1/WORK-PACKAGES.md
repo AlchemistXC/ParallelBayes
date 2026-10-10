@@ -9,7 +9,7 @@
 | S2 NUTS故障定位 | handoff_prepared | 14项便携检查通过；Windows实际通过Job及四条件资格后冻结 | handoff/windows-nuts-localization/README.md；qualification/nuts-portable-qualification.json |
 | S3A W1参考 | running | 21项检查通过；冻结后运行两种积分组织，随后独立核对及参考敏感性分析 | benchmark/protocols/w1-reference-enclosure-v1.json；无最终W1认证结果 |
 | S3B L2参考 | complete | 2097152正式点+16384试探；633资产恢复不变；96点独立权重核对 | docs/L2-RARE-REFERENCE-RESULTS.md；对应SUMMARY/audit.json |
-| 合并 | pending | 独立接收新原件；论文只写已完成结果 | 尚未改动结果正文 |
+| 合并 | partial_S1_S3B | H1/L2已写入正文及SI；W1/S2待实际结果 | docs/TARGETED-FOLLOWUPS-PAPER.md；5项报告检查通过 |
 
 每次推进记录命令、源码提交、依赖、输入SHA、passed/failed/skipped数量、数值/资源终止、结果SHA和恢复行为。计划版本不能冒充正式冻结协议；资格未完成就不得运行主体。大数组在Git外，摘要/协议/脚本入Git；新原件单独归档。保留原105/42失败分类，既有完成状态不变。
 
@@ -24,3 +24,5 @@ L2交付：约178.94 MiB本地tar的660件成员逐项校验；同机独立目�
 W1运行更新：执行源码504253c3f1ed5fa890cf213de40f7601b3a6c450；协议在278c04a提交，SHA256为85506f871a4fedb6f1cb30da1d9509afa764d2621e40ee51c48a1a6b44a97d36。21项资格检查通过、0失败、0跳过，明细见qualification/w1-driver-qualification.json。运行命令为`scripts/analysis/run_w1_enclosure.py run --protocol benchmark/protocols/w1-reference-enclosure-v1.json --data <已核验原件>/formal/external --output <补充输出>/w1-reference-enclosure-v1`，使用独立.venv-followups、warnings-as-errors及协议绑定的单线程环境。进度、SQLite检查点和资源记录保存在输出目录；截至本次核对仍在有限域细分，不能提前填写最终认证状态。
 
 S2实现更新：增加scripts/followups中的独立阶段记录、诊断前持久化、受管Job消息/退出/私有内存观察、固定调用登记、原生资格门槛、分阶段协调、只核验恢复、独立分析和导出。14项Mac便携检查通过0失败0跳过；原生测试尚未运行，未新增MCMC调用。输入tar 21,544,960字节，27个文件独立解包逐项相同，SHA256为3b97a221ea8a5a61644f3394474e2ceaf8f0b981803456181a012a99d26f5b12。使用新handoff/windows-nuts-localization/CODEX-PROMPT.md整份提示词；原48调用上限不变。
+
+论文整合：targeted-paper-companion-v1从已核验的9份汇总输入生成4份LaTeX片段。H1保留原失败，L2两套提议、近似MCSE及全部八批结果均列SI；没有主网格重算。5项报告检查通过0失败0跳过；Tectonic 0.17.0编译正文18页、SI37页，新增表格和引用已核对。W1/S2仍未生成最终结论。

@@ -46,4 +46,4 @@ python scripts/analysis/report_h1_function_paths.py \
 
 三个PB变量由使用者设为本机证据/输出绝对路径。原件与输出目录必须分离；再次运行第一命令逐项校验并复用结果，报告器则要求新目录，防止覆盖图表版本。依赖版本在协议内，绘图另需matplotlib。归档校验与实际命令见本目录对应delivery.json。
 
-S2 Windows故障定位和S3 W1/L2参考改进仍未完成，不能由S1结果替代。论文的统一增补待其余工作结项后进行；本报告可作为独立补充材料。
+S1结果现与已完成的S3B L2参考共同进入论文，见[TARGETED-FOLLOWUPS-PAPER.md](TARGETED-FOLLOWUPS-PAPER.md)。S2 Windows故障定位和S3A W1完整包络仍未完成，不能由S1替代。原交付归档保留当时文字。

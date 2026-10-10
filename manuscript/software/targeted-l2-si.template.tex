@@ -1,0 +1,51 @@
+\subsection{L2稀有符号事件的独立重要性参考}
+原NUTS参考的262144个相关样本中，$\ind(\theta_1>0)$恒为0。为研究这一事件的概率尺度，另以协议\texttt{l2-rare-reference-is-v1}进行独立重要性采样，保持原八参数logistic数据、坐标与独立$N(0,2.5^2)$先验不变。以下是新增参考分析，前文的原参考表保留其历史未定状态。
+
+提议密度为$q=0.45q_t+0.45q_++0.10p_0$：$q_t$是在无约束众数附近的自由度5多元$t$，$q_+$是事件约束众数附近、截断到$\theta_1>0$的多元正态，$p_0$为原先验。曲率矩阵由负对数目标Hessian构造，特征值下限为$\max(10^{-12},10^{-10}\lambda_{\max})$，记录修复前后谱。边界众数的首坐标标准差取局部逆信息标准差与向外对数目标斜率绝对值倒数中的较小者，其余条件协方差与回归系数保留；优化最多1000轮。事件正态先抽截断的首坐标边缘，再抽其余条件坐标，不把负数裁成0。
+
+每点独立选择组件，分母使用完整、带常数的混合密度，权重为$w=L(\theta)p_0(\theta)/q(\theta)$。对数域计算避免下溢。自归一化重要性估计与防御混合的原则见\cite{owen}；本研究的配比、尺度与预算另行规定。由于$L\leq1$且$q\geq0.10p_0$，理论上$w\leq10$，但该界本身不保证罕见事件的相对精度。
+
+预定$t$/事件正态标准差倍数组合为$(1,1)$、$(1.5,0.5)$、$(2,0.25)$及$(3,0.125)$，每组试探4096点，按比率影响量的估计相对方差选前两组，记为$Q_1,Q_2$。全部16384个试探点排除。两组各用8个独立PCG64批次，每批固定$2^{17}$点，正式点数共2097152；较早检查点只检查资源和计算，不依概率估计提前停止。没有新增MCMC拟合。
+
+设第$k$批的分子、分母均值为$A_k=n^{-1}\sum_iw_{ki}\ind(\theta_{ki,1}>0)$和$B_k=n^{-1}\sum_iw_{ki}$，则
+\[
+\widehat p=\frac{\overline A}{\overline B},\qquad
+\widehat{\operatorname{MCSE}}^2=
+\frac{S_{AA}-2\widehat pS_{AB}+\widehat p^2S_{BB}}
+{8\overline B^2},
+\]
+其中$S$是8对批次均值的样本协方差，分母为7。计算对$A,B$使用相同对数缩放，不平均各批次比率。该MCSE是delta近似；有限样本比率有偏，8批估计不能提供严格误差认证或保证区间覆盖率。
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrrr}\toprule
+提议 & $\widehat p$ & 近似MCSE & 相对MCSE\\\midrule
+@L2_ESTIMATES@
+\bottomrule\end{tabular}
+\caption{L2事件的两套独立重要性参考。每套8个独立批次、1048576个正式点；两套结果均报告。}
+\label{tab:l2-importance-estimates}
+\end{table}
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrrrr}\toprule
+提议 & 事件权重ESS & 分母权重ESS & 最大事件权重 & 最大分母权重\\\midrule
+@L2_WEIGHTS@
+\bottomrule\end{tabular}
+\caption{全部正式点的权重质量。事件ESS为$(\sum wI)^2/\sum(wI)^2$，分母ESS同理；最大权重均已在相应和中归一化。它们不是MCMC ESS，也不是独立批次数。}
+\label{tab:l2-importance-weights}
+\end{table}
+
+两套提议均达到预设门槛：相对MCSE不超过10\%，事件/分母权重ESS至少200/1000，最大事件/分母权重不超过0.05/0.01；估计差不超过3倍合并MCSE。后者仅作相容性诊断。$Q_2$的事件权重更集中，整体门槛通过没有消除批次间波动（表\ref{tab:l2-importance-batches}）。
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{rrrrrrr}\toprule
+& \multicolumn{3}{c}{$Q_1$} & \multicolumn{3}{c}{$Q_2$}\\
+批次 & $10^9\widehat p_k$ & 事件ESS & 最大权重 & $10^9\widehat p_k$ & 事件ESS & 最大权重\\\midrule
+@L2_BATCHES@
+\bottomrule\end{tabular}
+\caption{八个独立批次的完整结果；每批131072点。批次比率仅用于展示波动，表\ref{tab:l2-importance-estimates}使用总分子与总分母的比率。最大权重是批内归一化事件权重，不能与整套提议的最大权重混用。}
+\label{tab:l2-importance-batches}
+\end{table}
+
+原L2的432项主任务有414项有效、18项失败，所有有效输出的事件均值均为0。相对于两套参考，该事件单独的原尺度平方差分别为$@L2_MSE1@$和$@L2_MSE2@$；参考的近似一阶误差传播为$2\widehat p\,\widehat{\operatorname{MCSE}}$。这不是重新计算原全函数达标率，也不修复常量链诊断。全零估计相对于两套正概率参考的相对误差均为100\%。
+
+独立核验读取633件资产，从保存权重以补偿求和重算比率、权重ESS和MCSE，并在96个预定或极值点独立重算目标与完整提议密度；最大log权重差为$3.64\times10^{-12}$。恢复检查新增随机点和权重块均为0。原参考及主任务结果未被覆盖，代码、批次表和来源SHA256随补充分析提供。

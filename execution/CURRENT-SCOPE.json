@@ -39,13 +39,13 @@
     "new_formal_repetitions": 0
   },
   "paper": {
-    "main_pages": 17,
-    "supplement_pages": 34,
+    "main_pages": 18,
+    "supplement_pages": 37,
     "complete_results_pages": 67,
     "author_metadata_pending": true,
-    "revision": "manuscript-review-v2",
-    "review": "docs/MANUSCRIPT-REVIEW-V2.md",
-    "delivery": "benchmark/analysis/outputs/manuscript-review-v2/delivery.json"
+    "revision": "targeted-paper-companion-v1",
+    "review": "docs/TARGETED-FOLLOWUPS-PAPER.md",
+    "delivery": "benchmark/analysis/outputs/targeted-paper-companion-v1/delivery.json"
   },
   "remaining_author_decisions": [
     "Authors and affiliations",
@@ -117,6 +117,19 @@
         "formal_reference_points": 2097152,
         "pilot_points": 16384,
         "report": "docs/L2-RARE-REFERENCE-RESULTS.md"
+      }
+    },
+    "paper_integration": {
+      "status": "partial_S1_S3B",
+      "report": "docs/TARGETED-FOLLOWUPS-PAPER.md",
+      "remaining": [
+        "S2 native evidence",
+        "S3A final enclosure and sensitivity"
+      ],
+      "tests": {
+        "passed": 5,
+        "failed": 0,
+        "skipped": 0
       }
     }
   }

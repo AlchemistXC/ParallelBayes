@@ -1,0 +1,71 @@
+{
+  "identity": "targeted-paper-companion-v1",
+  "count_convention": "CJK characters plus Latin/numeric tokens in TeX source, including commands; generated inputs expanded for new result paragraphs",
+  "counts": {
+    "path_validation": {
+      "before": 629,
+      "after": 647
+    },
+    "fixed_budget_errors": {
+      "before": 1088,
+      "after": 1270
+    }
+  },
+  "claims": [
+    {
+      "claim": "H1 retained path-function maxima differ from pooled-mean maxima",
+      "source": "h1-function-path-companion-v1/function-differences.csv",
+      "scope": "80 paired tasks, 13 old input labels; no added independent repetitions",
+      "main": "Results 4.1",
+      "si": "Section 4.2",
+      "allocation": "qualification; replace old failure-only paragraph"
+    },
+    {
+      "claim": "L2 rare-event probability estimates are about 1e-9 with unequal uncertainty",
+      "source": "l2-rare-reference-is-v1/SUMMARY.json and independent audit.json",
+      "scope": "two proposals, eight independent batches each; approximate delta MCSE",
+      "main": "Results 4.4",
+      "si": "Section 2.5",
+      "allocation": "qualification; methods and all batch values in SI"
+    },
+    {
+      "claim": "small absolute error and all-zero event estimates do not establish relative precision",
+      "source": "l2-rare-reference-is-v1/old-L2-event-sensitivity.json",
+      "scope": "414 valid old fits, 18 failures retained; no full-function reclassification",
+      "main": "Results 4.4; synthesized without numeric replay in Discussion",
+      "si": "Section 2.5",
+      "allocation": "interpretation"
+    }
+  ],
+  "not_claimed": [
+    "H1 failures become eligible",
+    "L2 rigorous probability bounds",
+    "W1 completed certified intervals",
+    "S2 native diagnosis completed",
+    "unconditional software ranking"
+  ],
+  "validation": {
+    "report_tests_passed": 5,
+    "failed": 0,
+    "skipped": 0,
+    "mcse_independently_recalculated_from_batch_means": true,
+    "relocated_summaries_byte_equal": true,
+    "compiler": "Tectonic 0.17.0",
+    "main_pages": 18,
+    "si_pages": 37,
+    "new_table_clipping_observed": false,
+    "unresolved_pdf_references": 0,
+    "whole_page_contact_review": true,
+    "changed_pages_reviewed_at_120_percent": [
+      7,
+      8,
+      10
+    ],
+    "initial_compile_issue": "Plugin auto selected pdfLaTeX unsuitable for ctex/Fandol; explicit cached Tectonic succeeded; no source repair needed"
+  },
+  "citation_check": {
+    "owen": "https://artowen.su.domains/mc/",
+    "chapter": "https://artowen.su.domains/mc/Ch-var-is.pdf",
+    "basis": "Author homepage gives 2013 citation; official indexed chapter 9.2 gives ratio delta variance. Eight-batch estimator and actual protocol are project-specific."
+  }
+}

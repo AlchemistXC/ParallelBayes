@@ -1,0 +1,15 @@
+{
+  "identity": "targeted-paper-companion-v1",
+  "purpose": "H1/L2 completed companions only; no new MCMC or W1/S2 result",
+  "files": {
+    "benchmark/analysis/outputs/h1-function-path-companion-v1/SUMMARY.json": "a1a19f5a8969c1711b265e71553d8f62be815262da94506d961b90e73faede45",
+    "benchmark/analysis/outputs/h1-function-path-companion-v1/provenance.json": "af88581cf8ea9e484338de5d44153bdfcf17b720a086b039316e686f3b3ebb73",
+    "benchmark/analysis/outputs/h1-function-path-companion-v1/function-differences.csv": "e13784bcff198306f5ca20922d5ddbe1781e93c9c9ccf600e6cb891492df3109",
+    "benchmark/analysis/outputs/h1-function-path-companion-v1/h1-direct-array-validation.json": "6c0e43e1381f3dd8ac407cc25023be58e44af9ffd9a26d581c58b374e7409b1e",
+    "benchmark/analysis/outputs/l2-rare-reference-is-v1/SUMMARY.json": "054160b69f3182c5c369726f5746088c4476c167dedad837c4c4c5bdd15d813b",
+    "benchmark/analysis/outputs/l2-rare-reference-is-v1/audit.json": "57d806896ccee7c331961f1ccd34eefc846a366967864c24a7c11d2286f82b24",
+    "benchmark/analysis/outputs/l2-rare-reference-is-v1/SELECTION.json": "1249dc1c7ce74c5a55b7622172e7d79870176d1a61c273ef8c30035726e74b10",
+    "benchmark/analysis/outputs/l2-rare-reference-is-v1/batches-reaggregated.json": "5fd672695be70698148ca6d1a3082dc4107cf6bfc3d19edfa727bf50f547adc2",
+    "benchmark/analysis/outputs/l2-rare-reference-is-v1/old-L2-event-sensitivity.json": "5a37cd6dc8278a66f7dda0c18ffb8b965820478c6d652d351394b87a351c6f9d"
+  }
+}
