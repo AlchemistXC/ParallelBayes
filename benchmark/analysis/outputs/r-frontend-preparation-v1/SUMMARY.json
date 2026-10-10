@@ -14,5 +14,12 @@
   "new_sampler_calls": 0,
   "planned_maximum_sampler_calls": 64,
   "formal_repetitions_added": 0,
-  "requires": "Actual intake and reconstruction completion before measurement"
+  "requires": "Actual intake and reconstruction completion before measurement",
+  "dependency_snapshot": {
+    "method": "stdlib importlib.metadata in existing isolated Python",
+    "packages": 19,
+    "requires_pip": false,
+    "environment_changed": false
+  },
+  "initial_freeze_failure": "Existing uv-created venv lacks pip; no sampling/output freeze created; repaired with metadata read only"
 }

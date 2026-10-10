@@ -1,0 +1,14 @@
+/Users/haku/Workspace/ParallelBayes/.venv-release-review/bin/python: No module named pip
+Traceback (most recent call last):
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/r_frontend_timing.py", line 202, in <module>
+    report = fn(**args)
+             ^^^^^^^^^^
+  File "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/r_frontend_timing.py", line 76, in freeze
+    dependencies = subprocess.check_output([str(python), "-m", "pip", "freeze", "--all"],
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haku/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/haku/Workspace/ParallelBayes/.venv-release-review/bin/python', '-m', 'pip', 'freeze', '--all']' returned non-zero exit status 1.

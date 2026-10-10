@@ -30,6 +30,17 @@ def read(path):
     return json.loads(Path(path).read_text())
 
 
+def dependency_snapshot(python):
+    """Read package metadata without requiring pip in a uv-created environment."""
+    code = """import importlib.metadata as m,json,sys
+rows=[dict(name=d.metadata['Name'],version=d.version,root=str(d.locate_file('')),
+           direct_url=d.read_text('direct_url.json')) for d in m.distributions()]
+print(json.dumps(dict(python=sys.version,prefix=sys.prefix,base_prefix=sys.base_prefix,
+      packages=sorted(rows,key=lambda r:(r['name'].lower(),r['root']))),sort_keys=True))
+"""
+    return json.loads(subprocess.check_output([str(python), "-I", "-c", code], text=True))
+
+
 def tasks():
     result = []
     for block in range(4):
@@ -72,18 +83,16 @@ def freeze(inputs, output, rscript, python, r_library):
     for name, digest in numerical.items():
         if sha(ROOT / "r-package" / "inst" / "python" / name) != digest:
             raise ValueError("Installed numerical source differs: " + name)
-    env = dict(os.environ, PYTHONDONTWRITEBYTECODE="1")
-    dependencies = subprocess.check_output([str(python), "-m", "pip", "freeze", "--all"],
-                                           env=env, text=True)
+    dependencies = dependency_snapshot(python)
     output.mkdir(parents=True, exist_ok=False)
     shutil.copytree(inputs, output / "inputs", ignore=shutil.ignore_patterns("__pycache__"))
-    (output / "python-freeze.txt").write_text(dependencies)
+    write(output / "python-environment.json", dependencies)
     plan = dict(schema=SCHEMA, identity="mac-r-frontend-timing-v1", root=str(ROOT),
                 source_commit=subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
                 source_sha256=source, installed_package_sha256=installed,
                 inputs_sha256={p.name: sha(p) for p in sorted((output / "inputs").iterdir()) if p.is_file()},
                 rscript=str(Path(rscript).absolute()), python=str(python), r_library=str(r_library),
-                package_path=str(package), python_freeze_sha256=sha(output / "python-freeze.txt"),
+                package_path=str(package), python_environment_sha256=sha(output / "python-environment.json"),
                 platform=platform.platform(), tasks=tasks(), planned_processes=32,
                 maximum_sampler_calls=64, formal_repetitions_added=0,
                 inference_claim="None: one reused four-chain input, technical cost repetitions only",
@@ -105,10 +114,10 @@ def verify_plan(root):
         for name, expected in members.items():
             if sha(base / name) != expected:
                 raise ValueError("Frozen source/input/installation changed: " + str(base / name))
-    if sha(root / "python-freeze.txt") != plan["python_freeze_sha256"]:
+    if sha(root / "python-environment.json") != plan["python_environment_sha256"]:
         raise ValueError("Dependency record changed")
-    observed = subprocess.check_output([plan["python"], "-m", "pip", "freeze", "--all"], text=True)
-    if observed != (root / "python-freeze.txt").read_text():
+    observed = dependency_snapshot(plan["python"])
+    if observed != read(root / "python-environment.json"):
         raise ValueError("Python dependencies changed")
     return plan
 
