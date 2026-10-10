@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "passed": 21,
+  "failed": 0,
+  "skipped": 0,
+  "scope": "W1 finite box, target derivatives/tails, checkpoint/reservation, signed ratios and uncertain event cut",
+  "command": "OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python -m pytest -q -W error -p no:cacheprovider tests/handoff/test_checkpoint_cubature.py tests/handoff/test_w1_posterior_enclosure.py tests/handoff/test_wells_ball_target.py tests/handoff/test_verified_cubature.py",
+  "actual_posterior_intervals_computed": 0,
+  "completed_output_resume_must_not_recompute": true
+}
