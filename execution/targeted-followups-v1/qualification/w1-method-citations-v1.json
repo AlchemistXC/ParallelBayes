@@ -1,0 +1,39 @@
+{
+  "identity": "w1-method-citations-v1",
+  "date": "2026-10-10",
+  "scope": "Two references for the W1 numerical methods fragment; not a full-paper reference audit",
+  "references": [
+    {
+      "key": "dlmfquadrature",
+      "source": "https://dlmf.nist.gov/3.5",
+      "locator": [
+        "3.5.6",
+        "3.5.19",
+        "3.5.20",
+        "3.5.21"
+      ],
+      "checked": "Primary source formula text",
+      "derivation": "Simpson half-length h gives (2h)^5/2880. For two-point Gauss, gamma_2=8/45 on [-1,1], gamma_2/4!=1/135; affine interval scaling gives full-width^5/4320. Tensor extension uses positive weights and a sum of directional remainders.",
+      "boundary": "The tensor and model-specific tail derivations are supplied by this project, not claimed as an Arb built-in cubature guarantee."
+    },
+    {
+      "key": "arb",
+      "title": "Arb: Efficient Arbitrary-Precision Midpoint-Radius Interval Arithmetic",
+      "author": "Fredrik Johansson",
+      "doi": "10.1109/TC.2017.2690633",
+      "journal": "IEEE Transactions on Computers",
+      "year": 2017,
+      "volume": 66,
+      "issue": 8,
+      "pages": "1281-1292",
+      "metadata_source": "https://api.crossref.org/works/10.1109/TC.2017.2690633",
+      "content_source": "https://arxiv.org/html/1611.02831v1",
+      "content_locator": [
+        "III Low-level number types; III-A Midpoints; III-B Radii and magnitude bounds",
+        "V Precision and bounds"
+      ],
+      "checked": "Author preprint for arithmetic; Crossref for journal metadata",
+      "boundary": "2016 preprint and 2017 journal record distinguished; publisher PDF was not accessed. No claim that this citation validates the project-specific target, derivatives or integrator."
+    }
+  ]
+}

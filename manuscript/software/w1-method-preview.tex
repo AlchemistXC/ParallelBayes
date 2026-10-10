@@ -1,0 +1,19 @@
+\documentclass[UTF8,fontset=fandol,zihao=-4]{ctexart}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,hyperref,xcolor,fancyhdr}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\setlength{\headheight}{15pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{ParallelBayes：W1参考包络方法}\fancyfoot[C]{\thepage}
+\newcommand{\E}{\mathbb{E}}\newcommand{\ind}{\mathbf{1}}
+\title{W1参考包络：补充方法稿}
+\author{ParallelBayes研究材料}\date{2026年10月10日}
+\begin{document}
+\maketitle
+\noindent 本稿说明已冻结计算的方法、误差边界和核验方式。完整计算及最终独立核验尚未完成，本文不提供最终数值结果。通过核验后，本节将与结果表一并纳入补充材料。
+\section{补充计算方法}
+\input{w1-enclosure-method.tex}
+\begin{thebibliography}{9}
+\input{w1-method-references.tex}
+\end{thebibliography}
+\end{document}

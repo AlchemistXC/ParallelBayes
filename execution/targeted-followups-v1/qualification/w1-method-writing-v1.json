@@ -1,0 +1,94 @@
+{
+  "identity": "w1-method-writing-v1",
+  "date": "2026-10-10",
+  "scope": "Supplementary methods only; final scientific result not yet available",
+  "baseline_commit": "32d2a89aff7a0dd5d0cd52c32f2e86876762a12e",
+  "source_hashes": {
+    "manuscript/software/w1-enclosure-method.tex": "8f82ccc314ca44854ce2c9c1e73bdb59792b29be1802db07df1ea8f38c993726",
+    "manuscript/software/w1-method-references.tex": "7f331135b4732774ed77602a0c4ef980b6ee53b411dd7260f8412dd8eaaf8140",
+    "manuscript/software/w1-method-preview.tex": "5a8a5c1822d2643f8202bab0cad8752a063c91230758966c8e54b0bfcea7f823"
+  },
+  "frozen_protocol_sha256": "85506f871a4fedb6f1cb30da1d9509afa764d2621e40ee51c48a1a6b44a97d36",
+  "frozen_numerical_sources_unchanged": 8,
+  "preview": {
+    "pdf": "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-method-preview-v1/build/W1参考包络方法.pdf",
+    "bytes": 182868,
+    "sha256": "6eacd0f4be2d08998be2d18a5605329a762afbeaf892cf3fa1eb7584362ed474",
+    "pages": 3,
+    "page_text_checks": [
+      {
+        "page": 1,
+        "characters": 915,
+        "replacement_characters": 0,
+        "unresolved_marker": false
+      },
+      {
+        "page": 2,
+        "characters": 1184,
+        "replacement_characters": 0,
+        "unresolved_marker": false
+      },
+      {
+        "page": 3,
+        "characters": 487,
+        "replacement_characters": 0,
+        "unresolved_marker": false
+      }
+    ],
+    "renderer": "PyMuPDF 1.26.5",
+    "compile": {
+      "compiler": "Tectonic 0.17.0",
+      "exit_code": 0,
+      "final_pass_undefined_references": 0,
+      "overfull_boxes": 0,
+      "compile_record_sha256": "3d26a192fd6b02ae7db29bc1a0d4ba83cbe1b9325290d48c214ccf6775b81349"
+    },
+    "visual_review": {
+      "pages_reviewed": [
+        1,
+        2,
+        3
+      ],
+      "status": "passed",
+      "checks": [
+        "Chinese text and formulas legible",
+        "No clipping or overlap",
+        "Both citations and equation references resolved",
+        "Header and page numbers consistent"
+      ],
+      "review_method": "Agent inspection of all final MuPDF PNG pages at 108 dpi"
+    },
+    "initial_render_issue": "Bundled Poppler lacked Adobe-GB1 mapping; replaced only QA renders with existing project MuPDF. No PDF source changed."
+  },
+  "skills": [
+    "nature-writing",
+    "nature-academic-search",
+    "latex:latex-compile",
+    "pdf:pdf"
+  ],
+  "placement": "SI methods; not input into current final main/SI until completed audit and table available",
+  "new_integrand_evaluations_from_this_writing_task": 0,
+  "new_mcmc_calls": 0,
+  "claim_evidence_map": [
+    {
+      "claim": "The full-cell Gauss and Simpson fourth-derivative constants are 4320 and 2880",
+      "evidence": "NIST DLMF 3.5.6, 3.5.19-21 with change of interval; verified_cubature.rectangle_rule",
+      "status": "source_checked_and_derived"
+    },
+    {
+      "claim": "Tail bounds separately cover mass, absolute first and second moments",
+      "evidence": "wells_ball_target.WellsBall.tail; concavity supporting-plane derivation",
+      "status": "implementation_and_derivation_checked"
+    },
+    {
+      "claim": "A strictly positive denominator is required for posterior interval division",
+      "evidence": "run_w1_enclosure.py; audit_w1_enclosure.py",
+      "status": "specified_and_implemented"
+    },
+    {
+      "claim": "Final W1 intervals and sensitivity results available",
+      "evidence": null,
+      "status": "not_claimed_pending_complete_run_and_independent_audit"
+    }
+  ]
+}
