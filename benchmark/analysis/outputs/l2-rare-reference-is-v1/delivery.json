@@ -1,0 +1,9 @@
+{
+  "archive": "l2-rare-reference-is-v1.tar",
+  "bytes": 187627520,
+  "sha256": "14e57e7be0f4006534720a2375ed9fe753443a7b5a9195fb4062f0427a1cd8e5",
+  "verified_members": 660,
+  "manifest_members": 1,
+  "source_commit": "e2ecade",
+  "publicly_uploaded": false
+}

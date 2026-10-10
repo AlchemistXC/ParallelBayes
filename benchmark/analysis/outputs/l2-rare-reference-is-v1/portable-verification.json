@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "portable_report_files_identical": [
+    "REPORT.md",
+    "SELECTION.json",
+    "SUMMARY.json",
+    "audit.json",
+    "batch-results.csv",
+    "batches-reaggregated.json",
+    "old-L2-event-sensitivity.json"
+  ],
+  "new_proposal_points": 0,
+  "new_weight_chunks": 0,
+  "raw_manifest_assets_verified": 633,
+  "archive_members_verified": 660,
+  "same_host_fresh_directory": true,
+  "independent_hardware_test": false
+}

@@ -54,7 +54,7 @@
   ],
   "preserved_limitations": [
     "105 failures remain unclassified",
-    "L2 rare reference unresolved",
+    "Historical L2 MCMC rare-event reference uncertainty remains undefined; independent importance companion now available with approximate MCSE",
     "W1 quadrature uncertified",
     "Some chains do not explore sufficiently",
     "No universal acceleration or precise time-to-accuracy claim"

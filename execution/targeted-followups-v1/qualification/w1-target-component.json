@@ -1,0 +1,53 @@
+{
+  "status": "target_component_qualification_passed",
+  "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+  "data_manifest_sha256": "b64415687a58d3e2c34444d9e32523154b6002d960e505e31e2510d8356420ab",
+  "center": [
+    0.6059593596187433,
+    -0.6218819312605882
+  ],
+  "factor": [
+    [
+      0.03707095095332249,
+      -0.047571711918119874
+    ],
+    [
+      0.0,
+      0.09742588255807785
+    ]
+  ],
+  "transform": "upper triangular fixed binary64 factor; beta depends only on second integration coordinate",
+  "series_checks": [
+    {
+      "axis": 0,
+      "all_seven_fourth_derivatives_enclose_series": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "axis": 1,
+      "all_seven_fourth_derivatives_enclose_series": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "log_target_numpy_arb_difference": 2.2737367544323206e-13,
+  "precision_bits": 128,
+  "full_box_derivatives_finite": true,
+  "elapsed_seconds": 0.07934308052062988,
+  "formal_integrals_computed": 0,
+  "posterior_intervals_certified": 0,
+  "source_sha256": "8c78b73e191edfea6e7cc14834a7076d73eb993e8ea0ff2e901ae3d649f74079"
+}
