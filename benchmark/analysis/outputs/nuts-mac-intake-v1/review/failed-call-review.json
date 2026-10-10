@@ -1,0 +1,325 @@
+[
+  {
+    "id": "diagnostic-G2-legacy-w4",
+    "phase": "diagnostic",
+    "error": {
+      "message": "Owned process RSS guard exceeded",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\n\\scripts\\followups\\nuts_runtime.py\", line 120, in execute\n    if state['sampled_rss_bytes']>8*GIB:raise MemoryError('Owned process RSS guard exceeded')\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nMemoryError: Owned process RSS guard exceeded\n",
+      "type": "MemoryError"
+    },
+    "resources": {
+      "max_sampled_tree_rss_bytes": 9502576640,
+      "kernel_peak_job_commit_bytes": 12482658304,
+      "max_sampled_available_private_sum_bytes": 12482658304,
+      "private_incomplete_observations": 2,
+      "observations": 12,
+      "truncated_last_observation": false,
+      "memory_limit_messages": [],
+      "captured_exit_codes": {},
+      "missing_messages_exclude_resource_failure": false
+    },
+    "chains": [
+      {
+        "chain": 0,
+        "last_event": "legacy_ess_enter",
+        "truncated": false
+      },
+      {
+        "chain": 1,
+        "last_event": "legacy_ess_enter",
+        "truncated": false
+      },
+      {
+        "chain": 2,
+        "last_event": "legacy_ess_enter",
+        "truncated": false
+      },
+      {
+        "chain": 3,
+        "last_event": "legacy_ess_enter",
+        "truncated": false
+      }
+    ]
+  },
+  {
+    "id": "main-G2-w4-d1",
+    "phase": "main",
+    "error": {
+      "message": "Owned Job reported a memory limit event",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\n\\scripts\\followups\\nuts_runtime.py\", line 119, in execute\n    raise MemoryError('Owned Job reported a memory limit event')\nMemoryError: Owned Job reported a memory limit event\n",
+      "type": "MemoryError"
+    },
+    "resources": {
+      "max_sampled_tree_rss_bytes": 10190118912,
+      "kernel_peak_job_commit_bytes": 12923604992,
+      "max_sampled_available_private_sum_bytes": 12856569856,
+      "private_incomplete_observations": 2,
+      "observations": 51,
+      "truncated_last_observation": false,
+      "memory_limit_messages": [
+        {
+          "message": 10,
+          "name": "job_memory_limit",
+          "message_value": 9384,
+          "observed_ns": 1791656807728658900,
+          "delivery_guaranteed": false
+        },
+        {
+          "message": 10,
+          "name": "job_memory_limit",
+          "message_value": 26272,
+          "observed_ns": 1791656807728658900,
+          "delivery_guaranteed": false
+        }
+      ],
+      "captured_exit_codes": {},
+      "missing_messages_exclude_resource_failure": false
+    },
+    "chains": [
+      {
+        "chain": 0,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 1,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 2,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 3,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      }
+    ]
+  },
+  {
+    "id": "main-A1-w4-d1",
+    "phase": "main",
+    "error": {
+      "message": "Owned Job reported a memory limit event",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\n\\scripts\\followups\\nuts_runtime.py\", line 119, in execute\n    raise MemoryError('Owned Job reported a memory limit event')\nMemoryError: Owned Job reported a memory limit event\n",
+      "type": "MemoryError"
+    },
+    "resources": {
+      "max_sampled_tree_rss_bytes": 8530022400,
+      "kernel_peak_job_commit_bytes": 13529350144,
+      "max_sampled_available_private_sum_bytes": 11373453312,
+      "private_incomplete_observations": 2,
+      "observations": 47,
+      "truncated_last_observation": false,
+      "memory_limit_messages": [
+        {
+          "message": 10,
+          "name": "job_memory_limit",
+          "message_value": 8596,
+          "observed_ns": 1791656957160151600,
+          "delivery_guaranteed": false
+        }
+      ],
+      "captured_exit_codes": {},
+      "missing_messages_exclude_resource_failure": false
+    },
+    "chains": [
+      {
+        "chain": 0,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 1,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 2,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 3,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      }
+    ]
+  },
+  {
+    "id": "confirmation-G2-w4-d1",
+    "phase": "confirmation",
+    "error": {
+      "message": "Owned Job reported a memory limit event",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\n\\scripts\\followups\\nuts_runtime.py\", line 119, in execute\n    raise MemoryError('Owned Job reported a memory limit event')\nMemoryError: Owned Job reported a memory limit event\n",
+      "type": "MemoryError"
+    },
+    "resources": {
+      "max_sampled_tree_rss_bytes": 10987126784,
+      "kernel_peak_job_commit_bytes": 12923654144,
+      "max_sampled_available_private_sum_bytes": 12856619008,
+      "private_incomplete_observations": 2,
+      "observations": 26,
+      "truncated_last_observation": false,
+      "memory_limit_messages": [
+        {
+          "message": 10,
+          "name": "job_memory_limit",
+          "message_value": 26812,
+          "observed_ns": 1791658150817171400,
+          "delivery_guaranteed": false
+        },
+        {
+          "message": 10,
+          "name": "job_memory_limit",
+          "message_value": 10016,
+          "observed_ns": 1791658150817171400,
+          "delivery_guaranteed": false
+        },
+        {
+          "message": 10,
+          "name": "job_memory_limit",
+          "message_value": 27236,
+          "observed_ns": 1791658150817171400,
+          "delivery_guaranteed": false
+        },
+        {
+          "message": 10,
+          "name": "job_memory_limit",
+          "message_value": 26188,
+          "observed_ns": 1791658150817171400,
+          "delivery_guaranteed": false
+        }
+      ],
+      "captured_exit_codes": {},
+      "missing_messages_exclude_resource_failure": false
+    },
+    "chains": [
+      {
+        "chain": 0,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 1,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 2,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 3,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      }
+    ]
+  },
+  {
+    "id": "confirmation-A1-w4-d1",
+    "phase": "confirmation",
+    "error": {
+      "message": "Owned Job reported a memory limit event",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\n\\scripts\\followups\\nuts_runtime.py\", line 119, in execute\n    raise MemoryError('Owned Job reported a memory limit event')\nMemoryError: Owned Job reported a memory limit event\n",
+      "type": "MemoryError"
+    },
+    "resources": {
+      "max_sampled_tree_rss_bytes": 11121922048,
+      "kernel_peak_job_commit_bytes": 12923613184,
+      "max_sampled_available_private_sum_bytes": 12856582144,
+      "private_incomplete_observations": 2,
+      "observations": 25,
+      "truncated_last_observation": false,
+      "memory_limit_messages": [
+        {
+          "message": 10,
+          "name": "job_memory_limit",
+          "message_value": 27644,
+          "observed_ns": 1791658270577695200,
+          "delivery_guaranteed": false
+        },
+        {
+          "message": 10,
+          "name": "job_memory_limit",
+          "message_value": 26420,
+          "observed_ns": 1791658270577695200,
+          "delivery_guaranteed": false
+        },
+        {
+          "message": 10,
+          "name": "job_memory_limit",
+          "message_value": 28492,
+          "observed_ns": 1791658270577695200,
+          "delivery_guaranteed": false
+        },
+        {
+          "message": 10,
+          "name": "job_memory_limit",
+          "message_value": 2296,
+          "observed_ns": 1791658270577695200,
+          "delivery_guaranteed": false
+        }
+      ],
+      "captured_exit_codes": {},
+      "missing_messages_exclude_resource_failure": false
+    },
+    "chains": [
+      {
+        "chain": 0,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 1,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 2,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      },
+      {
+        "chain": 3,
+        "warmup": 1024,
+        "sample": 4096,
+        "final_sample_matches_chunks": true,
+        "last_event": "legacy_diagnostics_enter"
+      }
+    ]
+  }
+]

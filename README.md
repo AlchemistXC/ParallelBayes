@@ -4,19 +4,19 @@
 
 2026-10-10：Windows 紧凑研究已完成，Mac 独立接收、4144 项重建、统计比较及中文论文材料已完成。**当前不需要重跑任何 Windows 提示词。** 研究完成指本版约定范围内的计算与材料交付，不代表所有配置收敛或普遍加速；署名、公开原件和投稿由作者决定。
 
-本版完成后的[三项限定补充计划](docs/TARGETED-FOLLOWUPS-PLAN.md)已制定：H1函数差、NUTS故障定位、W1/L2参考改进。现已授权执行；[S1 H1函数分析](docs/H1-FUNCTION-PATH-RESULTS.md)完成，[S3B L2独立参考](docs/L2-RARE-REFERENCE-RESULTS.md)完成；S2 Windows定位和S3A W1认证继续推进，不重跑原网格。
+本版完成后的[三项限定补充计划](docs/TARGETED-FOLLOWUPS-PLAN.md)已制定：H1函数差、NUTS故障定位、W1/L2参考改进。四项现均完成计算与独立核验：[H1函数差](docs/H1-FUNCTION-PATH-RESULTS.md)、[NUTS有限定位与Mac审阅](docs/WINDOWS-NUTS-MAC-REVIEW.md)、[W1数值包络](docs/W1-REFERENCE-RESULTS.md)、[L2独立重要性参考](docs/L2-RARE-REFERENCE-RESULTS.md)。[当前交付](docs/TARGETED-FOLLOWUPS-PAPER.md)保留全部历史失败，无需续跑Windows任务。
 
 ## 阅读与使用
 
-- [中文正文：17页](output/software-paper/软件与基准研究-审查修订v2.pdf) · [LaTeX](manuscript/software/软件与基准研究.tex)
-- [补充材料：34页](output/software-paper/补充材料-审查修订v2.pdf) · [完整结果附录：67页](output/software-paper/完整结果附录-审查修订v2.pdf)
+- [当前中文正文：18页](output/software-paper/软件与基准研究-定向补充v3.pdf) · [LaTeX](manuscript/software/软件与基准研究.tex)
+- [当前补充材料：42页](output/software-paper/补充材料-定向补充v3.pdf) · [完整结果附录：67页](output/software-paper/完整结果附录-审查修订v2.pdf)
 - [研究交付报告](docs/RESEARCH-COMPLETION-REPORT.md) · [当前范围](docs/CURRENT-SCOPE.md) · [收尾计划与完成标准](docs/RESEARCH-COMPLETION-PLAN.md)
 - [安装与使用](docs/INSTALL-AND-USE.md) · [原生Windows](docs/WINDOWS-NATIVE.md) · [新增Poisson目标示例](docs/EXTENDING-TARGETS.md)
 - [从紧凑原件重建](docs/COMPACT-REPRODUCTION.md) · [历史CPU重建](docs/PORTABLE-REPRODUCTION.md)
 
-- [逐项审核与本轮修订](docs/MANUSCRIPT-REVIEW-V2.md) · [三份论文的便携编译包](output/software-paper/parallelbayes-paper-review-v2.tar)
+- [逐项审核与本轮修订](docs/MANUSCRIPT-REVIEW-V2.md) · [当前便携论文包与重建记录](docs/TARGETED-FOLLOWUPS-PAPER.md)
 
-本轮补全最终配置、逐函数参考、失败分母、参考敏感性与误差—耗时主图，未增加采样或修改冻结结果。
+本轮加入四项限定补充及独立核验；NUTS技术调用不增加正式重复，原冻结主结果不变。
 
 ## 本版范围
 

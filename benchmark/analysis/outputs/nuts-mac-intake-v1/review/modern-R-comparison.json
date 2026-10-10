@@ -1,0 +1,896 @@
+[
+  {
+    "model": "G1",
+    "variables": 8,
+    "windows_R": "R version 4.6.1 (2026-06-24 ucrt)",
+    "mac_R": "R version 4.6.0 (2026-04-24)",
+    "numeric_differences": [
+      {
+        "variable": "q[1]",
+        "field": "mean",
+        "windows": 0.00830187322781016,
+        "mac": 0.00830187322781015,
+        "scaled_difference": 8.673617379884035e-18
+      },
+      {
+        "variable": "q[2]",
+        "field": "sd",
+        "windows": 0.998546740640996,
+        "mac": 0.998546740640995,
+        "scaled_difference": 9.992007221626409e-16
+      },
+      {
+        "variable": "q[3]",
+        "field": "mean",
+        "windows": -0.00175998811556569,
+        "mac": -0.00175998811556568,
+        "scaled_difference": 9.974659986866641e-18
+      },
+      {
+        "variable": "q[3]",
+        "field": "sd",
+        "windows": 0.988675374494684,
+        "mac": 0.988675374494683,
+        "scaled_difference": 9.992007221626409e-16
+      },
+      {
+        "variable": "q[4]",
+        "field": "mean",
+        "windows": 0.00515938387477579,
+        "mac": 0.00515938387477575,
+        "scaled_difference": 3.9898639947466563e-17
+      },
+      {
+        "variable": "q[4]",
+        "field": "mcse_mean",
+        "windows": 0.00597659079880753,
+        "mac": 0.00597659079880751,
+        "scaled_difference": 1.9949319973733282e-17
+      },
+      {
+        "variable": "q[5]",
+        "field": "mean",
+        "windows": -0.00933941650601397,
+        "mac": -0.009339416506014,
+        "scaled_difference": 2.949029909160572e-17
+      },
+      {
+        "variable": "q[5]",
+        "field": "mcse_mean",
+        "windows": 0.00613054915494736,
+        "mac": 0.00613054915494735,
+        "scaled_difference": 1.0408340855860843e-17
+      },
+      {
+        "variable": "q[6]",
+        "field": "mean",
+        "windows": -0.00547908973036637,
+        "mac": -0.00547908973036633,
+        "scaled_difference": 3.9898639947466563e-17
+      },
+      {
+        "variable": "q[7]",
+        "field": "mcse_mean",
+        "windows": 0.00597343449936099,
+        "mac": 0.00597343449936098,
+        "scaled_difference": 9.540979117872439e-18
+      },
+      {
+        "variable": "q[8]",
+        "field": "mean",
+        "windows": 0.00111370846796321,
+        "mac": 0.00111370846796323,
+        "scaled_difference": 1.9949319973733282e-17
+      },
+      {
+        "variable": "q[8]",
+        "field": "mcse_mean",
+        "windows": 0.00606426044133082,
+        "mac": 0.00606426044133081,
+        "scaled_difference": 1.0408340855860843e-17
+      }
+    ],
+    "max_scaled_difference": 9.992007221626409e-16,
+    "rhat_threshold_classifications_changed": 0,
+    "binary_transport_equal": true
+  },
+  {
+    "model": "G2",
+    "variables": 64,
+    "windows_R": "R version 4.6.1 (2026-06-24 ucrt)",
+    "mac_R": "R version 4.6.0 (2026-04-24)",
+    "numeric_differences": [
+      {
+        "variable": "q[1]",
+        "field": "mean",
+        "windows": -0.00965274440874823,
+        "mac": -0.00965274440874832,
+        "scaled_difference": 9.020562075079397e-17
+      },
+      {
+        "variable": "q[1]",
+        "field": "ess_bulk",
+        "windows": 25597.6339447815,
+        "mac": 25597.6339447816,
+        "scaled_difference": 3.837285430495842e-15
+      },
+      {
+        "variable": "q[1]",
+        "field": "mcse_mean",
+        "windows": 0.0267360162738119,
+        "mac": 0.0267360162738118,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[2]",
+        "field": "sd",
+        "windows": 4.43806181599521,
+        "mac": 4.4380618159952,
+        "scaled_difference": 2.4015305505634274e-15
+      },
+      {
+        "variable": "q[2]",
+        "field": "mcse_mean",
+        "windows": 0.0264151854210393,
+        "mac": 0.0264151854210392,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[3]",
+        "field": "mean",
+        "windows": 0.0629937027602809,
+        "mac": 0.062993702760281,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[4]",
+        "field": "mean",
+        "windows": -0.00347901571999994,
+        "mac": -0.00347901571999992,
+        "scaled_difference": 1.9949319973733282e-17
+      },
+      {
+        "variable": "q[4]",
+        "field": "sd",
+        "windows": 3.88747970515721,
+        "mac": 3.8874797051572,
+        "scaled_difference": 2.5131867836481167e-15
+      },
+      {
+        "variable": "q[5]",
+        "field": "mean",
+        "windows": 0.00356944051239787,
+        "mac": 0.00356944051239774,
+        "scaled_difference": 1.3010426069826053e-16
+      },
+      {
+        "variable": "q[5]",
+        "field": "sd",
+        "windows": 3.77112024668556,
+        "mac": 3.77112024668557,
+        "scaled_difference": 2.7084927444380883e-15
+      },
+      {
+        "variable": "q[5]",
+        "field": "mcse_mean",
+        "windows": 0.0241470069704911,
+        "mac": 0.0241470069704912,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[6]",
+        "field": "mean",
+        "windows": 0.00292921108406639,
+        "mac": 0.00292921108406644,
+        "scaled_difference": 5.0306980803327406e-17
+      },
+      {
+        "variable": "q[6]",
+        "field": "sd",
+        "windows": 4.57117516481533,
+        "mac": 4.57117516481535,
+        "scaled_difference": 4.468895397039125e-15
+      },
+      {
+        "variable": "q[6]",
+        "field": "mcse_mean",
+        "windows": 0.0277866773599193,
+        "mac": 0.0277866773599194,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[8]",
+        "field": "mean",
+        "windows": -0.0194535749070521,
+        "mac": -0.019453574907052,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[9]",
+        "field": "mean",
+        "windows": -0.00741513977041547,
+        "mac": -0.0074151397704153,
+        "scaled_difference": 1.700029006457271e-16
+      },
+      {
+        "variable": "q[9]",
+        "field": "sd",
+        "windows": 4.62057843656993,
+        "mac": 4.62057843656994,
+        "scaled_difference": 2.3066681331598632e-15
+      },
+      {
+        "variable": "q[11]",
+        "field": "mean",
+        "windows": -0.000637436584622071,
+        "mac": -0.000637436584622132,
+        "scaled_difference": 6.093216209368535e-17
+      },
+      {
+        "variable": "q[11]",
+        "field": "sd",
+        "windows": 5.37579470587896,
+        "mac": 5.37579470587895,
+        "scaled_difference": 1.817398757065065e-15
+      },
+      {
+        "variable": "q[11]",
+        "field": "mcse_mean",
+        "windows": 0.0332196402919016,
+        "mac": 0.0332196402919015,
+        "scaled_difference": 1.0408340855860843e-16
+      },
+      {
+        "variable": "q[12]",
+        "field": "mcse_mean",
+        "windows": 0.0318676587876708,
+        "mac": 0.0318676587876707,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[13]",
+        "field": "sd",
+        "windows": 4.04350699393011,
+        "mac": 4.04350699393012,
+        "scaled_difference": 2.6358656118070007e-15
+      },
+      {
+        "variable": "q[14]",
+        "field": "mean",
+        "windows": -0.0126647481578101,
+        "mac": -0.0126647481578099,
+        "scaled_difference": 1.9949319973733282e-16
+      },
+      {
+        "variable": "q[14]",
+        "field": "ess_bulk",
+        "windows": 26951.7781490936,
+        "mac": 26951.7781490935,
+        "scaled_difference": 3.6444878422531695e-15
+      },
+      {
+        "variable": "q[15]",
+        "field": "sd",
+        "windows": 5.11791706802871,
+        "mac": 5.1179170680287,
+        "scaled_difference": 1.908972436801231e-15
+      },
+      {
+        "variable": "q[16]",
+        "field": "ess_bulk",
+        "windows": 25235.8103711354,
+        "mac": 25235.8103711353,
+        "scaled_difference": 4.036462673498246e-15
+      },
+      {
+        "variable": "q[16]",
+        "field": "mcse_mean",
+        "windows": 0.0326860538087801,
+        "mac": 0.0326860538087802,
+        "scaled_difference": 1.0408340855860843e-16
+      },
+      {
+        "variable": "q[17]",
+        "field": "mean",
+        "windows": 0.0142487653087247,
+        "mac": 0.0142487653087246,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[19]",
+        "field": "mean",
+        "windows": 0.00792543626686478,
+        "mac": 0.00792543626686484,
+        "scaled_difference": 6.071532165918825e-17
+      },
+      {
+        "variable": "q[21]",
+        "field": "sd",
+        "windows": 4.1208160646379,
+        "mac": 4.12081606463791,
+        "scaled_difference": 2.3708805400320265e-15
+      },
+      {
+        "variable": "q[22]",
+        "field": "mean",
+        "windows": 0.0148270728357775,
+        "mac": 0.0148270728357776,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[22]",
+        "field": "sd",
+        "windows": 4.55616383034915,
+        "mac": 4.55616383034913,
+        "scaled_difference": 4.483619205487926e-15
+      },
+      {
+        "variable": "q[22]",
+        "field": "ess_bulk",
+        "windows": 26084.5776777228,
+        "mac": 26084.5776777227,
+        "scaled_difference": 3.765651451407796e-15
+      },
+      {
+        "variable": "q[22]",
+        "field": "mcse_mean",
+        "windows": 0.0282248881079437,
+        "mac": 0.0282248881079436,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[23]",
+        "field": "mean",
+        "windows": -0.0365168272565966,
+        "mac": -0.0365168272565967,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[24]",
+        "field": "mean",
+        "windows": 0.0220662557046509,
+        "mac": 0.0220662557046507,
+        "scaled_difference": 2.0122792321330962e-16
+      },
+      {
+        "variable": "q[24]",
+        "field": "sd",
+        "windows": 4.58562170663538,
+        "mac": 4.58562170663539,
+        "scaled_difference": 2.130564455974258e-15
+      },
+      {
+        "variable": "q[24]",
+        "field": "ess_tail",
+        "windows": 12191.7206874511,
+        "mac": 12191.7206874512,
+        "scaled_difference": 8.205930873891878e-15
+      },
+      {
+        "variable": "q[25]",
+        "field": "mean",
+        "windows": -0.0309233759819941,
+        "mac": -0.030923375981994,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[26]",
+        "field": "sd",
+        "windows": 4.86404190118361,
+        "mac": 4.86404190118363,
+        "scaled_difference": 4.199820656999654e-15
+      },
+      {
+        "variable": "q[26]",
+        "field": "mcse_mean",
+        "windows": 0.0297691017734888,
+        "mac": 0.0297691017734889,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[27]",
+        "field": "mean",
+        "windows": -0.00313491253195227,
+        "mac": -0.00313491253195213,
+        "scaled_difference": 1.4007892068512717e-16
+      },
+      {
+        "variable": "q[27]",
+        "field": "sd",
+        "windows": 5.25633158552386,
+        "mac": 5.25633158552388,
+        "scaled_difference": 3.886380324514265e-15
+      },
+      {
+        "variable": "q[27]",
+        "field": "mcse_mean",
+        "windows": 0.0332237612902157,
+        "mac": 0.0332237612902158,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[28]",
+        "field": "mean",
+        "windows": 0.0214836614630012,
+        "mac": 0.0214836614630013,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[28]",
+        "field": "sd",
+        "windows": 4.67384163441346,
+        "mac": 4.67384163441347,
+        "scaled_difference": 2.0903495199249366e-15
+      },
+      {
+        "variable": "q[29]",
+        "field": "mean",
+        "windows": 0.0201387285554526,
+        "mac": 0.0201387285554524,
+        "scaled_difference": 1.97758476261356e-16
+      },
+      {
+        "variable": "q[29]",
+        "field": "sd",
+        "windows": 5.64174879136184,
+        "mac": 5.64174879136185,
+        "scaled_difference": 1.7317259201012789e-15
+      },
+      {
+        "variable": "q[29]",
+        "field": "mcse_mean",
+        "windows": 0.0356747238154871,
+        "mac": 0.0356747238154872,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[30]",
+        "field": "mean",
+        "windows": -0.0252945770036644,
+        "mac": -0.0252945770036645,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[30]",
+        "field": "sd",
+        "windows": 5.58089392099972,
+        "mac": 5.58089392099974,
+        "scaled_difference": 3.660364081860826e-15
+      },
+      {
+        "variable": "q[30]",
+        "field": "mcse_mean",
+        "windows": 0.0341512197942557,
+        "mac": 0.0341512197942558,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[31]",
+        "field": "mean",
+        "windows": -0.0263883124819856,
+        "mac": -0.0263883124819855,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[31]",
+        "field": "ess_bulk",
+        "windows": 25530.8035455796,
+        "mac": 25530.8035455795,
+        "scaled_difference": 3.989823760020455e-15
+      },
+      {
+        "variable": "q[32]",
+        "field": "sd",
+        "windows": 5.19098341465964,
+        "mac": 5.19098341465963,
+        "scaled_difference": 1.882102452708755e-15
+      },
+      {
+        "variable": "q[32]",
+        "field": "mcse_mean",
+        "windows": 0.0315240308448893,
+        "mac": 0.0315240308448892,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[33]",
+        "field": "sd",
+        "windows": 4.20986276547868,
+        "mac": 4.20986276547869,
+        "scaled_difference": 2.5317074760249574e-15
+      },
+      {
+        "variable": "q[34]",
+        "field": "mean",
+        "windows": 0.0542617734776255,
+        "mac": 0.0542617734776254,
+        "scaled_difference": 1.0408340855860843e-16
+      },
+      {
+        "variable": "q[34]",
+        "field": "sd",
+        "windows": 4.11469456724932,
+        "mac": 4.11469456724931,
+        "scaled_difference": 2.374407737202379e-15
+      },
+      {
+        "variable": "q[35]",
+        "field": "mean",
+        "windows": -0.0591818062540554,
+        "mac": -0.0591818062540552,
+        "scaled_difference": 2.0122792321330962e-16
+      },
+      {
+        "variable": "q[35]",
+        "field": "sd",
+        "windows": 5.1164536811579,
+        "mac": 5.11645368115791,
+        "scaled_difference": 2.0831110180185284e-15
+      },
+      {
+        "variable": "q[36]",
+        "field": "ess_bulk",
+        "windows": 26456.5806069545,
+        "mac": 26456.5806069544,
+        "scaled_difference": 3.7127030605631725e-15
+      },
+      {
+        "variable": "q[36]",
+        "field": "mcse_mean",
+        "windows": 0.0287093526617406,
+        "mac": 0.0287093526617405,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[37]",
+        "field": "mean",
+        "windows": 0.0335530168585409,
+        "mac": 0.0335530168585411,
+        "scaled_difference": 1.942890293094024e-16
+      },
+      {
+        "variable": "q[37]",
+        "field": "sd",
+        "windows": 5.01460264366746,
+        "mac": 5.01460264366747,
+        "scaled_difference": 2.125420854603663e-15
+      },
+      {
+        "variable": "q[37]",
+        "field": "ess_bulk",
+        "windows": 26861.3779815807,
+        "mac": 26861.3779815806,
+        "scaled_difference": 3.656753121855144e-15
+      },
+      {
+        "variable": "q[38]",
+        "field": "mean",
+        "windows": 0.0120691513595064,
+        "mac": 0.0120691513595062,
+        "scaled_difference": 2.0122792321330962e-16
+      },
+      {
+        "variable": "q[38]",
+        "field": "sd",
+        "windows": 5.31767744055854,
+        "mac": 5.31767744055853,
+        "scaled_difference": 1.8372612340464174e-15
+      },
+      {
+        "variable": "q[38]",
+        "field": "mcse_mean",
+        "windows": 0.0325549428909539,
+        "mac": 0.0325549428909538,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[39]",
+        "field": "mean",
+        "windows": -0.0187173376687256,
+        "mac": -0.0187173376687257,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[40]",
+        "field": "mean",
+        "windows": 0.00854511128856675,
+        "mac": 0.00854511128856681,
+        "scaled_difference": 6.071532165918825e-17
+      },
+      {
+        "variable": "q[40]",
+        "field": "sd",
+        "windows": 4.74479761468511,
+        "mac": 4.7447976146851,
+        "scaled_difference": 2.059089430171568e-15
+      },
+      {
+        "variable": "q[41]",
+        "field": "sd",
+        "windows": 4.61800087403424,
+        "mac": 4.61800087403422,
+        "scaled_difference": 4.2312519565057745e-15
+      },
+      {
+        "variable": "q[41]",
+        "field": "mcse_mean",
+        "windows": 0.0282664702869047,
+        "mac": 0.0282664702869046,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[42]",
+        "field": "mean",
+        "windows": 0.00823700859911162,
+        "mac": 0.00823700859911143,
+        "scaled_difference": 1.9081958235744878e-16
+      },
+      {
+        "variable": "q[42]",
+        "field": "sd",
+        "windows": 5.65925486601636,
+        "mac": 5.65925486601637,
+        "scaled_difference": 1.88331172366936e-15
+      },
+      {
+        "variable": "q[42]",
+        "field": "mcse_mean",
+        "windows": 0.0349668032866871,
+        "mac": 0.0349668032866872,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[43]",
+        "field": "mean",
+        "windows": -0.018510272631096,
+        "mac": -0.0185102726310959,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[44]",
+        "field": "mean",
+        "windows": -0.00296957569703127,
+        "mac": -0.0029695756970311,
+        "scaled_difference": 1.700029006457271e-16
+      },
+      {
+        "variable": "q[44]",
+        "field": "sd",
+        "windows": 5.60135616575219,
+        "mac": 5.6013561657522,
+        "scaled_difference": 1.902778670202671e-15
+      },
+      {
+        "variable": "q[44]",
+        "field": "ess_bulk",
+        "windows": 25961.9329619268,
+        "mac": 25961.9329619267,
+        "scaled_difference": 3.783440467838968e-15
+      },
+      {
+        "variable": "q[46]",
+        "field": "sd",
+        "windows": 4.49991684866912,
+        "mac": 4.49991684866913,
+        "scaled_difference": 2.3685195515454232e-15
+      },
+      {
+        "variable": "q[46]",
+        "field": "mcse_mean",
+        "windows": 0.0280096603113299,
+        "mac": 0.02800966031133,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[47]",
+        "field": "ess_bulk",
+        "windows": 26106.4918713262,
+        "mac": 26106.4918713261,
+        "scaled_difference": 3.901842005453387e-15
+      },
+      {
+        "variable": "q[47]",
+        "field": "mcse_mean",
+        "windows": 0.0285333699591355,
+        "mac": 0.0285333699591356,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[48]",
+        "field": "mean",
+        "windows": 0.0380712458189077,
+        "mac": 0.0380712458189078,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[48]",
+        "field": "sd",
+        "windows": 3.71822720191037,
+        "mac": 3.71822720191036,
+        "scaled_difference": 2.6275862356344754e-15
+      },
+      {
+        "variable": "q[48]",
+        "field": "ess_bulk",
+        "windows": 26087.4739873054,
+        "mac": 26087.4739873053,
+        "scaled_difference": 3.765233377492753e-15
+      },
+      {
+        "variable": "q[49]",
+        "field": "sd",
+        "windows": 4.14143048773802,
+        "mac": 4.14143048773804,
+        "scaled_difference": 4.7181584457970805e-15
+      },
+      {
+        "variable": "q[51]",
+        "field": "mean",
+        "windows": 0.0261408696579299,
+        "mac": 0.02614086965793,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[52]",
+        "field": "sd",
+        "windows": 4.09178071043733,
+        "mac": 4.09178071043734,
+        "scaled_difference": 2.3877043537010906e-15
+      },
+      {
+        "variable": "q[52]",
+        "field": "mcse_mean",
+        "windows": 0.0249872108821973,
+        "mac": 0.0249872108821974,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[54]",
+        "field": "mean",
+        "windows": 0.00775567186708025,
+        "mac": 0.00775567186708013,
+        "scaled_difference": 1.196959198423997e-16
+      },
+      {
+        "variable": "q[55]",
+        "field": "mean",
+        "windows": -0.0124287489632592,
+        "mac": -0.0124287489632591,
+        "scaled_difference": 9.8879238130678e-17
+      },
+      {
+        "variable": "q[56]",
+        "field": "sd",
+        "windows": 5.08193594243653,
+        "mac": 5.08193594243655,
+        "scaled_difference": 3.844976688949424e-15
+      },
+      {
+        "variable": "q[56]",
+        "field": "mcse_mean",
+        "windows": 0.0313987263896713,
+        "mac": 0.0313987263896715,
+        "scaled_difference": 2.0122792321330962e-16
+      },
+      {
+        "variable": "q[57]",
+        "field": "mean",
+        "windows": -0.00294056384051936,
+        "mac": -0.00294056384051924,
+        "scaled_difference": 1.201296007113939e-16
+      },
+      {
+        "variable": "q[58]",
+        "field": "sd",
+        "windows": 4.40763090529384,
+        "mac": 4.40763090529385,
+        "scaled_difference": 2.216601804149939e-15
+      },
+      {
+        "variable": "q[58]",
+        "field": "mcse_mean",
+        "windows": 0.0269156465044727,
+        "mac": 0.0269156465044728,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[59]",
+        "field": "mean",
+        "windows": 0.0631610847208804,
+        "mac": 0.0631610847208803,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[59]",
+        "field": "sd",
+        "windows": 5.31733151040108,
+        "mac": 5.31733151040107,
+        "scaled_difference": 1.8373807609306722e-15
+      },
+      {
+        "variable": "q[60]",
+        "field": "mean",
+        "windows": -0.0349580888953042,
+        "mac": -0.0349580888953043,
+        "scaled_difference": 1.0408340855860843e-16
+      },
+      {
+        "variable": "q[61]",
+        "field": "mean",
+        "windows": -0.00462688160690865,
+        "mac": -0.0046268816069087,
+        "scaled_difference": 4.9439619065339e-17
+      },
+      {
+        "variable": "q[62]",
+        "field": "mean",
+        "windows": -0.038334075917318,
+        "mac": -0.0383340759173181,
+        "scaled_difference": 9.71445146547012e-17
+      },
+      {
+        "variable": "q[62]",
+        "field": "sd",
+        "windows": 4.77343933430282,
+        "mac": 4.77343933430281,
+        "scaled_difference": 2.046734426159481e-15
+      },
+      {
+        "variable": "q[63]",
+        "field": "mean",
+        "windows": 0.000119621468461971,
+        "mac": 0.000119621468461704,
+        "scaled_difference": 2.6699833750171154e-16
+      },
+      {
+        "variable": "q[64]",
+        "field": "mean",
+        "windows": 0.0100036970441991,
+        "mac": 0.010003697044199,
+        "scaled_difference": 1.0061396160665481e-16
+      },
+      {
+        "variable": "q[64]",
+        "field": "sd",
+        "windows": 5.27686302147459,
+        "mac": 5.27686302147458,
+        "scaled_difference": 1.851471712822899e-15
+      },
+      {
+        "variable": "q[64]",
+        "field": "mcse_mean",
+        "windows": 0.0317821874713256,
+        "mac": 0.0317821874713255,
+        "scaled_difference": 9.71445146547012e-17
+      }
+    ],
+    "max_scaled_difference": 8.205930873891878e-15,
+    "rhat_threshold_classifications_changed": 0,
+    "binary_transport_equal": true
+  },
+  {
+    "model": "W1",
+    "variables": 2,
+    "windows_R": "R version 4.6.1 (2026-06-24 ucrt)",
+    "mac_R": "R version 4.6.0 (2026-04-24)",
+    "numeric_differences": [
+      {
+        "variable": "beta[1]",
+        "field": "sd",
+        "windows": 0.0968824963233968,
+        "mac": 0.0968824963233971,
+        "scaled_difference": 3.0531133177191805e-16
+      },
+      {
+        "variable": "beta[1]",
+        "field": "mcse_mean",
+        "windows": 0.000789156378247914,
+        "mac": 0.000789156378247916,
+        "scaled_difference": 2.0599841277224584e-18
+      }
+    ],
+    "max_scaled_difference": 3.0531133177191805e-16,
+    "rhat_threshold_classifications_changed": 0,
+    "binary_transport_equal": true
+  }
+]

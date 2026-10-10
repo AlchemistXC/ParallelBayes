@@ -1,0 +1,10 @@
+{
+  "SUMMARY.json": "56458ce2d0552b95b33d11ae6f84a7f0fa627089aedd43f5b064013f78fc2c54",
+  "git-source-verification.json": "976b90baf68d8f334dc410d34076be5c9d000680d327c22ecf98b119e5649416",
+  "analysis-comparison.json": "3a9d002d54f59cd60ec38bdfacb8f333110b81b32436325ace44e3a1141e4cf1",
+  "confirmation-selection.json": "db817193f64914a6fe4aef7b4da0954d71ecab6f811ea493b8d04abcc0d6c302",
+  "confirmation-prefixes.json": "3ca8bd7d0cd1e208f678bbd482bfb41017be0b8cdf801611c9756327d53751a9",
+  "failed-call-review.json": "15269e458fde73c5660f82bae40e8f3f4d933ce69524a2cba8ac77a467d16d0c",
+  "ESS-static-allocation.json": "20d5e45892263ffe115c6aaa9fc922485af20cbda5b5239b4cc5309b55937cb4",
+  "modern-R-comparison.json": "b101b273724e1897906e8b5cdd42a2172e6b7f02cc763c8be60ed274c189ace6"
+}

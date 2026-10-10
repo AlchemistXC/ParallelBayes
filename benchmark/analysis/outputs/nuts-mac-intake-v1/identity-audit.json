@@ -1,0 +1,27 @@
+{
+  "identity": "windows-nuts-return-identity-audit-v1",
+  "identity_audit_passed": true,
+  "verified_members": 30044,
+  "manifest_sha256": "83e76fb56f6ec87ecee27de99a662d28fb5c9776a446725988e9c01b5d611881",
+  "extracted_bytes": 642074472,
+  "new_sampler_calls": 0,
+  "calls": 53,
+  "phase_counts": {
+    "diagnostic": 9,
+    "qualification": 4,
+    "main": 36,
+    "confirmation": 4
+  },
+  "registry_sha256": "9f04e024db65a7e5830db0e7d7e66382ec30a2a58e3646dc3e620b0546a0cfef",
+  "bound_source_versions": 1,
+  "used_source_versions": 1,
+  "all_main_calls_registered": true,
+  "protocol_present": true,
+  "native_trajectory_qualification_recomputed": false,
+  "git_commit_objects_verified": false,
+  "remote_live_process_state_verified": false,
+  "requires_portable_analysis_reconstruction": true,
+  "historical_failures_reclassified": 0,
+  "posterior_samples_added": 0,
+  "scope": "Archived integrity and identity consistency only; failed or incomplete studies remain admissible evidence"
+}

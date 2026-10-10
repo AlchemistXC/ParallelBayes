@@ -1,0 +1,978 @@
+{
+  "diagnostic-G1-legacy-w1": {
+    "max_sampled_tree_rss_bytes": 921427968,
+    "kernel_peak_job_commit_bytes": 1419767808,
+    "max_sampled_available_private_sum_bytes": 1391468544,
+    "private_incomplete_observations": 1,
+    "observations": 11,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "10184:134361301461283973": 0,
+      "5088:134361301461355468": 0,
+      "19928:134361301461467394": 0,
+      "27396:134361301463004334": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "diagnostic-G1-legacy-w4": {
+    "max_sampled_tree_rss_bytes": 3522727936,
+    "kernel_peak_job_commit_bytes": 5599072256,
+    "max_sampled_available_private_sum_bytes": 5599072256,
+    "private_incomplete_observations": 1,
+    "observations": 10,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "8660:134361301483622540": 0,
+      "19880:134361301483693925": 0,
+      "13772:134361301483803611": 0,
+      "7308:134361301485176913": 0,
+      "27300:134361301485236176": 0,
+      "1384:134361301485283286": 0,
+      "25972:134361301485332928": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "diagnostic-G1-modern-w1": {
+    "max_sampled_tree_rss_bytes": 217632768,
+    "kernel_peak_job_commit_bytes": 214732800,
+    "max_sampled_available_private_sum_bytes": 213811200,
+    "private_incomplete_observations": 1,
+    "observations": 5,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "11964:134361301504701314": 0,
+      "10096:134361301504771111": 0,
+      "24700:134361301504881877": 0,
+      "25112:134361301506359619": 0,
+      "1636:134361301506474299": 0,
+      "8552:134361301506601072": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "diagnostic-G2-legacy-w1": {
+    "max_sampled_tree_rss_bytes": 3056091136,
+    "kernel_peak_job_commit_bytes": 3577769984,
+    "max_sampled_available_private_sum_bytes": 3577769984,
+    "private_incomplete_observations": 1,
+    "observations": 26,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "12004:134361301514010158": 0,
+      "26264:134361301514083163": 0,
+      "22652:134361301514191431": 0,
+      "25012:134361301515704640": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "diagnostic-G2-legacy-w4": {
+    "max_sampled_tree_rss_bytes": 9502576640,
+    "kernel_peak_job_commit_bytes": 12482658304,
+    "max_sampled_available_private_sum_bytes": 12482658304,
+    "private_incomplete_observations": 2,
+    "observations": 12,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {},
+    "missing_messages_exclude_resource_failure": false
+  },
+  "diagnostic-G2-modern-w1": {
+    "max_sampled_tree_rss_bytes": 254246912,
+    "kernel_peak_job_commit_bytes": 246013952,
+    "max_sampled_available_private_sum_bytes": 244686848,
+    "private_incomplete_observations": 2,
+    "observations": 9,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "6296:134361302519837196": 0,
+      "27856:134361302519908425": 0,
+      "19496:134361302520019140": 0,
+      "904:134361302521786839": 0,
+      "25608:134361302521895148": 0,
+      "1528:134361302522021046": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "diagnostic-W1-legacy-w1": {
+    "max_sampled_tree_rss_bytes": 722247680,
+    "kernel_peak_job_commit_bytes": 1217708032,
+    "max_sampled_available_private_sum_bytes": 1194332160,
+    "private_incomplete_observations": 2,
+    "observations": 10,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "25320:134361302538161963": 0,
+      "24664:134361302538339556": 0,
+      "28044:134361302539762948": 0,
+      "22920:134361302538231774": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "diagnostic-W1-legacy-w4": {
+    "max_sampled_tree_rss_bytes": 2745462784,
+    "kernel_peak_job_commit_bytes": 4791468032,
+    "max_sampled_available_private_sum_bytes": 4788989952,
+    "private_incomplete_observations": 1,
+    "observations": 9,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "23936:134361302558477675": 0,
+      "25100:134361302558561132": 0,
+      "27544:134361302558674577": 0,
+      "3880:134361302560084142": 0,
+      "28232:134361302560144398": 0,
+      "14996:134361302560191132": 0,
+      "26000:134361302560234632": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "diagnostic-W1-modern-w1": {
+    "max_sampled_tree_rss_bytes": 159657984,
+    "kernel_peak_job_commit_bytes": 185974784,
+    "max_sampled_available_private_sum_bytes": 151687168,
+    "private_incomplete_observations": 1,
+    "observations": 4,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "8756:134361302577400696": 0,
+      "15356:134361302577476763": 0,
+      "27000:134361302577585637": 0,
+      "19372:134361302578953013": 0,
+      "12988:134361302579052994": 0,
+      "25512:134361302579180415": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "qualification-r0-w1-d1": {
+    "max_sampled_tree_rss_bytes": 1119944704,
+    "kernel_peak_job_commit_bytes": 1946664960,
+    "max_sampled_available_private_sum_bytes": 1946664960,
+    "private_incomplete_observations": 1,
+    "observations": 18,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "2524:134361302737035318": 0,
+      "26512:134361302735399773": 0,
+      "27740:134361302735471478": 0,
+      "28304:134361302735577707": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "qualification-r0-w4-d1": {
+    "max_sampled_tree_rss_bytes": 2867884032,
+    "kernel_peak_job_commit_bytes": 5022412800,
+    "max_sampled_available_private_sum_bytes": 5022007296,
+    "private_incomplete_observations": 1,
+    "observations": 16,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "18476:134361302776226525": 0,
+      "24248:134361302776311788": 0,
+      "20328:134361302776372008": 0,
+      "17436:134361302776431424": 0,
+      "27236:134361302774577318": 0,
+      "21124:134361302774653684": 0,
+      "3540:134361302774768414": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "qualification-r0-w1-d0": {
+    "max_sampled_tree_rss_bytes": 1119002624,
+    "kernel_peak_job_commit_bytes": 1946640384,
+    "max_sampled_available_private_sum_bytes": 1946640384,
+    "private_incomplete_observations": 1,
+    "observations": 17,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "23288:134361302811851826": 0,
+      "23632:134361302810284472": 0,
+      "8660:134361302810360520": 0,
+      "23232:134361302810472526": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "qualification-r0-w4-d0": {
+    "max_sampled_tree_rss_bytes": 2863923200,
+    "kernel_peak_job_commit_bytes": 5022425088,
+    "max_sampled_available_private_sum_bytes": 5022175232,
+    "private_incomplete_observations": 2,
+    "observations": 15,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "8984:134361302848648012": 0,
+      "3840:134361302848722574": 0,
+      "24940:134361302848781385": 0,
+      "2476:134361302848841659": 0,
+      "2932:134361302847083524": 0,
+      "5036:134361302847158796": 0,
+      "20260:134361302847272607": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-G2-w1-d1": {
+    "max_sampled_tree_rss_bytes": 3584176128,
+    "kernel_peak_job_commit_bytes": 4558041088,
+    "max_sampled_available_private_sum_bytes": 4558041088,
+    "private_incomplete_observations": 1,
+    "observations": 199,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "11856:134361303500825756": 0,
+      "27904:134361303499237563": 0,
+      "28348:134361303499311751": 0,
+      "28340:134361303499422871": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-G2-w4-d1": {
+    "max_sampled_tree_rss_bytes": 10190118912,
+    "kernel_peak_job_commit_bytes": 12923604992,
+    "max_sampled_available_private_sum_bytes": 12856569856,
+    "private_incomplete_observations": 2,
+    "observations": 51,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [
+      {
+        "message": 10,
+        "name": "job_memory_limit",
+        "message_value": 9384,
+        "observed_ns": 1791656807728658900,
+        "delivery_guaranteed": false
+      },
+      {
+        "message": 10,
+        "name": "job_memory_limit",
+        "message_value": 26272,
+        "observed_ns": 1791656807728658900,
+        "delivery_guaranteed": false
+      }
+    ],
+    "captured_exit_codes": {},
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-G2-w1-d0": {
+    "max_sampled_tree_rss_bytes": 1163624448,
+    "kernel_peak_job_commit_bytes": 2010112000,
+    "max_sampled_available_private_sum_bytes": 1982545920,
+    "private_incomplete_observations": 1,
+    "observations": 172,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "10548:134361304901620671": 0,
+      "23948:134361304901697273": 0,
+      "27448:134361304901809931": 0,
+      "6276:134361304903279710": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-G2-w4-d0": {
+    "max_sampled_tree_rss_bytes": 3004366848,
+    "kernel_peak_job_commit_bytes": 5150023680,
+    "max_sampled_available_private_sum_bytes": 5133688832,
+    "private_incomplete_observations": 1,
+    "observations": 53,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "27692:134361305315900510": 0,
+      "8692:134361305315981475": 0,
+      "9348:134361305316039572": 0,
+      "26476:134361305316101896": 0,
+      "9840:134361305314213916": 0,
+      "23232:134361305314290786": 0,
+      "7492:134361305314401147": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-A1-w4-d1": {
+    "max_sampled_tree_rss_bytes": 8530022400,
+    "kernel_peak_job_commit_bytes": 13529350144,
+    "max_sampled_available_private_sum_bytes": 11373453312,
+    "private_incomplete_observations": 2,
+    "observations": 47,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [
+      {
+        "message": 10,
+        "name": "job_memory_limit",
+        "message_value": 8596,
+        "observed_ns": 1791656957160151600,
+        "delivery_guaranteed": false
+      }
+    ],
+    "captured_exit_codes": {},
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-A1-w1-d0": {
+    "max_sampled_tree_rss_bytes": 1166831616,
+    "kernel_peak_job_commit_bytes": 2012835840,
+    "max_sampled_available_private_sum_bytes": 1985568768,
+    "private_incomplete_observations": 1,
+    "observations": 158,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "25804:134361306516539265": 0,
+      "16960:134361306514963193": 0,
+      "10956:134361306515035478": 0,
+      "28440:134361306515146479": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-A1-w4-d0": {
+    "max_sampled_tree_rss_bytes": 2992939008,
+    "kernel_peak_job_commit_bytes": 5148176384,
+    "max_sampled_available_private_sum_bytes": 5120933888,
+    "private_incomplete_observations": 2,
+    "observations": 48,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "21184:134361306930125637": 0,
+      "19768:134361306930202589": 0,
+      "27236:134361306930260349": 0,
+      "9028:134361306930316754": 0,
+      "21448:134361306928466469": 0,
+      "1612:134361306928538799": 0,
+      "28644:134361306928648696": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-A1-w1-d1": {
+    "max_sampled_tree_rss_bytes": 3583262720,
+    "kernel_peak_job_commit_bytes": 4556128256,
+    "max_sampled_available_private_sum_bytes": 4554534912,
+    "private_incomplete_observations": 2,
+    "observations": 163,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "15400:134361307065582138": 0,
+      "26316:134361307067040042": 0,
+      "20400:134361307065398127": 0,
+      "28008:134361307065468678": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-L1-w1-d0": {
+    "max_sampled_tree_rss_bytes": 1136218112,
+    "kernel_peak_job_commit_bytes": 1965821952,
+    "max_sampled_available_private_sum_bytes": 1962242048,
+    "private_incomplete_observations": 1,
+    "observations": 147,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "24032:134361307517070624": 0,
+      "11960:134361307515432348": 0,
+      "26680:134361307515513350": 0,
+      "20780:134361307515625986": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-L1-w4-d0": {
+    "max_sampled_tree_rss_bytes": 2904670208,
+    "kernel_peak_job_commit_bytes": 5071212544,
+    "max_sampled_available_private_sum_bytes": 5060399104,
+    "private_incomplete_observations": 2,
+    "observations": 46,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "26488:134361307937516549": 0,
+      "13088:134361307938922377": 0,
+      "12688:134361307939003398": 0,
+      "22652:134361307939066540": 0,
+      "24624:134361307939125488": 0,
+      "18612:134361307937323936": 0,
+      "23048:134361307937398345": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-L1-w1-d1": {
+    "max_sampled_tree_rss_bytes": 1473335296,
+    "kernel_peak_job_commit_bytes": 2372419584,
+    "max_sampled_available_private_sum_bytes": 2368053248,
+    "private_incomplete_observations": 2,
+    "observations": 143,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "12596:134361308079211854": 0,
+      "22312:134361308077604466": 0,
+      "11248:134361308077678525": 0,
+      "10880:134361308077789206": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-L1-w4-d1": {
+    "max_sampled_tree_rss_bytes": 4263161856,
+    "kernel_peak_job_commit_bytes": 6697332736,
+    "max_sampled_available_private_sum_bytes": 6695936000,
+    "private_incomplete_observations": 1,
+    "observations": 44,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "25236:134361308502899749": 0,
+      "9124:134361308502976926": 0,
+      "19844:134361308503036500": 0,
+      "20288:134361308503093563": 0,
+      "20032:134361308501266265": 0,
+      "28488:134361308501338375": 0,
+      "23100:134361308501455031": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-H2-w4-d0": {
+    "max_sampled_tree_rss_bytes": 2913927168,
+    "kernel_peak_job_commit_bytes": 4946370560,
+    "max_sampled_available_private_sum_bytes": 4944691200,
+    "private_incomplete_observations": 1,
+    "observations": 40,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "8136:134361308644267676": 0,
+      "25400:134361308644346362": 0,
+      "12116:134361308644405241": 0,
+      "27404:134361308644463108": 0,
+      "20988:134361308642638128": 0,
+      "4584:134361308642713666": 0,
+      "9332:134361308642823595": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-H2-w1-d1": {
+    "max_sampled_tree_rss_bytes": 1510170624,
+    "kernel_peak_job_commit_bytes": 2404913152,
+    "max_sampled_available_private_sum_bytes": 2400509952,
+    "private_incomplete_observations": 1,
+    "observations": 125,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "18476:134361308780773704": 0,
+      "11832:134361308780850892": 0,
+      "27332:134361308780963347": 0,
+      "10080:134361308782347455": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-H2-w4-d1": {
+    "max_sampled_tree_rss_bytes": 4415307776,
+    "kernel_peak_job_commit_bytes": 6832177152,
+    "max_sampled_available_private_sum_bytes": 6830845952,
+    "private_incomplete_observations": 2,
+    "observations": 39,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "26436:134361309179762505": 0,
+      "26772:134361309179836228": 0,
+      "21540:134361309179895631": 0,
+      "25012:134361309179953202": 0,
+      "10060:134361309178155886": 0,
+      "21072:134361309178231454": 0,
+      "11964:134361309178342507": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-H2-w1-d0": {
+    "max_sampled_tree_rss_bytes": 1134931968,
+    "kernel_peak_job_commit_bytes": 1934319616,
+    "max_sampled_available_private_sum_bytes": 1929502720,
+    "private_incomplete_observations": 1,
+    "observations": 121,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "8588:134361309313582040": 0,
+      "24624:134361309311956234": 0,
+      "10896:134361309312033113": 0,
+      "28040:134361309312147877": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-L2-w1-d1": {
+    "max_sampled_tree_rss_bytes": 1488052224,
+    "kernel_peak_job_commit_bytes": 2389487616,
+    "max_sampled_available_private_sum_bytes": 2383732736,
+    "private_incomplete_observations": 2,
+    "observations": 141,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "24260:134361309714703591": 0,
+      "22444:134361309713039788": 0,
+      "12780:134361309713115030": 0,
+      "27360:134361309713230447": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-L2-w4-d1": {
+    "max_sampled_tree_rss_bytes": 4263936000,
+    "kernel_peak_job_commit_bytes": 6715539456,
+    "max_sampled_available_private_sum_bytes": 6695530496,
+    "private_incomplete_observations": 1,
+    "observations": 41,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "24508:134361310197775776": 0,
+      "9836:134361310197851232": 0,
+      "24460:134361310197959687": 0,
+      "21748:134361310199408088": 0,
+      "23032:134361310199489480": 0,
+      "27744:134361310199545799": 0,
+      "4196:134361310199603235": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-L2-w1-d0": {
+    "max_sampled_tree_rss_bytes": 1151385600,
+    "kernel_peak_job_commit_bytes": 1980932096,
+    "max_sampled_available_private_sum_bytes": 1976381440,
+    "private_incomplete_observations": 1,
+    "observations": 133,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "1976:134361310350114882": 0,
+      "26668:134361310348460672": 0,
+      "13672:134361310348535218": 0,
+      "25764:134361310348644797": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-L2-w4-d0": {
+    "max_sampled_tree_rss_bytes": 2931957760,
+    "kernel_peak_job_commit_bytes": 5087899648,
+    "max_sampled_available_private_sum_bytes": 5086769152,
+    "private_incomplete_observations": 1,
+    "observations": 40,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "12468:134361310820307505": 0,
+      "21600:134361310820390391": 0,
+      "28056:134361310820447648": 0,
+      "27564:134361310820505293": 0,
+      "13184:134361310818571095": 0,
+      "26540:134361310818712602": 0,
+      "27752:134361310818823713": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-G1-w4-d1": {
+    "max_sampled_tree_rss_bytes": 4264718336,
+    "kernel_peak_job_commit_bytes": 6695190528,
+    "max_sampled_available_private_sum_bytes": 6694055936,
+    "private_incomplete_observations": 2,
+    "observations": 31,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "13132:134361310973190099": 0,
+      "10820:134361310973264636": 0,
+      "16808:134361310973321428": 0,
+      "21024:134361310973377820": 0,
+      "3616:134361310971612166": 0,
+      "1872:134361310971691589": 0,
+      "2288:134361310971802909": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-G1-w1-d0": {
+    "max_sampled_tree_rss_bytes": 1133723648,
+    "kernel_peak_job_commit_bytes": 1963220992,
+    "max_sampled_available_private_sum_bytes": 1959903232,
+    "private_incomplete_observations": 1,
+    "observations": 94,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "12792:134361311101620537": 0,
+      "472:134361311100029884": 0,
+      "27944:134361311100104291": 0,
+      "4620:134361311100223431": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-G1-w4-d0": {
+    "max_sampled_tree_rss_bytes": 2912862208,
+    "kernel_peak_job_commit_bytes": 5069684736,
+    "max_sampled_available_private_sum_bytes": 5068288000,
+    "private_incomplete_observations": 2,
+    "observations": 30,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "8024:134361311452832600": 0,
+      "26608:134361311453027773": 0,
+      "27240:134361311454418178": 0,
+      "7124:134361311454499356": 0,
+      "20296:134361311454562237": 0,
+      "26084:134361311454621598": 0,
+      "25608:134361311452908600": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-G1-w1-d1": {
+    "max_sampled_tree_rss_bytes": 1471561728,
+    "kernel_peak_job_commit_bytes": 2369908736,
+    "max_sampled_available_private_sum_bytes": 2366562304,
+    "private_incomplete_observations": 1,
+    "observations": 92,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "12088:134361311577060892": 0,
+      "28500:134361311575469165": 0,
+      "21208:134361311575544248": 0,
+      "28592:134361311575656533": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-W1-w1-d0": {
+    "max_sampled_tree_rss_bytes": 1130590208,
+    "kernel_peak_job_commit_bytes": 1928019968,
+    "max_sampled_available_private_sum_bytes": 1925279744,
+    "private_incomplete_observations": 2,
+    "observations": 69,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "25700:134361311940328083": 0,
+      "25576:134361311938721568": 0,
+      "2556:134361311938798573": 0,
+      "25332:134361311938913603": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-W1-w4-d0": {
+    "max_sampled_tree_rss_bytes": 2890756096,
+    "kernel_peak_job_commit_bytes": 5050781696,
+    "max_sampled_available_private_sum_bytes": 5046194176,
+    "private_incomplete_observations": 1,
+    "observations": 24,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "26436:134361312225411097": 0,
+      "7548:134361312225502406": 0,
+      "10548:134361312225561378": 0,
+      "28076:134361312225620297": 0,
+      "16516:134361312223827273": 0,
+      "3064:134361312223906693": 0,
+      "25712:134361312224020479": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-W1-w1-d1": {
+    "max_sampled_tree_rss_bytes": 1272262656,
+    "kernel_peak_job_commit_bytes": 2170179584,
+    "max_sampled_available_private_sum_bytes": 2170179584,
+    "private_incomplete_observations": 2,
+    "observations": 65,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "23468:134361312329046586": 0,
+      "12408:134361312329123600": 0,
+      "2296:134361312329234667": 0,
+      "24580:134361312330671629": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-W1-w4-d1": {
+    "max_sampled_tree_rss_bytes": 3421532160,
+    "kernel_peak_job_commit_bytes": 5891616768,
+    "max_sampled_available_private_sum_bytes": 5810319360,
+    "private_incomplete_observations": 1,
+    "observations": 23,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "6204:134361312601700389": 0,
+      "20344:134361312601779745": 0,
+      "26720:134361312601888723": 0,
+      "23628:134361312603323661": 0,
+      "10392:134361312603401791": 0,
+      "28372:134361312603459213": 0,
+      "9776:134361312603516374": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-H1-w4-d0": {
+    "max_sampled_tree_rss_bytes": 2909929472,
+    "kernel_peak_job_commit_bytes": 4941451264,
+    "max_sampled_available_private_sum_bytes": 4937408512,
+    "private_incomplete_observations": 1,
+    "observations": 114,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "20632:134361312706781930": 0,
+      "5320:134361312706856787": 0,
+      "24672:134361312706969911": 0,
+      "13972:134361312708396849": 0,
+      "28656:134361312708474442": 0,
+      "25864:134361312708534982": 0,
+      "22132:134361312708594482": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-H1-w1-d1": {
+    "max_sampled_tree_rss_bytes": 1509945344,
+    "kernel_peak_job_commit_bytes": 2404511744,
+    "max_sampled_available_private_sum_bytes": 2400411648,
+    "private_incomplete_observations": 1,
+    "observations": 293,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "23032:134361313219165923": 0,
+      "20400:134361313219243200": 0,
+      "24508:134361313219355128": 0,
+      "22428:134361313220759994": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-H1-w4-d1": {
+    "max_sampled_tree_rss_bytes": 4028637184,
+    "kernel_peak_job_commit_bytes": 6828761088,
+    "max_sampled_available_private_sum_bytes": 6346878976,
+    "private_incomplete_observations": 2,
+    "observations": 113,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "22708:134361314501733934": 0,
+      "18024:134361314501809514": 0,
+      "27200:134361314501868217": 0,
+      "28460:134361314501927502": 0,
+      "2712:134361314500130371": 0,
+      "4520:134361314500204590": 0,
+      "8408:134361314500313655": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-H1-w1-d0": {
+    "max_sampled_tree_rss_bytes": 1133465600,
+    "kernel_peak_job_commit_bytes": 1932390400,
+    "max_sampled_available_private_sum_bytes": 1927204864,
+    "private_incomplete_observations": 2,
+    "observations": 285,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "25980:134361315024208524": 0,
+      "27916:134361315022607516": 0,
+      "24032:134361315022684110": 0,
+      "25636:134361315022801252": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-M1-w1-d1": {
+    "max_sampled_tree_rss_bytes": 1471868928,
+    "kernel_peak_job_commit_bytes": 2369843200,
+    "max_sampled_available_private_sum_bytes": 2366263296,
+    "private_incomplete_observations": 1,
+    "observations": 86,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "22976:134361316307807955": 0,
+      "24672:134361316307880808": 0,
+      "7588:134361316307992606": 0,
+      "10860:134361316309387199": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-M1-w4-d1": {
+    "max_sampled_tree_rss_bytes": 3916816384,
+    "kernel_peak_job_commit_bytes": 6696771584,
+    "max_sampled_available_private_sum_bytes": 6247768064,
+    "private_incomplete_observations": 2,
+    "observations": 27,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "23280:134361316716744259": 0,
+      "2704:134361316716828701": 0,
+      "8452:134361316716892400": 0,
+      "27084:134361316716952545": 0,
+      "22604:134361316715135010": 0,
+      "28596:134361316715213549": 0,
+      "21852:134361316715325511": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-M1-w1-d0": {
+    "max_sampled_tree_rss_bytes": 1135112192,
+    "kernel_peak_job_commit_bytes": 1932587008,
+    "max_sampled_available_private_sum_bytes": 1929224192,
+    "private_incomplete_observations": 1,
+    "observations": 83,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "25808:134361316850384898": 0,
+      "12280:134361316850462569": 0,
+      "26068:134361316850579372": 0,
+      "13132:134361316851971958": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "main-M1-w4-d0": {
+    "max_sampled_tree_rss_bytes": 2895687680,
+    "kernel_peak_job_commit_bytes": 4943937536,
+    "max_sampled_available_private_sum_bytes": 4925607936,
+    "private_incomplete_observations": 1,
+    "observations": 26,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "10012:134361317249077463": 0,
+      "21024:134361317249158763": 0,
+      "9852:134361317249275276": 0,
+      "7800:134361317250665150": 0,
+      "23520:134361317250743420": 0,
+      "19480:134361317250806321": 0,
+      "18612:134361317250864336": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "confirmation-G2-w4-d1": {
+    "max_sampled_tree_rss_bytes": 10987126784,
+    "kernel_peak_job_commit_bytes": 12923654144,
+    "max_sampled_available_private_sum_bytes": 12856619008,
+    "private_incomplete_observations": 2,
+    "observations": 26,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [
+      {
+        "message": 10,
+        "name": "job_memory_limit",
+        "message_value": 26812,
+        "observed_ns": 1791658150817171400,
+        "delivery_guaranteed": false
+      },
+      {
+        "message": 10,
+        "name": "job_memory_limit",
+        "message_value": 10016,
+        "observed_ns": 1791658150817171400,
+        "delivery_guaranteed": false
+      },
+      {
+        "message": 10,
+        "name": "job_memory_limit",
+        "message_value": 27236,
+        "observed_ns": 1791658150817171400,
+        "delivery_guaranteed": false
+      },
+      {
+        "message": 10,
+        "name": "job_memory_limit",
+        "message_value": 26188,
+        "observed_ns": 1791658150817171400,
+        "delivery_guaranteed": false
+      }
+    ],
+    "captured_exit_codes": {},
+    "missing_messages_exclude_resource_failure": false
+  },
+  "confirmation-G2-w4-d0": {
+    "max_sampled_tree_rss_bytes": 2996572160,
+    "kernel_peak_job_commit_bytes": 5149323264,
+    "max_sampled_available_private_sum_bytes": 5125009408,
+    "private_incomplete_observations": 1,
+    "observations": 27,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "12764:134361318440894394": 0,
+      "15656:134361318440973588": 0,
+      "27184:134361318441082554": 0,
+      "10068:134361318442484190": 0,
+      "500:134361318442577812": 0,
+      "27708:134361318442635627": 0,
+      "25996:134361318442693600": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  },
+  "confirmation-A1-w4-d1": {
+    "max_sampled_tree_rss_bytes": 11121922048,
+    "kernel_peak_job_commit_bytes": 12923613184,
+    "max_sampled_available_private_sum_bytes": 12856582144,
+    "private_incomplete_observations": 2,
+    "observations": 25,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [
+      {
+        "message": 10,
+        "name": "job_memory_limit",
+        "message_value": 27644,
+        "observed_ns": 1791658270577695200,
+        "delivery_guaranteed": false
+      },
+      {
+        "message": 10,
+        "name": "job_memory_limit",
+        "message_value": 26420,
+        "observed_ns": 1791658270577695200,
+        "delivery_guaranteed": false
+      },
+      {
+        "message": 10,
+        "name": "job_memory_limit",
+        "message_value": 28492,
+        "observed_ns": 1791658270577695200,
+        "delivery_guaranteed": false
+      },
+      {
+        "message": 10,
+        "name": "job_memory_limit",
+        "message_value": 2296,
+        "observed_ns": 1791658270577695200,
+        "delivery_guaranteed": false
+      }
+    ],
+    "captured_exit_codes": {},
+    "missing_messages_exclude_resource_failure": false
+  },
+  "confirmation-A1-w4-d0": {
+    "max_sampled_tree_rss_bytes": 3007746048,
+    "kernel_peak_job_commit_bytes": 5150306304,
+    "max_sampled_available_private_sum_bytes": 5123813376,
+    "private_incomplete_observations": 2,
+    "observations": 27,
+    "truncated_last_observation": false,
+    "memory_limit_messages": [],
+    "captured_exit_codes": {
+      "27900:134361319698897086": 0,
+      "21620:134361319698978057": 0,
+      "27432:134361319699093721": 0,
+      "22224:134361319700519018": 0,
+      "18580:134361319700609726": 0,
+      "4196:134361319700669695": 0,
+      "27692:134361319700728477": 0
+    },
+    "missing_messages_exclude_resource_failure": false
+  }
+}

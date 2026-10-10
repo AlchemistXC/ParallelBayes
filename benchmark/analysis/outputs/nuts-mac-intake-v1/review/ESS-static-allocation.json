@@ -1,0 +1,8 @@
+{
+  "positive_pair_count": 2047,
+  "dimension": 64,
+  "repeat_float64_bytes": 2145387008,
+  "expanded_boolean_bytes": 268173376,
+  "measured_specific_allocator_peak": false,
+  "pyro_source_sha256": "eedfd0787cbfc7f39765b3d93e4e7808914f3112b7b04a17ec01026606a16df1"
+}

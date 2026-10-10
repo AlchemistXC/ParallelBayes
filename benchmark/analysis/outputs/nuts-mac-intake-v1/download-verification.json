@@ -1,0 +1,73 @@
+{
+  "release_id": 403644544,
+  "draft": true,
+  "verified": [
+    {
+      "name": "windows-nuts-localization-source-1a8759f.bundle",
+      "bytes": 41590197,
+      "sha256": "ae53c8296a6d06fb8e408f6aa70dd7fa268c61c6b12f8a46f87b2f9e137b47a7",
+      "asset_id": 628787986
+    },
+    {
+      "name": "windows-nuts-localization-source-1a8759f.bundle.receipt.json",
+      "bytes": 856,
+      "sha256": "a8fff501c621f6bd108467a47389a766c662bbe39612e7f870178598270406b0",
+      "asset_id": 628788267
+    },
+    {
+      "name": "windows-nuts-localization-source-1a8759f.bundle.sha256",
+      "bytes": 114,
+      "sha256": "3fb6b64caa6be6fb74965b2a13895fb4cb7875c12d34b439939d60cd55833edd",
+      "asset_id": 628788175
+    },
+    {
+      "name": "windows-nuts-localization-v1-delivery-evidence.tar",
+      "bytes": 839680,
+      "sha256": "02dbc6da8d9622a6fa21d2fd3612cb1f57d03d5a600d2f0fe46b83f485429a7d",
+      "asset_id": 628779916
+    },
+    {
+      "name": "windows-nuts-localization-v1-delivery-evidence.tar.receipt.json",
+      "bytes": 434,
+      "sha256": "18475809ee36c1aba2ddd714b05b4cfacc5f4a4d327c67400af330d88fa6cac7",
+      "asset_id": 628780035
+    },
+    {
+      "name": "windows-nuts-localization-v1-delivery-evidence.tar.sha256",
+      "bytes": 117,
+      "sha256": "14c85ec13968a4c805a738a7c9fe81eb6a5444e12feafa186a97e4ca5de38358",
+      "asset_id": 628779977
+    },
+    {
+      "name": "windows-nuts-localization-v1-final-transport.json",
+      "bytes": 496043,
+      "sha256": "323d991dbfba614333f368f8312bc490a62a0b50e1b11abb7491dc582b637376",
+      "asset_id": 628791200
+    },
+    {
+      "name": "windows-nuts-localization-v1-final-transport.json.sha256",
+      "bytes": 116,
+      "sha256": "e6077f97fc728e47f7acb2b1e9301240b45019a5df2d6474a7537d4621668314",
+      "asset_id": 628791274
+    },
+    {
+      "name": "windows-nuts-localization-v1.tar",
+      "bytes": 703969280,
+      "sha256": "5fffe7f83783651ef58198aab4bad1bfb28be1d2244b9a0738c8f66fbdb88705",
+      "asset_id": 628766423
+    },
+    {
+      "name": "windows-nuts-localization-v1.tar.receipt.json",
+      "bytes": 268,
+      "sha256": "827fb2b99710a578e2d3062e10f89d3ffb0a4e25dbb4b2ae8e4ec5f1b055cadd",
+      "asset_id": 628768229
+    },
+    {
+      "name": "windows-nuts-localization-v1.tar.sha256",
+      "bytes": 99,
+      "sha256": "e6f4526098a7a2f9859fe6ff88588c29d3b603e9e29552bab37b1de6f622bfb7",
+      "asset_id": 628768152
+    }
+  ],
+  "mutations": 0
+}

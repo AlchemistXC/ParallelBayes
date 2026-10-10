@@ -1,0 +1,60 @@
+{
+  "identity": "nuts-mac-scientific-review-v1",
+  "passed": true,
+  "phase_counts": {
+    "diagnostic": {
+      "completed": 8,
+      "failed": 1
+    },
+    "qualification": {
+      "completed": 4
+    },
+    "main": {
+      "completed": 34,
+      "failed": 2
+    },
+    "confirmation": {
+      "failed": 2,
+      "completed": 2
+    }
+  },
+  "registered_four_chain_calls": 44,
+  "source_files_verified": 149,
+  "source_commit": "126969036e73b4c077563d6601b030407e7663b8",
+  "protocol_sha256": "5237de1b2dee0d134edc53b5fd225938a90cd34c5c9f5d5747d7f32ffacb1c54",
+  "registry_sha256": "9f04e024db65a7e5830db0e7d7e66382ec30a2a58e3646dc3e620b0546a0cfef",
+  "actual_qualification_passed": true,
+  "main_pairs": 54,
+  "main_path_rng_records": 864,
+  "main_path_rng_mismatches": 0,
+  "confirmation_selection_recomputed": true,
+  "confirmation_path_rng_records": 64,
+  "confirmation_path_rng_mismatches": 0,
+  "saved_terminal_files_verified": 29444,
+  "recorded_native_jobs_absent": 53,
+  "remote_current_kernel_queried": false,
+  "native_verify_new_executions": [
+    0,
+    0
+  ],
+  "saved_tests": {
+    "portable": {
+      "passed": 21,
+      "failed": 0,
+      "skipped": 0,
+      "mac_executed_native_tests": false
+    },
+    "native": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "mac_executed_native_tests": false
+    }
+  },
+  "new_sampler_calls": 0,
+  "historical_failures_reclassified": 0,
+  "posterior_samples_added": 0,
+  "six_selected_historical_failures_not_reproduced": true,
+  "ESS_specific_allocation_identified_from_failure_stack": false,
+  "whole_historical_105_root_cause_established": false
+}

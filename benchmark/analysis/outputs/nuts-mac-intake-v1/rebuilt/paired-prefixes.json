@@ -1,0 +1,5996 @@
+[
+  {
+    "model": "G1",
+    "left": "main-G1-w4-d1",
+    "right": "main-G1-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "G1",
+    "left": "main-G1-w4-d1",
+    "right": "main-G1-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "G1",
+    "left": "main-G1-w4-d1",
+    "right": "main-G1-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "G1",
+    "left": "main-G1-w1-d0",
+    "right": "main-G1-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "G1",
+    "left": "main-G1-w1-d0",
+    "right": "main-G1-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "G1",
+    "left": "main-G1-w4-d0",
+    "right": "main-G1-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L1",
+    "left": "main-L1-w1-d0",
+    "right": "main-L1-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L1",
+    "left": "main-L1-w1-d0",
+    "right": "main-L1-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L1",
+    "left": "main-L1-w1-d0",
+    "right": "main-L1-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L1",
+    "left": "main-L1-w4-d0",
+    "right": "main-L1-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L1",
+    "left": "main-L1-w4-d0",
+    "right": "main-L1-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L1",
+    "left": "main-L1-w1-d1",
+    "right": "main-L1-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L2",
+    "left": "main-L2-w1-d1",
+    "right": "main-L2-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L2",
+    "left": "main-L2-w1-d1",
+    "right": "main-L2-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L2",
+    "left": "main-L2-w1-d1",
+    "right": "main-L2-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L2",
+    "left": "main-L2-w4-d1",
+    "right": "main-L2-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L2",
+    "left": "main-L2-w4-d1",
+    "right": "main-L2-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "L2",
+    "left": "main-L2-w1-d0",
+    "right": "main-L2-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H1",
+    "left": "main-H1-w4-d0",
+    "right": "main-H1-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H1",
+    "left": "main-H1-w4-d0",
+    "right": "main-H1-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H1",
+    "left": "main-H1-w4-d0",
+    "right": "main-H1-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H1",
+    "left": "main-H1-w1-d1",
+    "right": "main-H1-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H1",
+    "left": "main-H1-w1-d1",
+    "right": "main-H1-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H1",
+    "left": "main-H1-w4-d1",
+    "right": "main-H1-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H2",
+    "left": "main-H2-w4-d0",
+    "right": "main-H2-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H2",
+    "left": "main-H2-w4-d0",
+    "right": "main-H2-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H2",
+    "left": "main-H2-w4-d0",
+    "right": "main-H2-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H2",
+    "left": "main-H2-w1-d1",
+    "right": "main-H2-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H2",
+    "left": "main-H2-w1-d1",
+    "right": "main-H2-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "H2",
+    "left": "main-H2-w4-d1",
+    "right": "main-H2-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "M1",
+    "left": "main-M1-w1-d1",
+    "right": "main-M1-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "M1",
+    "left": "main-M1-w1-d1",
+    "right": "main-M1-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "M1",
+    "left": "main-M1-w1-d1",
+    "right": "main-M1-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "M1",
+    "left": "main-M1-w4-d1",
+    "right": "main-M1-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "M1",
+    "left": "main-M1-w4-d1",
+    "right": "main-M1-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "M1",
+    "left": "main-M1-w1-d0",
+    "right": "main-M1-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "G2",
+    "left": "main-G2-w1-d1",
+    "right": "main-G2-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "G2",
+    "left": "main-G2-w1-d1",
+    "right": "main-G2-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "G2",
+    "left": "main-G2-w1-d1",
+    "right": "main-G2-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "G2",
+    "left": "main-G2-w4-d1",
+    "right": "main-G2-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "G2",
+    "left": "main-G2-w4-d1",
+    "right": "main-G2-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "G2",
+    "left": "main-G2-w1-d0",
+    "right": "main-G2-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "left": "main-A1-w4-d1",
+    "right": "main-A1-w1-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "left": "main-A1-w4-d1",
+    "right": "main-A1-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "left": "main-A1-w4-d1",
+    "right": "main-A1-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "left": "main-A1-w1-d0",
+    "right": "main-A1-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "left": "main-A1-w1-d0",
+    "right": "main-A1-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "left": "main-A1-w4-d0",
+    "right": "main-A1-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "W1",
+    "left": "main-W1-w1-d0",
+    "right": "main-W1-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "W1",
+    "left": "main-W1-w1-d0",
+    "right": "main-W1-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "W1",
+    "left": "main-W1-w1-d0",
+    "right": "main-W1-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "W1",
+    "left": "main-W1-w4-d0",
+    "right": "main-W1-w1-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "W1",
+    "left": "main-W1-w4-d0",
+    "right": "main-W1-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "model": "W1",
+    "left": "main-W1-w1-d1",
+    "right": "main-W1-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  }
+]

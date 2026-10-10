@@ -1,0 +1,50 @@
+{
+  "identity": "nuts-localization-paper-fragments-v1",
+  "evidence_manifest_sha256": "b90fec425c0413f02dd832a7a1897317d84807850dc85cdb0f1f6b99cc5d3478",
+  "generator_sha256": "69d0b3c8865ec45212b91fc676a1c0bb8aea9eae409ac037c21aa6465f6dc2fd",
+  "inputs": {
+    "R-modern/G1/posterior.json": "13a8d0f4ff000d198c9cdafed3dbd4811b0771e68251153293d33b2ce4ab97a9",
+    "R-modern/G1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "R-modern/G1/stdout.log": "7c543b1286b4b9dae13dbf02953e8d2c00deb5e8edf3f0a34e61de5e5bce88e3",
+    "R-modern/G1/transport.json": "85e80dc30735da92f00041a3d951e4f22169b1ca0431151a73d2d1a8f866e90a",
+    "R-modern/G2/posterior.json": "9bf9fb49b5bac8c0e28ae1cdb128e58e7fe39f4ded2bc233618f20d3e1fada45",
+    "R-modern/G2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "R-modern/G2/stdout.log": "7c543b1286b4b9dae13dbf02953e8d2c00deb5e8edf3f0a34e61de5e5bce88e3",
+    "R-modern/G2/transport.json": "846032ed4882b48363e70994a9a53b78962e72a84996328f52ae47dd0fbc5390",
+    "R-modern/W1/posterior.json": "809de3f120fb25aa0092e0b522de70e8f42260aa2df9fcb9769ddde4f96fb303",
+    "R-modern/W1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "R-modern/W1/stdout.log": "7c543b1286b4b9dae13dbf02953e8d2c00deb5e8edf3f0a34e61de5e5bce88e3",
+    "R-modern/W1/transport.json": "581b5fd644fb7873b42c46b97bccae9db92ce7ead91f053e18f18d877f20e4b8",
+    "README.md": "2ebd254d801f18be0b5e95b4810c6b3f32951504d633c9498948bf3ff4a8bc88",
+    "administrative-unpack.json": "f809e8e32f3e8e2fad9a6c3a4d71138ed851f0c459728fc17f47fbc796e02ddf",
+    "download-verification.json": "14ec7cdb5bf31837b2394bfc69eeb8399657b2ac320f4a46907ddc57276bb353",
+    "identity-audit.json": "20937a95bcdc166fe8e6982dda7873a846b67b494fb7843073c97384b892a785",
+    "rebuilt/README.md": "ae58e353b88e6488cffab1d7bd197560b19a8b67e7cc09366740f1b1e8ac0d93",
+    "rebuilt/SUMMARY.json": "c0472cbce0f78ab71a441f5be4547c8a1a2d0cc772a6a6b49f80bbe451bad1f7",
+    "rebuilt/calls.csv": "8cca2871a1a5606f7fd026e71317ae8b9f956f56b51ff3170c8e79f97320d1a1",
+    "rebuilt/chains.csv": "a908a6f3af3e48fbd0e234649e74bd447017c42c60a76619030b02c42d5e3960",
+    "rebuilt/checksums.json": "833d923f1ebd0e1b8cf083770c212d8cd924b4844fb115ab057db36d94dd1ee2",
+    "rebuilt/paired-prefixes.json": "65b19b95f1fae6dbd3a6f6ce1c091f2c2bfaee749caf768903f00c9f1cc28887",
+    "rebuilt/qualification-reconstruction.json": "3e55c848a1f5382255aa76b746af4c591bcf11002ec2ba81c313eaa41c17571d",
+    "rebuilt/resources.json": "7cd539ffed3800e8a65d79ca146f81b0a700f866798a4a0f629db04c6e98d397",
+    "review/ESS-static-allocation.json": "20d5e45892263ffe115c6aaa9fc922485af20cbda5b5239b4cc5309b55937cb4",
+    "review/SUMMARY.json": "56458ce2d0552b95b33d11ae6f84a7f0fa627089aedd43f5b064013f78fc2c54",
+    "review/analysis-comparison.json": "3a9d002d54f59cd60ec38bdfacb8f333110b81b32436325ace44e3a1141e4cf1",
+    "review/checksums.json": "9a0a46dccecda4cab92302e6fd9639fe32df913353459a9f6a5a0e5698a33bb4",
+    "review/confirmation-prefixes.json": "3ca8bd7d0cd1e208f678bbd482bfb41017be0b8cdf801611c9756327d53751a9",
+    "review/confirmation-selection.json": "db817193f64914a6fe4aef7b4da0954d71ecab6f811ea493b8d04abcc0d6c302",
+    "review/failed-call-review.json": "15269e458fde73c5660f82bae40e8f3f4d933ce69524a2cba8ac77a467d16d0c",
+    "review/git-source-verification.json": "976b90baf68d8f334dc410d34076be5c9d000680d327c22ecf98b119e5649416",
+    "review/modern-R-comparison.json": "b101b273724e1897906e8b5cdd42a2172e6b7f02cc763c8be60ed274c189ace6",
+    "unpack.json": "9b15fa896002c8526cac43c8f6e6404c0a2e2e473fe5f1684a878691ef820876"
+  },
+  "templates": {
+    "nuts-localization-main.template.tex": "96ae0b381fe72c9599deb571dd5bcc67d2044b1a9691bb603ffcb31c0e601975",
+    "nuts-localization-si.template.tex": "a2d1f3650b84c6300310ad4ef1e6c5d726127bae9bbe5d41a148d4f97d4608f7"
+  },
+  "outputs": {
+    "nuts-localization-main.generated.tex": "feeb933950fa927d1c162b9960a06a5ee637aa4ca2a1e6be0ce5513d8bc015f3",
+    "nuts-localization-si.generated.tex": "cd24e9066a3a5584e11471f63124009d2b492fd7ce2ec9d30fd60195decb0a06"
+  },
+  "new_sampler_calls": 0
+}

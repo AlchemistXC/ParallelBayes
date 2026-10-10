@@ -1,18 +1,18 @@
 {
-  "schema": "parallelbayes-current-scope-v2",
-  "date": "2026-10-10",
+  "schema": "parallelbayes-current-scope-v3",
+  "date": "2026-10-11",
   "branch": "codex/research-integration",
-  "status": "agreed_research_and_manuscript_delivery_complete_pending_author_decisions",
+  "status": "targeted_followups_complete_paper_packaging",
   "technical_research_complete": true,
   "automatic_submission": false,
   "automatic_public_release": false,
-  "windows_next_prompt": "handoff/windows-nuts-localization/CODEX-PROMPT.md",
+  "windows_next_prompt": null,
   "formal_sampling_terminal": true,
   "source": {
     "execution": "3a37a891896faedc62c0d6af185bfad77696054f",
     "delivery": "94bebec95177b03f0497d748cbc9f54a45492ce4",
     "pre_revision_manuscript": "2762b20577449f602853a472c2a2809ff59055bc",
-    "current_manuscript_identity": "See manuscript-review-v2 delivery.json and file hashes"
+    "current_manuscript_identity": "targeted-paper-companion-v3; final delivery hashes in its record"
   },
   "main": {
     "planned": 3888,
@@ -40,12 +40,13 @@
   },
   "paper": {
     "main_pages": 18,
-    "supplement_pages": 37,
+    "supplement_pages": 42,
     "complete_results_pages": 67,
     "author_metadata_pending": true,
     "revision": "targeted-paper-companion-v1",
     "review": "docs/TARGETED-FOLLOWUPS-PAPER.md",
-    "delivery": "benchmark/analysis/outputs/targeted-paper-companion-v1/delivery.json"
+    "delivery": "docs/TARGETED-FOLLOWUPS-PAPER.md",
+    "current_identity": "targeted-paper-companion-v3"
   },
   "remaining_author_decisions": [
     "Authors and affiliations",
@@ -55,7 +56,7 @@
   "preserved_limitations": [
     "105 failures remain unclassified",
     "Historical L2 MCMC rare-event reference uncertainty remains undefined; independent importance companion now available with approximate MCSE",
-    "W1 quadrature uncertified",
+    "W1 mean expectations enclosed; finite MCMC quantiles and replication uncertainty remain separate",
     "Some chains do not explore sufficiently",
     "No universal acceleration or precise time-to-accuracy claim"
   ],
@@ -69,12 +70,12 @@
     "windows_prompt": null
   },
   "targeted_followups": {
-    "status": "in_progress_S1_S3B_complete",
+    "status": "scientific_review_complete_paper_packaging",
     "plan": "docs/TARGETED-FOLLOWUPS-PLAN.md",
     "machine_plan": "execution/targeted-followups-v1/PLAN.json",
     "work_packages": "execution/targeted-followups-v1/WORK-PACKAGES.md",
     "scientific_calls_started": 0,
-    "windows_prompt": "handoff/windows-nuts-localization/CODEX-PROMPT.md",
+    "windows_prompt": null,
     "prior_completion_reopened": false,
     "authorization": "User requested execution based on the plan",
     "S1": {
@@ -86,61 +87,47 @@
       "new_on_resume": 0
     },
     "S2": {
-      "status": "handoff_prepared_pending_native_qualification",
-      "cases": 9,
-      "diagnostic_sets": 3,
-      "new_sampler_calls": 0,
-      "portable_tests": {
-        "passed": 14,
+      "status": "complete_with_resource_stops_historical_causes_unresolved",
+      "native_tests_recorded": {
+        "passed": 3,
         "failed": 0,
         "skipped": 0
       },
-      "native_tests_run": false,
-      "report": "handoff/windows-nuts-localization/README.md"
+      "portable_tests_recorded": {
+        "passed": 21,
+        "failed": 0,
+        "skipped": 0
+      },
+      "registered_four_chain_calls": 44,
+      "diagnostic_jobs": 9,
+      "main": {
+        "completed": 34,
+        "resource_stopped": 2,
+        "registered": 36
+      },
+      "confirmation": {
+        "completed": 2,
+        "resource_stopped": 2,
+        "registered": 4
+      },
+      "Mac_independent_intake_complete": true,
+      "report": "docs/WINDOWS-NUTS-MAC-REVIEW.md",
+      "new_formal_repetitions": 0,
+      "historical_105_reclassified": 0
     },
     "S3": {
       "W1": {
-        "status": "running_full_enclosure_pending",
-        "qualification": {
-          "passed": 21,
-          "failed": 0,
-          "skipped": 0
+        "status": "complete",
+        "both_formulations_seven_targets_met": true,
+        "scientific_assets_verified": 24,
+        "resume_new_evaluations": 0,
+        "paired_sensitivity": {
+          "stable_sign": 408,
+          "exact_ties": 96,
+          "reversals": 0
         },
-        "protocol": "benchmark/protocols/w1-reference-enclosure-v1.json",
-        "protocol_sha256": "85506f871a4fedb6f1cb30da1d9509afa764d2621e40ee51c48a1a6b44a97d36",
-        "source_commit": "504253c3f1ed5fa890cf213de40f7601b3a6c450",
-        "final_certified_intervals_available": false,
-        "independent_auditor": {
-          "status": "prepared_final_output_pending",
-          "tests": {
-            "passed": 13,
-            "failed": 0,
-            "skipped": 0
-          },
-          "actual_checkpoint_cells_checked": 21122,
-          "final_output_verified": false,
-          "report": "docs/W1-INDEPENDENT-AUDIT.md"
-        },
-        "result_reporter": {
-          "status": "prepared_final_evidence_pending",
-          "tests": {
-            "passed": 9,
-            "failed": 0,
-            "skipped": 0
-          },
-          "actual_final_report_generated": false,
-          "script": "scripts/analysis/report_w1_enclosure.py"
-        },
-        "archiver": {
-          "status": "prepared_final_evidence_pending",
-          "tests": {
-            "passed": 6,
-            "failed": 0,
-            "skipped": 0
-          },
-          "final_archive_created": false,
-          "script": "scripts/analysis/export_w1_evidence.py"
-        }
+        "report": "docs/W1-REFERENCE-RESULTS.md",
+        "summary_sha256": "d2a1b675be99e19c9e59c57407451098eb157bedbb4664c5e50b397bf9498b32"
       },
       "L2": {
         "status": "complete",
@@ -151,11 +138,10 @@
       }
     },
     "paper_integration": {
-      "status": "partial_S1_S3B",
+      "status": "four_supplements_integrated_packaging",
       "report": "docs/TARGETED-FOLLOWUPS-PAPER.md",
       "remaining": [
-        "S2 native evidence",
-        "S3A final enclosure and sensitivity"
+        "Final portable paper package verification"
       ],
       "tests": {
         "passed": 5,

@@ -1,0 +1,190 @@
+{
+  "identity": "nuts-mac-intake-and-paper-v1",
+  "date": "2026-10-11",
+  "windows_delivery_commit": "1a8759f4faaad85b43fd9ee36bb3c6a7907b4dd2",
+  "execution_source_commit": "126969036e73b4c077563d6601b030407e7663b8",
+  "new_sampler_calls": 0,
+  "new_R_diagnostic_rebuilds": 3,
+  "windows_scientific_source_changes": 0,
+  "saved_tests": {
+    "portable": {
+      "passed": 21,
+      "failed": 0,
+      "skipped": 0
+    },
+    "native": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    },
+    "native_executed_on_Mac": false
+  },
+  "identity_audit": {
+    "identity": "windows-nuts-return-identity-audit-v1",
+    "identity_audit_passed": true,
+    "verified_members": 30044,
+    "manifest_sha256": "83e76fb56f6ec87ecee27de99a662d28fb5c9776a446725988e9c01b5d611881",
+    "extracted_bytes": 642074472,
+    "new_sampler_calls": 0,
+    "calls": 53,
+    "phase_counts": {
+      "diagnostic": 9,
+      "qualification": 4,
+      "main": 36,
+      "confirmation": 4
+    },
+    "registry_sha256": "9f04e024db65a7e5830db0e7d7e66382ec30a2a58e3646dc3e620b0546a0cfef",
+    "bound_source_versions": 1,
+    "used_source_versions": 1,
+    "all_main_calls_registered": true,
+    "protocol_present": true,
+    "native_trajectory_qualification_recomputed": false,
+    "git_commit_objects_verified": false,
+    "remote_live_process_state_verified": false,
+    "requires_portable_analysis_reconstruction": true,
+    "historical_failures_reclassified": 0,
+    "posterior_samples_added": 0,
+    "scope": "Archived integrity and identity consistency only; failed or incomplete studies remain admissible evidence"
+  },
+  "scientific_review": {
+    "identity": "nuts-mac-scientific-review-v1",
+    "passed": true,
+    "phase_counts": {
+      "diagnostic": {
+        "completed": 8,
+        "failed": 1
+      },
+      "qualification": {
+        "completed": 4
+      },
+      "main": {
+        "completed": 34,
+        "failed": 2
+      },
+      "confirmation": {
+        "failed": 2,
+        "completed": 2
+      }
+    },
+    "registered_four_chain_calls": 44,
+    "source_files_verified": 149,
+    "source_commit": "126969036e73b4c077563d6601b030407e7663b8",
+    "protocol_sha256": "5237de1b2dee0d134edc53b5fd225938a90cd34c5c9f5d5747d7f32ffacb1c54",
+    "registry_sha256": "9f04e024db65a7e5830db0e7d7e66382ec30a2a58e3646dc3e620b0546a0cfef",
+    "actual_qualification_passed": true,
+    "main_pairs": 54,
+    "main_path_rng_records": 864,
+    "main_path_rng_mismatches": 0,
+    "confirmation_selection_recomputed": true,
+    "confirmation_path_rng_records": 64,
+    "confirmation_path_rng_mismatches": 0,
+    "saved_terminal_files_verified": 29444,
+    "recorded_native_jobs_absent": 53,
+    "remote_current_kernel_queried": false,
+    "native_verify_new_executions": [
+      0,
+      0
+    ],
+    "saved_tests": {
+      "portable": {
+        "passed": 21,
+        "failed": 0,
+        "skipped": 0,
+        "mac_executed_native_tests": false
+      },
+      "native": {
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0,
+        "mac_executed_native_tests": false
+      }
+    },
+    "new_sampler_calls": 0,
+    "historical_failures_reclassified": 0,
+    "posterior_samples_added": 0,
+    "six_selected_historical_failures_not_reproduced": true,
+    "ESS_specific_allocation_identified_from_failure_stack": false,
+    "whole_historical_105_root_cause_established": false
+  },
+  "read_only_review_final_identical_to_initial_outputs": true,
+  "scripts": {
+    "scripts/analysis/audit_nuts_return.py": "c1e85294a23f8f92d14f993b1f136ffb5addb9a884ee0038b21b5c879701d282",
+    "scripts/analysis/review_nuts_localization.py": "3b1e85791c82fd6edbf9cba6d7e96099003aaffcccd6d6946d68b1b751844bad",
+    "scripts/analysis/write_nuts_localization_tex.py": "69d0b3c8865ec45212b91fc676a1c0bb8aea9eae409ac037c21aa6465f6dc2fd"
+  },
+  "corrected_local_tool_attempts": [
+    {
+      "step": "release lookup by tag",
+      "error": "REST draft tag endpoint 404",
+      "resolution": "Read authenticated release list and release ID403644544; no release mutation"
+    },
+    {
+      "step": "administrative tar extraction",
+      "error": "Assumed top-level file map; actual schema uses members/bytes",
+      "resolution": "Failure before extraction; corrected schema and verified79 members"
+    },
+    {
+      "step": "scientific reviewer",
+      "error": "native-check/tests.xml absent",
+      "resolution": "Use bound native-checks/<binding>/tests.xml; failed before writing outputs"
+    }
+  ],
+  "analysis_byte_comparison": {
+    "identical_files": 6,
+    "README": "CRLF/LF only",
+    "checksums": "README entry only"
+  },
+  "paper": {
+    "main_pages": 18,
+    "si_pages": 42,
+    "unchanged_complete_results_pages": 67,
+    "all_60_pages_contact_sheets_reviewed": true,
+    "detail_pages": {
+      "main": [
+        1,
+        12,
+        16,
+        17
+      ],
+      "si": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "compiler": "Tectonic0.17.0",
+    "overfull": false,
+    "final_unresolved_references": false,
+    "marker_run_exactly_once_for_2_PDF_edit": true,
+    "result_allocation": {
+      "main": "Diagnostic-stage termination and software/resource boundary",
+      "SI": "2x2 cases, all stops, actualRNG/prefix checks, memory source mechanism and R differences",
+      "repository": "Checksums, full source matching, terminal snapshots and every numeric difference"
+    },
+    "claim_locations": {
+      "abstract": "Introduce selected post-sampling diagnostic stop",
+      "results": "Show controlled cases and comparable arrays",
+      "discussion": "Explain workflow vs transition-kernel boundary",
+      "SI": "Full conditions and unresolved historical causes"
+    },
+    "historical_results_replaced": false,
+    "revised_result_characters": {
+      "before": 375,
+      "after": 604,
+      "note": "Old numerical failure denominator retained; new controlled mechanism evidence replaces duplicated warning interpretation"
+    },
+    "pdfs": {
+      "main": {
+        "path": "output/software-paper/软件与基准研究-定向补充v3.pdf",
+        "bytes": 589734,
+        "sha256": "137c9fd88ebe7a7f6c84043e99480002c6d32318795ea185028840393a49855c"
+      },
+      "si": {
+        "path": "output/software-paper/补充材料-定向补充v3.pdf",
+        "bytes": 830606,
+        "sha256": "2cad74af5c6d9c7f5b6a86a6c3eccf019b8ff9010deda55261a2e80f7a637612"
+      }
+    }
+  }
+}

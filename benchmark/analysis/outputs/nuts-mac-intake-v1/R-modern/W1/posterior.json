@@ -1,0 +1,31 @@
+{
+  "R": "R version 4.6.0 (2026-04-24)",
+  "posterior": "1.7.0",
+  "results": {
+    "W1": [
+      {
+        "variable": "alpha",
+        "mean": 0.606417539622718,
+        "sd": 0.060820471999667,
+        "rhat": 0.999953051688083,
+        "ess_bulk": 15418.0096637996,
+        "ess_tail": 10114.935021031,
+        "mcse_mean": 0.000490066523968293
+      },
+      {
+        "variable": "beta[1]",
+        "mean": -0.622283799244961,
+        "sd": 0.0968824963233971,
+        "rhat": 0.999992786979283,
+        "ess_bulk": 15087.9487645729,
+        "ess_tail": 11170.6247223603,
+        "mcse_mean": 0.000789156378247916
+      }
+    ]
+  },
+  "diagnostic_seconds": {
+    "W1": 0.238
+  },
+  "scope": "Saved old four-chain diagnostics, no new fitting",
+  "independent_unit": "Original input label; the four chains are not four datasets"
+}

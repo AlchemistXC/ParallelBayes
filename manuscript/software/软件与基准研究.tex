@@ -18,7 +18,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-时间并行MCMC同时求解多个采样位置，尝试缩短单条轨迹的计算时间。本文介绍带R接口的研究软件ParallelBayes，将目标、转移核和执行器分开，在固定实际随机输入下比较顺序执行、窗口quasi-DEER MALA与Online Picard RWM。九个目标、两档预算的CPU/CUDA研究中，3888项主任务有\PBCompactValid{}项通过数值标准，\PBCompactNumerical{}项数值失败和\PBCompactUnclassified{}项进程失败均保留。普通工作流的组内配对几何平均速度比在CPU上为Picard \PBCPURWMMin--\PBCPURWMMax，在CUDA上为\PBCUDARWMMin--\PBCUDARWMMax；quasi-DEER的全部组均慢于对应顺序实现。窗口对照显示，批处理机会可被重复求值和较慢的前缀推进抵消。水井案例进一步显示，函数误差较小的配置并不一定具有最低的调用成本；双峰目标的合并符号比例则可由均衡初值维持，而非来自跨峰探索。独立原数组重建、完整失败记录与R调用测量共同表明，时间并行执行收益需要结合数值输出标准、具体函数和工作流边界评价。
+时间并行MCMC同时求解多个采样位置，尝试缩短单条轨迹的计算时间。本文介绍带R接口的研究软件ParallelBayes，将目标、转移核和执行器分开，在固定实际随机输入下比较顺序执行、窗口quasi-DEER MALA与Online Picard RWM。九个目标、两档预算的CPU/CUDA研究中，3888项主任务有\PBCompactValid{}项通过数值标准，\PBCompactNumerical{}项数值失败和\PBCompactUnclassified{}项进程失败均保留。普通工作流的组内配对几何平均速度比在CPU上为Picard \PBCPURWMMin--\PBCPURWMMax，在CUDA上为\PBCUDARWMMin--\PBCUDARWMMax；quasi-DEER的全部组均慢于对应顺序实现。窗口对照显示，批处理机会可被重复求值和较慢的前缀推进抵消。水井案例进一步显示，函数误差较小的配置并不一定具有最低的调用成本；双峰目标的合并符号比例则可由均衡初值维持，而非来自跨峰探索。对选定NUTS工作流的有限定位还观察到完整采样后的诊断内存停止。独立原数组重建、完整失败记录与R调用测量共同表明，时间并行执行收益需要结合数值输出标准、具体函数和工作流边界评价。
 \end{abstract}
 
 \section{引言}
@@ -238,7 +238,9 @@ Windows机制协议中的步长、窗口和链数对照也显示重复求值与�
 
 在主要实验的\PBCompactValid{}份有效拟合中，所选函数共形成\PBCompactFunctionRows{}行诊断，\PBCompactHighRhat{}行的有限$\hat R>1.01$，另有\PBCompactUndefinedRhat{}行未定。函数行共享拟合，不是独立重复。完整结果附录保留九目标36函数的两个已测预算点、条件误差区间及相同集合上的耗时；它们没有定义单次可观测停止准则，也没有插值得到精确达标时间。
 
-全部\PBCompactUnclassified{}项未分类失败来自4096步CPU Pyro NUTS四进程工作流：105/216，即48.6\%的计划拟合未返回完整四链结果；1024步的216项全部有效。长预算各目标失败数依次为G1 17、G2 0、A1 0、L1 18、L2 18、H1 15、H2 17、M1 20、W1 0，每目标均计划24项。因而部分组仅有4--9份有效拟合，其成功条件误差和耗时不代表全部尝试。日志显示工作进程异常终止，具体发生阶段未能确定。另有48份有效A1/G2长预算拟合的192条链，在Pyro内置ESS中各触发约2 GiB分配警告，返回旧诊断缺失；保存样本仍由R计算现代诊断。这些记录说明被测基线包含特定诊断实现，不能把整条工作流的失败与耗时都解释为NUTS核的固有性质，也不能据警告推定全部105项失败的根因。
+全部\PBCompactUnclassified{}项未分类失败来自4096步CPU Pyro NUTS四进程工作流：105/216，即48.6\%的计划拟合未返回完整四链结果；1024步的216项全部有效。长预算各目标失败数依次为G1 17、G2 0、A1 0、L1 18、L2 18、H1 15、H2 17、M1 20、W1 0，每目标均计划24项。部分组仅有4--9份有效拟合，成功条件误差和耗时不代表全部尝试。原日志只定位到工作进程异常终止。另有48份有效A1/G2长预算拟合的192条链，在内置ESS中各触发约2 GiB分配警告，旧诊断缺失；保存样本仍由R计算现代诊断。
+
+\input{nuts-localization-main.generated.tex}
 
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth]{../../figures/manuscript-review-v2/error-cost-final/error-cost-overview.pdf}
@@ -274,12 +276,12 @@ $\Pr(y_i=1)=\sigma(\alpha+\beta d_i/100)$，保留原模型对$\alpha,\beta$的�
 
 这种限定与原方法的收益并不冲突。Picard原文在Apple M3上对由时滞微分方程定义的昂贵黑箱似然报告约2.52倍墙钟收益\cite{grazzi}，成本结构不同于本文多数廉价目标。本文的窗口与停止规则也属于适配实现。后续若要判断昂贵似然的适用边界，需要预先控制单次求值成本和批处理吞吐，而不是从现有网格中挑选最快的配置。
 
-路径标准、函数误差和后验探索回答不同问题。H1的函数均值差较小，却不能替代完整路径合格条件；M1的合并符号比例可由均衡初值维持；L2的绝对事件误差又可能掩盖相对误差。这些对照要求研究者结合所关心函数、初始化和误差尺度解释收益。W1的数值包络收窄了参考不确定性，却不改变常量事件的探索局限。105项NUTS进程失败的发生阶段仍未确定，因而本文继续保留成功条件比较和全部失败成本，不据点排序作无条件方法排名。
+路径标准、函数误差和后验探索回答不同问题。H1的函数均值差较小，却不能替代完整路径合格条件；M1的合并符号比例可由均衡初值维持；L2的绝对事件误差又可能掩盖相对误差。这些对照要求研究者结合所关心函数、初始化和误差尺度解释收益。W1的数值包络收窄了参考不确定性，却不改变常量事件的探索局限。NUTS补充定位表明，完整采样后诊断仍可使工作流因内存保护而终止；这些后处理费用与失败不能全归为转移核的性质。六个历史失败案例本轮未复现，原105项仍未定，因此保留成功条件比较和全部失败成本，不据点排序作无条件方法排名。
 
 ParallelBayes的贡献是可复用的目标/核/执行分离、固定已保存的随机数组的独立核验，以及从原始结果重建的成本和误差证据。Stan仍仅接CPU顺序核，Pyro NUTS是独立研究CLI，R前端耗时只在指定Mac CPU示例中直接测量。自动选择器、GPU NUTS和MEADS/LAPS等更广的多链比较\cite{meads,laps,fsm}不属于本版实测能力。现有结果支持按明确目标和计时边界使用该软件进行执行器研究；它们没有建立普遍推断加速或跨模型自动配置规则。
 
 \section*{代码、数据与构建材料}
-源码、冻结协议、分析摘要和论文输入见\href{https://github.com/AlchemistXC/ParallelBayes/tree/codex/research-integration}{ParallelBayes研究分支}，代码采用MIT许可。紧凑实验执行源固定为\texttt{3a37a89}，Windows交付源为\texttt{94bebec}；H1函数伴随分析重放旧输入，L2重要性参考及W1数值包络采用独立新协议，三项补充与原主实验分开归档。具体构建提交及输入SHA256随论文包记录；新H1/L2/W1原始补充包目前保存在本地，汇总和重建脚本随研究分支提供。历史CPU原始证据位于\href{https://github.com/AlchemistXC/ParallelBayes/releases/tag/cpu-review-v1}{cpu-review-v1 Release}。Windows紧凑原数组与Mac派生包截至2026年10月10日存放于具有访问权限的草稿Release，尚未公开；完整复现需要取得这些原件，不能仅凭公开源码下载完成。仓库的\href{https://github.com/AlchemistXC/ParallelBayes/blob/codex/research-integration/docs/COMPACT-REPRODUCTION.md}{复现指南}列出组件、清单及重建命令，\href{https://github.com/AlchemistXC/ParallelBayes/blob/codex/research-integration/docs/MANUSCRIPT-REVIEW-V2.md}{本版修订记录}列出可编译论文包和完整结果附录入口。
+源码、冻结协议、分析摘要和论文输入见\href{https://github.com/AlchemistXC/ParallelBayes/tree/codex/research-integration}{ParallelBayes研究分支}，代码采用MIT许可。紧凑实验执行源固定为\texttt{3a37a89}，Windows交付源为\texttt{94bebec}；H1函数伴随分析重放旧输入，L2重要性参考及W1数值包络采用独立新协议，三项补充与原主实验分开归档。CPU NUTS有限定位绑定执行源\texttt{1269690}，Windows交付\texttt{1a8759f}，已完成Mac独立接收；技术调用不增加正式统计重复。具体构建提交及输入SHA256随论文包记录；新H1/L2/W1原始补充包目前保存在本地，汇总和重建脚本随研究分支提供。历史CPU原始证据位于\href{https://github.com/AlchemistXC/ParallelBayes/releases/tag/cpu-review-v1}{cpu-review-v1 Release}。Windows紧凑原数组与Mac派生包及NUTS有限定位原件截至2026年10月11日存放于具有访问权限的草稿Release，尚未公开；完整复现需要取得这些原件，不能仅凭公开源码下载完成。仓库的\href{https://github.com/AlchemistXC/ParallelBayes/blob/codex/research-integration/docs/COMPACT-REPRODUCTION.md}{复现指南}列出组件、清单及重建命令，\href{https://github.com/AlchemistXC/ParallelBayes/blob/codex/research-integration/docs/MANUSCRIPT-REVIEW-V2.md}{本版修订记录}列出可编译论文包和完整结果附录入口。
 
 生成式工具用于辅助代码实现、分析组织、图表制作和中文表述。数值陈述与图表由保存的实际输入、独立参考和可重复构建检查支持；最终学术判断与稿件责任属于作者。
 

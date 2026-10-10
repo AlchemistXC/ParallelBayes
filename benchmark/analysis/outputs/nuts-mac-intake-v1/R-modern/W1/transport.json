@@ -1,0 +1,19 @@
+{
+  "scope": "Saved old four-chain diagnostics, no new fitting",
+  "independent_unit": "Original input label; the four chains are not four datasets",
+  "fits": [
+    {
+      "id": "W1",
+      "input": "draws.bin",
+      "shape": [
+        4096,
+        4,
+        2
+      ],
+      "names": [
+        "alpha",
+        "beta[1]"
+      ]
+    }
+  ]
+}

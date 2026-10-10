@@ -33,3 +33,6 @@ execution/targeted-followups-v1/nuts-windows-v1/** -text whitespace=-blank-at-eo
 # Preserve H1 derivative CSV bytes, including the CSV writer CRLF terminator.
 benchmark/analysis/outputs/h1-function-path-companion-v1/*.csv -text whitespace=-blank-at-eol
 benchmark/analysis/outputs/h1-function-path-companion-v1/*.svg -text whitespace=-blank-at-eol
+
+# Preserve independently rebuilt S2 evidence bytes across native checkouts.
+benchmark/analysis/outputs/nuts-mac-intake-v1/** -text whitespace=-blank-at-eol,-blank-at-eof

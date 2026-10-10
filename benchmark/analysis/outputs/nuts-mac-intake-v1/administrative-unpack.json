@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "members": 79,
+  "bytes": 839680,
+  "sha256": "02dbc6da8d9622a6fa21d2fd3612cb1f57d03d5a600d2f0fe46b83f485429a7d",
+  "prior_attempt": "Schema mismatch failed before any file extraction; corrected size/members schema without changing evidence"
+}

@@ -1,5 +1,26 @@
 # 限定补充结果的论文整合
 
+## 当前交付：四项补充完成，v3
+
+2026-10-11。S1、S2、S3A、S3B均已完成限定计算和独立审阅。新增S2揭示选定G2/A1工作流在完整采样后的诊断阶段因内存保护停止；六个历史失败未复现，原105分类与正式分母不变。正文将它作为软件/资源边界，SI提供九输入四条件、五个资源停止、实际路径/RNG、ESS静态规模与Mac诊断差值。细节见[Mac科学审阅](WINDOWS-NUTS-MAC-REVIEW.md)。
+
+- [当前正文：18页](../output/software-paper/软件与基准研究-定向补充v3.pdf) · [TeX](../manuscript/software/软件与基准研究.tex)
+- [当前SI：42页](../output/software-paper/补充材料-定向补充v3.pdf) · [TeX](../manuscript/software/补充材料.tex)
+- [完整结果附录：67页，原样保留](../output/software-paper/完整结果附录-审查修订v2.pdf)
+- 核验及最终包入口见[完成记录](TARGETED-FOLLOWUPS-COMPLETION.md)。旧v1/v2文件及下文逐次记录保留，不作为当前待办。
+
+S2新增片段可从已核验小型证据生成（输出目录须不存在）：
+
+```sh
+python scripts/analysis/write_nuts_localization_tex.py \
+ --root benchmark/analysis/outputs/nuts-mac-intake-v1 \
+ --templates manuscript/software --output <new-fragment-output>
+```
+
+程序校验34份固定证据输入，不调用采样器。修改文字应改nuts-localization-*.template.tex；数值来自重建条件表与独立审阅。旧H1/L2生成入口、W1结果生成入口与历史稿件继续有效。编译使用latex-compile及PDF技能，60页缩略核对与新增页放大检查通过；最终无未解析引用或超宽警告。
+
+## v2历史交付（S2回传前）
+
 ## 当前修订：增加W1参考包络（2026-10-11）
 
 S1、S3B及S3A均已完成。当前论文新增W1球算术求积方法、七函数区间及504项点损失差敏感性，见[W1结果](W1-REFERENCE-RESULTS.md)。正文替换原“完整误差未定”的解释；原稳定性表和假设±2 MCSE偏移保留为历史伴随分析，明确区分数值包络与重复实验不确定性。旧主结果、42/105失败类别及完整结果附录不变。S2输入已上传原Windows草稿，仍待原生资格及故障定位证据。
