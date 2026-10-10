@@ -104,3 +104,5 @@ CPU主结果是0.1.0／protocol-v1；历史GPU交接归档为0.1.1／protocol-v3
 `review_compact_reconstruction.py`区分中间快照与完整读取/恢复；
 `write_compact_manuscript.py`要求Mac分析身份匹配，输出可追溯的TeX数字、W1九工作流表和全部目标状态表。
 它们不调用采样器或R，不能替代上游原始数组与诊断重建。不要把`--preview`产物放进最终论文当作已独立核对的证据。
+
+[完整紧凑复现入口](COMPACT-REPRODUCTION.md)补充归档读取器/当前展示层的版本区分、无需GPU后端的分析依赖，以及从单一原件树到统计和正文的命令顺序。其13个Python包与20个非基础R包来自现有实测版本；依赖枚举和导入检查不计为新安装或完整重建。

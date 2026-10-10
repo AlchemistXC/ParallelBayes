@@ -1,0 +1,22 @@
+{
+  "scope": "Observed analysis dependency closure and blocked-provider source-import check; no new installation, sampling, or R diagnostic computation",
+  "source_base_commit": "d0b55888fb1aa125fc66ea68b0737edf4a48daa5",
+  "archived_reader_commit": "94bebec95177b03f0497d748cbc9f54a45492ce4",
+  "python_packages": 13,
+  "R_nonbase_packages": 20,
+  "R_base_packages": 8,
+  "sampler_provider_import_attempts": 0,
+  "files_sha256": {
+    "scripts/release/inspect_analysis_environment.py": "dc31d5d29096e31c5d341b5223dd5bbeb0a8b523760115edddabeb1c52fc7daf",
+    "environment/locks/compact-analysis-observed-v1.txt": "17bc5697e2b98a3959af1e79d1af4719c73d5b6cc3c50a861c477da8cd3fe6b3",
+    "environment/locks/compact-analysis-renv.lock": "390a8dbe5fdbb1d10202eeeba30c76b0cbc43813b9c6211be3357992f593975b"
+  },
+  "new_sampler_calls": 0,
+  "new_R_diagnostic_calls": 0,
+  "new_independent_repetitions": 0,
+  "renv_observations": {
+    "global_R_namespace_load": "failed: no package called renv",
+    "existing_isolated_R_library_restore_interface": "confirmed project, library, lockfile and prompt arguments",
+    "new_packages_installed": 0
+  }
+}

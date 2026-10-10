@@ -464,3 +464,13 @@ Windows已交付、Mac完整原件接收中；正文与当前计划不再写“�
 改为plain页眉后使用现有Tectonic完成，无新安装。新增采样/R诊断/正式重复均0。
 当前入口文档与历史状态分开，避免旧“尚未实现/正在接收”误导续接。
 见docs/COMPACT-RECONSTRUCTION-REVIEW.md和compact-reconstruction-preparation-v1。
+
+### 2026-10-10 便携只读复现环境
+
+归档94bebec读取器/科学检查/统计/报告模块在六类采样后端的显式导入拦截下
+成功载入，后端导入尝试0。实际Python依赖闭合13包；R分析依赖20非基础/8基础包，
+非基础版本与既有已验收R锁一致。生成专用分析版本清单、R锁子集和便携命令文档，
+无本机editable安装路径，不要求CUDA或私有工具。该步骤只读，无新增安装、采样或R诊断。
+全局R库没有renv的观察保留；已有隔离安装库的renv恢复接口核对完成。
+完整4144项重建仍在运行，完整原始数据到最终PDF的F5尚未关闭。
+见docs/COMPACT-REPRODUCTION.md及compact-analysis-environment-v1。

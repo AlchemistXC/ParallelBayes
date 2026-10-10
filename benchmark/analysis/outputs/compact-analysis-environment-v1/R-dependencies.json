@@ -1,0 +1,174 @@
+{
+  "R": "R version 4.6.0 (2026-04-24)",
+  "packages": [
+    {
+      "name": "abind",
+      "version": "1.4.8",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/abind",
+      "priority": {}
+    },
+    {
+      "name": "backports",
+      "version": "1.5.1",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/backports",
+      "priority": {}
+    },
+    {
+      "name": "checkmate",
+      "version": "2.3.4",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/checkmate",
+      "priority": {}
+    },
+    {
+      "name": "cli",
+      "version": "3.6.6",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/cli",
+      "priority": {}
+    },
+    {
+      "name": "compiler",
+      "version": "4.6.0",
+      "path": "/Library/Frameworks/R.framework/Resources/library/compiler",
+      "priority": "base"
+    },
+    {
+      "name": "distributional",
+      "version": "0.7.0",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/distributional",
+      "priority": {}
+    },
+    {
+      "name": "generics",
+      "version": "0.1.4",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/generics",
+      "priority": {}
+    },
+    {
+      "name": "glue",
+      "version": "1.8.1",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/glue",
+      "priority": {}
+    },
+    {
+      "name": "graphics",
+      "version": "4.6.0",
+      "path": "/Library/Frameworks/R.framework/Resources/library/graphics",
+      "priority": "base"
+    },
+    {
+      "name": "grDevices",
+      "version": "4.6.0",
+      "path": "/Library/Frameworks/R.framework/Resources/library/grDevices",
+      "priority": "base"
+    },
+    {
+      "name": "jsonlite",
+      "version": "2.0.0",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/jsonlite",
+      "priority": {}
+    },
+    {
+      "name": "lifecycle",
+      "version": "1.0.5",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/lifecycle",
+      "priority": {}
+    },
+    {
+      "name": "magrittr",
+      "version": "2.0.5",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/magrittr",
+      "priority": {}
+    },
+    {
+      "name": "matrixStats",
+      "version": "1.5.0",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/matrixStats",
+      "priority": {}
+    },
+    {
+      "name": "methods",
+      "version": "4.6.0",
+      "path": "/Library/Frameworks/R.framework/Resources/library/methods",
+      "priority": "base"
+    },
+    {
+      "name": "numDeriv",
+      "version": "2016.8.1.1",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/numDeriv",
+      "priority": {}
+    },
+    {
+      "name": "parallel",
+      "version": "4.6.0",
+      "path": "/Library/Frameworks/R.framework/Resources/library/parallel",
+      "priority": "base"
+    },
+    {
+      "name": "pillar",
+      "version": "1.11.1",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/pillar",
+      "priority": {}
+    },
+    {
+      "name": "pkgconfig",
+      "version": "2.0.3",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/pkgconfig",
+      "priority": {}
+    },
+    {
+      "name": "posterior",
+      "version": "1.7.0",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/posterior",
+      "priority": {}
+    },
+    {
+      "name": "rlang",
+      "version": "1.2.0",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/rlang",
+      "priority": {}
+    },
+    {
+      "name": "stats",
+      "version": "4.6.0",
+      "path": "/Library/Frameworks/R.framework/Resources/library/stats",
+      "priority": "base"
+    },
+    {
+      "name": "tensorA",
+      "version": "0.36.2.1",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/tensorA",
+      "priority": {}
+    },
+    {
+      "name": "tibble",
+      "version": "3.3.1",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/tibble",
+      "priority": {}
+    },
+    {
+      "name": "tools",
+      "version": "4.6.0",
+      "path": "/Library/Frameworks/R.framework/Resources/library/tools",
+      "priority": "base"
+    },
+    {
+      "name": "utf8",
+      "version": "1.2.6",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/utf8",
+      "priority": {}
+    },
+    {
+      "name": "utils",
+      "version": "4.6.0",
+      "path": "/Library/Frameworks/R.framework/Resources/library/utils",
+      "priority": "base"
+    },
+    {
+      "name": "vctrs",
+      "version": "0.7.3",
+      "path": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library/vctrs",
+      "priority": {}
+    }
+  ],
+  "scope": "Observed existing R analysis dependencies; no installation or diagnostic recomputation"
+}
