@@ -10,8 +10,14 @@
 - 内容：27个输入/记录文件，九个模型案例及三套既有四链诊断轨迹；不含完整主研究原件。
 - 本地位置：主工作目录 `output/windows-nuts-localization-handoff/`，同目录包含 `.tar.receipt.json`。
 
-上传该tar及回执到GitHub既有草稿的操作被自动审批拒绝，原因是需要用户明确授权这份具体研究输入上传到该目的地。已发出确认请求；截至本记录尚未上传。不能从源码已推送推断输入包也已上传。
+2026-10-11用户明确授权后，已将上述tar及 `.tar.receipt.json` 追加上传到[原Windows草稿](https://github.com/AlchemistXC/ParallelBayes/releases/tag/untagged-a38d1dfe63e5584ac2ef)。实际tag为 `windows-completion-v2-20261005`，草稿仍未发布；附件从215增至217，原215件的ID、名称、大小、摘要和更新时间均未改变。两份新附件的GitHub SHA256与本地文件一致。此前上传审批拒绝已由本次具体授权解决。
 
-拟用目的地为 AlchemistXC/ParallelBayes 的原Windows草稿，实际tag为 `windows-completion-v2-20261005`，历史页面为 `releases/tag/untagged-a38d1dfe63e5584ac2ef`。核对时仍为draft，原215附件不变。用户可以授权上传，或自行把本地输入包转交给台式机。
+上传核验记录见 [github-upload-receipt-v1.json](github-upload-receipt-v1.json)。在已登录且可访问该草稿的Windows GitHub CLI中下载：
+
+```powershell
+gh release download windows-completion-v2-20261005 --repo AlchemistXC/ParallelBayes --pattern 'windows-nuts-localization-inputs-v1.tar' --pattern 'windows-nuts-localization-inputs-v1.tar.receipt.json' --dir downloads/windows-nuts-localization-v1
+```
+
+下载到新目录；如已存在文件，先核对，不加 `--clobber`。这次只追加交接输入，没有运行新的采样，也没有收到Windows原生定位结果。
 
 收到输入后使用README中的校验解包工具，再整份提交CODEX-PROMPT.md。输入缺失时只准备环境和源码，不生成替代输入或开始正式定位。

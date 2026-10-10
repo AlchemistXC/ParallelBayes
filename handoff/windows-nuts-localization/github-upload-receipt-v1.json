@@ -1,0 +1,52 @@
+{
+  "verified_at_utc": "2026-10-10T15:42:04.679106+00:00",
+  "repository": "AlchemistXC/ParallelBayes",
+  "release_id": "RE_kwDOU6nGY84YDyCA",
+  "tag": "windows-completion-v2-20261005",
+  "url": "https://github.com/AlchemistXC/ParallelBayes/releases/tag/untagged-a38d1dfe63e5584ac2ef",
+  "draft": true,
+  "explicit_user_authorization": "2026-10-11: 允许上传到该草稿",
+  "before_asset_count": 215,
+  "after_asset_count": 217,
+  "old_assets_unchanged": true,
+  "verified_fields": [
+    "name",
+    "size",
+    "digest",
+    "state",
+    "createdAt",
+    "updatedAt"
+  ],
+  "verification": "GitHub asset size and SHA256 digest match local files; all original asset IDs and recorded fields preserved",
+  "uploaded_assets": [
+    {
+      "apiUrl": "https://api.github.com/repos/AlchemistXC/ParallelBayes/releases/assets/628330344",
+      "contentType": "application/x-tar",
+      "createdAt": "2026-10-10T15:41:38Z",
+      "digest": "sha256:3b97a221ea8a5a61644f3394474e2ceaf8f0b981803456181a012a99d26f5b12",
+      "downloadCount": 0,
+      "id": "RA_kwDOU6nGY84lc49o",
+      "label": "",
+      "name": "windows-nuts-localization-inputs-v1.tar",
+      "size": 21544960,
+      "state": "uploaded",
+      "updatedAt": "2026-10-10T15:41:40Z",
+      "url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-nuts-localization-inputs-v1.tar"
+    },
+    {
+      "apiUrl": "https://api.github.com/repos/AlchemistXC/ParallelBayes/releases/assets/628330343",
+      "contentType": "application/json",
+      "createdAt": "2026-10-10T15:41:38Z",
+      "digest": "sha256:836d937f1e55c9c984d8c58fbef59dd894391567702186af92854eaf7455e301",
+      "downloadCount": 0,
+      "id": "RA_kwDOU6nGY84lc49n",
+      "label": "",
+      "name": "windows-nuts-localization-inputs-v1.tar.receipt.json",
+      "size": 4293,
+      "state": "uploaded",
+      "updatedAt": "2026-10-10T15:41:38Z",
+      "url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/windows-nuts-localization-inputs-v1.tar.receipt.json"
+    }
+  ],
+  "new_sampler_calls": 0
+}
