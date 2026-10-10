@@ -1,0 +1,22 @@
+{
+  "passed": 3,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "full-refuses-incomplete",
+      "passed": true,
+      "message": "Full failure review requires 432 further original tasks"
+    },
+    {
+      "check": "wrong-manifest",
+      "passed": true,
+      "message": "Transfer manifest checksum differs"
+    },
+    {
+      "check": "changed-task-asset",
+      "passed": true,
+      "message": "Original task asset differs: formal-runs/batch-01/main/tasks/00088f5a35a41fad7ac72c3b/attempt-0001/candidate.json"
+    }
+  ],
+  "new_sampler_calls": 0
+}

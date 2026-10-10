@@ -416,3 +416,13 @@ v3文稿内容包59输入、七段逐字节重建；新版入口同时通过旧v
 模式顺序检查已定位并修复，日志保留。R语法解析通过，未载入采样包执行。
 接收和正式重建仍在运行，须结束后用真实静止观察启动。F4保持未完成。
 详见R-FRONTEND-TIMING-PROTOCOL与r-frontend-preparation-v1紧凑记录。
+
+
+## 2026-10-10 接收中的NUTS失败原件审阅
+
+已逐项核对171/432任务的已到原件（115有效、56失败），不是完整正式接收。
+发现19份有效长预算任务也有原始Job峰值计数超过限额，故该计数不能单独证明
+OOM；BrokenProcessPool的future错误数不能等同实际崩溃worker数。
+不改变105项原未分类失败，不补采或丢弃partial链。完整原件到齐后再执行432项
+审阅。三项读入拒绝检查通过，新增采样/R诊断/正式重复均0。见
+review/WINDOWS-COMPACT-FAILURE-AUDIT.md及compact-nuts-failure-review-partial-v1。
