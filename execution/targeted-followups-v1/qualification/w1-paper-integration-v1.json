@@ -91,6 +91,7 @@
     "unresolved_references_final_pass": false,
     "overfull_warnings": false,
     "marker_run_once_for_two_pdf_edit": true,
-    "portable_paper_rebuild": "pending"
+    "portable_paper_rebuild": "passed; all 58 pages text/pixels equal",
+    "portable_rebuild_record": "benchmark/analysis/outputs/targeted-paper-companion-v2/portable-rebuild.json"
   }
 }

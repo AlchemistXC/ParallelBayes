@@ -1,0 +1,27 @@
+{
+  "main": {
+    "pages": 18,
+    "all_text_equal": true,
+    "all_72dpi_pixels_equal": true,
+    "pdf_sha256": "2cffe69648c88384514bbef9bf5caca54aa5e4ceefbdb7603cc012e0dac01ecf",
+    "compile_log_sha256": "3f0616812c2ad315324f793dc520111ffa10b97a0a0a5e91a23837ca7961d230",
+    "final_pass_undefined": false,
+    "overfull": false
+  },
+  "si": {
+    "pages": 40,
+    "all_text_equal": true,
+    "all_72dpi_pixels_equal": true,
+    "pdf_sha256": "0b1fc6f20c61547e8038163b7e9bfd731092b053ff06bdd6c3f9af17c6e5ad75",
+    "compile_log_sha256": "9e00e383ab269386f87a7cf055ba9e584ac70d1b95eb25369a073998d42bfe0d",
+    "final_pass_undefined": false,
+    "overfull": false
+  },
+  "complete_results": {
+    "pages": 67,
+    "sha256": "2a71da18334b781586afbae95b517446b890576825df3d1f8f9e0208e358bdf8",
+    "original_pdf_unchanged": true,
+    "not_recompiled_this_revision": true
+  },
+  "scope": "Same Mac, independently extracted directory, cached Tectonic 0.17.0; not external-machine replication or new experiments"
+}

@@ -1,0 +1,85 @@
+{
+  "identity": "targeted-paper-companion-v2",
+  "created_utc": "2026-10-10T18:01:44.468299+00:00",
+  "source_commit": "6f894c5f7b9651c9e2546f3710fc07975ec61cf1",
+  "branch": "codex/research-integration",
+  "scope": "S1, S3A and S3B completed and integrated; S2 native evidence remains pending",
+  "pdfs": {
+    "main": {
+      "path": "output/software-paper/软件与基准研究-定向补充v2.pdf",
+      "pages": 18,
+      "bytes": 585722,
+      "sha256": "2cffe69648c88384514bbef9bf5caca54aa5e4ceefbdb7603cc012e0dac01ecf"
+    },
+    "si": {
+      "path": "output/software-paper/补充材料-定向补充v2.pdf",
+      "pages": 40,
+      "bytes": 812067,
+      "sha256": "0b1fc6f20c61547e8038163b7e9bfd731092b053ff06bdd6c3f9af17c6e5ad75"
+    }
+  },
+  "paper_archive": {
+    "archive": "parallelbayes-targeted-paper-v2.tar",
+    "bytes": 17356800,
+    "sha256": "455d0119cb5bb873ada3a2342742d19a92706bfdb3676d404caf7f1fbaab849b",
+    "files": 164,
+    "verified_nonmanifest_files": 163,
+    "source_worktree_clean": true
+  },
+  "relocation": {
+    "main": {
+      "pages": 18,
+      "all_text_equal": true,
+      "all_72dpi_pixels_equal": true,
+      "pdf_sha256": "2cffe69648c88384514bbef9bf5caca54aa5e4ceefbdb7603cc012e0dac01ecf",
+      "compile_log_sha256": "3f0616812c2ad315324f793dc520111ffa10b97a0a0a5e91a23837ca7961d230",
+      "final_pass_undefined": false,
+      "overfull": false
+    },
+    "si": {
+      "pages": 40,
+      "all_text_equal": true,
+      "all_72dpi_pixels_equal": true,
+      "pdf_sha256": "0b1fc6f20c61547e8038163b7e9bfd731092b053ff06bdd6c3f9af17c6e5ad75",
+      "compile_log_sha256": "9e00e383ab269386f87a7cf055ba9e584ac70d1b95eb25369a073998d42bfe0d",
+      "final_pass_undefined": false,
+      "overfull": false
+    },
+    "complete_results": {
+      "pages": 67,
+      "sha256": "2a71da18334b781586afbae95b517446b890576825df3d1f8f9e0208e358bdf8",
+      "original_pdf_unchanged": true,
+      "not_recompiled_this_revision": true
+    },
+    "scope": "Same Mac, independently extracted directory, cached Tectonic 0.17.0; not external-machine replication or new experiments"
+  },
+  "w1_reference": {
+    "summary_sha256": "d2a1b675be99e19c9e59c57407451098eb157bedbb4664c5e50b397bf9498b32",
+    "audit_sha256": "228481183a493d902747a76e2d0127b1b664e99df74cfccfad18d9e89c8a011c",
+    "both_methods_targets": "7/7 each",
+    "old_scientific_assets_verified": 24,
+    "resume_new_evaluations": 0,
+    "archive_bytes": 303360000,
+    "archive_sha256": "c1bf12eb937ba57582647c7eb81cea21d01b6f204e1305d459cdc1175bd368d1",
+    "raw_portable_rebuilt_content_files": 9,
+    "raw_portable_rebuilt_manifests": 2,
+    "lightweight_reports_byte_identical": 7,
+    "lightweight_manifest_byte_identical": true,
+    "paired_reference_comparisons": 504,
+    "stable_sign": 408,
+    "exact_tie": 96,
+    "sign_reversals": 0,
+    "statistical_significance_claim": false
+  },
+  "no_new_sampling_in_this_paper_revision": true,
+  "old_failure_classifications_changed": 0,
+  "access": {
+    "source_summaries_pdfs": "research branch",
+    "paper_build_archive": "local only; not uploaded",
+    "h1_l2_w1_raw_archives": "local only; not uploaded",
+    "windows_input_tar_and_receipt": "uploaded with explicit user permission; original release stays draft; old assets unchanged"
+  },
+  "pending": [
+    "Windows native S2 qualification, finite localization evidence, independent Mac intake and resulting manuscript updates"
+  ]
+}

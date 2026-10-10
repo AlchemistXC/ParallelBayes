@@ -4,7 +4,14 @@
 
 S1、S3B及S3A均已完成。当前论文新增W1球算术求积方法、七函数区间及504项点损失差敏感性，见[W1结果](W1-REFERENCE-RESULTS.md)。正文替换原“完整误差未定”的解释；原稳定性表和假设±2 MCSE偏移保留为历史伴随分析，明确区分数值包络与重复实验不确定性。旧主结果、42/105失败类别及完整结果附录不变。S2输入已上传原Windows草稿，仍待原生资格及故障定位证据。
 
-本轮正文18页、SI40页已编译并检查全部页面，新增公式、区间表、历史分析说明及引用正常。便携论文包正在制作，完成后另写v2交付记录；下文是v1历史交付，文件和哈希保留，不追溯覆盖。
+本轮正文18页、SI40页已编译并检查全部页面，新增公式、区间表、历史分析说明及引用正常。便携论文包的163个输入文件逐项核验；独立解包后重编译，全部58页的文本和72 dpi像素相同。此验证使用同机Tectonic 0.17.0，不称异机复现。原67页结果附录哈希不变。
+
+- [当前正文PDF](../output/software-paper/软件与基准研究-定向补充v2.pdf) · [正文TeX](../manuscript/software/软件与基准研究.tex)
+- [当前补充材料PDF](../output/software-paper/补充材料-定向补充v2.pdf) · [SI TeX](../manuscript/software/补充材料.tex)
+- [本地便携论文包](../output/software-paper/parallelbayes-targeted-paper-v2.tar)：17,356,800字节，SHA256 `455d0119cb5bb873ada3a2342742d19a92706bfdb3676d404caf7f1fbaab849b`。源码6f894c5，含完整结果附录的构建输入。该包未上传。
+- [v2交付与核验清单](../benchmark/analysis/outputs/targeted-paper-companion-v2/delivery.json)。W1轻量汇总已搬移重建七份报告与清单；全部计算原件另见[W1归档说明](W1-REFERENCE-RESULTS.md)。
+
+正文旧表注的参考精度说明已从生成脚本修正；实际再生成确认所有表格数值、其他片段和完整数值claims逐字节不变。下文为v1历史交付，文件和哈希保留，不追溯覆盖。
 
 ## 历史修订v1：H1与L2（2026-10-10）
 
