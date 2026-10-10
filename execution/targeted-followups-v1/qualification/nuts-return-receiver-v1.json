@@ -1,0 +1,45 @@
+{
+  "identity": "nuts-return-receiver-v1",
+  "date": "2026-10-11",
+  "basis_commit": "7bded3a8ca20a9ad7316fac3086c1f0c241f0c3d",
+  "source_sha256": "c1e85294a23f8f92d14f993b1f136ffb5addb9a884ee0038b21b5c879701d282",
+  "test_sha256": "7b586d7563b1cd22bfd155da5cfd53f544db580c40597306d3f528571deedeec",
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv-followups/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/handoff/test_nuts_return_audit.py"
+  ],
+  "passed": 17,
+  "failed": 0,
+  "skipped": 0,
+  "observed_stdout": "................. [100%]\n17 passed in 0.61s\n",
+  "coverage": [
+    "safe archive extraction and externally bound hash",
+    "read-only incomplete failed study",
+    "complete 36-main-call identity fixture with failures retained",
+    "original source/input and request fingerprint tampering",
+    "missing registry calls",
+    "relabelled failure in analysis",
+    "skipped native gate",
+    "frozen quota drift",
+    "phase quota excess",
+    "duplicate JSON/path and nonfinite rejection"
+  ],
+  "test_evidence": "Synthetic files and a synthetic SQLite registry only; no real NUTS output is present",
+  "native_tests_run": false,
+  "native_sampler_calls": 0,
+  "windows_runner_bound_files_changed": false,
+  "actual_windows_return_received": false,
+  "does_not_prove": [
+    "native trajectory qualification",
+    "archived source Git object equality",
+    "confirmation selection mechanism",
+    "remote current process state",
+    "fault root cause"
+  ],
+  "remaining": "Receive actual Windows evidence; run identity audit, portable reconstruction and the documented independent scientific review"
+}
