@@ -69,13 +69,27 @@
     "windows_prompt": null
   },
   "targeted_followups": {
-    "status": "in_progress",
+    "status": "in_progress_S1_complete",
     "plan": "docs/TARGETED-FOLLOWUPS-PLAN.md",
     "machine_plan": "execution/targeted-followups-v1/PLAN.json",
     "work_packages": "execution/targeted-followups-v1/WORK-PACKAGES.md",
     "scientific_calls_started": 0,
     "windows_prompt": null,
     "prior_completion_reopened": false,
-    "authorization": "User requested execution based on the plan"
+    "authorization": "User requested execution based on the plan",
+    "S1": {
+      "status": "complete",
+      "tasks": 80,
+      "report": "docs/H1-FUNCTION-PATH-RESULTS.md",
+      "new_formal_repetitions": 0,
+      "reused_on_resume": 80,
+      "new_on_resume": 0
+    },
+    "S2": {
+      "status": "pending_implementation"
+    },
+    "S3": {
+      "status": "pending_implementation"
+    }
   }
 }

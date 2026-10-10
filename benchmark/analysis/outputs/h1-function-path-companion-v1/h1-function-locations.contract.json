@@ -1,0 +1,18 @@
+{
+  "question": "Where along all saved paths do discrepancies occur?",
+  "core_conclusion": "Display all positions without selecting favourable windows.",
+  "backend": "python",
+  "archetype": "quantitative grid",
+  "panel_roles": [
+    "unbounded linear function",
+    "bounded nonlinear function"
+  ],
+  "source": "position-bins.csv",
+  "tasks": 80,
+  "original_input_labels": 13,
+  "bins": 128,
+  "bin_rule": "maximum over all four chains and all transitions in each bin; full path includes discarded prefix",
+  "interpolation": false,
+  "selection": "all selected tasks; other two functions remain in complete numeric table",
+  "intervals": "none; descriptive fixed-input differences"
+}

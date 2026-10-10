@@ -1,0 +1,14 @@
+{
+  "check": "Independent direct-array reaggregation of all recorded scalar rows",
+  "rows": 3200,
+  "tasks": 80,
+  "passed": true,
+  "max_abs_single_chain_mean": {
+    "v_over_3": 4.3502319816465213e-07,
+    "tanh_v_over_3": 1.9035334643707635e-07,
+    "x1_positive": 0,
+    "cos_z1": 1.2316270596746556e-06
+  },
+  "max_coordinate_difference": 0.00572866985443099,
+  "new_reference_replays": 0
+}

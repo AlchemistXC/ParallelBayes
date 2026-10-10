@@ -1,0 +1,22 @@
+{
+  "source_commit": "d901e21",
+  "result": "passed",
+  "unchanged_assets": 162,
+  "new_analyses": 0,
+  "reused": 80,
+  "log_sha256": "43dad95a7e58365d90ad59c47c013da79e24153742387cb8e6a402af4f503d82",
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv/bin/python",
+    "scripts/analysis/h1_function_paths.py",
+    "--protocol",
+    "benchmark/protocols/h1-function-path-companion-v1.json",
+    "--evidence",
+    "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/received/formal",
+    "--manifest",
+    "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/metadata/windows-compact-formal-3a37a89-v1-manifest.json",
+    "--selection",
+    "execution/targeted-followups-v1/selection.json",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/h1-function-path-companion-v1"
+  ]
+}

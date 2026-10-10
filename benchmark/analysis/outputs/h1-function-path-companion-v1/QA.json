@@ -1,0 +1,22 @@
+{
+  "qualification_tests": {
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0
+  },
+  "data_reaggregation_rows": 3200,
+  "resume": {
+    "new": 0,
+    "reused": 80,
+    "unchanged": 162
+  },
+  "figure_QA": {
+    "source": "19 pass / 2 preview-only warnings / 0 fail",
+    "minimum_glyph_pt": 8.5,
+    "collisions_both_figures": "0 fail / 0 warn",
+    "alignment_both_figures": "passed",
+    "visual_review": "All four panels read at exported final size; no overlap or clipping",
+    "warnings_disposition": "PDF/SVG are primary. PNG is a 300 dpi preview; TIFF/600 dpi suggestion does not apply to this internal vector figure delivery."
+  },
+  "scientific_result_not_implied": "No reclassification or general posterior correctness from function-level differences."
+}

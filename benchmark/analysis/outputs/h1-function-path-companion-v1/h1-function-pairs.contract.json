@@ -1,0 +1,27 @@
+{
+  "question": "How do paired executor path errors propagate to declared functions?",
+  "core_conclusion": "Pointwise discrepancies are larger than pooled mean discrepancies in these saved paths; original failures remain excluded.",
+  "backend": "python",
+  "archetype": "quantitative grid",
+  "panel_roles": [
+    "paired executor contrast",
+    "pointwise-to-mean decomposition"
+  ],
+  "source": "function-differences.csv",
+  "tasks": 80,
+  "paired_inputs_device_budget": 40,
+  "original_input_labels": 13,
+  "original_failed": 42,
+  "independent_n_not_80": true,
+  "functions_shown": [
+    "v_over_3",
+    "tanh_v_over_3",
+    "cos_z1"
+  ],
+  "omitted_function_rule": "x1_positive identically zero difference on all saved full paths; reported explicitly in caption and complete source table",
+  "all_continuous_tasks_shown": true,
+  "scales": "symlog, linear region 1e-16; zeros not replaced",
+  "intervals": "none; deterministic differences, no independent-task CI",
+  "reference": "independent NumPy float64",
+  "retained_only": true
+}

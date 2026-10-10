@@ -1,0 +1,30 @@
+[
+  {
+    "function": "v_over_3",
+    "max_abs_point": 0.0019095566181436263,
+    "point_task": "16a4d7ac895f86d179fe6a39",
+    "max_abs_pooled_mean": 1.0775667855952866e-07,
+    "mean_task": "16a4d7ac895f86d179fe6a39"
+  },
+  {
+    "function": "tanh_v_over_3",
+    "max_abs_point": 0.0014518226654188782,
+    "point_task": "16a4d7ac895f86d179fe6a39",
+    "max_abs_pooled_mean": 4.6897046423767746e-08,
+    "mean_task": "34efe2e8b34530de33d985dc"
+  },
+  {
+    "function": "x1_positive",
+    "max_abs_point": 0.0,
+    "point_task": "e19e9951d458f2b6b2491ec5",
+    "max_abs_pooled_mean": 0.0,
+    "mean_task": "e19e9951d458f2b6b2491ec5"
+  },
+  {
+    "function": "cos_z1",
+    "max_abs_point": 0.0032687166982236504,
+    "point_task": "16a4d7ac895f86d179fe6a39",
+    "max_abs_pooled_mean": 3.0781205753599774e-07,
+    "mean_task": "4468197420d592739062e096"
+  }
+]

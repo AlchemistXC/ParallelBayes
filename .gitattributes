@@ -26,3 +26,7 @@ figures/compact-mixture-companion-v1/source.csv -text
 
 benchmark/analysis/outputs/compact-final-reconstruction-v1/*.csv -text whitespace=-blank-at-eol
 figures/compact-final-v1/*.svg text eol=lf whitespace=-blank-at-eol
+
+# Preserve H1 derivative CSV bytes, including the CSV writer CRLF terminator.
+benchmark/analysis/outputs/h1-function-path-companion-v1/*.csv -text whitespace=-blank-at-eol
+benchmark/analysis/outputs/h1-function-path-companion-v1/*.svg -text whitespace=-blank-at-eol
