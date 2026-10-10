@@ -1,0 +1,12 @@
+{
+  "schema": "compact-continuation-approval-status-v1",
+  "automation_created": false,
+  "automatic_approval_rejected": true,
+  "action": "Create a persistent 15-minute in-chat continuation for monitoring, recovery, analysis and draft evidence upload",
+  "reason": "The automatic reviewer required explicit user approval for creating this persistent automation; prior research implementation authorization was insufficient for that action.",
+  "explicit_user_question_pending": true,
+  "workaround_created": false,
+  "authorized_native_scientific_sequence_continues": true,
+  "sequence_status_is_bound_to_timed_native_observations": true,
+  "sampling_stopped_or_restarted_by_this_request": false
+}

@@ -35,6 +35,12 @@ class FrozenFrame:
         elif marker['schema']=='formal-adapter-validation-freeze-v1':
             _,self.protocol,self.design,_=verify_validation_bundle(index.root)
             self.dispatch=None;self.phases=((0,'main'),(0,'cache'))
+        elif marker['schema']=='compact-study-freeze-v1':
+            from compact_freeze import verify as verify_compact
+            from compact_execution import CompactDispatch
+            _,self.protocol,self.design,_=verify_compact(index.root)
+            self.dispatch=CompactDispatch(self.protocol,self.design,index.root/'source')
+            self.phases=self.dispatch.phases
         else:raise ValueError('Unsupported frozen native analysis frame')
         if index.json('protocol.json')!=self.protocol:raise ValueError('Indexed protocol differs from validated freeze')
         self.identity=self.protocol['identity'];self.scope=self.protocol['scope_kind']
@@ -60,7 +66,9 @@ class FrozenFrame:
     def receipt(self):
         return dict(identity=self.identity,scope=self.scope,protocol_sha256=self.protocol['protocol_sha256'],
             main_planned=self.counts['main'],cache_planned=self.counts['cache'],
-            formal_scientific_repetitions_per_model=128 if self.dispatch else 0,
+            formal_scientific_repetitions_per_model=(self.design['formal_scientific_repetitions']
+                if self.protocol.get('compact_execution_contract') else 128 if self.dispatch else 0),
+            execution_contract=self.protocol.get('compact_execution_contract','historical-formal-v1'),
             analysis_can_authorize_sampling=False)
 
 

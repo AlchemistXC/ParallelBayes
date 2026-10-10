@@ -1,0 +1,8 @@
+{
+  "gpu_free_bytes": 15488516096,
+  "gpu_total_bytes": 17066033152,
+  "observed_ns": 1791572968104113100,
+  "ram_available": 21711298560,
+  "ram_total": 33346146304,
+  "resource_observation_is_not_a_guarantee": true
+}

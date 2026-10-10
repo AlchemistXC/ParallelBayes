@@ -18,6 +18,31 @@ The source-bound full-frame receiver and downstream tables/Chinese LaTeX report 
 
 ## Scientific invariants
 
+Windows delivery continuation (2026-10-10): compact scientific sampling is now
+terminal: 3,888 main (3,741 valid / 42 numerical_failure / 105 unclassified output
+failures), 256 cache probes / 1,024 qualified calls. Do not resume sampling.
+Six closed-phase checks preserve 127,636 task assets with zero new executions;
+Windows read-only reconstruction covers 4,144 rows without reader errors/gaps,
+and its actual resume preserves 42,035 analysis assets with zero new analyses.
+Nine-model statistics and 45 report figures are complete. Exact originals,
+failures and costs are appended to the existing draft using bounded components;
+Mac independent compact intake remains pending. Pinned C execution source stays
+3a37a891896faedc62c0d6af185bfad77696054f. Only the separate CR delivery tree is
+updated. See execution/windows-compact/FINAL-REPORT.md and the receive commands.
+
+Windows continuation update (2026-10-08): compact implementation and finite
+difference acceptance are now actual, on execution branch `codex/windows-compact-study`
+at 3a37a891896faedc62c0d6af185bfad77696054f. New checks: 35 portable / four affected
+native pass, 18 main valid and 16 cache/64 calls qualify; bounded Windows receive
+reconstructs 34 rows and resumes with zero new analysis. Formal compact 216-input
+freeze has passed its new source/environment gate; its three ordered batches
+are running. Do not launch a second manager or alter the execution tree. See
+docs/WINDOWS-COMPACT-RESULTS.md and execution/windows-compact/WORK-PACKAGES.md on
+the separate delivery branch for timed live observations. Old-grid hold is
+complete at fbf7564; no old driver resume. Mac independent compact intake and
+final results remain unfinished. Delivery-only tools do not modify frozen
+sampling source or authorize a new numerical protocol.
+
 - Preserve archived 0.1.0/0.1.1 sources, all frozen protocols and historical results. Develop Windows support on a separate branch/version with a new experiment identity.
 - Separate target/coordinates, transition kernel, execution strategy and resource/measurement policy. Stan/BridgeStan currently supports CPU sequential RWM/MALA only.
 - Compare actual random arrays, not merely integer seeds. An independent NumPy reference must not call the implementation being tested.

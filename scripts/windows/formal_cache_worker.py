@@ -30,14 +30,14 @@ def _probe(capsule,digest,probe):
     return c
 
 
-def execute_cached_probe(request_path,output):
+def execute_cached_probe(request_path,output,*,request_loader=None,probe_validator=_probe,worker_source='scripts/windows/formal_cache_worker.py',summary_reducer=summarize_probe):
     """One initial plus three prepared calls; never eligible posterior draws."""
     from formal_execution import load_worker_request
-    request,c=load_worker_request(request_path,ROOT)
+    request,c=(request_loader or (lambda p:load_worker_request(p,ROOT)))(request_path)
     if request['phase']!='cache':raise ValueError('Cache worker requires a measurement request')
     capsule=request['capsule'];capsule_sha256=request['capsule_sha256'];probe=request['probe']
     inputs=request['inputs'];source_directory=request.get('source_directory')
-    c=_probe(capsule,capsule_sha256,probe);output=Path(output)
+    c=probe_validator(capsule,capsule_sha256,probe);output=Path(output)
     output.mkdir(parents=True,exist_ok=False)
     ledger=PhaseLedger(output/'phases.json')
     with ledger.phase('contract_source_environment_input_and_target'):
@@ -47,8 +47,8 @@ def execute_cached_probe(request_path,output):
         from mechanism_runner import plain
         from parallelbayes.torch_backend.sampling import settings,tape_hash,sync,audit_path
         from cached_execution import PreparedExecutor
-        required='scripts/windows/formal_cache_worker.py'
-        if c['source_files'].get(required)!=file_hash(__file__):raise ValueError('Cache execution source is not bound')
+        required=worker_source
+        if c['source_files'].get(required)!=file_hash(ROOT/required):raise ValueError('Cache execution source is not bound')
         for name,h in c['source_files'].items():
             if file_hash(ROOT/name)!=h:raise ValueError('Frozen source differs: '+name)
         for name,version in c['required_versions'].items():
@@ -110,7 +110,7 @@ def execute_cached_probe(request_path,output):
         records[current]=plain(result)
         atomic_json(output/f'execution-{current}.json',records[current])
     observation=dict(execution_outcomes=states,records=records)
-    summary=summarize_probe(probe,records,expected_tape_sha256=binding['tape_sha256'],expected_target_id=binding['target_id'],expected_config=config)
+    summary=summary_reducer(probe,records,expected_tape_sha256=binding['tape_sha256'],expected_target_id=binding['target_id'],expected_config=config)
     report=dict(artifact_kind='cache_measurement',probe=probe,binding=binding,observation=observation,summary=summary,
         measurement_available=summary['all_executions_valid'],samples_eligible=False,error=error,
         status='interrupted' if interrupt else 'completed' if summary['all_executions_valid'] else 'failed',

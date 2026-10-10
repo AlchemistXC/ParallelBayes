@@ -1,0 +1,376 @@
+{
+  "observed_utc": "2026-10-08T01:56:33.480685+00:00",
+  "release_id": 403644544,
+  "tag": "windows-completion-v2-20261005",
+  "draft": true,
+  "url": "https://github.com/AlchemistXC/ParallelBayes/releases/tag/untagged-a38d1dfe63e5584ac2ef",
+  "target_commitish": "ced54ef6ce945198339a138142dcdfede84f06bc",
+  "assets": [
+    {
+      "id": 615294423,
+      "name": "delivery-mechanism-1cfc83d.json",
+      "size": 6675,
+      "state": "uploaded",
+      "digest": "sha256:775c9ecb88c43aed9b3fb41113da7e877ba24c8125f39dbc26e2a2e33d04f1be"
+    },
+    {
+      "id": 616201466,
+      "name": "delivery-package.json",
+      "size": 932,
+      "state": "uploaded",
+      "digest": "sha256:d6b8d9098a5847ed18e6bc07949bed9c59af4aa9c8dcea3ce1233443ce1e99aa"
+    },
+    {
+      "id": 616147830,
+      "name": "delivery-runtime.json",
+      "size": 6375,
+      "state": "uploaded",
+      "digest": "sha256:8613fcb462b60cf9cd40e4fa8d2e03df9a34da9c303f06851c89c4b8aa6a8744"
+    },
+    {
+      "id": 618843797,
+      "name": "github-formal-v2-upload-receipt.json",
+      "size": 18835,
+      "state": "uploaded",
+      "digest": "sha256:5da436774a5fb483d05d5227c917ed77b70c763043bf832f3ef1de335d131eb1"
+    },
+    {
+      "id": 612497608,
+      "name": "mechanism-windows-pilot-v1-original-inputs.tar",
+      "size": 10823680,
+      "state": "uploaded",
+      "digest": "sha256:2b46eedc58067c920c8519cb4f99965bf944202f57392514d4643b847f9b9e5a"
+    },
+    {
+      "id": 612497609,
+      "name": "mechanism-windows-pilot-v1-original-inputs.tar.sha256",
+      "size": 113,
+      "state": "uploaded",
+      "digest": "sha256:13f3d3a15656a9ff770f7e887edb1aa7f95be8747735b49c2681c86745b0f8c2"
+    },
+    {
+      "id": 612384067,
+      "name": "source.bundle",
+      "size": 15812797,
+      "state": "uploaded",
+      "digest": "sha256:708b5a2db39fd2f20232e1c67a550ee62507d26b65adf536808a2fc8969fdf18"
+    },
+    {
+      "id": 612384017,
+      "name": "verification-final.json",
+      "size": 413,
+      "state": "uploaded",
+      "digest": "sha256:7c03db63280cb7aaf28c08caa084d9f93483a11a6998f1d118a46ad496162a4e"
+    },
+    {
+      "id": 615294243,
+      "name": "verification-mechanism-1cfc83d.json",
+      "size": 375,
+      "state": "uploaded",
+      "digest": "sha256:d725e3a377d2695aa344093f4d92e5809290bc540f217826e5860a5833e295a2"
+    },
+    {
+      "id": 616201589,
+      "name": "verification-package-supplement.json",
+      "size": 374,
+      "state": "uploaded",
+      "digest": "sha256:2892eb0ce62e1dd77497a8ef8bc3905d2e3aa3f83521366d67f980c3b81511f4"
+    },
+    {
+      "id": 616201301,
+      "name": "verification-package.json",
+      "size": 375,
+      "state": "uploaded",
+      "digest": "sha256:1c0f6db233b6d5d438f2363708bee71d14a9ac71ecd655e58b2ad0b4997b0689"
+    },
+    {
+      "id": 616147662,
+      "name": "verification-runtime-f9f305c.json",
+      "size": 418,
+      "state": "uploaded",
+      "digest": "sha256:8805ad1e89e668baff2f7e588eb6066178cb64ae201b159f11153360eb694a99"
+    },
+    {
+      "id": 616148070,
+      "name": "verification-runtime-supplement-b0582c3.json",
+      "size": 417,
+      "state": "uploaded",
+      "digest": "sha256:d961ac649326db1cddbc9a30a7f3d07e4eadd7d2d6ae494213c1ffaf6f90f2a3"
+    },
+    {
+      "id": 618828575,
+      "name": "windows-formal-adapter-validation-v1-20261007.tar",
+      "size": 987596800,
+      "state": "uploaded",
+      "digest": "sha256:ceb722b100570972c99684185bbf7cdeec1dd122efc863854d0c9168cbc2de62"
+    },
+    {
+      "id": 618831799,
+      "name": "windows-formal-adapter-validation-v1-20261007.tar.receipt.json",
+      "size": 415,
+      "state": "uploaded",
+      "digest": "sha256:07306edfa83b90c527f81609c6470a3dbacdb62f8bdddc1877294c3ba95a64a2"
+    },
+    {
+      "id": 618831756,
+      "name": "windows-formal-adapter-validation-v1-20261007.tar.sha256",
+      "size": 116,
+      "state": "uploaded",
+      "digest": "sha256:b3100c0ba265c866c03a1de375e661f7b65d975a000ff7ea4923649b8407c66e"
+    },
+    {
+      "id": 619360464,
+      "name": "windows-formal-freeze-source-7c5cdc955bf4.bundle",
+      "size": 23759848,
+      "state": "uploaded",
+      "digest": "sha256:98723a92d740bed0680583701bf27027f1a88a0e02f3230211e04a3382759bdc"
+    },
+    {
+      "id": 619360640,
+      "name": "windows-formal-freeze-source-7c5cdc955bf4.bundle.sha256",
+      "size": 116,
+      "state": "uploaded",
+      "digest": "sha256:31b7d94b7b73ce921477072aecb6408e110eebc599cd0bb72b1987c2c8d39eb0"
+    },
+    {
+      "id": 619360367,
+      "name": "windows-formal-freeze-verification-7c5cdc955bf4.json",
+      "size": 372,
+      "state": "uploaded",
+      "digest": "sha256:2c212766a3c9550e9c50eb6671d0db290ee9358c7b6800f736a5a4211e004218"
+    },
+    {
+      "id": 618832769,
+      "name": "windows-formal-v2-companion-members.json",
+      "size": 405,
+      "state": "uploaded",
+      "digest": "sha256:1fc9035a7c9e622e26200b98beaceef1fc4b3c8beeeb71195ec682772e8ea712"
+    },
+    {
+      "id": 618832176,
+      "name": "windows-formal-v2-delivery-costs.json",
+      "size": 5281,
+      "state": "uploaded",
+      "digest": "sha256:f03761ba8fce2860b73fb4c1962dade6d5f6a4459e29a5fdf4ad6ec32c595ff1"
+    },
+    {
+      "id": 618843743,
+      "name": "windows-formal-v2-delivery-final.json",
+      "size": 2991,
+      "state": "uploaded",
+      "digest": "sha256:1ea87bdecb101ed416667de02713c56d661d0db714c1665fecc7dd0ba0811f34"
+    },
+    {
+      "id": 618832104,
+      "name": "windows-formal-v2-delivery.json",
+      "size": 2644,
+      "state": "uploaded",
+      "digest": "sha256:94c03f66529d7df6f29f7dca65bd2ca4cd4a91c29c0dc05e782c508ca92dd769"
+    },
+    {
+      "id": 618831859,
+      "name": "windows-formal-v2-members.json",
+      "size": 409,
+      "state": "uploaded",
+      "digest": "sha256:4e62c4e66ae53520d3ea018e619f2c9ca31ad903d3a3af53915c380ea5241584"
+    },
+    {
+      "id": 618831919,
+      "name": "windows-formal-v2-relocation.json",
+      "size": 520,
+      "state": "uploaded",
+      "digest": "sha256:2e72ff8349d17a46e4602ebc36667cdc7d70c9c1bc1c4312831cdfe99fa97db1"
+    },
+    {
+      "id": 618832226,
+      "name": "windows-formal-v2-source-d094bcb.bundle",
+      "size": 22317648,
+      "state": "uploaded",
+      "digest": "sha256:a79a1d845d35be2561639ab6e88e0d979020f197109fbff048c43fa5a4390bd9"
+    },
+    {
+      "id": 618832364,
+      "name": "windows-formal-v2-source-d094bcb.bundle.sha256",
+      "size": 107,
+      "state": "uploaded",
+      "digest": "sha256:0f37b81af4dfcf5b284d73bd88f0f220a51034b1942fb5e00b570b287a3f2514"
+    },
+    {
+      "id": 618843861,
+      "name": "windows-formal-v2-source-final-5885c71.bundle",
+      "size": 22319485,
+      "state": "uploaded",
+      "digest": "sha256:2966f64ad757b69021a28fcdeb53877f51c943b9732009add40535c96725de92"
+    },
+    {
+      "id": 618844000,
+      "name": "windows-formal-v2-source-final-5885c71.bundle.sha256",
+      "size": 113,
+      "state": "uploaded",
+      "digest": "sha256:479070bbd05a3b0983a40ee584d7ab9d98d1bd5839ac359bffe1469ac25e1979"
+    },
+    {
+      "id": 618831988,
+      "name": "windows-formal-v2-summary.json",
+      "size": 1001585,
+      "state": "uploaded",
+      "digest": "sha256:ce0b21391fce83dcafd4ea5bdca70cf309c7a3fb4879f3f35ac88224beb7e724"
+    },
+    {
+      "id": 618843669,
+      "name": "windows-formal-v2-transport-members.json",
+      "size": 404,
+      "state": "uploaded",
+      "digest": "sha256:2abe2a631fbbeb19517b7ecfd0be092d1c4741c26e746ee84759a8a46639961a"
+    },
+    {
+      "id": 615294291,
+      "name": "windows-mechanism-1cfc83d.bundle",
+      "size": 17676295,
+      "state": "uploaded",
+      "digest": "sha256:25c23cf775fa6ca81cf78ae6118302e8a2ec5ec73cd05e7ff8974355c84ca276"
+    },
+    {
+      "id": 612383781,
+      "name": "windows-native-20261005T113131Z.tar",
+      "size": 76267520,
+      "state": "uploaded",
+      "digest": "sha256:bfd55d442fbb4137c54e573031781a95d75e0a86f20ccd4c8a994d338746efb9"
+    },
+    {
+      "id": 612383988,
+      "name": "windows-native-20261005T113131Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:60da2155fd929635681824230e58e4e3fca6a81284db8d1081a560fdda436553"
+    },
+    {
+      "id": 615292121,
+      "name": "windows-native-20261006T111324Z.tar",
+      "size": 186511360,
+      "state": "uploaded",
+      "digest": "sha256:ec69fd8032cae9198cd1eb7823f903eebb72bcc624a942b7da6373598b3d6ba7"
+    },
+    {
+      "id": 615294198,
+      "name": "windows-native-20261006T111324Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:0f75acf0c339c086084143e7ea89fd168f20e0f51bdbf4aa2ca6a47d80d1cf1e"
+    },
+    {
+      "id": 616145157,
+      "name": "windows-native-20261006T170711Z.tar",
+      "size": 1083330560,
+      "state": "uploaded",
+      "digest": "sha256:6ef0f6e299867d67b27cbd4067a062a30f3593894dc4b34c1da9086f80ae7274"
+    },
+    {
+      "id": 616147618,
+      "name": "windows-native-20261006T170711Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:41d665ed187d60b0b9eaf34fb40a9210b440dfca41dc4e64d5950c98ff1dce66"
+    },
+    {
+      "id": 616147871,
+      "name": "windows-native-20261006T171222Z.tar",
+      "size": 33792000,
+      "state": "uploaded",
+      "digest": "sha256:a1f5752ad98b4d69c55a342a4f360d3162f6f35b7e8fc3c2f9156fe14a2a0ddb"
+    },
+    {
+      "id": 616148031,
+      "name": "windows-native-20261006T171222Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:970c84c79ec7e8be81b8351c1a604111e46c02dd861aba57688f6ae625271387"
+    },
+    {
+      "id": 616201074,
+      "name": "windows-native-20261006T173502Z.tar",
+      "size": 49428480,
+      "state": "uploaded",
+      "digest": "sha256:9b8b805a4f4605541717f3644ff931e385156bf5f4ca009738a5a9f08d6017ce"
+    },
+    {
+      "id": 616201258,
+      "name": "windows-native-20261006T173502Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:b215df3dc57c5392be2da0775941917cb074b9baf33f250928dcdd601597d9d2"
+    },
+    {
+      "id": 616201508,
+      "name": "windows-native-20261006T173742Z.tar",
+      "size": 286720,
+      "state": "uploaded",
+      "digest": "sha256:53bf0afa96abaf094f6846cd3a0e29a56a96eea8cac0af8b513bd8003703ce8d"
+    },
+    {
+      "id": 616201553,
+      "name": "windows-native-20261006T173742Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:12d3769e0f4f0736f1fe4404a6a450811da602e78e0221092da08dc663464541"
+    },
+    {
+      "id": 618832414,
+      "name": "windows-native-20261007T134451Z.tar",
+      "size": 43284480,
+      "state": "uploaded",
+      "digest": "sha256:82a830104c39d9bfddb24d5f9783ab650a4a3b98ed3dc174355c933aff882337"
+    },
+    {
+      "id": 618832674,
+      "name": "windows-native-20261007T134451Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:1eeb0a53a386ae16576d7aa54a4ce3608476b70b97f6ae9341072c9336329569"
+    },
+    {
+      "id": 618843397,
+      "name": "windows-native-20261007T135234Z.tar",
+      "size": 22558720,
+      "state": "uploaded",
+      "digest": "sha256:6c6edeb49273e87d39b708132951a21f61273233c98b097fe069611fb76299df"
+    },
+    {
+      "id": 618843607,
+      "name": "windows-native-20261007T135234Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:de9e89ca558ee9f8263c4fa6cbccefc322e76e985a85a16358fcad238778f49a"
+    },
+    {
+      "id": 619359907,
+      "name": "windows-native-20261007T173931Z.tar",
+      "size": 57825280,
+      "state": "uploaded",
+      "digest": "sha256:1bcf67145ff4aaddfbf65557abf3fcb0c465fba4a4e8b4a9bf3c1779af2883d3"
+    },
+    {
+      "id": 619360259,
+      "name": "windows-native-20261007T173931Z.tar.sha256",
+      "size": 103,
+      "state": "uploaded",
+      "digest": "sha256:33440340d7884473faece2c03d9ee50e22120354726897b6512c2e1227d440c3"
+    },
+    {
+      "id": 616201345,
+      "name": "windows-package-source.bundle",
+      "size": 18023253,
+      "state": "uploaded",
+      "digest": "sha256:48b5eb8a9889dee8e76899f2362a16257a99f424f2316bae13aa1ecfde4b9b82"
+    },
+    {
+      "id": 616147704,
+      "name": "windows-runtime-source.bundle",
+      "size": 18665671,
+      "state": "uploaded",
+      "digest": "sha256:cf1d679049300c02ec763d9e551efbbc33c74c8e6046a3f24e644720aba3c2ba"
+    }
+  ],
+  "mutations": 0,
+  "credential_persisted": false
+}

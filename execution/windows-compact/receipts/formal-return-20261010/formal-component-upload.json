@@ -1,0 +1,1065 @@
+{
+  "assets": [
+    {
+      "bytes": 73565154,
+      "local_name": "manifest",
+      "release_name": "windows-compact-formal-3a37a89-v1-manifest.json",
+      "remote": {
+        "digest": "sha256:38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e",
+        "id": 626016815,
+        "name": "windows-compact-formal-3a37a89-v1-manifest.json",
+        "reused": false,
+        "size": 73565154,
+        "state": "uploaded"
+      },
+      "sha256": "38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000000.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000000.bin",
+      "remote": {
+        "digest": "sha256:7d20b77deba9905aa7431b04fac22ef449e0b2b57d1e1e77b04bf9000c2d0bc1",
+        "id": 626017419,
+        "name": "windows-compact-formal-3a37a89-v1-part-000000.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "7d20b77deba9905aa7431b04fac22ef449e0b2b57d1e1e77b04bf9000c2d0bc1"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000001.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000001.bin",
+      "remote": {
+        "digest": "sha256:35b5dcdca8fb9a605596fa346bf44be1afd131e070292cc7629285ef0e1725f8",
+        "id": 626019490,
+        "name": "windows-compact-formal-3a37a89-v1-part-000001.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "35b5dcdca8fb9a605596fa346bf44be1afd131e070292cc7629285ef0e1725f8"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000002.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000002.bin",
+      "remote": {
+        "digest": "sha256:1689884d95254c720d6f245dbbd560c373fe6128849147ed32d369d3d30aaccf",
+        "id": 626020561,
+        "name": "windows-compact-formal-3a37a89-v1-part-000002.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "1689884d95254c720d6f245dbbd560c373fe6128849147ed32d369d3d30aaccf"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000003.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000003.bin",
+      "remote": {
+        "digest": "sha256:f486d0601b24299e43793f944a8166582996114d7294b95b7f1abc21b7b69120",
+        "id": 626021704,
+        "name": "windows-compact-formal-3a37a89-v1-part-000003.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "f486d0601b24299e43793f944a8166582996114d7294b95b7f1abc21b7b69120"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000004.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000004.bin",
+      "remote": {
+        "digest": "sha256:75bf71a1f3763eed53e3d00230ebc00959670ec75eadf839f508f1b7b9abc17b",
+        "id": 626022945,
+        "name": "windows-compact-formal-3a37a89-v1-part-000004.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "75bf71a1f3763eed53e3d00230ebc00959670ec75eadf839f508f1b7b9abc17b"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000005.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000005.bin",
+      "remote": {
+        "digest": "sha256:b7d3ae106b302f86d2e2e5bbb0db0f1f79ef3fa96ee904abf16d6e2335132508",
+        "id": 626024286,
+        "name": "windows-compact-formal-3a37a89-v1-part-000005.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "b7d3ae106b302f86d2e2e5bbb0db0f1f79ef3fa96ee904abf16d6e2335132508"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000006.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000006.bin",
+      "remote": {
+        "digest": "sha256:6a22877ef584fed175e42faef6cc5ea225659b38b037488a359b5de21b5a6a72",
+        "id": 626025499,
+        "name": "windows-compact-formal-3a37a89-v1-part-000006.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "6a22877ef584fed175e42faef6cc5ea225659b38b037488a359b5de21b5a6a72"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000007.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000007.bin",
+      "remote": {
+        "digest": "sha256:f191bbbe8b2d864da554423889146f381ca1fe95c7d4b9efcfb72fdf236a94ea",
+        "id": 626026788,
+        "name": "windows-compact-formal-3a37a89-v1-part-000007.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "f191bbbe8b2d864da554423889146f381ca1fe95c7d4b9efcfb72fdf236a94ea"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000008.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000008.bin",
+      "remote": {
+        "digest": "sha256:2f01c9a934266364f3a5183b79001cd0cba008a402abce55f80263e08595527f",
+        "id": 626028591,
+        "name": "windows-compact-formal-3a37a89-v1-part-000008.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "2f01c9a934266364f3a5183b79001cd0cba008a402abce55f80263e08595527f"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000009.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000009.bin",
+      "remote": {
+        "digest": "sha256:c84235457946177722bdd8c6d2c602140e4e726c430feee2c386178a0ebd1415",
+        "id": 626030064,
+        "name": "windows-compact-formal-3a37a89-v1-part-000009.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "c84235457946177722bdd8c6d2c602140e4e726c430feee2c386178a0ebd1415"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000010.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000010.bin",
+      "remote": {
+        "digest": "sha256:2c3586ba05fdfea83617761614e22b184479cfd94380411f5367079ef8314f40",
+        "id": 626032184,
+        "name": "windows-compact-formal-3a37a89-v1-part-000010.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "2c3586ba05fdfea83617761614e22b184479cfd94380411f5367079ef8314f40"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000011.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000011.bin",
+      "remote": {
+        "digest": "sha256:a966264f92fb553a25ba3ab8eddb4b897451c8b1e878b327ad8cc99001dd01c5",
+        "id": 626033564,
+        "name": "windows-compact-formal-3a37a89-v1-part-000011.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "a966264f92fb553a25ba3ab8eddb4b897451c8b1e878b327ad8cc99001dd01c5"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000012.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000012.bin",
+      "remote": {
+        "digest": "sha256:e71a92e34526d25c36e9e7166f9298dcff846d1eaa464b63c3ab122d3d3d80d7",
+        "id": 626035404,
+        "name": "windows-compact-formal-3a37a89-v1-part-000012.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "e71a92e34526d25c36e9e7166f9298dcff846d1eaa464b63c3ab122d3d3d80d7"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000013.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000013.bin",
+      "remote": {
+        "digest": "sha256:5df299118f656db8403b1fda00b33c9676e889be960fd294283284f4fb735370",
+        "id": 626037036,
+        "name": "windows-compact-formal-3a37a89-v1-part-000013.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "5df299118f656db8403b1fda00b33c9676e889be960fd294283284f4fb735370"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000014.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000014.bin",
+      "remote": {
+        "digest": "sha256:af8855e01fc922288724490c6cd1dec14d81bad06eb67ff654b3cc6633433fb9",
+        "id": 626038366,
+        "name": "windows-compact-formal-3a37a89-v1-part-000014.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "af8855e01fc922288724490c6cd1dec14d81bad06eb67ff654b3cc6633433fb9"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000015.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000015.bin",
+      "remote": {
+        "digest": "sha256:e7d44e678fa82865871660f7590319406d093972e8c6821c235b37aba29d5879",
+        "id": 626039563,
+        "name": "windows-compact-formal-3a37a89-v1-part-000015.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "e7d44e678fa82865871660f7590319406d093972e8c6821c235b37aba29d5879"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000016.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000016.bin",
+      "remote": {
+        "digest": "sha256:358de8c3bea95934ac60af55ccfd08c9fc8334908de597d093f85f60d05ded0d",
+        "id": 626040913,
+        "name": "windows-compact-formal-3a37a89-v1-part-000016.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "358de8c3bea95934ac60af55ccfd08c9fc8334908de597d093f85f60d05ded0d"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000017.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000017.bin",
+      "remote": {
+        "digest": "sha256:8778948ac98a083f88f5e7b15b35fc9f85309cf7390f1b9a6115f7074ec1d709",
+        "id": 626042016,
+        "name": "windows-compact-formal-3a37a89-v1-part-000017.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "8778948ac98a083f88f5e7b15b35fc9f85309cf7390f1b9a6115f7074ec1d709"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000018.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000018.bin",
+      "remote": {
+        "digest": "sha256:92ad3d4bd27ba150cee600cdaff62a79bf31e1d28fdec6136a868d02c2570d23",
+        "id": 626043303,
+        "name": "windows-compact-formal-3a37a89-v1-part-000018.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "92ad3d4bd27ba150cee600cdaff62a79bf31e1d28fdec6136a868d02c2570d23"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000019.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000019.bin",
+      "remote": {
+        "digest": "sha256:fd584b238faa60cb41890a8eed1954b7ac42b6baa35494604fcfca01171ca71f",
+        "id": 626044422,
+        "name": "windows-compact-formal-3a37a89-v1-part-000019.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "fd584b238faa60cb41890a8eed1954b7ac42b6baa35494604fcfca01171ca71f"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000020.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000020.bin",
+      "remote": {
+        "digest": "sha256:cec23aa5c1e550b02a7fe2a3e036feba022e7a1f986cdec8d5153eab87694309",
+        "id": 626045556,
+        "name": "windows-compact-formal-3a37a89-v1-part-000020.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "cec23aa5c1e550b02a7fe2a3e036feba022e7a1f986cdec8d5153eab87694309"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000021.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000021.bin",
+      "remote": {
+        "digest": "sha256:df2cc4f8dd321270ca66a2e52e0763fc51288da31d0dcebdb762513bf0b162df",
+        "id": 626046673,
+        "name": "windows-compact-formal-3a37a89-v1-part-000021.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "df2cc4f8dd321270ca66a2e52e0763fc51288da31d0dcebdb762513bf0b162df"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000022.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000022.bin",
+      "remote": {
+        "digest": "sha256:60a6095ebbc013bdaf9e0216eba4e5364ee942dcec17eb58c1bac7d24f313e3e",
+        "id": 626048060,
+        "name": "windows-compact-formal-3a37a89-v1-part-000022.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "60a6095ebbc013bdaf9e0216eba4e5364ee942dcec17eb58c1bac7d24f313e3e"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000023.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000023.bin",
+      "remote": {
+        "digest": "sha256:090892b39b2641131e0884b111b6a435877c460b6668d4140eb0b76b10bb3d4d",
+        "id": 626048990,
+        "name": "windows-compact-formal-3a37a89-v1-part-000023.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "090892b39b2641131e0884b111b6a435877c460b6668d4140eb0b76b10bb3d4d"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000024.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000024.bin",
+      "remote": {
+        "digest": "sha256:d979658f0c2d1079efa6ccf5156181c72042d78c16fd96a1deff681598c4d964",
+        "id": 626051264,
+        "name": "windows-compact-formal-3a37a89-v1-part-000024.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "d979658f0c2d1079efa6ccf5156181c72042d78c16fd96a1deff681598c4d964"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000025.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000025.bin",
+      "remote": {
+        "digest": "sha256:83ab981b6a4aa260a24044f1773718fe0cb0be475855e360fb5fccaf8e29ea86",
+        "id": 626052874,
+        "name": "windows-compact-formal-3a37a89-v1-part-000025.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "83ab981b6a4aa260a24044f1773718fe0cb0be475855e360fb5fccaf8e29ea86"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000026.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000026.bin",
+      "remote": {
+        "digest": "sha256:58b8833f35abc2b26097438d1e6d99397c9d65d52d0dac1c4ce17639b55bce82",
+        "id": 626054184,
+        "name": "windows-compact-formal-3a37a89-v1-part-000026.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "58b8833f35abc2b26097438d1e6d99397c9d65d52d0dac1c4ce17639b55bce82"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000027.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000027.bin",
+      "remote": {
+        "digest": "sha256:190eebc329f5807a64683af1bdea9980297ce2222d2a4ee4e1df8934a673a32d",
+        "id": 626055500,
+        "name": "windows-compact-formal-3a37a89-v1-part-000027.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "190eebc329f5807a64683af1bdea9980297ce2222d2a4ee4e1df8934a673a32d"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000028.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000028.bin",
+      "remote": {
+        "digest": "sha256:57e6e7f9f2fc13905a6aa5ef1674644a158be8a31875c9e1dd43735ffb76842c",
+        "id": 626056430,
+        "name": "windows-compact-formal-3a37a89-v1-part-000028.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "57e6e7f9f2fc13905a6aa5ef1674644a158be8a31875c9e1dd43735ffb76842c"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000029.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000029.bin",
+      "remote": {
+        "digest": "sha256:0f0af898b28b178ced8c2a21d2840878189e2028221a64181182b461ba47e807",
+        "id": 626057332,
+        "name": "windows-compact-formal-3a37a89-v1-part-000029.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "0f0af898b28b178ced8c2a21d2840878189e2028221a64181182b461ba47e807"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000030.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000030.bin",
+      "remote": {
+        "digest": "sha256:20fd830ecebc9ca3ce07a67ede43b8bcce08d1b6f6e574a195fa6e1f98ef9f6d",
+        "id": 626058244,
+        "name": "windows-compact-formal-3a37a89-v1-part-000030.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "20fd830ecebc9ca3ce07a67ede43b8bcce08d1b6f6e574a195fa6e1f98ef9f6d"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000031.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000031.bin",
+      "remote": {
+        "digest": "sha256:f0f90d17a43c87c6efdb004bd67cfdaef21b0f50f49e0f871ee14ea99984ca63",
+        "id": 626059641,
+        "name": "windows-compact-formal-3a37a89-v1-part-000031.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "f0f90d17a43c87c6efdb004bd67cfdaef21b0f50f49e0f871ee14ea99984ca63"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000032.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000032.bin",
+      "remote": {
+        "digest": "sha256:e666bc3c8d18aa92ad81c420e69b350b4e59644674ffd897ca8bd1aa57ca948f",
+        "id": 626060599,
+        "name": "windows-compact-formal-3a37a89-v1-part-000032.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "e666bc3c8d18aa92ad81c420e69b350b4e59644674ffd897ca8bd1aa57ca948f"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000033.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000033.bin",
+      "remote": {
+        "digest": "sha256:29420246e78b4aa982299f2c52b1ceb4092004e58a9c43cd324a9d9970f300dd",
+        "id": 626061673,
+        "name": "windows-compact-formal-3a37a89-v1-part-000033.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "29420246e78b4aa982299f2c52b1ceb4092004e58a9c43cd324a9d9970f300dd"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000034.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000034.bin",
+      "remote": {
+        "digest": "sha256:1b9d93c60e1ace33a84e5aed884cd4ba769f602d415476acdee7d9d24d5182a8",
+        "id": 626062866,
+        "name": "windows-compact-formal-3a37a89-v1-part-000034.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "1b9d93c60e1ace33a84e5aed884cd4ba769f602d415476acdee7d9d24d5182a8"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000035.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000035.bin",
+      "remote": {
+        "digest": "sha256:534f4a4eac427c46205380374a13a6481a92d8acab707af7a9f6227c1ef3e356",
+        "id": 626064078,
+        "name": "windows-compact-formal-3a37a89-v1-part-000035.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "534f4a4eac427c46205380374a13a6481a92d8acab707af7a9f6227c1ef3e356"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000036.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000036.bin",
+      "remote": {
+        "digest": "sha256:66f0332b346bd017c660c193d7ecdbd5f438cd882e000f6a52ed0cf33fda93d8",
+        "id": 626065448,
+        "name": "windows-compact-formal-3a37a89-v1-part-000036.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "66f0332b346bd017c660c193d7ecdbd5f438cd882e000f6a52ed0cf33fda93d8"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000037.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000037.bin",
+      "remote": {
+        "digest": "sha256:ec9a2d7dd6a41126465ece04d4a13bbfd9e67699089245b651d2169b1140c8a2",
+        "id": 626066576,
+        "name": "windows-compact-formal-3a37a89-v1-part-000037.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "ec9a2d7dd6a41126465ece04d4a13bbfd9e67699089245b651d2169b1140c8a2"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000038.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000038.bin",
+      "remote": {
+        "digest": "sha256:ad34695233e83c20bb818cad269e504f1e9fa20ad73b0b6d283408f46b59d10e",
+        "id": 626067553,
+        "name": "windows-compact-formal-3a37a89-v1-part-000038.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "ad34695233e83c20bb818cad269e504f1e9fa20ad73b0b6d283408f46b59d10e"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000039.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000039.bin",
+      "remote": {
+        "digest": "sha256:0f82d3333b586fed4711f9bcc343e8d3c11c5b2475e0f71feffdaac1e986de47",
+        "id": 626068495,
+        "name": "windows-compact-formal-3a37a89-v1-part-000039.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "0f82d3333b586fed4711f9bcc343e8d3c11c5b2475e0f71feffdaac1e986de47"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000040.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000040.bin",
+      "remote": {
+        "digest": "sha256:7779b4c8d69176ca536043e34532e0344c5fcc5e8978cbb78c6e6002bd1a128f",
+        "id": 626069499,
+        "name": "windows-compact-formal-3a37a89-v1-part-000040.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "7779b4c8d69176ca536043e34532e0344c5fcc5e8978cbb78c6e6002bd1a128f"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000041.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000041.bin",
+      "remote": {
+        "digest": "sha256:9e88dd277a3af4b7ef3d59caa3cddb918a5904fce6dbd6533903e845fe4e061e",
+        "id": 626070541,
+        "name": "windows-compact-formal-3a37a89-v1-part-000041.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "9e88dd277a3af4b7ef3d59caa3cddb918a5904fce6dbd6533903e845fe4e061e"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000042.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000042.bin",
+      "remote": {
+        "digest": "sha256:748d5b1eac3338661a5ff5441e2d3fe342a4d2a88f2b77aef5323650ffa15f53",
+        "id": 626071551,
+        "name": "windows-compact-formal-3a37a89-v1-part-000042.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "748d5b1eac3338661a5ff5441e2d3fe342a4d2a88f2b77aef5323650ffa15f53"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000043.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000043.bin",
+      "remote": {
+        "digest": "sha256:649ec7bf9839fe452b6b6ff47edf5951deef2eea97195af2617d64a0da72119a",
+        "id": 626072455,
+        "name": "windows-compact-formal-3a37a89-v1-part-000043.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "649ec7bf9839fe452b6b6ff47edf5951deef2eea97195af2617d64a0da72119a"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000044.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000044.bin",
+      "remote": {
+        "digest": "sha256:c8657805b737e4ad66a974cbed5061b3b40b7b42beb3401a2a45c9461eca1460",
+        "id": 626073820,
+        "name": "windows-compact-formal-3a37a89-v1-part-000044.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "c8657805b737e4ad66a974cbed5061b3b40b7b42beb3401a2a45c9461eca1460"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000045.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000045.bin",
+      "remote": {
+        "digest": "sha256:5428773724682dc4903a7e5bf2f43266b1ac42e4cd5f5cf3323e2981114dc41e",
+        "id": 626075304,
+        "name": "windows-compact-formal-3a37a89-v1-part-000045.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "5428773724682dc4903a7e5bf2f43266b1ac42e4cd5f5cf3323e2981114dc41e"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000046.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000046.bin",
+      "remote": {
+        "digest": "sha256:687a9c3366f2c892359bc6fbebe46cd04c1c5cd1db3173d937371a72c0b04da4",
+        "id": 626076940,
+        "name": "windows-compact-formal-3a37a89-v1-part-000046.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "687a9c3366f2c892359bc6fbebe46cd04c1c5cd1db3173d937371a72c0b04da4"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000047.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000047.bin",
+      "remote": {
+        "digest": "sha256:3c81bd4395733636edbe26f2a4065332e90204682d43fc395857e8c5b4b012bc",
+        "id": 626078111,
+        "name": "windows-compact-formal-3a37a89-v1-part-000047.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "3c81bd4395733636edbe26f2a4065332e90204682d43fc395857e8c5b4b012bc"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000048.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000048.bin",
+      "remote": {
+        "digest": "sha256:730db7b4a9da5ddf1252b4629fb307688a186e0c59c149da3fdf5a03cca475cc",
+        "id": 626079451,
+        "name": "windows-compact-formal-3a37a89-v1-part-000048.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "730db7b4a9da5ddf1252b4629fb307688a186e0c59c149da3fdf5a03cca475cc"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000049.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000049.bin",
+      "remote": {
+        "digest": "sha256:5d98d023a988cc1cdd953c7033aac141a0c365e8f768e46d574239f29eb44ce4",
+        "id": 626081730,
+        "name": "windows-compact-formal-3a37a89-v1-part-000049.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "5d98d023a988cc1cdd953c7033aac141a0c365e8f768e46d574239f29eb44ce4"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000050.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000050.bin",
+      "remote": {
+        "digest": "sha256:1cabdbc7b54cf67582fbff9a3cdf202d3c93d7f2ec26661c11902c99b0c52fc4",
+        "id": 626082774,
+        "name": "windows-compact-formal-3a37a89-v1-part-000050.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "1cabdbc7b54cf67582fbff9a3cdf202d3c93d7f2ec26661c11902c99b0c52fc4"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000051.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000051.bin",
+      "remote": {
+        "digest": "sha256:4638b2c9f9cf6722dbde29a7528342f63c1ff43defaba6eba73949d58c7b46b2",
+        "id": 626083811,
+        "name": "windows-compact-formal-3a37a89-v1-part-000051.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "4638b2c9f9cf6722dbde29a7528342f63c1ff43defaba6eba73949d58c7b46b2"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000052.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000052.bin",
+      "remote": {
+        "digest": "sha256:3d1a32cd7bec56092a908440185db36d882d36548e89f8efac12081354737f19",
+        "id": 626084941,
+        "name": "windows-compact-formal-3a37a89-v1-part-000052.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "3d1a32cd7bec56092a908440185db36d882d36548e89f8efac12081354737f19"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000053.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000053.bin",
+      "remote": {
+        "digest": "sha256:7ea0f955ef828e7350fd82928cf6e09a22e3a4d48b2e8d924a034c8b1c5c9638",
+        "id": 626086171,
+        "name": "windows-compact-formal-3a37a89-v1-part-000053.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "7ea0f955ef828e7350fd82928cf6e09a22e3a4d48b2e8d924a034c8b1c5c9638"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000054.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000054.bin",
+      "remote": {
+        "digest": "sha256:91c115bdf7af6c268aeeec8c818f8a900c0f161af5e3e2953cf8525d54c63667",
+        "id": 626087175,
+        "name": "windows-compact-formal-3a37a89-v1-part-000054.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "91c115bdf7af6c268aeeec8c818f8a900c0f161af5e3e2953cf8525d54c63667"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000055.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000055.bin",
+      "remote": {
+        "digest": "sha256:660801dfcaf84519e04bc855cb98fb07d2a26976ec28e0906c704ae1a041beca",
+        "id": 626088364,
+        "name": "windows-compact-formal-3a37a89-v1-part-000055.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "660801dfcaf84519e04bc855cb98fb07d2a26976ec28e0906c704ae1a041beca"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000056.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000056.bin",
+      "remote": {
+        "digest": "sha256:b3aba48529a47e798eca9f1dea150eca6a741bc2fe2587651e64a2b9f3d15caf",
+        "id": 626089949,
+        "name": "windows-compact-formal-3a37a89-v1-part-000056.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "b3aba48529a47e798eca9f1dea150eca6a741bc2fe2587651e64a2b9f3d15caf"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000057.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000057.bin",
+      "remote": {
+        "digest": "sha256:b53be7c0c1685f496cbe5b12ba5a1c576f8f366dcbdf7d6eaa65950696314fc1",
+        "id": 626091016,
+        "name": "windows-compact-formal-3a37a89-v1-part-000057.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "b53be7c0c1685f496cbe5b12ba5a1c576f8f366dcbdf7d6eaa65950696314fc1"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000058.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000058.bin",
+      "remote": {
+        "digest": "sha256:f12af8e05b5b9b2403a0a22ba591d488357761efd68a64eb189cbae0f469a038",
+        "id": 626092300,
+        "name": "windows-compact-formal-3a37a89-v1-part-000058.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "f12af8e05b5b9b2403a0a22ba591d488357761efd68a64eb189cbae0f469a038"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000059.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000059.bin",
+      "remote": {
+        "digest": "sha256:75774c3a712801d79897f196f247c398d27b8a42fa7d50f8815dda8001a6e788",
+        "id": 626093489,
+        "name": "windows-compact-formal-3a37a89-v1-part-000059.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "75774c3a712801d79897f196f247c398d27b8a42fa7d50f8815dda8001a6e788"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000060.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000060.bin",
+      "remote": {
+        "digest": "sha256:18fa266514eef41d87a36f3495f2ca87b28d66db7ecea4d4b73269a91ad1ad4a",
+        "id": 626094835,
+        "name": "windows-compact-formal-3a37a89-v1-part-000060.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "18fa266514eef41d87a36f3495f2ca87b28d66db7ecea4d4b73269a91ad1ad4a"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000061.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000061.bin",
+      "remote": {
+        "digest": "sha256:cb8f06b1ea1560e67694abc726deb7229983deeee5226f937fdf26cdb5bbca8b",
+        "id": 626096168,
+        "name": "windows-compact-formal-3a37a89-v1-part-000061.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "cb8f06b1ea1560e67694abc726deb7229983deeee5226f937fdf26cdb5bbca8b"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000062.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000062.bin",
+      "remote": {
+        "digest": "sha256:ab6c1e95b8c9716c9dd291d20b77cbbe7edbb875833da836720701a32e935cc3",
+        "id": 626097733,
+        "name": "windows-compact-formal-3a37a89-v1-part-000062.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "ab6c1e95b8c9716c9dd291d20b77cbbe7edbb875833da836720701a32e935cc3"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000063.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000063.bin",
+      "remote": {
+        "digest": "sha256:0a8159146cd3134881f6c995b810ed999956295d0054e7d9b8c5941306942cb6",
+        "id": 626099293,
+        "name": "windows-compact-formal-3a37a89-v1-part-000063.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "0a8159146cd3134881f6c995b810ed999956295d0054e7d9b8c5941306942cb6"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000064.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000064.bin",
+      "remote": {
+        "digest": "sha256:cc6d2a7d8a206f14a062e209928ac94befde41484d4cc4fb0484052ddabb5e5c",
+        "id": 626100638,
+        "name": "windows-compact-formal-3a37a89-v1-part-000064.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "cc6d2a7d8a206f14a062e209928ac94befde41484d4cc4fb0484052ddabb5e5c"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000065.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000065.bin",
+      "remote": {
+        "digest": "sha256:6feee679566b0a5ca6dee65249797e5d368b339860843aaa52e962c6b590b4a4",
+        "id": 626101532,
+        "name": "windows-compact-formal-3a37a89-v1-part-000065.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "6feee679566b0a5ca6dee65249797e5d368b339860843aaa52e962c6b590b4a4"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000066.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000066.bin",
+      "remote": {
+        "digest": "sha256:497cae24e69c2dfb91643ffccefe5356e5aa8299c169ee155fcc382534736332",
+        "id": 626102626,
+        "name": "windows-compact-formal-3a37a89-v1-part-000066.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "497cae24e69c2dfb91643ffccefe5356e5aa8299c169ee155fcc382534736332"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000067.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000067.bin",
+      "remote": {
+        "digest": "sha256:ac54de0f0d9909ddb32cc984ea0294318d11eaaceb63169d9b37da79219c8d83",
+        "id": 626103889,
+        "name": "windows-compact-formal-3a37a89-v1-part-000067.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "ac54de0f0d9909ddb32cc984ea0294318d11eaaceb63169d9b37da79219c8d83"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000068.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000068.bin",
+      "remote": {
+        "digest": "sha256:e584b65b86b583b64306b6270dc0465f131c91f6945d9fea0b28fb924bc259d6",
+        "id": 626105119,
+        "name": "windows-compact-formal-3a37a89-v1-part-000068.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "e584b65b86b583b64306b6270dc0465f131c91f6945d9fea0b28fb924bc259d6"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000069.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000069.bin",
+      "remote": {
+        "digest": "sha256:0691bdaa4a00bd28c187906d30b848f9dce08d311035c904d64f60d88b920585",
+        "id": 626106412,
+        "name": "windows-compact-formal-3a37a89-v1-part-000069.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "0691bdaa4a00bd28c187906d30b848f9dce08d311035c904d64f60d88b920585"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000070.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000070.bin",
+      "remote": {
+        "digest": "sha256:aa0f88855b6aaf43d3c654312b9fa97f241e846cc7708213dac63d1217c088db",
+        "id": 626107776,
+        "name": "windows-compact-formal-3a37a89-v1-part-000070.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "aa0f88855b6aaf43d3c654312b9fa97f241e846cc7708213dac63d1217c088db"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000071.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000071.bin",
+      "remote": {
+        "digest": "sha256:d02d3f1775c163009fd2d47ce9e16493186197c6c7acf6a79f963840c059c484",
+        "id": 626108768,
+        "name": "windows-compact-formal-3a37a89-v1-part-000071.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "d02d3f1775c163009fd2d47ce9e16493186197c6c7acf6a79f963840c059c484"
+    },
+    {
+      "bytes": 268435456,
+      "local_name": "part-000072.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000072.bin",
+      "remote": {
+        "digest": "sha256:ecdb1c18882761c82ed8c18a9aebd4175e0adc435cc6c857f9cb294e087f9dcc",
+        "id": 626109682,
+        "name": "windows-compact-formal-3a37a89-v1-part-000072.bin",
+        "reused": false,
+        "size": 268435456,
+        "state": "uploaded"
+      },
+      "sha256": "ecdb1c18882761c82ed8c18a9aebd4175e0adc435cc6c857f9cb294e087f9dcc"
+    },
+    {
+      "bytes": 75440256,
+      "local_name": "part-000073.bin",
+      "release_name": "windows-compact-formal-3a37a89-v1-part-000073.bin",
+      "remote": {
+        "digest": "sha256:586778a1d9816f24257468e05497def4960def011dc9e51040f5beab2c2f19a4",
+        "id": 626110857,
+        "name": "windows-compact-formal-3a37a89-v1-part-000073.bin",
+        "reused": false,
+        "size": 75440256,
+        "state": "uploaded"
+      },
+      "sha256": "586778a1d9816f24257468e05497def4960def011dc9e51040f5beab2c2f19a4"
+    }
+  ],
+  "blocks": 74,
+  "bytes": 19671228544,
+  "elapsed_seconds": 2458.050282,
+  "files": 180582,
+  "fully_validated_metadata_reused": true,
+  "independent_Mac_receive": false,
+  "manifest_file_sha256": "38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e",
+  "new_sampler_calls": 0,
+  "original_members_removed": 0,
+  "status": "complete_component_remote_sha_verified",
+  "whole_tar_created": false
+}

@@ -1,0 +1,15 @@
+{
+  "Observed": "2026-10-09T21:42:37.9600127+09:00",
+  "CacheExecutionReceipts": 1024,
+  "ActualCallsQualified": 1024,
+  "SourceStatus": "All six scientific phases terminal; actual native jobs absent",
+  "MainValid": 3741,
+  "MainNumericalFailure": 42,
+  "MainUnclassifiedOutputFailure": 105,
+  "MainPlanned": 3888,
+  "CacheAvailable": 256,
+  "CacheCallsPlanned": 1024,
+  "NotStarted": 0,
+  "ScientificActiveProcesses": 0,
+  "PostprocessRoot": "D:/workspace/ParallelBayes/cr/output/compact-postprocess-v2"
+}

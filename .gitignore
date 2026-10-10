@@ -132,6 +132,20 @@ __pycache__/
 
 # Current research-completion state and small, first-party diagnostic handoff.
 !/execution/COMPLETION-WORK-PACKAGES.md
+!/execution/windows-compact/
+/execution/windows-compact/*
+!/execution/windows-compact/WORK-PACKAGES.md
+!/execution/windows-compact/*.json
+!/execution/windows-compact/*.md
+!/execution/windows-compact/receipts/
+!/execution/windows-compact/receipts/**
+!/execution/windows-compact/formal-results/
+!/execution/windows-compact/formal-results/*/
+!/execution/windows-compact/formal-results/*.json
+!/execution/windows-compact/formal-results/*.csv
+!/execution/windows-compact/formal-results/*.md
+!/execution/windows-compact/formal-results/*/*.csv
+!/execution/windows-compact/formal-results/*/*.svg
 !/handoff/windows-completion/
 
 # Current question-organized manuscript and companion, first-party PDFs

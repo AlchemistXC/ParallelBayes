@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="18" failures="0" skipped="2" tests="73" time="70.623" timestamp="2026-10-08T09:50:16.076246+09:00" hostname="KURO"><testcase classname="tests.handoff.test_formal_execution" name="test_complete_owned_frames_keep_cache_distinct_and_original_capsule" time="25.260" /><testcase classname="tests.handoff.test_formal_execution" name="test_phase_denominator_retains_failures_interruptions_and_missing" time="0.363" /><testcase classname="tests.handoff.test_formal_execution" name="test_wells_cache_request_binds_original_input_and_external_snapshot" time="0.010" /><testcase classname="tests.handoff.test_formal_execution" name="test_canonical_json_row_sorting_preserves_summary_but_not_changed_schedule" time="0.034" /><testcase classname="tests.handoff.test_formal_execution" name="test_phase_rejects_duplicate_altered_and_wrong_eligibility" time="0.005" /><testcase classname="tests.handoff.test_formal_execution" name="test_worker_binding_requires_native_gate_and_frozen_protocol" time="0.032" /><testcase classname="tests.handoff.test_formal_execution" name="test_old_technical_and_expanded_validation_cannot_use_new_worker" time="0.029" /><testcase classname="tests.handoff.test_formal_execution" name="test_acceptance_passed_flag_cannot_hide_incomplete_or_skipped_runtime" time="0.021" /><testcase classname="tests.handoff.test_formal_execution" name="test_native_worker_and_controller_refuse_before_loading_or_writing" time="0.021"><skipped type="pytest.skip" message="Non-Windows refusal check only">D:\workspace\ParallelBayes\c\tests\handoff\test_formal_execution.py:171: Non-Windows refusal check only</skipped></testcase><testcase classname="tests.handoff.test_formal_freeze" name="test_saved_inputs_resume_without_rng_and_reject_raw_mutation" time="0.030" /><testcase classname="tests.handoff.test_formal_freeze" name="test_interrupted_partial_input_is_retained_not_regenerated" time="0.017" /><testcase classname="tests.handoff.test_formal_freeze" name="test_resource_refusal_precedes_intent_and_rng" time="0.020" /><testcase classname="tests.handoff.test_formal_freeze" name="test_explicit_unsealed_recovery_keeps_original_and_same_address" time="0.036" /><testcase classname="tests.handoff.test_formal_freeze" name="test_binding_paths_and_unsealed_shape_are_rejected" time="0.006" /><testcase classname="tests.handoff.test_formal_freeze" name="test_maximum_declared_input_roundtrip_is_bounded" time="2.078" /><testcase classname="tests.handoff.test_formal_freeze" name="test_complete_protocol_keeps_frame_and_partial_inventory_cannot_seal" time="24.959" /><testcase classname="tests.handoff.test_formal_freeze" name="test_native_prepare_refuses_other_platform_before_output" time="0.000"><skipped type="pytest.skip" message="Non-Windows refusal check only">D:\workspace\ParallelBayes\c\tests\handoff\test_formal_freeze.py:158: Non-Windows refusal check only</skipped></testcase><testcase classname="tests.handoff.test_formal_native_evidence" name="test_relocated_success_and_three_nonadditive_cost_scopes" time="0.103" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_every_ended_failure_keeps_known_cost_and_no_samples[numerical_failure]" time="0.037" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_every_ended_failure_keeps_known_cost_and_no_samples[resource_failure]" time="0.039" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_every_ended_failure_keeps_known_cost_and_no_samples[output_failure_unclassified]" time="0.042" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_every_ended_failure_keeps_known_cost_and_no_samples[infrastructure_interruption]" time="0.038" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_cache_output_is_measurement_only_and_cannot_retry" time="0.081" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_reconciled_interruption_retry_preserves_unknown_time" time="0.075" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_saved_numeric_failure_cannot_be_relabelled_or_retried" time="0.080" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_registered_prelaunch_is_not_run_but_missing_export_is_an_error" time="0.014" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_active_history_cannot_be_promoted_to_ended_by_a_status_summary" time="0.032" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_consistently_rehashed_but_incompatible_metadata_is_rejected[source]" time="0.027" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_consistently_rehashed_but_incompatible_metadata_is_rejected[job]" time="0.043" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_consistently_rehashed_but_incompatible_metadata_is_rejected[eligibility]" time="0.042" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_consistently_rehashed_but_incompatible_metadata_is_rejected[binding]" time="0.044" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_consistently_rehashed_but_incompatible_metadata_is_rejected[lineage]" time="0.026" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_missing_and_unlisted_files_and_escape_paths_are_rejected" time="0.036" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_recovery_unknown_observation_and_imputed_seconds_rejected" time="0.052" /><testcase classname="tests.handoff.test_formal_native_evidence" name="test_complete_artificial_gate_uses_the_shared_reader_and_rejects_wrong_job" time="7.064" /><testcase classname="tests.handoff.test_formal_frame_contract" name="test_actual_finite_freeze_visits_all_51_slots_without_invented_outcomes" time="2.136"><error message="failed on setup with &quot;formal_freeze.FreezeConflict: Validation design/environment/dependency lock differs&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def prepared(tmp_path_factory):
+        root=tmp_path_factory.mktemp('finite-freeze')/'bundle'
+        catalog=json.loads((ROOT/'benchmark/protocols/inference-budget-pilot-mac-v1.json').read_text())
+        design=validation_design(catalog); fixture=b'artificial metadata fixture, no native execution\n'
+        digest=hashlib.sha256(fixture).hexdigest(); lock='artificial-python-lock\n'
+        binding=dict(source_commit='c'*40,source_branch='artificial-fixture',source_files={'fixture.py':digest},
+            validation_test_sources={name:digest for name in TEST_FILES},external_files={'LICENSE':digest},
+            environment=dict(fixture_only=True,pip_freeze_sha256=hashlib.sha256(lock.encode()).hexdigest(),
+                             rscript=r'D:\fixture\Rscript.exe',r_library=r'D:\fixture\R-library'),
+            required_versions={'numpy':'fixture'},required_R_version='fixture',required_R_posterior='fixture',
+            windows_limits=dict(rss_bytes=8*1024**3,job_commit_bytes=12*1024**3,disk_start_bytes=4*1024**3,
+                                disk_floor_bytes=1024**3,poll_seconds=.2),minimum_available_ram_bytes=12*1024**3,
+            shared_host_lock=r'D:\fixture\host.lock')
+        archive=InputArchive(root,VALIDATION_ID,design['input_requirements'],binding)
+        for name,value in {'catalog.json':catalog,'validation-design.json':design,'environment.json':binding['environment'],
+                           'address-check.json':{'fixture_only':True}}.items():atomic_json(root/name,value)
+        (root/'pip-freeze.txt').write_text(lock);(root/'pip-check.txt').write_text('Artificial fixture\n')
+        for name in ['source/fixture.py','external/LICENSE',*['source/'+s for s in TEST_FILES]]:
+            path=root/name;path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(fixture)
+        for name in design['input_requirements']:archive.prepare(name,disk_floor_bytes=1024**2)
+&gt;       marker=seal_validation(root,archive,catalog,binding)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\handoff\test_formal_validation.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\completion\formal_validation.py:116: in seal_validation
+    _required(directory, design, binding)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+directory = WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-temp01/finite-freeze0/bundle')
+design = {'cache_allocation': {'allocation_sha256': 'b47a009fbea0c1b8a468b904256699e12cf57690c99b7bcf98fcb7a17aeeb6d4', 'batch_...memory_limit_mb': 2048, ...}, 'design_sha256': 'e1711868724b03a0053a6f927b288b4405247c77cdf4175db55e2a0eb8f8891f', ...}
+binding = {'environment': {'fixture_only': True, 'pip_freeze_sha256': 'd41bc62ff614eae0aa3351a29b43a0d6517b3e662e1a71e417dbfa38a...57e0795a026765143a6aaf84de216b3a'}, 'minimum_available_ram_bytes': 12884901888, 'required_R_posterior': 'fixture', ...}
+
+    def _required(directory, design, binding):
+        names = {'archive.json', 'catalog.json', 'validation-design.json', 'environment.json',
+                 'pip-freeze.txt', 'pip-check.txt', 'address-check.json'}
+        for prefix, key in [('source/', 'source_files'), ('external/', 'external_files'), ('source/', 'validation_test_sources')]:
+            names.update(prefix+n for n in binding[key])
+        for name in design['input_requirements']:
+            names.update(('inputs/'+name, 'receipts/'+name+'.json', 'intents/'+name+'.json'))
+        for name in names:
+            if not relative_file(directory, name).is_file():
+                raise FreezeConflict('Missing validation freeze asset: '+name)
+        for prefix, key in [('source/', 'source_files'), ('external/', 'external_files'), ('source/', 'validation_test_sources')]:
+            for name, digest in binding[key].items():
+                if file_hash(relative_file(directory, prefix+name)) != digest:
+                    raise FreezeConflict('Validation source or data snapshot changed: '+name)
+        if set(binding['validation_test_sources']) != set(TEST_FILES):
+            raise FreezeConflict('All native runtime test/fixture sources are required')
+        if (json.loads((directory/'validation-design.json').read_text()) != design or
+                json.loads((directory/'environment.json').read_text()) != binding['environment'] or
+                file_hash(directory/'pip-freeze.txt') != binding['environment']['pip_freeze_sha256']):
+&gt;           raise FreezeConflict('Validation design/environment/dependency lock differs')
+E           formal_freeze.FreezeConflict: Validation design/environment/dependency lock differs
+
+scripts\completion\formal_validation.py:105: FreezeConflict</error></testcase><testcase classname="tests.handoff.test_formal_frame_contract" name="test_reference_rebuilt_in_original_coordinates_matches_frozen_means" time="0.109" /><testcase classname="tests.handoff.test_formal_frame_contract" name="test_resigned_reference_value_still_must_match_reconstruction" time="0.083" /><testcase classname="tests.handoff.test_formal_report" name="test_small_frame_requires_fixture_and_preserves_all_qualifications" time="1.152" /><testcase classname="tests.handoff.test_formal_report" name="test_ratio_intervals_are_exponentiated_scale_and_not_log_bounds" time="0.031" /><testcase classname="tests.handoff.test_formal_report" name="test_ratio_interval_losing_width_in_exp_is_preserved_but_not_drawn" time="0.030" /><testcase classname="tests.handoff.test_formal_report" name="test_nuts_unknown_tree_depth_is_not_zero_and_divergence_denominator_is_draws" time="0.036" /><testcase classname="tests.handoff.test_formal_report" name="test_corrupted_or_inconsistent_statistics_are_rejected[tamper]" time="0.049" /><testcase classname="tests.handoff.test_formal_report" name="test_corrupted_or_inconsistent_statistics_are_rejected[extra]" time="0.090" /><testcase classname="tests.handoff.test_formal_report" name="test_corrupted_or_inconsistent_statistics_are_rejected[semantic]" time="0.123" /><testcase classname="tests.handoff.test_formal_report" name="test_partial_model_and_technical_scope_never_make_formal_figures" time="0.275" /><testcase classname="tests.handoff.test_formal_report" name="test_diagnostics_cannot_promote_failed_task" time="0.006" /><testcase classname="tests.handoff.test_formal_report" name="test_artificial_source_requires_explicit_marking_even_before_shape_checks" time="0.126" /><testcase classname="tests.handoff.test_formal_report" name="test_rendered_figures_keep_zeros_unresolved_reference_and_fixture_watermark" time="2.899" /><testcase classname="tests.handoff.test_formal_report" name="test_full_layout_is_explicitly_artificial_and_keeps_all_configuration_slots" time="0.890" /><testcase classname="tests.handoff.test_formal_analyze" name="test_full_declared_frame_and_resume_do_not_rerun_R_or_replay" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_analyze" name="test_changed_analysis_environment_and_saved_output_refused" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_analyze" name="test_reader_error_is_not_sampler_failure_and_other_slots_continue" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_analyze" name="test_uncommitted_analysis_is_retained_and_not_automatically_restarted" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_analyze" name="test_foreign_analysis_rows_cannot_disappear_from_frame" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_analyze" name="test_nested_receipts_and_index_output_are_not_excluded" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_analyze" name="test_checked_scalar_projection_retains_unknown_rows_and_rejects_resigned_change" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_statistics" name="test_full_frames_share_indices_keep_failure_and_unknown_costs" time="0.933" /><testcase classname="tests.handoff.test_formal_statistics" name="test_reference_classes_and_constant_diagnostics_are_not_promoted" time="0.015" /><testcase classname="tests.handoff.test_formal_statistics" name="test_cached_calls_remain_selected_inputs_and_all_failed_costs_stay" time="0.010" /><testcase classname="tests.handoff.test_formal_statistics" name="test_evidence_gaps_block_affected_phase_without_dropping_rows" time="0.014" /><testcase classname="tests.handoff.test_formal_statistics" name="test_technical_gate_never_produces_formal_intervals" time="0.005" /><testcase classname="tests.handoff.test_formal_science" name="test_actual_arrays_and_R_rebuild_after_relocation" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_science" name="test_rehashed_scientific_faults_cannot_pass_saved_success[accept]" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_science" name="test_rehashed_scientific_faults_cannot_pass_saved_success[transform]" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_science" name="test_rehashed_scientific_faults_cannot_pass_saved_success[tape]" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_science" name="test_rehashed_scientific_faults_cannot_pass_saved_success[device]" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_science" name="test_failed_output_retains_cost_and_never_extracts_samples" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_science" name="test_task_binding_and_source_change_refused_before_analysis" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_science" name="test_missing_diagnostics_and_constant_values_are_not_ideal_convergence" time="0.000" /><testcase classname="tests.handoff.test_formal_science" name="test_cached_replays_remain_measurements_and_partial_cost_survives[False]" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_science" name="test_cached_replays_remain_measurements_and_partial_cost_survives[True]" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase><testcase classname="tests.handoff.test_formal_science" name="test_nuts_arrays_adaptation_and_unknown_tree_depth_are_separate_contract" time="0.000"><error message="failed on setup with &quot;AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite&#10;assert None&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/workspace/ParallelBayes/c/output/compact-development-v1/regression-tem...rkspace/ParallelBayes/c/output/compact-development-v1/regression-temp01'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def specimen(tmp_path_factory):
+&gt;       assert RSCRIPT,'Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite'
+E       AssertionError: Set PB_READER_RSCRIPT to an installed Rscript with posterior and jsonlite
+E       assert None
+
+tests\handoff\test_formal_science.py:47: AssertionError</error></testcase></testsuite></testsuites>

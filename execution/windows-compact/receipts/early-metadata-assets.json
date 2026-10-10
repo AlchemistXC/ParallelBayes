@@ -1,0 +1,26 @@
+{
+  "schema": "compact-draft-assets-v1",
+  "scope": "Early protocol/gate metadata only; formal task framework still active; complete scientific arrays not yet uploaded; not independent Mac intake",
+  "source_commit": "3a37a891896faedc62c0d6af185bfad77696054f",
+  "delivery_source_commit": "a51df8b0b92a69fab4ebb273efdd1149a3298872",
+  "assets": [
+    {
+      "name": "windows-compact-protocol-3a37a89.json",
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\protocol.json",
+      "bytes": 1471400,
+      "sha256": "f7f2cc616900bbe1d9989ae3c54c270e36f7acac61e68178be96cd1cd701683e"
+    },
+    {
+      "name": "windows-compact-FROZEN-3a37a89.json",
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\FROZEN.json",
+      "bytes": 652,
+      "sha256": "2d155e8a979cb11fcec7396f7e71296da5f4e666d37107822a44f39a224a0fa0"
+    },
+    {
+      "name": "windows-compact-native-acceptance-3a37a89.json",
+      "path": "D:\\workspace\\ParallelBayes\\c\\output\\compact-adapter-validation-v1-attempt02\\native-acceptance.json",
+      "bytes": 406930,
+      "sha256": "fae450b9170efac576370f8b59e632b44bb78df8ea036aadb459a9a1928e307b"
+    }
+  ]
+}

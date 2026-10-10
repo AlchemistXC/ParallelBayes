@@ -1,0 +1,21 @@
+{
+  "Purpose": "Operational planning estimate only; no scientific speedup or time-to-accuracy inference",
+  "Observed": "2026-10-09T00:05:34.8552685+09:00",
+  "Basis": "Disjoint phase outer wall; completed tasks include retained failures; nested task/audit costs are not added",
+  "MainTerminal": 2296,
+  "MainRemaining": 1592,
+  "CacheTerminal": 64,
+  "CacheRemaining": 192,
+  "MainObservedSeconds": 38900.97663430002,
+  "CacheObservedSeconds": 3547.7881740999874,
+  "MainEstimateHours": 7.492541957245166,
+  "CacheEstimateHours": 2.9564901450833228,
+  "ApproximateRangeHours": [
+    10,
+    12
+  ],
+  "IsConfidenceInterval": false,
+  "IncludesFullAnalysisAndUpload": false,
+  "TotalTimeLimit": null,
+  "Caveats": "Different model difficulty, resource interruptions and resume verification overhead can change duration; no completion guarantee"
+}

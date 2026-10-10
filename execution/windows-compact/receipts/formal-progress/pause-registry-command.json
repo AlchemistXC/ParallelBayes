@@ -1,0 +1,18 @@
+{
+  "started": "2026-10-08T22:19:57.5497988+09:00",
+  "finished": "2026-10-08T22:20:01.4208070+09:00",
+  "seconds": 3.8686978,
+  "exit_code": 0,
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "D:/workspace/ParallelBayes/cr/scripts/windows/snapshot_quiescent_registry.py",
+    "--root",
+    "D:/workspace/ParallelBayes/c",
+    "--lock",
+    "D:/workspace/ParallelBayes/output/runtime/windows-shared-host.lock",
+    "--output",
+    "D:/workspace/ParallelBayes/cr/output/compact-user-pause-registry-v1"
+  ],
+  "no_sampling": true,
+  "reason": "User requested pause"
+}

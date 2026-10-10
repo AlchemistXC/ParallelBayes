@@ -1,0 +1,52 @@
+{
+  "files": {
+    "candidate.json": {
+      "source": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\2518b3bc5624ab57f7944d8f\\attempt-0001\\candidate.json",
+      "bytes": 4352,
+      "sha256": "ae2233533398d7b04d8053fd3276d67d8d5983c353eb31a356aa664286483728"
+    },
+    "worker-result.json": {
+      "source": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\2518b3bc5624ab57f7944d8f\\attempt-0001\\worker-result.json",
+      "bytes": 1313,
+      "sha256": "00ff47b6f4b3eecd294d8450e5b008fc3131e396c187235441501f5390876863"
+    },
+    "ordinary-process.json": {
+      "source": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\2518b3bc5624ab57f7944d8f\\attempt-0001\\ordinary-process.json",
+      "bytes": 347,
+      "sha256": "b7b0ec776bc29265ebe09f70cde8f895f9881f49bff5c3abda15af1aa3f48f08"
+    },
+    "ordinary-phases.json": {
+      "source": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\2518b3bc5624ab57f7944d8f\\attempt-0001\\ordinary-phases.json",
+      "bytes": 1176,
+      "sha256": "e617d79220f78d5395ef7d7ad1c43ace7637cbcd7563556da8af3a966cec86fa"
+    },
+    "phases.json": {
+      "source": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\2518b3bc5624ab57f7944d8f\\attempt-0001\\phases.json",
+      "bytes": 1492,
+      "sha256": "b50481b0319db6ed9a7bc84551061f754d9ef98daba275b1a2ac243553bd7de2"
+    },
+    "external-audit.json": {
+      "source": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\2518b3bc5624ab57f7944d8f\\attempt-0001\\external-audit.json",
+      "bytes": 286,
+      "sha256": "385497985cf1e0f85438aeb4ebbc4d7f191dde1193d10d5f75c6f33946c5e74d"
+    },
+    "state.json": {
+      "source": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\2518b3bc5624ab57f7944d8f\\attempt-0001\\state.json",
+      "bytes": 5140,
+      "sha256": "82214a83b6e18f259531fbe6ab090bd2d41f0f0507e12529e32886e778f21dcf"
+    },
+    "job.json": {
+      "source": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\2518b3bc5624ab57f7944d8f\\attempt-0001\\job.json",
+      "bytes": 525,
+      "sha256": "2fe017447b0df990d1ce58e2386c059efcc3e42285e69516303a5c6ed2a71501"
+    },
+    "completion.json": {
+      "source": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\2518b3bc5624ab57f7944d8f\\attempt-0001\\completion.json",
+      "bytes": 89,
+      "sha256": "ac5f9e02568695446d60f4ed86c6049fbd140000734d25d726d833d75066bc2a"
+    }
+  },
+  "raw_ownership_log_remains": "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\2518b3bc5624ab57f7944d8f\\attempt-0001\\ownership.ndjson",
+  "original_category": "output_failure_unclassified",
+  "retry_performed": false
+}

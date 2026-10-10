@@ -38,7 +38,7 @@ def prepared(tmp_path_factory):
     archive=InputArchive(root,VALIDATION_ID,design['input_requirements'],binding)
     for name,value in {'catalog.json':catalog,'validation-design.json':design,'environment.json':binding['environment'],
                        'address-check.json':{'fixture_only':True}}.items():atomic_json(root/name,value)
-    (root/'pip-freeze.txt').write_text(lock);(root/'pip-check.txt').write_text('Artificial fixture\n')
+    (root/'pip-freeze.txt').write_bytes(lock.encode());(root/'pip-check.txt').write_bytes(b'Artificial fixture\n')
     for name in ['source/fixture.py','external/LICENSE',*['source/'+s for s in TEST_FILES]]:
         path=root/name;path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(fixture)
     for name in design['input_requirements']:archive.prepare(name,disk_floor_bytes=1024**2)

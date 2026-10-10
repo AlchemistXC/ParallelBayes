@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="1.797" timestamp="2026-10-08T11:12:09.825328+09:00" hostname="KURO"><testcase classname="tests.delivery.test_compact_report_scope" name="test_formal_compact_cache_caption_does_not_claim_bca_interval" time="1.013"><failure message="AssertionError: assert ('缓存' in '\n\n![G1 / execution costs](costs.png)\n\n三个口径分别回答已准备内核、普通工作流和含审计执行的成本问题。RWM比较Online Picard与顺序执行，MALA比较quasi-DEER与顺序执行。点为同核顺序/时间成本比的配对几何均值，线为比值尺度的逐点95% BCa区间；右侧标注共同有效重复数，星号表示点不可用。 空心标记表示区间不可判定；缺失点不补零。完整分母、缺失原因、参考类别及配对四格表见来源数据。\n\n')">tmp_path = WindowsPath('D:/workspace/ParallelBayes/cr/output/report-scope-temp01/test_formal_compact_cache_capt0')
+
+    def test_formal_compact_cache_caption_does_not_claim_bca_interval(tmp_path):
+        write_report(tmp_path,receipt('formal_inference'))
+        md=(tmp_path/'report.md').read_text(encoding='utf-8')
+        caption=md.split('### G1 / execution costs')[1].split('来源：')[0]
+&gt;       assert '缓存' in caption and '不生成区间' in caption
+E       AssertionError: assert ('缓存' in '\n\n![G1 / execution costs](costs.png)\n\n三个口径分别回答已准备内核、普通工作流和含审计执行的成本问题。RWM比较Online Picard与顺序执行，MALA比较quasi-DEER与顺序执行。点为同核顺序/时间成本比的配对几何均值，线为比值尺度的逐点95% BCa区间；右侧标注共同有效重复数，星号表示点不可用。 空心标记表示区间不可判定；缺失点不补零。完整分母、缺失原因、参考类别及配对四格表见来源数据。\n\n')
+
+tests\delivery\test_compact_report_scope.py:19: AssertionError</failure></testcase><testcase classname="tests.delivery.test_compact_report_scope" name="test_compact_technical_report_does_not_claim_24_formal_repeats" time="0.009"><failure message="AssertionError: assert ('新正式研究为24次' not in '# ParallelB...是统计正确性的证明。\n'&#10;  &#10;  '新正式研究为24次' is contained here:&#10;    保留，未合入新重复。新正式研究为24次完整四链重复、1024/4096两个固定预算；缓存每格4份输入仅作描述，区间留空，失败不以成功子调用替代。&#10;  ?           +++++++++&#10;    &#10;    本报告从给定统计清单重建，没有重新采样、运行R诊断或估计新的区间。完整研究或后验收敛不由本报告自动判定。&#10;    ...&#10;  &#10;  ...Full output truncated (25 lines hidden), use '-vv' to show)">tmp_path = WindowsPath('D:/workspace/ParallelBayes/cr/output/report-scope-temp01/test_compact_technical_report_0')
+
+    def test_compact_technical_report_does_not_claim_24_formal_repeats(tmp_path):
+        write_report(tmp_path,receipt('technical_batch_validation'))
+        md=(tmp_path/'report.md').read_text(encoding='utf-8')
+        tex=(tmp_path/'report.tex').read_text(encoding='utf-8')
+&gt;       assert '新正式研究为24次' not in md and '新24次完整四链重复' not in tex
+E       AssertionError: assert ('新正式研究为24次' not in '# ParallelB...是统计正确性的证明。\n'
+E         
+E         '新正式研究为24次' is contained here:
+E           保留，未合入新重复。新正式研究为24次完整四链重复、1024/4096两个固定预算；缓存每格4份输入仅作描述，区间留空，失败不以成功子调用替代。
+E         ?           +++++++++
+E           
+E           本报告从给定统计清单重建，没有重新采样、运行R诊断或估计新的区间。完整研究或后验收敛不由本报告自动判定。
+E           ...
+E         
+E         ...Full output truncated (25 lines hidden), use '-vv' to show)
+
+tests\delivery\test_compact_report_scope.py:27: AssertionError</failure></testcase></testsuite></testsuites>

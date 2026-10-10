@@ -134,7 +134,8 @@ def summarize_model(rows,reference,*,name,protocol,allocation,output):
         task=dict(primary_byid[probe['primary_task_id']],id=probe['id'],
                   protocol_sha256=protocol['protocol_sha256'],artifact_kind='cache_measurement')
         if byid[probe['id']]['task']!=task:raise ValueError('Cache scalar task differs from frozen allocation')
-    if not primary or not probes:raise ValueError('Declared model requires main tasks and selected cache probes')
+    compact=allocation.get('schema')=='compact-cache-allocation-v1'
+    if not primary or (not probes and not compact):raise ValueError('Declared model requires main tasks and selected cache probes')
     n=len(reference['names'])
     if not n or any(len(reference[k])!=n for k in ('means','kinds','mcse')):
         raise ValueError('Reference function frame differs')
@@ -174,14 +175,20 @@ def summarize_model(rows,reference,*,name,protocol,allocation,output):
             result.update(function=function,reference=ref,comparison_kinds=pairs)
             save_report(output/f'function-{j}.json',result)
         summary.update(main_statistics='completed',planned_repetitions=len(ids),resampling=plan.receipt())
-    if all(r['disposition']=='analyzed' for r in cache):
+    if not probes and compact:summary['cache_statistics']='not_prespecified_for_this_model'
+    elif all(r['disposition']=='analyzed' for r in cache):
         bindings={};observations={}
         for row in cache:
             item=row['cache'];pid=row['task']['id'];bindings[pid]=item['binding']
             observations[pid]=dict(item['observation'],task_outcome=row['outcome'])
-        plan=create_cache_plan(allocation,protocol['tasks'],name);save_plan(plan,output/'cache-resampling')
-        save_report(output/'cache-costs.json',analyze_cache_probes(allocation,protocol['tasks'],plan,bindings,observations))
-        summary.update(cache_statistics='completed',cache_resampling=plan.receipt())
+        if compact:
+            from compact_cache_summary import analyze as analyze_compact_cache
+            save_report(output/'cache-costs.json',analyze_compact_cache(allocation,protocol['tasks'],name,bindings,observations))
+            summary.update(cache_statistics='completed',cache_resampling=None,cache_intervals_generated=False)
+        else:
+            plan=create_cache_plan(allocation,protocol['tasks'],name);save_plan(plan,output/'cache-resampling')
+            save_report(output/'cache-costs.json',analyze_cache_probes(allocation,protocol['tasks'],plan,bindings,observations))
+            summary.update(cache_statistics='completed',cache_resampling=plan.receipt())
     atomic_json(output/'SUMMARY.json',summary)
     return summary
 

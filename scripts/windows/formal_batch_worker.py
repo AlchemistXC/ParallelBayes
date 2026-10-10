@@ -37,7 +37,7 @@ def payload(request,c):
     return values
 
 
-def ordinary(request_path,output):
+def ordinary(request_path,output,*,request_loader=request_data):
     import numpy as np
     import torch
     from inference_targets import build_target
@@ -48,7 +48,7 @@ def ordinary(request_path,output):
     from parallelbayes.torch_backend.sampling import sample,sync
     output=Path(output);ledger=PhaseLedger(output/'ordinary-phases.json')
     with ledger.phase('source_environment_input_target'):
-        request,c=request_data(request_path);task=c['task'];ctrl=c['controls']
+        request,c=request_loader(request_path);task=c['task'];ctrl=c['controls']
         torch.set_num_threads(ctrl['torch_threads']);torch.set_num_interop_threads(1)
         values=payload(request,c)
         from job_objects import Job,identity
@@ -115,13 +115,13 @@ def ordinary(request_path,output):
         timing_components_additive_to_process_wall=False))
 
 
-def audited(request_path,output):
+def audited(request_path,output,*,request_loader=request_data,ordinary_worker=None):
     from measured_workflow import ordinary_process,audit_candidate
     output=Path(output);ledger=PhaseLedger(output/'phases.json')
     with ledger.phase('task_contract_validation'):
-        request,c=request_data(request_path);task=c['task'];ctrl=c['controls']
+        request,c=request_loader(request_path);task=c['task'];ctrl=c['controls']
     with ledger.phase('ordinary_process_start_through_exit'):
-        timing=ordinary_process([sys.executable,str(Path(__file__)),'ordinary',str(request_path),str(output)],output)
+        timing=ordinary_process([sys.executable,str(Path(ordinary_worker or __file__)),'ordinary',str(request_path),str(output)],output)
     atomic_json(output/'ordinary-process.json',timing)
     if timing['return_code']==3 and (output/'ordinary-resource-failure.json').exists():
         atomic_json(output/'worker-result.json',dict(status='failed',samples_eligible=False,failure_category='resource_failure',

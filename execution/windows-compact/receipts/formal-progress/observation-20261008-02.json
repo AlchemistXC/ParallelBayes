@@ -1,0 +1,452 @@
+{
+  "schema": "compact-live-observation-v1",
+  "observed_utc": "2026-10-08T02:10:31.777046+00:00",
+  "execution_source": "3a37a891896faedc62c0d6af185bfad77696054f",
+  "original_protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+  "scope": "Registered compact phases only; live observations are not immutable terminal inventories",
+  "planned_main": 3888,
+  "planned_cache": 256,
+  "planned_cache_calls": 1024,
+  "prior_study_repetitions_merged": 0,
+  "phases": [
+    {
+      "batch": 0,
+      "phase": "main",
+      "planned": 1296,
+      "terminal": 140,
+      "outcomes": {
+        "valid": 131,
+        "output_failure_unclassified": 8,
+        "numerical_failure": 1
+      },
+      "progress": {
+        "invocation": "b19afab660b748ee873edc7d47742fd2",
+        "last_task": "8b0a0868a0b7e0de3f92eb6d",
+        "newly_executed": 140,
+        "phase_closed": false,
+        "remaining": 1156,
+        "visited": 140
+      },
+      "phase_closed": false,
+      "unvisited_including_possible_current": 1156
+    },
+    {
+      "batch": 0,
+      "phase": "cache",
+      "planned": 64,
+      "terminal": 0,
+      "outcomes": {},
+      "phase_closed": false,
+      "not_started": 64
+    },
+    {
+      "batch": 1,
+      "phase": "main",
+      "planned": 1296,
+      "terminal": 0,
+      "outcomes": {},
+      "phase_closed": false,
+      "not_started": 1296
+    },
+    {
+      "batch": 1,
+      "phase": "cache",
+      "planned": 64,
+      "terminal": 0,
+      "outcomes": {},
+      "phase_closed": false,
+      "not_started": 64
+    },
+    {
+      "batch": 2,
+      "phase": "main",
+      "planned": 1296,
+      "terminal": 0,
+      "outcomes": {},
+      "phase_closed": false,
+      "not_started": 1296
+    },
+    {
+      "batch": 2,
+      "phase": "cache",
+      "planned": 128,
+      "terminal": 0,
+      "outcomes": {},
+      "phase_closed": false,
+      "not_started": 128
+    }
+  ],
+  "managers": [
+    {
+      "expected": {
+        "creation_filetime": 134358966443663979,
+        "member_of_owned_job": null,
+        "pid": 19900
+      },
+      "actual": {
+        "pid": 19900,
+        "creation_filetime": 134358966443663979,
+        "member_of_owned_job": null
+      },
+      "state": "same_live_identity",
+      "finished": null
+    }
+  ],
+  "jobs": [
+    {
+      "phase": "batch-0-main",
+      "state": "present",
+      "job_name": "Local\\ParallelBayes-compact-command-21d439f8da774dc396920cd9fa95d78a",
+      "active_processes": 8,
+      "total_processes": 1171,
+      "members": [
+        {
+          "pid": 26452,
+          "creation_filetime": 134358966551898887,
+          "member_of_owned_job": true,
+          "rss_bytes": 5058560,
+          "command": [
+            "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+            "D:\\workspace\\ParallelBayes\\c\\scripts\\windows\\compact_batch.py",
+            "run",
+            "--bundle",
+            "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1",
+            "--batch",
+            "0",
+            "--phase",
+            "main",
+            "--native-acceptance",
+            "D:\\workspace\\ParallelBayes\\c\\output\\compact-adapter-validation-v1-attempt02\\native-acceptance.json"
+          ],
+          "parent_pid": 19900
+        },
+        {
+          "pid": 30176,
+          "creation_filetime": 134358966551971946,
+          "member_of_owned_job": true,
+          "rss_bytes": 7487488,
+          "command": [
+            "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+            "0x4"
+          ],
+          "parent_pid": 26452
+        },
+        {
+          "pid": 7704,
+          "creation_filetime": 134358966552073189,
+          "member_of_owned_job": true,
+          "rss_bytes": 1211604992,
+          "command": [
+            "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "D:\\workspace\\ParallelBayes\\c\\scripts\\windows\\compact_batch.py",
+            "run",
+            "--bundle",
+            "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1",
+            "--batch",
+            "0",
+            "--phase",
+            "main",
+            "--native-acceptance",
+            "D:\\workspace\\ParallelBayes\\c\\output\\compact-adapter-validation-v1-attempt02\\native-acceptance.json"
+          ],
+          "parent_pid": 26452
+        },
+        {
+          "pid": 7860,
+          "creation_filetime": 134358989991388387,
+          "member_of_owned_job": true,
+          "rss_bytes": 4980736,
+          "command": [
+            "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+            "D:\\workspace\\ParallelBayes\\c\\scripts\\windows\\compact_worker.py",
+            "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\5038530cc10a2e37b40855f7\\attempt-0001\\request.json",
+            "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\5038530cc10a2e37b40855f7\\attempt-0001"
+          ],
+          "parent_pid": 7704
+        },
+        {
+          "pid": 21720,
+          "creation_filetime": 134358989991464264,
+          "member_of_owned_job": true,
+          "rss_bytes": 7401472,
+          "command": [
+            "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+            "0x4"
+          ],
+          "parent_pid": 7860
+        },
+        {
+          "pid": 26120,
+          "creation_filetime": 134358989997750821,
+          "member_of_owned_job": true,
+          "rss_bytes": 4980736,
+          "command": [
+            "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+            "D:\\workspace\\ParallelBayes\\c\\scripts\\windows\\compact_worker.py",
+            "ordinary",
+            "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\5038530cc10a2e37b40855f7\\attempt-0001\\request.json",
+            "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\5038530cc10a2e37b40855f7\\attempt-0001"
+          ],
+          "parent_pid": 14072
+        },
+        {
+          "pid": 14072,
+          "creation_filetime": 134358989991576676,
+          "member_of_owned_job": true,
+          "rss_bytes": 97751040,
+          "command": [
+            "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "D:\\workspace\\ParallelBayes\\c\\scripts\\windows\\compact_worker.py",
+            "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\5038530cc10a2e37b40855f7\\attempt-0001\\request.json",
+            "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\5038530cc10a2e37b40855f7\\attempt-0001"
+          ],
+          "parent_pid": 7860
+        },
+        {
+          "pid": 13172,
+          "creation_filetime": 134358989997847847,
+          "member_of_owned_job": true,
+          "rss_bytes": 1371996160,
+          "command": [
+            "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "D:\\workspace\\ParallelBayes\\c\\scripts\\windows\\compact_worker.py",
+            "ordinary",
+            "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\5038530cc10a2e37b40855f7\\attempt-0001\\request.json",
+            "D:\\workspace\\ParallelBayes\\c\\output\\windows-compact-inference-v1\\formal-runs\\batch-00\\main\\tasks\\5038530cc10a2e37b40855f7\\attempt-0001"
+          ],
+          "parent_pid": 26120
+        }
+      ],
+      "sampled_rss_bytes": 2711261184,
+      "job_cpu_seconds": 4779.203125,
+      "kernel_peak_job_commit_bytes": 16787148800,
+      "hard_job_commit_limit_bytes": 0,
+      "rss_scope": "Sampled sum of resident pages, shared pages may count repeatedly; polling peak can miss spikes",
+      "commit_scope": "Kernel job commitment, distinct from RSS and CUDA device allocation"
+    }
+  ],
+  "failures": [
+    {
+      "task": {
+        "artifact_kind": "posterior",
+        "batch": 0,
+        "budget": 4096,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "2518b3bc5624ab57f7944d8f",
+        "input": "L2-rep0005.npz",
+        "kernel": "nuts",
+        "model": "L2",
+        "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+        "replicate": 5,
+        "workflow": "cpu-nuts-spawn_chains"
+      },
+      "outcome": "output_failure_unclassified",
+      "samples_eligible": false,
+      "measurement_available": false,
+      "attempts": [
+        "attempt-0001"
+      ],
+      "history_export_sha256": "2dcac40b7968c37749a888024d47f286adacad5e61322402c9daf6f9b5ca4d12"
+    },
+    {
+      "task": {
+        "artifact_kind": "posterior",
+        "batch": 0,
+        "budget": 4096,
+        "device": "cpu",
+        "executor": "quasi_deer",
+        "id": "33e2ca296a5e8ff170853377",
+        "input": "H1-rep0004.npz",
+        "kernel": "mala",
+        "model": "H1",
+        "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+        "replicate": 4,
+        "workflow": "cpu-mala-quasi_deer"
+      },
+      "outcome": "numerical_failure",
+      "samples_eligible": false,
+      "measurement_available": false,
+      "attempts": [
+        "attempt-0001"
+      ],
+      "history_export_sha256": "7982b0dccc2851e54fa84a2d910561acbd2b5c32e8bd5e0abe4fe3445f8b13bd"
+    },
+    {
+      "task": {
+        "artifact_kind": "posterior",
+        "batch": 0,
+        "budget": 4096,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "4bd166b10537e7004fcf60b4",
+        "input": "H2-rep0000.npz",
+        "kernel": "nuts",
+        "model": "H2",
+        "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+        "replicate": 0,
+        "workflow": "cpu-nuts-spawn_chains"
+      },
+      "outcome": "output_failure_unclassified",
+      "samples_eligible": false,
+      "measurement_available": false,
+      "attempts": [
+        "attempt-0001"
+      ],
+      "history_export_sha256": "3830500e0f15c5d7380de89d39546b26d9370a2527d63d4fa529f8a647790574"
+    },
+    {
+      "task": {
+        "artifact_kind": "posterior",
+        "batch": 0,
+        "budget": 4096,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "5b32ccd6e891518fdce3753b",
+        "input": "L1-rep0003.npz",
+        "kernel": "nuts",
+        "model": "L1",
+        "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+        "replicate": 3,
+        "workflow": "cpu-nuts-spawn_chains"
+      },
+      "outcome": "output_failure_unclassified",
+      "samples_eligible": false,
+      "measurement_available": false,
+      "attempts": [
+        "attempt-0001"
+      ],
+      "history_export_sha256": "8493ce37aee7ae529e658ce75ff06cd8b60d9153f9af8888830552f44ebe4111"
+    },
+    {
+      "task": {
+        "artifact_kind": "posterior",
+        "batch": 0,
+        "budget": 4096,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "8b9233918258fd15cb0bd300",
+        "input": "M1-rep0000.npz",
+        "kernel": "nuts",
+        "model": "M1",
+        "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+        "replicate": 0,
+        "workflow": "cpu-nuts-spawn_chains"
+      },
+      "outcome": "output_failure_unclassified",
+      "samples_eligible": false,
+      "measurement_available": false,
+      "attempts": [
+        "attempt-0001"
+      ],
+      "history_export_sha256": "0c24396ab6aee909611d1795445fd5a475cc76df6669d55da23aefa3299c097b"
+    },
+    {
+      "task": {
+        "artifact_kind": "posterior",
+        "batch": 0,
+        "budget": 4096,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "b83e6512c0c053bad74a3852",
+        "input": "L2-rep0006.npz",
+        "kernel": "nuts",
+        "model": "L2",
+        "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+        "replicate": 6,
+        "workflow": "cpu-nuts-spawn_chains"
+      },
+      "outcome": "output_failure_unclassified",
+      "samples_eligible": false,
+      "measurement_available": false,
+      "attempts": [
+        "attempt-0001"
+      ],
+      "history_export_sha256": "425d4ddd930fa8f6c6a15e6d1c07901f6852988e31691a31a71fb452c34b5600"
+    },
+    {
+      "task": {
+        "artifact_kind": "posterior",
+        "batch": 0,
+        "budget": 4096,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "bfe4c0f9245158687e2de2dd",
+        "input": "H1-rep0005.npz",
+        "kernel": "nuts",
+        "model": "H1",
+        "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+        "replicate": 5,
+        "workflow": "cpu-nuts-spawn_chains"
+      },
+      "outcome": "output_failure_unclassified",
+      "samples_eligible": false,
+      "measurement_available": false,
+      "attempts": [
+        "attempt-0001"
+      ],
+      "history_export_sha256": "5b674d264f5ed18453726fb6288335d2f7e0bf0dbc0c1ba3779e29bc2d53b53f"
+    },
+    {
+      "task": {
+        "artifact_kind": "posterior",
+        "batch": 0,
+        "budget": 4096,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "ea2c80626ac8c5eb6ddd48ad",
+        "input": "H1-rep0000.npz",
+        "kernel": "nuts",
+        "model": "H1",
+        "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+        "replicate": 0,
+        "workflow": "cpu-nuts-spawn_chains"
+      },
+      "outcome": "output_failure_unclassified",
+      "samples_eligible": false,
+      "measurement_available": false,
+      "attempts": [
+        "attempt-0001"
+      ],
+      "history_export_sha256": "f75b9e5707e136ca18a9e91d1c7bd487073144a4946b9a89983fcab08122d75b"
+    },
+    {
+      "task": {
+        "artifact_kind": "posterior",
+        "batch": 0,
+        "budget": 4096,
+        "device": "cpu",
+        "executor": "spawn_chains",
+        "id": "ef3a8fd89468d839d421f843",
+        "input": "M1-rep0007.npz",
+        "kernel": "nuts",
+        "model": "M1",
+        "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+        "replicate": 7,
+        "workflow": "cpu-nuts-spawn_chains"
+      },
+      "outcome": "output_failure_unclassified",
+      "samples_eligible": false,
+      "measurement_available": false,
+      "attempts": [
+        "attempt-0001"
+      ],
+      "history_export_sha256": "c526843517d168bc2787a74794946e8e37d95757d1264291607cf495b2127382"
+    }
+  ],
+  "volumes": {
+    "C": {
+      "total": 2047228243968,
+      "used": 429821997056,
+      "free": 1617406246912
+    },
+    "D": {
+      "total": 2000381014016,
+      "used": 161332023296,
+      "free": 1839048990720
+    }
+  },
+  "known_terminal_invocation_seconds": 2313.8865099000395,
+  "active_phase_wall_seconds": null,
+  "cost_notes": "Known terminal invocation durations only. Active/unfinished outer durations remain unknown; nested durations are not added."
+}

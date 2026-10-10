@@ -1,0 +1,36 @@
+{
+  "command": [
+    "D:/workspace/ParallelBayes/.venv-win-torch/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "tests/handoff/test_formal_execution.py",
+    "tests/handoff/test_formal_freeze.py",
+    "tests/handoff/test_formal_native_evidence.py",
+    "tests/handoff/test_formal_frame_contract.py",
+    "tests/handoff/test_formal_report.py",
+    "tests/handoff/test_formal_analyze.py",
+    "tests/handoff/test_formal_statistics.py",
+    "tests/handoff/test_formal_science.py",
+    "-q",
+    "--basetemp",
+    "output/compact-development-v1/regression-temp01",
+    "--junitxml",
+    "output/compact-development-v1/regression01.xml"
+  ],
+  "cwd": "D:\\workspace\\ParallelBayes\\c",
+  "batch": "D:\\workspace\\ParallelBayes\\c\\output\\compact-development-v1",
+  "source_commit": "9eac03fe67122aa893ffd9b849896b83bdaf93bf",
+  "recorder_sha256": "b39f3143d07d37e5d443d00003c5e7fb408754d5880061165f1312301b4c8970",
+  "started_utc": "2026-10-08T00:50:15.895320+00:00",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH": "D:\\workspace\\ParallelBayes\\c\\r-package\\inst\\python"
+  },
+  "pid": 2936,
+  "exit_code": 1,
+  "elapsed_seconds": 70.94024899997748,
+  "ended_utc": "2026-10-08T00:51:26.831811+00:00",
+  "log_sha256": "5ca9a0bbc09bc2b7aafc1955fb467df3a278b2de223b2faadfcf79fc35edd118"
+}

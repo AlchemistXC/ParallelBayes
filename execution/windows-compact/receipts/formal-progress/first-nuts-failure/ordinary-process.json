@@ -1,0 +1,8 @@
+{
+  "boundary": "Before child process creation through wait for its exit; includes imports, model/input, sampling, transform, ordinary output and diagnostics",
+  "logs_opening_included": false,
+  "nested_sampler_timings_additive": false,
+  "ordinary_process_wall_seconds": 17.970242699957453,
+  "outer_audit_included": false,
+  "return_code": 0
+}

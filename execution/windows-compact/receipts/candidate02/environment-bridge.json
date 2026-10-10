@@ -1,0 +1,10 @@
+{
+  "OldFreezeHash": "98344db2f40da80379cdfcac64d4f3da11534f01bcdd945544aad4766b365e56",
+  "ActualFreezeHash": "796a6e23b5bbdfc8d82b62ffd904a1b78cc2b0905e8439b337394af222517f9b",
+  "OriginalMarkerHash": "5e8ed0b284b1ef83977fcea0ce45c16349bbf8c1f0eb249be238f8aea547999c",
+  "ActualGPU": "GPU-b814f223-61d0-62ed-6672-dbed5145c818, NVIDIA GeForce RTX 5080, 616.56, 16303 MiB",
+  "NativePython": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "CUDABuild": "13.0",
+  "EnvironmentUpgraded": false,
+  "MetadataNote": "Editable source HEAD changed outside frozen execution tree; capture new complete environment; do not resume old formal grid"
+}

@@ -1,0 +1,12 @@
+{
+  "pid": 22196,
+  "creation_filetime": 134360232598594564,
+  "command": [
+    "C:\\Users\\chenh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "D:/workspace/ParallelBayes/cr/output/compact_postprocess.py",
+    "D:/workspace/ParallelBayes/cr/output/compact-postprocess-v2"
+  ],
+  "held_native_handle": true,
+  "expected_script": "D:\\workspace\\ParallelBayes\\cr\\output\\compact_postprocess.py",
+  "expected_output": "D:\\workspace\\ParallelBayes\\cr\\output\\compact-postprocess-v2"
+}

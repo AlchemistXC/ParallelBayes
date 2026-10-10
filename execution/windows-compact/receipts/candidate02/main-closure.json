@@ -1,0 +1,29 @@
+{
+  "batch": 0,
+  "cache_replays_add_statistical_repetitions": false,
+  "closed": true,
+  "closed_is_convergence": false,
+  "controller_seconds": 283.7228713000077,
+  "counts": {
+    "active": 0,
+    "infrastructure_interruption": 0,
+    "measurement_available": 0,
+    "not_run": 0,
+    "numerical_failure": 0,
+    "output_failure_unclassified": 0,
+    "resource_failure": 0,
+    "valid": 18
+  },
+  "formal_inference_complete": false,
+  "invocation": "D:\\workspace\\ParallelBayes\\c\\output\\compact-adapter-validation-v1-attempt02\\driver-invocations\\1e5c795d0e3845d48e4aa6df26b04ed8",
+  "missing": 0,
+  "newly_executed": 18,
+  "outcome_frame_sha256": "e5d00b7c1ca08bedb077aaecde022df712ee2ad50eea8e792fe4c17e54d26084",
+  "phase": "main",
+  "planned": 18,
+  "protocol_sha256": "8e578edbc14dedfe8993cc014d27e48ed90aff236ab70de99466088c6488bc52",
+  "status": "closed",
+  "status_summary_is_process_proof": false,
+  "verify_only": false,
+  "visited": 18
+}

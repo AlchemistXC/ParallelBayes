@@ -1,0 +1,19 @@
+{
+  "breakaway_permitted": false,
+  "job_handle_inherited": false,
+  "kill_on_last_close": true,
+  "launch": "PROC_THREAD_ATTRIBUTE_JOB_LIST + CREATE_SUSPENDED",
+  "limits": {
+    "disk_floor_bytes": 1073741824,
+    "disk_start_bytes": 4294967296,
+    "job_commit_bytes": 12884901888,
+    "poll_seconds": 0.2,
+    "rss_bytes": 8589934592
+  },
+  "manager": {
+    "creation_filetime": 134358966552073189,
+    "member_of_owned_job": null,
+    "pid": 7704
+  },
+  "name": "Local\\ParallelBayes-df9400fc95114123a7dea4a375c99c2e"
+}

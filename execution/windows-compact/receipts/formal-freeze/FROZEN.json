@@ -1,0 +1,15 @@
+{
+  "cache_probes": 256,
+  "formal_inference_complete": false,
+  "formal_scientific_repetitions": 24,
+  "identity": "windows-compact-inference-v1",
+  "inputs": 216,
+  "main_tasks": 3888,
+  "manifest_sha256": "84f350d2a1015d61eda51a6ff9fe6afdfbc285c75df86dc2121b890243b5e784",
+  "native_execution_gate_required": true,
+  "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+  "sampling_authorized_by_this_document": false,
+  "schema": "compact-study-freeze-v1",
+  "source_commit": "3a37a891896faedc62c0d6af185bfad77696054f",
+  "source_files_sha256": "55fb109c9aa3e188b3f404226f69610aa482ac1a3afed0429087271e104934c8"
+}

@@ -1,0 +1,34 @@
+{
+  "observed_utc": "2026-10-09T22:06:15.080592+00:00",
+  "kind": "human-style visual inspection of actual generated plots",
+  "new_sampler_calls": 0,
+  "scope": "Windows presentation check, not independent Mac receive or numeric revalidation",
+  "figures": {
+    "G2/inference-0.png": {
+      "sha256": "99aa75ed283f4234be271809d7c8071ae64afcc832b0a6b0a48190fa1d1b8df1",
+      "labels_readable": true,
+      "no_visible_label_collision_or_clipping": true
+    },
+    "H1/execution-costs.png": {
+      "sha256": "606d2be2e00178e15046605a0fd34d0e23bbc6354370aa8f318c5e0fb2a2995f",
+      "labels_readable": true,
+      "no_visible_label_collision_or_clipping": true
+    },
+    "L2/inference-3.png": {
+      "sha256": "3fee0c49fc1027519cfbcc102c26b027fd1f2a24b7175b85b6c3322583716734",
+      "labels_readable": true,
+      "no_visible_label_collision_or_clipping": true
+    },
+    "W1/inference-6.png": {
+      "sha256": "3422e49ae46dbd233cbe3aa0fd91b87d0f85d7d9436ab3e7609d80c32c66bb17",
+      "labels_readable": true,
+      "no_visible_label_collision_or_clipping": true
+    }
+  },
+  "preserved_content": [
+    "H1 insufficient paired n and negative cost ratios",
+    "L2 unresolved reference has no eligible error-cost point",
+    "W1 uncertified reference and degenerate interval empty markers",
+    "fixed budgets and failure denominators; no interpolation"
+  ]
+}
