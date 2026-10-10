@@ -110,7 +110,7 @@ def build(statistics_directory, manifest_sha256, output, *, review=None, review_
     for row in wells:
         table.append(DISPLAY[row['workflow']]+' & '+number(row['ordinary_mean_seconds'])+' & '+squared_error(row['alpha'])+' & '+squared_error(row['beta'])+r'\\')
     table += [r'\bottomrule\end{tabular}',
-        r'\caption{水井W1在每链4096次保留转移下的普通工作流耗时均值和参考平方差。每行24份原始四链重复；方括号为条件95\% BCa区间。参考为非认证数值求积，区间不含其不确定性。费用包含普通进程与R诊断，不含最外层R前端。其余五函数和1024步结果见完整结果附录图R39--R45。}',
+        r'\caption{水井W1在每链4096次保留转移下的普通工作流耗时均值和参考平方差。每行24份原始四链重复；方括号为条件95\% BCa区间。表中沿用冻结求积参考点；BCa区间不传播参考误差，后续数值包络分析另列。耗时包含普通进程与R诊断，不含最外层R前端。其余五函数和1024步结果见完整结果附录图R39--R45。}',
         r'\label{tab:compact-wells}',r'\end{table}']
     outcome_table = [r'\begin{table}[htbp]\centering\small',r'\begin{tabular}{lrrrrrr}\toprule',
         r'目标 & 有效 & 数值失败 & 未分类失败 & 函数行 & $\hat R>1.01$ & $\hat R$未定\\\midrule']

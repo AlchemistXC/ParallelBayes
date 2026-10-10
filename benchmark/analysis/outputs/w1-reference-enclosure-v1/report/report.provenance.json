@@ -1,0 +1,25 @@
+{
+  "identity": "w1-reference-report-v1",
+  "source_summary_sha256": "d2a1b675be99e19c9e59c57407451098eb157bedbb4664c5e50b397bf9498b32",
+  "audit_sha256": "228481183a493d902747a76e2d0127b1b664e99df74cfccfad18d9e89c8a011c",
+  "sensitivity_sha256": "ebbf9eff1b7f07ffc9161281c238674cded9bc3f20463b1326f9c01340557c00",
+  "source_checksums_sha256": "3a32e6d412b8bcfc5e70e5c87d7d8c9b7626798bbc2cad16589d8b8a678d6f50",
+  "audit_checksums_sha256": "b0c9d81948ee504740e80bd53bec7084505ae6530c78167b1a919955efffcbf5",
+  "generator_sha256": "f791b0a4fd840d7f51ada7846b00d2e069491052844d30773c395e620f9f269c",
+  "protocol_sha256": "85506f871a4fedb6f1cb30da1d9509afa764d2621e40ee51c48a1a6b44a97d36",
+  "numerical_source_commit": "504253c3f1ed5fa890cf213de40f7601b3a6c450",
+  "old_outcomes": {
+    "valid": 432
+  },
+  "old_references_preserved": true,
+  "new_mcmc_calls": 0,
+  "all_method_targets_met": true,
+  "reference_sensitivity_counts": {
+    "stable_sign": 408,
+    "exact_tie": 96,
+    "unresolved": 0,
+    "opposite_old_sign": 0,
+    "missing_pairs": 0
+  },
+  "scope": "Completed audited reference only; numerical reference sensitivity is not sampling uncertainty."
+}

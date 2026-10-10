@@ -1,0 +1,3 @@
+method,stop_reason,active_cells,charged_adaptive,charged_probes,callbacks,functions_meeting_target
+gauss2,tolerance_met,31533,442638,672,378384,7
+simpson,tolerance_met,37671,906264,1152,828740,7

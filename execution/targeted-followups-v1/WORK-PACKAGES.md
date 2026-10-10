@@ -1,15 +1,15 @@
 # 限定补充工作登记
 
-2026-10-10，计划v1.0。用户已授权按计划执行。S1已完成80项既有输入重放、图表、恢复与归档核验；S3B已完成固定预算重要性参考及独立复算；S2工具与输入交接已准备，但尚无原生结果；S3A的21项资格检查通过，W1完整包络计算已启动，尚未产生最终认证结果。
+2026-10-11状态更新，原计划v1.0。S1、S3A及S3B的计算、独立核验与本地归档已完成；S2固定输入包已上传原Windows草稿，尚待原生资格与有限故障定位证据。W1结果正在合入论文；下文逐次记录保留当时状态，不追溯改写。
 
 | 包 | 状态 | 下一步与验收 | 产物 |
 |---|---|---|---|
 | P 计划 | 完成 | 范围、输入规则、资源及终态一致；两位独立审查 | docs/TARGETED-FOLLOWUPS-PLAN.md、PLAN.json、selection.json |
 | S1 H1函数差 | complete | 80项/3200函数行；恢复新增0；42旧失败不变 | docs/H1-FUNCTION-PATH-RESULTS.md；对应delivery.json |
 | S2 NUTS故障定位 | handoff_prepared | 21项便携检查通过；Windows实际通过Job及四条件资格后冻结 | handoff/windows-nuts-localization/README.md；qualification/nuts-portable-qualification.json |
-| S3A W1参考 | running | 21项检查通过；冻结后运行两种积分组织，随后独立核对及参考敏感性分析 | benchmark/protocols/w1-reference-enclosure-v1.json；无最终W1认证结果 |
+| S3A W1参考 | complete | 双规则均7/7达标；24资产核验；恢复新增0；归档搬移重建一致 | docs/W1-REFERENCE-RESULTS.md；w1-reference-enclosure-v1摘要与原件 |
 | S3B L2参考 | complete | 2097152正式点+16384试探；633资产恢复不变；96点独立权重核对 | docs/L2-RARE-REFERENCE-RESULTS.md；对应SUMMARY/audit.json |
-| 合并 | partial_S1_S3B | H1/L2已写入正文及SI；W1/S2待实际结果 | docs/TARGETED-FOLLOWUPS-PAPER.md；5项报告检查通过 |
+| 合并 | W1_integration | H1/L2已交付；W1已写入正文18页及SI40页并通过版式检查，待便携构建核对；S2待实测 | docs/TARGETED-FOLLOWUPS-PAPER.md；w1-paper-integration-v1.json |
 
 每次推进记录命令、源码提交、依赖、输入SHA、passed/failed/skipped数量、数值/资源终止、结果SHA和恢复行为。计划版本不能冒充正式冻结协议；资格未完成就不得运行主体。大数组在Git外，摘要/协议/脚本入Git；新原件单独归档。保留原105/42失败分类，既有完成状态不变。
 
@@ -44,3 +44,5 @@ Gauss完成件独立核对：31533单元、两区域覆盖与精确端点聚合�
 S2输入交接（2026-10-11）：用户明确授权后，已追加上传固定输入tar及回执到windows-completion-v2-20261005草稿；两份远端大小/SHA256匹配，原215附件未改，现217件且仍draft。包21,544,960字节，SHA256为3b97a221ea8a5a61644f3394474e2ceaf8f0b981803456181a012a99d26f5b12。下载与核验记录见handoff/windows-nuts-localization/TRANSFER-STATUS.md及github-upload-receipt-v1.json；新增采样0，Windows原生资格与主体仍待实测。
 
 S2路径兼容修订（2026-10-11）：实测旧代码无法在Mac读取含Windows反斜杠的嵌套校验清单。新代码对只读核验兼容旧分隔符、拒绝别名/绝对路径/越界路径，新源码清单、结果路径统一使用POSIX形式，避免向git show传Windows文件名。21项便携检查通过0失败0跳过，含7项新回归；修复前失败日志保留。见qualification/nuts-portable-paths-v1.json。无新增采样；输入tar和W1冻结源码未改。已冻结的Windows工作不得直接合并本修订。
+
+W1终态（2026-10-11）：原积分正常结束，两规则分别31533/37671活动单元、七函数全部达标；全程预留评价1351046次，新增MCMC为0。独立核验检查24份科学资产、全部69204叶单元的分区/聚合、有符号比率及区间交集；504项配对敏感性中408项符号固定、96项恒等，没有翻转或跨零未定。恢复新增评价0且24份原件哈希未变。本地tar 303360000字节、81个内容成员；同机独立目录的9份核验/报告及2份清单逐字节相同。归档SHA256为c1bf12eb937ba57582647c7eb81cea21d01b6f204e1305d459cdc1175bd368d1。原归档回执记载打包时尚未重建，随后成功的portable-rebuild.json单独保留，未改旧回执。来源摘要SHA256为d2a1b675be99e19c9e59c57407451098eb157bedbb4664c5e50b397bf9498b32；见docs/W1-REFERENCE-RESULTS.md和qualification/w1-finalization-completed-v1.json。

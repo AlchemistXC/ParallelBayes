@@ -1,0 +1,465 @@
+{
+  "identity": "w1-reference-enclosure-v1",
+  "protocol_sha256": "85506f871a4fedb6f1cb30da1d9509afa764d2621e40ee51c48a1a6b44a97d36",
+  "source_commit": "504253c3f1ed5fa890cf213de40f7601b3a6c450",
+  "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+  "methods": [
+    {
+      "method": "gauss2",
+      "stop_reason": "tolerance_met",
+      "active_cells": 31533,
+      "charged_evaluations_upper_bound": 442638,
+      "completed_external_callbacks": 378384,
+      "committed_splits": 31531,
+      "probe_charged_evaluations": 672,
+      "posterior": {
+        "status": "posterior_targets_met",
+        "normalizer": {
+          "binary_ball": [
+            [
+              "1789444224011268227098994049133213830508864085494700550790192155812640045145771362397760993977239143663642764812425",
+              -385
+            ],
+            [
+              "200562831",
+              -60
+            ]
+          ],
+          "display": "[0.022707527 +/- 3.66e-10]",
+          "midpoint": 0.02270752680830517,
+          "radius": 1.7396052567203446e-10,
+          "lower": 0.022707526634344645,
+          "upper": 0.022707526982265698,
+          "float_endpoints_for_display_only": true
+        },
+        "functions": {
+          "alpha": {
+            "binary_ball": [
+              [
+                "21854243636063819",
+                -55
+              ],
+              [
+                "698073045",
+                -56
+              ]
+            ],
+            "display": "[0.6065771 +/- 2.15e-8]",
+            "midpoint": 0.6065771117631463,
+            "radius": 9.687709592864913e-09,
+            "lower": 0.6065771020754367,
+            "upper": 0.6065771214508558,
+            "float_endpoints_for_display_only": true
+          },
+          "beta": {
+            "binary_ball": [
+              [
+                "-5611334260833909",
+                -53
+              ],
+              [
+                "358119395",
+                -55
+              ]
+            ],
+            "display": "[-0.6229832 +/- 5.95e-8]",
+            "midpoint": -0.622983249524579,
+            "radius": 9.939809947345779e-09,
+            "lower": -0.6229832594643889,
+            "upper": -0.622983239584769,
+            "float_endpoints_for_display_only": true
+          },
+          "alpha_squared": {
+            "binary_ball": [
+              [
+                "53549897179500417",
+                -57
+              ],
+              [
+                "904170857",
+                -57
+              ]
+            ],
+            "display": "[0.3715771 +/- 5.12e-8]",
+            "midpoint": 0.3715770550936943,
+            "radius": 6.273945647727874e-09,
+            "lower": 0.3715770488197487,
+            "upper": 0.37157706136763996,
+            "float_endpoints_for_display_only": true
+          },
+          "beta_squared": {
+            "binary_ball": [
+              [
+                "28651447424629277",
+                -56
+              ],
+              [
+                "983609599",
+                -57
+              ]
+            ],
+            "display": "[0.39761871 +/- 9.08e-9]",
+            "midpoint": 0.3976187077457571,
+            "radius": 6.8251626503257334e-09,
+            "lower": 0.3976187009205944,
+            "upper": 0.39761871457091974,
+            "float_endpoints_for_display_only": true
+          },
+          "p_switch_0m": {
+            "binary_ball": [
+              [
+                "23311979041430923",
+                -55
+              ],
+              [
+                "720568315",
+                -56
+              ]
+            ],
+            "display": "[0.6470374 +/- 1.30e-8]",
+            "midpoint": 0.6470373970343924,
+            "radius": 9.999894176604407e-09,
+            "lower": 0.6470373870344982,
+            "upper": 0.6470374070342866,
+            "float_endpoints_for_display_only": true
+          },
+          "p_switch_100m": {
+            "binary_ball": [
+              [
+                "1116673339886497",
+                -51
+              ],
+              [
+                "555154291",
+                -56
+              ]
+            ],
+            "display": "[0.49590258 +/- 8.88e-9]",
+            "midpoint": 0.49590258117082486,
+            "radius": 7.704313451095679e-09,
+            "lower": 0.4959025734665114,
+            "upper": 0.49590258887513833,
+            "float_endpoints_for_display_only": true
+          },
+          "beta_positive": {
+            "binary_ball": [
+              [
+                "1758753869",
+                -65
+              ],
+              [
+                "70333",
+                -65
+              ]
+            ],
+            "display": "[4.767e-11 +/- 3.03e-15]",
+            "midpoint": 4.7671119140927157e-11,
+            "radius": 1.9063797849355746e-15,
+            "lower": 4.766921276114222e-11,
+            "upper": 4.767302552071209e-11,
+            "float_endpoints_for_display_only": true
+          }
+        },
+        "all_targets_met": true
+      },
+      "source_commit": "504253c3f1ed5fa890cf213de40f7601b3a6c450",
+      "protocol_sha256": "85506f871a4fedb6f1cb30da1d9509afa764d2621e40ee51c48a1a6b44a97d36"
+    },
+    {
+      "method": "simpson",
+      "stop_reason": "tolerance_met",
+      "active_cells": 37671,
+      "charged_evaluations_upper_bound": 906264,
+      "completed_external_callbacks": 828740,
+      "committed_splits": 37669,
+      "probe_charged_evaluations": 1152,
+      "posterior": {
+        "status": "posterior_targets_met",
+        "normalizer": {
+          "binary_ball": [
+            [
+              "28631107627208862424736900705596617659854432799504076616705119938431969543431345232534790911356904378048344171754901",
+              -389
+            ],
+            [
+              "401003613",
+              -61
+            ]
+          ],
+          "display": "[0.022707527 +/- 3.32e-10]",
+          "midpoint": 0.022707526842431425,
+          "radius": 1.739075953556546e-10,
+          "lower": 0.02270752666852383,
+          "upper": 0.02270752701633902,
+          "float_endpoints_for_display_only": true
+        },
+        "functions": {
+          "alpha": {
+            "binary_ball": [
+              [
+                "10927121818054755",
+                -54
+              ],
+              [
+                "699074899",
+                -56
+              ]
+            ],
+            "display": "[0.6065771 +/- 2.15e-8]",
+            "midpoint": 0.6065771117644145,
+            "radius": 9.701613110091323e-09,
+            "lower": 0.6065771020628014,
+            "upper": 0.6065771214660276,
+            "float_endpoints_for_display_only": true
+          },
+          "beta": {
+            "binary_ball": [
+              [
+                "-5611334260837255",
+                -53
+              ],
+              [
+                "179985923",
+                -54
+              ]
+            ],
+            "display": "[-0.6229832 +/- 5.96e-8]",
+            "midpoint": -0.6229832495249504,
+            "radius": 9.991225791150526e-09,
+            "lower": -0.6229832595161762,
+            "upper": -0.6229832395337247,
+            "float_endpoints_for_display_only": true
+          },
+          "alpha_squared": {
+            "binary_ball": [
+              [
+                "53549897182774419",
+                -57
+              ],
+              [
+                "908280771",
+                -57
+              ]
+            ],
+            "display": "[0.3715771 +/- 5.12e-8]",
+            "midpoint": 0.37157705511641226,
+            "radius": 6.302463904928057e-09,
+            "lower": 0.3715770488139484,
+            "upper": 0.3715770614188762,
+            "float_endpoints_for_display_only": true
+          },
+          "beta_squared": {
+            "binary_ball": [
+              [
+                "223839433036107",
+                -49
+              ],
+              [
+                "996153671",
+                -57
+              ]
+            ],
+            "display": "[0.39761871 +/- 9.12e-9]",
+            "midpoint": 0.39761870780116304,
+            "radius": 6.912204635056707e-09,
+            "lower": 0.3976187008889584,
+            "upper": 0.3976187147133677,
+            "float_endpoints_for_display_only": true
+          },
+          "p_switch_0m": {
+            "binary_ball": [
+              [
+                "46623958082831751",
+                -56
+              ],
+              [
+                "720549095",
+                -56
+              ]
+            ],
+            "display": "[0.6470374 +/- 1.30e-8]",
+            "midpoint": 0.6470373970339748,
+            "radius": 9.99962744552274e-09,
+            "lower": 0.6470373870343473,
+            "upper": 0.6470374070336022,
+            "float_endpoints_for_display_only": true
+          },
+          "p_switch_100m": {
+            "binary_ball": [
+              [
+                "17866773438192747",
+                -55
+              ],
+              [
+                "555176735",
+                -56
+              ]
+            ],
+            "display": "[0.49590258 +/- 8.88e-9]",
+            "midpoint": 0.495902581171069,
+            "radius": 7.704624924165238e-09,
+            "lower": 0.49590257346644406,
+            "upper": 0.4959025888756939,
+            "float_endpoints_for_display_only": true
+          },
+          "beta_positive": {
+            "binary_ball": [
+              [
+                "1758828847",
+                -65
+              ],
+              [
+                "74783",
+                -65
+              ]
+            ],
+            "display": "[4.767e-11 +/- 5.18e-15]",
+            "midpoint": 4.767315142368937e-11,
+            "radius": 2.026997276624587e-15,
+            "lower": 4.767112442641275e-11,
+            "upper": 4.7675178420966e-11,
+            "float_endpoints_for_display_only": true
+          }
+        },
+        "all_targets_met": true
+      },
+      "source_commit": "504253c3f1ed5fa890cf213de40f7601b3a6c450",
+      "protocol_sha256": "85506f871a4fedb6f1cb30da1d9509afa764d2621e40ee51c48a1a6b44a97d36"
+    }
+  ],
+  "intersection": {
+    "alpha": {
+      "binary_ball": [
+        [
+          "21854243636063819",
+          -55
+        ],
+        [
+          "698073047",
+          -56
+        ]
+      ],
+      "display": "[0.6065771 +/- 2.15e-8]",
+      "midpoint": 0.6065771117631463,
+      "radius": 9.687709620620488e-09,
+      "lower": 0.6065771020754367,
+      "upper": 0.606577121450856,
+      "float_endpoints_for_display_only": true
+    },
+    "beta": {
+      "binary_ball": [
+        [
+          "-5611334260833909",
+          -53
+        ],
+        [
+          "716238791",
+          -56
+        ]
+      ],
+      "display": "[-0.6229832 +/- 5.95e-8]",
+      "midpoint": -0.622983249524579,
+      "radius": 9.939809961223567e-09,
+      "lower": -0.6229832594643889,
+      "upper": -0.622983239584769,
+      "float_endpoints_for_display_only": true
+    },
+    "alpha_squared": {
+      "binary_ball": [
+        [
+          "53549897179500417",
+          -57
+        ],
+        [
+          "904170859",
+          -57
+        ]
+      ],
+      "display": "[0.3715771 +/- 5.12e-8]",
+      "midpoint": 0.3715770550936943,
+      "radius": 6.273945661605662e-09,
+      "lower": 0.3715770488197487,
+      "upper": 0.37157706136764,
+      "float_endpoints_for_display_only": true
+    },
+    "beta_squared": {
+      "binary_ball": [
+        [
+          "28651447424629277",
+          -56
+        ],
+        [
+          "983609601",
+          -57
+        ]
+      ],
+      "display": "[0.39761871 +/- 9.08e-9]",
+      "midpoint": 0.3976187077457571,
+      "radius": 6.825162664203521e-09,
+      "lower": 0.3976187009205944,
+      "upper": 0.39761871457091974,
+      "float_endpoints_for_display_only": true
+    },
+    "p_switch_0m": {
+      "binary_ball": [
+        [
+          "93247916165674377",
+          -57
+        ],
+        [
+          "180135915",
+          -54
+        ]
+      ],
+      "display": "[0.6470374 +/- 1.30e-8]",
+      "midpoint": 0.6470373970340503,
+      "radius": 9.999552019746005e-09,
+      "lower": 0.6470373870344982,
+      "upper": 0.6470374070336022,
+      "float_endpoints_for_display_only": true
+    },
+    "p_switch_100m": {
+      "binary_ball": [
+        [
+          "1116673339886497",
+          -51
+        ],
+        [
+          "555154293",
+          -56
+        ]
+      ],
+      "display": "[0.49590258 +/- 8.88e-9]",
+      "midpoint": 0.49590258117082486,
+      "radius": 7.704313478851255e-09,
+      "lower": 0.4959025734665114,
+      "upper": 0.49590258887513833,
+      "float_endpoints_for_display_only": true
+    },
+    "beta_positive": {
+      "binary_ball": [
+        [
+          "1758789133",
+          -65
+        ],
+        [
+          "574570497",
+          -79
+        ]
+      ],
+      "display": "[4.767e-11 +/- 3.03e-15]",
+      "midpoint": 4.767207497356242e-11,
+      "radius": 9.505471513267151e-16,
+      "lower": 4.7671124426411093e-11,
+      "upper": 4.7673025520713747e-11,
+      "float_endpoints_for_display_only": true
+    }
+  },
+  "all_method_targets_met": true,
+  "charged_evaluations_upper_bound": 1351046,
+  "preserved_old_references": true,
+  "new_mcmc_fits": 0,
+  "elapsed_this_invocation_seconds": 16198.504608154297,
+  "observed_rss_bytes": 130203648,
+  "meaning": "Enclosures depend on implemented ball arithmetic and derivative/tail inequalities; qualification tests are not a general software proof. Float endpoints are display only; binary balls retain outward bounds."
+}

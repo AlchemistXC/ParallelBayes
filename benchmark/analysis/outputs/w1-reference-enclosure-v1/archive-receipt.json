@@ -1,0 +1,19 @@
+{
+  "identity": "w1-reference-evidence-v1",
+  "protocol_sha256": "85506f871a4fedb6f1cb30da1d9509afa764d2621e40ee51c48a1a6b44a97d36",
+  "scientific_source_commit": "504253c3f1ed5fa890cf213de40f7601b3a6c450",
+  "delivery_source_commit": "37d611c3ff54ffc9ae4675cdf7bbd7ebd1a8b0cc",
+  "source_summary_sha256": "d2a1b675be99e19c9e59c57407451098eb157bedbb4664c5e50b397bf9498b32",
+  "new_mcmc_calls": 0,
+  "zero_work_resume_receipts": 1,
+  "old_references_preserved": true,
+  "uploaded": false,
+  "archiver_sha256": "ff903d035c62fb303527eef0f72660fb5947102e55f1fc1fd9dc79541cb60752",
+  "archive": "w1-reference-evidence-v1.tar",
+  "bytes": 303360000,
+  "sha256": "c1bf12eb937ba57582647c7eb81cea21d01b6f204e1305d459cdc1175bd368d1",
+  "verified_members": 81,
+  "manifest_members": 1,
+  "new_target_evaluations": 0,
+  "portable_rebuild_verified": false
+}

@@ -1,0 +1,8 @@
+function,stable_sign,exact_tie,unresolved,opposite_old_sign,missing_pairs
+alpha,68,4,0,0,0
+beta,68,4,0,0,0
+alpha_squared,68,4,0,0,0
+beta_squared,68,4,0,0,0
+p_switch_0m,68,4,0,0,0
+p_switch_100m,68,4,0,0,0
+beta_positive,0,72,0,0,0

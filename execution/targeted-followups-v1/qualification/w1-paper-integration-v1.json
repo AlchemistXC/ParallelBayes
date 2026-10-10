@@ -1,0 +1,96 @@
+{
+  "identity": "w1-paper-integration-v1",
+  "basis_commit": "37d611c",
+  "science_complete": true,
+  "windows_localization_complete": false,
+  "source_summary_sha256": "d2a1b675be99e19c9e59c57407451098eb157bedbb4664c5e50b397bf9498b32",
+  "audit_sha256": "228481183a493d902747a76e2d0127b1b664e99df74cfccfad18d9e89c8a011c",
+  "rebuilt_sha256": "3c1a58fdfb77f8de5ec1e77a7296a0a07151a5bf5a836a3458c75bec3bdf79b7",
+  "report_table_sha256": "2a5e88b5a1638833887bfdcb18de1a91e2f0b3446b90f0b9fe0fed70f0a0c3d2",
+  "word_count_method": "Remove LaTeX control names, count Chinese characters and Latin/numeric tokens; approximate local comparison",
+  "w1_results_tokens_before": 545,
+  "w1_results_tokens_after": 595,
+  "placement": {
+    "main": "Reference precision, ranking sensitivity and rare-event interpretation; replace prior unresolved sentences",
+    "SI": "Method derivation, seven intervals, full counts and reproducibility scope",
+    "repository": "All 126 individual and 504 paired ranges, exact rational endpoints, resource/stopping and archive receipts"
+  },
+  "claims": [
+    {
+      "claim": "Both methods meet all seven preset targets",
+      "evidence": "completed SUMMARY and exact independent audit",
+      "status": "supported"
+    },
+    {
+      "claim": "No paired point-ranking reversals over reference interval",
+      "evidence": "504 saved paired ranges: 408 fixed signs, 96 exact ties",
+      "status": "supported; not inferential significance"
+    },
+    {
+      "claim": "All-zero event estimates have 100 percent relative error",
+      "evidence": "strictly positive certified event interval and original 432 zero event estimates",
+      "status": "supported for these saved fits"
+    }
+  ],
+  "new_sampler_calls": 0,
+  "old_failures_changed": 0,
+  "caption_projection": {
+    "generator": "scripts/analysis/write_compact_manuscript.py",
+    "only_caption_changed": true,
+    "all_old_numerical_claims_unchanged": true,
+    "attempts": [
+      {
+        "environment": ".venv-followups",
+        "status": "import_failed",
+        "reason": "matplotlib absent; no output created"
+      },
+      {
+        "environment": ".venv",
+        "status": "passed",
+        "main_outcomes": {
+          "valid": 3741,
+          "numerical_failure": 42,
+          "output_failure_unclassified": 105
+        }
+      }
+    ]
+  },
+  "pdf_qa": {
+    "compiler": "Tectonic 0.17.0",
+    "compiled": true,
+    "pdfs": {
+      "main": {
+        "path": "output/software-paper/软件与基准研究-定向补充v2.pdf",
+        "pages": 18,
+        "bytes": 585722,
+        "sha256": "2cffe69648c88384514bbef9bf5caca54aa5e4ceefbdb7603cc012e0dac01ecf"
+      },
+      "si": {
+        "path": "output/software-paper/补充材料-定向补充v2.pdf",
+        "pages": 40,
+        "bytes": 812067,
+        "sha256": "0b1fc6f20c61547e8038163b7e9bfd731092b053ff06bdd6c3f9af17c6e5ad75"
+      }
+    },
+    "all_58_pages_contact_sheets_reviewed": true,
+    "detail_pages": {
+      "main": [
+        8,
+        12,
+        15,
+        16
+      ],
+      "si": [
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    "renderer": "PyMuPDF 1.26.5; 108 dpi details",
+    "unresolved_references_final_pass": false,
+    "overfull_warnings": false,
+    "marker_run_once_for_two_pdf_edit": true,
+    "portable_paper_rebuild": "pending"
+  }
+}

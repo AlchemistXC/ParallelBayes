@@ -1,0 +1,183 @@
+{
+  "identity": "w1-local-finalization-v1",
+  "started_utc": "2026-10-10T15:02:48.106013+00:00",
+  "status": "local_evidence_ready_for_review",
+  "stages": [
+    {
+      "name": "01-independent-audit",
+      "command": [
+        "/Users/haku/Workspace/ParallelBayes/.venv-followups/bin/python",
+        "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/audit_w1_enclosure.py",
+        "--source",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-reference-enclosure-v1",
+        "--protocol",
+        "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/benchmark/protocols/w1-reference-enclosure-v1.json",
+        "--root",
+        "/Users/haku/.codex/worktrees/research-integration/ParallelBayes",
+        "--statistics",
+        "/Users/haku/Workspace/ParallelBayes/output/windows-compact-intake-v1/formal-statistics",
+        "--output",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-final-audit-v1"
+      ],
+      "cwd": "/Users/haku/.codex/worktrees/research-integration/ParallelBayes",
+      "started_utc": "2026-10-10T17:49:49.718492+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T17:50:09.676003+00:00"
+    },
+    {
+      "name": "02-result-report",
+      "command": [
+        "/Users/haku/Workspace/ParallelBayes/.venv-followups/bin/python",
+        "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/report_w1_enclosure.py",
+        "--source",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-reference-enclosure-v1",
+        "--audit",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-final-audit-v1",
+        "--output",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-final-report-v1"
+      ],
+      "cwd": "/Users/haku/.codex/worktrees/research-integration/ParallelBayes",
+      "started_utc": "2026-10-10T17:50:09.677114+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T17:50:09.715384+00:00"
+    },
+    {
+      "name": "03-zero-work-resume",
+      "command": [
+        "/Users/haku/Workspace/ParallelBayes/.venv-followups/bin/python",
+        "-W",
+        "error",
+        "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/run_w1_enclosure.py",
+        "run",
+        "--protocol",
+        "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/benchmark/protocols/w1-reference-enclosure-v1.json",
+        "--data",
+        "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/received/formal/external",
+        "--output",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-reference-enclosure-v1"
+      ],
+      "cwd": "/Users/haku/.codex/worktrees/research-integration/ParallelBayes",
+      "started_utc": "2026-10-10T17:50:09.716040+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T17:50:10.182577+00:00"
+    },
+    {
+      "name": "04-export-local-archive",
+      "command": [
+        "/Users/haku/Workspace/ParallelBayes/.venv-followups/bin/python",
+        "/Users/haku/.codex/worktrees/research-integration/ParallelBayes/scripts/analysis/export_w1_evidence.py",
+        "--root",
+        "/Users/haku/.codex/worktrees/research-integration/ParallelBayes",
+        "--raw",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-reference-enclosure-v1",
+        "--audit",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-final-audit-v1",
+        "--report",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-final-report-v1",
+        "--statistics",
+        "/Users/haku/Workspace/ParallelBayes/output/windows-compact-intake-v1/formal-statistics",
+        "--data",
+        "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/received/formal/external",
+        "--output",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-reference-evidence-v1.tar"
+      ],
+      "cwd": "/Users/haku/.codex/worktrees/research-integration/ParallelBayes",
+      "started_utc": "2026-10-10T17:50:10.293404+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T17:50:11.176684+00:00"
+    },
+    {
+      "name": "05-portable-audit",
+      "command": [
+        "/Users/haku/Workspace/ParallelBayes/.venv-followups/bin/python",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1/source/scripts/analysis/audit_w1_enclosure.py",
+        "--source",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1/raw",
+        "--protocol",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1/source/benchmark/protocols/w1-reference-enclosure-v1.json",
+        "--root",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1/source",
+        "--statistics",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1/inputs/statistics",
+        "--output",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1/rebuilt-audit"
+      ],
+      "cwd": "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1",
+      "started_utc": "2026-10-10T17:50:11.644986+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T17:50:32.486156+00:00"
+    },
+    {
+      "name": "06-portable-report",
+      "command": [
+        "/Users/haku/Workspace/ParallelBayes/.venv-followups/bin/python",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1/source/scripts/analysis/report_w1_enclosure.py",
+        "--source",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1/raw",
+        "--audit",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1/rebuilt-audit",
+        "--output",
+        "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1/rebuilt-report"
+      ],
+      "cwd": "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-portable-rebuild-v1",
+      "started_utc": "2026-10-10T17:50:32.486684+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T17:50:32.525634+00:00"
+    }
+  ],
+  "original_process": {
+    "cmdline": [
+      "/Users/haku/Workspace/ParallelBayes/.venv-followups/bin/python",
+      "-W",
+      "error",
+      "scripts/analysis/run_w1_enclosure.py",
+      "run",
+      "--protocol",
+      "benchmark/protocols/w1-reference-enclosure-v1.json",
+      "--data",
+      "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/received/formal/external",
+      "--output",
+      "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-reference-enclosure-v1"
+    ],
+    "create_time": 1791638378.109916,
+    "pid": 5936
+  },
+  "source_commit_at_start": "d20708bb54b63ac14347aacee45c0f9cfc40acf6",
+  "coordinator_sha256": "abae0f21b56c097e0cd89335cb8446052d00b1ed9e3e58bded9c6085123b1930",
+  "automatic_upload": false,
+  "starts_new_integration": false,
+  "full_thread_goal_completed": false,
+  "bound_source_sha256": {
+    "scripts/analysis/run_w1_enclosure.py": "c5b551809a4e8bbd1faf81328277317993334577ea6f1b6cd0caa9896eb6483d",
+    "scripts/analysis/checkpoint_cubature.py": "38b802be5c7ff0dff82991fb9a1f167c2df91156e8c25107d4057e6d6f172bb5",
+    "scripts/analysis/verified_cubature.py": "9aa5d8311080abc1962490528ef0156b389ce0fb3849fd4f26948abcaa692f0d",
+    "scripts/analysis/wells_ball_target.py": "8c78b73e191edfea6e7cc14834a7076d73eb993e8ea0ff2e901ae3d649f74079",
+    "examples/external_wells.py": "cf5e8a49dff8aaa0d6e6e0df1fd262235c44365333b43f17c0b356d013546bfe",
+    "r-package/inst/python/parallelbayes/reference.py": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1",
+    "r-package/inst/python/parallelbayes/__init__.py": "7c54c6b83f3f39fdb0578b6e8fa32a040c6c335a8df3cc6d6fd7d769e710f5e9",
+    "models/external/wells/source-manifest.json": "b64415687a58d3e2c34444d9e32523154b6002d960e505e31e2510d8356420ab",
+    "scripts/analysis/audit_w1_enclosure.py": "e7571a77411517e7c258a605da84d32c3946b1bd181260d87688ba993b09ec9a",
+    "scripts/analysis/report_w1_enclosure.py": "f791b0a4fd840d7f51ada7846b00d2e069491052844d30773c395e620f9f269c",
+    "scripts/analysis/export_w1_evidence.py": "ff903d035c62fb303527eef0f72660fb5947102e55f1fc1fd9dc79541cb60752"
+  },
+  "updated_utc": "2026-10-10T17:50:32.527265+00:00",
+  "original_process_observed_terminal_utc": "2026-10-10T17:49:49.708418+00:00",
+  "zero_work_resume": {
+    "receipt": "/Users/haku/Workspace/ParallelBayes/output/targeted-followups-v1/w1-reference-enclosure-v1/invocations/1791654610163898000.json",
+    "reused_complete": true,
+    "new_evaluations": 0,
+    "verified_assets": 24
+  },
+  "local_evidence_completed": true,
+  "pending": [
+    "scientific review of final reference intervals and sensitivity",
+    "main manuscript/SI integration and PDF checks",
+    "Windows native S2 evidence"
+  ]
+}

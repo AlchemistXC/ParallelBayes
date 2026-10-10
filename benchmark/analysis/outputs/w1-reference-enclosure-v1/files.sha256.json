@@ -1,0 +1,19 @@
+{
+  "README.md": "6eb9ac056b8f8b06a339d67cd55d5468983f55ec4b689948985c67587b7bf47e",
+  "archive-receipt.json": "6907b182107b933a1e020e9853708e86c87054c5333fca364cb390ab6f9ca44e",
+  "audit/audit.json": "228481183a493d902747a76e2d0127b1b664e99df74cfccfad18d9e89c8a011c",
+  "audit/checksums.json": "b0c9d81948ee504740e80bd53bec7084505ae6530c78167b1a919955efffcbf5",
+  "audit/reference-sensitivity.json": "ebbf9eff1b7f07ffc9161281c238674cded9bc3f20463b1326f9c01340557c00",
+  "finalization.json": "06f9814382a68d49658434754adf5288825abc4e572c0c1d6894bdbb4098ac6a",
+  "portable-rebuild.json": "3c1a58fdfb77f8de5ec1e77a7296a0a07151a5bf5a836a3458c75bec3bdf79b7",
+  "report/REPORT.md": "d9072839059ec5defc2780c6c183526f357062ef7a8fcdb650b1e019b97e3074",
+  "report/checksums.json": "e2447cf60d21befbe73a7fc7a6d0cf6a8ff101c06765572b03cff77892ad20be",
+  "report/method-costs.csv": "52f9b40a14a0334792b0d419a58f2f36180c478252a06949518268f78a689e3b",
+  "report/reference-intervals.csv": "12153f910b64e4147c8e32a5c945347011556555f9ac0d498b5a5ffab342f925",
+  "report/reference-sensitivity.json": "ebbf9eff1b7f07ffc9161281c238674cded9bc3f20463b1326f9c01340557c00",
+  "report/reference-sign-sensitivity.csv": "6621e70638c14f7058c82956272070391c047d0ea78bbc57be36c4a7326c8cb6",
+  "report/report.provenance.json": "c4dc75a942ac94eec4df5debacd8a449aba3018afe3411ecfd1f99e60ea1f37e",
+  "report/w1-reference-table.generated.tex": "2a5e88b5a1638833887bfdcb18de1a91e2f0b3446b90f0b9fe0fed70f0a0c3d2",
+  "source/SUMMARY.json": "d2a1b675be99e19c9e59c57407451098eb157bedbb4664c5e50b397bf9498b32",
+  "source/checksums.json": "3a32e6d412b8bcfc5e70e5c87d7d8c9b7626798bbc2cad16589d8b8a678d6f50"
+}
