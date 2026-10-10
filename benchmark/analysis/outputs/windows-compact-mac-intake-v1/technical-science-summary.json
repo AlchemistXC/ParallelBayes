@@ -1,0 +1,11 @@
+{
+  "main_MH_replays": 16,
+  "cache_calls_replayed": 64,
+  "NUTS_contracts_checked": 2,
+  "R_function_tasks": 18,
+  "acceptance_mismatches": 0,
+  "transitions": 983040,
+  "maximum_path_error": 3.544835536217761e-10,
+  "all_original_bounds_passed": true,
+  "new_sampler_calls": 0
+}

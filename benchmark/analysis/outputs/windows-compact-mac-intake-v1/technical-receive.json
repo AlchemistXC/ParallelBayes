@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/source-94bebec/scripts/windows/compact_transfer.py",
+    "verify",
+    "--manifest",
+    "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/metadata/windows-compact-technical-3a37a89-v1-manifest.json",
+    "--manifest-sha256",
+    "8ca40855c32c551c15e2019b6daffbad0d2e5d679c34c843ffbecdc2eb2c93a8",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/received/technical"
+  ],
+  "exit_code": 0,
+  "seconds": 1.1020432920195162,
+  "log": "technical-verify-1791614075783270000.log",
+  "verification": {
+    "chunks": 2,
+    "files": 2230,
+    "manifest_file_sha256": "8ca40855c32c551c15e2019b6daffbad0d2e5d679c34c843ffbecdc2eb2c93a8",
+    "new_sampler_calls": 0,
+    "passed": true,
+    "return_manifest_sha256": "21e41283702963e45d87f4f2c63a98b0c82ba56a37125f741504d71b91105f10",
+    "whole_tar_created": false
+  }
+}

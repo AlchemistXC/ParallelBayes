@@ -1,0 +1,165 @@
+{
+  "scope": "Independent arithmetic from Windows Git display task table; full raw reconstruction pending",
+  "rows": 4144,
+  "unique_ids": 4144,
+  "counts": {
+    "main": {
+      "output_failure_unclassified": 105,
+      "valid": 3741,
+      "numerical_failure": 42
+    },
+    "cache": {
+      "measurement_available": 256
+    }
+  },
+  "nuts_groups": [
+    {
+      "model": "G1",
+      "budget": 1024,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    },
+    {
+      "model": "G1",
+      "budget": 4096,
+      "planned": 24,
+      "valid": 7,
+      "unclassified": 17,
+      "meets_minimum_20": false
+    },
+    {
+      "model": "G2",
+      "budget": 1024,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    },
+    {
+      "model": "G2",
+      "budget": 4096,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    },
+    {
+      "model": "A1",
+      "budget": 1024,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    },
+    {
+      "model": "A1",
+      "budget": 4096,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    },
+    {
+      "model": "L1",
+      "budget": 1024,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    },
+    {
+      "model": "L1",
+      "budget": 4096,
+      "planned": 24,
+      "valid": 6,
+      "unclassified": 18,
+      "meets_minimum_20": false
+    },
+    {
+      "model": "L2",
+      "budget": 1024,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    },
+    {
+      "model": "L2",
+      "budget": 4096,
+      "planned": 24,
+      "valid": 6,
+      "unclassified": 18,
+      "meets_minimum_20": false
+    },
+    {
+      "model": "H1",
+      "budget": 1024,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    },
+    {
+      "model": "H1",
+      "budget": 4096,
+      "planned": 24,
+      "valid": 9,
+      "unclassified": 15,
+      "meets_minimum_20": false
+    },
+    {
+      "model": "H2",
+      "budget": 1024,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    },
+    {
+      "model": "H2",
+      "budget": 4096,
+      "planned": 24,
+      "valid": 7,
+      "unclassified": 17,
+      "meets_minimum_20": false
+    },
+    {
+      "model": "M1",
+      "budget": 1024,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    },
+    {
+      "model": "M1",
+      "budget": 4096,
+      "planned": 24,
+      "valid": 4,
+      "unclassified": 20,
+      "meets_minimum_20": false
+    },
+    {
+      "model": "W1",
+      "budget": 1024,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    },
+    {
+      "model": "W1",
+      "budget": 4096,
+      "planned": 24,
+      "valid": 24,
+      "unclassified": 0,
+      "meets_minimum_20": true
+    }
+  ],
+  "sha256": "6fb95f70337146f48d2e88f4437acded20ea5deaa0349023b880b7b1a06532c3",
+  "failure_fraction_all_main": 0.03780864197530864,
+  "nuts_failure_fraction": 0.24305555555555555,
+  "no_task_deletion": true
+}

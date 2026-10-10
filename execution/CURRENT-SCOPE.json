@@ -123,7 +123,7 @@
     "superseded_by": "docs/WINDOWS-FOLLOWUP-INTAKE.md",
     "external_evidence_trigger_received": true
   },
-  "next_Windows_action": "Continue the already-started compact frozen study and deliver complete source/identity/results; no new prompt or protocol amendment from the manuscript revision.",
+  "next_Windows_action": "No new sampling requested. Preserve all Windows originals; Mac bounded receipt and independent full reconstruction are running.",
   "followup_windows_intake": {
     "report": "docs/WINDOWS-FOLLOWUP-INTAKE.md",
     "heads": {
@@ -439,5 +439,31 @@
     "new_R_diagnostic_calls": 0,
     "compact_sampling_user_reported": true,
     "compact_complete_independently_verified": false
+  },
+  "compact_mac_initial_intake": {
+    "observed_at_jst": "2026-10-10T15:42:28.787568+09:00",
+    "delivery_commit": "94bebec95177b03f0497d748cbc9f54a45492ce4",
+    "execution_commit": "3a37a891896faedc62c0d6af185bfad77696054f",
+    "catalog_sha256": "1268ece08d1bf52139f367bf1453d557831fbc0d20feb54508e029e0cc381455",
+    "components": 21,
+    "total_files": 232755,
+    "total_bytes": 29311383786,
+    "bounded_transport_tests_passed": 16,
+    "technical_files_verified": 2230,
+    "technical_analysis_rows": 34,
+    "technical_resume_new_analyses": 0,
+    "formal_receive_snapshot": {
+      "component": "formal",
+      "completed_chunks": 6,
+      "total_chunks": 74,
+      "utc": "2026-10-10T06:41:27.959745+00:00"
+    },
+    "formal_independent_reconstruction_complete": false,
+    "all_components_received": false,
+    "new_sampler_calls": 0,
+    "receiver_status_path": "output/windows-compact-intake-v1/reconstruction-status.json",
+    "data_destination": "downloads/windows-compact-20261010/received",
+    "new_disposable_block_limit_bytes": 268435456,
+    "scope": "Initial independent intake; not final acceptance of full formal results"
   }
 }
