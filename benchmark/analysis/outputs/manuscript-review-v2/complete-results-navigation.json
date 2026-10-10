@@ -1,0 +1,272 @@
+[
+  {
+    "number": "R1",
+    "model": "G1",
+    "function": null,
+    "file": "G1/execution-costs.pdf"
+  },
+  {
+    "number": "R2",
+    "model": "G1",
+    "function": "standard_q1",
+    "file": "G1/inference-0.pdf"
+  },
+  {
+    "number": "R3",
+    "model": "G1",
+    "function": "standard_q1_squared",
+    "file": "G1/inference-1.pdf"
+  },
+  {
+    "number": "R4",
+    "model": "G1",
+    "function": "standard_q1_gt1",
+    "file": "G1/inference-2.pdf"
+  },
+  {
+    "number": "R5",
+    "model": "G2",
+    "function": null,
+    "file": "G2/execution-costs.pdf"
+  },
+  {
+    "number": "R6",
+    "model": "G2",
+    "function": "standard_q1",
+    "file": "G2/inference-0.pdf"
+  },
+  {
+    "number": "R7",
+    "model": "G2",
+    "function": "standard_q1_squared",
+    "file": "G2/inference-1.pdf"
+  },
+  {
+    "number": "R8",
+    "model": "G2",
+    "function": "standard_q1_gt1",
+    "file": "G2/inference-2.pdf"
+  },
+  {
+    "number": "R9",
+    "model": "A1",
+    "function": null,
+    "file": "A1/execution-costs.pdf"
+  },
+  {
+    "number": "R10",
+    "model": "A1",
+    "function": "standard_q1",
+    "file": "A1/inference-0.pdf"
+  },
+  {
+    "number": "R11",
+    "model": "A1",
+    "function": "standard_q1_squared",
+    "file": "A1/inference-1.pdf"
+  },
+  {
+    "number": "R12",
+    "model": "A1",
+    "function": "standard_q1_gt1",
+    "file": "A1/inference-2.pdf"
+  },
+  {
+    "number": "R13",
+    "model": "L1",
+    "function": null,
+    "file": "L1/execution-costs.pdf"
+  },
+  {
+    "number": "R14",
+    "model": "L1",
+    "function": "q1",
+    "file": "L1/inference-0.pdf"
+  },
+  {
+    "number": "R15",
+    "model": "L1",
+    "function": "q2",
+    "file": "L1/inference-1.pdf"
+  },
+  {
+    "number": "R16",
+    "model": "L1",
+    "function": "sigmoid_q1",
+    "file": "L1/inference-2.pdf"
+  },
+  {
+    "number": "R17",
+    "model": "L1",
+    "function": "q1_positive",
+    "file": "L1/inference-3.pdf"
+  },
+  {
+    "number": "R18",
+    "model": "L2",
+    "function": null,
+    "file": "L2/execution-costs.pdf"
+  },
+  {
+    "number": "R19",
+    "model": "L2",
+    "function": "q1",
+    "file": "L2/inference-0.pdf"
+  },
+  {
+    "number": "R20",
+    "model": "L2",
+    "function": "q2",
+    "file": "L2/inference-1.pdf"
+  },
+  {
+    "number": "R21",
+    "model": "L2",
+    "function": "sigmoid_q1",
+    "file": "L2/inference-2.pdf"
+  },
+  {
+    "number": "R22",
+    "model": "L2",
+    "function": "q1_positive",
+    "file": "L2/inference-3.pdf"
+  },
+  {
+    "number": "R23",
+    "model": "H1",
+    "function": null,
+    "file": "H1/execution-costs.pdf"
+  },
+  {
+    "number": "R24",
+    "model": "H1",
+    "function": "v_over_3",
+    "file": "H1/inference-0.pdf"
+  },
+  {
+    "number": "R25",
+    "model": "H1",
+    "function": "tanh_v_over_3",
+    "file": "H1/inference-1.pdf"
+  },
+  {
+    "number": "R26",
+    "model": "H1",
+    "function": "x1_positive",
+    "file": "H1/inference-2.pdf"
+  },
+  {
+    "number": "R27",
+    "model": "H1",
+    "function": "cos_z1",
+    "file": "H1/inference-3.pdf"
+  },
+  {
+    "number": "R28",
+    "model": "H2",
+    "function": null,
+    "file": "H2/execution-costs.pdf"
+  },
+  {
+    "number": "R29",
+    "model": "H2",
+    "function": "v_over_3",
+    "file": "H2/inference-0.pdf"
+  },
+  {
+    "number": "R30",
+    "model": "H2",
+    "function": "tanh_v_over_3",
+    "file": "H2/inference-1.pdf"
+  },
+  {
+    "number": "R31",
+    "model": "H2",
+    "function": "x1_positive",
+    "file": "H2/inference-2.pdf"
+  },
+  {
+    "number": "R32",
+    "model": "H2",
+    "function": "cos_z1",
+    "file": "H2/inference-3.pdf"
+  },
+  {
+    "number": "R33",
+    "model": "M1",
+    "function": null,
+    "file": "M1/execution-costs.pdf"
+  },
+  {
+    "number": "R34",
+    "model": "M1",
+    "function": "standard_q1",
+    "file": "M1/inference-0.pdf"
+  },
+  {
+    "number": "R35",
+    "model": "M1",
+    "function": "q1_positive",
+    "file": "M1/inference-1.pdf"
+  },
+  {
+    "number": "R36",
+    "model": "M1",
+    "function": "q2",
+    "file": "M1/inference-2.pdf"
+  },
+  {
+    "number": "R37",
+    "model": "M1",
+    "function": "q2_squared",
+    "file": "M1/inference-3.pdf"
+  },
+  {
+    "number": "R38",
+    "model": "W1",
+    "function": null,
+    "file": "W1/execution-costs.pdf"
+  },
+  {
+    "number": "R39",
+    "model": "W1",
+    "function": "alpha",
+    "file": "W1/inference-0.pdf"
+  },
+  {
+    "number": "R40",
+    "model": "W1",
+    "function": "beta",
+    "file": "W1/inference-1.pdf"
+  },
+  {
+    "number": "R41",
+    "model": "W1",
+    "function": "alpha_squared",
+    "file": "W1/inference-2.pdf"
+  },
+  {
+    "number": "R42",
+    "model": "W1",
+    "function": "beta_squared",
+    "file": "W1/inference-3.pdf"
+  },
+  {
+    "number": "R43",
+    "model": "W1",
+    "function": "p_switch_0m",
+    "file": "W1/inference-4.pdf"
+  },
+  {
+    "number": "R44",
+    "model": "W1",
+    "function": "p_switch_100m",
+    "file": "W1/inference-5.pdf"
+  },
+  {
+    "number": "R45",
+    "model": "W1",
+    "function": "beta_positive",
+    "file": "W1/inference-6.pdf"
+  }
+]

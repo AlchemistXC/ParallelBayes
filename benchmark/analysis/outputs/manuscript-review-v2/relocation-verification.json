@@ -1,0 +1,39 @@
+{
+  "archive_sha256": "d1a30de801e635d1ab8533376e121e5ef8c0dea2ae9ad64d24e1332493b0350a",
+  "manifest_sha256": "3a5d7d832227918b13776ab5ce9066b990636c9bd0b9d14f52a1bcc13115e993",
+  "members_verified": 155,
+  "total_members": 156,
+  "source_commit": "cca551b9fc8022e9cdba2036a1171577f3f580fb",
+  "source_worktree_dirty": false,
+  "complete_results": {
+    "source_manifest_sha256": "ddfe88051602c13314f1d95d9544197e51d756bd2607bd6f2cddd1af5290ba1f",
+    "files": 129,
+    "scope": "All report TeX, figure PDFs and CSV source tables; no raw trajectories"
+  },
+  "committed_figure_hashes_match": true,
+  "wrong_report_manifest_rejected": true,
+  "new_sampler_calls": 0,
+  "compilations": {
+    "main": {
+      "pages": 17,
+      "text_difference_pages": [],
+      "pixel_difference_pages_at_72dpi": [],
+      "relocated_pdf_sha256": "5ecf9f7b7d8513985f5e9f538ffe821278871f1f91e4b644a5a712687e33bbba",
+      "compiler": "Tectonic 0.17.0, same host and cached dependencies; no external-lab claim"
+    },
+    "si": {
+      "pages": 34,
+      "text_difference_pages": [],
+      "pixel_difference_pages_at_72dpi": [],
+      "relocated_pdf_sha256": "491a19c60fcd7aefdd6c5763246387dd52ef943aa283e3ef97dda7929634b6a1",
+      "compiler": "Tectonic 0.17.0, same host and cached dependencies; no external-lab claim"
+    },
+    "complete_results": {
+      "pages": 67,
+      "text_difference_pages": [],
+      "pixel_difference_pages_at_72dpi": [],
+      "relocated_pdf_sha256": "b62cc6e1e915629efa39fd6e5f21ec4d772c124bf557a8f7cc229e2b510c7265",
+      "compiler": "Tectonic 0.17.0, same host and cached dependencies; no external-lab claim"
+    }
+  }
+}

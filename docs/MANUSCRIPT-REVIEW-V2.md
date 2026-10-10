@@ -71,3 +71,5 @@
 - [便携论文输入](../output/software-paper/parallelbayes-paper-review-v2.tar) · [校验清单](../benchmark/analysis/outputs/manuscript-review-v2/delivery.json)
 
 便携包包含两份主TeX及其全部生成输入和图件，也包含完整结果附录的report.tex、45幅图和来源表；不含29.31GB原始轨迹。重新编译与重建实验结果是两种不同操作。
+
+本轮源码身份`cca551b`；便携包17,326,080字节（约16.5 MiB），155个输入文件及1份清单逐项校验通过。三份PDF在新目录重新编译后，全文及72 dpi逐页像素均一致。此为同机搬移验证，不声称外部团队复现；本轮不再复制29.31GB原始证据。

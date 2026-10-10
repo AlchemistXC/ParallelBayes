@@ -58,3 +58,5 @@ R有限补测在重建进程实际结束后串行运行，32个新R进程、64�
 该包和独立校验清单已追加到原[草稿Release](https://github.com/AlchemistXC/ParallelBayes/releases/tag/untagged-a38d1dfe63e5584ac2ef)。服务器返回的大小和SHA256与本地匹配，213个原附件的ID/大小/摘要不变，新增2附件后为215，仍为draft。源码bundle记录完整历史，头为9384d84；随后Git提交只补交付核对记录。
 
 2026-10-10 09:40 UTC的实际本机进程观察中，本轮接收、重建、统计、R计时、绘图与打包脚本活动数为0。此观察不冒充远程Windows实时句柄。对应回执在`benchmark/analysis/outputs/compact-final-delivery-v1/`。
+
+本轮源码身份`cca551b`；便携包17,326,080字节（约16.5 MiB），155个输入文件及1份清单逐项校验通过。三份PDF在新目录重新编译后，全文及72 dpi逐页像素均一致。此为同机搬移验证，不声称外部团队复现；本轮不再复制29.31GB原始证据。
