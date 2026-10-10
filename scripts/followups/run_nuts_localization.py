@@ -57,14 +57,15 @@ def binding(study):
     versions={key:importlib.metadata.version(key) for key in ('numpy','psutil','pyro-ppl','scipy','torch')}
     env=dict(os.environ);env['R_LIBS_USER']=study['r_library']
     probe=subprocess.run([study['rscript'],'--vanilla','-e',
-        'cat(jsonlite::toJSON(list(R=R.version.string,posterior=as.character(packageVersion("posterior"))),auto_unbox=TRUE))'],
+        'cat(jsonlite::toJSON(list(R=R.version.string,posterior=as.character(packageVersion("posterior")),jsonlite=as.character(packageVersion("jsonlite"))),auto_unbox=TRUE))'],
         env=env,text=True,capture_output=True,check=True)
     r=json.loads(probe.stdout)
     differences={k:dict(required=v,actual=versions.get(k)) for k,v in study['required_versions'].items() if versions.get(k)!=v}
     if r['R']!=study['required_R_version'] or r['posterior']!=study['required_R_posterior']:
         differences['R']=dict(required=[study['required_R_version'],study['required_R_posterior']],actual=r)
     if differences:raise ValueError('Frozen native environment differs; select the original environment, do not silently upgrade: '+json.dumps(differences))
-    identity=dict(source_files=files,versions=versions,R=r,python=platform.python_version(),
+    identity=dict(source_files=files,versions=versions,all_distribution_versions={
+        dist.metadata['Name']:dist.version for dist in importlib.metadata.distributions() if dist.metadata['Name']},R=r,python=platform.python_version(),
         executable_sha256=sha(sys.executable),system=platform.system(),machine=platform.machine(),
         processor=platform.processor(),host=platform.node(),rscript_sha256=sha(study['rscript']))
     return dict(identity=identity,binding_sha256=fingerprint(identity),source_commit=commit)
@@ -104,6 +105,11 @@ def prepare(inputs,root,rscript,r_library):
         platform=platform.platform(),processor=platform.processor(),logical_cpus=psutil.cpu_count(),
         physical_cpus=psutil.cpu_count(logical=False),total_ram_bytes=psutil.virtual_memory().total,
         scientific_device='CPU only; CUDA is not exercised by this study'))
+    r_env=dict(os.environ);r_env['R_LIBS_USER']=study['r_library']
+    r_session=subprocess.run([study['rscript'],'--vanilla','-e',
+        'library(posterior);library(jsonlite);print(sessionInfo());print(installed.packages()[,c("Package","Version")])'],
+        env=r_env,text=True,capture_output=True,check=True)
+    (environment/'R-session-and-packages.txt').write_text(r_session.stdout+r_session.stderr,encoding='utf-8')
     shutil.copytree(inputs,root/'inputs')
     (root/'rng').mkdir();(root/'prepared-cases').mkdir();(root/'bindings').mkdir();(root/'calls').mkdir()
     for model in MODELS:
