@@ -1,0 +1,153 @@
+{
+  "schema": "parallelbayes-current-scope-v3",
+  "date": "2026-10-11",
+  "branch": "codex/research-integration",
+  "status": "agreed_main_research_and_targeted_followups_delivery_complete_pending_author_decisions",
+  "technical_research_complete": true,
+  "automatic_submission": false,
+  "automatic_public_release": false,
+  "windows_next_prompt": null,
+  "formal_sampling_terminal": true,
+  "source": {
+    "execution": "3a37a891896faedc62c0d6af185bfad77696054f",
+    "delivery": "94bebec95177b03f0497d748cbc9f54a45492ce4",
+    "pre_revision_manuscript": "2762b20577449f602853a472c2a2809ff59055bc",
+    "current_manuscript_identity": "targeted-paper-companion-v3; final delivery hashes in its record"
+  },
+  "main": {
+    "planned": 3888,
+    "valid": 3741,
+    "numerical_failure": 42,
+    "output_failure_unclassified": 105
+  },
+  "cache": {
+    "probes": 256,
+    "calls": 1024,
+    "posterior_samples": false
+  },
+  "Mac": {
+    "reconstructed": 4144,
+    "reader_errors": 0,
+    "reused": 4144,
+    "new_analyses_on_resume": 0,
+    "unchanged_assets": 42035,
+    "new_formal_repetitions": 0
+  },
+  "R_technical": {
+    "processes": 32,
+    "calls": 64,
+    "new_formal_repetitions": 0
+  },
+  "paper": {
+    "main_pages": 18,
+    "supplement_pages": 42,
+    "complete_results_pages": 67,
+    "author_metadata_pending": true,
+    "revision": "targeted-paper-companion-v1",
+    "review": "docs/TARGETED-FOLLOWUPS-PAPER.md",
+    "delivery": "docs/TARGETED-FOLLOWUPS-PAPER.md",
+    "current_identity": "targeted-paper-companion-v3",
+    "portable_rebuild_passed": true
+  },
+  "remaining_author_decisions": [
+    "Authors and affiliations",
+    "Whether/how to publish draft raw evidence",
+    "Journal and submission review"
+  ],
+  "preserved_limitations": [
+    "105 failures remain unclassified",
+    "Historical L2 MCMC rare-event reference uncertainty remains undefined; independent importance companion now available with approximate MCSE",
+    "W1 mean expectations enclosed; finite MCMC quantiles and replication uncertainty remain separate",
+    "Some chains do not explore sufficiently",
+    "No universal acceleration or precise time-to-accuracy claim"
+  ],
+  "report": "docs/TARGETED-FOLLOWUPS-COMPLETION.md",
+  "reproduction": "docs/COMPACT-REPRODUCTION.md",
+  "historical_state": "execution/CURRENT-SCOPE-through-2026-10-10-reconstruction.json",
+  "review_revision": {
+    "new_sampler_calls": 0,
+    "new_formal_repetitions": 0,
+    "frozen_protocol_changes": 0,
+    "windows_prompt": null
+  },
+  "targeted_followups": {
+    "status": "complete",
+    "plan": "docs/TARGETED-FOLLOWUPS-PLAN.md",
+    "machine_plan": "execution/targeted-followups-v1/PLAN.json",
+    "work_packages": "execution/targeted-followups-v1/WORK-PACKAGES.md",
+    "scientific_calls_started": 0,
+    "windows_prompt": null,
+    "prior_completion_reopened": false,
+    "authorization": "User requested execution based on the plan",
+    "S1": {
+      "status": "complete",
+      "tasks": 80,
+      "report": "docs/H1-FUNCTION-PATH-RESULTS.md",
+      "new_formal_repetitions": 0,
+      "reused_on_resume": 80,
+      "new_on_resume": 0
+    },
+    "S2": {
+      "status": "complete_with_resource_stops_historical_causes_unresolved",
+      "native_tests_recorded": {
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0
+      },
+      "portable_tests_recorded": {
+        "passed": 21,
+        "failed": 0,
+        "skipped": 0
+      },
+      "registered_four_chain_calls": 44,
+      "diagnostic_jobs": 9,
+      "main": {
+        "completed": 34,
+        "resource_stopped": 2,
+        "registered": 36
+      },
+      "confirmation": {
+        "completed": 2,
+        "resource_stopped": 2,
+        "registered": 4
+      },
+      "Mac_independent_intake_complete": true,
+      "report": "docs/WINDOWS-NUTS-MAC-REVIEW.md",
+      "new_formal_repetitions": 0,
+      "historical_105_reclassified": 0
+    },
+    "S3": {
+      "W1": {
+        "status": "complete",
+        "both_formulations_seven_targets_met": true,
+        "scientific_assets_verified": 24,
+        "resume_new_evaluations": 0,
+        "paired_sensitivity": {
+          "stable_sign": 408,
+          "exact_ties": 96,
+          "reversals": 0
+        },
+        "report": "docs/W1-REFERENCE-RESULTS.md",
+        "summary_sha256": "d2a1b675be99e19c9e59c57407451098eb157bedbb4664c5e50b397bf9498b32"
+      },
+      "L2": {
+        "status": "complete",
+        "reference_type": "independent importance with approximate MCSE",
+        "formal_reference_points": 2097152,
+        "pilot_points": 16384,
+        "report": "docs/L2-RARE-REFERENCE-RESULTS.md"
+      }
+    },
+    "paper_integration": {
+      "status": "complete",
+      "report": "docs/TARGETED-FOLLOWUPS-PAPER.md",
+      "remaining": [],
+      "tests": {
+        "passed": 5,
+        "failed": 0,
+        "skipped": 0
+      },
+      "delivery": "benchmark/analysis/outputs/targeted-paper-companion-v3/delivery.json"
+    }
+  }
+}
