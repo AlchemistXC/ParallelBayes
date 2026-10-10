@@ -1,0 +1,54 @@
+{
+  "schema": "parallelbayes-h1-companion-v1",
+  "identity": "h1-function-path-companion-v1",
+  "frozen": true,
+  "date": "2026-10-10",
+  "purpose": "Retrospective function discrepancies on all selected original trajectories; no sampler work or reclassification",
+  "plan_commit": "ed21b234382a1b105d216efe2e20c8ee36788a17",
+  "original_execution_commit": "3a37a891896faedc62c0d6af185bfad77696054f",
+  "original_manifest_sha256": "38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e",
+  "selection_sha256": "0fbeefc15c7953b0c4a81afda59452466119f7ff3945a6de9a16e5ee0a2995ce",
+  "source_files": {
+    "scripts/analysis/h1_function_paths.py": "4cc9d3d9463136d9c93c87b66c363155c0975ad96b4f0695e211001ec6e4cab7",
+    "scripts/analysis/h1_path_metrics.py": "666d2ea28bcf7242c160ac5d1f06e288e95b43b30d7524c90d58f8bedcf1e198"
+  },
+  "python_version": "3.12.14",
+  "required_versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "psutil": "7.1.0"
+  },
+  "discard": 512,
+  "expected_tasks": 80,
+  "expected_original_failures": 42,
+  "functions": [
+    "v_over_3",
+    "tanh_v_over_3",
+    "x1_positive",
+    "cos_z1"
+  ],
+  "scopes": [
+    "all saved transitions",
+    "original 512 prefix removed"
+  ],
+  "replication": "13 original input labels; paired devices/budgets/executors are not additional independent repetitions",
+  "metrics": [
+    "maximum_absolute_difference",
+    "root_mean_square_difference",
+    "mean_absolute_difference",
+    "signed_mean_difference",
+    "event_disagreement_positions",
+    "per_coordinate_state_and_transform_error"
+  ],
+  "high_precision_extreme_recheck": false,
+  "reason_no_high_precision_recheck": "Optional in plan; this version reports float64 function differences and nonfinite positions without claiming exact error. Any later high precision companion gets a distinct identity.",
+  "controls": {
+    "rss_limit_bytes": 4294967296,
+    "working_bytes_limit": 1073741824,
+    "one_task_reserve_bytes": 67108864,
+    "free_disk_floor_bytes": 4294967296,
+    "runtime_cutoff": null
+  },
+  "resume": "Check every bound source and output checksum; do not overwrite task outputs or original classification",
+  "outputs": "One NPZ and JSON per task, immutable summary, append-only invocation receipts"
+}
