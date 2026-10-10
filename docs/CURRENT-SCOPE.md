@@ -1,82 +1,38 @@
 # 当前研究范围与证据入口
 
-2026-10-10后继：正式原始组件180582文件/74块已完整核验；全部432个NUTS任务原始状态与日志审查完成，327有效/105原未分类失败保留。48份有效A1/G2长预算任务的192条内置ESS分配警告已与旧ESS缺失逐链对应；不能据此推断105项失败根因。全量4144项NumPy/R重建和其余交付组件仍在运行，F3–F6尚未关闭。见[完整失败审查](../review/WINDOWS-COMPACT-FAILURE-AUDIT.md)。
+2026-10-10。Windows紧凑研究已完成采样、分析和上传；Mac已独立接收全部21组件、232755文件（29,311,383,786字节）及完整源码bundle。**全量4144项NumPy/R重建正在运行，研究尚未完成。**当前不需要Windows重新执行任何提示词。
 
-**2026-10-10 Mac初始接收：** [紧凑交付独立核验](WINDOWS-COMPACT-MAC-INTAKE.md)已核对总清单和253源文件，技术34项读取及零新分析恢复通过；完整29.31GB组件与正式4144项重建正在执行，未标记完成。Windows科学采样已由最终交回记录确认结束，无需重新派发网格。当前无需向Windows提供新提示词；下方旧提示词顺序仅为历史记录。已更新[论文状态及图件版式](PUBLICATION-FIGURE-LAYOUT.md)，正式结论仍待完整重建。
+## 已完成的独立核验
 
-**2026-10-09 改稿完成：** [正文13页、补充材料22页及计划修订](MANUSCRIPT-REVISION-2026-10-09.md)已形成；七段历史结果重建一致，独立构建35页文本/渲染一致，未新增采样或改动运行中协议。Windows紧凑采样已由用户报告启动，实际完成和结果待接收。以下带日期条目保留当时独立核验边界。
+- [接收与源码核验](WINDOWS-COMPACT-MAC-INTAKE.md)：交付94bebec、冻结执行源3a37a89；253个冻结源文件与原件和Git对象相符。有限技术34项重建及零新增恢复通过。
+- [失败审查](../review/WINDOWS-COMPACT-FAILURE-AUDIT.md)：全部432个NUTS任务保留327有效/105未分类失败；已定位部分有效任务的旧ESS分配异常，未据此推断所有失败根因。
+- 全部42项原数值失败由实际数组和独立NumPy递推再次核对，仍越过原路径界限，事件失配0；不进入后验统计。
+- [双峰伴随分析](MIXTURE-EXPLORATION-COMPANION.md)：412份有效拟合中的411份无保存状态符号穿越而合并比例恰为1/2；保留唯一例外及20个原失败，不把共享初值计作收敛证据。
+- [当前文稿](MANUSCRIPT-COMPACT-COMPANIONS.md)：15页中文正文、24页补充材料已编译，完整最终统计尚未纳入。
 
-2026-10-09 用户进度补记：用户确认紧凑正式采样已启动，并转述 Windows 估计剩余主任务和缓存约 10–12 小时，未含后续分析、打包和上传。Mac 尚未接收本轮紧凑运行的冻结清单、实际结果和完成回执；下文 2026-10-08 的适配/执行状态是此前独立核验范围，不能据此认定 Windows 仍未启动。本轮[论文意见审核与修改清单](OPINION-AUDIT-2026-10-09.md)建议保持运行中的网格和数值协议不变，先补理论与正文组织，再根据回传证据形成最终结论。预计时间不代表已完成。
+## 当前剩余任务
 
-2026-10-08；本页提供当前入口，带日期的旧报告保留其当时状态。机器可读状态见 [CURRENT-SCOPE.json](../execution/CURRENT-SCOPE.json)，具体验收要求见 [F0–F6计划](RESEARCH-COMPLETION-PLAN.md)。**研究尚未完成**：软件、机制与安装已有实测证据，有限v2原生验收已独立接收，用户已确认旧正式采样开始；因资源要求正在改为新的紧凑研究，旧进度及停机尚待独立回执。
-
-## 使用哪个版本
-
-Windows本机续接回执（2026-10-08）：旧任务已在任务边界停止并保全，
-990有效、16数值失败、4未分类输出失败；原始输入和失败均未用于新重复。
-独立紧凑执行源固定为 `3a37a891896faedc62c0d6af185bfad77696054f`。
-35项便携检查、4项受影响原生检查、18主任务和16缓存/64调用的有限
-差异验收已通过；Windows搬移接收重建34项，恢复新增分析0。
-216个新正式实际输入已冻结。2026-10-10后继本机回执：三批3,888主任务全部终态
-（3741有效、42数值失败、105未分类输出失败），256探测/1024调用合格；
-全部4144行Windows只读重建、统计及45图完成，恢复新增分析/采样0。
-原始组件74块已完整追加草稿，Windows原件未删；Mac独立接收仍待完成。
-这些是Windows实际回执，尚不是Mac独立紧凑接收。本文余下2026-10-07
-基线及其机器状态保留当时接收范围；实时Windows状态以
-[紧凑研究报告](WINDOWS-COMPACT-RESULTS.md)及带时点的工作包回执为准。
-
-统一开发分支为 `codex/research-integration`。当前安装候选是 Python `0.2.0.dev2` / R `0.2.0.9002`，见 [Mac安装验收](RELEASE-CANDIDATE-0.2.md)及 [Windows安装验收](WINDOWS-PACKAGE-CANDIDATE.md)。历史实验各自绑定原源码；安装版号相同或数值文件相同不证明计时等价。
-
-| 使用需求 | 当前入口及范围 |
-|---|---|
-| Stan模型 | [安装与使用](INSTALL-AND-USE.md)；BridgeStan仅CPU顺序RWM/MALA。没有Stan自动转JAX/torch或时间并行入口；原生Windows Stan编译未验收 |
-| 明确的原生目标 | [支持矩阵](CAPABILITIES.md)；JAX CPU或torch CPU/CUDA的对应MH组合；Picard配RWM，quasi-DEER配MALA |
-| NUTS | JAX入口使用BlackJAX；Pyro CPU四进程为独立研究CLI，不是R包通用torch NUTS选项；GPU NUTS未接入 |
-| 新增目标 | [安装版Poisson扩展示例](EXTENDING-TARGETS.md)；Mac torch/JAX与R已测，该示例Windows/CUDA未测；[水井外部目标](WELLS-TARGET-VALIDATION.md)另有Windows CPU/CUDA/R实测 |
-| 正式研究运行 | 独立Python协议、调度及证据工具；`pb_benchmark()`仅运行配置列表，不能替代完整协议冻结、原始记录及检查点 |
-
-Windows路线使用原生Windows 11和原生Python/PowerShell。旧 `handoff/gpu` 的WSL方案是历史归档；初次移植提示词也不再用于当前续跑。
-
-## 哪些结果已经形成
-
-| 独立证据身份 | 已完成范围 | 限制与证据入口 |
+| 工作包 | 下一步 | 完成依据 |
 |---|---|---|
-| 历史Mac `protocol-v1` / 0.1.0 | 1920项CPU主任务；0.1.1修订和64数据集SBC另有身份 | [CPU修订报告](CPU-REVIEW-REVISION.md)、[版本衔接](VERSION-BRIDGE.md)；负结果、失败和L2参考未定保留 |
-| `windows-native-v1` / 0.2.0.dev1 | 512项CPU/CUDA任务、实际数组核验 | [首轮实测](WINDOWS-RESULTS.md)；局部缓存收益不等于推断加速，A1全拒绝和不良诊断保留 |
-| 第二轮跨系统/外部目标就绪 | F1诊断最小样例、水井接口、九目标MH/NUTS | [独立接收](WINDOWS-ROUND2-INTAKE.md)；60份原尺度严格跨系统逐位检查失败未改写成通过 |
-| `mechanism-windows-pilot-v1` | 192工作流、960技术调用路径；原输入传递后通过核验 | [机制回执](WINDOWS-MECHANISM-COMPLETION.md)、[接收核验](WINDOWS-FOLLOWUP-INTAKE.md)；每模型仅两份独立输入，不能按工作流/重放数扩大n |
-| 旧原生运行器有限批次 | 27主任务、24缓存探测/96调用、最大形状及恢复 | [运行验收](WINDOWS-RUNTIME-VALIDATION.md)；仅技术能力，不能替代后继v2适配验收或正式统计重复 |
-| 有限v2正式适配验收 | 16原生行为用例；27主任务、24缓存/96调用；Mac51项完整重建、零重算恢复 | [独立接收](WINDOWS-FORMAL-V2-INTAKE.md)；正式重复0，诊断不利及旧失败保留 |
-| dev2安装候选 | Mac和Windows新依赖环境、已安装包和R显式集成 | 默认跳过与显式通过分开；不是另一研究团队完整复现 |
-| 当前中文稿 | 26页；有限v2接收进入正文，保存记录到七段文本及PDF独立重建 | [论文与回执](NATIVE-V2-MANUSCRIPT.md)；源提交664ed16；原五段/六段稿保留，正式结论尚未完成 |
+| F3 独立正式重建 | 完成4144项、真实恢复、全模型统计及跨系统差异审阅 | 原数组→NumPy/R→完整统计；无读取缺口，失败分母不变 |
+| F4 R使用费用 | 重建进程退出后执行已冻结有限计时 | 32个新R进程、最多64次技术调用；普通/审计区分，不新增正式重复 |
+| F5 可复现交付 | 从独立统计重建正文主表图、完整结果附录及便携构建材料 | 版本、输入、输出校验与搬移重建记录 |
+| F6 论文收尾 | 更新主结果、摘要与讨论，检查整份PDF及证据映射 | 限定范围的贡献和负结果；作者终审另列 |
 
-人工任务/标量框架、45张图和85页报告用于检验后继分析接口；它们不是科学数据，未写入上述研究结果。[规模核验](FORMAL-REPORT-SCALE.md)与真实研究证据分开阅读。
+[当前研究计划](RESEARCH-COMPLETION-PLAN.md)、[工作登记](../execution/COMPLETION-WORK-PACKAGES.md)与[机器状态](../execution/CURRENT-SCOPE.json)共同记录进展。跨平台汇总和正文结果生成器见[重建审查](COMPACT-RECONSTRUCTION-REVIEW.md)，当前只有明确标记的预览。独立统计不得用预览替代。
 
-## 数据在哪里，克隆能得到什么
+## 使用范围
 
-Git包含源码、测试、协议、分析摘要、第一方图件及论文输入/PDF；不包含完整原始数组、私有技能、环境或第三方受限论文全文。
+统一开发分支为`codex/research-integration`；安装候选Python 0.2.0.dev2 / R 0.2.0.9002。历史和正式实验各自绑定原源码，不能用候选版号替代实验身份。
 
-| 材料 | 当前可用状态 |
+| 使用需求 | 支持范围与入口 |
 |---|---|
-| 历史CPU完整证据 | GitHub `cpu-review-v1` Release已公开，18附件；[原始重建说明](REBUILD-RESULTS.md) |
-| Windows首轮原始证据 | `windows-native-v1`仍为草稿，5附件；有权限者可取，不能声称公众已可下载 |
-| Windows第二轮及后续完整证据 | `windows-completion-v2-20261005`仍为草稿，47附件；新v2回传及后续三分支已接收，见[来源及哈希](WINDOWS-FOLLOWUP-INTAKE.md) |
-| 当前论文保存记录重建包 | 作者本地 `output/research-completion/native-v2-paper-v1.tar`；76项文件校验，未发布Release；Git中有[清单回执](../benchmark/analysis/outputs/native-v2-paper-v1/archive-receipt.json) |
-| 最终全研究复现包 | 尚未形成；须等正式数据完成后，关联原始证据、分析源码、全部图表和稿件 |
+| Stan模型 | BridgeStan CPU顺序RWM/MALA；[安装说明](INSTALL-AND-USE.md)。没有Stan自动转JAX/torch或时间并行；Windows原生Stan编译未验收 |
+| 明确的原生目标 | [能力矩阵](CAPABILITIES.md)：JAX CPU、torch CPU/CUDA对应MH组合；Picard配RWM，quasi-DEER配MALA |
+| NUTS | BlackJAX入口；Pyro CPU四进程为独立研究CLI，不是R包通用torch NUTS；GPU NUTS未接入 |
+| 新增目标 | [Poisson安装版示例](EXTENDING-TARGETS.md)已在Mac实测；[水井案例](WELLS-TARGET-VALIDATION.md)另有Windows CPU/CUDA/R核验 |
+| 实验管理 | 正式运行依赖Python CLI与冻结协议；`pb_benchmark()`只组织配置列表 |
 
-以上公开状态于2026-10-07通过GitHub API核对。解压历史归档时用独立目录，不能覆盖活动检出。保存摘要到PDF成功不等于全部原始轨迹已在本轮重建。
+Windows使用原生Windows 11、Python和PowerShell，旧WSL交接仅为历史。源码、摘要与第一方图件进入Git；原始大文件保留在分块归档。Windows草稿Release尚未自动公开，私有技能和第三方全文不进入仓库。
 
-## 下一步及完成条件
-
-当前先给Windows [旧任务保全提示词](../handoff/windows-completion/CODEX-PROMPT-HOLD-FORMAL.md)，确认停止后再给[紧凑实验接力提示词](../handoff/windows-completion/CODEX-PROMPT-COMPACT-STUDY.md)，每份各一次全文提供。新[设计v1](F3-COMPACT-DESIGN-v1.md)保留九目标/九工作流，将重复改24、预算改1024/4096，计3888主任务/256缓存/216新输入；元数据已完成，运行器适配和原生差异验收待做。不得向旧固定网格CLI传新JSON。旧原生证据及已启动正式研究各自保留，不混入新独立重复。
-
-| 门槛 | 剩余必需证据 |
-|---|---|
-| F0 范围/身份 | 本页、支持矩阵、机器状态与现有文稿已对应；最终发布身份随正式结果确定 |
-| F1、F2 | 有限诊断和机制验收已完成；保留数值局限，不重跑已完成任务 |
-| F3 | v2实机回执及原数组已独立核验；先保全旧采样；完成紧凑入口适配/差异验收和逐卷资源核对，再冻结新协议、执行并分析 |
-| F4 | 水井正式推断比较随F3完成；已参与开发，不能当作未见模型族 |
-| F5 | 用最终完整原始证据重建所有主图、主表和PDF，形成互相绑定的软件/分析/数据/论文归档 |
-| F6 | 根据真实正式结果重构全文、核对主张和引用；作者、单位、贡献、期刊及最终公开/投稿由研究者确认 |
-
-旧41,472/9,216研究已由用户确认开始，具体冻结与进度待Windows登记，不能继续写“未执行”。新研究使用独立身份和新随机数组，三批预定完成，不按结果方向选任务。新增空间按50–80GiB理解为整体约束；双机不依赖压缩的条件账本51.46GiB，建议60–75GiB规划，须另计旧原件、日志和失败，不能默认50GiB总量足够。Mac没有Windows实时执行句柄，不能声称旧任务已停止。总目标仍未完成，不自动公开Release、CRAN或投稿。
+历史Mac1920项、Windows首轮512项、机制与安装证据均保留，其独立单位、配置和时间边界不能与紧凑研究混算。[前期状态记录](CURRENT-SCOPE-through-2026-10-10-intake.md)完整保存此前条目，仅供追溯，不作为新执行命令。

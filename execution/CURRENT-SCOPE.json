@@ -457,7 +457,8 @@
     "next_prompt": "handoff/windows-completion/CODEX-PROMPT-COMPACT-STUDY.md",
     "combined_two_originals_receiver_condition_GiB": 51.45935773849487,
     "actual_storage_guaranteed": false,
-    "old_results_may_be_reused_as_new_repetitions": false
+    "old_results_may_be_reused_as_new_repetitions": false,
+    "historical_snapshot_only": true
   },
   "manuscript_revision_20261009": {
     "report": "docs/MANUSCRIPT-REVISION-2026-10-09.md",
@@ -494,7 +495,8 @@
     "receiver_status_path": "output/windows-compact-intake-v1/reconstruction-status.json",
     "data_destination": "downloads/windows-compact-20261010/received",
     "new_disposable_block_limit_bytes": 268435456,
-    "scope": "Initial independent intake; not final acceptance of full formal results"
+    "scope": "Initial independent intake; not final acceptance of full formal results",
+    "historical_snapshot_only": true
   },
   "historical_phase_summaries": [
     {
@@ -557,5 +559,16 @@
     "numerical_failure_replays": 42,
     "failures_confirmed": 42,
     "new_formal_repetitions": 0
+  },
+  "compact_reconstruction_review_preparation": {
+    "report": "docs/COMPACT-RECONSTRUCTION-REVIEW.md",
+    "tests_passed": 12,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "snapshot_visited": 2178,
+    "snapshot_reader_errors": 0,
+    "snapshot_Rhat_threshold_changes": 0,
+    "full_reconstruction_complete": false,
+    "new_sampler_calls": 0
   }
 }

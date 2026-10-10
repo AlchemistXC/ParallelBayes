@@ -1,0 +1,134 @@
+{
+  "schema": "compact-reconstruction-review-v1",
+  "stage": "partial_snapshot",
+  "visited": 2178,
+  "planned": 4144,
+  "frame": {
+    "analysis_can_authorize_sampling": false,
+    "cache_planned": 256,
+    "execution_contract": "windows-compact-contract-v1",
+    "formal_scientific_repetitions_per_model": 24,
+    "identity": "windows-compact-inference-v1",
+    "main_planned": 3888,
+    "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+    "scope": "formal_inference"
+  },
+  "receiver_environment": {
+    "R": {
+      "R": "R version 4.6.0 (2026-04-24)",
+      "jsonlite": "2.0.0",
+      "posterior": "1.7.0"
+    },
+    "packages": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3"
+    },
+    "platform": "darwin",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "r_library": "/Library/Frameworks/R.framework/Versions/4.6/Resources/library",
+    "rscript": "/Library/Frameworks/R.framework/Versions/4.6/Resources/bin/Rscript"
+  },
+  "original_statistics_replaced": false,
+  "new_sampler_calls": 0,
+  "new_independent_repetitions": 0,
+  "dispositions": {
+    "analyzed": 2178
+  },
+  "original_outcomes": {
+    "main": {
+      "output_failure_unclassified": 82,
+      "valid": 2009,
+      "numerical_failure": 23
+    },
+    "cache": {
+      "measurement_available": 64
+    }
+  },
+  "function_status": {
+    "unavailable": 169,
+    "completed": 2009
+  },
+  "replay": {
+    "main": {
+      "calls": 1847,
+      "transitions": 22812672,
+      "acceptance_mismatches": 0,
+      "maximum_path_error": 2.91910381422511e-07,
+      "maximum_error_bound_ratio": 0.8837644229326603
+    },
+    "cache": {
+      "calls": 256,
+      "transitions": 3145728,
+      "acceptance_mismatches": 0,
+      "maximum_path_error": 5.891682697267697e-10,
+      "maximum_error_bound_ratio": 0.010559515022049553
+    }
+  },
+  "NUTS_contracts": 162,
+  "comparisons": {
+    "function": {
+      "fits": 2009,
+      "exact": 920,
+      "maximum_absolute_difference": 4.440892098500626e-16
+    },
+    "means": {
+      "fits": 2009,
+      "exact": 1976,
+      "maximum_absolute_difference": 8.881784197001252e-16
+    },
+    "diagnostics": {
+      "fits": 2009,
+      "exact": 18,
+      "maximum_absolute_difference": 1.0186340659856796e-10
+    }
+  },
+  "diagnostic_metrics": {
+    "mean": {
+      "entries": 8054,
+      "undefined": 0,
+      "exact": 6354,
+      "maximum_absolute_difference": 7.099876242477876e-14,
+      "maximum_scaled_difference": 7.099876242477876e-14
+    },
+    "sd": {
+      "entries": 8054,
+      "undefined": 0,
+      "exact": 4742,
+      "maximum_absolute_difference": 2.0394796962364126e-13,
+      "maximum_scaled_difference": 2.0394796962364126e-13
+    },
+    "rhat": {
+      "entries": 8054,
+      "undefined": 675,
+      "exact": 7966,
+      "maximum_absolute_difference": 3.9968028886505635e-14,
+      "maximum_scaled_difference": 1.2751388581035383e-14
+    },
+    "ess_bulk": {
+      "entries": 8054,
+      "undefined": 454,
+      "exact": 5468,
+      "maximum_absolute_difference": 1.0186340659856796e-10,
+      "maximum_scaled_difference": 1.0290719850303672e-13
+    },
+    "ess_tail": {
+      "entries": 8054,
+      "undefined": 2018,
+      "exact": 6669,
+      "maximum_absolute_difference": 6.201616997714154e-11,
+      "maximum_scaled_difference": 1.393397598565039e-13
+    },
+    "mcse_mean": {
+      "entries": 8054,
+      "undefined": 454,
+      "exact": 4288,
+      "maximum_absolute_difference": 7.599476603559197e-14,
+      "maximum_scaled_difference": 7.599476603559197e-14
+    }
+  },
+  "rhat_threshold": 1.01,
+  "rhat_classification_changes": [],
+  "identity_sha256": "e536b30e59a7776f243d7b289a09fad96e9450b3f2ca12a4e9ba36bc921f93ec",
+  "resume_proof_sha256": null,
+  "note": "Same archived binary is used for cross-host R diagnostics; regenerated functions are compared separately. No threshold or tolerance is changed."
+}

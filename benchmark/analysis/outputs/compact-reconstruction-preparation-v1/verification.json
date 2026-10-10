@@ -1,0 +1,41 @@
+{
+  "source_base_commit": "8d34a1e9dd4faf45821de640bc08bf80fc211a05",
+  "scope": "Read-only cross-host summary and final manuscript projection preparation; full formal reconstruction still running",
+  "tests": [
+    {
+      "command": "python -m pytest -q tests/test_compact_reconstruction_review.py -p no:cacheprovider",
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "command": "python -m pytest -q tests/test_compact_manuscript_gate.py -p no:cacheprovider",
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "warnings": "14 existing matplotlib/pyparsing deprecation warnings"
+    }
+  ],
+  "snapshot_full_summary_sha256": "d7a93f26c969983f73765639248b1cd24b66b52fe64658c6630c41cbcfad456b",
+  "snapshot_retains_receipt_binding_count": 2178,
+  "manuscript_projection_preview_statistics_sha256": "0c1857a7767ab5c8a117c00b75992db40c03c06e2453ad64c1398a64080a0c00",
+  "preview_tables": {
+    "pages": 2,
+    "manually_reviewed_pages": [
+      1,
+      2
+    ],
+    "pdf_sha256": "25deb51c8c5742f9d23dae97ae9f79e659436566f58c4bdecaad92ab6766589a",
+    "final_manuscript": false,
+    "build_note": "Initial wrapper path error and unavailable default slanted header font retained in logs; plain page style compiled with existing Tectonic without installation."
+  },
+  "source_sha256": {
+    "scripts/analysis/review_compact_reconstruction.py": "4f18b794174444503eebf2279902883976a34a1c9a3eef49640438dc7fe4f8ef",
+    "scripts/analysis/write_compact_manuscript.py": "00e17da328d09af3269a8d5c9f3b042f0231fd9066767bebc0e31f85d270d196",
+    "tests/test_compact_reconstruction_review.py": "36566e1d06940bd8ecc3a26d50fd028486ca0c8e52264b000286c4ceec595c21",
+    "tests/test_compact_manuscript_gate.py": "dfee8239747724f05104a71c7c704422de4abc988822dda324c8532ff5d40027"
+  },
+  "new_sampler_calls": 0,
+  "new_R_diagnostic_calls_by_these_tools": 0,
+  "new_independent_repetitions": 0
+}

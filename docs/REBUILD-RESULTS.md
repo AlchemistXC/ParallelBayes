@@ -97,3 +97,10 @@ MH原始NPZ中包含`tape__noise`、`tape__log_uniform`和`tape__directions`，�
 ## 版本边界
 
 CPU主结果是0.1.0／protocol-v1；历史GPU交接归档为0.1.1／protocol-v3（当前不执行）；正式64数据集SBC使用0.1.1／statistical-v4。未执行的中间审查协议与源码快照保留，仅用于追踪修订。跨机器各自的同核比较可以分析，但不同源码版本不能直接归因为纯硬件差异。
+
+## 紧凑研究正文输入（新增，最终重建仍待结束）
+
+跨平台汇总和主表生成的精确命令见[重建审查](COMPACT-RECONSTRUCTION-REVIEW.md)。
+`review_compact_reconstruction.py`区分中间快照与完整读取/恢复；
+`write_compact_manuscript.py`要求Mac分析身份匹配，输出可追溯的TeX数字、W1九工作流表和全部目标状态表。
+它们不调用采样器或R，不能替代上游原始数组与诊断重建。不要把`--preview`产物放进最终论文当作已独立核对的证据。
