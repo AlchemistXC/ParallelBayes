@@ -104,3 +104,20 @@ R技术原件另按`r_frontend_verify.py --root R_TIMING --reference-file ORIGIN
 
 
 最终派生统计与R技术原件可从作者可访问的草稿Release新增包`parallelbayes-mac-final-research-20261010.tar`取得，校验见[交付报告](RESEARCH-COMPLETION-REPORT.md)。其中`statistics/`是完整Mac统计包，`complete-results/`包含全部45图/源表，`R-timing/`与`R-reference/reference.py`支持上述搬移只读命令。原Windows轨迹仍使用原21组件，未重复塞入此派生包。先校验外部收据和成员清单，再运行工具；不要将已有输出覆盖为新运行。
+
+
+## 审查修订v2的展示层重建
+
+本轮不重跑MCMC或bootstrap。沿用上面核验过的`STATISTICS`，以及正式证据目录`FORMAL`（包含冻结protocol/catalog/inputs）。以下`NEW_*`均须是尚不存在的目录；`WELLS_REFERENCE_BINARY`是原水井独立参考的`values-f64le.bin`，须与已归档SHA一致。
+
+```text
+ANALYSIS_PYTHON CURRENT_SOURCE/scripts/analysis/revision_configuration_tables.py --formal FORMAL --output NEW_CONFIGURATION --tex NEW_CONFIGURATION_TEX
+ANALYSIS_PYTHON CURRENT_SOURCE/scripts/analysis/revision_reference_tables.py --project CURRENT_SOURCE --statistics STATISTICS --wells-reference-binary WELLS_REFERENCE_BINARY --output NEW_REFERENCE --tex NEW_REFERENCE_TEX
+ANALYSIS_PYTHON CURRENT_SOURCE/scripts/analysis/plot_revision_error_cost.py --statistics-directory STATISTICS --manifest-sha256 VERIFIED_STATISTICS_SHA --output NEW_ERROR_COST
+ANALYSIS_PYTHON CURRENT_SOURCE/scripts/analysis/formal_report.py --statistics-directory STATISTICS --manifest-sha256 VERIFIED_STATISTICS_SHA --output NEW_COMPLETE_RESULTS --publication-layout
+ANALYSIS_PYTHON CURRENT_SOURCE/scripts/completion/build_paper_bundle.py --root CURRENT_SOURCE --output NEW_PAPER_INPUTS --complete-results NEW_COMPLETE_RESULTS --complete-results-sha256 VERIFIED_REPORT_SHA
+```
+
+`VERIFIED_REPORT_SHA`为本次`NEW_COMPLETE_RESULTS/SHA256.json`本身的SHA256，而非统计清单哈希。打包器逐项校验报告PDF、CSV、导航和TeX后复制；不会重新采样或覆盖原目录。新目标/参考表的内容应分别与签入的`revision-configuration.generated.tex`及`revision-reference.generated.tex`比较。本轮实际导出与QA见[审核记录](MANUSCRIPT-REVIEW-V2.md)。
+
+当前便携包`parallelbayes-paper-review-v2.tar`包含正文、SI与完整结果附录所需的全部TeX/图件及附录CSV。解压到新目录，先核对`MANIFEST.json`每项哈希，然后在`manuscript/software`编译两份中文TeX，在`complete-results`编译`report.tex`。这一步只重建已生成的论文；完整原数据分析仍按本页前文执行。旧的23文件输入包和完整Mac派生归档保留，不能将旧包当成本轮新增表/图的源码。

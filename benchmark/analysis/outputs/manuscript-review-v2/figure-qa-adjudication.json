@@ -1,0 +1,21 @@
+{
+  "source_preflight": "Raw static checker outputs preserved; imported helpers inspected separately",
+  "error_cost_static_adjudication": {
+    "font_editable_export_alignment": "Defined in formal_publication_plots.configure/save, which this script imports and invokes; actual PDF/SVG/PNG and strict alignment outputs verified",
+    "width": "160 mm, not the checker-inferred 4064 mm; physical width confirmed by figure contract",
+    "log_guard": "Explicit point<=0 or mean_seconds<=0 rejection before rendering; all 72 saved points finite and positive",
+    "font_sizes": "Requested axes/title 9 pt, ticks/legend 8.5 pt; actual PDF smallest math exponent 5.95 pt. Labels inspected at final width."
+  },
+  "mixture_adjudication": {
+    "font_sizes": "9 pt axes, 8.5 pt ticks/legend; actual subscript glyph 6.3 pt. Initial optional 7 pt glyph audit identified two subscripts; actual 5 pt glyph-floor audit passes.",
+    "export": "Vector PDF and editable SVG are delivery figures. PNG is a 300 dpi preview, not a journal raster submission.",
+    "width": "160 mm matches the manuscript text width; no target-journal template chosen"
+  },
+  "all_figure_hashes_verified": true,
+  "error_cost_points": 72,
+  "mixture_source_rows": 8192,
+  "mixture_values_match_previous_render": true,
+  "mixture_previous_source": "figures/compact-mixture-companion-v1/source.csv",
+  "new_sampler_calls": 0,
+  "visual_review": "All 17 main, 34 supplement and 67 complete-results pages reviewed; new figures have no clipped labels or chart/text collisions"
+}

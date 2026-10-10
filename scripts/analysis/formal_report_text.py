@@ -33,35 +33,39 @@ def write_report(output,receipt):
     elif compact:
         lines[4:4]=['本附件是独立紧凑技术验收：18主任务、16缓存探测/64调用，正式重复数为0；技术输入不并入正式研究，不生成区间。','']
     body=[r'\documentclass[UTF8,fontset=fandol,a4paper]{ctexart}',r'\usepackage[margin=20mm,headheight=16pt]{geometry}',
-          r'\usepackage{booktabs,longtable,graphicx,hyperref,fancyhdr,array}',r'\hypersetup{hidelinks}',
+          r'\usepackage{booktabs,longtable,graphicx,hyperref,fancyhdr,array}',r'\hypersetup{hidelinks,bookmarksnumbered=true}',
           r'\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}',
           r'\pagestyle{fancy}\fancyhf{}',r'\fancyhead[C]{\small '+tex(title)+r'}\fancyfoot[C]{\thepage}',
-          r'\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}',r'\begin{document}',
+          r'\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}',r'\newcommand{\resultcaption}[1]{\par\refstepcounter{figure}\noindent{\small 图~\thefigure~~#1}\par}',r'\begin{document}',
           r'\begin{center}{\Large\bfseries ParallelBayes：'+tex(title)+r'}\end{center}',tex(notice),
           '本报告不自动判定研究完成或后验收敛。缺失证据保持缺失；数值有效输出仍可能有探索问题。',
           r'正式模式的区间是逐点95\% BCa区间，以完整四链重复为单位，缓存调用不增加独立样本数。技术验收不生成正式区间；失败和未知时间不填零。',
-          r'\section*{任务框架}',r'\begin{longtable}{lrrp{46mm}p{46mm}}',r'\toprule 目标 & 主任务 & 缓存 & 主任务状态 & 缓存状态 \\ \midrule\endhead']
+          r'\setcounter{tocdepth}{1}\begingroup\small\setlength{\parskip}{0pt}\tableofcontents\endgroup\clearpage', r'\renewcommand{\thefigure}{R\arabic{figure}}\renewcommand{\thetable}{R\arabic{table}}',r'\section{任务框架}',r'\begin{longtable}{lrrrrrl}',r'\caption{全部计划记录的证据状态}\label{tab:task-frame}\\\toprule 目标 & 计划 & 已分析 & 有效 & 失败 & 未知 & 缓存已分析/计划 \\ \midrule\endhead']
     if compact and formal:
-        body[body.index(r'\section*{任务框架}'):body.index(r'\section*{任务框架}')]=[
+        body[body.index(r'\section{任务框架}'):body.index(r'\section{任务框架}')]=[
             r'本研究是旧采样启动后的资源修订，不是完全事前预注册。旧结果未混入新24次完整四链重复。仅比较1024/4096预算；缓存每格4输入只作描述，不生成区间，不用成功子调用替代不合格输入。']
     elif compact:
-        body[body.index(r'\section*{任务框架}'):body.index(r'\section*{任务框架}')]=[
+        body[body.index(r'\section{任务框架}'):body.index(r'\section{任务框架}')]=[
             '本附件仅为独立紧凑技术验收：18主任务、16缓存探测/64调用，正式重复数为0，不生成区间。']
     for model in receipt['source_models']:
         name=model['model'];s=model['summary']
         a=json.dumps(s['main_dispositions'],sort_keys=True);b=json.dumps(s['cache_dispositions'],sort_keys=True)
         lines.append(f"| {name} | {s['main_planned']} | {s['cache_planned']} | `{a}` | `{b}` |")
-        body.append(' & '.join(map(tex,[name,s['main_planned'],s['cache_planned'],a,b]))+r' \\')
+        outcomes=s['main_outcomes']
+        valid=outcomes.get('valid',0); unknown=outcomes.get('unknown_evidence',0)
+        failed=sum(v for k,v in outcomes.items() if k not in ('valid','unknown_evidence'))
+        cache=('未分配' if not s['cache_planned'] else str(s['cache_dispositions'].get('analyzed',0))+'/'+str(s['cache_planned']))
+        body.append(' & '.join(map(tex,[name,s['main_planned'],s['main_dispositions'].get('analyzed',0),valid,failed,unknown,cache]))+r' \\')
     body.extend([r'\bottomrule\end{longtable}',
         r'各目标的 task\_costs.csv 按任务保留原调用记录汇总的已知费用与未知项；diagnostics.csv 按函数、工作流和预算保留诊断分母。',
         '图中若采用对称对数坐标，其线性区阈值记录在对应 contract.json；零点保持原值，不以小正数替代。',
         '未显示误差--成本点的行仍保留于来源表。原因为参考未定、估计不可用或同一函数有效重复中费用不完整。'])
     for model in receipt['source_models']:
         name=model['model'];tables=json.loads((output/name/'tables.json').read_text(encoding='utf-8'))
-        body.extend([r'\clearpage\section*{'+tex(name)+'：诊断与资格}',
+        body.extend([r'\clearpage\section{'+tex(name)+r'：诊断与有效输出}\label{diag:'+name+'}',
             '下表每行的计划数以完整四链重复为单位。已收到的不可判定诊断与未收到诊断分开；Rhat阈值只用于描述，不是整体后验可信的充分条件。',
             r'\begingroup\footnotesize\begin{longtable}{P{28mm}P{40mm}rrrrr}',
-            r'\toprule 函数 & 工作流/预算 & 计划 & 缺诊断 & 未定Rhat & Rhat$>1.01$ & 最小尾ESS \\ \midrule\endhead'])
+            r'\caption{'+tex(name)+r'的逐函数诊断}\label{tab:diag-'+name+r'}\\\toprule 函数 & 工作流/预算 & 计划 & 缺诊断 & 未定Rhat & Rhat$>1.01$ & 最小尾ESS \\ \midrule\endhead'])
         for r in tables['diagnostics']:
             values=[r['function'],DISPLAY[r['workflow']]+' / '+str(r['budget']),r['planned'],r['missing'],
                     r['rhat_undefined'],r['rhat_above_1_01'],number(r['ess_tail_minimum'])]
@@ -70,19 +74,21 @@ def write_report(output,receipt):
             body.append(' & '.join(cells)+r' \\')
         body.extend([r'\bottomrule\end{longtable}\endgroup'])
         if tables['nuts']:
-            body.extend([r'\subsection*{NUTS诊断}',
+            body.extend([r'\subsection{Pyro NUTS四进程工作流}',
                 '发散总数只对收到的记录计数，未知不填零。树深度命中若未被上游提供，仍不可判定；两者不会把数值有效自动变成统计收敛。',
-                r'\begin{longtable}{rrrrrr}',r'\toprule 预算 & 计划 & 有记录任务 & 已知发散 & 未知链数 & 完整树深命中 \\ \midrule\endhead'])
+                r'\begin{longtable}{rrrrrr}',r'\caption{'+tex(name)+r'的Pyro NUTS完整拟合与诊断}\label{tab:nuts-'+name+r'}\\\toprule 预算 & 计划 & 有记录任务 & 已知发散 & 未知链数 & 完整树深命中 \\ \midrule\endhead'])
             for r in tables['nuts']:
                 values=[r['budget'],r['planned_tasks'],r['received_tasks'],r['known_divergences'],r['unknown_divergence_chains'],number(r['complete_tree_depth_hits'])]
                 body.append(' & '.join(map(tex,values))+r' \\')
             body.extend([r'\bottomrule\end{longtable}'])
     lines.extend(['','所有来源表、可用性状态、逐任务费用及完整诊断见各模型子目录。图件是逐模型/函数的完整附件；正文主图选择须依据实际论证，不以获得有利结果为条件。',''])
-    for figure in receipt['figures']:
+    previous_model=None
+    navigation=[]
+    for figure_index,figure in enumerate(receipt['figures'],1):
         function=figure.get('function');label=figure['model']+(' / '+function if function else ' / execution costs')
         caption=('三个口径分别回答已准备内核、普通工作流和含审计执行的成本问题。RWM比较Online Picard与顺序执行，MALA比较quasi-DEER与顺序执行。点为同核顺序/时间成本比的配对几何均值，线为比值尺度的逐点95% BCa区间；右侧标注共同有效重复数，星号表示点不可用。'
             if figure['kind']=='execution_costs' else
-            '左图为各已测预算下的条件误差和同一函数可用重复上的普通成本。横纵区间分别为逐点95% BCa区间，不是联合置信区域。右图为共同有效重复上MH平方损失减CPU NUTS平方损失，零线不是显著性门槛。没有预算插值或精确达到精度时间的声明。')
+            '左图为各已测预算下的条件误差和同一函数可用重复上的普通成本。横纵区间分别为逐点95% BCa区间，不是联合置信区域。右图为共同有效重复上MH平方损失减CPU NUTS平方损失，零表示两方法平均平方损失相等；区间为逐点区间，未作多重比较校正。没有预算插值或精确达到精度时间的声明。')
         if figure['kind']=='execution_costs' and compact and formal:
             caption=('缓存每格4份预选输入，仅给描述性配对比，不生成区间；每输入初次及全部三次prepared调用均核验合格且计时齐全后才使用prepared中位数。'
                 '普通工作流与含审计执行使用24次原始四链主任务的共同有效重复；至少20份时给逐点95% BCa区间，否则区间未定。'
@@ -97,17 +103,26 @@ def write_report(output,receipt):
                 reference=next(m['summary']['reference'] for m in receipt['source_models'] if m['model']==figure['model'])
                 reference_kind=reference['kinds'][reference['names'].index(figure['function'])]
                 caption+=' 本函数参考类别：'+reference_kind+'；参考不确定性另列，未并入所绘BCa区间。'
+        if figure['model']=='W1' and function=='beta_positive':
+            caption+=' 所有拟合的事件估计均为零；图中非零平方差由共同的数值参考决定。'
         caption+=' 空心标记表示区间不可判定；缺失点不补零。完整分母、缺失原因、参考类别及配对四格表见来源数据。'
         if fixture:caption='人工数据，仅作接口和版面检查。'+caption
         lines.extend(['### '+label,'',f"![{label}]({figure['file'][:-4]}.png)",'',caption,'',f"来源：[{figure['source_table']}]({figure['source_table']})。",''])
-        body.extend([r'\clearpage\section*{'+tex(label)+r'}',
-            r'\begin{center}\includegraphics['+(r'width=160mm' if receipt.get('publication_layout') else r'width=\linewidth,height=.74\textheight,keepaspectratio')+r']{'+figure['file']+r'}\end{center}',tex(caption)])
+        navigation.append(dict(number='R'+str(figure_index),model=figure['model'],function=function,file=figure['file']))
+        heading=r'\clearpage'
+        if previous_model!=figure['model']:
+            heading+=r'\section{'+tex(figure['model'])+r'：执行与函数结果}'
+            previous_model=figure['model']
+        heading+=r'\subsection{'+tex(label)+r'}'
+        body.extend([heading,
+            r'\begin{center}\includegraphics['+(r'width=160mm' if receipt.get('publication_layout') else r'width=\linewidth,height=.74\textheight,keepaspectratio')+r']{'+figure['file']+r'}\end{center}',r'\resultcaption{'+tex(caption)+r'}\label{fig:'+figure['model']+'-'+str(figure_index)+'}'])
     lines.extend(['## 仍须核验','',
         '原始结果、冻结协议与执行环境的审计属于上游接收步骤。本报告不能代替实际Windows验收、正式实验、完整研究复现或作者审阅。',
         '每次改变绘图数据或布局后，须重做最终PDF字体、碰撞与逐面板检查。相关检查不是统计正确性的证明。'])
-    body.extend([r'\clearpage\section*{来源与边界}',
+    body.extend([r'\clearpage\section{来源与边界}',
         '来源统计清单SHA256：'+r'\texttt{'+receipt['statistics_manifest_sha256'][:32]+r'}\par\texttt{'+receipt['statistics_manifest_sha256'][32:]+r'}',
         '原坐标函数、参考类别及MCSE保留于参考契约和来源表。有限参考偏移范围不是参考误差已传播的区间；未认证积分不称为解析真值。',
         '本文件及图件是可重建分析附件，不代替完整研究终稿、原始证据审计或作者审阅。',r'\end{document}'])
+    (output/'navigation.json').write_text(json.dumps(navigation,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (output/'report.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     (output/'report.tex').write_text('\n'.join(body)+'\n',encoding='utf-8')

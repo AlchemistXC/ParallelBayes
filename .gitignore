@@ -152,3 +152,9 @@ __pycache__/
 !/output/software-paper/软件与基准研究-问题导向修订.pdf
 !/output/software-paper/补充材料-问题导向修订.pdf
 !/output/pdf/parallel-bayes-review-zh-dde-correction.pdf
+
+# Reviewed manuscript and portable first-party TeX inputs (no raw trajectories).
+!/output/software-paper/软件与基准研究-审查修订v2.pdf
+!/output/software-paper/补充材料-审查修订v2.pdf
+!/output/software-paper/完整结果附录-审查修订v2.pdf
+!/output/software-paper/parallelbayes-paper-review-v2.tar

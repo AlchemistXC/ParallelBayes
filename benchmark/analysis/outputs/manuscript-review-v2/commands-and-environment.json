@@ -1,0 +1,35 @@
+{
+  "base_commit": "a7575b53999338ddacfe29c22339a3974969fc3d",
+  "branch": "codex/research-integration",
+  "new_sampler_calls": 0,
+  "commands": [
+    "python -m pytest -q tests/handoff/test_formal_report.py tests/test_compact_manuscript_gate.py tests/analysis/test_publication_layout.py",
+    "Rscript --vanilla -e 'parse(file=\"examples/installed-custom-target.R\"); cat(\"R syntax OK\\n\")'",
+    "python scripts/analysis/revision_configuration_tables.py --formal FORMAL --output NEW_CONFIG --tex NEW_CONFIG_TEX",
+    "python scripts/analysis/revision_reference_tables.py --project SOURCE --statistics VERIFIED_STATISTICS --wells-reference-binary ORIGINAL_WELLS_BINARY --output NEW_REFS --tex NEW_REFS_TEX",
+    "python scripts/analysis/plot_revision_error_cost.py --statistics-directory VERIFIED_STATISTICS --manifest-sha256 d928a497889e11f6aaf5829bf1ffd807a647a880a5d4ae7cef4acf3046c34bfb --output NEW_FIGURE",
+    "tectonic 软件与基准研究.tex --keep-logs --outdir NEW_MAIN_BUILD",
+    "tectonic 补充材料.tex --keep-logs --outdir NEW_SI_BUILD",
+    "tectonic report.tex --keep-logs --outdir NEW_REPORT_BUILD"
+  ],
+  "notation": "Uppercase paths denote verified source/unused output locations; actual input identities are in accompanying manifests.",
+  "validation": {
+    "tests_passed": 19,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "warnings": 14,
+    "warning_kind": "Existing matplotlib/pyparsing deprecations, no scientific result warning",
+    "R_syntax": "passed",
+    "native_compiler": "External project dependencies unsupported; existing Tectonic used"
+  },
+  "environment": {
+    "Python": "3.12.14",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.6",
+    "PyMuPDF": "1.26.5",
+    "pytest": "8.4.2",
+    "R": "4.6.0 (2026-04-24)",
+    "Tectonic": "0.17.0"
+  }
+}

@@ -19,6 +19,7 @@ actual <- normalizePath(pb$"__file__", mustWork = TRUE)
 if (!identical(actual, expected)) stop("Python is not loaded from the selected installed R package")
 helper <- reticulate::import_from_path("installed_custom_target", path=example_dir, convert=TRUE)
 result <- helper$run_example(normalizePath(args[2], mustWork=TRUE), args[3], backend, device)
+print(vapply(result$workflows, function(w) w$status, ""))
 diagnostics <- list()
 for (workflow in result$workflows) {
   label <- paste0("workflow-", workflow$index)

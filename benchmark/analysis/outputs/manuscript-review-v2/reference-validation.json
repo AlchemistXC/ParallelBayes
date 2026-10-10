@@ -1,0 +1,18 @@
+{
+  "source_script_sha256": "953a6e2d80ed587eea417af0e121ad0027573b22a4541d81fdc3979caa3d7d99",
+  "reference_summary_sha256": "9f62f511c5fd10665a487a641e6c959107ae96f79a7ef9be3ba73f20883a9adf",
+  "tex_sha256": "bfcdaaed5f962444e211c5a59e34c83a7b3cf85df7a3dd698eeb0538c5522dca",
+  "review_sha256": "17ee7ed408105941bac802cc5a2715e5a5057034b97924531c3679dd8c022e4a",
+  "checks": [
+    "formal statistics manifest and all consumed member hashes",
+    "W1 target/reference identity",
+    "L1/L2 provenance and means/MCSE identity",
+    "24 planned/common W1 repetitions per method/budget/function",
+    "saved paired loss reproduced",
+    "reference-shift identity independently checked",
+    "reference binary SHA and 7-variable R-column-major layout checked",
+    "posterior means agree with archived R summary"
+  ],
+  "new_sampling_calls": 0,
+  "scientific_status_or_reference_changes": 0
+}

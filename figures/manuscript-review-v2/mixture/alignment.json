@@ -1,0 +1,18 @@
+{
+  "axes": [
+    [
+      0.14,
+      0.5608032128514057,
+      0.82,
+      0.2991967871485943
+    ],
+    [
+      0.14,
+      0.1150000000000001,
+      0.82,
+      0.2991967871485943
+    ]
+  ],
+  "violations": [],
+  "scope": "Axes row/column edges; text collisions require visual review"
+}

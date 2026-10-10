@@ -1,0 +1,13 @@
+{
+  "original_members": 327,
+  "changed_members": [
+    "REPORT.json",
+    "report.md",
+    "report.tex"
+  ],
+  "unchanged_members": 324,
+  "figures": 45,
+  "navigation_entries": 45,
+  "new_estimates": 0,
+  "new_manifest_sha256": "ddfe88051602c13314f1d95d9544197e51d756bd2607bd6f2cddd1af5290ba1f"
+}

@@ -6,11 +6,15 @@
 
 ## 阅读与使用
 
-- [中文正文：16页](output/software-paper/软件与基准研究-紧凑研究完成版.pdf) · [LaTeX](manuscript/software/软件与基准研究.tex)
-- [补充材料：27页](output/software-paper/补充材料-紧凑研究完成版.pdf) · [完整结果附录：66页](output/software-paper/紧凑研究-完整结果附录.pdf)
+- [中文正文：17页](output/software-paper/软件与基准研究-审查修订v2.pdf) · [LaTeX](manuscript/software/软件与基准研究.tex)
+- [补充材料：34页](output/software-paper/补充材料-审查修订v2.pdf) · [完整结果附录：67页](output/software-paper/完整结果附录-审查修订v2.pdf)
 - [研究交付报告](docs/RESEARCH-COMPLETION-REPORT.md) · [当前范围](docs/CURRENT-SCOPE.md) · [收尾计划与完成标准](docs/RESEARCH-COMPLETION-PLAN.md)
 - [安装与使用](docs/INSTALL-AND-USE.md) · [原生Windows](docs/WINDOWS-NATIVE.md) · [新增Poisson目标示例](docs/EXTENDING-TARGETS.md)
 - [从紧凑原件重建](docs/COMPACT-REPRODUCTION.md) · [历史CPU重建](docs/PORTABLE-REPRODUCTION.md)
+
+- [逐项审核与本轮修订](docs/MANUSCRIPT-REVIEW-V2.md) · [三份论文的便携编译包](output/software-paper/parallelbayes-paper-review-v2.tar)
+
+本轮补全最终配置、逐函数参考、失败分母、参考敏感性与误差—耗时主图，未增加采样或修改冻结结果。
 
 ## 本版范围
 

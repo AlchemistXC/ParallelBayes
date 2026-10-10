@@ -99,3 +99,7 @@ Rscript --vanilla "$examples\installed-custom-target.R" `
 核验不重新采样、不调用 R，也不访问回执中的作者安装路径。
 历史 `custom-poisson-target.py/.R` 保留为 0.1.1 开发环境示例；其中的相对环境路径
 不是当前安装版入口。
+
+## 本次论文示例补充
+
+从仓库根目录调用`examples/installed-custom-target.R`时，脚本从自身位置定位Python示例，`INPUTS`必须存在，`NEW_OUTPUT`必须不存在。Python辅助脚本的`workflows`配置列出MALA顺序/quasi-DEER及RWM顺序/Picard，R整批调用并先打印全部状态；数值失败继续保存并最终报错。当前真实Mac torch示例四组均completed，样本数组为iteration×chain×parameter，即128×4×2。顺序MALA的beta0均值0.11428、sd0.16642、Rhat1.01917；此短链示例展示接口，并不达到全面收敛要求。原记录在`benchmark/analysis/outputs/installed-extension-v1/r-torch-diagnostics.json`。

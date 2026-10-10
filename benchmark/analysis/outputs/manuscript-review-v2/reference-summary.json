@@ -1,0 +1,2492 @@
+{
+  "identity": "manuscript-review-v2-reference-companion",
+  "scope": "post hoc presentation and reference-shift analysis only; no sampling or protocol change",
+  "W1": [
+    {
+      "function": "alpha",
+      "reference": 0.6065771117644989,
+      "change_order_64_to_96_at_R12": 4.440892098500626e-16,
+      "change_radius_10_to_12_at_n96": 2.220446049250313e-16,
+      "change_radius_6_to_12_at_n96": 4.3883008338241325e-10,
+      "maximum_change_from_selected_over_12_grids": 9.289407543189299e-08,
+      "finite_mcmc_mean": 0.6067102479,
+      "finite_mcmc_mcse": 0.000632787986457314,
+      "mcmc_minus_quadrature": 0.000133136135501144,
+      "uncertainty_status": "uncertified_numerical_reference",
+      "tail_only_float_estimate": 1.450354585596587e-29
+    },
+    {
+      "function": "beta",
+      "reference": -0.6229832495256747,
+      "change_order_64_to_96_at_R12": 2.220446049250313e-16,
+      "change_radius_10_to_12_at_n96": 6.661338147750939e-16,
+      "change_radius_6_to_12_at_n96": 8.169088738796404e-10,
+      "maximum_change_from_selected_over_12_grids": 1.7862470380602957e-07,
+      "finite_mcmc_mean": -0.622143444,
+      "finite_mcmc_mcse": 0.00103530234680044,
+      "mcmc_minus_quadrature": 0.0008398055256747528,
+      "uncertainty_status": "uncertified_numerical_reference",
+      "tail_only_float_estimate": 1.8098001408212464e-29
+    },
+    {
+      "function": "alpha_squared",
+      "reference": 0.37157705510657857,
+      "change_order_64_to_96_at_R12": 2.220446049250313e-16,
+      "change_radius_10_to_12_at_n96": 5.551115123125783e-16,
+      "change_radius_6_to_12_at_n96": 8.538474371988514e-10,
+      "maximum_change_from_selected_over_12_grids": 5.166714134308137e-08,
+      "finite_mcmc_mean": 0.371713306194974,
+      "finite_mcmc_mcse": 0.000767510754839276,
+      "mcmc_minus_quadrature": 0.00013625108839543376,
+      "uncertainty_status": "uncertified_numerical_reference",
+      "tail_only_float_estimate": 1.6095377033455753e-29
+    },
+    {
+      "function": "beta_squared",
+      "reference": 0.39761870777386443,
+      "change_order_64_to_96_at_R12": 2.220446049250313e-16,
+      "change_radius_10_to_12_at_n96": 7.771561172376096e-16,
+      "change_radius_6_to_12_at_n96": 1.870348542709621e-09,
+      "maximum_change_from_selected_over_12_grids": 2.0955541879530415e-07,
+      "finite_mcmc_mean": 0.396531180996391,
+      "finite_mcmc_mcse": 0.00135250913402019,
+      "mcmc_minus_quadrature": -0.0010875267774734243,
+      "uncertainty_status": "uncertified_numerical_reference",
+      "tail_only_float_estimate": 2.71782124789703e-29
+    },
+    {
+      "function": "p_switch_0m",
+      "reference": 0.6470373970343255,
+      "change_order_64_to_96_at_R12": 6.661338147750939e-16,
+      "change_radius_10_to_12_at_n96": 0.0,
+      "change_radius_6_to_12_at_n96": 8.881129165416723e-11,
+      "maximum_change_from_selected_over_12_grids": 2.6878455461343265e-08,
+      "finite_mcmc_mean": 0.647068743991571,
+      "finite_mcmc_mcse": 0.000144466693184256,
+      "mcmc_minus_quadrature": 3.1346957245492746e-05,
+      "uncertainty_status": "uncertified_numerical_reference",
+      "tail_only_float_estimate": 1.2299938944356996e-29
+    },
+    {
+      "function": "p_switch_100m",
+      "reference": 0.49590258117089897,
+      "change_order_64_to_96_at_R12": 2.220446049250313e-16,
+      "change_radius_10_to_12_at_n96": 2.220446049250313e-16,
+      "change_radius_6_to_12_at_n96": 9.335887618533434e-11,
+      "maximum_change_from_selected_over_12_grids": 2.1673914551989526e-08,
+      "finite_mcmc_mean": 0.496145549398793,
+      "finite_mcmc_mcse": 0.000157943539917072,
+      "mcmc_minus_quadrature": 0.00024296822789404704,
+      "uncertainty_status": "uncertified_numerical_reference",
+      "tail_only_float_estimate": 1.1171276649964636e-29
+    },
+    {
+      "function": "beta_positive",
+      "reference": 4.7672087565484905e-11,
+      "change_order_64_to_96_at_R12": 1.770683498746325e-24,
+      "change_radius_10_to_12_at_n96": 4.756288522179909e-24,
+      "change_radius_6_to_12_at_n96": 4.205170619720879e-12,
+      "maximum_change_from_selected_over_12_grids": 4.205170619722062e-12,
+      "finite_mcmc_mean": 0,
+      "finite_mcmc_mcse": null,
+      "mcmc_minus_quadrature": -4.7672087565484905e-11,
+      "uncertainty_status": "uncertified_numerical_reference",
+      "tail_only_float_estimate": 7.467917223428425e-30
+    }
+  ],
+  "W1_quadrature": {
+    "center": [
+      0.6059593596187433,
+      -0.6218819312605882
+    ],
+    "scale_cholesky": [
+      [
+        0.06031022450135823,
+        0.0
+      ],
+      [
+        -0.07684793178505052,
+        0.05988487265228674
+      ]
+    ],
+    "radii": [
+      6,
+      8,
+      10,
+      12
+    ],
+    "orders": [
+      32,
+      64,
+      96
+    ],
+    "selected": [
+      12,
+      96
+    ],
+    "root_gradient_max": 8.676587979771056e-14,
+    "root_evaluations": 12,
+    "all_grids": [
+      {
+        "radius": 6,
+        "order": 32,
+        "normalizer_z_scaled": 6.287264893947517,
+        "integrals_z_scaled": [
+          6.287264893947517,
+          3.81371097750999,
+          -3.9168607091240237,
+          2.3362033685996493,
+          2.4999341308040464,
+          4.06809551088672,
+          3.1178708900007215
+        ],
+        "event_integral_z_scaled": 2.7328802096123465e-10,
+        "means": [
+          0.6065771113256716,
+          -0.6229832487087699,
+          0.37157705425273446,
+          0.39761870590352044,
+          0.6470373969455149,
+          0.4959025812642574,
+          4.346691694576403e-11
+        ],
+        "analysis_seconds": 0.07049566600471735,
+        "tail_only_mean_error_estimate": [
+          3.080034481533135e-08,
+          3.588302028509024e-08,
+          2.5826135036727176e-08,
+          3.682595300338329e-08,
+          3.2005455804278884e-08,
+          2.9068583409793514e-08,
+          1.943213667462878e-08
+        ],
+        "tail_mass_over_computed_normalizer": 1.9432136673784126e-08
+      },
+      {
+        "radius": 6,
+        "order": 64,
+        "normalizer_z_scaled": 6.287264893947586,
+        "integrals_z_scaled": [
+          6.287264893947586,
+          3.8137109775100106,
+          -3.9168607091240384,
+          2.3362033685996493,
+          2.499934130804037,
+          4.068095510886759,
+          3.1178708900007575
+        ],
+        "event_integral_z_scaled": 2.7328802096123016e-10,
+        "means": [
+          0.6065771113256683,
+          -0.6229832487087654,
+          0.3715770542527304,
+          0.3976187059035146,
+          0.647037396945514,
+          0.49590258126425774,
+          4.3466916945762843e-11
+        ],
+        "analysis_seconds": 0.2797456660773605,
+        "tail_only_mean_error_estimate": [
+          3.080034481533095e-08,
+          3.588302028508976e-08,
+          2.5826135036726815e-08,
+          3.6825953003382775e-08,
+          3.200545580427852e-08,
+          2.9068583409793203e-08,
+          1.943213667462857e-08
+        ],
+        "tail_mass_over_computed_normalizer": 1.9432136673783914e-08
+      },
+      {
+        "radius": 6,
+        "order": 96,
+        "normalizer_z_scaled": 6.287264893947488,
+        "integrals_z_scaled": [
+          6.287264893947488,
+          3.8137109775099547,
+          -3.91686070912398,
+          2.3362033685996177,
+          2.4999341308040064,
+          4.068095510886697,
+          3.1178708900007095
+        ],
+        "event_integral_z_scaled": 2.732880209612333e-10,
+        "means": [
+          0.6065771113256688,
+          -0.6229832487087659,
+          0.37157705425273113,
+          0.3976187059035159,
+          0.6470373969455142,
+          0.49590258126425785,
+          4.3466916945764026e-11
+        ],
+        "analysis_seconds": 0.6480595420580357,
+        "tail_only_mean_error_estimate": [
+          3.080034481533144e-08,
+          3.588302028509033e-08,
+          2.5826135036727235e-08,
+          3.682595300338337e-08,
+          3.2005455804279016e-08,
+          2.906858340979366e-08,
+          1.9432136674628872e-08
+        ],
+        "tail_mass_over_computed_normalizer": 1.9432136673784215e-08
+      },
+      {
+        "radius": 8,
+        "order": 32,
+        "normalizer_z_scaled": 6.287264923836653,
+        "integrals_z_scaled": [
+          6.287264923836653,
+          3.8137109983961164,
+          -3.9168607328747957,
+          2.336203385072975,
+          2.499934154447441,
+          4.068095530783722,
+          3.117870904236557
+        ],
+        "event_integral_z_scaled": 2.997262109069102e-10,
+        "means": [
+          0.6065771117640277,
+          -0.6229832495247593,
+          0.371577055106398,
+          0.39761870777379554,
+          0.6470373970342043,
+          0.49590258117101116,
+          4.767195506118572e-11
+        ],
+        "analysis_seconds": 0.06466654199175537,
+        "tail_only_mean_error_estimate": [
+          5.0402172028471036e-14,
+          6.029437287272111e-14,
+          4.658458717768933e-14,
+          7.097925082098593e-14,
+          4.8740851290943514e-14,
+          4.4268311931402156e-14,
+          2.95930446880162e-14
+        ],
+        "tail_mass_over_computed_normalizer": 2.959304468660544e-14
+      },
+      {
+        "radius": 8,
+        "order": 64,
+        "normalizer_z_scaled": 6.287264923871796,
+        "integrals_z_scaled": [
+          6.287264923871796,
+          3.8137109984203885,
+          -3.9168607329024328,
+          2.3362033850871553,
+          2.4999341544618217,
+          4.068095530807226,
+          3.11787090425328
+        ],
+        "event_integral_z_scaled": 2.997262109069194e-10,
+        "means": [
+          0.6065771117644977,
+          -0.6229832495256726,
+          0.3715770551065764,
+          0.39761870777386027,
+          0.6470373970343258,
+          0.4959025811708991,
+          4.767195506092072e-11
+        ],
+        "analysis_seconds": 0.27398012508638203,
+        "tail_only_mean_error_estimate": [
+          5.0402172028203215e-14,
+          6.029437287241112e-14,
+          4.6584587177434226e-14,
+          7.09792508205911e-14,
+          4.874085129067467e-14,
+          4.42683119311514e-14,
+          2.9593044687850786e-14
+        ],
+        "tail_mass_over_computed_normalizer": 2.959304468644003e-14
+      },
+      {
+        "radius": 8,
+        "order": 96,
+        "normalizer_z_scaled": 6.287264923871655,
+        "integrals_z_scaled": [
+          6.287264923871655,
+          3.813710998420304,
+          -3.9168607329023404,
+          2.336203385087107,
+          2.4999341544617577,
+          4.068095530807132,
+          3.117870904253215
+        ],
+        "event_integral_z_scaled": 2.9972621090692163e-10,
+        "means": [
+          0.6065771117644979,
+          -0.622983249525672,
+          0.371577055106577,
+          0.39761870777385905,
+          0.6470373970343254,
+          0.49590258117089986,
+          4.767195506092214e-11
+        ],
+        "analysis_seconds": 0.6715101660229266,
+        "tail_only_mean_error_estimate": [
+          5.0402172028204345e-14,
+          6.029437287241244e-14,
+          4.6584587177435287e-14,
+          7.097925082059266e-14,
+          4.874085129067575e-14,
+          4.4268311931152415e-14,
+          2.959304468785145e-14
+        ],
+        "tail_mass_over_computed_normalizer": 2.9593044686440694e-14
+      },
+      {
+        "radius": 10,
+        "order": 32,
+        "normalizer_z_scaled": 6.287264800995793,
+        "integrals_z_scaled": [
+          6.287264800995793,
+          3.813710918020544,
+          -3.9168606450742036,
+          2.336203339322671,
+          2.4999341102210053,
+          4.06809544971553,
+          3.1178708446859345
+        ],
+        "event_integral_z_scaled": 2.9972704399776173e-10,
+        "means": [
+          0.6065771108314889,
+          -0.6229832477318025,
+          0.3715770550896246,
+          0.3976187085081989,
+          0.647037396782018,
+          0.49590258138835164,
+          4.767208849709817e-11
+        ],
+        "analysis_seconds": 0.07372837513685226,
+        "tail_only_mean_error_estimate": [
+          3.5507146287589036e-21,
+          4.34496977969365e-21,
+          3.604223930530397e-21,
+          5.806985948796681e-21,
+          3.2090238801916527e-21,
+          2.914558658773963e-21,
+          1.9483612737721837e-21
+        ],
+        "tail_mass_over_computed_normalizer": 1.9483612736793012e-21
+      },
+      {
+        "radius": 10,
+        "order": 64,
+        "normalizer_z_scaled": 6.287264923871937,
+        "integrals_z_scaled": [
+          6.287264923871937,
+          3.813710998420484,
+          -3.9168607329025233,
+          2.3362033850872237,
+          2.4999341544618914,
+          4.068095530807317,
+          3.117870904253353
+        ],
+        "event_integral_z_scaled": 2.997270439981824e-10,
+        "means": [
+          0.6065771117644994,
+          -0.6229832495256732,
+          0.37157705510657896,
+          0.3976187077738625,
+          0.6470373970343258,
+          0.4959025811708996,
+          4.767208756547817e-11
+        ],
+        "analysis_seconds": 0.26448312494903803,
+        "tail_only_mean_error_estimate": [
+          3.550714561182799e-21,
+          4.344969698272163e-21,
+          3.604223860123717e-21,
+          5.806985833876191e-21,
+          3.2090238179671805e-21,
+          2.914558601389156e-21,
+          1.9483612356940807e-21
+        ],
+        "tail_mass_over_computed_normalizer": 1.9483612356011982e-21
+      },
+      {
+        "radius": 10,
+        "order": 96,
+        "normalizer_z_scaled": 6.287264923871688,
+        "integrals_z_scaled": [
+          6.287264923871688,
+          3.813710998420329,
+          -3.916860732902374,
+          2.336203385087125,
+          2.4999341544618,
+          4.068095530807153,
+          3.117870904253224
+        ],
+        "event_integral_z_scaled": 2.99727043998183e-10,
+        "means": [
+          0.6065771117644987,
+          -0.6229832495256741,
+          0.371577055106578,
+          0.39761870777386366,
+          0.6470373970343255,
+          0.49590258117089875,
+          4.767208756548015e-11
+        ],
+        "analysis_seconds": 0.6158609590493143,
+        "tail_only_mean_error_estimate": [
+          3.550714561182938e-21,
+          4.344969698272337e-21,
+          3.6042238601238574e-21,
+          5.8069858338764236e-21,
+          3.2090238179673065e-21,
+          2.9145586013892693e-21,
+          1.948361235694158e-21
+        ],
+        "tail_mass_over_computed_normalizer": 1.9483612356012753e-21
+      },
+      {
+        "radius": 12,
+        "order": 32,
+        "normalizer_z_scaled": 6.28724204781548,
+        "integrals_z_scaled": [
+          6.28724204781548,
+          3.8136965382806904,
+          -3.916845358445797,
+          2.336195209713354,
+          2.4999263760395367,
+          4.068080560151935,
+          3.1178596962270517
+        ],
+        "event_integral_z_scaled": 2.9972705745843e-10,
+        "means": [
+          0.6065770188704235,
+          -0.6229830709009709,
+          0.3715771067737199,
+          0.39761891732928323,
+          0.64703737015587,
+          0.4959026028448135,
+          4.767226316069238e-11
+        ],
+        "analysis_seconds": 0.07004541717469692,
+        "tail_only_mean_error_estimate": [
+          1.4503597933218892e-29,
+          1.8098065923618124e-29,
+          1.60954359821429e-29,
+          2.717831293152459e-29,
+          1.22999834968132e-29,
+          1.1171317458382772e-29,
+          7.467944395357308e-30
+        ],
+        "tail_mass_over_computed_normalizer": 7.467944395001294e-30
+      },
+      {
+        "radius": 12,
+        "order": 64,
+        "normalizer_z_scaled": 6.287264923871659,
+        "integrals_z_scaled": [
+          6.287264923871659,
+          3.8137109984203157,
+          -3.9168607329023613,
+          2.3362033850871193,
+          2.4999341544617946,
+          4.068095530807139,
+          3.1178709042532127
+        ],
+        "event_integral_z_scaled": 2.9972704399820035e-10,
+        "means": [
+          0.6065771117644994,
+          -0.622983249525675,
+          0.3715770551065788,
+          0.39761870777386465,
+          0.6470373970343262,
+          0.4959025811708992,
+          4.7672087565483134e-11
+        ],
+        "analysis_seconds": 0.2948725828900933,
+        "tail_only_mean_error_estimate": [
+          1.450354585596582e-29,
+          1.8098001408212405e-29,
+          1.60953770334557e-29,
+          2.7178212478970206e-29,
+          1.229993894435696e-29,
+          1.1171276649964598e-29,
+          7.4679172234284e-30
+        ],
+        "tail_mass_over_computed_normalizer": 7.467917223072387e-30
+      },
+      {
+        "radius": 12,
+        "order": 96,
+        "normalizer_z_scaled": 6.2872649238716365,
+        "integrals_z_scaled": [
+          6.2872649238716365,
+          3.8137109984202993,
+          -3.916860732902346,
+          2.3362033850871096,
+          2.4999341544617844,
+          4.0680955308071205,
+          3.1178709042532002
+        ],
+        "event_integral_z_scaled": 2.9972704399821043e-10,
+        "means": [
+          0.6065771117644989,
+          -0.6229832495256747,
+          0.37157705510657857,
+          0.39761870777386443,
+          0.6470373970343255,
+          0.49590258117089897,
+          4.7672087565484905e-11
+        ],
+        "analysis_seconds": 0.665837958920747,
+        "tail_only_mean_error_estimate": [
+          1.450354585596587e-29,
+          1.8098001408212464e-29,
+          1.6095377033455753e-29,
+          2.71782124789703e-29,
+          1.2299938944356996e-29,
+          1.1171276649964636e-29,
+          7.467917223428425e-30
+        ],
+        "tail_mass_over_computed_normalizer": 7.467917223072414e-30
+      }
+    ],
+    "integration": "Tensor Gauss-Legendre in the whitened square [-R,R]^2; beta>0 integrated separately with a variable lower z2 boundary and z1 intervals split where that boundary crosses +/-R.",
+    "tail_control": "Global log-concavity supporting planes on radius-R directions bound omitted mass outside the square by a sector-wise integral outside the inscribed disk; also bound absolute polynomial moment tails.",
+    "error_interpretation": "Report every order/radius result, order and domain differences, and floating-point evaluations of analytic tail inequalities. No interval arithmetic is implemented; grid stability and evaluated tail bounds are not a certified total quadrature error or exact truth."
+  },
+  "W1_mcmc_generation": {
+    "method": "stan_sampling",
+    "method_arguments": {
+      "chains": 10,
+      "iter": 20000,
+      "warmup": 10000,
+      "thin": 10,
+      "seed": 2544,
+      "control": {
+        "adapt_delta": 0.8
+      }
+    }
+  },
+  "W1_mcmc_replication": "One upstream Stan generation with ten chains, each storing 1000 thinned correlated draws; neither 10000 independent experiments nor ten independent generation studies.",
+  "logistic": [
+    {
+      "model": "L1",
+      "function": "q1",
+      "reference": -0.2780655741279529,
+      "batch_mcse": 0.00038899606027532126,
+      "between_fit_mcse": 0.00025869583053387646,
+      "retained_mcse": 0.00038899606027532126,
+      "reference_fit_mean_min": -0.2786295039794004,
+      "reference_fit_mean_max": -0.2774314035092761,
+      "kind": "finite_mcmc",
+      "positive_count": null
+    },
+    {
+      "model": "L1",
+      "function": "q2",
+      "reference": -0.6788954260209844,
+      "batch_mcse": 0.0005002227859549134,
+      "between_fit_mcse": 0.0003547699543040506,
+      "retained_mcse": 0.0005002227859549134,
+      "reference_fit_mean_min": -0.6798167640619198,
+      "reference_fit_mean_max": -0.6781641240089346,
+      "kind": "finite_mcmc",
+      "positive_count": null
+    },
+    {
+      "model": "L1",
+      "function": "sigmoid_q1",
+      "reference": 0.4317947518790173,
+      "batch_mcse": 9.405694023179964e-05,
+      "between_fit_mcse": 6.089065899728145e-05,
+      "retained_mcse": 9.405694023179964e-05,
+      "reference_fit_mean_min": 0.4316590600062382,
+      "reference_fit_mean_max": 0.4319450056495447,
+      "kind": "finite_mcmc",
+      "positive_count": null
+    },
+    {
+      "model": "L1",
+      "function": "q1_positive",
+      "reference": 0.10919189453125,
+      "batch_mcse": 0.000659090984359736,
+      "between_fit_mcse": 0.0007639814255156833,
+      "retained_mcse": 0.0007639814255156833,
+      "reference_fit_mean_min": 0.107666015625,
+      "reference_fit_mean_max": 0.111083984375,
+      "kind": "finite_mcmc",
+      "positive_count": 28624
+    },
+    {
+      "model": "L2",
+      "function": "q1",
+      "reference": -0.3111767722693598,
+      "batch_mcse": 8.892829255519044e-05,
+      "between_fit_mcse": 8.692642324475378e-05,
+      "retained_mcse": 8.892829255519044e-05,
+      "reference_fit_mean_min": -0.31137221693128914,
+      "reference_fit_mean_max": -0.31094887902486806,
+      "kind": "finite_mcmc",
+      "positive_count": null
+    },
+    {
+      "model": "L2",
+      "function": "q2",
+      "reference": -0.6005257632922614,
+      "batch_mcse": 0.00010191246932380079,
+      "between_fit_mcse": 7.788961455613489e-05,
+      "retained_mcse": 0.00010191246932380079,
+      "reference_fit_mean_min": -0.6007567707020126,
+      "reference_fit_mean_max": -0.6004276074394027,
+      "kind": "finite_mcmc",
+      "positive_count": null
+    },
+    {
+      "model": "L2",
+      "function": "sigmoid_q1",
+      "reference": 0.42288078897091724,
+      "batch_mcse": 2.1694164929430826e-05,
+      "between_fit_mcse": 2.1193029311218127e-05,
+      "retained_mcse": 2.1694164929430826e-05,
+      "reference_fit_mean_min": 0.42283292625931207,
+      "reference_fit_mean_max": 0.4229361934603573,
+      "kind": "finite_mcmc",
+      "positive_count": null
+    },
+    {
+      "model": "L2",
+      "function": "q1_positive",
+      "reference": 0.0,
+      "batch_mcse": 0.0,
+      "between_fit_mcse": 0.0,
+      "retained_mcse": null,
+      "reference_fit_mean_min": 0.0,
+      "reference_fit_mean_max": 0.0,
+      "kind": "unresolved",
+      "positive_count": 0
+    }
+  ],
+  "logistic_generation": {
+    "protocol": "reference-v1",
+    "defaults": {
+      "audit": false,
+      "chains": 4,
+      "draws": 16384,
+      "max_tree_depth": 10,
+      "memory_limit_mb": 2048,
+      "warmup": 1024
+    },
+    "independent_fits_per_model": 4,
+    "total_correlated_draws_per_model": 262144,
+    "summary_provenance": {
+      "analysis_sha256": "3143c2c2dcce9342bacb40adededd41c30c99f5054f5fec1c163652cdcf0fbf4",
+      "identity": {
+        "platform": "cpu",
+        "protocol_sha256": "13f1baa4a13fd25f3fe58d3303948c6ece8186ebcf6eb540eb8feb623206edc0",
+        "source_sha256": "6f5a4f13fbaa9a59d8508074147836961051719b0a89814464bccb2c7da977de"
+      },
+      "manifest_sha256": "d3d4c93e254f697585aff15b5effa0b42001bfe155404fbc98bbf1b11b6d52f1",
+      "model_sha256": {
+        "L1": "e9f9a77f5d98bd9cfcda542cc84d4c9415666bbb42f6588f292128c8792dd17d",
+        "L2": "7d3e601010f3c362f0cb37a7eca3e13efdd60a9622b718831200ecc0d65cee4f"
+      },
+      "protocol_file_sha256": "393e2ba60176fe5fc436d8f010ae0e834ed360c58ed9075661ab3a4e1345b195",
+      "state_sha256": {
+        "1017381d6bb4add6e173": "e158e2686be73eb7197e676514c67d21557a9a2365e0d8fd8360930d62ee38d8",
+        "29911e8bdd4560192aaf": "996868a64c2edf82fc566e886d46d25f63e7029e534ae8a042e2613b193ffc77",
+        "430c1e826bb1468ec922": "d9b9ac5193a509559970f501fffb9ff66283e330308f87c6f6cd3dbe6a22e830",
+        "4c666c5a664d534de1d7": "2b8311d43cf42e4199a3d6642efd0a6eff69324e0b0ad01464ec4af2e3b5a25b",
+        "77fc1469ecbc6e32f0c9": "6ea7d95cbfd0367fbb96883054df9d807db2b4d204048d7cd20d4262c3ec9544",
+        "7e636e7ade76027c57cf": "5d16a724de3212e1fdffc7f804aca4a2b37b0d85039093951010d7aa88f66884",
+        "8a25f32d84019d937a5b": "ea9f501fdf4af874d554ec04c160051c52cc29fd4ca9586fea3645b3cc47fbd1",
+        "fe5feb2ae45d2d0a73d6": "0f31411ff2b589a535cd9a839123a2c8dce11ccdef60bd17ee77f2ed87d6ead5"
+      },
+      "summary_sha256": "fa981be0ed61482438163197190d3b0e1a9e6f7f189ca9dfa52fa7644846887f"
+    },
+    "raw_reuse_audit": {
+      "L1": {
+        "specification_exactly_equal": true,
+        "target_id": "e9f9a77f5d98bd9cfcda542cc84d4c9415666bbb42f6588f292128c8792dd17d",
+        "independent_fits": 4,
+        "chains_per_fit": 4,
+        "draws_per_chain": 16384,
+        "total_correlated_draws": 262144,
+        "sign_event_positive_count": 28624,
+        "limitations": [
+          "Same target identity permits reuse, but finite reference may have shared sampler bias.",
+          "Four fits are the independent reference units, not 262144 independent draws.",
+          "Undefined event uncertainty remains undefined; zero observations do not prove zero probability.",
+          "Seeds verify distinct recorded namespaces, not a general proof of independent PRNG substreams."
+        ]
+      },
+      "L2": {
+        "specification_exactly_equal": true,
+        "target_id": "7d3e601010f3c362f0cb37a7eca3e13efdd60a9622b718831200ecc0d65cee4f",
+        "independent_fits": 4,
+        "chains_per_fit": 4,
+        "draws_per_chain": 16384,
+        "total_correlated_draws": 262144,
+        "sign_event_positive_count": 0,
+        "limitations": [
+          "Same target identity permits reuse, but finite reference may have shared sampler bias.",
+          "Four fits are the independent reference units, not 262144 independent draws.",
+          "Undefined event uncertainty remains undefined; zero observations do not prove zero probability.",
+          "Seeds verify distinct recorded namespaces, not a general proof of independent PRNG substreams."
+        ]
+      }
+    }
+  },
+  "existing_logistic_reference_sensitivity": [
+    {
+      "model": "L1",
+      "function": "q1",
+      "comparison": "CPU MALA sequential minus CPU Pyro NUTS; N=4096",
+      "common_valid": 6,
+      "planned": 24,
+      "point_difference": 1.3086099439121535e-05,
+      "shift_min": 1.1687426759717906e-05,
+      "shift_max": 1.448477211852516e-05,
+      "interval_status": "fewer_than_20_valid_repetitions",
+      "shift_rule": "reference +/- 2 estimated MCSE; not a confidence interval"
+    },
+    {
+      "model": "L1",
+      "function": "q2",
+      "comparison": "CPU MALA sequential minus CPU Pyro NUTS; N=4096",
+      "common_valid": 6,
+      "planned": 24,
+      "point_difference": 1.615660059421738e-05,
+      "shift_min": 1.2868617635660977e-05,
+      "shift_max": 1.9444583552773783e-05,
+      "interval_status": "fewer_than_20_valid_repetitions",
+      "shift_rule": "reference +/- 2 estimated MCSE; not a confidence interval"
+    },
+    {
+      "model": "L1",
+      "function": "sigmoid_q1",
+      "comparison": "CPU MALA sequential minus CPU Pyro NUTS; N=4096",
+      "common_valid": 6,
+      "planned": 24,
+      "point_difference": 7.638056494457501e-07,
+      "shift_min": 6.778618256429981e-07,
+      "shift_max": 8.497494732485022e-07,
+      "interval_status": "fewer_than_20_valid_repetitions",
+      "shift_rule": "reference +/- 2 estimated MCSE; not a confidence interval"
+    },
+    {
+      "model": "L1",
+      "function": "q1_positive",
+      "comparison": "CPU MALA sequential minus CPU Pyro NUTS; N=4096",
+      "common_valid": 6,
+      "planned": 24,
+      "point_difference": 1.5700235962867737e-05,
+      "shift_min": 4.478015316254731e-06,
+      "shift_max": 2.6922456609480743e-05,
+      "interval_status": "fewer_than_20_valid_repetitions",
+      "shift_rule": "reference +/- 2 estimated MCSE; not a confidence interval"
+    },
+    {
+      "model": "L2",
+      "function": "q1",
+      "comparison": "CPU MALA sequential minus CPU Pyro NUTS; N=4096",
+      "common_valid": 6,
+      "planned": 24,
+      "point_difference": 7.322391424831522e-07,
+      "shift_min": 6.077918532805326e-07,
+      "shift_max": 8.566864316857719e-07,
+      "interval_status": "fewer_than_20_valid_repetitions",
+      "shift_rule": "reference +/- 2 estimated MCSE; not a confidence interval"
+    },
+    {
+      "model": "L2",
+      "function": "q2",
+      "comparison": "CPU MALA sequential minus CPU Pyro NUTS; N=4096",
+      "common_valid": 6,
+      "planned": 24,
+      "point_difference": 5.370952578324327e-07,
+      "shift_min": 3.698406345226889e-07,
+      "shift_max": 7.043498811421765e-07,
+      "interval_status": "fewer_than_20_valid_repetitions",
+      "shift_rule": "reference +/- 2 estimated MCSE; not a confidence interval"
+    },
+    {
+      "model": "L2",
+      "function": "sigmoid_q1",
+      "comparison": "CPU MALA sequential minus CPU Pyro NUTS; N=4096",
+      "common_valid": 6,
+      "planned": 24,
+      "point_difference": 4.3392871327238056e-08,
+      "shift_min": 3.601247002953715e-08,
+      "shift_max": 5.077327262493897e-08,
+      "interval_status": "fewer_than_20_valid_repetitions",
+      "shift_rule": "reference +/- 2 estimated MCSE; not a confidence interval"
+    },
+    {
+      "model": "L2",
+      "function": "q1_positive",
+      "comparison": "CPU MALA sequential minus CPU Pyro NUTS; N=4096",
+      "common_valid": 6,
+      "planned": 24,
+      "point_difference": null,
+      "shift_min": null,
+      "shift_max": null,
+      "interval_status": "unresolved_reference",
+      "shift_rule": "reference +/- 2 estimated MCSE; not a confidence interval"
+    }
+  ],
+  "W1_pair_sensitivity": [
+    {
+      "function": "alpha",
+      "budget": 1024,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 1.612614209863474e-07,
+      "mean_A": 0.6066179818463887,
+      "mean_B": 0.6063983929475815,
+      "mean_A_minus_B": 0.0002195888988073084,
+      "reference_shift_to_equal_loss": 0.0003671893749234018,
+      "fixed_reference_pointwise_BCa": {
+        "high": 1.3415572886980132e-06,
+        "low": -8.98663881128623e-07
+      },
+      "difference_using_mcmc_reference_point": 1.0279098621403368e-07,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 1.6126161370955797e-07
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 1.612616137110208e-07
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 1.6126161371077693e-07
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 1.6126142119327857e-07
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 1.6126142098688366e-07
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 1.6126142098678623e-07
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 1.6126183074362547e-07
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 1.6126142098615228e-07
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 1.6126142098644482e-07
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 1.613022180018068e-07
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 1.6126142098615228e-07
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 1.612614209863474e-07
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": -3.834351901423197e-07,
+        "maximum": 7.059580321150144e-07,
+        "sign_can_change": true
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": -3.9455144751228754e-07,
+        "maximum": 7.170742894849823e-07,
+        "sign_can_change": true
+      }
+    },
+    {
+      "function": "beta",
+      "budget": 1024,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 1.124859157557108e-06,
+      "mean_A": -0.6227841107435642,
+      "mean_B": -0.6224836863344866,
+      "mean_A_minus_B": -0.00030042440907757095,
+      "reference_shift_to_equal_loss": -0.00187211678473613,
+      "fixed_reference_pointwise_BCa": {
+        "high": 4.258426002648391e-06,
+        "low": -1.346920875781534e-06
+      },
+      "difference_using_mcmc_reference_point": 1.6294553151389412e-06,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 1.1248596483934383e-06
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 1.1248596483961062e-06
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 1.1248596483958392e-06
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 1.1248591581071786e-06
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 1.1248591575583753e-06
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 1.1248591575587756e-06
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 1.124860235403143e-06
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 1.1248591575580416e-06
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 1.1248591575575084e-06
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 1.124966483999283e-06
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 1.1248591575569743e-06
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 1.124859157557108e-06
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": -9.437881779915543e-08,
+        "maximum": 2.3440971329133716e-06,
+        "sign_can_change": true
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": -1.192612254594675e-07,
+        "maximum": 2.368979540573683e-06,
+        "sign_can_change": true
+      }
+    },
+    {
+      "function": "alpha_squared",
+      "budget": 1024,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 1.2918857108510472e-07,
+      "mean_A": 0.3716431813456606,
+      "mean_B": 0.37136491779932684,
+      "mean_A_minus_B": 0.0002782635463337545,
+      "reference_shift_to_equal_loss": 0.00023213348062874455,
+      "fixed_reference_pointwise_BCa": {
+        "high": 1.909456344720548e-06,
+        "low": -1.4705050152978194e-06
+      },
+      "difference_using_mcmc_reference_point": 5.3361148987610146e-08,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 1.2918904627248305e-07
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 1.2918904627473827e-07
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 1.2918904627433683e-07
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 1.2918857118560126e-07
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 1.291885710863097e-07
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 1.291885710859698e-07
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 1.2918858052046174e-07
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 1.291885710848887e-07
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 1.2918857108541383e-07
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 1.2915981692114676e-07
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 1.2918857108498105e-07
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 1.2918857108510472e-07
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": -7.080068657191337e-07,
+        "maximum": 9.66384007889343e-07,
+        "sign_can_change": true
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": -7.250924868783874e-07,
+        "maximum": 9.834696290485969e-07,
+        "sign_can_change": true
+      }
+    },
+    {
+      "function": "beta_squared",
+      "budget": 1024,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 1.3100569983102417e-06,
+      "mean_A": 0.39743419619811426,
+      "mean_B": 0.3969951326021081,
+      "mean_A_minus_B": 0.0004390635960061136,
+      "reference_shift_to_equal_loss": 0.001491876131643581,
+      "fixed_reference_pointwise_BCa": {
+        "high": 5.839831712588358e-06,
+        "low": -2.7721580654315588e-06
+      },
+      "difference_using_mcmc_reference_point": 2.2650438336510863e-06,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 1.3100586407101584e-06
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 1.3100586407152766e-06
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 1.3100586407141558e-06
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 1.310056998370735e-06
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 1.3100569983138973e-06
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 1.3100569983149699e-06
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 1.3100563534711643e-06
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 1.3100569983119474e-06
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 1.3100569983109242e-06
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 1.3098729819987644e-06
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 1.310056998310046e-06
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 1.3100569983102417e-06
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": -1.017786095824715e-06,
+        "maximum": 3.6379000924451974e-06,
+        "sign_can_change": true
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": -1.0652930977458282e-06,
+        "maximum": 3.6854070943663104e-06,
+        "sign_can_change": true
+      }
+    },
+    {
+      "function": "p_switch_0m",
+      "budget": 1024,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 9.140480718806003e-09,
+      "mean_A": 0.6470461234024351,
+      "mean_B": 0.6469964592589789,
+      "mean_A_minus_B": 4.966414345629333e-05,
+      "reference_shift_to_equal_loss": 9.202293730133527e-05,
+      "fixed_reference_pointwise_BCa": {
+        "high": 7.05610195202988e-08,
+        "low": -4.562442888047932e-08
+      },
+      "difference_using_mcmc_reference_point": 6.026841155689117e-09,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 9.140489540213291e-09
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 9.140489540301522e-09
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 9.140489540279454e-09
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 9.140480730848203e-09
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 9.140480718772914e-09
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 9.140480718817034e-09
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 9.140505780078568e-09
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 9.140480718772914e-09
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 9.140480718806003e-09
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 9.143150509741838e-09
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 9.140480718739838e-09
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 9.140480718806003e-09
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": -1.8984792415035335e-08,
+        "maximum": 3.726575385264733e-08,
+        "sign_can_change": true
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": -1.9558777581028032e-08,
+        "maximum": 3.783973901864004e-08,
+        "sign_can_change": true
+      }
+    },
+    {
+      "function": "p_switch_100m",
+      "budget": 1024,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 2.5028298290320887e-08,
+      "mean_A": 0.49596261566087896,
+      "mean_B": 0.49598266252910767,
+      "mean_A_minus_B": -2.004686822872313e-05,
+      "reference_shift_to_equal_loss": -0.0006242445953343567,
+      "fixed_reference_pointwise_BCa": {
+        "high": 7.176702767135394e-08,
+        "low": -2.2069725622323908e-08
+      },
+      "difference_using_mcmc_reference_point": 3.476980238703755e-08,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 2.5028302033409257e-08
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 2.502830203342261e-08
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 2.502830203342706e-08
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 2.5028298294818923e-08
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 2.5028298290325334e-08
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 2.50282982903565e-08
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 2.5028307008810803e-08
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 2.502829829034536e-08
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 2.5028298290311983e-08
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 2.5029167278538935e-08
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 2.502829829032978e-08
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 2.5028298290320887e-08
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": 1.2616506827722602e-08,
+        "maximum": 3.744008975291916e-08,
+        "sign_can_change": false
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": 1.2363204961138026e-08,
+        "maximum": 3.7693391619503745e-08,
+        "sign_can_change": false
+      }
+    },
+    {
+      "function": "beta_positive",
+      "budget": 1024,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 0.0,
+      "mean_A": 0.0,
+      "mean_B": 0.0,
+      "mean_A_minus_B": 0.0,
+      "reference_shift_to_equal_loss": null,
+      "fixed_reference_pointwise_BCa": null,
+      "difference_using_mcmc_reference_point": 0.0,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 0.0
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 0.0
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 0.0
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 0.0
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 0.0
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 0.0
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 0.0
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 0.0
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 0.0
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 0.0
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 0.0
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 0.0
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error"
+    },
+    {
+      "function": "alpha",
+      "budget": 4096,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 3.058191314184115e-07,
+      "mean_A": 0.6066027616120728,
+      "mean_B": 0.606423979007587,
+      "mean_A_minus_B": 0.00017878260448579245,
+      "reference_shift_to_equal_loss": 0.0008552821240578651,
+      "fixed_reference_pointwise_BCa": {
+        "high": 6.34871613040406e-07,
+        "low": 3.021991243014104e-08
+      },
+      "difference_using_mcmc_reference_point": 2.582142813062757e-07,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 3.058192883277895e-07
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 3.0581928832898043e-07
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 3.0581928832878196e-07
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 3.058191315868886e-07
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 3.0581913141884815e-07
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 3.0581913141876874e-07
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 3.0581946503032805e-07
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 3.058191314182527e-07
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 3.058191314184909e-07
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 3.0585234710790553e-07
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 3.058191314182527e-07
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 3.058191314184115e-07
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": -1.376562870617456e-07,
+        "maximum": 7.492945498985686e-07,
+        "sign_can_change": true
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": -1.4670680580623457e-07,
+        "maximum": 7.583450686430574e-07,
+        "sign_can_change": true
+      }
+    },
+    {
+      "function": "beta",
+      "budget": 4096,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 5.88024723201136e-07,
+      "mean_A": -0.6230542468471103,
+      "mean_B": -0.6226063057276173,
+      "mean_A_minus_B": -0.0004479411194930292,
+      "reference_shift_to_equal_loss": -0.0006563638585654412,
+      "fixed_reference_pointwise_BCa": {
+        "high": 1.4926164845385338e-06,
+        "low": 4.749844937741517e-08
+      },
+      "difference_using_mcmc_reference_point": 1.3403915778554975e-06,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 5.880254550517063e-07
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 5.880254550556848e-07
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 5.880254550552869e-07
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 5.88024724021307e-07
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 5.880247232030258e-07
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 5.880247232036226e-07
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 5.880263302994444e-07
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 5.880247232025286e-07
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 5.880247232017328e-07
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 5.881847499007201e-07
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 5.880247232009371e-07
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 5.88024723201136e-07
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": -1.2298928863779231e-06,
+        "maximum": 2.4059423327801956e-06,
+        "sign_can_change": true
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": -1.2669932457570571e-06,
+        "maximum": 2.443042692159329e-06,
+        "sign_can_change": true
+      }
+    },
+    {
+      "function": "alpha_squared",
+      "budget": 4096,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 4.899778394164902e-07,
+      "mean_A": 0.3716190253254273,
+      "mean_B": 0.37139063735509037,
+      "mean_A_minus_B": 0.0002283879703369555,
+      "reference_shift_to_equal_loss": 0.0010726874946469253,
+      "fixed_reference_pointwise_BCa": {
+        "high": 1.0049666841914142e-06,
+        "low": 6.566662767045722e-08
+      },
+      "difference_using_mcmc_reference_point": 4.2774162034682165e-07,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 4.899782294319351e-07
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 4.899782294337861e-07
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 4.899782294334565e-07
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 4.899778394989738e-07
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 4.899778394174791e-07
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 4.899778394172002e-07
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 4.899778471606667e-07
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 4.899778394163127e-07
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 4.899778394167436e-07
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 4.899542391094013e-07
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 4.899778394163887e-07
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 4.899778394164902e-07
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": -1.9715983674086622e-07,
+        "maximum": 1.1771155155738466e-06,
+        "sign_can_change": true
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": -2.1118305462161498e-07,
+        "maximum": 1.1911387334545953e-06,
+        "sign_can_change": true
+      }
+    },
+    {
+      "function": "beta_squared",
+      "budget": 4096,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 1.0235417751853567e-06,
+      "mean_A": 0.39775484030802205,
+      "mean_B": 0.39714628727760454,
+      "mean_A_minus_B": 0.0006085530304174904,
+      "reference_shift_to_equal_loss": 0.0008409635019672552,
+      "fixed_reference_pointwise_BCa": {
+        "high": 2.5463572966661495e-06,
+        "low": 1.1262829061009597e-07
+      },
+      "difference_using_mcmc_reference_point": 2.347177207368597e-06,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 1.0235440515923636e-06
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 1.023544051599458e-06
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 1.023544051597904e-06
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 1.0235417752692024e-06
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 1.0235417751904239e-06
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 1.0235417751919104e-06
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 1.023540881422408e-06
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 1.0235417751877214e-06
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 1.0235417751863024e-06
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 1.02328672401506e-06
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 1.0235417751850865e-06
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 1.0235417751853567e-06
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": -2.2029064709419066e-06,
+        "maximum": 4.2499900213126205e-06,
+        "sign_can_change": true
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": -2.2687523535159215e-06,
+        "maximum": 4.315835903886634e-06,
+        "sign_can_change": true
+      }
+    },
+    {
+      "function": "p_switch_0m",
+      "budget": 4096,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 1.5668766756893462e-08,
+      "mean_A": 0.6470428630290478,
+      "mean_B": 0.6470024762266239,
+      "mean_A_minus_B": 4.03868024239501e-05,
+      "reference_shift_to_equal_loss": 0.00019398374984499396,
+      "fixed_reference_pointwise_BCa": {
+        "high": 3.2575151640563304e-08,
+        "low": 1.4243539903762188e-09
+      },
+      "difference_using_mcmc_reference_point": 1.3136760019162013e-08,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 1.566877393044784e-08
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 1.5668773930519582e-08
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 1.5668773930501642e-08
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 1.5668766766686166e-08
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 1.5668766756866562e-08
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 1.5668766756902432e-08
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 1.5668787136680437e-08
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 1.5668766756866562e-08
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 1.5668766756893462e-08
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 1.567093782663382e-08
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 1.5668766756839662e-08
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 1.5668766756893462e-08
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": -7.202660597445493e-09,
+        "maximum": 3.8540194111232415e-08,
+        "sign_can_change": true
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": -7.669424421000126e-09,
+        "maximum": 3.900695793478707e-08,
+        "sign_can_change": true
+      }
+    },
+    {
+      "function": "p_switch_100m",
+      "budget": 4096,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 1.668110582257934e-09,
+      "mean_A": 0.4958912671561573,
+      "mean_B": 0.49595845852411347,
+      "mean_A_minus_B": -6.719136795614589e-05,
+      "reference_shift_to_equal_loss": -1.2413131574778085e-05,
+      "fixed_reference_pointwise_BCa": {
+        "high": 1.008744227035773e-08,
+        "low": -5.294854716931944e-09
+      },
+      "difference_using_mcmc_reference_point": 3.431884578642118e-08,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 1.6681231280194588e-09
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 1.6681231280642184e-09
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 1.6681231280791372e-09
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 1.6681105973340696e-09
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 1.6681105822728535e-09
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 1.6681105823772896e-09
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 1.6681398041422551e-09
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 1.6681105823399916e-09
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 1.6681105822280956e-09
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 1.6710231821933593e-09
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 1.6681105822877721e-09
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 1.668110582257934e-09
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error",
+      "stress_plus_minus_1.96_MCSE": {
+        "minimum": -3.993266404464792e-08,
+        "maximum": 4.326888520916379e-08,
+        "sign_can_change": true
+      },
+      "stress_plus_minus_2_MCSE": {
+        "minimum": -4.078165944520021e-08,
+        "maximum": 4.411788060971607e-08,
+        "sign_can_change": true
+      }
+    },
+    {
+      "function": "beta_positive",
+      "budget": 4096,
+      "common_replicates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n": 24,
+      "difference_A_minus_B": 0.0,
+      "mean_A": 0.0,
+      "mean_B": 0.0,
+      "mean_A_minus_B": 0.0,
+      "reference_shift_to_equal_loss": null,
+      "fixed_reference_pointwise_BCa": null,
+      "difference_using_mcmc_reference_point": 0.0,
+      "all_grid_differences": [
+        {
+          "radius": 6,
+          "order": 32,
+          "difference": 0.0
+        },
+        {
+          "radius": 6,
+          "order": 64,
+          "difference": 0.0
+        },
+        {
+          "radius": 6,
+          "order": 96,
+          "difference": 0.0
+        },
+        {
+          "radius": 8,
+          "order": 32,
+          "difference": 0.0
+        },
+        {
+          "radius": 8,
+          "order": 64,
+          "difference": 0.0
+        },
+        {
+          "radius": 8,
+          "order": 96,
+          "difference": 0.0
+        },
+        {
+          "radius": 10,
+          "order": 32,
+          "difference": 0.0
+        },
+        {
+          "radius": 10,
+          "order": 64,
+          "difference": 0.0
+        },
+        {
+          "radius": 10,
+          "order": 96,
+          "difference": 0.0
+        },
+        {
+          "radius": 12,
+          "order": 32,
+          "difference": 0.0
+        },
+        {
+          "radius": 12,
+          "order": 64,
+          "difference": 0.0
+        },
+        {
+          "radius": 12,
+          "order": 96,
+          "difference": 0.0
+        }
+      ],
+      "stress_scope": "uses the independent finite-MCMC MCSE as a hypothetical reference-shift scale; not an estimate or bound of quadrature error"
+    }
+  ],
+  "W1_posterior_summary": [
+    {
+      "function": "alpha",
+      "mean": 0.6067102479,
+      "posterior_equal_tail_95": [
+        0.488358875,
+        0.7233562
+      ],
+      "reference_mean_mcse": 0.000632787986457314,
+      "quantile_estimation_uncertainty": "not quantified",
+      "source": "pre-existing independent posteriorDB Stan reference; 10 chains x 1000 thinned draws; no formal-fit selection",
+      "quantile_rule": "NumPy linear, equivalent to R type 7"
+    },
+    {
+      "function": "beta",
+      "mean": -0.6221434439999999,
+      "posterior_equal_tail_95": [
+        -0.8107612,
+        -0.4299595500000001
+      ],
+      "reference_mean_mcse": 0.00103530234680044,
+      "quantile_estimation_uncertainty": "not quantified",
+      "source": "pre-existing independent posteriorDB Stan reference; 10 chains x 1000 thinned draws; no formal-fit selection",
+      "quantile_rule": "NumPy linear, equivalent to R type 7"
+    },
+    {
+      "function": "p_switch_0m",
+      "mean": 0.6470687439915711,
+      "posterior_equal_tail_95": [
+        0.6197197490892242,
+        0.6733456466029123
+      ],
+      "reference_mean_mcse": 0.000144466693184256,
+      "quantile_estimation_uncertainty": "not quantified",
+      "source": "pre-existing independent posteriorDB Stan reference; 10 chains x 1000 thinned draws; no formal-fit selection",
+      "quantile_rule": "NumPy linear, equivalent to R type 7"
+    },
+    {
+      "function": "p_switch_100m",
+      "mean": 0.49614554939879324,
+      "posterior_equal_tail_95": [
+        0.46521534399597825,
+        0.5261761339305135
+      ],
+      "reference_mean_mcse": 0.000157943539917072,
+      "quantile_estimation_uncertainty": "not quantified",
+      "source": "pre-existing independent posteriorDB Stan reference; 10 chains x 1000 thinned draws; no formal-fit selection",
+      "quantile_rule": "NumPy linear, equivalent to R type 7"
+    }
+  ],
+  "interpretation": {
+    "formula": "D(c+e)=D(c)-2*e*(mean_A-mean_B), same common set and same s_f=1",
+    "W1_long_budget": "All six continuous function point differences favour the specified NUTS workflow for every saved quadrature and the independent MCMC reference point; all six can reverse within the hypothetical +/-2 MCMC-MCSE shift. No certified quadrature-error radius is available.",
+    "rare_event": "All W1 fitted event estimates are zero. The nonzero squared discrepancy is the square of the common numerical reference, not evidence of resolved event estimation."
+  },
+  "sources": {
+    "formal-statistics/SHA256.json": "d928a497889e11f6aaf5829bf1ffd807a647a880a5d4ae7cef4acf3046c34bfb",
+    "formal-statistics/reference-contract.json": "37eda204793ad21e53eaf400a56533dc3f7452faece26cead577af2fe4c3f811",
+    "benchmark/analysis/outputs/wells-quadrature-v1/result.json": "87e2a8c2e1a447df9fdc1f02b4de15f88b1f4337e41b732f5bfde55b6c8becdb",
+    "benchmark/analysis/outputs/wells-quadrature-v1/comparison.json": "8e206d0d4d4c6cba87d35dc32325e5ae2ff5d2cb3b8ff6729715b954aa8bdba5",
+    "benchmark/analysis/outputs/wells-reference-v1/diagnostics.json": "3e4071b433c20f0d5b9ebfe7bc1986c13dc7a1629e08506ca4e85609e638090e",
+    "benchmark/analysis/outputs/wells-reference-v1/receipt.json": "15d973cb5a1005d72432b85afea7a4f35e75099bbdac418784fb8d1ff88316eb",
+    "benchmark/protocols/wells-quadrature-v1.json": "27af52c4c77e86d35190c3ed7bedb8570ce7bdf2c58dffc42a0ca56f281152b8",
+    "benchmark/analysis/outputs/reference-summary.json": "fa981be0ed61482438163197190d3b0e1a9e6f7f189ca9dfa52fa7644846887f",
+    "benchmark/analysis/outputs/reference-summary.provenance.json": "6c8aabc2ca1e24a54f2d73ba35f1b319686165f480e2178fb25dba8c49da2c6b",
+    "benchmark/analysis/outputs/completion-f3/reference-reuse.json": "e7b47af49f728f2186581002c1b7e444d0e99a99bc1d53b214ba8c954c39c960",
+    "benchmark/protocols/reference-v1.json": "393e2ba60176fe5fc436d8f010ae0e834ed360c58ed9075661ab3a4e1345b195",
+    "formal-statistics/L1/function-0.json": "a5789131db44a3577e553423416bd368e17b1bdd8f68cdf9a9173ccc00a7c88f",
+    "formal-statistics/L1/function-1.json": "d3d3e69768fdb37852ab9137d3399012805ff773829ec5e8ffe185e8ac49ad19",
+    "formal-statistics/L1/function-2.json": "e3b73d126f3463e68becb06c0e6e3f046aad0ed921d6692e9c7ec7e61e8068e1",
+    "formal-statistics/L1/function-3.json": "c1f801cfa9f1632cef1529df1078ca6039926adbd9fbc84a04c62c5a633cdbd6",
+    "formal-statistics/L2/function-0.json": "36a7e5b380ec55f73d820238454e7abac75accef6d94f595d7893a32ddc7245a",
+    "formal-statistics/L2/function-1.json": "5d533a7b209915591838c446d1d064f3b408334c2247cbdae274e412d239c3fd",
+    "formal-statistics/L2/function-2.json": "f18510725d6c748cbff5aa7b79547174e3772bc3ac5b4eed727c6d83a5967dac",
+    "formal-statistics/L2/function-3.json": "dba5668529541407f425632e62bb3816caeb63bae6890cbd1950d1df353fe414",
+    "formal-statistics/W1.frame.ndjson": "fbe82ff1d37bed8ea2600b371a2cb6a8be19411af2050ebbff7ab06a81a566ff",
+    "formal-statistics/W1/function-0.json": "b2f68b70206b23610f9af5b3ed7bb24ed484bef3bfa42b0f3ce29da2491c3680",
+    "formal-statistics/W1/function-1.json": "cfe641dcfddbbcd6c68eaea469e26ec9d30e67f73f480399f4385eb367106789",
+    "formal-statistics/W1/function-2.json": "2d780c29c126e84b321bc5545c9baa24259b919e5191c58569aee6091629955e",
+    "formal-statistics/W1/function-3.json": "4c70eba6d263cf5c99bea2c1f99887049a01be1f1f06d4f50045e3d3374d961d",
+    "formal-statistics/W1/function-4.json": "e4c8cacee2963a6aa2519c0b31d122043ffbc5b503a9a24a9a193ba6050fef97",
+    "formal-statistics/W1/function-5.json": "255cd05e1630bf36d4b1f8e36031f15c3903d98d27b12e15acb24650662965c6",
+    "formal-statistics/W1/function-6.json": "f541f02daeb129ce4641c88be90f763588277a11a4f7570904829f0e8f7c0252",
+    "independent-wells-reference/values-f64le.bin": "d939e63b34ea7135508f560d3c4a32ec48761ec9f8fa0f9edcc22a0667b3fa14"
+  }
+}

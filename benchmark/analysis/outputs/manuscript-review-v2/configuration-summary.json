@@ -1,0 +1,20 @@
+{
+  "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+  "targets": 9,
+  "actual_initial_arrays_verified": 216,
+  "generated_tex_sha256": "4dd7e6bcb20a67140850ff4b095073cfabddd66e0bbabbc2e8aeaa3f7e92278e",
+  "evidence_sha256": "580edcf90959d84429138eca220f9a3b7435a90f288c98da85d2495023735ce2",
+  "max_target_reconstruction_error": 0.0,
+  "gaussian_whitening_errors": {
+    "G1": 0.0,
+    "G2": 6.823021643786891e-16,
+    "A1": 3.5021767989238772e-15
+  },
+  "review_findings": [
+    "Final configuration table requested by reviewer is needed.",
+    "G2 and A1 are fully whitened: do not describe their final sampling coordinates as correlated.",
+    "M1 plot reads original draws, but its identity affine map means q1 and theta1 are numerically identical.",
+    "Both MH and NUTS share actual dispersed starts; their random mechanisms and warmup differ."
+  ],
+  "new_sampler_calls": 0
+}

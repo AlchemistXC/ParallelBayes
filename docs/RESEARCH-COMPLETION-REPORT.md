@@ -2,6 +2,19 @@
 
 2026-10-10。完成用户约定的双平台软件与固定预算研究、Mac独立重建、R使用成本和中文论文材料。最终主文从方法与研究问题组织，历史验收过程移入补充材料；没有重跑Windows网格。
 
+## 审查修订v2
+
+根据进一步意见逐项核查并完成针对性修订，详细处置见[审核表](MANUSCRIPT-REVIEW-V2.md)。本轮没有新采样、重调参、失败替换或原协议变化。新增9目标完整配置、W1/L1/L2逐函数参考、参考偏移敏感性、水井后验区间、72点误差—耗时图和可执行R用法。H1的42路径失败区分为40个quasi-DEER和2个顺序MALA；长预算Pyro NUTS失败为105/216。
+
+- [正文PDF，17页](../output/software-paper/软件与基准研究-审查修订v2.pdf) · [TeX](../manuscript/software/软件与基准研究.tex)
+- [补充材料，34页](../output/software-paper/补充材料-审查修订v2.pdf) · [TeX](../manuscript/software/补充材料.tex)
+- [完整结果附录，67页](../output/software-paper/完整结果附录-审查修订v2.pdf)：目录、20个章节书签、图R1–R45、表R1–R19；全部原图数值及CSV不变。
+- [三份论文便携输入](../output/software-paper/parallelbayes-paper-review-v2.tar) · [校验与验证记录](../benchmark/analysis/outputs/manuscript-review-v2/delivery.json)。包含编译所需TeX、图件和完整附录来源表，不重复打包原始轨迹。
+
+与改动相关的19项报告/统计投影/布局检查通过（0失败），R示例语法通过；三份PDF成功编译并检查页界、交叉引用、图号和版式。此轮只有展示与既有结果的伴随分析，不将这些检查替代采样器原正确性证据。论文独立目录重编译仍使用同一Mac和已有Tectonic。
+
+2026-10-10再次核对原Windows Release仍为draft，215附件。本版不改其访问状态、不上传新的全量轨迹；旧完成版和原派生档案保持可追溯。
+
 ## 结果与解释
 
 - 3888主任务：3741有效、42数值失败、105未分类失败；256缓存/1024调用不计后验重复。每目标原独立单位仍为24份四链输入。
@@ -21,7 +34,7 @@ R有限补测在重建进程实际结束后串行运行，32个新R进程、64�
 
 证据见[完整重建摘要](../benchmark/analysis/outputs/compact-final-reconstruction-v1/)、[失败审查](../review/WINDOWS-COMPACT-FAILURE-AUDIT.md)、[双峰伴随分析](MIXTURE-EXPLORATION-COMPANION.md)。本轮只新增R协议明确授权的64次技术调用，未新增正式统计重复。
 
-## 交付文件
+## 原完成版交付文件（保留）
 
 - [正文PDF，16页](../output/software-paper/软件与基准研究-紧凑研究完成版.pdf)；[主TeX](../manuscript/software/软件与基准研究.tex)。
 - [补充材料PDF，27页](../output/software-paper/补充材料-紧凑研究完成版.pdf)；[SI TeX](../manuscript/software/补充材料.tex)。
@@ -31,7 +44,7 @@ R有限补测在重建进程实际结束后串行运行，32个新R进程、64�
 
 论文源整合提交2762b20577449f602853a472c2a2809ff59055bc。完整PDF、输入包、派生统计及分析记录的SHA另见`compact-final-delivery-v1`，不复制第三份全量原始轨迹。
 
-## 完成边界
+## 原完成版验收记录
 
 正文全部16页、SI及完整附录全部页面完成版式检查；新主图/水井表/R费用表按最终尺寸审阅。内置编辑器不支持外部项目输入，因此保留TeX编辑器并使用既有Tectonic成功编译，无新安装。首次便携解压误用了Python3.9的tarfile接口，随后用既有Python3.12完成；原包未变，故障记录保留。
 

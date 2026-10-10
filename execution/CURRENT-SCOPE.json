@@ -11,7 +11,8 @@
   "source": {
     "execution": "3a37a891896faedc62c0d6af185bfad77696054f",
     "delivery": "94bebec95177b03f0497d748cbc9f54a45492ce4",
-    "manuscript": "2762b20577449f602853a472c2a2809ff59055bc"
+    "pre_revision_manuscript": "2762b20577449f602853a472c2a2809ff59055bc",
+    "current_manuscript_identity": "See manuscript-review-v2 delivery.json and file hashes"
   },
   "main": {
     "planned": 3888,
@@ -38,10 +39,13 @@
     "new_formal_repetitions": 0
   },
   "paper": {
-    "main_pages": 16,
-    "supplement_pages": 27,
-    "complete_results_pages": 66,
-    "author_metadata_pending": true
+    "main_pages": 17,
+    "supplement_pages": 34,
+    "complete_results_pages": 67,
+    "author_metadata_pending": true,
+    "revision": "manuscript-review-v2",
+    "review": "docs/MANUSCRIPT-REVIEW-V2.md",
+    "delivery": "benchmark/analysis/outputs/manuscript-review-v2/delivery.json"
   },
   "remaining_author_decisions": [
     "Authors and affiliations",
@@ -57,5 +61,11 @@
   ],
   "report": "docs/RESEARCH-COMPLETION-REPORT.md",
   "reproduction": "docs/COMPACT-REPRODUCTION.md",
-  "historical_state": "execution/CURRENT-SCOPE-through-2026-10-10-reconstruction.json"
+  "historical_state": "execution/CURRENT-SCOPE-through-2026-10-10-reconstruction.json",
+  "review_revision": {
+    "new_sampler_calls": 0,
+    "new_formal_repetitions": 0,
+    "frozen_protocol_changes": 0,
+    "windows_prompt": null
+  }
 }

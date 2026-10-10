@@ -75,7 +75,7 @@ def plot(delivery, manifest, manifest_sha256, audit, summary_sha256, tasks_sha25
         final_width_mm=160, final_height_mm=125, minimum_font_pt=8.5)
     (out/'contract.json').write_text(json.dumps(contract, indent=2)+'\n')
     with (out/'source.csv').open('w', newline='') as f:
-        writer = csv.writer(f); writer.writerow(['task_id','workflow','chain','retained_iteration','q1','positive'])
+        writer = csv.writer(f, lineterminator='\n'); writer.writerow(['task_id','workflow','chain','retained_iteration','theta1','positive'])
         for row, q in zip(selected, paths):
             for ch in range(4):
                 for i, value in enumerate(q[ch], 1):
@@ -95,7 +95,7 @@ def plot(delivery, manifest, manifest_sha256, audit, summary_sha256, tasks_sha25
         ax.axhline(0.,color='#888888',lw=.55,ls=(0,(3,3)),zorder=0)
         ax.set_ylim(-extent,extent);ax.set_yticks([-8,-4,0,4,8])
         ax.set_xlim(1,q.shape[1]);ax.set_xticks([1,256,512,768,1024])
-        ax.set_ylabel('Original coordinate q1')
+        ax.set_ylabel(r'Original parameter $\theta_1$')
         ax.set_title(f"{chr(97+a)}  {label}: pooled positive fraction = {row['pooled_positive_fraction']:.6f}",
                      loc='left',fontsize=9.5,pad=9)
     axes[1].set_xlabel('Retained iteration')
