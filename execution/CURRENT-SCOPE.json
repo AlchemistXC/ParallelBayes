@@ -2,7 +2,7 @@
   "schema": "parallelbayes-current-scope-v3",
   "date": "2026-10-11",
   "branch": "codex/research-integration",
-  "status": "targeted_followups_complete_paper_packaging",
+  "status": "agreed_main_research_and_targeted_followups_delivery_complete_pending_author_decisions",
   "technical_research_complete": true,
   "automatic_submission": false,
   "automatic_public_release": false,
@@ -46,7 +46,8 @@
     "revision": "targeted-paper-companion-v1",
     "review": "docs/TARGETED-FOLLOWUPS-PAPER.md",
     "delivery": "docs/TARGETED-FOLLOWUPS-PAPER.md",
-    "current_identity": "targeted-paper-companion-v3"
+    "current_identity": "targeted-paper-companion-v3",
+    "portable_rebuild_passed": true
   },
   "remaining_author_decisions": [
     "Authors and affiliations",
@@ -60,7 +61,7 @@
     "Some chains do not explore sufficiently",
     "No universal acceleration or precise time-to-accuracy claim"
   ],
-  "report": "docs/RESEARCH-COMPLETION-REPORT.md",
+  "report": "docs/TARGETED-FOLLOWUPS-COMPLETION.md",
   "reproduction": "docs/COMPACT-REPRODUCTION.md",
   "historical_state": "execution/CURRENT-SCOPE-through-2026-10-10-reconstruction.json",
   "review_revision": {
@@ -70,7 +71,7 @@
     "windows_prompt": null
   },
   "targeted_followups": {
-    "status": "scientific_review_complete_paper_packaging",
+    "status": "complete",
     "plan": "docs/TARGETED-FOLLOWUPS-PLAN.md",
     "machine_plan": "execution/targeted-followups-v1/PLAN.json",
     "work_packages": "execution/targeted-followups-v1/WORK-PACKAGES.md",
@@ -138,16 +139,15 @@
       }
     },
     "paper_integration": {
-      "status": "four_supplements_integrated_packaging",
+      "status": "complete",
       "report": "docs/TARGETED-FOLLOWUPS-PAPER.md",
-      "remaining": [
-        "Final portable paper package verification"
-      ],
+      "remaining": [],
       "tests": {
         "passed": 5,
         "failed": 0,
         "skipped": 0
-      }
+      },
+      "delivery": "benchmark/analysis/outputs/targeted-paper-companion-v3/delivery.json"
     }
   }
 }

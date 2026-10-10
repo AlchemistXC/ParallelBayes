@@ -1,0 +1,22 @@
+{
+  "identity": "targeted-followups-completion-v1",
+  "date": "2026-10-11",
+  "status": "complete_with_scientific_limits_preserved",
+  "plan_snapshot": "execution/targeted-followups-v1/PLAN.json",
+  "source_commit": "1876c49d15b3d1c17db145190e5f704acf065748",
+  "packages": {
+    "S1": "complete",
+    "S2": "complete_with_resource_stops_and_unresolved_historical_causes",
+    "S3A": "complete",
+    "S3B": "complete_with_approximate_MCSE"
+  },
+  "current_paper": "targeted-paper-companion-v3",
+  "paper_delivery": "benchmark/analysis/outputs/targeted-paper-companion-v3/delivery.json",
+  "required_remaining_experiments": [],
+  "unused_S2_registered_call_capacity": 4,
+  "do_not_use_unused_capacity": true,
+  "new_formal_repetitions": 0,
+  "historical_failures_reclassified": 0,
+  "automatic_public_release": false,
+  "automatic_submission": false
+}

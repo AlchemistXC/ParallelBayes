@@ -1,0 +1,11 @@
+{
+  "first_attempt": {
+    "status": "not_delivered",
+    "reason": "Wrong historical report identity detected before delivery: shared filenames have two text differences and one navigation input missing",
+    "preserved_under": "first-attempt-earlier-results-component",
+    "reported_sha256": "e89ce08906c43c2e708c9d375de9c2d4fa3f6adafd43802ac137a554aac61ed0",
+    "shared_filenames": 128,
+    "identical_content_files": 126
+  },
+  "correction": "Use unchanged manuscript-review-v2 complete-results component, bound by original manifest ddfe88051602c13314f1d95d9544197e51d756bd2607bd6f2cddd1af5290ba1f"
+}

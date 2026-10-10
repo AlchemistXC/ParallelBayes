@@ -7,7 +7,7 @@
 - [当前正文：18页](../output/software-paper/软件与基准研究-定向补充v3.pdf) · [TeX](../manuscript/software/软件与基准研究.tex)
 - [当前SI：42页](../output/software-paper/补充材料-定向补充v3.pdf) · [TeX](../manuscript/software/补充材料.tex)
 - [完整结果附录：67页，原样保留](../output/software-paper/完整结果附录-审查修订v2.pdf)
-- 核验及最终包入口见[完成记录](TARGETED-FOLLOWUPS-COMPLETION.md)。旧v1/v2文件及下文逐次记录保留，不作为当前待办。
+- [v3完整交付回执](../benchmark/analysis/outputs/targeted-paper-companion-v3/delivery.json)及[完成记录](TARGETED-FOLLOWUPS-COMPLETION.md)记录最终包：17,367,040字节，165输入及60页搬移重编译通过；本地tar未上传。旧v1/v2文件及下文逐次记录保留，不作为当前待办。
 
 S2新增片段可从已核验小型证据生成（输出目录须不存在）：
 

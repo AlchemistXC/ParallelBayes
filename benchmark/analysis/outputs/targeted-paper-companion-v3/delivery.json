@@ -1,0 +1,92 @@
+{
+  "identity": "targeted-paper-companion-v3",
+  "date": "2026-10-11",
+  "source_commit": "1876c49d15b3d1c17db145190e5f704acf065748",
+  "branch": "codex/research-integration",
+  "scope": "S1/S2/S3A/S3B complete under finite protocols; all failures and unresolved historical causes retained",
+  "pdfs": {
+    "main": {
+      "path": "output/software-paper/软件与基准研究-定向补充v3.pdf",
+      "bytes": 589734,
+      "sha256": "137c9fd88ebe7a7f6c84043e99480002c6d32318795ea185028840393a49855c"
+    },
+    "si": {
+      "path": "output/software-paper/补充材料-定向补充v3.pdf",
+      "bytes": 830606,
+      "sha256": "2cad74af5c6d9c7f5b6a86a6c3eccf019b8ff9010deda55261a2e80f7a637612"
+    }
+  },
+  "paper_archive": {
+    "archive": "parallelbayes-targeted-paper-v3.tar",
+    "bytes": 17367040,
+    "sha256": "182f2391fcf5b00372c871f44983abf02dba434b18157a44a15d9abc99540c0b",
+    "files": 166,
+    "verified_input_files": 165,
+    "source_worktree_clean": true
+  },
+  "relocation": {
+    "main": {
+      "pages": 18,
+      "all_text_equal": true,
+      "all_72dpi_pixels_equal": true,
+      "original_sha256": "137c9fd88ebe7a7f6c84043e99480002c6d32318795ea185028840393a49855c",
+      "rebuilt_sha256": "cc5ab616ba014c7acea3e68cf669dfc6ffc8ad4c646106954eb9b5508bf0eaa7",
+      "final_undefined": false,
+      "overfull": false
+    },
+    "si": {
+      "pages": 42,
+      "all_text_equal": true,
+      "all_72dpi_pixels_equal": true,
+      "original_sha256": "2cad74af5c6d9c7f5b6a86a6c3eccf019b8ff9010deda55261a2e80f7a637612",
+      "rebuilt_sha256": "bc9a32ae3b62eb9bd666e8ba480e8a871d99ff049936f9ffb8bf6cac5cf374fd",
+      "final_undefined": false,
+      "overfull": false
+    },
+    "complete_results": {
+      "pages": 67,
+      "sha256": "2a71da18334b781586afbae95b517446b890576825df3d1f8f9e0208e358bdf8",
+      "original_pdf_unchanged": true,
+      "all129_build_inputs_unchanged": true,
+      "not_recompiled_this_revision": true
+    },
+    "scope": "New extraction directory on same Mac, cached Tectonic0.17.0; paper-build reproduction, not new sampling or external-machine replication"
+  },
+  "summary_rebuild": {
+    "archive": "parallelbayes-nuts-summary-v1.tar",
+    "bytes": 450560,
+    "sha256": "12bab75c7f7f6d1d244c7d6462e6a1f04ae0b079b98dc149b1e95e0e9b0b1d3a",
+    "content_files": 39,
+    "source_commit": "1876c49d15b3d1c17db145190e5f704acf065748",
+    "relocated_content_verified": true,
+    "regenerated_files": [
+      "nuts-localization-main.generated.tex",
+      "nuts-localization-si.generated.tex",
+      "nuts-localization.provenance.json"
+    ],
+    "all_three_outputs_byte_identical": true,
+    "new_sampler_calls": 0
+  },
+  "historical_failures_changed": 0,
+  "new_sampler_calls_on_Mac": 0,
+  "post_review_evidence_integrity": {
+    "verified_members": 30044,
+    "manifest_sha256": "83e76fb56f6ec87ecee27de99a662d28fb5c9776a446725988e9c01b5d611881",
+    "extracted_bytes": 642074472,
+    "new_sampler_calls": 0,
+    "stage": "After all Mac reviews and independent R reconstruction",
+    "returned_evidence_unchanged": true
+  },
+  "access": {
+    "source_summaries_pdfs": "research branch",
+    "paper_and_summary_archives": "local only; not uploaded",
+    "Windows_S2_raw": "existing private draft; retained unchanged",
+    "Mac_H1_L2_W1_raw": "local only; not uploaded"
+  },
+  "required_remaining_experiments": [],
+  "remaining_author_decisions": [
+    "Authorship and affiliations",
+    "Whether and where to make raw evidence public",
+    "Submission venue and final author review"
+  ]
+}

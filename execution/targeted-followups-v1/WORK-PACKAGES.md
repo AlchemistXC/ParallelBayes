@@ -9,7 +9,7 @@
 | S2 NUTS故障定位 | complete_with_resource_failures_and_historical_causes_unresolved | 44四链调用+9诊断有终态；149Git源/30044成员核对；六分析文件字节一致；928路径/RNG记录一致 | docs/WINDOWS-NUTS-LOCALIZATION-RESULTS.md；nuts-windows-v1/ |
 | S3A W1参考 | complete | 双规则均7/7达标；24资产核验；恢复新增0；归档搬移重建一致 | docs/W1-REFERENCE-RESULTS.md；w1-reference-enclosure-v1摘要与原件 |
 | S3B L2参考 | complete | 2097152正式点+16384试探；633资产恢复不变；96点独立权重核对 | docs/L2-RARE-REFERENCE-RESULTS.md；对应SUMMARY/audit.json |
-| 合并 | complete | 四项已整合；正文18页/SI42页编译与版式通过；便携包按最终交付记录核对 | docs/TARGETED-FOLLOWUPS-PAPER.md；w1-paper-integration-v1.json |
+| 合并 | complete | 四项已整合；正文18页/SI42页编译与版式通过；165输入/60页便携编译文字与像素一致 | docs/TARGETED-FOLLOWUPS-PAPER.md；w1-paper-integration-v1.json |
 
 每次推进记录命令、源码提交、依赖、输入SHA、passed/failed/skipped数量、数值/资源终止、结果SHA和恢复行为。计划版本不能冒充正式冻结协议；资格未完成就不得运行主体。大数组在Git外，摘要/协议/脚本入Git；新原件单独归档。保留原105/42失败分类，既有完成状态不变。
 
@@ -58,3 +58,5 @@ S2保全和返回：两次真实verify各新增执行0、29,444个当时研究�
 S2实际上传：主tar及两份校验附件于04:08:24 JST追加至原私有草稿，217→220件、全部旧资产字段不变。封存后管理证据tar为839,680字节/SHA256 02dbc6da8d9622a6fa21d2fd3612cb1f57d03d5a600d2f0fe46b83f485429a7d，79成员核对；于04:14:19 JST追加3件，220→223件且仍draft、旧附件不变。04:12:22 JST实时查询本轮53个Job无活动调用。小型delivery.json绑定两包与原生/搬移证据，完整原件未变；源码bundle及最后传输费用在报告提交后单独绑定，不递归修改封存tar。Mac接收仍未完成。
 
 S2 Mac接收（2026-10-11）：完整tar及源码bundle通过外部SHA/Git核对；30044内容成员、149Git源码、44注册四链及9诊断逐项一致。实际资格、54主条件对/864记录和64确认记录一致，确认选择从36主体独立重算。六份数值分析逐字节一致，README换行符及其校验项差异保留；三组R现代诊断的123字段末位差、最大缩放8.21e−15，未定及阈值不变。两次Windows终态verify新增0、29444保存文件再次核对不变，53Job保存终态均absent。G2/A1诊断阶段内存停止直接证据成立；六旧失败未复现，105历史类别不变。见docs/WINDOWS-NUTS-MAC-REVIEW.md。没有新采样或环境改动。
+
+最终交付（2026-10-11）：四项限定补充全部达到允许的研究终态。源码1876c49的论文包17367040字节/165输入，独立目录60页文字及像素一致；原67页PDF和129构建输入不变。S2汇总包450560字节/39内容件/3输出搬移重建字节一致；两包本地保存，摘要与PDF随Git。首次论文包误取较早完整结果组件在交付前由旧清单核对发现，失败包保留，最终包使用原ddfe...组件。接收后30044原件仍不变，私有草稿228件资产保持原状态；没有新增采样、修改旧协议或发布。COMPLETION.json是当前结项记录，PLAN.json仍为制定时快照；不继续Windows提示词。

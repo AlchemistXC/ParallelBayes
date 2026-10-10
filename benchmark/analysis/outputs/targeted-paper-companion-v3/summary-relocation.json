@@ -1,0 +1,15 @@
+{
+  "archive": "parallelbayes-nuts-summary-v1.tar",
+  "bytes": 450560,
+  "sha256": "12bab75c7f7f6d1d244c7d6462e6a1f04ae0b079b98dc149b1e95e0e9b0b1d3a",
+  "content_files": 39,
+  "source_commit": "1876c49d15b3d1c17db145190e5f704acf065748",
+  "relocated_content_verified": true,
+  "regenerated_files": [
+    "nuts-localization-main.generated.tex",
+    "nuts-localization-si.generated.tex",
+    "nuts-localization.provenance.json"
+  ],
+  "all_three_outputs_byte_identical": true,
+  "new_sampler_calls": 0
+}

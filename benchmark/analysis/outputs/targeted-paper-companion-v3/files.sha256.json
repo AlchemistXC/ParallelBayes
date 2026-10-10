@@ -1,0 +1,10 @@
+{
+  "README.md": "d1eacb8b46bda9f127ad8550d7c7be0c2a199866c358c54634fe94db3f00b0c3",
+  "delivery.json": "ac46b6788f841dc803c8d2243312aedcb6f26474802ad65b65e694417334d311",
+  "packaging-attempts.json": "c6f758c2edd1c7d3b1b5156c15687ef56e7d02818ff0f80573a3191bbd9221b5",
+  "paper-inputs.MANIFEST.json": "c41ecc089a1edb3c74317313eb9012bd75a117de7611db493fd9ec9b8014eff3",
+  "portable-rebuild.json": "9ea12fe8c30e9a90f507dfab1f0b8fd422da72ab68e7acdefe89f47137062440",
+  "post-review-integrity.json": "485a9af8dd03473ad941f2c3b7fc616f3004d7996afd1b62676bd078a9ef1466",
+  "release-readonly-verification.json": "d5135e45a66355ec09ad639059791bb1a04508c2ef28f565dd760a592c60ed5e",
+  "summary-relocation.json": "f3a660e2480cc5193722c64bf9d0e0f78400d226e35ebce5029237156da5ba52"
+}
