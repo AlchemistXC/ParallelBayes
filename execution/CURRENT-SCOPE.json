@@ -120,6 +120,16 @@
           "actual_checkpoint_cells_checked": 21122,
           "final_output_verified": false,
           "report": "docs/W1-INDEPENDENT-AUDIT.md"
+        },
+        "result_reporter": {
+          "status": "prepared_final_evidence_pending",
+          "tests": {
+            "passed": 9,
+            "failed": 0,
+            "skipped": 0
+          },
+          "actual_final_report_generated": false,
+          "script": "scripts/analysis/report_w1_enclosure.py"
         }
       },
       "L2": {

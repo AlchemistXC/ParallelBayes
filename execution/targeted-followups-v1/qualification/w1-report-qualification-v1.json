@@ -1,0 +1,29 @@
+{
+  "identity": "w1-final-report-qualification-v1",
+  "status": "prepared_final_evidence_pending",
+  "tests": {
+    "passed": 9,
+    "failed": 0,
+    "skipped": 0
+  },
+  "source_sha256": {
+    "scripts/analysis/report_w1_enclosure.py": "f791b0a4fd840d7f51ada7846b00d2e069491052844d30773c395e620f9f269c",
+    "tests/handoff/test_w1_report.py": "7b382f97b51b98c1faa325dd13ed421a17279836786891deefa0c2deadeee944"
+  },
+  "test_evidence_sha256": "43482ec3e58fcffb7436a70074a72000e3eb218fea142a9ce88e9a4dbce97f6c",
+  "source_evidence": "synthetic audited fixtures; not final W1 observations",
+  "checks": [
+    "outward signed rational decimal bounds",
+    "relocated deterministic reconstruction",
+    "wide valid intervals retained",
+    "outward-rounded intersection not mistaken for error",
+    "inward intersection refused",
+    "incomplete/checksum-altered/binding-mismatched evidence refused",
+    "loss-sign projection independently recomputed",
+    "old 432-task denominator and 504-pair family required"
+  ],
+  "new_integrand_evaluations": 0,
+  "new_mcmc_calls": 0,
+  "actual_final_report_generated": false,
+  "command": "PYTHONDONTWRITEBYTECODE=1 .venv-followups/bin/python -W error -m pytest tests/handoff/test_w1_report.py -q -p no:cacheprovider"
+}

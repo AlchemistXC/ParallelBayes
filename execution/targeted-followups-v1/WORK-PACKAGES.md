@@ -30,3 +30,5 @@ S2实现更新：增加scripts/followups中的独立阶段记录、诊断前持�
 论文交付：源码1de637b；论文包17,346,560字节，159输入核验；汇总包798,720字节，26输入核验，五个文件搬移重建一致。两份PDF全部55页文本/72 dpi像素一致，旧67页PDF哈希不变。新归档只保存在本地，未上传。详见targeted-paper-companion-v1/delivery.json。
 
 W1独立核验准备：新增只读有理数端点/分区/汇总/比率及参考敏感性脚本，13项针对性检查通过0失败0跳过；实际21122单元一致性快照通过分区和聚合检查。原432份W1拟合的126/504行敏感性接口开发检查完成，不是终态结果。新增目标评价和MCMC调用均0，原冻结四份积分源码未改，正式会话仍运行。见docs/W1-INDEPENDENT-AUDIT.md及qualification/w1-independent-auditor-qualification.json。
+
+W1结果表准备：新增从完整独立核验生成区间/成本/敏感性表的程序，9项针对性检查通过0失败0跳过，含精确端点向外舍入、未达标保留和搬移重建。实际终态输入尚缺；没有以合成样例或中途检查点填入论文。原积分和Windows状态不变。见qualification/w1-report-qualification-v1.json。
