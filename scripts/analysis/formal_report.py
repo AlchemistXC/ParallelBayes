@@ -307,7 +307,7 @@ def model_tables(bundle,name):
     return summary,tables
 
 
-def build(statistics_directory,manifest_sha256,output,*,fixture=False,render=True):
+def build(statistics_directory,manifest_sha256,output,*,fixture=False,render=True,publication_layout=False):
     source=StatisticsBundle(statistics_directory,manifest_sha256,fixture=fixture);output=Path(output).resolve()
     if output.exists() or output.is_relative_to(source.root) or source.root.is_relative_to(output):raise ValueError('Fresh report separate from statistics required')
     output.mkdir(parents=True);models=[];figures=[]
@@ -317,16 +317,19 @@ def build(statistics_directory,manifest_sha256,output,*,fixture=False,render=Tru
         atomic_json(dest/'tables.json',tables)
         atomic_json(dest/'SUMMARY.json',summary)
         if render:
-            from formal_plots import render_model
+            if publication_layout:
+                from formal_publication_plots import render_model
+            else:
+                from formal_plots import render_model
             figures.extend(render_model(name,summary,tables,dest,fixture=fixture,technical=source.frame['scope']!='formal_inference'))
         models.append(dict(model=name,table_rows={k:len(v) for k,v in tables.items()},summary=summary))
     receipt=dict(schema='formal-results-report-v1',statistics_manifest_sha256=manifest_sha256,frame=source.frame,
-        fixture=fixture,scientific_results=not fixture and source.frame['scope']=='formal_inference',
+        publication_layout=publication_layout,fixture=fixture,scientific_results=not fixture and source.frame['scope']=='formal_inference',
         all_main_statistics_available=all(m['summary']['main_statistics']=='completed' for m in models),
         all_cache_statistics_available=all(m['summary']['cache_statistics']=='completed' for m in models),
         producer_analysis_identity_sha256=source.summary.get('analysis_identity_sha256'),
         source_models=models,figures=figures,code_sha256={n:file_hash(Path(__file__).parent/n) for n in
-            ('formal_report.py','formal_plots.py','formal_report_text.py')},
+            ('formal_report.py','formal_plots.py','formal_report_text.py')+(('formal_publication_plots.py',) if publication_layout else ())},
         new_sampler_calls=0,new_statistical_repetitions=0,raw_arrays_replayed=False,diagnostics_recomputed=False,
         complete_research_or_convergence_claim=False,
         source_integrity_scope='Verified supplied statistics manifest; original raw validation belongs to the recorded producer')
@@ -340,6 +343,6 @@ def build(statistics_directory,manifest_sha256,output,*,fixture=False,render=Tru
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--statistics-directory',type=Path,required=True);p.add_argument('--manifest-sha256',required=True)
-    p.add_argument('--output',type=Path,required=True);p.add_argument('--fixture',action='store_true');p.add_argument('--no-render',action='store_true')
+    p.add_argument('--publication-layout',action='store_true');p.add_argument('--output',type=Path,required=True);p.add_argument('--fixture',action='store_true');p.add_argument('--no-render',action='store_true')
     args=vars(p.parse_args());args['render']=not args.pop('no_render')
     print(json.dumps(build(**args),indent=2))

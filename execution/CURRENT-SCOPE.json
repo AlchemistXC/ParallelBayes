@@ -1,26 +1,26 @@
 {
-  "date": "2026-10-08",
+  "date": "2026-10-10",
   "requested_by": "user",
   "active_scope": "research_completion_F0_F6",
-  "local_phase": "compact_resource_amendment_after_old_sampling_started",
-  "gpu_tasks": "Old formal sampling started per user; stop status and counts not independently received. Compact plan 3888 main/256 cache is design-only; native adaptation pending.",
+  "local_phase": "compact_mac_raw_intake_and_independent_reconstruction_in_progress",
+  "gpu_tasks": "Windows compact execution and upload completed; Mac full original reception and reconstruction incomplete. No new Windows sampling requested.",
   "gpu_verified": true,
   "gpu_verified_scope": "RTX5080 float64 explicit torch targets, fixed-tape numerical checks and recorded timing; not convergence or general acceleration",
   "requires_user_resume": false,
   "rerun_completed_cpu_tasks": false,
   "active_outstanding_tasks": [
-    "F3 old-run preservation, compact runtime/receiver adaptation and native validation, then fresh input freeze and 3888/256 execution",
-    "F4 external wells formal comparison",
-    "F5 full raw-to-paper release reproduction",
-    "F6 integrated final manuscript"
+    "F3 full original reception, independent 4144-item replay/diagnostics/statistics and failure review",
+    "F4 finite R-front-end timing after reception and reconstruction are quiet",
+    "F5 complete raw-to-paper reproduction and integrity archive",
+    "F6 final results, claims, manuscript and figure review"
   ],
   "note": "Current entry points are docs/RESEARCH-COMPLETION-PLAN.md and execution/COMPLETION-WORK-PACKAGES.md. Historical Mac and windows-native-v1 protocols and raw data remain immutable.",
   "desktop_os_requirement": "native_windows_11_no_wsl2",
   "gpu_backend": "torch eager 0.2.0.dev2 candidate; archived experiments retain original source identities",
   "legacy_handoff": "handoff/windows-native describes the completed initial migration; handoff/gpu is a historical WSL archive",
-  "revision": "research-completion-compact-amendment-v1",
-  "received_windows_commit": "5885c7189f08961658598a095b64ac2ca9bd39cf",
-  "reception_review_commit": "38894409004dd9ebceb978755dc246fcb3418d01",
+  "revision": "research-completion-compact-mac-intake-v1",
+  "received_windows_commit": "94bebec95177b03f0497d748cbc9f54a45492ce4",
+  "reception_review_commit": "080dddf",
   "completed_bounded_milestones": [
     "F1 fixed diagnostic mechanism plus native Windows receipt",
     "F2 frozen Windows mechanism pilot and independent receiver replay",
@@ -29,7 +29,7 @@
     "Finite native v2 acceptance plus independent Mac raw-array/R-diagnostic/full-frame reconstruction"
   ],
   "second_round_intake": "docs/WINDOWS-ROUND2-INTAKE.md",
-  "next_Windows_prompt": "handoff/windows-completion/CODEX-PROMPT-HOLD-FORMAL.md",
+  "next_Windows_prompt": null,
   "local_batch_validation": "14/15 valid, maximum NUTS interrupted after original and sole retry; archived/rebuilt; formal inference remains pending",
   "local_batch_report": "docs/BATCH-MAXIMUM-VALIDATION.md",
   "active_development_branch": "codex/research-integration",
@@ -95,23 +95,18 @@
     "archive_sha256": "30b590ba1cc3d664db2c5e3e4db3fc2e6e40a6e6206d1e6d6d68ba06bb224d6e"
   },
   "current_result_rebuild": {
-    "report": "docs/NATIVE-V2-MANUSCRIPT.md",
-    "sections": 7,
-    "input_assets": 59,
-    "sampler_calls": 0,
-    "R_diagnostic_calls": 0,
-    "raw_arrays_reanalyzed": false,
-    "figures_recomputed": false,
-    "pdf_pages": 26,
-    "source_commit": "664ed16879efbb0e3726d7a7661adc058affa4d7",
-    "archive_sha256": "943e7adad3e13d53a50529672fa3cf48d8bf0767502e2cb5692543ac86f20e6b",
-    "archive_files_including_manifest": 77,
-    "archive_manifest_files_verified": 76,
-    "relocated_rebuild_passed": true,
-    "legacy_v1_v2_rebuilds_passed": true,
-    "pdf": "output/software-paper/软件与基准研究-原生适配整合.pdf",
-    "pdf_sha256": "8a1ca4e2f65c8482208de5c9868737cec744a7b153b60bfda2bbea43e56348e7",
-    "full_raw_reproduction_completed_this_round": false
+    "report": "docs/PUBLICATION-FIGURE-LAYOUT.md",
+    "kind": "status_and_layout_update_before_full_formal_reconstruction",
+    "source": "manuscript/software/软件与基准研究.tex",
+    "pdf": "output/software-paper/软件与基准研究-紧凑接收修订.pdf",
+    "pdf_sha256": "b1e6ca424bb981fa540bf0ba6aedc8a798edeae42a09206d95245168801457e9",
+    "pdf_pages": 13,
+    "supplement_pages": 22,
+    "new_sampler_calls": 0,
+    "new_R_diagnostic_calls": 0,
+    "full_raw_reproduction_completed_this_round": false,
+    "portable_build_verified_this_update": false,
+    "previous_saved_result_reproduction": "docs/MANUSCRIPT-REVISION-2026-10-09.md"
   },
   "completion_gate_audit": {
     "report": "docs/COMPLETION-GATE-AUDIT.md",
@@ -288,7 +283,7 @@
     "newer_evidence_found": true,
     "all_new_assets_verified": true
   },
-  "status_interpretation": "Top-level fields and current_result_rebuild describe current state. Historical_result_rebuilds and earlier nested milestone records retain their original validation limits.",
+  "status_interpretation": "Top-level phase, current_result_rebuild and current_manuscript_status_build are current. Historical fields and earlier nested milestone records retain their dated verification boundaries. No new Windows prompt is required.",
   "historical_result_rebuilds": [
     {
       "report": "docs/CURRENT-RESULT-REBUILD.md",
@@ -323,6 +318,25 @@
       "relocated_rebuild_passed": true,
       "pdf": "output/software-paper/软件与基准研究-Windows机制整合.pdf",
       "pdf_sha256": "de2850e7cb1cb5219d972ac808ac07ccb74c23ecff250e685b6f02ea242638ae",
+      "full_raw_reproduction_completed_this_round": false
+    },
+    {
+      "report": "docs/NATIVE-V2-MANUSCRIPT.md",
+      "sections": 7,
+      "input_assets": 59,
+      "sampler_calls": 0,
+      "R_diagnostic_calls": 0,
+      "raw_arrays_reanalyzed": false,
+      "figures_recomputed": false,
+      "pdf_pages": 26,
+      "source_commit": "664ed16879efbb0e3726d7a7661adc058affa4d7",
+      "archive_sha256": "943e7adad3e13d53a50529672fa3cf48d8bf0767502e2cb5692543ac86f20e6b",
+      "archive_files_including_manifest": 77,
+      "archive_manifest_files_verified": 76,
+      "relocated_rebuild_passed": true,
+      "legacy_v1_v2_rebuilds_passed": true,
+      "pdf": "output/software-paper/软件与基准研究-原生适配整合.pdf",
+      "pdf_sha256": "8a1ca4e2f65c8482208de5c9868737cec744a7b153b60bfda2bbea43e56348e7",
       "full_raw_reproduction_completed_this_round": false
     }
   ],
@@ -465,5 +479,43 @@
     "data_destination": "downloads/windows-compact-20261010/received",
     "new_disposable_block_limit_bytes": 268435456,
     "scope": "Initial independent intake; not final acceptance of full formal results"
+  },
+  "historical_phase_summaries": [
+    {
+      "date": "2026-10-08",
+      "local_phase": "compact_resource_amendment_after_old_sampling_started",
+      "gpu_tasks": "Old formal sampling started per user; stop status and counts not independently received. Compact plan 3888 main/256 cache is design-only; native adaptation pending.",
+      "active_outstanding_tasks": [
+        "F3 old-run preservation, compact runtime/receiver adaptation and native validation, then fresh input freeze and 3888/256 execution",
+        "F4 external wells formal comparison",
+        "F5 full raw-to-paper release reproduction",
+        "F6 integrated final manuscript"
+      ],
+      "revision": "research-completion-compact-amendment-v1",
+      "received_windows_commit": "5885c7189f08961658598a095b64ac2ca9bd39cf",
+      "reception_review_commit": "38894409004dd9ebceb978755dc246fcb3418d01",
+      "next_Windows_prompt": "handoff/windows-completion/CODEX-PROMPT-HOLD-FORMAL.md"
+    }
+  ],
+  "current_required_action": "Continue existing Mac receiver and reconstruction; no repeat of prior Windows prompt or grid.",
+  "publication_layout_preparation": "docs/PUBLICATION-FIGURE-LAYOUT.md",
+  "current_manuscript_status_build": {
+    "status": "Formal raw reconstruction pending; historical numerical results unchanged",
+    "artifacts": [
+      {
+        "path": "output/software-paper/软件与基准研究-紧凑接收修订.pdf",
+        "sha256": "b1e6ca424bb981fa540bf0ba6aedc8a798edeae42a09206d95245168801457e9",
+        "pages": 13
+      },
+      {
+        "path": "output/software-paper/补充材料-紧凑接收修订.pdf",
+        "sha256": "12f94863b62496f6d1b230d3338ef03e4b29a4717f81dab14e119865d3068801",
+        "pages": 22
+      }
+    ],
+    "compiler": "Existing bundled Tectonic 0.17.0",
+    "native_editor": "Opened; standalone compiler lacks external project files",
+    "remaining_tex_warning": "Historical reference underfull hbox (references.tex:21)",
+    "new_sampler_calls": 0
   }
 }

@@ -1,0 +1,477 @@
+{
+  "schema": "publication-layout-preview-qa-v1",
+  "status": "Windows scalar tables, Mac original raw reconstruction pending",
+  "new_sampler_calls": 0,
+  "new_diagnostics": 0,
+  "formal_repetitions_added": 0,
+  "figures": [
+    {
+      "figure": "A1/execution-costs.pdf",
+      "pdf_sha256": "37ce6fbec595feb5e1ca7a15816f5c0f1bed65af0b1a4838164b79e691370ee6",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 190.0
+    },
+    {
+      "figure": "A1/inference-0.pdf",
+      "pdf_sha256": "0b151d18988b2c170ca3d9849cdedbca9d1bddba7c6d605cd4206764fd8da957",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "A1/inference-1.pdf",
+      "pdf_sha256": "c67eeead7f89a913d4ba027d13dd1ee3d38dd3f88fff1f93596c5b7c79109515",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "A1/inference-2.pdf",
+      "pdf_sha256": "d92b479e4424c02b41e9ef86739503e50ee9c006895aaadcc695db14911ebb38",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "G1/execution-costs.pdf",
+      "pdf_sha256": "61fcf06f62786ced0e1869069e4e48e4a17525d4571f337809fd7f5d40cd0fab",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 190.0
+    },
+    {
+      "figure": "G1/inference-0.pdf",
+      "pdf_sha256": "b87090a9b2b7e04e0a052dea017b1dce59eaea358e02b0de899ab6754378b85f",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "G1/inference-1.pdf",
+      "pdf_sha256": "ed9b1a7b72946bfb5e984cb95117b8f144ac548e601bd8a2116389f9afb605a1",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "G1/inference-2.pdf",
+      "pdf_sha256": "73d082575c9c674cf2a0c9c1818f2f414ea99d1cbdf21a0e1f2aac3b198f6f38",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "G2/execution-costs.pdf",
+      "pdf_sha256": "a04d5ad336cb01b2d662cff73cf0af12c48e79b79290207b03a53afc612608d7",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 190.0
+    },
+    {
+      "figure": "G2/inference-0.pdf",
+      "pdf_sha256": "78adb49143ab6e89ceb02df44c9d88bab87446f750b40ce49c05a181e3780967",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "G2/inference-1.pdf",
+      "pdf_sha256": "ec3f42abd0e7760179d333519b8412b9afa593413aa208523892cb51cfe843ba",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "G2/inference-2.pdf",
+      "pdf_sha256": "02e7f8c7aaad10ca667fb09e46da562e4111116b93ff97f5cfd3407cab2c1eef",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "H1/execution-costs.pdf",
+      "pdf_sha256": "74492f79c87fb1bd64120fc6e1daa8829411acfd7a2f6463229afd5b07760428",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 190.0
+    },
+    {
+      "figure": "H1/inference-0.pdf",
+      "pdf_sha256": "d5b261f961f0073585b8dc743b60cad1317955a0458cbe9bfcf430ae95fc3cb1",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "H1/inference-1.pdf",
+      "pdf_sha256": "ee4fde3b64442989b2d198b33430abe611d7a5dced263b34278326cb999982a2",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "H1/inference-2.pdf",
+      "pdf_sha256": "8e1c1ba1bb337416b87fa0b28d07ca7c5048582662e3d3a74bb6296c5f861353",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "H1/inference-3.pdf",
+      "pdf_sha256": "127c7ea9341346356dd79cfaeb7ddeb5a3e1356e5cf85792b4a5103662b812c4",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "H2/execution-costs.pdf",
+      "pdf_sha256": "3a7a6a0ff1a622284566b87c0952bfb60d2680d9af350b7be371d3b47fe54f44",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 190.0
+    },
+    {
+      "figure": "H2/inference-0.pdf",
+      "pdf_sha256": "c10d4006085904f43981eb538840fe3251105eef4380f526d6e1d9a8e9a62bb5",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "H2/inference-1.pdf",
+      "pdf_sha256": "18afbf98783f74687bc0aecc220352ed6111b0fbfdc614d87e24ac907da2466e",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "H2/inference-2.pdf",
+      "pdf_sha256": "80586fd96809d060ed0a35267cb9ff3a67a32f2a9e7efcefc0fb75d4ce02e8ce",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "H2/inference-3.pdf",
+      "pdf_sha256": "c0a77cab2c3e1b3273fb96583ef57f41b9df93d62eb33e5a610e3df148a01457",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "L1/execution-costs.pdf",
+      "pdf_sha256": "e172618862bbcaae45e0b3c0577403c7b10893e515ac250825d155e4120c27a5",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 190.0
+    },
+    {
+      "figure": "L1/inference-0.pdf",
+      "pdf_sha256": "633cbd4817f6508e2608fc899fafbb52b8d9a9c13218b883eae81fe6aafa8349",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "L1/inference-1.pdf",
+      "pdf_sha256": "85298e2dd64f0738c8bbd57287a5382119b44d3935bf02c4d951c8a8f51c4189",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "L1/inference-2.pdf",
+      "pdf_sha256": "4f80ebb06e7d6a205eee178fb7c5887382ee6ac8bd81764a3370e784e2dfc7ef",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "L1/inference-3.pdf",
+      "pdf_sha256": "f40a9f43cc4cbde583950336b3377de007c3e4099cef34579f4a7951f148cb55",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "L2/execution-costs.pdf",
+      "pdf_sha256": "6bc96e23e2ddbaa06f08bdd2eb9f2e8e18357dec80e79a51faf04bf271bf94e2",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 190.0
+    },
+    {
+      "figure": "L2/inference-0.pdf",
+      "pdf_sha256": "919cf21167b8a5e8968b5c1d00a61c5639655a5e322b55c9ff2525d7d79903e1",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "L2/inference-1.pdf",
+      "pdf_sha256": "449cb06b3120bed847f8caf4602d5b32b2cb30b18acac98c5086c6c1a2fd0bc0",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "L2/inference-2.pdf",
+      "pdf_sha256": "f19d389ab82442e2b272547ab25415d17a31a396850065e8b9901c9b3dd084d2",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "L2/inference-3.pdf",
+      "pdf_sha256": "4bf89995c73963ae2df5761c67d4e474cc28bf64f989f9bdab912b85c0af6d86",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "M1/execution-costs.pdf",
+      "pdf_sha256": "6d90af44e1f694e6acb2916c6eaffade0c8b16ad6014694d76df4a85e6bbce0b",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 190.0
+    },
+    {
+      "figure": "M1/inference-0.pdf",
+      "pdf_sha256": "954dcd61cce0d9a1171709e5ceaf00a4a222a6fd3d417d334bd662543782d8a5",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "M1/inference-1.pdf",
+      "pdf_sha256": "c8cc4c602b3f719c772bce146a78ad2f4adeec92affad30e82a52e1a2dae17c0",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "M1/inference-2.pdf",
+      "pdf_sha256": "a9d590cf90d7b29b8e3ded9a6e8f217118dd1c13c240fd62654e54cd292039ea",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "M1/inference-3.pdf",
+      "pdf_sha256": "7e706f8e9fe680e5f19019ed23f1b0ed0dacc4c4ac7f3d85d324e8fa238650b3",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "W1/execution-costs.pdf",
+      "pdf_sha256": "e42ce01b3511338cc94274ae85df520fe6406b0c1c03659cb461e7eb95271606",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 190.0
+    },
+    {
+      "figure": "W1/inference-0.pdf",
+      "pdf_sha256": "53526cb9b480916c879f01090cee8ba24d3ed0e5c484a783cb5a1d6717e56aee",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "W1/inference-1.pdf",
+      "pdf_sha256": "ea93eeb6f9b33726bb7426f82c637f5e1b076393374fbab924f9a4698462c2d9",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "W1/inference-2.pdf",
+      "pdf_sha256": "06214b2be6f76b89d98aec62489b9b7cfc411e1eef47a373e94a635341fbb446",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "W1/inference-3.pdf",
+      "pdf_sha256": "74f55525078e437c70f8909416d9debdfd04dce639c753d247134a056e35df34",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "W1/inference-4.pdf",
+      "pdf_sha256": "b3e1eb4f7ee838c4b51ac8a683e578c0508b649369156c8287f0703fc2694294",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "W1/inference-5.pdf",
+      "pdf_sha256": "30f77ae07069c09507f07124235bb9aeb4d220fd39ae07a3fe9035906be0e4b4",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    },
+    {
+      "figure": "W1/inference-6.pdf",
+      "pdf_sha256": "853ecbe09b3deb39b6b888ed110721d3254e2de2ff90af89e77579b6d7395b79",
+      "font_minimum_pt": 8.5,
+      "font_below_floor": 0,
+      "collision_verdict": "PASS",
+      "alignment_verdict": "PASS",
+      "width_mm": 160.0,
+      "height_mm": 210.00000000000003
+    }
+  ],
+  "full_raw_result_verification": false,
+  "review_scope": "All model contact sheets, detailed constant/unresolved/failure panels; final reconstructed PDFs still require final-size review",
+  "regression_checks": {
+    "distinct_checks_passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "initial_run": "2 passed, 1 failed: artificial-data watermark retained 8pt; repaired to 9pt"
+  },
+  "static_warnings": [
+    "PNG is preview, editable PDF/SVG are deliverables; no TIFF journal requirement selected",
+    "300 dpi applies only to PNG preview",
+    "160mm physical width verified in PDFs; source-width heuristic incorrectly read 4064mm"
+  ],
+  "initial_layout_repairs": [
+    "budget legend/title overlap",
+    "execution footer/xlabel overlap",
+    "dense signed-log ticks"
+  ]
+}

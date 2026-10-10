@@ -91,11 +91,17 @@ def write_report(output,receipt):
             caption=('技术输入的同核顺序/时间成本比仅作描述，不生成区间，也不增加正式重复。'
                 '初次及全部三次prepared调用完整核验和计时均合格才给缓存中位数；失败或缺失保持未定。'
                 '普通工作流、缓存与含审计执行费用分开，缓存比不证明推断加速或后验收敛。')
+        if receipt.get('publication_layout'):
+            caption=caption.replace('左图','上图').replace('右图','下图')
+            if figure['kind']=='inference':
+                reference=next(m['summary']['reference'] for m in receipt['source_models'] if m['model']==figure['model'])
+                reference_kind=reference['kinds'][reference['names'].index(figure['function'])]
+                caption+=' 本函数参考类别：'+reference_kind+'；参考不确定性另列，未并入所绘BCa区间。'
         caption+=' 空心标记表示区间不可判定；缺失点不补零。完整分母、缺失原因、参考类别及配对四格表见来源数据。'
         if fixture:caption='人工数据，仅作接口和版面检查。'+caption
         lines.extend(['### '+label,'',f"![{label}]({figure['file'][:-4]}.png)",'',caption,'',f"来源：[{figure['source_table']}]({figure['source_table']})。",''])
         body.extend([r'\clearpage\section*{'+tex(label)+r'}',
-            r'\begin{center}\includegraphics[width=\linewidth,height=.74\textheight,keepaspectratio]{'+figure['file']+r'}\end{center}',tex(caption)])
+            r'\begin{center}\includegraphics['+(r'width=160mm' if receipt.get('publication_layout') else r'width=\linewidth,height=.74\textheight,keepaspectratio')+r']{'+figure['file']+r'}\end{center}',tex(caption)])
     lines.extend(['## 仍须核验','',
         '原始结果、冻结协议与执行环境的审计属于上游接收步骤。本报告不能代替实际Windows验收、正式实验、完整研究复现或作者审阅。',
         '每次改变绘图数据或布局后，须重做最终PDF字体、碰撞与逐面板检查。相关检查不是统计正确性的证明。'])

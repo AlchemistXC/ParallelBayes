@@ -1,0 +1,19 @@
+{
+  "status": "Formal raw reconstruction pending; historical numerical results unchanged",
+  "artifacts": [
+    {
+      "path": "output/software-paper/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76-\u7d27\u51d1\u63a5\u6536\u4fee\u8ba2.pdf",
+      "sha256": "b1e6ca424bb981fa540bf0ba6aedc8a798edeae42a09206d95245168801457e9",
+      "pages": 13
+    },
+    {
+      "path": "output/software-paper/\u8865\u5145\u6750\u6599-\u7d27\u51d1\u63a5\u6536\u4fee\u8ba2.pdf",
+      "sha256": "12f94863b62496f6d1b230d3338ef03e4b29a4717f81dab14e119865d3068801",
+      "pages": 22
+    }
+  ],
+  "compiler": "Existing bundled Tectonic 0.17.0",
+  "native_editor": "Opened; standalone compiler lacks external project files",
+  "remaining_tex_warning": "Historical reference underfull hbox (references.tex:21)",
+  "new_sampler_calls": 0
+}
