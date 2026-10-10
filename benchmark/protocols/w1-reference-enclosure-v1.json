@@ -1,0 +1,108 @@
+{
+  "identity": "w1-reference-enclosure-v1",
+  "frozen": true,
+  "source_commit": "504253c3f1ed5fa890cf213de40f7601b3a6c450",
+  "source_files": {
+    "scripts/analysis/run_w1_enclosure.py": "c5b551809a4e8bbd1faf81328277317993334577ea6f1b6cd0caa9896eb6483d",
+    "scripts/analysis/checkpoint_cubature.py": "38b802be5c7ff0dff82991fb9a1f167c2df91156e8c25107d4057e6d6f172bb5",
+    "scripts/analysis/verified_cubature.py": "9aa5d8311080abc1962490528ef0156b389ce0fb3849fd4f26948abcaa692f0d",
+    "scripts/analysis/wells_ball_target.py": "8c78b73e191edfea6e7cc14834a7076d73eb993e8ea0ff2e901ae3d649f74079",
+    "examples/external_wells.py": "cf5e8a49dff8aaa0d6e6e0df1fd262235c44365333b43f17c0b356d013546bfe",
+    "r-package/inst/python/parallelbayes/reference.py": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1",
+    "r-package/inst/python/parallelbayes/__init__.py": "7c54c6b83f3f39fdb0578b6e8fa32a040c6c335a8df3cc6d6fd7d769e710f5e9",
+    "models/external/wells/source-manifest.json": "b64415687a58d3e2c34444d9e32523154b6002d960e505e31e2510d8356420ab"
+  },
+  "python": "3.12.14",
+  "dependencies": {
+    "python-flint": "0.9.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "psutil": "7.2.2"
+  },
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "qualification_sha256": "6bb77999b0da6bb0fd5268fbe693ec53be631ce2a358c4791300853ae93fd2b9",
+  "target_id": "1fbe37b8e300f91afb72f1e22faeced36ad153ea5fdf88c008f78ced541ee0cc",
+  "geometry": {
+    "center": [
+      0.6059593596187433,
+      -0.6218819312605882
+    ],
+    "factor": [
+      [
+        0.03707095095332249,
+        -0.047571711918119874
+      ],
+      [
+        0.0,
+        0.09742588255807785
+      ]
+    ]
+  },
+  "functions": [
+    "alpha",
+    "beta",
+    "alpha_squared",
+    "beta_squared",
+    "p_switch_0m",
+    "p_switch_100m",
+    "beta_positive"
+  ],
+  "radius": 12,
+  "tail_sectors": 256,
+  "precision_bits": [
+    128,
+    256,
+    384
+  ],
+  "adaptive_precision_bits": 384,
+  "methods": [
+    "gauss2",
+    "simpson"
+  ],
+  "probe_tiles_per_axis": 4,
+  "charge_per_cell": {
+    "gauss2": 7,
+    "simpson": 12
+  },
+  "maximum_charged_evaluations_per_method": 1999000,
+  "shared_tail_and_qualification_reserve": 2000,
+  "maximum_active_cells_per_method": 262144,
+  "checkpoint_block_splits": 128,
+  "continuous_halfwidth": "1e-8",
+  "event_halfwidth": "1e-13",
+  "event_relative_halfwidth": "0.01",
+  "priorities": [
+    [
+      "1e-10",
+      "1e-10",
+      "1e-10",
+      "1e-10",
+      "1e-10",
+      "1e-10",
+      "1e-10"
+    ],
+    [
+      "1e-15",
+      "1e-10",
+      "1e-10",
+      "1e-10",
+      "1e-10",
+      "1e-10",
+      "1e-10"
+    ]
+  ],
+  "resource_policy": {
+    "rss_gib": 4,
+    "working_gib": 3,
+    "minimum_free_gib": 10,
+    "total_runtime_cutoff": null
+  },
+  "event_domain": "Split second integration coordinate at exact expression -center_beta/factor_22 represented by a ball. Endpoint uncertainty is propagated through nodes, widths and derivative bounds.",
+  "checkpoint_policy": "Reserve block work durably before evaluation; interrupted reservations stay charged. Restore balls outward; never narrow radii. SQLite atomic partition/aggregate update.",
+  "evaluation_definition": "Each vector density value, derivative-bound callback, and its shared midpoint log-density evaluation is charged. Counts bound actual evaluations including interrupted blocks; archived completed callbacks also reported.",
+  "positivity_policy": "Intersect integrals of known nonnegative functions with [0,infinity); require strictly positive denominator lower bound before ratio division.",
+  "scope": "Deterministic companion on original binary data; no MCMC fits or changes to old references"
+}
