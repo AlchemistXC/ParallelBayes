@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-10T09:40:12.911762+00:00",
+  "scope": "Actual local named research/analysis/delivery processes; no live Windows handle or whole-machine exclusivity claim.",
+  "watched": [
+    "assemble.py",
+    "compare_compact_statistics.py",
+    "formal_analyze.py",
+    "formal_report.py",
+    "formal_statistics.py",
+    "plot_compact_overview.py",
+    "r_frontend_report.py",
+    "r_frontend_timing.R",
+    "r_frontend_timing.py",
+    "r_frontend_verify.py",
+    "receive.py",
+    "reconstruct.py",
+    "review_compact_reconstruction.py",
+    "write_compact_manuscript.py"
+  ],
+  "active": []
+}

@@ -101,3 +101,6 @@ ANALYSIS_PYTHON CURRENT_SOURCE/scripts/analysis/write_compact_manuscript.py --st
 R技术原件另按`r_frontend_verify.py --root R_TIMING --reference-file ORIGINAL_REFERENCE_PY --output R_ANALYSIS`只读重建，再用`r_frontend_report.py --analysis R_ANALYSIS --recovery ACTUAL_RECOVERY_JSON --output R_TABLES`生成`r-frontend.generated.tex`。它要求真实32进程恢复证明和64次独立核验，不能用四次技术重放生成统计区间。原R协议含本次安装来源/绝对路径；搬移核验通过显式`--reference-file`指向随证据提供的原`reference.py`，工具要求它与冻结安装文件SHA256完全一致，不重写协议、不伪造路径，也不重新执行计时。实际搬移64次保存调用重放、两份CSV逐字节一致，以及篡改参考文件被拒绝的检查均已完成。R表格也可从随附已核验`calls.csv`检查全部64行，不需新采样。
 
 本次便携论文输入为`output/software-paper/portable-final-inputs-v1.tar`；23文件与清单在新目录验证并使用原Tectonic编译。主文文本和页面像素一致。此包不含完整原始轨迹，仍须与上述原件/源码和分析输出共同使用。
+
+
+最终派生统计与R技术原件可从作者可访问的草稿Release新增包`parallelbayes-mac-final-research-20261010.tar`取得，校验见[交付报告](RESEARCH-COMPLETION-REPORT.md)。其中`statistics/`是完整Mac统计包，`complete-results/`包含全部45图/源表，`R-timing/`与`R-reference/reference.py`支持上述搬移只读命令。原Windows轨迹仍使用原21组件，未重复塞入此派生包。先校验外部收据和成员清单，再运行工具；不要将已有输出覆盖为新运行。

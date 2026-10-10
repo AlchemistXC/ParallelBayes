@@ -36,3 +36,12 @@ R有限补测在重建进程实际结束后串行运行，32个新R进程、64�
 正文全部16页、SI及完整附录全部页面完成版式检查；新主图/水井表/R费用表按最终尺寸审阅。内置编辑器不支持外部项目输入，因此保留TeX编辑器并使用既有Tectonic成功编译，无新安装。首次便携解压误用了Python3.9的tarfile接口，随后用既有Python3.12完成；原包未变，故障记录保留。
 
 公开仓库包含源代码、摘要和论文PDF。2026-10-10再次核对Windows证据Release 403644544仍为draft、213原附件；未经作者授权不公开。作者/单位、投稿选择与公开决策仍由研究者确认。本轮交付完成不等于所有配置收敛、普遍加速、未知失败已修复或投稿无需作者终审。
+
+
+## 最终远端交付核对
+
+派生包`parallelbayes-mac-final-research-20261010.tar`为644812800字节（约615 MiB），924个文件逐项核验；另有清单和说明两个成员。SHA256为`f25c75e571250e0170193f0f364668153b942d50f1e34f7e9d2daf74121c0c9d`。包内包含源Git bundle、完整Mac统计、报告及源表、平台差异、R技术证据、PDF和便携论文输入，没有第三份Windows完整原始数据。
+
+该包和独立校验清单已追加到原[草稿Release](https://github.com/AlchemistXC/ParallelBayes/releases/tag/untagged-a38d1dfe63e5584ac2ef)。服务器返回的大小和SHA256与本地匹配，213个原附件的ID/大小/摘要不变，新增2附件后为215，仍为draft。源码bundle记录完整历史，头为9384d84；随后Git提交只补交付核对记录。
+
+2026-10-10 09:40 UTC的实际本机进程观察中，本轮接收、重建、统计、R计时、绘图与打包脚本活动数为0。此观察不冒充远程Windows实时句柄。对应回执在`benchmark/analysis/outputs/compact-final-delivery-v1/`。

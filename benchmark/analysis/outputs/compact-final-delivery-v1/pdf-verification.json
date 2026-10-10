@@ -26,6 +26,6 @@
   "compiler": "existing Tectonic 0.17.0",
   "native_editor": "External project inputs unsupported; preserved source, existing project compiler used.",
   "new_sampler_calls": 0,
-  "visual_review": "Whole main 16 pages, supplement 27 before cross-host addition, all 66 appendix pages reviewed in contact sheets; main pages 10/13 and R table inspected at final readable scale. Final changed supplement pages reviewed separately.",
+  "visual_review": "All 16 main, all final 27 SI and all 66 appendix pages reviewed in contact sheets. Main cost figure and W1 table, final SI state table/cross-host text/R table reviewed at readable final scale. No text outside page bounds or TeX overfull/undefined warnings in final builds.",
   "external_independent_team_claim": false
 }

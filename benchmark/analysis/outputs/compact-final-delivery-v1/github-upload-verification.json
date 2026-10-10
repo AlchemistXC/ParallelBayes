@@ -1,0 +1,26 @@
+{
+  "release_id": 403644544,
+  "tag": "windows-completion-v2-20261005",
+  "draft": true,
+  "old_assets": 213,
+  "old_assets_unchanged": true,
+  "assets_after": 215,
+  "added": [
+    {
+      "id": 627564203,
+      "name": "parallelbayes-mac-final-research-20261010.tar",
+      "size": 644812800,
+      "digest": "sha256:f25c75e571250e0170193f0f364668153b942d50f1e34f7e9d2daf74121c0c9d",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/parallelbayes-mac-final-research-20261010.tar"
+    },
+    {
+      "id": 627564200,
+      "name": "parallelbayes-mac-final-research-20261010.receipt.json",
+      "size": 360,
+      "digest": "sha256:9f79939af19f3dab9b6340c4ffbb1694e11de2c8fa196d048abb17253a2a17fe",
+      "browser_download_url": "https://github.com/AlchemistXC/ParallelBayes/releases/download/untagged-a38d1dfe63e5584ac2ef/parallelbayes-mac-final-research-20261010.receipt.json"
+    }
+  ],
+  "server_digests_match": true,
+  "public_release_created": false
+}
