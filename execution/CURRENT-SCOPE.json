@@ -570,5 +570,18 @@
     "snapshot_Rhat_threshold_changes": 0,
     "full_reconstruction_complete": false,
     "new_sampler_calls": 0
+  },
+  "compact_analysis_environment": "docs/COMPACT-REPRODUCTION.md",
+  "finite_R_timing_followup": {
+    "state_at_20261010T085906Z": "queued_waiting_for_observed_reconstruction_PID_exit",
+    "watched_PID": 27016,
+    "watched_create_time": 1791614289.979581,
+    "protocol_sha256": "b200073b15d6e741745d8c3d48347a56c7c93e8db16639f913131325a9b55128",
+    "local_driver": "output/r-frontend-followup-v1/driver.py",
+    "local_status": "output/r-frontend-followup-v1/status.json",
+    "planned_processes": 32,
+    "maximum_calls": 64,
+    "formal_repetitions_added": 0,
+    "note": "Check actual driver/process status before performing competing local analysis; this queued state is not timing completion."
   }
 }

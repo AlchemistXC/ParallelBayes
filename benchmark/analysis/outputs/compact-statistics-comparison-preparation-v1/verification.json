@@ -1,0 +1,16 @@
+{
+  "scope": "Comparison utility preparation, not the completed Mac/Windows statistics comparison",
+  "source_base_commit": "19f99843155ac64484622a468e4c57773f3b7a38",
+  "command": "python -m pytest -q tests/analysis/test_compact_statistics_comparison.py -p no:cacheprovider",
+  "passed": 4,
+  "failed": 0,
+  "skipped": 0,
+  "source_sha256": {
+    "scripts/analysis/compare_compact_statistics.py": "fed58d7a88090ab3a47af0c6cda870a2411a95ba2e5656df0f117516155e883f",
+    "tests/analysis/test_compact_statistics_comparison.py": "fafefd32787dc30513ca6d4e27d9b8bfdd393cde0fb10bcf5dacb8a19b6c5f96"
+  },
+  "preserved": "All numeric differences, state/denominator changes, threshold changes, and original undefined bootstrap positions; no tolerance introduced",
+  "new_sampler_calls": 0,
+  "new_R_diagnostic_calls": 0,
+  "new_statistical_estimates": 0
+}

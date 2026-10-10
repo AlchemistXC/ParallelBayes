@@ -64,6 +64,14 @@ ANALYSIS_PYTHON ARCHIVED_SOURCE/scripts/analysis/formal_statistics.py --delivery
 
 统计保存原Windows估计和诊断，经Mac核对后继续按冻结规则计算；Mac派生浮点差异另存。完整失败分母、L2未定参考、W1非认证求积、常量诊断和未知费用均保留。
 
+完整Mac统计还要与归档Windows统计逐项比较：
+
+```text
+ANALYSIS_PYTHON CURRENT_SOURCE/scripts/analysis/compare_compact_statistics.py --left-directory ORIGINAL_WINDOWS_STATISTICS --left-sha256 VERIFIED_WINDOWS_STATISTICS_SHA --right-directory STATISTICS --right-sha256 VERIFIED_MAC_STATISTICS_SHA --output STATISTICS_COMPARISON
+```
+
+该检查保留投影数值、状态/分母、全部bootstrap数组及描述性阈值分类的差异，不以宽容差隐藏变化。冻结bootstrap中空分母造成的NaN位置也逐项比较，不删除或补零。它不重新计算区间；ZIP元数据和重复来源记录不当作统计值。四项针对性检查通过，完整两平台比较仍需等待本轮Mac统计完成。
+
 之后使用当前展示层，不修改归档读取器：
 
 ```text
