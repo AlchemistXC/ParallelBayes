@@ -33,4 +33,3 @@ for (w in result$workflows) {
 \end{verbatim}
 \endgroup
 实际Mac torch安装示例返回四个\texttt{completed}状态，每组样本维度为\texttt{128 × 4 × 2}。第一组顺序MALA的\texttt{beta0}均值为0.11428、标准差0.16642、$\hat R=1.01917$，\texttt{beta1}的$\hat R=1.03180$，说明接口成功返回仍可伴随短链诊断问题。完整脚本同时核对安装模块来源和输入哈希，保存失败项、样本及诊断，并在数值检查失败时返回错误。该例已在Mac安装环境下运行JAX/torch与R入口，四链各128次转移用于说明接口；没有预热，不能作为推荐推断预算。它的Windows/CUDA组合尚未实测。水井案例另有Windows CPU/CUDA/R接口证据。\texttt{pb\_model()}不接收任意R闭包，Pyro CPU NUTS也仍是独立研究CLI。
-
