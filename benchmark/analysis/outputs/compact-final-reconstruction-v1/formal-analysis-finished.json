@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv/bin/python",
+    "scripts/analysis/formal_analyze.py",
+    "run",
+    "--delivery",
+    "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/received/formal",
+    "--index",
+    "/Users/haku/Workspace/ParallelBayes/output/windows-compact-intake-v1/formal-index",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/windows-compact-intake-v1/formal-analysis",
+    "--rscript",
+    "/usr/local/bin/Rscript",
+    "--r-library",
+    "/Library/Frameworks/R.framework/Versions/4.6/Resources/library",
+    "--cross-platform"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 4946.774893832975,
+  "new_sampler_calls": 0
+}

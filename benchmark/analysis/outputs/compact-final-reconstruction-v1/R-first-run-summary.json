@@ -1,0 +1,1127 @@
+{
+  "schema": "r-frontend-timing-v1",
+  "new_processes": 32,
+  "reused_processes": 0,
+  "outcomes": [
+    {
+      "task": {
+        "id": "block-0-workflow-0-audit-0",
+        "block": 0,
+        "workflow": 0,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 5.3328081669751555,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 5.21959270798834
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 5.263943624973763
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "febc378909fa361b7a38a1b9d71dc234acfc4c9f5dbb92103b6985decdc56230",
+        "first-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "first-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "first.json": "8781739cf48451910203b97d0a7657a84e8885d1b44f082b7b0773dcde69dcf9",
+        "first.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "9003b67e4e0a045235e4656b583ae8422bb874694a32be0b916dd7180b41a389",
+        "subsequent-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "subsequent-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "subsequent.json": "72b3beb87a68e6277c17216dba1510470e897cfec03aea6707ae57c8a85b16f6",
+        "subsequent.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901"
+      }
+    },
+    {
+      "task": {
+        "id": "block-0-workflow-0-audit-1",
+        "block": 0,
+        "workflow": 0,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.8361004589824006,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.721176250022836
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.776672750012949
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "99f84285540002ba61d4d4c81965b2a3ccfcc54d8ba92c3b05b27ebe2723d4df",
+        "first-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "first-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "first.json": "027dc4d629138af2157c788f2e911c2123477e1025f2090b4a62974b238c4554",
+        "first.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "a30b0a7210cca236c1c2992e74666bb277de387cd25577492d04b06a22273467",
+        "subsequent-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "subsequent-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "subsequent.json": "ff974e93bf57530862049d88551368f7a05281e6b88646f4c9edf5d6e5979fd9",
+        "subsequent.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901"
+      }
+    },
+    {
+      "task": {
+        "id": "block-0-workflow-1-audit-1",
+        "block": 0,
+        "workflow": 1,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 2.4521874170168303,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 2.0401604170328937
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 2.3930286670220084
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "47d94bc236a9db3e5c3cc577ca87637b2f520391052f189e16a1d6863f1c2fff",
+        "first-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "first-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "first.json": "107dec5d3c3f62da41b08f1528bc02d52795fb2b80e89d98ef5c8f403e02e8fd",
+        "first.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "8f04abd155f755ff642d0f1bc2fb1de37990fc2fedd189364d2e6b96938763f4",
+        "subsequent-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "subsequent-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "subsequent.json": "5f34b22de1c7cc9184a59a26046539b84d4b23e01864f38da086da9c51b8cd70",
+        "subsequent.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76"
+      }
+    },
+    {
+      "task": {
+        "id": "block-0-workflow-1-audit-0",
+        "block": 0,
+        "workflow": 1,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 2.4210352079826407,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 2.024627332983073
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 2.361209874972701
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "ba976cfcee8c3d0cd2f38c1907f662e11ae01e109698aea1baa50656247dc586",
+        "first-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "first-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "first.json": "918ed06bfa9dd4a4b595de498972d416b81547d74153a598dd7b73b067c0cfb6",
+        "first.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "0ff552b93a2e400b59edabf4ce26c786b7bd0b532082248046a4186209e04a67",
+        "subsequent-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "subsequent-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "subsequent.json": "9b893e78939411fd20acdee6c7b58f63d0464e0ba5ba33c7144ce30f2ae23b87",
+        "subsequent.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76"
+      }
+    },
+    {
+      "task": {
+        "id": "block-0-workflow-2-audit-0",
+        "block": 0,
+        "workflow": 2,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.337357917043846,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2673778750468045
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2832813750137575
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "ab968c6376b2ff0d5eb6347941387896bab95bc1313b32fae5e960f7159805fc",
+        "first-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "first-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "first.json": "42683585e958f2ec53e8f8d017fcb26399db8460dd305dec53416663a688d218",
+        "first.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "fb5c81ef2091d7344d31059e5547aeffdc7bcff76bd49c9d6878720eeb564bcb",
+        "subsequent-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "subsequent-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "subsequent.json": "046990f104828135311f1349ea9143495ec60e716af66032aac46d15ef01a0a8",
+        "subsequent.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22"
+      }
+    },
+    {
+      "task": {
+        "id": "block-0-workflow-2-audit-1",
+        "block": 0,
+        "workflow": 2,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.362093416042626,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2872702080057934
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.3081415829947218
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "92685f79fa0fbe9d8080b56fb64bcaddcb8badab74ec36bf963c16fe4471fb11",
+        "first-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "first-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "first.json": "5e86da1c873866b8076aff7ec1cb431757df1e94ec8f403c15528c7dd9017dae",
+        "first.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "51e98aebd62669a2c39966a7833c0dfd68ef026ae0f5629d72932e47500c5971",
+        "subsequent-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "subsequent-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "subsequent.json": "a4c3a305406ce1ea32fbe3fc6e862cc32d1e5bcb73731e08c301fb698be95b32",
+        "subsequent.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22"
+      }
+    },
+    {
+      "task": {
+        "id": "block-0-workflow-3-audit-1",
+        "block": 0,
+        "workflow": 3,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.3597647090209648,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2844466249807738
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.304774374992121
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "af69b2731271761fef25418f8990cf4545ed56078f2d5eeacbbe1724b75e9dbb",
+        "first-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "first-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "first.json": "02af10f49a08143edcb57b98e97c074855abdffaf70aad1e389789c8a99a2798",
+        "first.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "c10fcf9a3b466b3133bb4bc179312cdf34a9e2fc0e71a44ee31d1ea0e3402569",
+        "subsequent-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "subsequent-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "subsequent.json": "ee95c7ef8836b2afaa70b445715ef4011d47dd96f8851851818c9b371de24bcb",
+        "subsequent.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854"
+      }
+    },
+    {
+      "task": {
+        "id": "block-0-workflow-3-audit-0",
+        "block": 0,
+        "workflow": 3,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.343039458966814,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.273895708960481
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.288586166978348
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "d256e909de127e072ce7a3326b88a23436eda69b213f6e3ff7cd8794121b11e9",
+        "first-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "first-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "first.json": "b9016cb7dc2014509fe15f55a0b9a5ae3fcb23d7e2425470237bbc1815875df1",
+        "first.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "c213cc8bf7f2d7f98d9a370366c2183f7dae3ee99eb986662e3d144129f496d6",
+        "subsequent-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "subsequent-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "subsequent.json": "c0d572dec680d3ba5fe923ba99612ee3ee72ebfda3ecd375482a630ac3e3f598",
+        "subsequent.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854"
+      }
+    },
+    {
+      "task": {
+        "id": "block-1-workflow-1-audit-0",
+        "block": 1,
+        "workflow": 1,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 2.4216146250255406,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 2.022665833006613
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 2.362057249993086
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "ce1ac3bd72088d704c1591b1c4db291312b1daba00f97374c22827c348a28bdc",
+        "first-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "first-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "first.json": "8f1c408cd010291f47c6abc93d5a59aef87e1cd865374054edd1e348d041e93b",
+        "first.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "7e12728512fdf09135587ed2d39a37a9c021a64d75630cdf00f32dd467d94f75",
+        "subsequent-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "subsequent-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "subsequent.json": "9a71d456f2de760212164c760ddf5e4cb979064134f8b3a3f960ba05168bd470",
+        "subsequent.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76"
+      }
+    },
+    {
+      "task": {
+        "id": "block-1-workflow-1-audit-1",
+        "block": 1,
+        "workflow": 1,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 2.454665458004456,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 2.042798499984201
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 2.39488470798824
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "8b3aec875c7a5c63d004896f00a77917620099f2f3f382c8bd6f6cf00635b485",
+        "first-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "first-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "first.json": "43e3b311018c0d47889b6bfcbd1d6a56103a00129d0792985f4a415f80019617",
+        "first.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "21ae769f87d87fef3b78df2137b0ce124063e0f7bb4acbc46ec384285d4a937d",
+        "subsequent-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "subsequent-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "subsequent.json": "a17d32d3ff87a9ee5be5b500cb0b2372eb2dced0733873a0781876f8b9a83a66",
+        "subsequent.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76"
+      }
+    },
+    {
+      "task": {
+        "id": "block-1-workflow-2-audit-1",
+        "block": 1,
+        "workflow": 2,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.3507968339836225,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2763895420357585
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.297319624980446
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "843c1fa9eecf9c9ff2fe509e79a5204ee7992b1a99e6d646a7c1b67066713193",
+        "first-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "first-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "first.json": "d9f26abdb7df7adf3c8787f75eb13de3d29e5e1cdc943fa97200b0c15aa7d0fd",
+        "first.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "dc2dc622b8e792631a58bf7cbc1db9a0b09a871dcbc322a28310feebc06ebe4a",
+        "subsequent-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "subsequent-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "subsequent.json": "c2db2fdd4720e8e43ee6053a9996cbf2a70ebdbeef79567bb9e2c495acf225a7",
+        "subsequent.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22"
+      }
+    },
+    {
+      "task": {
+        "id": "block-1-workflow-2-audit-0",
+        "block": 1,
+        "workflow": 2,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.3419226250262,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2726400829851627
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2881041659857146
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "c62c6b629218d5ca7eda384f62814d5f9a497b3db9180126599c88f4769d5128",
+        "first-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "first-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "first.json": "682ce59420210cef39ee27dbe10d265b13ca02d5504dfc8300f61623a1093e9b",
+        "first.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "bf5454fa19cb86fedcfb2b23370c1a70db0cad9ea71f36b32b97f5fb49fd8512",
+        "subsequent-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "subsequent-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "subsequent.json": "0bbe07f41075e4b87dcb97a9a9156c37e6b3663aacbf10127f00f06b0153e989",
+        "subsequent.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22"
+      }
+    },
+    {
+      "task": {
+        "id": "block-1-workflow-3-audit-0",
+        "block": 1,
+        "workflow": 3,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.3421732499846257,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2736760420375504
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.288369000016246
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "6609bfb854fab94bb0dc13141837fab51831e70d379a9a8076af33aaf7a5c0cf",
+        "first-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "first-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "first.json": "248d77fae0cb4b372e74e92dbb7f2f73034b3dc3dbc869e8d35f3a85f7a1116d",
+        "first.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "6941bc199339d1cabf84c5e79e4b6441ba0ccc6288ec303f01275e1a40d209cd",
+        "subsequent-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "subsequent-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "subsequent.json": "500e2e1b2dee41001e6018a08263a9ff0803efc2720ca56b03b452de47033998",
+        "subsequent.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854"
+      }
+    },
+    {
+      "task": {
+        "id": "block-1-workflow-3-audit-1",
+        "block": 1,
+        "workflow": 3,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.3535622920026071,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.277553083957173
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2997386250062846
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "c5862ef9c2a77ae013bf66b8b6b101ddf6960e8f751b0988bdd9e3d57797d62c",
+        "first-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "first-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "first.json": "6682b0f6f354909a1ded95923ea2a154f74f8110cac887266877cd786b612a63",
+        "first.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "216ade95e148071f49eafa6a8cb3a03fea8822293d5a3dd53c21a7bd246fa3bb",
+        "subsequent-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "subsequent-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "subsequent.json": "4c5a7cabbfab8d5c5a45a2a1f0f58bdc0477f20ecb7d72223704e9676cee7011",
+        "subsequent.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854"
+      }
+    },
+    {
+      "task": {
+        "id": "block-1-workflow-0-audit-1",
+        "block": 1,
+        "workflow": 0,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.8153067500097677,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.7024468750460073
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.7571354580577463
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "d509fd60f9c6d1c0e891adedece109e5ed1c8792ed54a57812c559fa2bcd51a0",
+        "first-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "first-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "first.json": "87239a30bd330a7111a2a1e7710a4377754cc78ca2e28eea8fb4f323b7c17e0e",
+        "first.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "7a9573b91cd18de058253c5fdab31bf109c62b2fd6d26b9d4963d96d3cb06645",
+        "subsequent-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "subsequent-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "subsequent.json": "cc6d386f83f074bcfa56c7079761792cd2cebaf2f3357438f82877c5b56d0fd7",
+        "subsequent.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901"
+      }
+    },
+    {
+      "task": {
+        "id": "block-1-workflow-0-audit-0",
+        "block": 1,
+        "workflow": 0,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.796846208977513,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.6944584169541486
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.73893433396006
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "865c8afa6eca08ae63434c5430192a2a89cdbdc41dfd61eb7145183e8fe1bbeb",
+        "first-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "first-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "first.json": "8191f0f8a06d971526c83559cfbeed38e95de160efb84119324e6f53afaaeabd",
+        "first.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "428f05b713de131cfe82ba948b74eaf02d72092cb096b8cccf7bf81ac4a0bf90",
+        "subsequent-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "subsequent-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "subsequent.json": "191b59f75438e1cfb58cb170ed137e3e7d4a3d2faa74240c853025d57825682b",
+        "subsequent.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901"
+      }
+    },
+    {
+      "task": {
+        "id": "block-2-workflow-2-audit-0",
+        "block": 2,
+        "workflow": 2,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.3449192080297507,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2743762920144945
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.290276832995005
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "6970c7a3688be1c3b1e155c55c414cf14740f680dadf18eb40ba531dc8dc33d4",
+        "first-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "first-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "first.json": "2aa956f0e01262a2fb877f9fd66d92e5117b41fd03958d2c7ad6c17741699c14",
+        "first.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "a0fa57e7dfba6e20f5d1eb6eb37aa010ad8168be1eb8e73a19121d95e3a8a6f4",
+        "subsequent-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "subsequent-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "subsequent.json": "7795a1b05052085ce7f5e214c3f915091976e22cfc6f8f532dfa8f42e2583762",
+        "subsequent.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22"
+      }
+    },
+    {
+      "task": {
+        "id": "block-2-workflow-2-audit-1",
+        "block": 2,
+        "workflow": 2,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.3505022919853218,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.275765708007384
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.296215749986004
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "bddf169e6e739d7be25ed9f74eac5d864d098c1361a1d9f68c555112ec280858",
+        "first-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "first-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "first.json": "395abf20e586e0df0a298ef726f248b9201838246cceca8f664d668819850726",
+        "first.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "c21cb348f5006a2a7dfbbf2e75dd7c816b19a3974ab442aeeee636fc24138f54",
+        "subsequent-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "subsequent-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "subsequent.json": "cf7e6cd9360878c3db0d1f17723029cd06741351341bf9ba0e3a168aeac95b82",
+        "subsequent.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22"
+      }
+    },
+    {
+      "task": {
+        "id": "block-2-workflow-3-audit-1",
+        "block": 2,
+        "workflow": 3,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.3479973339708522,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2737025839742273
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2935421249712817
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "78a821b6616c89c68c7144a9889848a94c27a21e01276e7019bc47497b72673a",
+        "first-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "first-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "first.json": "31b9123c0a8b4737dd00b9845dcc44e8779eb0c023305d0e044782e762aa3ad3",
+        "first.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "1d69bc192b1f2d313eb94e1e7a90a0bde7ab2138274ba947160f16e49619b41d",
+        "subsequent-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "subsequent-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "subsequent.json": "ad401bb3545de6e98a3a3f1cf407c6f7fd165358a4b27fb1a0f8374e5f232b6d",
+        "subsequent.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854"
+      }
+    },
+    {
+      "task": {
+        "id": "block-2-workflow-3-audit-0",
+        "block": 2,
+        "workflow": 3,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.338886082987301,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2701225830242038
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2848727920209058
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "38f08c4fe18f68d2444ca2eb291c6572d6705d04d733c55c8e3ba19d0c3bdbec",
+        "first-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "first-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "first.json": "9102f06b4d0b3f14173b010b942438013a287da9475e739fa94d9d2efc02c1a5",
+        "first.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "6d3a56c08334e39d028fbe203103f6848612df09ad7ac2828d28666b18b3efc3",
+        "subsequent-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "subsequent-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "subsequent.json": "2bae546cdbc381f198d5c750773edc4302ed30ec456f42d9b36d6a1a718d45e3",
+        "subsequent.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854"
+      }
+    },
+    {
+      "task": {
+        "id": "block-2-workflow-0-audit-0",
+        "block": 2,
+        "workflow": 0,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.7944846670143306,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.6909465420176275
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.7365698339999653
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "c5b2d5bc372234bb0911a3b1901e60d4f13f1e29851282324c96e4bbdaea8752",
+        "first-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "first-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "first.json": "0e5a3334e8de8997eba2be7574f6070c6f696d122aadb0b14adeee0de7d269e8",
+        "first.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "fa1459cb2f751eca051eeb24785ea023f23db41880c7b34a6fc808a02ca1a5aa",
+        "subsequent-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "subsequent-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "subsequent.json": "4d09cdc23ffb8bcddfc29fedec8a863a809c276e1738f0ba0a25c11dd70ff651",
+        "subsequent.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901"
+      }
+    },
+    {
+      "task": {
+        "id": "block-2-workflow-0-audit-1",
+        "block": 2,
+        "workflow": 0,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.8095010840333998,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.696239750017412
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.7512697920319624
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "ca013fa80daf48fbf59fbe826a2f30359517e8fa37ee3622a78487b04426bac4",
+        "first-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "first-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "first.json": "0f4dcbb2ed00731dea7870a8f09f870714e8573edae0eef195c1c3e41e67a744",
+        "first.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "cb87ac2b7d0c543471817dbf8c9409dab4075c9c13316e4477780577d9162ac4",
+        "subsequent-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "subsequent-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "subsequent.json": "e43b248c2358c77727eacddb92d84fa47d8c8a73d6f9c64388f1a06f91dd11ac",
+        "subsequent.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901"
+      }
+    },
+    {
+      "task": {
+        "id": "block-2-workflow-1-audit-1",
+        "block": 2,
+        "workflow": 1,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 2.4434123339597136,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 2.0364802919793874
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 2.384068874991499
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "c7a46746118574de6b01785b26fdb829ead7fe27e70b543bf5c57c76c6986300",
+        "first-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "first-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "first.json": "680ec15be44acad89c41c1d451d24eaf35ffd813e5ee06f418388f8e35f58350",
+        "first.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "98968ad350c9da09d0fd8fb88d9a590dd95caca9905def9ecf434e668608e0ab",
+        "subsequent-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "subsequent-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "subsequent.json": "3b757199bb01c871268e15f7db051f4c557dd5014a90cf4fcb97e04efa13b07c",
+        "subsequent.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76"
+      }
+    },
+    {
+      "task": {
+        "id": "block-2-workflow-1-audit-0",
+        "block": 2,
+        "workflow": 1,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 2.495915374951437,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 2.089735916990321
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 2.4343563329894096
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "9d0bce39f30e92660ca8621730be738a2793a6fa3eb0ca17e3bb531e030c5a96",
+        "first-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "first-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "first.json": "c15b7b677a8c4dd761438ad1fa360c5efff6d784753ceb4cf093cdc75ad93784",
+        "first.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "20b439d7bca3ef8920d3c533566ce62a91504c7fdff6070168e733b84419b002",
+        "subsequent-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "subsequent-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "subsequent.json": "d65fe44a3c7eaba7fbab8f02821c1760ecb5a6eff3dd68ec4cbf48c7e6f4e25f",
+        "subsequent.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76"
+      }
+    },
+    {
+      "task": {
+        "id": "block-3-workflow-3-audit-0",
+        "block": 3,
+        "workflow": 3,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.3880868339911103,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.3147598340292461
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.3299677500035614
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "8e5c42fec80e818e8bd3dd5004cba3d99899bd4bc6ff57db2d0b0432982e3d89",
+        "first-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "first-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "first.json": "de4bbfa4c9dd1304992d70eeed7cc0aacf64d47f59fb5280c536927382db8586",
+        "first.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "f5b8df8e5a40c31adf8f8325d74b4ae6c19d06818742e871d4bf27513ad59d70",
+        "subsequent-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "subsequent-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "subsequent.json": "8923c2c41c90e12409e21a513574855df934f63d68ea9efa9f3122ffc7752b49",
+        "subsequent.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854"
+      }
+    },
+    {
+      "task": {
+        "id": "block-3-workflow-3-audit-1",
+        "block": 3,
+        "workflow": 3,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.459336041007191,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.3575081250164658
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.3936071660136804
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "0ec6bf2cab7c84fe7959cea240cfd8a3d611f49f85ce64a9a7a49b7ced497dba",
+        "first-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "first-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "first.json": "666d68fa6a78f3ef73a65a38d8bcc565c6c3ebfc035077e604b5c985d74eefbc",
+        "first.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "63d88922a94b57bab0e2440c9754dbcb83e24c863d001396fbade4103d3f1cdc",
+        "subsequent-R.bin": "781503623586587c805e172fd2dd7bfcbfb3e2cb0ce53eb630cfb2781afa2188",
+        "subsequent-draws.rds": "bea6c5aa641d96bbf9a46ea5bef7043465dd35aa3374b9cefbad3d22479cf4ff",
+        "subsequent.json": "cb07b97d536c067421f04c56b5d87832b4a6c93e080d8d994cebef9314e95ccf",
+        "subsequent.npz": "a7c6a7ce77ccfdfc629c4c7d2832fd9adaba538e20d242a66c930478b520d854"
+      }
+    },
+    {
+      "task": {
+        "id": "block-3-workflow-0-audit-1",
+        "block": 3,
+        "workflow": 0,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 2.0789239589939825,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.9486462920322083
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 2.0067244170350023
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "b08ec4aa66634279c671dd2965695bde043ffd2173d955606097f5ce6c2bcc3f",
+        "first-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "first-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "first.json": "3dd530b91f3c2a889e98b58bba3ad393737643ac5db3dddd83e519582c9765c4",
+        "first.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "b1e53af98e2d711d03f809531c8da05b09d8bc3953223427abb39361db5a93d8",
+        "subsequent-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "subsequent-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "subsequent.json": "2c7ea98328a6fba70abbf3eab5792f2694dacccd87a7458304130021703e612e",
+        "subsequent.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901"
+      }
+    },
+    {
+      "task": {
+        "id": "block-3-workflow-0-audit-0",
+        "block": 3,
+        "workflow": 0,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.9540412499918602,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.8423877090099268
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.888434334017802
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "a26eb429bfa614b79b9b6a859dd8221dbde80fe30d1084e7e449b20329483e4e",
+        "first-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "first-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "first.json": "e5fa30ad4790fb31288923a01cfa11e79e0f7cf499538903fa605b853365487d",
+        "first.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "cea20cbaba63697030acde1df00d60e92f73c4ca8d332f4a1e11b8b19267b9e1",
+        "subsequent-R.bin": "d93462f50828d6e85b7550dd5279cef6106e9a02c9a3badb52afe55ec81961a2",
+        "subsequent-draws.rds": "bf5cc67fe866bee1553036dd476d131292fc26cfccd16365bb2c938d013a5c45",
+        "subsequent.json": "3fb3190f5ad3134c90f76db05009f4a9b987a0caa001cf4aaba4ad75cbf66f59",
+        "subsequent.npz": "1ca550aeb7129ca6459ba84261231db00089c44cbb22fc6404ce49a38f463901"
+      }
+    },
+    {
+      "task": {
+        "id": "block-3-workflow-1-audit-0",
+        "block": 3,
+        "workflow": 1,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 2.667052540986333,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 2.2479419999872334
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 2.596592749992851
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "e93ddfa48e598c1922c29c6a6fafec7d86127f6dbd7d198bc5fbc4e4f33ae7bd",
+        "first-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "first-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "first.json": "8ad66ee24007ebdadd160a66fca0895108b53b2d5895ca864078c390994f7c80",
+        "first.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "d76ed21b29e346e3ea967969bd749f2a4f8c1c7e05702c36ea7ad8ca7b14b9cd",
+        "subsequent-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "subsequent-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "subsequent.json": "d87d9bc190378b9612d63eb5fb713050811dc1a0fdaa13d84bc9e340aa217235",
+        "subsequent.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76"
+      }
+    },
+    {
+      "task": {
+        "id": "block-3-workflow-1-audit-1",
+        "block": 3,
+        "workflow": 1,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 2.612180416006595,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 2.1958657079958357
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 2.550981124979444
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "6bb8c133b869f93dcddecfd28b0ffd5c7a4afb4f26d383b2fa5db5c5f39c59a4",
+        "first-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "first-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "first.json": "36b113bbb62edc84ca39c26f34389cd50c94c2d4138c60004e27c1f28b72eb24",
+        "first.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "db801fb66d3c1247ebec2008106f345842c85629b7bb31910cc2bd687b642d1d",
+        "subsequent-R.bin": "4f91136eaf3904e2e46888c48a2610163f9cab471d8dd901e9f1befee313f68d",
+        "subsequent-draws.rds": "a650ac3298a9636a511359008cc787f11efaa0fe160b9be1dbfe4cbb79323612",
+        "subsequent.json": "7639297ea1674b18f18287909048ee33002d342b4077f129bd4c9332cbb22882",
+        "subsequent.npz": "81bc33abee94f52907c2696f1535a22563f99284c8c35ea5e61eb2246edb0d76"
+      }
+    },
+    {
+      "task": {
+        "id": "block-3-workflow-2-audit-1",
+        "block": 3,
+        "workflow": 2,
+        "audit": true
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.3541345000267029,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2785456670098938
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2999737089849077
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "e04220e0d4635741f8b4fd6713a433babf7e3f5852593e4c2d4695ff1cfa0d3c",
+        "first-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "first-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "first.json": "b41aa2044e4f34ed55ab33621859790b9c977d5f9742bd2611295c736288df18",
+        "first.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "93638ac07255f8118bcf9a9972ef0e30e274026b3cac93faa08a9ca1c9d8e762",
+        "subsequent-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "subsequent-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "subsequent.json": "0c4f46b4c516ef3020fc974ef0c8af327f240d1fc6d4c44a51405998265998c2",
+        "subsequent.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22"
+      }
+    },
+    {
+      "task": {
+        "id": "block-3-workflow-2-audit-0",
+        "block": 3,
+        "workflow": 2,
+        "audit": false
+      },
+      "returncode": 0,
+      "process_wall_seconds": 1.3515191249898635,
+      "markers": [
+        {
+          "call": "first",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2816089169937186
+        },
+        {
+          "call": "subsequent",
+          "status": "completed",
+          "seconds_from_process_launch": 1.2971523340092972
+        }
+      ],
+      "files_sha256": {
+        "R-record.json": "857d2a75eee91d45c6b43de4c51efc8ee650a694783e1a1d4e59faa421d002fa",
+        "first-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "first-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "first.json": "a06fbd63481c3ea0533aa2dbe357bd4b65bf7871bcf08712a3ba10c77d0d5d3a",
+        "first.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22",
+        "process.log": "f6bde6195783cc60afbdaae096a2f6874fea8f5be41d14038fb390dd2cc2824b",
+        "started.json": "17b07afd18b79bc64a7358a477709e1c690b77dfed7b03e503e7a040f89fd7e6",
+        "subsequent-R.bin": "08ad8e5e9aa42525b6397cc3dcbc1f44bb0492f232098e1fc24ac0272f3cd4f4",
+        "subsequent-draws.rds": "0a899204f6264103103e8ab640840295855903cfab74a7c44d8a07433c611370",
+        "subsequent.json": "e3671a72f2523b731a1151d5f280edde05fbd3e766824f56dc765cc14b34cdbb",
+        "subsequent.npz": "cf074aa021c8183e03ba96d30b6c2d0a29cd555d6a61cb0b89e173cbea938b22"
+      }
+    }
+  ]
+}

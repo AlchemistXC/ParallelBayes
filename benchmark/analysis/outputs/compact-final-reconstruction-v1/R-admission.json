@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-10T08:59:06.089489+00:00",
+  "known_process": {
+    "pid": 27016,
+    "create_time": 1791614289.979581
+  },
+  "actual_project_processes": [
+    {
+      "ppid": 20758,
+      "create_time": 1791614289.979581,
+      "pid": 27016,
+      "cmdline": [
+        "/Users/haku/Workspace/ParallelBayes/.venv/bin/python",
+        "output/windows-compact-intake-v1/reconstruct.py"
+      ]
+    },
+    {
+      "ppid": 27016,
+      "create_time": 1791618883.6915,
+      "pid": 36121,
+      "cmdline": [
+        "/Users/haku/Workspace/ParallelBayes/.venv/bin/python",
+        "scripts/analysis/formal_analyze.py",
+        "run",
+        "--delivery",
+        "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/received/formal",
+        "--index",
+        "/Users/haku/Workspace/ParallelBayes/output/windows-compact-intake-v1/formal-index",
+        "--output",
+        "/Users/haku/Workspace/ParallelBayes/output/windows-compact-intake-v1/formal-analysis",
+        "--rscript",
+        "/usr/local/bin/Rscript",
+        "--r-library",
+        "/Library/Frameworks/R.framework/Versions/4.6/Resources/library",
+        "--cross-platform"
+      ]
+    }
+  ],
+  "timing_protocol_sha256": "b200073b15d6e741745d8c3d48347a56c7c93e8db16639f913131325a9b55128",
+  "driver_sha256": "dd5d8e98093253f3e48ba14c001f0bf96d51f3cd1904590dbb6bb649c7fbde8e",
+  "source_commit": "19f99843155ac64484622a468e4c57773f3b7a38",
+  "new_sampler_calls": 0
+}

@@ -1,0 +1,21 @@
+{
+  "main_characters_before": 16159,
+  "main_characters_after": 17150,
+  "supplement_characters_before": 7407,
+  "supplement_characters_after": 8475,
+  "changes": [
+    "Replace historical execution centerpiece with all 72 compact ordinary-cost contrasts",
+    "Move historical CUDA plot to supplement",
+    "Replace pending fixed-budget paragraphs with failures, function diagnostics and all-workflow W1 comparison",
+    "Keep M1 and H1 qualifications in main text",
+    "Add finite R timing to supplement and concise boundary to main",
+    "Rewrite abstract and discussion from verified compact results"
+  ],
+  "statistics_location": "All models and 36 functions retained in complete result appendix; main table covers all nine W1 workflows at 4096, not performance-selected.",
+  "claims": {
+    "abstract": "introduce bounded device/kernel cost pattern",
+    "cost_results": "demonstrate all model/budget contrasts",
+    "wells": "demonstrate concrete function/cost tradeoff",
+    "discussion": "interpret extra work and scope; no general acceleration claim"
+  }
+}

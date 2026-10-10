@@ -53,7 +53,7 @@ tectonic 软件与基准研究.tex
 tectonic 补充材料.tex
 ```
 
-或在同目录使用`latexmk -xelatex 软件与基准研究.tex`。编译器资源与字体不随包再分发。各协议数字由生成文本保留；历史结果与前瞻方法已明确分开。对正文数字的独立复算须另取仓库源码、协议及相应原始证据。当前紧凑研究已完整接收，独立全量重建仍在进行；主文注明已纳入证据范围。正文和补充材料应分别编译。
+或在同目录使用`latexmk -xelatex 软件与基准研究.tex`。编译器资源与字体不随包再分发。各协议数字由生成文本保留；历史结果与前瞻方法已明确分开。对正文数字的独立复算须另取仓库源码、协议及相应原始证据。紧凑研究已完成独立全量重建；主文、补充材料及另附的完整结果报告注明各自证据范围。正文和补充材料应分别编译。
 '''
     (output/'README.md').write_text(readme)
     manifest = {'scope':'portable paper inputs only; no experimental reproduction claim',

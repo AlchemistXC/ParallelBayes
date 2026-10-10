@@ -1,0 +1,262 @@
+{
+  "schema": "compact-statistics-cross-host-comparison-v1",
+  "left_manifest_sha256": "0c1857a7767ab5c8a117c00b75992db40c03c06e2453ad64c1398a64080a0c00",
+  "right_manifest_sha256": "d928a497889e11f6aaf5829bf1ffd807a647a880a5d4ae7cef4acf3046c34bfb",
+  "left_analysis_identity_sha256": "3e78b056442233b47bbc8ddad5a53a5d4b07c9326bc6235a4c16815d63a791f9",
+  "right_analysis_identity_sha256": "e536b30e59a7776f243d7b289a09fad96e9450b3f2ca12a4e9ba36bc921f93ec",
+  "frame": {
+    "analysis_can_authorize_sampling": false,
+    "cache_planned": 256,
+    "execution_contract": "windows-compact-contract-v1",
+    "formal_scientific_repetitions_per_model": 24,
+    "identity": "windows-compact-inference-v1",
+    "main_planned": 3888,
+    "protocol_sha256": "91bbff0ec47f9f47b64ac4acfd328e2df8834a67b1d24a1c9e35c4fa0a980aeb",
+    "scope": "formal_inference"
+  },
+  "models": [
+    {
+      "model": "G1",
+      "table_rows": {
+        "tasks": 34,
+        "diagnostics": 54,
+        "nuts": 2,
+        "ratios": 56,
+        "errors": 108,
+        "paired_errors": 72,
+        "costs": 36,
+        "cache": 16,
+        "task_costs": 1984
+      },
+      "right_table_rows": {
+        "tasks": 34,
+        "diagnostics": 54,
+        "nuts": 2,
+        "ratios": 56,
+        "errors": 108,
+        "paired_errors": 72,
+        "costs": 36,
+        "cache": 16,
+        "task_costs": 1984
+      }
+    },
+    {
+      "model": "G2",
+      "table_rows": {
+        "tasks": 34,
+        "diagnostics": 54,
+        "nuts": 2,
+        "ratios": 56,
+        "errors": 108,
+        "paired_errors": 72,
+        "costs": 36,
+        "cache": 16,
+        "task_costs": 1984
+      },
+      "right_table_rows": {
+        "tasks": 34,
+        "diagnostics": 54,
+        "nuts": 2,
+        "ratios": 56,
+        "errors": 108,
+        "paired_errors": 72,
+        "costs": 36,
+        "cache": 16,
+        "task_costs": 1984
+      }
+    },
+    {
+      "model": "A1",
+      "table_rows": {
+        "tasks": 18,
+        "diagnostics": 54,
+        "nuts": 2,
+        "ratios": 48,
+        "errors": 108,
+        "paired_errors": 72,
+        "costs": 36,
+        "cache": 0,
+        "task_costs": 1728
+      },
+      "right_table_rows": {
+        "tasks": 18,
+        "diagnostics": 54,
+        "nuts": 2,
+        "ratios": 48,
+        "errors": 108,
+        "paired_errors": 72,
+        "costs": 36,
+        "cache": 0,
+        "task_costs": 1728
+      }
+    },
+    {
+      "model": "L1",
+      "table_rows": {
+        "tasks": 18,
+        "diagnostics": 72,
+        "nuts": 2,
+        "ratios": 48,
+        "errors": 144,
+        "paired_errors": 96,
+        "costs": 36,
+        "cache": 0,
+        "task_costs": 1728
+      },
+      "right_table_rows": {
+        "tasks": 18,
+        "diagnostics": 72,
+        "nuts": 2,
+        "ratios": 48,
+        "errors": 144,
+        "paired_errors": 96,
+        "costs": 36,
+        "cache": 0,
+        "task_costs": 1728
+      }
+    },
+    {
+      "model": "L2",
+      "table_rows": {
+        "tasks": 34,
+        "diagnostics": 72,
+        "nuts": 2,
+        "ratios": 56,
+        "errors": 144,
+        "paired_errors": 96,
+        "costs": 36,
+        "cache": 16,
+        "task_costs": 1984
+      },
+      "right_table_rows": {
+        "tasks": 34,
+        "diagnostics": 72,
+        "nuts": 2,
+        "ratios": 56,
+        "errors": 144,
+        "paired_errors": 96,
+        "costs": 36,
+        "cache": 16,
+        "task_costs": 1984
+      }
+    },
+    {
+      "model": "H1",
+      "table_rows": {
+        "tasks": 18,
+        "diagnostics": 72,
+        "nuts": 2,
+        "ratios": 48,
+        "errors": 144,
+        "paired_errors": 96,
+        "costs": 36,
+        "cache": 0,
+        "task_costs": 1728
+      },
+      "right_table_rows": {
+        "tasks": 18,
+        "diagnostics": 72,
+        "nuts": 2,
+        "ratios": 48,
+        "errors": 144,
+        "paired_errors": 96,
+        "costs": 36,
+        "cache": 0,
+        "task_costs": 1728
+      }
+    },
+    {
+      "model": "H2",
+      "table_rows": {
+        "tasks": 18,
+        "diagnostics": 72,
+        "nuts": 2,
+        "ratios": 48,
+        "errors": 144,
+        "paired_errors": 96,
+        "costs": 36,
+        "cache": 0,
+        "task_costs": 1728
+      },
+      "right_table_rows": {
+        "tasks": 18,
+        "diagnostics": 72,
+        "nuts": 2,
+        "ratios": 48,
+        "errors": 144,
+        "paired_errors": 96,
+        "costs": 36,
+        "cache": 0,
+        "task_costs": 1728
+      }
+    },
+    {
+      "model": "M1",
+      "table_rows": {
+        "tasks": 18,
+        "diagnostics": 72,
+        "nuts": 2,
+        "ratios": 48,
+        "errors": 144,
+        "paired_errors": 96,
+        "costs": 36,
+        "cache": 0,
+        "task_costs": 1728
+      },
+      "right_table_rows": {
+        "tasks": 18,
+        "diagnostics": 72,
+        "nuts": 2,
+        "ratios": 48,
+        "errors": 144,
+        "paired_errors": 96,
+        "costs": 36,
+        "cache": 0,
+        "task_costs": 1728
+      }
+    },
+    {
+      "model": "W1",
+      "table_rows": {
+        "tasks": 34,
+        "diagnostics": 126,
+        "nuts": 2,
+        "ratios": 56,
+        "errors": 252,
+        "paired_errors": 168,
+        "costs": 36,
+        "cache": 16,
+        "task_costs": 1984
+      },
+      "right_table_rows": {
+        "tasks": 34,
+        "diagnostics": 126,
+        "nuts": 2,
+        "ratios": 56,
+        "errors": 252,
+        "paired_errors": 168,
+        "costs": 36,
+        "cache": 16,
+        "task_costs": 1984
+      }
+    }
+  ],
+  "projected_scalar_differences": {
+    "numeric": 1132
+  },
+  "structural_or_state_changes": 0,
+  "numeric_maximum_absolute_difference": 1.1368683772161603e-12,
+  "numeric_maximum_scaled_difference": 7.502554422400922e-15,
+  "descriptive_threshold_changes": 0,
+  "bootstrap_files": 45,
+  "bootstrap_arrays": 4589,
+  "bootstrap_arrays_equal": 4566,
+  "bootstrap_differing_elements": 35007,
+  "bootstrap_nonfinite_pattern_changes": 0,
+  "bootstrap_maximum_absolute_difference": 6.661338147750939e-16,
+  "original_values_replaced": false,
+  "new_sampler_calls": 0,
+  "new_statistical_estimates": 0,
+  "interpretation": "Exact comparisons and descriptive differences only. Threshold 0.01 is the historical function-unit reporting landmark, not a new inference criterion. Any difference remains available for review.",
+  "comparator_sha256": "fed58d7a88090ab3a47af0c6cda870a2411a95ba2e5656df0f117516155e883f"
+}

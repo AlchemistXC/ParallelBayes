@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/haku/Workspace/ParallelBayes/.venv/bin/python",
+    "scripts/analysis/formal_report.py",
+    "--statistics-directory",
+    "/Users/haku/Workspace/ParallelBayes/output/windows-compact-intake-v1/formal-statistics",
+    "--manifest-sha256",
+    "d928a497889e11f6aaf5829bf1ffd807a647a880a5d4ae7cef4acf3046c34bfb",
+    "--output",
+    "/Users/haku/Workspace/ParallelBayes/output/windows-compact-intake-v1/formal-report"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 17.79453320900211,
+  "new_sampler_calls": 0
+}

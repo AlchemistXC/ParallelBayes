@@ -1,0 +1,23 @@
+{
+  "R-diagnostics.csv": "12a4a10675ba959ad5b29e3c97dc6068a269da158b8b65aecbaa641549af08b7",
+  "R-cost-summary.json": "b4f7006bbef1974eb666dc74164f27f0f31f91575543c3aa3b86b219e59b9d93",
+  "final-prose-change-record.json": "1c61a0c3bffce5ecc8f1fa7a34bad524e3f8e7ec9f8ca602977d0f1c8238c39e",
+  "manuscript-inputs-SHA256.json": "faa15a0e9aed89ea79a16a0e811de119e4434dc2a6f7636ea70f6aefc23f9d3c",
+  "formal-statistics-finished.json": "abfada5d664b6b06d42e2a0bf0a7d63c1b3e6ad9adc1df056772f65bca3f3c58",
+  "R-status.json": "878b8dbf4d4b0a7aef7bf17ad64aa4bc8f18b64e258dfc33919edac288387622",
+  "formal-zero-reanalysis.json": "00455ca93cec37e0105fd003d9037e8c4f31b1ba12c1b4c81ec2d098d4edf8d2",
+  "R-numerical-verification.json": "b86ffebe5651de40b84bb5af35121e45b5e5e1f08d7eff3e90eed48558b5b03a",
+  "reconstruction-status.json": "53542a8f26e2612c4ebd60769a18105ed6e67fffc22b1ae42e684f02c6ddb11f",
+  "formal-first-summary.json": "b62316ba56f1af541fa09abfb232f364e351646530f46370ff22cc99f2d6573d",
+  "R-quiet-record.json": "37b65138870a0043d6a589c6459f5c12f959f23238cc82b84394bed75db6921d",
+  "formal-report-finished.json": "ec9b2973f57855aad35f15ebbdf006eaa83bab4343a954a689b2d87256b09f1e",
+  "R-calls.csv": "7e29826a987fbb3b1c32181239d2303c179d7b74fc40ba37d979dc41c6a2067f",
+  "reconstruction-review-summary.json": "e608a3f11f8d3b725fc2dacb93d02df9a18852cfe3422f6a8df0ce90c314a45d",
+  "R-zero-new-recovery.json": "2d6403c903f0989154e725a241c20108a2313db2bc925b6c7de661a35126f197",
+  "R-first-run-summary.json": "8337fe72daf42eb6d51bc48145aad8eea95f4a0dbbdf378b0d9af7ab78273c1b",
+  "claims.json": "ec9bfa3af5fe38a7554c44a257c67708169fe6ad19bf7a868694c5f396e0e5cb",
+  "R-host-after-timing.json": "88f9e62b32dac374204268b0fcb7b34eac4f05785c7e60b7c6da70f2be6b9ff4",
+  "statistics-comparison.json": "ffa9b0b7a15958abb0e2ca4c4f570258aeff94556ce5dcdf4203581e7f3fd9c1",
+  "formal-analysis-finished.json": "bc37e2a8d6e6cadead2f248d4834d9de08bb272cfad7289c0beaa06b100c6916",
+  "R-admission.json": "45a57e1a88fab7659d2c3168e18ad2c5750dce33f70ee1eb3927344248f27cae"
+}

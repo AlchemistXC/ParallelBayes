@@ -1,0 +1,1005 @@
+{
+  "schema": "r-frontend-timing-verification-v1",
+  "process_states": [
+    {
+      "task_id": "block-0-workflow-0-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-0-workflow-0-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-0-workflow-1-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-0-workflow-1-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-0-workflow-2-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-0-workflow-2-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-0-workflow-3-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-0-workflow-3-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-1-workflow-1-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-1-workflow-1-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-1-workflow-2-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-1-workflow-2-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-1-workflow-3-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-1-workflow-3-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-1-workflow-0-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-1-workflow-0-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-2-workflow-2-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-2-workflow-2-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-2-workflow-3-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-2-workflow-3-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-2-workflow-0-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-2-workflow-0-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-2-workflow-1-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-2-workflow-1-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-3-workflow-3-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-3-workflow-3-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-3-workflow-0-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-3-workflow-0-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-3-workflow-1-audit-0",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-3-workflow-1-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-3-workflow-2-audit-1",
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "task_id": "block-3-workflow-2-audit-0",
+      "status": "completed",
+      "returncode": 0
+    }
+  ],
+  "rows": 64,
+  "numerical_checks": [
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-0-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-0-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-0-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-0-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-1-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-1-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-1-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-1-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-2-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-2-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-2-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-2-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-3-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-3-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-3-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-0-workflow-3-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-1-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-1-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-1-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-1-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-2-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-2-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-2-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-2-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-3-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-3-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-3-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-3-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-0-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-0-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-0-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-1-workflow-0-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-2-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-2-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-2-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-2-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-3-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-3-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-3-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-3-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-0-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-0-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-0-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-0-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-1-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-1-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-1-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-2-workflow-1-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-3-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-3-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-3-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-3-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-0-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-0-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-0-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-0-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-1-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-1-audit-0",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-1-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 1.076822520040821e-10,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-1-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-2-audit-1",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-2-audit-1",
+      "call": "subsequent"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-2-audit-0",
+      "call": "first"
+    },
+    {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "limits": [
+        2e-08,
+        2e-08,
+        2e-08,
+        2e-08
+      ],
+      "acceptance_mismatches": 0,
+      "task_id": "block-3-workflow-2-audit-0",
+      "call": "subsequent"
+    }
+  ],
+  "formal_repetitions_added": 0,
+  "actual_input_blocks": 1,
+  "independent_reference_paths": 8,
+  "missing_or_failed_processes": 0,
+  "all_numerical_checks_passed": true
+}

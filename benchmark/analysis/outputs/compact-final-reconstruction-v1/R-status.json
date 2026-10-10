@@ -1,0 +1,8 @@
+{
+  "status": "finite_R_timing_recovery_and_replay_complete_pending_cost_interpretation",
+  "utc": "2026-10-10T09:22:58.029885+00:00",
+  "new_processes": 32,
+  "checked_calls": 64,
+  "formal_repetitions_added": 0,
+  "research_complete": false
+}

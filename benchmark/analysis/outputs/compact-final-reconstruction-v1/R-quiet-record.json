@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-10T09:21:57.454894+00:00",
+  "receiver_active": false,
+  "reconstruction_active": false,
+  "actual_handle_observations": [
+    {
+      "pid": 27016,
+      "create_time": 1791614289.979581,
+      "previously_live": true,
+      "current_same_process_alive": false
+    },
+    {
+      "watched_script_names": [
+        "formal_analyze.py",
+        "formal_report.py",
+        "formal_statistics.py",
+        "plot_compact_overview.py",
+        "receive.py",
+        "reconstruct.py",
+        "review_compact_reconstruction.py",
+        "write_compact_manuscript.py"
+      ],
+      "actual_active_processes": []
+    }
+  ],
+  "load_average": [
+    2.30615234375,
+    1.98388671875,
+    2.14794921875
+  ],
+  "cpu_count": 10,
+  "available_memory_bytes": 5076271104,
+  "source_note": "No claim of whole-machine exclusivity. Actual targeted process observation and before/after host load are recorded.",
+  "intake_complete_sha256": "1d1b6125517787d6c02e6c8b236cc28b17e071e4f6a7115cd9f9b4b64dc3b5e7",
+  "reconstruction_status_sha256": "53542a8f26e2612c4ebd60769a18105ed6e67fffc22b1ae42e684f02c6ddb11f",
+  "resume_proof_sha256": "00455ca93cec37e0105fd003d9037e8c4f31b1ba12c1b4c81ec2d098d4edf8d2"
+}
