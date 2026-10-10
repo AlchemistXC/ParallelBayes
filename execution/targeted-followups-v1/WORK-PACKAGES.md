@@ -28,3 +28,5 @@ S2实现更新：增加scripts/followups中的独立阶段记录、诊断前持�
 论文整合：targeted-paper-companion-v1从已核验的9份汇总输入生成4份LaTeX片段。H1保留原失败，L2两套提议、近似MCSE及全部八批结果均列SI；没有主网格重算。5项报告检查通过0失败0跳过；Tectonic 0.17.0编译正文18页、SI37页，新增表格和引用已核对。W1/S2仍未生成最终结论。
 
 论文交付：源码1de637b；论文包17,346,560字节，159输入核验；汇总包798,720字节，26输入核验，五个文件搬移重建一致。两份PDF全部55页文本/72 dpi像素一致，旧67页PDF哈希不变。新归档只保存在本地，未上传。详见targeted-paper-companion-v1/delivery.json。
+
+W1独立核验准备：新增只读有理数端点/分区/汇总/比率及参考敏感性脚本，13项针对性检查通过0失败0跳过；实际21122单元一致性快照通过分区和聚合检查。原432份W1拟合的126/504行敏感性接口开发检查完成，不是终态结果。新增目标评价和MCMC调用均0，原冻结四份积分源码未改，正式会话仍运行。见docs/W1-INDEPENDENT-AUDIT.md及qualification/w1-independent-auditor-qualification.json。

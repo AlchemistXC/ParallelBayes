@@ -109,7 +109,18 @@
         "protocol": "benchmark/protocols/w1-reference-enclosure-v1.json",
         "protocol_sha256": "85506f871a4fedb6f1cb30da1d9509afa764d2621e40ee51c48a1a6b44a97d36",
         "source_commit": "504253c3f1ed5fa890cf213de40f7601b3a6c450",
-        "final_certified_intervals_available": false
+        "final_certified_intervals_available": false,
+        "independent_auditor": {
+          "status": "prepared_final_output_pending",
+          "tests": {
+            "passed": 13,
+            "failed": 0,
+            "skipped": 0
+          },
+          "actual_checkpoint_cells_checked": 21122,
+          "final_output_verified": false,
+          "report": "docs/W1-INDEPENDENT-AUDIT.md"
+        }
       },
       "L2": {
         "status": "complete",
