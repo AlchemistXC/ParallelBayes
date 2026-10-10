@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "registered_phase_counts": {
+    "confirmation": 4,
+    "diagnostic": 9,
+    "main": 36,
+    "qualification": 4
+  },
+  "results": [
+    {
+      "command": 1,
+      "exit_code": 0,
+      "new_executions": 0,
+      "assets_unchanged": 29444,
+      "registration_counts_unchanged": true
+    },
+    {
+      "command": 2,
+      "exit_code": 0,
+      "new_executions": 0,
+      "assets_unchanged": 29444,
+      "registration_counts_unchanged": true
+    }
+  ],
+  "scope": "Two actual terminal-only checks; not mid-call recovery or new sampling"
+}

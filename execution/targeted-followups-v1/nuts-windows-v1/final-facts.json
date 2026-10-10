@@ -1,0 +1,379 @@
+{
+  "source_commit": "126969036e73b4c077563d6601b030407e7663b8",
+  "source_files": 149,
+  "binding_sha256": "0930415240de2504c01fd27d838caec30e807e3ef94a2c1aa81aeeeb30fbe3e9",
+  "protocol_sha256": "5237de1b2dee0d134edc53b5fd225938a90cd34c5c9f5d5747d7f32ffacb1c54",
+  "input_manifest_sha256": "d92824d78f352295449d80556368fd9ee3bed1e9b7af2d0443c3ffb7bfbc7504",
+  "registry_sha256": "9f04e024db65a7e5830db0e7d7e66382ec30a2a58e3646dc3e620b0546a0cfef",
+  "phase_counts": {
+    "diagnostic": {
+      "completed": 8,
+      "failed": 1
+    },
+    "qualification": {
+      "completed": 4
+    },
+    "main": {
+      "completed": 34,
+      "failed": 2
+    },
+    "confirmation": {
+      "failed": 2,
+      "completed": 2
+    }
+  },
+  "registered_four_chain_calls": 44,
+  "main_schedule_order_verified": true,
+  "confirmation_selection_recomputed": true,
+  "confirmation_calls": 4,
+  "main_condition_pairs": 54,
+  "main_prefix_and_rng_records": 864,
+  "main_prefix_rng_mismatches": 0,
+  "confirmation_prefix_and_rng_records": 64,
+  "confirmation_prefix_rng_mismatches": 0,
+  "failed_calls": [
+    {
+      "id": "diagnostic-G2-legacy-w4",
+      "phase": "diagnostic",
+      "error": {
+        "message": "Owned process RSS guard exceeded",
+        "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\n\\scripts\\followups\\nuts_runtime.py\", line 120, in execute\n    if state['sampled_rss_bytes']>8*GIB:raise MemoryError('Owned process RSS guard exceeded')\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nMemoryError: Owned process RSS guard exceeded\n",
+        "type": "MemoryError"
+      },
+      "resources": {
+        "max_sampled_tree_rss_bytes": 9502576640,
+        "kernel_peak_job_commit_bytes": 12482658304,
+        "max_sampled_available_private_sum_bytes": 12482658304,
+        "private_incomplete_observations": 2,
+        "observations": 12,
+        "truncated_last_observation": false,
+        "memory_limit_messages": [],
+        "captured_exit_codes": {},
+        "missing_messages_exclude_resource_failure": false
+      },
+      "chains": null
+    },
+    {
+      "id": "main-G2-w4-d1",
+      "phase": "main",
+      "error": {
+        "message": "Owned Job reported a memory limit event",
+        "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\n\\scripts\\followups\\nuts_runtime.py\", line 119, in execute\n    raise MemoryError('Owned Job reported a memory limit event')\nMemoryError: Owned Job reported a memory limit event\n",
+        "type": "MemoryError"
+      },
+      "resources": {
+        "max_sampled_tree_rss_bytes": 10190118912,
+        "kernel_peak_job_commit_bytes": 12923604992,
+        "max_sampled_available_private_sum_bytes": 12856569856,
+        "private_incomplete_observations": 2,
+        "observations": 51,
+        "truncated_last_observation": false,
+        "memory_limit_messages": [
+          {
+            "message": 10,
+            "name": "job_memory_limit",
+            "message_value": 9384,
+            "observed_ns": 1791656807728658900,
+            "delivery_guaranteed": false
+          },
+          {
+            "message": 10,
+            "name": "job_memory_limit",
+            "message_value": 26272,
+            "observed_ns": 1791656807728658900,
+            "delivery_guaranteed": false
+          }
+        ],
+        "captured_exit_codes": {},
+        "missing_messages_exclude_resource_failure": false
+      },
+      "chains": [
+        {
+          "chain": 0,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 1,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 2,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 3,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        }
+      ]
+    },
+    {
+      "id": "main-A1-w4-d1",
+      "phase": "main",
+      "error": {
+        "message": "Owned Job reported a memory limit event",
+        "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\n\\scripts\\followups\\nuts_runtime.py\", line 119, in execute\n    raise MemoryError('Owned Job reported a memory limit event')\nMemoryError: Owned Job reported a memory limit event\n",
+        "type": "MemoryError"
+      },
+      "resources": {
+        "max_sampled_tree_rss_bytes": 8530022400,
+        "kernel_peak_job_commit_bytes": 13529350144,
+        "max_sampled_available_private_sum_bytes": 11373453312,
+        "private_incomplete_observations": 2,
+        "observations": 47,
+        "truncated_last_observation": false,
+        "memory_limit_messages": [
+          {
+            "message": 10,
+            "name": "job_memory_limit",
+            "message_value": 8596,
+            "observed_ns": 1791656957160151600,
+            "delivery_guaranteed": false
+          }
+        ],
+        "captured_exit_codes": {},
+        "missing_messages_exclude_resource_failure": false
+      },
+      "chains": [
+        {
+          "chain": 0,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 1,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 2,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 3,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        }
+      ]
+    },
+    {
+      "id": "confirmation-G2-w4-d1",
+      "phase": "confirmation",
+      "error": {
+        "message": "Owned Job reported a memory limit event",
+        "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\n\\scripts\\followups\\nuts_runtime.py\", line 119, in execute\n    raise MemoryError('Owned Job reported a memory limit event')\nMemoryError: Owned Job reported a memory limit event\n",
+        "type": "MemoryError"
+      },
+      "resources": {
+        "max_sampled_tree_rss_bytes": 10987126784,
+        "kernel_peak_job_commit_bytes": 12923654144,
+        "max_sampled_available_private_sum_bytes": 12856619008,
+        "private_incomplete_observations": 2,
+        "observations": 26,
+        "truncated_last_observation": false,
+        "memory_limit_messages": [
+          {
+            "message": 10,
+            "name": "job_memory_limit",
+            "message_value": 26812,
+            "observed_ns": 1791658150817171400,
+            "delivery_guaranteed": false
+          },
+          {
+            "message": 10,
+            "name": "job_memory_limit",
+            "message_value": 10016,
+            "observed_ns": 1791658150817171400,
+            "delivery_guaranteed": false
+          },
+          {
+            "message": 10,
+            "name": "job_memory_limit",
+            "message_value": 27236,
+            "observed_ns": 1791658150817171400,
+            "delivery_guaranteed": false
+          },
+          {
+            "message": 10,
+            "name": "job_memory_limit",
+            "message_value": 26188,
+            "observed_ns": 1791658150817171400,
+            "delivery_guaranteed": false
+          }
+        ],
+        "captured_exit_codes": {},
+        "missing_messages_exclude_resource_failure": false
+      },
+      "chains": [
+        {
+          "chain": 0,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 1,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 2,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 3,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        }
+      ]
+    },
+    {
+      "id": "confirmation-A1-w4-d1",
+      "phase": "confirmation",
+      "error": {
+        "message": "Owned Job reported a memory limit event",
+        "traceback": "Traceback (most recent call last):\n  File \"D:\\workspace\\ParallelBayes\\n\\scripts\\followups\\nuts_runtime.py\", line 119, in execute\n    raise MemoryError('Owned Job reported a memory limit event')\nMemoryError: Owned Job reported a memory limit event\n",
+        "type": "MemoryError"
+      },
+      "resources": {
+        "max_sampled_tree_rss_bytes": 11121922048,
+        "kernel_peak_job_commit_bytes": 12923613184,
+        "max_sampled_available_private_sum_bytes": 12856582144,
+        "private_incomplete_observations": 2,
+        "observations": 25,
+        "truncated_last_observation": false,
+        "memory_limit_messages": [
+          {
+            "message": 10,
+            "name": "job_memory_limit",
+            "message_value": 27644,
+            "observed_ns": 1791658270577695200,
+            "delivery_guaranteed": false
+          },
+          {
+            "message": 10,
+            "name": "job_memory_limit",
+            "message_value": 26420,
+            "observed_ns": 1791658270577695200,
+            "delivery_guaranteed": false
+          },
+          {
+            "message": 10,
+            "name": "job_memory_limit",
+            "message_value": 28492,
+            "observed_ns": 1791658270577695200,
+            "delivery_guaranteed": false
+          },
+          {
+            "message": 10,
+            "name": "job_memory_limit",
+            "message_value": 2296,
+            "observed_ns": 1791658270577695200,
+            "delivery_guaranteed": false
+          }
+        ],
+        "captured_exit_codes": {},
+        "missing_messages_exclude_resource_failure": false
+      },
+      "chains": [
+        {
+          "chain": 0,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 1,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 2,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        },
+        {
+          "chain": 3,
+          "last_event": "legacy_diagnostics_enter",
+          "observed_stage": "diagnostics_entered_not_returned",
+          "truncated_last_event": false,
+          "scope": "Last durable marker bounds the failure interval; does not prove root cause"
+        }
+      ]
+    }
+  ],
+  "versions": {
+    "numpy": "2.2.6",
+    "psutil": "7.1.0",
+    "pyro-ppl": "1.9.2",
+    "scipy": "1.15.3",
+    "torch": "2.13.0+cu130"
+  },
+  "python": "3.12.14",
+  "R": {
+    "R": "R version 4.6.1 (2026-06-24 ucrt)",
+    "posterior": "1.7.0",
+    "jsonlite": "2.0.0"
+  },
+  "distribution_count": 34,
+  "original_venv_marker_sha256": "5e8ed0b284b1ef83977fcea0ce45c16349bbf8c1f0eb249be238f8aea547999c",
+  "pyro_stats_sha256": "eedfd0787cbfc7f39765b3d93e4e7808914f3112b7b04a17ec01026606a16df1",
+  "cummin_allocation_context": {
+    "retained": 4096,
+    "positive_pair_count": 2047,
+    "dimension64_float64_repeat_bytes": 2145387008,
+    "dimension64_boolean_mask_bytes": 268173376,
+    "interpretation": "Static allocation implied by frozen Pyro source; not a measured exclusive allocator peak or proof of every historical failure"
+  },
+  "host_volumes": {
+    "C:/": {
+      "total": 2047228243968,
+      "free": 1599184363520
+    },
+    "D:/": {
+      "total": 2000381014016,
+      "free": 1809681264640
+    }
+  },
+  "new_formal_repetitions": 0,
+  "historical_failures_reclassified": 0,
+  "posterior_samples_added": 0,
+  "scientific_source_compatibility_repairs": 0,
+  "unavailable_costs": {
+    "unrecorded_whole_session_wall": null,
+    "initial_fetch_and_review_wall": null
+  }
+}

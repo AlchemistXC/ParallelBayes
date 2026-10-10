@@ -1,0 +1,670 @@
+[
+  {
+    "round": 0,
+    "passed": true,
+    "issues": [],
+    "pairs": [
+      {
+        "left": "qualification-r0-w1-d1",
+        "right": "qualification-r0-w4-d1",
+        "comparisons": [
+          {
+            "chain": 0,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 0,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          }
+        ]
+      },
+      {
+        "left": "qualification-r0-w1-d1",
+        "right": "qualification-r0-w1-d0",
+        "comparisons": [
+          {
+            "chain": 0,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 0,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          }
+        ]
+      },
+      {
+        "left": "qualification-r0-w1-d1",
+        "right": "qualification-r0-w4-d0",
+        "comparisons": [
+          {
+            "chain": 0,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 0,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          }
+        ]
+      },
+      {
+        "left": "qualification-r0-w4-d1",
+        "right": "qualification-r0-w1-d0",
+        "comparisons": [
+          {
+            "chain": 0,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 0,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          }
+        ]
+      },
+      {
+        "left": "qualification-r0-w4-d1",
+        "right": "qualification-r0-w4-d0",
+        "comparisons": [
+          {
+            "chain": 0,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 0,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          }
+        ]
+      },
+      {
+        "left": "qualification-r0-w1-d0",
+        "right": "qualification-r0-w4-d0",
+        "comparisons": [
+          {
+            "chain": 0,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 0,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 0,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 1,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 1,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 2,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 2,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "warmup",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "sample",
+            "common_steps": 64,
+            "exact_match": true,
+            "max_absolute_difference": 0.0
+          },
+          {
+            "chain": 3,
+            "phase": "initial-rng.json",
+            "both_available": true,
+            "exact_match": true
+          },
+          {
+            "chain": 3,
+            "phase": "rng-after-sampling.json",
+            "both_available": true,
+            "exact_match": true
+          }
+        ]
+      }
+    ],
+    "scope": "Native instrumentation qualification; no convergence or performance claim"
+  }
+]

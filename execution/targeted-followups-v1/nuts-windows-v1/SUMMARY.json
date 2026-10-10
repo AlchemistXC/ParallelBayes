@@ -1,0 +1,14 @@
+{
+  "identity": "windows-nuts-localization-analysis-v1",
+  "calls": 53,
+  "new_registered_four_chain_calls": 44,
+  "diagnostic_jobs": 9,
+  "main_registered": 36,
+  "main_completed": 34,
+  "registry_sha256": "9f04e024db65a7e5830db0e7d7e66382ec30a2a58e3646dc3e620b0546a0cfef",
+  "new_sampler_calls_by_analysis": 0,
+  "historical_failures_reclassified": 0,
+  "posterior_samples_added": 0,
+  "protocol_sha256": "5237de1b2dee0d134edc53b5fd225938a90cd34c5c9f5d5747d7f32ffacb1c54",
+  "inference": "Stage evidence and selected technical contrasts; not a population failure rate, convergence check or performance benchmark"
+}

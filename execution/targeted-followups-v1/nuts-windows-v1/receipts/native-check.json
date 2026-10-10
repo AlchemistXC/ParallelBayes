@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "tests": 3,
+  "failed": 0,
+  "skipped": 0,
+  "exit_code": 0,
+  "command": [
+    "D:\\workspace\\ParallelBayes\\.venv-win-torch\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/windows/test_job_objects.py",
+    "tests/windows/test_nuts_localization_job.py",
+    "--junitxml=D:\\workspace\\ParallelBayes\\n\\output\\nuts-localization-v1\\native-checks\\0930415240de2504c01fd27d838caec30e807e3ef94a2c1aa81aeeeb30fbe3e9\\tests.xml"
+  ],
+  "new_sampler_calls": 0,
+  "binding_sha256": "0930415240de2504c01fd27d838caec30e807e3ef94a2c1aa81aeeeb30fbe3e9"
+}

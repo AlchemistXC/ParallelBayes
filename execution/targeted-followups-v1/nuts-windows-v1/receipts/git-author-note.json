@@ -1,0 +1,12 @@
+{
+  "first_commit_attempt": "27-git-report-commit",
+  "actual_git_exit_code": 128,
+  "cause": "No Git author identity configured on the current host",
+  "failure_preserved": "output/nuts-localization-costs/27-git-report-commit",
+  "subsequent_command_override": {
+    "user.name": "Codex",
+    "user.email": "codex@local.invalid"
+  },
+  "basis": "Same agent identity already used by Windows commits 94bebec95177b03f0497d748cbc9f54a45492ce4 and 3a37a891896faedc62c0d6af185bfad77696054f",
+  "scope": "Git command only; no global/user identity configuration change and no human author/maintainer placeholders filled"
+}

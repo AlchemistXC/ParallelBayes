@@ -1,0 +1,11 @@
+{
+  "schema": "nuts-delivery-archive-v1",
+  "name": "windows-nuts-localization-v1-delivery-evidence.tar",
+  "bytes": 839680,
+  "sha256": "02dbc6da8d9622a6fa21d2fd3612cb1f57d03d5a600d2f0fe46b83f485429a7d",
+  "manifest_sha256": "a9aafd5f16f786eeed60438c28d0d6d9556e57680f43c2ea2bc7c9e68ba56eae",
+  "verified_content_members": 79,
+  "new_sampling_executions": 0,
+  "main_archive_unchanged": true,
+  "mac_independent_intake": "pending"
+}

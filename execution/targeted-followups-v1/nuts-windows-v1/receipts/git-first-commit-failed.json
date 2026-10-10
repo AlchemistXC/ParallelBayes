@@ -1,0 +1,9 @@
+{
+  "finished_utc": "2026-10-10T19:15:41.860571+00:00",
+  "exit_code": 128,
+  "outer_wall_seconds": 2.0756976999982726,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "0acf4069f0d084d4b552c955fd03c33ff8bd17d1118ea650dc6922d7550c28f3",
+  "available_ram_bytes": 21072904192,
+  "free_disk_bytes": 1808223219712
+}

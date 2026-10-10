@@ -1,0 +1,50 @@
+{
+  "verified_utc": "2026-10-10T19:14:17.711605+00:00",
+  "original_asset_count": 220,
+  "final_asset_count": 223,
+  "all_previous_assets_unchanged": true,
+  "checked_fields": [
+    "id",
+    "name",
+    "size",
+    "state",
+    "digest",
+    "created_at",
+    "updated_at"
+  ],
+  "release": {
+    "id": 403644544,
+    "tag_name": "windows-completion-v2-20261005",
+    "draft": true,
+    "target_commitish": "ced54ef6ce945198339a138142dcdfede84f06bc"
+  },
+  "appended_or_reused": [
+    {
+      "id": 628779916,
+      "name": "windows-nuts-localization-v1-delivery-evidence.tar",
+      "size": 839680,
+      "state": "uploaded",
+      "digest": "sha256:02dbc6da8d9622a6fa21d2fd3612cb1f57d03d5a600d2f0fe46b83f485429a7d",
+      "reused": false
+    },
+    {
+      "id": 628779977,
+      "name": "windows-nuts-localization-v1-delivery-evidence.tar.sha256",
+      "size": 117,
+      "state": "uploaded",
+      "digest": "sha256:14c85ec13968a4c805a738a7c9fe81eb6a5444e12feafa186a97e4ca5de38358",
+      "reused": false
+    },
+    {
+      "id": 628780035,
+      "name": "windows-nuts-localization-v1-delivery-evidence.tar.receipt.json",
+      "size": 434,
+      "state": "uploaded",
+      "digest": "sha256:18475809ee36c1aba2ddd714b05b4cfacc5f4a4d327c67400af330d88fa6cac7",
+      "reused": false
+    }
+  ],
+  "publish_calls": 0,
+  "overwrite_calls": 0,
+  "credentials_persisted": false
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "identical_files": 8,
+  "files": {
+    "calls.csv": "8cca2871a1a5606f7fd026e71317ae8b9f956f56b51ff3170c8e79f97320d1a1",
+    "chains.csv": "a908a6f3af3e48fbd0e234649e74bd447017c42c60a76619030b02c42d5e3960",
+    "checksums.json": "1fec4945ae8f3aaf828ad4a9cc8a46be6f678633ed59db2d7afd13737008ec0f",
+    "paired-prefixes.json": "65b19b95f1fae6dbd3a6f6ce1c091f2c2bfaee749caf768903f00c9f1cc28887",
+    "qualification-reconstruction.json": "3e55c848a1f5382255aa76b746af4c591bcf11002ec2ba81c313eaa41c17571d",
+    "README.md": "ee4afc1bc5bf6d93ad1547f9091f80f7d2ad021ba7c85c4035e14c8b164c58e7",
+    "resources.json": "7cd539ffed3800e8a65d79ca146f81b0a700f866798a4a0f629db04c6e98d397",
+    "SUMMARY.json": "c0472cbce0f78ab71a441f5be4547c8a1a2d0cc772a6a6b49f80bbe451bad1f7"
+  },
+  "new_sampler_calls": 0,
+  "platform": "Windows same-host moved reconstruction; Mac independent intake remains pending"
+}

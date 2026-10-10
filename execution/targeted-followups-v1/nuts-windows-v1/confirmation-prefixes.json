@@ -1,0 +1,442 @@
+[
+  {
+    "id": "confirmation-G2-w4-d1",
+    "confirms": "main-G2-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "id": "confirmation-G2-w4-d0",
+    "confirms": "main-G2-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "id": "confirmation-A1-w4-d1",
+    "confirms": "main-A1-w4-d1",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "id": "confirmation-A1-w4-d0",
+    "confirms": "main-A1-w4-d0",
+    "rows": [
+      {
+        "chain": 0,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 0,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 0,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 1,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 1,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 2,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 2,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "warmup",
+        "common_steps": 1024,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "sample",
+        "common_steps": 4096,
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "chain": 3,
+        "phase": "initial-rng.json",
+        "both_available": true,
+        "exact_match": true
+      },
+      {
+        "chain": 3,
+        "phase": "rng-after-sampling.json",
+        "both_available": true,
+        "exact_match": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "confirmation-G2-w4-d1",
+    "phase": "confirmation",
+    "model": "G2",
+    "workers": 4,
+    "diagnostics_enabled": true,
+    "confirms": "main-G2-w4-d1"
+  },
+  {
+    "id": "confirmation-G2-w4-d0",
+    "phase": "confirmation",
+    "model": "G2",
+    "workers": 4,
+    "diagnostics_enabled": false,
+    "confirms": "main-G2-w4-d0"
+  },
+  {
+    "id": "confirmation-A1-w4-d1",
+    "phase": "confirmation",
+    "model": "A1",
+    "workers": 4,
+    "diagnostics_enabled": true,
+    "confirms": "main-A1-w4-d1"
+  },
+  {
+    "id": "confirmation-A1-w4-d0",
+    "phase": "confirmation",
+    "model": "A1",
+    "workers": 4,
+    "diagnostics_enabled": false,
+    "confirms": "main-A1-w4-d0"
+  }
+]

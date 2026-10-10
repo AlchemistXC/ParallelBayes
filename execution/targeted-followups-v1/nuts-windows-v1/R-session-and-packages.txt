@@ -1,0 +1,121 @@
+R version 4.6.1 (2026-06-24 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] C
+system code page: 65001
+
+time zone: Asia/Tokyo
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] jsonlite_2.0.0  posterior_1.7.0
+
+loaded via a namespace (and not attached):
+ [1] tensorA_0.36.2.1     backports_1.5.1      magrittr_2.0.5      
+ [4] glue_1.8.1           abind_1.4-8          tibble_3.3.1        
+ [7] pkgconfig_2.0.3      generics_0.1.4       lifecycle_1.0.5     
+[10] cli_3.6.6            vctrs_0.7.3          compiler_4.6.1      
+[13] distributional_0.9.0 checkmate_2.3.4      pillar_1.11.1       
+[16] rlang_1.3.0         
+               Package          Version     
+R6             "R6"             "2.6.1"     
+Rcpp           "Rcpp"           "1.1.2"     
+RcppTOML       "RcppTOML"       "0.2.3"     
+abind          "abind"          "1.4-8"     
+backports      "backports"      "1.5.1"     
+brio           "brio"           "1.1.5"     
+callr          "callr"          "3.8.0"     
+checkmate      "checkmate"      "2.3.4"     
+cli            "cli"            "3.6.6"     
+crayon         "crayon"         "1.5.3"     
+desc           "desc"           "1.4.3"     
+diffobj        "diffobj"        "0.3.9"     
+distributional "distributional" "0.9.0"     
+evaluate       "evaluate"       "1.0.5"     
+fs             "fs"             "2.1.0"     
+generics       "generics"       "0.1.4"     
+glue           "glue"           "1.8.1"     
+here           "here"           "1.0.2"     
+jsonlite       "jsonlite"       "2.0.0"     
+lifecycle      "lifecycle"      "1.0.5"     
+magrittr       "magrittr"       "2.0.5"     
+matrixStats    "matrixStats"    "1.5.0"     
+numDeriv       "numDeriv"       "2016.8-1.1"
+otel           "otel"           "0.2.0"     
+parallelbayes  "parallelbayes"  "0.2.0.9001"
+pillar         "pillar"         "1.11.1"    
+pkgbuild       "pkgbuild"       "1.4.8"     
+pkgconfig      "pkgconfig"      "2.0.3"     
+pkgload        "pkgload"        "1.5.3"     
+png            "png"            "0.1-9"     
+posterior      "posterior"      "1.7.0"     
+praise         "praise"         "1.0.0"     
+processx       "processx"       "3.9.0"     
+ps             "ps"             "1.9.3"     
+rappdirs       "rappdirs"       "0.3.4"     
+renv           "renv"           "1.2.4"     
+reticulate     "reticulate"     "1.47.0"    
+rlang          "rlang"          "1.3.0"     
+rprojroot      "rprojroot"      "2.1.1"     
+tensorA        "tensorA"        "0.36.2.1"  
+testthat       "testthat"       "3.3.2"     
+tibble         "tibble"         "3.3.1"     
+utf8           "utf8"           "1.2.6"     
+vctrs          "vctrs"          "0.7.3"     
+waldo          "waldo"          "0.6.2"     
+withr          "withr"          "3.0.3"     
+KernSmooth     "KernSmooth"     "2.23-26"   
+MASS           "MASS"           "7.3-65"    
+Matrix         "Matrix"         "1.7-5"     
+base           "base"           "4.6.1"     
+boot           "boot"           "1.3-32"    
+class          "class"          "7.3-23"    
+cluster        "cluster"        "2.1.8.2"   
+codetools      "codetools"      "0.2-20"    
+compiler       "compiler"       "4.6.1"     
+datasets       "datasets"       "4.6.1"     
+foreign        "foreign"        "0.8-91"    
+grDevices      "grDevices"      "4.6.1"     
+graphics       "graphics"       "4.6.1"     
+grid           "grid"           "4.6.1"     
+lattice        "lattice"        "0.22-9"    
+methods        "methods"        "4.6.1"     
+mgcv           "mgcv"           "1.9-4"     
+nlme           "nlme"           "3.1-169"   
+nnet           "nnet"           "7.3-20"    
+parallel       "parallel"       "4.6.1"     
+rpart          "rpart"          "4.1.27"    
+spatial        "spatial"        "7.3-18"    
+splines        "splines"        "4.6.1"     
+stats          "stats"          "4.6.1"     
+stats4         "stats4"         "4.6.1"     
+survival       "survival"       "3.8-6"     
+tcltk          "tcltk"          "4.6.1"     
+tools          "tools"          "4.6.1"     
+translations   "translations"   "4.6.1"     
+utils          "utils"          "4.6.1"     
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+This is posterior version 1.7.0
+
+Attaching package: 'posterior'
+
+The following objects are masked from 'package:stats':
+
+    mad, sd, var
+
+The following objects are masked from 'package:base':
+
+    %in%, match
+

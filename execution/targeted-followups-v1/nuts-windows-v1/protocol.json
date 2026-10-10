@@ -1,0 +1,327 @@
+{
+  "identity": "windows-nuts-localization-v1",
+  "binding_sha256": "0930415240de2504c01fd27d838caec30e807e3ef94a2c1aa81aeeeb30fbe3e9",
+  "source_commit": "126969036e73b4c077563d6601b030407e7663b8",
+  "study_sha256": "7c9cdb5640a32c5b69c8a9eceb0ef456f7e90639faaefdf86ed625d56080c830",
+  "prepared_sha256": "45b7414cfb0c7ea0b1e5dcfa5040cf045a8e7dc82d9c5547785be66588f4ecf4",
+  "qualification_ids": [
+    "qualification-r0-w1-d1",
+    "qualification-r0-w4-d1",
+    "qualification-r0-w1-d0",
+    "qualification-r0-w4-d0"
+  ],
+  "qualification_registered": 4,
+  "maximum_registered_calls": 48,
+  "main_calls": 36,
+  "maximum_confirmation_calls": 8,
+  "schedule": [
+    {
+      "id": "main-G2-w1-d1",
+      "phase": "main",
+      "model": "G2",
+      "workers": 1,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-G2-w4-d1",
+      "phase": "main",
+      "model": "G2",
+      "workers": 4,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-G2-w1-d0",
+      "phase": "main",
+      "model": "G2",
+      "workers": 1,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-G2-w4-d0",
+      "phase": "main",
+      "model": "G2",
+      "workers": 4,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-A1-w4-d1",
+      "phase": "main",
+      "model": "A1",
+      "workers": 4,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-A1-w1-d0",
+      "phase": "main",
+      "model": "A1",
+      "workers": 1,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-A1-w4-d0",
+      "phase": "main",
+      "model": "A1",
+      "workers": 4,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-A1-w1-d1",
+      "phase": "main",
+      "model": "A1",
+      "workers": 1,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-L1-w1-d0",
+      "phase": "main",
+      "model": "L1",
+      "workers": 1,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-L1-w4-d0",
+      "phase": "main",
+      "model": "L1",
+      "workers": 4,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-L1-w1-d1",
+      "phase": "main",
+      "model": "L1",
+      "workers": 1,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-L1-w4-d1",
+      "phase": "main",
+      "model": "L1",
+      "workers": 4,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-H2-w4-d0",
+      "phase": "main",
+      "model": "H2",
+      "workers": 4,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-H2-w1-d1",
+      "phase": "main",
+      "model": "H2",
+      "workers": 1,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-H2-w4-d1",
+      "phase": "main",
+      "model": "H2",
+      "workers": 4,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-H2-w1-d0",
+      "phase": "main",
+      "model": "H2",
+      "workers": 1,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-L2-w1-d1",
+      "phase": "main",
+      "model": "L2",
+      "workers": 1,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-L2-w4-d1",
+      "phase": "main",
+      "model": "L2",
+      "workers": 4,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-L2-w1-d0",
+      "phase": "main",
+      "model": "L2",
+      "workers": 1,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-L2-w4-d0",
+      "phase": "main",
+      "model": "L2",
+      "workers": 4,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-G1-w4-d1",
+      "phase": "main",
+      "model": "G1",
+      "workers": 4,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-G1-w1-d0",
+      "phase": "main",
+      "model": "G1",
+      "workers": 1,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-G1-w4-d0",
+      "phase": "main",
+      "model": "G1",
+      "workers": 4,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-G1-w1-d1",
+      "phase": "main",
+      "model": "G1",
+      "workers": 1,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-W1-w1-d0",
+      "phase": "main",
+      "model": "W1",
+      "workers": 1,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-W1-w4-d0",
+      "phase": "main",
+      "model": "W1",
+      "workers": 4,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-W1-w1-d1",
+      "phase": "main",
+      "model": "W1",
+      "workers": 1,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-W1-w4-d1",
+      "phase": "main",
+      "model": "W1",
+      "workers": 4,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-H1-w4-d0",
+      "phase": "main",
+      "model": "H1",
+      "workers": 4,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-H1-w1-d1",
+      "phase": "main",
+      "model": "H1",
+      "workers": 1,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-H1-w4-d1",
+      "phase": "main",
+      "model": "H1",
+      "workers": 4,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-H1-w1-d0",
+      "phase": "main",
+      "model": "H1",
+      "workers": 1,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-M1-w1-d1",
+      "phase": "main",
+      "model": "M1",
+      "workers": 1,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-M1-w4-d1",
+      "phase": "main",
+      "model": "M1",
+      "workers": 4,
+      "diagnostics_enabled": true
+    },
+    {
+      "id": "main-M1-w1-d0",
+      "phase": "main",
+      "model": "M1",
+      "workers": 1,
+      "diagnostics_enabled": false
+    },
+    {
+      "id": "main-M1-w4-d0",
+      "phase": "main",
+      "model": "M1",
+      "workers": 4,
+      "diagnostics_enabled": false
+    }
+  ],
+  "confirmation_model_order": [
+    "G1",
+    "L1",
+    "L2",
+    "H1",
+    "H2",
+    "M1",
+    "G2",
+    "A1",
+    "W1"
+  ],
+  "confirmation_pair_order": [
+    [
+      [
+        4,
+        true
+      ],
+      [
+        4,
+        false
+      ]
+    ],
+    [
+      [
+        1,
+        true
+      ],
+      [
+        1,
+        false
+      ]
+    ],
+    [
+      [
+        1,
+        true
+      ],
+      [
+        4,
+        true
+      ]
+    ],
+    [
+      [
+        1,
+        false
+      ],
+      [
+        4,
+        false
+      ]
+    ]
+  ],
+  "scope": "Technical localization only, preserves all original failures; instrumentation costs are not original benchmark timing",
+  "require_same_initial_actual_rng_states": true,
+  "posterior_samples_eligible": false
+}

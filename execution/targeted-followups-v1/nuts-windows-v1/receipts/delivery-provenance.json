@@ -1,0 +1,371 @@
+{
+  "schema": "nuts-delivery-closure-v1",
+  "observed_utc": "2026-10-10T19:13:42.938360+00:00",
+  "sampling_source_commit": "126969036e73b4c077563d6601b030407e7663b8",
+  "canonical_source_files": 149,
+  "canonical_bytes_equal_git": true,
+  "primary_head": "9eac03fe67122aa893ffd9b849896b83bdaf93bf",
+  "current_delivery_head": "126969036e73b4c077563d6601b030407e7663b8",
+  "current_delivery_status": " M .gitattributes\n M .gitignore\n M execution/targeted-followups-v1/WORK-PACKAGES.md\n?? docs/WINDOWS-NUTS-LOCALIZATION-RESULTS.md\n?? execution/targeted-followups-v1/nuts-windows-v1/\n",
+  "environment_marker_sha256": "5e8ed0b284b1ef83977fcea0ce45c16349bbf8c1f0eb249be238f8aea547999c",
+  "main_archive_sha256": "5fffe7f83783651ef58198aab4bad1bfb28be1d2244b9a0738c8f66fbdb88705",
+  "actual_native_observation": {
+    "observed_utc": "2026-10-10T19:12:22.823028+00:00",
+    "counts": {
+      "diagnostic": {
+        "completed": 8,
+        "failed": 1
+      },
+      "qualification": {
+        "completed": 4
+      },
+      "main": {
+        "completed": 34,
+        "failed": 2
+      },
+      "confirmation": {
+        "failed": 2,
+        "completed": 2
+      }
+    },
+    "active_calls": [],
+    "registered_jobs": [
+      {
+        "id": "diagnostic-G1-legacy-w1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-7eb0b391ef584770bffbdb1cee87e6c0",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "diagnostic-G1-legacy-w4",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-79e2aed300944d7e8027a224f83f3aeb",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "diagnostic-G1-modern-w1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-9138c0493b404163a25b0c0684921229",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "diagnostic-G2-legacy-w1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-e3357c95241340ec86ad613e9ed1f20b",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "diagnostic-G2-legacy-w4",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-01c7f00912204b7b900811af5449a195",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "diagnostic-G2-modern-w1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-6bfbcb5b7e924af09458825bb14e10d7",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "diagnostic-W1-legacy-w1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-f4703793e35c45a4998032aadc362a20",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "diagnostic-W1-legacy-w4",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-2e6ef0a69909438abc99a1751ebfd105",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "diagnostic-W1-modern-w1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-292c4f7f9b4744629eb9202298838307",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "qualification-r0-w1-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-20a3a7b0efca46cfacabc4ab6791e559",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "qualification-r0-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-2c7d67dc56ae4e82ac92113c49ddda00",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "qualification-r0-w1-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-ee0b16fd680c4ce9af422e505b333982",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "qualification-r0-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-78d026d4ba8d45999e3ce04be010f7b0",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-G2-w1-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-da76846b0ef848399b5a1963af8e925d",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-G2-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-caa56cdfbbe948fb9365b9014b1fc080",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-G2-w1-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-6bbb6c60d96b4850871700a1888c4c40",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-G2-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-75a08e47ec2d4e5e83a767dc7e096360",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-A1-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-59b2867543ba42c9b9795bd3fddcbe37",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-A1-w1-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-50b5654449764ce8a3e5a442ae964b33",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-A1-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-11036ae0396b4ab79639e22860eba789",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-A1-w1-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-44fbf460d97b41d7a852bb2bedce67fa",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-L1-w1-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-9a6481cdeb234eef8543b665e9d36208",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-L1-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-0071c6e491724175931129fe43c0649e",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-L1-w1-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-a5cd2e8121b24f2391aea32abcb80464",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-L1-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-581cbaa93d4548f4ba14fa4b4c79b942",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-H2-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-38e7134475b546e693dad8a5845978ab",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-H2-w1-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-0bfd1292a5024b78913e571fcfb892c5",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-H2-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-4b8206226ea44465a67ac32cb2c8e295",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-H2-w1-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-19512ca4fc16410ea25bdf7db798c3d8",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-L2-w1-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-659d223442de4b1ead3ad277acf34eb3",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-L2-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-7be90c2a649248a9b72c3b0c7707e241",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-L2-w1-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-0c5f0c714367460d819448ab9f126039",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-L2-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-823fe1d3bef644318990dd6194e5310b",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-G1-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-6743b593dbfe4014a4cf71bbec224a49",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-G1-w1-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-22bf59920015465fb8cb3b626b9605a8",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-G1-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-89cefc177b5d4de7878e2b92aee37bf0",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-G1-w1-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-cb682280a0ff4dc9917b0d2b64fe6489",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-W1-w1-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-08a489482a624b38bc5b7064fe2e97a2",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-W1-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-516af3ca066b493781a0f5184ea10722",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-W1-w1-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-6eb2546770c44aa3b9b64f3eaf272bab",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-W1-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-7e2d5313ba23474b8d87fe1ea12fb52b",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-H1-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-7032f47c177d4984be55dfa614010df1",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-H1-w1-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-8b7a406484fb4e0da6b3c6af2acc5e88",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-H1-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-66828e15486d41c78eccfe004c12623b",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-H1-w1-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-69a408ea0ce44a549d5cb7d73fa90f32",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-M1-w1-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-636d6b0bd8bc473cab95af343fd332b9",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-M1-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-a9330745ba64471e86fcb2357c9bb361",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-M1-w1-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-52d8570a8f334de1879218a1ff779ea1",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "main-M1-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-b30bcdcbc5434bddaf779b69ae3f4e71",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "confirmation-G2-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-ead7c03ec25840e69afa4ab9717df86a",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "confirmation-G2-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-54714e5bbd004a8a87e8b6972d0394f0",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "confirmation-A1-w4-d1",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-383a5c691c7e4e99915d5a486ad7f855",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      },
+      {
+        "id": "confirmation-A1-w4-d0",
+        "state": "absent",
+        "job_name": "Local\\ParallelBayes-nuts-localization-a736fcf7ca474f3999d313e8a59ca514",
+        "proof": "OpenJobObjectW ERROR_FILE_NOT_FOUND; owned noninherited last-handle kill policy"
+      }
+    ],
+    "available_ram_bytes": 21083242496,
+    "disk_free_bytes": 1808224477184,
+    "new_executions": 0,
+    "scope": "Actual named Job observation; active count is not inferred from registry outcome or PID"
+  },
+  "volumes": {
+    "C": {
+      "total_bytes": 2047228243968,
+      "used_bytes": 448061030400,
+      "free_bytes": 1599167213568
+    },
+    "D": {
+      "total_bytes": 2000381014016,
+      "used_bytes": 192156565504,
+      "free_bytes": 1808224448512
+    }
+  },
+  "available_ram_bytes": 21113348096,
+  "scope": "Post-export commands 20-24, moved rebuild and draft receipt; CPU-only, no new sampling. This tar cannot contain its own later upload or Git bundle upload; those get separate final transport proof. Mac independent intake remains pending."
+}

@@ -6,7 +6,7 @@
 |---|---|---|---|
 | P 计划 | 完成 | 范围、输入规则、资源及终态一致；两位独立审查 | docs/TARGETED-FOLLOWUPS-PLAN.md、PLAN.json、selection.json |
 | S1 H1函数差 | complete | 80项/3200函数行；恢复新增0；42旧失败不变 | docs/H1-FUNCTION-PATH-RESULTS.md；对应delivery.json |
-| S2 NUTS故障定位 | handoff_prepared | 21项便携检查通过；Windows实际通过Job及四条件资格后冻结 | handoff/windows-nuts-localization/README.md；qualification/nuts-portable-qualification.json |
+| S2 NUTS故障定位 | windows_complete_with_resource_failures_intake_pending | Windows21便携+3原生检查通过；4资格通过；36主体34完成/2资源失败，4确认2完成/2资源失败；Mac独立接收待进行 | docs/WINDOWS-NUTS-LOCALIZATION-RESULTS.md；nuts-windows-v1/ |
 | S3A W1参考 | complete | 双规则均7/7达标；24资产核验；恢复新增0；归档搬移重建一致 | docs/W1-REFERENCE-RESULTS.md；w1-reference-enclosure-v1摘要与原件 |
 | S3B L2参考 | complete | 2097152正式点+16384试探；633资产恢复不变；96点独立权重核对 | docs/L2-RARE-REFERENCE-RESULTS.md；对应SUMMARY/audit.json |
 | 合并 | partial_S1_S3A_S3B_complete | H1/L2/W1已交付；正文18页及SI40页通过版式及便携重建；S2待实测 | docs/TARGETED-FOLLOWUPS-PAPER.md；w1-paper-integration-v1.json |
@@ -50,3 +50,9 @@ W1终态（2026-10-11）：原积分正常结束，两规则分别31533/37671活
 论文v2交付（2026-10-11）：来源6f894c5，正文18页、SI40页，W1方法/七函数区间/504项敏感性已写入，原统计结果保持不变。163个便携输入逐项核验，独立目录重编译全部58页文字和72 dpi像素一致；最终无未解析引用/超宽警告，旧67页附录SHA不变。论文包17356800字节、SHA256为455d0119cb5bb873ada3a2342742d19a92706bfdb3676d404caf7f1fbaab849b，仅本地保存；PDF及小型清单随研究分支。见targeted-paper-companion-v2/delivery.json。普通表注再生成首次使用缺少matplotlib的数值环境在导入阶段失败，改用既有报告环境完成；数值claims及另两片段逐字节相同，相关记录保留。S2仍待原生结果，不宣布全研究完成。
 
 S2接收准备（2026-10-11）：新增Mac标准库只读归档与身份核验器，17项合成证据检查通过、0失败、0跳过。核对解包安全、固定输入、冻结源码/环境、注册配额、原生门槛记录、分析分母及失败标签；明确不宣称真实轨迹资格、Git对象或远端当前进程已核验。未改Windows执行器绑定的源文件，新增采样0。接收步骤和仍需独立重建的内容见docs/WINDOWS-NUTS-INTAKE.md。当前远端尚无本轮结果分支/附件；已有输入包和回执仍为草稿，S2未完成。
+
+S2 Windows本机终态（2026-10-11）：执行源126969036e73b4c077563d6601b030407e7663b8、149文件与Git字节一致，原34项依赖及venv标记未改。21便携+3真实原生Job检查通过、0失败、0跳过；首轮4条件资格通过后冻结协议5237de1b2dee0d134edc53b5fd225938a90cd34c5c9f5d5747d7f32ffacb1c54。主体36项34完成/2资源失败；按冻结规则选择4确认，2完成/2资源失败；9旧诊断作业8完成/1RSS停止。44注册四链调用，技术链不计入正式重复。G2/A1开启诊断的4 worker失败及确认均保存完整采样后进入诊断的阶段记录与Job内存限制消息；六个原失败案例未复现，旧105标签不变。54对/864项主条件路径及RNG、64项确认记录完全一致；没有改变采样核、指标、输入或内存限制。
+
+S2保全和返回：两次真实verify各新增执行0、29,444个当时研究文件保持不变；53登记Job实时查询无活动进程。完整tar 703,969,280字节、30,044内容成员逐项核验，SHA256为5fffe7f83783651ef58198aab4bad1bfb28be1d2244b9a0738c8f66fbdb88705。Windows新目录安全解包及只读身份检查通过，8份搬移重建分析文件逐字节一致，无新增采样；这不替代Mac接收。完整原件保留在本机独立n工作树，归档/回执追加上传以nuts-windows-v1/receipts的实际终态为准；未公开草稿。当前中文报告见docs/WINDOWS-NUTS-LOCALIZATION-RESULTS.md；S2 Mac独立接收、故障审阅与论文整合仍待进行。
+
+S2实际上传：主tar及两份校验附件于04:08:24 JST追加至原私有草稿，217→220件、全部旧资产字段不变。封存后管理证据tar为839,680字节/SHA256 02dbc6da8d9622a6fa21d2fd3612cb1f57d03d5a600d2f0fe46b83f485429a7d，79成员核对；于04:14:19 JST追加3件，220→223件且仍draft、旧附件不变。04:12:22 JST实时查询本轮53个Job无活动调用。小型delivery.json绑定两包与原生/搬移证据，完整原件未变；源码bundle及最后传输费用在报告提交后单独绑定，不递归修改封存tar。Mac接收仍未完成。

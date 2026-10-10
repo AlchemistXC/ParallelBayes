@@ -165,3 +165,14 @@ __pycache__/
 !/execution/targeted-followups-v1/PLAN.json
 !/execution/targeted-followups-v1/selection.json
 !/execution/targeted-followups-v1/WORK-PACKAGES.md
+
+# S2 small first-party results and receipts; no arrays or local environments.
+!/execution/targeted-followups-v1/nuts-windows-v1/
+/execution/targeted-followups-v1/nuts-windows-v1/*
+!/execution/targeted-followups-v1/nuts-windows-v1/*.json
+!/execution/targeted-followups-v1/nuts-windows-v1/*.md
+!/execution/targeted-followups-v1/nuts-windows-v1/*.csv
+!/execution/targeted-followups-v1/nuts-windows-v1/*.xml
+!/execution/targeted-followups-v1/nuts-windows-v1/*.txt
+!/execution/targeted-followups-v1/nuts-windows-v1/receipts/
+!/execution/targeted-followups-v1/nuts-windows-v1/receipts/**
