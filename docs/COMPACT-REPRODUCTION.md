@@ -21,11 +21,13 @@ Windows完整原件目前仍在草稿Release，源码公开不等于原数组已
 - 这些是实际版本清单，未锁定所有平台的wheel字节、系统数学库或字体；不得宣称换平台必然逐位相同。完整接收身份另外记录实际环境。
 - 原始读取不需要安装ParallelBayes wheel/R包、torch、CUDA、JAX、Pyro、BlackJAX或BridgeStan。原源码已包含独立NumPy参考。软件使用和性能复现的依赖见[安装说明](INSTALL-AND-USE.md)，与此只读任务分开。
 
+2026-10-11独立环境验收发现原13项锁遗漏读取器间接导入的psutil。旧锁与首次失败保留；投稿候选使用`environment/locks/submission-analysis-v1.txt`的14项锁（psutil 7.1.0来自原Mac重建环境）。这不改变冻结读取器或旧统计。完整材料入口见[投稿复现](SUBMISSION-REPRODUCE.md)。
+
 例如，在使用者指定的新环境中安装固定Python分析包：
 
 ```text
 python3.12 -m venv ANALYSIS_ENV
-ANALYSIS_PYTHON -m pip install -r CURRENT_SOURCE/environment/locks/compact-analysis-observed-v1.txt
+ANALYSIS_PYTHON -m pip install -r CURRENT_SOURCE/environment/locks/submission-analysis-v1.txt
 ```
 
 `ANALYSIS_PYTHON`指该新环境的`bin/python`（Windows则`Scripts/python.exe`）；保留虚拟环境路径，不把其符号链接解析为基础解释器。R可复用已核对匹配的库，或使用已有`renv`在新项目/新库恢复上述分析锁：

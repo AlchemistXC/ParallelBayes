@@ -1,0 +1,187 @@
+{
+  "figures": 45,
+  "equal": 45,
+  "rows": [
+    {
+      "file": "G1/execution-costs.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "G1/inference-0.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "G1/inference-1.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "G1/inference-2.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "G2/execution-costs.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "G2/inference-0.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "G2/inference-1.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "G2/inference-2.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "A1/execution-costs.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "A1/inference-0.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "A1/inference-1.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "A1/inference-2.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "L1/execution-costs.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "L1/inference-0.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "L1/inference-1.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "L1/inference-2.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "L1/inference-3.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "L2/execution-costs.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "L2/inference-0.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "L2/inference-1.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "L2/inference-2.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "L2/inference-3.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "H1/execution-costs.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "H1/inference-0.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "H1/inference-1.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "H1/inference-2.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "H1/inference-3.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "H2/execution-costs.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "H2/inference-0.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "H2/inference-1.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "H2/inference-2.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "H2/inference-3.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "M1/execution-costs.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "M1/inference-0.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "M1/inference-1.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "M1/inference-2.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "M1/inference-3.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "W1/execution-costs.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "W1/inference-0.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "W1/inference-1.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "W1/inference-2.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "W1/inference-3.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "W1/inference-4.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "W1/inference-5.pdf",
+      "same_text_and_72dpi_pixels": true
+    },
+    {
+      "file": "W1/inference-6.pdf",
+      "same_text_and_72dpi_pixels": true
+    }
+  ],
+  "same_host_only": true
+}

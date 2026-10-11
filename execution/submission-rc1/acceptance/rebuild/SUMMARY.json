@@ -1,0 +1,89 @@
+{
+  "identity": "submission-v4-rc1-saved-evidence-rebuild",
+  "passed": true,
+  "stages": [
+    {
+      "stage": "complete-results",
+      "script": "scripts/analysis/formal_report.py",
+      "script_sha256": "07ea8a39714710b5766bbe87cbaec6e3137f84af0579a98f13f0207e1af78389",
+      "returncode": 0,
+      "elapsed_seconds": 34.9124537079997
+    },
+    {
+      "stage": "overview",
+      "script": "scripts/analysis/plot_compact_overview.py",
+      "script_sha256": "54ae2c8f39407b31c2f97e1dc9c99fe6b11c02c345f88c18c12b8c45399eb8d4",
+      "returncode": 0,
+      "elapsed_seconds": 8.110134417000154
+    },
+    {
+      "stage": "main-tables",
+      "script": "scripts/analysis/write_compact_manuscript.py",
+      "script_sha256": "0e3b7209149bd39ee519bff0c8a2f649c614ec2f0ccd2fdb5a755d13b4cf95af",
+      "returncode": 0,
+      "elapsed_seconds": 8.18227187499997
+    },
+    {
+      "stage": "h1-report",
+      "script": "scripts/analysis/report_h1_function_paths.py",
+      "script_sha256": "d496aea518159c1d1b1765794f54c9ff6cc8867f9691eb6facfd3d70b7dcd565",
+      "returncode": 0,
+      "elapsed_seconds": 10.56996395799979
+    },
+    {
+      "stage": "l2-audit",
+      "script": "scripts/analysis/audit_l2_importance.py",
+      "script_sha256": "398c5dfe519bc6b68a576dc81962c3ea436c7e74c43e4090aa73c887fa66d458",
+      "returncode": 0,
+      "elapsed_seconds": 0.9380900420001126
+    },
+    {
+      "stage": "w1-audit",
+      "script": "scripts/analysis/audit_w1_enclosure.py",
+      "script_sha256": "e7571a77411517e7c258a605da84d32c3946b1bd181260d87688ba993b09ec9a",
+      "returncode": 0,
+      "elapsed_seconds": 20.21033912499979
+    },
+    {
+      "stage": "w1-report",
+      "script": "scripts/analysis/report_w1_enclosure.py",
+      "script_sha256": "f791b0a4fd840d7f51ada7846b00d2e069491052844d30773c395e620f9f269c",
+      "returncode": 0,
+      "elapsed_seconds": 0.03198545799978092
+    },
+    {
+      "stage": "r-raw-verify",
+      "script": "scripts/analysis/r_frontend_verify.py",
+      "script_sha256": "ffef78006d460c07939f87f8ce5844957c6e3d2075d36970557c60e342302a3b",
+      "returncode": 0,
+      "elapsed_seconds": 0.24286945899984858
+    },
+    {
+      "stage": "r-report",
+      "script": "scripts/analysis/r_frontend_report.py",
+      "script_sha256": "8d62dc6e4f3d398e60b390d53624ce764cc076096e44944b858e7cc98b97554c",
+      "returncode": 0,
+      "elapsed_seconds": 0.028473165999912453
+    },
+    {
+      "stage": "v4-explanation",
+      "script": "scripts/analysis/review3_numerics.py",
+      "script_sha256": "074a4ba09d49907cb9632d72da7a34031ed80fe45918910735b542048cb99487",
+      "returncode": 0,
+      "elapsed_seconds": 0.02751662499986196
+    }
+  ],
+  "complete_result_csvs_equal": 81,
+  "supplement_csvs_equal": 4,
+  "manuscript_fragments_equal": [
+    "compact-wells.generated.tex",
+    "compact-scalars.generated.tex",
+    "compact-outcomes.generated.tex",
+    "review3-rare-iid.generated.tex",
+    "review3-scalars.generated.tex",
+    "w1-intermediates.generated.tex"
+  ],
+  "new_sampler_calls": 0,
+  "new_independent_repetitions": 0,
+  "scope": "All saved statistics/table/plot generation; H1/R saved array verification, L2 saved-point reweight audit, W1 exact saved-bound reaggregation. This is not a new 4144-task raw trajectory replay, GPU measurement or external reviewer access test."
+}

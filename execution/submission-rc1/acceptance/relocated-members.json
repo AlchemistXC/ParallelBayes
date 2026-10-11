@@ -1,0 +1,32 @@
+[
+  {
+    "component": "mac-final",
+    "verified_content_files": 924,
+    "metadata_files": 2,
+    "passed": true
+  },
+  {
+    "component": "h1-companion",
+    "verified_content_files": 196,
+    "metadata_files": 1,
+    "passed": true
+  },
+  {
+    "component": "l2-reference",
+    "verified_content_files": 660,
+    "metadata_files": 1,
+    "passed": true
+  },
+  {
+    "component": "w1-reference",
+    "verified_content_files": 81,
+    "metadata_files": 1,
+    "passed": true
+  },
+  {
+    "component": "paper-v4",
+    "verified_content_files": 169,
+    "metadata_files": 1,
+    "passed": true
+  }
+]

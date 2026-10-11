@@ -2,13 +2,15 @@
 
 ## Current work
 
+2026-10-11 submission candidate: work on `codex/submission-rc1`. Read `docs/SUBMISSION-RC1.md`, `docs/SUBMISSION-REPRODUCE.md` and `execution/submission-rc1/WORK-PACKAGES.md`. Internal installation/reaggregation/table/figure/TeX acceptance has passed; preserve all raw and prior sources. Candidate source/tag/package hashes are in the external seal. Do not restart scientific tasks. Author metadata, raw sharing rights, real outside-author access and journal selection remain human decisions. Keep the private draft unchanged.
+
 2026-10-11: S1/S2/S3A/S3B finite supplements have completed scientific execution and independent Mac review. Read `docs/TARGETED-FOLLOWUPS-COMPLETION.md` and current work packages. Do not restart Windows localization or use up unused calls; preserve five resource stops and all historical failure labels. The original PLAN.json is a historical planning snapshot. Current manuscript is the reviewed v4 (see docs/MANUSCRIPT-REVIEW-V3.md); portable packaging and all required checks have passed; no further scientific work is required by this finite plan.
 
 2026-10-10 follow-up authorization: the user requested execution of `docs/TARGETED-FOLLOWUPS-PLAN.md`. Track S1/S2/S3 in `execution/targeted-followups-v1/WORK-PACKAGES.md`; assign the planned new identities, preserve all original failures/reference files, and retain the 20 GiB incremental per-host cap. S1 uses saved trajectories only. S2 must run on native Windows, with at most 48 registered four-chain technical calls. The prior completion below describes the delivered research version, not a prohibition on this newly authorized supplement.
 
 2026-10-10: agreed research and manuscript delivery is complete. Read `docs/CURRENT-SCOPE.md`, `docs/RESEARCH-COMPLETION-REPORT.md` and `execution/CURRENT-SCOPE.json`. All 4144 compact records were independently reconstructed on Mac; real resume added zero analyses and preserved 42035 assets. Finite R timing completed 32 processes/64 calls. The 2026-10-10 review revision has 17 main pages, 34 SI pages and 67 complete-results pages. Read `docs/MANUSCRIPT-REVIEW-V2.md` for the itemised disposition; no new sampler calls or frozen protocol changes were made. Do not restart any historical Windows prompt or frozen grid. Author identity, public-data decisions and submission remain human decisions, not unfinished numerical tasks.
 
-Use `codex/research-integration` for development. Windows remains native Python/PowerShell only, no WSL. Preserve private skills; never publish their ZIP/code. 105 process failures, rare-reference limitations and poor exploration remain research findings, not permission to replace tasks. If the user requests a new study, assign a new protocol identity.
+The prior development branch is `codex/research-integration`; current candidate branch is `codex/submission-rc1`. Windows remains native Python/PowerShell only, no WSL. Preserve private skills; never publish their ZIP/code. 105 process failures, rare-reference limitations and poor exploration remain research findings, not permission to replace tasks. If the user requests a new study, assign a new protocol identity.
 
 ## Scientific invariants
 

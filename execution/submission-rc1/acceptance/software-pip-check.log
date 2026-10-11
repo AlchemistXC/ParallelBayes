@@ -1,0 +1,3 @@
+WARNING: The directory '/Users/haku/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+parallelbayes 0.2.0.dev2 requires psutil, which is not installed.
+parallelbayes 0.2.0.dev2 requires scipy, which is not installed.

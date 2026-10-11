@@ -1,3 +1,5 @@
+> 当前状态（2026-10-11）：完整接收、4144项独立重建、统计和v4论文已完成。下文“正在运行/待完成”是历史记录。投稿复现请从[统一入口](SUBMISSION-REPRODUCE.md)开始，不重启历史采样提示词。
+
 # Windows 紧凑研究：Mac独立接收记录
 
 2026-10-10，**全部21个组件和源码bundle已接收并校验；4144项独立NumPy/R重建仍在运行。** [完整接收记录](../benchmark/analysis/outputs/windows-compact-mac-intake-v1/complete-receipt.json)覆盖232755份原件、29311383786字节；接收通过与科学重建完成分别记录。接收使用 nature-statistics 与 validate-data 的证据、分母和结论审查规则；不新增MCMC。

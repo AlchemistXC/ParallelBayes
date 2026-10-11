@@ -1,0 +1,16 @@
+{
+  "schema": "formal-delivery-index-v1",
+  "manifest_sha256": "81590d6e3cc07452ce46e9668222dcbe9b347cc33278396836e39992b0c3dc57",
+  "bundle_relative": "",
+  "delivered_files": 180582,
+  "bundle_files": 180582,
+  "total_bytes": 19671228544,
+  "delivery_metadata": {
+    "scope": "Complete bounded receive; native processes were validated at origin, not live at receiver",
+    "source_manifest_sha256": "38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e"
+  },
+  "history_exports": 9869,
+  "numerical_results_validated": false,
+  "live_processes_observed": false,
+  "database_sha256": "3a2ff18010d6fec342cc1674efa4ca35e55892af2f2a151f06909451203ab555"
+}

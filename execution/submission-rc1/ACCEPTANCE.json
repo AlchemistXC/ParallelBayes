@@ -1,0 +1,50 @@
+{
+  "schema": "parallelbayes-submission-internal-acceptance-v1",
+  "identity": "submission-v4-rc1",
+  "date": "2026-10-11",
+  "platform": "macOS 26.6.2 arm64 / M4 / 16 GiB",
+  "internal_acceptance_passed": true,
+  "author_outside_access_tested": false,
+  "original_manuscript_revision": "targeted-paper-v4",
+  "parent_source": "f07d4f642fb0b47534dd82e298d6afb799a14a25",
+  "numerical_source_changed": false,
+  "new_formal_repetitions": 0,
+  "new_importance_random_points": 0,
+  "new_W1_integrand_callbacks": 0,
+  "new_GPU_measurements": 0,
+  "new_CPU_API_technical_calls": 2,
+  "dependency_repairs": [
+    "Old observed 13-package analysis lock lacks actual indirect psutil; new 14-package lock preserves old versions and adds psutil 7.1.0",
+    "Initial new software packaging lock omitted scipy/psutil; corrected to original candidate 13-package closure, no sampler source change"
+  ],
+  "results": {
+    "components_passed": 41,
+    "compact_original_files_verified": 232755,
+    "compact_receiver_manifests_verified": 21,
+    "analysis_records_reaggregated": 4144,
+    "bootstrap_arrays_equal": 4589,
+    "main_csvs_equal": 81,
+    "supplement_csvs_equal": 4,
+    "main_tex_fragments_equal": 6,
+    "figures_text_and_72dpi_pixels_equal": 45,
+    "main_pdf_pages_equal": 18,
+    "SI_pdf_pages_equal": 45,
+    "installed_numerical_modules_equal": 17,
+    "API_acceptance_mismatches": 0,
+    "API_maximum_path_difference": 1.11022302462516e-15,
+    "new_tool_tests": {
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "limitations": [
+    "Same host, fresh Python venv and evidence directories; not an independent team or hardware",
+    "R package was newly installed; reticulate/posterior/jsonlite dependencies reused original locked library",
+    "Reaggregation uses all existing analysis records, not new 4144-task raw trajectory/R diagnostic replay",
+    "Original 67-page complete results unchanged",
+    "No new convergence, timing, general speed or outside-author access claim"
+  ],
+  "records": "acceptance/records.sha256",
+  "source_seal": "Fixed source commit, local tag and transport hashes are bound in external SEAL.json"
+}

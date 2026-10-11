@@ -1,0 +1,17 @@
+# Submission RC1 analysis environment on macOS arm64, Python 3.12.14.
+# Preserves prior 13 packages and adds the actual indirect reader dependency psutil 7.1.0.
+# Versions are pinned; wheel bytes, system libraries and fonts are not universally pinned.
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.66.1
+kiwisolver==1.5.1
+matplotlib==3.10.6
+numpy==2.2.6
+packaging==26.3
+pillow==12.3.0
+PyMuPDF==1.26.5
+pyparsing==3.3.3
+python-dateutil==2.9.0.post0
+scipy==1.15.3
+six==1.17.0
+psutil==7.1.0

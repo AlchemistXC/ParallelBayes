@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/source-94bebec/scripts/analysis/formal_analyze.py", line 21, in <module>
+    from formal_validation import verify_validation_bundle,validation_slots
+  File "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/source-94bebec/scripts/completion/formal_validation.py", line 11, in <module>
+    from formal_acceptance import validation_groups
+  File "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/source-94bebec/scripts/completion/formal_acceptance.py", line 17, in <module>
+    from formal_native_evidence import read_native_task
+  File "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/source-94bebec/scripts/completion/formal_native_evidence.py", line 15, in <module>
+    from formal_cost_policy import summarize_task_costs
+  File "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/source-94bebec/scripts/completion/formal_cost_policy.py", line 9, in <module>
+    from measured_coordinator import summarize_calls
+  File "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/source-94bebec/scripts/completion/measured_coordinator.py", line 14, in <module>
+    from formal_coordinator import TaskCoordinator
+  File "/Users/haku/Workspace/ParallelBayes/downloads/windows-compact-20261010/source-94bebec/scripts/completion/formal_coordinator.py", line 17, in <module>
+    import psutil
+ModuleNotFoundError: No module named 'psutil'

@@ -1,0 +1,12 @@
+usage: cli.py [-h] {environment,run,recover} ...
+
+ParallelBayes environment and legacy JAX runner
+
+positional arguments:
+  {environment,run,recover}
+    environment         record the numerical environment
+    run                 run a legacy JAX frozen protocol
+    recover             recover a legacy JAX run lock
+
+options:
+  -h, --help            show this help message and exit

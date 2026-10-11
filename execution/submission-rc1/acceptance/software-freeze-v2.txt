@@ -1,0 +1,14 @@
+filelock==4.0.10
+fsspec==2026.9.0
+Jinja2==3.1.6
+MarkupSafe==3.0.4
+mpmath==1.3.0
+networkx==3.7
+numpy==2.2.6
+parallelbayes @ file:///Users/haku/Workspace/ParallelBayes/output/research-completion/release-review-v1/final-dist/parallelbayes-0.2.0.dev2-py3-none-any.whl#sha256=32556541f715f968b9ea8b381ca64486fe9aab9c9bedd64c266a9a86c395cab9
+psutil==7.0.0
+scipy==1.15.3
+setuptools==84.0.0
+sympy==1.14.0
+torch==2.13.0
+typing_extensions==4.16.0

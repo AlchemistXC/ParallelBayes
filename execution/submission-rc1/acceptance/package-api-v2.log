@@ -1,0 +1,78 @@
+$provider
+[1] "native_torch"
+
+$dtype
+[1] "float64"
+
+$continuous_latents_only
+[1] TRUE
+
+$combinations
+$combinations[[1]]
+[1] "mala"       "sequential"
+
+$combinations[[2]]
+[1] "rwm"        "sequential"
+
+$combinations[[3]]
+[1] "mala"       "quasi_deer"
+
+$combinations[[4]]
+[1] "rwm"           "online_picard"
+
+
+$available_devices
+[1] "cpu"
+
+$verification_scope
+[1] "See execution/windows-native validation receipts; availability is not target certification"
+
+$validation_evidence
+$validation_evidence$version
+[1] "0.2.0.dev1"
+
+$validation_evidence$torch
+[1] "2.13.0+cu130"
+
+$validation_evidence$os
+[1] "Windows 11"
+
+$validation_evidence$devices
+[1] "AMD CPU"         "RTX 5080 sm_120"
+
+$validation_evidence$target_kinds
+[1] "gaussian"           "logistic"           "lognormal"         
+[4] "funnel"             "funnel_noncentered" "mixture"           
+[7] "normal_mean"       
+
+$validation_evidence$note
+[1] "Finite tested specs and tapes; other data/custom models require validation"
+
+
+$arbitrary_stan_translation
+[1] FALSE
+
+$nuts
+[1] FALSE
+
+$compiled_device_control
+[1] FALSE
+
+       executor audited_sampler_seconds independent_audit_seconds
+1    sequential              0.01631692               0.002877708
+2 online_picard              0.01161967               0.002793083
+[[1]]
+# A tibble: 2 × 10
+  variable   mean median    sd   mad    q5   q95  rhat ess_bulk ess_tail
+  <chr>     <dbl>  <dbl> <dbl> <dbl> <dbl> <dbl> <dbl>    <dbl>    <dbl>
+1 q[1]     -0.257 -0.196 0.897 0.916 -1.81  1.11  1.22    15.9      72.5
+2 q[2]     -0.154 -0.206 0.959 0.969 -1.63  1.48  1.44     9.08     22.5
+
+[[2]]
+# A tibble: 2 × 10
+  variable   mean median    sd   mad    q5   q95  rhat ess_bulk ess_tail
+  <chr>     <dbl>  <dbl> <dbl> <dbl> <dbl> <dbl> <dbl>    <dbl>    <dbl>
+1 q[1]     -0.257 -0.196 0.897 0.916 -1.81  1.11  1.22    15.9      72.5
+2 q[2]     -0.154 -0.206 0.959 0.969 -1.63  1.48  1.44     9.08     22.5
+
+Two public-API CPU workflows completed; arrays, diagnostics and records saved.

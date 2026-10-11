@@ -1,3 +1,5 @@
+> 当前状态（2026-10-11）：完整接收、4144项独立重建、统计和v4论文已完成。下文“正在运行/待完成”是历史记录。投稿复现请从[统一入口](SUBMISSION-REPRODUCE.md)开始，不重启历史采样提示词。
+
 # Compact bounded delivery and receiver commands
 
 **Mac update, 2026-10-10:** all 21 components (232,755 files, 29,311,383,786 bytes) and the complete source bundle have now been received and verified. The 4,144-item independent reconstruction is running. Later paragraphs describing an active Windows study or pending catalog are dated sender-side history, not current commands. See [Mac intake](WINDOWS-COMPACT-MAC-INTAKE.md) for the current evidence boundary.

@@ -8,6 +8,8 @@
 
 2026-10-11：第三轮意见已逐项核对并完成v4中文修订。新增稀有事件IID解释、W1中间界和公开R API示例；原实验不改，2次接口技术调用不计正式重复。原件审稿访问仍由作者落实。
 
+2026-10-11投稿候选：内部安装、41组件核验、4144既有分析记录重聚合、全部九目标表图及论文重编译已通过；科学结果保持v4。当前入口为 [候选验收与封存](docs/SUBMISSION-RC1.md)、[完整复现入口](docs/SUBMISSION-REPRODUCE.md)、[作者确认清单](docs/AUTHOR-DECISIONS.md)。分支 `codex/submission-rc1`；固定源码和归档哈希以封存清单为准。外部审稿原件访问尚未验收。
+
 ## 阅读与使用
 
 - [当前中文正文：18页](output/software-paper/软件与基准研究-审查修订v4.pdf) · [LaTeX](manuscript/software/软件与基准研究.tex)
@@ -23,7 +25,7 @@
 
 ## 本版范围
 
-开发入口为 `codex/research-integration`，Python 0.2.0.dev2 / R 0.2.0.9002。实验仍绑定各自冻结源码；Windows 紧凑执行源为 `3a37a89`、交付为 `94bebec`。
+当前候选入口为 `codex/submission-rc1`；此前开发入口为 `codex/research-integration`，Python 0.2.0.dev2 / R 0.2.0.9002。实验仍绑定各自冻结源码；Windows 紧凑执行源为 `3a37a89`、交付为 `94bebec`。
 
 | 目标入口 | 顺序 RWM/MALA | Picard RWM / quasi-DEER MALA | NUTS |
 |---|---|---|---|

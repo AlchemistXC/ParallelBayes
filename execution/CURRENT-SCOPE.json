@@ -1,8 +1,8 @@
 {
   "schema": "parallelbayes-current-scope-v3",
   "date": "2026-10-11",
-  "branch": "codex/research-integration",
-  "status": "agreed_main_research_and_targeted_followups_delivery_complete_pending_author_decisions",
+  "branch": "codex/submission-rc1",
+  "status": "internal_submission_candidate_accepted_sealed_pending_author_and_external_access_decisions",
   "technical_research_complete": true,
   "automatic_submission": false,
   "automatic_public_release": false,
@@ -50,9 +50,12 @@
     "portable_rebuild_passed": true
   },
   "remaining_author_decisions": [
-    "Authors and affiliations",
-    "Whether/how to publish draft raw evidence",
-    "Journal and submission review"
+    "Names/order/affiliations/contact/contributions",
+    "Funding/COI/acknowledgements",
+    "Sharing scope and licence for raw/reused data",
+    "Actual outside-author public or controlled review route",
+    "Journal/language/template/anonymity",
+    "AI disclosure and author final approval"
   ],
   "preserved_limitations": [
     "105 failures remain unclassified",
@@ -62,7 +65,7 @@
     "No universal acceleration or precise time-to-accuracy claim"
   ],
   "report": "docs/TARGETED-FOLLOWUPS-COMPLETION.md",
-  "reproduction": "docs/COMPACT-REPRODUCTION.md",
+  "reproduction": "docs/SUBMISSION-REPRODUCE.md",
   "historical_state": "execution/CURRENT-SCOPE-through-2026-10-10-reconstruction.json",
   "review_revision": {
     "new_sampler_calls": 0,
@@ -161,5 +164,17 @@
     "delivery": "benchmark/analysis/outputs/manuscript-review-v3/delivery.json",
     "previous_current_status_snapshot": "execution/CURRENT-SCOPE-through-2026-10-11-paper-v3.json",
     "controlled_reviewer_original_access_pending": true
+  },
+  "submission_candidate": {
+    "identity": "submission-v4-rc1",
+    "internal_acceptance_passed": true,
+    "author_outside_access_tested": false,
+    "work_packages": "execution/submission-rc1/WORK-PACKAGES.md",
+    "acceptance": "execution/submission-rc1/ACCEPTANCE.json",
+    "new_formal_repetitions": 0,
+    "new_CPU_API_technical_calls": 2,
+    "decision_list": "docs/AUTHOR-DECISIONS.md",
+    "external_seal": "output/submission-rc1/release/SEAL.json",
+    "frozen_source_bound_by_external_seal": true
   }
 }

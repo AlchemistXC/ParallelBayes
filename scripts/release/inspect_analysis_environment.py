@@ -14,7 +14,7 @@ import formal_analyze,formal_science,formal_statistics,formal_report
 modules=[formal_analyze,formal_science,formal_statistics,formal_report]
 for module in modules:
  if not Path(module.__file__).resolve().is_relative_to(source):raise ValueError('Wrong source loaded')
-pending=['numpy','scipy','matplotlib','PyMuPDF'];seen={}
+pending=['numpy','scipy','matplotlib','PyMuPDF','psutil'];seen={}
 while pending:
  d=metadata.distribution(pending.pop());name=d.metadata['Name']
  if name.lower() in seen:continue

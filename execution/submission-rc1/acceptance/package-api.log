@@ -1,0 +1,5 @@
+Error in py_call_impl(callable, call_args$unnamed, call_args$named) : 
+  ModuleNotFoundError: No module named 'scipy'
+Run `reticulate::py_last_error()` for details.
+Calls: pb_validate ... <Anonymous> -> .pb_native -> <Anonymous> -> py_call_impl
+Execution halted

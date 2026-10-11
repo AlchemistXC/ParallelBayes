@@ -1,0 +1,130 @@
+{
+  "scope": "Two CPU interface calls only; not new formal repetitions, a timing benchmark or convergence evidence",
+  "package_version": "0.2.0.9002",
+  "package_path": "/Users/haku/Workspace/ParallelBayes/output/submission-rc1/acceptance/R-library/parallelbayes",
+  "r_version": "R version 4.6.0 (2026-04-24)",
+  "posterior_version": "1.7.0",
+  "environment": {
+    "provider": "native_torch",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "python_executable": "/Users/haku/Workspace/ParallelBayes/output/submission-rc1/acceptance/software-env/bin/python",
+    "os": "macOS-26.6.2-arm64-arm-64bit",
+    "torch": "2.13.0",
+    "cuda_build": {},
+    "cuda_available": false,
+    "gpu_name": {},
+    "ram_bytes": 17179869184,
+    "cpu_threads": 1,
+    "dtype": "float64"
+  },
+  "validation": {
+    "target_id": "3e3656281759da52eec97958e99d2c4f930c2571d7b1dbb409a2fe1de8f14258",
+    "device": "cpu",
+    "errors": {
+      "relative_density": 0,
+      "gradient": 0,
+      "hvp": 3.78578279836006e-11,
+      "constrain": 0
+    },
+    "passed": true,
+    "hvp_reference": "central difference of independent analytic NumPy gradient; epsilon=1e-5"
+  },
+  "capabilities": {
+    "provider": "native_torch",
+    "dtype": "float64",
+    "continuous_latents_only": true,
+    "combinations": [
+      ["mala", "sequential"],
+      ["rwm", "sequential"],
+      ["mala", "quasi_deer"],
+      ["rwm", "online_picard"]
+    ],
+    "available_devices": "cpu",
+    "verification_scope": "See execution/windows-native validation receipts; availability is not target certification",
+    "validation_evidence": {
+      "version": "0.2.0.dev1",
+      "torch": "2.13.0+cu130",
+      "os": "Windows 11",
+      "devices": ["AMD CPU", "RTX 5080 sm_120"],
+      "target_kinds": ["gaussian", "logistic", "lognormal", "funnel", "funnel_noncentered", "mixture", "normal_mean"],
+      "note": "Finite tested specs and tapes; other data/custom models require validation"
+    },
+    "arbitrary_stan_translation": false,
+    "nuts": false,
+    "compiled_device_control": false
+  },
+  "statuses": ["completed", "completed"],
+  "shapes": [
+    [128, 4, 2],
+    [128, 4, 2]
+  ],
+  "tape_sha256": "cf4eadf33f1d764a97d8f25e12f0ada36169922df3bc7965c7a98ceac02939c4",
+  "acceptance_mismatches": 0,
+  "maximum_path_difference": 1.11022302462516e-15,
+  "timing": [
+    {
+      "executor": "sequential",
+      "audited_sampler_seconds": 0.0163169170000401,
+      "independent_audit_seconds": 0.00287770799968712
+    },
+    {
+      "executor": "online_picard",
+      "audited_sampler_seconds": 0.0116196660001151,
+      "independent_audit_seconds": 0.00279308300014236
+    }
+  ],
+  "diagnostics": [
+    [
+      {
+        "variable": "q[1]",
+        "mean": -0.256639568584627,
+        "median": -0.1957743682558,
+        "sd": 0.896546218747234,
+        "mad": 0.915506868378536,
+        "q5": -1.81381131154246,
+        "q95": 1.10884710790965,
+        "rhat": 1.22330897881013,
+        "ess_bulk": 15.9431843137942,
+        "ess_tail": 72.5352017763485
+      },
+      {
+        "variable": "q[2]",
+        "mean": -0.154219740295451,
+        "median": -0.206120376108786,
+        "sd": 0.958846528286923,
+        "mad": 0.968994269000162,
+        "q5": -1.63397564482093,
+        "q95": 1.47793010746741,
+        "rhat": 1.43623477594688,
+        "ess_bulk": 9.07559802172494,
+        "ess_tail": 22.5321017307749
+      }
+    ],
+    [
+      {
+        "variable": "q[1]",
+        "mean": -0.256639568584627,
+        "median": -0.1957743682558,
+        "sd": 0.896546218747234,
+        "mad": 0.915506868378536,
+        "q5": -1.81381131154246,
+        "q95": 1.10884710790965,
+        "rhat": 1.22330897881013,
+        "ess_bulk": 15.9431843137942,
+        "ess_tail": 72.5352017763485
+      },
+      {
+        "variable": "q[2]",
+        "mean": -0.154219740295451,
+        "median": -0.206120376108786,
+        "sd": 0.958846528286923,
+        "mad": 0.968994269000162,
+        "q5": -1.63397564482093,
+        "q95": 1.47793010746741,
+        "rhat": 1.43623477594688,
+        "ess_bulk": 9.07559802172494,
+        "ess_tail": 22.5321017307749
+      }
+    ]
+  ]
+}

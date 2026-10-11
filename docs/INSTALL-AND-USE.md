@@ -10,7 +10,7 @@
 
 | 入口 | 包内支持 | 限制与证据 |
 |---|---|---|
-| `backend="torch"`，明确原生目标 | CPU 顺序 RWM/MALA、Picard RWM、quasi-DEER MALA | 候选安装在 Mac CPU 实测；Windows CPU/CUDA 的既有证据属于 0.2.0.dev1，新安装候选尚待该平台核验 |
+| `backend="torch"`，明确原生目标 | CPU 顺序 RWM/MALA、Picard RWM、quasi-DEER MALA | 候选安装在 Mac CPU 实测；Windows CPU/CUDA 的既有证据属于 0.2.0.dev1，该候选原生Windows安装后继已验收，见下文及WINDOWS-PACKAGE-CANDIDATE.md |
 | `backend="jax"`，明确原生目标 | 对应四种 MH 工作流、BlackJAX NUTS | 沿用 JAX 路线，需单独安装可选依赖 |
 | Stan/BridgeStan | CPU 顺序 RWM/MALA | 不支持 CPU 时间执行、torch 转译或 GPU；Windows 原生编译未核验 |
 
@@ -158,3 +158,8 @@ JAX 集成使用独立 Python 环境和 `PB_RUN_INTEGRATION=1`，运行
 软件安装包、研究脚本与原始证据是不同交付物。重建历史主表图需要对应版本的
 完整原始归档，见 [REBUILD-RESULTS.md](REBUILD-RESULTS.md)；
 新候选不宣称可以跨版本接续任何冻结实验。安装结果与方法性能结果分别报告。
+
+
+## 投稿候选的安装复现
+
+2026-10-11的统一入口见[SUBMISSION-REPRODUCE](SUBMISSION-REPRODUCE.md)。Mac CPU软件锁`submission-software-mac-v1.txt`覆盖候选基础依赖与torch，共13个依赖，不是单独torch的依赖表；分析只读锁另为`submission-analysis-v1.txt`的14项。原Windows CUDA锁/执行源不替换。软件包版本仍为Python0.2.0.dev2/R0.2.0.9002，作者占位待确认；submission-v4-rc1是稿件与证据候选身份，不是CRAN发布号。

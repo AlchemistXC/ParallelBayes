@@ -1,0 +1,589 @@
+{
+  "schema": "parallelbayes-submission-components-v1",
+  "identity": "submission-v4-rc1",
+  "manuscript_source_commit": "f07d4f642fb0b47534dd82e298d6afb799a14a25",
+  "new_sampler_calls": 0,
+  "public_access_not_yet_approved": true,
+  "components": [
+    {
+      "id": "cpu-software",
+      "kind": "file",
+      "filename": "software-0.1.1-cpu-review-v1.tar.gz",
+      "bytes": 212140,
+      "sha256": "256c5fc43178e35af60fa9a5ffd753b3ed3d38507974284a0ebeb89ced88878f",
+      "role": "Historical Mac CPU/SBC evidence and matching reproduction software",
+      "access": "existing-public-cpu-release",
+      "scientific_source": null
+    },
+    {
+      "id": "cpu-experiments",
+      "kind": "file",
+      "filename": "experiments-cpu-review-v1.tar.gz",
+      "bytes": 3656818,
+      "sha256": "997ee4ff46cbc3c8a7a6d7dfd288bdfd9bd97455f8a43ed6e732d81b467ec3c3",
+      "role": "Historical Mac CPU/SBC evidence and matching reproduction software",
+      "access": "existing-public-cpu-release",
+      "scientific_source": null
+    },
+    {
+      "id": "cpu-evidence-paper",
+      "kind": "file",
+      "filename": "evidence-paper-cpu-review-v1.tar",
+      "bytes": 4967352320,
+      "sha256": "2e3cff9d06310cb123c778ba9cdbdf9dacae413f4207c13c4887b2460430d679",
+      "role": "Historical Mac CPU/SBC evidence and matching reproduction software",
+      "access": "existing-public-cpu-release",
+      "scientific_source": null
+    },
+    {
+      "id": "windows-first",
+      "kind": "file",
+      "filename": "windows-native-20261003T234021Z.tar",
+      "bytes": 680366080,
+      "sha256": "86ad93de87bae4ad11cf5b4b8c4cc7de2f61cc184bc37514d76da0cd1f5e3812",
+      "role": "First 512-task CPU/CUDA study",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "windows-round2",
+      "kind": "file",
+      "filename": "windows-native-20261005T113131Z.tar",
+      "bytes": 76267520,
+      "sha256": "bfd55d442fbb4137c54e573031781a95d75e0a86f20ccd4c8a994d338746efb9",
+      "role": "Second-round diagnostics/readiness evidence",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "windows-mechanism",
+      "kind": "file",
+      "filename": "windows-native-20261006T111324Z.tar",
+      "bytes": 186511360,
+      "sha256": "ec69fd8032cae9198cd1eb7823f903eebb72bcc624a942b7da6373598b3d6ba7",
+      "role": "Window/step/chain mechanism pilot",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "windows-runtime",
+      "kind": "file",
+      "filename": "windows-native-20261006T170711Z.tar",
+      "bytes": 1083330560,
+      "sha256": "6ef0f6e299867d67b27cbd4067a062a30f3593894dc4b34c1da9086f80ae7274",
+      "role": "Native runtime acceptance",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "windows-runtime-supplement",
+      "kind": "file",
+      "filename": "windows-native-20261006T171222Z.tar",
+      "bytes": 33792000,
+      "sha256": "a1f5752ad98b4d69c55a342a4f360d3162f6f35b7e8fc3c2f9156fe14a2a0ddb",
+      "role": "Runtime preserved delivery receipts",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "windows-package",
+      "kind": "file",
+      "filename": "windows-native-20261006T173502Z.tar",
+      "bytes": 49428480,
+      "sha256": "9b8b805a4f4605541717f3644ff931e385156bf5f4ca009738a5a9f08d6017ce",
+      "role": "Independent native package installation",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "windows-package-supplement",
+      "kind": "file",
+      "filename": "windows-native-20261006T173742Z.tar",
+      "bytes": 286720,
+      "sha256": "53bf0afa96abaf094f6846cd3a0e29a56a96eea8cac0af8b513bd8003703ce8d",
+      "role": "Package original delivery receipts",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "windows-adapter-v2",
+      "kind": "file",
+      "filename": "windows-formal-adapter-validation-v1-20261007.tar",
+      "bytes": 987596800,
+      "sha256": "ceb722b100570972c99684185bbf7cdeec1dd122efc863854d0c9168cbc2de62",
+      "role": "Finite v2 adapter validation",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "windows-adapter-companion",
+      "kind": "file",
+      "filename": "windows-native-20261007T134451Z.tar",
+      "bytes": 43284480,
+      "sha256": "82a830104c39d9bfddb24d5f9783ab650a4a3b98ed3dc174355c933aff882337",
+      "role": "Adapter companion evidence",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "windows-adapter-transport",
+      "kind": "file",
+      "filename": "windows-native-20261007T135234Z.tar",
+      "bytes": 22558720,
+      "sha256": "6c6edeb49273e87d39b708132951a21f61273233c98b097fe069611fb76299df",
+      "role": "Adapter transport/delivery evidence",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "mac-final",
+      "kind": "file",
+      "filename": "parallelbayes-mac-final-research-20261010.tar",
+      "bytes": 644812800,
+      "sha256": "f25c75e571250e0170193f0f364668153b942d50f1e34f7e9d2daf74121c0c9d",
+      "role": "Mac derived statistics, full report and R timing raw evidence",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "h1-companion",
+      "kind": "file",
+      "filename": "h1-function-path-companion-v1.tar",
+      "bytes": 51240960,
+      "sha256": "b752a879492a15bde59b0efe1cedbc1c8a3027ae36742b5b79058e76a6cb0ff2",
+      "role": "H1 saved-trajectory function companion",
+      "access": "local-only",
+      "scientific_source": null
+    },
+    {
+      "id": "l2-reference",
+      "kind": "file",
+      "filename": "l2-rare-reference-is-v1.tar",
+      "bytes": 187627520,
+      "sha256": "14e57e7be0f4006534720a2375ed9fe753443a7b5a9195fb4062f0427a1cd8e5",
+      "role": "L2 all independent importance points and weights",
+      "access": "local-only",
+      "scientific_source": null
+    },
+    {
+      "id": "w1-reference",
+      "kind": "file",
+      "filename": "w1-reference-evidence-v1.tar",
+      "bytes": 303360000,
+      "sha256": "c1bf12eb937ba57582647c7eb81cea21d01b6f204e1305d459cdc1175bd368d1",
+      "role": "W1 all saved cells, bounds and source snapshot",
+      "access": "local-only",
+      "scientific_source": null
+    },
+    {
+      "id": "nuts-localization",
+      "kind": "file",
+      "filename": "windows-nuts-localization-v1.tar",
+      "bytes": 703969280,
+      "sha256": "5fffe7f83783651ef58198aab4bad1bfb28be1d2244b9a0738c8f66fbdb88705",
+      "role": "S2 finite NUTS localization with failures",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    },
+    {
+      "id": "paper-v4",
+      "kind": "file",
+      "filename": "parallelbayes-targeted-paper-v4.tar",
+      "bytes": 17387520,
+      "sha256": "f15972b2d59d49138c877cbe06dcb44545c029e5ec41eb31fdc55d3fa361fb12",
+      "role": "All 169 TeX/figure inputs including unchanged complete-results appendix",
+      "access": "local-only",
+      "scientific_source": null
+    },
+    {
+      "id": "compact-formal",
+      "kind": "tree",
+      "filename": "formal",
+      "bytes": 19671228544,
+      "files": 180582,
+      "manifest_filename": "windows-compact-formal-3a37a89-v1-manifest.json",
+      "manifest_sha256": "38e68557b03e4e153a2321fe6b8e5210c99557500746c86f855480edc81ab75e",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 37522028,
+          "sha256": "81590d6e3cc07452ce46e9668222dcbe9b347cc33278396836e39992b0c3dc57"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-technical",
+      "kind": "tree",
+      "filename": "technical",
+      "bytes": 333767714,
+      "files": 2230,
+      "manifest_filename": "windows-compact-technical-3a37a89-v1-manifest.json",
+      "manifest_sha256": "8ca40855c32c551c15e2019b6daffbad0d2e5d679c34c843ffbecdc2eb2c93a8",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 453157,
+          "sha256": "21e41283702963e45d87f4f2c63a98b0c82ba56a37125f741504d71b91105f10"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-development",
+      "kind": "tree",
+      "filename": "development",
+      "bytes": 352679981,
+      "files": 5495,
+      "manifest_filename": "windows-compact-development-3a37a89-v1-manifest.json",
+      "manifest_sha256": "68ced46145c5db2a62e08a902b4b43204e5455c7fa791bef57935fbbaa7ab316",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 1236460,
+          "sha256": "3dace86485d081efe3a4ef56c3d17a13c115fb347fc356d5762d621636e03ac5"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-failed-acceptance",
+      "kind": "tree",
+      "filename": "failed-acceptance",
+      "bytes": 21780777,
+      "files": 521,
+      "manifest_filename": "windows-compact-failed-acceptance-3a37a89-v1-manifest.json",
+      "manifest_sha256": "5027ccb016827ecc2f4fb4ead6cf6b2d284c07e838fb3e2edb4444af005f101c",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 98274,
+          "sha256": "3dc75ae92d8432075558b5dd2a13ceea4603c9bda550a01b0491cd0575275276"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-scientific-costs",
+      "kind": "tree",
+      "filename": "scientific-costs",
+      "bytes": 1533995012,
+      "files": 63,
+      "manifest_filename": "windows-compact-scientific-costs-3a37a89-v1-manifest.json",
+      "manifest_sha256": "4b6dc44b3c2e619a7264fe7a9bc297d29c3bc9d8263650fdab09a67e870d9ddb",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 11898,
+          "sha256": "6a8272598f23eec4d01adf58bd9eeb10627341c61545dedae9ab72b560e5c7db"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-admin-source",
+      "kind": "tree",
+      "filename": "admin-source",
+      "bytes": 37349,
+      "files": 9,
+      "manifest_filename": "windows-compact-admin-source-3a37a89-v1-manifest.json",
+      "manifest_sha256": "3e206521a066131d8c13df209aba44f3119bebd664fe206965f0b7be2ea80169",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 1552,
+          "sha256": "78d061c6e5a5f7bcd7a513682d50552e4d277baf7f8c674f83fbf9d8645c7635"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-tests03",
+      "kind": "tree",
+      "filename": "tests03",
+      "bytes": 79610,
+      "files": 86,
+      "manifest_filename": "windows-compact-component-tests-large-3a37a89-v1-manifest.json",
+      "manifest_sha256": "c46b890de0f790cfd6b3490ad76d9b394a906c8db22e000f8ddc95e908b68e4c",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 14921,
+          "sha256": "8940e82fdfd63d51d553fdb3808f4f650f7628c90a4e4c70b2d5c67a831807e5"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-postprocess-v3",
+      "kind": "tree",
+      "filename": "postprocess-v3",
+      "bytes": 6070464691,
+      "files": 42616,
+      "manifest_filename": "windows-compact-postprocess-v3-3a37a89-v1-manifest.json",
+      "manifest_sha256": "4a3f55e60bb13d1fe08b58deaeedad048d942c130f4433a62efb4c67e4055e3c",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 8013703,
+          "sha256": "e432aee48de8fa199b238e939484a79ccc7531664a9597b580e4d906a55c2d8a"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-postprocess-launch-v3",
+      "kind": "tree",
+      "filename": "postprocess-launch-v3",
+      "bytes": 16224,
+      "files": 3,
+      "manifest_filename": "windows-compact-postprocess-launch-v3-3a37a89-v1-manifest.json",
+      "manifest_sha256": "9e6b77b0bd596fb88a8f31afdccc517e7d7aa9446bde7442cb89268b287c6d4d",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 613,
+          "sha256": "22d9649efc68a31b65d011d052d855a6ff437828fd458ecf211123b30672b5f3"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-final-records",
+      "kind": "tree",
+      "filename": "final-records",
+      "bytes": 64664333,
+      "files": 994,
+      "manifest_filename": "windows-compact-final-records-3a37a89-v1-manifest.json",
+      "manifest_sha256": "56cc3e53956506c78463205d35488a15156e83cf19207806d000d3ca0b2e1d80",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 177736,
+          "sha256": "612dee54f4abad3f3681394768c5387855764fdfe4827fc0da845072e724ad54"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-shutdown-preservation",
+      "kind": "tree",
+      "filename": "shutdown-preservation",
+      "bytes": 6527,
+      "files": 5,
+      "manifest_filename": "windows-compact-shutdown-preservation-3a37a89-v1-manifest.json",
+      "manifest_sha256": "e323731aeec99653deed5e4f8fb7d9b52d27f931db09a4703c5308d303fff54a",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 903,
+          "sha256": "41fdc053307e6e8024811890a62a45a466a13e03dc9271a2a43a4cc508f0e187"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-shutdown-registry",
+      "kind": "tree",
+      "filename": "shutdown-registry",
+      "bytes": 473676414,
+      "files": 4,
+      "manifest_filename": "windows-compact-shutdown-registry-3a37a89-v1-manifest.json",
+      "manifest_sha256": "8296590c73a61f8998a31078c460f74be940d8a576c44ae1af052fd001f807a2",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 882,
+          "sha256": "ebdfdd2015e47fc2b679cfd1df941e2be8f3bd5e9e7bc8e39377a0ac2641c2f2"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-postprocess-failed-v1",
+      "kind": "tree",
+      "filename": "postprocess-failed-v1",
+      "bytes": 8181,
+      "files": 3,
+      "manifest_filename": "windows-compact-postprocess-failed-v1-3a37a89-v1-manifest.json",
+      "manifest_sha256": "608466c6bc5963ad99d62abe00fe6ea95c886a6600eb0993eeb7beb4291d38c2",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 628,
+          "sha256": "79f9d9c0701b9a7764f69f95aec2e7107791dda58187a8c0e816329aed8e493f"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-postprocess-partial-v2",
+      "kind": "tree",
+      "filename": "postprocess-partial-v2",
+      "bytes": 8614354,
+      "files": 25,
+      "manifest_filename": "windows-compact-postprocess-partial-v2-3a37a89-v1-manifest.json",
+      "manifest_sha256": "30152d384ad58f907032efb1b576dbe927961dfee32ce725f7eef2c30ff4e8b7",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 4036,
+          "sha256": "8d5a25a7da377d8e5792384e55cda7a1ebb07b7805f039762f4c9002bfdbc8a7"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-postprocess-launch-v1",
+      "kind": "tree",
+      "filename": "postprocess-launch-v1",
+      "bytes": 3690,
+      "files": 3,
+      "manifest_filename": "windows-compact-postprocess-launch-v1-3a37a89-v1-manifest.json",
+      "manifest_sha256": "6be686950aaefe591a6cc99291bd8f208d1fd1502e384770156f0c16a083e716",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 612,
+          "sha256": "da8125e8a6d26a326910977171b4772ca497897bd729d16e7a5ee159c86056cb"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-postprocess-launch-v2",
+      "kind": "tree",
+      "filename": "postprocess-launch-v2",
+      "bytes": 3783,
+      "files": 3,
+      "manifest_filename": "windows-compact-postprocess-launch-v2-3a37a89-v1-manifest.json",
+      "manifest_sha256": "ee4eb25bef617bda9776d011afc9f3074d5a7dc68d3c7f20180363b9a241182f",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 612,
+          "sha256": "3e75aedc00874cf80382f16fee7632471b31451c1c87e59cb6a2117331265734"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-postboot-preflight",
+      "kind": "tree",
+      "filename": "postboot-preflight",
+      "bytes": 474057729,
+      "files": 24,
+      "manifest_filename": "windows-compact-postboot-preflight-3a37a89-v1-manifest.json",
+      "manifest_sha256": "fca8e5a33ad9937eef47ef9c50d044bd276abffb8f1219d46d26441b7b4ba2f9",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 3911,
+          "sha256": "f76a1d5abb8e6eb56f4dbb0ca20166c5364e87d3e66c7f274c6eaa4a9e53a703"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-user-pause-registry",
+      "kind": "tree",
+      "filename": "user-pause-registry",
+      "bytes": 306213629,
+      "files": 4,
+      "manifest_filename": "windows-compact-user-pause-registry-3a37a89-v1-manifest.json",
+      "manifest_sha256": "2f9bc10464bfc9b0bacd48f17591c378ba2ab72a2c87845846013e329cf8857a",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 881,
+          "sha256": "f1a860f12a94e5a686bab27f21b115528cb6b1c0faff65739b9409d7c1e090b9"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-scientific-resume-preflight",
+      "kind": "tree",
+      "filename": "scientific-resume-preflight",
+      "bytes": 5588,
+      "files": 6,
+      "manifest_filename": "windows-compact-scientific-resume-preflight-3a37a89-v1-manifest.json",
+      "manifest_sha256": "5c5204fd53c3149ae4e4ee89d9f53d464070c73dfff036b75b3eef66c62855db",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 1022,
+          "sha256": "09ca9548e3a3b34ba702283599264a18ca878ec3dd437d2b12017b3c89a10bf5"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-component-tests-failed",
+      "kind": "tree",
+      "filename": "component-tests-failed",
+      "bytes": 6552,
+      "files": 8,
+      "manifest_filename": "windows-compact-component-tests-failed-3a37a89-v1-manifest.json",
+      "manifest_sha256": "3c71ddf523565630d9c92552b480f1445921f292c37d83dc453560be94cb5dd4",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 1334,
+          "sha256": "962a9a574c20abb7952b95c0b8d67deff2c4e5294c424e0faa069518993bf5d4"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-component-tests-passed",
+      "kind": "tree",
+      "filename": "component-tests-passed",
+      "bytes": 73104,
+      "files": 71,
+      "manifest_filename": "windows-compact-component-tests-passed-3a37a89-v1-manifest.json",
+      "manifest_sha256": "98e30ade5d93f6b3bd268bd62278614930dd495a90b969aeac877c70aeaffe7c",
+      "receiver_files": {
+        "WINDOWS-RETURN-MANIFEST.json": {
+          "bytes": 12433,
+          "sha256": "4f513603faa17932cd08ae077ffe36ba8f0c28f8fe50103416f8773cbeab682d"
+        }
+      },
+      "role": "Complete compact component, all original successes, failures and administrative evidence retained",
+      "access": "existing-private-draft",
+      "scientific_source": "3a37a891896faedc62c0d6af185bfad77696054f"
+    },
+    {
+      "id": "compact-catalog",
+      "kind": "file",
+      "filename": "catalog.json",
+      "bytes": 106350,
+      "sha256": "1268ece08d1bf52139f367bf1453d557831fbc0d20feb54508e029e0cc381455",
+      "role": "Transport map of all 21 components and original remote assets",
+      "access": "existing-private-draft",
+      "scientific_source": null
+    }
+  ],
+  "unique_representations": "Some historical archives contain overlapping retained evidence; totals below are listed transport representations, not independent scientific observations.",
+  "listed_bytes": 39354532214
+}
