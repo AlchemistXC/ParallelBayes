@@ -1,0 +1,78 @@
+{
+  "schema": "parallelbayes-manuscript-v5-acceptance-v1",
+  "review_items": 106,
+  "parent_source_commit": "7af7b2e64d5a858a17843fa655f09032e6236765",
+  "compiler": "Tectonic 0.17.0",
+  "relocated_build": "standalone BUILD.py, outside source checkout",
+  "pdfs": [
+    {
+      "file": "output/software-paper/软件与基准研究-审读修订v5.pdf",
+      "pages": 16,
+      "bytes": 510913,
+      "sha256": "20bad4ea897b4043f43a97ff3136d963755988cad0868045210b0e787219ffff",
+      "compile_exit": 0,
+      "unresolved_pdf_references": 0,
+      "overfull": 0,
+      "missing_glyphs": 0
+    },
+    {
+      "file": "output/software-paper/补充材料A-审读修订v5.pdf",
+      "pages": 47,
+      "bytes": 870001,
+      "sha256": "a43539180bd848bd088b5cfa1a01511d052287949df75e85e9a65d6555b3b25c",
+      "compile_exit": 0,
+      "unresolved_pdf_references": 0,
+      "overfull": 0,
+      "missing_glyphs": 0
+    },
+    {
+      "file": "output/software-paper/补充材料B-审读修订v5.pdf",
+      "pages": 67,
+      "bytes": 1421287,
+      "sha256": "c262eba114641c2533d66427164b68b9e0f4011e371e618a5101244345d8c3c4",
+      "compile_exit": 0,
+      "unresolved_pdf_references": 0,
+      "overfull": 0,
+      "missing_glyphs": 0
+    }
+  ],
+  "new_formal_sampler_calls": 0,
+  "new_R_technical_sampler_calls": 4,
+  "final_R_completed_calls": 2,
+  "environment_stop_before_sampling": 1,
+  "read_only_reanalysis": {
+    "W1_phase_records": 216,
+    "L1_original_paths": 2,
+    "statistics_manifest_sha256": "d928a497889e11f6aaf5829bf1ffd807a647a880a5d4ae7cef4acf3046c34bfb",
+    "raw_members_bound_to_receiver_index": true,
+    "phase_closure_checked": true,
+    "original_L1_tail_ESS_reproduced": true
+  },
+  "frozen_v4_artifacts_unchanged": {
+    "软件与基准研究-审查修订v4.pdf": "155d184ec5cc2d52f12c5a84d843fc5b29dd563b95ebe80208523e1f2daa99db",
+    "补充材料-审查修订v4.pdf": "a795e5423cc2c2803cf2c45904ea0aa9316c32b091be7e58fc1bf467b042293d",
+    "完整结果附录-审查修订v2.pdf": "2a71da18334b781586afbae95b517446b890576825df3d1f8f9e0208e358bdf8",
+    "parallelbayes-targeted-paper-v4.tar": "f15972b2d59d49138c877cbe06dcb44545c029e5ec41eb31fdc55d3fa361fb12"
+  },
+  "protected_tracked_paths_unchanged": true,
+  "new_error_cost_points": 72,
+  "old_plot_CSV_byte_identical": true,
+  "figures_collision_failures": 0,
+  "figures_collision_warnings": 0,
+  "visual_review": {
+    "body_pages": 16,
+    "supplement_A_pages": 47,
+    "supplement_B_pages": 67,
+    "renderer": "MuPDF; bundled Poppler CJK mapping unavailable",
+    "all_pages_inspected": true,
+    "last_changed_pages_reinspected": true
+  },
+  "limits": [
+    "No new formal CPU/GPU experiment",
+    "No full reference-list re-verification this turn",
+    "Raw Windows data access remains controlled",
+    "Authors and journal remain undecided",
+    "NUTS historical 105 failures not reclassified",
+    "No unconditional algorithm ranking or measured crossover claim"
+  ]
+}

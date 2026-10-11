@@ -1,0 +1,37 @@
+{
+  "schema": "parallelbayes-paper-bundle-build-v1",
+  "verified_input_files": 216,
+  "documents": [
+    {
+      "document": "main",
+      "source": "manuscript/software/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.tex",
+      "compiler": "tectonic",
+      "passes": 1,
+      "pdf": "main/\u8f6f\u4ef6\u4e0e\u57fa\u51c6\u7814\u7a76.pdf",
+      "sha256": "3ad28869ee216bd01b0394296fdfb17cb4fc4c1b2822061105edc6c4d0608c04",
+      "bytes": 510913,
+      "exit_code": 0
+    },
+    {
+      "document": "supplement-a",
+      "source": "manuscript/software/\u8865\u5145\u6750\u6599.tex",
+      "compiler": "tectonic",
+      "passes": 1,
+      "pdf": "supplement-a/\u8865\u5145\u6750\u6599.pdf",
+      "sha256": "47689ed99c7efb33d39a07172193b5759cdeef84a4d085f1d03fbb63f0bb9acc",
+      "bytes": 870001,
+      "exit_code": 0
+    },
+    {
+      "document": "supplement-b",
+      "source": "complete-results/report.tex",
+      "compiler": "tectonic",
+      "passes": 1,
+      "pdf": "supplement-b/report.pdf",
+      "sha256": "4d37e5b5945e99c650b44076c248ea53301bdedbd8e45db8c820a777d4c24f11",
+      "bytes": 1421286,
+      "exit_code": 0
+    }
+  ],
+  "new_sampler_calls": 0
+}

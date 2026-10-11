@@ -10,6 +10,7 @@
 *.npz binary
 *.tar binary
 *.gz binary
+*.zip binary
 
 # Preserve the exact bytes of small diagnostic fixtures.
 *.bin binary
@@ -39,3 +40,8 @@ benchmark/analysis/outputs/nuts-mac-intake-v1/** -text whitespace=-blank-at-eol,
 
 # Review v4 saved source tables keep original CSV bytes across native checkouts.
 benchmark/analysis/outputs/manuscript-review-v3/** -text whitespace=-blank-at-eol,-blank-at-eof
+
+# v5 logs/CSV retain their recorded bytes; renderer formatting is not hand-edited.
+benchmark/analysis/outputs/manuscript-review-v5/** -text whitespace=-blank-at-eol,-blank-at-eof
+figures/manuscript-v5/**/*.svg text eol=lf whitespace=-blank-at-eol
+manuscript/software-v5/*.generated.tex text eol=lf whitespace=-blank-at-eof

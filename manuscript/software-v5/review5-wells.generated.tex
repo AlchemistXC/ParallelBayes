@@ -1,0 +1,16 @@
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrrrr}\toprule
+核 & CPU顺序 & CPU时间执行 & CUDA顺序 & CUDA时间执行\\\midrule
+RWM & 4.94 & 11.59 & 5.73 & 6.01\\
+MALA & 10.58 & 68.85 & 13.99 & 45.51\\
+NUTS & 11.62 & --- & --- & ---\\\bottomrule
+\end{tabular}
+\par\medskip
+\begin{tabular}{lrr}\toprule
+核 & $\alpha$参考平方误差（$10^{-6}$） & $\beta$参考平方误差（$10^{-6}$）\\\midrule
+RWM & 2.06 [1.16, 3.40] & 4.91 [2.72, 7.94]\\
+MALA & 0.58 [0.39, 0.89] & 1.11 [0.68, 2.00]\\
+NUTS & 0.28 [0.14, 0.51] & 0.52 [0.32, 0.84]\\\bottomrule
+\end{tabular}
+\caption{W1每链4096步的普通批量推断时间均值（秒，上表）和参考平方误差（下表）。每工作流24次四链重复；同核误差在显示精度下相同，合并列示。方括号为条件95\% BCa区间，参考区间的影响另见补充材料A。}\label{tab:wells-v5}
+\end{table}

@@ -1,0 +1,10 @@
+{
+  "question": "Which positions can Online Picard commit after a new-path check?",
+  "core_conclusion": "Only the contiguous matching prefix can be committed.",
+  "archetype": "schematic-led composite",
+  "backend": "Python/matplotlib",
+  "data": "Conceptual example, not measured states or acceptance frequencies",
+  "coordinates": "Axes are diagram layout coordinates, not posterior coordinates",
+  "panels": "One diagram; comparable multi-panel geometry is not applicable",
+  "new_sampler_calls": 0
+}

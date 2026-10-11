@@ -2,6 +2,8 @@
 
 带 R 接口的时间并行 MCMC 研究软件。项目将目标、转移核与执行器分开，支持固定实际随机输入下的独立路径核验、成本比较和后验诊断。
 
+2026-10-12：新审读意见已拆为106项并完成v5写作修订，正文按研究问题组织，补入W1分段费用、L1尾ESS敏感性分析和完整R示例。[逐项审核](docs/MANUSCRIPT-REVIEW-V5.md)与[构建验收](docs/MANUSCRIPT-V5-BUILD.md)说明采纳范围及依据。原主实验、v4封存稿和v4一致版中文计划/报告保留，无新正式Windows任务。
+
 2026-10-10：Windows 紧凑研究已完成，Mac 独立接收、4144 项重建、统计比较及中文论文材料已完成。**当前不需要重跑任何 Windows 提示词。** 研究完成指本版约定范围内的计算与材料交付，不代表所有配置收敛或普遍加速；署名、公开原件和投稿由作者决定。
 
 本版完成后的[三项限定补充计划](docs/TARGETED-FOLLOWUPS-PLAN.md)已制定：H1函数差、NUTS故障定位、W1/L2参考改进。四项现均完成计算与独立核验：[H1函数差](docs/H1-FUNCTION-PATH-RESULTS.md)、[NUTS有限定位与Mac审阅](docs/WINDOWS-NUTS-MAC-REVIEW.md)、[W1数值包络](docs/W1-REFERENCE-RESULTS.md)、[L2独立重要性参考](docs/L2-RARE-REFERENCE-RESULTS.md)。[当前交付](docs/TARGETED-FOLLOWUPS-PAPER.md)保留全部历史失败，无需续跑Windows任务。
@@ -12,10 +14,11 @@
 
 ## 阅读与使用
 
-- [当前中文正文：18页](output/software-paper/软件与基准研究-审查修订v4.pdf) · [LaTeX](manuscript/software/软件与基准研究.tex)
-- [当前补充材料：45页](output/software-paper/补充材料-审查修订v4.pdf) · [完整结果附录：67页](output/software-paper/完整结果附录-审查修订v2.pdf)
+- [当前中文正文v5：16页](output/software-paper/软件与基准研究-审读修订v5.pdf) · [LaTeX](manuscript/software-v5/软件与基准研究.tex)
+- [补充Av5：47页](output/software-paper/补充材料A-审读修订v5.pdf) · [补充Bv5：67页](output/software-paper/补充材料B-审读修订v5.pdf) · [全部TeX依赖与构建入口](output/software-paper/parallelbayes-paper-v5.zip)
+- [v4封存正文](output/software-paper/软件与基准研究-审查修订v4.pdf) · [v4封存补充](output/software-paper/补充材料-审查修订v4.pdf)
 - [研究交付报告](docs/RESEARCH-COMPLETION-REPORT.md) · [当前范围](docs/CURRENT-SCOPE.md) · [收尾计划与完成标准](docs/RESEARCH-COMPLETION-PLAN.md)
-- [公开R API示例](examples/paper-api.R) · [材料访问清单](docs/REVIEWER-ACCESS.md)
+- [公开R API示例v5](examples/paper-api-v5.R) · [材料访问清单](docs/REVIEWER-ACCESS.md)
 - [安装与使用](docs/INSTALL-AND-USE.md) · [原生Windows](docs/WINDOWS-NATIVE.md) · [新增Poisson目标示例](docs/EXTENDING-TARGETS.md)
 - [从紧凑原件重建](docs/COMPACT-REPRODUCTION.md) · [历史CPU重建](docs/PORTABLE-REPRODUCTION.md)
 

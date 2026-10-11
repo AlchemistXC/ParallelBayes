@@ -1,0 +1,53 @@
+% Method text for the W1 companion; no final numerical results in this file.
+\subsection{W1后验参考的数值包络}
+\label{sec:w1-enclosure-method}
+为区分参考值的数值误差与MCMC估计误差，另立协议计算W1七个后验函数的包络。对象仍为原3020条观测、两个回归参数和平坦先验；数据与距离除以100的运算沿用原binary64值。记原坐标为$\theta=(\alpha,\beta)^\top=c+Az$，固定$A$为对角元为正的上三角矩阵，令
+\[
+g(z)=|\det A|\exp\{\ell(c+Az)-\ell(c)\},\qquad
+\E[f(\theta)]=\frac{\int f(c+Az)g(z)\,dz}{\int g(z)\,dz}.
+\]
+$c,A$按协议中的精确二进制常数解释；变换可逆即可，不要求$c$恰为后验众数。记$\sigma(t)=\{1+\exp(-t)\}^{-1}$，六个连续函数为$\alpha,\beta,\alpha^2,\beta^2,\sigma(\alpha),\sigma(\alpha+\beta)$，另有$\ind(\beta>0)$。有限区域为$[-12,12]^2$，沿$z_2=-c_2/A_{22}$分为两个矩形；事件的分子是正侧区域内的密度积分，避免对指示函数使用光滑求积余项。
+
+\paragraph{有限域与舍入误差。}
+采用两点Gauss--Legendre和Simpson张量规则分别细分。记$I_j,Q_j$为第$j$坐标的积分与求积算子。对任一被积函数$\psi$，设单元边长为$h_1,h_2$，$M_1,M_2$分别包络该单元内$\psi$的两项纯四阶偏导绝对值，则
+\begin{equation}
+|I_1I_2 \psi-Q_1Q_2 \psi|
+\leq\frac{h_2h_1^5M_1+h_1h_2^5M_2}{C},\qquad
+C=\begin{cases}4320,&\text{两点Gauss},\\2880,&\text{Simpson}.\end{cases}
+\label{eq:w1-tensor-remainder}
+\end{equation}
+一维余项见\cite{dlmfquadrature}；这里$h_j$是整个单元边长。张量界由$I_2(I_1-Q_1)+Q_1(I_2-Q_2)$分解及正权重之和等于边长得到。被积函数和四阶偏导使用logistic导数、指数函数求导和乘积法则构造；对数似然凹性给出单元中点支持平面的密度上界。区间评价覆盖整个单元，不用两规则结果的差替代余项。
+
+函数、节点、导数和累计误差通过python-flint调用Arb球算术\cite{arb}。128、256、384 bit的固定粗网格用于数值稳定性检查，正式自适应细分使用384 bit；有效误差包络来自式\eqref{eq:w1-tensor-remainder}和向外舍入，而非高精度数值彼此接近。事件边界虽以球表示，其不确定性同时传入节点、单元宽度和导数范围。独立检查从保存的二进制中点和半径还原精确有理端点，重建区域覆盖及全部叶单元的积分和余项之和。
+
+\paragraph{尾部与归一化。}
+令$H(z)=\ell(c+Az)-\ell(c)$。把圆周分为256个扇区，半角为$\Delta=\pi/256$，中心单位方向为$u_k$，切向方向为$v_k$。在$R=12$处计算
+\[
+a_k=u_k^\top\nabla H(Ru_k),\quad
+b_k=v_k^\top\nabla H(Ru_k),\quad
+\kappa_k=-\{a_k\cos\Delta+|b_k|\sin\Delta\}.
+\]
+当$a_k<0$且$\kappa_k>0$得到区间确认时，凹性支持平面使该扇区内任意$r\geq R$的方向$u$满足
+\[
+g(ru)\leq |\det A|\exp(C_k-\kappa_k r),\qquad
+C_k=H(Ru_k)-Ra_k.
+\]
+因此圆盘外质量的上界为
+\begin{equation}
+B_0=\sum_k2\Delta|\det A|e^{C_k-\kappa_k R}
+\left(\frac{R}{\kappa_k}+\frac{1}{\kappa_k^2}\right).
+\label{eq:w1-tail-bound}
+\end{equation}
+圆盘包含于所积分方形，故圆盘外的界同时覆盖方形外遗漏部分。对于一、二阶矩，另用$|\theta_j|\leq |c_j|+\|A_{j\cdot}\|r$，将右侧及其平方乘入径向积分，分别得到$B_{|\alpha|},B_{|\beta|},B_{\alpha^2},B_{\beta^2}$；质量界$B_0$不能直接替代矩尾界。两项预测概率及事件均在$[0,1]$内，其尾项可由$B_0$包络。
+
+有限域分母区间加上$[0,B_0]$；有符号的一阶矩分子加上$[-B_{|\theta_j|},B_{|\theta_j|}]$，非负分子先与$[0,\infty)$相交，再加入相应非负尾项。只有归一化常数下界严格为正时，才以分子、分母的四种端点比率形成后验区间。两规则均有效且相交时另列交集；不相交则保留原件并调查。两规则共享目标、导数及尾界实现，因此不是完全独立的正确性证明。
+
+\paragraph{精度与计算边界。}
+预设六个连续函数的区间半宽目标为$10^{-8}$，事件半宽不超过$10^{-13}$且相对中点不超过1\%。每规则最多$2^{18}$个活动单元、1999000次按协议计数的评价，另保留2000次共享额度，合计不超过4000000次；计数包含向量函数、导数界及共享中点的目标评价，并保留中断前预留的工作。达到工作量、内存或存储保护时输出当前状态，宽但有效的区间与未确定的分母分别记录，不因未达精度删除结果。最终逐函数区间和停止原因由独立核验后的记录生成。
+
+\paragraph{对既有比较的影响。}
+原主实验和参考文件保留。设既有有效重复上的两种方法函数估计为$U_r,V_r$，共同参考为$c_f$；其经验平方差之差为
+\[
+D(c_f)=\overline{U^2-V^2}-2c_f\,\overline{U-V}.
+\]
+在$c_f\in[l_f,u_f]$上，$D$的范围由两端点给出；单方法平方差的最小值在样本均值向该区间的投影处，最大值在端点之一。计算保持原共同有效重复和$s_f=1$尺度，另列全部计划分母。范围不跨零只说明点排序对该数值参考区间稳定，不代替重复实验的不确定性、失败率或后验探索诊断。

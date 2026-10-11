@@ -1,0 +1,30 @@
+{
+  "scope": "Read-only replay plus a decimal-rounding sensitivity check; historical values unchanged",
+  "posterior": "1.7.0",
+  "results": {
+    "seq": {
+      "rhat": 1.30168486811451,
+      "ess_bulk": 10.0250599195286,
+      "ess_tail": 4.80946123897631,
+      "q05": -0.767783082739614,
+      "q95": 0.0574689327233002,
+      "q05_ess": 4.80946123897631,
+      "q95_ess": 4041.53015356892,
+      "q05_count": [54, 3677, 77, 84],
+      "rounded12_tail": 4.80946123897631
+    },
+    "deer": {
+      "rhat": 1.30827731478091,
+      "ess_bulk": 9.96310952208631,
+      "ess_tail": 31.8769113282662,
+      "q05": -0.767783082739614,
+      "q95": 0.0574689327233001,
+      "q05_ess": 31.8769113282662,
+      "q95_ess": 4041.53015356892,
+      "q05_count": [54, 755, 77, 84],
+      "rounded12_tail": 4.80946123897631
+    }
+  },
+  "max_abs_difference": 4.51398918244195e-11,
+  "rounded12_identical": false
+}

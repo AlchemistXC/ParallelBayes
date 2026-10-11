@@ -85,6 +85,10 @@ __pycache__/
 !/output/reproduction/
 /output/software-paper/*
 !/output/software-paper/软件与基准研究.pdf
+!/output/software-paper/软件与基准研究-审读修订v5.pdf
+!/output/software-paper/补充材料A-审读修订v5.pdf
+!/output/software-paper/补充材料B-审读修订v5.pdf
+!/output/software-paper/parallelbayes-paper-v5.zip
 !/output/software-paper/软件与基准研究-收尾修订.pdf
 !/output/software-paper/软件与基准研究-结果重建.pdf
 /output/pdf/*

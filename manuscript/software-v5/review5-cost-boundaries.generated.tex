@@ -1,0 +1,10 @@
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrrr}\toprule
+同核配对 & 准备后内核 & 普通批量推断 & 含核验研究运行\\\midrule
+CPU Picard & 0.276 & 0.414 & 0.592\\
+CPU quasi-DEER & 0.113 & 0.152 & 0.233\\
+CUDA Picard & 0.996 & 0.966 & 0.976\\
+CUDA quasi-DEER & 0.262 & 0.307 & 0.401\\
+\bottomrule\end{tabular}
+\caption{W1每链4096步的三种速度比（顺序/时间执行）。各列均使用原重复0、8、16、23，配对几何平均；缓存每输入四次调用先取其均值。本表不计算四重复区间。}\label{tab:three-costs}
+\end{table}

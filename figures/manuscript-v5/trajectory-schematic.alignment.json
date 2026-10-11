@@ -1,0 +1,12 @@
+{
+  "axes": [
+    [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ]
+  ],
+  "violations": [],
+  "scope": "Axes row/column edges; text collisions require visual review"
+}

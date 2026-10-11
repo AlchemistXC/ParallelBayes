@@ -1,0 +1,3 @@
+Error in loadNamespace(x) : there is no package called ‘reticulate’
+Calls: pb_validate ... loadNamespace -> withRestarts -> withOneRestart -> doWithOneRestart
+Execution halted

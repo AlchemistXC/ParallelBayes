@@ -1,0 +1,28 @@
+{
+  "source_files": 216,
+  "all_130_pages_identical": true,
+  "differences": "PDF metadata/ID only; delivered PDFs retain first verified-build hashes",
+  "documents": [
+    {
+      "document": "main/软件与基准研究.pdf",
+      "pages": 16,
+      "text_and_render_identical": true,
+      "prior_pdf_sha256": "20bad4ea897b4043f43a97ff3136d963755988cad0868045210b0e787219ffff",
+      "rebuild_pdf_sha256": "3ad28869ee216bd01b0394296fdfb17cb4fc4c1b2822061105edc6c4d0608c04"
+    },
+    {
+      "document": "supplement-a/补充材料.pdf",
+      "pages": 47,
+      "text_and_render_identical": true,
+      "prior_pdf_sha256": "a43539180bd848bd088b5cfa1a01511d052287949df75e85e9a65d6555b3b25c",
+      "rebuild_pdf_sha256": "47689ed99c7efb33d39a07172193b5759cdeef84a4d085f1d03fbb63f0bb9acc"
+    },
+    {
+      "document": "supplement-b/report.pdf",
+      "pages": 67,
+      "text_and_render_identical": true,
+      "prior_pdf_sha256": "c262eba114641c2533d66427164b68b9e0f4011e371e618a5101244345d8c3c4",
+      "rebuild_pdf_sha256": "4d37e5b5945e99c650b44076c248ea53301bdedbd8e45db8c820a777d4c24f11"
+    }
+  ]
+}

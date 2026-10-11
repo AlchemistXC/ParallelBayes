@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="453.5424pt" height="226.7712pt" viewBox="0 0 453.5424 226.7712" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-12T02:27:57.728810</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 226.7712 
+L 453.5424 226.7712 
+L 453.5424 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 114.292685 70.752614 
+L 175.974451 70.752614 
+Q 179.149248 70.752614 179.149248 69.165216 
+L 179.149248 48.755808 
+Q 179.149248 47.16841 175.974451 47.16841 
+L 114.292685 47.16841 
+Q 111.117888 47.16841 111.117888 48.755808 
+L 111.117888 69.165216 
+Q 111.117888 70.752614 114.292685 70.752614 
+z
+" clip-path="url(#pbfef23c906)" style="fill: #eef1f4; stroke: #85929e; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 114.292685 193.209062 
+L 175.974451 193.209062 
+Q 179.149248 193.209062 179.149248 191.621664 
+L 179.149248 171.212256 
+Q 179.149248 169.624858 175.974451 169.624858 
+L 114.292685 169.624858 
+Q 111.117888 169.624858 111.117888 171.212256 
+L 111.117888 191.621664 
+Q 111.117888 193.209062 114.292685 193.209062 
+z
+" clip-path="url(#pbfef23c906)" style="fill: #dbe8f1; stroke: #376b9c; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 195.930317 70.752614 
+L 257.612083 70.752614 
+Q 260.78688 70.752614 260.78688 69.165216 
+L 260.78688 48.755808 
+Q 260.78688 47.16841 257.612083 47.16841 
+L 195.930317 47.16841 
+Q 192.75552 47.16841 192.75552 48.755808 
+L 192.75552 69.165216 
+Q 192.75552 70.752614 195.930317 70.752614 
+z
+" clip-path="url(#pbfef23c906)" style="fill: #eef1f4; stroke: #85929e; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 195.930317 193.209062 
+L 257.612083 193.209062 
+Q 260.78688 193.209062 260.78688 191.621664 
+L 260.78688 171.212256 
+Q 260.78688 169.624858 257.612083 169.624858 
+L 195.930317 169.624858 
+Q 192.75552 169.624858 192.75552 171.212256 
+L 192.75552 191.621664 
+Q 192.75552 193.209062 195.930317 193.209062 
+z
+" clip-path="url(#pbfef23c906)" style="fill: #dbe8f1; stroke: #376b9c; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 277.567949 70.752614 
+L 339.249715 70.752614 
+Q 342.424512 70.752614 342.424512 69.165216 
+L 342.424512 48.755808 
+Q 342.424512 47.16841 339.249715 47.16841 
+L 277.567949 47.16841 
+Q 274.393152 47.16841 274.393152 48.755808 
+L 274.393152 69.165216 
+Q 274.393152 70.752614 277.567949 70.752614 
+z
+" clip-path="url(#pbfef23c906)" style="fill: #eef1f4; stroke: #85929e; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 277.567949 193.209062 
+L 339.249715 193.209062 
+Q 342.424512 193.209062 342.424512 191.621664 
+L 342.424512 171.212256 
+Q 342.424512 169.624858 339.249715 169.624858 
+L 277.567949 169.624858 
+Q 274.393152 169.624858 274.393152 171.212256 
+L 274.393152 191.621664 
+Q 274.393152 193.209062 277.567949 193.209062 
+z
+" clip-path="url(#pbfef23c906)" style="fill: #f5f5f5; stroke: #b4b4b4; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 359.205581 70.752614 
+L 420.887347 70.752614 
+Q 424.062144 70.752614 424.062144 69.165216 
+L 424.062144 48.755808 
+Q 424.062144 47.16841 420.887347 47.16841 
+L 359.205581 47.16841 
+Q 356.030784 47.16841 356.030784 48.755808 
+L 356.030784 69.165216 
+Q 356.030784 70.752614 359.205581 70.752614 
+z
+" clip-path="url(#pbfef23c906)" style="fill: #eef1f4; stroke: #85929e; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 359.205581 193.209062 
+L 420.887347 193.209062 
+Q 424.062144 193.209062 424.062144 191.621664 
+L 424.062144 171.212256 
+Q 424.062144 169.624858 420.887347 169.624858 
+L 359.205581 169.624858 
+Q 356.030784 169.624858 356.030784 171.212256 
+L 356.030784 191.621664 
+Q 356.030784 193.209062 359.205581 193.209062 
+z
+" clip-path="url(#pbfef23c906)" style="fill: #f5f5f5; stroke: #b4b4b4; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start" x="11.33856" y="18.936997" transform="rotate(-0 11.33856 18.936997)">Fixed initial state + the same proposal noise and uniforms</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start" x="11.33856" y="61.44395" transform="rotate(-0 11.33856 61.44395)">1  Guess path</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start" x="11.33856" y="120.404461" transform="rotate(-0 11.33856 120.404461)">2  Reconstruct and check</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start" x="11.33856" y="183.900397" transform="rotate(-0 11.33856 183.900397)">3  Commit prefix</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="145.133568" y="36.283392" transform="rotate(-0 145.133568 36.283392)">Position 1</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="145.133568" y="61.995824" transform="rotate(-0 145.133568 61.995824)">State guess</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 145.133568 75.926967 
+Q 145.133568 87.421176 145.133568 98.020958 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 146.933568 94.420958 
+L 145.133568 98.020958 
+L 143.333568 94.420958 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #376b9c" x="145.133568" y="120.404461" transform="rotate(-0 145.133568 120.404461)">Match</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 145.133568 131.263348 
+Q 145.133568 146.834821 145.133568 161.511866 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 146.933568 157.911866 
+L 145.133568 161.511866 
+L 143.333568 157.911866 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="145.133568" y="183.900397" transform="rotate(-0 145.133568 183.900397)">Commit</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="226.7712" y="36.283392" transform="rotate(-0 226.7712 36.283392)">Position 2</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="226.7712" y="61.995824" transform="rotate(-0 226.7712 61.995824)">State guess</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 226.7712 75.926967 
+Q 226.7712 87.421176 226.7712 98.020958 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 228.5712 94.420958 
+L 226.7712 98.020958 
+L 224.9712 94.420958 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #376b9c" x="226.7712" y="120.404461" transform="rotate(-0 226.7712 120.404461)">Match</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 226.7712 131.263348 
+Q 226.7712 146.834821 226.7712 161.511866 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 228.5712 157.911866 
+L 226.7712 161.511866 
+L 224.9712 157.911866 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="226.7712" y="183.900397" transform="rotate(-0 226.7712 183.900397)">Commit</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="308.408832" y="36.283392" transform="rotate(-0 308.408832 36.283392)">Position 3</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="308.408832" y="61.995824" transform="rotate(-0 308.408832 61.995824)">State guess</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 308.408832 75.926967 
+Q 308.408832 87.421176 308.408832 98.020958 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 310.208832 94.420958 
+L 308.408832 98.020958 
+L 306.608832 94.420958 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #a05c36" x="308.408832" y="120.404461" transform="rotate(-0 308.408832 120.404461)">Mismatch</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 308.408832 131.263348 
+Q 308.408832 146.834821 308.408832 161.511866 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 310.208832 157.911866 
+L 308.408832 161.511866 
+L 306.608832 157.911866 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="308.408832" y="183.900397" transform="rotate(-0 308.408832 183.900397)">Keep solving</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="390.046464" y="36.283392" transform="rotate(-0 390.046464 36.283392)">Position 4</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="390.046464" y="61.995824" transform="rotate(-0 390.046464 61.995824)">State guess</text>
+   </g>
+   <g id="patch_16">
+    <path d="M 390.046464 75.926967 
+Q 390.046464 87.421176 390.046464 98.020958 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 391.846464 94.420958 
+L 390.046464 98.020958 
+L 388.246464 94.420958 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #376b9c" x="390.046464" y="120.404461" transform="rotate(-0 390.046464 120.404461)">Match</text>
+   </g>
+   <g id="patch_17">
+    <path d="M 390.046464 131.263348 
+Q 390.046464 146.834821 390.046464 161.511866 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 391.846464 157.911866 
+L 390.046464 161.511866 
+L 388.246464 157.911866 
+" style="fill: none; stroke: #65747c; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle" x="390.046464" y="183.900397" transform="rotate(-0 390.046464 183.900397)">Keep solving</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start" x="11.33856" y="214.298784" transform="rotate(-0 11.33856 214.298784)">A match after the first mismatch cannot extend the confirmed prefix.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbfef23c906">
+   <rect x="0" y="0" width="453.5424" height="226.7712"/>
+  </clipPath>
+ </defs>
+</svg>

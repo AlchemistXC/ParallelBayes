@@ -1,0 +1,30 @@
+{
+  "schema": "parallelbayes-v5-R-technical-evidence-v1",
+  "new_formal_calls": 0,
+  "sampler_calls_total": 4,
+  "final_completed_calls": 2,
+  "environment_stops_before_sampling": 1,
+  "initial_pair_statuses": [
+    "completed",
+    "failed"
+  ],
+  "picard_failure": {
+    "record_reason": "solver_or_audit_failed",
+    "iterations": 256,
+    "confirmed": 3848,
+    "max_iter": 256,
+    "ordinary_posterior_samples": false
+  },
+  "final_max_iter": 8704,
+  "local_binary_evidence": {
+    "r-example-v5-run2": {
+      "bytes": 739964,
+      "sha256": "163afa5c834b34a86e1a0db249801d9d63a1f4014ddce5c5d7e6ee4ca194568a"
+    },
+    "r-example-v5-final": {
+      "bytes": 1413124,
+      "sha256": "6af988c284523c9783fb69c18cd55e1b96d84da7663be1ab78d021e29bfb84dd"
+    }
+  },
+  "scope": "Technical demonstration only, excluded from all frozen formal sample counts, MSE and speed summaries."
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "parallelbayes-v5-paper-archive-v1",
+  "file": "output/software-paper/parallelbayes-paper-v5.zip",
+  "bytes": 3062641,
+  "sha256": "8b46e9b988f1d97fb15ed9a90c714dc7d9f5bfb0cde317b81c6c1e4f7bb3714f",
+  "source_files": 216,
+  "zip_members": 217,
+  "all_member_sha256_passed": true,
+  "portable_build_success": true,
+  "all_130_rebuilt_pages_text_and_render_identical": true,
+  "complete_raw_experiment_data_included": false,
+  "third_party_fulltext_or_private_skills_included": false,
+  "new_formal_sampler_calls": 0
+}
