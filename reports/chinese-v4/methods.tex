@@ -1,0 +1,53 @@
+\subsection{目标、坐标与实际随机输入}
+设原参数为 $\theta=T(q)$，$T$ 是相应自由坐标之间的可微一一变换，实际计算使用 $q\in\R^d$。计算目标为
+\begin{equation}\label{eq:target}
+\ell(q)=\log p(y,T(q))+\log|\det J_T(q)|.
+\end{equation}
+约束变换、参数顺序和 Jacobian 项共同决定目标分布。两个实现若省略不同的参数无关常数，核对 $\ell(q)-\ell(q_0)$，而非要求原始对数密度相等；梯度必须在同一坐标下比较。正值测试使用 $\theta=e^q$ 及 lognormal 密度，并通过故意遗漏 Jacobian 检查测试系统的敏感性。
+
+固定初值、核参数、提议噪声和均匀随机数组后，MCMC 成为确定递推 $q_t^\star=F_t(q_{t-1}^\star)$。配对执行器读取同一实际数组；两个软件设置同一整数种子并不能替代这项控制。采样数组由锁定 NumPy 版本的 Philox 生成，导数探针另用随机流，数组及哈希一并保存。独立 NumPy 顺序参考使用独立密度、解析梯度和显式循环，不调用待核验的 JAX 或 torch 转移函数。
+
+\subsection{两种转移核}
+随机游走 Metropolis（RWM）使用 $q'=q+s z$，$z\sim N(0,I_d)$，对数接受比为 $a=\ell(q')-\ell(q)$。Metropolis 校正 Langevin 算法（MALA）使用
+\begin{align}
+q'&=q+h\nabla\ell(q)+\sqrt{2h}\,z,\\
+a(q,q')&=\ell(q')-\ell(q)-
+\frac{\|q-q'-h\nabla\ell(q')\|^2-\|q'-q-h\nabla\ell(q)\|^2}{4h}.
+\end{align}
+当 $\log u<a$ 时接受，否则保留 $q$；拒绝自环仍计为一次转移。这里 $h$ 不是提议噪声的标准差。NUTS 基线保留自身随机流与适应预热，不与 MH 核共享整条路径。
+
+\subsection{窗口 quasi-DEER MALA}
+在固定输入下，窗口内第 $k+1$ 轮路径满足
+\begin{equation}\label{eq:deer}
+q_t^{(k+1)}=F_t(q_{t-1}^{(k)})+
+B_t^{(k)}\{q_{t-1}^{(k+1)}-q_{t-1}^{(k)}\}.
+\end{equation}
+旧路径上的映射和 $B_t^{(k)}$ 可批量计算，再将右侧整理为仿射递推，通过结合扫描求解。精确算术下，若各映射有定义、$B$ 有限且扫描被精确求解，第 $k$ 轮至少恢复前 $k$ 个状态，长度 $W$ 的窗口至多经过 $W$ 轮恢复原递推\cite{gonzalez,zoltowski}。固定窗口起点使第一步正确；前 $k$ 步正确时，下一轮保持这段前缀，第 $k+1$ 步的修正项为零。这一因果性质不要求 $B$ 是真实 Jacobian，也不保证浮点实现提前停止后的路径精度。
+
+实际实现将硬接受变量 $b=\ind\{\log u<a\}$ 与软门控组合：
+\begin{equation}
+g=b+\sigma(a-\log u)-\sg\{\sigma(a-\log u)\},\qquad
+B_t=\operatorname{Diag}\!\left[\operatorname{clip}\{v_t\odot(J_{\rm proxy,t}v_t),-1,1\}\right].
+\end{equation}
+前向仍使用硬 MH 输出；torch 另以停止梯度构造避免软项的舍入抵消。$J_{\rm proxy}$ 是代理 Jacobian，而非硬 MH 映射的真实导数。每链每位置一个 Rademacher 探针 $v_t$，在窗口迭代中复用；截断仅作用于导数近似。
+
+原论文伪代码的软门控使用 $\sigma(\min(0,a)-\log u)$；本项目归档上游提交 \code{5e5b637} 及适配实现使用未截断的 $a$。硬接受判据等价，代理导数一般不同。此外，本研究使用非重叠窗口、重复窗口起点的初猜和硬残差停止，不使用 NaN 归零或状态裁剪。因此性能结论属于所测适配实现，不能视为原实现的直接复现。
+
+\subsection{Online Picard RWM}
+对于已经确认的窗口起点 $q_L$，先计算固定噪声对应的接受增量，再通过前缀和重建候选路径\cite{grazzi}：
+\begin{align}
+D_t^{(k)}&=s z_t\ind\{\log u_t<\ell(q_{t-1}^{(k)}+s z_t)-\ell(q_{t-1}^{(k)})\},\\
+q_t^{(k+1)}&=q_L+\sum_{i=L+1}^{t}D_i^{(k)}.
+\end{align}
+在新路径的前驱处重新计算接受事件，只提交连续一致的最长前缀。若四个位置依次为“一致、一致、不一致、一致”，只能提交前两个位置，第四个位置的前驱尚未确认。torch 多链按各链确认长度的最小值共同推进，末尾窗口使用实际剩余长度。浮点前缀和与顺序加法可能不同，事件匹配仍需配合独立路径核对。
+
+\subsection{数值输出标准}
+quasi-DEER 的窗口停止检查硬递推残差；Picard 使用前述连续前缀确认。残差条件为
+\begin{equation}
+\max_{t,j}\frac{|q_{t,j}-F_t(q_{t-1})_j|}
+{\mathrm{atol}+\mathrm{rtol}|F_t(q_{t-1})_j|}\leq1.
+\end{equation}
+正式审计另按每链检查最大路径差不超过
+$100[\mathrm{atol}+\mathrm{rtol}\max(1,\max_{t,j}|q_{t,j}|)]$，其中两项容差均为 $10^{-10}$；接受事件失配必须为零。局部残差小不推出长路径误差小，代理导数也不是后验偏差证明。历史判据使用链内整体状态尺度，后续逐函数分析补充其含义，未追溯修改资格。
+
+非有限值、迭代耗尽和外部路径失配都保留为失败，失败数组不能转为正式后验样本。本版将非有限提议密度统一视为失败，尚未一般区分合法支持集外 $-\infty$ 与 NaN/计算异常；这一处理限制支持范围。主研究未用重抽随机数、删除困难状态或顺序回退改变资格。

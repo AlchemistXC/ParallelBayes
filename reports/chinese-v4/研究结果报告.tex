@@ -1,0 +1,269 @@
+% !TEX root = 研究结果报告.tex
+\documentclass[UTF8,zihao=-4,a4paper,fontset=fandol]{ctexart}
+\input{preamble.tex}
+\hypersetup{pdftitle={ParallelBayes 研究结果报告：中文v4一致版},pdfauthor={ParallelBayes项目}}
+\begin{document}
+\begin{titlepage}\centering
+\vspace*{18mm}
+{\LARGE\bfseries ParallelBayes\par}
+\vspace{10mm}
+{\huge\bfseries 研究结果报告\par}
+\vspace{5mm}
+{\Large 时间执行成本、后验探索与可重建证据\par}
+\vspace{12mm}
+{\large 中文 v4 一致版\par}
+{\large 2026年10月12日\par}
+\vspace{16mm}
+\begin{minipage}{.87\linewidth}
+\textbf{报告范围。}完整说明研究软件的能力、主实验设计、数值核验、成本与误差结果，以及 H1/L2/W1 和 CPU NUTS 的有限补充。历史与正式批次分别解释。
+
+\textbf{证据绑定。}科学结论与封存中文 v4 正文、补充材料和完整结果附录一致。所有结果来自既有计算及已验收分析；本次整理未增加正式采样、GPU测试或新参考点。
+
+\textbf{阅读提示。}“数值有效”表示满足指定输出标准，“推断可靠”还取决于探索、函数和参考。“更快”须注明同核、设备和成本边界；本报告保留未达标与未分类失败。
+\end{minipage}
+\vfill
+{\small 配套材料：研究计划、中文 v4 正文、SI及完整结果附录。\par}
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents\clearpage
+\input{terminology.tex}
+\pagenumbering{arabic}
+
+\section{研究结论与证据范围}
+\subsection{主要发现}
+ParallelBayes 提供可核对实际随机输入的研究软件，将目标、转移核、执行器及计量策略分开。在指定 Windows CPU/CUDA 条件下，Online Picard 的普通工作流配对几何平均速度比为 CPU \PBCPURWMMin--\PBCPURWMMax、CUDA \PBCUDARWMMin--\PBCUDARWMMax；quasi-DEER 为 CPU \PBCPUMALAMin--\PBCPUMALAMax、CUDA \PBCUDAMALAMin--\PBCUDAMALAMax。quasi-DEER 所有组均慢于配对顺序实现，Picard 的部分点估计更快。速度比以顺序耗时除以并行耗时定义，不代表后验推断加速。
+
+正式3888项主任务中，\PBCompactValid 项满足规定数值标准，\PBCompactNumerical 项数值失败，\PBCompactUnclassified 项未分类失败，均保留。独立重放的有效 MH 与缓存转移共有54,448,128次，接受事件失配为零。数值一致与充分探索并不等价：有效拟合的14,981个所选函数诊断行中，5000行有有限 $\hat R>1.01$，1290行未定。诊断行不是独立实验数量。
+
+水井 W1 在4096步预算下提供有用的连续函数比较；MALA较RWM有更小参考平方差，但时间执行器增加其普通成本。多峰 M1 的均衡初始化能使池化符号比例接近真值，即使几乎没有保存的跨峰移动。L2/W1 的极稀有符号事件全零，在绝对平方差上可以很小，却相对正概率参考有100\%误差；全零本身不能诊断混合不良。
+
+\subsection{成立的贡献及其限度}
+本研究的增量是可重用的软件与实际输入核验流程，以及指定实现下对成本、探索和参考精度的计算证据。既有研究已提供 quasi-DEER/Picard 机制及时间并行软件\cite{zoltowski,grazzi,gonzalez,parallelmcmc}，已有跨引擎工具和 R 加速接口\cite{comparemcmcs,bayesforge}。统一 R 接口、框架 CUDA 探测或任务数量本身不承担创新论证。
+
+正式紧凑主研究的比较针对固定维度连续目标、当前窗口适配、1024/4096两个预算及指定资源条件；历史批次、较长参考计算与有限补充保持各自身份。没有得出普遍 CPU/CUDA 加速、所有目标收敛、精确达标时间或全部历史失败已解决的结论。当前研究计算与内部复现验收完成，材料的外部访问及期刊投稿仍需作者决策。
+
+\section{软件与执行器的数学对象}
+\input{capabilities.tex}
+\input{methods.tex}
+
+\section{正式研究设计与统计口径}
+\input{design.tex}
+
+\section{数值核验、失败与统计验证}
+\subsection{主任务状态及独立重放}
+\input{outcomes.tex}
+九个目标各432项主任务。3414项有效 MH 与256项缓存探测的实际数组接受了独立 NumPy 重放，54,448,128次转移均无接受事件失配。另327项有效 NUTS 按自己的运行与输出契约核验，不能把 NUTS 当作共享 MH 输入的路径证据。
+
+H1 的42项数值失败包括40项 quasi-DEER（每设备1024预算7项、4096预算13项）及4096预算的两项顺序 MALA（每设备1项）。其中40项 quasi-DEER 的内部窗口残差标准已经满足，外部顺序参考仍判定路径失败；顺序 MALA 没有这一窗口停止条件。全部失败的602,112次转移被重放，最大状态差为0.00572867，差值相对原审计阈值的比值范围1.12--36,238.48。这说明局部停止规则不足以保证长路径标准，而非接受事件必然失配。原资格不变。
+
+未分类失败共105项，均来自正式 CPU Pyro NUTS 的4096预算：216项短预算全部有效，长预算111项有效、105项失败（48.6\%）。按 G1/G2/A1/L1/L2/H1/H2/M1/W1 顺序，长预算失败数为17/0/0/18/18/15/17/20/0。父进程退出码0不等于四链科学任务成功；保存的305条部分子链保留，未拼成完成拟合。
+
+\subsection{现代诊断与误差的区别}
+诊断按所选函数及原参数分别保存，报告秩正态化/折叠 $\hat R$ 和 bulk/tail ESS\cite{vehtari,posterior}。常量链返回未定，ESS也不能被误用为独立实验数。某些 ESS 超过保存状态数可能来自负相关，不能只按大小认定错误；解释 MCSE 时还须核对对应变量。
+
+G2/A1 已完整白化，但4096预算下 RWM 的标准化首参数在24/24份拟合中 $\hat R>1.01$，MALA对应诊断均未超过阈值，两设备相同。因此本轮差异不能归因于未去除的原尺度相关性，而应结合高维局部移动效率与有限预算解释。诊断阈值未用作事后过滤条件。
+
+\subsection{解析 SBC 配对对照}
+64组生成数据采用 $\theta\sim N(0,1)$、$y_j\mid\theta\sim N(\theta,1)$，解析后验为 $N(\sum_jy_j/9,1/9)$。解析90\%区间覆盖54/64个真参数，MALA/quasi-DEER也为54/64，但发生4组配对覆盖分歧；RWM/Picard及 NUTS 为53/64。相同覆盖比例不意味着相同区间，配对分析同时检查端点、均值与标准差偏离。
+
+这些结果与有限生成样本波动相容，仍不能宣告一般校准通过或没有实现偏差。五种工作流共享64组数据，同核顺序/时间执行还共享路径，不构成五份独立 SBC 实验。测试量选择影响检验敏感性\cite{modrak}，有限 SBC 与轨迹核验相互补充。
+
+\section{执行成本及减速机制}
+\subsection{普通工作流的同核配对比较}
+\begin{table}[htbp]\centering\smalltable
+\begin{tabular}{llrr}\toprule
+设备 & 执行器与配对核 & 组几何平均速度比范围 & 点估计 $S>1$ 的组数\\\midrule
+CPU & Online Picard / RWM & \PBCPURWMMin--\PBCPURWMMax & \PBCPURWMAbove/18\\
+CUDA & Online Picard / RWM & \PBCUDARWMMin--\PBCUDARWMMax & \PBCUDARWMAbove/18\\
+CPU & quasi-DEER / MALA & \PBCPUMALAMin--\PBCPUMALAMax & 0/18\\
+CUDA & quasi-DEER / MALA & \PBCUDAMALAMin--\PBCUDAMALAMax & 0/18\\\bottomrule
+\end{tabular}
+\caption{正式72个目标—预算—设备—执行器组。范围是各组配对几何平均值的最小及最大，不是单次运行范围；点估计超过1的数量也不是置信区间排除1的数量。}
+\end{table}
+
+quasi-DEER 的代理导数与多轮扫描带来额外工作，现有批量收益未能抵消这些成本。Picard不使用代理导数，若确认前缀推进较快，部分CUDA组可以取得同核执行收益。但接受率、确认长度和状态探索共同决定这些轨迹提供的信息，不能用确认长度替代推断效率。
+
+\begin{figure}[p]\centering
+\includegraphics[width=\linewidth]{figures/ordinary-cost-overview.pdf}
+\caption{v4 正文采用的普通工作流成本图，原图原样复用。$S=T_{\rm seq}/T_{\rm par}$；重复单位为独立四链输入，区间和失败处理依照本报告第3节。成本不含最外层R前端，缓存与审计口径另外记录。}
+\end{figure}
+
+\subsection{重复求值与窗口推进}
+历史 Mac M4 CPU 的小型机制实验中，G1四链 Picard 窗口16增到64时，平均确认步数的中位数约5.57，基本不变；每个输出转移的前向映射次数由5.50增至20.88，速度比由0.402降至0.170。更宽窗口计算了更多候选位置，却没有同比推进确认前缀。G2单链 quasi-DEER 的平均轮数由11增至22.25，速度比由0.051降至0.027。
+
+这些次数以全部输出转移为分母，包含拒绝自环；前向映射次数不是浮点工作量，quasi-DEER 的 JVP 成本还另外存在。Windows 机制探测每模型/执行方案只有两份实际输入，分阶段计时可能扰动被测执行，适合解释工作组成，不能构成所有配置减速的精确因果分解。线程设置和向量化也不证明物理核得到有效独占利用。
+
+\subsection{历史负结果与不移动反例}
+历史 Mac 主网格1920项中，两种时间执行器所有模型—预算组的缓存中位数均未加速。第一轮 Windows 512项短实验的 CUDA Picard 缓存组中位速度比为1.097--5.230，quasi-DEER为0.164--0.505；每格四份实际输入，属于探索性结果，不以大量 bootstrap 重抽扩大信息量。
+
+第一轮 A1/RWM 的 CUDA Picard 缓存速度比约4.09，但该配置全部拒绝，链停留在初值。执行器因重复状态而一次确认整个窗口，获得较快执行却没有后验探索。正式研究后来独立选择合理步长，原反例仍保留，用于说明执行速度和统计价值的区别；不能把不同批次或缓存/普通口径直接合并。
+
+\section{固定预算误差、应用与探索}
+\subsection{误差—成本关系}
+式\eqref{eq:loss}固定函数、尺度和参考。两种同核执行在通过核验时提供相同指定路径的统计信息，差异主要为执行成本；跨核比较同时反映局部移动、预热和预算。只测1024/4096两个预算点，连线用于阅读，不代表中间预算已观测，更不估计精确达标时间。
+
+L1/L2 的4096预算 CPU MALA与 CPU NUTS 对比只有六份共同有效重复，未达到20份区间计算下限。原参考共同偏移 $\pm2$ MCSE 内，L1四函数及L2前三函数的点损失差仍保持 NUTS 较小，但这一假设偏移范围不是置信区间，也不能排除有限参考的共同偏差。L2事件原参考与诊断仍未定。
+
+\begin{figure}[p]\centering
+\includegraphics[width=\linewidth]{figures/error-cost-overview.pdf}
+\caption{v4 的代表性目标固定预算误差—成本图。四面板是事后解释性展示选择，全部36函数仍按冻结定义报告。沿用原函数和参考，两个预算点之间没有新增观测。完整九目标逐函数结果保存在原67页结果附录。}
+\end{figure}
+
+\subsection{水井真实数据 W1}
+W1以距离（单位100米）解释换井概率，共3020条记录、截距与距离系数两参数。模型后验可正规化的依据是：存在两个不同距离 $a\ne b$，各有相反结局；取四条相应观测，其余似然因子不超过1。记 $g(v)=\sigma(v)\{1-\sigma(v)\}$，则
+\begin{equation}
+L(\alpha,\beta)\leq g(\alpha+a\beta)g(\alpha+b\beta),\qquad
+\int_{\R^2}L\,d\alpha\,d\beta\leq\frac{1}{|b-a|}<\infty.
+\end{equation}
+等式使用 $\int g(v)dv=1$；具体观测见 v4 补充材料。这是指定二维模型的论证，不扩展到任意平坦先验回归。
+
+\input{wells.tex}
+4096预算下所有工作流各24份有效重复，六个非稀有函数的 $\hat R$ 均不超过1.01，符号事件仍为常量。MALA对截距及斜率的参考平方差较RWM小；但 quasi-DEER明显增加MALA执行成本。CPU NUTS 在本预算提供更小点参考平方差，并付出自身适应与四进程成本，不能由单一表格推广到所有目标。
+
+\begin{table}[htbp]\centering\smalltable
+\begin{tabular}{lrrr}\toprule
+参数/概率 & 参考样本后验均值 & 95\%等尾后验区间 & 均值 MCSE\\\midrule
+$\alpha$ & 0.606710 & [0.488359, 0.723356] & $6.33\times10^{-4}$\\
+$\beta$ & -0.622143 & [-0.810761, -0.429960] & 0.00104\\
+$p(0)$ & 0.647069 & [0.619720, 0.673346] & $1.44\times10^{-4}$\\
+$p(100)$ & 0.496146 & [0.465215, 0.526176] & $1.58\times10^{-4}$\\\bottomrule
+\end{tabular}
+\caption{独立既有 Stan 参考的应用摘要。10链各保存1000个相关状态；分位数未另量化计算误差。后验区间与均值 MCSE 描述不同不确定性。}
+\end{table}
+在这个指定模型中，距离较远与较低换井概率相关，不能解释为距离的因果效应。表中有限样本后验均值与确定求积点略不同，来源和 MCSE 一并保留。
+
+\subsection{多峰目标 M1}
+有效412项 M1 拟合中，411项没有保存状态的首坐标符号跨越；包括384项MH和28项NUTS有效任务。四链初值两条在每个峰，池化符号比例可以恰为1/2，即使每条链停留在各自模式。唯一保存跨越出现在短预算 NUTS 第5份输入的第3链；池化正比例0.614990234375，该链正比例0.4599609375。20项失败没有被纳入这些比率，也不由保存状态推测未保存的 HMC 积分轨迹。
+
+\begin{figure}[p]\centering
+\includegraphics[width=\linewidth]{figures/mixture-example.pdf}
+\caption{v4 的 M1 探索示例，保留原图。均衡初始化下池化比例接近真值不能替代跨峰探索；保存转移、逐链行为与失败分母共同解释。}
+\end{figure}
+
+\section{有限补充的结果与解释}
+\subsection{H1 函数路径差：小均值差不改变失败资格}
+H1伴随分析读取80项原任务，其中42失败、38配对有效，共3200个函数分析行、1,130,496次转移。接受事件与符号函数均无失配，四个函数的最大逐点差与池化均值差如下。
+\begin{table}[htbp]\centering\smalltable
+\begin{tabular}{lrrr}\toprule
+函数 & 最大逐点差 & 最大池化均值差 & 最大单链均值差\\\midrule
+$v/3$ & $1.90956\times10^{-3}$ & $1.07757\times10^{-7}$ & $4.35023\times10^{-7}$\\
+$\tanh(v/3)$ & $1.45182\times10^{-3}$ & $4.68970\times10^{-8}$ & $1.90353\times10^{-7}$\\
+$\ind(x_1>0)$ & 0 & 0 & 0\\
+$\cos(x_1e^{-v/2})$ & $3.26872\times10^{-3}$ & $3.07812\times10^{-7}$ & $1.23163\times10^{-6}$\\\bottomrule
+\end{tabular}
+\caption{原失败与有效路径舍弃512步后的保留段差摘要。均值差取绝对值，池化仅指单任务的四条等长链；各极值可能来自不同任务。参考为独立浮点 NumPy 路径而非精确算术真值。}
+\end{table}
+函数平均有抵消效应，较小平均差与原状态阈值失配可以同时存在。伴随分析说明所选统计量受影响的量级，没有重新认可原42项失败，也不提供一般后验误差界。
+
+\subsection{CPU NUTS 定位：部分诊断阶段的资源路径}
+S2 登记44份四链调用及9份旧诊断作业。资格4/4完成，主体34/36完成，确认2/4完成，旧诊断8/9完成，五次资源停止全部保留。便携21项和原生3项测试通过、无失败或跳过；Mac接收只核验真实原生记录，未在Mac重做Windows Job行为。
+
+所选 G2/A1 四 worker、旧诊断开启配置在1024预热和4096采样后已保存完整样本，最后记录为 \code{legacy_diagnostics_enter}，并收到内存限制消息；关闭旧诊断的预定对照完成。冻结 Pyro 1.9.2 源码给出的临时 float64 数组规模为 $2047\times2047\times64$，对应2,145,387,008字节，每链另有268,173,376字节布尔临时量，多 worker 可能同时分配。这是静态规模，失败栈未直接捕获该笔分配，不作为实测独占峰值。
+
+该对照支持所选失败发生于诊断阶段，不能解释全部105项历史失败。六套旧失败输入在仪表化调用下均完成，故不追溯把105项全改为内存故障。8 GiB RSS与12 GiB Job保护保持原样；旧部分链、资源停止和未分类状态继续保留。
+
+\subsection{W1 确定参考包络}
+W1以384位球算术实现 Gauss 与 Simpson 两条有限域求积，配合256个角扇区及逐矩尾部控制。两路线各7/7函数完成；六个连续均值的交集半宽均不超过 $10^{-8}$。稀有概率的向外舍入范围为
+\begin{equation}
+\Pr(\beta>0)\in[4.7671124,\,4.7673026]\times10^{-11}.
+\end{equation}
+完整二进制端点对应半宽约 $9.51\times10^{-16}$。球算术与求积依据见\cite{arb,dlmfquadrature}。两路线共享部分尾部和导数论证，数值交集和保存端点重聚合不等于对全部分析证明的独立形式化认证。
+
+Gauss/Simpson叶单元31,533/37,671，共69,204；实际积分回调378,384/828,740次，预先计入共享项与探测的整体预算1,351,046，不把预算记成实际回调数。参考构造16,198.50秒单列，未加入采样器普通比较成本。
+
+432项有效 W1 拟合得到126个单工作流—预算—函数损失包络及504个配对点损失差包络，其中408个保持固定符号、96个恒等平局，无反转或跨零未定项。平局包括六个连续函数各四项同核相同估计的24项，以及符号事件全部72项（含跨核）的共同零频率。这说明指定参考数值误差下点排序稳定；不是统计显著性或同时置信结论。W1所有符号频率仍为零，小平方差约 $2.27\times10^{-21}$ 与100\%相对误差并存。
+
+\subsection{L2 稀有事件的重要性参考}
+另立协议冻结两套混合提议，先导选择与正式随机点分开。每提议8个独立 PCG64 批次，每批131072点，总正式点2,097,152，另有16,384先导点排除。每套提议分别合并其8批分子与分母，用总分子除以总分母，批次联合协方差给出 delta 近似 MCSE，不平均批次比值，也不合并两套提议\cite{owen}。
+\begin{table}[htbp]\centering\smalltable
+\begin{tabular}{lrr}\toprule
+量 & 提议 Q1 & 提议 Q2\\\midrule
+$\Pr(\theta_1>0)$估计 & $1.56547893\times10^{-9}$ & $1.76047974\times10^{-9}$\\
+近似 MCSE & $5.69091\times10^{-12}$ & $1.24421\times10^{-10}$\\
+相对 MCSE & 0.364\% & 7.067\%\\
+事件权重 ESS & 176551.83 & 220.20\\
+分母权重 ESS & 356889.74 & 161503.98\\
+最大归一化事件权重 & 0.000772858 & 0.0248562\\\bottomrule
+\end{tabular}
+\caption{L2 独立有限重要性参考。两种 ESS 是权重质量描述，不能当作独立重复数或认证精度。Q2事件权重更集中。}
+\end{table}
+96个保存点独立重新计算的最大对数权重差为 $3.63798\times10^{-12}$，恢复新增随机点为零。该检查支持保存权重的一致性，不保证 MCSE 的有限样本覆盖或排除遗漏尾部。
+
+原414项有效 L2 拟合全部事件频率为零，相对两套正概率估计误差均为100\%；对应条件平方差为 $2.45072\times10^{-18}$ 和 $3.09929\times10^{-18}$。两提议给出不同结果及质量，分别保留，不用新增参考掩盖原18项失败、常量诊断和原事件参考未定。
+
+\subsection{为什么全零未必是混合失败}
+用一个明确假想的 IID 参照解释事件频率的分辨率：L2 有4,128,768个保存条目，按 Q1 概率假想全部独立且来自正确后验，期望命中0.0064635、零命中概率99.356\%；W1有4,423,680条目，期望命中0.000210886、零命中概率99.979\%。实际状态链内相关，同核及跨设备还共享轨迹，不能把上述概率当作真实运行概率，条目总数也不是独立样本量。
+
+它们说明极小事件在该预算下缺少有用相对精度，不说明仅凭全零即可判定混合差。诊断、参考与应用精度需分别判断，不能为获得“全部函数达标”而删除稀有函数。
+
+\clearpage
+\section{R 使用、扩展与实际调用成本}
+\subsection{公开接口的完整短例}
+以下调用已经在独立安装目录验证，Python核心为0.2.0.dev2、R安装候选0.2.0.9002。需要按依赖锁选定Python环境，然后在R运行：
+\begin{lstlisting}[language=R]
+library(parallelbayes)
+model <- pb_model("gaussian", dimension = 2L, backend = "torch")
+pb_capabilities(model)
+stopifnot(pb_validate(model)$passed)
+configs <- lapply(c("sequential", "online_picard"), function(executor)
+  list(kernel = "rwm", executor = executor, device = "cpu",
+       draws = 128L, chains = 4L, step_size = 0.4,
+       window = 16L, seed = 2026L, audit = TRUE))
+fits <- pb_benchmark(model, configs)
+\end{lstlisting}
+实际输入标识和接受数组相同，独立参考通过；短链 $\hat R$ 仍可为1.22或1.44。软件正确返回不等于短例已经适合推断。完整脚本见 \code{examples/paper-api.R}；Poisson扩展示例说明如何提供目标、解析梯度与独立 NumPy 参考后，再由R调用。接口对不支持组合明确报错。
+
+\subsection{首次调用与再次调用}
+原技术计时为同一 Poisson 实际输入、两参数、32观测、四链各128步，共32个串行新R进程、64次调用。每格四次技术重复；首次边界包括最外层 R 启动和依赖导入，再次调用仍含采样、传回、转换及诊断，不等于缓存内核计时。
+\input{r-timing.tex}
+启动依赖对短任务占据较大比例，会话复用减少这部分成本；quasi-DEER在短例中仍有明显额外计算。5.220秒的慢首次 MALA 调用保留，未以环境波动删去。表中技术重复没有增加正式主研究的独立输入数，也不使用 BCa 推断更广泛性能。完整证据写盘另计。
+
+\section{独立接收、重建与投稿候选}
+\subsection{主研究的 Mac 接收}
+Windows紧凑交付21组件、232,755文件，共29,311,383,786字节，接收时全部完整性通过；253个冻结源码文件与交付源匹配。独立读取全部4144份原始任务/缓存记录，读取错误零；按原身份恢复新增执行零，42,035项检查对象保持原样。
+
+跨系统1132个浮点统计值最大尺度化差 $7.51\times10^{-15}$；4589个 bootstrap 数组中4566逐位相同，其余最大差 $6.67\times10^{-16}$，NaN与分类一致。现代R诊断最大差 $4\times10^{-14}$，未改变 $\hat R$ 阈值结论。末位浮点差作为具体核对结果记录，不扩展为任意平台逐位复现承诺。
+
+\subsection{统一材料与内部验收}
+投稿候选的41组件清单列示39,354,532,214字节，约36.65 GiB；包含重叠历史归档，不能把字节数理解为独立科学信息。轻量入口包含源码 bundle、论文输入、安装候选、传输清单与验收记录，原始大组件另外提供。旧CPU原件在既有 Release，Windows原件在未公开草稿，本地 H1/L2/W1 原件按清单定位；不把草稿URL称为匿名审稿访问入口。
+
+同一Mac的新Python分析环境和新解包目录完成内部重建，14项分析依赖固定且 \code{pip check} 通过，未导入推断后端重新采样。从4144份已有分析记录重新计算统计，4589个 bootstrap 数组完全一致；81个主CSV、4个补充CSV、6个主文片段及45幅图一致。保存的L2点重权与W1端点重聚合另行核对，没有重新生成正式点或积分回调。
+
+原169个LaTeX内容输入匹配，正文18页及SI45页重编译后，全部63页文本与72 dpi像素相同，无未解析引用或超宽；原67页完整结果附录未改。新wheel与R源码包安装核验17个模块，并完成两次CPU技术调用；R依赖库明确复用原锁定库，GPU未重测。归档工具7项测试通过、无失败/跳过，检查损坏、成员异常、路径逃逸和预算保护，不作为 MCMC 数学正确性证据。
+
+首次环境导入及初始软件依赖闭包曾失败，日志保留；补齐实际 psutil/SciPy 等依赖后通过，冻结采样核心未改。本轮是内部新环境与目录验收，不是外部团队、全新R生态或异机复现；从保存记录重聚合也不是第二次全量路径重放。
+
+\subsection{固定版本与尚待作者确认的事项}
+紧凑执行源 \code{3a37a89}、交付源 \code{94bebec}；中文v4构建源 \code{699e645}；投稿候选 \code{b84e966}，标签 \code{submission-v4-rc1}。源码、协议、保存数组、版本差异和完整性清单分别绑定，历史0.1.0/0.1.1不被覆盖。本报告仅新增说明文档及其PDF，不更新原科学结果。
+
+作者须确认署名/单位/通讯、资助/利益冲突、数据权利与公开范围、真实审稿访问路线、期刊/语言与AI披露，以及最终批准。非作者或匿名权限下的实际材料下载尚未验收；代码仓库可取得不等于全部证据公开。项目不自动公开原私有草稿，不自动提交期刊或CRAN。
+
+\section{讨论与研究完成边界}
+时间并行的收益取决于每轮批量计算节省的时间能否抵消重复求值、导数、扫描与控制成本。本研究中 quasi-DEER 未达到这一条件；Picard 在部分 CUDA 组达到同核普通执行收益，仍须结合后验函数与逐链探索解释。大窗口增加候选工作而不一定增加确认进展，全拒绝轨迹和均衡双峰初始化则揭示执行与探索的不同。
+
+有限参考会改变误差比较的含义。L2重要性参考以近似MCSE与权重质量描述，W1确定包络限定数值参考误差；二者都不能替代正式重复的不确定性。稀有事件的绝对精度与相对精度差异说明函数选择及尺度必须先明确，不能把一个统一数值阈值解释为所有应用的同等可靠性。
+
+本研究的局限是当前实现含主机控制、目标库未系统覆盖真正昂贵黑箱似然、只测两个预算、部分NUTS任务失败且原因未全分类、有限重要性参考可能存在尾部遗漏，以及系统资源不是独占物理核预算。后续若研究融合执行、昂贵目标或配置选择，应设新协议，不改写现有负结果。
+
+当前规定范围内的软件、研究计算、伴随分析和内部重建已经完成。投稿准备主要剩余作者信息、材料访问与期刊适配；不需要为证明普遍加速增加网格。最终文章应由当前证据支持的计算与探索结论组成，并由作者审定其适用范围。
+
+\clearpage
+\appendix
+\section{报告内容与 v4 来源的对应}
+\begin{longtable}{P{36mm}P{108mm}}
+\caption{随 LaTeX 包提供的来源映射另保存完整哈希。下表给出逻辑位置，避免依赖本机绝对目录。}\\
+\toprule 报告内容 & 冻结来源（相对项目根目录）\\\midrule\endfirsthead
+\toprule 报告内容 & 冻结来源（相对项目根目录）\\\midrule\endhead
+方法与能力 & \code{manuscript/software/软件与基准研究.tex}，方法及软件设计节\\
+模型与步长 & \path{manuscript/software/revision-configuration.generated.tex}\\
+主要计数与速度比 & \path{compact-scalars.generated.tex}、\path{compact-outcomes.generated.tex}\\
+参考及水井应用 & \path{revision-reference.generated.tex}、\path{compact-wells.generated.tex}\\
+H1、L2、W1补充 & \path{targeted-h1-main.generated.tex}、\path{targeted-l2-si.generated.tex}、\path{w1-enclosure-results.tex}及配套伴随分析\\
+CPU NUTS定位 & \path{nuts-localization-si.generated.tex}、\path{docs/WINDOWS-NUTS-MAC-REVIEW.md}\\
+R前端与IID参照 & \path{r-frontend.generated.tex}、\path{review3-scalars.generated.tex}\\
+内部验收与作者事项 & \path{docs/SUBMISSION-RC1.md}、\path{docs/AUTHOR-DECISIONS.md}\\\bottomrule
+\end{longtable}
+未注明目录的生成片段均位于 \code{manuscript/software/}。本报告复用三幅第一方科学图件，数据、图形与哈希均保留原绑定。
+
+\clearpage\input{references.tex}
+\end{document}

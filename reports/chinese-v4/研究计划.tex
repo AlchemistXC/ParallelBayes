@@ -1,0 +1,150 @@
+% !TEX root = 研究计划.tex
+\documentclass[UTF8,zihao=-4,a4paper,fontset=fandol]{ctexart}
+\input{preamble.tex}
+\hypersetup{pdftitle={ParallelBayes 研究与开发计划：中文v4一致版},pdfauthor={ParallelBayes项目}}
+\begin{document}
+\begin{titlepage}\centering
+\vspace*{18mm}
+{\LARGE\bfseries ParallelBayes\par}
+\vspace{10mm}
+{\huge\bfseries 研究与开发计划\par}
+\vspace{5mm}
+{\Large 时间并行 MCMC 的可核验实现与计算比较\par}
+\vspace{12mm}
+{\large 中文 v4 一致版\par}
+{\large 2026年10月12日\par}
+\vspace{16mm}
+\begin{minipage}{.87\linewidth}
+\textbf{文档用途。}整理当前研究问题、软件范围、数学依据、已执行实验设计与投稿前工作。它是原研究计划的执行后更新，不是重新登记实验，也不是新一轮大规模采样承诺。
+
+\textbf{科学依据。}封存的中文 v4 正文、补充材料及其证据清单。正文18页、补充材料45页、完整结果附录67页保持原样。本版不增加正式重复、GPU测量或新的参考随机点。
+
+\textbf{当前状态。}研究计算与内部技术验收完成；作者信息、材料公开范围、实际审稿访问路线及期刊适配仍需作者确认。当前文档不等于投稿已经获准。
+\end{minipage}
+\vfill
+{\small 固定证据，明确能力，区分执行速度与推断价值。\par}
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents\clearpage
+\input{terminology.tex}
+\pagenumbering{arabic}
+
+\section{研究目标与当前阶段}
+\subsection{研究问题}
+马尔可夫链蒙特卡洛（MCMC）通常逐步生成下一状态。多链并行把资源分配给多条轨迹；时间并行尝试在固定随机输入下同时求解一段轨迹。后者可以缩短执行深度，却可能增加目标求值、代理导数、扫描与同步开销。更短的运行时间也未必对应更充分的后验探索。
+
+本项目围绕两个可分别检验的问题：第一，固定模型、初值、核参数和实际随机数组时，时间执行器是否降低完成同一递推的成本；第二，在各核采用合理配置后，有限预算内的后验函数误差与完整工作流成本如何变化。前者控制统计信息，后者同时受到初始化、调参和混合影响。数值路径核验、目标分布性质与有限样本精度分开报告，不以其中一项代替另一项。
+
+\subsection{成果定位}
+项目形成研究软件、计算比较及可重建材料，不开发替代 Stan/JAGS 的通用概率编程系统，也未提出新的时间并行收敛定理。研究贡献包括可重复使用的目标—核—执行器分离、实际随机输入与独立参考的核对机制，以及由这些机制揭示的重复计算成本和后验探索差异。
+
+现有 Newton 类路径求解及 Picard 方法提供直接技术基础\cite{zoltowski,grazzi,gonzalez}；Stan/BridgeStan、BlackJAX、Pyro 提供模型或基线组件\cite{stan,bridgestan,blackjax,pyro}。compareMCMCs 已提供跨引擎比较，ParallelMCMC.jl 已有时间并行 MALA，BayesForge 已连接 R 与加速推断\cite{comparemcmcs,parallelmcmc,bayesforge}。因此，仅统一接口或调用 GPU 不是本项目的主要创新。
+
+\subsection{范围收束与执行后更新}
+最初项目从并行贝叶斯综述转向研究软件与基准。历史 Mac CPU 阶段提供正确性与负结果基础，Windows 原生阶段增加 CPU/CUDA 比较。后来因硬件与磁盘条件收缩正式网格，采用新的紧凑协议身份，同时保留此前已启动或完成的记录。当前正式设计不是在所有计算之前一次性预注册，不能把执行后的计划重写称为前瞻注册。
+
+中文 v4 已完成主研究、有限 H1/L2/W1 补充及 CPU NUTS 定位。下一阶段以整理和投稿为主；自动配置选择器、通用语言翻译、GPU NUTS、融合设备控制及任意 Stan 时间并行均不作为本轮结项前提。现有结果不要求所有压力目标收敛，也不要求出现正加速。
+
+\section{软件方案与支持边界}
+\subsection{分层架构}
+\begin{table}[htbp]\centering\smalltable
+\begin{tabularx}{\linewidth}{P{27mm}Y Y}\toprule
+层次 & 职责 & 必须记录的信息\\\midrule
+目标与坐标 & 对数密度、导数、参数变换与输出函数 & 数据、坐标、参数顺序、实现哈希\\
+转移核 & RWM、MALA及成熟 NUTS 基线 & 步长、初值、预热、真实随机输入\\
+执行器 & 顺序、Online Picard、窗口 quasi-DEER & 窗口、求解轮数、确认前缀、停止原因\\
+资源与计量 & CPU/CUDA、同步、内存及计时 & 线程、依赖、设备、成本边界\\
+结果与证据 & 样本、诊断、失败及重建 & 数组、审计、原始状态、完整性清单\\\bottomrule
+\end{tabularx}
+\caption{模块职责。模型、核和执行方式独立描述，避免以单个“并行 MCMC”参数混淆统计与计算机制。}
+\end{table}
+
+R 管理目标、实验调用及 posterior 样本对象；编译的 CPU 模型和 Python/JAX/torch 内核承担数值计算。BridgeStan 通过编译的 C++ 密度接口运行 CPU 顺序核，JAX/torch 只接入明确实现并核验的原生目标。R–Python 边界尽量使用批量调用，其导入、传输与转换成本必须保留。
+\input{capabilities.tex}
+
+\subsection{最小公开使用流程}
+真实运行的包接口示例如下；正式 CLI 网格另由协议驱动。
+\begin{lstlisting}[language=R]
+library(parallelbayes)
+model <- pb_model("gaussian", dimension = 2L, backend = "torch")
+stopifnot(pb_validate(model)$passed)
+pb_capabilities(model)
+configs <- lapply(c("sequential", "online_picard"), function(executor)
+  list(kernel = "rwm", executor = executor, device = "cpu",
+       draws = 128L, chains = 4L, step_size = 0.4,
+       window = 16L, seed = 2026L, audit = TRUE))
+fits <- pb_benchmark(model, configs)
+\end{lstlisting}
+同核两次调用产生相同实际输入与接受数组，并通过独立参考。短例只展示接口与核验，不能凭128步宣称后验收敛或加速。新增模型的示例采用 Poisson 目标及独立 NumPy 参考，由 R 经 reticulate 访问；模型核对先于性能比较。
+
+\section{转移规则与数值核验依据}
+\input{methods.tex}
+
+\section{已执行的正式研究设计}
+\input{design.tex}
+
+\section{验证路线、实验记录与判断规则}
+\subsection{正确性先于性能}
+验证分为四层。模型层核对同坐标密度差、梯度、变换及 Jacobian；执行层核对独立顺序参考、状态路径及实际接受数组；统计层使用解析函数和基于模拟的校准（SBC）；实验层记录全部失败与资源状态。有限测试不能替代一般数学证明，但可以定位实现错误与比较口径混淆。
+
+SBC 采用 $\theta\sim N(0,1)$、$y_j\mid\theta\sim N(\theta,1)$、$j=1,\ldots,8$，解析后验为 $N(\sum_jy_j/9,1/9)$。同一批64组真参数—数据用于各工作流，并与解析区间逐数据集配对，不能把五条工作流当作五份独立校准证据。SBC 测试量的敏感性也取决于所选函数\cite{modrak}。
+
+错误注入与退化输入用于检查遗漏 Jacobian、接受分支错误、常量函数及非有限失败能否被记录。恢复任务必须匹配源码、协议、数据与校验和；匹配时复用完成输出，身份不一致时停止，而非覆盖冻结结果。
+
+\subsection{参考精度与补充协议}
+H1 补充只在原路径上比较函数差，不能用小函数均值差重新认可失败轨迹。L2 用两套冻结重要性提议及独立批次评估极稀有符号事件，MCSE 是有限近似而非认证界\cite{owen}。W1 使用任意精度球算术、两条有限域求积路线与显式尾部控制建立数值包络\cite{arb,dlmfquadrature}，确定数值误差与重复采样误差分别报告。CPU NUTS 定位通过预先安排的诊断开关和 worker 数检查资源路径，不追溯解释全部历史故障。
+
+以上新增分析与参考均有独立身份，不替换原正式参考或主任务资格。原全零事件、未分类失败、失败部分链及负结果继续保留。均值接近、诊断良好、接受事件一致和设备探测成功分别回答不同问题。
+
+\subsection{解释规则与适用边界}
+同核配对首先解释执行成本，跨核比较再解释固定预算的函数误差。报告全部失败的分母、条件可用集合及参考来源；区间基于真实重复数，不把更多 bootstrap 重抽或缓存调用视为增加实验信息。常量稀有事件的极小绝对误差与100\%相对误差可以同时成立。多峰目标均衡初值产生的良好池化均值也可能掩盖缺少跨峰探索。
+
+自动配置选择器只有在未见模型族上、计入探测与额外编译后优于合理固定配置和简单搜索，才进入主要贡献。当前未开展这项正式验证，也不为本轮论文补造自动推荐结果。
+
+\section{工作包完成情况与剩余安排}
+\begin{longtable}{P{24mm}P{57mm}P{39mm}P{25mm}}
+\caption{研究计划的实际执行状态。完成指当前规定范围内的产物与证据齐备。}\\
+\toprule 工作包 & 完成产物及核验 & 保留的范围限制 & 状态\\\midrule\endfirsthead
+\toprule 工作包 & 完成产物及核验 & 保留的范围限制 & 状态\\\midrule\endhead
+目标与顺序参考 & 高斯、logistic、约束测试；独立 NumPy；实际数组管理 & 非通用模型编译器 & 已完成\\
+两类执行器 & 窗口 quasi-DEER、Online Picard；残差/分支/前缀与失败记录 & 针对适配实现；有路径失败 & 已完成\\
+R接口与基线 & 能力查询、采样、验证、基准入口；JAX与原生torch；CPU NUTS CLI & Stan只CPU顺序；GPU NUTS未核验 & 已完成\\
+正式研究 & 3888主任务、256缓存；独立接收、4144分析与恢复检查 & 两个预算；105未分类失败保留 & 已完成\\
+有限补充 & H1函数路径、L2重要性参考、W1数值包络、S2资源定位 & 不追溯改变主实验 & 已完成\\
+R普通调用 & 原32进程64次技术调用；安装新目录示例 & 技术计时非新正式重复 & 已完成\\
+复现封存 & 41组件清单、依赖闭包、源码与表图重建、v4 PDF & 同一Mac内部新环境；非外部团队 & 已完成内部验收\\
+投稿适配 & 作者声明、访问路线、目标期刊及后继版本 & 需要真实作者决定 & 待确认后实施\\\bottomrule
+\end{longtable}
+
+当前不再启动“为了出现加速”而寻找案例的新网格。若作者日后决定拓展到昂贵似然、融合执行或配置选择，应另设问题、预算和协议，并单独报告结果。本计划没有隐含的新增必做实验，也不重新运行已经通过且未受修改影响的采样检查。
+
+后续按材料、访问、模板、终审顺序推进：先从封存候选建立后继投稿目录，再根据作者授权安排真实材料获取测试；随后按目标期刊调整语言、篇幅和声明；最后由作者确认投稿版本。作者或期刊提出实质方法变更时，评估其是否需要新的验证身份，避免与原研究混写。
+
+\section{复现材料、版本及交付管理}
+\subsection{源码与证据分别管理}
+Git 跟踪第一方源码、测试、协议、小型汇总、论文及图件；大原始数组单独归档，以精确成员、大小和 SHA256 清单连接。第三方论文/书籍全文、私有技能、环境缓存及凭据不属于 Git 资产。原 Mac 0.1.0/0.1.1、冻结协议和历史结果保存，不用当前源码假代旧实验性能。
+
+紧凑正式执行源为 \code{3a37a89}，交付源 \code{94bebec}；中文 v4 论文构建源 \code{699e645}，投稿候选 \code{b84e966}、标签 \code{submission-v4-rc1}。不同身份用于不同证据，不相互替代。当前文档在后继文档分支新增，不修改这些冻结对象。
+
+\subsection{内部验收与可用性}
+统一入口由 \code{docs/SUBMISSION-REPRODUCE.md} 和论文—证据—命令映射组织。41组件列示39,354,532,214字节，约36.65 GiB；历史包存在重叠，不代表独立信息量。轻量入口包包含源码、论文输入、安装候选、清单及验收记录，不包含全部原始大组件。
+
+新分析环境从4144份保存分析记录重算统计，4589个 bootstrap 数组一致；从新解包目录重建81个主 CSV、4个补充 CSV、6个主文片段与45幅图。169个 LaTeX 内容输入、正文与 SI 全63页的文本及72 dpi像素保持一致。新软件安装核验17个模块并完成两次 CPU 技术调用，未重测 GPU。原来的全量路径重放证据继续提供，本轮保存记录重聚合不冒充再次全量重放。
+
+内部验收曾暴露依赖锁遗漏，首次失败日志保留；补齐真实依赖而不修改冻结采样核心。这些证据来自同一 Mac 的新环境与目录，R依赖库明确复用原锁定库；不能声称是异机或非作者团队复现。
+
+\section{需作者确认的投稿事项}
+\begin{enumerate}
+\item 作者姓名、顺序、单位、通讯邮箱、ORCID及贡献分工。不能从 Git 身份推断学术署名。
+\item 资助项目与编号、利益冲突、致谢对象；无真实信息时保留待填，不虚构声明。
+\item 哪些证据可公开、哪些只供审稿，以及本地 H1/L2/W1 原件的分享路线。此前允许追加私有草稿不等于允许公开全部材料。
+\item 第一方数组及第三方水井数据的权利、许可和机构要求。代码许可不自动扩展为全部数据许可。
+\item 审稿人实际可取得材料的固定入口或受控流程。草稿 Release 地址本身不是匿名访问验收。
+\item 目标期刊、文章类型、语言、匿名要求与 AI 使用披露。确认后按官方规则适配，再封存后继版本。
+\item 作者对最终科学结论、失败与不确定性边界及材料清单的终审批准。项目不自动向期刊或 CRAN 提交。
+\end{enumerate}
+
+这些事项影响投稿，而不意味着主研究计算仍未结束。结项标准是软件能力清楚、指定输出有据可查、负结果和失败可重建、结论范围准确；不是证明所有算法收敛或 CPU/GPU 普遍加速。
+
+\clearpage\input{references.tex}
+\end{document}

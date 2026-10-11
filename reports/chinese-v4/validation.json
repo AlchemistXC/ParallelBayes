@@ -1,0 +1,274 @@
+{
+  "documents": [
+    {
+      "document": "研究计划",
+      "pdf": "pdf/研究计划-v4一致版.pdf",
+      "pages": 15,
+      "sha256": "ca872602d7a51527505945dfbf63dd84e116373d14c9c0789ac545ed5f084342",
+      "compiler": "Tectonic 0.17.0",
+      "final_overfull_or_missing_or_unresolved": 0,
+      "other_warnings": [],
+      "text_outside_page": 0,
+      "contact_sheets": [
+        "plan-contact-01.png",
+        "plan-contact-02.png",
+        "plan-contact-03.png"
+      ],
+      "page_details": [
+        {
+          "page": 1,
+          "characters": 321,
+          "beginning": "ParallelBayes\n研究与开发计划\n时间并行MCMC 的可核验实现与计算比较\n中文v4 一致版\n2026 年10 月12 日\n文档用途。整理当前研究问题、软件范围、数学依据、已执行实验设计与投\n稿前工作。它是原研究计划的执行后更新，"
+        },
+        {
+          "page": 2,
+          "characters": 166,
+          "beginning": "ParallelBayes\n中文v4 一致版\n目录\n术语与缩写\nii\n1\n研究目标与当前阶段\n1\n2\n软件方案与支持边界\n2\n3\n转移规则与数值核验依据\n3\n4\n已执行的正式研究设计\n5\n5\n验证路线、实验记录与判断规则\n8\n6\n工作包完成"
+        },
+        {
+          "page": 3,
+          "characters": 397,
+          "beginning": "ParallelBayes\n中文v4 一致版\n术语与缩写\n缩写/术语\n本文含义\nMCMC\n马尔可夫链蒙特卡洛\nRWM\n随机游走Metropolis 核\nMALA\nMetropolis 校正Langevin 核\nNUTS\n无折返采样器；此处为"
+        },
+        {
+          "page": 4,
+          "characters": 987,
+          "beginning": "ParallelBayes\n中文v4 一致版\n1\n研究目标与当前阶段\n1.1\n研究问题\n马尔可夫链蒙特卡洛（MCMC）通常逐步生成下一状态。多链并行把资源分配给多\n条轨迹；时间并行尝试在固定随机输入下同时求解一段轨迹。后者可以缩短执行深度，"
+        },
+        {
+          "page": 5,
+          "characters": 1030,
+          "beginning": "ParallelBayes\n中文v4 一致版\n2\n软件方案与支持边界\n2.1\n分层架构\n层次\n职责\n必须记录的信息\n目标与坐标\n对数密度、导数、参数变换与输出函数\n数据、坐标、参数顺序、实现哈希\n转移核\nRWM、MALA 及成熟NUTS 基"
+        },
+        {
+          "page": 6,
+          "characters": 1257,
+          "beginning": "ParallelBayes\n中文v4 一致版\n2.2\n最小公开使用流程\n真实运行的包接口示例如下；正式CLI 网格另由协议驱动。\nlibrary(parallelbayes)\nmodel <- pb_model(\"gaussian\", di"
+        },
+        {
+          "page": 7,
+          "characters": 1123,
+          "beginning": "ParallelBayes\n中文v4 一致版\n当log u < a 时接受，否则保留q；拒绝自环仍计为一次转移。这里h 不是提议噪声的标\n准差。NUTS 基线保留自身随机流与适应预热，不与MH 核共享整条路径。\n3.3\n窗口quasi-DE"
+        },
+        {
+          "page": 8,
+          "characters": 1183,
+          "beginning": "ParallelBayes\n中文v4 一致版\n3.5\n数值输出标准\nquasi-DEER 的窗口停止检查硬递推残差；Picard 使用前述连续前缀确认。残差条件\n为\nmax\nt,j\n|qt,j −Ft(qt−1)j|\natol + rtol"
+        },
+        {
+          "page": 9,
+          "characters": 1114,
+          "beginning": "ParallelBayes\n中文v4 一致版\n归目标从零点开始，以trust-exact 求众数；目标有限且解析梯度最大绝对值不超过10−7\n时接受，最多300 步，L 为观测信息逆矩阵的Cholesky 因子。未做特征值修复，也未用\n参考"
+        },
+        {
+          "page": 10,
+          "characters": 1540,
+          "beginning": "ParallelBayes\n中文v4 一致版\n四链初值来自N(0, 4I)，M1 首坐标设为(−5, 5, −5, 5)。MH 与NUTS 共用初值，但\nNUTS 使用独立随机流及预热。MH 丢弃512 步、窗口32；quasi-DEER "
+        },
+        {
+          "page": 11,
+          "characters": 949,
+          "beginning": "ParallelBayes\n中文v4 一致版\n原符号事件全零，其不确定性保持未定。W1 原参考以12 个保存的浮点求积配置检查稳\n定性；这些变化不是认证误差界。v4 的L2 重要性参考和W1 确定包络单独报告，不覆\n盖原参考身份。\n4.5\n"
+        },
+        {
+          "page": 12,
+          "characters": 922,
+          "beginning": "ParallelBayes\n中文v4 一致版\n5.2\n参考精度与补充协议\nH1 补充只在原路径上比较函数差，不能用小函数均值差重新认可失败轨迹。L2 用两\n套冻结重要性提议及独立批次评估极稀有符号事件，MCSE 是有限近似而非认证界[14]"
+        },
+        {
+          "page": 13,
+          "characters": 1079,
+          "beginning": "ParallelBayes\n中文v4 一致版\n工作包\n完成产物及核验\n保留的范围限制\n状态\n有限补充\nH1 函数路径、L2 重要性参考、\nW1 数值包络、S2 资源定位\n不追溯改变主实验\n已完成\nR 普通调用\n原32 进程64 次技术调用；"
+        },
+        {
+          "page": 14,
+          "characters": 626,
+          "beginning": "ParallelBayes\n中文v4 一致版\n完成两次CPU 技术调用，未重测GPU。原来的全量路径重放证据继续提供，本轮保存\n记录重聚合不冒充再次全量重放。\n内部验收曾暴露依赖锁遗漏，首次失败日志保留；补齐真实依赖而不修改冻结采样\n核心。"
+        },
+        {
+          "page": 15,
+          "characters": 2342,
+          "beginning": "ParallelBayes\n中文v4 一致版\n参考文献\n[1] Zoltowski D.M., Wu S., Gonzalez X., et al. Parallelizing MCMC Across the Sequence Length"
+        }
+      ]
+    },
+    {
+      "document": "研究结果报告",
+      "pdf": "pdf/研究结果报告-v4一致版.pdf",
+      "pages": 24,
+      "sha256": "65477804692bfb69a94f1d876cb0ab3148aff20ac2f3f3c0db18477367fa3083",
+      "compiler": "Tectonic 0.17.0",
+      "final_overfull_or_missing_or_unresolved": 0,
+      "other_warnings": [
+        "warning: 研究结果报告.tex:203: Underfull \\hbox (badness 2020) in paragraph at lines 202--203",
+        "Underfull \\hbox (badness 2020) in paragraph at lines 202--203"
+      ],
+      "text_outside_page": 0,
+      "contact_sheets": [
+        "report-contact-01.png",
+        "report-contact-02.png",
+        "report-contact-03.png",
+        "report-contact-04.png"
+      ],
+      "page_details": [
+        {
+          "page": 1,
+          "characters": 325,
+          "beginning": "ParallelBayes\n研究结果报告\n时间执行成本、后验探索与可重建证据\n中文v4 一致版\n2026 年10 月12 日\n报告范围。完整说明研究软件的能力、主实验设计、数值核验、成本与误差结\n果，以及H1/L2/W1 和CPU NUTS"
+        },
+        {
+          "page": 2,
+          "characters": 221,
+          "beginning": "ParallelBayes\n中文v4 一致版\n目录\n术语与缩写\nii\n1\n研究结论与证据范围\n1\n2\n软件与执行器的数学对象\n1\n3\n正式研究设计与统计口径\n4\n4\n数值核验、失败与统计验证\n7\n5\n执行成本及减速机制\n9\n6\n固定预算误差"
+        },
+        {
+          "page": 3,
+          "characters": 397,
+          "beginning": "ParallelBayes\n中文v4 一致版\n术语与缩写\n缩写/术语\n本文含义\nMCMC\n马尔可夫链蒙特卡洛\nRWM\n随机游走Metropolis 核\nMALA\nMetropolis 校正Langevin 核\nNUTS\n无折返采样器；此处为"
+        },
+        {
+          "page": 4,
+          "characters": 1189,
+          "beginning": "ParallelBayes\n中文v4 一致版\n1\n研究结论与证据范围\n1.1\n主要发现\nParallelBayes 提供可核对实际随机输入的研究软件，将目标、转移核、执行器及计量\n策略分开。在指定Windows CPU/CUDA 条件下，O"
+        },
+        {
+          "page": 5,
+          "characters": 1096,
+          "beginning": "ParallelBayes\n中文v4 一致版\n目标入口及设备\n顺序RWM/MALA\nPicard RWM、\nquasi-DEER MALA\nNUTS\nStan/BridgeStan，\nMac CPU\n支持\n不支持\n不支持\n明确原生JAX 目"
+        },
+        {
+          "page": 6,
+          "characters": 1157,
+          "beginning": "ParallelBayes\n中文v4 一致版\n2.3\n窗口quasi-DEER MALA\n在固定输入下，窗口内第k + 1 轮路径满足\nq(k+1)\nt\n= Ft(q(k)\nt−1) + B(k)\nt {q(k+1)\nt−1\n−q(k)\nt"
+        },
+        {
+          "page": 7,
+          "characters": 1267,
+          "beginning": "ParallelBayes\n中文v4 一致版\n正式审计另按每链检查最大路径差不超过100[atol + rtol max(1, maxt,j |qt,j|)]，其中两项\n容差均为10−10；接受事件失配必须为零。局部残差小不推出长路径误差小"
+        },
+        {
+          "page": 8,
+          "characters": 1021,
+          "beginning": "ParallelBayes\n中文v4 一致版\n两者表示同一原尺度后验，但在各自坐标使用同一数值步长并不意味着同一原尺度转移\n核。\n3.2\n独立开发选择与冻结配置\n步长在正式输入之外选择。RWM 候选为{0.5, 1, 1.5, 2.4, 3"
+        },
+        {
+          "page": 9,
+          "characters": 1475,
+          "beginning": "ParallelBayes\n中文v4 一致版\n轮，Picard 最多N + 512 轮。NUTS 用四个原生spawn 子进程，每链预热1024 步、目\n标接受率0.8、最大树深8，适应步长及对角质量矩阵，未使用JIT。\n正式Windows"
+        },
+        {
+          "page": 10,
+          "characters": 1095,
+          "beginning": "ParallelBayes\n中文v4 一致版\n定性；这些变化不是认证误差界。v4 的L2 重要性参考和W1 确定包络单独报告，不覆\n盖原参考身份。\n3.5\n成本边界与比较单位\n口径\n包含内容\n回答的问题\n缓存执行\n已准备内核的执行，显式设备"
+        },
+        {
+          "page": 11,
+          "characters": 941,
+          "beginning": "ParallelBayes\n中文v4 一致版\n目标有效数值失败未分类失败函数行\nˆR > 1.01\nˆR 未定\nG1\n415\n0\n17\n1245\n240\n0\nG2\n432\n0\n0\n1296\n604\n0\nA1\n432\n0\n0\n1296\n592"
+        },
+        {
+          "page": 12,
+          "characters": 1151,
+          "beginning": "ParallelBayes\n中文v4 一致版\n设备\n执行器与配对核\n组几何平均速度比范围点估计S > 1 的组数\nCPU\nOnline Picard / RWM\n0.424–1.178\n7/18\nCUDA Online Picard / R"
+        },
+        {
+          "page": 13,
+          "characters": 703,
+          "beginning": "ParallelBayes\n中文v4 一致版\n0.1\n0.2\n0.5\n1\n2\nG1\nG2\nA1\nL1\nL2\nH1\nH2\nM1\nW1\n24/24\n24/24\n24/24\n24/24\n24/24\n24/24\n24/24\n24/24\n24/24\n"
+        },
+        {
+          "page": 14,
+          "characters": 1370,
+          "beginning": "ParallelBayes\n中文v4 一致版\n6\n固定预算误差、应用与探索\n6.1\n误差—成本关系\n式(10)固定函数、尺度和参考。两种同核执行在通过核验时提供相同指定路径的统计\n信息，差异主要为执行成本；跨核比较同时反映局部移动、预热和预"
+        },
+        {
+          "page": 15,
+          "characters": 681,
+          "beginning": "ParallelBayes\n中文v4 一致版\n101\n102\nOrdinary workflow time (s)\n10−4\n10−3\n10−2\nConditional MSE\na  G1:\nstandardised first param"
+        },
+        {
+          "page": 16,
+          "characters": 1129,
+          "beginning": "ParallelBayes\n中文v4 一致版\n增加MALA 执行成本。CPU NUTS 在本预算提供更小点参考平方差，并付出自身适应\n与四进程成本，不能由单一表格推广到所有目标。\n参数/概率参考样本后验均值\n95% 等尾后验区间均值MCSE"
+        },
+        {
+          "page": 17,
+          "characters": 326,
+          "beginning": "ParallelBayes\n中文v4 一致版\n−8\n−4\n0\n4\n8\nOriginal parameter θ1\na  CPU RWM: pooled positive fraction = 0.500000\n1\n256\n512\n768\n1"
+        },
+        {
+          "page": 18,
+          "characters": 1308,
+          "beginning": "ParallelBayes\n中文v4 一致版\n明所选统计量受影响的量级，没有重新认可原42 项失败，也不提供一般后验误差界。\n7.2\nCPU NUTS 定位：部分诊断阶段的资源路径\nS2 登记44 份四链调用及9 份旧诊断作业。资格4/4 "
+        },
+        {
+          "page": 19,
+          "characters": 861,
+          "beginning": "ParallelBayes\n中文v4 一致版\n其8 批分子与分母，用总分子除以总分母，批次联合协方差给出delta 近似MCSE，不\n平均批次比值，也不合并两套提议[14]。96 个保存点独立重新计算的最大对数权重差为\n量\n提议Q1\n提议Q"
+        },
+        {
+          "page": 20,
+          "characters": 1450,
+          "beginning": "ParallelBayes\n中文v4 一致版\n8\nR 使用、扩展与实际调用成本\n8.1\n公开接口的完整短例\n以下调用已经在独立安装目录验证，Python 核心为0.2.0.dev2、R 安装候选\n0.2.0.9002。需要按依赖锁选定Pyt"
+        },
+        {
+          "page": 21,
+          "characters": 1171,
+          "beginning": "ParallelBayes\n中文v4 一致版\n较大比例，会话复用减少这部分成本；quasi-DEER 在短例中仍有明显额外计算。5.220\n秒的慢首次MALA 调用保留，未以环境波动删去。表中技术重复没有增加正式主研究的\n独立输入数，也不使"
+        },
+        {
+          "page": 22,
+          "characters": 856,
+          "beginning": "ParallelBayes\n中文v4 一致版\n9.3\n固定版本与尚待作者确认的事项\n紧凑执行源3a37a89、交付源94bebec；中文v4 构建源699e645；投稿候选b84e966，\n标签submission-v4-rc1。源码、协议"
+        },
+        {
+          "page": 23,
+          "characters": 744,
+          "beginning": "ParallelBayes\n中文v4 一致版\nA\n报告内容与v4 来源的对应\n表13: 随LaTeX 包提供的来源映射另保存完整哈希。下\n表给出逻辑位置，避免依赖本机绝对目录。\n报告内容\n冻结来源（相对项目根目录）\n方法与能力\nmanusc"
+        },
+        {
+          "page": 24,
+          "characters": 2342,
+          "beginning": "ParallelBayes\n中文v4 一致版\n参考文献\n[1] Zoltowski D.M., Wu S., Gonzalez X., et al. Parallelizing MCMC Across the Sequence Length"
+        }
+      ]
+    }
+  ],
+  "source_hashes": 26,
+  "unchanged_copies": 7,
+  "frozen_pdfs_unchanged": {
+    "软件与基准研究-审查修订v4.pdf": "155d184ec5cc2d52f12c5a84d843fc5b29dd563b95ebe80208523e1f2daa99db",
+    "补充材料-审查修订v4.pdf": "a795e5423cc2c2803cf2c45904ea0aa9316c32b091be7e58fc1bf467b042293d",
+    "完整结果附录-审查修订v2.pdf": "2a71da18334b781586afbae95b517446b890576825df3d1f8f9e0208e358bdf8"
+  },
+  "visual_inspection": "All 39 physical pages reviewed via MuPDF contact sheets; full-page table/code/source-map checks; no clipping, missing glyphs or split API code block.",
+  "render_backend": "MuPDF; initial bundled Poppler could not resolve Adobe-GB1 language maps",
+  "new_scientific_runs": 0,
+  "content_review": "Two independent read-only reviews; three P1 scope/qualification formulations and P2 clarity suggestions corrected; no P0 or outstanding content issue.",
+  "relocation": {
+    "source_directory_separate_from_project": true,
+    "project_raw_inputs_required": false,
+    "scientific_backends_imported": false,
+    "documents": [
+      {
+        "document": "研究计划",
+        "pages": 15,
+        "text_equal_pages": 15,
+        "72dpi_pixel_equal_pages": 15,
+        "compiler_return_code": 0,
+        "new_sampling": 0,
+        "pdf_sha256": "46c494f8e41aa928409b38616a50c368ab835fd8c4fae0c646bbaa9b7a033b46"
+      },
+      {
+        "document": "研究结果报告",
+        "pages": 24,
+        "text_equal_pages": 24,
+        "72dpi_pixel_equal_pages": 24,
+        "compiler_return_code": 0,
+        "new_sampling": 0,
+        "pdf_sha256": "2ff21e16834a8fcc864968ad141d749f5812031218e92d5163ac9e9f6ddcbeff"
+      }
+    ],
+    "method": "New directory; stdlib build.py; bundled Tectonic; all-page text and pixels; no original project paths used by TeX."
+  }
+}

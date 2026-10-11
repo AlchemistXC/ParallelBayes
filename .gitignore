@@ -26,6 +26,10 @@
 !/software/
 !/references/
 !/review/
+!/reports/
+/reports/*
+!/reports/chinese-v4/
+/reports/chinese-v4/build/
 __pycache__/
 *.pyc
 *.egg-info/

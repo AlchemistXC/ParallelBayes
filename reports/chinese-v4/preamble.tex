@@ -1,0 +1,26 @@
+\usepackage[margin=24mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,bm,booktabs,array,tabularx,longtable}
+\usepackage{graphicx,xcolor,enumitem,fancyhdr,hyperref,listings}
+\hypersetup{colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black,breaklinks=true,hypertexnames=false}
+\setcounter{tocdepth}{1}
+\hypersetup{bookmarksdepth=2}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{3pt}
+\linespread{1.22}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep,leftmargin=2em,topsep=4pt}
+\renewcommand{\arraystretch}{1.18}
+\setlength{\tabcolsep}{4pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\ind}{\mathbf 1}
+\newcommand{\sg}{\operatorname{sg}}
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\smalltable}{\small\renewcommand{\arraystretch}{1.18}}
+\lstset{basicstyle=\ttfamily\small,breaklines=true,columns=fullflexible,keepspaces=true,showstringspaces=false,frame=single,rulecolor=\color{black!20},xleftmargin=0.5em,xrightmargin=0.5em}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small ParallelBayes}\fancyhead[R]{\small 中文 v4 一致版}
+\fancyfoot[C]{\thepage}
+\ctexset{section={format=\Large\bfseries},subsection={format=\large\bfseries},subsubsection={format=\normalsize\bfseries}}
+\input{facts.tex}

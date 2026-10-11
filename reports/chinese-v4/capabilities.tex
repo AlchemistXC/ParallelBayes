@@ -1,0 +1,12 @@
+\begin{table}[htbp]\centering\smalltable
+\begin{tabularx}{\linewidth}{P{36mm}Y Y Y}\toprule
+目标入口及设备 & 顺序 RWM/MALA & Picard RWM、quasi-DEER MALA & NUTS\\\midrule
+Stan/BridgeStan，Mac CPU & 支持 & 不支持 & 不支持\\
+明确原生 JAX 目标，CPU & 支持 & 支持对应组合 & BlackJAX 基线\\
+明确原生 torch 目标，Windows CPU & 已核验 & 已核验，含主机控制 & 独立 Pyro 研究 CLI\\
+明确原生 torch 目标，Windows CUDA & 已核验 & 已核验，含主机控制 & 未接入或核验\\\bottomrule
+\end{tabularx}
+\caption{v4 对应的软件能力与实际设备边界。原生 Windows Stan 编译尚未核验。Pyro 四进程基线不属于通用 \code{pb_sample()} 的 torch NUTS 选项，也不是 NUTS 轨迹的时间并行。}
+\end{table}
+
+\code{pb_capabilities()} 查询包接口组合；独立研究 CLI 的契约另列。\code{pb_benchmark()} 运行配置列表并组织 R 结果，完整冻结协议、任务恢复和原始证据管理由 Python CLI 及项目文件完成。Stan 入口没有默认独立轨迹参考，\code{audit=TRUE} 明确拒绝。扩展目标需提供原生 Python 模型及独立参考，不支持把任意 Stan 文件自动编译为 JAX/torch GPU 目标，也不是任意 R 闭包的一键时间并行接口。

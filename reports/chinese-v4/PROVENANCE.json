@@ -1,0 +1,149 @@
+{
+  "schema": "parallelbayes-chinese-reports-v1",
+  "date": "2026-10-12",
+  "scientific_basis": "Chinese manuscript v4; submission-v4-rc1",
+  "parent_candidate_commit": "b84e9663f2742a559e5fb353c475139e2fce8d97",
+  "paper_build_commit": "699e645af9051a4ef47c3e40bedd28d741e2e689",
+  "new_formal_sampling": 0,
+  "new_gpu_measurements": 0,
+  "sources": [
+    {
+      "source": "manuscript/software/compact-scalars.generated.tex",
+      "destination": "facts.tex",
+      "sha256": "c5c84d491b9204ea78c4a28221f9d2acb8c1de4c3692afd32f92849dae65a5ad",
+      "copied_unchanged": true
+    },
+    {
+      "source": "manuscript/software/compact-outcomes.generated.tex",
+      "destination": "outcomes.tex",
+      "sha256": "0367e506a0ebdd430fc270bab4c7a838927bc6163ccad37cde5ee0ba680a4365",
+      "copied_unchanged": true
+    },
+    {
+      "source": "manuscript/software/compact-wells.generated.tex",
+      "destination": "wells.tex",
+      "sha256": "6b864949a13203658c612c81312a5c5901baf30596d228c8747b088b304536a2",
+      "copied_unchanged": true
+    },
+    {
+      "source": "manuscript/software/r-frontend.generated.tex",
+      "destination": "r-timing.tex",
+      "sha256": "d95a201a11f8d25fb42a632352c036d580cbe3f39573c7ecfad33084437dc3a9",
+      "copied_unchanged": true
+    },
+    {
+      "source": "figures/compact-final-v1/ordinary-cost-overview.pdf",
+      "destination": "figures/ordinary-cost-overview.pdf",
+      "sha256": "f81a2d0e194bee85c916f5c81366f4e61924a479d0e34010051e17b83eaabd79",
+      "copied_unchanged": true
+    },
+    {
+      "source": "figures/manuscript-review-v2/error-cost-final/error-cost-overview.pdf",
+      "destination": "figures/error-cost-overview.pdf",
+      "sha256": "71959b1936c513253a2c1c3fc4fd0c99e26077575966bb531d2c94602a1f41d5",
+      "copied_unchanged": true
+    },
+    {
+      "source": "figures/manuscript-review-v2/mixture/mixture-example.pdf",
+      "destination": "figures/mixture-example.pdf",
+      "sha256": "3c6481d63c9bd485308f6462a45f2936e3164a66669ec5c499674d7ff869d4e4",
+      "copied_unchanged": true
+    },
+    {
+      "source": "manuscript/software/软件与基准研究.tex",
+      "sha256": "4e0ffae88b00735408a3bc1797bffcc4b4ff3e7a71996a07a5d1cbf601ef1aee",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/补充材料.tex",
+      "sha256": "28d982cc54d906b896860e05e4e42e34d97387d11e63fee8270116bc932fdf3e",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/revision-configuration.generated.tex",
+      "sha256": "4dd7e6bcb20a67140850ff4b095073cfabddd66e0bbabbc2e8aeaa3f7e92278e",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/revision-reference.generated.tex",
+      "sha256": "bfcdaaed5f962444e211c5a59e34c83a7b3cf85df7a3dd698eeb0538c5522dca",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/targeted-h1-main.generated.tex",
+      "sha256": "b305c5cf89e9e82fade34c60f44586bce8ea75b76399e76625f4a2c0882e8a46",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/targeted-h1-si.generated.tex",
+      "sha256": "a5f5b0d1ec1d72e52c72bb1276915e3ad3559795415644910f89e432befbd029",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/targeted-l2-main.generated.tex",
+      "sha256": "d44253f32aef66fb2cf3238c8f64eb27cf4114cdac5419689e19375280778606",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/targeted-l2-si.generated.tex",
+      "sha256": "8375d1291d80b09fb507f8e1a46b2650bd82d09da844d80a0227ed7f36620cc0",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/w1-enclosure-method.tex",
+      "sha256": "8f82ccc314ca44854ce2c9c1e73bdb59792b29be1802db07df1ea8f38c993726",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/w1-enclosure-results.tex",
+      "sha256": "4f96f5c31b2efcb2b1ab645cf3c1eb3e1dbafa7aff04beb971eb034db5686246",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/nuts-localization-si.generated.tex",
+      "sha256": "f8900be9037699235326479d5cc30145a257497fea4189cc13e0ea593c839cb4",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/review3-scalars.generated.tex",
+      "sha256": "c3b9054f85d289dcb7ec05e2f0941f1d1a999b23ac938ab877ff422fe79054de",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/references.tex",
+      "sha256": "2275bbe2095634db26f9f3ebd3e1e804c3b23baed29f37abb2b9aacfa011f84a",
+      "copied_unchanged": false
+    },
+    {
+      "source": "manuscript/software/w1-method-references.tex",
+      "sha256": "7f331135b4732774ed77602a0c4ef980b6ee53b411dd7260f8412dd8eaaf8140",
+      "copied_unchanged": false
+    },
+    {
+      "source": "docs/SUBMISSION-RC1.md",
+      "sha256": "18642c5bcf2d1ba2f835a8c1b17e05931f1a1314862cf72a46613c51983284c7",
+      "copied_unchanged": false
+    },
+    {
+      "source": "docs/SUBMISSION-REPRODUCE.md",
+      "sha256": "06a90c9c308e2484c0563504613945fe4a4a7c35c79d78501046621dba5e715d",
+      "copied_unchanged": false
+    },
+    {
+      "source": "docs/AUTHOR-DECISIONS.md",
+      "sha256": "cee7f55ef83a30a691e1a258178437cdfa953261313faaedce0bd774b379c317",
+      "copied_unchanged": false
+    },
+    {
+      "source": "docs/WINDOWS-NUTS-MAC-REVIEW.md",
+      "sha256": "952aabce25d7ed02dc5929d200220d326620a410470bf3b9972ca8991794fd62",
+      "copied_unchanged": false
+    },
+    {
+      "source": "examples/paper-api.R",
+      "sha256": "ceb675858bfe5aed9ae9596ed6c51dbca025b79e18328192426df93939e374db",
+      "copied_unchanged": false
+    }
+  ],
+  "reference_policy": "Selected existing v4 entries; no new literature audit claimed."
+}
