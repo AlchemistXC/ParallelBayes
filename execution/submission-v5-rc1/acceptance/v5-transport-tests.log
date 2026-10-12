@@ -1,0 +1,15 @@
+test_archive_and_manifest_binding (test_v5_transport.TransportTests.test_archive_and_manifest_binding) ... ok
+test_disk_guard_and_existing_directory (test_v5_transport.TransportTests.test_disk_guard_and_existing_directory) ... ok
+test_link_rejected (test_v5_transport.TransportTests.test_link_rejected) ... ok
+test_unicode_regular_files (test_v5_transport.TransportTests.test_unicode_regular_files) ... ok
+test_unsafe_absolute (test_v5_transport.TransportTests.test_unsafe_absolute) ... ok
+test_unsafe_backslash (test_v5_transport.TransportTests.test_unsafe_backslash) ... ok
+test_unsafe_case_alias (test_v5_transport.TransportTests.test_unsafe_case_alias) ... ok
+test_unsafe_drive (test_v5_transport.TransportTests.test_unsafe_drive) ... ok
+test_unsafe_duplicate (test_v5_transport.TransportTests.test_unsafe_duplicate) ... ok
+test_unsafe_parent (test_v5_transport.TransportTests.test_unsafe_parent) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.014s
+
+OK

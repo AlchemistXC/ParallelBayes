@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "id": "r-example-v5-run2-1",
+      "status": "completed_verified",
+      "ordinary_samples": true,
+      "restored_tape_sha256": "0ed54301ab8ff6ceeac4b0a1549204b7a870f070919c65a0e17a5f7eab4e2f31",
+      "max_abs_error": 0.0,
+      "acceptance_mismatches": 0,
+      "limits": [
+        5.309968817330592e-08,
+        4.7139209823122504e-08,
+        5.140958871357478e-08,
+        5.033147516763068e-08
+      ]
+    },
+    {
+      "id": "r-example-v5-run2-2",
+      "status": "retained_failure",
+      "ordinary_samples": false
+    },
+    {
+      "id": "r-example-v5-final-1",
+      "status": "completed_verified",
+      "ordinary_samples": true,
+      "restored_tape_sha256": "0ed54301ab8ff6ceeac4b0a1549204b7a870f070919c65a0e17a5f7eab4e2f31",
+      "max_abs_error": 0.0,
+      "acceptance_mismatches": 0,
+      "limits": [
+        5.309968817330592e-08,
+        4.7139209823122504e-08,
+        5.140958871357478e-08,
+        5.033147516763068e-08
+      ]
+    },
+    {
+      "id": "r-example-v5-final-2",
+      "status": "completed_verified",
+      "ordinary_samples": true,
+      "restored_tape_sha256": "0ed54301ab8ff6ceeac4b0a1549204b7a870f070919c65a0e17a5f7eab4e2f31",
+      "max_abs_error": 1.136590821460004e-14,
+      "acceptance_mismatches": 0,
+      "limits": [
+        5.3099688173305885e-08,
+        4.713920982312247e-08,
+        5.140958871357478e-08,
+        5.033147516763078e-08
+      ]
+    }
+  ],
+  "final_diagnostic_values_matched": 20,
+  "reference_source_sha256": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1",
+  "R_export_sha256": "876d9f27fd7f2891e2c9463448792382693491c3749e236c3c11390258668cc3",
+  "new_sampler_calls": 0,
+  "new_independent_random_inputs": 0,
+  "forbidden_backend_imports": [],
+  "scope": "Three previously saved completed technical paths replayed; one failure kept excluded. No new posterior fits or speed measurement."
+}

@@ -1,0 +1,153 @@
+{
+  "identity": "submission-v5-rc1-new-evidence-rebuild",
+  "passed": true,
+  "stages": [
+    {
+      "stage": "v5-companion",
+      "returncode": 0,
+      "elapsed_seconds": 0.4254172910004854
+    },
+    {
+      "stage": "L1-R-diagnostics",
+      "returncode": 0,
+      "elapsed_seconds": 0.711207790998742
+    },
+    {
+      "stage": "v5-fragments",
+      "returncode": 0,
+      "elapsed_seconds": 0.02297370800806675
+    },
+    {
+      "stage": "prefix-figure",
+      "returncode": 0,
+      "elapsed_seconds": 13.952807833004044
+    },
+    {
+      "stage": "error-cost-figure",
+      "returncode": 0,
+      "elapsed_seconds": 6.702476541002397
+    },
+    {
+      "stage": "R-saved-export",
+      "returncode": 0,
+      "elapsed_seconds": 0.7236806250002701
+    },
+    {
+      "stage": "R-saved-NumPy-replay",
+      "returncode": 0,
+      "elapsed_seconds": 1.147605542006204
+    },
+    {
+      "stage": "TeX-build",
+      "returncode": 0,
+      "elapsed_seconds": 6.144915582990507
+    }
+  ],
+  "W1_original_phase_records": 216,
+  "L1_original_paths": 2,
+  "original_diagnostics_preserved": true,
+  "phase_csvs_byte_equal": 3,
+  "TeX_fragments_byte_equal": [
+    "review5-cost-boundaries.generated.tex",
+    "review5-si.generated.tex",
+    "review5-wells.generated.tex"
+  ],
+  "figures": [
+    {
+      "pages": 1,
+      "text_equal": true,
+      "render_equal": true
+    },
+    {
+      "pages": 1,
+      "text_equal": true,
+      "render_equal": true
+    }
+  ],
+  "error_cost_rows_preserved": 72,
+  "documents": [
+    {
+      "document": "main",
+      "pages": 16,
+      "text_equal": true,
+      "render_equal": true
+    },
+    {
+      "document": "A",
+      "pages": 47,
+      "text_equal": true,
+      "render_equal": true
+    },
+    {
+      "document": "B",
+      "pages": 67,
+      "text_equal": true,
+      "render_equal": true
+    }
+  ],
+  "R_saved_replay": {
+    "passed": true,
+    "records": [
+      {
+        "id": "r-example-v5-run2-1",
+        "status": "completed_verified",
+        "ordinary_samples": true,
+        "restored_tape_sha256": "0ed54301ab8ff6ceeac4b0a1549204b7a870f070919c65a0e17a5f7eab4e2f31",
+        "max_abs_error": 0.0,
+        "acceptance_mismatches": 0,
+        "limits": [
+          5.309968817330592e-08,
+          4.7139209823122504e-08,
+          5.140958871357478e-08,
+          5.033147516763068e-08
+        ]
+      },
+      {
+        "id": "r-example-v5-run2-2",
+        "status": "retained_failure",
+        "ordinary_samples": false
+      },
+      {
+        "id": "r-example-v5-final-1",
+        "status": "completed_verified",
+        "ordinary_samples": true,
+        "restored_tape_sha256": "0ed54301ab8ff6ceeac4b0a1549204b7a870f070919c65a0e17a5f7eab4e2f31",
+        "max_abs_error": 0.0,
+        "acceptance_mismatches": 0,
+        "limits": [
+          5.309968817330592e-08,
+          4.7139209823122504e-08,
+          5.140958871357478e-08,
+          5.033147516763068e-08
+        ]
+      },
+      {
+        "id": "r-example-v5-final-2",
+        "status": "completed_verified",
+        "ordinary_samples": true,
+        "restored_tape_sha256": "0ed54301ab8ff6ceeac4b0a1549204b7a870f070919c65a0e17a5f7eab4e2f31",
+        "max_abs_error": 1.136590821460004e-14,
+        "acceptance_mismatches": 0,
+        "limits": [
+          5.3099688173305885e-08,
+          4.713920982312247e-08,
+          5.140958871357478e-08,
+          5.033147516763078e-08
+        ]
+      }
+    ],
+    "final_diagnostic_values_matched": 20,
+    "reference_source_sha256": "4b38a2d481ea1e204ca1a47b7b5b6955a6b810f0978ba0d8baad4db6c5fb9fc1",
+    "R_export_sha256": "876d9f27fd7f2891e2c9463448792382693491c3749e236c3c11390258668cc3",
+    "new_sampler_calls": 0,
+    "new_independent_random_inputs": 0,
+    "forbidden_backend_imports": [],
+    "scope": "Three previously saved completed technical paths replayed; one failure kept excluded. No new posterior fits or speed measurement."
+  },
+  "component_manifest_sha256": "044f65646a2a78386c7c7ba26fc84962901dc0e81c0e203c4f9b1cd8454af2e8",
+  "new_sampler_calls": 0,
+  "new_independent_random_inputs": 0,
+  "outside_author_access_tested": false,
+  "unchanged_historical_full_rebuild": "submission-v4-rc1 accepted evidence inherited after version binding",
+  "scope": "Same host and previously accepted locked environments. Read-only original-data companion, saved technical paths and current presentation rebuilt; no fresh full 4144-path replay or performance benchmark."
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "protected_paths": [
+    "r-package",
+    "models",
+    "environment/locks",
+    "manuscript/software",
+    "manuscript/software-v5",
+    "reports/chinese-v4",
+    "benchmark/protocols",
+    "execution/submission-rc1"
+  ],
+  "protected_diff_empty": true,
+  "parent_seal_sha256": "354f3fd8b341d762a3622b700504f9726edaf30627172a944759f12d2d32ee43",
+  "new_formal_calls": 0,
+  "parent_seal_source_commit_verified": true,
+  "parent_entry_sha256_verified": "b5e27de9c0c7c0cfc81f28b8ec489d53ee4cb4b25b7eb26b9460852d5f299b90",
+  "parent_source_bundle_sha256_verified": "72781f9e4d4364336c0173a94ebd0a4bb95abba68f2e7f6771b68e174e6a597f"
+}

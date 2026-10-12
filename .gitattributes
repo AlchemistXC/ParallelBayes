@@ -45,3 +45,4 @@ benchmark/analysis/outputs/manuscript-review-v3/** -text whitespace=-blank-at-eo
 benchmark/analysis/outputs/manuscript-review-v5/** -text whitespace=-blank-at-eol,-blank-at-eof
 figures/manuscript-v5/**/*.svg text eol=lf whitespace=-blank-at-eol
 manuscript/software-v5/*.generated.tex text eol=lf whitespace=-blank-at-eof
+execution/submission-v5-rc1/acceptance/** -text whitespace=-blank-at-eol,-blank-at-eof

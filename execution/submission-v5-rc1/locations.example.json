@@ -1,0 +1,152 @@
+{
+  "cpu-software": {
+    "path": "PATH_TO_COMPONENT/software-0.1.1-cpu-review-v1.tar.gz"
+  },
+  "cpu-experiments": {
+    "path": "PATH_TO_COMPONENT/experiments-cpu-review-v1.tar.gz"
+  },
+  "cpu-evidence-paper": {
+    "path": "PATH_TO_COMPONENT/evidence-paper-cpu-review-v1.tar"
+  },
+  "windows-first": {
+    "path": "PATH_TO_COMPONENT/windows-native-20261003T234021Z.tar"
+  },
+  "windows-round2": {
+    "path": "PATH_TO_COMPONENT/windows-native-20261005T113131Z.tar"
+  },
+  "windows-mechanism": {
+    "path": "PATH_TO_COMPONENT/windows-native-20261006T111324Z.tar"
+  },
+  "windows-runtime": {
+    "path": "PATH_TO_COMPONENT/windows-native-20261006T170711Z.tar"
+  },
+  "windows-runtime-supplement": {
+    "path": "PATH_TO_COMPONENT/windows-native-20261006T171222Z.tar"
+  },
+  "windows-package": {
+    "path": "PATH_TO_COMPONENT/windows-native-20261006T173502Z.tar"
+  },
+  "windows-package-supplement": {
+    "path": "PATH_TO_COMPONENT/windows-native-20261006T173742Z.tar"
+  },
+  "windows-adapter-v2": {
+    "path": "PATH_TO_COMPONENT/windows-formal-adapter-validation-v1-20261007.tar"
+  },
+  "windows-adapter-companion": {
+    "path": "PATH_TO_COMPONENT/windows-native-20261007T134451Z.tar"
+  },
+  "windows-adapter-transport": {
+    "path": "PATH_TO_COMPONENT/windows-native-20261007T135234Z.tar"
+  },
+  "mac-final": {
+    "path": "PATH_TO_COMPONENT/parallelbayes-mac-final-research-20261010.tar"
+  },
+  "h1-companion": {
+    "path": "PATH_TO_COMPONENT/h1-function-path-companion-v1.tar"
+  },
+  "l2-reference": {
+    "path": "PATH_TO_COMPONENT/l2-rare-reference-is-v1.tar"
+  },
+  "w1-reference": {
+    "path": "PATH_TO_COMPONENT/w1-reference-evidence-v1.tar"
+  },
+  "nuts-localization": {
+    "path": "PATH_TO_COMPONENT/windows-nuts-localization-v1.tar"
+  },
+  "paper-v4": {
+    "path": "PATH_TO_COMPONENT/parallelbayes-targeted-paper-v4.tar"
+  },
+  "compact-formal": {
+    "path": "PATH_TO_COMPONENT/formal",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-formal-3a37a89-v1-manifest.json"
+  },
+  "compact-technical": {
+    "path": "PATH_TO_COMPONENT/technical",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-technical-3a37a89-v1-manifest.json"
+  },
+  "compact-development": {
+    "path": "PATH_TO_COMPONENT/development",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-development-3a37a89-v1-manifest.json"
+  },
+  "compact-failed-acceptance": {
+    "path": "PATH_TO_COMPONENT/failed-acceptance",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-failed-acceptance-3a37a89-v1-manifest.json"
+  },
+  "compact-scientific-costs": {
+    "path": "PATH_TO_COMPONENT/scientific-costs",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-scientific-costs-3a37a89-v1-manifest.json"
+  },
+  "compact-admin-source": {
+    "path": "PATH_TO_COMPONENT/admin-source",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-admin-source-3a37a89-v1-manifest.json"
+  },
+  "compact-tests03": {
+    "path": "PATH_TO_COMPONENT/tests03",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-component-tests-large-3a37a89-v1-manifest.json"
+  },
+  "compact-postprocess-v3": {
+    "path": "PATH_TO_COMPONENT/postprocess-v3",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-postprocess-v3-3a37a89-v1-manifest.json"
+  },
+  "compact-postprocess-launch-v3": {
+    "path": "PATH_TO_COMPONENT/postprocess-launch-v3",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-postprocess-launch-v3-3a37a89-v1-manifest.json"
+  },
+  "compact-final-records": {
+    "path": "PATH_TO_COMPONENT/final-records",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-final-records-3a37a89-v1-manifest.json"
+  },
+  "compact-shutdown-preservation": {
+    "path": "PATH_TO_COMPONENT/shutdown-preservation",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-shutdown-preservation-3a37a89-v1-manifest.json"
+  },
+  "compact-shutdown-registry": {
+    "path": "PATH_TO_COMPONENT/shutdown-registry",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-shutdown-registry-3a37a89-v1-manifest.json"
+  },
+  "compact-postprocess-failed-v1": {
+    "path": "PATH_TO_COMPONENT/postprocess-failed-v1",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-postprocess-failed-v1-3a37a89-v1-manifest.json"
+  },
+  "compact-postprocess-partial-v2": {
+    "path": "PATH_TO_COMPONENT/postprocess-partial-v2",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-postprocess-partial-v2-3a37a89-v1-manifest.json"
+  },
+  "compact-postprocess-launch-v1": {
+    "path": "PATH_TO_COMPONENT/postprocess-launch-v1",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-postprocess-launch-v1-3a37a89-v1-manifest.json"
+  },
+  "compact-postprocess-launch-v2": {
+    "path": "PATH_TO_COMPONENT/postprocess-launch-v2",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-postprocess-launch-v2-3a37a89-v1-manifest.json"
+  },
+  "compact-postboot-preflight": {
+    "path": "PATH_TO_COMPONENT/postboot-preflight",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-postboot-preflight-3a37a89-v1-manifest.json"
+  },
+  "compact-user-pause-registry": {
+    "path": "PATH_TO_COMPONENT/user-pause-registry",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-user-pause-registry-3a37a89-v1-manifest.json"
+  },
+  "compact-scientific-resume-preflight": {
+    "path": "PATH_TO_COMPONENT/scientific-resume-preflight",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-scientific-resume-preflight-3a37a89-v1-manifest.json"
+  },
+  "compact-component-tests-failed": {
+    "path": "PATH_TO_COMPONENT/component-tests-failed",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-component-tests-failed-3a37a89-v1-manifest.json"
+  },
+  "compact-component-tests-passed": {
+    "path": "PATH_TO_COMPONENT/component-tests-passed",
+    "manifest": "PATH_TO_MANIFESTS/windows-compact-component-tests-passed-3a37a89-v1-manifest.json"
+  },
+  "compact-catalog": {
+    "path": "PATH_TO_COMPONENT/catalog.json"
+  },
+  "paper-v5": {
+    "path": "PATH_TO_COMPONENT/parallelbayes-paper-v5.zip"
+  },
+  "v5-R-technical": {
+    "path": "PATH_TO_COMPONENT/parallelbayes-v5-R-technical-evidence.tar.gz"
+  }
+}

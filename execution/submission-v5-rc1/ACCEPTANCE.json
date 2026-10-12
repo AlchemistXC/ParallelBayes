@@ -1,0 +1,82 @@
+{
+  "schema": "parallelbayes-submission-v5-internal-acceptance-v1",
+  "identity": "submission-v5-rc1",
+  "date": "2026-10-12",
+  "internal_acceptance_passed": true,
+  "outside_author_access_tested": false,
+  "manuscript_source": "9ff76ee89526cf033d62d72860dfce82fbd1733c",
+  "parent_sealed_candidate": "submission-v4-rc1",
+  "inherited_full_rebuild": {
+    "receipt": "execution/submission-rc1/ACCEPTANCE.json",
+    "sha256": "fd69695fbb6ff2aa32a02442d9c70cd03aef2b299263f972f2aa853abec7fecc",
+    "results": {
+      "components_passed": 41,
+      "compact_original_files_verified": 232755,
+      "compact_receiver_manifests_verified": 21,
+      "analysis_records_reaggregated": 4144,
+      "bootstrap_arrays_equal": 4589,
+      "main_csvs_equal": 81,
+      "supplement_csvs_equal": 4,
+      "main_tex_fragments_equal": 6,
+      "figures_text_and_72dpi_pixels_equal": 45,
+      "main_pdf_pages_equal": 18,
+      "SI_pdf_pages_equal": 45,
+      "installed_numerical_modules_equal": 17,
+      "API_acceptance_mismatches": 0,
+      "API_maximum_path_difference": 1.11022302462516e-15,
+      "new_tool_tests": {
+        "passed": 7,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "not_rerun_this_round": true
+  },
+  "new_results": {
+    "components_passed": 43,
+    "historical_components_verbatim": 41,
+    "stages_passed": 8,
+    "transport_tests": {
+      "passed": 10,
+      "failed": 0,
+      "skipped": 0
+    },
+    "phase_records": 216,
+    "L1_original_paths": 2,
+    "TeX_fragments": 3,
+    "figure_rows": 72,
+    "PDF_pages": [
+      16,
+      47,
+      67
+    ],
+    "R_old_completed_replays": 3,
+    "R_old_failed_kept_excluded": 1,
+    "R_final_diagnostic_values_matched": 20,
+    "numerical_modules_matched": 17,
+    "analysis_dependencies_matched": 14
+  },
+  "new_sampler_calls": 0,
+  "new_independent_random_inputs": 0,
+  "new_GPU_measurements": 0,
+  "new_W1_integrand_calls": 0,
+  "numerical_source_changed": false,
+  "source_history_reachable": {
+    "formal_execution": true,
+    "formal_delivery": true
+  },
+  "analysis_environment_reused": true,
+  "R_dependency_library_reused": true,
+  "private_release_modified": false,
+  "automatic_publication": false,
+  "automatic_submission": false,
+  "records": "acceptance/records.sha256",
+  "transport_seal": "output/submission-v5-rc1/release/SEAL.json",
+  "pending": [
+    "Author identities/maintainer/funding/COI/acknowledgements",
+    "Journal/language/format/anonymity",
+    "Raw sharing scope/licence and actual reviewer access",
+    "AI disclosure and final approval"
+  ],
+  "scope": "All 43 integrity checked; new v5 evidence/presentation rebuilt on same host. Inherited unchanged full v4 installation/4144 reaggregation/45-figure acceptance; no fresh full-grid replay or independent team verification."
+}

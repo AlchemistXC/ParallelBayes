@@ -2,6 +2,8 @@
 
 带 R 接口的时间并行 MCMC 研究软件。项目将目标、转移核与执行器分开，支持固定实际随机输入下的独立路径核验、成本比较和后验诊断。
 
+2026-10-12 v5投稿候选：完整组件清单更新为43项，旧41记录原样；8阶段新证据/图文重建和10项ZIP工具测试通过，数值核心不变，新采样为0。当前入口为[候选验收](docs/SUBMISSION-V5-RC1.md)、[完整复现](docs/SUBMISSION-V5-REPRODUCE.md)、[版本清单](execution/submission-v5-rc1/VERSIONS.json)与[集中作者决策](docs/AUTHOR-DECISIONS-V5.md)。源码、tag和本地运输包以外部v5 seal为准，原件公开及真实外审访问尚待落实。
+
 2026-10-12：新审读意见已拆为106项并完成v5写作修订，正文按研究问题组织，补入W1分段费用、L1尾ESS敏感性分析和完整R示例。[逐项审核](docs/MANUSCRIPT-REVIEW-V5.md)与[构建验收](docs/MANUSCRIPT-V5-BUILD.md)说明采纳范围及依据。原主实验、v4封存稿和v4一致版中文计划/报告保留，无新正式Windows任务。
 
 2026-10-10：Windows 紧凑研究已完成，Mac 独立接收、4144 项重建、统计比较及中文论文材料已完成。**当前不需要重跑任何 Windows 提示词。** 研究完成指本版约定范围内的计算与材料交付，不代表所有配置收敛或普遍加速；署名、公开原件和投稿由作者决定。
@@ -10,7 +12,7 @@
 
 2026-10-11：第三轮意见已逐项核对并完成v4中文修订。新增稀有事件IID解释、W1中间界和公开R API示例；原实验不改，2次接口技术调用不计正式重复。原件审稿访问仍由作者落实。
 
-2026-10-11投稿候选：内部安装、41组件核验、4144既有分析记录重聚合、全部九目标表图及论文重编译已通过；科学结果保持v4。当前入口为 [候选验收与封存](docs/SUBMISSION-RC1.md)、[完整复现入口](docs/SUBMISSION-REPRODUCE.md)、[作者确认清单](docs/AUTHOR-DECISIONS.md)。分支 `codex/submission-rc1`；固定源码和归档哈希以封存清单为准。外部审稿原件访问尚未验收。
+2026-10-11历史v4投稿候选：内部安装、41组件核验、4144既有分析记录重聚合、全部九目标表图及论文重编译已通过；科学结果保持v4。[原封存](docs/SUBMISSION-RC1.md)、[原复现入口](docs/SUBMISSION-REPRODUCE.md)与分支 `codex/submission-rc1`保持，固定源码和归档哈希以原封存清单为准。
 
 ## 阅读与使用
 
@@ -28,7 +30,7 @@
 
 ## 本版范围
 
-当前候选入口为 `codex/submission-rc1`；此前开发入口为 `codex/research-integration`，Python 0.2.0.dev2 / R 0.2.0.9002。实验仍绑定各自冻结源码；Windows 紧凑执行源为 `3a37a89`、交付为 `94bebec`。
+当前候选入口为 `codex/submission-v5-rc1`；原v4候选为 `codex/submission-rc1`，此前开发入口为 `codex/research-integration`。Python 0.2.0.dev2 / R 0.2.0.9002不变。实验仍绑定各自冻结源码；Windows 紧凑执行源为 `3a37a89`、交付为 `94bebec`。
 
 | 目标入口 | 顺序 RWM/MALA | Picard RWM / quasi-DEER MALA | NUTS |
 |---|---|---|---|

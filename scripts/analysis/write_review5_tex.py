@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 # v5 projection of saved records only. No sampling or replacement of frozen statistics.
 from pathlib import Path
-import json,re,csv
-root=Path(__file__).resolve().parents[2];p=root/'manuscript/software-v5';e=root/'benchmark/analysis/outputs/manuscript-review-v5'
-x=json.loads((e/'SUMMARY.json').read_text());d=json.loads((e/'diagnostic-replay.json').read_text())
+import argparse,json,re,csv
+root=Path(__file__).resolve().parents[2]
+parser=argparse.ArgumentParser(description='Project saved v5 evidence to three TeX fragments; no sampling.')
+parser.add_argument('--evidence',type=Path,default=root/'benchmark/analysis/outputs/manuscript-review-v5')
+parser.add_argument('--output',type=Path,required=True)
+args=parser.parse_args();p=args.output;e=args.evidence
+p.mkdir(parents=True,exist_ok=False)
+x=json.loads((e/'SUMMARY.json').read_text(encoding='utf-8'));d=json.loads((e/'diagnostic-replay.json').read_text(encoding='utf-8'))
 rows=[]
 for r in x['w1_cost_boundaries_same_four_inputs']:
  rows.append(('CPU' if r['device']=='cpu' else 'CUDA')+' '+('Picard' if r['kernel']=='rwm' else 'quasi-DEER')+' & '+' & '.join(f"{r[k]:.3f}" for k in ['prepared','ordinary_workflow','research_execution'])+r'\\')
@@ -15,7 +20,7 @@ cost=r'''\begin{table}[htbp]\centering\small
 \caption{W1每链4096步的三种速度比（顺序/时间执行）。各列均使用原重复0、8、16、23，配对几何平均；缓存每输入四次调用先取其均值。本表不计算四重复区间。}\label{tab:three-costs}
 \end{table}
 '''
-(p/'review5-cost-boundaries.generated.tex').write_text(cost)
+(p/'review5-cost-boundaries.generated.tex').write_text(cost,encoding='utf-8')
 wells=r'''\begin{table}[htbp]\centering\small
 \begin{tabular}{lrrrr}\toprule
 核 & CPU顺序 & CPU时间执行 & CUDA顺序 & CUDA时间执行\\\midrule
@@ -33,7 +38,7 @@ NUTS & 0.28 [0.14, 0.51] & 0.52 [0.32, 0.84]\\\bottomrule
 \caption{W1每链4096步的普通批量推断时间均值（秒，上表）和参考平方误差（下表）。每工作流24次四链重复；同核误差在显示精度下相同，合并列示。方括号为条件95\% BCa区间，参考区间的影响另见补充材料A。}\label{tab:wells-v5}
 \end{table}
 '''
-(p/'review5-wells.generated.tex').write_text(wells)
+(p/'review5-wells.generated.tex').write_text(wells,encoding='utf-8')
 phase=[]
 for r in x['w1_phase_means']:
  name=r['workflow'].replace('cpu-','CPU ').replace('cuda-','CUDA ').replace('-sequential',' seq').replace('-online_picard',' Picard').replace('-quasi_deer',' quasi-DEER').replace('-spawn_chains','')
@@ -67,4 +72,4 @@ si=r'''\section{v5既有记录再分析与公开接口示例}
 
 quasi-DEER代理门控差异也具有版本身份。原文伪代码使用$\sigma(\min(0,a)-\log u)$；项目归档上游提交5e5b637与本文采用$\sigma(a-\log u)$。硬接受规则等价，代理导数一般不同。本文使用非重叠窗口、重复起点初猜和硬残差停止，不使用上游NaN归零或状态裁剪；torch对硬前向另作停止梯度包裹以避免软表达式舍入抵消。有限轮因果性质以精确算术为前提，浮点与有限迭代输出由本文独立标准检查。
 '''
-(p/'review5-si.generated.tex').write_text(si)
+(p/'review5-si.generated.tex').write_text(si,encoding='utf-8')

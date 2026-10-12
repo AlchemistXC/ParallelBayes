@@ -1,0 +1,8 @@
+{
+  "component": "v5-R-technical",
+  "archive_sha256": "7e14e7c2964126cb55a21ee79d1797e461b3c44447357e96384be43f625b4050",
+  "members": 15,
+  "extracted_bytes": 2172119,
+  "new_sampler_calls": 0,
+  "scope": "Safe relocation of pinned archive; use its scientific verifier next"
+}

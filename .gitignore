@@ -184,3 +184,8 @@ __pycache__/
 !/execution/targeted-followups-v1/nuts-windows-v1/*.txt
 !/execution/targeted-followups-v1/nuts-windows-v1/receipts/
 !/execution/targeted-followups-v1/nuts-windows-v1/receipts/**
+
+# v5 candidate metadata and small acceptance records only; no raw arrays.
+!/execution/submission-v5-rc1/
+!/execution/submission-v5-rc1/**
+!/execution/CURRENT-SCOPE-through-2026-10-12-v4-seal.json

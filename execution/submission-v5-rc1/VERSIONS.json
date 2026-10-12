@@ -1,0 +1,70 @@
+{
+  "identity": "submission-v5-rc1",
+  "manuscript": {
+    "revision": "v5",
+    "source_commit": "9ff76ee89526cf033d62d72860dfce82fbd1733c",
+    "main_pages": 16,
+    "supplement_A_pages": 47,
+    "supplement_B_pages": 67
+  },
+  "software": {
+    "Python": "0.2.0.dev2",
+    "R": "0.2.0.9002",
+    "unchanged_from": "submission-v4-rc1",
+    "installed_module_manifest": "acceptance/environment-source-binding.json"
+  },
+  "formal_study": {
+    "execution": "3a37a891896faedc62c0d6af185bfad77696054f",
+    "delivery": "94bebec95177b03f0497d748cbc9f54a45492ce4",
+    "protocol": "windows-compact-contract-v1",
+    "main_planned": 3888,
+    "main_valid": 3741,
+    "numerical_failure": 42,
+    "unclassified_failure": 105,
+    "cache_probes": 256,
+    "cache_calls": 1024
+  },
+  "analysis": {
+    "Python": "3.12.14",
+    "lock": "environment/locks/submission-analysis-v1.txt",
+    "lock_sha256": "f29721a3c49ccdda8ca272691235c321db9bda20e1623e34fd3ad0c9b7ce1517",
+    "packages": {
+      "contourpy": "1.4.0",
+      "cycler": "0.12.1",
+      "fonttools": "4.66.1",
+      "kiwisolver": "1.5.1",
+      "matplotlib": "3.10.6",
+      "numpy": "2.2.6",
+      "packaging": "26.3",
+      "pillow": "12.3.0",
+      "PyMuPDF": "1.26.5",
+      "pyparsing": "3.3.3",
+      "python-dateutil": "2.9.0.post0",
+      "scipy": "1.15.3",
+      "six": "1.17.0",
+      "psutil": "7.1.0"
+    },
+    "environment_reused": true
+  },
+  "R_saved_replay": {
+    "R": "4.6.0",
+    "posterior": "1.7.0",
+    "technical_calls_original": 4,
+    "completed_original": 3,
+    "failed_original": 1,
+    "new_sampler_calls": 0
+  },
+  "compiler": {
+    "name": "Tectonic",
+    "version": "0.17.0",
+    "tool_sha256": "0f3949d87df6edd5dd0cc92deb8ab4c24c4ba39ddf1114e7fd2b7a01dda40347"
+  },
+  "parent_candidate": "submission-v4-rc1",
+  "candidate_source_commit": "BOUND_IN_EXTERNAL_SEAL",
+  "candidate_source_tag": "submission-v5-rc1",
+  "component_inventory": "COMPONENTS.json",
+  "component_inventory_sha256": "044f65646a2a78386c7c7ba26fc84962901dc0e81c0e203c4f9b1cd8454af2e8",
+  "author_metadata": "pending",
+  "journal": "pending",
+  "raw_release_policy": "unchanged_pending_author_decision"
+}

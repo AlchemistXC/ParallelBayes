@@ -1,0 +1,8 @@
+{
+  "component": "paper-v5",
+  "archive_sha256": "8b46e9b988f1d97fb15ed9a90c714dc7d9f5bfb0cde317b81c6c1e4f7bb3714f",
+  "members": 217,
+  "extracted_bytes": 17787634,
+  "new_sampler_calls": 0,
+  "scope": "ZIP relocation only; BUILD.py verifies the content manifest"
+}

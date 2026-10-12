@@ -1,0 +1,333 @@
+{
+  "identity": "submission-v5-rc1",
+  "manifest_sha256": "044f65646a2a78386c7c7ba26fc84962901dc0e81c0e203c4f9b1cd8454af2e8",
+  "new_sampler_calls": 0,
+  "new_independent_repetitions": 0,
+  "public_or_external_reviewer_access_tested": false,
+  "components": [
+    {
+      "id": "cpu-software",
+      "passed": true,
+      "bytes": 212140,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "cpu-experiments",
+      "passed": true,
+      "bytes": 3656818,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "cpu-evidence-paper",
+      "passed": true,
+      "bytes": 4967352320,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "windows-first",
+      "passed": true,
+      "bytes": 680366080,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "windows-round2",
+      "passed": true,
+      "bytes": 76267520,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "windows-mechanism",
+      "passed": true,
+      "bytes": 186511360,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "windows-runtime",
+      "passed": true,
+      "bytes": 1083330560,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "windows-runtime-supplement",
+      "passed": true,
+      "bytes": 33792000,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "windows-package",
+      "passed": true,
+      "bytes": 49428480,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "windows-package-supplement",
+      "passed": true,
+      "bytes": 286720,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "windows-adapter-v2",
+      "passed": true,
+      "bytes": 987596800,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "windows-adapter-companion",
+      "passed": true,
+      "bytes": 43284480,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "windows-adapter-transport",
+      "passed": true,
+      "bytes": 22558720,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "mac-final",
+      "passed": true,
+      "bytes": 644812800,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "h1-companion",
+      "passed": true,
+      "bytes": 51240960,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "l2-reference",
+      "passed": true,
+      "bytes": 187627520,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "w1-reference",
+      "passed": true,
+      "bytes": 303360000,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "nuts-localization",
+      "passed": true,
+      "bytes": 703969280,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "paper-v4",
+      "passed": true,
+      "bytes": 17387520,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "compact-formal",
+      "passed": true,
+      "bytes": 19671228544,
+      "files": 180582,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-technical",
+      "passed": true,
+      "bytes": 333767714,
+      "files": 2230,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-development",
+      "passed": true,
+      "bytes": 352679981,
+      "files": 5495,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-failed-acceptance",
+      "passed": true,
+      "bytes": 21780777,
+      "files": 521,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-scientific-costs",
+      "passed": true,
+      "bytes": 1533995012,
+      "files": 63,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-admin-source",
+      "passed": true,
+      "bytes": 37349,
+      "files": 9,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-tests03",
+      "passed": true,
+      "bytes": 79610,
+      "files": 86,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-postprocess-v3",
+      "passed": true,
+      "bytes": 6070464691,
+      "files": 42616,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-postprocess-launch-v3",
+      "passed": true,
+      "bytes": 16224,
+      "files": 3,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-final-records",
+      "passed": true,
+      "bytes": 64664333,
+      "files": 994,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-shutdown-preservation",
+      "passed": true,
+      "bytes": 6527,
+      "files": 5,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-shutdown-registry",
+      "passed": true,
+      "bytes": 473676414,
+      "files": 4,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-postprocess-failed-v1",
+      "passed": true,
+      "bytes": 8181,
+      "files": 3,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-postprocess-partial-v2",
+      "passed": true,
+      "bytes": 8614354,
+      "files": 25,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-postprocess-launch-v1",
+      "passed": true,
+      "bytes": 3690,
+      "files": 3,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-postprocess-launch-v2",
+      "passed": true,
+      "bytes": 3783,
+      "files": 3,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-postboot-preflight",
+      "passed": true,
+      "bytes": 474057729,
+      "files": 24,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-user-pause-registry",
+      "passed": true,
+      "bytes": 306213629,
+      "files": 4,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-scientific-resume-preflight",
+      "passed": true,
+      "bytes": 5588,
+      "files": 6,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-component-tests-failed",
+      "passed": true,
+      "bytes": 6552,
+      "files": 8,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-component-tests-passed",
+      "passed": true,
+      "bytes": 73104,
+      "files": 71,
+      "receiver_metadata_files": 1,
+      "verified": "every original member size and SHA256 plus exact membership"
+    },
+    {
+      "id": "compact-catalog",
+      "passed": true,
+      "bytes": 106350,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "paper-v5",
+      "passed": true,
+      "bytes": 3062641,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    },
+    {
+      "id": "v5-R-technical",
+      "passed": true,
+      "bytes": 2155891,
+      "files": 1,
+      "verified": "archive/file bytes; scientific replay is a separate stage"
+    }
+  ],
+  "passed": true,
+  "component_count": 43
+}
