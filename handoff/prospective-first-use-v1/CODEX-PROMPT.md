@@ -1,0 +1,16 @@
+# ParallelBayes 原生 Windows 接力提示词
+
+将本文件全文粘贴到 Windows Codex。在本地 SSD 上打开一个工作目录即可；如果当前目录没有正确的研究分支，请 Codex 按第 1 步克隆到新目录。
+
+---
+
+请接手 ParallelBayes 的 `prospective-first-use-v1` 研究，在这台原生 Windows 11 x64（Ryzen 7 9800X3D、32 GB 主机内存、RTX 5080）上实际完成 Windows 侧开发、验收、分批资格运行和 Mac 回传。请直接使用 PowerShell 和原生 Windows Python 操作。先完成当前可执行的步骤，遇到可修复错误自行处理，记录证据后继续；遇到独立的阻塞时继续其余工作，不要只回复计划。
+
+1. **检出本轮研究。** 使用 GitHub 上的 `codex/prospective-first-use-windows-handoff`。若当前工作树有修改或正在做历史实验，另建干净目录，用 `git clone --branch codex/prospective-first-use-windows-handoff --single-branch https://github.com/AlchemistXC/ParallelBayes.git ParallelBayes-first-use`。记录 `git rev-parse HEAD`、工作树状态和研究协议哈希。读 `AGENTS.md` 的科学和归档要求、`docs/prospective-first-use-v1/DECISIONS.md`、`docs/prospective-first-use-v1/FORMAL-REFERENCE-PREPARATION.md` 及本目录 `README.md`。旧 Windows handoff 目录仅作工具、已验证环境与私有技能迁移参考，不执行历史实验清单。新源码在独立开发分支提交，保留既有实验身份、源提交和原始结果。
+2. **实际验证环境。** 查找可用的本机 Python 3.12 x64、Rscript、驱动和已验证的 torch CUDA 环境；缺少依赖时可在项目专用 venv 安装，先核对官方 Windows wheel 与当前驱动和 RTX 5080 的兼容性。将 `$Python`、`$Rscript` 设为绝对路径，`$Output` 设为本机 SSD 上尚未存在的证据目录，然后执行 `& .\handoff\prospective-first-use-v1\preflight.ps1 -Python $Python -Rscript $Rscript -Output $Output`。确认 `dependencies.json` 中 NUTS 和 R 诊断均可用、框架 CPU/CUDA 探针通过、计划有 880 个唯一任务；记录设备型号、RAM/显存、驱动、包版本与磁盘剩余量。对预检错误按组件排查。CUDA 路径必须在实际 RTX 5080 上通过；编译接口可导入只证明接口存在。
+3. **先做可直接执行的技术核验。** 按本目录 README 中的 PowerShell 命令，执行开发域高斯 CPU/CUDA 静态和固定数组路径对照、合成 ODE 短路径检查、四进程 Pyro NUTS 短演练。资格使用独立合成数组。若已私下取得 `prospective-reference-input-candidate-v2.zip`，核对 SHA-256 `281d00e3ea05071c30ca208f08ac00319ca7e02e01955ae14f6a61d23a0096f4`，按 README 验证、解包到新目录，仅做许可的候选目标一致性技术检查。缺少该包时先完成开发和合成资格的独立工作。若私有技能 ZIP 已单独到达，可按 `handoff/windows-native/SKILLS-SETUP.md` 迁移；缺少该 ZIP 不影响数值验收。保留实际数组、接受事件、拒绝自转移、残差、停止原因及失败耗时，按命令、退出码、源码、环境和文件 SHA-256 留证。旧 Pyro `MCMC.diagnostics()` 不用于此次 NUTS 交付；使用四进程单链并交给共同的 R/posterior 诊断。
+4. **补齐资格执行链后才批量运行。** 现有 880 项清单是账本模板，尚需实现和实测调度、首次使用策略及真实开发数据校准、ODE 可信求解和失败恢复、同平台长链 NUTS、实际 eager/compile 对照。复用现有 PyTorch eager float64 和独立 NumPy/SciPy 路径参考；ODE 验收三条分支：严格零密度的合法拒绝、域内求解失败按确定性规则重算、重算仍失败后隔离。先测实际 `torch.compile` 及稳定性，用预定高斯和常规合成 ODE 做两条件配对，区分冷启动、缓存、编译覆盖与回落，提交 profiler 证据；编译失败留在分母，继续 eager 的可辨认剖分。按协议界定预热完成的固定核、首次探测与交付全程费用。预测规则只能使用允许的开发与短探测数据，在该输入的基线或完整轨迹可见前持久化选择和预测。用实测验证实现，逐项核对数值容差、端到端同步、计费、输出与归档。
+5. **按决议分批放行，逐批保存终态。** 先验收 24 次技术演练，再验收 32 次高斯四角首块，随后按决议完成四角总计 384 次、中间条件 144 次、分层代理 48 次、合成 ODE 的 1024 步 160 次与 4096 步 72 次、最长链 72 次。另做两代理各 3 次长链 NUTS 预检、24 次 profiler 调用。长链预测按规定先封存：保留 1024→16384 原版及加入 4096 实测的更新版；实测与预测的机时及归档字节分别用 1.25 和 1.10 倍复核。维护追加式 `qualification_ledger.jsonl`，失败和重试均留痕。同一配对使用实际相同输入和随机数组；验收失败时依决议只暂停受影响的批次，未经分类不得覆盖或静默重跑。资格产物保存于独立的证据根目录。脚本、清单或会话中断后先核对身份、已有尝试和哈希，再恢复。正式留出结果保持封存。
+6. **回传 Mac 可以重放的真实材料。** 用 `audit_qualification.py` 对原始证据和 880 项计划做分母与文件哈希对账，核对配对路径、科学容差及所有失败；机器对账仅检查计数与文件完整性。分别核算 Windows 独占机时、Windows 工作盘、Mac 接收峰值与长期归档，四项保守用量各不超过已确认额度的 80%，另核实单任务 RAM/显示内存与同卷并存峰值。未确认的外部额度单独列出。全部科学资格条件通过后交付带实际台账 SHA-256 的 `windows_qualification.json`；四项容量确认后交付 `capacity.json`；字段和范围以 `scripts/prospective_reference/create_freeze.py` 及 `formal_run.py` 为准。准备账本、对账摘要、源提交、环境锁、计划清单、预测版本与实测、独立路径证据、逐卷资源账、接收/恢复所需文件及 SHA-256 清单。将真实原件、候选输入和私有技能 ZIP 置于私下传输目录。Git 只提交本轮源码、协议、测试和可共享摘要。正式主比较还需完整科学协议冻结并收到放行依据；资格阶段不得据此启动正式留出采样或揭盲。
+
+每个阶段结束时给我具体运行次数、通过/失败/未启动数、阻塞原因、关键回执绝对路径和哈希，以及续做的准确入口。停在真实阻塞点时交付已完成的证据，好让 Mac 端接着验收。

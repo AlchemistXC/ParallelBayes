@@ -1,0 +1,369 @@
+{
+  "status": "proposed-test-only",
+  "seed": 20261121,
+  "root": [
+    0,
+    20261121
+  ],
+  "models": {
+    "logistic": 1,
+    "ode": 2
+  },
+  "phases": {
+    "initialization": 1,
+    "warmup": 2,
+    "sampling": 3
+  },
+  "fold_order": [
+    "model",
+    "chain",
+    "phase"
+  ],
+  "split_order": [
+    "consumed",
+    "next_carry"
+  ],
+  "jax": "0.6.2",
+  "backend": "cpu",
+  "prng": "threefry2x32",
+  "partitionable": true,
+  "lock_sha256": "1dac2989a0df1d97394e0be42325ea4fdb4544c9ad22d34a541da5ea2ae2d016",
+  "rows": [
+    {
+      "model": "logistic",
+      "chain": 1,
+      "phase": "initialization",
+      "initial_key": [
+        1876230343,
+        2184790346
+      ]
+    },
+    {
+      "model": "logistic",
+      "chain": 1,
+      "phase": "warmup",
+      "initial_key": [
+        2281307317,
+        3251991278
+      ]
+    },
+    {
+      "model": "logistic",
+      "chain": 1,
+      "phase": "sampling",
+      "initial_key": [
+        1175104260,
+        975286532
+      ],
+      "transitions": [
+        {
+          "step": 1,
+          "consumed": [
+            2108504451,
+            1755309136
+          ],
+          "next_carry": [
+            2103252344,
+            1660931648
+          ]
+        },
+        {
+          "step": 100,
+          "consumed": [
+            2434436120,
+            1292379002
+          ],
+          "next_carry": [
+            4178328607,
+            977574120
+          ]
+        },
+        {
+          "step": 101,
+          "consumed": [
+            3565164328,
+            526857858
+          ],
+          "next_carry": [
+            2391553422,
+            1657858271
+          ]
+        },
+        {
+          "step": 1000,
+          "consumed": [
+            1306394740,
+            4084876924
+          ],
+          "next_carry": [
+            676260859,
+            1629320839
+          ]
+        },
+        {
+          "step": 1001,
+          "consumed": [
+            4047658861,
+            1029843036
+          ],
+          "next_carry": [
+            2217708238,
+            1457660134
+          ]
+        }
+      ]
+    },
+    {
+      "model": "logistic",
+      "chain": 2,
+      "phase": "initialization",
+      "initial_key": [
+        383090407,
+        1189998445
+      ]
+    },
+    {
+      "model": "logistic",
+      "chain": 2,
+      "phase": "warmup",
+      "initial_key": [
+        2901986753,
+        3947570362
+      ]
+    },
+    {
+      "model": "logistic",
+      "chain": 2,
+      "phase": "sampling",
+      "initial_key": [
+        3252376600,
+        3366151075
+      ],
+      "transitions": [
+        {
+          "step": 1,
+          "consumed": [
+            4017917573,
+            123225684
+          ],
+          "next_carry": [
+            2694448356,
+            3912641430
+          ]
+        },
+        {
+          "step": 100,
+          "consumed": [
+            4186033993,
+            2106053658
+          ],
+          "next_carry": [
+            87958466,
+            3516805975
+          ]
+        },
+        {
+          "step": 101,
+          "consumed": [
+            1423452746,
+            1127030688
+          ],
+          "next_carry": [
+            1436385870,
+            2436564307
+          ]
+        },
+        {
+          "step": 1000,
+          "consumed": [
+            4022874044,
+            2231124617
+          ],
+          "next_carry": [
+            1155875730,
+            1847580502
+          ]
+        },
+        {
+          "step": 1001,
+          "consumed": [
+            1794102551,
+            1612311661
+          ],
+          "next_carry": [
+            1793694590,
+            4245407602
+          ]
+        }
+      ]
+    },
+    {
+      "model": "ode",
+      "chain": 1,
+      "phase": "initialization",
+      "initial_key": [
+        462716829,
+        311430207
+      ]
+    },
+    {
+      "model": "ode",
+      "chain": 1,
+      "phase": "warmup",
+      "initial_key": [
+        4114144098,
+        818924190
+      ]
+    },
+    {
+      "model": "ode",
+      "chain": 1,
+      "phase": "sampling",
+      "initial_key": [
+        3094498908,
+        1915513586
+      ],
+      "transitions": [
+        {
+          "step": 1,
+          "consumed": [
+            2692473850,
+            1619687841
+          ],
+          "next_carry": [
+            1896260211,
+            411148771
+          ]
+        },
+        {
+          "step": 100,
+          "consumed": [
+            609208028,
+            2489216531
+          ],
+          "next_carry": [
+            3284539255,
+            3392845908
+          ]
+        },
+        {
+          "step": 101,
+          "consumed": [
+            938632383,
+            3411061276
+          ],
+          "next_carry": [
+            4262330390,
+            4199865614
+          ]
+        },
+        {
+          "step": 1000,
+          "consumed": [
+            2269807500,
+            187028216
+          ],
+          "next_carry": [
+            965040663,
+            130546333
+          ]
+        },
+        {
+          "step": 1001,
+          "consumed": [
+            996027231,
+            363218428
+          ],
+          "next_carry": [
+            3725843235,
+            3623648431
+          ]
+        }
+      ]
+    },
+    {
+      "model": "ode",
+      "chain": 2,
+      "phase": "initialization",
+      "initial_key": [
+        3592652000,
+        2892763566
+      ]
+    },
+    {
+      "model": "ode",
+      "chain": 2,
+      "phase": "warmup",
+      "initial_key": [
+        385452127,
+        2726576934
+      ]
+    },
+    {
+      "model": "ode",
+      "chain": 2,
+      "phase": "sampling",
+      "initial_key": [
+        232494570,
+        2946395689
+      ],
+      "transitions": [
+        {
+          "step": 1,
+          "consumed": [
+            1388292229,
+            1163842021
+          ],
+          "next_carry": [
+            4093214498,
+            3259009337
+          ]
+        },
+        {
+          "step": 100,
+          "consumed": [
+            2222509993,
+            3962173460
+          ],
+          "next_carry": [
+            3347930460,
+            4195038103
+          ]
+        },
+        {
+          "step": 101,
+          "consumed": [
+            1676267015,
+            3334846867
+          ],
+          "next_carry": [
+            3794612867,
+            1369923738
+          ]
+        },
+        {
+          "step": 1000,
+          "consumed": [
+            3191911854,
+            1515246150
+          ],
+          "next_carry": [
+            2388286553,
+            3824572882
+          ]
+        },
+        {
+          "step": 1001,
+          "consumed": [
+            3959257627,
+            447760581
+          ],
+          "next_carry": [
+            2162315033,
+            678349472
+          ]
+        }
+      ]
+    }
+  ]
+}
